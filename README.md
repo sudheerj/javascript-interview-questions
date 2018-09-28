@@ -92,3 +92,22 @@ var object = new function(){
 
 ### What is prototype chain?
 Prototype chaining is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language. The prototype on object instance is available through Object.getPrototypeOf(object) or __proto__ property whereas prototype on constructors function is available through object.prototype.
+
+### What is the difference between Call, Apply and Bind?
+**Call:** The call() method calls a function with a given this value and arguments provided individually
+**Apply:**
+
+### What is JSON and its common operations?
+
+JSON is a text-based data format following JavaScript object syntax, which was popularized by Douglas Crockford. It is useful when you want to transmit data across a network and it is basically just a text file with an extension of .json, and a MIME type of application/json
+Parsing: **Converting a string to a native object
+```
+JSON.parse(text)
+```
+Stringification: **converting a native object to a string so it can be transmitted across the network
+```
+JSON.stringify(object)
+```
+
+
+
