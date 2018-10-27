@@ -12,6 +12,8 @@
 |4  | [What is the purpose of array slice method?](#what-is-the-purpose-of-array-slice-method)|
 |5  | [What is the purpose of array splice method?](#what-is-the-purpose-of-array-splice-method)|
 |6  | [What is the difference between slice and splice?](#what-is-the-difference-between-slice-and-splice)|
+|7  | [How do you compare Object and Map?](#how-do-you-compare-object-and-map)|
+
 
 ### What are the possible ways to create objects in JavaScript?
 
@@ -99,7 +101,7 @@ var object = new function(){
 
 ### What is prototype chain?
 
-Prototype chaining is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language. The prototype on object instance is available through Object.getPrototypeOf(object) or __proto__ property whereas prototype on constructors function is available through object.prototype.
+**Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language. The prototype on object instance is available through Object.getPrototypeOf(object) or __proto__ property whereas prototype on constructors function is available through object.prototype.
 
 ### What is the difference between Call, Apply and Bind?
 
@@ -152,6 +154,15 @@ Some of the major difference in a tabular form
 | Returns the subset of original array | Returns the deleted elements as array  |
 | Used to pick the elements from array | Used to insert or delete elements to/from array|
 
+### How do you compare Object and Map?
+**Objects** are similar to **Maps** in that both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. Due to this reason, Objects have been used as Maps historically. But there are important differences that make using a Map preferable in certain cases.
+
+1. The keys of an Object are Strings and Symbols, whereas they can be any value for a Map, including functions, objects, and any primitive.
+2. The keys in Map are ordered while keys added to object are not. Thus, when iterating over it, a Map object returns keys in order of insertion.
+3. You can get the size of a Map easily with the size property, while the number of properties in an Object must be determined manually.
+4. A Map is an iterable and can thus be directly iterated, whereas iterating over an Object requires obtaining its keys in some fashion and iterating over them.
+5. An Object has a prototype, so there are default keys in the map that could collide with your keys if you're not careful. As of ES5 this can be bypassed by using map = Object.create(null), but this is seldom done.
+6. A Map may perform better in scenarios involving frequent addition and removal of key pairs.
 
 
 
