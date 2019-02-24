@@ -22,6 +22,11 @@
 |14 | [What is a unary function?](#what-is-a-unary-function)|
 |15 | [What is currying function?](#what-is-currying-function)|
 |16 | [What is a pure function?](#what-is-a-pure-function)|
+|17 | [What is the purpose of let keyword?](#what-is-the-purpose-of-let-keyword)|
+|18 | [What is the difference between let and var?](#what-is-the-difference-between-let-and-var)|
+|19 | [What is the reason to choose the name let as keyword?](#what-is-the-reason-to-choose-the-name-let-as-keyword)|
+|20 | [How do you redeclare variables in switch block without an error?](#how-do-you-redeclare-variables-in-switch-block-without-an-error)|
+|21 | [What is Temporal Dead Zone?](#what-is-temporal-dead-zone)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -292,4 +297,79 @@ console.log (numberArray); // returns [6]
 ```
 As per above code snippets, Push function is impure itself by altering the array and returning an push number index which is independent of parameter value. Whereas Concat on the other hand takes the array and concatenates it with the other array producing a whole new array without side effects. Also, the return value is a concatenation of previous array.
 Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and makes harder to break your application by not having any side effects. These principles are coming together with **Immutability** concept of ES6 by giving preference to **const** over **let** usage.
+
+17. ### What is the purpose of let keyword?
+
+The let statement declares a **block scope local variable**. Hence the variables defined with let keyword are limited in scope to the block, statement, or expression on which it is used. Whereas variables declared with the var keyword used to define a variable globally, or locally to an entire function regardless of block scope. Let's take an example to demonstrate the usage,
+```javascript
+let counter = 30;
+if (counter === 30) {
+  let counter = 31;
+  console.log(counter); // 31
+}
+console.log(counter); // 30 (because if block variable won't exist here)
+```
+
+18. ### What is the difference between let and var?
+You can list out the differences in a tabular format
+
+| var | let |
+|---- | ---------
+| It is been available from the beginning of JavaScript  | Introduced as part of ES6 |
+| It has function scope | It has block scope  |
+| Variables will be hoisted | Won't get hoisted|
+
+Let's take an example to see the difference,
+```javascript
+function userDetails(username) {
+   if(username) {
+     console.log(salary); // undefined(due to hoisting)
+     console.log(age); // error: age is not defined
+     let age = 30;
+     var salary = 10000;
+   }
+   console.log(salary); //10000 (accessible to due function scope)
+   console.log(age); //error: age is not defined(due to block scope)
+}
+```
+19. ### What is the reason to choose the name let as keyword?
+    Let is a mathematical statement that was adopted by early programming languages like Scheme and Basic. It has been borrowed from dozens of other languages that use let already as a traditional keyword as close to var as possible.
+20. ### How do you redeclare variables in switch block without an error?
+    If you try to redeclare variables in a `switch block` then it will cause errors because there is only one block. For example, the below code block throws a syntax error as below,
+    ```javascript
+    let counter = 1;
+    switch(x) {
+      case 0:
+        let name;
+        break;
+
+      case 1:
+        let name; // SyntaxError for redeclaration.
+        break;
+    }
+    ```
+    To avoid this error, you can create a nested block inside a case clause will create a new block scoped lexical environment.
+    ```javascript
+    let counter = 1;
+        switch(x) {
+          case 0: {
+            let name;
+            break;
+          }
+          case 1: {
+            let name; // No SyntaxError for redeclaration.
+            break;
+          }
+        }
+    ```
+21. ### What is Temporal Dead Zone?
+    The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a let or const variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable’s binding and its declaration, is called the temporal dead zone. Let's see this behavior with an example,
+    ```javascript
+    function somemethod() {
+      console.log(counter1); // undefined
+      console.log(counter2); // ReferenceError
+      var counter1 = 1;
+      let counter2 = 2;
+    }
+    ```
 
