@@ -27,6 +27,7 @@
 |19 | [What is the reason to choose the name let as keyword?](#what-is-the-reason-to-choose-the-name-let-as-keyword)|
 |20 | [How do you redeclare variables in switch block without an error?](#how-do-you-redeclare-variables-in-switch-block-without-an-error)|
 |21 | [What is Temporal Dead Zone?](#what-is-temporal-dead-zone)|
+|22 | [What is IIFE(Immediately Invoked Function Expression)?](#what-is-iife-(-immediately-invoked-function-expression-)-)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -371,5 +372,15 @@ function userDetails(username) {
       var counter1 = 1;
       let counter2 = 2;
     }
+    ```
+22. ### What is IIFE(Immediately Invoked Function Expression)?
+    IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
+    ```javascript
+    (function ()
+        {
+          // logic here
+        }
+     )
+    ();
     ```
 
