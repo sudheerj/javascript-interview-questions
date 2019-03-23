@@ -30,6 +30,7 @@
 |22 | [What is IIFE(Immediately Invoked Function Expression)?](#what-is-iife-(-immediately-invoked-function-expression-)-)|
 |23 | [What is the benefit of using modules?](#what-is-the-benefit-of-using-modules)|
 |24 | [What is memoization?](#what-is-memoization)|
+|25 | [What is Hoisting?](#what-is-hoisting?)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -424,4 +425,17 @@ function userDetails(username) {
     const addition = memoizAddition();
     console.log(addition(20)); //output: 40 calculated
     console.log(addition(20)); //output: 40 cached
+    ```
+25. ### What is Hoisting?
+    Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
+    Let's take a simple example of variable hoisting,
+    ```javascript
+    console.log(message); //output : undefined
+    var message = ’The variable Has been hoisted’;
+    ```
+    The above code looks like as below to the interpreter,
+    ```javascript
+    var message;
+    console.log(message);
+    message = ’The variable Has been hoisted’;
     ```
