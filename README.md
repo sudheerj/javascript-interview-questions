@@ -29,6 +29,7 @@
 |21 | [What is Temporal Dead Zone?](#what-is-temporal-dead-zone)|
 |22 | [What is IIFE(Immediately Invoked Function Expression)?](#what-is-iife-(-immediately-invoked-function-expression-)-)|
 |23 | [What is the benefit of using modules?](#what-is-the-benefit-of-using-modules)|
+|24 | [What is memoization?](#what-is-memoization)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -400,4 +401,27 @@ function userDetails(username) {
     1. Maintainablity
     2. Reusability
     3. Namespacing
-
+24. ### What is memoization?
+    Memoization is a programming technique which attempts to increase a function’s performance by caching its previously computed results.  Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
+    Let's take an example of adding function with memoization,
+    ```javascript
+    const memoizAddition = () => {
+      let cache = {};
+     return (value) => {
+      if (value in cache) {
+       console.log('Fetching from cache');
+       return cache.value;
+      }
+      else {
+       console.log('Calculating result');
+       let result = value + 20;
+       cache[value] = result;
+       return result;
+      }
+     }
+    }
+    // returned function from memoizAddition
+    const addition = memoizAddition();
+    console.log(addition(20)); //output: 40 calculated
+    console.log(addition(20)); //output: 40 cached
+    ```
