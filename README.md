@@ -33,9 +33,9 @@
 |25 | [What is Hoisting?](#what-is-hoisting?)|
 |26 | [What are classes in ES6?](#what-are-classes-in-es6)|
 |27 | [What are closures?](#what-are-closures)|
-|28 | [](#)|
-|29 | [](#)|
-|30 | [](#)|
+|28 | [What are modules?](#what-are-modules)|
+|29 | [Why do you need modules?](#why-do-you-need-modules)|
+|30 | [What is scope in javascript?](#what-is-scope-in-javascript)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -492,4 +492,5 @@ function userDetails(username) {
     1. Maintainablity
     2. Reusability
     3. Namespacing
-30. ### ?
+30. ### What is scope in javascript?
+    Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
