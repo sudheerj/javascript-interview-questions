@@ -37,6 +37,10 @@
 |29 | [Why do you need modules?](#why-do-you-need-modules)|
 |30 | [What is scope in javascript?](#what-is-scope-in-javascript)|
 |31 | [What is a service worker?](#what-is-a-service-worker)|
+|32 | [How do you manipulate DOM using service worker?](#how-do-you-manipulate-dom-using-service-worker)|
+|33 | [How do you reuse information across service worker restarts?](#how-do-you-reuse-information-across-service-worker-restarts)|
+|34 | [What is IndexedDB?](#what-is-indexeddb)|
+|35 | [What is web storage?](#what-is-web-storage)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -268,9 +272,9 @@ const firstOrder = () => console.log ('Iam a first order functionn!');
 13. ### What is a higher order function?
 Higher-order function is a function that accepts other function as an argument or returns a function as a return value.
 ```javascript
-const increment = x => x+1;
-const higherOrder = higherOrder(increment);
-console.log(higherOrder(1));
+const firstOrderFunc = () => console.log ('Hello I'am a First order function');
+const higherOrder = ReturnFirstOrderFunc => ReturnFirstOrderFunc ();
+higherOrder (firstOrderFunc);
 ```
 14. ### What is a unary function?
 Unary function (i.e. monadic) is a function that accepts exactly one argument. Let us take an example of unary function. It stands for single argument accepted by a function.
@@ -283,7 +287,7 @@ Currying is the process of taking a function with multiple arguments and turning
 const multiArgFunction = (a, b, c) => a + b + c;
 const curryUnaryFunction = a => b => c => a + b + c;
 curryUnaryFunction (1); // returns a function: b => c =>  1 + b + c
-curryUnaryFunction (1) (2); // returns a function: c => 2 + c
+curryUnaryFunction (1) (2); // returns a function: c => 3 + c
 curryUnaryFunction (1) (2) (3); // returns the number 6
 ```
 Curried functions are great to improve code re-usability and functional composition.
@@ -497,3 +501,13 @@ function userDetails(username) {
     Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
 31. ### What is a service worker?
     A Service worker is basically a script (JavaScript file) that runs in background, separate from a web page and provide features that don't need a web page or user interaction. Some of the major features of service workers are Rich offline experiences(offline first web application development), periodic background syncs, push notifications, intercept and handle network requests and programmatically managing a cache of responses.
+32. ### How do you manipulate DOM using service worker?
+    Service worker can't access the DOM directly. But it can communicate with the pages it controls by responding to messages sent via the `postMessage` interface, and those pages can manipulate the DOM.
+33. ### How do you reuse information across service worker restarts?
+    The problem with service worker is that it get terminated when not in use, and restarted when it's next needed, so you cannot rely on global state within a service worker's `onfetch` and `onmessage` handlers. In this case, service workers will have access to IndexedDB API in order to persist and reuse across restarts.
+34. ### What is IndexedDB?
+    IndexedDB is a low-level API for client-side storage of larger amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data.
+35. ### What is web storage?
+    Web storage is an API that provides a mechanism by which browsers can store key/value pairs, in a much more intuitive fashion than using cookies. The web storage provides two mechanisms for storing data on the client.
+    1. **Session storage:** It stores data with no expiration date.
+    2. **Local storage:** It stores data for one session and the data is lost when the browser tab is closed.
