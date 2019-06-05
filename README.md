@@ -268,9 +268,9 @@ const firstOrder = () => console.log ('Iam a first order functionn!');
 13. ### What is a higher order function?
 Higher-order function is a function that accepts other function as an argument or returns a function as a return value.
 ```javascript
-const increment = x => x+1;
-const higherOrder = higherOrder(increment);
-console.log(higherOrder(1));
+const firstOrderFunc = () => console.log ('Hello I'am a First order function');
+const higherOrder = ReturnFirstOrderFunc => ReturnFirstOrderFunc ();
+higherOrder (firstOrderFunc);
 ```
 14. ### What is a unary function?
 Unary function (i.e. monadic) is a function that accepts exactly one argument. Let us take an example of unary function. It stands for single argument accepted by a function.
@@ -283,7 +283,7 @@ Currying is the process of taking a function with multiple arguments and turning
 const multiArgFunction = (a, b, c) => a + b + c;
 const curryUnaryFunction = a => b => c => a + b + c;
 curryUnaryFunction (1); // returns a function: b => c =>  1 + b + c
-curryUnaryFunction (1) (2); // returns a function: c => 2 + c
+curryUnaryFunction (1) (2); // returns a function: c => 3 + c
 curryUnaryFunction (1) (2) (3); // returns the number 6
 ```
 Curried functions are great to improve code re-usability and functional composition.
