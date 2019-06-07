@@ -41,6 +41,7 @@
 |33 | [How do you reuse information across service worker restarts?](#how-do-you-reuse-information-across-service-worker-restarts)|
 |34 | [What is IndexedDB?](#what-is-indexeddb)|
 |35 | [What is web storage?](#what-is-web-storage)|
+|36 | [What is a post message?](#what-is-a-post-message)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -511,3 +512,5 @@ function userDetails(username) {
     Web storage is an API that provides a mechanism by which browsers can store key/value pairs, in a much more intuitive fashion than using cookies. The web storage provides two mechanisms for storing data on the client.
     1. **Session storage:** It stores data with no expiration date.
     2. **Local storage:** It stores data for one session and the data is lost when the browser tab is closed.
+36. ### What is a post message?
+    Post message is a method that enables cross-origin communication between Window objects.(i.e, between a page and a pop-up that it spawned, or between a page and an iframe embedded within it). Generally, scripts on different pages are allowed to access each other if and only if the pages follow same-origin policy(ppages share the same protocol, port number, and host).
