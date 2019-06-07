@@ -37,6 +37,7 @@
 |29 | [Why do you need modules?](#why-do-you-need-modules)|
 |30 | [What is scope in javascript?](#what-is-scope-in-javascript)|
 |31 | [What is a service worker?](#what-is-a-service-worker)|
+|32 | [When should I use Arrow functions in ES6?](#When-should-I-use-Arrow-functions-in-ES6?)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -497,3 +498,12 @@ function userDetails(username) {
     Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
 31. ### What is a service worker?
     A Service worker is basically a script (JavaScript file) that runs in background, separate from a web page and provide features that don't need a web page or user interaction. Some of the major features of service workers are Rich offline experiences(offline first web application development), periodic background syncs, push notifications, intercept and handle network requests and programmatically managing a cache of responses.
+32. ### When should I use Arrow functions in ES6?
+    I'm now using the following rule of thumb for functions in ES6 and beyond:
+    Use function in the global scope and for Object.prototype properties.
+    Use class for object constructors.
+    Use => everywhere else.
+    Why use arrow functions almost everywhere?
+      1. Scope safety: When arrow functions are used consistently, everything is guaranteed to use the same thisObject as the root. If even a single standard function callback is mixed in with a bunch of arrow functions there's a chance the scope will become messed up.
+      2. Compactness: Arrow functions are easier to read and write. (This may seem opinionated so I will give a few examples further on).
+      3. Clarity: When almost everything is an arrow function, any regular function immediately sticks out for defining the scope. A developer can always look up the next-higher function statement to see what the thisObject is.
