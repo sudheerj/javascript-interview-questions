@@ -42,6 +42,11 @@
 |34 | [What is IndexedDB?](#what-is-indexeddb)|
 |35 | [What is web storage?](#what-is-web-storage)|
 |36 | [What is a post message?](#what-is-a-post-message)|
+|37 | [What is a cookie?](#what-is-a-cookie)|
+|38 | [Why do you need a Cookie?](#why-do-you-need-a-cookie)|
+|39 | [What are the options in a cookie?](#what-are-the-options-in-a-cookie)|
+|40 | [How do you delete a cookie?](#how-do-you-delete-a-cookie)|
+|41 | [What are the differences between cookie, local storage and session storage?](#What-are-the-differences-between-cookie,-local-storage-and-session-storage)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -513,4 +518,39 @@ function userDetails(username) {
     1. **Session storage:** It stores data with no expiration date.
     2. **Local storage:** It stores data for one session and the data is lost when the browser tab is closed.
 36. ### What is a post message?
-    Post message is a method that enables cross-origin communication between Window objects.(i.e, between a page and a pop-up that it spawned, or between a page and an iframe embedded within it). Generally, scripts on different pages are allowed to access each other if and only if the pages follow same-origin policy(ppages share the same protocol, port number, and host).
+    Post message is a method that enables cross-origin communication between Window objects.(i.e, between a page and a pop-up that it spawned, or between a page and an iframe embedded within it). Generally, scripts on different pages are allowed to access each other if and only if the pages follow same-origin policy(i.e, pages share the same protocol, port number, and host).
+37. ### What is a Cookie?
+    A cookie is a piece of data that is stored on your computer to be accessed by your browser. Cookies are saved as key/value pairs.
+    For example, you can create a cookie named username as below,
+    ```javascript
+    document.cookie = "username=John";
+    ```
+38. ### Why do you need a Cookie?
+    Cookies are used to remember information about the user profile(such as username). It basically involves two steps,
+    1. When a user visits a web page, user profile can be stored in a cookie.
+    2. Next time the user visits the page, the cookie remembers user profile.
+39. ### What are the options in a cookie?
+    There are few below options available for a cookie,
+    1. By default, the cookie is deleted when the browser is closed but you can change this behavior by setting expiry date (in UTC time).
+    ```javascript
+    document.cookie = "username=John expires=Sat, 8 Jun 2019 12:00:00 UTC";
+    ```
+    2. By default, the cookie belongs to a current page. But you can tell the browser what path the cookie belongs to using a path parameter.
+    ```javascript
+    document.cookie = "username=John path=/services";
+    ```
+40. ### How do you delete a cookie?
+    You can delete a cookie by setting the expiry date as a passed date. You don't need to specify a cookie value in this case.
+    For example, you can delete a username cookie in the current page as below.
+    ```javascript
+    document.cookie = "username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;";
+    ```
+    **Note:** You should define the cookie path option to ensure that you delete the right cookie. Some browsers doesn't allow to delete a cookie unless you specify a path parameter.
+41. ### What are the differences between cookie, local storage and session storage?
+    Below are some of the differences between cookie, local storage and session storage,
+    | Feature | Cookie | Local storage | Session storage |
+    |---- | --------- | ----- | ----- |
+    | Accessed on client or server side | Both server-side & client-side | client-side only | client-side only |
+    | Lifetime | As configured using Expires option  | until deleted | until tab is closed |
+    | SSL support | Supported | Not supported | Not supported |
+    | Maximum data size | 4KB | 5 MB | 5MB |
