@@ -47,6 +47,12 @@
 |39 | [What are the options in a cookie?](#what-are-the-options-in-a-cookie)|
 |40 | [How do you delete a cookie?](#how-do-you-delete-a-cookie)|
 |41 | [What are the differences between cookie, local storage and session storage?](#What-are-the-differences-between-cookie,-local-storage-and-session-storage)|
+|42 | [What is the main difference between localStorage and sessionStorage?](#what-is-the-main-difference-between-localstorage-and-sessionstorage)|
+|43 | [How do you access web storage?](#how-do-you-access-web-storage)|
+|44 | [What are the methods available on session storage?](#what-are-the-methods-available-on-session-storage)|
+|45 | [What is a storage event and its event handler?](#what-is-a-storage-event-and-its-event-handler)|
+|46 | [Why do you need web storage?](#why-do-you-need-web-storage)|
+|47 | [How do you check web storage browser support?](#how-do-you-check-web-storage-browser-support)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -514,8 +520,8 @@ function userDetails(username) {
 34. ### What is IndexedDB?
     IndexedDB is a low-level API for client-side storage of larger amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data.
 35. ### What is web storage?
-    Web storage is an API that provides a mechanism by which browsers can store key/value pairs, in a much more intuitive fashion than using cookies. The web storage provides two mechanisms for storing data on the client.
-    1. **Session storage:** It stores data with no expiration date.
+    Web storage is an API that provides a mechanism by which browsers can store key/value pairs locally within the user's browser, in a much more intuitive fashion than using cookies. The web storage provides two mechanisms for storing data on the client.
+    1. **Session storage:** It stores data for current origin with no expiration date.
     2. **Local storage:** It stores data for one session and the data is lost when the browser tab is closed.
 36. ### What is a post message?
     Post message is a method that enables cross-origin communication between Window objects.(i.e, between a page and a pop-up that it spawned, or between a page and an iframe embedded within it). Generally, scripts on different pages are allowed to access each other if and only if the pages follow same-origin policy(i.e, pages share the same protocol, port number, and host).
@@ -548,9 +554,59 @@ function userDetails(username) {
     **Note:** You should define the cookie path option to ensure that you delete the right cookie. Some browsers doesn't allow to delete a cookie unless you specify a path parameter.
 41. ### What are the differences between cookie, local storage and session storage?
     Below are some of the differences between cookie, local storage and session storage,
+
     | Feature | Cookie | Local storage | Session storage |
     |---- | --------- | ----- | ----- |
     | Accessed on client or server side | Both server-side & client-side | client-side only | client-side only |
     | Lifetime | As configured using Expires option  | until deleted | until tab is closed |
     | SSL support | Supported | Not supported | Not supported |
     | Maximum data size | 4KB | 5 MB | 5MB |
+42. ### What is the main difference between localStorage and sessionStorage?
+    LocalStorage is same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.
+43. ### How do you access web storage?
+    The Window object implements the `WindowLocalStorage` and `WindowSessionStorage` objects which has `localStorage`(window.localStorage) and `sessionStorage`(window.sessionStorage) properties respectively. These properties create an instance of the Storage object, through which data items can be set, retrieved and removed for a specific domain and storage type (session or local).
+    For example, you can read and write on local storage objects as below
+    ```javascript
+    localStorage.setItem('logo', document.getElementById('logo').value);
+    localStorage.getItem('logo');
+    ```
+44. ### What are the methods available on session storage?
+    The session storage provided methods for reading, writing and clearing the session data
+    ```javascript
+    // Save data to sessionStorage
+    sessionStorage.setItem('key', 'value');
+
+    // Get saved data from sessionStorage
+    let data = sessionStorage.getItem('key');
+
+    // Remove saved data from sessionStorage
+    sessionStorage.removeItem('key');
+
+    // Remove all saved data from sessionStorage
+    sessionStorage.clear();
+    ```
+45. ### What is a storage event and its event handler?
+    The StorageEvent is an event that fires when a storage area has been changed in the context of another document. Whereas onstorage property is an EventHandler for processing storage events.
+    The syntax would be as below
+    ```javascript
+     window.onstorage = functionRef;
+    ```
+    Let's take the example usage of onstorage event handler which logs the storage key and it's values
+    ```javascript
+    window.onstorage = function(e) {
+      console.log('The ' + e.key +
+        ' key has been changed from ' + e.oldValue +
+        ' to ' + e.newValue + '.');
+    };
+    ```
+46. ### Why do you need web storage?
+    Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance. Also, the information is never transferred to the server. Hence this is recommended approach than Cookies.
+47. ### How do you check web storage browser support?
+    You need to check browser support for localStorage and sessionStorage before using web storage,
+    ```javascript
+    if (typeof(Storage) !== "undefined") {
+      // Code for localStorage/sessionStorage.
+    } else {
+      // Sorry! No Web Storage support..
+    }
+    ```
