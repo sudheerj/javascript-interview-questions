@@ -56,6 +56,9 @@
 |48 | [How do you check web workers browser support?](#how-do-you-check-web-workers-browser-support)|
 |49 | [Give an example of web worker?](#give-an-example-of-web-worker)|
 |50 | [What are the restrictions of web workers on DOM?](#what-are-the-restrictions-of-web-workers-on-dom)|
+|51 | [What is a promise?](#what-is-a-promise)|
+|52 | [Why do you need a promise?](#why-do-you-need-a-promise)|
+|53 | [What are the three states of promise?](#what-are-the-three-states-of-promise)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -663,4 +666,18 @@ function userDetails(username) {
     1. Window object
     2. Document object
     3. Parent object
-
+51. ### What is a promise?
+    A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
+    The syntax of promise would be as below
+    ```javascript
+    const promise = new Promise(function(resolve, reject) {
+      // promise description
+    })
+    ```
+52. ### Why do you need a promise?
+    Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
+53. ### What are the three states of promise?
+    Promises have three states:
+    1. Pending: This is an initial state of the Promise before an operation begins
+    2. Fulfilled: This state indicates that specified operation was completed.
+    3. Rejected: This state indicates that the operation did not complete. In this case an error value will be thrown.
