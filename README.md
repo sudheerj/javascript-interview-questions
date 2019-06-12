@@ -715,8 +715,8 @@ function userDetails(username) {
     secondFunction();
 
     Output
-    // First function called
     // Second function called
+    // First function called
     ```
     As observed from the output, javascript didn't wait for the response of first function and remaining code block get executed.
 
