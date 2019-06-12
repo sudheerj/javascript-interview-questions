@@ -718,7 +718,7 @@ function userDetails(username) {
     // Second function called
     // First function called
     ```
-    As observed from the output, javascript didn't wait for the response of first function and remaining code block get executed.
+    As observed from the output, javascript didn't wait for the response of first function and remaining code block get executed. So callbacks used in a way to make sure that certain code doesn’t execute until other code finished execution.
 
 
 
