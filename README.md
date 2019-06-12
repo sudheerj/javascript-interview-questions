@@ -61,6 +61,7 @@
 |53 | [What are the three states of promise?](#what-are-the-three-states-of-promise)|
 |54 | [What is a callback function?](#what-is-a-callback-function)|
 |55 | [Why do we need callbacks?](#why-do-we-need-callbacks)|
+|56 | [What is a callback hell?](#what-is-a-callback-hell)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -719,6 +720,19 @@ function userDetails(username) {
     // First function called
     ```
     As observed from the output, javascript didn't wait for the response of first function and remaining code block get executed. So callbacks used in a way to make sure that certain code doesn’t execute until other code finished execution.
+56. ### What is a callback hell?
+    Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard to read and debug when dealing with asynchronous logic. The callback hell looks like below,
+    ```javascript
+    async1(function(){
+        async2(function(){
+            async3(function(){
+                async4(function(){
+                    ....
+                });
+            });
+        });
+    });
+    ```
 
 
 
