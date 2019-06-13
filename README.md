@@ -62,6 +62,10 @@
 |54 | [What is a callback function?](#what-is-a-callback-function)|
 |55 | [Why do we need callbacks?](#why-do-we-need-callbacks)|
 |56 | [What is a callback hell?](#what-is-a-callback-hell)|
+|57 | [What is server-sent events?](#what-is-server-sent-events)|
+|58 | [How do you receive server-sent event notifications?](#how-do-you-receive-server-sent-event-notifications)|
+|59 | [How do you check browser support for server-sent events?](#how-do-you-check-browser-support-for-server-sent-events)|
+|60 | [What are the events available for server sent events?](#what-are-the-events-available-for-server-sent-events)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -733,6 +737,36 @@ function userDetails(username) {
         });
     });
     ```
+57. ### What is server-sent events?
+    Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP connection without resorting to polling. These are a one way communications channel - events flow from server to client only. This is been used in Facebook/Twitter updates, stock price updates, news feeds etc.
+58. ### How do you receive server-sent event notifications?
+    The EventSource object is used to receive server-sent event notifications. For example, you can receive messages from server as below,
+    ```javascript
+    if(typeof(EventSource) !== "undefined") {
+      var source = new EventSource("sse_generator.js");
+      source.onmessage = function(event) {
+        document.getElementById("output").innerHTML += event.data + "<br>";
+      };
+    }
+    ```
+59. ### How do you check browser support for server-sent events?
+    You can perform browser support for server-sent events before using it as below,
+    ```javascript
+    if(typeof(EventSource) !== "undefined") {
+      // Server-sent events supported. Let's have some code here!
+    } else {
+      // No server-sent events supported
+    }
+    ```
+60. ### What are the events available for server sent events?
+    Below are the list of events available for server sent events
+    | Event | Description |
+    |---- | ---------
+    | onopen  | It is used when a connection to the server is opened |
+    | onmessage | This event is used when a message is received  |
+    | onerror | It happens when an error occurs|
+
+
 
 
 
