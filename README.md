@@ -67,6 +67,7 @@
 |59 | [How do you check browser support for server-sent events?](#how-do-you-check-browser-support-for-server-sent-events)|
 |60 | [What are the events available for server sent events?](#what-are-the-events-available-for-server-sent-events)|
 |61 | [What are the main rules of promise?](#what-are-the-main-rules-of-promise)|
+|62 | [What is callback in callback?](#what-is-callback-in-callback)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -773,6 +774,26 @@ function userDetails(username) {
     2. A pending promise may transition into either fulfilled or rejected state
     3. A fulfilled or rejected promise is settled and it must not transition into any other state.
     4. Once a promise is settled, the value must not change.
+62. ### What is callback in callback?
+    You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks.
+    ```javascript
+    loadScript('/script1.js', function(script) {
+       console.log('first script is loaded');
+
+      loadScript('/script2.js', function(script) {
+
+        console.log('second script is loaded');
+
+        loadScript('/script3.js', function(script) {
+
+            console.log('third script is loaded');
+          // after all scripts are loaded
+        });
+
+      })
+
+    });
+    ```
 
 
 
