@@ -66,6 +66,7 @@
 |58 | [How do you receive server-sent event notifications?](#how-do-you-receive-server-sent-event-notifications)|
 |59 | [How do you check browser support for server-sent events?](#how-do-you-check-browser-support-for-server-sent-events)|
 |60 | [What are the events available for server sent events?](#what-are-the-events-available-for-server-sent-events)|
+|61 | [What are the main rules of promise?](#what-are-the-main-rules-of-promise)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -765,6 +766,13 @@ function userDetails(username) {
     | onopen  | It is used when a connection to the server is opened |
     | onmessage | This event is used when a message is received  |
     | onerror | It happens when an error occurs|
+
+61. ### What are the main rules of promise?
+    A promise must follow a specific set of rules,
+    1. A promise is an object that supplies a standard-compliant `.then()` method
+    2. A pending promise may transition into either fulfilled or rejected state
+    3. A fulfilled or rejected promise is settled and it must not transition into any other state.
+    4. Once a promise is settled, the value must not change.
 
 
 
