@@ -80,6 +80,8 @@
 |72 | [What is undefined property?](#what-is-undefined-property)|
 |73 | [What is null value?](#what-is-null-value)|
 |74 | [What is the difference between null and undefined?](#what-is-the-difference-between-null-and-undefined)|
+|75 | [What is eval?](#What-is-eval)|
+|76 | [What is the difference between window and document?](#what-is-the-difference-between-window-and-document)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -929,8 +931,18 @@ function userDetails(username) {
     | The null value is a primitive value that represents the null, empty, or non-existent reference. | The undefined value is a primitive value used when a variable has not been assigned a value.|
     | Indicates the absence of a value for a variable | Indicates absence of variable itself |
     | Converted to zero (0) while performing primitive operations | Converted to NaN while performing primitive operations |
-
-
+75. ### What is eval?
+    The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
+    ```javascript
+    console.log(eval('1 + 2')); //  3
+    ```
+76. ### What is the difference between window and document?
+    Below are the main differences between window and document
+    | Window | Document |
+    |---- | ---------
+    | It is the root level element in any web page  | It is the direct child of the window object. This is also known as Document Object Model(DOM) |
+    | By default window object is available implicitly in the page | You can access it via window.document or document.  |
+    | It has methods like alert(), confirm() and properties like document, location | It provides methods like getElementById, getElementByTagName, createElement etc  |
 
 
 
