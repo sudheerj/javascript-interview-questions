@@ -68,6 +68,9 @@
 |60 | [What are the events available for server sent events?](#what-are-the-events-available-for-server-sent-events)|
 |61 | [What are the main rules of promise?](#what-are-the-main-rules-of-promise)|
 |62 | [What is callback in callback?](#what-is-callback-in-callback)|
+|63 | [What is promise chaining?](#what-is-promise-chaining)|
+|64 | [What is promise.all](#what-is-promise.all)|
+|65 | [What is the purpose of race method in promise?](#what-is-the-purpose-of-race-method-in-promise)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -794,6 +797,57 @@ function userDetails(username) {
 
     });
     ```
+63. ### What is promise chaining?
+    The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining. Let's take an example of promise chaining for calculating the final result,
+    ```javascript
+    new Promise(function(resolve, reject) {
+
+      setTimeout(() => resolve(1), 1000);
+
+    }).then(function(result) {
+
+      console.log(result); // 1
+      return result * 2;
+
+    }).then(function(result) {
+
+      console.log(result); // 2
+      return result * 3;
+
+    }).then(function(result) {
+
+      console.log(result); // 6
+      return result * 4;
+
+    });
+    ```
+    In the above handlers, the result is passed to the chain of .then() handlers with the below work flow,
+    1. The initial promise resolves in 1 second,
+    2. After that `.then` handler is called by logging the result(1) and then return a promise with the value of result * 2.
+    3. After that the value passed to the next `.then` handler by logging the result(2) and return a promise with result * 3.
+    4. Finally the value passed to the last `.then` handler by logging the result(6) and return a promise with result * 4.
+64. ### What is promise.all?
+    Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved when all the promises get resolved or any one of them gets rejected. For example, the syntax of promise.all method is below,
+    ```javascript
+    Promise.all([Promise1, Promise2, Promise3]) .then(result) => {   console.log(result) }) .catch(error => console.log(`Error in promises ${error}`))
+    ```
+    **Note:** Remember that the order of the promises(output the result) is maintained as per input order.
+65. ### What is the purpose of race method in promise?
+    Promise.race() method will return the promise instance which is firstly resolved or rejected. Let's take an example of race() method where promise2 is resolved first
+    ```javascript
+    var promise1 = new Promise(function(resolve, reject) {
+        setTimeout(resolve, 500, 'one');
+    });
+    var promise2 = new Promise(function(resolve, reject) {
+        setTimeout(resolve, 100, 'two');
+    });
+
+    Promise.race([promise1, promise2]).then(function(value) {
+      console.log(value); // "two" // Both promises will resolve, but promise2 is faster
+    });
+    ```
+
+
 
 
 
