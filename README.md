@@ -82,6 +82,8 @@
 |74 | [What is the difference between null and undefined?](#what-is-the-difference-between-null-and-undefined)|
 |75 | [What is eval?](#What-is-eval)|
 |76 | [What is the difference between window and document?](#what-is-the-difference-between-window-and-document)|
+|77 | [How do you access history in javascript?](#how-do-you-access-history-in-javascript)|
+|78 | [What are the javascript data types?](#what-are-the-javascript-data-types)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -943,6 +945,24 @@ function userDetails(username) {
     | It is the root level element in any web page  | It is the direct child of the window object. This is also known as Document Object Model(DOM) |
     | By default window object is available implicitly in the page | You can access it via window.document or document.  |
     | It has methods like alert(), confirm() and properties like document, location | It provides methods like getElementById, getElementByTagName, createElement etc  |
+77. ### How do you access history in javascript?
+    The window.history object contains the browsers history. You can load previous and next URLs in the history using back() and next() methods.
+    ```javascript
+    function goBack() {
+      window.history.back()
+    }
+    function goForward() {
+      window.history.forward()
+    }
+    ```
+    **Note:** You can also access history without window prefix.
+78. ### What are the javascript data types?
+    Below are the list of javascript data types available
+    1. Number
+    2. String
+    3. Boolean
+    4. Object
+    5. Undefined
 
 
 
