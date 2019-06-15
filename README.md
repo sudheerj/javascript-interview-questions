@@ -78,6 +78,7 @@
 |70 | [What is the purpose of delete operator?](#what-is-the-purpose-of-delete-operator)|
 |71 | [What is typeof operator?](#what-is-typeof-operator)|
 |72 | [What is undefined property?](#what-is-undefined-property)|
+|73 | [What is null value?](#what-is-null-value)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -910,6 +911,13 @@ function userDetails(username) {
     Any variable can be emptied by setting the value to undefined.
     ```javascript
     user = undefined
+    ```
+73. ### What is null value?
+    The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object.
+    You can empty the variable by setting the value to null.
+    ```javascript
+    var user = null;
+    console.log(typeof(user)) //object
     ```
 
 
