@@ -77,6 +77,7 @@
 |69 | [What is the purpose of double exclamation?](#what-is-the-purpose-of-double-exclamation)|
 |70 | [What is the purpose of delete operator?](#what-is-the-purpose-of-delete-operator)|
 |71 | [What is typeof operator?](#what-is-typeof-operator)|
+|72 | [What is undefined property?](#what-is-undefined-property)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -900,6 +901,17 @@ function userDetails(username) {
     typeof "John Abraham"     // Returns "string"
     typeof (1 + 2)        // Returns "number"
     ```
+72. ### What is undefined property?
+    The undefined property indicates that a variable has not been assigned a value, or not declared at all. The type of undefined value is undefined too.
+    ```javascript
+    var user;    // Value is undefined, type is undefined
+    console.log(typeof(user)) //undefined
+    ```
+    Any variable can be emptied by setting the value to undefined.
+    ```javascript
+    user = undefined
+    ```
+
 
 
 
