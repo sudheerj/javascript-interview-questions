@@ -84,6 +84,12 @@
 |76 | [What is the difference between window and document?](#what-is-the-difference-between-window-and-document)|
 |77 | [How do you access history in javascript?](#how-do-you-access-history-in-javascript)|
 |78 | [What are the javascript data types?](#what-are-the-javascript-data-types)|
+|79 | [What is isNaN?](#what-is-isnan)|
+|80 | [What are the differences between undeclared and undefined variables?](#what-are-the-differences-between-undeclared-and-undefined-variables)|
+|81 | [What are global variables?](#what-are-global-variables)|
+|82 | [What are the problems with global variables?](#what-are-the-problems-with-global-variables)|
+|83 | [What is NaN property?](#what-is-nan-property)|
+|84 | [What is the purpose of isFinite function?](#what-is-the-purpose-of-isfinite-function)
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -963,6 +969,43 @@ function userDetails(username) {
     3. Boolean
     4. Object
     5. Undefined
+79. ### What is isNaN?
+    The isNaN() function is used to determine whether a value is an illegal number (Not-a-Number) or not. i.e, This function returns true if the value equates to NaN. Otherwise it returns false.
+    ```javascript
+    isNaN('Hello') //true
+    isNaN('100') //false
+    ```
+80. ### What are the differences between undeclared and undefined variables?
+    Below are the major differences between undeclared and undefined variables
+    | undeclared | undefined |
+    |---- | ---------
+    | These variables do not exist in a program and are not declared  | These variables declared in the program but have not assigned any value |
+    | If you try to read the value of an undeclared variable, then a runtime error is encountered | If you try to read the value of an undefined variable, an undefined value is returned.  |
+81. ### What are global variables?
+    Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
+    ```javascript
+    msg = "Hello" // var is missing, it becomes global variable
+    ```
+82. ### What are the problems with global variables?
+    The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
+83. ### What is NaN property?
+    The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases
+    ```javascript
+    Math.sqrt(-1)
+    parseInt("Hello")
+    ```
+84. ### What is the purpose of isFinite function?
+    The isFinite() function is used to determine whether a number is a finite, legal number. It returns false if the value is +infinity, -infinity, or NaN (Not-a-Number), otherwise it returns true.
+    ```javascript
+    isFinite(Infinity);  // false
+    isFinite(NaN);       // false
+    isFinite(-Infinity); // false
+
+    isFinite(100);         // true
+    ```
+
+
+
 
 
 
