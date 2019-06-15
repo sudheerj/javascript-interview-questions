@@ -74,6 +74,9 @@
 |66 | [What is a strict mode in javascript?](#what-is-a-strict-mode-in-javascript)|
 |67 | [Why do you need strict mode?](#why-do-you-need-strict-mode)|
 |68 | [How do you declare strict mode?](#how-do-you-declare-strict-mode)|
+|69 | [What is the purpose of double exclamation?](#what-is-the-purpose-of-double-exclamation)|
+|70 | [What is the purpose of delete operator?](#what-is-the-purpose-of-delete-operator)|
+|71 | [What is typeof operator?](#what-is-typeof-operator)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -869,6 +872,33 @@ function userDetails(username) {
       "use strict";
       y = 3.14;   // This will cause an error
     }
+    ```
+69. ### What is the purpose of double exclamation?
+    The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, true.
+    For example, you can test IE version using this expression as below,
+    ```javascript
+    let isIE8 = false;
+    isIE8 = !! navigator.userAgent.match(/MSIE 8.0/);
+    console.log(isIE8); // returns true or false
+    ```
+    If you don't use this expression then it returns the original value.
+    ```javascript
+    console.log(navigator.userAgent.match(/MSIE 8.0/));  // returns either an Array or null
+    ```
+    **Note:** The expression !! is not an operator, but it is just twice of ! operator.
+70. ### What is the purpose of delete operator?
+    The delete keyword is used to delete the property as well as its value.
+    ```javascript
+    var user= {name: "John", age:20};
+    delete user.age;
+
+    console.log(user); // {name: "John"}
+    ```
+71. ### What is typeof operator?
+    You can use the JavaScript typeof operator to find the type of a JavaScript variable. It returns the type of a variable or an expression.
+    ```javascript
+    typeof "John Abraham"     // Returns "string"
+    typeof (1 + 2)        // Returns "number"
     ```
 
 
