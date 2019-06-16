@@ -93,6 +93,11 @@
 |85 | [What is an event flow?](#what-is-an-event-flow)|
 |86 | [What is event bubbling?](#what-is-event-bubbling)|
 |87 | [What is event capturing?](#what-is-event-capturing)|
+|88 | [How do you submit a form using JavaScript?](#how-do-you-submit-a-form-using-javascript)|
+|89 | [How do you find operating system details?](#how-do-you-find-operating-system-details)|
+|90 | [What is the difference between document load and DOMContentLoaded events?](#what-is-the-difference-between-document-load-and-domcontentloaded-events)|
+|91 | [What is the difference between native, host and user objects?](#what-is-the-difference-between-native,-host-and-user-objects)|
+|92 | [What are the tools or techniques used for debugging JavaScript code?](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1013,6 +1018,31 @@ function userDetails(username) {
     2. Bottom to Top (Event Bubbling)
 86. ### What is event bubbling?
 87. ### What is event capturing?
+88. ### How do you submit a form using JavaScript?
+    You can submit a form using JavaScript use document.form[0].submit(). All the form input's information is submitted using onsubmit event handler
+    ```javascript
+    function submit() {
+        document.form[0].submit();
+    }
+    ```
+89. ### How do you find operating system details?
+    The window.navigator object contains information about the visitor's browser os details. Some of the OS properties are avaialble under platform property,
+    ```javascript
+    console.log(navigator.platform);
+    ```
+90. ### What is the difference between document load and DOMContentLoaded events?
+    The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).
+91. ### What is the difference between native, host and user objects?
+    `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
+    `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc considered as host objects.
+    `User objects` are objects defined in the javascript code. For example, User object created for profile information.
+92. ### What are the tools or techniques used for debugging JavaScript code?
+    You can use below tools or techniques for debugging javascript
+    1. Chrome Devtools
+    2. debugger statement
+    3. Good old console.log statement
+
+
 
 
 
