@@ -98,6 +98,14 @@
 |90 | [What is the difference between document load and DOMContentLoaded events?](#what-is-the-difference-between-document-load-and-domcontentloaded-events)|
 |91 | [What is the difference between native, host and user objects?](#what-is-the-difference-between-native,-host-and-user-objects)|
 |92 | [What are the tools or techniques used for debugging JavaScript code?](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)|
+|93 | [What are the pros and cons of promises over callbacks?](#what-are-the-pros-and-cons-of-promises-over-callbacks)|
+|94 | [What is the difference between an attribute and a property?](#what-is-the-difference-between-an-attribute-and-a-property)|
+|95 | [What is same-origin policy?](#what-is-same-origin-policy)|
+|96 | [What is the purpose of void 0?](#what-is-the-purpose-of-void-0)|
+|97 | [](#)|
+|98 | [](#)|
+|99 | [](#)|
+|100| [](#)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1041,10 +1049,45 @@ function userDetails(username) {
     1. Chrome Devtools
     2. debugger statement
     3. Good old console.log statement
+93. ### What are the pros and cons of promises over callbacks?
+    Below are the list of pros and cons of promises over callbacks,
+    **Pros:**
+    1. It avoids callback hell which is unreadable
+    2. Easy to write sequential asynchronous code with .then()
+    3. Easy to write parallel asynchronous code with Promise.all()
+    4. Solves some of the common problems of callbacks(call the callback too late, too early, many times and swallow errors/exceptions)
 
-
-
-
+    **Cons:**
+    1. It makes little complex code
+    2. You need to load a polyfill if ES6 is not supported
+94. ### What is the difference between an attribute and a property?
+    Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes type and value,
+    ```javascript
+    <input type="text" value="Name:">
+    ```
+    You can retrieve the attribute value as below,
+    ```javascript
+    const input = document.querySelector('input');
+    console.log(input.getAttribute('value')); // Good morning
+    console.log(input.value); // Good morning
+    ```
+    And after you change the value of the text field to "Good evening", it becomes like
+    ```javascript
+    console.log(input.getAttribute('value')); // Good morning
+    console.log(input.value); // Good evening
+    ```
+95. ### What is same-origin policy?
+    The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
+96. ### What is the purpose of void 0?
+    Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML document that uses href="JavaScript:Void(0);" within an <a> element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
+    For example, the below link notify the message without reloading the page
+    ```javascript
+    <a href="JavaScript:void(0);" onclick="alert('Well done!')">Click Me!</a>
+    ```
+97. ### ?
+98. ### ?
+99. ### ?
+100.### ?
 
 
 
