@@ -102,8 +102,8 @@
 |94 | [What is the difference between an attribute and a property?](#what-is-the-difference-between-an-attribute-and-a-property)|
 |95 | [What is same-origin policy?](#what-is-same-origin-policy)|
 |96 | [What is the purpose of void 0?](#what-is-the-purpose-of-void-0)|
-|97 | [](#)|
-|98 | [](#)|
+|97 | [Is JavaScript a compiled or interpreted language?](#is-javascript-a-compiled-or-interpreted-language)|
+|98 | [Is JavaScript a case-sensitive language?](#is-javascript-a-case-sensitive-language)|
 |99 | [](#)|
 |100| [](#)|
 
@@ -1084,8 +1084,10 @@ function userDetails(username) {
     ```javascript
     <a href="JavaScript:void(0);" onclick="alert('Well done!')">Click Me!</a>
     ```
-97. ### ?
-98. ### ?
+97. ### Is JavaScript a compiled or interpreted language?
+    JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays  modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+98. ### Is JavaScript a case-sensitive language?
+    Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
 99. ### ?
 100.### ?
 
