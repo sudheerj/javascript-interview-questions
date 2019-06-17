@@ -104,8 +104,9 @@
 |96 | [What is the purpose of void 0?](#what-is-the-purpose-of-void-0)|
 |97 | [Is JavaScript a compiled or interpreted language?](#is-javascript-a-compiled-or-interpreted-language)|
 |98 | [Is JavaScript a case-sensitive language?](#is-javascript-a-case-sensitive-language)|
-|99 | [](#)|
-|100| [](#)|
+|99 | [Is there any relation between Java and JavaScript?](#is-there-any-relation-between-java-and-javascript)|
+|100| [What are events?](#what-are-events)|
+|101| [Who created javascript?](#who-created-javascript)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1025,7 +1026,9 @@ function userDetails(username) {
     1. Top to Bottom(Event Capturing)
     2. Bottom to Top (Event Bubbling)
 86. ### What is event bubbling?
+    Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
 87. ### What is event capturing?
+    Event bubbling is a type of event propagation where the event is first captured by the outermost element and , and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the inner DOM element.
 88. ### How do you submit a form using JavaScript?
     You can submit a form using JavaScript use document.form[0].submit(). All the form input's information is submitted using onsubmit event handler
     ```javascript
@@ -1088,8 +1091,32 @@ function userDetails(username) {
     JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays  modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
 98. ### Is JavaScript a case-sensitive language?
     Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
-99. ### ?
-100.### ?
+99. ### Is there any relation between Java and JavaScript?
+    No, they are entirely two different programming languages and has nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
+100. ### What are events?
+    Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events.
+    Some of the examples of HTML events are
+    1. Web page has finished loading
+    2. Input field was changed
+    3. Button was clicked
+    Let's describe the behavior of click event for button element
+    ```javascript
+    <!doctype html>
+    <html>
+      <head>
+        <script>
+          function greeting() {
+            alert('Hello! Good morning');
+          }
+        </script>
+      </head>
+      <body>
+        <button type="button" onclick="greeting()">Click me</button>
+      </body>
+    </html>
+    ```
+101. ### Who created javascript?
+     JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. Initially it was developed under the name `Mocha`, but later the language was officially called `LiveScript` when it first shipped in beta releases of Netscape.
 
 
 
