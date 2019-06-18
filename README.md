@@ -107,6 +107,8 @@
 |99 | [Is there any relation between Java and JavaScript?](#is-there-any-relation-between-java-and-javascript)|
 |100| [What are events?](#what-are-events)|
 |101| [Who created javascript?](#who-created-javascript)|
+|102| [What is the use of preventDefault method?](#what-is-the-use-of-preventdefault-method)|
+|103| [What is the use of stopPropagation method?](#what-is-the-use-of-stoppropagation-method)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1117,6 +1119,33 @@ function userDetails(username) {
     ```
 101. ### Who created javascript?
      JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. Initially it was developed under the name `Mocha`, but later the language was officially called `LiveScript` when it first shipped in beta releases of Netscape.
+102. ### What is the use of preventDefault method?
+    The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behaviour that belongs to the event will not occur. For example, prevent form submission when clicking on submit button and prevent opening the page URL when clicking on hyper link are some common usecases.
+    ```javascript
+    document.getElementById("link").addEventListener("click", function(event){
+      event.preventDefault();
+    });
+    ```
+    **Note:** Remember that not all events are cancelable.
+103. ### What is the use of stopPropagation method?
+    The stopPropagation method is used to stop the event from bubbling up the event chain. For example, the below nested divs with stopPropagation method prevents default event propagation when clicking on nested div(Div1)
+    ```javascript
+    <p>Click DIV1 Element</p>
+    <div onclick="secondFunc()">DIV 2
+      <div onclick="firstFunc(event)">DIV 1</div>
+    </div>
+
+    <script>
+    function firstFunc(event) {
+      alert("DIV 1");
+      event.stopPropagation();
+    }
+
+    function secondFunc() {
+      alert("DIV 2");
+    }
+    </script>
+    ```
 
 
 
