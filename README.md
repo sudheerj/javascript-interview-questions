@@ -109,6 +109,7 @@
 |101| [Who created javascript?](#who-created-javascript)|
 |102| [What is the use of preventDefault method?](#what-is-the-use-of-preventdefault-method)|
 |103| [What is the use of stopPropagation method?](#what-is-the-use-of-stoppropagation-method)|
+|104| [What are the steps involved in return false?](#what-are-the-steps-involved-in-return-false)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1146,6 +1147,11 @@ function userDetails(username) {
     }
     </script>
     ```
+104. ### What are the steps involved in return false usage?
+     The return false statement in event handlers performs the below steps,
+     1. First it stops the browser's default action or behaviour.
+     2. It prevents the event from propagating the DOM
+     3. Stops callback execution and returns immediately when called.
 
 
 
