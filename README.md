@@ -111,6 +111,8 @@
 |103| [What is the use of stopPropagation method?](#what-is-the-use-of-stoppropagation-method)|
 |104| [What are the steps involved in return false?](#what-are-the-steps-involved-in-return-false)|
 |105| [What is BOM?](#what-is-bom)|
+|106| [What is the use of setTimeout?](#what-is-the-use-of-settimeout)|
+|107| [What is the use of setInterval?](#what-is-the-use-of-setinterval)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1155,7 +1157,16 @@ function userDetails(username) {
      3. Stops callback execution and returns immediately when called.
 105. ### What is BOM?
      The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It consists of the objects navigator, history, screen, location and document which are children of window. The Browser Object Model is not standardized and can change based on different browsers.
-
+106. ### What is the use of setTimeout?
+     The setTimeout() method is used to call a function or evaluates an expression after a specified number of milliseconds. For example, let's log a message after 2 seconds using setTimeout method,
+     ```javascript
+     setTimeout(function(){ console.log("Good morning"); }, 2000);
+     ```
+107. ### What is the use of setInterval?
+     The setInterval() method is used to call a function or evaluates an expression at specified intervals (in milliseconds). For example, let's log a message after 2 seconds using setInterval method,
+     ```javascript
+     setInterval(function(){ console.log("Good morning"); }, 2000);
+     ```
 
 
 
