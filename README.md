@@ -110,6 +110,7 @@
 |102| [What is the use of preventDefault method?](#what-is-the-use-of-preventdefault-method)|
 |103| [What is the use of stopPropagation method?](#what-is-the-use-of-stoppropagation-method)|
 |104| [What are the steps involved in return false?](#what-are-the-steps-involved-in-return-false)|
+|105| [What is BOM?](#what-is-bom)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1152,6 +1153,9 @@ function userDetails(username) {
      1. First it stops the browser's default action or behaviour.
      2. It prevents the event from propagating the DOM
      3. Stops callback execution and returns immediately when called.
+105. ### What is BOM?
+     The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It consists of the objects navigator, history, screen, location and document which are children of window. The Browser Object Model is not standardized and can change based on different browsers.
+
 
 
 
