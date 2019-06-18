@@ -954,9 +954,10 @@ function userDetails(username) {
     console.log(typeof(user)) //object
     ```
 74. ### What is the difference between null and undefined?
-    Below are the main differences between null and undefined
+    Below are the main differences between null and undefined,
+
     | Null | Undefined |
-    |---- | ---------
+    |---- | -----------|
     | It is an assignment value which indicates that variable points to no object.  | It is not an assignment value where a variable has been declared but has not yet been assigned a value. |
     | Type of null is object | Type of undefined is undefined  |
     | The null value is a primitive value that represents the null, empty, or non-existent reference. | The undefined value is a primitive value used when a variable has not been assigned a value.|
@@ -968,7 +969,8 @@ function userDetails(username) {
     console.log(eval('1 + 2')); //  3
     ```
 76. ### What is the difference between window and document?
-    Below are the main differences between window and document
+    Below are the main differences between window and document,
+
     | Window | Document |
     |---- | ---------
     | It is the root level element in any web page  | It is the direct child of the window object. This is also known as Document Object Model(DOM) |
@@ -999,7 +1001,8 @@ function userDetails(username) {
     isNaN('100') //false
     ```
 80. ### What are the differences between undeclared and undefined variables?
-    Below are the major differences between undeclared and undefined variables
+    Below are the major differences between undeclared and undefined variables,
+
     | undeclared | undefined |
     |---- | ---------
     | These variables do not exist in a program and are not declared  | These variables declared in the program but have not assigned any value |
@@ -1100,15 +1103,17 @@ function userDetails(username) {
 99. ### Is there any relation between Java and JavaScript?
     No, they are entirely two different programming languages and has nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
 100. ### What are events?
-    Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events.
-    Some of the examples of HTML events are
-    1. Web page has finished loading
-    2. Input field was changed
-    3. Button was clicked
-    Let's describe the behavior of click event for button element
-    ```javascript
-    <!doctype html>
-    <html>
+     Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events. Some of the examples of HTML events are,
+
+     1. Web page has finished loading
+     2. Input field was changed
+     3. Button was clicked
+
+     Let's describe the behavior of click event for button element,
+
+     ```javascript
+     <!doctype html>
+     <html>
       <head>
         <script>
           function greeting() {
@@ -1119,37 +1124,37 @@ function userDetails(username) {
       <body>
         <button type="button" onclick="greeting()">Click me</button>
       </body>
-    </html>
-    ```
+     </html>
+     ```
 101. ### Who created javascript?
      JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. Initially it was developed under the name `Mocha`, but later the language was officially called `LiveScript` when it first shipped in beta releases of Netscape.
 102. ### What is the use of preventDefault method?
-    The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behaviour that belongs to the event will not occur. For example, prevent form submission when clicking on submit button and prevent opening the page URL when clicking on hyper link are some common usecases.
-    ```javascript
-    document.getElementById("link").addEventListener("click", function(event){
+     The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behaviour that belongs to the event will not occur. For example, prevent form submission when clicking on submit button and prevent opening the page URL when clicking on hyper link are some common usecases.
+     ```javascript
+     document.getElementById("link").addEventListener("click", function(event){
       event.preventDefault();
-    });
-    ```
-    **Note:** Remember that not all events are cancelable.
+     });
+     ```
+     **Note:** Remember that not all events are cancelable.
 103. ### What is the use of stopPropagation method?
-    The stopPropagation method is used to stop the event from bubbling up the event chain. For example, the below nested divs with stopPropagation method prevents default event propagation when clicking on nested div(Div1)
-    ```javascript
-    <p>Click DIV1 Element</p>
-    <div onclick="secondFunc()">DIV 2
-      <div onclick="firstFunc(event)">DIV 1</div>
-    </div>
+     The stopPropagation method is used to stop the event from bubbling up the event chain. For example, the below nested divs with stopPropagation method prevents default event propagation when clicking on nested div(Div1)
+     ```javascript
+     <p>Click DIV1 Element</p>
+     <div onclick="secondFunc()">DIV 2
+       <div onclick="firstFunc(event)">DIV 1</div>
+     </div>
 
-    <script>
-    function firstFunc(event) {
-      alert("DIV 1");
-      event.stopPropagation();
-    }
+     <script>
+     function firstFunc(event) {
+       alert("DIV 1");
+       event.stopPropagation();
+     }
 
-    function secondFunc() {
-      alert("DIV 2");
-    }
-    </script>
-    ```
+     function secondFunc() {
+       alert("DIV 2");
+     }
+     </script>
+     ```
 104. ### What are the steps involved in return false usage?
      The return false statement in event handlers performs the below steps,
      1. First it stops the browser's default action or behaviour.
