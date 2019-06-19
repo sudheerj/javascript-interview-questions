@@ -121,7 +121,7 @@
 |113| [What is the purpose JSON stringify?](#what-is-the-purpose-json-stringify)|
 |114| [How do you parse JSON string?](#how-do-you-parse-json-string)|
 |115| [Why do you need JSON?](#why-do-you-need-json)|
-
+|116| [What are PWAs?](#what-are-pwas?)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1223,6 +1223,8 @@ function userDetails(username) {
      ```
 115. ### Why do you need JSON?
      When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
+116. ### What are PWAs?
+     Progressive web applications (PWAs) are a type of mobile app delivered through the web, built using common web technologies including HTML, CSS and JavaScript. These PWAs are deployed to servers, accessible through URLs, and indexed by search engines.
 
 
 
