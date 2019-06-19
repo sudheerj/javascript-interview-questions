@@ -113,6 +113,8 @@
 |105| [What is BOM?](#what-is-bom)|
 |106| [What is the use of setTimeout?](#what-is-the-use-of-settimeout)|
 |107| [What is the use of setInterval?](#what-is-the-use-of-setinterval)|
+|108| [Why is JavaScript treated as Single threaded?](#why-is-javascript-treated-as-single-threaded)|
+|109| [What is an event delegation?](#what-is-an-event-delegation)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1171,6 +1173,22 @@ function userDetails(username) {
      The setInterval() method is used to call a function or evaluates an expression at specified intervals (in milliseconds). For example, let's log a message after 2 seconds using setInterval method,
      ```javascript
      setInterval(function(){ console.log("Good morning"); }, 2000);
+     ```
+108. ### Why is JavaScript treated as Single threaded?
+     JavaScript is a single-threaded language. Because the language specification does not allow the programmer to write code so that the interpreter can run parts of it in parallel in multiple threads or processes. Whereas languages like java, go, C++ can make multi-threaded and multi-process programs.
+109. ### What is an event delegation?
+     Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.
+     For example, if you wanted to detect field changes in inside a specific form, you can use event delegation technique,
+     ```javascript
+     var form = document.querySelector('#registration-form');
+
+     // Listen for changes to fields inside the form
+     form.addEventListener('input', function (event) {
+
+     	// Log the field that was changed
+     	console.log(event.target);
+
+     }, false);
      ```
 
 
