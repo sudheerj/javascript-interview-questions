@@ -115,6 +115,13 @@
 |107| [What is the use of setInterval?](#what-is-the-use-of-setinterval)|
 |108| [Why is JavaScript treated as Single threaded?](#why-is-javascript-treated-as-single-threaded)|
 |109| [What is an event delegation?](#what-is-an-event-delegation)|
+|110| [What is ECMAScript?](#what-is-ecmascript)|
+|111| [What is JSON?](#what-is-json)|
+|112| [What are the syntax rules of JSON?](#what-are-the-syntax-rules-of-json)|
+|113| [What is the purpose JSON stringify?](#what-is-the-purpose-json-stringify)|
+|114| [How do you parse JSON string?](#how-do-you-parse-json-string)|
+|115| [Why do you need JSON?](#why-do-you-need-json)|
+
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1192,6 +1199,31 @@ function userDetails(username) {
      ```
 110. ### What is ECMAScript?
      ECMAScript is the scripting language that forms the basis of JavaScript. ECMAScript standardized by the ECMA International standards organization in the ECMA-262 and ECMA-402 specifications. The first edition of ECMAScript was released in 1997.
+111. ### What is JSON?
+     JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
+112. ### What are the syntax rules of JSON?
+     Below are the list of syntax rules of JSON
+     1. The data is in name/value pairs
+     2. The data is separated by commas
+     3. Curly braces hold objects
+     4. Square brackets hold arrays
+113. ### What is the purpose JSON stringify?
+     When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
+     ```javascript
+     var userJSON = {'name': 'John', age: 31}
+     var userString = JSON.stringify(user);
+     console.log(userString); //"{"name":"John","age":31}"
+     ```
+114. ### How do you parse JSON string?
+     When receiving the data from a web server, the data is always in a string format. But you can convert this string value to javascript object using parse() method.
+     ```javascript
+     var userString = '{"name":"John","age":31}';
+     var userJSON = JSON.parse(userString);
+     console.log(userJSON);// {name: "John", age: 31}
+     ```
+115. ### Why do you need JSON?
+     When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
+
 
 
 
