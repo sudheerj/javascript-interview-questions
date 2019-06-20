@@ -122,6 +122,8 @@
 |114| [How do you parse JSON string?](#how-do-you-parse-json-string)|
 |115| [Why do you need JSON?](#why-do-you-need-json)|
 |116| [What are PWAs?](#what-are-pwas?)|
+|117| [What is the purpose of clearTimeout method?](#what-is-the-purpose-of-cleartimeout-method)|
+|118| [What is the purpose of clearInterval method?](#what-is-the-purpose-of-clearinterval-method)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1225,7 +1227,44 @@ function userDetails(username) {
      When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
 116. ### What are PWAs?
      Progressive web applications (PWAs) are a type of mobile app delivered through the web, built using common web technologies including HTML, CSS and JavaScript. These PWAs are deployed to servers, accessible through URLs, and indexed by search engines.
+117. ### What is the purpose of clearTimeout method?
+     The clearTimeout() function is used in javascript to clear the timeout which has been set by setTimeout()function before that. i.e, The return value of setTimeout() function is stored in a variable and it’s passed into the clearTimeout() function to clear the timer.
+     For example, the below setTimeout method is used to display the message after 3 seconds. This timeout can be cleared by clearTimeout() method.
+     ```javascript
+     <script>
+     var msg;
+     function greeting() {
+        alert('Good morning');
+     }
+     function start() {
+       msg =setTimeout(greeting, 3000);
 
+     }
+
+     function stop() {
+         clearTimeout(msg);
+     }
+     </script>
+     ```
+118. ### What is the purpose of clearInterval method?
+     The clearInterval() function is used in javascript to clear the interval which has been set by setInterval() function. i.e, The return value returned by setInterval() function is stored in a variable and it’s passed into the clearInterval() function to clear the interval.
+     For example, the below setInterval method is used to display the message for every 3 seconds. This interval can be cleared by clearInterval() method.
+     ```javascript
+     <script>
+     var msg;
+     function greeting() {
+        alert('Good morning');
+     }
+     function start() {
+       msg = setInterval(greeting, 3000);
+
+     }
+
+     function stop() {
+         clearInterval(msg);
+     }
+     </script>
+     ```
 
 
 
