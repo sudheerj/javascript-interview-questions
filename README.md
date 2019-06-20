@@ -124,6 +124,7 @@
 |116| [What are PWAs?](#what-are-pwas?)|
 |117| [What is the purpose of clearTimeout method?](#what-is-the-purpose-of-cleartimeout-method)|
 |118| [What is the purpose of clearInterval method?](#what-is-the-purpose-of-clearinterval-method)|
+|119| [How do you redirect new page in javascript?](#how-do-you-redirect-new-page-in-javascript)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1264,6 +1265,13 @@ function userDetails(username) {
          clearInterval(msg);
      }
      </script>
+     ```
+119. ### How do you redirect new page in javascript?
+     In vanilla javascript, you can redirect to a new page using `location` property of window object. The syntax would be as follows,
+     ```javascript
+     function redirect() {
+        window.location.href = 'newPage.html';
+     }
      ```
 
 
