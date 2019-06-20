@@ -125,6 +125,7 @@
 |117| [What is the purpose of clearTimeout method?](#what-is-the-purpose-of-cleartimeout-method)|
 |118| [What is the purpose of clearInterval method?](#what-is-the-purpose-of-clearinterval-method)|
 |119| [How do you redirect new page in javascript?](#how-do-you-redirect-new-page-in-javascript)|
+|120| [How do you check whether a string contains a substring?](#how-do-you-check-whether-a-string-contains-a-substring)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1272,6 +1273,23 @@ function userDetails(username) {
      function redirect() {
         window.location.href = 'newPage.html';
      }
+     ```
+120. ### How do you check whether a string contains a substring?
+     There are 3 possible ways to check whether a string contains a substring or not,
+     1. **Using includes:** ES6 provided `String.prototype.includes` method to test a string contains a substring
+     ```javascript
+     var mainString = "hello", subString = "hell";
+     mainString.includes(subString)
+     ```
+     2. **Using indexOf:** In an ES5 or older environments, you can use `String.prototype.indexOf` which returns the index of a substring. If the index value is not equal to -1 then it means the substring exist in the main string.
+     ```javascript
+     var mainString = "hello", subString = "hell";
+     mainString.indexOf(subString) !== -1
+     ```
+     3. **Using RegEx:** The advanced solution is using Regular expression's test method(`RegExp.test`), which allows for testing for against regular expressions
+     ```javascript
+     var mainString = "hello", regex = "/hell/";
+     regex.test(mainString)
      ```
 
 
