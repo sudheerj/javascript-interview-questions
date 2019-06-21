@@ -126,6 +126,9 @@
 |118| [What is the purpose of clearInterval method?](#what-is-the-purpose-of-clearinterval-method)|
 |119| [How do you redirect new page in javascript?](#how-do-you-redirect-new-page-in-javascript)|
 |120| [How do you check whether a string contains a substring?](#how-do-you-check-whether-a-string-contains-a-substring)|
+|121| [How do you validate an email in javascript?](#how-do-you-validate-an-email-in-javascript)|
+|122| [How do you get the current url with javascript?](#how-do-you-get-the-current-url-with-javascript)|
+|123| [What are the various url properties of location object?](#what-are-the-various-url-properties-of-location-object)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1291,6 +1294,30 @@ function userDetails(username) {
      var mainString = "hello", regex = "/hell/";
      regex.test(mainString)
      ```
+121. ### How do you validate an email in javascript?
+     You can validate an email in javascript using regular expressions. It is recommended to do validations on the server side instead client side. Because the javascript can be disabled on the client side.
+     ```javascript
+     function validateEmail(email) {
+         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+         return re.test(String(email).toLowerCase());
+     }
+     ```
+     The above regular expression regular accepts unicode characters.
+122. ### How do you get the current url with javascript?
+     You can use `window.location.href` expression to get the current url path and you can use the same expression for updating the URL too. You can also use `document.URL` for read-only purpose but this solution has issues in FF.
+     ```javascript
+     console.log('location.href', window.location.href); // Returns full URL
+     ```
+123. ### What are the various url properties of location object?
+     The below `Location` object properties can be used to access URL components of the page,
+     1. href - The entire URL
+     2. protocol - The protocol of the URL
+     3. host - The hostname and port of the URL
+     4. hostname - The hostname of the URL
+     5. port - The port number in the URL
+     6. pathname - The path name of the URL
+     7. search - The query portion of the URL
+     8. hash - The anchor portion of the URL
 
 
 
