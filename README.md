@@ -129,6 +129,7 @@
 |121| [How do you validate an email in javascript?](#how-do-you-validate-an-email-in-javascript)|
 |122| [How do you get the current url with javascript?](#how-do-you-get-the-current-url-with-javascript)|
 |123| [What are the various url properties of location object?](#what-are-the-various-url-properties-of-location-object)|
+|124| [How do get query string values in javascript?](#how-do-get-query-string-values-in-javascript)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1318,6 +1319,12 @@ function userDetails(username) {
      6. pathname - The path name of the URL
      7. search - The query portion of the URL
      8. hash - The anchor portion of the URL
+124. ### How do get query string values in javascript?
+     You can use URLSearchParams to get query string values in javascript. Let's see an example to get the client code value from URL query string,
+     ```javascript
+     const urlParams = new URLSearchParams(window.location.search);
+     const clientCode = urlParams.get('clientCode');
+     ```
 
 
 
