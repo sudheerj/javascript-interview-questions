@@ -130,6 +130,7 @@
 |122| [How do you get the current url with javascript?](#how-do-you-get-the-current-url-with-javascript)|
 |123| [What are the various url properties of location object?](#what-are-the-various-url-properties-of-location-object)|
 |124| [How do get query string values in javascript?](#how-do-get-query-string-values-in-javascript)|
+|125| [How do you check if a key exists in an object?](#how-do-you-check-if-a-key-exists-in-an-object)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1324,6 +1325,20 @@ function userDetails(username) {
      ```javascript
      const urlParams = new URLSearchParams(window.location.search);
      const clientCode = urlParams.get('clientCode');
+     ```
+125. ### How do you check if a key exists in an object?
+     You can check whether a key exists in an object or not using two approaches,
+     1. ** Using in operator:** You can use the in operator whether a key exists in an object or not
+     ```javascript
+     "key" in obj
+     ```
+     and If you want to check if a key doesn't exist, remember to use parenthesis,
+     ```javascript
+     !("key" in obj)
+     ```
+     2. ** Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
+     ```javascript
+     obj.hasOwnProperty("key") // true
      ```
 
 
