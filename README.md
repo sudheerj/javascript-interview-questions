@@ -136,6 +136,8 @@
 |128| [What is an arguments object?](#what-is-an-arguments-object)|
 |129| [How do you make first letter of the string in an uppercase?](#how-do-you-make-first-letter-of-the-string-in-an-uppercase)|
 |130| [What are the pros and cons of for loop?](#what-are-the-pros-and-cons-of-for-loop)|
+|131| [How do you display the current date in javascript?](#how-do-you-display-the-current-date-in-javascript)|
+|132| [How do you compare two date objects?](#how-do-you-compare-two-date-objects)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1411,6 +1413,28 @@ function userDetails(username) {
      1. Too verbose
      2. Imperative
      3. You might face one-by-off errors
+
+131. ### How do you display the current date in javascript?
+     You can use `new Date()` to generate a new Date object containing the current date and time. For example, let's display the current date in mm/dd/yyyy
+     ```javascript
+     var today = new Date();
+     var dd = String(today.getDate()).padStart(2, '0');
+     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+     var yyyy = today.getFullYear();
+
+     today = mm + '/' + dd + '/' + yyyy;
+     document.write(today);
+     ```
+132. ### How do you compare two date objects?
+     You need to use use date.getTime() method to compare date values instead comparision operators (==, !=, ===, and !== operators)
+     ```javascript
+     var d1 = new Date();
+     var d2 = new Date(d1);
+     console.log(d1.getTime() === d2.getTime()); //True
+     console.log(d1 === d2); // False
+     ```
+
+
 
 
 
