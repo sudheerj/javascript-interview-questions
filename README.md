@@ -131,6 +131,8 @@
 |123| [What are the various url properties of location object?](#what-are-the-various-url-properties-of-location-object)|
 |124| [How do get query string values in javascript?](#how-do-get-query-string-values-in-javascript)|
 |125| [How do you check if a key exists in an object?](#how-do-you-check-if-a-key-exists-in-an-object)|
+|126| [How do you loop through or enumerate javascript object?](#how-do-you-loop-through-or-enumerate-javascript-object)|
+|127| [How do you test for an empty object?](#how-do-you-test-for-an-empty-object)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1339,6 +1341,43 @@ function userDetails(username) {
      2. ** Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
      ```javascript
      obj.hasOwnProperty("key") // true
+     ```
+126. ### How do you loop through or enumerate javascript object?
+     You can use the `for-in` loop to loop through javascript object. You can also make sure that the key you get is an actual property of an object, and doesn't come from the prototype using `hasOwnProperty` method.
+     ```javascript
+     var object = {
+         "k1": "value1",
+         "k2": "value2",
+         "k3": "value3"
+     };
+
+     for (var key in object) {
+         if (object.hasOwnProperty(key)) {
+             console.log(key + " -> " + object[key]); // k1 -> value1 ...
+         }
+     }
+     ```
+127. ### How do you test for an empty object?
+     There are different solutions based on ECMAScript versions
+     1. **Using Object entries(ECMA 7+):** You can use object entries length along with constructor type.
+     ```javascript
+     Object.entries(obj).length === 0 && obj.constructor === Object // Since date object length is 0, you need to check constructor check as well
+     ```
+     2. **Using Object keys(ECMA 5+):** You can use object keys length along with constructor type.
+     ```javascript
+     Object.keys(obj).length === 0 && obj.constructor === Object // Since date object length is 0, you need to check constructor check as well
+     ```
+     3. **Using for-in with hasOwnProperty(Pre-ECMA 5):** You can use for-in loop along with hasOwnProperty.
+     ```javascript
+     function isEmpty(obj) {
+       for(var prop in obj) {
+         if(obj.hasOwnProperty(prop)) {
+           return false;
+         }
+       }
+
+       return JSON.stringify(obj) === JSON.stringify({});
+     }
      ```
 
 
