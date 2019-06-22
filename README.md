@@ -135,6 +135,7 @@
 |127| [How do you test for an empty object?](#how-do-you-test-for-an-empty-object)|
 |128| [What is an arguments object?](#what-is-an-arguments-object)|
 |129| [How do you make first letter of the string in an uppercase?](#how-do-you-make-first-letter-of-the-string-in-an-uppercase)|
+|130| [What are the pros and cons of for loop?](#what-are-the-pros-and-cons-of-for-loop)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1401,6 +1402,15 @@ function userDetails(username) {
          return string.charAt(0).toUpperCase() + string.slice(1);
      }
      ```
+130. ### What are the pros and cons of for loop?
+     The for-loop is a commonly used iteration syntax in javascript. It has both pros and cons
+     **Pros**
+     1. Works on every environment
+     2. You can use break and continue flow control statements
+     **Cons**
+     1. Too verbose
+     2. Imperative
+     3. You might face one-by-off errors
 
 
 
