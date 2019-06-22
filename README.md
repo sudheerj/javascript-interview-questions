@@ -133,6 +133,8 @@
 |125| [How do you check if a key exists in an object?](#how-do-you-check-if-a-key-exists-in-an-object)|
 |126| [How do you loop through or enumerate javascript object?](#how-do-you-loop-through-or-enumerate-javascript-object)|
 |127| [How do you test for an empty object?](#how-do-you-test-for-an-empty-object)|
+|128| [What is an arguments object?](#what-is-an-arguments-object)|
+|129| [How do you make first letter of the string in an uppercase?](#how-do-you-make-first-letter-of-the-string-in-an-uppercase)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1377,6 +1379,26 @@ function userDetails(username) {
        }
 
        return JSON.stringify(obj) === JSON.stringify({});
+     }
+     ```
+128. ### What is an arguments object?
+     The arguments object is an Array-like object accessible inside functions that contains the values of the arguments passed to that function. For example, let's see how to use arguments object inside sum function,
+     ```javascript
+     function sum() {
+         var total = 0;
+         for (var i = 0, len = arguments.length; i < len; ++i) {
+             total += arguments[i];
+         }
+         return total;
+     }
+
+     sum(1, 2, 3) // returns 6
+     ```
+129. ### How do you make first letter of the string in an uppercase?
+     You can create a function which uses chain of string methods such as charAt, toUpperCase and slice methods to generate a string with first letter in uppercase.
+     ```javascript
+     function capitalizeFirstLetter(string) {
+         return string.charAt(0).toUpperCase() + string.slice(1);
      }
      ```
 
