@@ -139,6 +139,8 @@
 |131| [How do you display the current date in javascript?](#how-do-you-display-the-current-date-in-javascript)|
 |132| [How do you compare two date objects?](#how-do-you-compare-two-date-objects)|
 |133| [How do you check if a string starts with another string?](#how-do-you-check-if-a-string-starts-with-another-string)|
+|134| [How do you trim a string in javascript?](#how-do-you-trim-a-string-in-javascript)|
+|135| [How do you add a key value pair in javascript?](#how-do-you-add-a-key-value-pair-in-javascript)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1440,6 +1442,42 @@ function userDetails(username) {
      "Good morning".startsWith("Good"); // true
      "Good morning".startsWith("morning"); // false
      ```
+134. ### How do you trim a string in javascript?
+     JavaScript provided a trim method on string types to trim any whitespaces present at the begining or ending of the string.
+     ```javascript
+     "  Hello World   ".trim(); //Hello World
+     ```
+     If your browser(<IE9) doesn't support this method then you can use below polyfill.
+     ```javascript
+     if (!String.prototype.trim) {
+         (function() {
+             // Make sure we trim BOM and NBSP
+             var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+             String.prototype.trim = function() {
+                 return this.replace(rtrim, '');
+             };
+         })();
+     }
+     ```
+135. ### How do you add a key value pair in javascript?
+     There are two possible solutions to add new properties to an object. Let's take a simple object to explain these solutions.
+     ```javascript
+     var object = {
+         key1: value1,
+         key2: value2
+     };
+     ```
+     1. **Using dot notation:** This solution is useful when you know the name of the property
+     ```javascript
+     object.key3 = "value3";
+     ```
+     2. **Using square bracket notation:** This solution is useful when the name of the property is dynamically determined.
+     ```javascript
+     obj["key3"] = "value3";
+     ```
+
+
+
 
 
 
