@@ -138,6 +138,7 @@
 |130| [What are the pros and cons of for loop?](#what-are-the-pros-and-cons-of-for-loop)|
 |131| [How do you display the current date in javascript?](#how-do-you-display-the-current-date-in-javascript)|
 |132| [How do you compare two date objects?](#how-do-you-compare-two-date-objects)|
+|133| [How do you check if a string starts with another string?](#how-do-you-check-if-a-string-starts-with-another-string)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1432,6 +1433,12 @@ function userDetails(username) {
      var d2 = new Date(d1);
      console.log(d1.getTime() === d2.getTime()); //True
      console.log(d1 === d2); // False
+     ```
+133. ### How do you check if a string starts with another string?
+     You can use ECMAScript 6's `String.prototype.startsWith()` method to check a string starts with another string or not. But it is not yet supported in all browsers. Let's see an example to see this usage,
+     ```javascript
+     "Good morning".startsWith("Good"); // true
+     "Good morning".startsWith("morning"); // false
      ```
 
 
