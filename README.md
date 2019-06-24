@@ -141,6 +141,7 @@
 |133| [How do you check if a string starts with another string?](#how-do-you-check-if-a-string-starts-with-another-string)|
 |134| [How do you trim a string in javascript?](#how-do-you-trim-a-string-in-javascript)|
 |135| [How do you add a key value pair in javascript?](#how-do-you-add-a-key-value-pair-in-javascript)|
+|136| [Is the '!--' notation represents a special operator?](#is-the-'!--'-notation-represents-a-special-operator)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1475,6 +1476,12 @@ function userDetails(username) {
      ```javascript
      obj["key3"] = "value3";
      ```
+136. ### Is the !-- notation represents a special operator?
+     No,that's not a special operator. But it is a combination of 2 standard operators one after the other,
+     1. A logical not (!)
+     2. A prefix decrement (--)
+
+     At first, the value decremented by one and then tested to see if it is equal to zero or not for determining the truthy/falsy value.
 
 
 
