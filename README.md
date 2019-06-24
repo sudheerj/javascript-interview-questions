@@ -142,6 +142,8 @@
 |134| [How do you trim a string in javascript?](#how-do-you-trim-a-string-in-javascript)|
 |135| [How do you add a key value pair in javascript?](#how-do-you-add-a-key-value-pair-in-javascript)|
 |136| [Is the '!--' notation represents a special operator?](#is-the-'!--'-notation-represents-a-special-operator)|
+|137| [How do you assign default values to variables?](#how-do-you-assign-default-values-to-variables)|
+|138| [How do you define multiline strings?](#how-do-you-define-multiline-strings)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1483,6 +1485,20 @@ function userDetails(username) {
 
      At first, the value decremented by one and then tested to see if it is equal to zero or not for determining the truthy/falsy value.
 
+137. ### How do you assign default values to variables?
+     You can use the logical or operator `||` in an assignment expression to provide a default value. The syntax looks like as below,
+     ```javascript
+     var a = b || c;
+     ```
+     As per the above expression, variable 'a 'will get the value of 'c' only if 'b' is falsy (if is null, false, undefined, 0, empty string, or NaN), otherwise 'a' will get the value of 'b'.
+138. ### How do you define multiline strings?
+     You can define multiline string literals using '\' character followed by line terminator.
+     ```javascript
+     var str = "This is a \
+     very lengthy \
+     sentence!";
+     ```
+     But if you have a space after the '\' character, the code will look exactly the same, but it will raise a SyntaxError.
 
 
 
