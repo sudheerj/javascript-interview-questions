@@ -150,6 +150,7 @@
 |142| [What is a polyfill?](#what-is-a-polyfill)|
 |143| [What are break and continue statements?](#what-are-break-and-continue-statements)|
 |144| [What are js labels?](#what-are-js-labels)|
+|145| [What are the benefits of keeping declarations at the top?](#what-are-the-benefits-of-keeping-declarations-at-the-top)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1566,6 +1567,12 @@ function userDetails(username) {
      //   "i = 2, j = 0"
      //   "i = 2, j = 1"
      ```
+145. ### What are the benefits of keeping declarations at the top?
+     It is recommended to keep all declarations at the top of each script or function.
+     1. Gives cleaner code
+     2. It provides a single place to look for local variables
+     3. Easy to avoid unwanted global variables
+     4. It reduces the possibility of unwanted re-declarations
 
 
 
