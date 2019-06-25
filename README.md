@@ -148,6 +148,8 @@
 |140| [Can we define properties for functions?](#can-we-define-properties-for-functions)|
 |141| [What is the way to find the number of parameters expected by a function?](#what-is-the-way-to-find-the-number-of-parameters-expected-by-a-function)|
 |142| [What is a polyfill?](#what-is-a-polyfill)|
+|143| [What are break and continue statements?](#what-are-break-and-continue-statements)|
+|144| [What are js labels?](#what-are-js-labels)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1528,6 +1530,43 @@ function userDetails(username) {
      ```
 142. ### What is a polyfill?
      A polyfill is a piece of JS code used to provide modern functionality on older browsers that do not natively support it. For example, Silverlight plugin polyfill can be used to mimic the functionality of an HTML Canvas element on Microsoft Internet Explorer 7.
+143. ### What are break and continue statements?
+     The break statement is used to "jumps out" of a loop. i.e, It breaks the loop and continues executing the code after the loop.
+     ```javascript
+     for (i = 0; i < 10; i++) {
+       if (i === 5) { break; }
+       text += "Number: " + i + "<br>";
+     }
+     ```
+     The continue statement is used to "jumps over" one iteration in the loop. i.e, It breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+     ```javascript
+     for (i = 0; i < 10; i++) {
+         if (i === 5) { continue; }
+         text += "Number: " + i + "<br>";
+     }
+     ```
+144. ### What are js labels?
+     The label statement allows us to name loops and blocks in JavaScript. We can then use these labels to refer back to the code later. For example, the below code with labels avoids printing the numbers when they are same,
+     ```javascript
+     var i, j;
+
+     loop1:
+     for (i = 0; i < 3; i++) {
+        loop2:
+        for (j = 0; j < 3; j++) {
+           if (i === j) {
+              continue loop1;
+           }
+           console.log('i = ' + i + ', j = ' + j);
+        }
+     }
+
+     // Output is:
+     //   "i = 1, j = 0"
+     //   "i = 2, j = 0"
+     //   "i = 2, j = 1"
+     ```
+
 
 
 
