@@ -144,6 +144,10 @@
 |136| [Is the '!--' notation represents a special operator?](#is-the-'!--'-notation-represents-a-special-operator)|
 |137| [How do you assign default values to variables?](#how-do-you-assign-default-values-to-variables)|
 |138| [How do you define multiline strings?](#how-do-you-define-multiline-strings)|
+|139| [What is an app shell model?](#what-is-an-app-shell-model)|
+|140| [Can we define properties for functions?](#can-we-define-properties-for-functions)|
+|141| [What is the way to find the number of parameters expected by a function?](#what-is-the-way-to-find-the-number-of-parameters-expected-by-a-function)|
+|142| [What is a polyfill?](#what-is-a-polyfill)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1499,6 +1503,31 @@ function userDetails(username) {
      sentence!";
      ```
      But if you have a space after the '\' character, the code will look exactly the same, but it will raise a SyntaxError.
+139. ### What is an app shell model?
+     An application shell (or app shell) architecture is one way to build a Progressive Web App that reliably and instantly loads on your users' screens, similar to what you see in native applications. It is useful for getting some initial HTML to the screen fast without a network.
+140. ### Can we define properties for functions?
+     Yes, We can define properties for functions because functions are also objects.
+     ```javascript
+     fn = function(x) {
+        //Function code goes here
+     }
+
+     fn.name = "John";
+
+     fn.profile = function(y) {
+       //Profile code goes here
+     }
+     ```
+141. ### What is the way to find the number of parameters expected by a function?
+     You can use `function.length` syntax to find the number of parameters expected by a function. Let's take an example of `sum` function to calculate the sum of numbers,
+     ```javascript
+     function sum(num1, num2, num3, num4){
+         return num1 + num2 + num3 + num4;
+     }
+     sum.length // 4 is the number of parameters expected.
+     ```
+142. ### What is a polyfill?
+     A polyfill is a piece of JS code used to provide modern functionality on older browsers that do not natively support it. For example, Silverlight plugin polyfill can be used to mimic the functionality of an HTML Canvas element on Microsoft Internet Explorer 7.
 
 
 
