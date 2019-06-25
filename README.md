@@ -151,6 +151,8 @@
 |143| [What are break and continue statements?](#what-are-break-and-continue-statements)|
 |144| [What are js labels?](#what-are-js-labels)|
 |145| [What are the benefits of keeping declarations at the top?](#what-are-the-benefits-of-keeping-declarations-at-the-top)|
+|146| [What are the benefits of initializing variables?](#what-are-the-benefits-of-initializing-variables)|
+|147| [What are the recommendations to create new object?](#what-are-the-recommendations-to-create-new-object)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1568,12 +1570,39 @@ function userDetails(username) {
      //   "i = 2, j = 1"
      ```
 145. ### What are the benefits of keeping declarations at the top?
-     It is recommended to keep all declarations at the top of each script or function.
+     It is recommended to keep all declarations at the top of each script or function. The benefits of doing this are,
      1. Gives cleaner code
      2. It provides a single place to look for local variables
      3. Easy to avoid unwanted global variables
      4. It reduces the possibility of unwanted re-declarations
 
+146. ### What are the benefits of initializing variables?
+     It is recommended to initialize variables because of the below benefits,
+     1. It gives cleaner code
+     2. It provides a single place to initialize variables
+     3. Avoid undefined values in the code
+
+147. ### What are the recommendations to create new object?
+     It is recommended to avoid creating new objects using `new Object()`. Instead you can initialize values based on it's type to create the objects.
+     1. Assign {} instead of new Object()
+     2. Assign "" instead of new String()
+     3. Assign 0 instead of new Number()
+     4. Assign false instead of new Boolean()
+     5. Assign [] instead of new Array()
+     6. Assign /()/ instead of new RegExp()
+     7. Assign function (){} instead of new Function()
+
+     You can define them as an example,
+
+     ```javascript
+     var v1 = {};
+     var v2 = "";
+     var v3 = 0;
+     var v4 = false;
+     var v5 = [];
+     var v6 = /()/;
+     var v7 = function(){};
+     ```
 
 
 
