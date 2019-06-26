@@ -153,6 +153,9 @@
 |145| [What are the benefits of keeping declarations at the top?](#what-are-the-benefits-of-keeping-declarations-at-the-top)|
 |146| [What are the benefits of initializing variables?](#what-are-the-benefits-of-initializing-variables)|
 |147| [What are the recommendations to create new object?](#what-are-the-recommendations-to-create-new-object)|
+|148| [How do you define JSON arrays?](#how-do-you-define-json-arrays)|
+|149| [How do you generate random integers?](#how-do-you-generate-random-integers)|
+|150| [Can you write a random integers function to print integers with in a range?](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1603,6 +1606,35 @@ function userDetails(username) {
      var v6 = /()/;
      var v7 = function(){};
      ```
+148. ### How do you define JSON arrays?
+     JSON arrays are written inside square brackets and array contain javascript objects. For example, the JSON array of users would be as below,
+     ```javascript
+     "users":[
+       {"firstName":"John", "lastName":"Abrahm"},
+       {"firstName":"Anna", "lastName":"Smith"},
+       {"firstName":"Shane", "lastName":"Warn"}
+     ]
+     ```
+149. ### How do you generate random integers?
+     You can use Math.random() with Math.floor() to return random integers. For example, if you want generate random integers between 1 to 10, the multiplication factor should be 10,
+     ```javascript
+     Math.floor(Math.random() * 10) + 1;     // returns a random integer from 1 to 10
+     Math.floor(Math.random() * 100) + 1;     // returns a random integer from 1 to 100
+     ```
+     **Note:** Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive)
+150. ### Can you write a random integers function to print integers with in a range?
+     Yes, you can create a proper random function to return a random number between min and max (both included)
+     ```javascript
+     function randomInteger(min, max) {
+       return Math.floor(Math.random() * (max - min + 1) ) + min;
+     }
+     randomInteger(1, 100); // returns a random integer from 1 to 100
+     randomInteger(1, 1000); // returns a random integer from 1 to 1000
+     ```
+
+
+
+
 
 
 
