@@ -156,6 +156,8 @@
 |148| [How do you define JSON arrays?](#how-do-you-define-json-arrays)|
 |149| [How do you generate random integers?](#how-do-you-generate-random-integers)|
 |150| [Can you write a random integers function to print integers with in a range?](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range)|
+|151| [What is tree shaking?](#what-is-tree-shaking)|
+|152| [What is the need of tree shaking?](#what-is-the-need-of-tree-shaking)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1631,6 +1633,10 @@ function userDetails(username) {
      randomInteger(1, 100); // returns a random integer from 1 to 100
      randomInteger(1, 1000); // returns a random integer from 1 to 1000
      ```
+151. ### What is tree shaking?
+     Tree shaking is a form of dead code elimination. It means that unused modules will not be included in the bundle during the build process and for that it relies on the static structure of ES2015 module syntax,( i.e. import and export). Initially this has been popularized by the ES2015 module bundler `rollup`.
+152. ### What is the need of tree shaking?
+     Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a “Hello World” Application using SPA frameworks then it will take around  few MBs, but by tree shaking it can bring down the size to just few hundred KBs. Tree shaking is been implemented in Rollup and Webpack bunders.
 
 
 
