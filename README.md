@@ -158,6 +158,7 @@
 |150| [Can you write a random integers function to print integers with in a range?](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range)|
 |151| [What is tree shaking?](#what-is-tree-shaking)|
 |152| [What is the need of tree shaking?](#what-is-the-need-of-tree-shaking)|
+|153| [Is it recommended to use eval?](#is-it-recommended-to-use-eval)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1636,7 +1637,9 @@ function userDetails(username) {
 151. ### What is tree shaking?
      Tree shaking is a form of dead code elimination. It means that unused modules will not be included in the bundle during the build process and for that it relies on the static structure of ES2015 module syntax,( i.e. import and export). Initially this has been popularized by the ES2015 module bundler `rollup`.
 152. ### What is the need of tree shaking?
-     Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a “Hello World” Application using SPA frameworks then it will take around  few MBs, but by tree shaking it can bring down the size to just few hundred KBs. Tree shaking is been implemented in Rollup and Webpack bunders.
+     Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a “Hello World” Application using SPA frameworks then it will take around  few MBs, but by tree shaking it can bring down the size to just few hundred KBs. Tree shaking is been implemented in Rollup and Webpack bundlers.
+153. ### Is it recommended to use eval?
+     No, it allows arbitrary code to be run which casues a security problem. As we know that the eval() function is used to run text as code. In most of the cases, it should not be necessary to use it.
 
 
 
