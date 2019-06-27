@@ -627,8 +627,8 @@ function userDetails(username) {
     IndexedDB is a low-level API for client-side storage of larger amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data.
 35. ### What is web storage?
     Web storage is an API that provides a mechanism by which browsers can store key/value pairs locally within the user's browser, in a much more intuitive fashion than using cookies. The web storage provides two mechanisms for storing data on the client.
-    1. **Session storage:** It stores data for current origin with no expiration date.
-    2. **Local storage:** It stores data for one session and the data is lost when the browser tab is closed.
+    1. **Local storage:** It stores data for current origin with no expiration date.
+    2. **Session storage:** It stores data for one session and the data is lost when the browser tab is closed.
 36. ### What is a post message?
     Post message is a method that enables cross-origin communication between Window objects.(i.e, between a page and a pop-up that it spawned, or between a page and an iframe embedded within it). Generally, scripts on different pages are allowed to access each other if and only if the pages follow same-origin policy(i.e, pages share the same protocol, port number, and host).
 37. ### What is a Cookie?
