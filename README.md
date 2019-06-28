@@ -166,6 +166,8 @@
 |158| [What is a RegExp object?](#what-is-a-regexp-object)|
 |159| [How do you search a string for a pattern?](#how-do-you-search-a-string-for-a-pattern)|
 |160| [What is the purpose of exec method?](#what-is-the-purpose-of-exec-method)|
+|161| [How do you change style of a HTML element?](#how-do-you-change-style-of-a-html-element)|
+|162| [What would be the result of 1+2+'3'?](#what-would-be-the-result-of-1+2+'3')|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1719,7 +1721,18 @@ function userDetails(username) {
      var pattern = /you/;
      console.log(pattern.test("How are you?")); //you
      ```
-
+161. ### How do you change style of a HTML element?
+     You can change inline style or classname of a HTML element using javascript
+     1. ** Using style property:** You can modify inline style using style property
+     ```javascript
+     document.getElementById("title").style.fontSize = "30px";
+     ```
+     2. ** Using ClassName property:** It is easy to modify element class using className property
+     ```javascript
+      document.getElementById("title").style.className = "custom-title";
+      ```
+162. ### What would be the result of 1+2+'3'?
+     The output is going to be `33`. Since `1` and `2` are numeric values, the result of first two digits is going to be a numeric value `3`. The next digit is a string type value because of that the addition of numeric value `3` and string type value `3` is just going to be a concatenation value `33`.
 
 
 
