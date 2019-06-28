@@ -163,6 +163,9 @@
 |155| [What are the string methods available in Regular expression?](#what-are-the-string-methods-available-in-regular-expression)|
 |156| [What are modifiers in regular expression?](#what-are-modifiers-in-regular-expression)|
 |157| [What are regular expression patterns?](#what-are-regular-expression-patterns)|
+|158| [What is a RegExp object?](#what-is-a-regexp-object)|
+|159| [How do you search a string for a pattern?](#how-do-you-search-a-string-for-a-pattern)|
+|160| [What is the purpose of exec method?](#what-is-the-purpose-of-exec-method)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1681,23 +1684,41 @@ function userDetails(username) {
     ```
 157. ### What are regular expression patterns?
      Regular Expressions provided group of patterns in order to match characters. Basically they are categorized into 3 types,
-     1. Brackets: These are used to find a range of characters.
+     1. **Brackets:** These are used to find a range of characters.
         For example, below are some use cases,
         1. [abc]: Used to find any of the characters between the brackets(a,b,c)
         2. [0-9]: Used to find any of the digits between the brackets
         3. (a|b): Used to find any of the alternatives separated with |
-     2. Metacharacters: These are characters with a special meaning
+     2. **Metacharacters:** These are characters with a special meaning
         For example, below are some use cases,
         1. \d: Used to find a digit
         2. \s: Used to find a whitespace character
         3. \b: Used to find a match at the beginning or ending of a word
-     3. Quantifiers: These are useful to define quantities
+     3. **Quantifiers:** These are useful to define quantities
         For example, below are some use cases,
         1. n+: Used to find matches for any string that contains at least one n
         2. n*: Used to find matches for any string that contains zero or more occurrences of n
         3. n?: Used to find	matches for any string that contains zero or one occurrences of n
 
-
+158. ### What is a RegExp object?
+     RegExp object is a regular expression object with predefined properties and methods. Let's see the simple usage of RegExp object,
+     ```javascript
+     var regexp = new RegExp('\\w+');
+     console.log(regexp);
+     // expected output: /\w+/
+     ```
+159. ### How do you search a string for a pattern?
+     You can use test() method of regular expression in order to search a string for a pattern, and returns true or false depending on the result.
+     ```javascript
+     var pattern = /you/;
+     console.log(pattern.test("How are you?")); //true
+     ```
+160. ### What is the purpose of exec method?
+     The purpose of exec method is similar to test method but it returns a founded text as an object instead of returning true/false.
+     ```javascript
+     var pattern = /you/;
+     console.log(pattern.test("How are you?")); //you
+     ```
 
 
 
