@@ -178,6 +178,10 @@
 |170| [How do you make asynchronous HTTP request?](#how-do-you-make-asynchronous-http-request)|
 |171| [How do you convert date to another timezone in javascript?](#how-do-you-convert-date-to-another-timezone-in-javascript)|
 |172| [What are the properties used to get size of window?](#what-are-the-properties-used-to-get-size-of-window)|
+|173| [What is a conditional operator in javascript?](#what-is-a-conditional-operator-in-javascript)|
+|174| [Can you apply chaining on conditional operator?](#Can-you-apply-chaining-on-conditional-operator)|
+|175| [](#)|
+
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1840,7 +1844,31 @@ function userDetails(username) {
      || document.documentElement.clientHeight
      || document.body.clientHeight;
      ```
+173. ### What is a conditional operator in javascript?
+     The conditional (ternary) operator is the only JavaScript operator that takes three operands which acts as a shortcut for if statement.
+     ```javascript
+     var isAuthenticated = false;
+     console.log(isAuthenticated ? 'Hello, welcome' : 'Sorry, you are not authenticated'); //Sorry, you are not authenticated
+     ```
+174. ### Can you apply chaining on conditional operator?
+     Yes, you can apply chaining on conditional operator similar to if … else if … else if … else chain. The syntax is going to be as below,
+     ```javascript
+     function traceValue(someParam) {
+         return condition1 ? value1
+              : condition2 ? value2
+              : condition3 ? value3
+              : value4;
+     }
 
+     // The above conditional operator is equivalent to:
+
+     function traceValue(someParam) {
+         if (condition1) { return value1; }
+         else if (condition2) { return value2; }
+         else if (condition3) { return value3; }
+         else { return value4; }
+     }
+     ```
 
 
 
