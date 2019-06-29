@@ -173,6 +173,10 @@
 |165| [Can I use reserved words as identifiers?](#can-i-use-reserved-words-as-identifiers)|
 |166| [How do you detect a mobile browser?](#how-do-you-detect-a-mobile-browser)|
 |167| [How do you detect a mobile browser without regexp?](#how-do-you-detect-a-mobile-browser-without-regexp)|
+|168| [How do you get the image width and height using JS?](#how-do-you-get-the-image-width-and-height-using-js)|
+|169| [How do you make synchronous HTTP request?](#how-do-you-make-synchronous-http-request)|
+|170| [How do you make asynchronous HTTP request?](#how-do-you-make-asynchronous-http-request)|
+
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1784,7 +1788,41 @@ function userDetails(username) {
        }
      }
      ```
+168. ### How do you get the image width and height using JS?
+     You can programmatically get the image and check the dimensions(width and height) using Javascript.
+     ```javascript
+     var img = new Image();
+     img.onload = function() {
+       console.log(this.width + 'x' + this.height);
+     }
+     img.src = 'http://www.google.com/intl/en_ALL/images/logo.gif';
+     ```
 
+169. ### How do you make synchronous HTTP request?
+     Browsers provide an XMLHttpRequest object which can be used to make synchronous HTTP requests from JavaScript
+     ```javascript
+     function httpGet(theUrl)
+     {
+         var xmlHttpReq = new XMLHttpRequest();
+         xmlHttpReq.open( "GET", theUrl, false ); // false for synchronous request
+         xmlHttpReq.send( null );
+         return xmlHttpReq.responseText;
+     }
+     ```
+170. ### How do you make asynchronous HTTP request?
+     Browsers provide an XMLHttpRequest object which can be used to make asynchronous HTTP requests from JavaScript by passing 3rd parameter as true.
+     ```javascript
+     function httpGetAsync(theUrl, callback)
+     {
+         var xmlHttpReq = new XMLHttpRequest();
+         xmlHttpReq.onreadystatechange = function() {
+             if (xmlHttpReq.readyState == 4 && xmlHttpReq.status == 200)
+                 callback(xmlHttpReq.responseText);
+         }
+         xmlHttp.open("GET", theUrl, true); // true for asynchronous
+         xmlHttp.send(null);
+     }
+     ```
 
 
 
