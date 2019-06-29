@@ -189,6 +189,24 @@
 |181| [How do you detect a browser language preference?](#how-do-you-detect-a-browser-language-preference)|
 |182| [How to convert string to title case with javascript?](#how-to-convert-string-to-title-case-with-javascript)|
 |183| [How do you detect javascript disabled in the page?](#how-do-you-detect-javascript-disabled-in-the-page)|
+|184| [What are various operators supported by javascript?](#what-are-various-operators-supported-by-javascript)|
+|185| [What is a rest parameter?](#what-is-a-rest-parameter)|
+|186| [What happens if you do not use rest parameter as a last argument?](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)|
+|187| [What are the bitwise operators available in javascript?](#what-are-the-bitwise-operators-available-in-javascript)|
+|188| [What is a spread operator?](#what-is-a-spread-operator)|
+|189| [](#)|
+|190| [](#)|
+|191| [](#)|
+|192| [](#)|
+|193| [](#)|
+|194| [](#)|
+|195| [](#)|
+|196| [](#)|
+|197| [](#)|
+|198| [](#)|
+|199| [](#)|
+|200| [](#)|
+
 
 
 1. ### What are the possible ways to create objects in JavaScript?
@@ -1971,7 +1989,78 @@ function userDetails(username) {
          <a href="next_page.html?noJS=true">JavaScript is disabled in the apge. Please click Next Page</a>
      </noscript>
      ```
+184. ### What are various operators supported by javascript?
+     An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
+     1. **Arithmetic Operators:** Includes + (Addition),– (Subtraction), * (Multiplication), / (Division), % (Modulus), + + (Increment)  and – – (Decrement)
+     2. **Comparison Operators:** Includes = =(Equal),!= (Not Equal), ===(Equal with type), > (Greater than),> = (Greater than or Equal to),< (Less than),<= (Less than or Equal to)
+     3. **Logical Operators:** Includes &&(Logical AND),||(Logical OR),!(Logical NOT)
+     4. **Assignment Operators:** Includes = (Assignment Operator), += (Add and Assignment Operator), – = (Subtract and Assignment Operator), *= (Multiply and Assignment), /= (Divide and Assignment), %= (Modules and Assignment)
+     5. **Ternary Operators:** It includes conditional(: ?) Operator
+     6. **typeof Operator:** It uses to find type of variable. The syntax looks like `typeof variable`
 
+185. ### What is a rest parameter?
+     Rest parameter is an improved way to handle function parameter which allows us to represent an indefinite number of arguments as an array. The syntax would be as below,
+     ```javascript
+     function f(a, b, ...theArgs) {
+       // ...
+     }
+     ```
+     For example, let's take a sum example to calculate on dynamic number of parameters,
+     ```javascript
+     function total(…args){
+     let sum = 0;
+     for(let i of args){
+     sum+=i;
+     }
+     return sum;
+     }
+     console.log(fun(1,2)); //3
+     console.log(fun(1,2,3)); //6
+     console.log(fun(1,2,3,4)); //13
+     console.log(fun(1,2,3,4,5)); //15
+     ```
+     **Note:** Rest parameter is added in ES2015 or ES6
+186. ### What happens if you do not use rest parameter as a last argument?
+     The rest parameter should be the last argument, as its job is to collect all the remaining arguments into an array. For example, if you define a function like below it doesn’t make any sense and will throw an error.
+     ```javascript
+     function someFunc(a,…b,c){
+     //You code goes here
+     return;
+     }
+     ```
+187. ### What are the bitwise operators available in javascript?
+     Below are the list of bit-wise logical operators used in JavaScript
+     1. Bit-wise AND ( & )
+     2. Bit-Wise OR ( | )
+     3. Bit-Wise XOR ( ^ )
+     4. Bit-Wise NOT ( ~ )
+     5. Left Shift ( << )
+     6. Sign Propagating Right Shift ( >> )
+     7. Zero fill Right Shift ( >>> )
+188. ### What is a spread operator?
+     Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. Let's take an example to see this behavior,
+     ```javascript
+     function calculateSum(x, y, z) {
+       return x + y + z;
+     }
+
+     const numbers = [1, 2, 3];
+
+     console.log(calculateSum(...numbers)); // 6
+     ```
+189. ### ?
+190. ### ?
+191. ### ?
+192. ### ?
+193. ### ?
+194. ### ?
+195. ### ?
+196. ### ?
+197. ### ?
+198. ### ?
+199. ### ?
+200. ### ?
+201. ### ?
 
 
 
