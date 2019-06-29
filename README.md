@@ -168,6 +168,9 @@
 |160| [What is the purpose of exec method?](#what-is-the-purpose-of-exec-method)|
 |161| [How do you change style of a HTML element?](#how-do-you-change-style-of-a-html-element)|
 |162| [What would be the result of 1+2+'3'?](#what-would-be-the-result-of-1+2+'3')|
+|163| [What is a debugger statement?](#what-is-a-debugger-statement)|
+|164| [What is the purpose of breakpoints in debugging?](#what-is-the-purpose-of-breakpoints-indebugging)|
+|165| [Can I use reserved words as identifiers?](#can-i-use-reserved-words-as-identifiers)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1733,6 +1736,26 @@ function userDetails(username) {
       ```
 162. ### What would be the result of 1+2+'3'?
      The output is going to be `33`. Since `1` and `2` are numeric values, the result of first two digits is going to be a numeric value `3`. The next digit is a string type value because of that the addition of numeric value `3` and string type value `3` is just going to be a concatenation value `33`.
+163. ### What is a debugger statement?
+     The debugger statement invokes any available debugging functionality, such as setting a breakpoint. If no debugging functionality is available, this statement has no effect.
+     For example, in the below function a debugger statement has been inserted. So execution is paused at the debugger statement just like a breakpoint in the script source.
+     ```javascript
+     function getProfile() {
+     // code goes here
+     debugger;
+     // code goes here
+     }
+     ```
+164. ### What is the purpose of breakpoints in debugging?
+     You can set breakpoints in the javascript code once the debugger statement is executed and debugger window pops up. At each breakpoint, javascript will stop executing, and let you examine the JavaScript values. After examining values, you can resume the execution of code using play button.
+165. ### Can I use reserved words as identifiers?
+     No, you cannot use the reserved words as variables, labels, object or function names. Let's see one simple example,
+     ```javascript
+     var else = "hello"; // Uncaught SyntaxError: Unexpected token else
+     ```
+
+
+
 
 
 
