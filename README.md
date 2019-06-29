@@ -176,7 +176,8 @@
 |168| [How do you get the image width and height using JS?](#how-do-you-get-the-image-width-and-height-using-js)|
 |169| [How do you make synchronous HTTP request?](#how-do-you-make-synchronous-http-request)|
 |170| [How do you make asynchronous HTTP request?](#how-do-you-make-asynchronous-http-request)|
-
+|171| [How do you convert date to another timezone in javascript?](#how-do-you-convert-date-to-another-timezone-in-javascript)|
+|172| [What are the properties used to get size of window?](#what-are-the-properties-used-to-get-size-of-window)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1823,7 +1824,22 @@ function userDetails(username) {
          xmlHttp.send(null);
      }
      ```
+171. ### How do you convert date to another timezone in javascript?
+     You can use toLocaleString() method to convert date in one timezone to another. For example, let's convert current date to British English timezone as below,
+     ```javascript
+     console.log(event.toLocaleString('en-GB', { timeZone: 'UTC' })); //29/06/2019, 09:56:00
+     ```
+172. ### What are the properties used to get size of window?
+     You can use innerWidth, innerHeight, clientWidth, clientHeight properties of windows, document element and document body objects to find the size of a window. Let's use them combination of these properties to calculate the size of a window or document,
+     ```javascript
+     var width = window.innerWidth
+     || document.documentElement.clientWidth
+     || document.body.clientWidth;
 
+     var height = window.innerHeight
+     || document.documentElement.clientHeight
+     || document.body.clientHeight;
+     ```
 
 
 
