@@ -186,6 +186,9 @@
 |178| [What is a freeze method?](#what-is-a-freeze-method)|
 |179| [What is the purpose of freeze method?](#what-is-the-purpose-of-freeze-method)|
 |180| [Why do I need to use freeze method?](#why-do-i-need-to-use-freeze-method)|
+|181| [How do you detect a browser language preference?](#how-do-you-detect-a-browser-language-preference)|
+|182| [How to convert string to title case with javascript?](#how-to-convert-string-to-title-case-with-javascript)|
+|183| [How do you detect javascript disabled in the page?](#how-do-you-detect-javascript-disabled-in-the-page)|
 
 
 1. ### What are the possible ways to create objects in JavaScript?
@@ -1936,6 +1939,38 @@ function userDetails(username) {
 
 180. ### Why do I need to use freeze method?
      In Object-oriented paradigm, an existing API contains certain elements that are not intended to be extended, modified, or re-used outside of their current context. Hence it works as `final` keyword which is used in various languages.
+181. ### How do you detect a browser language preference?
+     You can use navigator object to detect a browser language preference as below,
+     ```javascript
+     var language = navigator.languages && navigator.languages[0] || // Chrome / Firefox
+                    navigator.language ||   // All browsers
+                    navigator.userLanguage; // IE <= 10
+
+     console.log(language);
+     ```
+182. ### How to convert string to title case with javascript?
+     Title case means that the first letter of each word is capitalized. You can convert a string to title case using the below function,
+     ```javascript
+         function toTitleCase(str) {
+             return str.replace(
+                 /\w\S*/g,
+                 function(txt) {
+                     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                 }
+             );
+         }
+         toTitleCase("good morning john"); // Good Morning John
+     ```
+183. ### How do you detect javascript disabled in the page?
+     You can use `<noscript>` tag to detect javascript disabled or not. The code block inside `<noscript>` get executed when JavaScript is disabled, and are typically used to display alternative content when the page generated in JavaScript.
+     ```javascript
+     <script type="javascript">
+         // JS related code goes here
+     </script>
+     <noscript>
+         <a href="next_page.html?noJS=true">JavaScript is disabled in the apge. Please click Next Page</a>
+     </noscript>
+     ```
 
 
 
