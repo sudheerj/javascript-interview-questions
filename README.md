@@ -210,9 +210,9 @@
 |202| [How do you create an object with prototype?](#how-do-you-create-an-object-with-prototype)|
 |203| [What is a WeakSet?](#what-is-a-weakset)|
 |204| [What are the differences between WeakSet and Set?](#what-are-the-differences-between-weakset-and-set)|
-|205| [](#)|
-|206| [](#)|
-|207| [](#)|
+|205| [List down the collection of methods available on WeakSet?](#list-down-the-collection-of-methods-available-on-weakset)|
+|206| [What is a WeakMap?](#what-is-a-weakmap)|
+|207| [What are the differences between WeakMap and Map?](#what-are-the-differences-between-weakmap-and-map)|
 |208| [](#)|
 |209| [](#)|
 |210| [](#)|
@@ -2248,9 +2248,31 @@ function userDetails(username) {
      2. WeakSet does not have size property unlike Set
      3. WeakSet does not have methods such as clear, keys, values, entries, forEach.
      4. WeakSet is not iterable.
-205. ### ?
-206. ### ?
-207. ### ?
+205. ### List down the collection of methods available on WeakSet?
+     Below are the list of methods available on WeakSet,
+     1. add(value): A new object is appended with the given value to the weakset
+     2. delete(value): Deletes the value from the WeakSet collection.
+     3. has(value): It returns true if the value is present in the WeakSet Collection, otherwise it returns false.
+     4. length(): It returns the length of weakSetObject
+     Let's see the functionality of all the above methods in an example,
+     ```javascript
+     var weakSetObject = new WeakSet();
+     var firstObject = {};
+     var secondObject = {};
+     // add(value)
+     weakSetObject.add(firstObject);
+     weakSetObject.add(secondObject);
+     console.log(weakSetObject.has(firstObject)); //true
+     console.log(weakSetObject.length()); //2
+     weakSetObject.delete(secondObject);
+     ```
+206. ### What is a WeakMap?
+     The WeakMap object is a collection of key/value pairs in which the keys are weakly referenced. In this case, keys must be objects and the values can be arbitrary values. The syntax is looking like as below,
+     ```javascript
+     new WeakMap([iterable])
+     ```
+
+207. ### What are the differences between WeakMap and Map?
 208. ### ?
 209. ### ?
 210. ### ?
