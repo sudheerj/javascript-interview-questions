@@ -208,6 +208,15 @@
 |200| [What is the main difference between Object.values and Object.entries method?](#what-is-the-main-difference-between-object.values-and-object.entries-method)|
 |201| [How can you get the list of keys of any object?](#how-can-you-get-the-list-of-keys-of-any-object)|
 |202| [How do you create an object with prototype?](#how-do-you-create-an-object-with-prototype)|
+|203| [What is a WeakSet?](#what-is-a-weakset)|
+|204| [What are the differences between WeakSet and Set?](#what-are-the-differences-between-weakset-and-set)|
+|205| [](#)|
+|206| [](#)|
+|207| [](#)|
+|208| [](#)|
+|209| [](#)|
+|210| [](#)|
+|212| [](#)|
 
 
 1. ### What are the possible ways to create objects in JavaScript?
@@ -2218,6 +2227,35 @@ function userDetails(username) {
 
       admin.printInfo(); // My name is Nick
      ```
+203. ### What is a WeakSet?
+     WeakSet is used to store a collection of weakly(weak references) held objects. The syntax would be as follows,
+     ```javascript
+     new WeakSet([iterable]);
+     ```
+     Let's see the below example to explain it's behavior,
+     ```javascript
+     var ws = new WeakSet();
+     var user = {};
+     ws.add(user);
+     ws.has(user);    // true
+     ws.delete(user); // removes user from the set
+     ws.has(user);    // false, user has been removed
+     ```
+204. ### What are the differences between WeakSet and Set?
+     The main difference is that references to objects in Set are strong while references to objects in WeakSet are weak. i.e, An object in WeakSet can be garbage collected if there is no other reference to it.
+     Other differences are,
+     1. Sets can store any value Whereas WeakSets can store only collections of objects
+     2. WeakSet does not have size property unlike Set
+     3. WeakSet does not have methods such as clear, keys, values, entries, forEach.
+     4. WeakSet is not iterable.
+205. ### ?
+206. ### ?
+207. ### ?
+208. ### ?
+209. ### ?
+210. ### ?
+
+
 
 
 
