@@ -213,8 +213,8 @@
 |205| [List down the collection of methods available on WeakSet?](#list-down-the-collection-of-methods-available-on-weakset)|
 |206| [What is a WeakMap?](#what-is-a-weakmap)|
 |207| [What are the differences between WeakMap and Map?](#what-are-the-differences-between-weakmap-and-map)|
-|208| [](#)|
-|209| [](#)|
+|208| [List down the collection of methods available on WeakMap?](#list-down-the-collection-of-methods-available-on-weakmap)|
+|209| [What is the purpose of uneval?](#what-is-the-purpose-of-uneval)|
 |210| [](#)|
 |212| [](#)|
 
@@ -2271,10 +2271,47 @@ function userDetails(username) {
      ```javascript
      new WeakMap([iterable])
      ```
-
+     Let's see the below example to explain it's behavior,
+     ```javascript
+      var ws = new WeakMap();
+      var user = {};
+      ws.set(user);
+      ws.has(user);    // true
+      ws.delete(user); // removes user from the map
+      ws.has(user);    // false, user has been removed
+     ```
 207. ### What are the differences between WeakMap and Map?
-208. ### ?
-209. ### ?
+     The main difference is that references to key objects in Map are strong while references to key objects in WeakMap are weak. i.e, A key object in WeakMap can be garbage collected if there is no other reference to it.
+     Other differences are,
+     1. Maps can store any key type Whereas WeakMaps can store only collections of key objects
+     2. WeakMap does not have size property unlike Map
+     3. WeakMap does not have methods such as clear, keys, values, entries, forEach.
+     4. WeakMap is not iterable.
+208. ### List down the collection of methods available on WeakMap?
+     Below are the list of methods available on WeakMap,
+     1. set(key, value): Sets the value for the key in the WeakMap object. Returns the WeakMap object.
+     2. delete(key): Removes any value associated to the key.
+     3. has(key): Returns a Boolean asserting whether a value has been associated to the key in the WeakMap object or not.
+     4. get(key): Returns the value associated to the key, or undefined if there is none.
+     Let's see the functionality of all the above methods in an example,
+     ```javascript
+     var weakMapObject = new WeakMap();
+     var firstObject = {};
+     var secondObject = {};
+     // set(key, value)
+     weakMapObject.set(firstObject, 'John');
+     weakMapObject.set(secondObject, 100);
+     console.log(weakMapObject.has(firstObject)); //true
+     console.log(weakMapObject.get(firstObject)); // John
+     weakMapObject.delete(secondObject);
+     ```
+209. ### What is the purpose of uneval?
+     The uneval() is an inbuilt function which is used to create a string representation of the source code of an Object. It is a top-level function and is not associated with any object. Let's see the below example to know more about it's functionality,
+     ```javascript
+     var a = 1;
+     uneval(a); // returns a String containing 1
+     uneval(function user() {}); // returns "(function user(){})"
+     ```
 210. ### ?
 
 
