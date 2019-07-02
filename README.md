@@ -216,9 +216,9 @@
 |208| [List down the collection of methods available on WeakMap?](#list-down-the-collection-of-methods-available-on-weakmap)|
 |209| [What is the purpose of uneval?](#what-is-the-purpose-of-uneval)|
 |210| [How do you encode an URL?](#how-do-you-encode-an-url)|
-|212| [How do you decode an URL?](#how-do-you-decode-an-url)|
-|213| [How do you print the contents of web page?](#how-do-you-print-the-contents-of-web-page)|
-
+|211| [How do you decode an URL?](#how-do-you-decode-an-url)|
+|212| [How do you print the contents of web page?](#how-do-you-print-the-contents-of-web-page)|
+|213| [What is the difference between uneval and eval?](#what-is-the-difference-between-uneval-and-eval)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2337,7 +2337,14 @@ function userDetails(username) {
      ```html
         <input type="button" value="Print" onclick="window.print()" />
      ```
-     **Note:** In most browsers, it will block while the print dialog is open
+     **Note:** In most browsers, it will block while the print dialog is open.
+213. ### What is the difference between uneval and eval?
+     The `uneval` function returns the source of a given object; whereas the `eval` function does the opposite, by evaluating that source code in a different memory area. Let's see an example to clarify the difference,
+     ```javascript
+     var msg = uneval(function greeting() { return 'Hello, Good morning'; });
+     var greeting = eval(msg);
+     greeting(); // returns "Hello, Good morning"
+     ```
 
 
 
