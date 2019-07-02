@@ -215,8 +215,8 @@
 |207| [What are the differences between WeakMap and Map?](#what-are-the-differences-between-weakmap-and-map)|
 |208| [List down the collection of methods available on WeakMap?](#list-down-the-collection-of-methods-available-on-weakmap)|
 |209| [What is the purpose of uneval?](#what-is-the-purpose-of-uneval)|
-|210| [](#)|
-|212| [](#)|
+|210| [How do you encode an URL?](#how-do-you-encode-an-url)|
+|212| [How do you decode an URL?](#how-do-you-decode-an-url)|
 
 
 1. ### What are the possible ways to create objects in JavaScript?
@@ -2312,7 +2312,26 @@ function userDetails(username) {
      uneval(a); // returns a String containing 1
      uneval(function user() {}); // returns "(function user(){})"
      ```
-210. ### ?
+210. ### How do you encode an URL?
+     The encodeURI() function is used to encode complete URI which has special characters except (, / ? : @ & = + $ #) characters.
+     ```javascript
+     var uri = 'https://mozilla.org/?x=шеллы';
+     var encoded = encodeURI(uri);
+     console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
+     ```
+211. ### How do you decode an URL?
+     The decodeURI() function is used to decode a Uniform Resource Identifier (URI) previously created by encodeURI().
+     ```javascript
+      var uri = 'https://mozilla.org/?x=шеллы';
+      var encoded = encodeURI(uri);
+      console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
+     try {
+       console.log(decodeURI(encoded)); // "https://mozilla.org/?x=шеллы"
+     } catch(e) { // catches a malformed URI
+       console.error(e);
+     }
+     ```
+
 
 
 
