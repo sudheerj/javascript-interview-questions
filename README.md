@@ -222,6 +222,7 @@
 |214| [What is an anonymous function?](#what-is-an-anonymous-function)|
 |215| [What is the precedence order between local and global variables?](#what-is-the-precedence-order-between-local-and-global-variables)|
 |216| [What are javascript accessors?](#what-are-javascript-accessors)|
+|217| [How do you define property on Object constructor?](#how-do-you-define-property-on-object-constructor)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2397,6 +2398,22 @@ function userDetails(username) {
      user.lang = 'fr';
      console.log(user.lang); // setter used to set lang as fr
      ```
+217. ### How do you define property on Object constructor?
+     The Object.defineProperty() static method is used to define a new property directly on an object, or modifies an existing property on an object, and returns the object. Let's see an example to know how to define property,
+     ```javascript
+     const newObject = {};
+
+     Object.defineProperty(newObject, 'newProperty', {
+       value: 100,
+       writable: false
+     });
+
+     console.log(newObject.newProperty); // 100
+
+     newObject.newProperty = 200; // It throws an error in strict mode due to writable setting
+
+     ```
+
 
 
 
