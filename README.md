@@ -219,6 +219,8 @@
 |211| [How do you decode an URL?](#how-do-you-decode-an-url)|
 |212| [How do you print the contents of web page?](#how-do-you-print-the-contents-of-web-page)|
 |213| [What is the difference between uneval and eval?](#what-is-the-difference-between-uneval-and-eval)|
+|214| [What is an anonymous function?](#what-is-an-anonymous-function)|
+|215| [What is the precedence order between local and global variables?](#what-is-the-precedence-order-between-local-and-global-variables)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2344,6 +2346,37 @@ function userDetails(username) {
      var msg = uneval(function greeting() { return 'Hello, Good morning'; });
      var greeting = eval(msg);
      greeting(); // returns "Hello, Good morning"
+     ```
+214. ### What is an anonymous function?
+     An anonymous function is a function without a name! Anonymous functions are commonly assigned to a variable name or used as a callback function. The syntax would be as below,
+     ```javascript
+     function (optionalParameters) {
+       //do something
+     }
+
+     const myFunction = function(){ //Anonymous function assigned to a variable
+       //do something
+     };
+
+     [1, 2, 3].map(function(element){ //Anonymous function used as a callback function
+       //do something
+     });
+     ```
+     Let's see the above anonymous function in an example,
+     ```javascript
+     var x = function (a, b) {return a * b};
+     var z = x(5, 10);
+     console.log(z); // 50
+     ```
+215. ### What is the precedence order between local and global variables?
+     A local variable takes precedence over a global variable with the same name. Let's see this behavior in an example.
+     ```javascript
+     var msg = "Good morning";
+     function greeting() {
+        msg = "Good Evening";
+        console.log(msg);
+     }
+     greeting();
      ```
 
 
