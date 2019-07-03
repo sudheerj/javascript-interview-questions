@@ -221,6 +221,7 @@
 |213| [What is the difference between uneval and eval?](#what-is-the-difference-between-uneval-and-eval)|
 |214| [What is an anonymous function?](#what-is-an-anonymous-function)|
 |215| [What is the precedence order between local and global variables?](#what-is-the-precedence-order-between-local-and-global-variables)|
+|216| [What are javascript accessors?](#what-are-javascript-accessors)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2378,8 +2379,24 @@ function userDetails(username) {
      }
      greeting();
      ```
-
-
+216. ### What are javascript accessors?
+     ECMAScript 5 introduced javascript object accessors or computed properties through getters and setters. Getters uses `get` keyword whereas Setters uses `set` keyword.
+     ```javascript
+     var user = {
+       firstName: "John",
+       lastName : "Abraham",
+       language : "en",
+       get lang() {
+         return this.language;
+       }
+       set lang(lang) {
+       this.language = lang;
+       }
+     };
+     console.log(user.lang); // getter access lang as en
+     user.lang = 'fr';
+     console.log(user.lang); // setter used to set lang as fr
+     ```
 
 
 
