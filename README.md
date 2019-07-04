@@ -223,6 +223,7 @@
 |215| [What is the precedence order between local and global variables?](#what-is-the-precedence-order-between-local-and-global-variables)|
 |216| [What are javascript accessors?](#what-are-javascript-accessors)|
 |217| [How do you define property on Object constructor?](#how-do-you-define-property-on-object-constructor)|
+|218| [What is the difference between get and defineProperty?](#what-is-the-difference-between-get-and-defineproperty)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2413,6 +2414,8 @@ function userDetails(username) {
      newObject.newProperty = 200; // It throws an error in strict mode due to writable setting
 
      ```
+218. ### What is the difference between get and defineProperty?
+     Both has similar results until unless you use classes. If you use `get` the property will be defined on the prototype of the object whereas using `Object.defineProperty()` the property will be defined on the instance it is applied to.
 
 
 
