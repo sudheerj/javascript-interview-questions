@@ -224,6 +224,8 @@
 |216| [What are javascript accessors?](#what-are-javascript-accessors)|
 |217| [How do you define property on Object constructor?](#how-do-you-define-property-on-object-constructor)|
 |218| [What is the difference between get and defineProperty?](#what-is-the-difference-between-get-and-defineproperty)|
+|219| [What are the advantages of Getters and Setters?](#what-are-the-advantages-of-getters-and-setters)|
+|220| [Can I add getters and setters using defineProperty method?](#can-i-add-getters-and-setters-using-defineproperty-method)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2416,6 +2418,40 @@ function userDetails(username) {
      ```
 218. ### What is the difference between get and defineProperty?
      Both has similar results until unless you use classes. If you use `get` the property will be defined on the prototype of the object whereas using `Object.defineProperty()` the property will be defined on the instance it is applied to.
+219. ### What are the advantages of Getters and Setters?
+     Below are the list of benefits of Getters and Setters,
+     1. They provide simpler syntax
+     2. They are used for defining computed properties, or accessors in JS.
+     3. Useful to provide equivalence relation between properties and methods
+     4. They can provide better data quality
+     5. Useful for doing things behind the scenes with the encapsulated logic.
+
+220. ### Can I add getters and setters using defineProperty method?
+     Yes, You can use `Object.defineProperty()` method to add Getters and Setters. For example, the below counter object uses increment, decrement, add and substract properties,
+     ```javascript
+     var counterObj = {counter : 0};
+
+     // Define getters
+     Object.defineProperty(obj, "increment", {
+       get : function () {this.counter++;}
+     });
+     Object.defineProperty(obj, "decrement", {
+       get : function () {this.counter--;}
+     });
+
+     // Define setters
+     Object.defineProperty(obj, "add", {
+       set : function (value) {this.counter += value;}
+     });
+     Object.defineProperty(obj, "subtract", {
+       set : function (value) {this.counter -= value;}
+     });
+
+     obj.add = 10;
+     obj.subtract = 5;
+     console.log(obj.increment); //6
+     console.log(obj.decrement); //5
+     ```
 
 
 
