@@ -226,6 +226,8 @@
 |218| [What is the difference between get and defineProperty?](#what-is-the-difference-between-get-and-defineproperty)|
 |219| [What are the advantages of Getters and Setters?](#what-are-the-advantages-of-getters-and-setters)|
 |220| [Can I add getters and setters using defineProperty method?](#can-i-add-getters-and-setters-using-defineproperty-method)|
+|221| [What is the purpose of switch-case?](#what-is-the-purpose-of-switch-case)|
+|222| [What are the conventions to be followed for the usage of swtich case?](#what-are-the-conventions-to-be-followed-for-the-usage-of-swtich-case)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2452,6 +2454,34 @@ function userDetails(username) {
      console.log(obj.increment); //6
      console.log(obj.decrement); //5
      ```
+221. ### What is the purpose of switch-case?
+     The switch case statement in JavaScript is used for decision making purposes. In few cases, using the switch case statement is going to be more convenient than if-else statements. The syntax would be as below,
+     ```javascript
+     switch (expression)
+     {
+         case value1:
+             statement1;
+             break;
+         case value2:
+             statement2;
+             break;
+         .
+         .
+         case valueN:
+             statementN;
+             break;
+         default:
+             statementDefault;
+     }
+     ```
+     The above multi-way branch statement provides an easy way to dispatch execution to different parts of code based on the value of the expression.
+222. ### What are the conventions to be followed for the usage of swtich case?
+     Below are the list of conventions should be taken care,
+     1. The expression can be of type either number or string.
+     2. Duplicate values are not allowed for the expression.
+     3. The default statement is optional. If the expression passed to switch does not matches with any case value then the statement within default case will be executed.
+     4. The break statement is used inside the switch to terminate a statement sequence.
+     5. The break statement is optional. But if it omitted, the execution will continue on into the next case.
 
 
 
