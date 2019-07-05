@@ -228,6 +228,9 @@
 |220| [Can I add getters and setters using defineProperty method?](#can-i-add-getters-and-setters-using-defineproperty-method)|
 |221| [What is the purpose of switch-case?](#what-is-the-purpose-of-switch-case)|
 |222| [What are the conventions to be followed for the usage of swtich case?](#what-are-the-conventions-to-be-followed-for-the-usage-of-swtich-case)|
+|223| [What are primitive data types?](#what-are-primitive-data-types)|
+|224| [What are the different ways to access object properties?](#what-are-the-different-ways-to-access-object-properties)|
+|225| [What are the function parameter rules?](#what-are-the-function-parameter-rules)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2482,6 +2485,41 @@ function userDetails(username) {
      3. The default statement is optional. If the expression passed to switch does not matches with any case value then the statement within default case will be executed.
      4. The break statement is used inside the switch to terminate a statement sequence.
      5. The break statement is optional. But if it omitted, the execution will continue on into the next case.
+223. ### What are primitive data types?
+     A primitive data type is data that has a primitive value (which has no properties or methods). There are 5 types of primitive data types.
+     1. string
+     2. number
+     3. boolean
+     4. null
+     5. undefined
+
+224. ### What are the different ways to access object properties?
+     There are 3 possible ways for accessing the property of an object.
+     1. **Dot notation:** It uses dot for accessing the properties
+     ```javascript
+     objectName.property
+     ```
+     2. **Square brackets notation:** It uses square brackets for property access
+     ```javascript
+     objectName["property"]
+     ```
+     3. **Expression notation:** It uses expression in the square brackets
+     ```javascript
+     objectName[expression]
+     ```
+225. ### What are the function parameter rules?
+     JavaScript functions follow below rules for parameters,
+     1. The function definitions do not specify data types for parameters.
+     2. Do not perform type checking on the passed arguments.
+     3. Do not check the number of arguments received.
+     i.e, The below function follows the above rules,
+     ```javascript
+     function functionName(parameter1, parameter2, parameter3) {
+       console.log(parameter1); // 1
+     }
+     functionName(1);
+     ```
+
 
 
 
