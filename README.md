@@ -237,6 +237,7 @@
 |229| [What are the various statements in error handling?](#what-are-the-various-statements-in-error-handling)|
 |230| [What are the two types of loops in javascript?](#what-are-the-two-types-of-loops-in-javascript)|
 |231| [What is nodejs?](#what-is-nodejs)|
+|232| [What is an Intl object?](#what-is-an-intl-object)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2569,6 +2570,8 @@ function userDetails(username) {
 
 231. ### What is nodejs?
      Node.js is a server-side platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. It is an event-based, non-blocking, asynchronous I/O runtime that uses Google's V8 JavaScript engine and libuv library.
+232. ### What is an Intl object?
+     The Intl object is the namespace for the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, and date and time formatting. It provides an access to several constructors and language sensitive functions.
 
 
 
