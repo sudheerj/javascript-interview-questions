@@ -236,6 +236,7 @@
 |228| [What are the different error names from error object?](#what-are-the-different-error-names-from-error-object)|
 |229| [What are the various statements in error handling?](#what-are-the-various-statements-in-error-handling)|
 |230| [What are the two types of loops in javascript?](#what-are-the-two-types-of-loops-in-javascript)|
+|231| [What is nodejs?](#what-is-nodejs)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2565,6 +2566,9 @@ function userDetails(username) {
 230. ### What are the two types of loops in javascript?
      1. **Entry Controlled loops:** In this kind of loop type, the test condition is tested before entering the loop body. For example, For Loop and While Loop comes under this category.
      2. **Exit Controlled Loops:** In this kind of loop typpe, the test condition is tested or evaluated at the end of loop body. i.e, the loop body will execute atleast once irrespective of test condition true or false. For example, do-while loop comes under this category.
+
+231. ### What is nodejs?
+     Node.js is a server-side platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. It is an event-based, non-blocking, asynchronous I/O runtime that uses Google's V8 JavaScript engine and libuv library.
 
 
 
