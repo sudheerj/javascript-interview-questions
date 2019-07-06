@@ -235,6 +235,7 @@
 |227| [When you get a syntax error?](#when-you-get-a-syntax-error)|
 |228| [What are the different error names from error object?](#what-are-the-different-error-names-from-error-object)|
 |229| [What are the various statements in error handling?](#what-are-the-various-statements-in-error-handling)|
+|230| [What are the two types of loops in javascript?](#what-are-the-two-types-of-loops-in-javascript)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2560,6 +2561,11 @@ function userDetails(username) {
      2. **catch:** This statement is used to handle the error
      3. **throw:** This statement is used to create custom errors.
      4. **finally:** This statement is used to execute code after try and catch regardless of the result.
+
+230. ### What are the two types of loops in javascript?
+     1. **Entry Controlled loops:** In this kind of loop type, the test condition is tested before entering the loop body. For example, For Loop and While Loop comes under this category.
+     2. **Exit Controlled Loops:** In this kind of loop typpe, the test condition is tested or evaluated at the end of loop body. i.e, the loop body will execute atleast once irrespective of test condition true or false. For example, do-while loop comes under this category.
+
 
 
 
