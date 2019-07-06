@@ -239,6 +239,10 @@
 |231| [What is nodejs?](#what-is-nodejs)|
 |232| [What is an Intl object?](#what-is-an-intl-object)|
 |234| [What is an Iterator?](#what-is-an-iterator)|
+|235| [What is an event loop?](#what-is-an-event-loop)|
+|236| [What is call stack?](#what-is-call-stack)|
+|237| [What is an event queue?](#what-is-an-event-queue)|
+
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2575,6 +2579,11 @@ function userDetails(username) {
      The Intl object is the namespace for the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, and date and time formatting. It provides an access to several constructors and language sensitive functions.
 234. ### What is an Iterator?
      an iterator is an object which defines a sequence and a return value upon its termination. It implements the Iterator protocol with a next() method which returns an object with two properties: value (the next value in the sequence) and done (which is true if the last value in the sequence has been consumed).
+235. ### What is an event loop?
+     The Event Loop is a queue of callback functions. When an async function executes, the callback function is pushed into the queue. The JavaScript engine doesn't start processing the event loop until async function has finished executing the code.
+     **Note:** It allows Node.js to perform non-blocking I/O operations eventhough JavaScript is single-threaded.
+236. ### What is call stack?
+237. ### What is an event queue?
 
 
 
