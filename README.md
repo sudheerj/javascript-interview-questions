@@ -231,6 +231,10 @@
 |223| [What are primitive data types?](#what-are-primitive-data-types)|
 |224| [What are the different ways to access object properties?](#what-are-the-different-ways-to-access-object-properties)|
 |225| [What are the function parameter rules?](#what-are-the-function-parameter-rules)|
+|226| [What is an error object?](#what-is-an-error-object)|
+|227| [When you get a syntax error?](#when-you-get-a-syntax-error)|
+|228| [What are the different error names from error object?](#what-are-the-different-error-names-from-error-object)|
+|229| [What are the various statements in error handling?](#what-are-the-various-statements-in-error-handling)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2519,6 +2523,44 @@ function userDetails(username) {
      }
      functionName(1);
      ```
+226. ### What is an error object?
+     An error object is a built in error object that provides error information when an error occurs. It has two properties: name and message. For example, the below function logs error details,
+     ```javascript
+     try {
+       greeting("Welcome");
+     }
+     catch(err) {
+       console.log(err.name + "<br>" + err.message);
+     }
+     ```
+227. ### When you get a syntax error?
+     A SyntaxError is thrown if you try to evaluate code with a syntax error. For example, the below missing quote for the function parameter throws a syntax error
+     ```javascript
+     try {
+       eval("greeting('welcome)");   // Missing ' will produce an error
+     }
+     catch(err) {
+       console.log(err.name);
+     }
+     ```
+228. ### What are the different error names from error object?
+     There are 6 different types of error names returned from error object,
+     | Error Name | Description |
+     |---- | ---------
+     | EvalError  | An error has occurred in the eval() function |
+     | RangeError | An error has occurred with a number "out of range"  |
+     | ReferenceError | An error due to an illegal reference|
+     | SyntaxError | An error due to a syntax error|
+     | TypeError | An error due to a type error |
+     | URIError | An error due to encodeURI() |
+
+229. ### What are the various statements in error handling?
+     Below are the list of statements used in an error handling,
+     1. **try:** This statement is used to test a block of code for errors
+     2. **catch:** This statement is used to handle the error
+     3. **throw:** This statement is used to create custom errors.
+     4. **finally:** This statement is used to execute code after try and catch regardless of the result.
+
 
 
 
