@@ -242,7 +242,7 @@
 |235| [What is an event loop?](#what-is-an-event-loop)|
 |236| [What is call stack?](#what-is-call-stack)|
 |237| [What is an event queue?](#what-is-an-event-queue)|
-
+|238| [What is a decorator?](#what-is-a-decorator)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2584,7 +2584,25 @@ function userDetails(username) {
      **Note:** It allows Node.js to perform non-blocking I/O operations eventhough JavaScript is single-threaded.
 236. ### What is call stack?
 237. ### What is an event queue?
+238. ### What is a decorator?
+     A decorator is an expression that evaluates to a function and that takes the target, name, and decorator descriptor as arguments. Also, it optionally returns a decorator descriptor to install on the target object. Let's define admin decorator for user class at design time,
+     ```javascript
+     function admin(isAdmin) {
+        return function(target) {
+            target.isAdmin = isAdmin;
+        }
+     }
 
+     @admin(true)
+     class User() {
+     }
+     console.log(User.isAdmin); //true
+
+      @admin(false)
+      class User() {
+      }
+      console.log(User.isAdmin); //false
+     ```
 
 
 
