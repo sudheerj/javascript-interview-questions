@@ -238,6 +238,7 @@
 |230| [What are the two types of loops in javascript?](#what-are-the-two-types-of-loops-in-javascript)|
 |231| [What is nodejs?](#what-is-nodejs)|
 |232| [What is an Intl object?](#what-is-an-intl-object)|
+|233| [How do you perform language specific date and time formatting?](#how-do-you-perform-language-specific-date-and-time-formatting)|
 |234| [What is an Iterator?](#what-is-an-iterator)|
 |235| [What is an event loop?](#what-is-an-event-loop)|
 |236| [What is call stack?](#what-is-call-stack)|
@@ -2577,6 +2578,13 @@ function userDetails(username) {
      Node.js is a server-side platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. It is an event-based, non-blocking, asynchronous I/O runtime that uses Google's V8 JavaScript engine and libuv library.
 232. ### What is an Intl object?
      The Intl object is the namespace for the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, and date and time formatting. It provides an access to several constructors and language sensitive functions.
+233. ### How do you perform language specific date and time formatting?
+     You can use `Intl.DateTimeFormat` object which is constructor for objects that enable language-sensitive date and time formatting. Let's see this behavior with an example,
+     ```javascript
+     var date = new Date(Date.UTC(2019, 07, 07, 3, 0, 0));
+     console.log(new Intl.DateTimeFormat('en-GB').format(date)); // 07/08/2019
+     console.log(new Intl.DateTimeFormat('en-AU').format(date)); // 07/08/2019
+     ```
 234. ### What is an Iterator?
      an iterator is an object which defines a sequence and a return value upon its termination. It implements the Iterator protocol with a next() method which returns an object with two properties: value (the next value in the sequence) and done (which is true if the last value in the sequence has been consumed).
 235. ### What is an event loop?
