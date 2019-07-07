@@ -244,6 +244,8 @@
 |236| [What is call stack?](#what-is-call-stack)|
 |237| [What is an event queue?](#what-is-an-event-queue)|
 |238| [What is a decorator?](#what-is-a-decorator)|
+|239| [What are the properties of Intl object?](#what-are-the-properties-of-intl-object)|
+|240| [What is an Unary operator?](#what-is-an-unary-operator)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2611,6 +2613,29 @@ function userDetails(username) {
       }
       console.log(User.isAdmin); //false
      ```
+239. ### What are the properties of Intl object?
+     Below are the list of properties available on Intl object,
+     1. **Collator:** These are the objects that enable language-sensitive string comparison.
+     2. **DateTimeFormat:** These are the objects that enable language-sensitive date and time formatting.
+     3. **ListFormat:** These are the objects that enable language-sensitive list formatting.
+     4. **NumberFormat:** Objects that enable language-sensitive number formatting.
+     5. **PluralRules:** Objects that enable plural-sensitive formatting and language-specific rules for plurals.
+     6. **RelativeTimeFormat:** Objects that enable language-sensitive relative time formatting.
+
+240. ### What is an Unary operator?
+     The unary(+) operator is used to convert a variable to a number.If the variable cannot be converted, it will still become a number but with the value NaN. Let's see this behavior in an action.
+     ```javascrippt
+     var x = "100";
+     var y = + x;
+     console.log(typeof x, typeof y); // string, number
+
+     var a = "Hello";
+     var b = + a;
+     console.log(typeof a, typeof b, b); // string, number, NaN
+     ```
+
+
+
 
 
 
