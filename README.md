@@ -246,6 +246,8 @@
 |238| [What is a decorator?](#what-is-a-decorator)|
 |239| [What are the properties of Intl object?](#what-are-the-properties-of-intl-object)|
 |240| [What is an Unary operator?](#what-is-an-unary-operator)|
+|241| [How do you sort elements in an array?](#how-do-you-sort-elements-in-an-array)|
+|242| [What is the purpose of compareFunction while sorting arrays?](#what-is-the-purpose-of-comparefunction-while-sorting-arrays)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2633,6 +2635,22 @@ function userDetails(username) {
      var b = + a;
      console.log(typeof a, typeof b, b); // string, number, NaN
      ```
+241. ### How do you sort elements in an array?
+     The sort() method is used to sort the elements of an array in place and returns the sorted array. The example usage would be as below,
+     ```javascript
+     var months = ["Aug", "Sep", "Jan", "June"];
+     months.sort();
+     console.log(months); //  ["Aug", "Jan", "June", "Sep"]
+     ```
+242. ### What is the purpose of compareFunction while sorting arrays?
+     The compareFunction is used to define the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.
+     ```javascript
+     let numbers = [1, 2, 5, 3, 4];
+     numbers.sort((a, b) => b - a);
+     console.log(numbers); //
+     ```
+243. ### ?
+244. ### ?
 
 
 
