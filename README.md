@@ -250,6 +250,7 @@
 |242| [What is the purpose of compareFunction while sorting arrays?](#what-is-the-purpose-of-comparefunction-while-sorting-arrays)|
 |243| [How do you reversing an array?](#how-do-you-reversing-an-array)|
 |244| [How do you find min and max value in an array?](#how-do-you-find-min-and-max-value-in-an-array)|
+|245| [How do you find min and max values without Math functions?](#how-do-you-find-min-and-max-values-without--math-functions)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2673,7 +2674,35 @@ function userDetails(username) {
      console.log(findMin(marks));
      console.log(findMax(marks));
      ```
+245. ### How do you find min and max values without Math functions?
+     You can write functions which loops through an array comparing each value with the lowest value or highest value to find the min and max values. Let's create those functions to find min an max values,
+     ```javascript
+      var marks = [50, 20, 70, 60, 45, 30];
+      function findMin(arr) {
+        var length = arr.length
+        var min = Infinity;
+        while (length--) {
+          if (arr[length] < min) {
+            min = arr[len];
+          }
+        }
+        return min;
+      }
 
+      function findMax(arr) {
+        var length = arr.length
+        var max = -Infinity;
+        while (len--) {
+          if (arr[length] > max) {
+            max = arr[length];
+          }
+        }
+        return max;
+      }
+
+      console.log(findMin(marks));
+      console.log(findMax(marks));
+     ```
 
 
 
