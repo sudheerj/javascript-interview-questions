@@ -248,6 +248,8 @@
 |240| [What is an Unary operator?](#what-is-an-unary-operator)|
 |241| [How do you sort elements in an array?](#how-do-you-sort-elements-in-an-array)|
 |242| [What is the purpose of compareFunction while sorting arrays?](#what-is-the-purpose-of-comparefunction-while-sorting-arrays)|
+|243| [How do you reversing an array?](#how-do-you-reversing-an-array)|
+|244| [How do you find min and max value in an array?](#how-do-you-find-min-and-max-value-in-an-array)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2643,14 +2645,34 @@ function userDetails(username) {
      console.log(months); //  ["Aug", "Jan", "June", "Sep"]
      ```
 242. ### What is the purpose of compareFunction while sorting arrays?
-     The compareFunction is used to define the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.
+     The compareFunction is used to define the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value. Let's take an example to see the usage of compareFunction,
      ```javascript
      let numbers = [1, 2, 5, 3, 4];
      numbers.sort((a, b) => b - a);
-     console.log(numbers); //
+     console.log(numbers); // [5, 4, 3, 2, 1]
      ```
-243. ### ?
-244. ### ?
+243. ### How do you reversing an array?
+     You can use reverse() method is used reverse the elements in an array. This method is useful to sort an array in descending order. Let's see the usage of reverse() method in an example,
+     ```javascript
+     let numbers = [1, 2, 5, 3, 4];
+     numbers.sort((a, b) => b - a);
+     numbers.reverse();
+     console.log(numbers); // [1, 2, 3, 4 ,5]
+     ```
+244. ### How do you find min and max value in an array?
+     You can use `Math.min` and `Math.max` methods on array variable to find the minimum and maximum elements with in an array. Let's create two functions to find the min and max value with in an array,
+     ```javascript
+     var marks = [50, 20, 70, 60, 45, 30];
+     function findMin(arr) {
+       return Math.min.apply(null, arr);
+     }
+     function findMax(arr) {
+       return Math.max.apply(null, arr);
+     }
+
+     console.log(findMin(marks));
+     console.log(findMax(marks));
+     ```
 
 
 
