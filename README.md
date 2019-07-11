@@ -252,6 +252,7 @@
 |244| [How do you find min and max value in an array?](#how-do-you-find-min-and-max-value-in-an-array)|
 |245| [How do you find min and max values without Math functions?](#how-do-you-find-min-and-max-values-without--math-functions)|
 |246| [What is an empty statement and purpose of it?](#what-is-an-empty-statement-and-purpose-of-it)|
+|247| [How do you get meta data of a module?](#how-do-you-get-meta-data-of-a-module)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2710,6 +2711,13 @@ function userDetails(username) {
      // Initialize an array a
      for(int i=0; i < a.length; a[i++] = 0) ;
      ```
+247. ### How do you get meta data of a module?
+     You can use `import.meta` object which is a meta-property exposing context-specific meta data to a JavaScript module. It contains information about the current module, such as module's URL. In browser, you might get different meta data than NodeJS.
+     ```javascript
+     <script type="module" src="welcome-module.js"></script>
+     console.log(import.meta); // { url: "file:///home/user/welcome-module.js" }
+     ```
+
 
 
 
