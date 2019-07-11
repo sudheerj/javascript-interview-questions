@@ -253,6 +253,9 @@
 |245| [How do you find min and max values without Math functions?](#how-do-you-find-min-and-max-values-without--math-functions)|
 |246| [What is an empty statement and purpose of it?](#what-is-an-empty-statement-and-purpose-of-it)|
 |247| [How do you get meta data of a module?](#how-do-you-get-meta-data-of-a-module)|
+|248| [What is a comma operator?](#what-is-a-comma-operator)|
+|249| [What is the advantage of a comma operator?](#what-is-the-advantage-of-a-comma-operator)|
+
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2717,7 +2720,26 @@ function userDetails(username) {
      <script type="module" src="welcome-module.js"></script>
      console.log(import.meta); // { url: "file:///home/user/welcome-module.js" }
      ```
+248. ### What is a comma operator?
+     The comma operator is used to evaluate each of its operands from left to right and returns the value of the last operand. This is totally different from comma usage within arrays, objects, and function arguments and parameters. For example, the usage for numeric expressions would be as below,
+     ```javascript
+     var x = 1;
+     x = (x++, x);
 
+     console.log(x); // 2
+     ```
+249. ### What is the advantage of a comma operator?
+     It is normally used to include multiple expressions in a location that requires a single expression. One of the common usage of this comma operator is to supply multiple parameters in a `for` loop. For example, the below for loop uses multiple expressions in a single location using comma operator,
+     ```javascript
+     for (var a = 0, b =10; a <= 10; a++, b--)
+     ```
+     You can also use the comma operator in a return statement where it process before returning.
+     ```javascript
+     function myFunction() {
+        var a = 1;
+        return (a += 10, a); // 11
+     }
+     ```
 
 
 
