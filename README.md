@@ -255,7 +255,9 @@
 |247| [How do you get meta data of a module?](#how-do-you-get-meta-data-of-a-module)|
 |248| [What is a comma operator?](#what-is-a-comma-operator)|
 |249| [What is the advantage of a comma operator?](#what-is-the-advantage-of-a-comma-operator)|
-
+|250| [What is typescript?](#what-is-typescript)|
+|251| [What are the differences between javascript and typescript?](#what-are-the-differences-between-javascript-and-typescript)|
+|252| [What are the advantages of typescript over javascript?](#what-are-the-advantages-of-typescript-over-javascript)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2740,6 +2742,42 @@ function userDetails(username) {
         return (a += 10, a); // 11
      }
      ```
+250. ### What is typescript?
+    TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language.
+    You can install it globally as
+    ```
+    npm install -g typescript
+    ```
+    Let's see a simple example of TypeScript usage,
+    ```typescript
+    function greeting(person: string) {
+        return "Hello, " + person;
+    }
+
+    let user = "Sudheer";
+
+    document.body.innerHTML = greeting(user);
+    ```
+    The greeting method allows only string type as argument.
+251. ### What are the differences between javascript and typescript?
+     Below are the list of differences between javascript and typescript,
+
+     | feature | typescript | javascript |
+     |---- | --------- | ----
+     | Language paradigm  | Object oriented programming language  | Scripting language |
+     | Typing support | Supports static typing  | It has dynamic typing |
+     | Modules | Supported | Not supported |
+     | Interface | It has interfaces concept | Doesn't support interfaces |
+     | Optional parameters | Functions support optional parameters | No support of optional parameters for functions |
+
+252. ### What are the advantages of typescript over javascript?
+     Below are some of the advantages of typescript over javascript,
+     1. TypeScript is able to find compile time errors at the development time only and it make sures less runtime errors. Whereas javascript is interpreted language.
+     2. TypeScript is is strongly-typed or supports static typing which allows for checking type correctness at compile time. This is not available in javascript.
+     3. TypeScript compiler can compile the .ts files into ES3,ES4 and ES5 unlike ES6 features of javascript which may not be supported in some browsers.
+
+
+
 
 
 
