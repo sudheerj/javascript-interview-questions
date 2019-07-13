@@ -261,6 +261,13 @@
 |253| [What is an object initializer?](#what-is-an-object-initializer)|
 |254| [What is a constructor method?](#what-is-a-constructor-method)|
 |255| [What happens if you write constructor more than once in a class?](#what-happens-if-you-write-constructor-more-than-once-in-a-class)|
+|256| [How do you call the constructor of a parent class?](#how-do-you-call-the-constructor-of-a-parent-class)|
+|257| [How do you get the prototype of an object?](#how-do-you-get-the-prototype-of-an-object)|
+|258| [What happens If I pass string type for getPrototype method?](#what-happens-if-i-pass-string-type-for-getprototype-method)|
+|259| [How do you set prototype of one object to another?](#how-do-you-set-prototype-of-one-object-to-another)|
+|260| [How do you check whether an object can be extendable or not?](#how-do-you-check-whether-an-object-can-be-extendable-or-not)|
+|261| [How do you prevent an object to extend?](#how-do-you-prevent-an-object-to-extend)|
+|262| [What are the different ways to make an object non-extensible?](#what-are-the-different-ways-to-make-an-object-non-extensible)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2815,6 +2822,73 @@ function userDetails(username) {
 
       console.log(employeeObject.name);
      ```
+256. ### How do you call the constructor of a parent class?
+     You can use `super` keyword to call the constructor of a parent class. Remember that `super()` must be called before using 'this' reference. Otherwise it will cause a reference error. Let's the usage of it,
+     ```javascript
+     class Square extends Rectangle {
+       constructor(length) {
+         super(length, length);
+         this.name = 'Square';
+       }
+
+       get area() {
+         return this.width * this.height;
+       }
+
+       set area(value) {
+         this.area = value;
+       }
+     }
+     ```
+257. ### How do you get the prototype of an object?
+     You can use `Object.getPrototypeOf(obj)` method is used to return the prototype of the specified object. i.e. The value of the internal [[prototype]] property. If there are no inherited properties then `null` value is returned.
+     ```javascript
+     const newPrototype = {};
+     const newObject = Object.create(newPrototype);
+
+     console.log(Object.getPrototypeOf(newObject) === newPrototype); // true
+     ```
+258. ### What happens If I pass string type for getPrototype method?
+     In ES5, it will throw a TypeError exception if the obj parameter isn't an object. Whereas in ES2015, the parameter will be coerced to an `Object`.
+     ```javascript
+     // ES5
+     Object.getPrototypeOf('James'); // TypeError: "James" is not an object
+     // ES2015
+     Object.getPrototypeOf('James'); // String.prototype
+     ```
+259. ### How do you set prototype of one object to another?
+     You can use `Object.setPrototypeOf()` method that sets the prototype (i.e., the internal [[Prototype]] property) of a specified object to another object or null. For example, if you want to set prototype of a square object to rectangle object would be as follows,
+     ```javascript
+     Object.setPrototypeOf(Square.prototype, Rectangle.prototype);
+     Object.setPrototypeOf({}, null);
+     ```
+260. ### How do you check whether an object can be extendable or not?
+     The `Object.isExtensible()` method is used to determine if an object is extensible or not. i.e, Whether it can have new properties added to it or not.
+     ```javascript
+     const newObject = {};
+     console.log(Object.isExtensible(newObject)); //true
+     ```
+     **Note:** By default, all the objects are extendable.
+261. ### How do you prevent an object to extend?
+     The `Object.preventExtensions()` method is used to prevent new properties from ever being added to an object. In other words, it prevents future extensions to the object. Let's see the usage of this property,
+     ```javascript
+     const newObject = {};
+     Object.preventExtensions(newObject); // NOT extendable
+
+     try {
+       Object.defineProperty(newObject, 'newProperty', { // Adding new property
+         value: 100
+       });
+     } catch (e) {
+       console.log(e); // TypeError: Cannot define property newProperty, object is not extensible
+     }
+     ```
+262. ### What are the different ways to make an object non-extensible?
+     You can mark an object non-extensible in 3 ways,
+     1. Object.preventExtensions
+     2. Object.seal
+     3. Object.freeze
+
 
 
 
