@@ -259,6 +259,8 @@
 |251| [What are the differences between javascript and typescript?](#what-are-the-differences-between-javascript-and-typescript)|
 |252| [What are the advantages of typescript over javascript?](#what-are-the-advantages-of-typescript-over-javascript)|
 |253| [What is an object initializer?](#what-is-an-object-initializer)|
+|254| [What is a constructor method?](#what-is-a-constructor-method)|
+|255| [What happens if you write constructor more than once in a class?](#what-happens-if-you-write-constructor-more-than-once-in-a-class)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2784,7 +2786,37 @@ function userDetails(username) {
 
      console.log(initObject.a); // John
      ```
-254. ### ?
+254. ### What is a constructor method?
+     The constructor method is a special method for creating and initializing an object created within a class. If you do not specify a constructor method, a default constructor is used. The example usage of constructor would be as below,
+     ```javascript
+     class Employee {
+       constructor() {
+         this.name = "John";
+       }
+     }
+
+     var employeeObject = new Employee();
+
+     console.log(employeeObject.name); // John
+     ```
+255. ### What happens if you write constructor more than once in a class?
+     The "constructor" in a class is a special method and it should be defined only once in a class. i.e, If you write a constructor method more than once in a class it will throw a `SyntaxError` error.
+     ```javascript
+      class Employee {
+        constructor() {
+          this.name = "John";
+        }
+        constructor() {   //  Uncaught SyntaxError: A class may only have one constructor
+          this.age = 30;
+        }
+      }
+
+      var employeeObject = new Employee();
+
+      console.log(employeeObject.name);
+     ```
+
+
 
 
 
