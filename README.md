@@ -268,6 +268,11 @@
 |260| [How do you check whether an object can be extendable or not?](#how-do-you-check-whether-an-object-can-be-extendable-or-not)|
 |261| [How do you prevent an object to extend?](#how-do-you-prevent-an-object-to-extend)|
 |262| [What are the different ways to make an object non-extensible?](#what-are-the-different-ways-to-make-an-object-non-extensible)|
+|263| [How do you define multiple properties on an object?](#how-do-you-define-multiple-properties-on-an-object)|
+|264| [What is MEAN in javascript?](#what-is-mean-in-javascript)|
+|265| [What Is Obfuscation in javascript?](#what-is-obfuscation-in-javascript)|
+|266| [Why do you need Obfuscation?](#why-do-you-need-obfuscation)|
+|267| [What is Minification?](#what-is-minification)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2868,7 +2873,7 @@ function userDetails(username) {
      const newObject = {};
      console.log(Object.isExtensible(newObject)); //true
      ```
-     **Note:** By default, all the objects are extendable.
+     **Note:** By default, all the objects are extendable. i.e, The new properties can added or modified.
 261. ### How do you prevent an object to extend?
      The `Object.preventExtensions()` method is used to prevent new properties from ever being added to an object. In other words, it prevents future extensions to the object. Let's see the usage of this property,
      ```javascript
@@ -2888,6 +2893,55 @@ function userDetails(username) {
      1. Object.preventExtensions
      2. Object.seal
      3. Object.freeze
+
+     ```javascript
+     var newObject = {};
+
+     Object.preventExtensions(newObject); // Prevent objects are non-extensible
+     Object.isExtensible(newObject); // false
+
+     var sealedObject = Object.seal({}); // Sealed objects are non-extensible
+     Object.isExtensible(sealedObject); // false
+
+     var frozenObject = Object.freeze({}); // Frozen objects are non-extensible
+     Object.isExtensible(frozenObject); // false
+     ```
+263. ### How do you define multiple properties on an object?
+     The `Object.defineProperties()` method is used to define new or modifies existing properties directly on an object and returning the object. Let's define multiple properties on an empty object,
+     ```javascript
+     const newObject = {};
+
+     Object.defineProperties(newObject, {
+       newProperty1: {
+         value: 'John',
+         writable: true
+       },
+       newProperty2: {}
+     });
+     ```
+264. ### What is MEAN in javascript?
+     The MEAN (MongoDB, Express, AngularJS, and Node.js) stack is the most popular open-source JavaScript software tech stack available for building dynamic web apps where you can write both the server-side and client-side halves of the web project entirely in JavaScript.
+265. ### What Is Obfuscation in javascript?
+     Obfuscation is the deliberate act of creating obfuscated javascript code(i.e, source or machine code) that is difficult for humans to understand. It is something similar to encryption, but a machine can understand the code and execute it.
+     Let's see the below function before Obfuscation,
+     ```javascript
+     function greeeting() {
+        console.log('Hello, welcome to JS world');
+     }
+     ```
+     And after the code Obfuscation, it would be appeared as below,
+     ```javascript
+     eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('2 1(){0.3(\'4, 7 6 5 8\')}',9,9,'console|greeeting|function|log|Hello|JS|to|welcome|world'.split('|'),0,{}))
+     ```
+266. ### Why do you need Obfuscation?
+     Below are the few reasons for Obfuscation,
+     1. The Code size will be reduced. So data transfers between server and client will be fast.
+     2. It hides the business logic from outside world and protects the code from others
+     3. Reverse engineering is highly difficult
+     4. The download time will be reduced
+
+267. ### What is Minification?
+     Minification is the process of removing all unnecessary characters(where empty spaces are removed) and variables will be renamed without changing it's functionality. It is also a type of obfuscation .
 
 
 
