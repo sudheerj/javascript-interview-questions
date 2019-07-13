@@ -258,6 +258,7 @@
 |250| [What is typescript?](#what-is-typescript)|
 |251| [What are the differences between javascript and typescript?](#what-are-the-differences-between-javascript-and-typescript)|
 |252| [What are the advantages of typescript over javascript?](#what-are-the-advantages-of-typescript-over-javascript)|
+|253| [What is an object initializer?](#what-is-an-object-initializer)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2775,6 +2776,15 @@ function userDetails(username) {
      1. TypeScript is able to find compile time errors at the development time only and it make sures less runtime errors. Whereas javascript is interpreted language.
      2. TypeScript is is strongly-typed or supports static typing which allows for checking type correctness at compile time. This is not available in javascript.
      3. TypeScript compiler can compile the .ts files into ES3,ES4 and ES5 unlike ES6 features of javascript which may not be supported in some browsers.
+
+253. ### What is an object initializer?
+     An object initializer is an expression that describes the initialization of an Object. The syntax for this expression is represented as a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({}). This is also known as literal notation. It is one of the ways to create an object.
+     ```javascript
+     var initObject = {a: 'John', b: 50, c: {}};
+
+     console.log(initObject.a); // John
+     ```
+254. ### ?
 
 
 
