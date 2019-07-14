@@ -282,8 +282,8 @@
 |274| [What are the available constraint validation DOM properties?](#what-are-the-available-constraint-validation-dom-properties)|
 |275| [What are the list of validity properties?](#what-are-the-list-of-validity-properties)|
 |276| [Give an example usage of rangeOverflow property?](#give-an-example-usage-of-rangeoverflow-property)|
-|277| [](#)|
-|278| [](#)|
+|277| [Is enums feature available in javascript?](#is-enums-feature-available-in-javascript)|
+|278| [What is an enum?](#What-is-an-enum)|
 |279| [](#)|
 |280| [](#)|
 |281| [](#)|
@@ -3057,8 +3057,18 @@ function userDetails(username) {
        }
      }
      ```
-277. ### ?
-278. ### ?
+277. ### Is enums feature available in javascript?
+     No, javascript does not natively support enums. But there are different kind of solutions to simulate them even though they may not provide exact equivalent. For example, you can use freeze or seal on object,
+     ```javascript
+     var DaysEnum = Object.freeze({"monday":1, "tuesday":2, "wednesday":3, ...})
+     ```
+278. ### What is an enum?
+     An enum is a type restricting variables to one value from a predefined set of constants. JavaScript has no enums but typescript provides built-in enum support.
+     ```javascript
+     enum Color {
+     	RED, GREEN, BLUE
+     }
+     ```
 279. ### ?
 280. ### ?
 
