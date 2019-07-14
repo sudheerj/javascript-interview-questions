@@ -276,12 +276,12 @@
 |268| [What are the advantages of minification?](#what-are-the-advantages-of-minification)|
 |269| [What are the differences between Obfuscation and Encryption?](#what-are-the-differences-between-obfuscation-and-encryption)|
 |270| [What are the common tools used for minification?](#what-are-the-common-tools-used-for-minification)|
-|271| [](#)|
-|272| [](#)|
-|273| [](#)|
-|274| [](#)|
-|275| [](#)|
-|276| [](#)|
+|271| [How do you perform form validation using javascript?](#how-do-you-perform-form-validation-using-javascript)|
+|272| [How do you perform form validation without javascript?](#how-do-you-perform-form-validation-without-javascript)|
+|273| [What are the DOM methods available for constraint validation?](#what-are-the-dom-methods-available-for-constraint-validation)|
+|274| [What are the available constraint validation DOM properties?](#what-are-the-available-constraint-validation-dom-properties)|
+|275| [What are the list of validity properties?](#what-are-the-list-of-validity-properties)|
+|276| [Give an example usage of rangeOverflow property?](#give-an-example-usage-of-rangeoverflow-property)|
 |277| [](#)|
 |278| [](#)|
 |279| [](#)|
@@ -2980,12 +2980,83 @@ function userDetails(username) {
      4. javascript-minifier.com/
      5. prettydiff.com
 
-271. ### ?
-272. ### ?
-273. ### ?
-274. ### ?
-275. ### ?
-276. ### ?
+271. ### How do you perform form validation using javascript?
+     JavaScript can be used to perform HTML form validation. For example, if form field is empty, the function needs to notify, and return false, to prevent the form being submitted.
+     Lets' perform user login in an html form,
+     ```html
+     <form name="myForm" onsubmit="return validateForm()" method="post">
+     User name: <input type="text" name="uname">
+     <input type="submit" value="Submit">
+     </form>
+     ```
+     And the validation on user login is below,
+     ```javascript
+     function validateForm() {
+       var x = document.forms["myForm"]["uname"].value;
+       if (x == "") {
+         alert("The username shouldn't be empty");
+         return false;
+       }
+     }
+     ```
+272. ### How do you perform form validation without javascript?
+     You can perform HTML form validation automatically without using javascript. The validation enabled by applying `required` attribute to prevent form submission when the input is empty.
+     ```html
+     <form method="post">
+       <input type="text" name="uname" required>
+       <input type="submit" value="Submit">
+     </form>
+     ```
+     **Note:** Automatic form validation does not work in Internet Explorer 9 or earlier.
+
+273. ### What are the DOM methods available for constraint validation?
+     The below DOM methods are available for constraint validation on an invalid input,
+     1. checkValidity(): It returns true if an input element contains valid data.
+     2. setCustomValidity(): It is used to set the validationMessage property of an input element.
+     Let's take an user login form with DOM validations
+     ```javascript
+     function myFunction() {
+       var userName = document.getElementById("uname");
+       if (!userName.checkValidity()) {
+         document.getElementById("message").innerHTML = userName.validationMessage;
+       } else {
+         document.getElementById("message").innerHTML = "Entered a valid username";
+       }
+     }
+     ```
+274. ### What are the available constraint validation DOM properties?
+     Below are the list of some of the constraint validation DOM properties available,
+
+     1. validity: It provides list of boolean properties related to the validity of an input element.
+     2. validationMessage: It displays the message when the validity is false.
+     3. willValidate: It indicates if an input element will be validated or not.
+
+275. ### What are the list of validity properties?
+     The validity property of an input element provides a set of properties related to the validity of data.
+
+     1. customError: It returns true, if a custom validity message is set.
+     2. patternMismatch: It returns true, if an element's value does not match its pattern attribute.
+     3. rangeOverflow: It returns true, if an element's value is greater than its max attribute.
+     4. rangeUnderflow: It returns true, if an element's value is less than its min attribute.
+     5. stepMismatch: It returns true, if an element's value is invalid according to step attribute.
+     6. tooLong: It returns true, if an element's value exceeds its maxLength attribute.
+     7. typeMismatch: It returns true, if an element's value is invalid according to type attribute.
+     8. valueMissing: It returns true, if an element with a required attribute has no value.
+     9. valid: It returns true, if an element's value is valid.
+
+276. ### Give an example usage of rangeOverflow property?
+     If an element's value is greater than its max attribute then rangeOverflow property returns true. For example, the below form submission throws an error if the value is more than 100,
+     ```html
+     <input id="age" type="number" max="100">
+     <button onclick="myOverflowFunction()">OK</button>
+     ```
+     ```javascript
+     function myOverflowFunction() {
+       if (document.getElementById("age").validity.rangeOverflow) {
+         alert("The mentioned age is not allowed");
+       }
+     }
+     ```
 277. ### ?
 278. ### ?
 279. ### ?
