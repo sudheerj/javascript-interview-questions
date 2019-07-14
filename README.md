@@ -273,6 +273,22 @@
 |265| [What Is Obfuscation in javascript?](#what-is-obfuscation-in-javascript)|
 |266| [Why do you need Obfuscation?](#why-do-you-need-obfuscation)|
 |267| [What is Minification?](#what-is-minification)|
+|268| [What are the advantages of minification?](#what-are-the-advantages-of-minification)|
+|269| [What are the differences between Obfuscation and Encryption?](#what-are-the-differences-between-obfuscation-and-encryption)|
+|270| [What are the common tools used for minification?](#what-are-the-common-tools-used-for-minification)|
+|271| [](#)|
+|272| [](#)|
+|273| [](#)|
+|274| [](#)|
+|275| [](#)|
+|276| [](#)|
+|277| [](#)|
+|278| [](#)|
+|279| [](#)|
+|280| [](#)|
+|281| [](#)|
+
+
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -280,7 +296,7 @@ There are many ways to create objects in javascript as below,
 
 1. **Object constructor:**
 
- The simpliest way to create an empty object is using Object constructor. Currently this approach is not recommended.
+ The simplest way to create an empty object is using Object constructor. Currently this approach is not recommended.
 
  ```javascript
  var object = new Object();
@@ -2941,8 +2957,39 @@ function userDetails(username) {
      4. The download time will be reduced
 
 267. ### What is Minification?
-     Minification is the process of removing all unnecessary characters(where empty spaces are removed) and variables will be renamed without changing it's functionality. It is also a type of obfuscation .
+     Minification is the process of removing all unnecessary characters(empty spaces are removed) and variables will be renamed without changing it's functionality. It is also a type of obfuscation .
+268. ### What are the advantages of minification?
+     Normally it is recommend to use minification for heavy traffic and intensive requirements of resources. It reduces file sizes with below benefits,
+     1. Decreases loading times of a web page
+     2. Saves bandwidth usages
 
+269. ### What are the differences between Obfuscation and Encryption?
+     Below are the main differences between Obfuscation and Encryption,
+
+     | Feature | Obfuscation | Encryption |
+     |---- | --------- | ----
+     | Definition  | Changing the form of any data in any other form  | Changing the form of information to an unreadable format by using a key |
+     | A key to decode | It can be decoded without any key  | It is required |
+     | Target data format | It will be converted to a complex form  | Converted into an unreadable format  |
+
+270. ### What are the common tools used for minification?
+     There are many online/offline tools to minify the javascript files,
+     1. Google's Closure Compiler
+     2. UglifyJS2
+     3. jsmin
+     4. javascript-minifier.com/
+     5. prettydiff.com
+
+271. ### ?
+272. ### ?
+273. ### ?
+274. ### ?
+275. ### ?
+276. ### ?
+277. ### ?
+278. ### ?
+279. ### ?
+280. ### ?
 
 
 
