@@ -284,9 +284,9 @@
 |276| [Give an example usage of rangeOverflow property?](#give-an-example-usage-of-rangeoverflow-property)|
 |277| [Is enums feature available in javascript?](#is-enums-feature-available-in-javascript)|
 |278| [What is an enum?](#What-is-an-enum)|
-|279| [](#)|
-|280| [](#)|
-|281| [](#)|
+|279| [How do you list all properties of an object?](#how-do-you-list-all-properties-of-an-object)|
+|280| [How do you get property descriptors of an object?](#how-do-you-get-property-descriptors-of-an-object)|
+|281| [What are the attributes provided by a property descriptor?](#what-are-the-attributes-provided-by-a-property-descriptor)|
 
 
 
@@ -3069,8 +3069,39 @@ function userDetails(username) {
      	RED, GREEN, BLUE
      }
      ```
-279. ### ?
-280. ### ?
+279. ### How do you list all properties of an object?
+     You can use `Object.getOwnPropertyNames()` method which returns an array of all properties found directly in a given object. Let's the usage of it in an example,
+     ```javascript
+     const newObject = {
+       a: 1,
+       b: 2,
+       c: 3
+     };
+
+     console.log(Object.getOwnPropertyNames(newObject));  ["a", "b", "c"]
+     ```
+280. ### How do you get property descriptors of an object?
+     You can use `Object.getOwnPropertyDescriptors()` method which returns all own property descriptors of a given object. The example usage of this method is below,
+     ```javascript
+      const newObject = {
+        a: 1,
+        b: 2,
+        c: 3
+      };
+     const descriptorsObject = Object.getOwnPropertyDescriptors(newObject);
+     console.log(descriptorsObject.a.writable); //true
+     console.log(descriptorsObject.a.configurable); //true
+     console.log(descriptorsObject.a.enumerable); //true
+     console.log(descriptorsObject.a.value); // 1
+     ```
+281. ### What are the attributes provided by a property descriptor?
+     A property descriptor is a record which has the following attributes
+     1. value: The value associated with the property
+     2. writable: Determines whether the value associated with the property can be changed or not
+     3. configurable: Returns true if the type of this property descriptor can be changed and if the property can be deleted from the corresponding object.
+     4. enumerable: Determines whether the property appears during enumeration of the properties on the corresponding object or not.
+     5. set: A function which serves as a setter for the property
+     6. get: A function which serves as a getter for the property
 
 
 
