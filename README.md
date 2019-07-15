@@ -287,7 +287,7 @@
 |279| [How do you list all properties of an object?](#how-do-you-list-all-properties-of-an-object)|
 |280| [How do you get property descriptors of an object?](#how-do-you-get-property-descriptors-of-an-object)|
 |281| [What are the attributes provided by a property descriptor?](#what-are-the-attributes-provided-by-a-property-descriptor)|
-
+|282| [How do you extend classes?](#how-do-you-extend-classes)|
 
 
 1. ### What are the possible ways to create objects in JavaScript?
@@ -3102,6 +3102,30 @@ function userDetails(username) {
      4. enumerable: Determines whether the property appears during enumeration of the properties on the corresponding object or not.
      5. set: A function which serves as a setter for the property
      6. get: A function which serves as a getter for the property
+
+282. ### How do you extend classes?
+     The `extends` keyword is used in class declarations/expressions to create a class which is a child of another class. It can be used to subclass custom classes as well as built-in objects. The syntax would be as below,
+     ```javascript
+     class ChildClass extends ParentClass { ... }
+     ```
+     Let's take an example of Square subclass from Polygon parent class,
+     ```javascript
+      class Square extends Rectangle {
+        constructor(length) {
+          super(length, length);
+          this.name = 'Square';
+        }
+
+        get area() {
+          return this.width * this.height;
+        }
+
+        set area(value) {
+          this.area = value;
+        }
+      }
+     ```
+
 
 
 
