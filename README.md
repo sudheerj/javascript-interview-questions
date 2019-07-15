@@ -288,7 +288,7 @@
 |280| [How do you get property descriptors of an object?](#how-do-you-get-property-descriptors-of-an-object)|
 |281| [What are the attributes provided by a property descriptor?](#what-are-the-attributes-provided-by-a-property-descriptor)|
 |282| [How do you extend classes?](#how-do-you-extend-classes)|
-
+|283| [How do I modify the url without reloading the page?](#how-do-i-modify-the-url-without-reloading-the-page)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3125,7 +3125,11 @@ function userDetails(username) {
         }
       }
      ```
-
+283. ### How do I modify the url without reloading the page?
+     The `window.localtion.url` property will be helpful to modify the url but it reloads the page. HTML5 introduced the `history.pushState()` and `history.replaceState()` methods, which allow you to add and modify history entries, respectively. For example, you can use pushState as below,
+     ```javascript
+     window.history.pushState('page2', 'Title', '/page2.html');
+     ```
 
 
 
