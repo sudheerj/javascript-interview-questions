@@ -289,6 +289,7 @@
 |281| [What are the attributes provided by a property descriptor?](#what-are-the-attributes-provided-by-a-property-descriptor)|
 |282| [How do you extend classes?](#how-do-you-extend-classes)|
 |283| [How do I modify the url without reloading the page?](#how-do-i-modify-the-url-without-reloading-the-page)|
+|284| [How do you check whether an array includes a particular value or not?](#how-do-you-check-whether-an-array-includes-a-particular-value-or-not)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3129,6 +3130,15 @@ function userDetails(username) {
      The `window.localtion.url` property will be helpful to modify the url but it reloads the page. HTML5 introduced the `history.pushState()` and `history.replaceState()` methods, which allow you to add and modify history entries, respectively. For example, you can use pushState as below,
      ```javascript
      window.history.pushState('page2', 'Title', '/page2.html');
+     ```
+284. ### How do you check whether an array includes a particular value or not?
+     The `Array#includes()` method is used to determine whether an array includes a particular value among its entries by returning either true or false. Let's see an example to find an element(numeric and string) with in array.
+     ```javascript
+     var numericArray = [1, 2, 3, 4];
+     console.log(numericArray.includes(3)); // true
+
+     var stringArray = ['green', 'yellow', 'blue'];
+     console.log(stringArray.includes('blue')); //true
      ```
 
 
