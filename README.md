@@ -290,6 +290,7 @@
 |282| [How do you extend classes?](#how-do-you-extend-classes)|
 |283| [How do I modify the url without reloading the page?](#how-do-i-modify-the-url-without-reloading-the-page)|
 |284| [How do you check whether an array includes a particular value or not?](#how-do-you-check-whether-an-array-includes-a-particular-value-or-not)|
+|285| [How do you compare scalar arrays?](#how-do-you-compare-scalar-arrays)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3140,7 +3141,19 @@ function userDetails(username) {
      var stringArray = ['green', 'yellow', 'blue'];
      console.log(stringArray.includes('blue')); //true
      ```
-
+285. ### How do you compare scalar arrays?
+     You can use length and every methods of arrays to compare two scalar(compared directly using ===) arrays. The combination of these expressions can give the expected result,
+     ```javascript
+     const arrayFirst = [1,2,3,4,5];
+     const arraySecond = [1,2,3,4,5];
+     console.log(arrayFirst.length === arraySecond.length && arrayFirst.every((value, index) => value === arraySecond[index])); // true
+     ````
+     If you would like to compare arrays irrespective of order then you should sort them before,
+     ```javascript
+     const arrayFirst = [2,3,1,4,5];
+     const arraySecond = [1,2,3,4,5];
+     console.log(arrayFirst.length === arraySecond.length && arrayFirst.sort().every((value, index) => value === arraySecond[index])); //true
+     ````
 
 
 
