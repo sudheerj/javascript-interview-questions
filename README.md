@@ -291,6 +291,8 @@
 |283| [How do I modify the url without reloading the page?](#how-do-i-modify-the-url-without-reloading-the-page)|
 |284| [How do you check whether an array includes a particular value or not?](#how-do-you-check-whether-an-array-includes-a-particular-value-or-not)|
 |285| [How do you compare scalar arrays?](#how-do-you-compare-scalar-arrays)|
+|286| [How to get the value from get parameters?](#how-to-get-the-value-from-get-parameters)|
+|287| [How do you print numbers with commas as thousand separators?](#how-do-you-print-numbers-with-commas-as-thousand-separators)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3154,6 +3156,23 @@ function userDetails(username) {
      const arraySecond = [1,2,3,4,5];
      console.log(arrayFirst.length === arraySecond.length && arrayFirst.sort().every((value, index) => value === arraySecond[index])); //true
      ````
+286. ### How to get the value from get parameters?
+     The `new URL()` object accepts url string and `searchParams` property of this object can be used to access the get parameters. Remember that you may need to use polyfill or `window.location` to access the URL in older browsers(including IE).
+     ```javascript
+     let urlString = "http://www.some-domain.com/about.html?x=1&y=2&z=3"; //window.location.href
+     let url = new URL(urlString);
+     let parameterZ = url.searchParams.get("z");
+     console.log(parameterZ); // 3
+     ```
+287. ### How do you print numbers with commas as thousand separators?
+     You can use `Number.prototype.toLocaleString()` method which returns a string with a language-sensitive representation such as thousand separator,currency etc of this number.
+     ```javascript
+     function convertToThousandFormat(x){
+       return x.toLocaleString(); // 12,345.679
+     }
+
+     console.log(convertToThousandFormat(12345.6789));
+     ```
 
 
 
