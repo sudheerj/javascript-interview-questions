@@ -293,6 +293,21 @@
 |285| [How do you compare scalar arrays?](#how-do-you-compare-scalar-arrays)|
 |286| [How to get the value from get parameters?](#how-to-get-the-value-from-get-parameters)|
 |287| [How do you print numbers with commas as thousand separators?](#how-do-you-print-numbers-with-commas-as-thousand-separators)|
+|288| [What is the difference between java and javascript?](#what-is-the-difference-between-java-and-javascript)|
+|289| [Is javascript supports namespace?](#is-javascript-supports-namespace)|
+|290| [How do you declare namespace?](#how-do-you-declare-namespace)|
+|291| [](#)|
+|292| [](#)|
+|293| [](#)|
+|294| [](#)|
+|295| [](#)|
+|296| [](#)|
+|297| [](#)|
+|298| [](#)|
+|299| [](#)|
+|300| [](#)|
+|302| [](#)|
+|303| [](#)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3173,6 +3188,90 @@ function userDetails(username) {
 
      console.log(convertToThousandFormat(12345.6789));
      ```
+288. ### What is the difference between java and javascript?
+     Both are totally unrelated programming languages and no relation between them. Java is statically typed, compiled, runs on its own VM. Whereas Javascript is dynamically typed, interpreted, and runs in a browser and nodejs environments. Let's see the major differences in a tabular format,
+     | Feature | Java | JavaScript |
+     |---- | ---------
+     | Typed  | It's a strongly typed language | It's a dynamic typed language |
+     | Paradigm | Object oriented programming  | Prototype based programming |
+     | Scoping | Block scoped | Function-scoped |
+     | Concurrency | Thread based | event based |
+     | Memory | Uses more memory | Uses less memory. Hence it will be used for web pages |
+
+289. ### Is javascript supports namespace?
+     JavaScript doesn’t support namespace by default. So if you create any element(function, method, object, variable) then it becomes global and pollute the global namespace. Let's take an example of defining two functions without any namespace,
+     ```javascript
+     function func1() {
+         console.log("This is a first definition");
+
+     }
+     function func1() {
+         console.log("This is a second definition");
+     }
+     func1(); // This is a second definition
+     ```
+     It always calls the second function definition. In this case, namespace will solve the name collision problem.
+
+290. ### How do you declare namespace?
+     Even though JavaScript lack namespaces, we can use Objects , IIFE to create namespaces.
+     1. **Using Object Literal Notation:** Let's wrap variables and function inside Object literal which act as a namespace. After that you can access them using object notation
+     ```javascript
+     var namespaceOne = {
+        function func1() {
+            console.log("This is a first definition");
+        }
+     }
+     var namespaceTwo = {
+          function func1() {
+              console.log("This is a second definition");
+          }
+      }
+     namespaceOne.func1(); // This is a first definition
+     namespaceTwo.func1(); // This is a second definition
+     ```
+     2. **Using IIFE (Immediately invoked function expression):** The outer pair of parenthesis of IIFE creates a local scope for all the code inside of it and makes the anonymous function a function expression. Due to that, you can create same function in two different function expressions to act as namespace.
+     ```javascript
+     (function() {
+      function fun1(){
+        console.log("This is a first definition");
+        } fun1();
+     }());
+
+     (function() {
+         function fun1(){
+            console.log("This is a second definition");
+        } fun1();
+      }());
+     ```
+     3. **Using a block and a let/const declaration:** In ECMAScript 6, you can simply use a block and a let declaration to restrict the scope of a variable to a block.
+     ```javascript
+      {
+       let myFunction= function fun1(){
+       console.log("This is a first definition");
+       }
+       myFunction();
+      }
+       //myFunction(): ReferenceError: myFunction is not defined.
+
+      {
+       let myFunction= function fun1(){
+       console.log("This is a second definition");
+       }
+       myFunction();
+      }
+       //myFunction(): ReferenceError: myFunction is not defined.
+     ```
+291. ### ?
+292. ### ?
+293. ### ?
+294. ### ?
+295. ### ?
+296. ### ?
+297. ### ?
+298. ### ?
+299. ### ?
+300. ### ?
+
 
 
 
