@@ -297,7 +297,7 @@
 |289| [Is javascript supports namespace?](#is-javascript-supports-namespace)|
 |290| [How do you declare namespace?](#how-do-you-declare-namespace)|
 |291| [How do you invoke javascript code in an iframe from parent page?](#how-do-you-invoke-javascript-code-in-an-iframe-from-parent-page)|
-|292| [](#)|
+|292| [How do get the timezone offset from date?](#how-do-get-the-timezone-offset-from-date)|
 |293| [](#)|
 |294| [](#)|
 |295| [](#)|
@@ -3268,7 +3268,12 @@ function userDetails(username) {
      window.frames[0].frameElement.contentWindow.targetFunction(); // Accessing iframe this way may not work in latest versions chrome and firefox
 
      ```
-292. ### ?
+292. ### How do get the timezone offset from date?
+     You can use `getTimezoneOffset` method of date object. This method returns the time zone difference, in minutes, from current locale (host system settings) to UTC
+     ```javascript
+     var offset = new Date().getTimezoneOffset();
+     console.log(offset); // -480
+     ```
 293. ### ?
 294. ### ?
 295. ### ?
