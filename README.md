@@ -296,7 +296,7 @@
 |288| [What is the difference between java and javascript?](#what-is-the-difference-between-java-and-javascript)|
 |289| [Is javascript supports namespace?](#is-javascript-supports-namespace)|
 |290| [How do you declare namespace?](#how-do-you-declare-namespace)|
-|291| [](#)|
+|291| [How do you invoke javascript code in an iframe from parent page?](#how-do-you-invoke-javascript-code-in-an-iframe-from-parent-page)|
 |292| [](#)|
 |293| [](#)|
 |294| [](#)|
@@ -3261,7 +3261,13 @@ function userDetails(username) {
       }
        //myFunction(): ReferenceError: myFunction is not defined.
      ```
-291. ### ?
+291. ### How do you invoke javascript code in an iframe from parent page?
+     Initially iFrame need to be accessed using either `document.getElementBy` or `window.frames`. After that `contentWindow` property of iFrame gives the access for targetFunction
+     ```javascript
+     document.getElementById('targetFrame').contentWindow.targetFunction();
+     window.frames[0].frameElement.contentWindow.targetFunction(); // Accessing iframe this way may not work in latest versions chrome and firefox
+
+     ```
 292. ### ?
 293. ### ?
 294. ### ?
