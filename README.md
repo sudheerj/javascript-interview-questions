@@ -298,7 +298,7 @@
 |290| [How do you declare namespace?](#how-do-you-declare-namespace)|
 |291| [How do you invoke javascript code in an iframe from parent page?](#how-do-you-invoke-javascript-code-in-an-iframe-from-parent-page)|
 |292| [How do get the timezone offset from date?](#how-do-get-the-timezone-offset-from-date)|
-|293| [](#)|
+|293| [How do you load CSS and JS files dynamically?](#how-do-you-load-css-and-js-files-dynamically)|
 |294| [](#)|
 |295| [](#)|
 |296| [](#)|
@@ -3274,7 +3274,24 @@ function userDetails(username) {
      var offset = new Date().getTimezoneOffset();
      console.log(offset); // -480
      ```
-293. ### ?
+293. ### How do you load CSS and JS files dynamically?
+     You can create both link and script elements in the DOM and append them as child to head tag. Let's create a function to add script and style resources as below,
+     ```javascript
+     function loadAssets(filename, filetype) {
+       if (filetype == "css") { // External CSS file
+            var fileReference = document.createElement("link")
+            fileReference.setAttribute("rel", "stylesheet");
+            fileReference.setAttribute("type", "text/css");
+            fileReference.setAttribute("href", filename);
+       } else if (filetype == "js") { // External JavaScript file
+            var fileReference = document.createElement('script');
+            fileReference.setAttribute("type", "text/javascript");
+            fileReference.setAttribute("src", filename);
+       }
+       if (typeof fileReference != "undefined")
+            document.getElementsByTagName("head")[0].appendChild(fileReference)
+      }
+     ```
 294. ### ?
 295. ### ?
 296. ### ?
