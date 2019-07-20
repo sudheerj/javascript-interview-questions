@@ -299,8 +299,8 @@
 |291| [How do you invoke javascript code in an iframe from parent page?](#how-do-you-invoke-javascript-code-in-an-iframe-from-parent-page)|
 |292| [How do get the timezone offset from date?](#how-do-get-the-timezone-offset-from-date)|
 |293| [How do you load CSS and JS files dynamically?](#how-do-you-load-css-and-js-files-dynamically)|
-|294| [](#)|
-|295| [](#)|
+|294| [What are the different methods to find HTML elements in DOM?](#what-are-the-different-methods-to-find-html-elements-in-dom)|
+|295| [What is jQuery?](#what-is-jquery)|
 |296| [](#)|
 |297| [](#)|
 |298| [](#)|
@@ -3292,8 +3292,20 @@ function userDetails(username) {
             document.getElementsByTagName("head")[0].appendChild(fileReference)
       }
      ```
-294. ### ?
-295. ### ?
+294. ### What are the different methods to find HTML elements in DOM?
+     If you want to access any element in an HTML page, you need to start with accessing the document object. Later you can use any of the below methods to find the HTML element,
+     1. document.getElementById(id): It finds an element by Id
+     2. document.getElementsByTagName(name): It finds an element by tag name
+     3. document.getElementsByClassName(name): It finds an element by class name
+
+295. ### What is jQuery?
+     jQuery is a popular cross-browser JavaScript library that provides Document Object Model (DOM) traversal, event handling, animations and AJAX interactions by minimizing the discrepancies across browsers. It is widely famous with its philosophy of “Write less, do more”. For example, you can display welcome message on the page load using jQuery as below,
+     ```javascript
+     $(document).ready(function(){ // It selects the document and apply the function on page load
+         alert('Welcome to jQuery world');
+     });
+     ```
+     **Note:** You can download it from jquery official site or install it from CDNs, like google.
 296. ### ?
 297. ### ?
 298. ### ?
