@@ -304,7 +304,7 @@
 |296| [What is V8 JavaScript engine?](#what-is-v8-javascript-engine)|
 |297| [Why do we call javascript as dynamic language?](#why-do-we-call-javascript-as-dynamic-language)|
 |298| [What is a void operator?](#what-is-a-void-operator)|
-|299| [](#)|
+|299| [How to set the cursor to wait?](#how-to-set-the-cursor-to-wait)|
 |300| [](#)|
 |302| [](#)|
 |303| [](#)|
@@ -3327,7 +3327,17 @@ function userDetails(username) {
      <a href="javascript:void(alert('Welcome to JS world'))">Click here to see a message</a>
      ```
      **Note:** This operator is often used to obtain the undefined primitive value, using "void(0)".
-299. ### ?
+299. ### How to set the cursor to wait?
+     The cursor can be set to wait in JavaScript by using the property "cursor". Let's perform this behavior on page load using the below function.
+     ```javascript
+     function myFunction() {
+     window.document.body.style.cursor = "wait";
+     }
+     ```
+     and this function invoked on page load
+     ```html
+     <body onload="myFunction()">
+     ```
 300. ### ?
 
 
