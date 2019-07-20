@@ -305,7 +305,7 @@
 |297| [Why do we call javascript as dynamic language?](#why-do-we-call-javascript-as-dynamic-language)|
 |298| [What is a void operator?](#what-is-a-void-operator)|
 |299| [How to set the cursor to wait?](#how-to-set-the-cursor-to-wait)|
-|300| [](#)|
+|300| [How do you create an infinite loop?](#how-do-you-create-an-infinite-loop)|
 |302| [](#)|
 |303| [](#)|
 
@@ -3338,7 +3338,13 @@ function userDetails(username) {
      ```html
      <body onload="myFunction()">
      ```
-300. ### ?
+300. ### How do you create an infinite loop?
+     You can create infinite loop using for and while loops without using any expressions. The for loop construct or syntax is better approach in terms of ESLint and code optimizer tools,
+     ```javascript
+     for (;;) {}
+     while(true) {
+     }
+     ```
 
 
 
