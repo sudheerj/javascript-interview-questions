@@ -306,8 +306,8 @@
 |298| [What is a void operator?](#what-is-a-void-operator)|
 |299| [How to set the cursor to wait?](#how-to-set-the-cursor-to-wait)|
 |300| [How do you create an infinite loop?](#how-do-you-create-an-infinite-loop)|
+|301| [Why do you need to avoid with statement?](#why-do-you-need-to-avoid-with-statement)|
 |302| [](#)|
-|303| [](#)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3345,6 +3345,20 @@ function userDetails(username) {
      while(true) {
      }
      ```
+301. ### Why do you need to avoid with statement?
+     JavaScript's with statement was intended to provide a shorthand for writing recurring accesses to objects. So it can help reduce file size by reducing the need to repeat a lengthy object reference without performance penalty. Let's take an example where it is used to avoid redundancy when accessing an object several times.
+     ```javascript
+     a.b.c.greeting   = 'welcome';
+     a.b.c.age = 32;
+     ```
+     Using `with` it turns this into:
+     ```javascript
+     with(a.b.c) {
+             greeting   = "welcome";
+             age = 32;
+     }
+     ```
+     But this `with` statement creates performance problems since one cannot predict whether argument will refer to a real variable or to a property inside the with argument.
 
 
 
