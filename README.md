@@ -301,7 +301,7 @@
 |293| [How do you load CSS and JS files dynamically?](#how-do-you-load-css-and-js-files-dynamically)|
 |294| [What are the different methods to find HTML elements in DOM?](#what-are-the-different-methods-to-find-html-elements-in-dom)|
 |295| [What is jQuery?](#what-is-jquery)|
-|296| [](#)|
+|296| [What is V8 JavaScript engine?](#what-is-v8-javascript-engine)|
 |297| [](#)|
 |298| [](#)|
 |299| [](#)|
@@ -2881,7 +2881,7 @@ function userDetails(username) {
      }
      ```
 257. ### How do you get the prototype of an object?
-     You can use `Object.getPrototypeOf(obj)` method is used to return the prototype of the specified object. i.e. The value of the internal [[prototype]] property. If there are no inherited properties then `null` value is returned.
+     You can use `Object.getPrototypeOf(obj)` method is used to return the prototype of the specified object. i.e. The value of the internal `prototype` property. If there are no inherited properties then `null` value is returned.
      ```javascript
      const newPrototype = {};
      const newObject = Object.create(newPrototype);
@@ -2897,7 +2897,7 @@ function userDetails(username) {
      Object.getPrototypeOf('James'); // String.prototype
      ```
 259. ### How do you set prototype of one object to another?
-     You can use `Object.setPrototypeOf()` method that sets the prototype (i.e., the internal [[Prototype]] property) of a specified object to another object or null. For example, if you want to set prototype of a square object to rectangle object would be as follows,
+     You can use `Object.setPrototypeOf()` method that sets the prototype (i.e., the internal `Prototype` property) of a specified object to another object or null. For example, if you want to set prototype of a square object to rectangle object would be as follows,
      ```javascript
      Object.setPrototypeOf(Square.prototype, Rectangle.prototype);
      Object.setPrototypeOf({}, null);
@@ -3306,7 +3306,9 @@ function userDetails(username) {
      });
      ```
      **Note:** You can download it from jquery official site or install it from CDNs, like google.
-296. ### ?
+296. ### What is V8 JavaScript engine?
+     V8 is an open source high-performance JavaScript engine used by the Google Chrome browser, written in C++. It is also being used in the node.js project. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors.
+     **Note:** It can run standalone, or can be embedded into any C++ application.
 297. ### ?
 298. ### ?
 299. ### ?
