@@ -302,8 +302,8 @@
 |294| [What are the different methods to find HTML elements in DOM?](#what-are-the-different-methods-to-find-html-elements-in-dom)|
 |295| [What is jQuery?](#what-is-jquery)|
 |296| [What is V8 JavaScript engine?](#what-is-v8-javascript-engine)|
-|297| [](#)|
-|298| [](#)|
+|297| [Why do we call javascript as dynamic language?](#why-do-we-call-javascript-as-dynamic-language)|
+|298| [What is a void operator?](#what-is-a-void-operator)|
 |299| [](#)|
 |300| [](#)|
 |302| [](#)|
@@ -3309,8 +3309,24 @@ function userDetails(username) {
 296. ### What is V8 JavaScript engine?
      V8 is an open source high-performance JavaScript engine used by the Google Chrome browser, written in C++. It is also being used in the node.js project. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors.
      **Note:** It can run standalone, or can be embedded into any C++ application.
-297. ### ?
-298. ### ?
+297. ### Why do we call javascript as dynamic language?
+     JavaScript is a loosely typed or a dynamic language because variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned/re-assigned with values of all types.
+     ```javascript
+     let age = 50;    // age is a number now
+     age  = 'old'; // age is a string now
+     age  = true;  // age is a boolean
+     ```
+298. ### What is a void operator?
+     The `void` operator evaluates the given expression and then returns undefined(i.e, without returning value). The syntax would be as below,
+     ```javascript
+     void (expression)
+     void expression
+     ```
+     Let's display a message without any redirections or reloads
+     ```javascript
+     <a href="javascript:void(alert('Welcome to JS world'))">Click here to see a message</a>
+     ```
+     **Note:** This operator is often used to obtain the undefined primitive value, using "void(0)".
 299. ### ?
 300. ### ?
 
