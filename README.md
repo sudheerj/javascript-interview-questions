@@ -308,6 +308,15 @@
 |300| [How do you create an infinite loop?](#how-do-you-create-an-infinite-loop)|
 |301| [Why do you need to avoid with statement?](#why-do-you-need-to-avoid-with-statement)|
 |302| [What is the output of below for loops?](#what-is-the-output-of-below-for-loops)|
+|303| [List down some of the features of ES6?](#list-down-some-of-the-features-of-es6)|
+|304| [](#)|
+|305| [](#)|
+|306| [](#)|
+|307| [](#)|
+|308| [](#)|
+|309| [](#)|
+|310| [](#)|
+|311| [](#)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3370,7 +3379,32 @@ function userDetails(username) {
      }
      ```
      The output of the above for loops is 4 4 4 4 and 0 1 2 3
-     **Explanation:** Due to event loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with `var` keyword it became a global variable and the value was equal to 4 using iteration when the time setTimeout function is invoked. Hence, the output of the first loop is 4 4 4 4. Whereas in the second loop, the variable i is declared as `let` keyword it became a block scoped variable and it holds a new value(0, 1 ,2 3) for each iteration. Hence, the output of the first loop is 0 1 2 3.
+     **Explanation:** Due to event loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with `var` keyword it became a global variable and the value was equal to 4 using iteration when the time setTimeout function is invoked. Hence, the output of the first loop is `4 4 4 4`. Whereas in the second loop, the variable i is declared as `let` keyword it became a block scoped variable and it holds a new value(0, 1 ,2 3) for each iteration. Hence, the output of the first loop is `0 1 2 3`.
+
+303. ### List down some of the features of ES6?
+     Below are the list of some new features of ES6,
+     1. Support for constants or immutable variables
+     2. Block-scope support for variables, constants and functions
+     3. Arrow functions
+     4. Default parameters
+     5. Rest and Spread Parameters
+     6. Template Literals
+     7. Multi-line Strings
+     8. Destructuring Assignment
+     9. Enhanced Object Literals
+     10. Promises
+     11. Classes
+     12. Modules
+304. ### ?
+305. ### ?
+306. ### ?
+307. ### ?
+308. ### ?
+309. ### ?
+310. ### ?
+311. ### ?
+
+
 
 
 
