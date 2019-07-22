@@ -311,7 +311,7 @@
 |303| [List down some of the features of ES6?](#list-down-some-of-the-features-of-es6)|
 |304| [What is ES6?](#what-is-es6)|
 |305| [Can I redeclare let and const variables?](#can-I-redeclare-let-and-const-variables)|
-|306| [](#)|
+|306| [Is const variable makes the value immutable?](#is-const-variable-makes-the-value-immutable)|
 |307| [](#)|
 |308| [](#)|
 |309| [](#)|
@@ -3425,7 +3425,13 @@ function userDetails(username) {
      myFunc();
      alert(name);
      ```
-306. ### ?
+306. ### Is const variable makes the value immutable?
+     No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
+     ```javascript
+     const userList = [];
+     userList.push('John'); // Can mutate even though it can't re-assign
+     console.log(userList); // ['John']
+     ```
 307. ### ?
 308. ### ?
 309. ### ?
