@@ -310,7 +310,7 @@
 |302| [What is the output of below for loops?](#what-is-the-output-of-below-for-loops)|
 |303| [List down some of the features of ES6?](#list-down-some-of-the-features-of-es6)|
 |304| [What is ES6?](#what-is-es6)|
-|305| [](#)|
+|305| [Can I redeclare let and const variables?](#can-I-redeclare-let-and-const-variables)|
 |306| [](#)|
 |307| [](#)|
 |308| [](#)|
@@ -3397,7 +3397,35 @@ function userDetails(username) {
      12. Modules
 304. ### What is ES6?
      ES6 is the sixth edition of the javascript language and it was released on June 2015. It was initially known as ECMAScript 6 (ES6) and later renamed to ECMAScript 2015. Almost all the modern browsers support ES6 but for the old browsers there are many transpilers, like Babel.js etc.
-305. ### ?
+305. ### Can I redeclare let and const variables?
+     No, you cannot redeclare let and const variables. If you do, it throws below error
+     ```bash
+     Uncaught SyntaxError: Identifier 'someVariable' has already been declared
+     ```
+     **Explanation:** The variable declaration with `var` keyword refers to a function scope and the variable is treated as if it were declared at the top of the enclosing scope due to hoisting feature. So all the multiple declarations contributing to the same hoisted variable without any error. Let's take an example of re-declaring variables in the same scope for both var and let/const variables.
+     ```javascript
+     var name = 'John';
+     function myFunc() {
+         var name = 'Nick';
+         var name = 'Abraham'; // Re-assigned in the same function block
+         alert(name); // Abraham
+     }
+
+     myFunc();
+     alert(name); // John
+     ```
+     ```javascript
+      let name = 'John';
+      function myFunc() {
+          let name = 'Nick';
+          let name = 'Abraham'; // Uncaught SyntaxError: Identifier 'name' has already been declared
+          alert(name);
+      }
+
+      myFunc();
+      alert(name);
+     ```
+
 306. ### ?
 307. ### ?
 308. ### ?
