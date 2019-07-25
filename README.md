@@ -312,7 +312,7 @@
 |304| [What is ES6?](#what-is-es6)|
 |305| [Can I redeclare let and const variables?](#can-I-redeclare-let-and-const-variables)|
 |306| [Is const variable makes the value immutable?](#is-const-variable-makes-the-value-immutable)|
-|307| [](#)|
+|307| [What are default parameters?](#what-are-default-parameters)|
 |308| [](#)|
 |309| [](#)|
 |310| [](#)|
@@ -3432,7 +3432,27 @@ function userDetails(username) {
      userList.push('John'); // Can mutate even though it can't re-assign
      console.log(userList); // ['John']
      ```
-307. ### ?
+307. ### What are default parameters?
+     In E5, we need to depends on logical OR operator to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
+     ```javascript
+     //ES5
+     var calculateArea = function(height, width) {
+        height =  height || 50;
+        width = width || 60;
+
+        return width * height;
+     }
+     console.log(calculateArea()); //300
+     ```
+     The default parameters makes the initialization more simpler,
+     ```javascript
+     //ES6
+     var calculateArea = function(height = 50, width = 60) {
+        return width * height;
+     }
+
+     console.log(calculateArea()); //300
+     ```
 308. ### ?
 309. ### ?
 310. ### ?
