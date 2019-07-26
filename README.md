@@ -313,7 +313,7 @@
 |305| [Can I redeclare let and const variables?](#can-I-redeclare-let-and-const-variables)|
 |306| [Is const variable makes the value immutable?](#is-const-variable-makes-the-value-immutable)|
 |307| [What are default parameters?](#what-are-default-parameters)|
-|308| [](#)|
+|308| [What are template literals?](#what-are-template-literals)|
 |309| [](#)|
 |310| [](#)|
 |311| [](#)|
@@ -3453,7 +3453,17 @@ function userDetails(username) {
 
      console.log(calculateArea()); //300
      ```
-308. ### ?
+308. ### What are template literals?
+     Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (` `) character instead of double or single quotes.
+     In E6, this feature enables using dynamic expressions as below,
+     ```javascript
+     var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`
+     ```
+     In ES5, you need break string like below,
+     ```javascript
+     var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
+     ```
+     **Note:** You can use multi-line strings and string interpolation features with template literals.
 309. ### ?
 310. ### ?
 311. ### ?
