@@ -317,6 +317,15 @@
 |309| [How do you write multi-line strings in template literals?](#how-do-you-write-multi-line-strings-in-template-literals)|
 |310| [What are nesting templates?](#what-are-nesting-templates)|
 |311| [What are tagged templates?](#what-are-tagged-templates)|
+|312| [What are raw strings?](#what-are-raw-strings)|
+|313| [](#)|
+|314| [](#)|
+|315| [](#)|
+|316| [](#)|
+|317| [](#)|
+|318| [](#)|
+|319| [](#)|
+|320| [](#)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3521,6 +3530,34 @@ function userDetails(username) {
      console.log(output);// Mr/Ms. John is a/an expert developer in JavaScript
      console.log(output);// Mr/Ms. Kane is a/an junior developer in JavaScript
      ```
+312. ### What are raw strings?
+     ES6 provides raw strings feature using `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
+     ```javascript
+     var calculationString = String.raw `The sum of numbers is \n${1+2+3+4}!`;
+     console.log(calculationString); // The sum of numbers is 10
+     ```
+     If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines
+     ```
+      var calculationString = `The sum of numbers is \n${1+2+3+4}!`;
+      console.log(calculationString);
+      // The sum of numbers is
+      // 10
+     ```
+     Also, the raw property is available on the first argument to the tag function
+     ```javascript
+     function tag(strings) {
+       console.log(strings.raw[0]);
+     }
+     ```
+313. ### ?
+314. ### ?
+315. ### ?
+316. ### ?
+317. ### ?
+318. ### ?
+319. ### ?
+320. ### ?
+
 
 
 
