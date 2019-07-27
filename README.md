@@ -318,7 +318,7 @@
 |310| [What are nesting templates?](#what-are-nesting-templates)|
 |311| [What are tagged templates?](#what-are-tagged-templates)|
 |312| [What are raw strings?](#what-are-raw-strings)|
-|313| [](#)|
+|313| [What is destructuring assignment?](#what-is-destructuring-assignment)|
 |314| [](#)|
 |315| [](#)|
 |316| [](#)|
@@ -3549,7 +3549,23 @@ function userDetails(username) {
        console.log(strings.raw[0]);
      }
      ```
-313. ### ?
+313. ### What is destructuring assignment?
+     The destructuring assignment is a JavaScript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables.
+     Let's get the month values from an array using destructuring assignment
+     ```javascript
+     var [one, two, three] = ['JAN', 'FEB', 'MARCH'];
+
+     console.log(one); // "JAN"
+     console.log(two); // "FEB"
+     console.log(three); // "MARCH"
+     ```
+     and you can get user properties of an object using destructuring assignment,
+     ```javascript
+     var {name, age} = {name: 'John', age: 32};
+
+     console.log(name); // John
+     console.log(age); // 32
+     ```
 314. ### ?
 315. ### ?
 316. ### ?
