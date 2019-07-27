@@ -314,7 +314,7 @@
 |306| [Is const variable makes the value immutable?](#is-const-variable-makes-the-value-immutable)|
 |307| [What are default parameters?](#what-are-default-parameters)|
 |308| [What are template literals?](#what-are-template-literals)|
-|309| [](#)|
+|309| [How do you write multi-line strings in template literals?](#how-do-you-write-multi-line-strings-in-template-literals)|
 |310| [](#)|
 |311| [](#)|
 
@@ -3464,7 +3464,17 @@ function userDetails(username) {
      var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
      ```
      **Note:** You can use multi-line strings and string interpolation features with template literals.
-309. ### ?
+309. ### How do you write multi-line strings in template literals?
+     In ES5, you would have to use newline escape character('\n') and concatenation symbol(+) in order to get multi-line strings.
+     ```javascript
+     console.log('This is string sentence 1\n' +
+     'This is string sentence 2');
+     ```
+     Whereas in ES6, You don't need to mention any newline sequence character,
+     ```javascript
+     console.log(`This is string sentence
+     'This is string sentence 2`);
+     ```
 310. ### ?
 311. ### ?
 
