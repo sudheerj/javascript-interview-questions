@@ -315,8 +315,8 @@
 |307| [What are default parameters?](#what-are-default-parameters)|
 |308| [What are template literals?](#what-are-template-literals)|
 |309| [How do you write multi-line strings in template literals?](#how-do-you-write-multi-line-strings-in-template-literals)|
-|310| [](#)|
-|311| [](#)|
+|310| [What are nesting templates?](#what-are-nesting-templates)|
+|311| [What are tagged templates?](#what-are-tagged-templates)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3475,8 +3475,52 @@ function userDetails(username) {
      console.log(`This is string sentence
      'This is string sentence 2`);
      ```
-310. ### ?
-311. ### ?
+310. ### What are nesting templates?
+     The nesting templates is a feature supported with in template literals syntax to allow inner backticks inside a placeholder ${ } within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type,
+     ```javascript
+     const iconStyles = `icon ${ isMobilePlatform() ? '' :
+      `icon-${user.isAuthorized ? 'submit' : 'disabled'}` }`;
+     ```
+     You can write the above usecase without nesting template feature as well. However, nesting template feature is more compact and readable.
+     ```javascript
+     //Without nesting templates
+      const iconStyles = `icon ${ isMobilePlatform() ? '' :
+       (user.isAuthorized ? 'icon-submit' : 'icon-disabled'}`;
+     ```
+311. ### What are tagged templates?
+     Tagged templates are the advanced form of templates in which tags allow you to parse template literals with a function. The tag function accepts first parameter as array of strings and remaining parameters as expressions. This function can also return manipulated string based on parameters. Let's see the usage of this tagged template behavior of an IT professional skill set in an organization,
+     ```javascript
+     var user1 = 'John';
+     var skill1 = 'JavaScript';
+     var experience1 = 15;
+
+     var user2 = 'Kane';
+     var skill2 = 'JavaScript';
+     var experience2 = 5;
+
+     function myInfoTag(strings, userExp, experienceExp) {
+       var str0 = strings[0]; // "Mr/Ms. "
+       var str1 = strings[1]; // " is a/an "
+       var str2 = strings[2]; // "in"
+
+       var expertiseStr;
+       if (experienceExp > 10){
+         expertiseStr = 'expert developer';
+       } else if(skillExp > 5 && skillExp <= 10) {
+         expertiseStr = 'senior developer';
+       } else {
+         expertiseStr = 'junior developer';
+       }
+
+       return `${str0}${userExp}${str1}${experienceExp}{str3}`;
+     }
+
+     var output1 = myInfoTag`Mr/Ms. ${ user1 } is a/an ${ experience1 } in ${skill1}`;
+     var output2 = myInfoTag`Mr/Ms. ${ user2 } is a/an ${ experience2 } in ${skill2}`;
+
+     console.log(output);// Mr/Ms. John is a/an expert developer in JavaScript
+     console.log(output);// Mr/Ms. Kane is a/an junior developer in JavaScript
+     ```
 
 
 
