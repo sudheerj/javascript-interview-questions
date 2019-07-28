@@ -319,8 +319,9 @@
 |311| [What are tagged templates?](#what-are-tagged-templates)|
 |312| [What are raw strings?](#what-are-raw-strings)|
 |313| [What is destructuring assignment?](#what-is-destructuring-assignment)|
-|314| [](#)|
-|315| [](#)|
+|314| [What are default values in destructuring assignment?](#what-are-default-values-in-destructuring-assignment)|
+|315| [How do you swap variables in destructuring assignment?](#how-do-you-swap-variables-in-destructuring-assignment)|
+|316| [What are enhanced object literals?](#what-are-enhanced-object-literals)|
 |316| [](#)|
 |317| [](#)|
 |318| [](#)|
@@ -3566,9 +3567,36 @@ function userDetails(username) {
      console.log(name); // John
      console.log(age); // 32
      ```
-314. ### ?
-315. ### ?
-316. ### ?
+314. ### What are default values in destructuring assignment?
+     A variable can be assigned a default value when the value unpacked from the array or object is undefined during destructuring assignment. It helps to avoid setting default values separately for each assignment. Let's take an example for both arrays and object usecases,
+     **Arrays destructuring:**
+     ```javascript
+     var x, y, z;
+
+     [x=2, y=4, z=6] = [10];
+     console.log(x); // 10
+     console.log(y); // 4
+     console.log(z); // 6
+     ```
+     **Objects destructuring:**
+     ```javascript
+     var {x=2, y=4, z=6} = {x: 10};
+
+     console.log(x); // 10
+     console.log(y); // 4
+     console.log(z); // 6
+     ```
+315. ### How do you swap variables in destructuring assignment?
+     If you don't use destructuring assignment, swapping two values requires a temporary variable. Whereas using destructuring feature, two variables values can be swapped in one destructuring expression. Let's swap two number variables in array destructuring assignment,
+     ```javascript
+     var x = 10, y = 20;
+
+     [x, y] = [y, z];
+     console.log(x); // 20
+     console.log(y); // 10
+     ```
+
+316. ### What are enhanced object literals?
 317. ### ?
 318. ### ?
 319. ### ?
