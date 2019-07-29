@@ -3596,6 +3596,17 @@ function userDetails(username) {
      ```
 
 316. ### What are enhanced object literals?
+     Object literals make it easy to quickly create objects with properties inside the curly braces. For example, it provides shorter syntax for common object property definition as below.
+     ```javascript
+     //ES6
+     var x = 10, y = 20
+     obj = { x, y }
+     console.log(obj); // {x: 10, y:20}
+     //ES5
+     var x = 10, y = 20
+     obj = { x : x, y : y}
+     console.log(obj); // {x: 10, y:20}
+     ```
 317. ### What are dynamic imports?
 318. ### What are the use cases for dynamic imports?
      Below are some of the use cases of using dynamic imports over static imports,
