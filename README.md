@@ -322,9 +322,8 @@
 |314| [What are default values in destructuring assignment?](#what-are-default-values-in-destructuring-assignment)|
 |315| [How do you swap variables in destructuring assignment?](#how-do-you-swap-variables-in-destructuring-assignment)|
 |316| [What are enhanced object literals?](#what-are-enhanced-object-literals)|
-|316| [](#)|
-|317| [](#)|
-|318| [](#)|
+|317| [What are dynamic imports?](#what-are-dynamic-imports)|
+|318| [What are the use cases for dynamic imports?](#what-are-the-use-cases-for-dynamic-imports)|
 |319| [](#)|
 |320| [](#)|
 
@@ -3597,8 +3596,21 @@ function userDetails(username) {
      ```
 
 316. ### What are enhanced object literals?
-317. ### ?
-318. ### ?
+317. ### What are dynamic imports?
+318. ### What are the use cases for dynamic imports?
+     Below are some of the use cases of using dynamic imports over static imports,
+     1. Import a module on-demand or conditionally. For example, if you want to load a polyfill on legacy browser
+     ```javascript
+     if (isLegacyBrowser()) {
+         import(···)
+         .then(···);
+     }
+     ```
+     2. Compute the module specifier at runtime. For example, you can use it for internationalization.
+     ```javascript
+     import(`messages_${getLocale()}.js`).then(···);
+     ```
+     3. Import a module from within a regular script instead a module.
 319. ### ?
 320. ### ?
 
