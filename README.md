@@ -324,7 +324,7 @@
 |316| [What are enhanced object literals?](#what-are-enhanced-object-literals)|
 |317| [What are dynamic imports?](#what-are-dynamic-imports)|
 |318| [What are the use cases for dynamic imports?](#what-are-the-use-cases-for-dynamic-imports)|
-|319| [](#)|
+|319| [What are typed arrays?](#what-are-typed-arrays)|
 |320| [](#)|
 
 1. ### What are the possible ways to create objects in JavaScript?
@@ -3627,7 +3627,25 @@ function userDetails(username) {
      import(`messages_${getLocale()}.js`).then(···);
      ```
      3. Import a module from within a regular script instead a module.
-319. ### ?
+319. ### What are typed arrays?
+     Typed arrays are array-like objects from ECMAScript 6 API for handling binary data. JavaScript provides 8 Typed array types,
+
+     1. Int8Array: An array of 8-bit signed integers
+     2. Int16Array: An array of 16-bit signed integers
+     3. Int32Array: An array of 32-bit signed integers
+     4. Uint8Array: An array of 8-bit unsigned integers
+     5. Uint16Array: An array of 16-bit unsigned integers
+     6. Uint32Array: An array of 32-bit unsigned integers
+     7. Float32Array: An array of 32-bit floating point numbers
+     8. Float64Array: An array of 64-bit floating point numbers
+
+     For example, you can create an array of 8-bit signed integers as below
+     ```javascript
+     const a = new Int8Array();
+     // You can pre-allocate n bytes
+     const bytes = 1024
+     const a = new Int8Array(bytes)
+     ```
 320. ### ?
 
 
