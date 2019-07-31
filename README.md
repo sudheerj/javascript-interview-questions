@@ -325,7 +325,7 @@
 |317| [What are dynamic imports?](#what-are-dynamic-imports)|
 |318| [What are the use cases for dynamic imports?](#what-are-the-use-cases-for-dynamic-imports)|
 |319| [What are typed arrays?](#what-are-typed-arrays)|
-|320| [](#)|
+|320| [What are the advantages of module loaders?](#what-are-the-advantages-of-module-loaders)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3646,7 +3646,13 @@ function userDetails(username) {
      const bytes = 1024
      const a = new Int8Array(bytes)
      ```
-320. ### ?
+320. ### What are the advantages of module loaders?
+     The module loaders provides the below features,
+     1. Dynamic loading
+     2. State isolation
+     3. Global namespace isolation
+     4. Compilation hooks
+     4. Nested virtualization
 
 
 
