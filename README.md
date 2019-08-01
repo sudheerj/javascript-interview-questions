@@ -328,7 +328,7 @@
 |320| [What are the advantages of module loaders?](#what-are-the-advantages-of-module-loaders)|
 |321| [What is collation?](#what-is-collation)|
 |322| [What is for...of statement?](#what-is-for...of-statement)|
-|323| [](#)|
+|323| [What is the output of below spread operator array?](#what-is-the-output-of-below-spread-operator-array)|
 |324| [](#)|
 |325| [](#)|
 |326| [](#)|
@@ -3683,7 +3683,7 @@ function userDetails(username) {
      console.log(list.sort(l10nSV.compare)) // [ "a", "z", "ä" ]
      ```
 322. ### What is for...of statement?
-     The for...of statement creates a loop iterating over iterable objects such as built-in String, Array, Array-like objects (like arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. The basic usage of for...of statement on arrays would be as below,
+     The for...of statement creates a loop iterating over iterable objects or elements such as built-in String, Array, Array-like objects (like arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. The basic usage of for...of statement on arrays would be as below,
      ```javascript
      let arrayIterable = [10, 20, 30, 40, 50];
 
@@ -3692,7 +3692,12 @@ function userDetails(username) {
        console.log(value); // 11 21 31 41 51
      }
      ```
-323. ### ?
+323. ### What is the output of below spread operator array?
+     ```javascript
+     [...'John Resig']
+     ```
+     The output of the array is ['J', 'o', 'h', 'n', '', 'R', 'e', 's', 'i', 'g']
+     **Explanation:** The string is an iterable type and the spread operator with in an array maps every character of an iterable to one element. Hence, each character of a string becomes an element within an Array.
 324. ### ?
 325. ### ?
 326. ### ?
