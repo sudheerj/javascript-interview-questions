@@ -327,6 +327,15 @@
 |319| [What are typed arrays?](#what-are-typed-arrays)|
 |320| [What are the advantages of module loaders?](#what-are-the-advantages-of-module-loaders)|
 |321| [What is collation?](#what-is-collation)|
+|322| [What is for...of statement?](#what-is-for...of-statement)|
+|323| [](#)|
+|324| [](#)|
+|325| [](#)|
+|326| [](#)|
+|327| [](#)|
+|328| [](#)|
+|329| [](#)|
+|330| [](#)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3673,6 +3682,24 @@ function userDetails(username) {
      console.log(list.sort(l10nDE.compare)) // [ "a", "ä", "z" ]
      console.log(list.sort(l10nSV.compare)) // [ "a", "z", "ä" ]
      ```
+322. ### What is for...of statement?
+     The for...of statement creates a loop iterating over iterable objects such as built-in String, Array, Array-like objects (like arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. The basic usage of for...of statement on arrays would be as below,
+     ```javascript
+     let arrayIterable = [10, 20, 30, 40, 50];
+
+     for (let value of arrayIterable) {
+       value ++;
+       console.log(value); // 11 21 31 41 51
+     }
+     ```
+323. ### ?
+324. ### ?
+325. ### ?
+326. ### ?
+327. ### ?
+328. ### ?
+329. ### ?
+330. ### ?
 
 
 
