@@ -326,6 +326,7 @@
 |318| [What are the use cases for dynamic imports?](#what-are-the-use-cases-for-dynamic-imports)|
 |319| [What are typed arrays?](#what-are-typed-arrays)|
 |320| [What are the advantages of module loaders?](#what-are-the-advantages-of-module-loaders)|
+|321| [What is collation?](#what-is-collation)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3653,6 +3654,26 @@ function userDetails(username) {
      3. Global namespace isolation
      4. Compilation hooks
      4. Nested virtualization
+
+321. ### What is collation?
+     Collation is used for sorting a set of strings and searching within a set of strings. It is parameterized by locale and aware of Unicode. Let's take comparision and sorting features,
+     1. **Comparison:**
+     ```javascript
+     var list = [ "ä", "a", "z" ]; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
+     var l10nDE = new Intl.Collator("de");
+     var l10nSV = new Intl.Collator("sv");
+     console.log(l10nDE.compare("ä", "z") === -1); // true
+     console.log(l10nSV.compare("ä", "z") === +1); // true
+     ```
+     2. **Sorting:**
+     ```javascript
+     var list = [ "ä", "a", "z" ]; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
+     var l10nDE = new Intl.Collator("de");
+     var l10nSV = new Intl.Collator("sv");
+     console.log(list.sort(l10nDE.compare)) // [ "a", "ä", "z" ]
+     console.log(list.sort(l10nSV.compare)) // [ "a", "z", "ä" ]
+     ```
+
 
 
 
