@@ -329,7 +329,7 @@
 |321| [What is collation?](#what-is-collation)|
 |322| [What is for...of statement?](#what-is-for...of-statement)|
 |323| [What is the output of below spread operator array?](#what-is-the-output-of-below-spread-operator-array)|
-|324| [](#)|
+|324| [Is PostMessage secure?](#is-postmessage-secure)|
 |325| [](#)|
 |326| [](#)|
 |327| [](#)|
@@ -3698,7 +3698,8 @@ function userDetails(username) {
      ```
      The output of the array is ['J', 'o', 'h', 'n', '', 'R', 'e', 's', 'i', 'g']
      **Explanation:** The string is an iterable type and the spread operator with in an array maps every character of an iterable to one element. Hence, each character of a string becomes an element within an Array.
-324. ### ?
+324. ### Is PostMessage secure?
+     Yes, postMessages can be considered very secure as long as the programmer/developer is careful about checking the origin and source of an arriving message. But if you try to send/receive a message without verifying its source will create cross-site scripting attacks.
 325. ### ?
 326. ### ?
 327. ### ?
