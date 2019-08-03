@@ -330,7 +330,7 @@
 |322| [What is for...of statement?](#what-is-for...of-statement)|
 |323| [What is the output of below spread operator array?](#what-is-the-output-of-below-spread-operator-array)|
 |324| [Is PostMessage secure?](#is-postmessage-secure)|
-|325| [](#)|
+|325| [What are the problems with postmessage target origin as wildcard?](#what-are-the-problems-with-postmessage-target-origin-as-wildcard)|
 |326| [](#)|
 |327| [](#)|
 |328| [](#)|
@@ -3700,7 +3700,11 @@ function userDetails(username) {
      **Explanation:** The string is an iterable type and the spread operator with in an array maps every character of an iterable to one element. Hence, each character of a string becomes an element within an Array.
 324. ### Is PostMessage secure?
      Yes, postMessages can be considered very secure as long as the programmer/developer is careful about checking the origin and source of an arriving message. But if you try to send/receive a message without verifying its source will create cross-site scripting attacks.
-325. ### ?
+325. ### What are the problems with postmessage target origin as wildcard?
+     The second argument of postMessage method specifies which origin is allowed to receive the message. If you use the wildcard “*” as an argument then any origin is allowed to receive the message. In this case, there is no way for the sender window to know if the target window is at the target origin when sending the message. If the target window has been navigated to another origin, the other origin would receive the data. Hence, this may lead to XSS vulnerabilities.
+     ```javascript
+     targetWindow.postMessage(message, '*');
+     ```
 326. ### ?
 327. ### ?
 328. ### ?
