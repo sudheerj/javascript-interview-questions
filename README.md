@@ -331,8 +331,8 @@
 |323| [What is the output of below spread operator array?](#what-is-the-output-of-below-spread-operator-array)|
 |324| [Is PostMessage secure?](#is-postmessage-secure)|
 |325| [What are the problems with postmessage target origin as wildcard?](#what-are-the-problems-with-postmessage-target-origin-as-wildcard)|
-|326| [](#)|
-|327| [](#)|
+|326| [How do you avoid receiving postMessages from attackers?](#how-do-you-avoid-receiving-postmessages-from-attackers)|
+|327| [Can I avoid using postMessages completely?](#can-i-avoid-using-postmessages-completely)|
 |328| [](#)|
 |329| [](#)|
 |330| [](#)|
@@ -3705,8 +3705,18 @@ function userDetails(username) {
      ```javascript
      targetWindow.postMessage(message, '*');
      ```
-326. ### ?
-327. ### ?
+326. ### How do you avoid receiving postMessages from attackers?
+     Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker’s origin,  which gives an impression that the receiver received the message from the actual sender’s window. You can avoid this issue by validating the origin of the message on the receiver's end using “message.origin” attribute. For examples, let's check the sender's origin(http://www.some-sender.com) on receiver side(www.some-receiver.com),
+     ```javascript
+     //Listener on http://www.some-receiver.com/
+     window.addEventListener("message", function(message){
+         if(/^http://www\.some-sender\.com$/.test(message.origin)){
+              console.log('You recieved the data from valid sender', message.data);
+        }
+     });
+     ```
+327. ### Can I avoid using postMessages completely?
+     You cannot avoid using postMessages completely(or 100%). Even though your application doesn’t use postMessage considering the risks, a lot of third party scripts use postMessage to communicate with the third party service. So your application might be using postMessage without your knowledge.
 328. ### ?
 329. ### ?
 330. ### ?
