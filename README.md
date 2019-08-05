@@ -333,7 +333,7 @@
 |325| [What are the problems with postmessage target origin as wildcard?](#what-are-the-problems-with-postmessage-target-origin-as-wildcard)|
 |326| [How do you avoid receiving postMessages from attackers?](#how-do-you-avoid-receiving-postmessages-from-attackers)|
 |327| [Can I avoid using postMessages completely?](#can-i-avoid-using-postmessages-completely)|
-|328| [](#)|
+|328| [Is postMessages synchronous?](#is-postmessages-synchronous)|
 |329| [](#)|
 |330| [](#)|
 
@@ -3717,7 +3717,8 @@ function userDetails(username) {
      ```
 327. ### Can I avoid using postMessages completely?
      You cannot avoid using postMessages completely(or 100%). Even though your application doesn’t use postMessage considering the risks, a lot of third party scripts use postMessage to communicate with the third party service. So your application might be using postMessage without your knowledge.
-328. ### ?
+328. ### Is postMessages synchronous?
+     The postMessages are synchronous in IE8 browser but they are asynchronous in IE9 and all other modern browsers (i.e, IE9+, Firefox, Chrome, Safari).Due to this asynchronous behaviour, we use a callback mechanism when the postMessage is returned.
 329. ### ?
 330. ### ?
 
