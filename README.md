@@ -334,8 +334,8 @@
 |326| [How do you avoid receiving postMessages from attackers?](#how-do-you-avoid-receiving-postmessages-from-attackers)|
 |327| [Can I avoid using postMessages completely?](#can-i-avoid-using-postmessages-completely)|
 |328| [Is postMessages synchronous?](#is-postmessages-synchronous)|
-|329| [](#)|
-|330| [](#)|
+|329| [What paradigm is Javascript?](#what-paradigm-is-javascript)|
+|330| [What is the difference between internal and external javascript?](#what-is-the-difference-between-internal-and-external-javascript)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3719,8 +3719,11 @@ function userDetails(username) {
      You cannot avoid using postMessages completely(or 100%). Even though your application doesn’t use postMessage considering the risks, a lot of third party scripts use postMessage to communicate with the third party service. So your application might be using postMessage without your knowledge.
 328. ### Is postMessages synchronous?
      The postMessages are synchronous in IE8 browser but they are asynchronous in IE9 and all other modern browsers (i.e, IE9+, Firefox, Chrome, Safari).Due to this asynchronous behaviour, we use a callback mechanism when the postMessage is returned.
-329. ### ?
-330. ### ?
+329. ### What paradigm is Javascript?
+     JavaScript is a multi-paradigm language, supporting imperative/procedural programming, Object-Oriented Programming and functional programming. JavaScript supports Object-Oriented Programming with prototypical inheritance.
+330. ### What is the difference between internal and external javascript?
+     **Internal JavaScript:** It is the source code with in the script tag.
+     **External JavaScript:** The source code is stored in an external file(stored with .js extension) and referred with in the tag.
 
 
 
