@@ -336,6 +336,7 @@
 |328| [Is postMessages synchronous?](#is-postmessages-synchronous)|
 |329| [What paradigm is Javascript?](#what-paradigm-is-javascript)|
 |330| [What is the difference between internal and external javascript?](#what-is-the-difference-between-internal-and-external-javascript)|
+|331| [Is JavaScript faster than server side script?](#is-javascript-faster-than-server-side-script)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3724,6 +3725,9 @@ function userDetails(username) {
 330. ### What is the difference between internal and external javascript?
      **Internal JavaScript:** It is the source code with in the script tag.
      **External JavaScript:** The source code is stored in an external file(stored with .js extension) and referred with in the tag.
+
+331. ### Is JavaScript faster than server side script?
+     Yes, JavaScript is than server side script. Because JavaScript is a client-side script it does require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
 
 
 
