@@ -337,6 +337,7 @@
 |329| [What paradigm is Javascript?](#what-paradigm-is-javascript)|
 |330| [What is the difference between internal and external javascript?](#what-is-the-difference-between-internal-and-external-javascript)|
 |331| [Is JavaScript faster than server side script?](#is-javascript-faster-than-server-side-script)|
+|332| [How do you get the status of a checkbox?](#how-do-you-get-the-status-of-a-checkbox)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3728,6 +3729,14 @@ function userDetails(username) {
 
 331. ### Is JavaScript faster than server side script?
      Yes, JavaScript is than server side script. Because JavaScript is a client-side script it does require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
+332. ### How do you get the status of a checkbox?
+     You can apply `checked` property on selected checkbox in the DOM. If the value is `True` means the checkbox is checked otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below,
+     ```html
+       <input type="checkbox" name="checkboxname" value="Agree"> Agree the conditions<br>
+     ```
+     ```javascript
+     console.log(document.getElementById(‘checkboxname’).checked); // true or false
+     ```
 
 
 
