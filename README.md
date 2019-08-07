@@ -338,6 +338,14 @@
 |330| [What is the difference between internal and external javascript?](#what-is-the-difference-between-internal-and-external-javascript)|
 |331| [Is JavaScript faster than server side script?](#is-javascript-faster-than-server-side-script)|
 |332| [How do you get the status of a checkbox?](#how-do-you-get-the-status-of-a-checkbox)|
+|333| [What is the purpose of double tilde operator?](#what-is-the-purpose-of-double-tilde-operator)|
+|334| [](#)|
+|335| [](#)|
+|336| [](#)|
+|337| [](#)|
+|338| [](#)|
+|339| [](#)|
+|340| [](#)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3737,6 +3745,16 @@ function userDetails(username) {
      ```javascript
      console.log(document.getElementById(‘checkboxname’).checked); // true or false
      ```
+333. ### What is the purpose of double tilde operator?
+     The double tilde operator(~~) is known as double NOT bitwise operator. This operator is going to be a quicker substitute for Math.floor().
+334. ### ?
+335. ### ?
+336. ### ?
+337. ### ?
+338. ### ?
+339. ### ?
+340. ### ?
+341. ### ?
 
 
 
