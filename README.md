@@ -636,7 +636,7 @@ You can list out the differences in a tabular format
 |---- | ---------
 | It is been available from the beginning of JavaScript  | Introduced as part of ES6 |
 | It has function scope | It has block scope  |
-| Variables will be hoisted | Won't get hoisted|
+| Variables will be hoisted | Hoisted but not initialized |
 
 Let's take an example to see the difference,
 ```javascript
