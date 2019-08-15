@@ -339,7 +339,7 @@
 |331| [Is JavaScript faster than server side script?](#is-javascript-faster-than-server-side-script)|
 |332| [How do you get the status of a checkbox?](#how-do-you-get-the-status-of-a-checkbox)|
 |333| [What is the purpose of double tilde operator?](#what-is-the-purpose-of-double-tilde-operator)|
-|334| [](#)|
+|334| [How do you convert character to ASCII code?](#how-do-you-convert-character-to-ascii-code)|
 |335| [](#)|
 |336| [](#)|
 |337| [](#)|
@@ -3747,7 +3747,15 @@ function userDetails(username) {
      ```
 333. ### What is the purpose of double tilde operator?
      The double tilde operator(~~) is known as double NOT bitwise operator. This operator is going to be a quicker substitute for Math.floor().
-334. ### ?
+334. ### How do you convert character to ASCII code?
+     You can use `String.prototype.charCodeAt()` method to convert string characters to ASCII numbers. For example, let's find ASCII code for the first letter of 'ABC' string,
+     ```javascript
+     "ABC".charCodeAt(0) // returns 65
+     ```
+     Whereas `String.fromCharCode()` method to convert numbers to equal ASCII character.
+     ```javascript
+     String.fromCharCode(65,66,67); // returns 'ABC'
+     ```
 335. ### ?
 336. ### ?
 337. ### ?
