@@ -340,7 +340,7 @@
 |332| [How do you get the status of a checkbox?](#how-do-you-get-the-status-of-a-checkbox)|
 |333| [What is the purpose of double tilde operator?](#what-is-the-purpose-of-double-tilde-operator)|
 |334| [How do you convert character to ASCII code?](#how-do-you-convert-character-to-ascii-code)|
-|335| [](#)|
+|335| [What is ArrayBuffer?](#what-is-arraybuffer)|
 |336| [](#)|
 |337| [](#)|
 |338| [](#)|
@@ -3756,7 +3756,17 @@ function userDetails(username) {
      ```javascript
      String.fromCharCode(65,66,67); // returns 'ABC'
      ```
-335. ### ?
+335. ### What is ArrayBuffer?
+     An ArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer. You can create it as below,
+     ```javascript
+     let buffer = new ArrayBuffer(16); // create a buffer of length 16
+     alert(buffer.byteLength); // 16
+     ```
+     To manipulate an ArrayBuffer, we need to use a “view” object.
+     ```javascript
+     //Create a DataView referring to the buffer
+      let view = new DataView(buffer);
+     ```
 336. ### ?
 337. ### ?
 338. ### ?
