@@ -342,7 +342,7 @@
 |334| [How do you convert character to ASCII code?](#how-do-you-convert-character-to-ascii-code)|
 |335| [What is ArrayBuffer?](#what-is-arraybuffer)|
 |336| [What is the output of below string expression?](#what-is-the-output-of-below-string-expression)|
-|337| [](#)|
+|337| [What is the purpose of Error object?](#what-is-the-purpose-of-error-object)|
 |338| [](#)|
 |339| [](#)|
 |340| [](#)|
@@ -3773,7 +3773,20 @@ function userDetails(username) {
      ```
      The output of the above expression is "W".
      **Explanation:** The bracket notation with specific index on a string returns the character at a specific location. Hence, it returns character "W" of the string. Since this is not supported in IE7 and below versions, you may need to use .charAt() method to get the desired result.
-337. ### ?
+337. ### What is the purpose of Error object?
+     The Error constructor creates an error object and the instances of error objects are thrown when runtime errors occur. The Error object can also be used as a base object for user-defined exceptions. The syntax of error object would be as below,
+     ```javascript
+     new Error([message[, fileName[, lineNumber]]])
+     ```
+     You can throw user defined exceptions or errors using Error object in try...catch block as below,
+     ```javascript
+     try {
+       if(withdraw > balance)
+       throw new Error('Oops! You don't have enough balance');
+     } catch (e) {
+       console.log(e.name + ': ' + e.message);
+     }
+     ```
 338. ### ?
 339. ### ?
 340. ### ?
