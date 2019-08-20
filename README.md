@@ -344,7 +344,7 @@
 |336| [What is the output of below string expression?](#what-is-the-output-of-below-string-expression)|
 |337| [What is the purpose of Error object?](#what-is-the-purpose-of-error-object)|
 |338| [What is the purpose of EvalError object?](#what-is-the-purpose-of-evalerror-object)|
-|339| [](#)|
+|339| [What are the list of cases error thrown from non-strict mode to strict mode?](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)|
 |340| [](#)|
 
 1. ### What are the possible ways to create objects in JavaScript?
@@ -3799,7 +3799,21 @@ function userDetails(username) {
      } catch (e) {
        console.log(e.message, e.name, e.fileName);              // "Eval function error", "EvalError", "someFile.js"
      ```
-339. ### ?
+339. ### What are the list of cases error thrown from non-strict mode to strict mode?
+     When you apply 'use strict'; syntax, some of the below cases will throw a SyntaxError before executing the script
+     1. When you use Octal syntax
+     ```javascript
+     var n = 022;
+     ```
+     2. Using `with` statement
+     3. When you use delete operator on a variable name
+     4. Using eval or arguments as variable or function argument name
+     5. When you use newly reserved keywords
+     6. When you declare a function in a block
+     ```javascript
+     if (someCondition) { function f() {} }
+     ```
+     Hence, the errors from above cases helpful to avoid errors in development/production environments.
 340. ### ?
 341. ### ?
 
