@@ -345,7 +345,7 @@
 |337| [What is the purpose of Error object?](#what-is-the-purpose-of-error-object)|
 |338| [What is the purpose of EvalError object?](#what-is-the-purpose-of-evalerror-object)|
 |339| [What are the list of cases error thrown from non-strict mode to strict mode?](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)|
-|340| [](#)|
+|340| [Is all objects have prototypes?](#is-all-objects-have-prototypes)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3814,7 +3814,8 @@ function userDetails(username) {
      if (someCondition) { function f() {} }
      ```
      Hence, the errors from above cases helpful to avoid errors in development/production environments.
-340. ### ?
+340. ### Is all objects have prototypes?
+     No. All objects have prototypes except for the base object which is created by the user, or an object that is created using the new keyword.
 341. ### ?
 
 
