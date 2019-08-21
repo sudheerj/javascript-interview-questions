@@ -346,6 +346,7 @@
 |338| [What is the purpose of EvalError object?](#what-is-the-purpose-of-evalerror-object)|
 |339| [What are the list of cases error thrown from non-strict mode to strict mode?](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)|
 |340| [Is all objects have prototypes?](#is-all-objects-have-prototypes)|
+|341| [What is the difference between a parameter and an argument?](#what-is-the-difference-between-a-parameter-and-an-argument)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3816,8 +3817,16 @@ function userDetails(username) {
      Hence, the errors from above cases helpful to avoid errors in development/production environments.
 340. ### Is all objects have prototypes?
      No. All objects have prototypes except for the base object which is created by the user, or an object that is created using the new keyword.
-341. ### ?
-
+341. ### What is the difference between a parameter and an argument?
+     Parameter is the variable name of a function definition whereas an argument represent the value given to a function when it is invoked. Let's explain this with a simple function
+     ```javascript
+     function myFunction(parameter1, parameter2, parameter3) {
+       console.log(arguments[0]) // "argument1"
+       console.log(arguments[1]) // "argument2"
+       console.log(arguments[2]) // "argument3"
+     }
+     myFunction("argument1", "argument2", "argument3")
+     ```
 
 
 
