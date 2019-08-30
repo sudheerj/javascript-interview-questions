@@ -2275,9 +2275,9 @@ function userDetails(username) {
       const object = {
          property: 'Welcome JS world'
       };
-      Object.freeze(object);
+      Object.seal(object);
       object.property = 'Welcome to object world';
-      console.log(Object.isFrozen(object)); // Welcome to object world
+      console.log(Object.isSealed(object)); // Welcome to object world
       delete object.property; // You cannot delete when sealed
       console.log(object.property); //Welcome to object world
      ```
