@@ -727,7 +727,7 @@ function userDetails(username) {
      return (value) => {
       if (value in cache) {
        console.log('Fetching from cache');
-       return cache.value;
+       return cache[value]; // Here, cache.value cannot be used as property name starts with the number which is not valid JavaScript  identifier. Hence, can only be accessed using the square bracket notation.
       }
       else {
        console.log('Calculating result');
