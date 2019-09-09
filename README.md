@@ -1847,7 +1847,7 @@ function userDetails(username) {
      The replace() method is used return a modified string where the pattern is replaced.
      ```javascript
      var msg = "Hello John";
-     var n = msg.search(/John/i, "Buttler"); // Hello Buttler
+     var n = msg.replace(/John/i, "Buttler"); // Hello Buttler
      ```
 156. ### What are modifiers in regular expression?
      Modifiers can be used to perform case-insensitive and global searches. Let's list down some of the modifiers,
