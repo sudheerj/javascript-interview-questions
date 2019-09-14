@@ -347,6 +347,7 @@
 |339| [What are the list of cases error thrown from non-strict mode to strict mode?](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)|
 |340| [Is all objects have prototypes?](#is-all-objects-have-prototypes)|
 |341| [What is the difference between a parameter and an argument?](#what-is-the-difference-between-a-parameter-and-an-argument)|
+|342| [What is the purpose of some method in arrays?](#what-is-the-purpose-of-some-method-in-arrays)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -1847,7 +1848,7 @@ function userDetails(username) {
      The replace() method is used return a modified string where the pattern is replaced.
      ```javascript
      var msg = "Hello John";
-     var n = msg.search(/John/i, "Buttler"); // Hello Buttler
+     var n = msg.replace(/John/i, "Buttler"); // Hello Buttler
      ```
 156. ### What are modifiers in regular expression?
      Modifiers can be used to perform case-insensitive and global searches. Let's list down some of the modifiers,
@@ -3827,6 +3828,25 @@ function userDetails(username) {
      }
      myFunction("argument1", "argument2", "argument3")
      ```
+342. ### What is the purpose of some method in arrays?
+     The some() method is used to test whether at least one element in the array passes the test implemented by the provided function. The method returns a boolean value. Let's take an example to test for any odd elements,
+     ```javascript
+     var array = [1, 2, 3, 4, 5, 6 ,7, 8, 9, 10];
+
+     var odd = element ==> element % 2 !== 0;
+
+     console.log(array.some(odd)); // true (the odd element exists)
+     ```
+
+343. ### ?
+344. ### ?
+345. ### ?
+346. ### ?
+347. ### ?
+348. ### ?
+349. ### ?
+350. ### ?
+
 
 
 
