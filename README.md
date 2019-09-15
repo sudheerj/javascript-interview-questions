@@ -348,6 +348,7 @@
 |340| [Is all objects have prototypes?](#is-all-objects-have-prototypes)|
 |341| [What is the difference between a parameter and an argument?](#what-is-the-difference-between-a-parameter-and-an-argument)|
 |342| [What is the purpose of some method in arrays?](#what-is-the-purpose-of-some-method-in-arrays)|
+|343| [How do you combine two or more arrays?](#how-do-you-combine-two-or-more-arrays)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3838,7 +3839,18 @@ function userDetails(username) {
      console.log(array.some(odd)); // true (the odd element exists)
      ```
 
-343. ### ?
+343. ### How do you combine two or more arrays?
+     The concat() method is used to join two or more arrays by returning a new array containing all the elements. The syntax would be as below,
+     ```javascript
+     array1.concat(array2, array3, ..., arrayX)
+     ```
+     Let's take an example of array's concatenation with veggies and fruits arrays,
+     ```javascript
+       var veggies = ["Tomato", "Carrot", "Cabbage"];
+       var fruits = ["Apple", "Orange", "Pears"];
+       var veggiesAndFruits = veggies.concat(fruits);
+       console.log(veggiesAndFruits); // Tomato, Carrot, Cabbage, Apple, Orange, Pears
+     ```
 344. ### ?
 345. ### ?
 346. ### ?
