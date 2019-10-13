@@ -349,7 +349,8 @@
 |341| [What is the difference between a parameter and an argument?](#what-is-the-difference-between-a-parameter-and-an-argument)|
 |342| [What is the purpose of some method in arrays?](#what-is-the-purpose-of-some-method-in-arrays)|
 |343| [How do you combine two or more arrays?](#how-do-you-combine-two-or-more-arrays)|
-|344| [Difference b/w Shallow vs Deep copy?](#difference-b/w-shallow-vs-deep-copy)|
+|344| [What is the difference between Shallow and Deep copy?](#what-is-the-difference-between-shallow-and-deep-copy)|
+|345| [ow do you create specific number of copies of a string?](#howdo-you-create-specific-number-of-copies-of-a-string)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -4832,7 +4833,9 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-344. ### Difference b/w Shallow vs Deep copy? ?
+344. ### What is the difference between Shallow and Deep copy?
+      There are two ways to copy an object,
+
       ### Shallow Copy
       Shallow copy is a bit-wise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.
 
@@ -4875,7 +4878,12 @@ function userDetails(username) {
 
       **[⬆ Back to Top](#table-of-contents)**
 
-345. ### ?
+345. ### How do you create specific number of copies of a string?
+     The `repeat()` method is used to construct and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together. Remember that this method has been added to the ECMAScript 2015 specification.
+     Let's take an example of Hello string to repeat it 4 times,
+     ```javascript
+     'Hello'.repeat(4);  // 'HelloHelloHelloHello'
+     ```
 346. ### ?
 347. ### ?
 348. ### ?
