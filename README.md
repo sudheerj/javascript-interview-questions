@@ -350,7 +350,8 @@
 |342| [What is the purpose of some method in arrays?](#what-is-the-purpose-of-some-method-in-arrays)|
 |343| [How do you combine two or more arrays?](#how-do-you-combine-two-or-more-arrays)|
 |344| [What is the difference between Shallow and Deep copy?](#what-is-the-difference-between-shallow-and-deep-copy)|
-|345| [ow do you create specific number of copies of a string?](#howdo-you-create-specific-number-of-copies-of-a-string)|
+|345| [How do you create specific number of copies of a string?](#how-do-you-create-specific-number-of-copies-of-a-string)|
+|346| [How do you return all matching strings against a regular expression?](#how-do-you-return-all-matching-strings-against-a-regular-expression)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -4884,7 +4885,18 @@ function userDetails(username) {
      ```javascript
      'Hello'.repeat(4);  // 'HelloHelloHelloHello'
      ```
-346. ### ?
+346. ### How do you return all matching strings against a regular expression?
+     The `matchAll()` method can be used to return an iterator of all results matching a string against a regular expression. For example, the below example returns an array of matching string results against a regular expression,
+     ```javascript
+     let regexp = /Hello(\d?))/g;
+     let greeting = 'Hello1Hello2Hello3';
+
+     let greetingList = [...greeting.matchAll(regexp)];
+
+     console.log(greetingList[0]); //Hello1
+     console.log(greetingList[1]); //Hello2
+     console.log(greetingList[2]); //Hello3
+     ```
 347. ### ?
 348. ### ?
 349. ### ?
