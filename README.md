@@ -353,6 +353,7 @@
 |345| [How do you create specific number of copies of a string?](#how-do-you-create-specific-number-of-copies-of-a-string)|
 |346| [How do you return all matching strings against a regular expression?](#how-do-you-return-all-matching-strings-against-a-regular-expression)|
 |347| [How do you trim a string at the beginning or ending?](#how-do-you-trim-a-string-at-the-beginning-or-ending)|
+|348| [What is the output of below console statement with unary operator?](#what-is-the-output-of-below-console-statement-with-unary-operator)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -4916,7 +4917,15 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-348. ### ?
+348. ### What is the output of below console statement with unary operator?
+     Let's take console statement with unary operator as given below,
+     ```javascript
+     console.log(+ 'Hello');
+     ```
+     The output of the above console log statement returns NaN. Because the element is prefixed by the unary operator and the JavaScript interpreter will try to convert that element into a number type. Since the conversion fails, the value of the statement results in NaN value.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
 349. ### ?
 350. ### ?
 
