@@ -354,6 +354,8 @@
 |346| [How do you return all matching strings against a regular expression?](#how-do-you-return-all-matching-strings-against-a-regular-expression)|
 |347| [How do you trim a string at the beginning or ending?](#how-do-you-trim-a-string-at-the-beginning-or-ending)|
 |348| [What is the output of below console statement with unary operator?](#what-is-the-output-of-below-console-statement-with-unary-operator)|
+|349| [Does javascript uses mixins?](#does-javascript-uses-mixins)|
+|350| [What is a thunk function?](#what-is-a-thunk-function)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -4926,8 +4928,19 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-349. ### ?
-350. ### ?
+349. ### Does javascript uses mixins?
+     **[⬆ Back to Top](#table-of-contents)**
+350. ### What is a thunk function?
+     A thunk is just a function which delays the evaluation of the value. It doesn’t take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
+     ```javascript
+     const add = (x,y) => x + y;
+
+     const thunk = () => add(2,3);
+
+     thunk() // 5
+     ```
+     **[⬆ Back to Top](#table-of-contents)**
+
 
 
 
