@@ -605,7 +605,7 @@ document.addEventListener ('click', handler);
 12. ### What is a first order function?
 First-order function is a function that doesn’t accept other function as an argument and doesn’t return a function as its return value.
 ```javascript
-const firstOrder = () => console.log ('Iam a first order functionn!');
+const firstOrder = () => console.log ('I am a first order function!');
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -613,7 +613,7 @@ const firstOrder = () => console.log ('Iam a first order functionn!');
 13. ### What is a higher order function?
 Higher-order function is a function that accepts other function as an argument or returns a function as a return value.
 ```javascript
-const firstOrderFunc = () => console.log ('Hello I'am a First order function');
+const firstOrderFunc = () => console.log ('Hello I am a First order function');
 const higherOrder = ReturnFirstOrderFunc => ReturnFirstOrderFunc ();
 higherOrder (firstOrderFunc);
 ```
