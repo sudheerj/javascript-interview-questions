@@ -357,6 +357,7 @@
 |349| [Does javascript uses mixins?](#does-javascript-uses-mixins)|
 |350| [What is a thunk function?](#what-is-a-thunk-function)|
 |351| [What are asynchronous thunks?](#what-are-asynchronous-thunks)|
+|352| [What is the output of below function calls?](#what-is-the-output-of-below-function-calls)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -4278,7 +4279,7 @@ function userDetails(username) {
      }
      ```
      The output of the above for loops is 4 4 4 4 and 0 1 2 3
-     **Explanation:** Due to event loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with `var` keyword it became a global variable and the value was equal to 4 using iteration when the time setTimeout function is invoked. Hence, the output of the first loop is `4 4 4 4`. Whereas in the second loop, the variable i is declared as `let` keyword it became a block scoped variable and it holds a new value(0, 1 ,2 3) for each iteration. Hence, the output of the first loop is `0 1 2 3`.
+     **Explanation:** Due to event queue/loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with `var` keyword it became a global variable and the value was equal to 4 using iteration when the time setTimeout function is invoked. Hence, the output of the first loop is `4 4 4 4`. Whereas in the second loop, the variable i is declared as `let` keyword it became a block scoped variable and it holds a new value(0, 1 ,2 3) for each iteration. Hence, the output of the first loop is `0 1 2 3`.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -4964,7 +4965,22 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-352. ### ?
+352. ### What is the output of below function calls?
+     **Code snippet:**
+     const circle = {
+       radius: 20,
+       diameter() {
+         return this.radius * 2;
+       },
+       perimeter: () => 2 * Math.PI * this.radius
+     };
+
+     console.log(circle.diameter());
+     console.log(circle.perimeter());
+
+     **Output:**
+
+     The output is 44 and NaN. Remember that diameter is a regular function, whereas the value of perimeter is an arrow function. The this keyword of a regular function(i.e, diameter) refers to surrounding scope which is a class(i.e, Shape object). Whereas this keyword of perimeter function refers the surrounding scope which is window object. Since there is no radius property on window object it returns an undefined value and the multiple of number value returns NaN value.
 
      **[⬆ Back to Top](#table-of-contents)**
 
