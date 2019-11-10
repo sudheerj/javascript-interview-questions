@@ -358,6 +358,7 @@
 |350| [What is a thunk function?](#what-is-a-thunk-function)|
 |351| [What are asynchronous thunks?](#what-are-asynchronous-thunks)|
 |352| [What is the output of below function calls?](#what-is-the-output-of-below-function-calls)|
+|353| [How to remove all line breaks from a string?](#how-to-remove-all-line-breaks-from-a-string)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -4983,6 +4984,18 @@ function userDetails(username) {
      The output is 44 and NaN. Remember that diameter is a regular function, whereas the value of perimeter is an arrow function. The this keyword of a regular function(i.e, diameter) refers to surrounding scope which is a class(i.e, Shape object). Whereas this keyword of perimeter function refers the surrounding scope which is window object. Since there is no radius property on window object it returns an undefined value and the multiple of number value returns NaN value.
 
      **[⬆ Back to Top](#table-of-contents)**
+
+353. ### How to remove all line breaks from a string?
+     The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
+     ```javascript
+     function remove_linebreaks( var message ) {
+         return message.replace( /[\r\n]+/gm, "" );
+     }
+     ```
+     In the above expression, g and m are for global and multiline flags.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
 
 
 
