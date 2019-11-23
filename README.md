@@ -2798,9 +2798,9 @@ function userDetails(username) {
 
      const returnedTarget = Object.assign(target, source);
 
-     console.log(target); // { a: 1, b: 3, c: 5 }
+     console.log(target); // { a: 1, b: 3, c: 4 }
 
-     console.log(returnedTarget); // { a: 1, b: 3, c: 5 }
+     console.log(returnedTarget); // { a: 1, b: 3, c: 4 }
      ```
      As observed in the above code, there is a common property(`b`) from source to target so it's value is been overwritten.
 
