@@ -360,6 +360,8 @@
 |352| [What is the output of below function calls?](#what-is-the-output-of-below-function-calls)|
 |353| [How to remove all line breaks from a string?](#how-to-remove-all-line-breaks-from-a-string)|
 |354| [What is the difference between reflow and repaint?](#what-is-the-difference-between-reflow-and-repaint)|
+|355| [What happens with negating an array?](#what-happens-with-negating-an-array)|
+|356| [What happens if we add two arrays?](#what-happens-if-we-add-two-arrays)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -5002,6 +5004,28 @@ function userDetails(username) {
 
       **[⬆ Back to Top](#table-of-contents)**
 
+355. ### What happens with negating an array?
+     Negating an array with `!` character will coerce the array into a boolean. Since Arrays are considered to be truthy So negating it will return `false`.
+     ```javascript
+     console.log(![]); // false
+     ```
+     **[⬆ Back to Top](#table-of-contents)**
+356. ### What happens if we add two arrays?
+     If you add two arrays together, it will convert them both to strings and concatenate them. For example, the result of adding arrays would be as below,
+     ```javascript
+     console.log(['a'] + ['b']);  // "ab"
+     console.log([] + []); // ""
+     console.log(![] + []); // "false", because ![] returns false.
+     ```
+     **[⬆ Back to Top](#table-of-contents)**
+
+357. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+358. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
 
 
 
