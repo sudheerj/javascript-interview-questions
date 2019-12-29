@@ -362,6 +362,50 @@
 |354| [What is the difference between reflow and repaint?](#what-is-the-difference-between-reflow-and-repaint)|
 |355| [What happens with negating an array?](#what-happens-with-negating-an-array)|
 |356| [What happens if we add two arrays?](#what-happens-if-we-add-two-arrays)|
+|357| [What is the output of prepend additive operator on falsy values?](#what-is-the-output-of-prepend-additive-operator-on-falsy-values)|
+|358| [How do you create self string using special characters?](#how-do-you-create-self-string-using-special-characters)|
+|359| [](#)|
+|360| [](#)|
+|361| [](#)|
+|362| [](#)|
+|363| [](#)|
+|364| [](#)|
+|365| [](#)|
+|366| [](#)|
+|367| [](#)|
+|368| [](#)|
+|369| [](#)|
+|370| [](#)|
+|371| [](#)|
+|372| [](#)|
+|373| [](#)|
+|374| [](#)|
+|375| [](#)|
+|376| [](#)|
+|377| [](#)|
+|378| [](#)|
+|379| [](#)|
+|380| [](#)|
+|381| [](#)|
+|382| [](#)|
+|383| [](#)|
+|384| [](#)|
+|385| [](#)|
+|386| [](#)|
+|387| [](#)|
+|388| [](#)|
+|389| [](#)|
+|390| [](#)|
+|391| [](#)|
+|392| [](#)|
+|393| [](#)|
+|394| [](#)|
+|395| [](#)|
+|396| [](#)|
+|397| [](#)|
+|398| [](#)|
+|399| [](#)|
+|400| [](#)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -5019,7 +5063,45 @@ function userDetails(username) {
      ```
      **[⬆ Back to Top](#table-of-contents)**
 
-357. ### ?
+357. ### What is the output of prepend additive operator on falsy values?
+     If you prepend additive(+) operator on falsy values(null, undefined, NaN, false, ""), the falsy value converts to a number value zero. Let's display them on browser console as below,
+     ```javascript
+     console.log(+null); // 0
+     console.log(+undefined);// 0
+     console.log(+false); // 0
+     console.log(+NaN); // 0
+     console.log(+""); // 0
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+358. ### How do you create self string using special characters?
+     The self string can be formed with the combination of `[]()!+` characters. You need to remember the below conventions to achieve this pattern.
+     1. Since Arrays are truthful values, negating the arrays will produce false: ![] === false
+     2. As per JavaScript coercing rules, the addition of arrays together will toString them: [] + [] === ""
+     3. Prepend an array with + operator will convert an array to false, the negation will make it true and finally converting the result will produce value '1': +(!(+[])) === 1
+
+     By applying the above rules, we can derive below conditions
+     ```javascript
+     ![] + [] === "false"
+     +!+[] === 1
+     ```
+     Now the character pattern would be created as below,
+
+     ```javascript
+           s               e               l               f
+     ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
+
+     (![] + [])[3] + (![] + [])[4] + (![] + [])[2] + (![] + [])[0]
+     ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
+    (![] + [])[+!+[]+!+[]+!+[]] +
+    (![] + [])[+!+[]+!+[]+!+[]+!+[]] +
+    (![] + [])[+!+[]+!+[]] +
+    (![] + [])[+[]]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    (![]+[])[+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]]+(![]+[])[+[]]
+
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5027,9 +5109,189 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
+359. ### ?
 
+     **[⬆ Back to Top](#table-of-contents)**
 
+360. ### ?
 
+     **[⬆ Back to Top](#table-of-contents)**
+
+361. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+362. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+363. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+364. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+365. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+366. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+367. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+368. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+369. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+370. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+371. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+372. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+373. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+374. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+375. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+376. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+377. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+378. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+379. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+380. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+381. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+382. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+383. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+384. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+385. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+386. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+387. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+388. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+389. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+390. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+391. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+392. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+393. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+394. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+395. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+396. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+397. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+398. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+399. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+400. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+401. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+402. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+403. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+404. ### ?
+
+     **[⬆ Back to Top](#table-of-contents)**
 
 
 
