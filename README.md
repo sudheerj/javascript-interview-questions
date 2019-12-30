@@ -364,6 +364,7 @@
 |356| [What happens if we add two arrays?](#what-happens-if-we-add-two-arrays)|
 |357| [What is the output of prepend additive operator on falsy values?](#what-is-the-output-of-prepend-additive-operator-on-falsy-values)|
 |358| [How do you create self string using special characters?](#how-do-you-create-self-string-using-special-characters)|
+|358| [How do you remove falsy values from an array?](#how-do-you-remove-falsy-values-from-an-array)|
 |359| [](#)|
 |360| [](#)|
 |361| [](#)|
@@ -5105,7 +5106,12 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-358. ### ?
+358. ### How do you remove falsy values from an array?
+     You can apply filter method on array by passing Boolean as parameter. This way it removes all falsy values(0, undefined, null, false and "") from the array.
+     ```javascript
+     const myArray = [false, null, 1,5, undefined]
+     myArray.filter(Boolean); // [1, 5] // is same as myArray.filter(x => x);
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
