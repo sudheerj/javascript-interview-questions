@@ -365,7 +365,7 @@
 |357| [What is the output of prepend additive operator on falsy values?](#what-is-the-output-of-prepend-additive-operator-on-falsy-values)|
 |358| [How do you create self string using special characters?](#how-do-you-create-self-string-using-special-characters)|
 |358| [How do you remove falsy values from an array?](#how-do-you-remove-falsy-values-from-an-array)|
-|359| [](#)|
+|359| [How do you get unique values of an array?](#how-do-you-get-unique-values-of-an-array)|
 |360| [](#)|
 |361| [](#)|
 |362| [](#)|
@@ -5115,7 +5115,11 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-359. ### ?
+359. ### How do you get unique values of an array?
+     You can get unique values of an array with the combination of `Set` and spread(...) syntax.
+     ```javascript
+     console.log([...new Set([1, 2, 4, 4, 3])]); // [1, 2, 4, 3]
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
