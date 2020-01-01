@@ -368,7 +368,7 @@
 |359| [How do you get unique values of an array?](#how-do-you-get-unique-values-of-an-array)|
 |360| [What is destructuring aliases?](#what-is-destructuring-aliases)|
 |361| [How do you map the array values without using map method?](#how-do-you-map-the-array-values-without-using-map-method)|
-|362| [](#)|
+|362| [How do you empty an array?](#how-do-you-empty-an-array)|
 |363| [](#)|
 |364| [](#)|
 |365| [](#)|
@@ -5151,7 +5151,12 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-362. ### ?
+362. ### How do you empty an array?
+     You can empty an array quicky by setting the array length to zero.
+     ```javascript
+     let cities = ['Singapore', 'Delhi', 'London'];
+     cities.length = 0; // cities becomes []
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
