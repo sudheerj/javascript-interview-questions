@@ -366,7 +366,7 @@
 |358| [How do you create self string using special characters?](#how-do-you-create-self-string-using-special-characters)|
 |358| [How do you remove falsy values from an array?](#how-do-you-remove-falsy-values-from-an-array)|
 |359| [How do you get unique values of an array?](#how-do-you-get-unique-values-of-an-array)|
-|360| [](#)|
+|360| [What is destructuring aliases?](#what-is-destructuring-aliases)|
 |361| [](#)|
 |362| [](#)|
 |363| [](#)|
@@ -5116,14 +5116,20 @@ function userDetails(username) {
      **[⬆ Back to Top](#table-of-contents)**
 
 359. ### How do you get unique values of an array?
-     You can get unique values of an array with the combination of `Set` and spread(...) syntax.
+     You can get unique values of an array with the combination of `Set` and rest expression/spread(...) syntax.
      ```javascript
      console.log([...new Set([1, 2, 4, 4, 3])]); // [1, 2, 4, 3]
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
-360. ### ?
+360. ### What is destructuring aliases?
+     Sometimes you would like to have destructured variable with a different name than the property name. In that case, you'll use a `: newName` to specify a name for the variable. This process is called destructuring aliases.
+     ```javascript
+     const obj = { x: 1 };
+     // Grabs obj.x as as { otherName }
+     const { x: otherName } = obj;
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
