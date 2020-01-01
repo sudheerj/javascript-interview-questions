@@ -369,7 +369,7 @@
 |360| [What is destructuring aliases?](#what-is-destructuring-aliases)|
 |361| [How do you map the array values without using map method?](#how-do-you-map-the-array-values-without-using-map-method)|
 |362| [How do you empty an array?](#how-do-you-empty-an-array)|
-|363| [](#)|
+|363| [How do you rounding numbers to certain decimals](#how-do-you-rounding-numbers-to-certain-decimals)|
 |364| [](#)|
 |365| [](#)|
 |366| [](#)|
@@ -5160,7 +5160,12 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-363. ### ?
+363. ### How do you rounding numbers to certain decimals?
+     You can rounding numbers to a certain number of decimals using `toFixed` method from native javascript.
+     ```javascript
+     let pie = 3.141592653;
+     pie = pie.toFixed(3); // 3.142
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
