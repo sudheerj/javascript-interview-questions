@@ -367,7 +367,7 @@
 |358| [How do you remove falsy values from an array?](#how-do-you-remove-falsy-values-from-an-array)|
 |359| [How do you get unique values of an array?](#how-do-you-get-unique-values-of-an-array)|
 |360| [What is destructuring aliases?](#what-is-destructuring-aliases)|
-|361| [](#)|
+|361| [How do you map the array values without using map method?](#how-do-you-map-the-array-values-without-using-map-method)|
 |362| [](#)|
 |363| [](#)|
 |364| [](#)|
@@ -5133,7 +5133,21 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-361. ### ?
+361. ### How do you map the array values without using map method?
+     You can map the array values without using `map` method by just using `from` method of Array. Let's map city names from Countries array,
+     ```javascrippt
+     const countries = [
+         { name: 'India', capital: 'Delhi' },
+         { name: 'US', capital: 'Washington' },
+         { name: 'Russia', capital: 'Moscow' },
+         { name: 'Singapore', capital: 'Singapore' },
+         { name: 'China', capital: 'Beijing' },
+         { name: 'France', capital: 'Paris' },
+     ];
+
+     const cityNames = Array.from(countries, ({ capital}) => capital);
+     console.log(cityNames); // ['Delhi, 'Washington', 'Moscow', 'Singapore', 'Beijing', 'Paris']
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
