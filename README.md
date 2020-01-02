@@ -371,7 +371,7 @@
 |362| [How do you empty an array?](#how-do-you-empty-an-array)|
 |363| [How do you rounding numbers to certain decimals](#how-do-you-rounding-numbers-to-certain-decimals)|
 |364| [What is the easiest way to convert an array to an object?](#what-is-the-easiest-way-to-convert-an-array-to-an-object)|
-|365| [](#)|
+|365| [How do you create an array with some data?](#how-do-you-create-an-array-with-some-data)|
 |366| [](#)|
 |367| [](#)|
 |368| [](#)|
@@ -5179,7 +5179,12 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-365. ### ?
+365. ### How do you create an array with some data?
+     You can create an array with some data or an array with the same values using `fill` method.
+     ```javascript
+     var newArray = new Array(5).fill("0");
+     console.log(newArray); // ["0", "0", "0", "0", "0"]
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
