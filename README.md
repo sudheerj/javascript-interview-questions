@@ -370,7 +370,7 @@
 |361| [How do you map the array values without using map method?](#how-do-you-map-the-array-values-without-using-map-method)|
 |362| [How do you empty an array?](#how-do-you-empty-an-array)|
 |363| [How do you rounding numbers to certain decimals](#how-do-you-rounding-numbers-to-certain-decimals)|
-|364| [](#)|
+|364| [What is the easiest way to convert an array to an object?](#what-is-the-easiest-way-to-convert-an-array-to-an-object)|
 |365| [](#)|
 |366| [](#)|
 |367| [](#)|
@@ -5169,7 +5169,13 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-364. ### ?
+364. ### What is the easiest way to convert an array to an object?
+     You can convert an array to an object with the same data using spread(...) operator.
+     ```javascript
+     var fruits = ["banana", "apple", "orange", "watermelon"];
+     var fruitsObject = {...fruits};
+     console.log(fruitsObject); // {0: "banana", 1: "apple", 2: "orange", 3: "watermelon"}
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
