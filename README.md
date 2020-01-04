@@ -372,11 +372,11 @@
 |363| [How do you rounding numbers to certain decimals](#how-do-you-rounding-numbers-to-certain-decimals)|
 |364| [What is the easiest way to convert an array to an object?](#what-is-the-easiest-way-to-convert-an-array-to-an-object)|
 |365| [How do you create an array with some data?](#how-do-you-create-an-array-with-some-data)|
-|366| [](#)|
-|367| [](#)|
-|368| [](#)|
-|369| [](#)|
-|370| [](#)|
+|366| [What are the placeholders from console object?](#what-are-the-placeholders-from-console-object)|
+|367| [Is it possible to add CSS to console messages?](#is-it-possible-to-add-css-to-console-messages)|
+|368| [What is the purpose of dir method of console object?](#what-is-the-purpose-of-dir-method-of-console-object)|
+|369| [Is it possible to debug HTML elements in console?](#is-it-possible-to-debug-html-elements-in-console)|
+|370| [How do you display data in a tabular format using console object?](#how-do-you-display-data-in-a-tabular-format-using-console-object)|
 |371| [](#)|
 |372| [](#)|
 |373| [](#)|
@@ -5188,23 +5188,64 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-366. ### ?
+366. ### What are the placeholders from console object?
+     Below are the list of placeholders available from console object,
+     1. %o — It takes an object,
+     2. %s — It takes a string,
+     3. %d — It is used for a decimal or integer
+     These placeholders can be represented in the console.log as below
+     ```javascript
+     const user = { "name":"John", "id": 1, "city": "Delhi"};
+     console.log("Hello %s, your details %o are available in the object form", "John", user); // Hello John, your details {name: "John", id: 1, city: "Delhi"} are available in object
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
-367. ### ?
+367. ### Is it possible to add CSS to console messages?
+     Yes, you can apply CSS styles to console messages similar to html text on the web page.
+     ```javascript
+     console.log('%c The text has blue color, with large font and red background', 'color: blue; font-size: x-large; background: red');
+     ```
+     The text will be displayed as below,
+
+     ![Screenshot](images/console-CSS.png)
+     **Note:** All CSS styles can be applied to console messages.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-368. ### ?
+368. ### What is the purpose of dir method of console object?
+     The `console.dir()` is used to display an interactive list of the properties of the specified JavaScript object as JSON.
+     ```javascript
+     const user = { "name":"John", "id": 1, "city": "Delhi"};
+     console.dir(user);
+     ```
+     The user object displayed in JSON representation
+     ![Screenshot](images/console-css.png)
 
      **[⬆ Back to Top](#table-of-contents)**
 
-369. ### ?
+369. ### Is it possible to debug HTML elements in console?
+     Yes, it is possible to get and debug HTML elements in the console just like inspecting elements.
+     ```javascript
+     const element = document.getElementsByTagName("body")[0];
+     console.log(element);
+     ```
+     It prints the HTML element in the console
+     ![Screenshot](images/console-html.png)
 
      **[⬆ Back to Top](#table-of-contents)**
 
-370. ### ?
+370. ### How do you display data in a tabular format using console object?
+     The `console.table()` is used to display data in the console in a tabular format to visualize complex arrays or objects.
+     ```javascript
+     const users = [{ "name":"John", "id": 1, "city": "Delhi"},
+                   { "name":"Max", "id": 2, "city": "London"},
+                   { "name":"Rod", "id": 3, "city": "Paris"}];
+     console.table(users);
+     ```
+     The data visualized in a table format
+     ![Screenshot](images/console-table.png)
+     **Not:** Remember that `console.table()` is not supported in IE.
 
      **[⬆ Back to Top](#table-of-contents)**
 
