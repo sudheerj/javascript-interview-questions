@@ -377,11 +377,11 @@
 |368| [What is the purpose of dir method of console object?](#what-is-the-purpose-of-dir-method-of-console-object)|
 |369| [Is it possible to debug HTML elements in console?](#is-it-possible-to-debug-html-elements-in-console)|
 |370| [How do you display data in a tabular format using console object?](#how-do-you-display-data-in-a-tabular-format-using-console-object)|
-|371| [](#)|
-|372| [](#)|
-|373| [](#)|
-|374| [](#)|
-|375| [](#)|
+|371| [How do you verify that an argument is a Number or not?](#how-do-you-verify-that-an-argument-is-a-number-or-not)|
+|372| [How do you create copy to clipboard button?](#how-do-you-create-copy-to-clipboard-button)|
+|373| [What is the shortcut to get timestamp?](#what-is-the-shortcut-to-get-timestamp)|
+|374| [How do you flattening multi dimensional arrays?](#how-do-you-flattening-multi-dimensional-arrays)|
+|375| [What is the easiest multi condition checking?](#what-is-the-easiest-multi-condition-checking)|
 |376| [](#)|
 |377| [](#)|
 |378| [](#)|
@@ -5249,23 +5249,71 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-371. ### ?
+371. ### How do you verify that an argument is a Number or not?
+     The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
+     ```javascript
+     function isNumber(n){
+         return !isNaN(parseFloat(n)) && isFinite(n);
+     }
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
-372. ### ?
+372. ### How do you create copy to clipboard button?
+     You need to select the content(using .select() method) of input element and execute the copy command with execCommand (i.e, execCommand('copy')). You can also execute another system commands like cut and paste.
+     ```javascript
+     document.querySelector("#copy-button").onclick = function() {
+       // Select the content
+       document.querySelector("#copy-input").select();
+       // Copy to the clipboard
+       document.execCommand('copy');
+     };
+
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
-373. ### ?
+373. ### What is the shortcut to get timestamp?
+     You can use `new Date().getTime()` to get the current timestamp. There is an alternative shortcut to get the value.
+     ```javascript
+     console.log(+new Date());
+     console.log(Date.now());
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
-374. ### ?
+374. ### How do you flattening multi dimensional arrays?
+     Flattening bi-dimensional arrays is trivial with Spread operator.
+     ```javascript
+     const biDimensionalArr = [11, [22, 33], [44, 55], [66, 77], 88, 99];
+     const flattenArr = [].concat(...biDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
+     ```
+     But you can make it work with multi-dimensional arrays by recursive calls,
+
+     ```javascript
+     function flattenMultiArray(arr) {
+         const flattened = [].concat(...arr);
+         return flattened.some(item => Array.isArray(item)) ? flattenMultiArray(flattened) : flattened;
+      }
+     const multiDimensionalArr = [11, [22, 33], [44, [55, 66, [77, [88]], 99]]];
+     const flatArr = flattenMultiArray(multiDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
-375. ### ?
+375. ### What is the easiest multi condition checking?
+
+     You can use `indexOf` to compare input with multiple values instead of checking each value as one condition.
+     ```javascript
+     // Verbose approach
+     if (input === 'first' || input === 1 || input === 'second' || input === 2) {
+       someFunction();
+     }
+     // Shortcut
+     if (['first', 1, 'second', 2].indexOf(input) !== -1) {
+       someFunction();
+     }
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
