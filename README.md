@@ -382,8 +382,8 @@
 |373| [What is the shortcut to get timestamp?](#what-is-the-shortcut-to-get-timestamp)|
 |374| [How do you flattening multi dimensional arrays?](#how-do-you-flattening-multi-dimensional-arrays)|
 |375| [What is the easiest multi condition checking?](#what-is-the-easiest-multi-condition-checking)|
-|376| [](#)|
-|377| [](#)|
+|376| [How do you capture browser back button?](#how-do-you-capture-browser-back-button)|
+|377| [How do you disable right click in the web page?](#how-do-you-disable-right-click-in-the-web-page)|
 |378| [](#)|
 |379| [](#)|
 |380| [](#)|
@@ -5317,11 +5317,21 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-376. ### ?
+376. ### How do you capture browser back button?
+     The `window.onbeforeunload` method is used to capture browser back button event. This is helpful to warn user about loosing the current data.
+     ```javascript
+     window.onbeforeunload = function() {
+     	alert("You work will be lost");
+     };
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
-377. ### ?
+377. ### How do you disable right click in the web page?
+     The right click on the page can be disabled by returning false from `oncontextmenu` attribute on body element.
+     ```html
+     <body oncontextmenu="return false;">
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
