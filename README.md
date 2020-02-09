@@ -887,7 +887,7 @@ function userDetails(username) {
     }
 
     Bike.prototype.getDetails = function() {
-        return this.model+ ' bike has' + this.color+ ' color';
+        return this.model + ' bike has' + this.color + ' color';
     };
     ```
     Whereas ES6 classes can be defined as an alternative
@@ -896,6 +896,10 @@ function userDetails(username) {
       constructor(color, model) {
         this.color= color;
         this.model= model;
+      }
+
+      getDetails() {
+        return this.model + ' bike has' + this.color + ' color';
       }
     }
     ```
