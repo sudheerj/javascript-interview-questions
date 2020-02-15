@@ -384,9 +384,9 @@
 |375| [What is the easiest multi condition checking?](#what-is-the-easiest-multi-condition-checking)|
 |376| [How do you capture browser back button?](#how-do-you-capture-browser-back-button)|
 |377| [How do you disable right click in the web page?](#how-do-you-disable-right-click-in-the-web-page)|
-|378| [](#)|
-|379| [](#)|
-|380| [](#)|
+|378| [What are wrapper objects?](#what-are-wrapper-objects)|
+|379| [What is AJAX?](#what-is-ajax)|
+|380| [What are the different ways to deal with Asynchronous Code?](#what-are-the-different-ways-to-deal-with-asynchronous-code)|
 |381| [](#)|
 |382| [](#)|
 |383| [](#)|
@@ -5335,15 +5335,27 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-378. ### ?
+378. ### What are wrapper objects?
+     Primitive Values like string,number and boolean don't have properties and methods but they are temporarily converted or coerce to an object(Wrapper object) when you try to perform actions on them. For example, if you apply toUpperCase() method on a primitive string value, it does not throw an error but returns uppercase of the string.
+     ```javascript
+     let name = "john";
+
+     console.log(name.toUpperCase());  // Behind the scenes treated as console.log(new String(name).toUpperCase());
+     ```
+     i.e, Every primitive except null and undefined have Wrapper Objects and the list of wrapper objects are are String,Number,Boolean,Symbol and BigInt.
+     **[⬆ Back to Top](#table-of-contents)**
+
+379. ### What is AJAX?
+     AJAX stands for Asynchronous JavaScript and XML and it is a group of related technologies(HTML, CSS, JavaScript, XMLHttpRequest API etc) used to display data asynchronously. i.e. We can send data to the server and get data from the server without reloading the web page.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-379. ### ?
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-380. ### ?
+380. ### What are the different ways to deal with Asynchronous Code?
+     Below are the list of different way to deal with Asynchronous code.
+     1. Callbacks
+     2. Promises
+     3. Async/await
+     4. Third-party libraries such as async.js,bluebird etc
 
      **[⬆ Back to Top](#table-of-contents)**
 
