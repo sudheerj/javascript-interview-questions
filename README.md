@@ -1577,7 +1577,7 @@ function userDetails(username) {
     **[⬆ Back to Top](#table-of-contents)**
 
 87. ### What is event capturing?
-    Event bubbling is a type of event propagation where the event is first captured by the outermost element and , and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the inner DOM element.
+    Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
 
     **[⬆ Back to Top](#table-of-contents)**
 
