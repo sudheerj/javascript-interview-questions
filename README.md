@@ -887,7 +887,7 @@ function userDetails(username) {
     }
 
     Bike.prototype.getDetails = function() {
-        return this.model+ ' bike has' + this.color+ ' color';
+        return this.model + ' bike has' + this.color + ' color';
     };
     ```
     Whereas ES6 classes can be defined as an alternative
@@ -896,6 +896,10 @@ function userDetails(username) {
       constructor(color, model) {
         this.color= color;
         this.model= model;
+      }
+
+      getDetails() {
+        return this.model + ' bike has' + this.color + ' color';
       }
     }
     ```
@@ -1573,7 +1577,7 @@ function userDetails(username) {
     **[⬆ Back to Top](#table-of-contents)**
 
 87. ### What is event capturing?
-    Event bubbling is a type of event propagation where the event is first captured by the outermost element and , and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the inner DOM element.
+    Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -5091,19 +5095,17 @@ function userDetails(username) {
 
      ```javascript
            s               e               l               f
-     ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
+      ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
 
-     (![] + [])[3] + (![] + [])[4] + (![] + [])[2] + (![] + [])[0]
-     ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
-    (![] + [])[+!+[]+!+[]+!+[]] +
-    (![] + [])[+!+[]+!+[]+!+[]+!+[]] +
-    (![] + [])[+!+[]+!+[]] +
-    (![] + [])[+[]]
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    (![]+[])[+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]]+(![]+[])[+[]]
-
+      (![] + [])[3] + (![] + [])[4] + (![] + [])[2] + (![] + [])[0]
+      ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
+     (![] + [])[+!+[]+!+[]+!+[]] +
+     (![] + [])[+!+[]+!+[]+!+[]+!+[]] +
+     (![] + [])[+!+[]+!+[]] +
+     (![] + [])[+[]]
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     (![]+[])[+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]]+(![]+[])[+[]]
      ```
-
      **[⬆ Back to Top](#table-of-contents)**
 
 358. ### How do you remove falsy values from an array?
