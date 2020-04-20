@@ -866,13 +866,13 @@ function userDetails(username) {
     Let's take a simple example of variable hoisting,
     ```javascript
     console.log(message); //output : undefined
-    var message = ’The variable Has been hoisted’;
+    var message = 'The variable Has been hoisted';
     ```
     The above code looks like as below to the interpreter,
     ```javascript
     var message;
     console.log(message);
-    message = ’The variable Has been hoisted’;
+    message = 'The variable Has been hoisted';
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
