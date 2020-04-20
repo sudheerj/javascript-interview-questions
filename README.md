@@ -30,7 +30,7 @@
 |22 | [What is IIFE(Immediately Invoked Function Expression)?](#what-is-iife-(-immediately-invoked-function-expression-)-)|
 |23 | [What is the benefit of using modules?](#what-is-the-benefit-of-using-modules)|
 |24 | [What is memoization?](#what-is-memoization)|
-|25 | [What is Hoisting?](#what-is-hoisting?)|
+|25 | [What is Hoisting?](#what-is-hoisting)|
 |26 | [What are classes in ES6?](#what-are-classes-in-es6)|
 |27 | [What are closures?](#what-are-closures)|
 |28 | [What are modules?](#what-are-modules)|
