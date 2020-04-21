@@ -2416,10 +2416,10 @@ function userDetails(username) {
      **[⬆ Back to Top](#table-of-contents)**
 
 160. ### What is the purpose of exec method?
-     The purpose of exec method is similar to test method but it returns a founded text as an object instead of returning true/false.
+     The purpose of exec method is similar to test method but it executes a search for a match in a specified string and returns a result array, or null instead of returning true/false.
      ```javascript
      var pattern = /you/;
-     console.log(pattern.test("How are you?")); //you
+     console.log(pattern.exec("How are you?")); //["you", index: 8, input: "How are you?", groups: undefined]
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
