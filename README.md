@@ -30,7 +30,7 @@
 |22 | [What is IIFE(Immediately Invoked Function Expression)?](#what-is-iife-(-immediately-invoked-function-expression-)-)|
 |23 | [What is the benefit of using modules?](#what-is-the-benefit-of-using-modules)|
 |24 | [What is memoization?](#what-is-memoization)|
-|25 | [What is Hoisting?](#what-is-hoisting?)|
+|25 | [What is Hoisting?](#what-is-hoisting)|
 |26 | [What are classes in ES6?](#what-are-classes-in-es6)|
 |27 | [What are closures?](#what-are-closures)|
 |28 | [What are modules?](#what-are-modules)|
@@ -2416,10 +2416,10 @@ function userDetails(username) {
      **[⬆ Back to Top](#table-of-contents)**
 
 160. ### What is the purpose of exec method?
-     The purpose of exec method is similar to test method but it returns a founded text as an object instead of returning true/false.
+     The purpose of exec method is similar to test method but it executes a search for a match in a specified string and returns a result array, or null instead of returning true/false.
      ```javascript
      var pattern = /you/;
-     console.log(pattern.test("How are you?")); //you
+     console.log(pattern.exec("How are you?")); //["you", index: 8, input: "How are you?", groups: undefined]
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -2898,7 +2898,7 @@ function userDetails(username) {
       };
       Object.seal(object);
       object.property = 'Welcome to object world';
-      console.log(Object.isSealed(object)); // Welcome to object world
+      console.log(Object.isSealed(object)); // true
       delete object.property; // You cannot delete when sealed
       console.log(object.property); //Welcome to object world
      ```
