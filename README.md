@@ -2992,7 +2992,7 @@ function userDetails(username) {
         }
       };
 
-      const admin = Object.create(person);
+      const admin = Object.create(user);
 
       admin.name = "Nick"; // Remember that "name" is a property set on "admin" but not on "user" object
 
