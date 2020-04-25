@@ -389,8 +389,8 @@
 |380| [What are the different ways to deal with Asynchronous Code?](#what-are-the-different-ways-to-deal-with-asynchronous-code)|
 |381| [How to cancel a fetch request?](#how-to-cancel-a-fetch-request)|
 |382| [](#)|
-|383| [](#)|
-|384| [](#)|
+|383| [What is minimum timeout throttling?](#what-is-minimum-timeout-throttling)|
+|384| [How do you implement zero timeout in modern browsers?](#how-do-you-implement-zero-timeout-in-modern-browsers)|
 |385| [](#)|
 |386| [](#)|
 |387| [](#)|
@@ -5397,11 +5397,41 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-383. ### ?
-
+383. ### What is minimum timeout throttling?
+     Both browser and NodeJS javascript environments, throttles with a minimum delay that is greater than 0ms. That means even though setting a delay of 0ms will not happen instantaneously.
+     **Browsers:** They have minimum delay of 4ms. This throttle occurs when successive calls are triggered due to callback nesting(certain depth) or after a certain number of successive intervals.
+     Note: The older browsers has minimum delay of 10ms.
+     **Nodejs:** They have minimum delay of 1ms. This throttle happens when delay is larger than 2147483647 or less than 1.
+     The best example to explain this timeout throttling behavior is the order of below code snippet.
+     ```js
+     function runMeFirst() {
+         console.log('My script is initialized');
+     }
+     setTimeout(runMeFirst, 0);
+     console.log('Script loaded');
+     ```
+     and the output would be in
+     ```cmd
+     Script loaded
+     My script is initialized
+     ```
+     If you don't use `setTimeout`, the order of logs will be in sequential.
+     ```js
+     function runMeFirst() {
+        console.log('My script is initialized');
+     }
+     runMeFirst();
+     console.log('Script loaded');
+     ```
+     and the output is,
+     ```cmd
+     My script is initialized
+     Script loaded
+     ```
      **[⬆ Back to Top](#table-of-contents)**
 
-384. ### ?
+384. ### How do you implement zero timeout in modern browsers?
+     You can't use setTimeout(fn, 0) to execute the code immediately due to minimum delay of greater than 0ms. But you can use window.postMessage() to achieve this behavior.
 
      **[⬆ Back to Top](#table-of-contents)**
 
