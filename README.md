@@ -391,11 +391,11 @@
 |382| [](#)|
 |383| [What is minimum timeout throttling?](#what-is-minimum-timeout-throttling)|
 |384| [How do you implement zero timeout in modern browsers?](#how-do-you-implement-zero-timeout-in-modern-browsers)|
-|385| [](#)|
-|386| [](#)|
-|387| [](#)|
-|388| [](#)|
-|389| [](#)|
+|385| [What are tasks in event loop?](#what-are-tasks-in-event-loop)|
+|386| [What are microtasks?](#what-are-microtasks)|
+|387| [What are different event loops?](#what-are-different-event-loops)|
+|388| [What is the purpose of queueMicrotask?](#what-is-the-purpose-of-queuemicrotask)|
+|389| [How do you use javascript libraries in typescript file?](#how-do-you-use-javascript-libraries-in-typescript-file)|
 |390| [What are the differences between promises and observables?](#what-are-the-differences-between-promises-and-observables)|
 |391| [](#)|
 |392| [](#)|
@@ -3428,11 +3428,14 @@ function userDetails(username) {
 
 235. ### What is an event loop?
      The Event Loop is a queue of callback functions. When an async function executes, the callback function is pushed into the queue. The JavaScript engine doesn't start processing the event loop until async function has finished executing the code.
-     **Note:** It allows Node.js to perform non-blocking I/O operations eventhough JavaScript is single-threaded.
+     **Note:** It allows Node.js to perform non-blocking I/O operations even though JavaScript is single-threaded.
 
      **[⬆ Back to Top](#table-of-contents)**
 
 236. ### What is call stack?
+     Call Stack is a data structure(for javascript interpreter) which keeps track of function calls in the program. It has two major actions,
+     1. Whenever you call a function for its execution, you are pushing it to the stack.
+     2. Whenever the execution is completed, the function is popped out of the stack.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5435,24 +5438,38 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-385. ### ?
+385. ### What are tasks in event loop?
+     A task is any javascript code/program which is scheduled to be run by the standard mechanisms such as initially starting to run a program, run an event callback, or an interval or timeout being fired. All these tasks are schedules on task queue.
+     Below is the list of use cases to add tasks to the task queue,
+     1. When a new javascript program is executed directly from console or running by the <script> element, the task will be added to task queue.
+     2. When an event fires, the event callback added to task queue
+     3. When a setTimeout or setInterval is reached, the corresponding callback added to task queue
 
      **[⬆ Back to Top](#table-of-contents)**
 
-386. ### ?
+386. ### What is microtask?
+     Microtask is the javascript code which needs to be executed immediately after the currently executing task/microtask is completed. The main sources of microtasks are Promise.resolve, Promise.reject, MutationObservers, IntersectionObservers etc
 
      **[⬆ Back to Top](#table-of-contents)**
 
-387. ### ?
+387. ### What are different event loops?
+
 
      **[⬆ Back to Top](#table-of-contents)**
 
-388. ### ?
+388. ### What is the purpose of queueMicrotask?
 
      **[⬆ Back to Top](#table-of-contents)**
 
-389. ### ?
-
+389. ### How do you use javascript libraries in typescript file?
+     It is known that not all JavaScript libraries or frameworks have TypeScript declaration files. But if you still want to use libraries or frameworks in our TypeScript files without getting compilation errors, the only solution is `declare` keyword along with a variable declaration. For example, let's imagine you have a library called `customLibrary` that doesn’t have a TypeScript declaration and have a namespace called `customLibrary` in the global namespace. You can use this library in typescript code as below,
+     ```js
+     declare var customLibrary;
+     ```
+     In the runtime, typescript will provide the type to `customLibrary` variable as `any` type. The another alternative without using declare keyword is below
+     ```js
+     var customLibrary: any;
+     ```
      **[⬆ Back to Top](#table-of-contents)**
 
 390. ### What are the differences between promises and observables?
