@@ -406,7 +406,9 @@
 |397| [](#)|
 |398| [](#)|
 |399| [](#)|
-|400| [](#)|
+|400| [What is the difference between Function constructor and function declaration?](#what-is-the-difference-between-function-constructor-and-function-declaration)|
+|401| [What is a Short circuit condition?](#what-is-a-short-circuit-condition)|
+|402| [What is the easiest way to resize an array?](#what-is-the-easiest-way-to-resize-an-array)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -2034,6 +2036,10 @@ function userDetails(username) {
      }
 
      sum(1, 2, 3) // returns 6
+     ```
+     **Note:** You can't apply array methods on arguments object. But you can convert into a regular array as below.
+     ```js
+     var argsArray = Array.prototype.slice.call(arguments);
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -5521,35 +5527,282 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-400. ### ?
+400. ### What is the difference between Function constructor and function declaration?
+     The functions which are created with `Function constructor` do not create closures to their creation contexts but they are always created in the global scope. i.e, the function can access own local variables and global scope variables only. Whereas function declarations can access outer function variables(closures) too.
+     Let's see this difference with an example,
+     **Function Constructor:**
+     ```js
+     var a = 100;
+     function createFunction() {
+         var a = 200;
+         return new Function('return a;');
+     }
+     console.log(createFunction()()); // 100
+     ```
+     **Function declaration:**
+     ```js
+     var a = 100;
+     function createFunction() {
+         var a = 200;
+         return function func() {
+             return a;
+         }
+     }
+     console.log(createFunction()()); // 200
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
-401. ### ?
-
+401. ### What is a Short circuit condition?
+     Short circuit conditions are meant for condensed way of writing simple if statements. Let's demonstrate the scenario using an example. If you would like to login to a portal with an authentication condition, the expression would be as below,
+     ```js
+     if (authenticate) {
+        loginToPorta();
+     }
+     ```
+     Since the javascript logical operators evaluates from left to right, the above expression can be simplified using && logical operator
+     ```js
+     authenticate && loginToPorta();
+     ```
      **[⬆ Back to Top](#table-of-contents)**
 
-402. ### ?
+402. ### What is the easiest way to resize an array?
+     The length property of array is useful to resize or empty an array quickly. Let's apply length property on number array to resize the number of elements from 5 to 2,
+     ```js
+     var array = [1, 2, 3, 4, 5];
+     console.log(array.length); // 5
 
+     array.length = 2;
+     console.log(array.length); // 2
+     console.log(array); // [1,2]
+     ```
+     and the array can be emptied too
+     ```js
+     var array = [1, 2, 3, 4, 5];
+     array.length = 0;
+     console.log(array.length); // 0
+     console.log(array); // []
+     ```
      **[⬆ Back to Top](#table-of-contents)**
 
 403. ### ?
 
      **[⬆ Back to Top](#table-of-contents)**
 
-404. ### ?
+404. ### What is the difference between function and class declarations?
+     The main difference between function declarations and class declarations is `hoisting`. The function declarations are hoisted but not class declarations.
+     **Classes:**
+     ```js
+     const user = new User(); // ReferenceError
+
+     class User {}
+     ```
+     **Constructor Function:**
+     ```js
+      const user = new User(); // No error
+
+      function User() {
+      }
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
+### Coding Exercise
+
+#### 1. What is the output of below code?
+
+```javascript
+var car = new Vehicle("Honda", "white", "2010", "UK");
+console.log(car);
+
+function Vehicle(model, color, year, country) {
+    this.model = model;
+    this.color = color;
+    this.year = year;
+    this.country = country;
+}
+```
+
+- 1: Undefined
+- 2: ReferenceError
+- 3: null
+- 4: {model: "Honda", color: "white", year: "2010", country: "UK"}
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+
+The function declarations are hoisted similar to any variables. So the placement for `Vehicle` function declaration doesn't make any difference.
+
+</p>
+</details>
+
+---
+
+#### 2. What is the output of below code?
+```js
+function foo() {
+    let x = y = 0;
+    x++;
+    y++;
+    return x;
+}
+
+console.log(foo(), typeof x, typeof y);
+```
+
+- 1: 1, undefined and undefined
+- 2: ReferenceError: X is not defined
+- 3: 1, undefined and number
+- 4: 1, number and number
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+
+Of course the return value of `foo()` is 1 due to increment operator. But the statement `let x = y = 0` declares a local variable x. Whereas y declared as a global variable accidentally. This statement is equivalent to,
+```js
+ let x;
+ window.y = 0;
+ x = window.y;
+```
+Since the block scoped variable x is undefined outside of the function, the type will be undefined too. Whereas the global variable `y` is available outside the function, the value is 0 and type is number.
+</p>
+</details>
+
+---
+
+#### 3. What is the output of below code?
+```js
+function main(){
+  console.log('A');
+  setTimeout(
+    function print(){ console.log('B'); }
+  ,0);
+	console.log('C');
+}
+main();
+```
+
+- 1: A, B and C
+- 2: B, A and C
+- 3: A and C
+- 4: A, C and B
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+The statements order is based on event loop mechanism. The order of statements follows the below order,
+
+1. At first, the main function is pushed to the stack.
+2. Then the browser pushes the fist statement of main function( i.e, A's console.log) to the stack, executed and popped out immediately.
+3. But `setTimeout` statement moved to Browser API to apply the delay for callback.
+4. In the meantime, C's console.log added to stack, executed and popped out.
+5. The callback of `setTimetout` moved from Browser API to message queue.
+6. The `main` function popped out from stack because there are no statements to execute
+7. The callback moved from message queue to the stack since the stack is empty.
+8. The console.log for B is added to the stack and display on the console.
+
+</p>
+</details>
+
+---
+
+#### 4. What is the output of below equality check?
+```js
+console.log(0.1 + 0.2 === 0.3);
+```
+
+- 1: false
+- 2: true
 
 
+<details><summary><b>Answer</b></summary>
+<p>
 
+##### Answer: 1
+This is due to float point math problem. Since the floating point numbers are encoded in binary format, the addition operations on them leads to rounding errors. Hence, the comparison of floating point doesn't give expected results.
+You can find more details about the explanation here https://0.30000000000000004.com/
 
+</p>
+</details>
 
+---
 
+#### 5. What is the output of below code?
+```js
+var y = 1;
+  if (function f(){}) {
+    y += typeof f;
+  }
+  console.log(y);
+```
 
+- 1: 1function
+- 2: 1object
+- 3: ReferenceError
+- 4: 1undefined
 
+<details><summary><b>Answer</b></summary>
+<p>
 
+##### Answer: 4
+The main points in the above code snippets are,
+1. You can see function expression instead function declaration inside if statement. So it always returns true.
+2. Since it is not declared(or assigned) anywhere, f is undefined and typeof f is undefined too.
+
+In other words, it is same as
+```js
+var y = 1;
+  if ('foo') {
+    y += typeof f;
+  }
+  console.log(y);
+```
+**Note:** It returns 1object for MS Edge browser
+</p>
+</details>
+
+---
+
+#### 6. What is the output of below code?
+```js
+function foo() {
+  return
+  {
+    message: "Hello World"
+  };
+}
+console.log(foo());
+```
+
+- 1: Hello World
+- 2: Object {message: "Hello World"}
+- 3: Undefined
+- 4: SyntaxError
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+This is a semicolon issue. Normally semicolons are optional in JavaScript. So if there are any statements(in this case, return) missing semicolon, it is automatically inserted immediately. Hence, the function returned as undefined.
+
+Whereas if the opening curly brace is along with return keyword then function going to be returned as expected.
+```js
+function foo() {
+  return {
+    message: "Hello World"
+  };
+}
+console.log(foo()); // {message: "Hello World"}
+```
+</p>
+</details>
+
+---
 
 
 
