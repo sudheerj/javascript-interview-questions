@@ -388,7 +388,7 @@
 |379| [What is AJAX?](#what-is-ajax)|
 |380| [What are the different ways to deal with Asynchronous Code?](#what-are-the-different-ways-to-deal-with-asynchronous-code)|
 |381| [How to cancel a fetch request?](#how-to-cancel-a-fetch-request)|
-|382| [](#)|
+|382| [What is web speech API?](#what-is-web-speech-api)|
 |383| [What is minimum timeout throttling?](#what-is-minimum-timeout-throttling)|
 |384| [How do you implement zero timeout in modern browsers?](#how-do-you-implement-zero-timeout-in-modern-browsers)|
 |385| [What are tasks in event loop?](#what-are-tasks-in-event-loop)|
@@ -397,8 +397,8 @@
 |388| [What is the purpose of queueMicrotask?](#what-is-the-purpose-of-queuemicrotask)|
 |389| [How do you use javascript libraries in typescript file?](#how-do-you-use-javascript-libraries-in-typescript-file)|
 |390| [What are the differences between promises and observables?](#what-are-the-differences-between-promises-and-observables)|
-|391| [](#)|
-|392| [](#)|
+|391| [What is heap?](#what-is-heap)|
+|392| [What is an event table?](#what-is-an-event-table)|
 |393| [](#)|
 |394| [](#)|
 |395| [](#)|
@@ -409,6 +409,8 @@
 |400| [What is the difference between Function constructor and function declaration?](#what-is-the-difference-between-function-constructor-and-function-declaration)|
 |401| [What is a Short circuit condition?](#what-is-a-short-circuit-condition)|
 |402| [What is the easiest way to resize an array?](#what-is-the-easiest-way-to-resize-an-array)|
+|403| [](#)|
+|404| [What is the difference between function and class declarations?](#what-is-the-difference-between-function-and-class-declarations)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3439,9 +3441,29 @@ function userDetails(username) {
      **[⬆ Back to Top](#table-of-contents)**
 
 236. ### What is call stack?
-     Call Stack is a data structure(for javascript interpreter) which keeps track of function calls in the program. It has two major actions,
+     Call Stack is a data structure for javascript interpreter to keeps track of function calls in the program. It has two major actions,
      1. Whenever you call a function for its execution, you are pushing it to the stack.
      2. Whenever the execution is completed, the function is popped out of the stack.
+
+     Let's take an example and it's state representation in a diagram format
+     ```js
+     function hungry() {
+        eatFruits();
+     }
+     function eatFruits() {
+        return "I'm eating fruits";
+     }
+
+     // Invoke the `hungry` function
+     hungry();
+     ```
+     The above code  processed in a call stack as  below,
+     1. Add the `hungry()` function to the call stack list and execute the code.
+     2. Add the `eatFruits()` function to the call stack list and execute the code.
+     3. Delete the `eatFruits()` function from our call stack list.
+     4. Delete the `hungry()` function from the call stack list since there are no items anymore.
+     ![Screenshot](images/call-stack.png)
+
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5403,7 +5425,30 @@ function userDetails(username) {
      **[⬆ Back to Top](#table-of-contents)**
 
 382. ### What is web speech API?
-
+     Web speech API is used to enable modern browsers recognize and synthesize speech(i.e, voice data into web apps). This API has been introduced by W3C Community in the year 2012. It has two main parts,
+     1. **SpeechRecognition (Asynchronous Speech Recognition or Speech-to-Text):** It provides the ability to recognize voice context from an audio input and respond accordingly. This is accessed by `SpeechRecognition` interface.
+     The below example shows on how to use this API to get text from speech,
+     ```js
+     window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;  // webkitSpeechRecognition for Chrome and SpeechRecognition for FF
+     const recognition = new window.SpeechRecognition();
+     recognition.onresult = (event) => { // SpeechRecognitionEvent type
+       const speechToText = event.results[0][0].transcript;
+       console.log(speechToText);
+     }
+     recognition.start();
+     ```
+     In this API, browser is going to ask you for permission to use your microphone
+     2. **SpeechSynthesis (Text-to-Speech):** It provides the ability to recognize voice context from an audio input and respond. This is accessed by `SpeechSynthesis` interface.
+     For example, the below code is used to get voice/speech from text,
+     ```js
+     if('speechSynthesis' in window){
+         var speech = new SpeechSynthesisUtterance('Hello World!');
+         speech.lang = 'en-US';
+         window.speechSynthesis.speak(speech);
+     }
+     ```
+     The above examples can be tested on chrome(33+) browser's developer console.
+     **Note:**  This API is still a working draft and only available in Chrome and Firefox browsers(ofcourse Chrome only implemented the specification)
      **[⬆ Back to Top](#table-of-contents)**
 
 383. ### What is minimum timeout throttling?
@@ -5491,11 +5536,13 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-391. ### ?
+391. ### What is heap?
+     Heap is the memory location where objects are stored when we define variables.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-392. ### ?
+392. ### What is an event table?
+     Event Table is a data structure that stores and keeps track of all the events which will be executed asynchronously like after some time interval or after the resolution of some API requests. i.e Whenever you call a setTimeout function or invoke async operation, it is added to the Event Table.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5804,6 +5851,31 @@ console.log(foo()); // {message: "Hello World"}
 
 ---
 
+#### 7. What is the output of below code?
+```js
+var myChars = ['a', 'b', 'c', 'd']
+delete myChars[0];
+console.log(myChars);
+console.log(myChars[0]);
+console.log(myChars.length);
+>
+```
+
+- 1: [empty, 'b', 'c', 'd'], empty, 3
+- 2: [null, 'b', 'c', 'd'], empty, 3
+- 3: [empty, 'b', 'c', 'd'], undefined, 4
+- 4: [null, 'b', 'c', 'd'], undefined, 4
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+The `delete` operator will delete the object property but it will not reindex the array or change its length. So the number or elements or length of the array won't be changed.
+If you try to print myChars then you can observe that it doesn't set undefined value, rather the property is removed from the array. The newer versions of Chrome use `empty` instead of `undefined` to make the difference a bit clearer.
+</p>
+</details>
+
+---
 
 
 
