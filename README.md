@@ -2,6 +2,8 @@
 
 > Click :star:if you like the project. Pull Request are highly appreciated. Follow me [@SudheerJonna](https://twitter.com/SudheerJonna) for technical updates.
 
+Go to [Coding Exercise](#coding-exercise) for coding specific questions
+
 ### Table of Contents
 
 | No. | Questions |
@@ -3462,8 +3464,8 @@ function userDetails(username) {
      2. Add the `eatFruits()` function to the call stack list and execute the code.
      3. Delete the `eatFruits()` function from our call stack list.
      4. Delete the `hungry()` function from the call stack list since there are no items anymore.
-     ![Screenshot](images/call-stack.png)
 
+     ![Screenshot](images/call-stack.png)
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5241,7 +5243,8 @@ function userDetails(username) {
      ```
      The text will be displayed as below,
 
-     ![Screenshot](images/console-CSS.png)
+     ![Screenshot](images/console-css.png)
+
      **Note:** All CSS styles can be applied to console messages.
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -5491,7 +5494,7 @@ function userDetails(username) {
 
 385. ### What are tasks in event loop?
      A task is any javascript code/program which is scheduled to be run by the standard mechanisms such as initially starting to run a program, run an event callback, or an interval or timeout being fired. All these tasks are schedules on task queue.
-     Below is the list of use cases to add tasks to the task queue,
+     Below are the list of use cases to add tasks to the task queue,
      1. When a new javascript program is executed directly from console or running by the <script> element, the task will be added to task queue.
      2. When an event fires, the event callback added to task queue
      3. When a setTimeout or setInterval is reached, the corresponding callback added to task queue
@@ -5499,8 +5502,10 @@ function userDetails(username) {
      **[⬆ Back to Top](#table-of-contents)**
 
 386. ### What is microtask?
-     Microtask is the javascript code which needs to be executed immediately after the currently executing task/microtask is completed. The main sources of microtasks are Promise.resolve, Promise.reject, MutationObservers, IntersectionObservers etc
+     Microtask is the javascript code which needs to be executed immediately after the currently executing task/microtask is completed. They are kind of blocking in nature. i.e, The main thread will be blocked until microtask queue is empty.
+     The main sources of microtasks are Promise.resolve, Promise.reject, MutationObservers, IntersectionObservers etc
 
+     **Note:** All of these microtasks are processed in the same turn of event loop.
      **[⬆ Back to Top](#table-of-contents)**
 
 387. ### What are different event loops?
@@ -5537,16 +5542,24 @@ function userDetails(username) {
      **[⬆ Back to Top](#table-of-contents)**
 
 391. ### What is heap?
-     Heap is the memory location where objects are stored when we define variables.
+     Heap(Or memory heap) is the memory location where objects are stored when we define variables. i.e, This is the place where all the memory allocations and de-allocation take place. Both heap and call-stack are two containers of JS runtime.
+     Whenever runtime comes across variables and function declarations in the code it stores them in the Heap.
+
+     ![Screenshot](images/heap.png)
 
      **[⬆ Back to Top](#table-of-contents)**
 
 392. ### What is an event table?
      Event Table is a data structure that stores and keeps track of all the events which will be executed asynchronously like after some time interval or after the resolution of some API requests. i.e Whenever you call a setTimeout function or invoke async operation, it is added to the Event Table.
+     It doesn't not execute functions on it’s own. The main purpose of event table is to keep track of events and send them to the Event Queue as shown in the below diagram.
+
+     ![Screenshot](images/event-table.png)
 
      **[⬆ Back to Top](#table-of-contents)**
 
-393. ### ?
+393. ### What is a microTask queue?
+    Microtask Queue is the new queue where all the tasks initiated by promise objects get processed before the callback queue.
+    The microtasks queue are processed before the next rendering and painting jobs. But if these microtasks are running for long time then it leads to visual degradation.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5653,6 +5666,8 @@ function userDetails(username) {
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
+
+
 
 ### Coding Exercise
 
@@ -5858,7 +5873,6 @@ delete myChars[0];
 console.log(myChars);
 console.log(myChars[0]);
 console.log(myChars.length);
->
 ```
 
 - 1: [empty, 'b', 'c', 'd'], empty, 3
@@ -5877,7 +5891,94 @@ If you try to print myChars then you can observe that it doesn't set undefined v
 
 ---
 
+#### 8. What is the output of below code in latest Chrome?
+```js
+var array1 = new Array(3);
+console.log(array1);
 
+var array2 = [];
+array2[2] = 100;
+console.log(array2);
+
+var array3 = [,,,];
+console.log(array3);
+```
+
+- 1: [undefined × 3], [undefined × 2, 100], [undefined × 3]
+- 2: [empty × 3], [empty × 2, 100], [empty × 3]
+- 3: [null × 3], [null × 2, 100], [null × 3]
+- 4: [], [100], []
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+The latest chrome versions displays `sparse array`(they filled with holes) using this empty x n notation. Whereas the older versions has undefined x n notation.
+**Note:** The latest version of FF displays `n empty slots` notation.
+</p>
+</details>
+
+---
+
+#### 9. What is the output of below code?
+```js
+const obj = {
+  prop1: function() { return 0 },
+  prop2() { return 1 },
+  ['prop' + 3]() { return 2 }
+}
+
+console.log(obj.prop1());
+console.log(obj.prop2());
+console.log(obj.prop3());
+```
+
+- 1: 0, 1, 2
+- 2: 0, { return 1 }, 2
+- 3: 0, { return 1 }, { return 2 }
+- 4: 0, 1, undefined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+ES6 provides method definitions and property shorthands for objects. So both prop2 and prop3 treated as regular function values.
+</p>
+</details>
+
+---
+
+#### 10. What is the output of below code?
+```js
+console.log(1 < 2 < 3);
+console.log(3 > 2 > 1);
+```
+
+- 1: true, true
+- 2: true, false
+- 3: SyntaxError, SyntaxError,
+- 4: false, false
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+The important point is that if the statement contains same operators(e.g, < or >) then it be evaluated from left to right.
+The first statement follows the below order,
+1. console.log(1 < 2 < 3);
+2. console.log(true < 3);
+3. console.log(1 < 3); // True converted as `1` during comparision
+4. True
+
+Whereas the second statement follows the below order,
+1. console.log(3 > 2 > 1);
+2. console.log(true > 1);
+3. console.log(1 > 1); // False converted as `0` during comparision
+4. False
+</p>
+</details>
+
+---
 
 
 
