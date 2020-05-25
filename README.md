@@ -406,12 +406,12 @@ Go to [Coding Exercise](#coding-exercise) for coding specific questions
 |395| [](#)|
 |396| [](#)|
 |397| [](#)|
-|398| [](#)|
-|399| [](#)|
+|398| [What are the common use cases of observables?](#what-are-the-common-use-cases-of-observables)|
+|399| [What is RxJS?](#what-is-rxjs)|
 |400| [What is the difference between Function constructor and function declaration?](#what-is-the-difference-between-function-constructor-and-function-declaration)|
 |401| [What is a Short circuit condition?](#what-is-a-short-circuit-condition)|
 |402| [What is the easiest way to resize an array?](#what-is-the-easiest-way-to-resize-an-array)|
-|403| [](#)|
+|403| [What is an observable?](#what-is-an-observable)|
 |404| [What is the difference between function and class declarations?](#what-is-the-difference-between-function-and-class-declarations)|
 
 1. ### What are the possible ways to create objects in JavaScript?
@@ -1162,12 +1162,24 @@ function userDetails(username) {
 
 51. ### What is a promise?
     A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
-    The syntax of promise would be as below
+    The usage of a promise would be as below
     ```javascript
     const promise = new Promise(function(resolve, reject) {
       // promise description
     })
+    const promise = new Promise(resolve => {
+      setTimeout(() => {
+        resolve("I'm a Promise!");
+      }, 5000);
+    }, reject => {
+
+    });
+
+    promise.then(value => console.log(value));
     ```
+    The action flow of a promise will be as below,
+
+    ![Screenshot](images/promises.png)
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -5558,8 +5570,8 @@ function userDetails(username) {
      **[⬆ Back to Top](#table-of-contents)**
 
 393. ### What is a microTask queue?
-    Microtask Queue is the new queue where all the tasks initiated by promise objects get processed before the callback queue.
-    The microtasks queue are processed before the next rendering and painting jobs. But if these microtasks are running for long time then it leads to visual degradation.
+     Microtask Queue is the new queue where all the tasks initiated by promise objects get processed before the callback queue.
+     The microtasks queue are processed before the next rendering and painting jobs. But if these microtasks are running for long time then it leads to visual degradation.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5579,11 +5591,13 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-398. ### ?
+398. ### What are the common use cases of observables?
+     Some of the most common use cases of observables are web sockets with push notifications, user input changes, repeating intervals, etc
 
      **[⬆ Back to Top](#table-of-contents)**
 
-399. ### ?
+399. ### What is RxJS?
+     RxJS (Reactive Extensions for JavaScript) is a library for implementing reactive programming using observables that makes it easier to compose asynchronous or callback-based code. It also provides utility functions for creating and working with observables.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5645,7 +5659,23 @@ function userDetails(username) {
      ```
      **[⬆ Back to Top](#table-of-contents)**
 
-403. ### ?
+403. ### What is an observable?
+     An Observable is basically a function that can return a stream of values either synchronously or asynchronously to an observer over time. The consumer can get the value by calling `subscribe()` method.
+     Let's look at a simple example of an Observable
+     ```js
+     import { Observable } from 'rxjs';
+
+     const observable = new Observable(observer => {
+       setTimeout(() => {
+         observer.next('Message from a Observable!');
+       }, 3000);
+     });
+
+     observable.subscribe(value => console.log(value));
+     ```
+     ![Screenshot](images/observable.png)
+
+     **Note:** Observables are not part of the JavaScript language yet but they are being proposed to be added to the language
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5980,7 +6010,132 @@ Whereas the second statement follows the below order,
 
 ---
 
+#### 11. What is the output of below code in non-strict mode?
+```js
+const printNumbers = (first, second, first) => {
+  console.log(first, second, first);
+}
+printNumbers(1, 2, 3);
 
+const printNumbersArrow = (first, second, first) => {
+  console.log(first, second, first);
+}
+printNumbersArrow(1, 2, 3);
+```
+
+- 1: 1, 2, 3
+- 2: 3, 2, 3
+- 3: SyntaxError: Duplicate parameter name not allowed in this context
+- 4: 1, 2, 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+In non-strict mode, the regular JavaScript functions allow duplicate named parameters. The above code snippet has duplicate parameters on 1st and 3rd parameters.
+The value of first parameter mapped to the third argument which is passed to the function. Hence, the 3rd argument overrides the first parameter.
+
+**Note:** In strict mode, duplicate parameters will throw a Syntax Error.
+</p>
+</details>
+
+---
+
+#### 12. What is the output of below code?
+```js
+const printNumbersArrow = (first, second, first) => {
+  console.log(first, second, first);
+}
+printNumbersArrow(1, 2, 3);
+```
+
+- 1: 1, 2, 3
+- 2: 3, 2, 3
+- 3: SyntaxError: Duplicate parameter name not allowed in this context
+- 4: 1, 2, 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+Unlike regular functions, the arrow functions doesn't not allow duplicate parameters in either strict or non-strict mode. So you can see `SyntaxError` in the console.
+</p>
+</details>
+
+---
+
+#### 13. What is the output of below code?
+```js
+const arrowFunc = () => arguments.length;
+console.log(arrowFunc(1, 2, 3));
+```
+
+- 1: ReferenceError: arguments is not defined
+- 2: 3
+- 3: undefined
+- 4: null
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+Arrow functions do not have an `arguments, super, this, or new.target` bindings. So any reference to `arguments` variable tries to resolve to a binding in a lexically enclosing environment. In this case, the arguments variable is not defined outside of the arrow function. Hence, you will receive reference error.
+
+Where as the normal function provides the number of arguments passed to the function
+```js
+const func = function () {
+                    return arguments.length;
+                    }
+console.log(func(1, 2, 3));
+```
+But If you still want to use an arrow function then rest operator on arguments provides the expected arguments
+```js
+const arrowFunc = (...args) => args.length;
+console.log(arrowFunc(1, 2, 3));
+```
+</p>
+</details>
+
+---
+
+#### 14. What is the output of below code?
+```js
+console.log( String.prototype.trimLeft.name === 'trimLeft' );
+console.log( String.prototype.trimLeft.name === 'trimStart' );
+```
+
+- 1: True, False
+- 2: False, True
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+In order to be consistent with functions like `String.prototype.padStart`, the standard method name for trimming the whitespaces is considered as `trimStart`. Due to web web compatibility reasons, the old method name 'trimLeft' still act as a alias for 'trimStart'. Hence, the prototype for 'trimLeft' is always 'trimStart'
+</p>
+</details>
+
+---
+
+#### 15. What is the output of below code?
+```js
+console.log(Math.max());
+```
+
+- 1: undefined
+- 2: Infinity
+- 3: 0
+- 4: -Infinity
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+-Infinity is the initial comparant because almost every other value is bigger. So when no arguments are provided, -Infinity is going to returned.
+</p>
+</details>
+
+---
 
 
 
