@@ -405,9 +405,9 @@ You can download the PDF and Epub version of this repository from the latest run
 |390| [What are the differences between promises and observables?](#what-are-the-differences-between-promises-and-observables)|
 |391| [What is heap?](#what-is-heap)|
 |392| [What is an event table?](#what-is-an-event-table)|
-|393| [](#)|
-|394| [](#)|
-|395| [](#)|
+|393| [What is a microTask queue?](#what-is-a-microtask-queue)|
+|394| [What is the difference between shim and polyfill?](#what-is-the-difference-between-shim-and-polyfill)|
+|395| [How do you detect primitive or non primitive value type?](#how-do-you-detect-primitive-or-non-primitive-value-type)|
 |396| [What is babel?](#what-is-babel)|
 |397| [Is Node.js completely single threaded?](#is-node.js-completely-single-threaded)|
 |398| [What are the common use cases of observables?](#what-are-the-common-use-cases-of-observables)|
@@ -512,6 +512,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 3. ### What is the difference between Call, Apply and Bind?
     The difference between Call, Apply and Bind can be explained with below examples,
+
     **Call:** The call() method invokes a function with a given `this` value and arguments provided one by one
     ```javascript
     var employee1 = {firstName: 'John', lastName: 'Rodson'};
@@ -5582,12 +5583,26 @@ You can download the PDF and Epub version of this repository from the latest run
 
      **[⬆ Back to Top](#table-of-contents)**
 
-394. ### ?
+394. ### What is the difference between shim and polyfill?
+     A shim is a library that brings a new API to an older environment, using only the means of that environment.  It isn't necessarily restricted to a web application. For example, es5-shim.js is used to emulate ES5 features on older browsers (mainly pre IE9).
+     Whereas polyfill is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively.
+     In a simple sentence, A polyfill is a shim for a browser API.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-395. ### ?
+395. ### How do you detect primitive or non primitive value type?
+     In JavaScript, primitive types include boolean, string, number, BigInt, null, Symbol and undefined. Whereas non-primitive types include the Objects. But you can easily identify them with the below function,
+     ```js
+     var myPrimitive = 30;
+     var myNonPrimitive = {};
+     function isPrimitive(val) {
+         return Object(val) !== val;
+     }
 
+     isPrimitive(myPrimitive);
+     isPrimitive(myNonPrimitive);
+     ```
+     If the value is a primitive data type, the Object constructor creates a new wrapper object for the value. But If the value is a non-primitive data type (an object), the Object constructor will give the same object.
      **[⬆ Back to Top](#table-of-contents)**
 
 396. ### What is babel?
@@ -5706,6 +5721,16 @@ You can download the PDF and Epub version of this repository from the latest run
       function User() {
       }
      ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+405. ### What is an async function?
+
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+406. ### How do you prevent promises swallowing errors?
+
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -6310,11 +6335,87 @@ console.log(numbers.includes(Number.isNaN)); // true
 
 ---
 
+#### 23. What is the output of below code?
+```js
+let [a, ...b,] = [1, 2, 3, 4, 5];
+console.log(a, b);
+```
 
+- 1: 1, [2, 3, 4, 5]
+- 2: 1, {2, 3, 4, 5}
+- 3: SyntaxError
+- 4: 1, [2, 3, 4]
 
+<details><summary><b>Answer</b></summary>
+<p>
 
+##### Answer: 3
+When using rest parameters, trailing commas are not allowed and will throw a SyntaxError.
+If you remove the trailing comma then it displays 1st answer
+```js
+let [a, ...b,] = [1, 2, 3, 4, 5];
+console.log(a, b); // 1, [2, 3, 4, 5]
+```
+</p>
+</details>
 
+---
 
+#### 25. What is the output of below code?
+```js
+async function func() {
+   return 10;
+}
+console.log(func());
+```
+
+- 1: Promise {<resolved>: 10}
+- 2: 10
+- 3: SyntaxError
+- 4: Promise {<rejected>: 10}
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+Async functions always return a promise. But even if the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise. The above async function is equivalent to below expression,
+```js
+function func() {
+   return Promise.resolve(10)
+}
+```
+</p>
+</details>
+
+---
+
+#### 26. What is the output of below code?
+```js
+async function func() {
+   await 10;
+}
+console.log(func());
+```
+
+- 1: Promise {<resolved>: 10}
+- 2: 10
+- 3: SyntaxError
+- 4: Promise {<resolved>: undefined}
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+The await expression returns value 10 with promise resolution and the code after each await expression can be treated of as existing in a `.then` callback. In this case, there is no return expression at the end of the function. Hence, the default return value of `undefined` is returned as the resolution of the promise.  The above async function is equivalent to below expression,
+```js
+function func() {
+   return Promise.resolve(10).then(() => undefined)
+}
+```
+</p>
+</details>
+
+---
 
 
 
