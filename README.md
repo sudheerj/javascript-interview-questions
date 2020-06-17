@@ -8,6 +8,16 @@ Go to [Coding Exercise](#coding-exercise) for coding specific questions
 
 You can download the PDF and Epub version of this repository from the latest run on the [actions tab](https://github.com/sudheerj/JavaScript-Interview-Questions/actions).
 
+---
+
+## Disclaimer
+
+The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
+
+Good luck with your interview 😊
+
+---
+
 ### Table of Contents
 
 | No. | Questions |
@@ -246,6 +256,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |232| [What is an Intl object?](#what-is-an-intl-object)|
 |233| [How do you perform language specific date and time formatting?](#how-do-you-perform-language-specific-date-and-time-formatting)|
 |234| [What is an Iterator?](#what-is-an-iterator)|
+|235| [How does synchronous iteration works?](#how-does-synchronous-iteration-works)|
 |235| [What is an event loop?](#what-is-an-event-loop)|
 |236| [What is call stack?](#what-is-call-stack)|
 |237| [What is an event queue?](#what-is-an-event-queue)|
@@ -417,6 +428,11 @@ You can download the PDF and Epub version of this repository from the latest run
 |402| [What is the easiest way to resize an array?](#what-is-the-easiest-way-to-resize-an-array)|
 |403| [What is an observable?](#what-is-an-observable)|
 |404| [What is the difference between function and class declarations?](#what-is-the-difference-between-function-and-class-declarations)|
+|405| [What is an async function?](#what-is-an-async-function)|
+|406| [How do you prevent promises swallowing errors?](#how-do-you-prevent-promises-swallowing-errors)|
+|407| [What is deno?](#what-is-deno)|
+|408| [How do you make an object iterable in javascript?](#how-do-you-make-an-object-iterable-in-javascript)|
+|409| [What is a Proper Tail Call?](#what-is-a-proper-tail-call)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -3452,8 +3468,27 @@ You can download the PDF and Epub version of this repository from the latest run
      **[⬆ Back to Top](#table-of-contents)**
 
 234. ### What is an Iterator?
-     An iterator is an object which defines a sequence and a return value upon its termination. It implements the Iterator protocol with a next() method which returns an object with two properties: value (the next value in the sequence) and done (which is true if the last value in the sequence has been consumed).
+     An iterator is an object which defines a sequence and a return value upon its termination. It implements the Iterator protocol with a `next()` method which returns an object with two properties: `value` (the next value in the sequence) and `done` (which is true if the last value in the sequence has been consumed).
 
+     **[⬆ Back to Top](#table-of-contents)**
+
+234. ### How does synchronous iteration works?
+     Synchronous iteration was introduced in ES6 and it works with below set of components,
+
+     **Iterable:** It is an object which can be iterated over via a method whose key is Symbol.iterator.
+     **Iterator:** It is an object returned by invoking `[Symbol.iterator]()` on an iterable. This iterator object wraps each iterated element in an object and returns it via `next()` method one by one.
+     **IteratorResult:** It is an object returned by `next()` method. The object contains two properties; the `value` property contains an iterated element and the `done` property  determines whether the element is last element or not.
+
+     Let's demonstrate synchronous iteration with an array as below,
+
+     ```js
+     const iterable = ['one', 'two', 'three'];
+     const iterator = iterable[Symbol.iterator]();
+     console.log(iterator.next());  // { value: 'one', done: false }
+     console.log(iterator.next());  // { value: 'two', done: false }
+     console.log(iterator.next());  // { value: 'three', done: false }
+     console.log(iterator.next());  // { value: 'undefined, done: true }
+     ```
      **[⬆ Back to Top](#table-of-contents)**
 
 235. ### What is an event loop?
@@ -5725,7 +5760,19 @@ You can download the PDF and Epub version of this repository from the latest run
      **[⬆ Back to Top](#table-of-contents)**
 
 405. ### What is an async function?
+     An async function is a function declared with the `async` keyword which enable asynchronous, promise-based behavior to be written in a cleaner style by avoiding promise chains. These functions can contain zero or more `await` expressions.
 
+     Let's take a below async function example,
+
+     ```js
+     async function logger() {
+
+       let data = await fetch('http://someapi.com/users'); // pause until fetch returns
+       console.log(data)
+     }
+     logger();
+     ```
+     It is basically syntax sugar over ES2015 promises and generators.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5734,7 +5781,97 @@ You can download the PDF and Epub version of this repository from the latest run
 
      **[⬆ Back to Top](#table-of-contents)**
 
+407. ### What is deno?
+     Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 JavaScript engine and the Rust programming language.
 
+     **[⬆ Back to Top](#table-of-contents)**
+
+408. ### How do you make an object iterable in javascript?
+     By default, plain object is not iterable. But you can make the object iterable by defining a `Symbol.iterator` property on it.
+
+     Let's demonstrate this with an example,
+
+     ```js
+     const collection = {
+       one: 1,
+       two: 2,
+       three: 3,
+       [Symbol.iterator]() {
+         const values = Object.keys(this);
+         let i = 0;
+         return {
+           next: () => {
+             return {
+               value: this[values[i++]],
+               done: i > values.length
+             }
+           }
+         };
+       }
+     };
+
+     const iterator = collection[Symbol.iterator]();
+
+     console.log(iterator.next());    // → {value: 1, done: false}
+     console.log(iterator.next());    // → {value: 2, done: false}
+     console.log(iterator.next());    // → {value: 3, done: false}
+     console.log(iterator.next());    // → {value: undefined, done: true}
+     ```
+
+     The above process can be simplified using a generator function,
+
+     ```js
+     const collection = {
+       one: 1,
+       two: 2,
+       three: 3,
+       [Symbol.iterator]: function * () {
+         for (let key in this) {
+           yield this[key];
+         }
+       }
+     };
+
+     const iterator = collection[Symbol.iterator]();
+
+     console.log(iterator.next());    // → {value: 1, done: false}
+     console.log(iterator.next());    // → {value: 2, done: false}
+     console.log(iterator.next());    // → {value: 3, done: false}
+     console.log(iterator.next());    // → {value: undefined, done: true}
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+409. ### What is a Proper Tail Call?
+     First, we should know about tail call before talking about "Proper Tail Call". A tail call is a subroutine or function call performed as the final action of a calling function. Whereas **Proper tail call(PTC)** is a technique where the program or code will not create additional stack frames for a recursion when the function call is a tail call.
+
+     For example, the below classic or head recursion of factorial function relies on stack for each step. Each step need to be processed upto `n * factorial(n - 1)`
+
+     ```js
+     function factorial(n) {
+       if (n === 0) {
+         return 1
+       }
+       return n * factorial(n - 1)
+     }
+     console.log(factorial(5)); //120
+     ```
+
+     But if you use Tail recursion functions, they keep passing all the necessary data it needs down the recursion without relying on the stack.
+
+     ```js
+     function factorial(n, acc = 1) {
+       if (n === 0) {
+         return acc
+       }
+       return factorial(n - 1, n * acc)
+     }
+     console.log(factorial(5)); //120
+     ```
+
+     The above pattern returns the same output as first one. But the accumulator keeps track of total as an argument without using stack memory on recursive calls.
+
+     **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
 
@@ -6417,7 +6554,127 @@ function func() {
 
 ---
 
+#### 27. What is the output of below code?
+```js
+function delay() {
+  return new Promise(resolve => setTimeout(resolve, 2000));
+}
 
+async function delayedLog(item) {
+  await delay();
+  console.log(item);
+}
 
+async function process(array) {
+  array.forEach(async (item) => {
+    await delayedLog(i);
+  });
+  console.log('Process completed!');
+}
+process([1, 2, 3, 5]);
+```
 
+- 1: 1 2 3 5 and Process completed!
+- 2: 5 5 5 5 and Process completed!
+- 3: Process completed! and 5 5 5 5
+- 4: Process completed! and 1 2 3 5
 
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+The forEach method will not wait until all items are finished but it just run the tasks and go next. Hence, the last statement is displayed first followed by sequence of promise resolutions.
+
+But you control the array sequence using for..of loop,
+
+```js
+async function processArray(array) {
+  for (const item of array) {
+    await delayedLog(item);
+  }
+  console.log('Process completed!');
+}
+```
+</p>
+</details>
+
+---
+
+#### 28. What is the output of below code?
+```js
+var set = new Set();
+set.add("+0").add("-0").add(NaN).add(undefined).add(NaN);;
+console.log(set);
+```
+
+- 1: Set(4) {"+0", "-0", NaN, undefined}
+- 2: Set(3) {"+0", NaN, undefined}
+- 3: Set(5) {"+0", "-0", NaN, undefined, NaN}
+- 4: Set(4) {"+0", NaN, undefined, NaN}
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+Set has few exceptions from equality check,
+
+1. All NaN values are equal
+2. Both +0 and -0 considered as different values
+</p>
+</details>
+
+---
+
+#### 29. What is the output of below code?
+```js
+const sym1 = Symbol('one');
+const sym2 = Symbol('one');
+
+const sym3 = Symbol.for('two');
+const sym4 = Symbol.for('two');
+
+cnsooe.log(sym1 === sym2, sym3 === sym4);
+```
+
+- 1: true, true
+- 2: true, false
+- 3: false, true
+- 4: false, false
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+Symbol follows below conventions,
+
+1. Every symbol value returned from Symbol() is unique irrespective of the optional string.
+2. `Symbol.for()` function creates a symbol in a global symbol registry list. But it doesn't  necessarily create a new symbol on every call, it checks first if a symbol with the given key is already present in the registry and returns the symbol if it is found. Otherwise a new symbol created in the registry.
+
+**Note:** The symbol description is just useful for debugging purpose.
+</p>
+
+</details>
+
+---
+
+#### 30. What is the output of below code?
+```js
+const sym1 = new Symbol('one');
+cnsooe.log(sym1);
+```
+
+- 1: SyntaxError
+- 2: one
+- 3: Symbol('one')
+- 4: Symbol
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+`Symbol` is a just a standard function and not an object constructor(unlike other primitives new Boolean, new String and new Number). So if you try to call it with the new operator will result in a TypeError
+</p>
+
+</details>
+
+---
