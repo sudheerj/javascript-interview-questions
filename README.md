@@ -5638,6 +5638,7 @@ Good luck with your interview 😊
      isPrimitive(myNonPrimitive);
      ```
      If the value is a primitive data type, the Object constructor creates a new wrapper object for the value. But If the value is a non-primitive data type (an object), the Object constructor will give the same object.
+
      **[⬆ Back to Top](#table-of-contents)**
 
 396. ### What is babel?
@@ -6565,6 +6566,42 @@ async function delayedLog(item) {
   console.log(item);
 }
 
+async function processArray(array) {
+  array.forEach(item => {
+    await delayedLog(item);
+  })
+}
+
+processArray([1, 2, 3, 4]);
+```
+
+- 1: SyntaxError
+- 2: 1, 2, 3, 4
+- 3: 4, 4, 4, 4
+- 4: 4, 3, 2, 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+Even though “processArray” is an async function, the anonymous function that we use for `forEach` is synchronous. If you use await inside synchronous function then it throws a syntax error.
+</p>
+
+</details>
+
+---
+
+#### 28. What is the output of below code?
+```js
+function delay() {
+  return new Promise(resolve => setTimeout(resolve, 2000));
+}
+
+async function delayedLog(item) {
+  await delay();
+  console.log(item);
+}
+
 async function process(array) {
   array.forEach(async (item) => {
     await delayedLog(i);
@@ -6600,7 +6637,7 @@ async function processArray(array) {
 
 ---
 
-#### 28. What is the output of below code?
+#### 29. What is the output of below code?
 ```js
 var set = new Set();
 set.add("+0").add("-0").add(NaN).add(undefined).add(NaN);;
@@ -6625,7 +6662,7 @@ Set has few exceptions from equality check,
 
 ---
 
-#### 29. What is the output of below code?
+#### 30. What is the output of below code?
 ```js
 const sym1 = Symbol('one');
 const sym2 = Symbol('one');
@@ -6657,7 +6694,7 @@ Symbol follows below conventions,
 
 ---
 
-#### 30. What is the output of below code?
+#### 31. What is the output of below code?
 ```js
 const sym1 = new Symbol('one');
 cnsooe.log(sym1);
@@ -6673,6 +6710,65 @@ cnsooe.log(sym1);
 
 ##### Answer: 1
 `Symbol` is a just a standard function and not an object constructor(unlike other primitives new Boolean, new String and new Number). So if you try to call it with the new operator will result in a TypeError
+</p>
+
+</details>
+
+---
+
+#### 32. What is the output of below code?
+```js
+let myNumber = 100;
+let myString = '100';
+
+if (!typeof myNumber === "string") {
+	console.log("It is not a string!");
+} else {
+    console.log("It is a string!");
+}
+
+if (!typeof myString === "number"){
+	console.log("It is not a number!")
+} else {
+    console.log("It is a number!");
+}
+```
+
+- 1: SyntaxError
+- 2: It is not a string!, It is not a number!
+- 3: It is a not a string!, It is a number!
+- 4: It is a string!, It is a number!
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+The return value of `typeof myNumber (OR) typeof myString` is always the truthy value (either "number" or "string"). Since ! operator converts the value to a boolean value, the value of both `!typeof myNumber or !typeof myString` is always false. Hence the if condition fails and control goes to else block.
+</p>
+
+</details>
+
+---
+
+#### 33. What is the output of below code?
+```js
+console.log(JSON.stringify({ myArray: ['one', undefined, function(){}, Symbol('')] }));
+console.log(JSON.stringify({ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]));
+```
+
+- 1: {"myArray":['one', undefined, {}, Symbol]}, {}
+- 2: {"myArray":['one', null,null,null]}, {}
+- 3: {"myArray":['one', null,null,null]}, "{ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]"
+- 4: {"myArray":['one', undefined, function(){}, Symbol('')]}, {}
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+The symbols has below constraints,
+
+1. The undefined, Functions, and Symbols are not valid JSON values. So those values are are either omitted (in an object) or changed to null (in an array). Hence, it returns null values for the value array.
+2. All Symbol-keyed properties will be completely ignored. Hence it returns empty object({}).
 </p>
 
 </details>
