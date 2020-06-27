@@ -1192,11 +1192,17 @@ Good luck with your interview 😊
 
 51. ### What is a promise?
     A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
-    The usage of a promise would be as below
+
+    The syntax of Promise creation looks like below,
+    ```js
+        const promise = new Promise(function(resolve, reject) {
+          // promise description
+        })
+    ```
+
+    The usage of a promise would be as below,
+
     ```javascript
-    const promise = new Promise(function(resolve, reject) {
-      // promise description
-    })
     const promise = new Promise(resolve => {
       setTimeout(() => {
         resolve("I'm a Promise!");
@@ -1669,6 +1675,7 @@ Good luck with your interview 😊
 
 93. ### What are the pros and cons of promises over callbacks?
     Below are the list of pros and cons of promises over callbacks,
+
     **Pros:**
     1. It avoids callback hell which is unreadable
     2. Easy to write sequential asynchronous code with .then()
@@ -1796,6 +1803,7 @@ Good luck with your interview 😊
 
 104. ### What are the steps involved in return false usage?
      The return false statement in event handlers performs the below steps,
+
      1. First it stops the browser's default action or behaviour.
      2. It prevents the event from propagating the DOM
      3. Stops callback execution and returns immediately when called.
@@ -1804,6 +1812,8 @@ Good luck with your interview 😊
 
 105. ### What is BOM?
      The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It consists of the objects navigator, history, screen, location and document which are children of window. The Browser Object Model is not standardized and can change based on different browsers.
+
+     ![Screenshot](images/bom.png)
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -1830,7 +1840,9 @@ Good luck with your interview 😊
 
 109. ### What is an event delegation?
      Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.
+
      For example, if you wanted to detect field changes in inside a specific form, you can use event delegation technique,
+
      ```javascript
      var form = document.querySelector('#registration-form');
 
@@ -1896,7 +1908,9 @@ Good luck with your interview 😊
 
 117. ### What is the purpose of clearTimeout method?
      The clearTimeout() function is used in javascript to clear the timeout which has been set by setTimeout()function before that. i.e, The return value of setTimeout() function is stored in a variable and it’s passed into the clearTimeout() function to clear the timer.
+
      For example, the below setTimeout method is used to display the message after 3 seconds. This timeout can be cleared by clearTimeout() method.
+
      ```javascript
      <script>
      var msg;
@@ -1918,7 +1932,9 @@ Good luck with your interview 😊
 
 118. ### What is the purpose of clearInterval method?
      The clearInterval() function is used in javascript to clear the interval which has been set by setInterval() function. i.e, The return value returned by setInterval() function is stored in a variable and it’s passed into the clearInterval() function to clear the interval.
+
      For example, the below setInterval method is used to display the message for every 3 seconds. This interval can be cleared by clearInterval() method.
+
      ```javascript
      <script>
      var msg;
@@ -2662,7 +2678,7 @@ Good luck with your interview 😊
 
 175. ### What are the ways to execute javascript after page load?
      You can execute javascript after page load in many different ways,
-     1. ** window.onload:**
+     1. **window.onload:**
      ```javascript
      window.onload = function ...
      ```
@@ -2670,7 +2686,7 @@ Good luck with your interview 😊
      ```javascript
      document.onload = function ...
      ```
-     3. ** body onload:**
+     3. **body onload:**
      ```javascript
      <body onload="script();">
      ```
@@ -2712,7 +2728,7 @@ Good luck with your interview 😊
      **[⬆ Back to Top](#table-of-contents)**
 
 178. ### What is a freeze method?
-     The freeze() method is used to freeze an object. Freezing an object does'nt allow adding new properties to an object,prevents from removing and prevents changing the enumerability, configurability, or writability of existing properties. i.e, It returns the passed object and does not create a frozen copy.
+     The **freeze()** method is used to freeze an object. Freezing an object does'nt allow adding new properties to an object,prevents from removing and prevents changing the enumerability, configurability, or writability of existing properties. i.e, It returns the passed object and does not create a frozen copy.
      ```javascript
      const obj = {
        prop: 100
@@ -2729,6 +2745,7 @@ Good luck with your interview 😊
 
 179. ### What is the purpose of freeze method?
      Below are the main benefits of using freeze method,
+
      1. It is used for freezing objects and arrays.
      2. It is used to make an object immutable.
 
@@ -2921,6 +2938,7 @@ Good luck with your interview 😊
 
 193. ### What are the applications of assign method?
      Below are the some of main applications of Object.assign() method,
+
      1. It is used for cloning an object.
      2. It is used to merge object with same properties.
 
@@ -2928,10 +2946,13 @@ Good luck with your interview 😊
 
 194. ### What is a proxy object?
      The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc. The syntax would be as follows,
+
      ```javascript
      var p = new Proxy(target, handler);
      ```
+
      Let's take an example of proxy object,
+
      ```javascript
      var handler = {
          get: function(obj, prop) {
@@ -2953,7 +2974,7 @@ Good luck with your interview 😊
      **[⬆ Back to Top](#table-of-contents)**
 
 195. ### What is the purpose of seal method?
-     The Object.seal() method is used seal an object, by preventing new properties from being added to it and marking all existing properties as non-configurable. But values of present properties can still be changed as long as they are writable. Let's see the below example to understand more about seal() method
+     The **Object.seal()** method is used seal an object, by preventing new properties from being added to it and marking all existing properties as non-configurable. But values of present properties can still be changed as long as they are writable. Let's see the below example to understand more about seal() method
      ```javascript
       const object = {
          property: 'Welcome JS world'
@@ -4651,6 +4672,7 @@ Good luck with your interview 😊
 
 314. ### What are default values in destructuring assignment?
      A variable can be assigned a default value when the value unpacked from the array or object is undefined during destructuring assignment. It helps to avoid setting default values separately for each assignment. Let's take an example for both arrays and object usecases,
+
      **Arrays destructuring:**
      ```javascript
      var x, y, z;
@@ -4737,6 +4759,7 @@ Good luck with your interview 😊
      8. Float64Array: An array of 64-bit floating point numbers
 
      For example, you can create an array of 8-bit signed integers as below
+
      ```javascript
      const a = new Int8Array();
      // You can pre-allocate n bytes
@@ -5000,7 +5023,7 @@ Good luck with your interview 😊
 344. ### What is the difference between Shallow and Deep copy?
       There are two ways to copy an object,
 
-      ### Shallow Copy
+      **Shallow Copy:**
       Shallow copy is a bit-wise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.
 
       ### Example
@@ -5021,7 +5044,7 @@ Good luck with your interview 😊
 
       The above statement will also change the name of `empDetails`, since we have a shallow copy. That means we're loosing the original data as well.
 
-      ### Deep copy
+      **Deep copy:**
       A deep copy copies all fields, and makes copies of dynamically allocated memory pointed to by the fields. A deep copy occurs when an object is copied along with the objects to which it refers.
       ### Example
       ```
