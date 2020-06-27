@@ -433,6 +433,7 @@ Good luck with your interview 😊
 |407| [What is deno?](#what-is-deno)|
 |408| [How do you make an object iterable in javascript?](#how-do-you-make-an-object-iterable-in-javascript)|
 |409| [What is a Proper Tail Call?](#what-is-a-proper-tail-call)|
+|410| [How do you check an object is a promise or not?](#how-do-you-check-an-object-is-a-promise-or-not)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -523,6 +524,8 @@ Good luck with your interview 😊
 2. ### What is prototype chain?
 
     **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language. The prototype on object instance is available through **Object.getPrototypeOf(object)** or __proto__ property whereas prototype on constructors function is available through object.prototype.
+
+    ![Screenshot](images/prototype_chain.png)
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -639,6 +642,7 @@ Good luck with your interview 😊
     **[⬆ Back to Top](#table-of-contents)**
 
 9. ### What is the difference between == and === operators?
+
     JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators takes type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
     1. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions.
     2. Two numbers are strictly equal when they are numerically equal. i.e, Having the same number value.
@@ -1013,6 +1017,8 @@ Good luck with your interview 😊
     ```javascript
     document.cookie = "username=John";
     ```
+
+    ![Screenshot](images/cookie.png)
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -2005,8 +2011,9 @@ Good luck with your interview 😊
      **[⬆ Back to Top](#table-of-contents)**
 
 125. ### How do you check if a key exists in an object?
-     You can check whether a key exists in an object or not using two approaches,
-     1. ** Using in operator:** You can use the in operator whether a key exists in an object or not
+     You can check whether a key exists in an object or not using three approaches,
+
+     1. **Using in operator:** You can use the in operator whether a key exists in an object or not
      ```javascript
      "key" in obj
      ```
@@ -2014,9 +2021,18 @@ Good luck with your interview 😊
      ```javascript
      !("key" in obj)
      ```
-     2. ** Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
+     2. **Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
      ```javascript
      obj.hasOwnProperty("key") // true
+     ```
+     3. **Using undefined comparision:** If you access a non-existing property from an object, the result is undefined. Let’s compare the properties against undefined to determine the existence of the property.
+     ```js
+     const user = {
+       name: 'John'
+     };
+
+     console.log(user.name !== undefined);     // true
+     console.log(user.nickName !== undefined); // false
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -2929,7 +2945,7 @@ Good luck with your interview 😊
      p.a = 10;
      p.b = null;
 
-     console.log(p.a, p.b); // 1, null
+     console.log(p.a, p.b); // 10, null
      console.log('c' in p, p.c); // false, 100
      ```
      In the above code, it uses `get` handler which define the behavior of the proxy when an operation is performed on it
@@ -5949,6 +5965,42 @@ Good luck with your interview 😊
      The above pattern returns the same output as first one. But the accumulator keeps track of total as an argument without using stack memory on recursive calls.
 
      **[⬆ Back to Top](#table-of-contents)**
+
+410. ### How do you check an object is a promise or not?
+
+  If you don't know if a value is a promise or not, wrapping the value as `Promise.resolve(value)` which returns a promise
+
+     ```js
+        function isPromise(object){
+          if(Promise && Promise.resolve){
+            return Promise.resolve(object) == object;
+          }else{
+            throw "Promise not supported in your environment"
+          }
+        }
+
+        var i = 1;
+        var promise = new Promise(function(resolve,reject){
+          resolve()
+        });
+
+        console.log(isPromise(i)); // false
+        console.log(isPromise(p)); // true
+    ```
+   Another way is to check for `.then()` hander type
+
+    ```js
+        function isPromise(value) {
+          return Boolean(value && typeof value.then === 'function');
+        }
+        var i = 1;
+        var promise = new Promise(function(resolve,reject){
+          resolve()
+        });
+
+        console.log(isPromise(i)) // false
+        console.log(isPromise(promise)); // true
+    ```
 
 ### Coding Exercise
 
