@@ -434,6 +434,7 @@ Good luck with your interview 😊
 |408| [How do you make an object iterable in javascript?](#how-do-you-make-an-object-iterable-in-javascript)|
 |409| [What is a Proper Tail Call?](#what-is-a-proper-tail-call)|
 |410| [How do you check an object is a promise or not?](#how-do-you-check-an-object-is-a-promise-or-not)|
+|411| [How to detect if a function is called as constructor?](#how-to-detect-if-a-function-is-called-as-constructor)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -5705,7 +5706,9 @@ Good luck with your interview 😊
 
 400. ### What is the difference between Function constructor and function declaration?
      The functions which are created with `Function constructor` do not create closures to their creation contexts but they are always created in the global scope. i.e, the function can access own local variables and global scope variables only. Whereas function declarations can access outer function variables(closures) too.
+
      Let's see this difference with an example,
+
      **Function Constructor:**
      ```js
      var a = 100;
@@ -6010,20 +6013,47 @@ Good luck with your interview 😊
         console.log(isPromise(i)); // false
         console.log(isPromise(p)); // true
     ```
-   Another way is to check for `.then()` hander type
 
-    ```js
-        function isPromise(value) {
-          return Boolean(value && typeof value.then === 'function');
-        }
-        var i = 1;
-        var promise = new Promise(function(resolve,reject){
-          resolve()
-        });
+   Another way is to check for `.then()` handler type
 
-        console.log(isPromise(i)) // false
-        console.log(isPromise(promise)); // true
-    ```
+   ```js
+    function isPromise(value) {
+      return Boolean(value && typeof value.then === 'function');
+    }
+    var i = 1;
+    var promise = new Promise(function(resolve,reject){
+      resolve()
+    });
+
+    console.log(isPromise(i)) // false
+    console.log(isPromise(promise)); // true
+   ```
+
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+411. ### How to detect if a function is called as constructor?
+     You can use `new.target` pseudo-property to detect whether a function was called as constructor(using the new operator) or as regular function call.
+
+     1. If a constructor or function invoked using the new operator, new.target returns a reference to the constructor or function.
+     2. For function calls, new.target is undefined.
+
+     ```js
+     function Myfunc() {
+         if (new.target) {
+            console.log('called with new');
+         } else {
+            console.log('not called with new');
+         }
+     }
+
+     new Myfunc(); // called with new
+     Myfunc(); // not called with new
+     Myfunc.call({}); not called with new
+     ```
+
+
+     **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
 
@@ -6920,6 +6950,36 @@ The symbols has below constraints,
 
 1. The undefined, Functions, and Symbols are not valid JSON values. So those values are are either omitted (in an object) or changed to null (in an array). Hence, it returns null values for the value array.
 2. All Symbol-keyed properties will be completely ignored. Hence it returns empty object({}).
+</p>
+
+</details>
+
+---
+
+
+#### 34. What is the output of below code?
+```js
+class A {
+  constructor() {
+    console.log(new.target.name)
+  }
+}
+
+class B extends A { constructor() { super() } }
+
+new A();
+new B();
+```
+
+- 1: A, A
+- 2: A, B
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+Using constructors, `new.target` refers to the constructor (points to the class definition of class which is initialized) that was directly invoked by new. This is also applies to the case if the constructor is in a parent class and was delegated from a child constructor.
 </p>
 
 </details>
