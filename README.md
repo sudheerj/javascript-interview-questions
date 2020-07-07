@@ -6985,3 +6985,126 @@ Using constructors, `new.target` refers to the constructor (points to the class 
 </details>
 
 ---
+
+#### 35. What is the output of below code?
+```js
+const [x, ...y,] = [1, 2, 3, 4];
+console.log(x, y);
+```
+
+- 1: 1, [2, 3, 4]
+- 2: 1, [2, 3]
+- 3: 1, [2]
+- 4: SyntaxError
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+It throws a syntax error because rest element should not have a trailing comma. You should always consider using rest operator as the last element.
+</p>
+
+</details>
+
+---
+
+#### 36. What is the output of below code?
+```js
+const {a: x = 10, b: y = 20} = {a: 30};
+
+console.log(x);
+console.log(y);
+```
+
+- 1: 30, 20
+- 2: 10, 20
+- 3: 10, undefined
+- 4: 30, undefined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+The object property follows below rules,
+1. The object properties can be retrieved and assigned to a variable with a different name
+2. The property assigned a default value when the retrieved value is `undefined`
+</p>
+
+</details>
+
+---
+
+#### 37. What is the output of below code?
+```js
+function area({length = 10, width = 20}) {
+  console.log(length*width);
+}
+
+area();
+```
+
+- 1: 200
+- 2: Error
+- 3: undefined
+- 4: 0
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+If you leave out the right-hand side assignment for the destructuring object, the function will look for at least one argument to be supplied when invoked. Otherwise you will receive an error `Error: Cannot read property 'length' of undefined` as mentioned above.
+
+You can avoid the error with either of the below changes,
+1. **Pass atleast an empty object:**
+
+```js
+function area({length = 10, width = 20}) {
+  console.log(length*width);
+}
+
+area({});
+```
+
+2. **Assign default empty object:**
+
+```js
+function area({length = 10, width = 20} = {}) {
+  console.log(length*width);
+}
+
+area();
+```
+</p>
+
+</details>
+
+---
+
+#### 38. What is the output of below code?
+```js
+const props = [
+  { id: 1, name: 'John'},
+  { id: 2, name: 'Jack'},
+  { id: 3, name: 'Tom'}
+];
+
+const [,, { name }] = props;
+console.log(name);
+```
+
+- 1: Tom
+- 2: Error
+- 3: undefined
+- 4: John
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+It is possible to combine Array and Object destructuring. In this case, third element in the array props accessed first followed by name property in the object.
+```
+</p>
+
+</details>
+
+---
