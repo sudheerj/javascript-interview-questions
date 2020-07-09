@@ -5939,24 +5939,7 @@ Good luck with your interview 😊
 
      The above process can be simplified using a generator function,
 
-     ```javascript
-     const collection = {
-       one: 1,
-       two: 2,
-       three: 3,
-       [Symbol.iterator]: function * () {
-         for (let key in this) {
-           yield this[key];
-         }
-       }
-     };
-
-     const iterator = collection[Symbol.iterator]();
-
-     console.log(iterator.next());    // {value: 1, done: false}
-     console.log(iterator.next());    // {value: 2, done: false}
-     console.log(iterator.next());    // {value: 3, done: false}
-     console.log(iterator.next());    // {value: undefined, done: true}
+     ```js
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -7165,6 +7148,56 @@ console.log(add('Apple'));
 ##### Answer: 2
 Since the default argument is evaluated at call time, a new object is created each time the function is called. So in this case, the new array is created and element pushed to the default empty array.
 
+</p>
+
+</details>
+
+---
+
+#### 41. What is the output of below code?
+
+```js
+function greet(greeting, name, message = greeting + ' ' + name) {
+  console.log([name, greeting, message]);
+}
+
+greet('Hello', 'John');
+greet('Hello', 'John', 'Good morning!');
+```
+
+- 1: SyntaxError
+- 2: ['Hello', 'John', 'Hello John'], ['Hello', 'John', 'Good morning!']
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+Since parameters defined earlier are available to later default parameters, this code snippet doesn't throw any error.
+</p>
+
+</details>
+
+---
+
+#### 42. What is the output of below code?
+
+```js
+function outer(f = inner()) {
+  function inner() { return 'Inner' }
+}
+outer();
+```
+
+- 1: ReferenceError
+- 2: Inner
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+The functions and variables declared in the function body cannot be referred from default value parameter initializers. If you still try to access, it throws a run-time ReferenceError(i.e, `inner` is not defined).
 </p>
 
 </details>
