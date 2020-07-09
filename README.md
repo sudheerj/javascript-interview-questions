@@ -5939,7 +5939,7 @@ Good luck with your interview 😊
 
      The above process can be simplified using a generator function,
 
-     ```js
+     ```javascript
      const collection = {
        one: 1,
        two: 2,
@@ -5953,10 +5953,10 @@ Good luck with your interview 😊
 
      const iterator = collection[Symbol.iterator]();
 
-     console.log(iterator.next());    // → {value: 1, done: false}
-     console.log(iterator.next());    // → {value: 2, done: false}
-     console.log(iterator.next());    // → {value: 3, done: false}
-     console.log(iterator.next());    // → {value: undefined, done: true}
+     console.log(iterator.next());    // {value: 1, done: false}
+     console.log(iterator.next());    // {value: 2, done: false}
+     console.log(iterator.next());    // {value: 3, done: false}
+     console.log(iterator.next());    // {value: undefined, done: true}
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -7102,7 +7102,69 @@ console.log(name);
 
 ##### Answer: 1
 It is possible to combine Array and Object destructuring. In this case, third element in the array props accessed first followed by name property in the object.
+</p>
+
+</details>
+
+---
+
+#### 39. What is the output of below code?
+
+```js
+function checkType(num = 1) {
+  console.log(typeof num);
+}
+
+checkType();
+checkType(undefined);
+checkType('');
+checkType(null);
 ```
+
+- 1: number, undefined, string, object
+- 2: undefined, undefined, string, object
+- 3: number, number, string, object
+- 4: number, number, number, number
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+If the function argument is set implicitly(not passing argument) or explicitly to undefined, the value of the argument is the default parameter. Whereas for other falsy values('' or null), the value of the argument is passed parameter.
+
+Hence, the result of function calls categorized as below,
+
+1. The first two function calls logs number type since the type of default value is number
+2. The type of '' and null values are string and object type respectively.
+
+</p>
+
+</details>
+
+---
+
+#### 40. What is the output of below code?
+
+```js
+function add(item, items = []) {
+  items.push(item);
+  return items;
+}
+
+console.log(add('Orange'));
+console.log(add('Apple'));
+```
+
+- 1: ['Orange'], ['Orange', 'Apple']
+- 2: ['Orange'], ['Apple']
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+Since the default argument is evaluated at call time, a new object is created each time the function is called. So in this case, the new array is created and element pushed to the default empty array.
+
 </p>
 
 </details>
