@@ -435,6 +435,9 @@ Good luck with your interview 😊
 |409| [What is a Proper Tail Call?](#what-is-a-proper-tail-call)|
 |410| [How do you check an object is a promise or not?](#how-do-you-check-an-object-is-a-promise-or-not)|
 |411| [How to detect if a function is called as constructor?](#how-to-detect-if-a-function-is-called-as-constructor)|
+|412| [What are the differences between arguments object and rest parameter?](#what-are-the-differences-between-arguments-object-and-rest-parameter)|
+|413| [What are the differences between spread operator and rest parameter?](#what-are-the-differences-between-spread-operator-and-rest-parameter)|
+|414| [What are the different kinds of generators?](#what-are-the-different-kinds-of-generators)|
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -5940,6 +5943,21 @@ Good luck with your interview 😊
      The above process can be simplified using a generator function,
 
      ```js
+      const collection = {
+        one: 1,
+        two: 2,
+        three: 3,
+        [Symbol.iterator]: function * () {
+          for (let key in this) {
+            yield this[key];
+          }
+        }
+      };
+      const iterator = collection[Symbol.iterator]();
+      console.log(iterator.next());    // {value: 1, done: false}
+      console.log(iterator.next());    // {value: 2, done: false}
+      console.log(iterator.next());    // {value: 3, done: false}
+      console.log(iterator.next());    // {value: undefined, done: true}
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -6013,7 +6031,7 @@ Good luck with your interview 😊
    ```
 
 
-    **[⬆ Back to Top](#table-of-contents)**
+   **[⬆ Back to Top](#table-of-contents)**
 
 411. ### How to detect if a function is called as constructor?
      You can use `new.target` pseudo-property to detect whether a function was called as constructor(using the new operator) or as regular function call.
@@ -6037,6 +6055,74 @@ Good luck with your interview 😊
 
 
      **[⬆ Back to Top](#table-of-contents)**
+
+412. ### What are the differences between arguments object and rest parameter?
+     There are three main differences between arguments object and rest parameters
+
+     1. The arguments object is an array-like but not an array. Whereas the rest parameters are array instances.
+     2. The arguments object does not support methods such as sort, map, forEach, or pop. Whereas these methods can be used in rest parameters.
+     3. The rest parameters are only the ones that haven’t been given a separate name, while  the arguments object contains all arguments passed to the function
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+413. ### What are the differences between arguments spread operator and rest parameter?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+414. ### What are the different kinds of generators?
+
+     There are four kinds of generators,
+
+     1. **Generator function declaration:**
+
+         ```js
+          function* myGenFunc() {
+               yield 1;
+               yield 2;
+               yield 3;
+          }
+          const genObj = myGenFunc();
+         ```
+
+     2. **Generator function expressions:**
+
+        ```js
+        const myGenFunc = function* () {
+               yield 1;
+               yield 2;
+               yield 3;
+        };
+        const genObj = myGenFunc();
+        ```
+
+     3. **Generator method definitions in object literals:**
+
+        ```js
+         const myObj = {
+             * myGeneratorMethod() {
+                yield 1;
+                yield 2;
+                yield 3;
+             }
+         };
+         const genObj = myObj.myGeneratorMethod();
+        ```
+
+     4. **Generator method definitions in class:**
+
+        ```js
+          class MyClass {
+             * myGeneratorMethod() {
+                yield 1;
+                yield 2;
+                yield 3;
+             }
+          }
+          const myObject = new MyClass();
+          const genObj = myObject.myGeneratorMethod();
+        ```
+
+        **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
 
@@ -7198,6 +7284,57 @@ outer();
 
 ##### Answer: 1
 The functions and variables declared in the function body cannot be referred from default value parameter initializers. If you still try to access, it throws a run-time ReferenceError(i.e, `inner` is not defined).
+</p>
+
+</details>
+
+---
+
+#### 43. What is the output of below code?
+
+```js
+function myFun(x, y, ...manyMoreArgs) {
+  console.log(manyMoreArgs)
+}
+
+myFun(1, 2, 3, 4, 5);
+myFun(1, 2);
+```
+
+- 1: [3, 4, 5], undefined
+- 2: SyntaxError
+- 3: [3, 4, 5], []
+- 4: [3, 4, 5], [undefined]
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+The rest parameter is used to hold the remaining parameters of a function and it becomes an empty array if the argument is not provided.
+</p>
+
+</details>
+
+---
+
+#### 44. What is the output of below code?
+
+```js
+const obj = {'key': 'value'};
+const array = [...obj];
+console.log(array);
+```
+
+- 1: ['key', 'value']
+- 2: TypeError
+- 3: []
+- 4: ['key']
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+Spread syntax can be applied only to iterable objects. By default, Objects are not iterable, but they become iterable when used in an Array, or with iterating functions such as `map(), reduce(), and assign()`. If you still try to do it, it still throws `TypeError: obj is not iterable`.
 </p>
 
 </details>
