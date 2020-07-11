@@ -438,6 +438,9 @@ Good luck with your interview 😊
 |412| [What are the differences between arguments object and rest parameter?](#what-are-the-differences-between-arguments-object-and-rest-parameter)|
 |413| [What are the differences between spread operator and rest parameter?](#what-are-the-differences-between-spread-operator-and-rest-parameter)|
 |414| [What are the different kinds of generators?](#what-are-the-different-kinds-of-generators)|
+|415| [What are the built-in iterables?](#what-are-the-built-in-iterables)|
+|416| [What are the differences between for...of and for...in statements?](#what-are-the-differences-between-for...of-and-for...in-statements)|
+
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -6065,13 +6068,14 @@ Good luck with your interview 😊
 
      **[⬆ Back to Top](#table-of-contents)**
 
-413. ### What are the differences between arguments spread operator and rest parameter?
+413. ### What are the differences between spread operator and rest parameter?
+     Rest parameter collects all remaining elements into an array. Whereas Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. i.e, Rest parameter is opposite to the spread operator.
 
      **[⬆ Back to Top](#table-of-contents)**
 
 414. ### What are the different kinds of generators?
 
-     There are four kinds of generators,
+     There are five kinds of generators,
 
      1. **Generator function declaration:**
 
@@ -6122,7 +6126,59 @@ Good luck with your interview 😊
           const genObj = myObject.myGeneratorMethod();
         ```
 
+     5. **Generator as a computed property:**
+
+        ```js
+        const SomeObj = {
+          *[Symbol.iterator] () {
+            yield 1;
+            yield 2;
+            yield 3;
+          }
+        }
+
+        console.log(Array.from(SomeObj)); // [ 1, 2, 3 ]
+        ```
+
         **[⬆ Back to Top](#table-of-contents)**
+
+415. ### What are the built-in iterables?
+
+     Below are the list of built-in iterables in javascript,
+
+     1. Arrays and TypedArrays
+     2. Strings: Iterate over each character or Unicode code-points
+     3. Maps: iterate over its key-value pairs
+     4. Sets: iterates over their elements
+     5. arguments: An array-like special variable in functions
+     6. DOM collection such as NodeList
+
+416. ### What are the differences between for...of and for...in statements?
+
+     Both for...in and for...of statements iterate over js data structures. The only difference is over what they iterate:
+
+     1. for..in iterates over all enumerable property keys of an object
+     2. for..of iterates over the values of an iterable object.
+
+     Let's explain this difference with an example,
+
+     ```js
+     let arr = ['a', 'b', 'c'];
+
+     arr.newProp = 'newVlue';
+
+     // key are the property keys
+     for (let key in arr) {
+       console.log(key);
+     }
+
+     // value are the property values
+     for (let value of arr) {
+       console.log(value);
+     }
+     ```
+
+     Since for..in loop iterates over the keys of the object, the first loop logs 0, 1, 2 and newProp while iterating over array object. The for..of loop iterates over the values of a arr data structure and logs  a, b, c in the console.
 
 ### Coding Exercise
 
@@ -7335,6 +7391,101 @@ console.log(array);
 
 ##### Answer: 2
 Spread syntax can be applied only to iterable objects. By default, Objects are not iterable, but they become iterable when used in an Array, or with iterating functions such as `map(), reduce(), and assign()`. If you still try to do it, it still throws `TypeError: obj is not iterable`.
+</p>
+
+</details>
+
+---
+
+#### 45. What is the output of below code?
+
+```js
+function* myGenFunc() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+var myGenObj = new myGenFunc;
+console.log(myGenObj.next().value);
+```
+
+- 1: 1
+- 2: undefined
+- 3: SyntaxError
+- 4: TypeError
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+Generators are not constructable type. But if you still proceed to do, there will be an error saying "TypeError: myGenFunc is not a constructor"
+
+</p>
+
+</details>
+
+---
+
+#### 46. What is the output of below code?
+
+```js
+
+function* yieldAndReturn() {
+  yield 1;
+  return 2;
+  yield 3;
+}
+
+var myGenObj = yieldAndReturn()
+console.log(myGenObj.next());
+console.log(myGenObj.next());
+console.log(myGenObj.next());
+```
+
+- 1: { value: 1, done: false }, { value: 2, done: true }, { value: undefined, done: true }
+- 2: { value: 1, done: false }, { value: 2, done: false }, { value: undefined, done: true }
+- 3: { value: 1, done: false }, { value: 2, done: true }, { value: 3, done: true }
+- 4: { value: 1, done: false }, { value: 2, done: false }, { value: 3, done: true }
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+A return statement in a generator function will make the generator finish. If a value is returned, it will be set as the value property of the object and done property to true. When a generator is finished, subsequent next() calls return an object of this form: `{value: undefined, done: true}`.
+</p>
+
+</details>
+
+---
+
+#### 47. What is the output of below code?
+
+```js
+const myGenerator = (function *(){
+  yield 1;
+  yield 2;
+  yield 3;
+})();
+for (const value of myGenerator) {
+  console.log(value);
+  break;
+}
+
+for (const value of myGenerator) {
+  console.log(value);
+}
+```
+
+- 1: 1,2,3 and 1,2,3
+- 2: 1,2,3 and 4,5,6
+- 3: 1 and 1
+- 4: 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+The generator should not be re-used once the iterator is closed. i.e, Upon exiting a loop(on completion or using break & return), the generator is closed and trying to iterate over it again does not yield any more results. Hence, the second loop doesn't print any value.
 </p>
 
 </details>
