@@ -7491,3 +7491,61 @@ The generator should not be re-used once the iterator is closed. i.e, Upon exiti
 </details>
 
 ---
+
+#### 48. What is the output of below code?
+
+```js
+const num = 0o38;
+console.log(num);
+```
+
+- 1: SyntaxError
+- 2: 38
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+If you use an invalid number(outside of 0-7 range) in the octal literal, JavaScript will throw a SyntaxError. In ES5, it treats the octal literal as decimal number.
+</p>
+
+</details>
+
+---
+
+#### 49. What is the output of below code?
+
+```js
+const squareObj = new Square(10);
+console.log(squareObj.area);
+
+class Square {
+  constructor(length) {
+    this.length = length;
+  }
+
+  get area() {
+    return this.length * this.length;
+  }
+
+  set area(value) {
+    this.area = value;
+  }
+}
+```
+
+- 1: 100
+- 2: ReferenceError
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+Unlike function declarations, class declarations are not hoisted. i.e, First You need to declare your class and then access it, otherwise it will throw a ReferenceError "Uncaught ReferenceError: Square is not defined".
+
+**Note:** Class expressions are also applies to the same hoisting restrictions of class declarations.
+</p>
+
+</details>
+
+---
