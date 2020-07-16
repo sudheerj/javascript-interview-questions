@@ -440,6 +440,7 @@ Good luck with your interview 😊
 |414| [What are the different kinds of generators?](#what-are-the-different-kinds-of-generators)|
 |415| [What are the built-in iterables?](#what-are-the-built-in-iterables)|
 |416| [What are the differences between for...of and for...in statements?](#what-are-the-differences-between-for...of-and-for...in-statements)|
+|417| [How do you define instance and non-instance properties?](#how-do-you-define-instance-and-non-instance-properties)|
 
 
 1. ### What are the possible ways to create objects in JavaScript?
@@ -6180,6 +6181,24 @@ Good luck with your interview 😊
 
      Since for..in loop iterates over the keys of the object, the first loop logs 0, 1, 2 and newProp while iterating over array object. The for..of loop iterates over the values of a arr data structure and logs  a, b, c in the console.
 
+417. ### How do you define instance and non-instance properties?
+     The Instance properties must be defined inside of class methods. For example, name and age properties defined insider constructor as below,
+     ```js
+     class Person {
+       constructor(name, age) {
+         this.name = name;
+         this.age = age;
+       }
+     }
+
+     But Static(class) and prototype data properties must be defined outside of the ClassBody declaration. Let's assign the age value for Person class as below,
+
+     ```js
+     Person.staticAge = 30;
+     Person.prototype.prototypeAge = 40;
+     ```
+
+
 ### Coding Exercise
 
 #### 1. What is the output of below code?
@@ -7544,6 +7563,44 @@ class Square {
 Unlike function declarations, class declarations are not hoisted. i.e, First You need to declare your class and then access it, otherwise it will throw a ReferenceError "Uncaught ReferenceError: Square is not defined".
 
 **Note:** Class expressions are also applies to the same hoisting restrictions of class declarations.
+</p>
+
+</details>
+
+---
+
+#### 50. What is the output of below code?
+
+```js
+function Person() { }
+
+Person.prototype.walk = function() {
+  return this;
+}
+
+Person.run = function() {
+  return this;
+}
+
+let user = new Person();
+let walk = user.walk;
+console.log(walk());
+
+let run = Person.run;
+console.log(run());
+```
+
+- 1: undefined, undefined
+- 2: Person, Person
+- 3: SyntaxError
+- 4: Window, Window
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+When a regular or prototype method is called without a value for **this**, the methods return an initial this value if the value is not undefined. Otherwise global window object will be returned. In our case, the initial this value is undefined so both methods return window objects.
+
 </p>
 
 </details>
