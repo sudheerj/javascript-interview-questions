@@ -7599,8 +7599,73 @@ console.log(run());
 <p>
 
 ##### Answer: 4
-When a regular or prototype method is called without a value for **this**, the methods return an initial this value if the value is not undefined. Otherwise global window object will be returned. In our case, the initial this value is undefined so both methods return window objects.
+When a regular or prototype method is called without a value for **this**, the methods return an initial this value if the value is not undefined. Otherwise global window object will be returned. In our case, the initial `this` value is undefined so both methods return window objects.
 
+</p>
+
+</details>
+
+---
+
+#### 51. What is the output of below code?
+
+```js
+class Vehicle {
+  constructor(name) {
+    this.name = name;
+  }
+
+  start() {
+    console.log(`${this.name} vehicle started`);
+  }
+}
+
+class Car extends Vehicle {
+  start() {
+    console.log(`${this.name} car started`);
+    super.start();
+  }
+}
+
+const car = new Car('BMW');
+console.log(car.start());
+```
+
+- 1: SyntaxError
+- 2: BMW vehicle started, BMW car started
+- 3: BMW car started, BMW vehicle started
+- 4: BMW car started, BMW car started
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+The super keyword is used to call methods of a super class. Unlike other languages the super invocation doesn't need to be a first statement. i.e, The statements will be executed in the same order of code.
+
+</p>
+
+</details>
+
+---
+
+#### 52. What is the output of below code?
+
+```js
+const USER = {'age': 30};
+USER.age = 25;
+console.log(USER.age);
+```
+
+- 1: 30
+- 2: 25
+- 3: Uncaught TypeError
+- 4: SyntaxError
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+Even though we used constant variables, the content of it is an object and the object's contents (e.g properties) can be altered. Hence, the change is going to be valid in this case.
 </p>
 
 </details>
