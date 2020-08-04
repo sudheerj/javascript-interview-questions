@@ -7054,7 +7054,7 @@ Good luck with your interview 😊
         console.log(Array.from(SomeObj)); // [ 1, 2, 3 ]
         ```
 
-        **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#table-of-contents)**
 
 417. ### What are the built-in iterables
 
@@ -7066,6 +7066,8 @@ Good luck with your interview 😊
      4. Sets: iterates over their elements
      5. arguments: An array-like special variable in functions
      6. DOM collection such as NodeList
+
+     **[⬆ Back to Top](#table-of-contents)**
 
 418. ### What are the differences between for...of and for...in statements
 
@@ -7094,6 +7096,8 @@ Good luck with your interview 😊
 
      Since for..in loop iterates over the keys of the object, the first loop logs 0, 1, 2 and newProp while iterating over the array object. The for..of loop iterates over the values of a arr data structure and logs  a, b, c in the console.
 
+     **[⬆ Back to Top](#table-of-contents)**
+
 419. ### How do you define instance and non-instance properties
 
      The Instance properties must be defined inside of class methods. For example, name and age properties defined insider constructor as below,
@@ -7113,6 +7117,8 @@ Good luck with your interview 😊
      Person.staticAge = 30;
      Person.prototype.prototypeAge = 40;
      ```
+
+     **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
 
@@ -8692,3 +8698,4 @@ Even though we used constant variables, the content of it is an object and the o
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
