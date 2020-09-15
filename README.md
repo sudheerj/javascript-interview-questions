@@ -7651,7 +7651,7 @@ The concatenation operator(+) is applicable for both number and string types. So
 #### 18. What is the output of below code
 
 ```javascript
-console.log([0] === false);
+console.log([0] == false);
 if([0]) {
 console.log("I'm True");
 } else {
