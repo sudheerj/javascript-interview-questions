@@ -2802,9 +2802,9 @@ Good luck with your interview 😊
         3. (a|b): Used to find any of the alternatives separated with |
      2. **Metacharacters:** These are characters with a special meaning
         For example, below are some use cases,
-        1. \d: Used to find a digit
-        2. \s: Used to find a whitespace character
-        3. \b: Used to find a match at the beginning or ending of a word
+        1. \\d: Used to find a digit
+        2. \\s: Used to find a whitespace character
+        3. \\b: Used to find a match at the beginning or ending of a word
      3. **Quantifiers:** These are useful to define quantities
         For example, below are some use cases,
         1. n+: Used to find matches for any string that contains at least one n
@@ -5234,7 +5234,7 @@ Good luck with your interview 😊
 
 310. ### How do you write multi-line strings in template literals
 
-     In ES5, you would have to use newline escape characters('\n') and concatenation symbols(+) in order to get multi-line strings.
+     In ES5, you would have to use newline escape characters('\\n') and concatenation symbols(+) in order to get multi-line strings.
 
      ```javascript
      console.log('This is string sentence 1\n' +
