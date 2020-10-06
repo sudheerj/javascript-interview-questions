@@ -8699,3 +8699,26 @@ Even though we used constant variables, the content of it is an object and the o
 ---
 
 **[⬆ Back to Top](#table-of-contents)**
+
+#### 53. What is the output of below code
+
+```javascript
+console.log('🙂' === '🙂');
+```
+
+- 1: false
+- 2: true
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode comparision of same emojies is equivalent to string comparison. Hence, the output is always true.
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
