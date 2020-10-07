@@ -4280,13 +4280,13 @@ Good luck with your interview 😊
       Let's see a simple example of TypeScript usage,
 
       ```typescript
-      function greeting(person: string) {
-         return "Hello, " + person;
+      function greeting(name: string): string {
+         return "Hello, " + name;
       }
 
       let user = "Sudheer";
 
-      document.body.innerHTML = greeting(user);
+      console.log(greeting(user));
       ```
 
       The greeting method allows only string type as argument.
