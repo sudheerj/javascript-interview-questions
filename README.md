@@ -7602,8 +7602,8 @@ console.log(Math.max());
 #### 16. What is the output of below code
 
 ```javascript
-console.log(10 === [10]);
-console.log(10 === [[[[[[[10]]]]]]]);
+console.log(10 == [10]);
+console.log(10 == [[[[[[[10]]]]]]]);
 ```
 
 - 1: True, True
