@@ -5296,7 +5296,7 @@ Good luck with your interview 😊
          expertiseStr = 'junior developer';
        }
 
-       return `${str0}${userExp}${str1}${experienceExp}{str3}`;
+       return ${str0}${userExp}${str1}${expertiseStr}${str2}${skillExp};
      }
 
      var output1 = myInfoTag`Mr/Ms. ${ user1 } is a/an ${ experience1 } in ${skill1}`;
