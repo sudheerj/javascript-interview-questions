@@ -5677,7 +5677,7 @@ Good luck with your interview 😊
      ```javascript
      try {
        if(withdraw > balance)
-       throw new Error('Oops! You don't have enough balance');
+       throw new Error("Oops! You don't have enough balance");
      } catch (e) {
        console.log(e.name + ': ' + e.message);
      }
