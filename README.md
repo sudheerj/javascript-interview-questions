@@ -7460,15 +7460,10 @@ Whereas the second statement follows the below order,
 #### 11. What is the output of below code in non-strict mode
 
 ```javascript
-const printNumbers = (first, second, first) => {
+function printNumbers(first, second, first) {
   console.log(first, second, first);
 }
 printNumbers(1, 2, 3);
-
-const printNumbersArrow = (first, second, first) => {
-  console.log(first, second, first);
-}
-printNumbersArrow(1, 2, 3);
 ```
 
 - 1: 1, 2, 3
