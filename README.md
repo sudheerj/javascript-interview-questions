@@ -441,6 +441,7 @@ Good luck with your interview 😊
 |417| [What are the built-in iterables](#what-are-the-built-in-iterables)|
 |418| [What are the differences between for...of and for...in statements](#what-are-the-differences-between-for...of-and-for...in-statements)|
 |419| [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties)|
+|420| [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-number.isnan)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7119,6 +7120,18 @@ Good luck with your interview 😊
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
+
+420. ### What is the difference between isNaN and Number.isNaN?
+
+     1. **isNaN**: The global function `isNaN` converts the argument to a Number and returns true if the resulting value is NaN.
+     2. **Number.isNaN**: This method does not convert the argument. But it returns true when the type is a Number and value is NaN.
+
+     Let's see the difference with an example,
+
+     ```javascript
+     isNaN(‘hello’);   // true
+     Number.isNaN('hello'); // false
+     ```
 
 ### Coding Exercise
 
