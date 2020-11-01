@@ -3873,6 +3873,7 @@ Good luck with your interview 😊
 223. ### What are primitive data types
 
      A primitive data type is data that has a primitive value (which has no properties or methods). There are 5 types of primitive data types.
+     
      1. string
      2. number
      3. boolean
@@ -8731,7 +8732,7 @@ Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode c
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 54. What is the output of below code
+#### 54. What is the output of below code?
 
 ```javascript
 console.log(typeof typeof typeof true);
@@ -8747,6 +8748,40 @@ console.log(typeof typeof typeof true);
 
 ##### Answer: 1
 The typeof operator on any primitive returns a string value. So even if you apply the chain of typeof operators on the return value, it is always string.
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 55. What is the output of below code?
+
+```javascript
+let zero = new Number(0);
+
+if (zero) {
+  console.log("If");
+} else {
+  console.log("Else");
+}
+```
+
+- 1: If
+- 2: Else
+- 3: NaN
+- 4: SyntaxError
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+1. The type of operator on new Number always returns object. i.e, typeof new Number(0) --> object. 
+2. Objects are always truthy in if block
+
+Hence the above code block always goes to if section.
+
 </p>
 
 </details>
