@@ -6196,7 +6196,8 @@ Good luck with your interview 😊
      console.log(element);
      ```
 
-     It prints the HTML element in the console
+     It prints the HTML element in the console,
+     
      ![Screenshot](images/console-html.png)
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -6205,14 +6206,13 @@ Good luck with your interview 😊
 
      The `console.table()` is used to display data in the console in a tabular format to visualize complex arrays or objects.
 
-     ```javascript
-     const users = [{ "name":"John", "id": 1, "city": "Delhi"},
-                   { "name":"Max", "id": 2, "city": "London"},
-                   { "name":"Rod", "id": 3, "city": "Paris"}];
+     ```js
+     const users = [{ "name":"John", "id": 1, "city": "Delhi"}, { "name":"Max", "id": 2, "city": "London"}, { "name":"Rod", "id": 3, "city": "Paris"} ];
      console.table(users);
      ```
 
-     The data visualized in a table format
+     The data visualized in a table format,
+     
      ![Screenshot](images/console-table.png)
      **Not:** Remember that `console.table()` is not supported in IE.
 
