@@ -25,7 +25,7 @@
 
 ## ‌ مشارکت در تالیف 
 
-برای مشارکت در تالیف کتاب به فایل Contribution-guide.md مراجعه کنید.
+برای اطلاع از نحوه مشارکت در ترجمه کتاب به فایل [Contribution-guide.md](https://github.com/Mariotek/javascript-persian-interview-questions/blob/master/Contribution-guide.md) مراجعه کنید.
 
 
 </div>
