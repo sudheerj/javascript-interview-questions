@@ -462,6 +462,7 @@ puppeteer:
 |419| [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties)|
 |420| [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-number.isnan)|
 
+
 1. ### What are the possible ways to create objects in JavaScript
 
    There are many ways to create objects in javascript as below
@@ -1020,16 +1021,16 @@ puppeteer:
 
     ```javascript
     let counter = 1;
-        switch(x) {
-          case 0: {
-            let name;
-            break;
-          }
-          case 1: {
-            let name; // No SyntaxError for redeclaration.
-            break;
-          }
-        }
+    switch(x) {
+      case 0: {
+        let name;
+        break;
+      }
+      case 1: {
+        let name; // No SyntaxError for redeclaration.
+        break;
+      }
+    }
     ```
     
     </span>
@@ -3111,6 +3112,8 @@ puppeteer:
 
      Yes, We can define properties for functions because functions are also objects.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      fn = function(x) {
         //Function code goes here
@@ -3122,6 +3125,8 @@ puppeteer:
        //Profile code goes here
      }
      ```
+     
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3129,12 +3134,16 @@ puppeteer:
 
      You can use `function.length` syntax to find the number of parameters expected by a function. Let's take an example of `sum` function to calculate the sum of numbers,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function sum(num1, num2, num3, num4){
          return num1 + num2 + num3 + num4;
      }
      sum.length // 4 is the number of parameters expected.
      ```
+     
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3148,6 +3157,8 @@ puppeteer:
 
      The break statement is used to "jump out" of a loop. i.e, It breaks the loop and continues executing the code after the loop.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      for (i = 0; i < 10; i++) {
        if (i === 5) { break; }
@@ -3155,7 +3166,11 @@ puppeteer:
      }
      ```
 
+     </span>
+
      The continue statement is used to "jump over" one iteration in the loop. i.e, It breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      for (i = 0; i < 10; i++) {
@@ -3164,11 +3179,15 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 144. ### What are js labels
 
      The label statement allows us to name loops and blocks in JavaScript. We can then use these labels to refer back to the code later. For example, the below code with labels avoids printing the numbers when they are same,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var i, j;
@@ -3189,6 +3208,8 @@ puppeteer:
      //   "i = 2, j = 0"
      //   "i = 2, j = 1"
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3224,6 +3245,8 @@ puppeteer:
 
      You can define them as an example,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var v1 = {};
      var v2 = "";
@@ -3234,11 +3257,15 @@ puppeteer:
      var v7 = function(){};
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 148. ### How do you define JSON arrays
 
      JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      "users":[
@@ -3248,16 +3275,22 @@ puppeteer:
      ]
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 149. ### How do you generate random integers
 
      You can use Math.random() with Math.floor() to return random integers. For example, if you want generate random integers between 1 to 10, the multiplication factor should be 10,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      Math.floor(Math.random() * 10) + 1;     // returns a random integer from 1 to 10
      Math.floor(Math.random() * 100) + 1;     // returns a random integer from 1 to 100
      ```
+
+     </span>
 
      **Note:** Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive)
 
@@ -3267,6 +3300,8 @@ puppeteer:
 
      Yes, you can create a proper random function to return a random number between min and max (both included)
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function randomInteger(min, max) {
        return Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -3274,6 +3309,8 @@ puppeteer:
      randomInteger(1, 100); // returns a random integer from 1 to 100
      randomInteger(1, 1000); // returns a random integer from 1 to 1000
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3299,15 +3336,23 @@ puppeteer:
 
      A regular expression is a sequence of characters that forms a search pattern. You can use this search pattern for searching data in a text. These can be used to perform all types of text search and text replace operations. Let's see the syntax format now,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      /pattern/modifiers;
      ```
 
+     </span>
+
      For example, the regular expression or search pattern with case-insensitive username would be,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      /John/i
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3316,17 +3361,25 @@ puppeteer:
      Regular Expressions has two string methods: search() and replace().
      The search() method uses an expression to search for a match, and returns the position of the match.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var msg = "Hello John";
      var n = msg.search(/John/i); // 6
      ```
 
+     </span>
+
      The replace() method is used to return a modified string where the pattern is replaced.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var msg = "Hello John";
      var n = msg.replace(/John/i, "Buttler"); // Hello Buttler
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3342,11 +3395,15 @@ puppeteer:
 
       Let's take an example of global modifier,
 
+     <span dir="ltr" align="left">
+
       ```javascript
       var text = "Learn JS one by one";
       var pattern = /one/g;
       var result = text.match(pattern); // one,one
       ```
+
+      </span>
 
       **[⬆ فهرست](#فهرست)**
 
@@ -3375,11 +3432,15 @@ puppeteer:
 
      RegExp object is a regular expression object with predefined properties and methods. Let's see the simple usage of RegExp object,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var regexp = new RegExp('\\w+');
      console.log(regexp);
      // expected output: /\w+/
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3387,10 +3448,14 @@ puppeteer:
 
      You can use the test() method of regular expression in order to search a string for a pattern, and return true or false depending on the result.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var pattern = /you/;
      console.log(pattern.test("How are you?")); //true
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3398,10 +3463,14 @@ puppeteer:
 
      The purpose of exec method is similar to test method but it executes a search for a match in a specified string and returns a result array, or null instead of returning true/false.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var pattern = /you/;
      console.log(pattern.exec("How are you?")); //["you", index: 8, input: "How are you?", groups: undefined]
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3410,15 +3479,23 @@ puppeteer:
      You can change inline style or classname of a HTML element using javascript
      1. **Using style property:** You can modify inline style using style property
 
+     <span dir="ltr" align="left">
+
      ```javascript
      document.getElementById("title").style.fontSize = "30px";
      ```
 
+     </span>
+
      1. **Using ClassName property:** It is easy to modify element class using className property
+
+     <span dir="ltr" align="left">
 
      ```javascript
       document.getElementById("title").style.className = "custom-title";
-      ```
+     ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3434,6 +3511,8 @@ puppeteer:
      For example, in the below function a debugger statement has been inserted. So
      execution is paused at the debugger statement just like a breakpoint in the script source.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function getProfile() {
      // code goes here
@@ -3441,6 +3520,8 @@ puppeteer:
      // code goes here
      }
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3454,15 +3535,21 @@ puppeteer:
 
      No, you cannot use the reserved words as variables, labels, object or function names. Let's see one simple example,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var else = "hello"; // Uncaught SyntaxError: Unexpected token else
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
 166. ### How do you detect a mobile browser
 
      You can use regex which returns a true or false value depending on whether or not the user is browsing with a mobile.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      window.mobilecheck = function() {
@@ -3472,11 +3559,15 @@ puppeteer:
      };
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 167. ### How do you detect a mobile browser without regexp
 
      You can detect mobile browsers by simply running through a list of devices and checking if the useragent matches anything. This is an alternative solution for RegExp usage,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function detectmob() {
@@ -3496,11 +3587,15 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 168. ### How do you get the image width and height using JS
 
      You can programmatically get the image and check the dimensions(width and height) using Javascript.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var img = new Image();
@@ -3510,15 +3605,18 @@ puppeteer:
      img.src = 'http://www.google.com/intl/en_ALL/images/logo.gif';
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 169. ### How do you make synchronous HTTP request
 
      Browsers provide an XMLHttpRequest object which can be used to make synchronous HTTP requests from JavaScript
 
+     <span dir="ltr" align="left">
+
      ```javascript
-     function httpGet(theUrl)
-     {
+     function httpGet(theUrl) {
          var xmlHttpReq = new XMLHttpRequest();
          xmlHttpReq.open( "GET", theUrl, false ); // false for synchronous request
          xmlHttpReq.send( null );
@@ -3526,11 +3624,15 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 170. ### How do you make asynchronous HTTP request
 
      Browsers provide an XMLHttpRequest object which can be used to make asynchronous HTTP requests from JavaScript by passing the 3rd parameter as true.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function httpGetAsync(theUrl, callback)
@@ -3545,21 +3647,29 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 171. ### How do you convert date to another timezone in javascript
 
      You can use the toLocaleString() method to convert dates in one timezone to another. For example, let's convert current date to British English timezone as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      console.log(event.toLocaleString('en-GB', { timeZone: 'UTC' })); //29/06/2019, 09:56:00
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
 172. ### What are the properties used to get size of window
 
      You can use innerWidth, innerHeight, clientWidth, clientHeight properties of windows, document element and document body objects to find the size of a window. Let's use them combination of these properties to calculate the size of a window or document,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var width = window.innerWidth
@@ -3571,22 +3681,30 @@ puppeteer:
      || document.body.clientHeight;
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 173. ### What is a conditional operator in javascript
 
      The conditional (ternary) operator is the only JavaScript operator that takes three operands which acts as a shortcut for if statements.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var isAuthenticated = false;
      console.log(isAuthenticated ? 'Hello, welcome' : 'Sorry, you are not authenticated'); //Sorry, you are not authenticated
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
 174. ### Can you apply chaining on conditional operator
 
      Yes, you can apply chaining on conditional operators similar to if … else if … else if … else chain. The syntax is going to be as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function traceValue(someParam) {
@@ -3606,6 +3724,8 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 175. ### What are the ways to execute javascript after page load
@@ -3613,21 +3733,33 @@ puppeteer:
      You can execute javascript after page load in many different ways,
      1. **window.onload:**
 
+     <span dir="ltr" align="left">
+
      ```javascript
      window.onload = function ...
      ```
 
+     </span>
+
      1. **document.onload:**
+
+     <span dir="ltr" align="left">
 
      ```javascript
      document.onload = function ...
      ```
 
+     </span>
+
      1. **body onload:**
+
+     <span dir="ltr" align="left">
 
      ```javascript
      <body onload="script();">
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3635,16 +3767,22 @@ puppeteer:
 
      The `__proto__` object is the actual object that is used in the lookup chain to resolve methods, etc. Whereas `prototype` is the object that is used to build `__proto__` when you create an object with new
 
+     <span dir="ltr" align="left">
+
      ```javascript
      ( new Employee ).__proto__ === Employee.prototype;
      ( new Employee ).prototype === undefined;
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
 177. ### Give an example where do you really need semicolon
 
      It is recommended to use semicolons after every statement in JavaScript. For example, in the below case it throws an error ".. is not a function" at runtime due to missing semicolon.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      // define a function
@@ -3658,7 +3796,11 @@ puppeteer:
      })();
      ```
 
+     </span>
+
      and it will be interpreted as
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var fn = function () {
@@ -3668,6 +3810,8 @@ puppeteer:
      })();
      ```
 
+     </span>
+
      In this case, we are passing the second function as an argument to the first function and then trying to call the result of the first function call as a function. Hence, the second function will fail with a "... is not a function" error at runtime.
 
      **[⬆ فهرست](#فهرست)**
@@ -3675,6 +3819,8 @@ puppeteer:
 178. ### What is a freeze method
 
      The **freeze()** method is used to freeze an object. Freezing an object does not allow adding new properties to an object,prevents from removing and prevents changing the enumerability, configurability, or writability of existing properties. i.e, It returns the passed object and does not create a frozen copy.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const obj = {
@@ -3686,6 +3832,8 @@ puppeteer:
 
      console.log(obj.prop); //100
      ```
+
+     </span>
 
      **Note:** It causes a TypeError if the argument passed is not an object.
 
@@ -3710,6 +3858,8 @@ puppeteer:
 
      You can use navigator object to detect a browser language preference as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var language = navigator.languages && navigator.languages[0] || // Chrome / Firefox
                     navigator.language ||   // All browsers
@@ -3718,11 +3868,15 @@ puppeteer:
      console.log(language);
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 182. ### How to convert string to title case with javascript
 
      Title case means that the first letter of each word is capitalized. You can convert a string to title case using the below function,
+
+     <span dir="ltr" align="left">
 
      ```javascript
          function toTitleCase(str) {
@@ -3736,13 +3890,17 @@ puppeteer:
          toTitleCase("good morning john"); // Good Morning John
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 183. ### How do you detect javascript disabled in the page
 
      You can use the `<noscript>` tag to detect javascript disabled or not. The code block inside `<noscript>` gets executed when JavaScript is disabled, and is typically used to display alternative content when the page generated in JavaScript.
 
-     ```javascript
+     <span dir="ltr" align="left">
+
+     ```html
      <script type="javascript">
          // JS related code goes here
      </script>
@@ -3750,6 +3908,8 @@ puppeteer:
          <a href="next_page.html?noJS=true">JavaScript is disabled in the page. Please click Next Page</a>
      </noscript>
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3769,27 +3929,35 @@ puppeteer:
 
      Rest parameter is an improved way to handle function parameters which allows us to represent an indefinite number of arguments as an array. The syntax would be as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function f(a, b, ...theArgs) {
        // ...
      }
      ```
 
+     </span>
+
      For example, let's take a sum example to calculate on dynamic number of parameters,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function total(…args){
-     let sum = 0;
-     for(let i of args){
-     sum+=i;
-     }
-     return sum;
+          let sum = 0;
+          for(let i of args){
+               sum+=i;
+          }
+          return sum;
      }
      console.log(fun(1,2)); //3
      console.log(fun(1,2,3)); //6
      console.log(fun(1,2,3,4)); //13
      console.log(fun(1,2,3,4,5)); //15
      ```
+
+     </span>
 
      **Note:** Rest parameter is added in ES2015 or ES6
 
@@ -3799,12 +3967,16 @@ puppeteer:
 
      The rest parameter should be the last argument, as its job is to collect all the remaining arguments into an array. For example, if you define a function like below it doesn’t make any sense and will throw an error.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function someFunc(a,…b,c){
-     //You code goes here
-     return;
+          //You code goes here
+          return;
      }
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3825,6 +3997,8 @@ puppeteer:
 
      Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. Let's take an example to see this behavior,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function calculateSum(x, y, z) {
        return x + y + z;
@@ -3834,6 +4008,8 @@ puppeteer:
 
      console.log(calculateSum(...numbers)); // 6
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3845,6 +4021,8 @@ puppeteer:
      3. If all its data properties are non-writable.
      The usage is going to be as follows,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const object = {
         property: 'Welcome JS world'
@@ -3853,17 +4031,23 @@ puppeteer:
      console.log(Object.isFrozen(object));
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 190. ### How do you determine two values same or not using object
 
      The Object.is() method determines whether two values are the same value. For example, the usage with different types of values would be,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      Object.is('hello', 'hello');     // true
      Object.is(window, window);   // true
      Object.is([], []) // false
      ```
+
+     </span>
 
      Two values are the same if one of the following holds:
      1. both undefined
@@ -3893,11 +4077,17 @@ puppeteer:
 
      You can use the Object.assign() method which is used to copy the values and properties from one or more source objects to a target object.  It returns the target object which has properties and values copied from the target object. The syntax would be as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      Object.assign(target, ...sources)
      ```
 
+     </span>
+
      Let's take example with one source and one target object,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const target = { a: 1, b: 2 };
@@ -3909,6 +4099,8 @@ puppeteer:
 
      console.log(returnedTarget); // { a: 1, b: 3, c: 4 }
      ```
+
+     </span>
 
      As observed in the above code, there is a common property(`b`) from source to target so it's value has been overwritten.
 
@@ -3927,11 +4119,17 @@ puppeteer:
 
      The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc. The syntax would be as follows,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var p = new Proxy(target, handler);
      ```
 
+     </span>
+
      Let's take an example of proxy object,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var handler = {
@@ -3950,6 +4148,8 @@ puppeteer:
      console.log('c' in p, p.c); // false, 100
      ```
 
+     </span>
+
      In the above code, it uses `get` handler which define the behavior of the proxy when an operation is performed on it
 
      **[⬆ فهرست](#فهرست)**
@@ -3957,6 +4157,8 @@ puppeteer:
 195. ### What is the purpose of seal method
 
      The **Object.seal()** method is used to seal an object, by preventing new properties from being added to it and marking all existing properties as non-configurable. But values of present properties can still be changed as long as they are writable. Let's see the below example to understand more about seal() method
+
+     <span dir="ltr" align="left">
 
      ```javascript
       const object = {
@@ -3968,6 +4170,8 @@ puppeteer:
       delete object.property; // You cannot delete when sealed
       console.log(object.property); //Welcome to object world
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3993,6 +4197,8 @@ puppeteer:
      3. If it is not removable (but not necessarily non-writable).
      Let's see it in the action
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const object = {
      property: 'Hello, Good morning'
@@ -4003,11 +4209,15 @@ puppeteer:
      console.log(Object.isSealed(object));      // checking whether the object is sealed or not
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 199. ### How do you get enumerable key and value pairs
 
      The Object.entries() method is used to return an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop. Let's see the functionality of object.entries() method in an example,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const object = {
@@ -4021,6 +4231,8 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **Note:** The order is not guaranteed as object defined.
 
      **[⬆ فهرست](#فهرست)**
@@ -4028,6 +4240,8 @@ puppeteer:
 200. ### What is the main difference between Object.values and Object.entries method
 
      The Object.values() method's behavior is similar to Object.entries() method but it returns an array of values instead [key,value] pairs.
+
+     <span dir="ltr" align="left">
 
      ```javascript
       const object = {
@@ -4041,11 +4255,15 @@ puppeteer:
       }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 201. ### How can you get the list of keys of any object
 
      You can use the `Object.keys()` method which is used to return an array of a given object's own property names, in the same order as we get with a normal loop. For example, you can get the keys of a user object,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const user = {
@@ -4057,11 +4275,15 @@ puppeteer:
      console.log(Object.keys(user)); //['name', 'gender', 'age']
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 202. ### How do you create an object with prototype
 
      The Object.create() method is used to create a new object with the specified prototype object and properties. i.e, It uses an existing object as the prototype of the newly created object. It returns a new object with the specified prototype object and properties.
+
+     <span dir="ltr" align="left">
 
      ```javascript
       const user = {
@@ -4078,17 +4300,25 @@ puppeteer:
       admin.printInfo(); // My name is Nick
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 203. ### What is a WeakSet
 
      WeakSet is used to store a collection of weakly(weak references) held objects. The syntax would be as follows,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      new WeakSet([iterable]);
      ```
 
+     </span>
+
      Let's see the below example to explain it's behavior,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var ws = new WeakSet();
@@ -4098,6 +4328,8 @@ puppeteer:
      ws.delete(user); // removes user from the set
      ws.has(user);    // false, user has been removed
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4121,6 +4353,8 @@ puppeteer:
      4. length(): It returns the length of weakSetObject
      Let's see the functionality of all the above methods in an example,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var weakSetObject = new WeakSet();
      var firstObject = {};
@@ -4133,17 +4367,25 @@ puppeteer:
      weakSetObject.delete(secondObject);
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 206. ### What is a WeakMap
 
      The WeakMap object is a collection of key/value pairs in which the keys are weakly referenced. In this case, keys must be objects and the values can be arbitrary values. The syntax is looking like as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      new WeakMap([iterable])
      ```
 
+     </span>
+
      Let's see the below example to explain it's behavior,
+
+     <span dir="ltr" align="left">
 
      ```javascript
       var ws = new WeakMap();
@@ -4153,6 +4395,8 @@ puppeteer:
       ws.delete(user); // removes user from the map
       ws.has(user);    // false, user has been removed
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4176,6 +4420,8 @@ puppeteer:
      4. get(key): Returns the value associated to the key, or undefined if there is none.
      Let's see the functionality of all the above methods in an example,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var weakMapObject = new WeakMap();
      var firstObject = {};
@@ -4188,11 +4434,15 @@ puppeteer:
      weakMapObject.delete(secondObject);
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 209. ### What is the purpose of uneval
 
      The uneval() is an inbuilt function which is used to create a string representation of the source code of an Object. It is a top-level function and is not associated with any object. Let's see the below example to know more about it's functionality,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var a = 1;
@@ -4200,11 +4450,15 @@ puppeteer:
      uneval(function user() {}); // returns "(function user(){})"
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 210. ### How do you encode an URL
 
      The encodeURI() function is used to encode complete URI which has special characters except (, / ? : @ & = + $ #) characters.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var uri = 'https://mozilla.org/?x=шеллы';
@@ -4212,11 +4466,15 @@ puppeteer:
      console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 211. ### How do you decode an URL
 
      The decodeURI() function is used to decode a Uniform Resource Identifier (URI) previously created by encodeURI().
+
+     <span dir="ltr" align="left">
 
      ```javascript
       var uri = 'https://mozilla.org/?x=шеллы';
@@ -4229,15 +4487,21 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 212. ### How do you print the contents of web page
 
      The window object provided a print() method which is used to print the contents of the current window. It opens a Print dialog box which lets you choose between various printing options. Let's see the usage of print method in an example,
 
+     <span dir="ltr" align="left">
+
      ```html
-        <input type="button" value="Print" onclick="window.print()" />
+     <input type="button" value="Print" onclick="window.print()" />
      ```
+
+     </span>
 
      **Note:** In most browsers, it will block while the print dialog is open.
 
@@ -4247,17 +4511,23 @@ puppeteer:
 
      The `uneval` function returns the source of a given object; whereas the `eval` function does the opposite, by evaluating that source code in a different memory area. Let's see an example to clarify the difference,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var msg = uneval(function greeting() { return 'Hello, Good morning'; });
      var greeting = eval(msg);
      greeting(); // returns "Hello, Good morning"
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 214. ### What is an anonymous function
 
      An anonymous function is a function without a name! Anonymous functions are commonly assigned to a variable name or used as a callback function. The syntax would be as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function (optionalParameters) {
@@ -4273,7 +4543,11 @@ puppeteer:
      });
      ```
 
+     </span>
+
      Let's see the above anonymous function in an example,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var x = function (a, b) {return a * b};
@@ -4281,11 +4555,15 @@ puppeteer:
      console.log(z); // 50
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 215. ### What is the precedence order between local and global variables
 
      A local variable takes precedence over a global variable with the same name. Let's see this behavior in an example.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var msg = "Good morning";
@@ -4296,11 +4574,15 @@ puppeteer:
      greeting();
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 216. ### What are javascript accessors
 
      ECMAScript 5 introduced javascript object accessors or computed properties through getters and setters. Getters uses the `get` keyword whereas Setters uses the `set` keyword.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var user = {
@@ -4319,11 +4601,15 @@ puppeteer:
      console.log(user.lang); // setter used to set lang as fr
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 217. ### How do you define property on Object constructor
 
      The Object.defineProperty() static method is used to define a new property directly on an object, or modify an existing property on an object, and returns the object. Let's see an example to know how to define property,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const newObject = {};
@@ -4338,6 +4624,8 @@ puppeteer:
      newObject.newProperty = 200; // It throws an error in strict mode due to writable setting
 
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4361,6 +4649,8 @@ puppeteer:
 220. ### Can I add getters and setters using defineProperty method
 
      Yes, You can use the `Object.defineProperty()` method to add Getters and Setters. For example, the below counter object uses increment, decrement, add and subtract properties,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var obj = {counter : 0};
@@ -4387,11 +4677,15 @@ puppeteer:
      console.log(obj.decrement); //5
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 221. ### What is the purpose of switch-case
 
      The switch case statement in JavaScript is used for decision making purposes. In a few cases, using the switch case statement is going to be more convenient than if-else statements. The syntax would be as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      switch (expression)
@@ -4411,6 +4705,8 @@ puppeteer:
              statementDefault;
      }
      ```
+
+     </span>
 
      The above multi-way branch statement provides an easy way to dispatch execution to different parts of code based on the value of the expression.
 
@@ -4444,21 +4740,33 @@ puppeteer:
      There are 3 possible ways for accessing the property of an object.
      1. **Dot notation:** It uses dot for accessing the properties
 
+     <span dir="ltr" align="left">
+
      ```javascript
      objectName.property
      ```
 
+     </span>
+
      1. **Square brackets notation:** It uses square brackets for property access
+
+     <span dir="ltr" align="left">
 
      ```javascript
      objectName["property"]
      ```
 
+     </span>
+
      1. **Expression notation:** It uses expression in the square brackets
+
+     <span dir="ltr" align="left">
 
      ```javascript
      objectName[expression]
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4470,6 +4778,8 @@ puppeteer:
      3. Do not check the number of arguments received.
      i.e, The below function follows the above rules,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function functionName(parameter1, parameter2, parameter3) {
        console.log(parameter1); // 1
@@ -4477,11 +4787,15 @@ puppeteer:
      functionName(1);
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 226. ### What is an error object
 
      An error object is a built in error object that provides error information when an error occurs. It has two properties: name and message. For example, the below function logs error details,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      try {
@@ -4492,11 +4806,15 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 227. ### When you get a syntax error
 
      A SyntaxError is thrown if you try to evaluate code with a syntax error. For example, the below missing quote for the function parameter throws a syntax error
+
+     <span dir="ltr" align="left">
 
      ```javascript
      try {
@@ -4506,6 +4824,8 @@ puppeteer:
        console.log(err.name);
      }
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4556,11 +4876,15 @@ puppeteer:
 
      You can use the `Intl.DateTimeFormat` object which is a constructor for objects that enable language-sensitive date and time formatting. Let's see this behavior with an example,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var date = new Date(Date.UTC(2019, 07, 07, 3, 0, 0));
      console.log(new Intl.DateTimeFormat('en-GB').format(date)); // 07/08/2019
      console.log(new Intl.DateTimeFormat('en-AU').format(date)); // 07/08/2019
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4580,6 +4904,8 @@ puppeteer:
 
      Let's demonstrate synchronous iteration with an array as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const iterable = ['one', 'two', 'three'];
      const iterator = iterable[Symbol.iterator]();
@@ -4588,6 +4914,8 @@ puppeteer:
      console.log(iterator.next());  // { value: 'three', done: false }
      console.log(iterator.next());  // { value: 'undefined, done: true }
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4606,6 +4934,8 @@ puppeteer:
 
      Let's take an example and it's state representation in a diagram format
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function hungry() {
         eatFruits();
@@ -4617,6 +4947,8 @@ puppeteer:
      // Invoke the `hungry` function
      hungry();
      ```
+
+     </span>
 
      The above code  processed in a call stack as  below,
      1. Add the `hungry()` function to the call stack list and execute the code.
@@ -4636,6 +4968,8 @@ puppeteer:
 
      A decorator is an expression that evaluates to a function and that takes the target, name, and decorator descriptor as arguments. Also, it optionally returns a decorator descriptor to install on the target object. Let's define admin decorator for user class at design time,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function admin(isAdmin) {
         return function(target) {
@@ -4653,6 +4987,8 @@ puppeteer:
       }
       console.log(User.isAdmin); //false
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4672,6 +5008,8 @@ puppeteer:
 
      The unary(+) operator is used to convert a variable to a number.If the variable cannot be converted, it will still become a number but with the value NaN. Let's see this behavior in an action.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var x = "100";
      var y = + x;
@@ -4682,11 +5020,15 @@ puppeteer:
      console.log(typeof a, typeof b, b); // string, number, NaN
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 242. ### How do you sort elements in an array
 
      The sort() method is used to sort the elements of an array in place and returns the sorted array. The example usage would be as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var months = ["Aug", "Sep", "Jan", "June"];
@@ -4694,11 +5036,15 @@ puppeteer:
      console.log(months); //  ["Aug", "Jan", "June", "Sep"]
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 243. ### What is the purpose of compareFunction while sorting arrays
 
      The compareFunction is used to define the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value. Let's take an example to see the usage of compareFunction,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      let numbers = [1, 2, 5, 3, 4];
@@ -4706,11 +5052,15 @@ puppeteer:
      console.log(numbers); // [5, 4, 3, 2, 1]
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 244. ### How do you reversing an array
 
      You can use the reverse() method to reverse the elements in an array. This method is useful to sort an array in descending order. Let's see the usage of reverse() method in an example,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      let numbers = [1, 2, 5, 3, 4];
@@ -4719,11 +5069,15 @@ puppeteer:
      console.log(numbers); // [1, 2, 3, 4 ,5]
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 245. ### How do you find min and max value in an array
 
      You can use `Math.min` and `Math.max` methods on array variables to find the minimum and maximum elements within an array. Let's create two functions to find the min and max value with in an array,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var marks = [50, 20, 70, 60, 45, 30];
@@ -4738,11 +5092,15 @@ puppeteer:
      console.log(findMax(marks));
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 246. ### How do you find min and max values without Math functions
 
      You can write functions which loop through an array comparing each value with the lowest value or highest value to find the min and max values. Let's create those functions to find min and max values,
+
+     <span dir="ltr" align="left">
 
      ```javascript
       var marks = [50, 20, 70, 60, 45, 30];
@@ -4772,16 +5130,22 @@ puppeteer:
       console.log(findMax(marks));
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 247. ### What is an empty statement and purpose of it
 
      The empty statement is a semicolon (;) indicating that no statement will be executed, even if JavaScript syntax requires one. Since there is no action with an empty statement you might think that it's usage is quite less, but the empty statement is occasionally useful when you want to create a loop that has an empty body. For example, you can initialize an array with zero values as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      // Initialize an array a
      for(int i=0; i < a.length; a[i++] = 0) ;
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4789,16 +5153,22 @@ puppeteer:
 
      You can use the `import.meta` object which is a meta-property exposing context-specific meta data to a JavaScript module. It contains information about the current module, such as the module's URL. In browsers, you might get different meta data than NodeJS.
 
-     ```javascript
+     <span dir="ltr" align="left">
+
+     ```html
      <script type="module" src="welcome-module.js"></script>
      console.log(import.meta); // { url: "file:///home/user/welcome-module.js" }
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
 249. ### What is a comma operator
 
      The comma operator is used to evaluate each of its operands from left to right and returns the value of the last operand. This is totally different from comma usage within arrays, objects, and function arguments and parameters. For example, the usage for numeric expressions would be as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var x = 1;
@@ -4807,17 +5177,25 @@ puppeteer:
      console.log(x); // 2
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 250. ### What is the advantage of a comma operator
 
      It is normally used to include multiple expressions in a location that requires a single expression. One of the common usages of this comma operator is to supply multiple parameters in a `for` loop. For example, the below for loop uses multiple expressions in a single location using comma operator,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      for (var a = 0, b =10; a <= 10; a++, b--)
      ```
 
+     </span>
+
      You can also use the comma operator in a return statement where it processes before returning.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function myFunction() {
@@ -4826,15 +5204,21 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 251. ### What is typescript
 
       TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
 
+      <span dir="ltr" align="left">
+
       ```bash
       npm install -g typescript
       ```
+
+      </span>
 
       Let's see a simple example of TypeScript usage,
 
@@ -4879,17 +5263,23 @@ puppeteer:
 
      An object initializer is an expression that describes the initialization of an Object. The syntax for this expression is represented as a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({}). This is also known as literal notation. It is one of the ways to create an object.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var initObject = {a: 'John', b: 50, c: {}};
 
      console.log(initObject.a); // John
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 255. ### What is a constructor method
 
      The constructor method is a special method for creating and initializing an object created within a class. If you do not specify a constructor method, a default constructor is used. The example usage of constructor would be as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      class Employee {
@@ -4903,11 +5293,15 @@ puppeteer:
      console.log(employeeObject.name); // John
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 256. ### What happens if you write constructor more than once in a class
 
      The "constructor" in a class is a special method and it should be defined only once in a class. i.e, If you write a constructor method more than once in a class it will throw a `SyntaxError` error.
+
+     <span dir="ltr" align="left">
 
      ```javascript
       class Employee {
@@ -4924,11 +5318,15 @@ puppeteer:
       console.log(employeeObject.name);
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 257. ### How do you call the constructor of a parent class
 
      You can use the `super` keyword to call the constructor of a parent class. Remember that `super()` must be called before using 'this' reference. Otherwise it will cause a reference error. Let's the usage of it,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      class Square extends Rectangle {
@@ -4947,11 +5345,15 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 258. ### How do you get the prototype of an object
 
      You can use the `Object.getPrototypeOf(obj)` method to return the prototype of the specified object. i.e. The value of the internal `prototype` property. If there are no inherited properties then `null` value is returned.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const newPrototype = {};
@@ -4960,11 +5362,15 @@ puppeteer:
      console.log(Object.getPrototypeOf(newObject) === newPrototype); // true
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 259. ### What happens If I pass string type for getPrototype method
 
      In ES5, it will throw a TypeError exception if the obj parameter isn't an object. Whereas in ES2015, the parameter will be coerced to an `Object`.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      // ES5
@@ -4973,16 +5379,22 @@ puppeteer:
      Object.getPrototypeOf('James'); // String.prototype
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 260. ### How do you set prototype of one object to another
 
      You can use the `Object.setPrototypeOf()` method that sets the prototype (i.e., the internal `Prototype` property) of a specified object to another object or null. For example, if you want to set prototype of a square object to rectangle object would be as follows,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      Object.setPrototypeOf(Square.prototype, Rectangle.prototype);
      Object.setPrototypeOf({}, null);
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4990,10 +5402,14 @@ puppeteer:
 
      The `Object.isExtensible()` method is used to determine if an object is extendable or not. i.e, Whether it can have new properties added to it or not.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const newObject = {};
      console.log(Object.isExtensible(newObject)); //true
      ```
+
+     </span>
 
      **Note:** By default, all the objects are extendable. i.e, The new properties can be added or modified.
 
@@ -5002,6 +5418,8 @@ puppeteer:
 262. ### How do you prevent an object to extend
 
      The `Object.preventExtensions()` method is used to prevent new properties from ever being added to an object. In other words, it prevents future extensions to the object. Let's see the usage of this property,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const newObject = {};
@@ -5016,6 +5434,8 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 263. ### What are the different ways to make an object non-extensible
@@ -5024,6 +5444,8 @@ puppeteer:
      1. Object.preventExtensions
      2. Object.seal
      3. Object.freeze
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var newObject = {};
@@ -5038,11 +5460,15 @@ puppeteer:
      Object.isExtensible(frozenObject); // false
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 264. ### How do you define multiple properties on an object
 
      The `Object.defineProperties()` method is used to define new or modify existing properties directly on an object and returning the object. Let's define multiple properties on an empty object,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const newObject = {};
@@ -5055,6 +5481,8 @@ puppeteer:
        newProperty2: {}
      });
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5069,17 +5497,25 @@ puppeteer:
      Obfuscation is the deliberate act of creating obfuscated javascript code(i.e, source or machine code) that is difficult for humans to understand. It is something similar to encryption, but a machine can understand the code and execute it.
      Let's see the below function before Obfuscation,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function greeting() {
         console.log('Hello, welcome to JS world');
      }
      ```
 
+     </span>
+
      And after the code Obfuscation, it would be appeared as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('2 1(){0.3(\'4, 7 6 5 8\')}',9,9,'console|greeting|function|log|Hello|JS|to|welcome|world'.split('|'),0,{}))
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5135,6 +5571,8 @@ puppeteer:
      JavaScript can be used to perform HTML form validation. For example, if the form field is empty, the function needs to notify, and return false, to prevent the form being submitted.
      Lets' perform user login in an html form,
 
+     <span dir="ltr" align="left">
+
      ```html
      <form name="myForm" onsubmit="return validateForm()" method="post">
      User name: <input type="text" name="uname">
@@ -5142,7 +5580,11 @@ puppeteer:
      </form>
      ```
 
+     </span>
+
      And the validation on user login is below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function validateForm() {
@@ -5154,11 +5596,15 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 273. ### How do you perform form validation without javascript
 
      You can perform HTML form validation automatically without using javascript. The validation enabled by applying the `required` attribute to prevent form submission when the input is empty.
+
+     <span dir="ltr" align="left">
 
      ```html
      <form method="post">
@@ -5166,6 +5612,8 @@ puppeteer:
        <input type="submit" value="Submit">
      </form>
      ```
+
+     </span>
 
      **Note:** Automatic form validation does not work in Internet Explorer 9 or earlier.
 
@@ -5178,6 +5626,8 @@ puppeteer:
      2. setCustomValidity(): It is used to set the validationMessage property of an input element.
      Let's take an user login form with DOM validations
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function myFunction() {
        var userName = document.getElementById("uname");
@@ -5188,6 +5638,8 @@ puppeteer:
        }
      }
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5221,10 +5673,16 @@ puppeteer:
 
      If an element's value is greater than its max attribute then rangeOverflow property returns true. For example, the below form submission throws an error if the value is more than 100,
 
+     <span dir="ltr" align="left">
+
      ```html
      <input id="age" type="number" max="100">
      <button onclick="myOverflowFunction()">OK</button>
      ```
+
+     </span>
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function myOverflowFunction() {
@@ -5234,15 +5692,21 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 278. ### Is enums feature available in javascript
 
      No, javascript does not natively support enums. But there are different kinds of solutions to simulate them even though they may not provide exact equivalents. For example, you can use freeze or seal on object,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var DaysEnum = Object.freeze({"monday":1, "tuesday":2, "wednesday":3, ...})
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5250,17 +5714,23 @@ puppeteer:
 
      An enum is a type restricting variables to one value from a predefined set of constants. JavaScript has no enums but typescript provides built-in enum support.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      enum Color {
       RED, GREEN, BLUE
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 280. ### How do you list all properties of an object
 
      You can use the `Object.getOwnPropertyNames()` method which returns an array of all properties found directly in a given object. Let's the usage of it in an example,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const newObject = {
@@ -5272,11 +5742,15 @@ puppeteer:
      console.log(Object.getOwnPropertyNames(newObject));  ["a", "b", "c"]
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 281. ### How do you get property descriptors of an object
 
      You can use the `Object.getOwnPropertyDescriptors()` method which returns all own property descriptors of a given object. The example usage of this method is below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
       const newObject = {
@@ -5290,6 +5764,8 @@ puppeteer:
      console.log(descriptorsObject.a.enumerable); //true
      console.log(descriptorsObject.a.value); // 1
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5309,11 +5785,17 @@ puppeteer:
 
      The `extends` keyword is used in class declarations/expressions to create a class which is a child of another class. It can be used to subclass custom classes as well as built-in objects. The syntax would be as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      class ChildClass extends ParentClass { ... }
      ```
 
+     </span>
+
      Let's take an example of Square subclass from Polygon parent class,
+
+     <span dir="ltr" align="left">
 
      ```javascript
       class Square extends Rectangle {
@@ -5332,21 +5814,29 @@ puppeteer:
       }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 284. ### How do I modify the url without reloading the page
 
      The `window.location.url` property will be helpful to modify the url but it reloads the page. HTML5 introduced the `history.pushState()` and `history.replaceState()` methods, which allow you to add and modify history entries, respectively. For example, you can use pushState as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      window.history.pushState('page2', 'Title', '/page2.html');
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
 285. ### How do you check whether an array includes a particular value or not
 
      The `Array#includes()` method is used to determine whether an array includes a particular value among its entries by returning either true or false. Let's see an example to find an element(numeric and string) within an array.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var numericArray = [1, 2, 3, 4];
@@ -5356,19 +5846,28 @@ puppeteer:
      console.log(stringArray.includes('blue')); //true
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 286. ### How do you compare scalar arrays
 
      You can use length and every method of arrays to compare two scalar(compared directly using ===) arrays. The combination of these expressions can give the expected result,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const arrayFirst = [1,2,3,4,5];
      const arraySecond = [1,2,3,4,5];
      console.log(arrayFirst.length === arraySecond.length && arrayFirst.every((value, index) => value === arraySecond[index])); // true
-     ````
+     ```
+
+     </span>
+
 
      If you would like to compare arrays irrespective of order then you should sort them before,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const arrayFirst = [2,3,1,4,5];
@@ -5376,11 +5875,15 @@ puppeteer:
      console.log(arrayFirst.length === arraySecond.length && arrayFirst.sort().every((value, index) => value === arraySecond[index])); //true
      ````
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 287. ### How to get the value from get parameters
 
      The `new URL()` object accepts the url string and `searchParams` property of this object can be used to access the get parameters. Remember that you may need to use polyfill or `window.location` to access the URL in older browsers(including IE).
+
+     <span dir="ltr" align="left">
 
      ```javascript
      let urlString = "http://www.some-domain.com/about.html?x=1&y=2&z=3"; //window.location.href
@@ -5389,11 +5892,15 @@ puppeteer:
      console.log(parameterZ); // 3
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 288. ### How do you print numbers with commas as thousand separators
 
      You can use the `Number.prototype.toLocaleString()` method which returns a string with a language-sensitive representation such as thousand separator,currency etc of this number.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function convertToThousandFormat(x){
@@ -5402,6 +5909,8 @@ puppeteer:
 
      console.log(convertToThousandFormat(12345.6789));
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5422,6 +5931,8 @@ puppeteer:
 
      JavaScript doesn’t support namespace by default. So if you create any element(function, method, object, variable) then it becomes global and pollutes the global namespace. Let's take an example of defining two functions without any namespace,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function func1() {
          console.log("This is a first definition");
@@ -5433,6 +5944,8 @@ puppeteer:
      func1(); // This is a second definition
      ```
 
+     </span>
+
      It always calls the second function definition. In this case, namespace will solve the name collision problem.
 
      **[⬆ فهرست](#فهرست)**
@@ -5441,6 +5954,8 @@ puppeteer:
 
      Even though JavaScript lacks namespaces, we can use Objects , IIFE to create namespaces.
      1. **Using Object Literal Notation:** Let's wrap variables and functions inside an Object literal which acts as a namespace. After that you can access them using object notation
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var namespaceOne = {
@@ -5457,7 +5972,11 @@ puppeteer:
      namespaceTwo.func1(); // This is a second definition
      ```
 
+     </span>
+
      1. **Using IIFE (Immediately invoked function expression):** The outer pair of parentheses of IIFE creates a local scope for all the code inside of it and makes the anonymous function a function expression. Due to that, you can create the same function in two different function expressions to act as a namespace.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      (function() {
@@ -5473,7 +5992,11 @@ puppeteer:
       }());
      ```
 
+     </span>
+
      1. **Using a block and a let/const declaration:** In ECMAScript 6, you can simply use a block and a let declaration to restrict the scope of a variable to a block.
+
+     <span dir="ltr" align="left">
 
      ```javascript
       {
@@ -5493,11 +6016,15 @@ puppeteer:
        //myFunction(): ReferenceError: myFunction is not defined.
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 292. ### How do you invoke javascript code in an iframe from parent page
 
      Initially iFrame needs to be accessed using either `document.getElementBy` or `window.frames`. After that `contentWindow` property of iFrame gives the access for targetFunction
+
+     <span dir="ltr" align="left">
 
      ```javascript
      document.getElementById('targetFrame').contentWindow.targetFunction();
@@ -5505,22 +6032,30 @@ puppeteer:
 
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 293. ### How do get the timezone offset from date
 
      You can use the `getTimezoneOffset` method of the date object. This method returns the time zone difference, in minutes, from current locale (host system settings) to UTC
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var offset = new Date().getTimezoneOffset();
      console.log(offset); // -480
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
 294. ### How do you load CSS and JS files dynamically
 
      You can create both link and script elements in the DOM and append them as child to head tag. Let's create a function to add script and style resources as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function loadAssets(filename, filetype) {
@@ -5539,6 +6074,8 @@ puppeteer:
       }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 295. ### What are the different methods to find HTML elements in DOM
@@ -5554,11 +6091,15 @@ puppeteer:
 
      jQuery is a popular cross-browser JavaScript library that provides Document Object Model (DOM) traversal, event handling, animations and AJAX interactions by minimizing the discrepancies across browsers. It is widely famous with its philosophy of “Write less, do more”. For example, you can display welcome message on the page load using jQuery as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      $(document).ready(function(){ // It selects the document and apply the function on page load
          alert('Welcome to jQuery world');
      });
      ```
+
+     </span>
 
      **Note:** You can download it from jquery's official site or install it from CDNs, like google.
 
@@ -5575,11 +6116,15 @@ puppeteer:
 
      JavaScript is a loosely typed or a dynamic language because variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned/reassigned with values of all types.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      let age = 50;    // age is a number now
      age  = 'old'; // age is a string now
      age  = true;  // age is a boolean
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5587,16 +6132,24 @@ puppeteer:
 
      The `void` operator evaluates the given expression and then returns undefined(i.e, without returning value). The syntax would be as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      void (expression)
      void expression
      ```
 
+     </span>
+
      Let's display a message without any redirections or reloads
+
+     <span dir="ltr" align="left">
 
      ```javascript
      <a href="javascript:void(alert('Welcome to JS world'))">Click here to see a message</a>
      ```
+
+     </span>
 
      **Note:** This operator is often used to obtain the undefined primitive value, using "void(0)".
 
@@ -5606,17 +6159,25 @@ puppeteer:
 
      The cursor can be set to wait in JavaScript by using the property "cursor". Let's perform this behavior on page load using the below function.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function myFunction() {
      window.document.body.style.cursor = "wait";
      }
      ```
 
+     </span>
+
      and this function invoked on page load
+
+     <span dir="ltr" align="left">
 
      ```html
      <body onload="myFunction()">
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5624,11 +6185,15 @@ puppeteer:
 
      You can create infinite loops using for and while loops without using any expressions. The for loop construct or syntax is better approach in terms of ESLint and code optimizer tools,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      for (;;) {}
      while(true) {
      }
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5636,25 +6201,35 @@ puppeteer:
 
      JavaScript's with statement was intended to provide a shorthand for writing recurring accesses to objects. So it can help reduce file size by reducing the need to repeat a lengthy object reference without performance penalty. Let's take an example where it is used to avoid redundancy when accessing an object several times.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      a.b.c.greeting   = 'welcome';
      a.b.c.age = 32;
      ```
 
+     </span>
+
      Using `with` it turns this into:
+
+     <span dir="ltr" align="left">
 
      ```javascript
      with(a.b.c) {
-             greeting   = "welcome";
-             age = 32;
+          greeting   = "welcome";
+          age = 32;
      }
      ```
+
+     </span>
 
      But this `with` statement creates performance problems since one cannot predict whether an argument will refer to a real variable or to a property inside the with argument.
 
      **[⬆ فهرست](#فهرست)**
 
 303. ### What is the output of below for loops
+
+     <span dir="ltr" align="left">
 
      ```javascript
      for (var i = 0; i < 4; i++) { // global scope
@@ -5665,6 +6240,8 @@ puppeteer:
        setTimeout(() => console.log(i));
      }
      ```
+
+     </span>
 
      The output of the above for loops is 4 4 4 4 and 0 1 2 3
      **Explanation:** Due to the event queue/loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with the `var` keyword it became a global variable and the value was equal to 4 using iteration when the time setTimeout function is invoked. Hence, the output of the first loop is `4 4 4 4`. Whereas in the second loop, the variable i is declared as the `let` keyword it becomes a block scoped variable and it holds a new value(0, 1 ,2 3) for each iteration. Hence, the output of the first loop is `0 1 2 3`.
@@ -5699,11 +6276,17 @@ puppeteer:
 
      No, you cannot redeclare let and const variables. If you do, it throws below error
 
+     <span dir="ltr" align="left">
+
      ```bash
      Uncaught SyntaxError: Identifier 'someVariable' has already been declared
      ```
 
+     </span>
+
      **Explanation:** The variable declaration with `var` keyword refers to a function scope and the variable is treated as if it were declared at the top of the enclosing scope due to hoisting feature. So all the multiple declarations contributing to the same hoisted variable without any error. Let's take an example of re-declaring variables in the same scope for both var and let/const variables.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var name = 'John';
@@ -5716,7 +6299,11 @@ puppeteer:
      alert(name); // John
      ```
 
+     </span>
+
      The block-scoped multi-declaration throws syntax error,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      let name = 'John';
@@ -5730,11 +6317,15 @@ puppeteer:
      alert(name);
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 307. ### Is const variable makes the value immutable
 
      No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const userList = [];
@@ -5742,11 +6333,15 @@ puppeteer:
      console.log(userList); // ['John']
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 308. ### What are default parameters
 
      In E5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      //ES5
@@ -5759,7 +6354,11 @@ puppeteer:
      console.log(calculateArea()); //300
      ```
 
+     </span>
+
      The default parameters makes the initialization more simpler,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      //ES6
@@ -5770,6 +6369,8 @@ puppeteer:
      console.log(calculateArea()); //300
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 309. ### What are template literals
@@ -5777,15 +6378,23 @@ puppeteer:
      Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
      In E6, this feature enables using dynamic expressions as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`
      ```
 
+     </span>
+
      In ES5, you need break string like below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
      ```
+
+     </span>
 
      **Note:** You can use multi-line strings and string interpolation features with template literals.
 
@@ -5795,17 +6404,25 @@ puppeteer:
 
      In ES5, you would have to use newline escape characters('\\n') and concatenation symbols(+) in order to get multi-line strings.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      console.log('This is string sentence 1\n' +
      'This is string sentence 2');
      ```
 
+     </span>
+
      Whereas in ES6, You don't need to mention any newline sequence character,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      console.log(`This is string sentence
      'This is string sentence 2`);
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5813,12 +6430,18 @@ puppeteer:
 
      The nesting template is a feature supported within template literals syntax to allow inner backticks inside a placeholder ${ } within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const iconStyles = `icon ${ isMobilePlatform() ? '' :
       `icon-${user.isAuthorized ? 'submit' : 'disabled'}` }`;
      ```
 
+     </span>
+
      You can write the above use case without nesting template features as well. However, the nesting template feature is more compact and readable.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      //Without nesting templates
@@ -5826,11 +6449,15 @@ puppeteer:
        (user.isAuthorized ? 'icon-submit' : 'icon-disabled'}`;
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 312. ### What are tagged templates
 
      Tagged templates are the advanced form of templates in which tags allow you to parse template literals with a function. The tag function accepts the first parameter as an array of strings and remaining parameters as expressions. This function can also return manipulated strings based on parameters. Let's see the usage of this tagged template behavior of an IT professional skill set in an organization,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var user1 = 'John';
@@ -5865,18 +6492,26 @@ puppeteer:
      console.log(output2);// Mr/Ms. Kane is a/an junior developer in JavaScript
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 313. ### What are raw strings
 
       ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
 
+      <span dir="ltr" align="left">
+
       ```javascript
       var calculationString = String.raw `The sum of numbers is \n${1+2+3+4}!`;
       console.log(calculationString); // The sum of numbers is 10
       ```
 
+      </span>
+
       If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines
+
+     <span dir="ltr" align="left">
 
       ```javascript
       var calculationString = `The sum of numbers is \n${1+2+3+4}!`;
@@ -5885,7 +6520,11 @@ puppeteer:
       // 10
       ```
 
+      </span>
+
       Also, the raw property is available on the first argument to the tag function
+
+      <span dir="ltr" align="left">
 
       ```javascript
       function tag(strings) {
@@ -5893,12 +6532,16 @@ puppeteer:
       }
       ```
 
+      </span>
+
       **[⬆ فهرست](#فهرست)**
 
 314. ### What is destructuring assignment
 
      The destructuring assignment is a JavaScript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables.
      Let's get the month values from an array using destructuring assignment
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var [one, two, three] = ['JAN', 'FEB', 'MARCH'];
@@ -5908,7 +6551,11 @@ puppeteer:
      console.log(three); // "MARCH"
      ```
 
+     </span>
+
      and you can get user properties of an object using destructuring assignment,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var {name, age} = {name: 'John', age: 32};
@@ -5917,6 +6564,8 @@ puppeteer:
      console.log(age); // 32
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 315. ### What are default values in destructuring assignment
@@ -5924,6 +6573,8 @@ puppeteer:
      A variable can be assigned a default value when the value unpacked from the array or object is undefined during destructuring assignment. It helps to avoid setting default values separately for each assignment. Let's take an example for both arrays and object use cases,
 
      **Arrays destructuring:**
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var x, y, z;
@@ -5934,7 +6585,11 @@ puppeteer:
      console.log(z); // 6
      ```
 
+     </span>
+
      **Objects destructuring:**
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var {x=2, y=4, z=6} = {x: 10};
@@ -5944,11 +6599,15 @@ puppeteer:
      console.log(z); // 6
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 316. ### How do you swap variables in destructuring assignment
 
      If you don't use destructuring assignment, swapping two values requires a temporary variable. Whereas using a destructuring feature, two variable values can be swapped in one destructuring expression. Let's swap two number variables in array destructuring assignment,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var x = 10, y = 20;
@@ -5958,11 +6617,15 @@ puppeteer:
      console.log(y); // 10
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 317. ### What are enhanced object literals
 
      Object literals make it easy to quickly create objects with properties inside the curly braces. For example, it provides shorter syntax for common object property definition as below.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      //ES6
@@ -5975,6 +6638,8 @@ puppeteer:
      console.log(obj); // {x: 10, y:20}
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 318. ### What are dynamic imports
@@ -5982,9 +6647,13 @@ puppeteer:
      The dynamic imports using `import()` function syntax allows us to load modules on demand by using promises or the async/await syntax. Currently this feature is in [stage4 proposal](https://github.com/tc39/proposal-dynamic-import). The main advantage of dynamic imports is reduction of our bundle's sizes, the size/payload response of our requests and overall improvements in the user experience.
      The syntax of dynamic imports would be as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      import('./Module').then(Module => Module.method());
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5993,6 +6662,8 @@ puppeteer:
      Below are some of the use cases of using dynamic imports over static imports,
      1. Import a module on-demand or conditionally. For example, if you want to load a polyfill on legacy browser
 
+     <span dir="ltr" align="left">
+
      ```javascript
      if (isLegacyBrowser()) {
          import(···)
@@ -6000,11 +6671,17 @@ puppeteer:
      }
      ```
 
+     </span>
+
      1. Compute the module specifier at runtime. For example, you can use it for internationalization.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      import(`messages_${getLocale()}.js`).then(···);
      ```
+
+     </span>
 
      1. Import a module from within a regular script instead a module.
 
@@ -6025,12 +6702,16 @@ puppeteer:
 
      For example, you can create an array of 8-bit signed integers as below
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const a = new Int8Array();
      // You can pre-allocate n bytes
      const bytes = 1024
      const a = new Int8Array(bytes)
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6050,6 +6731,8 @@ puppeteer:
      Collation is used for sorting a set of strings and searching within a set of strings. It is parameterized by locale and aware of Unicode. Let's take comparison and sorting features,
      1. **Comparison:**
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var list = [ "ä", "a", "z" ]; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
      var l10nDE = new Intl.Collator("de");
@@ -6058,7 +6741,11 @@ puppeteer:
      console.log(l10nSV.compare("ä", "z") === +1); // true
      ```
 
+     </span>
+
      1. **Sorting:**
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var list = [ "ä", "a", "z" ]; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
@@ -6068,11 +6755,15 @@ puppeteer:
      console.log(list.sort(l10nSV.compare)) // [ "a", "z", "ä" ]
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 323. ### What is for...of statement
 
      The for...of statement creates a loop iterating over iterable objects or elements such as built-in String, Array, Array-like objects (like arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. The basic usage of for...of statement on arrays would be as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      let arrayIterable = [10, 20, 30, 40, 50];
@@ -6083,13 +6774,19 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 324. ### What is the output of below spread operator array
 
+     <span dir="ltr" align="left">
+
      ```javascript
      [...'John Resig']
      ```
+
+     </span>
 
      The output of the array is ['J', 'o', 'h', 'n', '', 'R', 'e', 's', 'i', 'g']
      **Explanation:** The string is an iterable type and the spread operator within an array maps every character of an iterable to one element. Hence, each character of a string becomes an element within an Array.
@@ -6106,15 +6803,21 @@ puppeteer:
 
      The second argument of postMessage method specifies which origin is allowed to receive the message. If you use the wildcard “*” as an argument then any origin is allowed to receive the message. In this case, there is no way for the sender window to know if the target window is at the target origin when sending the message. If the target window has been navigated to another origin, the other origin would receive the data. Hence, this may lead to XSS vulnerabilities.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      targetWindow.postMessage(message, '*');
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
 327. ### How do you avoid receiving postMessages from attackers
 
      Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker’s origin,  which gives an impression that the receiver received the message from the actual sender’s window. You can avoid this issue by validating the origin of the message on the receiver's end using the “message.origin” attribute. For examples, let's check the sender's origin [http://www.some-sender.com](http://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
+
+     <span dir="ltr" align="left">
 
      ```javascript
      //Listener on http://www.some-receiver.com/
@@ -6124,6 +6827,8 @@ puppeteer:
         }
      });
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6162,13 +6867,21 @@ puppeteer:
 
      You can apply the `checked` property on the selected checkbox in the DOM. If the value is `True` means the checkbox is checked otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below,
 
+     <span dir="ltr" align="left">
+
      ```html
        <input type="checkbox" name="checkboxname" value="Agree"> Agree the conditions<br>
      ```
 
+     </span>
+
+     <span dir="ltr" align="left">
+
      ```javascript
      console.log(document.getElementById(‘checkboxname’).checked); // true or false
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6182,15 +6895,23 @@ puppeteer:
 
      You can use the `String.prototype.charCodeAt()` method to convert string characters to ASCII numbers. For example, let's find ASCII code for the first letter of 'ABC' string,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      "ABC".charCodeAt(0) // returns 65
      ```
 
+     </span>
+
      Whereas `String.fromCharCode()` method converts numbers to equal ASCII characters.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      String.fromCharCode(65,66,67); // returns 'ABC'
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6198,25 +6919,37 @@ puppeteer:
 
      An ArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer. You can create it as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      let buffer = new ArrayBuffer(16); // create a buffer of length 16
      alert(buffer.byteLength); // 16
      ```
 
+     </span>
+
      To manipulate an ArrayBuffer, we need to use a “view” object.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      //Create a DataView referring to the buffer
       let view = new DataView(buffer);
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 337. ### What is the output of below string expression
 
+     <span dir="ltr" align="left">
+
      ```javascript
      console.log("Welcome to JS world"[0])
      ```
+
+     </span>
 
      The output of the above expression is "W".
      **Explanation:** The bracket notation with specific index on a string returns the character at a specific location. Hence, it returns the character "W" of the string. Since this is not supported in IE7 and below versions, you may need to use the .charAt() method to get the desired result.
@@ -6227,11 +6960,17 @@ puppeteer:
 
      The Error constructor creates an error object and the instances of error objects are thrown when runtime errors occur. The Error object can also be used as a base object for user-defined exceptions. The syntax of error object would be as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      new Error([message[, fileName[, lineNumber]]])
      ```
 
+     </span>
+
      You can throw user defined exceptions or errors using Error object in try...catch block as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      try {
@@ -6242,24 +6981,35 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 339. ### What is the purpose of EvalError object
 
      The EvalError object indicates an error regarding the global `eval()` function. Even though this exception is not thrown by JavaScript anymore, the EvalError object remains for compatibility. The syntax of this expression would be as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      new EvalError([message[, fileName[, lineNumber]]])
      ```
 
+     </span>
+
      You can throw EvalError with in try...catch block as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      try {
        throw new EvalError('Eval function error', 'someFile.js', 100);
      } catch (e) {
        console.log(e.message, e.name, e.fileName);              // "Eval function error", "EvalError", "someFile.js"
+     }
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6268,9 +7018,13 @@ puppeteer:
      When you apply 'use strict'; syntax, some of the below cases will throw a SyntaxError before executing the script
      1. When you use Octal syntax
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var n = 022;
      ```
+
+     </span>
 
      1. Using `with` statement
      2. When you use delete operator on a variable name
@@ -6278,9 +7032,13 @@ puppeteer:
      4. When you use newly reserved keywords
      5. When you declare a function in a block
 
+     <span dir="ltr" align="left">
+
      ```javascript
      if (someCondition) { function f() {} }
      ```
+
+     </span>
 
      Hence, the errors from above cases are helpful to avoid errors in development/production environments.
 
@@ -6296,6 +7054,8 @@ puppeteer:
 
      Parameter is the variable name of a function definition whereas an argument represents the value given to a function when it is invoked. Let's explain this with a simple function
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function myFunction(parameter1, parameter2, parameter3) {
        console.log(arguments[0]) // "argument1"
@@ -6305,11 +7065,15 @@ puppeteer:
      myFunction("argument1", "argument2", "argument3")
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 343. ### What is the purpose of some method in arrays
 
      The some() method is used to test whether at least one element in the array passes the test implemented by the provided function. The method returns a boolean value. Let's take an example to test for any odd elements,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var array = [1, 2, 3, 4, 5, 6 ,7, 8, 9, 10];
@@ -6319,17 +7083,25 @@ puppeteer:
      console.log(array.some(odd)); // true (the odd element exists)
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 344. ### How do you combine two or more arrays
 
      The concat() method is used to join two or more arrays by returning a new array containing all the elements. The syntax would be as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      array1.concat(array2, array3, ..., arrayX)
      ```
 
+     </span>
+
      Let's take an example of array's concatenation with veggies and fruits arrays,
+
+     <span dir="ltr" align="left">
 
      ```javascript
        var veggies = ["Tomato", "Carrot", "Cabbage"];
@@ -6337,6 +7109,8 @@ puppeteer:
        var veggiesAndFruits = veggies.concat(fruits);
        console.log(veggiesAndFruits); // Tomato, Carrot, Cabbage, Apple, Orange, Pears
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6349,23 +7123,35 @@ puppeteer:
 
       **Example**
 
+      <span dir="ltr" align="left">
+
       ```javascript
       var empDetails = {
         name: "John", age: 25, expertise: "Software Developer"
       }
       ```
 
+      </span>
+
       to create a duplicate
+
+      <span dir="ltr" align="left">
 
       ```javascript
       var empDetailsShallowCopy = empDetails    //Shallow copying!
       ```
 
+      </span>
+
       if we change some property value in the duplicate one like this:
+
+      <span dir="ltr" align="left">
 
       ```javascript
       empDetailsShallowCopy.name = "Johnson"
       ```
+
+      </span>
 
       The above statement will also change the name of `empDetails`, since we have a shallow copy. That means we're losing the original data as well.
 
@@ -6374,13 +7160,19 @@ puppeteer:
 
       **Example**
 
+      <span dir="ltr" align="left">
+
       ```javascript
       var empDetails = {
         name: "John", age: 25, expertise: "Software Developer"
       }
       ```
 
+      </span>
+
       Create a deep copy by using the properties from the original object into new variable
+
+      <span dir="ltr" align="left">
 
       ```javascript
       var empDetailsDeepCopy = {
@@ -6389,6 +7181,8 @@ puppeteer:
         expertise: empDetails.expertise
       }
       ```
+
+      </span>
 
       Now if you change `empDetailsDeepCopy.name`, it will only affect `empDetailsDeepCopy` & not `empDetails`
 
@@ -6399,13 +7193,19 @@ puppeteer:
      The `repeat()` method is used to construct and return a new string which contains the specified number of copies of the string on which it was called, concatenated together. Remember that this method has been added to the ECMAScript 2015 specification.
      Let's take an example of Hello string to repeat it 4 times,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      'Hello'.repeat(4);  // 'HelloHelloHelloHello'
      ```
 
+     </span>
+
 347. ### How do you return all matching strings against a regular expression
 
      The `matchAll()` method can be used to return an iterator of all results matching a string against a regular expression. For example, the below example returns an array of matching string results against a regular expression,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      let regexp = /Hello(\d?))/g;
@@ -6418,11 +7218,15 @@ puppeteer:
      console.log(greetingList[2]); //Hello3
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 348. ### How do you trim a string at the beginning or ending
 
      The `trim` method of string prototype is used to trim on both sides of a string. But if you want to trim especially at the beginning or ending of the string then you can use `trimStart/trimLeft` and `trimEnd/trimRight` methods. Let's see an example of these methods on a greeting message,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var greeting = '   Hello, Goodmorning!   ';
@@ -6435,15 +7239,21 @@ puppeteer:
      console.log(greeting.trimRight()); // "   Hello, Goodmorning!"
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 349. ### What is the output of below console statement with unary operator
 
      Let's take console statement with unary operator as given below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      console.log(+ 'Hello');
      ```
+
+     </span>
 
      The output of the above console log statement returns NaN. Because the element is prefixed by the unary operator and the JavaScript interpreter will try to convert that element into a number type. Since the conversion fails, the value of the statement results in NaN value.
 
@@ -6457,6 +7267,8 @@ puppeteer:
 
      A thunk is just a function which delays the evaluation of the value. It doesn’t take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const add = (x,y) => x + y;
 
@@ -6465,11 +7277,15 @@ puppeteer:
      thunk() // 5
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 352. ### What are asynchronous thunks
 
      The asynchronous thunks are useful to make network requests.  Let's see an example of network requests,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function fetchData(fn){
@@ -6487,6 +7303,8 @@ puppeteer:
      asyncThunk()
      ```
 
+     </span>
+
      The `getData` function won't be called immediately but it will be invoked only when the data is available from API endpoint. The setTimeout function is also used to make our code asynchronous. The best real time example is redux state management library which uses the asynchronous thunks to delay the actions to dispatch.
 
      **[⬆ فهرست](#فهرست)**
@@ -6494,6 +7312,8 @@ puppeteer:
 353. ### What is the output of below function calls
 
      **Code snippet:**
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const circle = {
@@ -6503,10 +7323,12 @@ puppeteer:
        },
        perimeter: () => 2 * Math.PI * this.radius
      };
-     ```
 
      console.log(circle.diameter());
      console.log(circle.perimeter());
+     ```
+
+     </span>
 
      **Output:**
 
@@ -6518,11 +7340,15 @@ puppeteer:
 
      The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function remove_linebreaks( var message ) {
          return message.replace( /[\r\n]+/gm, "" );
      }
      ```
+
+     </span>
 
      In the above expression, g and m are for global and multiline flags.
 
@@ -6538,9 +7364,13 @@ puppeteer:
 
      Negating an array with `!` character will coerce the array into a boolean. Since Arrays are considered to be truthy So negating it will return `false`.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      console.log(![]); // false
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6548,17 +7378,23 @@ puppeteer:
 
      If you add two arrays together, it will convert them both to strings and concatenate them. For example, the result of adding arrays would be as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      console.log(['a'] + ['b']);  // "ab"
      console.log([] + []); // ""
      console.log(![] + []); // "false", because ![] returns false.
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 358. ### What is the output of prepend additive operator on falsy values
 
      If you prepend the additive(+) operator on falsy values(null, undefined, NaN, false, ""), the falsy value converts to a number value zero. Let's display them on browser console as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      console.log(+null); // 0
@@ -6567,6 +7403,8 @@ puppeteer:
      console.log(+NaN); // NaN
      console.log(+""); // 0
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6579,12 +7417,18 @@ puppeteer:
 
      By applying the above rules, we can derive below conditions
 
+     <span dir="ltr" align="left">
+
      ```javascript
      ![] + [] === "false"
      +!+[] === 1
      ```
 
+     </span>
+
      Now the character pattern would be created as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
            s               e               l               f
@@ -6600,16 +7444,22 @@ puppeteer:
      (![]+[])[+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]]+(![]+[])[+[]]
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 360. ### How do you remove falsy values from an array
 
      You can apply the filter method on the array by passing Boolean as a parameter. This way it removes all falsy values(0, undefined, null, false and "") from the array.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const myArray = [false, null, 1,5, undefined]
      myArray.filter(Boolean); // [1, 5] // is same as myArray.filter(x => x);
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6617,9 +7467,13 @@ puppeteer:
 
      You can get unique values of an array with the combination of `Set` and rest expression/spread(...) syntax.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      console.log([...new Set([1, 2, 4, 4, 3])]); // [1, 2, 4, 3]
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6627,17 +7481,23 @@ puppeteer:
 
      Sometimes you would like to have a destructured variable with a different name than the property name. In that case, you'll use a `: newName` to specify a name for the variable. This process is called destructuring aliases.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const obj = { x: 1 };
      // Grabs obj.x as as { otherName }
      const { x: otherName } = obj;
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 363. ### How do you map the array values without using map method
 
      You can map the array values without using the `map` method by just using the `from` method of Array. Let's map city names from Countries array,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      const countries = [
@@ -6653,16 +7513,22 @@ puppeteer:
      console.log(cityNames); // ['Delhi, 'Washington', 'Moscow', 'Singapore', 'Beijing', 'Paris']
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 364. ### How do you empty an array
 
      You can empty an array quickly by setting the array length to zero.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      let cities = ['Singapore', 'Delhi', 'London'];
      cities.length = 0; // cities becomes []
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6670,10 +7536,14 @@ puppeteer:
 
      You can round numbers to a certain number of decimals using `toFixed` method from native javascript.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      let pie = 3.141592653;
      pie = pie.toFixed(3); // 3.142
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6681,11 +7551,15 @@ puppeteer:
 
      You can convert an array to an object with the same data using spread(...) operator.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var fruits = ["banana", "apple", "orange", "watermelon"];
      var fruitsObject = {...fruits};
      console.log(fruitsObject); // {0: "banana", 1: "apple", 2: "orange", 3: "watermelon"}
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6693,10 +7567,14 @@ puppeteer:
 
      You can create an array with some data or an array with the same values using `fill` method.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var newArray = new Array(5).fill("0");
      console.log(newArray); // ["0", "0", "0", "0", "0"]
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6708,10 +7586,14 @@ puppeteer:
      3. %d — It is used for a decimal or integer
      These placeholders can be represented in the console.log as below
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const user = { "name":"John", "id": 1, "city": "Delhi"};
      console.log("Hello %s, your details %o are available in the object form", "John", user); // Hello John, your details {name: "John", id: 1, city: "Delhi"} are available in object
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6719,9 +7601,13 @@ puppeteer:
 
      Yes, you can apply CSS styles to console messages similar to html text on the web page.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      console.log('%c The text has blue color, with large font and red background', 'color: blue; font-size: x-large; background: red');
      ```
+
+     </span>
 
      The text will be displayed as below,
      ![Screenshot](images/console-css.png)
@@ -6734,10 +7620,14 @@ puppeteer:
 
      The `console.dir()` is used to display an interactive list of the properties of the specified JavaScript object as JSON.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const user = { "name":"John", "id": 1, "city": "Delhi"};
      console.dir(user);
      ```
+
+     </span>
 
      The user object displayed in JSON representation
      ![Screenshot](images/console-dir.png)
@@ -6748,10 +7638,14 @@ puppeteer:
 
      Yes, it is possible to get and debug HTML elements in the console just like inspecting elements.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const element = document.getElementsByTagName("body")[0];
      console.log(element);
      ```
+
+     </span>
 
      It prints the HTML element in the console,
      
@@ -6763,10 +7657,14 @@ puppeteer:
 
      The `console.table()` is used to display data in the console in a tabular format to visualize complex arrays or objects.
 
+     <span dir="ltr" align="left">
+
      ```js
      const users = [{ "name":"John", "id": 1, "city": "Delhi"}, { "name":"Max", "id": 2, "city": "London"}, { "name":"Rod", "id": 3, "city": "Paris"} ];
      console.table(users);
      ```
+
+     </span>
 
      The data visualized in a table format,
      
@@ -6779,17 +7677,23 @@ puppeteer:
 
      The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function isNumber(n){
          return !isNaN(parseFloat(n)) && isFinite(n);
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 374. ### How do you create copy to clipboard button
 
      You need to select the content(using .select() method) of the input element and execute the copy command with execCommand (i.e, execCommand('copy')). You can also execute other system commands like cut and paste.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      document.querySelector("#copy-button").onclick = function() {
@@ -6800,16 +7704,22 @@ puppeteer:
      };
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 375. ### What is the shortcut to get timestamp
 
      You can use `new Date().getTime()` to get the current timestamp. There is an alternative shortcut to get the value.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      console.log(+new Date());
      console.log(Date.now());
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6817,12 +7727,18 @@ puppeteer:
 
      Flattening bi-dimensional arrays is trivial with Spread operator.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const biDimensionalArr = [11, [22, 33], [44, 55], [66, 77], 88, 99];
      const flattenArr = [].concat(...biDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
      ```
 
+     </span>
+
      But you can make it work with multi-dimensional arrays by recursive calls,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function flattenMultiArray(arr) {
@@ -6833,11 +7749,15 @@ puppeteer:
      const flatArr = flattenMultiArray(multiDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 377. ### What is the easiest multi condition checking
 
      You can use `indexOf` to compare input with multiple values instead of checking each value as one condition.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      // Verbose approach
@@ -6850,11 +7770,15 @@ puppeteer:
      }
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 378. ### How do you capture browser back button
 
      The `window.onbeforeunload` method is used to capture browser back button events. This is helpful to warn users about losing the current data.
+
+     <span dir="ltr" align="left">
 
      ```javascript
       window.onbeforeunload = function() {
@@ -6862,15 +7786,21 @@ puppeteer:
       };
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 379. ### How do you disable right click in the web page
 
      The right click on the page can be disabled by returning false from the `oncontextmenu` attribute on the body element.
 
+     <span dir="ltr" align="left">
+
      ```html
      <body oncontextmenu="return false;">
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6878,11 +7808,15 @@ puppeteer:
 
      Primitive Values like string,number and boolean don't have properties and methods but they are temporarily converted or coerced to an object(Wrapper object) when you try to perform actions on them. For example, if you apply toUpperCase() method on a primitive string value, it does not throw an error but returns uppercase of the string.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      let name = "john";
 
      console.log(name.toUpperCase());  // Behind the scenes treated as console.log(new String(name).toUpperCase());
      ```
+
+     </span>
 
      i.e, Every primitive except null and undefined have Wrapper Objects and the list of wrapper objects are String,Number,Boolean,Symbol and BigInt.
 
@@ -6913,6 +7847,8 @@ puppeteer:
      3. Call the AbortController's abort property to cancel all fetches that use that signal
      For example, let's pass the same signal to multiple fetch calls will cancel all requests with that signal,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const controller = new AbortController();
      const { signal } = controller;
@@ -6937,6 +7873,8 @@ puppeteer:
      setTimeout(() => controller.abort(), 2000);
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 384. ### What is web speech API
@@ -6944,6 +7882,8 @@ puppeteer:
      Web speech API is used to enable modern browsers recognize and synthesize speech(i.e, voice data into web apps). This API has been introduced by W3C Community in the year 2012. It has two main parts,
      1. **SpeechRecognition (Asynchronous Speech Recognition or Speech-to-Text):** It provides the ability to recognize voice context from an audio input and respond accordingly. This is accessed by the `SpeechRecognition` interface.
      The below example shows on how to use this API to get text from speech,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;  // webkitSpeechRecognition for Chrome and SpeechRecognition for FF
@@ -6955,9 +7895,13 @@ puppeteer:
      recognition.start();
      ```
 
+     </span>
+
      In this API, browser is going to ask you for permission to use your microphone
      1. **SpeechSynthesis (Text-to-Speech):** It provides the ability to recognize voice context from an audio input and respond. This is accessed by the `SpeechSynthesis` interface.
      For example, the below code is used to get voice/speech from text,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      if('speechSynthesis' in window){
@@ -6966,6 +7910,8 @@ puppeteer:
          window.speechSynthesis.speak(speech);
      }
      ```
+
+     </span>
 
      The above examples can be tested on chrome(33+) browser's developer console.
      **Note:**  This API is still a working draft and only available in Chrome and Firefox browsers(ofcourse Chrome only implemented the specification)
@@ -6979,6 +7925,8 @@ puppeteer:
      **Nodejs:** They have a minimum delay of 1ms. This throttle happens when the delay is larger than 2147483647 or less than 1.
      The best example to explain this timeout throttling behavior is the order of below code snippet.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function runMeFirst() {
          console.log('My script is initialized');
@@ -6987,14 +7935,22 @@ puppeteer:
      console.log('Script loaded');
      ```
 
+     </span>
+
      and the output would be in
+
+     <span dir="ltr" align="left">
 
      ```cmd
      Script loaded
      My script is initialized
      ```
 
+     </span>
+
      If you don't use `setTimeout`, the order of logs will be sequential.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function runMeFirst() {
@@ -7004,12 +7960,18 @@ puppeteer:
      console.log('Script loaded');
      ```
 
+     </span>
+
      and the output is,
+
+     <span dir="ltr" align="left">
 
      ```cmd
      My script is initialized
      Script loaded
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -7049,15 +8011,23 @@ puppeteer:
 
      It is known that not all JavaScript libraries or frameworks have TypeScript declaration files. But if you still want to use libraries or frameworks in our TypeScript files without getting compilation errors, the only solution is `declare` keyword along with a variable declaration. For example, let's imagine you have a library called `customLibrary` that doesn’t have a TypeScript declaration and have a namespace called `customLibrary` in the global namespace. You can use this library in typescript code as below,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      declare var customLibrary;
      ```
 
+     </span>
+
      In the runtime, typescript will provide the type to the `customLibrary` variable as `any` type. The another alternative without using declare keyword is below
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var customLibrary: any;
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -7112,6 +8082,8 @@ puppeteer:
 
      In JavaScript, primitive types include boolean, string, number, BigInt, null, Symbol and undefined. Whereas non-primitive types include the Objects. But you can easily identify them with the below function,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var myPrimitive = 30;
      var myNonPrimitive = {};
@@ -7122,6 +8094,8 @@ puppeteer:
      isPrimitive(myPrimitive);
      isPrimitive(myNonPrimitive);
      ```
+
+     </span>
 
      If the value is a primitive data type, the Object constructor creates a new wrapper object for the value. But If the value is a non-primitive data type (an object), the Object constructor will give the same object.
 
@@ -7162,6 +8136,8 @@ puppeteer:
 
      **Function Constructor:**
 
+     <span dir="ltr" align="left">
+
      ```javascript
      var a = 100;
      function createFunction() {
@@ -7171,7 +8147,11 @@ puppeteer:
      console.log(createFunction()()); // 100
      ```
 
+     </span>
+
      **Function declaration:**
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var a = 100;
@@ -7184,11 +8164,15 @@ puppeteer:
      console.log(createFunction()()); // 200
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 403. ### What is a Short circuit condition
 
      Short circuit conditions are meant for condensed way of writing simple if statements. Let's demonstrate the scenario using an example. If you would like to login to a portal with an authentication condition, the expression would be as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      if (authenticate) {
@@ -7196,17 +8180,25 @@ puppeteer:
      }
      ```
 
+     </span>
+
      Since the javascript logical operators evaluated from left to right, the above expression can be simplified using && logical operator
+
+     <span dir="ltr" align="left">
 
      ```javascript
      authenticate && loginToPorta();
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
 404. ### What is the easiest way to resize an array
 
      The length property of an array is useful to resize or empty an array quickly. Let's apply length property on number array to resize the number of elements from 5 to 2,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var array = [1, 2, 3, 4, 5];
@@ -7217,7 +8209,11 @@ puppeteer:
      console.log(array); // [1,2]
      ```
 
+     </span>
+
      and the array can be emptied too
+
+     <span dir="ltr" align="left">
 
      ```javascript
      var array = [1, 2, 3, 4, 5];
@@ -7226,12 +8222,16 @@ puppeteer:
      console.log(array); // []
      ```
 
+     </span>
+
      **[⬆ فهرست](#فهرست)**
 
 405. ### What is an observable
 
      An Observable is basically a function that can return a stream of values either synchronously or asynchronously to an observer over time. The consumer can get the value by calling `subscribe()` method.
      Let's look at a simple example of an Observable
+
+     <span dir="ltr" align="left">
 
      ```javascript
      import { Observable } from 'rxjs';
@@ -7245,6 +8245,8 @@ puppeteer:
      observable.subscribe(value => console.log(value));
      ```
 
+     </span>
+
      ![Screenshot](images/observables.png)
 
      **Note:** Observables are not part of the JavaScript language yet but they are being proposed to be added to the language
@@ -7257,13 +8259,19 @@ puppeteer:
 
      **Classes:**
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const user = new User(); // ReferenceError
 
      class User {}
      ```
 
+     </span>
+
      **Constructor Function:**
+
+     <span dir="ltr" align="left">
 
      ```javascript
       const user = new User(); // No error
@@ -7271,6 +8279,8 @@ puppeteer:
       function User() {
       }
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -7280,6 +8290,8 @@ puppeteer:
 
      Let's take a below async function example,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      async function logger() {
 
@@ -7288,6 +8300,8 @@ puppeteer:
      }
      logger();
      ```
+
+     </span>
 
      It is basically syntax sugar over ES2015 promises and generators.
 
@@ -7299,7 +8313,9 @@ puppeteer:
 
      Let's say you expect to print an error to the console for all the below cases,
 
-      ```javascript
+     <span dir="ltr" align="left">
+
+     ```javascript
       Promise.resolve('promised value').then(function() {
             throw new Error('error');
       });
@@ -7311,9 +8327,11 @@ puppeteer:
       new Promise(function(resolve, reject) {
             throw new Error('error');
       });
-      ```
+     ```
 
-      But there are many modern JavaScript environments that won't print any errors. You can fix this problem in different ways,
+     </span>
+
+     But there are many modern JavaScript environments that won't print any errors. You can fix this problem in different ways,
 
      1. **Add catch block at the end of each chain:** You can add catch block to the end of each of your promise chains
 
@@ -7483,6 +8501,8 @@ and discard a rejection, just handle it with an empty catch
 
      For example, the below classic or head recursion of factorial function relies on stack for each step. Each step need to be processed upto `n * factorial(n - 1)`
 
+     <span dir="ltr" align="left">
+
      ```javascript
      function factorial(n) {
        if (n === 0) {
@@ -7493,7 +8513,11 @@ and discard a rejection, just handle it with an empty catch
      console.log(factorial(5)); //120
      ```
 
+     </span>
+
      But if you use Tail recursion functions, they keep passing all the necessary data it needs down the recursion without relying on the stack.
+
+     <span dir="ltr" align="left">
 
      ```javascript
      function factorial(n, acc = 1) {
@@ -7505,6 +8529,8 @@ and discard a rejection, just handle it with an empty catch
      console.log(factorial(5)); //120
      ```
 
+     </span>
+
      The above pattern returns the same output as the first one. But the accumulator keeps track of total as an argument without using stack memory on recursive calls.
 
      **[⬆ فهرست](#فهرست)**
@@ -7512,6 +8538,8 @@ and discard a rejection, just handle it with an empty catch
 412. ### How do you check an object is a promise or not
 
       If you don't know if a value is a promise or not, wrapping the value as `Promise.resolve(value)` which returns a promise
+
+      <span dir="ltr" align="left">
 
       ```javascript
          function isPromise(object){
@@ -7531,7 +8559,11 @@ and discard a rejection, just handle it with an empty catch
          console.log(isPromise(p)); // true
       ```
 
+      </span>
+
       Another way is to check for `.then()` handler type
+
+      <span dir="ltr" align="left">
 
       ```javascript
       function isPromise(value) {
@@ -7546,6 +8578,8 @@ and discard a rejection, just handle it with an empty catch
       console.log(isPromise(promise)); // true
       ```
 
+      </span>
+
       **[⬆ فهرست](#فهرست)**
 
 413. ### How to detect if a function is called as constructor
@@ -7554,6 +8588,8 @@ and discard a rejection, just handle it with an empty catch
 
       1. If a constructor or function invoked using the new operator, new.target returns a reference to the constructor or function.
       2. For function calls, new.target is undefined.
+
+      <span dir="ltr" align="left">
 
       ```javascript
       function Myfunc() {
@@ -7568,6 +8604,8 @@ and discard a rejection, just handle it with an empty catch
       Myfunc(); // not called with new
       Myfunc.call({}); not called with new
       ```
+
+      </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -7593,43 +8631,56 @@ and discard a rejection, just handle it with an empty catch
 
      1. **Generator function declaration:**
 
-         ```javascript
+          <span dir="ltr" align="left">
+
+          ```javascript
           function* myGenFunc() {
                yield 1;
                yield 2;
                yield 3;
           }
           const genObj = myGenFunc();
-         ```
+          ```
          
-         </span>
-2. **Generator function expressions:**
+          </span>
 
-        ```javascript
-        const myGenFunc = function* () {
+     2. **Generator function expressions:**
+
+          <span dir="ltr" align="left">
+
+          ```javascript
+          const myGenFunc = function* () {
                yield 1;
                yield 2;
                yield 3;
-        };
-        const genObj = myGenFunc();
-        ```
+          };
+          const genObj = myGenFunc();
+          ```
+
+          </span>
 
      3. **Generator method definitions in object literals:**
 
-        ```javascript
-         const myObj = {
+          <span dir="ltr" align="left">
+
+          ```javascript
+          const myObj = {
              * myGeneratorMethod() {
                 yield 1;
                 yield 2;
                 yield 3;
              }
-         };
-         const genObj = myObj.myGeneratorMethod();
-        ```
+          };
+          const genObj = myObj.myGeneratorMethod();
+          ```
+
+          </span>
 
      4. **Generator method definitions in class:**
 
-        ```javascript
+          <span dir="ltr" align="left">
+
+          ```javascript
           class MyClass {
              * myGeneratorMethod() {
                 yield 1;
@@ -7639,21 +8690,27 @@ and discard a rejection, just handle it with an empty catch
           }
           const myObject = new MyClass();
           const genObj = myObject.myGeneratorMethod();
-        ```
+          ```
+
+          </span>
 
      5. **Generator as a computed property:**
 
-        ```javascript
-        const SomeObj = {
-          *[Symbol.iterator] () {
-            yield 1;
-            yield 2;
-            yield 3;
-          }
-        }
+          <span dir="ltr" align="left">
 
-        console.log(Array.from(SomeObj)); // [ 1, 2, 3 ]
-        ```
+          ```javascript
+          const SomeObj = {
+             *[Symbol.iterator] () {
+               yield 1;
+               yield 2;
+               yield 3;
+             }
+          }
+
+          console.log(Array.from(SomeObj)); // [ 1, 2, 3 ]
+          ```
+
+          </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -7679,6 +8736,8 @@ and discard a rejection, just handle it with an empty catch
 
      Let's explain this difference with an example,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      let arr = ['a', 'b', 'c'];
 
@@ -7695,6 +8754,8 @@ and discard a rejection, just handle it with an empty catch
      }
      ```
 
+     </span>
+
      Since for..in loop iterates over the keys of the object, the first loop logs 0, 1, 2 and newProp while iterating over the array object. The for..of loop iterates over the values of a arr data structure and logs  a, b, c in the console.
 
      **[⬆ فهرست](#فهرست)**
@@ -7702,6 +8763,8 @@ and discard a rejection, just handle it with an empty catch
 419. ### How do you define instance and non-instance properties
 
      The Instance properties must be defined inside of class methods. For example, name and age properties defined insider constructor as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      class Person {
@@ -7712,12 +8775,18 @@ and discard a rejection, just handle it with an empty catch
      }
      ```
 
+     </span>
+
      But Static(class) and prototype data properties must be defined outside of the ClassBody declaration. Let's assign the age value for Person class as below,
+
+     <span dir="ltr" align="left">
 
      ```javascript
      Person.staticAge = 30;
      Person.prototype.prototypeAge = 40;
      ```
+
+     </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -7728,12 +8797,16 @@ and discard a rejection, just handle it with an empty catch
 
      Let's see the difference with an example,
 
+     <span dir="ltr" align="left">
+
      ```javascript
      isNaN(‘hello’);   // true
      Number.isNaN('hello'); // false
      ```
 
-### Coding Exercise
+     </span>
+
+### تمرین کدنویسی
 
 #### 1. What is the output of below code
 
@@ -7768,6 +8841,8 @@ function Vehicle(model, color, year, country) {
 
 #### 2. What is the output of below code
 
+<span dir="ltr" align="left">
+
 ```javascript
 function foo() {
     let x = y = 0;
@@ -7778,6 +8853,8 @@ function foo() {
 
 console.log(foo(), typeof x, typeof y);
 ```
+
+</span>
 
 - 1: 1, undefined and undefined
 - 2: ReferenceError: X is not defined
@@ -7791,11 +8868,15 @@ console.log(foo(), typeof x, typeof y);
 
 Of course the return value of `foo()` is 1 due to the increment operator. But the statement `let x = y = 0` declares a local variable x. Whereas y declared as a global variable accidentally. This statement is equivalent to,
 
+<span dir="ltr" align="left">
+
 ```javascript
  let x;
  window.y = 0;
  x = window.y;
 ```
+
+</span>
 
 Since the block scoped variable x is undefined outside of the function, the type will be undefined too. Whereas the global variable `y` is available outside the function, the value is 0 and type is number.
 </p>
@@ -7804,6 +8885,8 @@ Since the block scoped variable x is undefined outside of the function, the type
 ---
 
 #### 3. What is the output of below code
+
+<span dir="ltr" align="left">
 
 ```javascript
 function main(){
@@ -7815,6 +8898,8 @@ function main(){
 }
 main();
 ```
+
+</span>
 
 - 1: A, B and C
 - 2: B, A and C
