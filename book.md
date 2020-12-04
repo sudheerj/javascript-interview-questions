@@ -1,6 +1,6 @@
 ---
-title: "یادگیری اصولی جاواسکریپت - پیشرفته"
-author: JafarRezaei
+title: "مجموعه سوال و جواب‌های جاواسکریپتی"
+author: Sudheerj - translated by Mariotek team
 date: August 30, 2020
 export_on_save:
   html: true
