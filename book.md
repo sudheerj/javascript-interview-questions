@@ -41,130 +41,130 @@ puppeteer:
 
 | ردیف | سوال |
 |---- | ---------
-|1  | [What are the possible ways to create objects in JavaScript](#what-are-the-possible-ways-to-create-objects-in-javascript) |
-|2  | [What is prototype chain](#what-is-a-prototype-chain)|
-|3  | [What is the difference between Call, Apply and Bind](#what-is-the-difference-between-call-apply-and-bind)|
-|4  | [What is JSON and its common operations](#what-is-json-and-its-common-operations)|
-|5  | [What is the purpose of array slice method](#what-is-the-purpose-of-array-slice-method)|
-|6  | [What is the purpose of array splice method](#what-is-the-purpose-of-array-splice-method)|
-|7  | [What is the difference between slice and splice](#what-is-the-difference-between-slice-and-splice)|
-|8  | [How do you compare Object and Map](#how-do-you-compare-object-and-map)|
-|9  | [What is the difference between == and === operators](#what-is-the-difference-between-==-and-===-operators)|
-|10 | [What are lambda or arrow functions](#what-are-lambda-or-arrow-functions)|
-|11 | [What is a first class function](#what-is-a-first-class-function)|
-|12 | [What is a first order function](#what-is-a-first-order-function)|
-|13 | [What is a higher order function](#what-is-a-higher-order-function)|
-|14 | [What is a unary function](#what-is-a-unary-function)|
-|15 | [What is currying function](#what-is-currying-function)|
-|16 | [What is a pure function](#what-is-a-pure-function)|
-|17 | [What is the purpose of let keyword](#what-is-the-purpose-of-let-keyword)|
-|18 | [What is the difference between let and var](#what-is-the-difference-between-let-and-var)|
-|19 | [What is the reason to choose the name let as keyword](#what-is-the-reason-to-choose-the-name-let-as-keyword)|
-|20 | [How do you redeclare variables in switch block without an error](#how-do-you-redeclare-variables-in-switch-block-without-an-error)|
-|21 | [What is Temporal Dead Zone](#what-is-temporal-dead-zone)|
-|22 | [What is IIFE(Immediately Invoked Function Expression)](#what-is-iife-(-immediately-invoked-function-expression-)-)|
-|23 | [What is the benefit of using modules](#what-is-the-benefit-of-using-modules)|
-|24 | [What is memoization](#what-is-memoization)|
-|25 | [What is Hoisting](#what-is-hoisting)|
-|26 | [What are classes in ES6](#what-are-classes-in-es6)|
-|27 | [What are closures](#what-are-closures)|
-|28 | [What are modules](#what-are-modules)|
-|29 | [Why do you need modules](#why-do-you-need-modules)|
-|30 | [What is scope in javascript](#what-is-scope-in-javascript)|
-|31 | [What is a service worker](#what-is-a-service-worker)|
-|32 | [How do you manipulate DOM using service worker](#how-do-you-manipulate-dom-using-service-worker)|
-|33 | [How do you reuse information across service worker restarts](#how-do-you-reuse-information-across-service-worker-restarts)|
-|34 | [What is IndexedDB](#what-is-indexeddb)|
-|35 | [What is web storage](#what-is-web-storage)|
-|36 | [What is a post message](#what-is-a-post-message)|
-|37 | [What is a cookie](#what-is-a-cookie)|
-|38 | [Why do you need a Cookie](#why-do-you-need-a-cookie)|
-|39 | [What are the options in a cookie](#what-are-the-options-in-a-cookie)|
-|40 | [How do you delete a cookie](#how-do-you-delete-a-cookie)|
-|41 | [What are the differences between cookie, local storage and session storage](#What-are-the-differences-between-cookie,-local-storage-and-session-storage)|
-|42 | [What is the main difference between localStorage and sessionStorage](#what-is-the-main-difference-between-localstorage-and-sessionstorage)|
-|43 | [How do you access web storage](#how-do-you-access-web-storage)|
-|44 | [What are the methods available on session storage](#what-are-the-methods-available-on-session-storage)|
-|45 | [What is a storage event and its event handler](#what-is-a-storage-event-and-its-event-handler)|
-|46 | [Why do you need web storage](#why-do-you-need-web-storage)|
-|47 | [How do you check web storage browser support](#how-do-you-check-web-storage-browser-support)|
-|48 | [How do you check web workers browser support](#how-do-you-check-web-workers-browser-support)|
-|49 | [Give an example of web worker](#give-an-example-of-web-worker)|
-|50 | [What are the restrictions of web workers on DOM](#what-are-the-restrictions-of-web-workers-on-dom)|
-|51 | [What is a promise](#what-is-a-promise)|
-|52 | [Why do you need a promise](#why-do-you-need-a-promise)|
-|53 | [What are the three states of promise](#what-are-the-three-states-of-promise)|
-|54 | [What is a callback function](#what-is-a-callback-function)|
-|55 | [Why do we need callbacks](#why-do-we-need-callbacks)|
-|56 | [What is a callback hell](#what-is-a-callback-hell)|
-|57 | [What is server-sent events](#what-is-server-sent-events)|
-|58 | [How do you receive server-sent event notifications](#how-do-you-receive-server-sent-event-notifications)|
-|59 | [How do you check browser support for server-sent events](#how-do-you-check-browser-support-for-server-sent-events)|
-|60 | [What are the events available for server sent events](#what-are-the-events-available-for-server-sent-events)|
-|61 | [What are the main rules of promise](#what-are-the-main-rules-of-promise)|
-|62 | [What is callback in callback](#what-is-callback-in-callback)|
-|63 | [What is promise chaining](#what-is-promise-chaining)|
-|64 | [What is promise.all](#what-is-promise.all)|
-|65 | [What is the purpose of race method in promise](#what-is-the-purpose-of-race-method-in-promise)|
-|66 | [What is a strict mode in javascript](#what-is-a-strict-mode-in-javascript)|
-|67 | [Why do you need strict mode](#why-do-you-need-strict-mode)|
-|68 | [How do you declare strict mode](#how-do-you-declare-strict-mode)|
-|69 | [What is the purpose of double exclamation](#what-is-the-purpose-of-double-exclamation)|
-|70 | [What is the purpose of delete operator](#what-is-the-purpose-of-delete-operator)|
-|71 | [What is typeof operator](#what-is-typeof-operator)|
-|72 | [What is undefined property](#what-is-undefined-property)|
-|73 | [What is null value](#what-is-null-value)|
-|74 | [What is the difference between null and undefined](#what-is-the-difference-between-null-and-undefined)|
-|75 | [What is eval](#What-is-eval)|
-|76 | [What is the difference between window and document](#what-is-the-difference-between-window-and-document)|
-|77 | [How do you access history in javascript](#how-do-you-access-history-in-javascript)|
-|78 | [What are the javascript data types](#what-are-the-javascript-data-types)|
-|79 | [What is isNaN](#what-is-isnan)|
-|80 | [What are the differences between undeclared and undefined variables](#what-are-the-differences-between-undeclared-and-undefined-variables)|
-|81 | [What are global variables](#what-are-global-variables)|
-|82 | [What are the problems with global variables](#what-are-the-problems-with-global-variables)|
-|83 | [What is NaN property](#what-is-nan-property)|
-|84 | [What is the purpose of isFinite function](#what-is-the-purpose-of-isfinite-function)
-|85 | [What is an event flow](#what-is-an-event-flow)|
-|86 | [What is event bubbling](#what-is-event-bubbling)|
-|87 | [What is event capturing](#what-is-event-capturing)|
-|88 | [How do you submit a form using JavaScript](#how-do-you-submit-a-form-using-javascript)|
-|89 | [How do you find operating system details](#how-do-you-find-operating-system-details)|
-|90 | [What is the difference between document load and DOMContentLoaded events](#what-is-the-difference-between-document-load-and-domcontentloaded-events)|
-|91 | [What is the difference between native, host and user objects](#what-is-the-difference-between-native,-host-and-user-objects)|
-|92 | [What are the tools or techniques used for debugging JavaScript code](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)|
-|93 | [What are the pros and cons of promises over callbacks](#what-are-the-pros-and-cons-of-promises-over-callbacks)|
-|94 | [What is the difference between an attribute and a property](#what-is-the-difference-between-an-attribute-and-a-property)|
-|95 | [What is same-origin policy](#what-is-same-origin-policy)|
-|96 | [What is the purpose of void 0](#what-is-the-purpose-of-void-0)|
-|97 | [Is JavaScript a compiled or interpreted language](#is-javascript-a-compiled-or-interpreted-language)|
-|98 | [Is JavaScript a case-sensitive language](#is-javascript-a-case-sensitive-language)|
-|99 | [Is there any relation between Java and JavaScript](#is-there-any-relation-between-java-and-javascript)|
-|100| [What are events](#what-are-events)|
-|101| [Who created javascript](#who-created-javascript)|
-|102| [What is the use of preventDefault method](#what-is-the-use-of-preventdefault-method)|
-|103| [What is the use of stopPropagation method](#what-is-the-use-of-stoppropagation-method)|
-|104| [What are the steps involved in return false](#what-are-the-steps-involved-in-return-false)|
-|105| [What is BOM](#what-is-bom)|
-|106| [What is the use of setTimeout](#what-is-the-use-of-settimeout)|
-|107| [What is the use of setInterval](#what-is-the-use-of-setinterval)|
-|108| [Why is JavaScript treated as Single threaded](#why-is-javascript-treated-as-single-threaded)|
-|109| [What is an event delegation](#what-is-an-event-delegation)|
-|110| [What is ECMAScript](#what-is-ecmascript)|
-|111| [What is JSON](#what-is-json)|
-|112| [What are the syntax rules of JSON](#what-are-the-syntax-rules-of-json)|
-|113| [What is the purpose JSON stringify](#what-is-the-purpose-json-stringify)|
-|114| [How do you parse JSON string](#how-do-you-parse-json-string)|
-|115| [Why do you need JSON](#why-do-you-need-json)|
-|116| [What are PWAs](#what-are-pwas?)|
-|117| [What is the purpose of clearTimeout method](#what-is-the-purpose-of-cleartimeout-method)|
-|118| [What is the purpose of clearInterval method](#what-is-the-purpose-of-clearinterval-method)|
-|119| [How do you redirect new page in javascript](#how-do-you-redirect-new-page-in-javascript)|
-|120| [How do you check whether a string contains a substring](#how-do-you-check-whether-a-string-contains-a-substring)|
-|121| [How do you validate an email in javascript](#how-do-you-validate-an-email-in-javascript)|
-|122| [How do you get the current url with javascript](#how-do-you-get-the-current-url-with-javascript)|
-|123| [What are the various url properties of location object](#what-are-the-various-url-properties-of-location-object)|
-|124| [How do get query string values in javascript](#how-do-get-query-string-values-in-javascript)|
+|1  | [روش‌های ایجاد objects توی جاواسکریپت چیا هستن؟]() |
+|2  | [زنجیره prototype چیه؟]() |
+|3  | [تفاوت‌های بین Call، Apply و Bind چیا هستن؟]() |
+|4  | [فرمت JSON چیه و عملیات‌های معمول بر روی آن چیا هستند؟]() |
+|5  | [هدف از متد slice روی آرایه‌ها چیه؟]() |
+|6  | [هدف از متد splice روی آرایه‌ها چیه؟]() |
+|7  | [تفاوت متدهای slice و splice چیا هستن؟]() |
+|8  | [تفاوت‌های Object و Map چیا هستن؟]() |
+|9  | [تفاوت‌های بین عملگرهای == و === چیا هستن؟]() |
+|10 | [توابع lambda یا arrow-function چی هستن؟]() |
+|11 | [یه تابع first-class چجور تابعی‌ـه؟]() |
+|12 | [یه تابع first-order چجور تابعی‌ـه؟]() |
+|13 | [یه تابع higher-order چجور تابعی‌ـه؟]() |
+|14 | [یه تابع unary چجور تابعی‌ـه؟]() |
+|15 | [currying توابع یعنی چی؟]() |
+|16 | [چه توابعی pure هستن؟]() |
+|17 | [هدف از کلمه کلیدی let چیه؟]() |
+|18 | [تفاوت‌های کلمات کلیدی let و var چیا هستن؟]() |
+|19 | [دلیل انتخاب کلمه کلیدی let چیه؟]() |
+|20 | [چطوری می‌تونیم توی بلوک مربوط به switch بدون دریافت خطا متغیر تعریف کنیم؟]() |
+|21 | [Temporal-Dead-Zone چیه؟]() |
+|22 | [IIFE(توابع بلافاصله صدا زده شده) چی هستن؟]() |
+|23 | [مزایای استفاده از moduleها چیه؟]() |
+|24 | [Memoization چیه؟]() |
+|25 | [Hoisting چیه؟]() |
+|26 | [Classeها توی ES6 چی هستن؟]() |
+|27 | [Closureها چیا هستن؟]() |
+|28 | [Moduleها چیا هستن؟]() |
+|29 | [چرا به moduleها نیاز داریم؟]() |
+|30 | [توی جاواسکریپت scope چیه و چیکار می‌کنه؟]() |
+|31 | [service-worker چیه؟]() |
+|32 | [توی service-worker چطوری میشه DOM رو دستکاری کرد؟]() |
+|33 | [چطوری می‌تونیم بین ریست شدن‌های service-worker داده‌های مورد نظرمون رو مجدد استفاده کنیم؟]() |
+|34 | [IndexedDB چیه؟]() |
+|35 | [Web-storage چیه؟]() |
+|36 | [Post-message چیه؟]() |
+|37 | [Cookie چیه؟]() |
+|38 | [چرا به cookie نیاز داریم؟]() |
+|39 | [گزینه‌های قابل تنظیم توی cookie چیا هستن؟]() |
+|40 | [چطوری میشه یه cookie رو حذف کرد؟]() |
+|41 | [تفاوت‌های بین cookie، local-storage و session-storage چیا هستن؟]() |
+|42 | [تفاوت‌های بین localStorage و sessionStorage چیا هستن؟]() |
+|43 | [چطوری به web-storage دسترسی پیدا می‌کنی؟]() |
+|44 | [چه متد‌هایی روی session-storage قابل استفاده هستن؟]() |
+|45 | [رخداد storage چیه و چطوری ازش استفاده می‌کنیم؟]() |
+|46 | [چرا به web-storage نیاز داریم؟]() |
+|47 | [چطوری می‌تونیم پشتیبانی از web-storage توسط مرورگر رو بررسی کنیم؟]() |
+|48 | [چطوری می‌تونیم پشتیبانی از web-worker توسط مرورگر رو بررسی کنیم؟]() |
+|49 | [یه مثال از web-workerها می‌تونی بزنی؟]() |
+|50 | [محدودیت‌های web-workerها روی DOM چیا هستن؟]() |
+|51 | [Promise چیه؟]() |
+|52 | [چرا به promise نیاز داریم؟]() |
+|53 | [سه تا وضعیت ممکن برای یه promise چیا هستن؟]() |
+|54 | [توابع callback چی هستن؟]() |
+|55 | [چرا به توابع callback نیاز داریم؟]() |
+|56 | [Callback-hell یا جهنم توابع callback چیه؟]() |
+|57 | [Server-sent-events(SSE) چیه؟]() |
+|58 | [چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟]() |
+|59 | [چطوری می‌تونیم پشتیبانی مرورگر برای SSE رو بررسی کنیم؟]() |
+|60 | [کدوم توابع روی SSE وجود دارن؟]() |
+|61 | [اصلی‌ترین قوانین promiseها چیا هستن؟]() |
+|62 | [Callback توی callback چطوری رخ میده؟]() |
+|63 | [زنجیره promiseها چیه؟]() |
+|64 | [کاربرد متد promise.all چیه؟]() |
+|65 | [هدف از متد race روی promise چیه؟]() |
+|66 | [حالت strict توی جاواسکریپت چی کار میکنه؟]() |
+|67 | [چرا به حالت strict نیاز داریم؟]() |
+|68 | [چطوری می‌تونیم حالت strict رو فعال کنیم؟]() |
+|69 | [هدف از عملگر نقیض دوتایی(!!) چیه؟]() |
+|70 | [هدف از عملگر delete چیه؟]() |
+|71 | [عملگر typeof چیکار می‌کنه؟]() |
+|72 | [undefined چیه و چه زمانی undefined می‌گیریم؟]() |
+|73 | [null چیه؟]() |
+|74 | [تفاوت‌های بین null و undefined چیا هستن؟]() |
+|75 | [eval چیه؟]() |
+|76 | [تفاوت‌های بین window و document چیا هستن؟]() |
+|77 | [توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟]() |
+|78 | [انواع داده‌های جاواسکریپت کدوما هستن؟]() |
+|79 | [isNaN چیه و چیکار می‌کنه؟]() |
+|80 | [تفاوت‌های بین undeclared و undefined چیا هستن؟]() |
+|81 | [کدوم متغیرها عمومی هستن؟]() |
+|82 | [مشکلات متغیرهای عمومی چیا هستن؟]() |
+|83 | [مقدار NaN چیه؟]() |
+|84 | [هدف از تابع isFinite چیه؟]() |
+|85 | [یه event-flow چیه؟]() |
+|86 | [Event-bubbling چیه؟]() |
+|87 | [Event-capturing چیه؟]() |
+|88 | [چطوری میشه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟]() |
+|89 | [چطوری میشه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟]() |
+|90 | [تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟]() |
+|91 | [تفاوت‌های بین objectهای native، host و user چیا هستن؟]() |
+|92 | [کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟]() |
+|93 | [مزایا و معایب استفاده از promiseها به جای callback چیا هستن؟]() |
+|94 | [تفاوت‌های بین attribute و property روی DOM چیا هستن؟]() |
+|95 | [سیاست same-origin چیه؟]() |
+|96 | [هدف استفاده از void 0 چیه؟]() |
+|97 | [جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟]() |
+|98 | [آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟]() |
+|99 | [ارتباطی بین Java و JavaScript وجود داره؟]() |
+|100| [Eventها چی هستن؟]() |
+|101| [کی جاواسکریپت رو ساخته؟]() |
+|102| [هدف از متد preventDefault چیه؟]() |
+|103| [کاربرد متد stopPropagation چیه؟]() |
+|104| [مراحلی که هنگام استفاده از return false توی یه event-handler رخ میده چیا هستن؟]() |
+|105| [BOM چیه؟]() |
+|106| [موارد استفاده از setTimeout کدوما هستن؟]() |
+|107| [موارد استفاده از setInterval کدوما هستن؟]() |
+|108| [چرا جاواسکریپت رو به عنوان یه زبان تک thread می‌شناسن؟]() |
+|109| [Event-delegation چیه؟]() |
+|110| [ECMAScript چیه؟]() |
+|111| [JSON چیه؟]() |
+|112| [قوانین فرمت JSON کدوما هستن؟]() |
+|113| [هدف از متد JSON.stringify چیه؟]() |
+|114| [چطوری می‌تونیم یه رشته(string) JSON رو تجزیه کنیم؟]() |
+|115| [چرا به JSON نیاز داریم؟]() |
+|116| [PWAها چی هستن؟]() |
+|117| [هدف از متد clearTimeout چیه؟]() |
+|118| [هدف از متد clearInterval چیه؟]() |
+|119| [توی جاواسکریپت، چطوری میشه به یه صفحه جدید redirect انجام داد؟]() |
+|120| [چطوری بررسی می‌کنین که یه string شامل یه substring هست یا نه؟]() |
+|121| [توی جاواسکریپت، چطوری مقدار یه آدرس email رو اعتبارسنجی می‌کنین؟]() |
+|122| [چطوری می‌تونیم مقدار آدرس url جاری رو بخونیم؟]() |
+|123| [ویژگی‌های مختلف url روی object مربوط به history کدوما هستن؟]() |
+|124| [توی جاواسکریپت چطوری می‌تونیم مقدار یه query-string رو بخونیم؟]() |
 |125| [How do you check if a key exists in an object](#how-do-you-check-if-a-key-exists-in-an-object)|
 |126| [How do you loop through or enumerate javascript object](#how-do-you-loop-through-or-enumerate-javascript-object)|
 |127| [How do you test for an empty object](#how-do-you-test-for-an-empty-object)|
