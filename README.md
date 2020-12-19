@@ -442,6 +442,7 @@ Good luck with your interview 😊
 |418| [What are the differences between for...of and for...in statements](#what-are-the-differences-between-for...of-and-for...in-statements)|
 |419| [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties)|
 |420| [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-number.isnan)|
+|421| [How to invoke an IIFE without any extra brackets?](#how-to-invoke-an-iife-without-any-extra-brackets)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -5035,7 +5036,7 @@ Good luck with your interview 😊
      void expression
      ```
 
-     Let's display a message without any redirections or reloads
+     Let's display a message without any redirection or reload
 
      ```javascript
      <a href="javascript:void(alert('Welcome to JS world'))">Click here to see a message</a>
@@ -7133,6 +7134,24 @@ Good luck with your interview 😊
      isNaN(‘hello’);   // true
      Number.isNaN('hello'); // false
      ```
+     
+     **[⬆ Back to Top](#table-of-contents)**
+     
+421. ### How to invoke an IIFE without any extra brackets?
+     Immediately Invoked Function Expressions(IIFE) requires a pair of parenthesis to wrap the function which contains set of statements.
+     ```js
+     (function(dt) { 
+        console.log(dt.toLocaleTimeString()); 
+      })(new Date()); 
+     ```
+     Since both IIFE and void operator discard the result of an expression, you can avoid the extra brackets using `void operator` for IIFE  as below,
+     ```js
+      void function(dt) { 
+        console.log(dt.toLocaleTimeString()); 
+      }(new Date()); 
+     ```
+
+    **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
 
