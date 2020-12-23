@@ -443,6 +443,8 @@ Good luck with your interview 😊
 |419| [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties)|
 |420| [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-number.isnan)|
 |421| [How to invoke an IIFE without any extra brackets?](#how-to-invoke-an-iife-without-any-extra-brackets)|
+|422| [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases)|
+|423| [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7157,15 +7159,25 @@ Good luck with your interview 😊
      You might have seen expressions used in switch condition but it is also possible to use for switch cases by assigning true value for the switch condition. Let's see the weather condition based on temparature as an example,
      ```js
      const weather = function getWeather(temp) {
-    switch(true) {
-        case temp < 0: return 'freezing';
-        case temp < 10: return 'cold';
-        case temp < 24: return 'cool';
-        default: return 'unknown';
-    }
-    }(10);
+        switch(true) {
+            case temp < 0: return 'freezing';
+            case temp < 10: return 'cold';
+            case temp < 24: return 'cool';
+            default: return 'unknown';
+        }
+        }(10);
      ```
-
+     
+    **[⬆ Back to Top](#table-of-contents)**
+         
+423. ### What is the easiest way to ignore promise errors?    
+     The easiest and safest way to ignore promise errors is void that error. This approach is ESLint friendly too.
+     
+     ```js
+     await promise.catch(e => void e);
+     ```
+     **[⬆ Back to Top](#table-of-contents)**
+     
 ### Coding Exercise
 
 #### 1. What is the output of below code
