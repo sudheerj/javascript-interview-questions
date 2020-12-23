@@ -7153,6 +7153,19 @@ Good luck with your interview 😊
 
     **[⬆ Back to Top](#table-of-contents)**
 
+422. ### Is that possible to use expressions in switch cases?
+     You might have seen expressions used in switch condition but it is also possible to use for switch cases by assigning true value for the switch condition. Let's see the weather condition based on temparature as an example,
+     ```js
+     const weather = function getWeather(temp) {
+    switch(true) {
+        case temp < 0: return 'freezing';
+        case temp < 10: return 'cold';
+        case temp < 24: return 'cool';
+        default: return 'unknown';
+    }
+    }(10);
+     ```
+
 ### Coding Exercise
 
 #### 1. What is the output of below code
@@ -7946,7 +7959,7 @@ async function delayedLog(item) {
 
 async function process(array) {
   array.forEach(async (item) => {
-    await delayedLog(i);
+    await delayedLog(item);
   });
   console.log('Process completed!');
 }
@@ -8363,7 +8376,7 @@ Since the default argument is evaluated at call time, a new object is created ea
 
 ```javascript
 function greet(greeting, name, message = greeting + ' ' + name) {
-  console.log([name, greeting, message]);
+  console.log([greeting, name, message]);
 }
 
 greet('Hello', 'John');
