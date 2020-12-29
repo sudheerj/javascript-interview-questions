@@ -445,6 +445,7 @@ Good luck with your interview 😊
 |421| [How to invoke an IIFE without any extra brackets?](#how-to-invoke-an-iife-without-any-extra-brackets)|
 |422| [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases)|
 |423| [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors)|
+|424| [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7178,6 +7179,19 @@ Good luck with your interview 😊
      ```
      **[⬆ Back to Top](#table-of-contents)**
      
+424. ### How do style the console output using CSS?
+
+     You can add CSS styling to the console output using the CSS format content specifier %c. The console string message can be appended after the specifier and CSS style in another argument. Let's print the red the color text using console.log and CSS specifier as below,
+     ```js
+     console.log("%cThis is a red text", "color:red");
+     ```
+    
+     It is also possible to add more styles for the content. For example, the font-size can be modified for the above text
+     ```js
+     console.log("%cThis is a red text with bigger font", "color:red; font-size:20px");
+     ```
+     **[⬆ Back to Top](#table-of-contents)**
+         
 ### Coding Exercise
 
 #### 1. What is the output of below code
