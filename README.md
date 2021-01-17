@@ -7769,7 +7769,7 @@ The + operator is not meant or defined for arrays. So it converts arrays into st
 const numbers = new Set([1, 1, 2, 3, 4]);
 console.log(numbers);
 
-const browser = new Set('Firefox);
+const browser = new Set('Firefox');
 console.log(browser);
 ```
 
@@ -7862,7 +7862,7 @@ When using rest parameters, trailing commas are not allowed and will throw a Syn
 If you remove the trailing comma then it displays 1st answer
 
 ```javascript
-let [a, ...b,] = [1, 2, 3, 4, 5];
+let [a, ...b] = [1, 2, 3, 4, 5];
 console.log(a, b); // 1, [2, 3, 4, 5]
 ```
 
@@ -7880,10 +7880,10 @@ async function func() {
 console.log(func());
 ```
 
-- 1: Promise {<resolved>: 10}
+- 1: Promise {\<fulfilled\>: 10}
 - 2: 10
 - 3: SyntaxError
-- 4: Promise {<rejected>: 10}
+- 4: Promise {\<rejected\>: 10}
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -7911,10 +7911,10 @@ async function func() {
 console.log(func());
 ```
 
-- 1: Promise {<resolved>: 10}
+- 1: Promise {\<fullfilled\>: 10}
 - 2: 10
 - 3: SyntaxError
-- 4: Promise {<resolved>: undefined}
+- 4: Promise {\<fullfilled\>: undefined}
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -8203,30 +8203,6 @@ Using constructors, `new.target` refers to the constructor (points to the class 
 #### 35. What is the output of below code
 
 ```javascript
-const [x, ...y,] = [1, 2, 3, 4];
-console.log(x, y);
-```
-
-- 1: 1, [2, 3, 4]
-- 2: 1, [2, 3]
-- 3: 1, [2]
-- 4: SyntaxError
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-##### Answer: 4
-
-It throws a syntax error because the rest element should not have a trailing comma. You should always consider using a rest operator as the last element.
-</p>
-
-</details>
-
----
-
-#### 36. What is the output of below code
-
-```javascript
 const {a: x = 10, b: y = 20} = {a: 30};
 
 console.log(x);
@@ -8254,7 +8230,7 @@ The object property follows below rules,
 
 ---
 
-#### 37. What is the output of below code
+#### 36. What is the output of below code
 
 ```javascript
 function area({length = 10, width = 20}) {
@@ -8304,7 +8280,7 @@ area();
 
 ---
 
-#### 38. What is the output of below code
+#### 37. What is the output of below code
 
 ```javascript
 const props = [
@@ -8334,7 +8310,7 @@ It is possible to combine Array and Object destructuring. In this case, the thir
 
 ---
 
-#### 39. What is the output of below code
+#### 38. What is the output of below code
 
 ```javascript
 function checkType(num = 1) {
@@ -8370,7 +8346,7 @@ Hence, the result of function calls categorized as below,
 
 ---
 
-#### 40. What is the output of below code
+#### 39. What is the output of below code
 
 ```javascript
 function add(item, items = []) {
@@ -8398,7 +8374,7 @@ Since the default argument is evaluated at call time, a new object is created ea
 
 ---
 
-#### 41. What is the output of below code
+#### 40. What is the output of below code
 
 ```javascript
 function greet(greeting, name, message = greeting + ' ' + name) {
@@ -8425,7 +8401,7 @@ Since parameters defined earlier are available to later default parameters, this
 
 ---
 
-#### 42. What is the output of below code
+#### 41. What is the output of below code
 
 ```javascript
 function outer(f = inner()) {
@@ -8449,7 +8425,7 @@ The functions and variables declared in the function body cannot be referred fro
 
 ---
 
-#### 43. What is the output of below code
+#### 42. What is the output of below code
 
 ```javascript
 function myFun(x, y, ...manyMoreArgs) {
@@ -8477,7 +8453,7 @@ The rest parameter is used to hold the remaining parameters of a function and it
 
 ---
 
-#### 44. What is the output of below code
+#### 43. What is the output of below code
 
 ```javascript
 const obj = {'key': 'value'};
@@ -8502,7 +8478,7 @@ Spread syntax can be applied only to iterable objects. By default, Objects are n
 
 ---
 
-#### 45. What is the output of below code
+#### 44. What is the output of below code
 
 ```javascript
 function* myGenFunc() {
@@ -8532,7 +8508,7 @@ Generators are not constructible type. But if you still proceed to do, there wil
 
 ---
 
-#### 46. What is the output of below code
+#### 45. What is the output of below code
 
 ```javascript
 
@@ -8565,7 +8541,7 @@ A return statement in a generator function will make the generator finish. If a 
 
 ---
 
-#### 47. What is the output of below code
+#### 46. What is the output of below code
 
 ```javascript
 const myGenerator = (function *(){
@@ -8600,7 +8576,7 @@ The generator should not be re-used once the iterator is closed. i.e, Upon exiti
 
 ---
 
-#### 48. What is the output of below code
+#### 47. What is the output of below code
 
 ```javascript
 const num = 0o38;
@@ -8621,7 +8597,7 @@ If you use an invalid number(outside of 0-7 range) in the octal literal, JavaScr
 
 ---
 
-#### 49. What is the output of below code
+#### 48. What is the output of below code
 
 ```javascript
 const squareObj = new Square(10);
@@ -8659,7 +8635,7 @@ Unlike function declarations, class declarations are not hoisted. i.e, First You
 
 ---
 
-#### 50. What is the output of below code
+#### 49. What is the output of below code
 
 ```javascript
 function Person() { }
@@ -8698,7 +8674,7 @@ When a regular or prototype method is called without a value for **this**, the m
 
 ---
 
-#### 51. What is the output of below code
+#### 50. What is the output of below code
 
 ```javascript
 class Vehicle {
@@ -8740,7 +8716,7 @@ The super keyword is used to call methods of a superclass. Unlike other language
 
 ---
 
-#### 52. What is the output of below code
+#### 51. What is the output of below code
 
 ```javascript
 const USER = {'age': 30};
@@ -8767,7 +8743,7 @@ Even though we used constant variables, the content of it is an object and the o
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 53. What is the output of below code
+#### 52. What is the output of below code
 
 ```javascript
 console.log('🙂' === '🙂');
@@ -8790,7 +8766,7 @@ Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode c
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 54. What is the output of below code?
+#### 53. What is the output of below code?
 
 ```javascript
 console.log(typeof typeof typeof true);
@@ -8814,7 +8790,7 @@ The typeof operator on any primitive returns a string value. So even if you appl
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 55. What is the output of below code?
+#### 54. What is the output of below code?
 
 ```javascript
 let zero = new Number(0);
