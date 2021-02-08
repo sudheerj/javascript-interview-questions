@@ -2231,7 +2231,7 @@ Good luck with your interview 😊
      1. **Using RegEx:** The advanced solution is using Regular expression's test method(`RegExp.test`), which allows for testing for against regular expressions
 
      ```javascript
-     var mainString = "hello", regex = "/hell/";
+     var mainString = "hello", regex = /hell/;
      regex.test(mainString)
      ```
 
