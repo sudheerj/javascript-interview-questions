@@ -1032,7 +1032,7 @@ Good luck with your interview 😊
       var greetingInfo = function(message){
        console.log(message+' '+name);
       }
-    return greetingInfo;
+    return greetingInfo();
     }
     var myFunction = Welcome('John');
     myFunction('Welcome '); //Output: Welcome John
@@ -8875,4 +8875,3 @@ It returns undefined for non-strict mode and returns Error for strict mode. In n
 ---
 
 **[⬆ Back to Top](#table-of-contents)**
-
