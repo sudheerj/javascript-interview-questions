@@ -26,8 +26,8 @@ Good luck with your interview 😊
 |2  | [What is prototype chain](#what-is-a-prototype-chain)|
 |3  | [What is the difference between Call, Apply and Bind](#what-is-the-difference-between-call-apply-and-bind)|
 |4  | [What is JSON and its common operations](#what-is-json-and-its-common-operations)|
-|5  | [What is the purpose of array slice method](#what-is-the-purpose-of-array-slice-method)|
-|6  | [What is the purpose of array splice method](#what-is-the-purpose-of-array-splice-method)|
+|5  | [What is the purpose of the array slice method](#what-is-the-purpose-of-the-array-slice-method)|
+|6  | [What is the purpose of the array splice method](#what-is-the-purpose-of-the-array-splice-method)|
 |7  | [What is the difference between slice and splice](#what-is-the-difference-between-slice-and-splice)|
 |8  | [How do you compare Object and Map](#how-do-you-compare-object-and-map)|
 |9  | [What is the difference between == and === operators](#what-is-the-difference-between-==-and-===-operators)|
@@ -36,14 +36,14 @@ Good luck with your interview 😊
 |12 | [What is a first order function](#what-is-a-first-order-function)|
 |13 | [What is a higher order function](#what-is-a-higher-order-function)|
 |14 | [What is a unary function](#what-is-a-unary-function)|
-|15 | [What is currying function](#what-is-currying-function)|
+|15 | [What is the currying function](#what-is-the-currying-function)|
 |16 | [What is a pure function](#what-is-a-pure-function)|
-|17 | [What is the purpose of let keyword](#what-is-the-purpose-of-let-keyword)|
+|17 | [What is the purpose of the let keyword](#what-is-the-purpose-of-the-let-keyword)|
 |18 | [What is the difference between let and var](#what-is-the-difference-between-let-and-var)|
-|19 | [What is the reason to choose the name let as keyword](#what-is-the-reason-to-choose-the-name-let-as-keyword)|
+|19 | [What is the reason to choose the name let as a keyword](#what-is-the-reason-to-choose-the-name-let-as-a-keyword)|
 |20 | [How do you redeclare variables in switch block without an error](#how-do-you-redeclare-variables-in-switch-block-without-an-error)|
-|21 | [What is Temporal Dead Zone](#what-is-temporal-dead-zone)|
-|22 | [What is IIFE(Immediately Invoked Function Expression)](#what-is-iife-(-immediately-invoked-function-expression-)-)|
+|21 | [What is the Temporal Dead Zone](#what-is-the-temporal-dead-zone)|
+|22 | [What is IIFE(Immediately Invoked Function Expression)](#what-is-iife(immediately-invoked-function-expression))|
 |23 | [What is the benefit of using modules](#what-is-the-benefit-of-using-modules)|
 |24 | [What is memoization](#what-is-memoization)|
 |25 | [What is Hoisting](#what-is-hoisting)|
@@ -53,7 +53,7 @@ Good luck with your interview 😊
 |29 | [Why do you need modules](#why-do-you-need-modules)|
 |30 | [What is scope in javascript](#what-is-scope-in-javascript)|
 |31 | [What is a service worker](#what-is-a-service-worker)|
-|32 | [How do you manipulate DOM using service worker](#how-do-you-manipulate-dom-using-service-worker)|
+|32 | [How do you manipulate DOM using a service worker](#how-do-you-manipulate-dom-using-a-service-worker)|
 |33 | [How do you reuse information across service worker restarts](#how-do-you-reuse-information-across-service-worker-restarts)|
 |34 | [What is IndexedDB](#what-is-indexeddb)|
 |35 | [What is web storage](#what-is-web-storage)|
@@ -62,7 +62,7 @@ Good luck with your interview 😊
 |38 | [Why do you need a Cookie](#why-do-you-need-a-cookie)|
 |39 | [What are the options in a cookie](#what-are-the-options-in-a-cookie)|
 |40 | [How do you delete a cookie](#how-do-you-delete-a-cookie)|
-|41 | [What are the differences between cookie, local storage and session storage](#What-are-the-differences-between-cookie,-local-storage-and-session-storage)|
+|41 | [What are the differences between cookie, local storage and session storage](#What-are-the-differences-between-cookie-local-storage-and-session-storage)|
 |42 | [What is the main difference between localStorage and sessionStorage](#what-is-the-main-difference-between-localstorage-and-sessionstorage)|
 |43 | [How do you access web storage](#how-do-you-access-web-storage)|
 |44 | [What are the methods available on session storage](#what-are-the-methods-available-on-session-storage)|
@@ -441,6 +441,11 @@ Good luck with your interview 😊
 |417| [What are the built-in iterables](#what-are-the-built-in-iterables)|
 |418| [What are the differences between for...of and for...in statements](#what-are-the-differences-between-for...of-and-for...in-statements)|
 |419| [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties)|
+|420| [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-number.isnan)|
+|421| [How to invoke an IIFE without any extra brackets?](#how-to-invoke-an-iife-without-any-extra-brackets)|
+|422| [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases)|
+|423| [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors)|
+|424| [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -3872,6 +3877,7 @@ Good luck with your interview 😊
 223. ### What are primitive data types
 
      A primitive data type is data that has a primitive value (which has no properties or methods). There are 5 types of primitive data types.
+     
      1. string
      2. number
      3. boolean
@@ -5033,7 +5039,7 @@ Good luck with your interview 😊
      void expression
      ```
 
-     Let's display a message without any redirections or reloads
+     Let's display a message without any redirection or reload
 
      ```javascript
      <a href="javascript:void(alert('Welcome to JS world'))">Click here to see a message</a>
@@ -5296,7 +5302,7 @@ Good luck with your interview 😊
          expertiseStr = 'junior developer';
        }
 
-       return `${str0}${userExp}${str1}${experienceExp}{str3}`;
+       return ${str0}${userExp}${str1}${expertiseStr}${str2}${skillExp};
      }
 
      var output1 = myInfoTag`Mr/Ms. ${ user1 } is a/an ${ experience1 } in ${skill1}`;
@@ -5595,7 +5601,7 @@ Good luck with your interview 😊
 
 332. ### Is JavaScript faster than server side script
 
-     Yes, JavaScript is faster than server side script. Because JavaScript is a client-side script it does require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
+     Yes, JavaScript is faster than server side script. Because JavaScript is a client-side script it does not require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5677,7 +5683,7 @@ Good luck with your interview 😊
      ```javascript
      try {
        if(withdraw > balance)
-       throw new Error('Oops! You don't have enough balance');
+       throw new Error("Oops! You don't have enough balance");
      } catch (e) {
        console.log(e.name + ': ' + e.message);
      }
@@ -6194,7 +6200,8 @@ Good luck with your interview 😊
      console.log(element);
      ```
 
-     It prints the HTML element in the console
+     It prints the HTML element in the console,
+     
      ![Screenshot](images/console-html.png)
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -6203,14 +6210,13 @@ Good luck with your interview 😊
 
      The `console.table()` is used to display data in the console in a tabular format to visualize complex arrays or objects.
 
-     ```javascript
-     const users = [{ "name":"John", "id": 1, "city": "Delhi"},
-                   { "name":"Max", "id": 2, "city": "London"},
-                   { "name":"Rod", "id": 3, "city": "Paris"}];
+     ```js
+     const users = [{ "name":"John", "id": 1, "city": "Delhi"}, { "name":"Max", "id": 2, "city": "London"}, { "name":"Rod", "id": 3, "city": "Paris"} ];
      console.table(users);
      ```
 
-     The data visualized in a table format
+     The data visualized in a table format,
+     
      ![Screenshot](images/console-table.png)
      **Not:** Remember that `console.table()` is not supported in IE.
 
@@ -7120,6 +7126,72 @@ Good luck with your interview 😊
 
      **[⬆ Back to Top](#table-of-contents)**
 
+420. ### What is the difference between isNaN and Number.isNaN?
+
+     1. **isNaN**: The global function `isNaN` converts the argument to a Number and returns true if the resulting value is NaN.
+     2. **Number.isNaN**: This method does not convert the argument. But it returns true when the type is a Number and value is NaN.
+
+     Let's see the difference with an example,
+
+     ```javascript
+     isNaN(‘hello’);   // true
+     Number.isNaN('hello'); // false
+     ```
+     
+     **[⬆ Back to Top](#table-of-contents)**
+     
+421. ### How to invoke an IIFE without any extra brackets?
+     Immediately Invoked Function Expressions(IIFE) requires a pair of parenthesis to wrap the function which contains set of statements.
+     ```js
+     (function(dt) { 
+        console.log(dt.toLocaleTimeString()); 
+      })(new Date()); 
+     ```
+     Since both IIFE and void operator discard the result of an expression, you can avoid the extra brackets using `void operator` for IIFE  as below,
+     ```js
+      void function(dt) { 
+        console.log(dt.toLocaleTimeString()); 
+      }(new Date()); 
+     ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+422. ### Is that possible to use expressions in switch cases?
+     You might have seen expressions used in switch condition but it is also possible to use for switch cases by assigning true value for the switch condition. Let's see the weather condition based on temparature as an example,
+     ```js
+     const weather = function getWeather(temp) {
+        switch(true) {
+            case temp < 0: return 'freezing';
+            case temp < 10: return 'cold';
+            case temp < 24: return 'cool';
+            default: return 'unknown';
+        }
+        }(10);
+     ```
+     
+    **[⬆ Back to Top](#table-of-contents)**
+         
+423. ### What is the easiest way to ignore promise errors?    
+     The easiest and safest way to ignore promise errors is void that error. This approach is ESLint friendly too.
+     
+     ```js
+     await promise.catch(e => void e);
+     ```
+     **[⬆ Back to Top](#table-of-contents)**
+     
+424. ### How do style the console output using CSS?
+
+     You can add CSS styling to the console output using the CSS format content specifier %c. The console string message can be appended after the specifier and CSS style in another argument. Let's print the red the color text using console.log and CSS specifier as below,
+     ```js
+     console.log("%cThis is a red text", "color:red");
+     ```
+    
+     It is also possible to add more styles for the content. For example, the font-size can be modified for the above text
+     ```js
+     console.log("%cThis is a red text with bigger font", "color:red; font-size:20px");
+     ```
+     **[⬆ Back to Top](#table-of-contents)**
+         
 ### Coding Exercise
 
 #### 1. What is the output of below code
@@ -7460,15 +7532,10 @@ Whereas the second statement follows the below order,
 #### 11. What is the output of below code in non-strict mode
 
 ```javascript
-const printNumbers = (first, second, first) => {
+function printNumbers(first, second, first) {
   console.log(first, second, first);
 }
 printNumbers(1, 2, 3);
-
-const printNumbersArrow = (first, second, first) => {
-  console.log(first, second, first);
-}
-printNumbersArrow(1, 2, 3);
 ```
 
 - 1: 1, 2, 3
@@ -7602,8 +7669,8 @@ console.log(Math.max());
 #### 16. What is the output of below code
 
 ```javascript
-console.log(10 === [10]);
-console.log(10 === [[[[[[[10]]]]]]]);
+console.log(10 == [10]);
+console.log(10 == [[[[[[[10]]]]]]]);
 ```
 
 - 1: True, True
@@ -7918,7 +7985,7 @@ async function delayedLog(item) {
 
 async function process(array) {
   array.forEach(async (item) => {
-    await delayedLog(i);
+    await delayedLog(item);
   });
   console.log('Process completed!');
 }
@@ -8335,7 +8402,7 @@ Since the default argument is evaluated at call time, a new object is created ea
 
 ```javascript
 function greet(greeting, name, message = greeting + ' ' + name) {
-  console.log([name, greeting, message]);
+  console.log([greeting, name, message]);
 }
 
 greet('Hello', 'John');
@@ -8722,3 +8789,90 @@ Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode c
 ---
 
 **[⬆ Back to Top](#table-of-contents)**
+
+#### 54. What is the output of below code?
+
+```javascript
+console.log(typeof typeof typeof true);
+```
+
+- 1: string
+- 2: boolean
+- 3: NaN
+- 4: number
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+The typeof operator on any primitive returns a string value. So even if you apply the chain of typeof operators on the return value, it is always string.
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 55. What is the output of below code?
+
+```javascript
+let zero = new Number(0);
+
+if (zero) {
+  console.log("If");
+} else {
+  console.log("Else");
+}
+```
+
+- 1: If
+- 2: Else
+- 3: NaN
+- 4: SyntaxError
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+1. The type of operator on new Number always returns object. i.e, typeof new Number(0) --> object. 
+2. Objects are always truthy in if block
+
+Hence the above code block always goes to if section.
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 55. What is the output of below code in non strict mode?
+
+```javascript
+let msg = "Good morning!!";
+
+msg.name = "John"; 
+
+console.log(msg.name);
+```
+
+- 1: ""
+- 2: Error
+- 3: John
+- 4: Undefined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+It returns undefined for non-strict mode and returns Error for strict mode. In non-strict mode, the wrapper object is going to be created and get the mentioned property. But the object get disappeared after accessing the property in next line.
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
