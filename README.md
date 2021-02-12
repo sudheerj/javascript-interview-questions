@@ -43,7 +43,7 @@ Good luck with your interview 😊
 |19 | [What is the reason to choose the name let as a keyword](#what-is-the-reason-to-choose-the-name-let-as-a-keyword)|
 |20 | [How do you redeclare variables in switch block without an error](#how-do-you-redeclare-variables-in-switch-block-without-an-error)|
 |21 | [What is the Temporal Dead Zone](#what-is-the-temporal-dead-zone)|
-|22 | [What is IIFE(Immediately Invoked Function Expression)](#what-is-iife(immediately-invoked-function-expression))|
+|22 | [What is IIFE(Immediately Invoked Function Expression)](#what-is-iife(immediately-invoked-function-expression)|
 |23 | [What is the benefit of using modules](#what-is-the-benefit-of-using-modules)|
 |24 | [What is memoization](#what-is-memoization)|
 |25 | [What is Hoisting](#what-is-hoisting)|
