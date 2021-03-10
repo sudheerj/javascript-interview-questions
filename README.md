@@ -7805,7 +7805,7 @@ The + operator is not meant or defined for arrays. So it converts arrays into st
 const numbers = new Set([1, 1, 2, 3, 4]);
 console.log(numbers);
 
-const browser = new Set('Firefox);
+const browser = new Set('Firefox');
 console.log(browser);
 ```
 
@@ -7904,7 +7904,7 @@ When using rest parameters, trailing commas are not allowed and will throw a Syn
 If you remove the trailing comma then it displays 1st answer
 
 ```javascript
-let [a, ...b,] = [1, 2, 3, 4, 5];
+let [a, ...b] = [1, 2, 3, 4, 5];
 console.log(a, b); // 1, [2, 3, 4, 5]
 ```
 
@@ -7924,10 +7924,10 @@ async function func() {
 console.log(func());
 ```
 
-- 1: Promise {<resolved>: 10}
+- 1: Promise {\<fulfilled\>: 10}
 - 2: 10
 - 3: SyntaxError
-- 4: Promise {<rejected>: 10}
+- 4: Promise {\<rejected\>: 10}
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -7957,10 +7957,10 @@ async function func() {
 console.log(func());
 ```
 
-- 1: Promise {<resolved>: 10}
+- 1: Promise {\<fulfilled\>: 10}
 - 2: 10
 - 3: SyntaxError
-- 4: Promise {<resolved>: undefined}
+- 4: Promise {\<resolved\>: undefined}
 
 <details><summary><b>Answer</b></summary>
 <p>
