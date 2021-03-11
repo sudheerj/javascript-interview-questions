@@ -26,8 +26,8 @@ Good luck with your interview 😊
 |2  | [What is prototype chain](#what-is-a-prototype-chain)|
 |3  | [What is the difference between Call, Apply and Bind](#what-is-the-difference-between-call-apply-and-bind)|
 |4  | [What is JSON and its common operations](#what-is-json-and-its-common-operations)|
-|5  | [What is the purpose of array slice method](#what-is-the-purpose-of-array-slice-method)|
-|6  | [What is the purpose of array splice method](#what-is-the-purpose-of-array-splice-method)|
+|5  | [What is the purpose of the array slice method](#what-is-the-purpose-of-the-array-slice-method)|
+|6  | [What is the purpose of the array splice method](#what-is-the-purpose-of-the-array-splice-method)|
 |7  | [What is the difference between slice and splice](#what-is-the-difference-between-slice-and-splice)|
 |8  | [How do you compare Object and Map](#how-do-you-compare-object-and-map)|
 |9  | [What is the difference between == and === operators](#what-is-the-difference-between-==-and-===-operators)|
@@ -36,14 +36,14 @@ Good luck with your interview 😊
 |12 | [What is a first order function](#what-is-a-first-order-function)|
 |13 | [What is a higher order function](#what-is-a-higher-order-function)|
 |14 | [What is a unary function](#what-is-a-unary-function)|
-|15 | [What is currying function](#what-is-currying-function)|
+|15 | [What is the currying function](#what-is-the-currying-function)|
 |16 | [What is a pure function](#what-is-a-pure-function)|
-|17 | [What is the purpose of let keyword](#what-is-the-purpose-of-let-keyword)|
+|17 | [What is the purpose of the let keyword](#what-is-the-purpose-of-the-let-keyword)|
 |18 | [What is the difference between let and var](#what-is-the-difference-between-let-and-var)|
-|19 | [What is the reason to choose the name let as keyword](#what-is-the-reason-to-choose-the-name-let-as-keyword)|
+|19 | [What is the reason to choose the name let as a keyword](#what-is-the-reason-to-choose-the-name-let-as-a-keyword)|
 |20 | [How do you redeclare variables in switch block without an error](#how-do-you-redeclare-variables-in-switch-block-without-an-error)|
-|21 | [What is Temporal Dead Zone](#what-is-temporal-dead-zone)|
-|22 | [What is IIFE(Immediately Invoked Function Expression)](#what-is-iife-(-immediately-invoked-function-expression-)-)|
+|21 | [What is the Temporal Dead Zone](#what-is-the-temporal-dead-zone)|
+|22 | [What is IIFE(Immediately Invoked Function Expression)](#what-is-iifeimmediately-invoked-function-expression)|
 |23 | [What is the benefit of using modules](#what-is-the-benefit-of-using-modules)|
 |24 | [What is memoization](#what-is-memoization)|
 |25 | [What is Hoisting](#what-is-hoisting)|
@@ -53,7 +53,7 @@ Good luck with your interview 😊
 |29 | [Why do you need modules](#why-do-you-need-modules)|
 |30 | [What is scope in javascript](#what-is-scope-in-javascript)|
 |31 | [What is a service worker](#what-is-a-service-worker)|
-|32 | [How do you manipulate DOM using service worker](#how-do-you-manipulate-dom-using-service-worker)|
+|32 | [How do you manipulate DOM using a service worker](#how-do-you-manipulate-dom-using-a-service-worker)|
 |33 | [How do you reuse information across service worker restarts](#how-do-you-reuse-information-across-service-worker-restarts)|
 |34 | [What is IndexedDB](#what-is-indexeddb)|
 |35 | [What is web storage](#what-is-web-storage)|
@@ -62,7 +62,7 @@ Good luck with your interview 😊
 |38 | [Why do you need a Cookie](#why-do-you-need-a-cookie)|
 |39 | [What are the options in a cookie](#what-are-the-options-in-a-cookie)|
 |40 | [How do you delete a cookie](#how-do-you-delete-a-cookie)|
-|41 | [What are the differences between cookie, local storage and session storage](#What-are-the-differences-between-cookie,-local-storage-and-session-storage)|
+|41 | [What are the differences between cookie, local storage and session storage](#What-are-the-differences-between-cookie-local-storage-and-session-storage)|
 |42 | [What is the main difference between localStorage and sessionStorage](#what-is-the-main-difference-between-localstorage-and-sessionstorage)|
 |43 | [How do you access web storage](#how-do-you-access-web-storage)|
 |44 | [What are the methods available on session storage](#what-are-the-methods-available-on-session-storage)|
@@ -442,6 +442,10 @@ Good luck with your interview 😊
 |418| [What are the differences between for...of and for...in statements](#what-are-the-differences-between-for...of-and-for...in-statements)|
 |419| [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties)|
 |420| [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-number.isnan)|
+|421| [How to invoke an IIFE without any extra brackets?](#how-to-invoke-an-iife-without-any-extra-brackets)|
+|422| [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases)|
+|423| [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors)|
+|424| [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -2227,7 +2231,7 @@ Good luck with your interview 😊
      1. **Using RegEx:** The advanced solution is using Regular expression's test method(`RegExp.test`), which allows for testing for against regular expressions
 
      ```javascript
-     var mainString = "hello", regex = "/hell/";
+     var mainString = "hello", regex = /hell/;
      regex.test(mainString)
      ```
 
@@ -5035,7 +5039,7 @@ Good luck with your interview 😊
      void expression
      ```
 
-     Let's display a message without any redirections or reloads
+     Let's display a message without any redirection or reload
 
      ```javascript
      <a href="javascript:void(alert('Welcome to JS world'))">Click here to see a message</a>
@@ -7133,7 +7137,61 @@ Good luck with your interview 😊
      isNaN(‘hello’);   // true
      Number.isNaN('hello'); // false
      ```
+     
+     **[⬆ Back to Top](#table-of-contents)**
+     
+421. ### How to invoke an IIFE without any extra brackets?
+     Immediately Invoked Function Expressions(IIFE) requires a pair of parenthesis to wrap the function which contains set of statements.
+     ```js
+     (function(dt) { 
+        console.log(dt.toLocaleTimeString()); 
+      })(new Date()); 
+     ```
+     Since both IIFE and void operator discard the result of an expression, you can avoid the extra brackets using `void operator` for IIFE  as below,
+     ```js
+      void function(dt) { 
+        console.log(dt.toLocaleTimeString()); 
+      }(new Date()); 
+     ```
 
+    **[⬆ Back to Top](#table-of-contents)**
+
+422. ### Is that possible to use expressions in switch cases?
+     You might have seen expressions used in switch condition but it is also possible to use for switch cases by assigning true value for the switch condition. Let's see the weather condition based on temparature as an example,
+     ```js
+     const weather = function getWeather(temp) {
+        switch(true) {
+            case temp < 0: return 'freezing';
+            case temp < 10: return 'cold';
+            case temp < 24: return 'cool';
+            default: return 'unknown';
+        }
+        }(10);
+     ```
+     
+    **[⬆ Back to Top](#table-of-contents)**
+         
+423. ### What is the easiest way to ignore promise errors?    
+     The easiest and safest way to ignore promise errors is void that error. This approach is ESLint friendly too.
+     
+     ```js
+     await promise.catch(e => void e);
+     ```
+     **[⬆ Back to Top](#table-of-contents)**
+     
+424. ### How do style the console output using CSS?
+
+     You can add CSS styling to the console output using the CSS format content specifier %c. The console string message can be appended after the specifier and CSS style in another argument. Let's print the red the color text using console.log and CSS specifier as below,
+     ```js
+     console.log("%cThis is a red text", "color:red");
+     ```
+    
+     It is also possible to add more styles for the content. For example, the font-size can be modified for the above text
+     ```js
+     console.log("%cThis is a red text with bigger font", "color:red; font-size:20px");
+     ```
+     **[⬆ Back to Top](#table-of-contents)**
+         
 ### Coding Exercise
 
 #### 1. What is the output of below code
@@ -7166,6 +7224,8 @@ function Vehicle(model, color, year, country) {
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 2. What is the output of below code
 
@@ -7203,6 +7263,8 @@ Since the block scoped variable x is undefined outside of the function, the type
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 3. What is the output of below code
 
@@ -7243,6 +7305,8 @@ The statements order is based on the event loop mechanism. The order of statemen
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 4. What is the output of below equality check
 
 ```javascript
@@ -7264,6 +7328,8 @@ You can find more details about the explanation here [0.30000000000000004.com/](
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 5. What is the output of below code
 
@@ -7306,6 +7372,8 @@ var y = 1;
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 6. What is the output of below code
 
 ```javascript
@@ -7346,6 +7414,8 @@ console.log(foo()); // {message: "Hello World"}
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 7. What is the output of below code
 
 ```javascript
@@ -7372,6 +7442,8 @@ If you try to print myChars then you can observe that it doesn't set an undefine
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 8. What is the output of below code in latest Chrome
 
@@ -7404,6 +7476,8 @@ The latest chrome versions display `sparse array`(they are filled with holes) us
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 9. What is the output of below code
 
 ```javascript
@@ -7433,6 +7507,8 @@ ES6 provides method definitions and property shorthands for objects. So both pro
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 10. What is the output of below code
 
@@ -7471,6 +7547,8 @@ Whereas the second statement follows the below order,
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 11. What is the output of below code in non-strict mode
 
 ```javascript
@@ -7499,6 +7577,8 @@ The value of the first parameter is mapped to the third argument which is passed
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 12. What is the output of below code
 
 ```javascript
@@ -7523,6 +7603,8 @@ Unlike regular functions, the arrow functions doesn't not allow duplicate parame
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 13. What is the output of below code
 
@@ -7564,6 +7646,8 @@ console.log(arrowFunc(1, 2, 3));
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 14. What is the output of below code
 
 ```javascript
@@ -7584,6 +7668,8 @@ In order to be consistent with functions like `String.prototype.padStart`, the s
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 15. What is the output of below code
 
@@ -7607,6 +7693,8 @@ console.log(Math.max());
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 16. What is the output of below code
 
@@ -7634,6 +7722,8 @@ So it doesn't matter about number brackets([]) around the number, it is always c
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 17. What is the output of below code
 
 ```javascript
@@ -7656,6 +7746,8 @@ The concatenation operator(+) is applicable for both number and string types. So
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 18. What is the output of below code
 
@@ -7705,13 +7797,15 @@ The + operator is not meant or defined for arrays. So it converts arrays into st
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 20. What is the output of below code
 
 ```javascript
 const numbers = new Set([1, 1, 2, 3, 4]);
 console.log(numbers);
 
-const browser = new Set('Firefox);
+const browser = new Set('Firefox');
 console.log(browser);
 ```
 
@@ -7730,6 +7824,8 @@ Since `Set` object is a collection of unique values, it won't allow duplicate va
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 21. What is the output of below code
 
@@ -7750,6 +7846,8 @@ JavaScript follows IEEE 754 spec standards. As per this spec, NaNs are never equ
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 22. What is the output of below code
 
@@ -7783,6 +7881,8 @@ console.log(numbers.includes(Number.isNaN)); // true
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 23. What is the output of below code
 
 ```javascript
@@ -7804,7 +7904,7 @@ When using rest parameters, trailing commas are not allowed and will throw a Syn
 If you remove the trailing comma then it displays 1st answer
 
 ```javascript
-let [a, ...b,] = [1, 2, 3, 4, 5];
+let [a, ...b] = [1, 2, 3, 4, 5];
 console.log(a, b); // 1, [2, 3, 4, 5]
 ```
 
@@ -7812,6 +7912,8 @@ console.log(a, b); // 1, [2, 3, 4, 5]
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 25. What is the output of below code
 
@@ -7822,10 +7924,10 @@ async function func() {
 console.log(func());
 ```
 
-- 1: Promise {<resolved>: 10}
+- 1: Promise {\<fulfilled\>: 10}
 - 2: 10
 - 3: SyntaxError
-- 4: Promise {<rejected>: 10}
+- 4: Promise {\<rejected\>: 10}
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -7844,6 +7946,8 @@ function func() {
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 26. What is the output of below code
 
 ```javascript
@@ -7853,10 +7957,10 @@ async function func() {
 console.log(func());
 ```
 
-- 1: Promise {<resolved>: 10}
+- 1: Promise {\<fulfilled\>: 10}
 - 2: 10
 - 3: SyntaxError
-- 4: Promise {<resolved>: undefined}
+- 4: Promise {\<resolved\>: undefined}
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -7874,6 +7978,8 @@ function func() {
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 27. What is the output of below code
 
@@ -7913,6 +8019,8 @@ Even though “processArray” is an async function, the anonymous function that
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 28. What is the output of below code
 
 ```javascript
@@ -7927,7 +8035,7 @@ async function delayedLog(item) {
 
 async function process(array) {
   array.forEach(async (item) => {
-    await delayedLog(i);
+    await delayedLog(item);
   });
   console.log('Process completed!');
 }
@@ -7962,6 +8070,8 @@ async function processArray(array) {
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 29. What is the output of below code
 
 ```javascript
@@ -7989,6 +8099,8 @@ Set has few exceptions from equality check,
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 30. What is the output of below code
 
@@ -8024,6 +8136,8 @@ Symbol follows below conventions,
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 31. What is the output of below code
 
 ```javascript
@@ -8047,6 +8161,8 @@ console.log(sym1);
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 32. What is the output of below code
 
@@ -8084,6 +8200,8 @@ The return value of `typeof myNumber (OR) typeof myString` is always the truthy 
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 33. What is the output of below code
 
 ```javascript
@@ -8111,6 +8229,8 @@ The symbols has below constraints,
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 34. What is the output of below code
 
@@ -8142,6 +8262,8 @@ Using constructors, `new.target` refers to the constructor (points to the class 
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 35. What is the output of below code
 
 ```javascript
@@ -8165,6 +8287,8 @@ It throws a syntax error because the rest element should not have a trailing com
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 36. What is the output of below code
 
@@ -8195,6 +8319,8 @@ The object property follows below rules,
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 37. What is the output of below code
 
@@ -8246,6 +8372,8 @@ area();
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 38. What is the output of below code
 
 ```javascript
@@ -8275,6 +8403,8 @@ It is possible to combine Array and Object destructuring. In this case, the thir
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 39. What is the output of below code
 
@@ -8312,6 +8442,8 @@ Hence, the result of function calls categorized as below,
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 40. What is the output of below code
 
 ```javascript
@@ -8340,11 +8472,13 @@ Since the default argument is evaluated at call time, a new object is created ea
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 41. What is the output of below code
 
 ```javascript
 function greet(greeting, name, message = greeting + ' ' + name) {
-  console.log([name, greeting, message]);
+  console.log([greeting, name, message]);
 }
 
 greet('Hello', 'John');
@@ -8366,6 +8500,8 @@ Since parameters defined earlier are available to later default parameters, this
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 42. What is the output of below code
 
@@ -8390,6 +8526,8 @@ The functions and variables declared in the function body cannot be referred fro
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 43. What is the output of below code
 
@@ -8419,6 +8557,8 @@ The rest parameter is used to hold the remaining parameters of a function and it
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 44. What is the output of below code
 
 ```javascript
@@ -8443,6 +8583,8 @@ Spread syntax can be applied only to iterable objects. By default, Objects are n
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 45. What is the output of below code
 
@@ -8473,6 +8615,8 @@ Generators are not constructible type. But if you still proceed to do, there wil
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 46. What is the output of below code
 
@@ -8506,6 +8650,8 @@ A return statement in a generator function will make the generator finish. If a 
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 47. What is the output of below code
 
@@ -8542,6 +8688,8 @@ The generator should not be re-used once the iterator is closed. i.e, Upon exiti
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 48. What is the output of below code
 
 ```javascript
@@ -8562,6 +8710,8 @@ If you use an invalid number(outside of 0-7 range) in the octal literal, JavaScr
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 49. What is the output of below code
 
@@ -8601,6 +8751,8 @@ Unlike function declarations, class declarations are not hoisted. i.e, First You
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 50. What is the output of below code
 
 ```javascript
@@ -8639,6 +8791,8 @@ When a regular or prototype method is called without a value for **this**, the m
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 51. What is the output of below code
 
@@ -8681,6 +8835,8 @@ The super keyword is used to call methods of a superclass. Unlike other language
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 52. What is the output of below code
 
@@ -8817,4 +8973,3 @@ It returns undefined for non-strict mode and returns Error for strict mode. In n
 ---
 
 **[⬆ Back to Top](#table-of-contents)**
-
