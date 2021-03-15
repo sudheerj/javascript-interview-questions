@@ -1022,9 +1022,11 @@ Good luck with your interview 😊
 27. ### What are closures
 
     A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables. The closure has three scope chains
+    
     1. Own scope where variables defined between its curly brackets
     2. Outer function’s variables
     3. Global variables
+    
     Let's take an example of closure concept,
 
     ```javascript
@@ -1039,7 +1041,7 @@ Good luck with your interview 😊
     myFunction('Hello Mr.'); //output: Hello Mr.John
     ```
 
-    As per the above code, the inner function(greetingInfo) has access to the variables in the outer function scope(Welcome) even after the outer function has returned.
+    As per the above code, the inner function(i.e, greetingInfo) has access to the variables in the outer function scope(i.e, Welcome) even after the outer function has returned.
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -5114,7 +5116,10 @@ Good luck with your interview 😊
      ```
 
      The output of the above for loops is 4 4 4 4 and 0 1 2 3
-     **Explanation:** Due to the event queue/loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with the `var` keyword it became a global variable and the value was equal to 4 using iteration when the time setTimeout function is invoked. Hence, the output of the first loop is `4 4 4 4`. Whereas in the second loop, the variable i is declared as the `let` keyword it becomes a block scoped variable and it holds a new value(0, 1 ,2 3) for each iteration. Hence, the output of the first loop is `0 1 2 3`.
+     
+     **Explanation:** Due to the event queue/loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with the `var` keyword it became a global variable and the value was equal to 4 using iteration when the time `setTimeout` function is invoked. Hence, the output of the first loop is `4 4 4 4`. 
+     
+     Whereas in the second loop, the variable i is declared as the `let` keyword it becomes a block scoped variable and it holds a new value(0, 1 ,2 3) for each iteration. Hence, the output of the first loop is `0 1 2 3`.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -8966,6 +8971,42 @@ console.log(msg.name);
 
 ##### Answer: 4
 It returns undefined for non-strict mode and returns Error for strict mode. In non-strict mode, the wrapper object is going to be created and get the mentioned property. But the object get disappeared after accessing the property in next line.
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 56. What is the output of below code?
+
+```javascript
+let count = 10;
+
+(function innerFunc() {
+    if (count === 10) {
+        let count = 11;
+        console.log(count);
+    }
+    console.log(count);
+})();
+```
+
+- 1: 11, 10
+- 2: 11, 11
+- 3: 10, 11
+- 4: 10, 10
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+11 and 10 is logged to the console. 
+
+The innerFunc is a closure which captures the count variable from the outerscope. i.e, 10. But the conditional has another local variable `count` which overwrites the ourter `count` variable. So the first console.log displays value 11.
+Whereas the second console.log logs 10 by capturing the count variable from outerscope.
+ 
 </p>
 
 </details>
