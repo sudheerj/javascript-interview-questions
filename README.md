@@ -611,13 +611,14 @@ Good luck with your interview 😊
 4. ### What is JSON and its common operations
 
     **JSON** is a text-based data format following JavaScript object syntax, which was popularized by `Douglas Crockford`. It is useful when you want to transmit data across a network and it is basically just a text file with an extension of .json, and a MIME type of application/json
+    
     **Parsing:** Converting a string to a native object
 
     ```javascript
     JSON.parse(text)
     ```
 
-    Stringification: **converting a native object to a string so it can be transmitted across the network
+    **Stringification:** converting a native object to a string so it can be transmitted across the network
 
     ```javascript
     JSON.stringify(object)
@@ -627,7 +628,9 @@ Good luck with your interview 😊
 
 5. ### What is the purpose of the array slice method
 
-    The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end. Some of the examples of this method are,
+    The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end.
+    
+    Some of the examples of this method are,
 
     ```javascript
     let arrayIntegers = [1, 2, 3, 4, 5];
@@ -642,7 +645,9 @@ Good luck with your interview 😊
 
 6. ### What is the purpose of the array splice method
 
-    The **splice()** method is used either adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position for insertion or deletion whereas the option second argument indicates the number of elements to be deleted. Each additional argument is added to the array. Some of the examples of this method are,
+    The **splice()** method is used either adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position for insertion or deletion whereas the option second argument indicates the number of elements to be deleted. Each additional argument is added to the array. 
+    
+    Some of the examples of this method are,
 
     ```javascript
     let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
@@ -786,7 +791,9 @@ Good luck with your interview 😊
 
 16. ### What is a pure function
 
-    A **Pure function** is a function where the return value is only determined by its arguments without any side effects. i.e, If you call a function with the same arguments 'n' number of times and 'n' number of places in the application then it will always return the same value. Let's take an example to see the difference between pure and impure functions,
+    A **Pure function** is a function where the return value is only determined by its arguments without any side effects. i.e, If you call a function with the same arguments 'n' number of times and 'n' number of places in the application then it will always return the same value.
+    
+    Let's take an example to see the difference between pure and impure functions,
 
     ```javascript
     //Impure
@@ -803,7 +810,9 @@ Good luck with your interview 😊
     console.log (numberArray); // returns [6]
     ```
 
-    As per above code snippets, Push function is impure itself by altering the array and returning an push number index which is independent of parameter value. Whereas Concat on the other hand takes the array and concatenates it with the other array producing a whole new array without side effects. Also, the return value is a concatenation of the previous array.
+    As per above code snippets, Push function is impure itself by altering the array and returning an push number index which is independent of parameter value. 
+    
+    Whereas Concat on the other hand takes the array and concatenates it with the other array producing a whole new array without side effects. Also, the return value is a concatenation of the previous array.
     Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and make it harder to break your application by not having any side effects. These principles are coming together with **Immutability** concept of ES6 by giving preference to **const** over **let** usage.
 
     **[⬆ Back to Top](#table-of-contents)**
