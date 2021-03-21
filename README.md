@@ -751,19 +751,21 @@ Good luck with your interview 😊
 
 13. ### What is a higher order function
 
-    Higher-order function is a function that accepts another function as an argument or returns a function as a return value.
+    Higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
 
     ```javascript
-    const firstOrderFunc = () => console.log ('Hello I am a First order function');
-    const higherOrder = ReturnFirstOrderFunc => ReturnFirstOrderFunc ();
-    higherOrder (firstOrderFunc);
+    const firstOrderFunc = () => console.log ('Hello, I am a First order function');
+    const higherOrder = ReturnFirstOrderFunc => ReturnFirstOrderFunc();
+    higherOrder(firstOrderFunc);
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
 
 14. ### What is a unary function
 
-    Unary function (i.e. monadic) is a function that accepts exactly one argument. Let us take an example of unary function. It stands for a single argument accepted by a function.
+    Unary function (i.e. monadic) is a function that accepts exactly one argument. It stands for a single argument accepted by a function.
+    
+    Let us take an example of unary function,
 
     ```javascript
     const unaryFunction = a => console.log (a + 10); // Add 10 to the given argument and display the value
@@ -773,9 +775,9 @@ Good luck with your interview 😊
 
 15. ### What is the currying function
 
-    Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument. Currying is named after a mathematician Haskell Curry. By applying currying, a n-ary function turns it into a unary function. 
+    Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument. Currying is named after a mathematician **Haskell Curry**. By applying currying, a n-ary function turns it into a unary function. 
     
-    Let's take an example of n-ary function and how it turns into a currying function
+    Let's take an example of n-ary function and how it turns into a currying function,
 
     ```javascript
     const multiArgFunction = (a, b, c) => a + b + c;
@@ -787,7 +789,7 @@ Good luck with your interview 😊
     curryUnaryFunction (1) (2) (3); // returns the number 6
     ```
 
-    Curried functions are great to improve code reusability and functional composition.
+    Curried functions are great to improve **code reusability** and **functional composition**.
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -800,28 +802,29 @@ Good luck with your interview 😊
     ```javascript
     //Impure
     let numberArray = [];
-    const impureAddNumber = number => numberArray.push (number);
+    const impureAddNumber = number => numberArray.push(number);
     //Pure
     const pureAddNumber = number => argNumberArray =>
-      argNumberArray.concat ([number]);
+      argNumberArray.concat([number]);
 
     //Display the results
-    console.log (impureAddNumber (6)); // returns 1
+    console.log (impureAddNumber(6)); // returns 1
     console.log (numberArray); // returns [6]
-    console.log (pureAddNumber (7) (numberArray)); // returns [6, 7]
+    console.log (pureAddNumber(7) (numberArray)); // returns [6, 7]
     console.log (numberArray); // returns [6]
     ```
 
-    As per above code snippets, Push function is impure itself by altering the array and returning an push number index which is independent of parameter value. 
+    As per above code snippets, **Push** function is impure itself by altering the array and returning an push number index which is independent of parameter value. Whereas **Concat** on the other hand takes the array and concatenates it with the other array producing a whole new array without side effects. Also, the return value is a concatenation of the previous array.
     
-    Whereas Concat on the other hand takes the array and concatenates it with the other array producing a whole new array without side effects. Also, the return value is a concatenation of the previous array.
     Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and make it harder to break your application by not having any side effects. These principles are coming together with **Immutability** concept of ES6 by giving preference to **const** over **let** usage.
 
     **[⬆ Back to Top](#table-of-contents)**
 
 17. ### What is the purpose of the let keyword
 
-    The `let` statement declares a **block scope local variable**. Hence the variables defined with let keyword are limited in scope to the block, statement, or expression on which it is used. Whereas variables declared with the var keyword used to define a variable globally, or locally to an entire function regardless of block scope. Let's take an example to demonstrate the usage,
+    The `let` statement declares a **block scope local variable**. Hence the variables defined with let keyword are limited in scope to the block, statement, or expression on which it is used. Whereas variables declared with the `var` keyword used to define a variable globally, or locally to an entire function regardless of block scope.
+    
+    Let's take an example to demonstrate the usage,
 
     ```javascript
     let counter = 30;
@@ -829,7 +832,7 @@ Good luck with your interview 😊
       let counter = 31;
       console.log(counter); // 31
     }
-    console.log(counter); // 30 (because if block variable won't exist here)
+    console.log(counter); // 30 (because the variable in if block won't exist here)
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -849,21 +852,22 @@ Good luck with your interview 😊
     ```javascript
     function userDetails(username) {
        if(username) {
-         console.log(salary); // undefined(due to hoisting)
-         console.log(age); // error: age is not defined
+         console.log(salary); // undefined due to hoisting
+         console.log(age); // ReferenceError: Cannot access 'age' before initialization
          let age = 30;
          var salary = 10000;
        }
        console.log(salary); //10000 (accessible to due function scope)
        console.log(age); //error: age is not defined(due to block scope)
     }
+    userDetails('John');
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
 
 19. ### What is the reason to choose the name let as a keyword
 
-    Let is a mathematical statement that was adopted by early programming languages like Scheme and Basic. It has been borrowed from dozens of other languages that use let already as a traditional keyword as close to var as possible.
+    `let` is a mathematical statement that was adopted by early programming languages like **Scheme** and **Basic**. It has been borrowed from dozens of other languages that use `let` already as a traditional keyword as close to `var` as possible.
 
     **[⬆ Back to Top](#table-of-contents)**
 
