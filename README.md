@@ -99,7 +99,7 @@ Good luck with your interview 😊
 |75 | [What is eval](#What-is-eval)|
 |76 | [What is the difference between window and document](#what-is-the-difference-between-window-and-document)|
 |77 | [How do you access history in javascript](#how-do-you-access-history-in-javascript)|
-|78 | [What are the javascript data types](#what-are-the-javascript-data-types)|
+|78 | [How do you detect caps lock key turned on or not](#how-do-you-detect-caps-lock-key-turned-on-or-not)|
 |79 | [What is isNaN](#what-is-isnan)|
 |80 | [What are the differences between undeclared and undefined variables](#what-are-the-differences-between-undeclared-and-undefined-variables)|
 |81 | [What are global variables](#what-are-global-variables)|
@@ -908,7 +908,9 @@ Good luck with your interview 😊
 
 21. ### What is the Temporal Dead Zone
 
-    The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a let or const variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable’s binding and its declaration, is called the temporal dead zone. Let's see this behavior with an example,
+    The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a `let` or `const` variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable’s binding and its declaration, is called the temporal dead zone.
+    
+    Let's see this behavior with an example,
 
     ```javascript
     function somemethod() {
@@ -1762,14 +1764,29 @@ Good luck with your interview 😊
 
     **[⬆ Back to Top](#table-of-contents)**
 
-78. ### What are the javascript data types
+78. ### How do you detect caps lock key turned on or not
 
-    Below are the list of javascript data types available
-    1. Number
-    2. String
-    3. Boolean
-    4. Object
-    5. Undefined
+    The `mouseEvent getModifierState()` is used to return a boolean value that indicates whether the specified modifier key is activated or not. The modifiers such as CapsLock, ScrollLock and NumLock are activated when they are clicked, and deactivated when they are clicked again.
+    
+    Let's take an input element to detect the CapsLock on/off behavior with an example,
+    
+    ```html
+        <input type="password" onmousedown="enterInput(event)">
+          
+        <p id="feedback"></p>
+          
+        <script>
+        function enterInput(e) {
+          var flag = e.getModifierState("CapsLock");
+          if(flag) {
+              document.getElementById("feedback").innerHTML = "CapsLock activated";
+              
+          } else {
+              document.getElementById("feedback").innerHTML = "CapsLock not activated";
+          }
+        }
+        </script>
+    ```
 
     **[⬆ Back to Top](#table-of-contents)**
 
