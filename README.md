@@ -2904,7 +2904,7 @@ Good luck with your interview 😊
      1. **Using ClassName property:** It is easy to modify element class using className property
 
      ```javascript
-      document.getElementById("title").style.className = "custom-title";
+      document.getElementById("title").className = "custom-title";
       ```
 
      **[⬆ Back to Top](#table-of-contents)**
