@@ -9,12 +9,18 @@ Go to [Coding Exercise](#coding-exercise) for coding specific questions
 You can download the PDF and Epub version of this repository from the latest run on the [actions tab](https://github.com/sudheerj/JavaScript-Interview-Questions/actions).
 
 ---
-
-## Disclaimer
-
-The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
-
-Good luck with your interview 😊
+<p align="center">
+  <a href=https://zerotomastery.io/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions>
+    <img src=https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:70/https://www.filepicker.io/api/file/AKYtjj5SSGyJuyZrkAB2 alt="ZTM Logo">
+  </a>
+  <p align="center">
+    <ol>
+    <li>Take this <a href=https://links.zerotomastery.io/jsp_sudheer>JavaScript Projects</a> course to go from a JavaScript beginner to confidently building your own projects</li>
+    <li>Take this <a href=https://links.zerotomastery.io/mci_sudheer2>coding interview bootcamp</a> if you’re serious about getting hired and don’t have a CS degree</li>
+    <li>Take this <a href=https://links.zerotomastery.io/ajs_sudheer>Advanced JavaScript Course</a> to learn advanced JS concepts and become a top JS developer</li>
+    </ol>
+  </p>
+</p>
 
 ---
 
@@ -9054,3 +9060,13 @@ Whereas the second console.log logs 10 by capturing the count variable from oute
 ---
 
 **[⬆ Back to Top](#table-of-contents)**
+
+---
+
+## Disclaimer
+
+The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
+
+Good luck with your interview 😊
+
+---
