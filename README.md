@@ -653,7 +653,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 6. ### What is the purpose of the array splice method
 
-    The **splice()** method is used either adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position for insertion or deletion whereas the option second argument indicates the number of elements to be deleted. Each additional argument is added to the array. 
+    The **splice()** method is used either adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position for insertion or deletion whereas the optional second argument indicates the number of elements to be deleted. Each additional argument is added to the array. 
     
     Some of the examples of this method are,
 
