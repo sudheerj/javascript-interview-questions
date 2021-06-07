@@ -1882,11 +1882,11 @@ You can download the PDF and Epub version of this repository from the latest run
 
 88. ### How do you submit a form using JavaScript
 
-    You can submit a form using JavaScript use document.form[0].submit(). All the form input's information is submitted using onsubmit event handler
+    You can submit a form using `document.forms[0].submit()`. All the form input's information is submitted using onsubmit event handler
 
     ```javascript
     function submit() {
-        document.form[0].submit();
+        document.forms[0].submit();
     }
     ```
 
