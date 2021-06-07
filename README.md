@@ -317,7 +317,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |287| [How to get the value from get parameters](#how-to-get-the-value-from-get-parameters)|
 |288| [How do you print numbers with commas as thousand separators](#how-do-you-print-numbers-with-commas-as-thousand-separators)|
 |289| [What is the difference between java and javascript](#what-is-the-difference-between-java-and-javascript)|
-|290| [Is javascript supports namespace](#is-javascript-supports-namespace)|
+|290| [Does javascript supports namespace](#does-javascript-supports-namespace)|
 |291| [How do you declare namespace](#how-do-you-declare-namespace)|
 |292| [How do you invoke javascript code in an iframe from parent page](#how-do-you-invoke-javascript-code-in-an-iframe-from-parent-page)|
 |293| [How do get the timezone offset from date](#how-do-get-the-timezone-offset-from-date)|
