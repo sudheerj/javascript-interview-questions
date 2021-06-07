@@ -368,7 +368,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |338| [What is the purpose of Error object](#what-is-the-purpose-of-error-object)|
 |339| [What is the purpose of EvalError object](#what-is-the-purpose-of-evalerror-object)|
 |340| [What are the list of cases error thrown from non-strict mode to strict mode](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)|
-|341| [Is all objects have prototypes](#is-all-objects-have-prototypes)|
+|341| [Do all objects have prototypes](#do-all-objects-have-prototypes)|
 |342| [What is the difference between a parameter and an argument](#what-is-the-difference-between-a-parameter-and-an-argument)|
 |343| [What is the purpose of some method in arrays](#what-is-the-purpose-of-some-method-in-arrays)|
 |344| [How do you combine two or more arrays](#how-do-you-combine-two-or-more-arrays)|
@@ -5784,7 +5784,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
      **[⬆ Back to Top](#table-of-contents)**
 
-341. ### Is all objects have prototypes
+341. ### Do all objects have prototypes
 
      No. All objects have prototypes except for the base object which is created by the user, or an object that is created using the new keyword.
 
