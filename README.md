@@ -4913,7 +4913,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
      **[⬆ Back to Top](#table-of-contents)**
 
-290. ### Is javascript supports namespace
+290. ### Does JavaScript supports namespace
 
      JavaScript doesn’t support namespace by default. So if you create any element(function, method, object, variable) then it becomes global and pollutes the global namespace. Let's take an example of defining two functions without any namespace,
 
