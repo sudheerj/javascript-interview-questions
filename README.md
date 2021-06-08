@@ -317,7 +317,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |287| [How to get the value from get parameters](#how-to-get-the-value-from-get-parameters)|
 |288| [How do you print numbers with commas as thousand separators](#how-do-you-print-numbers-with-commas-as-thousand-separators)|
 |289| [What is the difference between java and javascript](#what-is-the-difference-between-java-and-javascript)|
-|290| [Is javascript supports namespace](#is-javascript-supports-namespace)|
+|290| [Does javascript supports namespace](#does-javascript-supports-namespace)|
 |291| [How do you declare namespace](#how-do-you-declare-namespace)|
 |292| [How do you invoke javascript code in an iframe from parent page](#how-do-you-invoke-javascript-code-in-an-iframe-from-parent-page)|
 |293| [How do get the timezone offset from date](#how-do-get-the-timezone-offset-from-date)|
@@ -368,7 +368,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |338| [What is the purpose of Error object](#what-is-the-purpose-of-error-object)|
 |339| [What is the purpose of EvalError object](#what-is-the-purpose-of-evalerror-object)|
 |340| [What are the list of cases error thrown from non-strict mode to strict mode](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)|
-|341| [Is all objects have prototypes](#is-all-objects-have-prototypes)|
+|341| [Do all objects have prototypes](#do-all-objects-have-prototypes)|
 |342| [What is the difference between a parameter and an argument](#what-is-the-difference-between-a-parameter-and-an-argument)|
 |343| [What is the purpose of some method in arrays](#what-is-the-purpose-of-some-method-in-arrays)|
 |344| [How do you combine two or more arrays](#how-do-you-combine-two-or-more-arrays)|
@@ -1882,11 +1882,11 @@ You can download the PDF and Epub version of this repository from the latest run
 
 88. ### How do you submit a form using JavaScript
 
-    You can submit a form using JavaScript use document.form[0].submit(). All the form input's information is submitted using onsubmit event handler
+    You can submit a form using `document.forms[0].submit()`. All the form input's information is submitted using onsubmit event handler
 
     ```javascript
     function submit() {
-        document.form[0].submit();
+        document.forms[0].submit();
     }
     ```
 
@@ -4913,7 +4913,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
      **[⬆ Back to Top](#table-of-contents)**
 
-290. ### Is javascript supports namespace
+290. ### Does JavaScript supports namespace
 
      JavaScript doesn’t support namespace by default. So if you create any element(function, method, object, variable) then it becomes global and pollutes the global namespace. Let's take an example of defining two functions without any namespace,
 
@@ -5784,7 +5784,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
      **[⬆ Back to Top](#table-of-contents)**
 
-341. ### Is all objects have prototypes
+341. ### Do all objects have prototypes
 
      No. All objects have prototypes except for the base object which is created by the user, or an object that is created using the new keyword.
 
