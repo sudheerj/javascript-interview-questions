@@ -452,8 +452,8 @@ You can download the PDF and Epub version of this repository from the latest run
 |422| [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases)|
 |423| [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors)|
 |424| [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)|
-|425| [What is nullish coalescing operator (??)?]
-(#what-is-nullish-coalescing-operator-(??))|
+|425| [What is nullish coalescing operator?]
+(#what-is-nullish-coalescing-operator)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
