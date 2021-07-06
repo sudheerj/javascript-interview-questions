@@ -452,6 +452,8 @@ You can download the PDF and Epub version of this repository from the latest run
 |422| [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases)|
 |423| [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors)|
 |424| [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)|
+|425| [What is nullish coalescing operator (??)?]
+(#what-is-nullish-coalescing-operator-(??))|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7242,6 +7244,18 @@ You can download the PDF and Epub version of this repository from the latest run
      ```js
      console.log("%cThis is a red text with bigger font", "color:red; font-size:20px");
      ```
+     **[⬆ Back to Top](#table-of-contents)**
+     
+425. ### What is nullish coalescing operator (??)?
+
+     It is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand. This can be contrasted with the logical OR (||) operator, which returns the right-hand side operand if the left operand is any falsy value, not only null or undefined.
+
+     ```js
+     console.log(null ?? true);
+     console.log(false ?? true);
+     console.log(undefined ?? true);
+     ```
+
      **[⬆ Back to Top](#table-of-contents)**
          
 ### Coding Exercise
