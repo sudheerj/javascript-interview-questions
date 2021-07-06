@@ -2458,11 +2458,12 @@ You can download the PDF and Epub version of this repository from the latest run
 130. ### What are the pros and cons of for loop
 
      The for-loop is a commonly used iteration syntax in javascript. It has both pros and cons
-     ####Pros
+     
+     #### Pros
      1. Works on every environment
      2. You can use break and continue flow control statements
 
-     ####Cons
+     #### Cons
      1. Too verbose
      2. Imperative
      3. You might face one-by-off errors
