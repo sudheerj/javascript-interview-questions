@@ -2583,7 +2583,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 138. ### How do you define multiline strings
 
-     You can define multiline string literals using the '\' character followed by line terminator.
+     You can define multiline string literals using the '\\' character followed by line terminator.
 
      ```javascript
      var str = "This is a \
@@ -2591,7 +2591,7 @@ You can download the PDF and Epub version of this repository from the latest run
      sentence!";
      ```
 
-     But if you have a space after the '\' character, the code will look exactly the same, but it will raise a SyntaxError.
+     But if you have a space after the '\\' character, the code will look exactly the same, but it will raise a SyntaxError.
 
      **[⬆ Back to Top](#table-of-contents)**
 
