@@ -36,7 +36,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |6  | [What is the purpose of the array splice method](#what-is-the-purpose-of-the-array-splice-method)|
 |7  | [What is the difference between slice and splice](#what-is-the-difference-between-slice-and-splice)|
 |8  | [How do you compare Object and Map](#how-do-you-compare-object-and-map)|
-|9  | [What is the difference between == and === operators](#what-is-the-difference-between-==-and-===-operators)|
+|9  | [What is the difference between == and === operators](#what-is-the-difference-between--and--operators)|
 |10 | [What are lambda or arrow functions](#what-are-lambda-or-arrow-functions)|
 |11 | [What is a first class function](#what-is-a-first-class-function)|
 |12 | [What is a first order function](#what-is-a-first-order-function)|
