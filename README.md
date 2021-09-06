@@ -488,10 +488,8 @@ You can download the PDF and Epub version of this repository from the latest run
 
       ```javascript
       function Person(name){
-         var object = {};
-         object.name=name;
-         object.age=21;
-         return object;
+         this.name=name;
+         this.age=21;
       }
       var object = new Person("Sudheer");
       ```
