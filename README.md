@@ -453,6 +453,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |423| [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors)|
 |424| [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)|
 |425| [What is nullish coalescing operator(??)?](#what-is-nullish-coalescing-operator-(??))|
+|426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7254,7 +7255,30 @@ You can download the PDF and Epub version of this repository from the latest run
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
+
+426. ### How do you group and nest console output?
+
+     The `console.group()` can be used to group related log messages to be able to easily read the logs and use console.groupEnd()to close the group. Along with this, you can also nest groups which allows to output message in hierarchical manner.
+
+     For example, if you’re logging a user’s details:
+
+     ```js
+     console.group('User Details');
+     console.log('name: Sudheer Jonna');
+     console.log('job: Software Developer');
+
+     // Nested Group
+     console.group('Address');
+     console.log('Street: Commonwealth');
+     console.log('City: Los Angeles');
+     console.log('State: California');
+
+     console.groupEnd();
+     ```
+     You can also use `console.groupCollapsed()` instead of `console.group()` if you want the groups to be collapsed by default.
          
+     **[⬆ Back to Top](#table-of-contents)**
+
 ### Coding Exercise
 
 #### 1. What is the output of below code
