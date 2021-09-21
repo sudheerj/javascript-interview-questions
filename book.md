@@ -3,25 +3,25 @@ title: "مجموعه سوال و جواب‌های جاواسکریپتی"
 author: Sudheerj - translated by Mariotek team
 date: August 30, 2020
 export_on_save:
-  html: true
+html: true
 puppeteer:
-  landscape: false
-  printBackground: true
-  timeout: 3000
-  width: "170mm"
-  height: "240mm"
-  margin: { top: '50px', bottom: '55px', right: '40px', left: '40px'}
-  displayHeaderFooter: true
-  headerTemplate: '<div />'
-  footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;font-family: BYekan;direction:rtl;position: relative; bottom: -15px">
-    <span style="position: relative; top:50px"><span class="pageNumber"></span></span>
-    <img style="width:100px;float:right;display: inline-block" src="data:image/png;base64,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" /><img src="data:image/png;base64,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" style="float:left;width: 100px;display: inline-block" />
-  </div>'
+landscape: false
+printBackground: true
+timeout: 3000
+width: "170mm"
+height: "240mm"
+margin: { top: '50px', bottom: '55px', right: '40px', left: '40px'}
+displayHeaderFooter: true
+headerTemplate: '<div />'
+footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;font-family: BYekan;direction:rtl;position: relative; bottom: -15px">
+<span style="position: relative; top:50px"><span class="pageNumber"></span></span>
+<img style="width:100px;float:right;display: inline-block" src="data:image/png;base64,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" /><img src="data:image/png;base64,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" style="float:left;width: 100px;display: inline-block" />
+</div>'
 ---
 
 <span dir="rtl">
 
-# مجموعه سوال و جواب‌های جاواسکریپتی 
+# مجموعه سوال و جواب‌های جاواسکریپتی
 
 > اگه خوشتون اومد به گیت‌هابمون مراجعه کنین و بهمون :star: بدین. اگر هم قصد مشارکت داشتید خیلی خوشحال می‌شیم :)
 
@@ -37,521 +37,519 @@ puppeteer:
 
 ---
 
-### فهرست 
+### فهرست
 
 | ردیف | سوال |
 |---- | ---------
-|1  | [روش‌های ایجاد objects توی جاواسکریپت چیا هستن؟]() |
-|2  | [زنجیره prototype چیه؟]() |
-|3  | [تفاوت‌های بین Call، Apply و Bind چیا هستن؟]() |
-|4  | [فرمت JSON چیه و عملیات‌های معمول بر روی آن چیا هستند؟]() |
-|5  | [هدف از متد slice روی آرایه‌ها چیه؟]() |
-|6  | [هدف از متد splice روی آرایه‌ها چیه؟]() |
-|7  | [تفاوت متدهای slice و splice چیا هستن؟]() |
-|8  | [تفاوت‌های Object و Map چیا هستن؟]() |
-|9  | [تفاوت‌های بین عملگرهای == و === چیا هستن؟]() |
-|10 | [توابع lambda یا arrow-function چی هستن؟]() |
-|11 | [یه تابع first-class چجور تابعی‌ـه؟]() |
-|12 | [یه تابع first-order چجور تابعی‌ـه؟]() |
-|13 | [یه تابع higher-order چجور تابعی‌ـه؟]() |
-|14 | [یه تابع unary چجور تابعی‌ـه؟]() |
-|15 | [currying توابع یعنی چی؟]() |
-|16 | [چه توابعی pure هستن؟]() |
-|17 | [هدف از کلمه کلیدی let چیه؟]() |
-|18 | [تفاوت‌های کلمات کلیدی let و var چیا هستن؟]() |
-|19 | [دلیل انتخاب کلمه کلیدی let چیه؟]() |
-|20 | [چطوری می‌تونیم توی بلوک مربوط به switch بدون دریافت خطا متغیر تعریف کنیم؟]() |
-|21 | [Temporal-Dead-Zone چیه؟]() |
-|22 | [IIFE(توابع بلافاصله صدا زده شده) چی هستن؟]() |
-|23 | [مزایای استفاده از moduleها چیه؟]() |
-|24 | [Memoization چیه؟]() |
-|25 | [Hoisting چیه؟]() |
-|26 | [Classها توی ES6 چی هستن؟]() |
-|27 | [Closureها چیا هستن؟]() |
-|28 | [Moduleها چیا هستن؟]() |
-|29 | [چرا به moduleها نیاز داریم؟]() |
-|30 | [توی جاواسکریپت scope چیه و چیکار می‌کنه؟]() |
-|31 | [service-worker چیه؟]() |
-|32 | [توی service-worker چطوری میشه DOM رو دستکاری کرد؟]() |
-|33 | [چطوری می‌تونیم بین ریست شدن‌های service-worker داده‌های مورد نظرمون رو مجدد استفاده کنیم؟]() |
-|34 | [IndexedDB چیه؟]() |
-|35 | [Web-storage چیه؟]() |
-|36 | [Post-message چیه؟]() |
-|37 | [Cookie چیه؟]() |
-|38 | [چرا به cookie نیاز داریم؟]() |
-|39 | [گزینه‌های قابل تنظیم توی cookie چیا هستن؟]() |
-|40 | [چطوری میشه یه cookie رو حذف کرد؟]() |
-|41 | [تفاوت‌های بین cookie، local-storage و session-storage چیا هستن؟]() |
-|42 | [تفاوت‌های بین localStorage و sessionStorage چیا هستن؟]() |
-|43 | [چطوری به web-storage دسترسی پیدا می‌کنی؟]() |
-|44 | [چه متد‌هایی روی session-storage قابل استفاده هستن؟]() |
-|45 | [رخداد storage چیه و چطوری ازش استفاده می‌کنیم؟]() |
-|46 | [چرا به web-storage نیاز داریم؟]() |
-|47 | [چطوری می‌تونیم پشتیبانی از web-storage توسط مرورگر رو بررسی کنیم؟]() |
-|48 | [چطوری می‌تونیم پشتیبانی از web-worker توسط مرورگر رو بررسی کنیم؟]() |
-|49 | [یه مثال از web-workerها می‌تونی بزنی؟]() |
-|50 | [محدودیت‌های web-workerها روی DOM چیا هستن؟]() |
-|51 | [Promise چیه؟]() |
-|52 | [چرا به promise نیاز داریم؟]() |
-|53 | [سه تا وضعیت ممکن برای یه promise چیا هستن؟]() |
-|54 | [توابع callback چی هستن؟]() |
-|55 | [چرا به توابع callback نیاز داریم؟]() |
-|56 | [Callback-hell یا جهنم توابع callback چیه؟]() |
-|57 | [Server-sent-events(SSE) چیه؟]() |
-|58 | [چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟]() |
-|59 | [چطوری می‌تونیم پشتیبانی مرورگر برای SSE رو بررسی کنیم؟]() |
-|60 | [کدوم توابع روی SSE وجود دارن؟]() |
-|61 | [اصلی‌ترین قوانین promiseها چیا هستن؟]() |
-|62 | [Callback توی callback چطوری رخ میده؟]() |
-|63 | [زنجیره promiseها چیه؟]() |
-|64 | [کاربرد متد promise.all چیه؟]() |
-|65 | [هدف از متد race روی promise چیه؟]() |
-|66 | [حالت strict توی جاواسکریپت چی کار میکنه؟]() |
-|67 | [چرا به حالت strict نیاز داریم؟]() |
-|68 | [چطوری می‌تونیم حالت strict رو فعال کنیم؟]() |
-|69 | [هدف از عملگر نقیض دوتایی(!!) چیه؟]() |
-|70 | [هدف از عملگر delete چیه؟]() |
-|71 | [عملگر typeof چیکار می‌کنه؟]() |
-|72 | [undefined چیه و چه زمانی undefined می‌گیریم؟]() |
-|73 | [null چیه؟]() |
-|74 | [تفاوت‌های بین null و undefined چیا هستن؟]() |
-|75 | [eval چیه؟]() |
-|76 | [تفاوت‌های بین window و document چیا هستن؟]() |
-|77 | [توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟]() |
-|78 | [انواع داده‌های جاواسکریپت کدوما هستن؟]() |
-|79 | [isNaN چیه و چیکار می‌کنه؟]() |
-|80 | [تفاوت‌های بین undeclared و undefined چیا هستن؟]() |
-|81 | [کدوم متغیرها عمومی هستن؟]() |
-|82 | [مشکلات متغیرهای عمومی چیا هستن؟]() |
-|83 | [مقدار NaN چیه؟]() |
-|84 | [هدف از تابع isFinite چیه؟]() |
-|85 | [یه event-flow چیه؟]() |
-|86 | [Event-bubbling چیه؟]() |
-|87 | [Event-capturing چیه؟]() |
-|88 | [چطوری میشه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟]() |
-|89 | [چطوری میشه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟]() |
-|90 | [تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟]() |
-|91 | [تفاوت‌های بین objectهای native، host و user چیا هستن؟]() |
-|92 | [کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟]() |
-|93 | [مزایا و معایب استفاده از promiseها به جای callback چیا هستن؟]() |
-|94 | [تفاوت‌های بین attribute و property روی DOM چیا هستن؟]() |
-|95 | [سیاست same-origin چیه؟]() |
-|96 | [هدف استفاده از void 0 چیه؟]() |
-|97 | [جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟]() |
-|98 | [آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟]() |
-|99 | [ارتباطی بین Java و JavaScript وجود داره؟]() |
-|100| [Eventها چی هستن؟]() |
-|101| [کی جاواسکریپت رو ساخته؟]() |
-|102| [هدف از متد preventDefault چیه؟]() |
-|103| [کاربرد متد stopPropagation چیه؟]() |
-|104| [مراحلی که هنگام استفاده از return false توی یه event-handler رخ میده چیا هستن؟]() |
-|105| [BOM چیه؟]() |
-|106| [موارد استفاده از setTimeout کدوما هستن؟]() |
-|107| [موارد استفاده از setInterval کدوما هستن؟]() |
-|108| [چرا جاواسکریپت رو به عنوان یه زبان تک thread می‌شناسن؟]() |
-|109| [Event-delegation چیه؟]() |
-|110| [ECMAScript چیه؟]() |
-|111| [JSON چیه؟]() |
-|112| [قوانین فرمت JSON کدوما هستن؟]() |
-|113| [هدف از متد JSON.stringify چیه؟]() |
-|114| [چطوری می‌تونیم یه رشته(string) JSON رو تجزیه کنیم؟]() |
-|115| [چرا به JSON نیاز داریم؟]() |
-|116| [PWAها چی هستن؟]() |
-|117| [هدف از متد clearTimeout چیه؟]() |
-|118| [هدف از متد clearInterval چیه؟]() |
-|119| [توی جاواسکریپت، چطوری میشه به یه صفحه جدید redirect انجام داد؟]() |
-|120| [چطوری بررسی می‌کنین که یه string شامل یه substring هست یا نه؟]() |
-|121| [توی جاواسکریپت، چطوری مقدار یه آدرس email رو اعتبارسنجی می‌کنین؟]() |
-|122| [چطوری می‌تونیم مقدار آدرس url جاری رو بخونیم؟]() |
-|123| [ویژگی‌های مختلف url روی object مربوط به history کدوما هستن؟]() |
-|124| [توی جاواسکریپت چطوری می‌تونیم مقدار یه query-string رو بخونیم؟]() |
-|125| [How do you check if a key exists in an object](#how-do-you-check-if-a-key-exists-in-an-object)|
-|126| [How do you loop through or enumerate javascript object](#how-do-you-loop-through-or-enumerate-javascript-object)|
-|127| [How do you test for an empty object](#how-do-you-test-for-an-empty-object)|
-|128| [What is an arguments object](#what-is-an-arguments-object)|
-|129| [How do you make first letter of the string in an uppercase](#how-do-you-make-first-letter-of-the-string-in-an-uppercase)|
-|130| [What are the pros and cons of for loop](#what-are-the-pros-and-cons-of-for-loop)|
-|131| [How do you display the current date in javascript](#how-do-you-display-the-current-date-in-javascript)|
-|132| [How do you compare two date objects](#how-do-you-compare-two-date-objects)|
-|133| [How do you check if a string starts with another string](#how-do-you-check-if-a-string-starts-with-another-string)|
-|134| [How do you trim a string in javascript](#how-do-you-trim-a-string-in-javascript)|
-|135| [How do you add a key value pair in javascript](#how-do-you-add-a-key-value-pair-in-javascript)|
-|136| [Is the '!--' notation represents a special operator](#is-the-'!--'-notation-represents-a-special-operator)|
-|137| [How do you assign default values to variables](#how-do-you-assign-default-values-to-variables)|
-|138| [How do you define multiline strings](#how-do-you-define-multiline-strings)|
-|139| [What is an app shell model](#what-is-an-app-shell-model)|
-|140| [Can we define properties for functions](#can-we-define-properties-for-functions)|
-|141| [What is the way to find the number of parameters expected by a function](#what-is-the-way-to-find-the-number-of-parameters-expected-by-a-function)|
-|142| [What is a polyfill](#what-is-a-polyfill)|
-|143| [What are break and continue statements](#what-are-break-and-continue-statements)|
-|144| [What are js labels](#what-are-js-labels)|
-|145| [What are the benefits of keeping declarations at the top](#what-are-the-benefits-of-keeping-declarations-at-the-top)|
-|146| [What are the benefits of initializing variables](#what-are-the-benefits-of-initializing-variables)|
-|147| [What are the recommendations to create new object](#what-are-the-recommendations-to-create-new-object)|
-|148| [How do you define JSON arrays](#how-do-you-define-json-arrays)|
-|149| [How do you generate random integers](#how-do-you-generate-random-integers)|
-|150| [Can you write a random integers function to print integers with in a range](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range)|
-|151| [What is tree shaking](#what-is-tree-shaking)|
-|152| [What is the need of tree shaking](#what-is-the-need-of-tree-shaking)|
-|153| [Is it recommended to use eval](#is-it-recommended-to-use-eval)|
-|154| [What is a Regular Expression](#what-is-a-regular-expression)|
-|155| [What are the string methods available in Regular expression](#what-are-the-string-methods-available-in-regular-expression)|
-|156| [What are modifiers in regular expression](#what-are-modifiers-in-regular-expression)|
-|157| [What are regular expression patterns](#what-are-regular-expression-patterns)|
-|158| [What is a RegExp object](#what-is-a-regexp-object)|
-|159| [How do you search a string for a pattern](#how-do-you-search-a-string-for-a-pattern)|
-|160| [What is the purpose of exec method](#what-is-the-purpose-of-exec-method)|
-|161| [How do you change style of a HTML element](#how-do-you-change-style-of-a-html-element)|
-|162| [What would be the result of 1+2+'3'](#what-would-be-the-result-of-1+2+'3')|
-|163| [What is a debugger statement](#what-is-a-debugger-statement)|
-|164| [What is the purpose of breakpoints in debugging](#what-is-the-purpose-of-breakpoints-indebugging)|
-|165| [Can I use reserved words as identifiers](#can-i-use-reserved-words-as-identifiers)|
-|166| [How do you detect a mobile browser](#how-do-you-detect-a-mobile-browser)|
-|167| [How do you detect a mobile browser without regexp](#how-do-you-detect-a-mobile-browser-without-regexp)|
-|168| [How do you get the image width and height using JS](#how-do-you-get-the-image-width-and-height-using-js)|
-|169| [How do you make synchronous HTTP request](#how-do-you-make-synchronous-http-request)|
-|170| [How do you make asynchronous HTTP request](#how-do-you-make-asynchronous-http-request)|
-|171| [How do you convert date to another timezone in javascript](#how-do-you-convert-date-to-another-timezone-in-javascript)|
-|172| [What are the properties used to get size of window](#what-are-the-properties-used-to-get-size-of-window)|
-|173| [What is a conditional operator in javascript](#what-is-a-conditional-operator-in-javascript)|
-|174| [Can you apply chaining on conditional operator](#Can-you-apply-chaining-on-conditional-operator)|
-|175| [What are the ways to execute javascript after page load](#what-are-the-ways-to-execute-javascript-after-page-load)|
-|176| [What is the difference between proto and prototype](#what-is-the-difference-between-proto-and-prototype)|
-|177| [Give an example where do you really need semicolon](#give-an-example-where-do-you-really-need-semicolon)|
-|178| [What is a freeze method](#what-is-a-freeze-method)|
-|179| [What is the purpose of freeze method](#what-is-the-purpose-of-freeze-method)|
-|180| [Why do I need to use freeze method](#why-do-i-need-to-use-freeze-method)|
-|181| [How do you detect a browser language preference](#how-do-you-detect-a-browser-language-preference)|
-|182| [How to convert string to title case with javascript](#how-to-convert-string-to-title-case-with-javascript)|
-|183| [How do you detect javascript disabled in the page](#how-do-you-detect-javascript-disabled-in-the-page)|
-|184| [What are various operators supported by javascript](#what-are-various-operators-supported-by-javascript)|
-|185| [What is a rest parameter](#what-is-a-rest-parameter)|
-|186| [What happens if you do not use rest parameter as a last argument](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)|
-|187| [What are the bitwise operators available in javascript](#what-are-the-bitwise-operators-available-in-javascript)|
-|188| [What is a spread operator](#what-is-a-spread-operator)|
-|189| [How do you determine whether object is frozen or not](#how-do-you-determine-whether-object-is-frozen-or-not)|
-|190| [How do you determine two values same or not using object](#how-do-you-determine-two-values-same-or-not-using-object)|
-|191| [What is the purpose of using object is method](#what-is-the-purpose-of-using-object-is-method)|
-|192| [How do you copy properties from one object to other](#how-do-you-copy-properties-from-one-object-to-other)|
-|193| [What are the applications of assign method](#what-are-the-applications-of-assign-method)|
-|194| [What is a proxy object](#what-is-a-proxy-object)|
-|195| [What is the purpose of seal method](#what-is-the-purpose-of-seal-method)|
-|196| [What are the applications of seal method](#what-are-the-applications-of-seal-method)|
-|197| [What are the differences between freeze and seal methods](#what-are-the-differences-between-freeze-and-seal-methods)|
-|198| [How do you determine if an object is sealed or not](#how-do-you-determine-if-an-object-is-sealed-or-not)|
-|199| [How do you get enumerable key and value pairs](#how-do-you-get-enumerable-key-and-value-pairs)|
-|200| [What is the main difference between Object.values and Object.entries method](#what-is-the-main-difference-between-object.values-and-object.entries-method)|
-|201| [How can you get the list of keys of any object](#how-can-you-get-the-list-of-keys-of-any-object)|
-|202| [How do you create an object with prototype](#how-do-you-create-an-object-with-prototype)|
-|203| [What is a WeakSet](#what-is-a-weakset)|
-|204| [What are the differences between WeakSet and Set](#what-are-the-differences-between-weakset-and-set)|
-|205| [List down the collection of methods available on WeakSet](#list-down-the-collection-of-methods-available-on-weakset)|
-|206| [What is a WeakMap](#what-is-a-weakmap)|
-|207| [What are the differences between WeakMap and Map](#what-are-the-differences-between-weakmap-and-map)|
-|208| [List down the collection of methods available on WeakMap](#list-down-the-collection-of-methods-available-on-weakmap)|
-|209| [What is the purpose of uneval](#what-is-the-purpose-of-uneval)|
-|210| [How do you encode an URL](#how-do-you-encode-an-url)|
-|211| [How do you decode an URL](#how-do-you-decode-an-url)|
-|212| [How do you print the contents of web page](#how-do-you-print-the-contents-of-web-page)|
-|213| [What is the difference between uneval and eval](#what-is-the-difference-between-uneval-and-eval)|
-|214| [What is an anonymous function](#what-is-an-anonymous-function)|
-|215| [What is the precedence order between local and global variables](#what-is-the-precedence-order-between-local-and-global-variables)|
-|216| [What are javascript accessors](#what-are-javascript-accessors)|
-|217| [How do you define property on Object constructor](#how-do-you-define-property-on-object-constructor)|
-|218| [What is the difference between get and defineProperty](#what-is-the-difference-between-get-and-defineproperty)|
-|219| [What are the advantages of Getters and Setters](#what-are-the-advantages-of-getters-and-setters)|
-|220| [Can I add getters and setters using defineProperty method](#can-i-add-getters-and-setters-using-defineproperty-method)|
-|221| [What is the purpose of switch-case](#what-is-the-purpose-of-switch-case)|
-|222| [What are the conventions to be followed for the usage of swtich case](#what-are-the-conventions-to-be-followed-for-the-usage-of-swtich-case)|
-|223| [What are primitive data types](#what-are-primitive-data-types)|
-|224| [What are the different ways to access object properties](#what-are-the-different-ways-to-access-object-properties)|
-|225| [What are the function parameter rules](#what-are-the-function-parameter-rules)|
-|226| [What is an error object](#what-is-an-error-object)|
-|227| [When you get a syntax error](#when-you-get-a-syntax-error)|
-|228| [What are the different error names from error object](#what-are-the-different-error-names-from-error-object)|
-|229| [What are the various statements in error handling](#what-are-the-various-statements-in-error-handling)|
-|230| [What are the two types of loops in javascript](#what-are-the-two-types-of-loops-in-javascript)|
-|231| [What is nodejs](#what-is-nodejs)|
-|232| [What is an Intl object](#what-is-an-intl-object)|
-|233| [How do you perform language specific date and time formatting](#how-do-you-perform-language-specific-date-and-time-formatting)|
-|234| [What is an Iterator](#what-is-an-iterator)|
-|235| [How does synchronous iteration works](#how-does-synchronous-iteration-works)|
-|236| [What is an event loop](#what-is-an-event-loop)|
-|237| [What is call stack](#what-is-call-stack)|
-|238| [What is an event queue](#what-is-an-event-queue)|
-|239| [What is a decorator](#what-is-a-decorator)|
-|240| [What are the properties of Intl object](#what-are-the-properties-of-intl-object)|
-|241| [What is an Unary operator](#what-is-an-unary-operator)|
-|242| [How do you sort elements in an array](#how-do-you-sort-elements-in-an-array)|
-|243| [What is the purpose of compareFunction while sorting arrays](#what-is-the-purpose-of-comparefunction-while-sorting-arrays)|
-|244| [How do you reversing an array](#how-do-you-reversing-an-array)|
-|245| [How do you find min and max value in an array](#how-do-you-find-min-and-max-value-in-an-array)|
-|246| [How do you find min and max values without Math functions](#how-do-you-find-min-and-max-values-without--math-functions)|
-|247| [What is an empty statement and purpose of it](#what-is-an-empty-statement-and-purpose-of-it)|
-|248| [How do you get meta data of a module](#how-do-you-get-meta-data-of-a-module)|
-|249| [What is a comma operator](#what-is-a-comma-operator)|
-|250| [What is the advantage of a comma operator](#what-is-the-advantage-of-a-comma-operator)|
-|251| [What is typescript](#what-is-typescript)|
-|252| [What are the differences between javascript and typescript](#what-are-the-differences-between-javascript-and-typescript)|
-|253| [What are the advantages of typescript over javascript](#what-are-the-advantages-of-typescript-over-javascript)|
-|254| [What is an object initializer](#what-is-an-object-initializer)|
-|255| [What is a constructor method](#what-is-a-constructor-method)|
-|256| [What happens if you write constructor more than once in a class](#what-happens-if-you-write-constructor-more-than-once-in-a-class)|
-|257| [How do you call the constructor of a parent class](#how-do-you-call-the-constructor-of-a-parent-class)|
-|258| [How do you get the prototype of an object](#how-do-you-get-the-prototype-of-an-object)|
-|259| [What happens If I pass string type for getPrototype method](#what-happens-if-i-pass-string-type-for-getprototype-method)|
-|260| [How do you set prototype of one object to another](#how-do-you-set-prototype-of-one-object-to-another)|
-|261| [How do you check whether an object can be extendable or not](#how-do-you-check-whether-an-object-can-be-extendable-or-not)|
-|262| [How do you prevent an object to extend](#how-do-you-prevent-an-object-to-extend)|
-|263| [What are the different ways to make an object non-extensible](#what-are-the-different-ways-to-make-an-object-non-extensible)|
-|264| [How do you define multiple properties on an object](#how-do-you-define-multiple-properties-on-an-object)|
-|265| [What is MEAN in javascript](#what-is-mean-in-javascript)|
-|266| [What Is Obfuscation in javascript](#what-is-obfuscation-in-javascript)|
-|267| [Why do you need Obfuscation](#why-do-you-need-obfuscation)|
-|268| [What is Minification](#what-is-minification)|
-|269| [What are the advantages of minification](#what-are-the-advantages-of-minification)|
-|270| [What are the differences between Obfuscation and Encryption](#what-are-the-differences-between-obfuscation-and-encryption)|
-|271| [What are the common tools used for minification](#what-are-the-common-tools-used-for-minification)|
-|272| [How do you perform form validation using javascript](#how-do-you-perform-form-validation-using-javascript)|
-|273| [How do you perform form validation without javascript](#how-do-you-perform-form-validation-without-javascript)|
-|274| [What are the DOM methods available for constraint validation](#what-are-the-dom-methods-available-for-constraint-validation)|
-|275| [What are the available constraint validation DOM properties](#what-are-the-available-constraint-validation-dom-properties)|
-|276| [What are the list of validity properties](#what-are-the-list-of-validity-properties)|
-|277| [Give an example usage of rangeOverflow property](#give-an-example-usage-of-rangeoverflow-property)|
-|278| [Is enums feature available in javascript](#is-enums-feature-available-in-javascript)|
-|279| [What is an enum](#What-is-an-enum)|
-|280| [How do you list all properties of an object](#how-do-you-list-all-properties-of-an-object)|
-|281| [How do you get property descriptors of an object](#how-do-you-get-property-descriptors-of-an-object)|
-|282| [What are the attributes provided by a property descriptor](#what-are-the-attributes-provided-by-a-property-descriptor)|
-|283| [How do you extend classes](#how-do-you-extend-classes)|
-|284| [How do I modify the url without reloading the page](#how-do-i-modify-the-url-without-reloading-the-page)|
-|285| [How do you check whether an array includes a particular value or not](#how-do-you-check-whether-an-array-includes-a-particular-value-or-not)|
-|286| [How do you compare scalar arrays](#how-do-you-compare-scalar-arrays)|
-|287| [How to get the value from get parameters](#how-to-get-the-value-from-get-parameters)|
-|288| [How do you print numbers with commas as thousand separators](#how-do-you-print-numbers-with-commas-as-thousand-separators)|
-|289| [What is the difference between java and javascript](#what-is-the-difference-between-java-and-javascript)|
-|290| [Is javascript supports namespace](#is-javascript-supports-namespace)|
-|291| [How do you declare namespace](#how-do-you-declare-namespace)|
-|292| [How do you invoke javascript code in an iframe from parent page](#how-do-you-invoke-javascript-code-in-an-iframe-from-parent-page)|
-|293| [How do get the timezone offset from date](#how-do-get-the-timezone-offset-from-date)|
-|294| [How do you load CSS and JS files dynamically](#how-do-you-load-css-and-js-files-dynamically)|
-|295| [What are the different methods to find HTML elements in DOM](#what-are-the-different-methods-to-find-html-elements-in-dom)|
-|296| [What is jQuery](#what-is-jquery)|
-|297| [What is V8 JavaScript engine](#what-is-v8-javascript-engine)|
-|298| [Why do we call javascript as dynamic language](#why-do-we-call-javascript-as-dynamic-language)|
-|299| [What is a void operator](#what-is-a-void-operator)|
-|300| [How to set the cursor to wait](#how-to-set-the-cursor-to-wait)|
-|301| [How do you create an infinite loop](#how-do-you-create-an-infinite-loop)|
-|302| [Why do you need to avoid with statement](#why-do-you-need-to-avoid-with-statement)|
-|303| [What is the output of below for loops](#what-is-the-output-of-below-for-loops)|
-|304| [List down some of the features of ES6](#list-down-some-of-the-features-of-es6)|
-|305| [What is ES6](#what-is-es6)|
-|306| [Can I redeclare let and const variables](#can-I-redeclare-let-and-const-variables)|
-|307| [Is const variable makes the value immutable](#is-const-variable-makes-the-value-immutable)|
-|308| [What are default parameters](#what-are-default-parameters)|
-|309| [What are template literals](#what-are-template-literals)|
-|310| [How do you write multi-line strings in template literals](#how-do-you-write-multi-line-strings-in-template-literals)|
-|311| [What are nesting templates](#what-are-nesting-templates)|
-|312| [What are tagged templates](#what-are-tagged-templates)|
-|313| [What are raw strings](#what-are-raw-strings)|
-|314| [What is destructuring assignment](#what-is-destructuring-assignment)|
-|315| [What are default values in destructuring assignment](#what-are-default-values-in-destructuring-assignment)|
-|316| [How do you swap variables in destructuring assignment](#how-do-you-swap-variables-in-destructuring-assignment)|
-|317| [What are enhanced object literals](#what-are-enhanced-object-literals)|
-|318| [What are dynamic imports](#what-are-dynamic-imports)|
-|319| [What are the use cases for dynamic imports](#what-are-the-use-cases-for-dynamic-imports)|
-|320| [What are typed arrays](#what-are-typed-arrays)|
-|321| [What are the advantages of module loaders](#what-are-the-advantages-of-module-loaders)|
-|322| [What is collation](#what-is-collation)|
-|323| [What is for...of statement](#what-is-for...of-statement)|
-|324| [What is the output of below spread operator array](#what-is-the-output-of-below-spread-operator-array)|
-|325| [Is PostMessage secure](#is-postmessage-secure)|
-|326| [What are the problems with postmessage target origin as wildcard](#what-are-the-problems-with-postmessage-target-origin-as-wildcard)|
-|327| [How do you avoid receiving postMessages from attackers](#how-do-you-avoid-receiving-postmessages-from-attackers)|
-|328| [Can I avoid using postMessages completely](#can-i-avoid-using-postmessages-completely)|
-|329| [Is postMessages synchronous](#is-postmessages-synchronous)|
-|330| [What paradigm is Javascript](#what-paradigm-is-javascript)|
-|331| [What is the difference between internal and external javascript](#what-is-the-difference-between-internal-and-external-javascript)|
-|332| [Is JavaScript faster than server side script](#is-javascript-faster-than-server-side-script)|
-|333| [How do you get the status of a checkbox](#how-do-you-get-the-status-of-a-checkbox)|
-|334| [What is the purpose of double tilde operator](#what-is-the-purpose-of-double-tilde-operator)|
-|335| [How do you convert character to ASCII code](#how-do-you-convert-character-to-ascii-code)|
-|336| [What is ArrayBuffer](#what-is-arraybuffer)|
-|337| [What is the output of below string expression](#what-is-the-output-of-below-string-expression)|
-|338| [What is the purpose of Error object](#what-is-the-purpose-of-error-object)|
-|339| [What is the purpose of EvalError object](#what-is-the-purpose-of-evalerror-object)|
-|340| [What are the list of cases error thrown from non-strict mode to strict mode](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)|
-|341| [Is all objects have prototypes](#is-all-objects-have-prototypes)|
-|342| [What is the difference between a parameter and an argument](#what-is-the-difference-between-a-parameter-and-an-argument)|
-|343| [What is the purpose of some method in arrays](#what-is-the-purpose-of-some-method-in-arrays)|
-|344| [How do you combine two or more arrays](#how-do-you-combine-two-or-more-arrays)|
-|345| [What is the difference between Shallow and Deep copy](#what-is-the-difference-between-shallow-and-deep-copy)|
-|346| [How do you create specific number of copies of a string](#how-do-you-create-specific-number-of-copies-of-a-string)|
-|347| [How do you return all matching strings against a regular expression](#how-do-you-return-all-matching-strings-against-a-regular-expression)|
-|348| [How do you trim a string at the beginning or ending](#how-do-you-trim-a-string-at-the-beginning-or-ending)|
-|349| [What is the output of below console statement with unary operator](#what-is-the-output-of-below-console-statement-with-unary-operator)|
-|350| [Does javascript uses mixins](#does-javascript-uses-mixins)|
-|351| [What is a thunk function](#what-is-a-thunk-function)|
-|352| [What are asynchronous thunks](#what-are-asynchronous-thunks)|
-|353| [What is the output of below function calls](#what-is-the-output-of-below-function-calls)|
-|354| [How to remove all line breaks from a string](#how-to-remove-all-line-breaks-from-a-string)|
-|355| [What is the difference between reflow and repaint](#what-is-the-difference-between-reflow-and-repaint)|
-|356| [What happens with negating an array](#what-happens-with-negating-an-array)|
-|357| [What happens if we add two arrays](#what-happens-if-we-add-two-arrays)|
-|358| [What is the output of prepend additive operator on falsy values](#what-is-the-output-of-prepend-additive-operator-on-falsy-values)|
-|359| [How do you create self string using special characters](#how-do-you-create-self-string-using-special-characters)|
-|360| [How do you remove falsy values from an array](#how-do-you-remove-falsy-values-from-an-array)|
-|361| [How do you get unique values of an array](#how-do-you-get-unique-values-of-an-array)|
-|362| [What is destructuring aliases](#what-is-destructuring-aliases)|
-|363| [How do you map the array values without using map method](#how-do-you-map-the-array-values-without-using-map-method)|
-|364| [How do you empty an array](#how-do-you-empty-an-array)|
-|365| [How do you rounding numbers to certain decimals](#how-do-you-rounding-numbers-to-certain-decimals)|
-|366| [What is the easiest way to convert an array to an object](#what-is-the-easiest-way-to-convert-an-array-to-an-object)|
-|367| [How do you create an array with some data](#how-do-you-create-an-array-with-some-data)|
-|368| [What are the placeholders from console object](#what-are-the-placeholders-from-console-object)|
-|369| [Is it possible to add CSS to console messages](#is-it-possible-to-add-css-to-console-messages)|
-|370| [What is the purpose of dir method of console object](#what-is-the-purpose-of-dir-method-of-console-object)|
-|371| [Is it possible to debug HTML elements in console](#is-it-possible-to-debug-html-elements-in-console)|
-|372| [How do you display data in a tabular format using console object](#how-do-you-display-data-in-a-tabular-format-using-console-object)|
-|373| [How do you verify that an argument is a Number or not](#how-do-you-verify-that-an-argument-is-a-number-or-not)|
-|374| [How do you create copy to clipboard button](#how-do-you-create-copy-to-clipboard-button)|
-|375| [What is the shortcut to get timestamp](#what-is-the-shortcut-to-get-timestamp)|
-|376| [How do you flattening multi dimensional arrays](#how-do-you-flattening-multi-dimensional-arrays)|
-|377| [What is the easiest multi condition checking](#what-is-the-easiest-multi-condition-checking)|
-|378| [How do you capture browser back button](#how-do-you-capture-browser-back-button)|
-|379| [How do you disable right click in the web page](#how-do-you-disable-right-click-in-the-web-page)|
-|380| [What are wrapper objects](#what-are-wrapper-objects)|
-|381| [What is AJAX](#what-is-ajax)|
-|382| [What are the different ways to deal with Asynchronous Code](#what-are-the-different-ways-to-deal-with-asynchronous-code)|
-|383| [How to cancel a fetch request](#how-to-cancel-a-fetch-request)|
-|384| [What is web speech API](#what-is-web-speech-api)|
-|385| [What is minimum timeout throttling](#what-is-minimum-timeout-throttling)|
-|386| [How do you implement zero timeout in modern browsers](#how-do-you-implement-zero-timeout-in-modern-browsers)|
-|387| [What are tasks in event loop](#what-are-tasks-in-event-loop)|
-|388| [What are microtasks](#what-are-microtasks)|
-|389| [What are different event loops](#what-are-different-event-loops)|
-|390| [What is the purpose of queueMicrotask](#what-is-the-purpose-of-queuemicrotask)|
-|391| [How do you use javascript libraries in typescript file](#how-do-you-use-javascript-libraries-in-typescript-file)|
-|392| [What are the differences between promises and observables](#what-are-the-differences-between-promises-and-observables)|
-|393| [What is heap](#what-is-heap)|
-|394| [What is an event table](#what-is-an-event-table)|
-|395| [What is a microTask queue](#what-is-a-microtask-queue)|
-|396| [What is the difference between shim and polyfill](#what-is-the-difference-between-shim-and-polyfill)|
-|397| [How do you detect primitive or non primitive value type](#how-do-you-detect-primitive-or-non-primitive-value-type)|
-|398| [What is babel](#what-is-babel)|
-|399| [Is Node.js completely single threaded](#is-node.js-completely-single-threaded)|
-|400| [What are the common use cases of observables](#what-are-the-common-use-cases-of-observables)|
-|401| [What is RxJS](#what-is-rxjs)|
-|402| [What is the difference between Function constructor and function declaration](#what-is-the-difference-between-function-constructor-and-function-declaration)|
-|403| [What is a Short circuit condition](#what-is-a-short-circuit-condition)|
-|404| [What is the easiest way to resize an array](#what-is-the-easiest-way-to-resize-an-array)|
-|405| [What is an observable](#what-is-an-observable)|
-|406| [What is the difference between function and class declarations](#what-is-the-difference-between-function-and-class-declarations)|
-|407| [What is an async function](#what-is-an-async-function)|
-|408| [How do you prevent promises swallowing errors](#how-do-you-prevent-promises-swallowing-errors)|
-|409| [What is deno](#what-is-deno)|
-|410| [How do you make an object iterable in javascript](#how-do-you-make-an-object-iterable-in-javascript)|
-|411| [What is a Proper Tail Call](#what-is-a-proper-tail-call)|
-|412| [How do you check an object is a promise or not](#how-do-you-check-an-object-is-a-promise-or-not)|
-|413| [How to detect if a function is called as constructor](#how-to-detect-if-a-function-is-called-as-constructor)|
-|414| [What are the differences between arguments object and rest parameter](#what-are-the-differences-between-arguments-object-and-rest-parameter)|
-|415| [What are the differences between spread operator and rest parameter](#what-are-the-differences-between-spread-operator-and-rest-parameter)|
-|416| [What are the different kinds of generators](#what-are-the-different-kinds-of-generators)|
-|417| [What are the built-in iterables](#what-are-the-built-in-iterables)|
-|418| [What are the differences between for...of and for...in statements](#what-are-the-differences-between-for...of-and-for...in-statements)|
-|419| [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties)|
-|420| [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-number.isnan)|
+|1  | [روش‌های ایجاد objects توی جاواسکریپت چیا هستن؟](#روشهای-ایجاد-objects-توی-جاواسکریپت-چیا-هستن) |
+|2  | [زنجیره prototype چیه؟](#زنجیره-prototype-چیه) |
+|3  | [تفاوت‌های بین Call، Apply و Bind چیا هستن؟](#تفاوتهای-بین-Call،-Apply-و-Bind-چیا-هستن) |
+|4  | [فرمت JSON چیه و عملیات‌های معمول بر روی آن چیا هستند؟](#فرمت-JSON-چیه-و-عملیاتهای-معمول-بر-روی-آن-چیا-هستند) |
+|5  | [هدف از متد slice روی آرایه‌ها چیه؟](#هدف-از-متد-slice-روی-آرایهها-چیه) |
+|6  | [هدف از متد splice روی آرایه‌ها چیه؟](#هدف-از-متد-splice-روی-آرایهها-چیه) |
+|7  | [تفاوت متدهای slice و splice چیا هستن؟](#تفاوت-متدهای-slice-و-splice-چیا-هستن) |
+|8  | [تفاوت‌های Object و Map چیا هستن؟](#تفاوتهای-Object-و-Map-چیا-هستن) |
+|9  | [تفاوت‌های بین عملگرهای == و === چیا هستن؟](#تفاوتهای-بین-عملگرهای-و-چیا-هستن) |
+|10 | [توابع lambda یا arrow-function چی هستن؟](#توابع-lambda-یا-arrow-function-چی-هستن) |
+|11 | [یه تابع first-class چجور تابعی‌ـه؟](#یه-تابع-first-class-چجور-تابعیـه) |
+|12 | [یه تابع first-order چجور تابعی‌ـه؟](#یه-تابع-first-order-چجور-تابعیـه) |
+|13 | [یه تابع higher-order چجور تابعی‌ـه؟](#یه-تابع-higher-order-چجور-تابعیـه) |
+|14 | [یه تابع unary چجور تابعی‌ـه؟](#یه-تابع-unary-چجور-تابعیـه) |
+|15 | [currying توابع یعنی چی؟](#currying-توابع-یعنی-چی) |
+|16 | [چه توابعی pure هستن؟](#چه-توابعی-pure-هستن) |
+|17 | [هدف از کلمه کلیدی let چیه؟](#هدف-از-کلمه-کلیدی-let-چیه) |
+|18 | [تفاوت‌های کلمات کلیدی let و var چیا هستن؟](#تفاوتهای-کلمات-کلیدی-let-و-var-چیا-هستن) |
+|19 | [دلیل انتخاب کلمه کلیدی let چیه؟](#دلیل-انتخاب-کلمه-کلیدی-let-چیه) |
+|20 | [چطوری می‌تونیم توی بلوک مربوط به switch بدون دریافت خطا متغیر تعریف کنیم؟](#چطوری-میتونیم-توی-بلوک-مربوط-به-switch-بدون-دریافت-خطا-متغیر-تعریف-کنیم) |
+|21 | [Temporal-Dead-Zone چیه؟](#Temporal-Dead-Zone-چیه  ) |
+|22 | [IIFE(توابع بلافاصله صدا زده شده) چی هستن؟](#IIFEتوابع-بلافاصله-صدا-زده-شده-چی-هستن) |
+|23 | [مزایای استفاده از moduleها چیه؟](#مزایای-استفاده-از-moduleها-چیه) |
+|24 | [Memoization چیه؟](#Memoization-چیه) |
+|25 | [Hoisting چیه؟](#Hoisting-چیه) |
+|26 | [Classها توی ES6 چی هستن؟](#Classها-توی-ES6-چی-هستن) |
+|27 | [Closureها چیا هستن؟](#Closureها-چیا-هستن) |
+|28 | [Moduleها چیا هستن؟](#Moduleها-چیا-هستن) |
+|29 | [چرا به moduleها نیاز داریم؟](#چرا-به-moduleها-نیاز-داریم) |
+|30 | [توی جاواسکریپت scope چیه و چیکار می‌کنه؟](#توی-جاواسکریپت-scope-چیه-و-چیکار-میکنه) |
+|31 | [service-worker چیه؟](#service-worker-چیه) |
+|32 | [توی service-worker چطوری میشه DOM رو دستکاری کرد؟](#توی-service-worker-چطوری-میشه-DOM-رو-دستکاری-کرد) |
+|33 | [چطوری می‌تونیم بین ریست شدن‌های service-worker داده‌های مورد نظرمون رو مجدد استفاده کنیم؟](#چطوری-میتونیم-بین-ریست-شدنهای-service-worker-دادههای-مورد-نظرمون-رو-مجدد-استفاده-کنیم) |
+|34 | [IndexedDB چیه؟](#IndexedDB-چیه) |
+|35 | [Web-storage چیه؟](#Web-storage-چیه) |
+|36 | [Post-message چیه؟](#Post-message-چیه) |
+|37 | [Cookie چیه؟](#Cookie-چیه) |
+|38 | [چرا به cookie نیاز داریم؟](#چرا-به-cookie-نیاز-داریم) |
+|39 | [گزینه‌های قابل تنظیم توی cookie چیا هستن؟](#گزینههای-قابل-تنظیم-توی-cookie-چیا-هستن) |
+|40 | [چطوری میشه یه cookie رو حذف کرد؟](#چطوری-میشه-یه-cookie-رو-حذف-کرد) |
+|41 | [تفاوت‌های بین cookie، local-storage و session-storage چیا هستن؟](#تفاوتهای-بین-cookie،-local-storage-و-session-storage-چیا-هستن) |
+|42 | [تفاوت‌های بین localStorage و sessionStorage چیا هستن؟](#تفاوتهای-بین-localStorage-و-sessionStorage-چیا-هستن) |
+|43 | [چطوری به web-storage دسترسی پیدا می‌کنی؟](#چطوری-به-web-storage-دسترسی-پیدا-میکنی) |
+|44 | [چه متد‌هایی روی session-storage قابل استفاده هستن؟](#چه-متدهایی-روی-session-storage-قابل-استفاده-هستن) |
+|45 | [رخداد storage چیه و چطوری ازش استفاده می‌کنیم؟](#رخداد-storage-چیه-و-چطوری-ازش-استفاده-میکنیم) |
+|46 | [چرا به web-storage نیاز داریم؟](#چرا-به-web-storage-نیاز-داریم) |
+|47 | [چطوری می‌تونیم پشتیبانی از web-storage توسط مرورگر رو بررسی کنیم؟](#چطوری-میتونیم-پشتیبانی-از-web-storage-توسط-مرورگر-رو-بررسی-کنیم) |
+|48 | [چطوری می‌تونیم پشتیبانی از web-worker توسط مرورگر رو بررسی کنیم؟](#چطوری-میتونیم-پشتیبانی-از-web-worker-توسط-مرورگر-رو-بررسی-کنیم) |
+|49 | [یه مثال از web-workerها می‌تونی بزنی؟](#یه-مثال-از-web-workerها-میتونی-بزنی) |
+|50 | [محدودیت‌های web-workerها روی DOM چیا هستن؟](#محدودیتهای-web-workerها-روی-DOM-چیا-هستن) |
+|51 | [Promise چیه؟](#Promise-چیه  ) |
+|52 | [چرا به promise نیاز داریم؟](#چرا-به-promise-نیاز-داریم) |
+|53 | [سه تا وضعیت ممکن برای یه promise چیا هستن؟](#سه-تا-وضعیت-ممکن-برای-یه-promise-چیا-هستن) |
+|54 | [توابع callback چی هستن؟](#توابع-callback-چی-هستن) |
+|55 | [چرا به توابع callback نیاز داریم؟](#چرا-به-توابع-callback-نیاز-داریم) |
+|56 | [Callback-hell یا جهنم توابع callback چیه؟](#Callback-hell-یا-جهنم-توابع-callback-چیه  ) |
+|57 | [Server-sent-events(SSE) چیه؟](#Server-sent-eventsSSE-چیه  ) |
+|58 | [چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟](#چطوری-میتونیم-اعلانهای-server-sent-event-رو-دریافت-کنیم) |
+|59 | [چطوری می‌تونیم پشتیبانی مرورگر برای SSE رو بررسی کنیم؟](#چطوری-میتونیم-پشتیبانی-مرورگر-برای-SSE-رو-بررسی-کنیم) |
+|60 | [کدوم توابع روی SSE وجود دارن؟](#کدوم-توابع-روی-SSE-وجود-دارن) |
+|61 | [اصلی‌ترین قوانین promiseها چیا هستن؟](#اصلیترین-قوانین-promiseها-چیا-هستن) |
+|62 | [Callback توی callback چطوری رخ میده؟](#Callback-توی-callback-چطوری-رخ-میده            ) |
+|63 | [زنجیره promiseها چیه؟](#زنجیره-promiseها-چیه) |
+|64 | [کاربرد متد promise.all چیه؟](#کاربرد-متد-promise.all-چیه) |
+|65 | [هدف از متد race روی promise چیه؟](#هدف-از-متد-race-روی-promise-چیه) |
+|66 | [حالت strict توی جاواسکریپت چی کار میکنه؟](#حالت-strict-توی-جاواسکریپت-چی-کار-میکنه) |
+|67 | [چرا به حالت strict نیاز داریم؟](#چرا-به-حالت-strict-نیاز-داریم) |
+|68 | [چطوری می‌تونیم حالت strict رو فعال کنیم؟](#چطوری-میتونیم-حالت-strict-رو-فعال-کنیم) |
+|69 | [هدف از عملگر نقیض دوتایی(!!) چیه؟](#هدف-از-عملگر-نقیض-دوتایی!!-چیه) |
+|70 | [هدف از عملگر delete چیه؟](#هدف-از-عملگر-delete-چیه) |
+|71 | [عملگر typeof چیکار می‌کنه؟](#عملگر-typeof-چیکار-میکنه) |
+|72 | [undefined چیه و چه زمانی undefined می‌گیریم؟](#undefined-چیه-و-چه-زمانی-undefined-میگیریم      ) |
+|73 | [null چیه؟](#null-چیه  ) |
+|74 | [تفاوت‌های بین null و undefined چیا هستن؟](#تفاوتهای-بین-null-و-undefined-چیا-هستن) |
+|75 | [eval چیه؟](#eval-چیه  ) |
+|76 | [تفاوت‌های بین window و document چیا هستن؟](#تفاوتهای-بین-window-و-document-چیا-هستن) |
+|77 | [توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟](#توی-جاواسکریپت-چطوری-میتونیم-به-history-دسترسی-داشته-باشیم) |
+|78 | [انواع داده‌های جاواسکریپت کدوما هستن؟](#انواع-دادههای-جاواسکریپت-کدوما-هستن) |
+|79 | [isNaN چیه و چیکار می‌کنه؟](#isNaN-چیه-و-چیکار-میکنه                ) |
+|80 | [تفاوت‌های بین undeclared و undefined چیا هستن؟](#تفاوتهای-بین-undeclared-و-undefined-چیا-هستن) |
+|81 | [کدوم متغیرها عمومی هستن؟](#کدوم-متغیرها-عمومی-هستن) |
+|82 | [مشکلات متغیرهای عمومی چیا هستن؟](#مشکلات-متغیرهای-عمومی-چیا-هستن) |
+|83 | [مقدار NaN چیه؟](#مقدار-NaN-چیه) |
+|84 | [هدف از تابع isFinite چیه؟](#هدف-از-تابع-isFinite-چیه) |
+|85 | [یه event-flow چیه؟](#یه-event-flow-چیه) |
+|86 | [Event-bubbling چیه؟](#Event-bubbling-چیه  ) |
+|87 | [Event-capturing چیه؟](#Event-capturing-چیه  ) |
+|88 | [چطوری میشه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟](#چطوری-میشه-یه-فرم-رو-با-استفاده-از-جاواسکریپت-ثبت-کرد) |
+|89 | [چطوری میشه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟](#چطوری-میشه-به-اطلاعات-مربوط-به-سیستم-عامل-کاربر-دسترسی-داشت) |
+|90 | [تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟](#تفاوتهای-بین-رخدادهای-document-load-و-DOMContentLoaded-چیا-هستن) |
+|91 | [تفاوت‌های بین objectهای native، host و user چیا هستن؟](#تفاوتهای-بین-objectهای-native،-host-و-user-چیا-هستن) |
+|92 | [کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟](#کدوم-ابزار-و-تکنیکها-برای-دیباگ-کردن-برنامه-جاواسکریپتی-استفاده-میشن) |
+|93 | [مزایا و معایب استفاده از promiseها به جای callback چیا هستن؟](#مزایا-و-معایب-استفاده-از-promiseها-به-جای-callback-چیا-هستن) |
+|94 | [تفاوت‌های بین attribute و property روی DOM چیا هستن؟](#تفاوتهای-بین-attribute-و-property-روی-DOM-چیا-هستن) |
+|95 | [سیاست same-origin چیه؟](#سیاست-same-origin-چیه) |
+|96 | [هدف استفاده از void 0 چیه؟](#هدف-استفاده-از-void-0-چیه) |
+|97 | [جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟](#جاواسکریپت-یه-زبان-تفسیری-هست-یا-کامپایلری) |
+|98 | [آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟](#آیا-جاواسکریپت-یه-زبان-حساس-به-بزرگی-و-کوچکیcase-sensitive-حروف-است) |
+|99 | [ارتباطی بین Java و JavaScript وجود داره؟](#ارتباطی-بین-Java-و-JavaScript-وجود-داره) |
+|100| [Eventها چی هستن؟](#Eventها-چی-هستن) |
+|101| [کی جاواسکریپت رو ساخته؟](#کی-جاواسکریپت-رو-ساخته) |
+|102| [هدف از متد preventDefault چیه؟](#هدف-از-متد-preventDefault-چیه) |
+|103| [کاربرد متد stopPropagation چیه؟](#کاربرد-متد-stopPropagation-چیه) |
+|104| [مراحلی که هنگام استفاده از return false توی یه event-handler رخ میده چیا هستن؟](#مراحلی-که-هنگام-استفاده-از-return-false-توی-یه-event-handler-رخ-میده-چیا-هستن) |
+|105| [BOM چیه؟](#BOM-چیه) |
+|106| [موارد استفاده از setTimeout کدوما هستن؟](#موارد-استفاده-از-setTimeout-کدوما-هستن) |
+|107| [موارد استفاده از setInterval کدوما هستن؟](#موارد-استفاده-از-setInterval-کدوما-هستن) |
+|108| [چرا جاواسکریپت رو به عنوان یه زبان تک thread می‌شناسن؟](#چرا-جاواسکریپت-رو-به-عنوان-یه-زبان-تک-thread-میشناسن) |
+|109| [Event-delegation چیه؟](#Event-delegation-چیه) |
+|110| [ECMAScript چیه؟](#ECMAScript-چیه) |
+|111| [JSON چیه؟](#JSON-چیه) |
+|112| [قوانین فرمت JSON کدوما هستن؟](#قوانین-فرمت-JSON-کدوما-هستن) |
+|113| [هدف از متد JSON.stringify چیه؟](#هدف-از-متد-JSON.stringify-چیه) |
+|114| [چطوری می‌تونیم یه رشته(string) JSON رو تجزیه کنیم؟](#چطوری-میتونیم-یه-رشتهstring-JSON-رو-تجزیه-کنیم) |
+|115| [چرا به JSON نیاز داریم؟](#چرا-به-JSON-نیاز-داریم) |
+|116| [PWAها چی هستن؟](#PWAها-چی-هستن) |
+|117| [هدف از متد clearTimeout چیه؟](#هدف-از-متد-clearTimeout-چیه) |
+|118| [هدف از متد clearInterval چیه؟](#هدف-از-متد-clearInterval-چیه) |
+|119| [توی جاواسکریپت، چطوری میشه به یه صفحه جدید redirect انجام داد؟](#توی-جاواسکریپت،-چطوری-میشه-به-یه-صفحه-جدید-redirect-انجام-داد) |
+|120| [چطوری بررسی می‌کنین که یه string شامل یه substring هست یا نه؟](#چطوری-بررسی-میکنین-که-یه-string-شامل-یه-substring-هست-یا-نه) |
+|121| [توی جاواسکریپت، چطوری مقدار یه آدرس email رو اعتبارسنجی می‌کنین؟](#توی-جاواسکریپت،-چطوری-مقدار-یه-آدرس-email-رو-اعتبارسنجی-میکنین) |
+|122| [چطوری می‌تونیم مقدار آدرس url جاری رو بخونیم؟](#چطوری-میتونیم-مقدار-آدرس-url-جاری-رو-بخونیم) |
+|123| [ویژگی‌های مختلف url روی object مربوط به history کدوما هستن؟](#ویژگیهای-مختلف-url-روی-object-مربوط-به-history-کدوما-هستن) |
+|124| [توی جاواسکریپت چطوری می‌تونیم مقدار یه query-string رو بخونیم؟](#توی-جاواسکریپت-چطوری-میتونیم-مقدار-یه-query-string-رو-بخونیم) |
+|125| [چطوری می‌تونیم بررسی کنیم که آیا یه پراپرتی روی آبجکت وجود داره یا نه؟](#چطوری-میتونیم-بررسی-کنیم-که-آیا-یه-پراپرتی-روی-آبجکت-وجود-داره-یا-نه) |
+|126| [How do you loop through or enumerate javascript object]() |
+|127| [How do you test for an empty object]() |
+|128| [What is an arguments object]() |
+|129| [How do you make first letter of the string in an uppercase]() |
+|130| [What are the pros and cons of for loop]() |
+|131| [How do you display the current date in javascript]() |
+|132| [How do you compare two date objects]() |
+|133| [How do you check if a string starts with another string]() |
+|134| [How do you trim a string in javascript]() |
+|135| [How do you add a key value pair in javascript]() |
+|136| [Is the '!--' notation represents a special operator]() |
+|137| [How do you assign default values to variables]() |
+|138| [How do you define multiline strings]() |
+|139| [What is an app shell model]() |
+|140| [Can we define properties for functions]() |
+|141| [What is the way to find the number of parameters expected by a function]() |
+|142| [What is a polyfill]() |
+|143| [What are break and continue statements]() |
+|144| [What are js labels]() |
+|145| [What are the benefits of keeping declarations at the top]() |
+|146| [What are the benefits of initializing variables]() |
+|147| [What are the recommendations to create new object]() |
+|148| [How do you define JSON arrays]() |
+|149| [How do you generate random integers]() |
+|150| [Can you write a random integers function to print integers with in a range]() |
+|151| [What is tree shaking]() |
+|152| [What is the need of tree shaking]() |
+|153| [Is it recommended to use eval]() |
+|154| [What is a Regular Expression]() |
+|155| [What are the string methods available in Regular expression]() |
+|156| [What are modifiers in regular expression]() |
+|157| [What are regular expression patterns]() |
+|158| [What is a RegExp object]() |
+|159| [How do you search a string for a pattern]() |
+|160| [What is the purpose of exec method]() |
+|161| [How do you change style of a HTML element]() |
+|162| [What would be the result of 1+2+'3']() |
+|163| [What is a debugger statement]() |
+|164| [What is the purpose of breakpoints in debugging]() |
+|165| [Can I use reserved words as identifiers]() |
+|166| [How do you detect a mobile browser]() |
+|167| [How do you detect a mobile browser without regexp]() |
+|168| [How do you get the image width and height using JS]() |
+|169| [How do you make synchronous HTTP request]() |
+|170| [How do you make asynchronous HTTP request]() |
+|171| [How do you convert date to another timezone in javascript]() |
+|172| [What are the properties used to get size of window]() |
+|173| [What is a conditional operator in javascript]() |
+|174| [Can you apply chaining on conditional operator]() |
+|175| [What are the ways to execute javascript after page load]() |
+|176| [What is the difference between proto and prototype]() |
+|177| [Give an example where do you really need semicolon]() |
+|178| [What is a freeze method]() |
+|179| [What is the purpose of freeze method]() |
+|180| [Why do I need to use freeze method]() |
+|181| [How do you detect a browser language preference]() |
+|182| [How to convert string to title case with javascript]() |
+|183| [How do you detect javascript disabled in the page]() |
+|184| [What are various operators supported by javascript]() |
+|185| [What is a rest parameter]() |
+|186| [What happens if you do not use rest parameter as a last argument]() |
+|187| [What are the bitwise operators available in javascript]() |
+|188| [What is a spread operator]() |
+|189| [How do you determine whether object is frozen or not]() |
+|190| [How do you determine two values same or not using object]() |
+|191| [What is the purpose of using object is method]() |
+|192| [How do you copy properties from one object to other]() |
+|193| [What are the applications of assign method]() |
+|194| [What is a proxy object]() |
+|195| [What is the purpose of seal method]() |
+|196| [What are the applications of seal method]() |
+|197| [What are the differences between freeze and seal methods]() |
+|198| [How do you determine if an object is sealed or not]() |
+|199| [How do you get enumerable key and value pairs]() |
+|200| [What is the main difference between Object.values and Object.entries method]() |
+|201| [How can you get the list of keys of any object]() |
+|202| [How do you create an object with prototype]() |
+|203| [What is a WeakSet]() |
+|204| [What are the differences between WeakSet and Set]() |
+|205| [List down the collection of methods available on WeakSet]() |
+|206| [What is a WeakMap]() |
+|207| [What are the differences between WeakMap and Map]() |
+|208| [List down the collection of methods available on WeakMap]() |
+|209| [What is the purpose of uneval]() |
+|210| [How do you encode an URL]() |
+|211| [How do you decode an URL]() |
+|212| [How do you print the contents of web page]() |
+|213| [What is the difference between uneval and eval]() |
+|214| [What is an anonymous function]() |
+|215| [What is the precedence order between local and global variables]() |
+|216| [What are javascript accessors]() |
+|217| [How do you define property on Object constructor]() |
+|218| [What is the difference between get and defineProperty]() |
+|219| [What are the advantages of Getters and Setters]() |
+|220| [Can I add getters and setters using defineProperty method]() |
+|221| [What is the purpose of switch-case]() |
+|222| [What are the conventions to be followed for the usage of swtich case]() |
+|223| [What are primitive data types]() |
+|224| [What are the different ways to access object properties]() |
+|225| [What are the function parameter rules]() |
+|226| [What is an error object]() |
+|227| [When you get a syntax error]() |
+|228| [What are the different error names from error object]() |
+|229| [What are the various statements in error handling]() |
+|230| [What are the two types of loops in javascript]() |
+|231| [nodejs چیه؟]() |
+|232| [What is an Intl object]() |
+|233| [How do you perform language specific date and time formatting]() |
+|234| [What is an Iterator]() |
+|235| [How does synchronous iteration works]() |
+|236| [What is an event loop]() |
+|237| [What is call stack]() |
+|238| [What is an event queue]() |
+|239| [What is a decorator]() |
+|240| [What are the properties of Intl object]() |
+|241| [What is an Unary operator]() |
+|242| [How do you sort elements in an array]() |
+|243| [What is the purpose of compareFunction while sorting arrays]() |
+|244| [How do you reversing an array]() |
+|245| [How do you find min and max value in an array]() |
+|246| [How do you find min and max values without Math functions]() |
+|247| [What is an empty statement and purpose of it]() |
+|248| [How do you get meta data of a module]() |
+|249| [What is a comma operator]() |
+|250| [What is the advantage of a comma operator]() |
+|251| [What is typescript]() |
+|252| [What are the differences between javascript and typescript]() |
+|253| [What are the advantages of typescript over javascript]() |
+|254| [What is an object initializer]() |
+|255| [What is a constructor method]() |
+|256| [What happens if you write constructor more than once in a class]() |
+|257| [How do you call the constructor of a parent class]() |
+|258| [How do you get the prototype of an object]() |
+|259| [What happens If I pass string type for getPrototype method]() |
+|260| [How do you set prototype of one object to another]() |
+|261| [How do you check whether an object can be extendable or not]() |
+|262| [How do you prevent an object to extend]() |
+|263| [What are the different ways to make an object non-extensible]() |
+|264| [How do you define multiple properties on an object]() |
+|265| [منظور از MEAN توی جاواسکریپت چیه؟ javascript]() |
+|266| [Obfuscation توی جاواسکریپت چیه و چیکار می‌کنه؟ javascript]() |
+|267| [چه نیازی به Obfuscate کردن داریم؟]() |
+|268| [Minification چیه؟]() |
+|269| [What are the advantages of minification]() |
+|270| [What are the differences between Obfuscation and Encryption]() |
+|271| [What are the common tools used for minification]() |
+|272| [How do you perform form validation using javascript]() |
+|273| [How do you perform form validation without javascript]() |
+|274| [What are the DOM methods available for constraint validation]() |
+|275| [What are the available constraint validation DOM properties]() |
+|276| [What are the list of validity properties]() |
+|277| [Give an example usage of rangeOverflow property]() |
+|278| [جاواسکریپت قابلیت استفاده از enum رو پیش‌فرض توی خودش داره؟]() |
+|279| [enum چیه؟]() |
+|280| [How do you list all properties of an object]() |
+|281| [How do you get property descriptors of an object]() |
+|282| [What are the attributes provided by a property descriptor]() |
+|283| [How do you extend classes]() |
+|284| [How do I modify the url without reloading the page]() |
+|285| [How do you check whether an array includes a particular value or not]() |
+|286| [How do you compare scalar arrays]() |
+|287| [How to get the value from get parameters]() |
+|288| [How do you print numbers with commas as thousand separators]() |
+|289| [What is the difference between java and javascript]() |
+|290| [Is javascript supports namespace]() |
+|291| [How do you declare namespace]() |
+|292| [How do you invoke javascript code in an iframe from parent page]() |
+|293| [How do get the timezone offset from date]() |
+|294| [How do you load CSS and JS files dynamically]() |
+|295| [What are the different methods to find HTML elements in DOM]() |
+|296| [What is jQuery]() |
+|297| [What is V8 JavaScript engine]() |
+|298| [Why do we call javascript as dynamic language]() |
+|299| [What is a void operator]() |
+|300| [How to set the cursor to wait]() |
+|301| [How do you create an infinite loop]() |
+|302| [Why do you need to avoid with statement]() |
+|303| [What is the output of below for loops]() |
+|304| [List down some of the features of ES6]() |
+|305| [What is ES6]() |
+|306| [Can I redeclare let and const variables]() |
+|307| [Is const variable makes the value immutable]() |
+|308| [What are default parameters]() |
+|309| [What are template literals]() |
+|310| [How do you write multi-line strings in template literals]() |
+|311| [What are nesting templates]() |
+|312| [What are tagged templates]() |
+|313| [What are raw strings]() |
+|314| [What is destructuring assignment]() |
+|315| [What are default values in destructuring assignment]() |
+|316| [How do you swap variables in destructuring assignment]() |
+|317| [What are enhanced object literals]() |
+|318| [What are dynamic imports]() |
+|319| [What are the use cases for dynamic imports]() |
+|320| [What are typed arrays]() |
+|321| [What are the advantages of module loaders]() |
+|322| [What is collation]() |
+|323| [What is for...of statement]() |
+|324| [What is the output of below spread operator array]() |
+|325| [Is PostMessage secure]() |
+|326| [What are the problems with postmessage target origin as wildcard]() |
+|327| [How do you avoid receiving postMessages from attackers]() |
+|328| [Can I avoid using postMessages completely]() |
+|329| [Is postMessages synchronous]() |
+|330| [What paradigm is Javascript]() |
+|331| [What is the difference between internal and external javascript]() |
+|332| [Is JavaScript faster than server side script]() |
+|333| [How do you get the status of a checkbox]() |
+|334| [What is the purpose of double tilde operator]() |
+|335| [How do you convert character to ASCII code]() |
+|336| [What is ArrayBuffer]() |
+|337| [What is the output of below string expression]() |
+|338| [What is the purpose of Error object]() |
+|339| [What is the purpose of EvalError object]() |
+|340| [What are the list of cases error thrown from non-strict mode to strict mode]() |
+|341| [Is all objects have prototypes]() |
+|342| [What is the difference between a parameter and an argument]() |
+|343| [What is the purpose of some method in arrays]() |
+|344| [How do you combine two or more arrays]() |
+|345| [What is the difference between Shallow and Deep copy]() |
+|346| [How do you create specific number of copies of a string]() |
+|347| [How do you return all matching strings against a regular expression]() |
+|348| [How do you trim a string at the beginning or ending]() |
+|349| [What is the output of below console statement with unary operator]() |
+|350| [Does javascript uses mixins]() |
+|351| [What is a thunk function]() |
+|352| [What are asynchronous thunks]() |
+|353| [What is the output of below function calls]() |
+|354| [How to remove all line breaks from a string]() |
+|355| [What is the difference between reflow and repaint]() |
+|356| [What happens with negating an array]() |
+|357| [What happens if we add two arrays]() |
+|358| [What is the output of prepend additive operator on falsy values]() |
+|359| [How do you create self string using special characters]() |
+|360| [How do you remove falsy values from an array]() |
+|361| [How do you get unique values of an array]() |
+|362| [What is destructuring aliases]() |
+|363| [How do you map the array values without using map method]() |
+|364| [How do you empty an array]() |
+|365| [How do you rounding numbers to certain decimals]() |
+|366| [What is the easiest way to convert an array to an object]() |
+|367| [How do you create an array with some data]() |
+|368| [What are the placeholders from console object]() |
+|369| [Is it possible to add CSS to console messages]() |
+|370| [What is the purpose of dir method of console object]() |
+|371| [Is it possible to debug HTML elements in console]() |
+|372| [How do you display data in a tabular format using console object]() |
+|373| [How do you verify that an argument is a Number or not]() |
+|374| [How do you create copy to clipboard button]() |
+|375| [What is the shortcut to get timestamp]() |
+|376| [How do you flattening multi dimensional arrays]() |
+|377| [What is the easiest multi condition checking]() |
+|378| [How do you capture browser back button]() |
+|379| [How do you disable right click in the web page]() |
+|380| [What are wrapper objects]() |
+|381| [What is AJAX]() |
+|382| [What are the different ways to deal with Asynchronous Code]() |
+|383| [How to cancel a fetch request]() |
+|384| [What is web speech API]() |
+|385| [What is minimum timeout throttling]() |
+|386| [How do you implement zero timeout in modern browsers]() |
+|387| [What are tasks in event loop]() |
+|388| [What are microtasks]() |
+|389| [What are different event loops]() |
+|390| [What is the purpose of queueMicrotask]() |
+|391| [How do you use javascript libraries in typescript file]() |
+|392| [What are the differences between promises and observables]() |
+|393| [What is heap]() |
+|394| [What is an event table]() |
+|395| [What is a microTask queue]() |
+|396| [What is the difference between shim and polyfill]() |
+|397| [How do you detect primitive or non primitive value type]() |
+|398| [What is babel]() |
+|399| [Is Node.js completely single threaded]() |
+|400| [What are the common use cases of observables]() |
+|401| [What is RxJS]() |
+|402| [What is the difference between Function constructor and function declaration]() |
+|403| [What is a Short circuit condition]() |
+|404| [What is the easiest way to resize an array]() |
+|405| [What is an observable]() |
+|406| [What is the difference between function and class declarations]() |
+|407| [What is an async function]() |
+|408| [How do you prevent promises swallowing errors]() |
+|409| [What is deno]() |
+|410| [How do you make an object iterable in javascript]() |
+|411| [What is a Proper Tail Call]() |
+|412| [How do you check an object is a promise or not]() |
+|413| [How to detect if a function is called as constructor]() |
+|414| [What are the differences between arguments object and rest parameter]() |
+|415| [What are the differences between spread operator and rest parameter]() |
+|416| [What are the different kinds of generators]() |
+|417| [What are the built-in iterables]() |
+|418| [What are the differences between for...of and for...in statements]() |
+|419| [How do you define instance and non-instance properties]() |
+|420| [تفاوت‌های بین isNaN و Number.isNaN کدوما هستن؟]() |
+
+1. ### روش‌های ایجاد objects توی جاواسکریپت چیا هستن؟
+
+   روش‌‌ های زیادی برای ایجاد آبجکت‌ها توی جاوا‌اسکریپت وجود داره:
+
+  1. **سازنده آبجکت:**
+
+     ساده‌ترین راه برای ایجاد یه آبجکت خالی استفاده از سازنده آبجکت هستش. در حال حاضر این روش توصیه نمیشه
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     var object = new Object();
+     ```
+
+     </span>
 
 
-1. ### What are the possible ways to create objects in JavaScript
+2. **متد ایجاد آبجکت:**
 
-   There are many ways to create objects in javascript as below
+   متد ایجاد آبجکت با انتقال نمونه اولیه آبجکت به عنوان یه پارامتر، یه آبجکت جدید ایجاد میکنه
 
-   1. **Object constructor:**
+   <span dir="ltr" align="left">
 
-      The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
+   ```javascript
+   var object = Object.create(null);
+   ```
 
-      <span dir="ltr" align="left">
+   </span>
 
-      ```javascript
-      var object = new Object();
-      ```
-      
-      </span>
-      
 
-   2. **Object's create method:**
+3. **Object literal syntax:**
 
-      The create method of Object creates a new object by passing the prototype object as a parameter
+   The object literal syntax is equivalent to create method when it passes null as parameter
 
-      <span dir="ltr" align="left">
+   <span dir="ltr" align="left">
 
-      ```javascript
-      var object = Object.create(null);
-      ```
-      
-      </span>
-      
+   ```javascript
+   var object = {};
+   ```
 
-   3. **Object literal syntax:**
+   </span>
 
-      The object literal syntax is equivalent to create method when it passes null as parameter
 
-      <span dir="ltr" align="left">
+4. **سازنده تابع:**
 
-      ```javascript
+   هر تابعی که بخوایم رو ایجاد میکنیم و از طریق عملگر new یه نمونه آبجکت جدید می‌سازیم.
+
+   <span dir="ltr" align="left">
+
+   ```javascript
+   function Person(name){
       var object = {};
-      ```
-      
-      </span>
-      
+      object.name=name;
+      object.age=21;
+      return object;
+   }
+   var object = new Person("Sudheer");
+   ```
 
-   4. **Function constructor:**
+   </span>
 
-      Create any function and apply the new operator to create object instances,
 
-      <span dir="ltr" align="left">
+5. **سازنده تابع با نمونه اولیه؛**
 
-      ```javascript
-      function Person(name){
-         var object = {};
-         object.name=name;
-         object.age=21;
-         return object;
-      }
-      var object = new Person("Sudheer");
-      ```
-      
-      </span>
-      
+   شبیه سازنده تابع هستش اما از نمونه اولیه برای متد‌ها و خصوصیاتشون استفاده میکنه
 
-   5. **Function constructor with prototype:**
+   <span dir="ltr" align="left">
 
-      This is similar to function constructor but it uses prototype for their properties and methods,
+   ```javascript
+   function Person(){}
+   Person.prototype.name = "Sudheer";
+   var object = new Person();
+   ```
 
-      <span dir="ltr" align="left">
+   </span>
 
-      ```javascript
-      function Person(){}
-      Person.prototype.name = "Sudheer";
-      var object = new Person();
-      ```
-      
-      </span>
-      
+   این معادل نمونه‌ای هستش که با متد ایجاد آبجکت با نمونه اولیه تابع ایجاد شده و تابع رو با یه نمونه و پارامتر‌هاش به عنوان آرگومان فراخوانی میکنه.
 
-      This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.
+   <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+   ```javascript
+   function func {};
 
-      ```javascript
-      function func {};
+   new func(x, y, z);
+   ```
 
-      new func(x, y, z);
-      ```
-      
-      </span>
-      
+   </span>
+
 
       **(OR)**
 
@@ -569,57 +567,58 @@ puppeteer:
       ```
       
       </span>
-      
 
-   6. **ES6 Class syntax:**
 
-      ES6 introduces class feature to create the objects
+6. **ES6 Class syntax:**
 
-      <span dir="ltr" align="left">
+   ES6 ویژگی‌های کلاس رو برای ایجاد آبجکت‌ها معرفی میکنه
 
-      ```javascript
-      class Person {
-         constructor(name) {
-            this.name = name;
-         }
+   <span dir="ltr" align="left">
+
+   ```javascript
+   class Person {
+      constructor(name) {
+         this.name = name;
       }
+   }
 
-      var object = new Person("Sudheer");
-      ```
-      
-      </span>
-      
+   var object = new Person("Sudheer");
+   ```
 
-   7. **Singleton pattern:**
+   </span>
 
-      A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance and this way one can ensure that they don't accidentally create multiple instances.
 
-      <span dir="ltr" align="left">
+7. **الگوی Singleton:**
 
-      ```javascript
-      var object = new function(){
-         this.name = "Sudheer";
-      }
-      ```
-      
-      </span>
-      
+   Singleton آبجکتیه که فقط یه بار قابل نمونه‌گیری هستش. فراخوانی‌های پی در پی با سازنده‌ش همون نمونه رو برمی‌گردونه و اینطوری میشه مطمئن شد که به طور تصادفی نمونه‌های مختلف ایجاد نمیشه.
+
+   <span dir="ltr" align="left">
+
+   ```javascript
+   var object = new function(){
+      this.name = "Sudheer";
+   }
+   ```
+
+   </span>
+
 
       **[⬆ فهرست](#فهرست)**
 
-2. ### What is a prototype chain
+2. ### زنجیره prototype چیه؟
 
-    **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language. The prototype on object instance is available through **Object.getPrototypeOf(object)** or __proto__ property whereas prototype on constructors function is available through object.prototype.
+   **زنجیره prototype** برای ساخت انواع جدیدی از آبجکت‌ها بر‌اساس موارد موجود استفاده میشه. این کار شبیه ارث بری توی یه زبان مبتنی بر کلاس هستش. prototype روی نمونه آبجکت از طریق ویژگی **Object.getPrototypeOf(object)** یا **__proto__** در دسترسه در حالی که نمونه اولیه توی عملکرد سازنده‌ها از طریق object.prototype در دسترسه.
 
-    ![Screenshot](images/prototype_chain.png)
+   ![Screenshot](images/prototype_chain.png)
 
-    **[⬆ فهرست](#فهرست)**
+   **[⬆ فهرست](#فهرست)**
 
-3. ### What is the difference between Call, Apply and Bind
+3. ### تفاوت‌های بین Call، Apply و Bind چیا هستن؟
+3. ### فرمت JSON چیه و عملیات‌های معمول بر روی آن چیا هستند؟
 
-    The difference between Call, Apply and Bind can be explained with below examples,
+   تفاوت بین Call، Apply و Bind توی مثال‌های زیر توضیح داده شده
 
-    **Call:** The call() method invokes a function with a given `this` value and arguments provided one by one
+   **Call:** متد call() یه تابع با یه مقدار `this` و آرگومان‌های ارائه شده رو دونه دونه فراخوانی میکنه
 
     <span dir="ltr" align="left">
 
@@ -634,11 +633,11 @@ puppeteer:
     invite.call(employee1, 'Hello', 'How are you?'); // Hello John Rodson, How are you?
     invite.call(employee2, 'Hello', 'How are you?'); // Hello Jimmy Baily, How are you?
     ```
-   
-   </span>
-   
 
-    **Apply:** Invokes the function and allows you to pass in arguments as an array
+   </span>
+
+
+    **Apply:** تابع رو فراخوانی میکنه و بهمون اجازه میده تا آرگومان‌ها رو به عنوان یه آرایه منتقل کنیم
 
     
     <span dir="ltr" align="left">
@@ -658,7 +657,7 @@ puppeteer:
     </span>
     
 
-    **bind:** returns a new function, allowing you to pass in an array and any number of arguments
+    **bind:** یه تابع جدید برمی‌گردونه، در حالی که بهمون اجازه میده هر تعداد آرگومانی که می خوایم رو توی یه آرایه منتقل کنیم
 
     <span dir="ltr" align="left">
 
@@ -683,21 +682,21 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-4. ### What is JSON and its common operations
+4. ### هدف از متد slice روی آرایه‌ها چیه؟
 
-    **JSON** is a text-based data format following JavaScript object syntax, which was popularized by `Douglas Crockford`. It is useful when you want to transmit data across a network and it is basically just a text file with an extension of .json, and a MIME type of application/json
-    **Parsing:** Converting a string to a native object
+   **JSON** یه قالب داده مبتنی برمتن هستش که از نحو آبجکت جاوا‌اسکریپت (javascript objext syntax) پیروی میکنه و توسط ‍‍`Douglas Crockford` رایج شد. کاربردش زمانیه که بخوایم داده‌ها رو از طریق شبکه انتقال بدیم و اساسا یه فایل متنی با پسوند .json و نوع MIME از application/json
+   **تجزیه (Parsing):** تبدیل یه رشته به یه آبجکت محلی (native Object)
 
     <span dir="ltr" align="left">
 
     ```javascript
     JSON.parse(text)
     ```
-   
-   </span>
-   
 
-    Stringification: **converting a native object to a string so it can be transmitted across the network
+   </span>
+
+
+    **رشته‌سازی:** تبدیل یه آبجکت محلی به یه رشته تا بتونه از طریق شبکه منتقل بشه 
 
     
     <span dir="ltr" align="left">
@@ -711,9 +710,9 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-5. ### What is the purpose of the array slice method
+5. ### هدف از متد splice روی آرایه‌ها چیه؟
 
-    The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end. Some of the examples of this method are,
+   متد **slice()** عناصر انتخاب شده توی یه آرایه رو به عنوان یه آبجکت آرایه جدید برمی‌گردونه. این عناصر رو از اولین آرگومان داده شده انتخاب میکنه و با آرگومان پایانی و اختیاری داده شده بدون در نظر گرفتن آخرین عنصر به پایان می‌رسونه. اگه آرگومان دوم رو حذف کنیم تا آخر آرایه همه عناصر رو انتخاب میکنه. چند تا مثال در مورد این متد اینجا نوشته شده
 
     <span dir="ltr" align="left">
 
@@ -723,17 +722,18 @@ puppeteer:
     let arrayIntegers2 = arrayIntegers.slice(2,3); // returns [3]
     let arrayIntegers3 = arrayIntegers.slice(4); //returns [5]
     ```
-   
-    </span>
-   
 
-    **Note:** Slice method won't mutate the original array but it returns the subset as a new array.
+    </span>
+
+
+    **نکته:** متد Slice‌ آرایه اصلی رو تغییر نمیده ولی یه زیر‌مجموعه به عنوان یه آرایه جدید برمی‌گردونه
 
     **[⬆ فهرست](#فهرست)**
 
-6. ### What is the purpose of the array splice method
+6. ### تفاوت متدهای slice و splice چیا هستن؟
 
-    The **splice()** method is used either adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position for insertion or deletion whereas the option second argument indicates the number of elements to be deleted. Each additional argument is added to the array. Some of the examples of this method are,
+   متد **splice** برای اضافه کردن به آرایه یا حذف از اون استفاده میشه و مورد حذف شده رو برمی‌گردونه. آرگومان اول موقعیت آرایه رو برای درج یا حذف مشخص میکنه در حالی که آرگومان اختیاری دوم تعداد عناصر حذف شده رو مشخص میکنه. هر آرگومان اضافه‌ای به آرایه اضافه میشه. چند تا مثال در این مورد اینجا نوشته شده.
+
 
     <span dir="ltr" align="left">
 
@@ -750,49 +750,49 @@ puppeteer:
     </span>
    
 
-    **Note:** Splice method modifies the original array and returns the deleted array.
+    **نکته:** متد Splice آرایه اصلی رو اصلاح میکنه و آرایه حذف شده رو برمی‌گردونه.
 
     **[⬆ فهرست](#فهرست)**
 
-7. ### What is the difference between slice and splice
+7. ### تفاوت‌های Object و Map چیا هستن؟
 
-    Some of the major difference in a tabular form
+   بعضی از تفاوت‌های عمده توی یه جدول
 
-    | Slice | Splice |
-    |---- | ---------
-    | Doesn't modify the original array(immutable)  | Modifies the original array(mutable) |
-    | Returns the subset of original array | Returns the deleted elements as array  |
-    | Used to pick the elements from array | Used to insert or delete elements to/from array|
+   | Slice | Splice |
+       |---- | ---------
+   | آرایه اصلی رو تغییر نمیده (تغییرناپذیر)  | آرایه اصلی رو تغییر میده (تغییر پذیر) |
+   | زیر مجموعه آرایه اصلی رو برمی‌گردونه | عناصر حذف شده رو به عنوان آرایه برمی گردونه  |
+   | برای انتخاب عناصر از آرایه استفاده میشه | برای درج عناصر به آرایه یا حذف از اون استفاده میشه|
 
-    **[⬆ فهرست](#فهرست)**
+   **[⬆ فهرست](#فهرست)**
 
-8. ### How do you compare Object and Map
+8. ### تفاوت‌های بین عملگرهای == و === چیا هستن؟
 
-    **Objects** are similar to **Maps** in that both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. Due to this reason, Objects have been used as Maps historically. But there are important differences that make using a Map preferable in certain cases.
+   **آبجکت‌ها** شبیه به **نقشه‌ها (Maps)** هستن از این جهت که هردو بهمون این امکتن رو میدن که کلید‌ها رو روی مقادیر تنظیم کنیم، مقادیر رو بازیابی کنیم، کلید‌ها رو حذف کنیم و ببینیم چیزی توی یه کلید ذخیره شده یا نه. به همین دلیل از آبجکت‌ها به عنوان نقشه ها (Maps) در طول تاریخ استفاده شده. اما تفاوت‌های مهمی وجود داره که استفاده از نقشه (map) رو توی موارد خاص ترجبح میده.
 
-    1. The keys of an Object are Strings and Symbols, whereas they can be any value for a Map, including functions, objects, and any primitive.
-    2. The keys in Map are ordered while keys added to Object are not. Thus, when iterating over it, a Map object returns keys in order of insertion.
-    3. You can get the size of a Map easily with the size property, while the number of properties in an Object must be determined manually.
-    4. A Map is an iterable and can thus be directly iterated, whereas iterating over an Object requires obtaining its keys in some fashion and iterating over them.
-    5. An Object has a prototype, so there are default keys in the map that could collide with your keys if you're not careful. As of ES5 this can be bypassed by using map = Object.create(null), but this is seldom done.
-    6. A Map may perform better in scenarios involving frequent addition and removal of key pairs.
+  1. کلید‌های یه آبجکت رشته ها و نماد‌ها هستن، در حالی که برای نقشه مقادیر مختلفی میتونه وجود داشته باشه که شامل توابع، آبجکت‌ها و هر نوع اولیه دیگه‌ای میشه.
+  2. کلید‌های نقشه (map) مرتب میشن در حالی که کلید‌های اضافه شده به آبجکت اینطوری نیستن. بنابراین موقع تکرار روی اون، object map کلیدها رو به ترتیب اضافه شدنشون برمی‌گردونه.
+  3. اندازه map رو میتونیم به راحتی با ویژگی سایز بدست بیاریم، در حالی که تعداد خصوصیات یه آبجکت باید به صورت دستی حساب بشه.
+  4. نقشه قابل تکراره و میتونه مستقیما تکرار بشه، در حالی که تکرار روی یه آبجکت مستلزم بدست آوردن کلیدهای اون به روشی خاص و تکرار روی اونهاست.
+  5. آبجکت یه نمونه اولیه (prototype) داره، بنابراین کلید‌های پیش‌فرض توی map وجود داره که که اگه دقت نکنیم ممکنه با کلید‌هامون برخورد کنه. از زمان ES5 میتونیم با استفاده از map = Object.create(null)، این قضیه رو دور بزنیم ولی به‌ندرت این کار انجام میشه.
+  6. نقشه ممکنه توی سناریوهای شامل جمع و حذف مکرر جفت کلیدها عملکرد بهتری داشته باشه
 
-    **[⬆ فهرست](#فهرست)**
+   **[⬆ فهرست](#فهرست)**
 
-9. ### What is the difference between == and === operators
+9. ### توابع lambda یا arrow-function چی هستن؟
 
-    JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
-    1. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions.
-    2. Two numbers are strictly equal when they are numerically equal. i.e, Having the same number value.
-       There are two special cases in this,
-       1. NaN is not equal to anything, including NaN.
-       2. Positive and negative zeros are equal to one another.
-    3. Two Boolean operands are strictly equal if both are true or both are false.
-    4. Two objects are strictly equal if they refer to the same Object.
-    5. Null and Undefined types are not equal with ===, but equal with ==. i.e,
-        null===undefined --> false but null==undefined --> true
+   JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
+  1. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions.
+  2. Two numbers are strictly equal when they are numerically equal. i.e, Having the same number value.
+     There are two special cases in this,
+    1. NaN is not equal to anything, including NaN.
+    2. Positive and negative zeros are equal to one another.
+  3. Two Boolean operands are strictly equal if both are true or both are false.
+  4. Two objects are strictly equal if they refer to the same Object.
+  5. Null and Undefined types are not equal with ===, but equal with ==. i.e,
+     null===undefined --> false but null==undefined --> true
 
-    Some of the example which covers the above cases,
+   Some of the example which covers the above cases,
 
     <span dir="ltr" align="left">
 
@@ -808,23 +808,23 @@ puppeteer:
     []==[] or []===[] //false, refer different objects in memory
     {}=={} or {}==={} //false, refer different objects in memory
     ```
-   
+
     </span>
 
 
     **[⬆ فهرست](#فهرست)**
 
-10. ### What are lambda or arrow functions
+10. ### یه تابع first-class چجور تابعی‌ـه؟
 
-    An arrow function is a shorter syntax for a function expression and does not have its own **this, arguments, super, or new.target**. These functions are best suited for non-method functions, and they cannot be used as constructors.
+    arrow function ‌ها به صورت ساده‌تر و کوتاه‌تر تعریف میشن و **this، argumants، super یا new.target** ندارن. این توابع بدون متد هستند و به عنوان سازنده یا constructor استفاده نمیشن.
 
     **[⬆ فهرست](#فهرست)**
 
-11. ### What is a first class function
+11. ### یه تابع first-order چجور تابعی‌ـه؟
+.
+توی جاوااسکریپت، توابع آبجکت‌های کلاس اول یا first class هستن. توابع کلاس اول زمانی معنی میدن که توابع توی اون زبان باهاشون مثل بقیه متغیر‌ها رفتار بشه.
 
-    In Javascript, functions are first class objects. First-class functions means when functions in that language are treated like any other variable.
-
-    For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable. For example, in the below example, handler functions assigned to a listener
+    به عنوان مثال، توی چنین زبانی، یه تابع میتونه به عنوان آرگومان به یه تابع دیگه انتقال داده بشه، میتونه به عنوان مقدار نهایی یه تابع دیگه برگشت داده بشه و میتونه به یه متغیر دیگه به عنوان مقدار اختصاص داده بشه. به عنوان مثال توی کد زیر، توابع نگهدارنده یا handler به یه شنونده یا listener اختصاص داده شده.
 
     ```javascript
     const handler = () => console.log ('This is a click handler function');
@@ -833,24 +833,24 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-12. ### What is a first order function
+12. ### یه تابع higher-order چجور تابعی‌ـه؟
 
-    First-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value.
+    تابع مرتبه اول یا first-order تابعیه که هیچ تابع دیگه‌ای رو به عنوان آرگومان قبول نمیکنه و هیچ تابعی رو هم به عنوان مقدار برگشتی یا return value برنمی‌گردونه.
 
     <span dir="ltr" align="left">
 
     ```javascript
     const firstOrder = () => console.log ('I am a first order function!');
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-13. ### What is a higher order function
+13. ### یه تابع unary چجور تابعی‌ـه؟
 
-    Higher-order function is a function that accepts another function as an argument or returns a function as a return value.
+    توابع مرتبه بالا توابعی هستن که یه تابع رو به عنوان پارامتر ورودی دریافت و یا به عنوان خروجی ارسال میکنن.
 
 
     <span dir="ltr" align="left">
@@ -866,24 +866,23 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-14. ### What is a unary function
-
-    Unary function (i.e. monadic) is a function that accepts exactly one argument. Let us take an example of unary function. It stands for a single argument accepted by a function.
+14. ###c؟urrying توابع یعنی چی؟               
+    تابع unary تابعیه که فقط یه آرگومان ورودی دریافت میکنه. بیاین یه مثال از توابع unary بزنیم.
 
     <span dir="ltr" align="left">
 
     ```javascript
     const unaryFunction = a => console.log (a + 10); // Add 10 to the given argument and display the value
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-15. ### What is the currying function
+15. ### چه توابعی pure هستن؟
 
-    Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument. Currying is named after a mathematician Haskell Curry. By applying currying, a n-ary function turns it into a unary function. Let's take an example of n-ary function and how it turns into a currying function
+    به فرایندی که در اون یه تابع با چندین آرگومان رو به مجموعه‌ای از توابع که فقط یه آرگومان دریافت میکنن، تبدیل کنیم currying میگیم. Currying از نام یه ریاضی‌دان به اسم Haskell Curry گرفته شده. با استفاده از Currying در واقع یه تابع رو به یه تابع unary تبدیل میکنیم. بیاین یه مثال از یه تابع با چندین آرگومان و تبدیلش به تابع currying بزنیم.
 
 
     <span dir="ltr" align="left">
@@ -899,13 +898,13 @@ puppeteer:
     </span>
     
 
-    Curried functions are great to improve code reusability and functional composition.
+    توابع Curried برای بهبود قابلیت استفاده مجدد کد و ترکیب عملکردی عالی هستن.
 
     **[⬆ فهرست](#فهرست)**
 
-16. ### What is a pure function
+16. ### هدف از کلمه کلیدی let چیه؟
 
-    A **Pure function** is a function where the return value is only determined by its arguments without any side effects. i.e, If you call a function with the same arguments 'n' number of times and 'n' number of places in the application then it will always return the same value. Let's take an example to see the difference between pure and impure functions,
+    **تابع خالص** تابعیه که مقدار برگشتیش فقط توسط آرگومان‌هاش تعیین میشه بدون هیج side effect یا عوارض جانبی. به عنوان مثال اگه ما یه تابع رو n بار در n جای مختلف برنامه فراخوانی کنیم همیشه یه مقدار مشخص برگشت داده میشه. بیاین یه مثال از تفاوت بین توابع خالص و توابع ناخالص بزنیم.
 
 
     <span dir="ltr" align="left">
@@ -927,15 +926,14 @@ puppeteer:
     
     </span>
     
-
-    As per above code snippets, Push function is impure itself by altering the array and returning an push number index which is independent of parameter value. Whereas Concat on the other hand takes the array and concatenates it with the other array producing a whole new array without side effects. Also, the return value is a concatenation of the previous array.
+    بر اساس تکه کدهای بالا، تابع push با تغییر روی آرایه و برگردوندن شماره ایندکس push که مستقل از مقدار پارامتر هستش، یه تابع ناخالص به حساب میاد. در حالی که از یه طرف متد concat آرایه رو میگیره و اونو با یه آرایه دیگه ترکیب میکنه و یه آرایه کاملا جدید و بدون هیچ عوارض جانبی تولید میکنه. همچنین مقدار برگشتی با آرایه قبلی ترکیب شده هستش.
     Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and make it harder to break your application by not having any side effects. These principles are coming together with **Immutability** concept of ES6 by giving preference to **const** over **let** usage.
 
     **[⬆ فهرست](#فهرست)**
 
-17. ### What is the purpose of the let keyword
+17. ### تفاوت‌های کلمات کلیدی let و var چیا هستن؟
 
-    The `let` statement declares a **block scope local variable**. Hence the variables defined with let keyword are limited in scope to the block, statement, or expression on which it is used. Whereas variables declared with the var keyword used to define a variable globally, or locally to an entire function regardless of block scope. Let's take an example to demonstrate the usage,
+    دستور `let` یه **متغیر محلی block scope** تعریف میکنه. از این رو متغیر‌هایی که با کلمه کلیدی let تعریف میشن محدود به همون اسکوپی که توش تعریف شدن، دستورها و عبارت‌های توی همون اسکوپ میشن. درحالی که متغیر‌های تعریف شده با کلمه کلیدی var برای تعریف یه متغیر توی سطح global یا محلی برای استفاده در کل توابع بدون در نظر گرفتن اسکوپی که توش تعریف شده، استفاده میشه. بیاین برای نشون دادن کاربردش یه مثال بزنیم.
 
     <span dir="ltr" align="left">
 
@@ -947,23 +945,27 @@ puppeteer:
     }
     console.log(counter); // 30 (because if block variable won't exist here)
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-18. ### What is the difference between let and var
+18. ### دلیل انتخاب کلمه کلیدی let چیه؟
 
-    You can list out the differences in a tabular format
+    تفاوت‌ها رو توی جدول زیر میبینیم
 
-    | var | let |
-    |---- | ---------
-    | It is been available from the beginning of JavaScript  | Introduced as part of ES6 |
-    | It has function scope | It has block scope  |
-    | Variables will be hoisted | Hoisted but not initialized |
+    var :
+  1. از ابتدای جاوااسکریپت در دسترس هستش
+  2. دامنه تابع داره
+  3. متغیر‌ها Hoist میشن
 
-    Let's take an example to see the difference,
+    let:
+  1. به عنوان بخشی از ES6 معرفی شده
+  2. محدود به scope یا دامنه هستش
+  3. Hoist شده ولی مقداردهی اولیه نمیشه
+
+    بیاین با یه مثال تفاوتش رو بهتر ببینیم
 
     <span dir="ltr" align="left">
 
@@ -979,23 +981,22 @@ puppeteer:
        console.log(age); //error: age is not defined(due to block scope)
     }
     ```
-    
+
     </span>
 
 
     **[⬆ فهرست](#فهرست)**
 
-19. ### What is the reason to choose the name let as a keyword
+19. ### چطوری می‌تونیم توی بلوک مربوط به switch بدون دریافت خطا متغیر تعریف کنیم؟
 
-    Let is a mathematical statement that was adopted by early programming languages like Scheme and Basic. It has been borrowed from dozens of other languages that use let already as a traditional keyword as close to var as possible.
+    Let یه عنوان ریاضی هستش که توسط زبان‌های برنامه‌نویسی اولیه مثل Scheme و Basic پذیرفته شده. این زبان از ده‌ها زبان دیگه گرفته شده که از let به عنوان یه کلمه کلیدی سنتی تا حد ممکن نزدیک به var استفاده میکنه.
 
     **[⬆ فهرست](#فهرست)**
 
-20. ### How do you redeclare variables in switch block without an error
+20. ###T؟emporal-Dead-Zone چیه؟     
+    اگه بخوایم متغیر‌ها رو مجددا توی یه `switch block` تعریف کنیم، این کار باعث خطا میشه چون در واقع فقط یه بلاک وجود داره. به عنوان مثال توی کد زیر یه خطای نحوی ایجاد میشه
 
-    If you try to redeclare variables in a `switch block` then it will cause errors because there is only one block. For example, the below code block throws a syntax error as below,
 
-  
     <span dir="ltr" align="left">
 
     ```javascript
@@ -1013,33 +1014,31 @@ puppeteer:
     
     </span>
     
-
-    To avoid this error, you can create a nested block inside a case clause and create a new block scoped lexical environment.
+    برای جلوگیری از این خطا، میتونیم یه بلاک تو در تو داخل case ایجاد کنیم و یه محیط واژگانی دارای محدوده بلاک جدید ایجاد کنیم.
 
 
     <span dir="ltr" align="left">
 
     ```javascript
     let counter = 1;
-    switch(x) {
-      case 0: {
-        let name;
-        break;
-      }
-      case 1: {
-        let name; // No SyntaxError for redeclaration.
-        break;
-      }
-    }
+        switch(x) {
+          case 0: {
+            let name;
+            break;
+          }
+          case 1: {
+            let name; // No SyntaxError for redeclaration.
+            break;
+          }
+        }
     ```
     
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-21. ### What is the Temporal Dead Zone
-
-    The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a let or const variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable’s binding and its declaration, is called the temporal dead zone. Let's see this behavior with an example,
+21. ###I؟IFE(توابع بلافاصله صدا زده شده) چی هستن؟         
+    Temporal Dead Zone رفتاری توی جاوااسکریپته که هنگام تعریف متغیر با کلمات کلیدی let و const رخ میده، نه با کلمه کلیدی var. توی اکما‌اسکریپت ۶، دستیابی به متغیر let و const قبل از تعریفش (توی scope خودش) باعث خطای refrence میشه. فاصله زمانی ایجاد اون، بین ایجاد اتصال متغیر و تعریف اون، منطقه Temporal Dead هستش. بیاین با یه مثال ببینیم،
 
     <span dir="ltr" align="left">
 
@@ -1051,15 +1050,16 @@ puppeteer:
       let counter2 = 2;
     }
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-22. ### What is IIFE(Immediately Invoked Function Expression)
+22. ### مزایای استفاده از moduleها چیه؟
 
-    IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
+    IIFE (فراخوانی عملکرد بلافاصله) یه تابع جاوا‌اسکریپته که به محض تعریف اجرا میشه.
+    امضای اون به این صورته،
 
     <span dir="ltr" align="left">
 
@@ -1071,11 +1071,11 @@ puppeteer:
      )
     ();
     ```
-    
-    </span>
-    
 
-    The primary reason to use an IIFE is to obtain data privacy because any variables declared within the IIFE cannot be accessed by the outside world. i.e, If you try to access variables with IIFE then it throws an error as below,
+    </span>
+
+
+    دلیل اصلی استفاده از IIFE بدست آوردن حریم خصوصی داده‌هاست، چون محیط خارجی به متغیر‌هایی که توی IIFE تعریف شده دسترسی نداره. به عنوان مثال، اگه سعی کنیم با IIFE به متغیر‌ها دسترسی پیدا کنیم این خطا رو میگیریم،
 
     <span dir="ltr" align="left">
 
@@ -1094,19 +1094,17 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-23. ### What is the benefit of using modules
-
-    There are a lot of benefits to using modules in favour of a sprawling. Some of the benefits are,
-    1. Maintainability
-    2. Reusability
-    3. Namespacing
+23. ###M؟emoization چیه؟     
+    استفاده از ماژول‌ها مزایای زیادی داره،
+  1. قابلیت نگهداری
+  2. قابلیت استفاده مجدد
+  3. نامگذاری
 
     **[⬆ فهرست](#فهرست)**
 
-24. ### What is memoization
-
-    Memoization is a programming technique which attempts to increase a function’s performance by caching its previously computed results.  Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
-    Let's take an example of adding function with memoization,
+24. ###H؟oisting چیه؟     
+    Memoization یه روش برنامه‌نوسی هست که سعی داره با ذخیره نتایج قبلی یه تابع عملکرد اون تابع رو افزایش بده. هر بار که یه تابع Memoize شده فراخوانی میشه، پارامتر‌های اون cache میشه یعنی توی حافظه پنهان ذخیره میشه. اگه داده وجود داشته باشه، بدون اجرای کل تابع میشه اونو برگردوند در غیر این صورت تابع اجرا میشه و بعدش نتیجه توی حافظه پنهان ذخیره میشه.
+    بیاین یه مثال از نوشتن یه تابع با Memoization بزنیم،
 
     <span dir="ltr" align="left">
 
@@ -1132,16 +1130,15 @@ puppeteer:
     console.log(addition(20)); //output: 40 calculated
     console.log(addition(20)); //output: 40 cached
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-25. ### What is Hoisting
-
-    Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
-    Let's take a simple example of variable hoisting,
+25. ###C؟lassها توی ES6 چی هستن؟         
+    Hoisting یه مکانیسم جاوا‌اسکریپته که متغیر‌ها و تعاریف توابع رو به بالای scope یا دامنه خودشون انتقال میده. یادمون باشه که جاوا‌اسکریپت فقط تعریف متغیر‌ها و توابع رو Hoist میکنه، نه مقداردهی اولیه اونا رو.
+    بیاین یه مثال ساده از hoist کردن متغیر‌ها بزنیم،
 
     <span dir="ltr" align="left">
 
@@ -1149,11 +1146,11 @@ puppeteer:
     console.log(message); //output : undefined
     var message = 'The variable Has been hoisted';
     ```
-    
-    </span>
-    
 
-    The above code looks like as below to the interpreter,
+    </span>
+
+
+    ،ترجمه کد بالا اینطوری میشه
 
     <span dir="ltr" align="left">
 
@@ -1168,8 +1165,7 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-26. ### What are classes in ES6
-
+26. ###C؟losureها چیا هستن؟             
     In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
     For example, the prototype based inheritance written in function expression as below,
 
@@ -1185,7 +1181,7 @@ puppeteer:
         return this.model + ' bike has' + this.color + ' color';
     };
     ```
-    
+
     </span>
 
     Whereas ES6 classes can be defined as an alternative
@@ -1204,19 +1200,18 @@ puppeteer:
       }
     }
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-27. ### What are closures
-
-    A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables. The closure has three scope chains
-    1. Own scope where variables defined between its curly brackets
-    2. Outer function’s variables
-    3. Global variables
-    Let's take an example of closure concept,
+27. ###M؟oduleها چیا هستن؟             
+    کلاژور ترکیبی از یه تابع و محیط واژگانی هستش که تابع در اون تعریف شده. به عنوان مثال این یه تابع داخلیه که به متغیر‌های تابع خارجی دسترسی داره. کلاژور دارای سه زنجیره دامنه هستش
+    ۱. دامنه رو جایی تعریف می کنیم که متغیر‌ها بین کرلی براکت‌های اون تعریف شده باشه
+    ۲. متغیر‌های تابع بیرونی
+    ۳. متغیر‌های محلی
+    بیاین یه مثال راجع به مفهوم کلاژور بزنیم
 
     <span dir="ltr" align="left">
 
@@ -1231,103 +1226,98 @@ puppeteer:
     myFunction('Welcome '); //Output: Welcome John
     myFunction('Hello Mr.'); //output: Hello Mr.John
     ```
-    
+
     </span>
-    
 
-    As per the above code, the inner function(greetingInfo) has access to the variables in the outer function scope(Welcome) even after the outer function has returned.
 
-    **[⬆ فهرست](#فهرست)**
-
-28. ### What are modules
-
-    Modules refer to small units of independent, reusable code and also act as the foundation of many JavaScript design patterns.  Most of the JavaScript modules export an object literal, a function, or a constructor
+    مطابق کد بالا، تابع داخلی (greetingInfo) حتی بعد از بازگشت تابع خارجی به متغیر‌های محدوده تابع خارجی (welcome) دسترسی داره.
 
     **[⬆ فهرست](#فهرست)**
 
-29. ### Why do you need modules
+28. ### چرا به moduleها نیاز داریم؟
 
-    Below are the list of benefits using modules in javascript ecosystem
-    1. Maintainability
-    2. Reusability
-    3. Namespacing
+    ماژول‌ها به واحد‌های کوچیکی از کد مستقل و قابل استفاده مجدد اشاره می‌کنن و همچنین به عنوان پایه بسیاری از الگو‌های طراحی javascript عمل می‌کنن. خروجی ماژول‌های javascript یه شی، یه تابع یا constructor هستش.
 
     **[⬆ فهرست](#فهرست)**
 
-30. ### What is scope in javascript
+29. ### توی جاواسکریپت scope چیه و چیکار می‌کنه؟
 
-    Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
-
-    **[⬆ فهرست](#فهرست)**
-
-31. ### What is a service worker
-
-    A Service worker is basically a script (JavaScript file) that runs in the background, separate from a web page and provides features that don't need a web page or user interaction. Some of the major features of service workers are Rich offline experiences(offline first web application development), periodic background syncs, push notifications, intercept and handle network requests and programmatically managing a cache of responses.
+    لیستی از مزایای استفاده از ماژول‌ها در اکوسیستم جاوااسکریپت اینجا گفته شده
+  1. قابلیت نگهداری
+  2. قابلیت استفاده مجدد
+  3. نامگذاری
 
     **[⬆ فهرست](#فهرست)**
 
-32. ### How do you manipulate DOM using a service worker
-
-    Service worker can't access the DOM directly. But it can communicate with the pages it controls by responding to messages sent via the `postMessage` interface, and those pages can manipulate the DOM.
-
-    **[⬆ فهرست](#فهرست)**
-
-33. ### How do you reuse information across service worker restarts
-
-    The problem with service worker is that it gets terminated when not in use, and restarted when it's next needed, so you cannot rely on global state within a service worker's `onfetch` and `onmessage` handlers. In this case, service workers will have access to IndexedDB API in order to persist and reuse across restarts.
+30. ###s؟ervice-worker چیه؟     
+    scope یا محدوده، دسترسی متغیر‌ها، توابع و اشیاء در بعضی از قسمت‌های کدمون در زمان اجرا هستش. به عبارت دیگه، دامنه قابلیت دیده شدن متغیر‌ها و بقیه منابع رو تو قسمت‌هایی از کدمون تعیین میکنه.
 
     **[⬆ فهرست](#فهرست)**
 
-34. ### What is IndexedDB
+31. ### توی service-worker چطوری میشه DOM رو دستکاری کرد؟
 
-    IndexedDB is a low-level API for client-side storage of larger amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data.
-
-    **[⬆ فهرست](#فهرست)**
-
-35. ### What is web storage
-
-    Web storage is an API that provides a mechanism by which browsers can store key/value pairs locally within the user's browser, in a much more intuitive fashion than using cookies. The web storage provides two mechanisms for storing data on the client.
-    1. **Local storage:** It stores data for current origin with no expiration date.
-    2. **Session storage:** It stores data for one session and the data is lost when the browser tab is closed.
+    service worker اساسا یه اسکریپت هستش که جدا از یه صفحه وب توی پس‌زمینه اجرا میشه و ویژگی‌هایی رو فراهم میکنه که نیازی به صفحه وب یا تعامل کاربر نداره. بعضی از ویژگی‌های عمده service worker ها عبارتند از: تجارب غنی آفلاین (اولین برنامه آفلاین وب)، همگام‌سازی دوره‌ای پس‌زمینه، push notification, رهگیری و رسیدگی به درخواست‌های شبکه و مدیریت برنامه‌ای cache response ها.
 
     **[⬆ فهرست](#فهرست)**
 
-36. ### What is a post message
+32. ### چطوری می‌تونیم بین ریست شدن‌های service-worker داده‌های مورد نظرمون رو مجدد استفاده کنیم؟
 
-    Post message is a method that enables cross-origin communication between Window objects.(i.e, between a page and a pop-up that it spawned, or between a page and an iframe embedded within it). Generally, scripts on different pages are allowed to access each other if and only if the pages follow same-origin policy(i.e, pages share the same protocol, port number, and host).
+    service worker مستقیما نمیتونه به DOM دسترسی پیدا کنه، اما میتونه با پاسخ به پیام‌های ارسالی از طریق رابط `postMessage` با صفحاتی که کنترل میکنه ارتباط برقرار کنه و این صفحات میتونن DOM رو دستکاری کنن.
 
     **[⬆ فهرست](#فهرست)**
 
-37. ### What is a Cookie
+33. ###I؟ndexedDB چیه؟     
+    مشکلی که توی service worker وجود داره اینه که در صورت عدم استفاده خاتمه پیدا میکنه و در صورت نیاز بعدی دوباره راه‌اندازی میشه، بنابراین نمیتونیم به state های سراسری توی نگهدارنده‌های `onfetch` و `onmessage` یه service worker اعتماد کنیم. تو این حالت service worker برای تداوم کار و استفاده مجدد موقع شروع مجدد، به indexedDB API دسترسی خواهد داشت.
 
-    A cookie is a piece of data that is stored on your computer to be accessed by your browser. Cookies are saved as key/value pairs.
-    For example, you can create a cookie named username as below,
+    **[⬆ فهرست](#فهرست)**
+
+34. ###W؟eb-storage چیه؟     
+    IndexedDB یه API سطح پایین برای ذخیره client-side یا سمت کاربر توی مقادیر بیشتری از داده ساخت‌ یافته شامل فایل‌ها و حباب‌ها هستش. این API از index ها برای فعال کردن جستجو‌های با کارایی بالا توی این داده‌ها استفاده میکنه.
+
+    **[⬆ فهرست](#فهرست)**
+
+35. ###P؟ost-message چیه؟     
+    web storage یه API هستش که مکانیسمی رو فراهم میکنه که مرورگر‌ها میتونن مقدار و کلید رو به صورت محلی توی مرورگر کاربر ذخیره کنن، به روشی کاملا قابل درک نسبت به استفاده از کوکی‌ها. فضای ذخیره‌سازی وب دو مکانیزم رو برای ذخیره اطلاعات روی مشتری فراهم میکنه.
+  1. **Local storage:** داده ها رو برای مبدا فعلی و بدون تاریخ انقضا ذخیره میکنه.
+  2. **Session storage:** داده‌ها رو برای یه جلسه ذخیره میکنه و با بسته شدن تب مرورگر داده‌ها از بین میرن.
+
+    **[⬆ فهرست](#فهرست)**
+
+36. ###C؟ookie چیه؟     
+    Post message روشی هست که امکان ایجاد ارتباط متقابل بین آبجکت‌های window رو فراهم میکنه. (به عنوان مثال، بین یه صفحه و یه پنجره باز‌شو که باعث ایجاد اون شده، یا بین یه صفحه و یه iframe جاسازی شده در اون) به طور کل، اسکریپت‌های موجود در صفحات مختلف مجاز به دسترسی به همدیگه هستن، تنها در صورتی که صفحات از خط‌ مشی‌ یکسانی تبعیت کنن. (یعنی صفحات از پروتکل، شماره پورت و میزبان یکسانی برخوردار هستن)
+
+    **[⬆ فهرست](#فهرست)**
+
+37. ### چرا به cookie نیاز داریم؟
+
+    کوکی قطعه‌ای از داده هستش که توی کامپیوترمون ذخیره میشه تا مرورگر به اون دسترسی داشته باشه. کوکی‌ها به عنوان جفت‌های کلید و مقدار ذخیره میشن.
+    به عنوان مثال میتونیم یه کوکی با نام کاربری مثل زیر ایجاد کنیم،
 
     <span dir="ltr" align="left">
 
     ```javascript
     document.cookie = "username=John";
     ```
-    
+
     </span>
-    
+
 
     ![Screenshot](images/cookie.png)
 
     **[⬆ فهرست](#فهرست)**
 
-38. ### Why do you need a Cookie
+38. ### گزینه‌های قابل تنظیم توی cookie چیا هستن؟
 
-    Cookies are used to remember information about the user profile(such as username). It basically involves two steps,
-    1. When a user visits a web page, the user profile can be stored in a cookie.
-    2. Next time the user visits the page, the cookie remembers the user profile.
+    از کوکی ها برای به خاطر سپردن اطلاعات مربوط به مشخصات کاربر (مانند نام کاربری) استفاده میشه. در اصل شامل دو مرحله هستش،
+    ۱. وقتی که کاربر از یه صفحه وب بازدید میکنه ، مشخصات کاربر میتونه توی یه کوکی ذخیره بشه.
+    ۲. دفعه بعد که کاربر از صفحه بازدید کرد ، کوکی مشخصات کاربر رو به خاطر میاره.
 
     **[⬆ فهرست](#فهرست)**
 
-39. ### What are the options in a cookie
+39. ### چطوری میشه یه cookie رو حذف کرد؟
 
-    There are few below options available for a cookie,
-    1. By default, the cookie is deleted when the browser is closed but you can change this behavior by setting expiry date (in UTC time).
+    گزینه‌های زیر برای کوکی موجوده ،
+    ۱. به طور پیش فرض ، کوکی موقع بسته شدن مرورگر حذف میشه اما با تنظیم تاریخ انقضا (به وقت UTC) می تونیم این رفتار رو تغییر بدیم.
 
 
     <span dir="ltr" align="left">
@@ -1338,8 +1328,7 @@ puppeteer:
     
     </span>
     
-
-    1. By default, the cookie belongs to a current page. But you can tell the browser what path the cookie belongs to using a path parameter.
+    ۱. به طور پیش فرض ، کوکی به صفحه فعلی تعلق دارد. اما با استفاده از پارامتر path می تونیم به مرورگر بگیم که کوکی متعلق به چه مسیری هستش.
 
     <span dir="ltr" align="left">
 
@@ -1352,47 +1341,48 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-40. ### How do you delete a cookie
+40. ### تفاوت‌های بین cookie، local-storage و session-storage چیا هستن؟
 
-    You can delete a cookie by setting the expiry date as a passed date. You don't need to specify a cookie value in this case.
-    For example, you can delete a username cookie in the current page as below.
+    با تنظیم تاریخ انقضا به عنوان تاریخ گذشته می تونیم کوکی رو حذف کنیم. تو این حالت نیازی به تعیین مقدار کوکی نیست.
+    به عنوان مثال ، می تونیم کوکی نام کاربری رو توی صفحه فعلی به صورت زیر حذف کنیم.
 
     <span dir="ltr" align="left">
 
     ```javascript
     document.cookie = "username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;";
     ```
-    
+
     </span>
-    
 
-    **Note:** You should define the cookie path option to ensure that you delete the right cookie. Some browsers doesn't allow to delete a cookie unless you specify a path parameter.
 
-    **[⬆ فهرست](#فهرست)**
-
-41. ### What are the differences between cookie, local storage and session storage
-
-    Below are some of the differences between cookie, local storage and session storage,
-
-    | Feature | Cookie | Local storage | Session storage |
-    |---- | --------- | ----- | ----- |
-    | Accessed on client or server side | Both server-side & client-side | client-side only | client-side only |
-    | Lifetime | As configured using Expires option  | until deleted | until tab is closed |
-    | SSL support | Supported | Not supported | Not supported |
-    | Maximum data size | 4KB | 5 MB | 5MB |
+    **نکته** برای اطمینان از نحوه درست پاک کردن کوکی باید گزینه مسیر کوکی رو تعیین کنیم. بعضی از مرورگرها تا زمانی که پارامتر مسیر رو تعیین نکنیم اجازه حذف کوکی رو نمیدن.
 
     **[⬆ فهرست](#فهرست)**
 
-42. ### What is the main difference between localStorage and sessionStorage
+41. ### تفاوت‌های بین localStorage و sessionStorage چیا هستن؟
 
-    LocalStorage is the same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.
+    تفاوت‌های بین کوکی، لوکال استوریج و سشن استوریج اینها هستند:
+
+    ویژگی‌ | کوکی | لوکال استوریج | سشن استوریج
+    قابل دسترسی از طرف سرویس گیرنده یا سرور | هردو سرویس دهنده و سرویس گیرنده | فقط سرویس گیرنده | فقط سرویس گیرنده |
+    طول عمر | پیکربندی‌شده با استفاده از گزینه اکسپایر | تا زمانی که حذف بشه | تا زمانی که پنجره مرورگر بسته بشه
+    پشتیبانی از SSL | پشتیبانی میشه | پشتیبانی نمیشه  | پشتیبانی نمیشه
+    حداکثر اندازه داده | ۴ کیلوبایت | ۵ مگابایت | ۵ مگابایت
+
+
 
     **[⬆ فهرست](#فهرست)**
 
-43. ### How do you access web storage
+42. ### چطوری به web-storage دسترسی پیدا می‌کنی؟
 
-    The Window object implements the `WindowLocalStorage` and `WindowSessionStorage` objects which has `localStorage`(window.localStorage) and `sessionStorage`(window.sessionStorage) properties respectively. These properties create an instance of the Storage object, through which data items can be set, retrieved and removed for a specific domain and storage type (session or local).
-    For example, you can read and write on local storage objects as below
+    لوکال استوریج همان سشن استوریج هستش اما داده‌ها با بستن و دوباره باز کردن مرورگر همچنان حفظ میشه (تاریخ انقضا نداره) در حالی که سشن استوریج داده‌ها رو با بستن پنجره مرورگر پاک میکنه.
+
+    **[⬆ فهرست](#فهرست)**
+
+43. ### چه متد‌هایی روی session-storage قابل استفاده هستن؟
+
+    شی window به ترتیب ویژگی‌های `WindowLocalStorage` و `WindowSessionStorage` رو که دارای ویژگی‌های `localStorage`(window.localStorage) و `sessionStorage`(window.sessionStorage) هستن رو پشتیبانی میکنه. این خصوصیات نمونه ای از شی Storage رو ایجاد میکنه که از طریق اون میشه موارد داده رو برای یه دامنه خاص و نوع ذخیره سازی (session یا محلی) تنظیم ، بازیابی و حذف کرد.
+    به عنوان مثال ، میتونیم روی اشیای ذخیره سازی محلی مثل زیر بخونیم و بنویسیم
 
     <span dir="ltr" align="left">
 
@@ -1400,15 +1390,15 @@ puppeteer:
     localStorage.setItem('logo', document.getElementById('logo').value);
     localStorage.getItem('logo');
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-44. ### What are the methods available on session storage
+44. ### رخداد storage چیه و چطوری ازش استفاده می‌کنیم؟
 
-    The session storage provided methods for reading, writing and clearing the session data
+    session storage متد‌هایی رو برای خواندن، نوشتن و پاکسازی داده‌های session ارائه میده.
 
     <span dir="ltr" align="left">
 
@@ -1425,27 +1415,26 @@ puppeteer:
     // Remove all saved data from sessionStorage
     sessionStorage.clear();
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-45. ### What is a storage event and its event handler
+45. ### چرا به web-storage نیاز داریم؟
 
-    The StorageEvent is an event that fires when a storage area has been changed in the context of another document. Whereas onstorage property is an EventHandler for processing storage events.
-    The syntax would be as below
+    storageEvent رویدادی هستش که با تغییر مکان ذخیره سازی در متن سند دیگه‌ای فعال میشه. در حالی که خاصیت ذخیره سازی یک EventHandler برای پردازش رویدادهای ذخیره سازی ست.
 
     <span dir="ltr" align="left">
 
     ```javascript
      window.onstorage = functionRef;
     ```
-    
-    </span>
-    
 
-    Let's take the example usage of onstorage event handler which logs the storage key and it's values
+    </span>
+
+
+    بیاین به عنوان مثال استفاده از رویداد onstorage رو ببینیم که کلید ذخیره و مقادیر اونو ثبت میکنه
 
     <span dir="ltr" align="left">
 
@@ -1461,15 +1450,15 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-46. ### Why do you need web storage
+46. ### چطوری می‌تونیم پشتیبانی از web-storage توسط مرورگر رو بررسی کنیم؟
 
-    Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance. Also, the information is never transferred to the server. Hence this is a more recommended approach than Cookies.
+    فضای ذخیره سازی وب از امنیت بیشتری برخورداره و مقدار زیادی داده میتونن به صورت محلی ذخیره بشن ، بدون اینکه روی عملکرد وب سایت تأثیر بذارن. همچنین ، اطلاعات هرگز به سرور منتقل نمیشن. به همین دلیل این روش نسبت به کوکی‌ها بیشتر توصیه میشه.
 
     **[⬆ فهرست](#فهرست)**
 
-47. ### How do you check web storage browser support
+47. ### چطوری می‌تونیم پشتیبانی از web-worker توسط مرورگر رو بررسی کنیم؟
 
-    You need to check browser support for localStorage and sessionStorage before using web storage,
+    قبل از استفاده از فضای ذخیره‌سازی وب، باید پشتیبانی مرورگر رو برای localStorage و sessionStorage بررسی کنیم.
 
     <span dir="ltr" align="left">
 
@@ -1480,15 +1469,15 @@ puppeteer:
       // Sorry! No Web Storage support..
     }
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-48. ### How do you check web workers browser support
+48. ### یه مثال از web-workerها می‌تونی بزنی؟
 
-    You need to check browser support for web workers before using it
+    قبل از استفاده ، باید پشتیبانی مرورگر رو برای web worker ها بررسی کنیم
 
     <span dir="ltr" align="left">
 
@@ -1499,16 +1488,16 @@ puppeteer:
       // Sorry! No Web Worker support..
     }
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-49. ### Give an example of a web worker
+49. ### محدودیت‌های web-workerها روی DOM چیا هستن؟
 
-    You need to follow below steps to start using web workers for counting example
-    1. Create a Web Worker File:  You need to write a script to increment the count value. Let's name it as counter.js
+    برای شروع استفاده از web worker ها برای مثال شمارنده باید مراحل زیر رو دنبال کنیم
+    ۱. ساخت یه فایل Web Worker: برای افزایش مقدار شمارش، باید یه اسکریپت بنویسیم. بیاین اسمشو counter.js بذاریم
 
     <span dir="ltr" align="left">
 
@@ -1523,11 +1512,11 @@ puppeteer:
 
     timedCount();
     ```
-    
+
     </span>
 
-    Here postMessage() method is used to post a message back to the HTML page
-    1. Create a Web Worker Object: You can create a web worker object by checking for browser support. Let's name this file as web_worker_example.js
+    اینجا از روش postMessage() برای ارسال پیام به صفحه HTML استفاده میشه
+    ۱. ایجاد شی Web Worker: با بررسی پشتیبانی مرورگر میتونیم یه شی Web Worker ایجاد کنیم. بیاین اسم این فایل رو web_worker_example.js بذاریم.
 
     <span dir="ltr" align="left">
 
@@ -1536,11 +1525,11 @@ puppeteer:
       w = new Worker("counter.js");
     }
     ```
-    
-    </span>
-    
 
-    and we can receive messages from web worker
+    </span>
+
+
+    و ما میتونیم پیام‌ها رو از web worker دریافت کنیم
 
     <span dir="ltr" align="left">
 
@@ -1553,8 +1542,8 @@ puppeteer:
     </span>
     
 
-    1. Terminate a Web Worker:
-    Web workers will continue to listen for messages (even after the external script is finished) until it is terminated. You can use the terminate() method to terminate listening to the messages.
+    ۱. به پایان رساندن یه web Worker
+    Web Worker ها تا زمان خاتمه یافتن پیام‌ها (حتی بعد از اتمام یه اسکریپت خارجی) به گوش دادن ادامه میدن. برای خاتمه دادن به گوش دادن به پیام‌ها میتونیم از دستور terminate() استفاده کنیم.
 
     <span dir="ltr" align="left">
 
@@ -1565,7 +1554,7 @@ puppeteer:
     </span>
     
 
-    1. Reuse the Web Worker: If you set the worker variable to undefined you can reuse the code
+    ۱. استفاده مجدد از web worker : اگه متغیر worker رو undefined یا تعریف نشده تنظیم کنیم، میتونیم از کد استفاده مجدد کنیم.
 
     <span dir="ltr" align="left">
 
@@ -1578,16 +1567,15 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-50. ### What are the restrictions of web workers on DOM
-
-    WebWorkers don't have access to below javascript objects since they are defined in an external files
-    1. Window object
-    2. Document object
-    3. Parent object
+50. ###P؟romise چیه؟     
+    WebWorker‌ها به اشیا جاوااسکریپت دسترسی ندارن چون توی یه فایل خارجی تعریف شدن.
+  1. Window object
+  2. Document object
+  3. Parent object
 
     **[⬆ فهرست](#فهرست)**
 
-51. ### What is a promise
+51. ### چرا به promise نیاز داریم؟
 
     A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
 
@@ -1600,9 +1588,9 @@ puppeteer:
       // promise description
     })
     ```
-    
+
     </span>
-    
+
 
     The usage of a promise would be as below,
 
@@ -1629,22 +1617,22 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-52. ### Why do you need a promise
+52. ### سه تا وضعیت ممکن برای یه promise چیا هستن؟
 
     Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
 
     **[⬆ فهرست](#فهرست)**
 
-53. ### What are the three states of promise
+53. ### توابع callback چی هستن؟
 
     Promises have three states:
-    1. **Pending:** This is an initial state of the Promise before an operation begins
-    2. **Fulfilled:** This state indicates that the specified operation was completed.
-    3. **Rejected:** This state indicates that the operation did not complete. In this case an error value will be thrown.
+  1. **Pending:** This is an initial state of the Promise before an operation begins
+  2. **Fulfilled:** This state indicates that the specified operation was completed.
+  3. **Rejected:** This state indicates that the operation did not complete. In this case an error value will be thrown.
 
     **[⬆ فهرست](#فهرست)**
 
-54. ### What is a callback function
+54. ### چرا به توابع callback نیاز داریم؟
 
     A callback function is a function passed into another function as an argument. This function is invoked inside the outer function to complete an action.
     Let's take a simple example of how to use callback function
@@ -1663,14 +1651,13 @@ puppeteer:
 
     outerFunction(callbackFunction);
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-55. ### Why do we need callbacks
-
+55. ###C؟allback-hell یا جهنم توابع callback چیه؟     
     The callbacks are needed because javascript is an event driven language. That means instead of waiting for a response javascript will keep executing while listening for other events.
     Let's take an example with the first function invoking an API call(simulated by setTimeout) and the next function which logs the message.
 
@@ -1700,8 +1687,7 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-56. ### What is a callback hell
-
+56. ###S؟erver-sent-events(SSE) چیه؟     
     Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard to read and debug when dealing with asynchronous logic. The callback hell looks like below,
 
     <span dir="ltr" align="left">
@@ -1717,19 +1703,19 @@ puppeteer:
         });
     });
     ```
-    
+
     </span>
-   
+
 
     **[⬆ فهرست](#فهرست)**
 
-57. ### What are server-sent events
+57. ### چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟
 
     Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP connection without resorting to polling. These are a one way communications channel - events flow from server to client only. This has been used in Facebook/Twitter updates, stock price updates, news feeds etc.
 
     **[⬆ فهرست](#فهرست)**
 
-58. ### How do you receive server-sent event notifications
+58. ### چطوری می‌تونیم پشتیبانی مرورگر برای SSE رو بررسی کنیم؟
 
     The EventSource object is used to receive server-sent event notifications. For example, you can receive messages from server as below,
 
@@ -1743,12 +1729,12 @@ puppeteer:
       };
     }
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-59. ### How do you check browser support for server-sent events
+59. ### کدوم توابع روی SSE وجود دارن؟
 
     You can perform browser support for server-sent events before using it as below,
 
@@ -1761,12 +1747,12 @@ puppeteer:
       // No server-sent events supported
     }
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-60. ### What are the events available for server sent events
+60. ### اصلی‌ترین قوانین promiseها چیا هستن؟
 
     Below are the list of events available for server sent events
     | Event | Description |
@@ -1777,17 +1763,16 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-61. ### What are the main rules of promise
-
+61. ###C؟allback توی callback چطوری رخ میده؟               
     A promise must follow a specific set of rules,
-    1. A promise is an object that supplies a standard-compliant `.then()` method
-    2. A pending promise may transition into either fulfilled or rejected state
-    3. A fulfilled or rejected promise is settled and it must not transition into any other state.
-    4. Once a promise is settled, the value must not change.
+  1. A promise is an object that supplies a standard-compliant `.then()` method
+  2. A pending promise may transition into either fulfilled or rejected state
+  3. A fulfilled or rejected promise is settled and it must not transition into any other state.
+  4. Once a promise is settled, the value must not change.
 
     **[⬆ فهرست](#فهرست)**
 
-62. ### What is callback in callback
+62. ### زنجیره promiseها چیه؟
 
     You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks.
 
@@ -1811,12 +1796,12 @@ puppeteer:
 
     });
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-63. ### What is promise chaining
+63. ### کاربرد متد promise.all چیه؟
 
     The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining. Let's take an example of promise chaining for calculating the final result,
 
@@ -1844,18 +1829,18 @@ puppeteer:
 
     });
     ```
-    
+
     </span>
 
     In the above handlers, the result is passed to the chain of .then() handlers with the below work flow,
-    1. The initial promise resolves in 1 second,
-    2. After that `.then` handler is called by logging the result(1) and then return a promise with the value of result * 2.
-    3. After that the value passed to the next `.then` handler by logging the result(2) and return a promise with result * 3.
-    4. Finally the value passed to the last `.then` handler by logging the result(6) and return a promise with result * 4.
+  1. The initial promise resolves in 1 second,
+  2. After that `.then` handler is called by logging the result(1) and then return a promise with the value of result * 2.
+  3. After that the value passed to the next `.then` handler by logging the result(2) and return a promise with result * 3.
+  4. Finally the value passed to the last `.then` handler by logging the result(6) and return a promise with result * 4.
 
     **[⬆ فهرست](#فهرست)**
 
-64. ### What is promise.all
+64. ### هدف از متد race روی promise چیه؟
 
     Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved when all the promises get resolved or any one of them gets rejected. For example, the syntax of promise.all method is below,
 
@@ -1864,14 +1849,14 @@ puppeteer:
     ```javascript
     Promise.all([Promise1, Promise2, Promise3]) .then(result) => {   console.log(result) }) .catch(error => console.log(`Error in promises ${error}`))
     ```
-    
+
     </span>
 
     **Note:** Remember that the order of the promises(output the result) is maintained as per input order.
 
     **[⬆ فهرست](#فهرست)**
 
-65. ### What is the purpose of the race method in promise
+65. ### حالت strict توی جاواسکریپت چی کار میکنه؟
 
     Promise.race() method will return the promise instance which is firstly resolved or rejected. Let's take an example of race() method where promise2 is resolved first
 
@@ -1889,24 +1874,24 @@ puppeteer:
       console.log(value); // "two" // Both promises will resolve, but promise2 is faster
     });
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-66. ### What is a strict mode in javascript
+66. ### چرا به حالت strict نیاز داریم؟
 
     Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression `"use strict";` instructs the browser to use the javascript code in the Strict mode.
 
     **[⬆ فهرست](#فهرست)**
 
-67. ### Why do you need strict mode
+67. ### چطوری می‌تونیم حالت strict رو فعال کنیم؟
 
     Strict mode is useful to write "secure" JavaScript by notifying "bad syntax" into real errors. For example, it eliminates accidentally creating a global variable by throwing an error and also throws an error for assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object.
 
     **[⬆ فهرست](#فهرست)**
 
-68. ### How do you declare strict mode
+68. ### هدف از عملگر نقیض دوتایی(!!) چیه؟
 
     The strict mode is declared by adding "use strict"; to the beginning of a script or a function.
     If declared at the beginning of a script, it has global scope.
@@ -1917,7 +1902,7 @@ puppeteer:
     "use strict";
     x = 3.14; // This will cause an error because x is not declared
     ```
-    
+
     </span>
 
     and if you declare inside a function, it has local scope
@@ -1933,12 +1918,12 @@ puppeteer:
       y = 3.14;   // This will cause an error
     }
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-69. ### What is the purpose of double exclamation
+69. ### هدف از عملگر delete چیه؟
 
     The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, true.
     For example, you can test IE version using this expression as below,
@@ -1950,7 +1935,7 @@ puppeteer:
     isIE8 = !! navigator.userAgent.match(/MSIE 8.0/);
     console.log(isIE8); // returns true or false
     ```
-    
+
     </span>
 
     If you don't use this expression then it returns the original value.
@@ -1960,14 +1945,14 @@ puppeteer:
     ```javascript
     console.log(navigator.userAgent.match(/MSIE 8.0/));  // returns either an Array or null
     ```
-    
+
     </span>
 
     **Note:** The expression !! is not an operator, but it is just twice of ! operator.
 
     **[⬆ فهرست](#فهرست)**
 
-70. ### What is the purpose of the delete operator
+70. ### عملگر typeof چیکار می‌کنه؟
 
     The delete keyword is used to delete the property as well as its value.
 
@@ -1979,13 +1964,12 @@ puppeteer:
 
     console.log(user); // {name: "John"}
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-71. ### What is the typeof operator
-
+71. ###u؟ndefined چیه و چه زمانی undefined می‌گیریم؟          
     You can use the JavaScript typeof operator to find the type of a JavaScript variable. It returns the type of a variable or an expression.
 
     <span dir="ltr" align="left">
@@ -1994,13 +1978,12 @@ puppeteer:
     typeof "John Abraham"     // Returns "string"
     typeof (1 + 2)        // Returns "number"
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-72. ### What is undefined property
-
+72. ###n؟ull چیه؟     
     The undefined property indicates that a variable has not been assigned a value, or not declared at all. The type of undefined value is undefined too.
 
     <span dir="ltr" align="left">
@@ -2009,7 +1992,7 @@ puppeteer:
     var user;    // Value is undefined, type is undefined
     console.log(typeof(user)) //undefined
     ```
-    
+
     </span>
 
     Any variable can be emptied by setting the value to undefined.
@@ -2019,12 +2002,12 @@ puppeteer:
     ```javascript
     user = undefined
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-73. ### What is null value
+73. ### تفاوت‌های بین null و undefined چیا هستن؟
 
     The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object.
     You can empty the variable by setting the value to null.
@@ -2035,17 +2018,16 @@ puppeteer:
     var user = null;
     console.log(typeof(user)) //object
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-74. ### What is the difference between null and undefined
-
+74. ###e؟val چیه؟     
     Below are the main differences between null and undefined,
 
     | Null | Undefined |
-    |---- | -----------|
+        |---- | -----------|
     | It is an assignment value which indicates that variable points to no object.  | It is not an assignment value where a variable has been declared but has not yet been assigned a value. |
     | Type of null is object | Type of undefined is undefined  |
     | The null value is a primitive value that represents the null, empty, or non-existent reference. | The undefined value is a primitive value used when a variable has not been assigned a value.|
@@ -2054,7 +2036,7 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-75. ### What is eval
+75. ### تفاوت‌های بین window و document چیا هستن؟
 
     The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
 
@@ -2063,24 +2045,24 @@ puppeteer:
     ```javascript
     console.log(eval('1 + 2')); //  3
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-76. ### What is the difference between window and document
+76. ### توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟
 
     Below are the main differences between window and document,
 
     | Window | Document |
-    |---- | ---------
+        |---- | ---------
     | It is the root level element in any web page  | It is the direct child of the window object. This is also known as Document Object Model(DOM) |
     | By default window object is available implicitly in the page | You can access it via window.document or document.  |
     | It has methods like alert(), confirm() and properties like document, location | It provides methods like getElementById, getElementByTagName, createElement etc  |
 
     **[⬆ فهرست](#فهرست)**
 
-77. ### How do you access history in javascript
+77. ### انواع داده‌های جاواسکریپت کدوما هستن؟
 
     The window.history object contains the browser's history. You can load previous and next URLs in the history using back() and next() methods.
 
@@ -2094,26 +2076,25 @@ puppeteer:
       window.history.forward()
     }
     ```
-    
+
     </span>
 
     **Note:** You can also access history without window prefix.
 
     **[⬆ فهرست](#فهرست)**
 
-78. ### What are the javascript data types
-
+78. ###i؟sNaN چیه و چیکار می‌کنه؟                    
     Below are the list of javascript data types available
-    1. Number
-    2. String
-    3. Boolean
-    4. Object
-    5. Undefined
+  1. Number
+  2. String
+  3. Boolean
+  4. Object
+  5. Undefined
 
     **[⬆ فهرست](#فهرست)**
 
-79. ### What is isNaN
-
+79. ### تفاوت‌های بین undeclared و undefined چیا هستن؟
+    
     The isNaN() function is used to determine whether a value is an illegal number (Not-a-Number) or not. i.e, This function returns true if the value equates to NaN. Otherwise it returns false.
 
     <span dir="ltr" align="left">
@@ -2122,23 +2103,23 @@ puppeteer:
     isNaN('Hello') //true
     isNaN('100') //false
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-80. ### What are the differences between undeclared and undefined variables
+80. ### کدوم متغیرها عمومی هستن؟
 
     Below are the major differences between undeclared and undefined variables,
 
     | undeclared | undefined |
-    |---- | ---------
+        |---- | ---------
     | These variables do not exist in a program and are not declared  | These variables declared in the program but have not assigned any value |
     | If you try to read the value of an undeclared variable, then a runtime error is encountered | If you try to read the value of an undefined variable, an undefined value is returned.  |
 
     **[⬆ فهرست](#فهرست)**
 
-81. ### What are global variables
+81. ### مشکلات متغیرهای عمومی چیا هستن؟
 
     Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
 
@@ -2147,18 +2128,18 @@ puppeteer:
     ```javascript
     msg = "Hello" // var is missing, it becomes global variable
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-82. ### What are the problems with global variables
+82. ### مقدار NaN چیه؟
 
     The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
 
     **[⬆ فهرست](#فهرست)**
 
-83. ### What is NaN property
+83. ### هدف از تابع isFinite چیه؟
 
     The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases
 
@@ -2168,12 +2149,12 @@ puppeteer:
     Math.sqrt(-1)
     parseInt("Hello")
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-84. ### What is the purpose of isFinite function
+84. ### یه event-flow چیه؟
 
     The isFinite() function is used to determine whether a number is a finite, legal number. It returns false if the value is +infinity, -infinity, or NaN (Not-a-Number), otherwise it returns true.
 
@@ -2186,33 +2167,31 @@ puppeteer:
 
     isFinite(100);         // true
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-85. ### What is an event flow
-
+85. ###E؟vent-bubbling چیه؟     
     Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
     There are two ways of event flow
-    1. Top to Bottom(Event Capturing)
-    2. Bottom to Top (Event Bubbling)
+  1. Top to Bottom(Event Capturing)
+  2. Bottom to Top (Event Bubbling)
 
     **[⬆ فهرست](#فهرست)**
 
-86. ### What is event bubbling
-
+86. ###E؟vent-capturing چیه؟     
     Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
 
     **[⬆ فهرست](#فهرست)**
 
-87. ### What is event capturing
+87. ### چطوری میشه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟
 
     Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
 
     **[⬆ فهرست](#فهرست)**
 
-88. ### How do you submit a form using JavaScript
+88. ### چطوری میشه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟
 
     You can submit a form using JavaScript use document.form[0].submit(). All the form input's information is submitted using onsubmit event handler
 
@@ -2223,12 +2202,12 @@ puppeteer:
         document.form[0].submit();
     }
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-89. ### How do you find operating system details
+89. ### تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟
 
     The window.navigator object contains information about the visitor's browser OS details. Some of the OS properties are available under platform property,
 
@@ -2237,18 +2216,18 @@ puppeteer:
     ```javascript
     console.log(navigator.platform);
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-90. ### What is the difference between document load and DOMContentLoaded events
+90. ### تفاوت‌های بین objectهای native، host و user چیا هستن؟
 
     The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).
 
     **[⬆ فهرست](#فهرست)**
 
-91. ### What is the difference between native, host and user objects
+91. ### کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟
 
     `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
     `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
@@ -2256,32 +2235,32 @@ puppeteer:
 
     **[⬆ فهرست](#فهرست)**
 
-92. ### What are the tools or techniques used for debugging JavaScript code
+92. ### مزایا و معایب استفاده از promiseها به جای callback چیا هستن؟
 
     You can use below tools or techniques for debugging javascript
-    1. Chrome Devtools
-    2. debugger statement
-    3. Good old console.log statement
+  1. Chrome Devtools
+  2. debugger statement
+  3. Good old console.log statement
 
     **[⬆ فهرست](#فهرست)**
 
-93. ### What are the pros and cons of promises over callbacks
+93. ### تفاوت‌های بین attribute و property روی DOM چیا هستن؟
 
     Below are the list of pros and cons of promises over callbacks,
 
     **Pros:**
-    1. It avoids callback hell which is unreadable
-    2. Easy to write sequential asynchronous code with .then()
-    3. Easy to write parallel asynchronous code with Promise.all()
-    4. Solves some of the common problems of callbacks(call the callback too late, too early, many times and swallow errors/exceptions)
+  1. It avoids callback hell which is unreadable
+  2. Easy to write sequential asynchronous code with .then()
+  3. Easy to write parallel asynchronous code with Promise.all()
+  4. Solves some of the common problems of callbacks(call the callback too late, too early, many times and swallow errors/exceptions)
 
     **Cons:**
-    1. It makes little complex code
-    2. You need to load a polyfill if ES6 is not supported
+  1. It makes little complex code
+  2. You need to load a polyfill if ES6 is not supported
 
     **[⬆ فهرست](#فهرست)**
 
-94. ### What is the difference between an attribute and a property
+94. ### سیاست same-origin چیه؟
 
     Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes type and value,
 
@@ -2290,7 +2269,7 @@ puppeteer:
     ```javascript
     <input type="text" value="Name:">
     ```
-    
+
     </span>
 
     You can retrieve the attribute value as below,
@@ -2302,7 +2281,7 @@ puppeteer:
     console.log(input.getAttribute('value')); // Good morning
     console.log(input.value); // Good morning
     ```
-    
+
     </span>
 
     And after you change the value of the text field to "Good evening", it becomes like
@@ -2313,18 +2292,18 @@ puppeteer:
     console.log(input.getAttribute('value')); // Good morning
     console.log(input.value); // Good evening
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-95. ### What is same-origin policy
+95. ### هدف استفاده از void 0 چیه؟
 
     The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
 
     **[⬆ فهرست](#فهرست)**
 
-96. ### What is the purpose of void 0
+96. ### جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟
 
     Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML documents that use href="JavaScript:Void(0);" within an ```<a>``` element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
     For example, the below link notify the message without reloading the page
@@ -2334,36 +2313,35 @@ puppeteer:
     ```html
     <a href="JavaScript:void(0);" onclick="alert('Well done!')">Click Me!</a>
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-97. ### Is JavaScript a compiled or interpreted language
+97. ### آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟
 
     JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays  modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
 
     **[⬆ فهرست](#فهرست)**
 
-98. ### Is JavaScript a case-sensitive language
+98. ### ارتباطی بین Java و JavaScript وجود داره؟
 
     Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
 
     **[⬆ فهرست](#فهرست)**
 
-99. ### Is there any relation between Java and JavaScript
-
+99. ###E؟ventها چی هستن؟            
     No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
 
     **[⬆ فهرست](#فهرست)**
 
-100. ### What are events
+100. ### کی جاواسکریپت رو ساخته؟
 
      Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events. Some of the examples of HTML events are,
 
-     1. Web page has finished loading
-     2. Input field was changed
-     3. Button was clicked
+  1. Web page has finished loading
+  2. Input field was changed
+  3. Button was clicked
 
      Let's describe the behavior of click event for button element,
 
@@ -2384,18 +2362,18 @@ puppeteer:
       </body>
      </html>
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
-101. ### Who created javascript
+101. ### هدف از متد preventDefault چیه؟
 
      JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. Initially it was developed under the name `Mocha`, but later the language was officially called `LiveScript` when it first shipped in beta releases of Netscape.
 
      **[⬆ فهرست](#فهرست)**
 
-102. ### What is the use of preventDefault method
+102. ### کاربرد متد stopPropagation چیه؟
 
      The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behaviour that belongs to the event will not occur. For example, prevent form submission when clicking on submit button and prevent opening the page URL when clicking on hyperlink are some common use cases.
 
@@ -2406,14 +2384,14 @@ puppeteer:
       event.preventDefault();
      });
      ```
-     
+
      </span>
 
      **Note:** Remember that not all events are cancelable.
 
      **[⬆ فهرست](#فهرست)**
 
-103. ### What is the use of stopPropagation method
+103. ### مراحلی که هنگام استفاده از return false توی یه event-handler رخ میده چیا هستن؟
 
      The stopPropagation method is used to stop the event from bubbling up the event chain. For example, the below nested divs with stopPropagation method prevents default event propagation when clicking on nested div(Div1)
 
@@ -2436,22 +2414,21 @@ puppeteer:
      }
      </script>
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
-104. ### What are the steps involved in return false usage
-
+104. ###B؟OM چیه؟     
      The return false statement in event handlers performs the below steps,
 
-     1. First it stops the browser's default action or behaviour.
-     2. It prevents the event from propagating the DOM
-     3. Stops callback execution and returns immediately when called.
+  1. First it stops the browser's default action or behaviour.
+  2. It prevents the event from propagating the DOM
+  3. Stops callback execution and returns immediately when called.
 
      **[⬆ فهرست](#فهرست)**
 
-105. ### What is BOM
+105. ### موارد استفاده از setTimeout کدوما هستن؟
 
      The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It consists of the objects navigator, history, screen, location and document which are children of the window. The Browser Object Model is not standardized and can change based on different browsers.
 
@@ -2459,7 +2436,7 @@ puppeteer:
 
      **[⬆ فهرست](#فهرست)**
 
-106. ### What is the use of setTimeout
+106. ### موارد استفاده از setInterval کدوما هستن؟
 
      The setTimeout() method is used to call a function or evaluate an expression after a specified number of milliseconds. For example, let's log a message after 2 seconds using setTimeout method,
 
@@ -2468,12 +2445,12 @@ puppeteer:
      ```javascript
      setTimeout(function(){ console.log("Good morning"); }, 2000);
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
-107. ### What is the use of setInterval
+107. ### چرا جاواسکریپت رو به عنوان یه زبان تک thread می‌شناسن؟
 
      The setInterval() method is used to call a function or evaluate an expression at specified intervals (in milliseconds). For example, let's log a message after 2 seconds using setInterval method,
 
@@ -2482,19 +2459,17 @@ puppeteer:
      ```javascript
      setInterval(function(){ console.log("Good morning"); }, 2000);
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
-108. ### Why is JavaScript treated as Single threaded
-
+108. ###E؟vent-delegation چیه؟     
      JavaScript is a single-threaded language. Because the language specification does not allow the programmer to write code so that the interpreter can run parts of it in parallel in multiple threads or processes. Whereas languages like java, go, C++ can make multi-threaded and multi-process programs.
 
      **[⬆ فهرست](#فهرست)**
 
-109. ### What is an event delegation
-
+109. ###E؟CMAScript چیه؟     
      Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.
 
      For example, if you wanted to detect field changes in inside a specific form, you can use event delegation technique,
@@ -2512,34 +2487,33 @@ puppeteer:
 
      }, false);
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
-110. ### What is ECMAScript
-
+110. ###J؟SON چیه؟     
      ECMAScript is the scripting language that forms the basis of JavaScript. ECMAScript standardized by the ECMA International standards organization in the ECMA-262 and ECMA-402 specifications. The first edition of ECMAScript was released in 1997.
 
      **[⬆ فهرست](#فهرست)**
 
-111. ### What is JSON
+111. ### قوانین فرمت JSON کدوما هستن؟
 
      JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
 
      **[⬆ فهرست](#فهرست)**
 
-112. ### What are the syntax rules of JSON
+112. ### هدف از متد JSON.stringify چیه؟
 
      Below are the list of syntax rules of JSON
-     1. The data is in name/value pairs
-     2. The data is separated by commas
-     3. Curly braces hold objects
-     4. Square brackets hold arrays
+  1. The data is in name/value pairs
+  2. The data is separated by commas
+  3. Curly braces hold objects
+  4. Square brackets hold arrays
 
      **[⬆ فهرست](#فهرست)**
 
-113. ### What is the purpose JSON stringify
+113. ### چطوری می‌تونیم یه رشته(string) JSON رو تجزیه کنیم؟
 
      When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
 
@@ -2550,12 +2524,12 @@ puppeteer:
      var userString = JSON.stringify(user);
      console.log(userString); //"{"name":"John","age":31}"
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
-114. ### How do you parse JSON string
+114. ### چرا به JSON نیاز داریم؟
 
      When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
 
@@ -2566,24 +2540,23 @@ puppeteer:
      var userJSON = JSON.parse(userString);
      console.log(userJSON);// {name: "John", age: 31}
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
-115. ### Why do you need JSON
-
+115. ###P؟WAها چی هستن؟            
      When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
 
      **[⬆ فهرست](#فهرست)**
 
-116. ### What are PWAs
+116. ### هدف از متد clearTimeout چیه؟
 
      Progressive web applications (PWAs) are a type of mobile app delivered through the web, built using common web technologies including HTML, CSS and JavaScript. These PWAs are deployed to servers, accessible through URLs, and indexed by search engines.
 
      **[⬆ فهرست](#فهرست)**
 
-117. ### What is the purpose of clearTimeout method
+117. ### هدف از متد clearInterval چیه؟
 
      The clearTimeout() function is used in javascript to clear the timeout which has been set by setTimeout()function before that. i.e, The return value of setTimeout() function is stored in a variable and it’s passed into the clearTimeout() function to clear the timer.
 
@@ -2607,12 +2580,12 @@ puppeteer:
      }
      </script>
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
-118. ### What is the purpose of clearInterval method
+118. ### توی جاواسکریپت، چطوری میشه به یه صفحه جدید redirect انجام داد؟
 
      The clearInterval() function is used in javascript to clear the interval which has been set by setInterval() function. i.e, The return value returned by setInterval() function is stored in a variable and it’s passed into the clearInterval() function to clear the interval.
 
@@ -2636,12 +2609,12 @@ puppeteer:
      }
      </script>
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
-119. ### How do you redirect new page in javascript
+119. ### چطوری بررسی می‌کنین که یه string شامل یه substring هست یا نه؟
 
      In vanilla javascript, you can redirect to a new page using the `location` property of window object. The syntax would be as follows,
 
@@ -2652,15 +2625,15 @@ puppeteer:
         window.location.href = 'newPage.html';
      }
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
-120. ### How do you check whether a string contains a substring
+120. ### توی جاواسکریپت، چطوری مقدار یه آدرس email رو اعتبارسنجی می‌کنین؟
 
      There are 3 possible ways to check whether a string contains a substring or not,
-     1. **Using includes:** ES6 provided `String.prototype.includes` method to test a string contains a substring
+  1. **Using includes:** ES6 provided `String.prototype.includes` method to test a string contains a substring
 
      <span dir="ltr" align="left">
 
@@ -2668,10 +2641,10 @@ puppeteer:
      var mainString = "hello", subString = "hell";
      mainString.includes(subString)
      ```
-     
+
      </span>
 
-     1. **Using indexOf:** In an ES5 or older environment, you can use `String.prototype.indexOf` which returns the index of a substring. If the index value is not equal to -1 then it means the substring exists in the main string.
+  1. **Using indexOf:** In an ES5 or older environment, you can use `String.prototype.indexOf` which returns the index of a substring. If the index value is not equal to -1 then it means the substring exists in the main string.
 
      <span dir="ltr" align="left">
 
@@ -2679,10 +2652,10 @@ puppeteer:
      var mainString = "hello", subString = "hell";
      mainString.indexOf(subString) !== -1
      ```
-     
+
      </span>
 
-     1. **Using RegEx:** The advanced solution is using Regular expression's test method(`RegExp.test`), which allows for testing for against regular expressions
+  1. **Using RegEx:** The advanced solution is using Regular expression's test method(`RegExp.test`), which allows for testing for against regular expressions
 
      <span dir="ltr" align="left">
 
@@ -2690,12 +2663,12 @@ puppeteer:
      var mainString = "hello", regex = "/hell/";
      regex.test(mainString)
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
-121. ### How do you validate an email in javascript
+121. ### چطوری می‌تونیم مقدار آدرس url جاری رو بخونیم؟
 
      You can validate an email in javascript using regular expressions. It is recommended to do validations on the server side instead of the client side. Because the javascript can be disabled on the client side.
 
@@ -2707,14 +2680,14 @@ puppeteer:
          return re.test(String(email).toLowerCase());
      }
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
      The above regular expression accepts unicode characters.
 
-122. ### How do you get the current url with javascript
+122. ### ویژگی‌های مختلف url روی object مربوط به history کدوما هستن؟
 
      You can use `window.location.href` expression to get the current url path and you can use the same expression for updating the URL too. You can also use `document.URL` for read-only purposes but this solution has issues in FF.
 
@@ -2723,26 +2696,26 @@ puppeteer:
      ```javascript
      console.log('location.href', window.location.href); // Returns full URL
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
 
-123. ### What are the various url properties of location object
+123. ### توی جاواسکریپت چطوری می‌تونیم مقدار یه query-string رو بخونیم؟
 
      The below `Location` object properties can be used to access URL components of the page,
-     1. href - The entire URL
-     2. protocol - The protocol of the URL
-     3. host - The hostname and port of the URL
-     4. hostname - The hostname of the URL
-     5. port - The port number in the URL
-     6. pathname - The path name of the URL
-     7. search - The query portion of the URL
-     8. hash - The anchor portion of the URL
+  1. href - The entire URL
+  2. protocol - The protocol of the URL
+  3. host - The hostname and port of the URL
+  4. hostname - The hostname of the URL
+  5. port - The port number in the URL
+  6. pathname - The path name of the URL
+  7. search - The query portion of the URL
+  8. hash - The anchor portion of the URL
 
      **[⬆ فهرست](#فهرست)**
 
-124. ### How do get query string values in javascript
+124. ### چطوری می‌تونیم بررسی کنیم که آیا یه پراپرتی روی آبجکت وجود داره یا نه؟
 
      You can use URLSearchParams to get query string values in javascript. Let's see an example to get the client code value from URL query string,
 
@@ -2752,7 +2725,7 @@ puppeteer:
      const urlParams = new URLSearchParams(window.location.search);
      const clientCode = urlParams.get('clientCode');
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -2761,14 +2734,14 @@ puppeteer:
 
      You can check whether a key exists in an object or not using three approaches,
 
-     1. **Using in operator:** You can use the in operator whether a key exists in an object or not
+  1. **Using in operator:** You can use the in operator whether a key exists in an object or not
 
      <span dir="ltr" align="left">
 
      ```javascript
      "key" in obj
      ```
-     
+
      </span>
 
      and If you want to check if a key doesn't exist, remember to use parenthesis,
@@ -2778,20 +2751,20 @@ puppeteer:
      ```javascript
      !("key" in obj)
      ```
-     
+
      </span>
 
-     1. **Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
+  1. **Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
 
      <span dir="ltr" align="left">
 
      ```javascript
      obj.hasOwnProperty("key") // true
      ```
-     
+
      </span>
 
-     1. **Using undefined comparison:** If you access a non-existing property from an object, the result is undefined. Let’s compare the properties against undefined to determine the existence of the property.
+  1. **Using undefined comparison:** If you access a non-existing property from an object, the result is undefined. Let’s compare the properties against undefined to determine the existence of the property.
 
      <span dir="ltr" align="left">
 
@@ -2803,7 +2776,7 @@ puppeteer:
      console.log(user.name !== undefined);     // true
      console.log(user.nickName !== undefined); // false
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -2827,7 +2800,7 @@ puppeteer:
          }
      }
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -2835,27 +2808,27 @@ puppeteer:
 127. ### How do you test for an empty object
 
      There are different solutions based on ECMAScript versions
-     1. **Using Object entries(ECMA 7+):** You can use object entries length along with constructor type.
+  1. **Using Object entries(ECMA 7+):** You can use object entries length along with constructor type.
 
      <span dir="ltr" align="left">
 
      ```javascript
      Object.entries(obj).length === 0 && obj.constructor === Object // Since date object length is 0, you need to check constructor check as well
      ```
-     
+
      </span>
 
-     1. **Using Object keys(ECMA 5+):** You can use object keys length along with constructor type.
+  1. **Using Object keys(ECMA 5+):** You can use object keys length along with constructor type.
 
      <span dir="ltr" align="left">
 
      ```javascript
      Object.keys(obj).length === 0 && obj.constructor === Object // Since date object length is 0, you need to check constructor check as well
      ```
-     
+
      </span>
 
-     1. **Using for-in with hasOwnProperty(Pre-ECMA 5):** You can use a for-in loop along with hasOwnProperty.
+  1. **Using for-in with hasOwnProperty(Pre-ECMA 5):** You can use a for-in loop along with hasOwnProperty.
 
      <span dir="ltr" align="left">
 
@@ -2870,7 +2843,7 @@ puppeteer:
        return JSON.stringify(obj) === JSON.stringify({});
      }
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -2892,7 +2865,7 @@ puppeteer:
 
      sum(1, 2, 3) // returns 6
      ```
-     
+
      </span>
 
      **Note:** You can't apply array methods on arguments object. But you can convert into a regular array as below.
@@ -2902,7 +2875,7 @@ puppeteer:
      ```javascript
      var argsArray = Array.prototype.slice.call(arguments);
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -2918,7 +2891,7 @@ puppeteer:
          return string.charAt(0).toUpperCase() + string.slice(1);
      }
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -2927,13 +2900,13 @@ puppeteer:
 
      The for-loop is a commonly used iteration syntax in javascript. It has both pros and cons
      ####Pros
-     1. Works on every environment
-     2. You can use break and continue flow control statements
+  1. Works on every environment
+  2. You can use break and continue flow control statements
 
      ####Cons
-     1. Too verbose
-     2. Imperative
-     3. You might face one-by-off errors
+  1. Too verbose
+  2. Imperative
+  3. You might face one-by-off errors
 
      **[⬆ فهرست](#فهرست)**
 
@@ -2952,7 +2925,7 @@ puppeteer:
      today = mm + '/' + dd + '/' + yyyy;
      document.write(today);
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -2969,7 +2942,7 @@ puppeteer:
      console.log(d1.getTime() === d2.getTime()); //True
      console.log(d1 === d2); // False
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -2984,7 +2957,7 @@ puppeteer:
      "Good morning".startsWith("Good"); // true
      "Good morning".startsWith("morning"); // false
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -2998,7 +2971,7 @@ puppeteer:
      ```javascript
      "  Hello World   ".trim(); //Hello World
      ```
-     
+
      </span>
 
      If your browser(<IE9) doesn't support this method then you can use below polyfill.
@@ -3016,7 +2989,7 @@ puppeteer:
          })();
      }
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -3033,27 +3006,27 @@ puppeteer:
          key2: value2
      };
      ```
-     
+
      </span>
 
-     1. **Using dot notation:** This solution is useful when you know the name of the property
+  1. **Using dot notation:** This solution is useful when you know the name of the property
 
      <span dir="ltr" align="left">
 
      ```javascript
      object.key3 = "value3";
      ```
-     
+
      </span>
 
-     1. **Using square bracket notation:** This solution is useful when the name of the property is dynamically determined.
+  1. **Using square bracket notation:** This solution is useful when the name of the property is dynamically determined.
 
      <span dir="ltr" align="left">
 
      ```javascript
      obj["key3"] = "value3";
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -3061,8 +3034,8 @@ puppeteer:
 136. ### Is the !-- notation represents a special operator
 
      No,that's not a special operator. But it is a combination of 2 standard operators one after the other,
-     1. A logical not (!)
-     2. A prefix decrement (--)
+  1. A logical not (!)
+  2. A prefix decrement (--)
 
      At first, the value decremented by one and then tested to see if it is equal to zero or not for determining the truthy/falsy value.
 
@@ -3077,7 +3050,7 @@ puppeteer:
      ```javascript
      var a = b || c;
      ```
-     
+
      </span>
 
      As per the above expression, variable 'a 'will get the value of 'c' only if 'b' is falsy (if is null, false, undefined, 0, empty string, or NaN), otherwise 'a' will get the value of 'b'.
@@ -3095,7 +3068,7 @@ puppeteer:
      very lengthy \
      sentence!";
      ```
-     
+
      </span>
 
      But if you have a space after the '\' character, the code will look exactly the same, but it will raise a SyntaxError.
@@ -3125,7 +3098,7 @@ puppeteer:
        //Profile code goes here
      }
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -3142,7 +3115,7 @@ puppeteer:
      }
      sum.length // 4 is the number of parameters expected.
      ```
-     
+
      </span>
 
      **[⬆ فهرست](#فهرست)**
@@ -3216,32 +3189,32 @@ puppeteer:
 145. ### What are the benefits of keeping declarations at the top
 
      It is recommended to keep all declarations at the top of each script or function. The benefits of doing this are,
-     1. Gives cleaner code
-     2. It provides a single place to look for local variables
-     3. Easy to avoid unwanted global variables
-     4. It reduces the possibility of unwanted re-declarations
+  1. Gives cleaner code
+  2. It provides a single place to look for local variables
+  3. Easy to avoid unwanted global variables
+  4. It reduces the possibility of unwanted re-declarations
 
      **[⬆ فهرست](#فهرست)**
 
 146. ### What are the benefits of initializing variables
 
      It is recommended to initialize variables because of the below benefits,
-     1. It gives cleaner code
-     2. It provides a single place to initialize variables
-     3. Avoid undefined values in the code
+  1. It gives cleaner code
+  2. It provides a single place to initialize variables
+  3. Avoid undefined values in the code
 
      **[⬆ فهرست](#فهرست)**
 
 147. ### What are the recommendations to create new object
 
      It is recommended to avoid creating new objects using `new Object()`. Instead you can initialize values based on it's type to create the objects.
-     1. Assign {} instead of new Object()
-     2. Assign "" instead of new String()
-     3. Assign 0 instead of new Number()
-     4. Assign false instead of new Boolean()
-     5. Assign [] instead of new Array()
-     6. Assign /()/ instead of new RegExp()
-     7. Assign function (){} instead of new Function()
+  1. Assign {} instead of new Object()
+  2. Assign "" instead of new String()
+  3. Assign 0 instead of new Number()
+  4. Assign false instead of new Boolean()
+  5. Assign [] instead of new Array()
+  6. Assign /()/ instead of new RegExp()
+  7. Assign function (){} instead of new Function()
 
      You can define them as an example,
 
@@ -3385,15 +3358,15 @@ puppeteer:
 
 156. ### What are modifiers in regular expression
 
-      Modifiers can be used to perform case-insensitive and global searches. Let's list down some of the modifiers,
+     Modifiers can be used to perform case-insensitive and global searches. Let's list down some of the modifiers,
 
-      | Modifier | Description |
-      |---- | ---------
-      | i  | Perform case-insensitive matching |
-      | g | Perform a global match rather than stops at first match  |
-      | m | Perform multiline matching|
+     | Modifier | Description |
+           |---- | ---------
+     | i  | Perform case-insensitive matching |
+     | g | Perform a global match rather than stops at first match  |
+     | m | Perform multiline matching|
 
-      Let's take an example of global modifier,
+     Let's take an example of global modifier,
 
      <span dir="ltr" align="left">
 
@@ -3405,26 +3378,26 @@ puppeteer:
 
       </span>
 
-      **[⬆ فهرست](#فهرست)**
+     **[⬆ فهرست](#فهرست)**
 
 157. ### What are regular expression patterns
 
      Regular Expressions provide a group of patterns in order to match characters. Basically they are categorized into 3 types,
-     1. **Brackets:** These are used to find a range of characters.
-        For example, below are some use cases,
-        1. [abc]: Used to find any of the characters between the brackets(a,b,c)
-        2. [0-9]: Used to find any of the digits between the brackets
-        3. (a|b): Used to find any of the alternatives separated with |
-     2. **Metacharacters:** These are characters with a special meaning
-        For example, below are some use cases,
-        1. \\d: Used to find a digit
-        2. \\s: Used to find a whitespace character
-        3. \\b: Used to find a match at the beginning or ending of a word
-     3. **Quantifiers:** These are useful to define quantities
-        For example, below are some use cases,
-        1. n+: Used to find matches for any string that contains at least one n
-        2. n*: Used to find matches for any string that contains zero or more occurrences of n
-        3. n?: Used to find matches for any string that contains zero or one occurrences of n
+  1. **Brackets:** These are used to find a range of characters.
+     For example, below are some use cases,
+    1. [abc]: Used to find any of the characters between the brackets(a,b,c)
+    2. [0-9]: Used to find any of the digits between the brackets
+    3. (a|b): Used to find any of the alternatives separated with |
+  2. **Metacharacters:** These are characters with a special meaning
+     For example, below are some use cases,
+    1. \\d: Used to find a digit
+    2. \\s: Used to find a whitespace character
+    3. \\b: Used to find a match at the beginning or ending of a word
+  3. **Quantifiers:** These are useful to define quantities
+     For example, below are some use cases,
+    1. n+: Used to find matches for any string that contains at least one n
+    2. n*: Used to find matches for any string that contains zero or more occurrences of n
+    3. n?: Used to find matches for any string that contains zero or one occurrences of n
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3477,7 +3450,7 @@ puppeteer:
 161. ### How do you change the style of a HTML element
 
      You can change inline style or classname of a HTML element using javascript
-     1. **Using style property:** You can modify inline style using style property
+  1. **Using style property:** You can modify inline style using style property
 
      <span dir="ltr" align="left">
 
@@ -3487,7 +3460,7 @@ puppeteer:
 
      </span>
 
-     1. **Using ClassName property:** It is easy to modify element class using className property
+  1. **Using ClassName property:** It is easy to modify element class using className property
 
      <span dir="ltr" align="left">
 
@@ -3731,7 +3704,7 @@ puppeteer:
 175. ### What are the ways to execute javascript after page load
 
      You can execute javascript after page load in many different ways,
-     1. **window.onload:**
+  1. **window.onload:**
 
      <span dir="ltr" align="left">
 
@@ -3741,7 +3714,7 @@ puppeteer:
 
      </span>
 
-     1. **document.onload:**
+  1. **document.onload:**
 
      <span dir="ltr" align="left">
 
@@ -3751,7 +3724,7 @@ puppeteer:
 
      </span>
 
-     1. **body onload:**
+  1. **body onload:**
 
      <span dir="ltr" align="left">
 
@@ -3843,8 +3816,8 @@ puppeteer:
 
      Below are the main benefits of using freeze method,
 
-     1. It is used for freezing objects and arrays.
-     2. It is used to make an object immutable.
+  1. It is used for freezing objects and arrays.
+  2. It is used to make an object immutable.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3916,12 +3889,12 @@ puppeteer:
 184. ### What are various operators supported by javascript
 
      An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
-     1. **Arithmetic Operators:** Includes + (Addition),– (Subtraction), * (Multiplication), / (Division), % (Modulus), + + (Increment)  and – – (Decrement)
-     2. **Comparison Operators:** Includes = =(Equal),!= (Not Equal), ===(Equal with type), > (Greater than),> = (Greater than or Equal to),< (Less than),<= (Less than or Equal to)
-     3. **Logical Operators:** Includes &&(Logical AND),||(Logical OR),!(Logical NOT)
-     4. **Assignment Operators:** Includes = (Assignment Operator), += (Add and Assignment Operator), – = (Subtract and Assignment Operator), *= (Multiply and Assignment), /= (Divide and Assignment), %= (Modules and Assignment)
-     5. **Ternary Operators:** It includes conditional(: ?) Operator
-     6. **typeof Operator:** It uses to find type of variable. The syntax looks like `typeof variable`
+  1. **Arithmetic Operators:** Includes + (Addition),– (Subtraction), * (Multiplication), / (Division), % (Modulus), + + (Increment)  and – – (Decrement)
+  2. **Comparison Operators:** Includes = =(Equal),!= (Not Equal), ===(Equal with type), > (Greater than),> = (Greater than or Equal to),< (Less than),<= (Less than or Equal to)
+  3. **Logical Operators:** Includes &&(Logical AND),||(Logical OR),!(Logical NOT)
+  4. **Assignment Operators:** Includes = (Assignment Operator), += (Add and Assignment Operator), – = (Subtract and Assignment Operator), *= (Multiply and Assignment), /= (Divide and Assignment), %= (Modules and Assignment)
+  5. **Ternary Operators:** It includes conditional(: ?) Operator
+  6. **typeof Operator:** It uses to find type of variable. The syntax looks like `typeof variable`
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3983,13 +3956,13 @@ puppeteer:
 187. ### What are the bitwise operators available in javascript
 
      Below are the list of bitwise logical operators used in JavaScript
-     1. Bitwise AND ( & )
-     2. Bitwise OR ( | )
-     3. Bitwise XOR ( ^ )
-     4. Bitwise NOT ( ~ )
-     5. Left Shift ( << )
-     6. Sign Propagating Right Shift ( >> )
-     7. Zero fill Right Shift ( >>> )
+  1. Bitwise AND ( & )
+  2. Bitwise OR ( | )
+  3. Bitwise XOR ( ^ )
+  4. Bitwise NOT ( ~ )
+  5. Left Shift ( << )
+  6. Sign Propagating Right Shift ( >> )
+  7. Zero fill Right Shift ( >>> )
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4016,9 +3989,9 @@ puppeteer:
 189. ### How do you determine whether object is frozen or not
 
      Object.isFrozen() method is used to determine if an object is frozen or not.An object is frozen if all of the below conditions hold true,
-     1. If it is not extensible.
-     2. If all of its properties are non-configurable.
-     3. If all its data properties are non-writable.
+  1. If it is not extensible.
+  2. If all of its properties are non-configurable.
+  3. If all its data properties are non-writable.
      The usage is going to be as follows,
 
      <span dir="ltr" align="left">
@@ -4050,26 +4023,26 @@ puppeteer:
      </span>
 
      Two values are the same if one of the following holds:
-     1. both undefined
-     2. both null
-     3. both true or both false
-     4. both strings of the same length with the same characters in the same order
-     5. both the same object (means both object have same reference)
-     6. both numbers and
-        both +0
-        both -0
-        both NaN
-        both non-zero and both not NaN and both have the same value.
+  1. both undefined
+  2. both null
+  3. both true or both false
+  4. both strings of the same length with the same characters in the same order
+  5. both the same object (means both object have same reference)
+  6. both numbers and
+     both +0
+     both -0
+     both NaN
+     both non-zero and both not NaN and both have the same value.
 
      **[⬆ فهرست](#فهرست)**
 
 191. ### What is the purpose of using object is method
 
      Some of the applications of Object's `is` method are follows,
-     1. It is used for comparison of two strings.
-     2. It is used for comparison of two numbers.
-     3. It is used for comparing the polarity of two numbers.
-     4. It is used for comparison of two objects.
+  1. It is used for comparison of two strings.
+  2. It is used for comparison of two numbers.
+  3. It is used for comparing the polarity of two numbers.
+  4. It is used for comparison of two objects.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4110,8 +4083,8 @@ puppeteer:
 
      Below are the some of main applications of Object.assign() method,
 
-     1. It is used for cloning an object.
-     2. It is used to merge objects with the same properties.
+  1. It is used for cloning an object.
+  2. It is used to merge objects with the same properties.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4178,8 +4151,8 @@ puppeteer:
 196. ### What are the applications of seal method
 
      Below are the main applications of Object.seal() method,
-     1. It is used for sealing objects and arrays.
-     2. It is used to make an object immutable.
+  1. It is used for sealing objects and arrays.
+  2. It is used to make an object immutable.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4192,9 +4165,9 @@ puppeteer:
 198. ### How do you determine if an object is sealed or not
 
      The Object.isSealed() method is used to determine if an object is sealed or not. An object is sealed if all of the below conditions hold true
-     1. If it is not extensible.
-     2. If all of its properties are non-configurable.
-     3. If it is not removable (but not necessarily non-writable).
+  1. If it is not extensible.
+  2. If all of its properties are non-configurable.
+  3. If it is not removable (but not necessarily non-writable).
      Let's see it in the action
 
      <span dir="ltr" align="left">
@@ -4337,20 +4310,20 @@ puppeteer:
 
      The main difference is that references to objects in Set are strong while references to objects in WeakSet are weak. i.e, An object in WeakSet can be garbage collected if there is no other reference to it.
      Other differences are,
-     1. Sets can store any value Whereas WeakSets can store only collections of objects
-     2. WeakSet does not have size property unlike Set
-     3. WeakSet does not have methods such as clear, keys, values, entries, forEach.
-     4. WeakSet is not iterable.
+  1. Sets can store any value Whereas WeakSets can store only collections of objects
+  2. WeakSet does not have size property unlike Set
+  3. WeakSet does not have methods such as clear, keys, values, entries, forEach.
+  4. WeakSet is not iterable.
 
      **[⬆ فهرست](#فهرست)**
 
 205. ### List down the collection of methods available on WeakSet
 
      Below are the list of methods available on WeakSet,
-     1. add(value): A new object is appended with the given value to the weakset
-     2. delete(value): Deletes the value from the WeakSet collection.
-     3. has(value): It returns true if the value is present in the WeakSet Collection, otherwise it returns false.
-     4. length(): It returns the length of weakSetObject
+  1. add(value): A new object is appended with the given value to the weakset
+  2. delete(value): Deletes the value from the WeakSet collection.
+  3. has(value): It returns true if the value is present in the WeakSet Collection, otherwise it returns false.
+  4. length(): It returns the length of weakSetObject
      Let's see the functionality of all the above methods in an example,
 
      <span dir="ltr" align="left">
@@ -4404,20 +4377,20 @@ puppeteer:
 
      The main difference is that references to key objects in Map are strong while references to key objects in WeakMap are weak. i.e, A key object in WeakMap can be garbage collected if there is no other reference to it.
      Other differences are,
-     1. Maps can store any key type Whereas WeakMaps can store only collections of key objects
-     2. WeakMap does not have size property unlike Map
-     3. WeakMap does not have methods such as clear, keys, values, entries, forEach.
-     4. WeakMap is not iterable.
+  1. Maps can store any key type Whereas WeakMaps can store only collections of key objects
+  2. WeakMap does not have size property unlike Map
+  3. WeakMap does not have methods such as clear, keys, values, entries, forEach.
+  4. WeakMap is not iterable.
 
      **[⬆ فهرست](#فهرست)**
 
 208. ### List down the collection of methods available on WeakMap
 
      Below are the list of methods available on WeakMap,
-     1. set(key, value): Sets the value for the key in the WeakMap object. Returns the WeakMap object.
-     2. delete(key): Removes any value associated to the key.
-     3. has(key): Returns a Boolean asserting whether a value has been associated to the key in the WeakMap object or not.
-     4. get(key): Returns the value associated to the key, or undefined if there is none.
+  1. set(key, value): Sets the value for the key in the WeakMap object. Returns the WeakMap object.
+  2. delete(key): Removes any value associated to the key.
+  3. has(key): Returns a Boolean asserting whether a value has been associated to the key in the WeakMap object or not.
+  4. get(key): Returns the value associated to the key, or undefined if there is none.
      Let's see the functionality of all the above methods in an example,
 
      <span dir="ltr" align="left">
@@ -4638,11 +4611,11 @@ puppeteer:
 219. ### What are the advantages of Getters and Setters
 
      Below are the list of benefits of Getters and Setters,
-     1. They provide simpler syntax
-     2. They are used for defining computed properties, or accessors in JS.
-     3. Useful to provide equivalence relation between properties and methods
-     4. They can provide better data quality
-     5. Useful for doing things behind the scenes with the encapsulated logic.
+  1. They provide simpler syntax
+  2. They are used for defining computed properties, or accessors in JS.
+  3. Useful to provide equivalence relation between properties and methods
+  4. They can provide better data quality
+  5. Useful for doing things behind the scenes with the encapsulated logic.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4715,30 +4688,30 @@ puppeteer:
 222. ### What are the conventions to be followed for the usage of switch case
 
      Below are the list of conventions should be taken care,
-     1. The expression can be of type either number or string.
-     2. Duplicate values are not allowed for the expression.
-     3. The default statement is optional. If the expression passed to switch does not match with any case value then the statement within default case will be executed.
-     4. The break statement is used inside the switch to terminate a statement sequence.
-     5. The break statement is optional. But if it is omitted, the execution will continue on into the next case.
+  1. The expression can be of type either number or string.
+  2. Duplicate values are not allowed for the expression.
+  3. The default statement is optional. If the expression passed to switch does not match with any case value then the statement within default case will be executed.
+  4. The break statement is used inside the switch to terminate a statement sequence.
+  5. The break statement is optional. But if it is omitted, the execution will continue on into the next case.
 
      **[⬆ فهرست](#فهرست)**
 
 223. ### What are primitive data types
 
      A primitive data type is data that has a primitive value (which has no properties or methods). There are 5 types of primitive data types.
-     
-     1. string
-     2. number
-     3. boolean
-     4. null
-     5. undefined
+
+  1. string
+  2. number
+  3. boolean
+  4. null
+  5. undefined
 
      **[⬆ فهرست](#فهرست)**
 
 224. ### What are the different ways to access object properties
 
      There are 3 possible ways for accessing the property of an object.
-     1. **Dot notation:** It uses dot for accessing the properties
+  1. **Dot notation:** It uses dot for accessing the properties
 
      <span dir="ltr" align="left">
 
@@ -4748,7 +4721,7 @@ puppeteer:
 
      </span>
 
-     1. **Square brackets notation:** It uses square brackets for property access
+  1. **Square brackets notation:** It uses square brackets for property access
 
      <span dir="ltr" align="left">
 
@@ -4758,7 +4731,7 @@ puppeteer:
 
      </span>
 
-     1. **Expression notation:** It uses expression in the square brackets
+  1. **Expression notation:** It uses expression in the square brackets
 
      <span dir="ltr" align="left">
 
@@ -4773,9 +4746,9 @@ puppeteer:
 225. ### What are the function parameter rules
 
      JavaScript functions follow below rules for parameters,
-     1. The function definitions do not specify data types for parameters.
-     2. Do not perform type checking on the passed arguments.
-     3. Do not check the number of arguments received.
+  1. The function definitions do not specify data types for parameters.
+  2. Do not perform type checking on the passed arguments.
+  3. Do not check the number of arguments received.
      i.e, The below function follows the above rules,
 
      <span dir="ltr" align="left">
@@ -4846,17 +4819,17 @@ puppeteer:
 229. ### What are the various statements in error handling
 
      Below are the list of statements used in an error handling,
-     1. **try:** This statement is used to test a block of code for errors
-     2. **catch:** This statement is used to handle the error
-     3. **throw:** This statement is used to create custom errors.
-     4. **finally:** This statement is used to execute code after try and catch regardless of the result.
+  1. **try:** This statement is used to test a block of code for errors
+  2. **catch:** This statement is used to handle the error
+  3. **throw:** This statement is used to create custom errors.
+  4. **finally:** This statement is used to execute code after try and catch regardless of the result.
 
      **[⬆ فهرست](#فهرست)**
 
 230. ### What are the two types of loops in javascript
 
-     1. **Entry Controlled loops:** In this kind of loop type, the test condition is tested before entering the loop body. For example, For Loop and While Loop comes under this category.
-     2. **Exit Controlled Loops:** In this kind of loop type, the test condition is tested or evaluated at the end of the loop body. i.e, the loop body will execute at least once irrespective of test condition true or false. For example, do-while loop comes under this category.
+  1. **Entry Controlled loops:** In this kind of loop type, the test condition is tested before entering the loop body. For example, For Loop and While Loop comes under this category.
+  2. **Exit Controlled Loops:** In this kind of loop type, the test condition is tested or evaluated at the end of the loop body. i.e, the loop body will execute at least once irrespective of test condition true or false. For example, do-while loop comes under this category.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -4929,8 +4902,8 @@ puppeteer:
 237. ### What is call stack
 
      Call Stack is a data structure for javascript interpreters to keep track of function calls in the program. It has two major actions,
-     1. Whenever you call a function for its execution, you are pushing it to the stack.
-     2. Whenever the execution is completed, the function is popped out of the stack.
+  1. Whenever you call a function for its execution, you are pushing it to the stack.
+  2. Whenever the execution is completed, the function is popped out of the stack.
 
      Let's take an example and it's state representation in a diagram format
 
@@ -4951,10 +4924,10 @@ puppeteer:
      </span>
 
      The above code  processed in a call stack as  below,
-     1. Add the `hungry()` function to the call stack list and execute the code.
-     2. Add the `eatFruits()` function to the call stack list and execute the code.
-     3. Delete the `eatFruits()` function from our call stack list.
-     4. Delete the `hungry()` function from the call stack list since there are no items anymore.
+  1. Add the `hungry()` function to the call stack list and execute the code.
+  2. Add the `eatFruits()` function to the call stack list and execute the code.
+  3. Delete the `eatFruits()` function from our call stack list.
+  4. Delete the `hungry()` function from the call stack list since there are no items anymore.
 
      ![Screenshot](images/call-stack.png)
 
@@ -4995,12 +4968,12 @@ puppeteer:
 240. ### What are the properties of Intl object
 
      Below are the list of properties available on Intl object,
-     1. **Collator:** These are the objects that enable language-sensitive string comparison.
-     2. **DateTimeFormat:** These are the objects that enable language-sensitive date and time formatting.
-     3. **ListFormat:** These are the objects that enable language-sensitive list formatting.
-     4. **NumberFormat:** Objects that enable language-sensitive number formatting.
-     5. **PluralRules:** Objects that enable plural-sensitive formatting and language-specific rules for plurals.
-     6. **RelativeTimeFormat:** Objects that enable language-sensitive relative time formatting.
+  1. **Collator:** These are the objects that enable language-sensitive string comparison.
+  2. **DateTimeFormat:** These are the objects that enable language-sensitive date and time formatting.
+  3. **ListFormat:** These are the objects that enable language-sensitive list formatting.
+  4. **NumberFormat:** Objects that enable language-sensitive number formatting.
+  5. **PluralRules:** Objects that enable plural-sensitive formatting and language-specific rules for plurals.
+  6. **RelativeTimeFormat:** Objects that enable language-sensitive relative time formatting.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5210,7 +5183,7 @@ puppeteer:
 
 251. ### What is typescript
 
-      TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
+     TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
 
       <span dir="ltr" align="left">
 
@@ -5220,7 +5193,7 @@ puppeteer:
 
       </span>
 
-      Let's see a simple example of TypeScript usage,
+     Let's see a simple example of TypeScript usage,
 
       ```typescript
       function greeting(name: string): string {
@@ -5232,16 +5205,16 @@ puppeteer:
       console.log(greeting(user));
       ```
 
-      The greeting method allows only string type as argument.
+     The greeting method allows only string type as argument.
 
-      **[⬆ فهرست](#فهرست)**
+     **[⬆ فهرست](#فهرست)**
 
 252. ### What are the differences between javascript and typescript
 
      Below are the list of differences between javascript and typescript,
 
      | feature | typescript | javascript |
-     |---- | --------- | ----
+          |---- | --------- | ----
      | Language paradigm  | Object oriented programming language  | Scripting language |
      | Typing support | Supports static typing  | It has dynamic typing |
      | Modules | Supported | Not supported |
@@ -5253,9 +5226,9 @@ puppeteer:
 253. ### What are the advantages of typescript over javascript
 
      Below are some of the advantages of typescript over javascript,
-     1. TypeScript is able to find compile time errors at the development time only and it makes sures less runtime errors. Whereas javascript is an interpreted language.
-     2. TypeScript is strongly-typed or supports static typing which allows for checking type correctness at compile time. This is not available in javascript.
-     3. TypeScript compiler can compile the .ts files into ES3,ES4 and ES5 unlike ES6 features of javascript which may not be supported in some browsers.
+  1. TypeScript is able to find compile time errors at the development time only and it makes sures less runtime errors. Whereas javascript is an interpreted language.
+  2. TypeScript is strongly-typed or supports static typing which allows for checking type correctness at compile time. This is not available in javascript.
+  3. TypeScript compiler can compile the .ts files into ES3,ES4 and ES5 unlike ES6 features of javascript which may not be supported in some browsers.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5441,9 +5414,9 @@ puppeteer:
 263. ### What are the different ways to make an object non-extensible
 
      You can mark an object non-extensible in 3 ways,
-     1. Object.preventExtensions
-     2. Object.seal
-     3. Object.freeze
+  1. Object.preventExtensions
+  2. Object.seal
+  3. Object.freeze
 
      <span dir="ltr" align="left">
 
@@ -5522,10 +5495,10 @@ puppeteer:
 267. ### Why do you need Obfuscation
 
      Below are the few reasons for Obfuscation,
-     1. The Code size will be reduced. So data transfers between server and client will be fast.
-     2. It hides the business logic from outside world and protects the code from others
-     3. Reverse engineering is highly difficult
-     4. The download time will be reduced
+  1. The Code size will be reduced. So data transfers between server and client will be fast.
+  2. It hides the business logic from outside world and protects the code from others
+  3. Reverse engineering is highly difficult
+  4. The download time will be reduced
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5538,8 +5511,8 @@ puppeteer:
 269. ### What are the advantages of minification
 
      Normally it is recommended to use minification for heavy traffic and intensive requirements of resources. It reduces file sizes with below benefits,
-     1. Decreases loading times of a web page
-     2. Saves bandwidth usages
+  1. Decreases loading times of a web page
+  2. Saves bandwidth usages
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5548,7 +5521,7 @@ puppeteer:
      Below are the main differences between Obfuscation and Encryption,
 
      | Feature | Obfuscation | Encryption |
-     |---- | --------- | ----
+          |---- | --------- | ----
      | Definition  | Changing the form of any data in any other form  | Changing the form of information to an unreadable format by using a key |
      | A key to decode | It can be decoded without any key  | It is required |
      | Target data format | It will be converted to a complex form  | Converted into an unreadable format  |
@@ -5558,11 +5531,11 @@ puppeteer:
 271. ### What are the common tools used for minification
 
      There are many online/offline tools to minify the javascript files,
-     1. Google's Closure Compiler
-     2. UglifyJS2
-     3. jsmin
-     4. javascript-minifier.com/
-     5. prettydiff.com
+  1. Google's Closure Compiler
+  2. UglifyJS2
+  3. jsmin
+  4. javascript-minifier.com/
+  5. prettydiff.com
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5622,8 +5595,8 @@ puppeteer:
 274. ### What are the DOM methods available for constraint validation
 
      The below DOM methods are available for constraint validation on an invalid input,
-     1. checkValidity(): It returns true if an input element contains valid data.
-     2. setCustomValidity(): It is used to set the validationMessage property of an input element.
+  1. checkValidity(): It returns true if an input element contains valid data.
+  2. setCustomValidity(): It is used to set the validationMessage property of an input element.
      Let's take an user login form with DOM validations
 
      <span dir="ltr" align="left">
@@ -5647,9 +5620,9 @@ puppeteer:
 
      Below are the list of some of the constraint validation DOM properties available,
 
-     1. validity: It provides a list of boolean properties related to the validity of an input element.
-     2. validationMessage: It displays the message when the validity is false.
-     3. willValidate: It indicates if an input element will be validated or not.
+  1. validity: It provides a list of boolean properties related to the validity of an input element.
+  2. validationMessage: It displays the message when the validity is false.
+  3. willValidate: It indicates if an input element will be validated or not.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5657,15 +5630,15 @@ puppeteer:
 
      The validity property of an input element provides a set of properties related to the validity of data.
 
-     1. customError: It returns true, if a custom validity message is set.
-     2. patternMismatch: It returns true, if an element's value does not match its pattern attribute.
-     3. rangeOverflow: It returns true, if an element's value is greater than its max attribute.
-     4. rangeUnderflow: It returns true, if an element's value is less than its min attribute.
-     5. stepMismatch: It returns true, if an element's value is invalid according to step attribute.
-     6. tooLong: It returns true, if an element's value exceeds its maxLength attribute.
-     7. typeMismatch: It returns true, if an element's value is invalid according to type attribute.
-     8. valueMissing: It returns true, if an element with a required attribute has no value.
-     9. valid: It returns true, if an element's value is valid.
+  1. customError: It returns true, if a custom validity message is set.
+  2. patternMismatch: It returns true, if an element's value does not match its pattern attribute.
+  3. rangeOverflow: It returns true, if an element's value is greater than its max attribute.
+  4. rangeUnderflow: It returns true, if an element's value is less than its min attribute.
+  5. stepMismatch: It returns true, if an element's value is invalid according to step attribute.
+  6. tooLong: It returns true, if an element's value exceeds its maxLength attribute.
+  7. typeMismatch: It returns true, if an element's value is invalid according to type attribute.
+  8. valueMissing: It returns true, if an element with a required attribute has no value.
+  9. valid: It returns true, if an element's value is valid.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5772,12 +5745,12 @@ puppeteer:
 282. ### What are the attributes provided by a property descriptor
 
      A property descriptor is a record which has the following attributes
-     1. value: The value associated with the property
-     2. writable: Determines whether the value associated with the property can be changed or not
-     3. configurable: Returns true if the type of this property descriptor can be changed and if the property can be deleted from the corresponding object.
-     4. enumerable: Determines whether the property appears during enumeration of the properties on the corresponding object or not.
-     5. set: A function which serves as a setter for the property
-     6. get: A function which serves as a getter for the property
+  1. value: The value associated with the property
+  2. writable: Determines whether the value associated with the property can be changed or not
+  3. configurable: Returns true if the type of this property descriptor can be changed and if the property can be deleted from the corresponding object.
+  4. enumerable: Determines whether the property appears during enumeration of the properties on the corresponding object or not.
+  5. set: A function which serves as a setter for the property
+  6. get: A function which serves as a getter for the property
 
      **[⬆ فهرست](#فهرست)**
 
@@ -5953,7 +5926,7 @@ puppeteer:
 291. ### How do you declare namespace
 
      Even though JavaScript lacks namespaces, we can use Objects , IIFE to create namespaces.
-     1. **Using Object Literal Notation:** Let's wrap variables and functions inside an Object literal which acts as a namespace. After that you can access them using object notation
+  1. **Using Object Literal Notation:** Let's wrap variables and functions inside an Object literal which acts as a namespace. After that you can access them using object notation
 
      <span dir="ltr" align="left">
 
@@ -5974,7 +5947,7 @@ puppeteer:
 
      </span>
 
-     1. **Using IIFE (Immediately invoked function expression):** The outer pair of parentheses of IIFE creates a local scope for all the code inside of it and makes the anonymous function a function expression. Due to that, you can create the same function in two different function expressions to act as a namespace.
+  1. **Using IIFE (Immediately invoked function expression):** The outer pair of parentheses of IIFE creates a local scope for all the code inside of it and makes the anonymous function a function expression. Due to that, you can create the same function in two different function expressions to act as a namespace.
 
      <span dir="ltr" align="left">
 
@@ -5994,7 +5967,7 @@ puppeteer:
 
      </span>
 
-     1. **Using a block and a let/const declaration:** In ECMAScript 6, you can simply use a block and a let declaration to restrict the scope of a variable to a block.
+  1. **Using a block and a let/const declaration:** In ECMAScript 6, you can simply use a block and a let declaration to restrict the scope of a variable to a block.
 
      <span dir="ltr" align="left">
 
@@ -6081,9 +6054,9 @@ puppeteer:
 295. ### What are the different methods to find HTML elements in DOM
 
      If you want to access any element in an HTML page, you need to start with accessing the document object. Later you can use any of the below methods to find the HTML element,
-     1. document.getElementById(id): It finds an element by Id
-     2. document.getElementsByTagName(name): It finds an element by tag name
-     3. document.getElementsByClassName(name): It finds an element by class name
+  1. document.getElementById(id): It finds an element by Id
+  2. document.getElementsByTagName(name): It finds an element by tag name
+  3. document.getElementsByClassName(name): It finds an element by class name
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6251,18 +6224,18 @@ puppeteer:
 304. ### List down some of the features of ES6
 
      Below are the list of some new features of ES6,
-     1. Support for constants or immutable variables
-     2. Block-scope support for variables, constants and functions
-     3. Arrow functions
-     4. Default parameters
-     5. Rest and Spread Parameters
-     6. Template Literals
-     7. Multi-line Strings
-     8. Destructuring Assignment
-     9. Enhanced Object Literals
-     10. Promises
-     11. Classes
-     12. Modules
+  1. Support for constants or immutable variables
+  2. Block-scope support for variables, constants and functions
+  3. Arrow functions
+  4. Default parameters
+  5. Rest and Spread Parameters
+  6. Template Literals
+  7. Multi-line Strings
+  8. Destructuring Assignment
+  9. Enhanced Object Literals
+  10. Promises
+  11. Classes
+  12. Modules
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6498,7 +6471,7 @@ puppeteer:
 
 313. ### What are raw strings
 
-      ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
+     ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
 
       <span dir="ltr" align="left">
 
@@ -6509,7 +6482,7 @@ puppeteer:
 
       </span>
 
-      If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines
+     If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines
 
      <span dir="ltr" align="left">
 
@@ -6522,7 +6495,7 @@ puppeteer:
 
       </span>
 
-      Also, the raw property is available on the first argument to the tag function
+     Also, the raw property is available on the first argument to the tag function
 
       <span dir="ltr" align="left">
 
@@ -6534,7 +6507,7 @@ puppeteer:
 
       </span>
 
-      **[⬆ فهرست](#فهرست)**
+     **[⬆ فهرست](#فهرست)**
 
 314. ### What is destructuring assignment
 
@@ -6660,7 +6633,7 @@ puppeteer:
 319. ### What are the use cases for dynamic imports
 
      Below are some of the use cases of using dynamic imports over static imports,
-     1. Import a module on-demand or conditionally. For example, if you want to load a polyfill on legacy browser
+  1. Import a module on-demand or conditionally. For example, if you want to load a polyfill on legacy browser
 
      <span dir="ltr" align="left">
 
@@ -6673,7 +6646,7 @@ puppeteer:
 
      </span>
 
-     1. Compute the module specifier at runtime. For example, you can use it for internationalization.
+  1. Compute the module specifier at runtime. For example, you can use it for internationalization.
 
      <span dir="ltr" align="left">
 
@@ -6683,7 +6656,7 @@ puppeteer:
 
      </span>
 
-     1. Import a module from within a regular script instead a module.
+  1. Import a module from within a regular script instead a module.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6691,14 +6664,14 @@ puppeteer:
 
      Typed arrays are array-like objects from ECMAScript 6 API for handling binary data. JavaScript provides 8 Typed array types,
 
-     1. Int8Array: An array of 8-bit signed integers
-     2. Int16Array: An array of 16-bit signed integers
-     3. Int32Array: An array of 32-bit signed integers
-     4. Uint8Array: An array of 8-bit unsigned integers
-     5. Uint16Array: An array of 16-bit unsigned integers
-     6. Uint32Array: An array of 32-bit unsigned integers
-     7. Float32Array: An array of 32-bit floating point numbers
-     8. Float64Array: An array of 64-bit floating point numbers
+  1. Int8Array: An array of 8-bit signed integers
+  2. Int16Array: An array of 16-bit signed integers
+  3. Int32Array: An array of 32-bit signed integers
+  4. Uint8Array: An array of 8-bit unsigned integers
+  5. Uint16Array: An array of 16-bit unsigned integers
+  6. Uint32Array: An array of 32-bit unsigned integers
+  7. Float32Array: An array of 32-bit floating point numbers
+  8. Float64Array: An array of 64-bit floating point numbers
 
      For example, you can create an array of 8-bit signed integers as below
 
@@ -6718,18 +6691,18 @@ puppeteer:
 321. ### What are the advantages of module loaders
 
      The module loaders provides the below features,
-     1. Dynamic loading
-     2. State isolation
-     3. Global namespace isolation
-     4. Compilation hooks
-     5. Nested virtualization
+  1. Dynamic loading
+  2. State isolation
+  3. Global namespace isolation
+  4. Compilation hooks
+  5. Nested virtualization
 
      **[⬆ فهرست](#فهرست)**
 
 322. ### What is collation
 
      Collation is used for sorting a set of strings and searching within a set of strings. It is parameterized by locale and aware of Unicode. Let's take comparison and sorting features,
-     1. **Comparison:**
+  1. **Comparison:**
 
      <span dir="ltr" align="left">
 
@@ -6743,7 +6716,7 @@ puppeteer:
 
      </span>
 
-     1. **Sorting:**
+  1. **Sorting:**
 
      <span dir="ltr" align="left">
 
@@ -7016,7 +6989,7 @@ puppeteer:
 340. ### What are the list of cases error thrown from non-strict mode to strict mode
 
      When you apply 'use strict'; syntax, some of the below cases will throw a SyntaxError before executing the script
-     1. When you use Octal syntax
+  1. When you use Octal syntax
 
      <span dir="ltr" align="left">
 
@@ -7026,11 +6999,11 @@ puppeteer:
 
      </span>
 
-     1. Using `with` statement
-     2. When you use delete operator on a variable name
-     3. Using eval or arguments as variable or function argument name
-     4. When you use newly reserved keywords
-     5. When you declare a function in a block
+  1. Using `with` statement
+  2. When you use delete operator on a variable name
+  3. Using eval or arguments as variable or function argument name
+  4. When you use newly reserved keywords
+  5. When you declare a function in a block
 
      <span dir="ltr" align="left">
 
@@ -7116,12 +7089,12 @@ puppeteer:
 
 345. ### What is the difference between Shallow and Deep copy
 
-      There are two ways to copy an object,
+     There are two ways to copy an object,
 
-      **Shallow Copy:**
-      Shallow copy is a bitwise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.
+     **Shallow Copy:**
+     Shallow copy is a bitwise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.
 
-      **Example**
+     **Example**
 
       <span dir="ltr" align="left">
 
@@ -7133,7 +7106,7 @@ puppeteer:
 
       </span>
 
-      to create a duplicate
+     to create a duplicate
 
       <span dir="ltr" align="left">
 
@@ -7143,7 +7116,7 @@ puppeteer:
 
       </span>
 
-      if we change some property value in the duplicate one like this:
+     if we change some property value in the duplicate one like this:
 
       <span dir="ltr" align="left">
 
@@ -7153,12 +7126,12 @@ puppeteer:
 
       </span>
 
-      The above statement will also change the name of `empDetails`, since we have a shallow copy. That means we're losing the original data as well.
+     The above statement will also change the name of `empDetails`, since we have a shallow copy. That means we're losing the original data as well.
 
-      **Deep copy:**
-      A deep copy copies all fields, and makes copies of dynamically allocated memory pointed to by the fields. A deep copy occurs when an object is copied along with the objects to which it refers.
+     **Deep copy:**
+     A deep copy copies all fields, and makes copies of dynamically allocated memory pointed to by the fields. A deep copy occurs when an object is copied along with the objects to which it refers.
 
-      **Example**
+     **Example**
 
       <span dir="ltr" align="left">
 
@@ -7170,7 +7143,7 @@ puppeteer:
 
       </span>
 
-      Create a deep copy by using the properties from the original object into new variable
+     Create a deep copy by using the properties from the original object into new variable
 
       <span dir="ltr" align="left">
 
@@ -7184,9 +7157,9 @@ puppeteer:
 
       </span>
 
-      Now if you change `empDetailsDeepCopy.name`, it will only affect `empDetailsDeepCopy` & not `empDetails`
+     Now if you change `empDetailsDeepCopy.name`, it will only affect `empDetailsDeepCopy` & not `empDetails`
 
-      **[⬆ فهرست](#فهرست)**
+     **[⬆ فهرست](#فهرست)**
 
 346. ### How do you create specific number of copies of a string
 
@@ -7358,7 +7331,7 @@ puppeteer:
 
      A *repaint* occurs when changes are made which affect the visibility of an element, but not its layout. Examples of this include outline, visibility, or background color. A *reflow* involves changes that affect the layout of a portion of the page (or the whole page). Resizing the browser window, changing the font, content changing (such as user typing text), using JavaScript methods involving computed styles, adding or removing elements from the DOM, and changing an element's classes are a few of the things that can trigger reflow. Reflow of an element causes the subsequent reflow of all child and ancestor elements as well as any elements following it in the DOM.
 
-      **[⬆ فهرست](#فهرست)**
+     **[⬆ فهرست](#فهرست)**
 
 356. ### What happens with negating an array
 
@@ -7411,9 +7384,9 @@ puppeteer:
 359. ### How do you create self string using special characters
 
      The self string can be formed with the combination of `[]()!+` characters. You need to remember the below conventions to achieve this pattern.
-     1. Since Arrays are truthful values, negating the arrays will produce false: ![] === false
-     2. As per JavaScript coercion rules, the addition of arrays together will toString them: [] + [] === ""
-     3. Prepend an array with + operator will convert an array to false, the negation will make it true and finally converting the result will produce value '1': +(!(+[])) === 1
+  1. Since Arrays are truthful values, negating the arrays will produce false: ![] === false
+  2. As per JavaScript coercion rules, the addition of arrays together will toString them: [] + [] === ""
+  3. Prepend an array with + operator will convert an array to false, the negation will make it true and finally converting the result will produce value '1': +(!(+[])) === 1
 
      By applying the above rules, we can derive below conditions
 
@@ -7581,9 +7554,9 @@ puppeteer:
 368. ### What are the placeholders from console object
 
      Below are the list of placeholders available from console object,
-     1. %o — It takes an object,
-     2. %s — It takes a string,
-     3. %d — It is used for a decimal or integer
+  1. %o — It takes an object,
+  2. %s — It takes a string,
+  3. %d — It is used for a decimal or integer
      These placeholders can be represented in the console.log as below
 
      <span dir="ltr" align="left">
@@ -7648,7 +7621,7 @@ puppeteer:
      </span>
 
      It prints the HTML element in the console,
-     
+
      ![Screenshot](images/console-html.png)
 
      **[⬆ فهرست](#فهرست)**
@@ -7667,7 +7640,7 @@ puppeteer:
      </span>
 
      The data visualized in a table format,
-     
+
      ![Screenshot](images/console-table.png)
      **Not:** Remember that `console.table()` is not supported in IE.
 
@@ -7831,10 +7804,10 @@ puppeteer:
 382. ### What are the different ways to deal with Asynchronous Code
 
      Below are the list of different ways to deal with Asynchronous code.
-     1. Callbacks
-     2. Promises
-     3. Async/await
-     4. Third-party libraries such as async.js,bluebird etc
+  1. Callbacks
+  2. Promises
+  3. Async/await
+  4. Third-party libraries such as async.js,bluebird etc
 
      **[⬆ فهرست](#فهرست)**
 
@@ -7842,9 +7815,9 @@ puppeteer:
 
      Until a few days back, One shortcoming of native promises is no direct way to cancel a fetch request. But the new `AbortController` from js specification allows you to use a signal to abort one or multiple fetch calls.
      The basic flow of cancelling a fetch request would be as below,
-     1. Create an `AbortController` instance
-     2. Get the signal property of an instance and pass the signal as a fetch option for signal
-     3. Call the AbortController's abort property to cancel all fetches that use that signal
+  1. Create an `AbortController` instance
+  2. Get the signal property of an instance and pass the signal as a fetch option for signal
+  3. Call the AbortController's abort property to cancel all fetches that use that signal
      For example, let's pass the same signal to multiple fetch calls will cancel all requests with that signal,
 
      <span dir="ltr" align="left">
@@ -7880,7 +7853,7 @@ puppeteer:
 384. ### What is web speech API
 
      Web speech API is used to enable modern browsers recognize and synthesize speech(i.e, voice data into web apps). This API has been introduced by W3C Community in the year 2012. It has two main parts,
-     1. **SpeechRecognition (Asynchronous Speech Recognition or Speech-to-Text):** It provides the ability to recognize voice context from an audio input and respond accordingly. This is accessed by the `SpeechRecognition` interface.
+  1. **SpeechRecognition (Asynchronous Speech Recognition or Speech-to-Text):** It provides the ability to recognize voice context from an audio input and respond accordingly. This is accessed by the `SpeechRecognition` interface.
      The below example shows on how to use this API to get text from speech,
 
      <span dir="ltr" align="left">
@@ -7898,7 +7871,7 @@ puppeteer:
      </span>
 
      In this API, browser is going to ask you for permission to use your microphone
-     1. **SpeechSynthesis (Text-to-Speech):** It provides the ability to recognize voice context from an audio input and respond. This is accessed by the `SpeechSynthesis` interface.
+  1. **SpeechSynthesis (Text-to-Speech):** It provides the ability to recognize voice context from an audio input and respond. This is accessed by the `SpeechSynthesis` interface.
      For example, the below code is used to get voice/speech from text,
 
      <span dir="ltr" align="left">
@@ -7985,9 +7958,9 @@ puppeteer:
 
      A task is any javascript code/program which is scheduled to be run by the standard mechanisms such as initially starting to run a program, run an event callback, or an interval or timeout being fired. All these tasks are scheduled on a task queue.
      Below are the list of use cases to add tasks to the task queue,
-     1. When a new javascript program is executed directly from console or running by the ```<script>``` element, the task will be added to the task queue.
-     2. When an event fires, the event callback added to task queue
-     3. When a setTimeout or setInterval is reached, the corresponding callback added to task queue
+  1. When a new javascript program is executed directly from console or running by the ```<script>``` element, the task will be added to the task queue.
+  2. When an event fires, the event callback added to task queue
+  3. When a setTimeout or setInterval is reached, the corresponding callback added to task queue
 
      **[⬆ فهرست](#فهرست)**
 
@@ -8036,7 +8009,7 @@ puppeteer:
      Some of the major difference in a tabular form
 
      | Promises | Observables |
-     |---- | ---------
+          |---- | ---------
      | Emits only a single value at a time  | Emits multiple values over a period of time(stream of values ranging from 0 to multiple) |
      | Eager in nature; they are going to be called immediately  | Lazy in nature; they require subscription to be invoked |
      | Promise is always asynchronous even though it resolved immediately | Observable can be either synchronous or asynchronous|
@@ -8104,9 +8077,9 @@ puppeteer:
 398. ### What is babel
 
      Babel is a JavaScript transpiler to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Some of the main features are listed below,
-     1. Transform syntax
-     2. Polyfill features that are missing in your target environment (using @babel/polyfill)
-     3. Source code transformations (or codemods)
+  1. Transform syntax
+  2. Polyfill features that are missing in your target environment (using @babel/polyfill)
+  3. Source code transformations (or codemods)
 
      **[⬆ فهرست](#فهرست)**
 
@@ -8333,11 +8306,11 @@ puppeteer:
 
      But there are many modern JavaScript environments that won't print any errors. You can fix this problem in different ways,
 
-     1. **Add catch block at the end of each chain:** You can add catch block to the end of each of your promise chains
+  1. **Add catch block at the end of each chain:** You can add catch block to the end of each of your promise chains
 
-         
+
          <span dir="ltr" align="left">
-         
+
          ```javascript
          Promise.resolve('promised value').then(function() {
              throw new Error('error');
@@ -8345,7 +8318,7 @@ puppeteer:
            console.error(error.stack);
          });
          ```
-         
+
          </span>
 
         But it is quite difficult to type for each promise chain and verbose too.
@@ -8360,10 +8333,10 @@ puppeteer:
              throw new Error('error');
          });
          ```
-         
+
          </span>
-         
-         
+
+
 Let's say you want to fetch data using HTTP and later perform processing on the resulting data asynchronously. You can write `done` block as below,
 
          <span dir="ltr" align="left">
@@ -8377,10 +8350,10 @@ Let's say you want to fetch data using HTTP and later perform processing on the 
              displayData(processed);
            });
          ```
-         
+
          </span>
-         
-         
+
+
 In future, if the processing library API changed to synchronous then you can remove `done` block as below,
 
          <span dir="ltr" align="left">
@@ -8391,10 +8364,10 @@ In future, if the processing library API changed to synchronous then you can rem
               return displayData(processDataAsync(result));
             })
          ```
-         
+
          </span>
-         
-         
+
+
 and then you forgot to add `done` block to `then` block leads to silent errors.
 
      3. **Extend ES6 Promises by Bluebird:**
@@ -8407,10 +8380,10 @@ and then you forgot to add `done` block to `then` block leads to silent errors.
              throw error;
          });
          ```
-         
+
          </span>
-         
-         
+
+
 and discard a rejection, just handle it with an empty catch
 
          <span dir="ltr" align="left">
@@ -8418,10 +8391,10 @@ and discard a rejection, just handle it with an empty catch
          ```javascript
          Promise.reject('error value').catch(function() {});
          ```
-         
+
          </span>
-         
-         
+
+
 **[⬆ فهرست](#فهرست)**
 
 409. ### What is deno
@@ -8464,9 +8437,9 @@ and discard a rejection, just handle it with an empty catch
      console.log(iterator.next());    // → {value: 3, done: false}
      console.log(iterator.next());    // → {value: undefined, done: true}
      ```
-     
+
      </span>
-     
+
 
      The above process can be simplified using a generator function,
 
@@ -8489,9 +8462,9 @@ and discard a rejection, just handle it with an empty catch
       console.log(iterator.next());    // {value: 3, done: false}
       console.log(iterator.next());    // {value: undefined, done: true}
      ```
-     
+
      </span>
-     
+
 
      **[⬆ فهرست](#فهرست)**
 
@@ -8537,7 +8510,7 @@ and discard a rejection, just handle it with an empty catch
 
 412. ### How do you check an object is a promise or not
 
-      If you don't know if a value is a promise or not, wrapping the value as `Promise.resolve(value)` which returns a promise
+     If you don't know if a value is a promise or not, wrapping the value as `Promise.resolve(value)` which returns a promise
 
       <span dir="ltr" align="left">
 
@@ -8561,7 +8534,7 @@ and discard a rejection, just handle it with an empty catch
 
       </span>
 
-      Another way is to check for `.then()` handler type
+     Another way is to check for `.then()` handler type
 
       <span dir="ltr" align="left">
 
@@ -8580,14 +8553,14 @@ and discard a rejection, just handle it with an empty catch
 
       </span>
 
-      **[⬆ فهرست](#فهرست)**
+     **[⬆ فهرست](#فهرست)**
 
 413. ### How to detect if a function is called as constructor
 
-      You can use `new.target` pseudo-property to detect whether a function was called as a constructor(using the new operator) or as a regular function call.
+     You can use `new.target` pseudo-property to detect whether a function was called as a constructor(using the new operator) or as a regular function call.
 
-      1. If a constructor or function invoked using the new operator, new.target returns a reference to the constructor or function.
-      2. For function calls, new.target is undefined.
+  1. If a constructor or function invoked using the new operator, new.target returns a reference to the constructor or function.
+  2. For function calls, new.target is undefined.
 
       <span dir="ltr" align="left">
 
@@ -8613,9 +8586,9 @@ and discard a rejection, just handle it with an empty catch
 
      There are three main differences between arguments object and rest parameters
 
-     1. The arguments object is an array-like but not an array. Whereas the rest parameters are array instances.
-     2. The arguments object does not support methods such as sort, map, forEach, or pop. Whereas these methods can be used in rest parameters.
-     3. The rest parameters are only the ones that haven’t been given a separate name, while  the arguments object contains all arguments passed to the function
+  1. The arguments object is an array-like but not an array. Whereas the rest parameters are array instances.
+  2. The arguments object does not support methods such as sort, map, forEach, or pop. Whereas these methods can be used in rest parameters.
+  3. The rest parameters are only the ones that haven’t been given a separate name, while  the arguments object contains all arguments passed to the function
 
      **[⬆ فهرست](#فهرست)**
 
@@ -8629,88 +8602,88 @@ and discard a rejection, just handle it with an empty catch
 
      There are five kinds of generators,
 
-     1. **Generator function declaration:**
+  1. **Generator function declaration:**
 
-          <span dir="ltr" align="left">
+       <span dir="ltr" align="left">
 
-          ```javascript
-          function* myGenFunc() {
-               yield 1;
-               yield 2;
-               yield 3;
+       ```javascript
+       function* myGenFunc() {
+            yield 1;
+            yield 2;
+            yield 3;
+       }
+       const genObj = myGenFunc();
+       ```
+
+       </span>
+
+  2. **Generator function expressions:**
+
+       <span dir="ltr" align="left">
+
+       ```javascript
+       const myGenFunc = function* () {
+            yield 1;
+            yield 2;
+            yield 3;
+       };
+       const genObj = myGenFunc();
+       ```
+
+       </span>
+
+  3. **Generator method definitions in object literals:**
+
+       <span dir="ltr" align="left">
+
+       ```javascript
+       const myObj = {
+          * myGeneratorMethod() {
+             yield 1;
+             yield 2;
+             yield 3;
           }
-          const genObj = myGenFunc();
-          ```
-         
-          </span>
+       };
+       const genObj = myObj.myGeneratorMethod();
+       ```
 
-     2. **Generator function expressions:**
+       </span>
 
-          <span dir="ltr" align="left">
+  4. **Generator method definitions in class:**
 
-          ```javascript
-          const myGenFunc = function* () {
-               yield 1;
-               yield 2;
-               yield 3;
-          };
-          const genObj = myGenFunc();
-          ```
+       <span dir="ltr" align="left">
 
-          </span>
-
-     3. **Generator method definitions in object literals:**
-
-          <span dir="ltr" align="left">
-
-          ```javascript
-          const myObj = {
-             * myGeneratorMethod() {
-                yield 1;
-                yield 2;
-                yield 3;
-             }
-          };
-          const genObj = myObj.myGeneratorMethod();
-          ```
-
-          </span>
-
-     4. **Generator method definitions in class:**
-
-          <span dir="ltr" align="left">
-
-          ```javascript
-          class MyClass {
-             * myGeneratorMethod() {
-                yield 1;
-                yield 2;
-                yield 3;
-             }
+       ```javascript
+       class MyClass {
+          * myGeneratorMethod() {
+             yield 1;
+             yield 2;
+             yield 3;
           }
-          const myObject = new MyClass();
-          const genObj = myObject.myGeneratorMethod();
-          ```
+       }
+       const myObject = new MyClass();
+       const genObj = myObject.myGeneratorMethod();
+       ```
 
-          </span>
+       </span>
 
-     5. **Generator as a computed property:**
+  5. **Generator as a computed property:**
 
-          <span dir="ltr" align="left">
+       <span dir="ltr" align="left">
 
-          ```javascript
-          const SomeObj = {
-             *[Symbol.iterator] () {
-               yield 1;
-               yield 2;
-               yield 3;
-             }
+       ```javascript
+       const SomeObj = {
+          *[Symbol.iterator] () {
+            yield 1;
+            yield 2;
+            yield 3;
           }
+       }
 
-          console.log(Array.from(SomeObj)); // [ 1, 2, 3 ]
-          ```
+       console.log(Array.from(SomeObj)); // [ 1, 2, 3 ]
+       ```
 
-          </span>
+       </span>
 
      **[⬆ فهرست](#فهرست)**
 
@@ -8718,12 +8691,12 @@ and discard a rejection, just handle it with an empty catch
 
      Below are the list of built-in iterables in javascript,
 
-     1. Arrays and TypedArrays
-     2. Strings: Iterate over each character or Unicode code-points
-     3. Maps: iterate over its key-value pairs
-     4. Sets: iterates over their elements
-     5. arguments: An array-like special variable in functions
-     6. DOM collection such as NodeList
+  1. Arrays and TypedArrays
+  2. Strings: Iterate over each character or Unicode code-points
+  3. Maps: iterate over its key-value pairs
+  4. Sets: iterates over their elements
+  5. arguments: An array-like special variable in functions
+  6. DOM collection such as NodeList
 
      **[⬆ فهرست](#فهرست)**
 
@@ -8731,8 +8704,8 @@ and discard a rejection, just handle it with an empty catch
 
      Both for...in and for...of statements iterate over js data structures. The only difference is over what they iterate:
 
-     1. for..in iterates over all enumerable property keys of an object
-     2. for..of iterates over the values of an iterable object.
+  1. for..in iterates over all enumerable property keys of an object
+  2. for..of iterates over the values of an iterable object.
 
      Let's explain this difference with an example,
 
@@ -8792,8 +8765,8 @@ and discard a rejection, just handle it with an empty catch
 
 420. ### What is the difference between isNaN and Number.isNaN?
 
-     1. **isNaN**: The global function `isNaN` converts the argument to a Number and returns true if the resulting value is NaN.
-     2. **Number.isNaN**: This method does not convert the argument. But it returns true when the type is a Number and value is NaN.
+  1. **isNaN**: The global function `isNaN` converts the argument to a Number and returns true if the resulting value is NaN.
+  2. **Number.isNaN**: This method does not convert the argument. But it returns true when the type is a Number and value is NaN.
 
      Let's see the difference with an example,
 
