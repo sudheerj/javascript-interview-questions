@@ -5,7 +5,7 @@
 
 #### 1. What is the output of below code
 
-    
+
 <span dir="ltr" align="left">
 
 ```javascript
@@ -32,7 +32,7 @@ function Vehicle(model, color, year, country) {
 
 ##### پاسخ: 4
 
-   The function declarations are hoisted similar to any variables. So the placement for `Vehicle` function declaration doesn't make any difference.
+The function declarations are hoisted similar to any variables. So the placement for `Vehicle` function declaration doesn't make any difference.
 
 </p>
 </details>
@@ -129,8 +129,8 @@ The statements order is based on the event loop mechanism. The order of statemen
 
 #### 4. What is the output of below equality check
 
-    
-    
+
+
 <span dir="ltr" align="left">
 
 ```javascript
@@ -138,7 +138,7 @@ console.log(0.1 + 0.2 === 0.3);
 ```
 
 </span>
-    
+
 - 1: false
 - 2: true
 
@@ -157,10 +157,10 @@ You can find more details about the explanation here [0.30000000000000004.com/](
 
 #### 5. What is the output of below code
 
-    
-    
+
+
 <span dir="ltr" align="left">
-    
+
 ```javascript
 var y = 1;
   if (function f(){}) {
@@ -170,7 +170,7 @@ var y = 1;
 ```
 
 </span>
-    
+
 - 1: 1function
 - 2: 1object
 - 3: ReferenceError
@@ -187,10 +187,10 @@ The main points in the above code snippets are,
 2. Since it is not declared(or assigned) anywhere, f is undefined and typeof f is undefined too.
 
 In other words, it is same as
-    
-    
+
+
 <span dir="ltr" align="left">
-    
+
 ```javascript
 var y = 1;
   if ('foo') {
@@ -200,7 +200,7 @@ var y = 1;
 ```
 
 </span>
-    
+
 **Note:** It returns 1object for MS Edge browser
 </p>
 </details>
@@ -208,6 +208,9 @@ var y = 1;
 ---
 
 #### 6. What is the output of below code
+
+
+<span dir="ltr" align="left">
 
 ```javascript
 function foo() {
@@ -218,6 +221,9 @@ function foo() {
 }
 console.log(foo());
 ```
+
+</span>
+
 
 - 1: Hello World
 - 2: Object {message: "Hello World"}
@@ -233,6 +239,9 @@ This is a semicolon issue. Normally semicolons are optional in JavaScript. So if
 
 Whereas if the opening curly brace is along with the return keyword then the function is going to be returned as expected.
 
+
+<span dir="ltr" align="left">
+
 ```javascript
 function foo() {
   return {
@@ -242,12 +251,17 @@ function foo() {
 console.log(foo()); // {message: "Hello World"}
 ```
 
+</span>
+
 </p>
 </details>
 
 ---
 
 #### 7. What is the output of below code
+
+
+<span dir="ltr" align="left">
 
 ```javascript
 var myChars = ['a', 'b', 'c', 'd']
@@ -256,6 +270,8 @@ console.log(myChars);
 console.log(myChars[0]);
 console.log(myChars.length);
 ```
+
+</span>
 
 - 1: [empty, 'b', 'c', 'd'], empty, 3
 - 2: [null, 'b', 'c', 'd'], empty, 3
@@ -276,6 +292,8 @@ If you try to print myChars then you can observe that it doesn't set an undefine
 
 #### 8. What is the output of below code in latest Chrome
 
+<span dir="ltr" align="left">
+
 ```javascript
 var array1 = new Array(3);
 console.log(array1);
@@ -287,6 +305,8 @@ console.log(array2);
 var array3 = [,,,];
 console.log(array3);
 ```
+
+</span>
 
 - 1: [undefined × 3], [undefined × 2, 100], [undefined × 3]
 - 2: [empty × 3], [empty × 2, 100], [empty × 3]
@@ -307,6 +327,8 @@ The latest chrome versions display `sparse array`(they are filled with holes) us
 
 #### 9. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const obj = {
   prop1: function() { return 0 },
@@ -318,6 +340,8 @@ console.log(obj.prop1());
 console.log(obj.prop2());
 console.log(obj.prop3());
 ```
+
+</span>
 
 - 1: 0, 1, 2
 - 2: 0, { return 1 }, 2
@@ -337,10 +361,14 @@ ES6 provides method definitions and property shorthands for objects. So both pro
 
 #### 10. What is the output of below code
 
+<span dir="ltr" align="left">
+
 ```javascript
 console.log(1 < 2 < 3);
 console.log(3 > 2 > 1);
 ```
+
+</span>
 
 - 1: true, true
 - 2: true, false
@@ -374,12 +402,16 @@ Whereas the second statement follows the below order,
 
 #### 11. What is the output of below code in non-strict mode
 
+<span dir="ltr" align="left">
+
 ```javascript
 function printNumbers(first, second, first) {
   console.log(first, second, first);
 }
 printNumbers(1, 2, 3);
 ```
+
+</span>
 
 - 1: 1, 2, 3
 - 2: 3, 2, 3
@@ -402,12 +434,16 @@ The value of the first parameter is mapped to the third argument which is passed
 
 #### 12. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const printNumbersArrow = (first, second, first) => {
   console.log(first, second, first);
 }
 printNumbersArrow(1, 2, 3);
 ```
+
+</span>
 
 - 1: 1, 2, 3
 - 2: 3, 2, 3
@@ -427,10 +463,14 @@ Unlike regular functions, the arrow functions doesn't not allow duplicate parame
 
 #### 13. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const arrowFunc = () => arguments.length;
 console.log(arrowFunc(1, 2, 3));
 ```
+
+</span>
 
 - 1: ReferenceError: arguments is not defined
 - 2: 3
@@ -446,6 +486,8 @@ Arrow functions do not have an `arguments, super, this, or new.target` bindings.
 
 Where as the normal function provides the number of arguments passed to the function
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const func = function () {
                     return arguments.length;
@@ -453,12 +495,18 @@ const func = function () {
 console.log(func(1, 2, 3));
 ```
 
+</span>
+
 But If you still want to use an arrow function then rest operator on arguments provides the expected arguments
+
+<span dir="ltr" align="left" >
 
 ```javascript
 const arrowFunc = (...args) => args.length;
 console.log(arrowFunc(1, 2, 3));
 ```
+
+</span>
 
 </p>
 </details>
@@ -467,10 +515,14 @@ console.log(arrowFunc(1, 2, 3));
 
 #### 14. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 console.log( String.prototype.trimLeft.name === 'trimLeft' );
 console.log( String.prototype.trimLeft.name === 'trimStart' );
 ```
+
+</span>
 
 - 1: True, False
 - 2: False, True
@@ -488,9 +540,13 @@ In order to be consistent with functions like `String.prototype.padStart`, the s
 
 #### 15. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 console.log(Math.max());
 ```
+
+</span>
 
 - 1: undefined
 - 2: Infinity
@@ -511,10 +567,14 @@ console.log(Math.max());
 
 #### 16. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 console.log(10 == [10]);
 console.log(10 == [[[[[[[10]]]]]]]);
 ```
+
+</span>
 
 - 1: True, True
 - 2: True, False
@@ -526,9 +586,13 @@ console.log(10 == [[[[[[[10]]]]]]]);
 
 ##### پاسخ: 1
 As per the comparison algorithm in the ECMAScript specification(ECMA-262), the above expression converted into JS as below
+<span dir="ltr" align="left" >
+
 ```javascript
 10 === Number([10].valueOf().toString()) // 10
 ```
+
+</span>
 So it doesn't matter about number brackets([]) around the number, it is always converted to a number in the expression.
 </p>
 </details>
@@ -537,10 +601,14 @@ So it doesn't matter about number brackets([]) around the number, it is always c
 
 #### 17. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 console.log(10 + '10');
 console.log(10 - '10');
 ```
+
+</span>
 
 - 1: 20, 0
 - 2: 1010, 0
@@ -560,6 +628,8 @@ The concatenation operator(+) is applicable for both number and string types. So
 
 #### 18. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 console.log([0] == false);
 if([0]) {
@@ -569,6 +639,8 @@ console.log("I'm False");
 }
 
 ```
+
+</span>
 
 - 1: True, I'm True
 - 2: True, I'm False
@@ -586,9 +658,13 @@ In comparison operators, the expression `[0]` converted to Number([0].valueOf().
 
 #### 19. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 console.log([1, 2] + [3, 4]);
 ```
+
+</span>
 
 - 1: [1,2,3,4]
 - 2: [1,2][3,4]
@@ -608,6 +684,8 @@ The + operator is not meant or defined for arrays. So it converts arrays into st
 
 #### 20. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const numbers = new Set([1, 1, 2, 3, 4]);
 console.log(numbers);
@@ -615,6 +693,8 @@ console.log(numbers);
 const browser = new Set('Firefox);
 console.log(browser);
 ```
+
+</span>
 
 - 1: {1, 2, 3, 4}, {"F", "i", "r", "e", "f", "o", "x"}
 - 2: {1, 2, 3, 4}, {"F", "i", "r", "e", "o", "x"}
@@ -634,9 +714,13 @@ Since `Set` object is a collection of unique values, it won't allow duplicate va
 
 #### 21. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 console.log(NaN === NaN);
 ```
+
+</span>
 
 - 1: True
 - 2: False
@@ -654,10 +738,14 @@ JavaScript follows IEEE 754 spec standards. As per this spec, NaNs are never equ
 
 #### 22. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 let numbers = [1, 2, 3, 4, NaN];
 console.log(numbers.indexOf(NaN));
 ```
+
+</span>
 
 - 1: 4
 - 2: NaN
@@ -672,12 +760,16 @@ console.log(numbers.indexOf(NaN));
 The `indexOf` uses strict equality operator(===) internally and `NaN === NaN` evaluates to false. Since indexOf won't be able to find NaN inside an array, it returns -1 always.
 But you can use `Array.prototype.findIndex` method to find out the index of NaN in an array or You can use `Array.prototype.includes` to check if NaN is present in an array or not.
 
+<span dir="ltr" align="left" >
+
 ```javascript
 let numbers = [1, 2, 3, 4, NaN];
 console.log(numbers.findIndex(Number.isNaN)); // 4
 
 console.log(numbers.includes(Number.isNaN)); // true
 ```
+
+</span>
 
 </p>
 </details>
@@ -686,10 +778,14 @@ console.log(numbers.includes(Number.isNaN)); // true
 
 #### 23. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 let [a, ...b,] = [1, 2, 3, 4, 5];
 console.log(a, b);
 ```
+
+</span>
 
 - 1: 1, [2, 3, 4, 5]
 - 2: 1, {2, 3, 4, 5}
@@ -704,10 +800,14 @@ console.log(a, b);
 When using rest parameters, trailing commas are not allowed and will throw a SyntaxError.
 If you remove the trailing comma then it displays 1st answer
 
+<span dir="ltr" align="left" >
+
 ```javascript
 let [a, ...b,] = [1, 2, 3, 4, 5];
 console.log(a, b); // 1, [2, 3, 4, 5]
 ```
+
+</span>
 
 </p>
 </details>
@@ -716,12 +816,16 @@ console.log(a, b); // 1, [2, 3, 4, 5]
 
 #### 25. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 async function func() {
    return 10;
 }
 console.log(func());
 ```
+
+</span>
 
 - 1: Promise {<resolved>: 10}
 - 2: 10
@@ -735,11 +839,15 @@ console.log(func());
 
 Async functions always return a promise. But even if the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise. The above async function is equivalent to below expression,
 
+<span dir="ltr" align="left" >
+
 ```javascript
 function func() {
    return Promise.resolve(10)
 }
 ```
+
+</span>
 </p>
 </details>
 
@@ -747,12 +855,16 @@ function func() {
 
 #### 26. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 async function func() {
    await 10;
 }
 console.log(func());
 ```
+
+</span>
 
 - 1: Promise {<resolved>: 10}
 - 2: 10
@@ -766,17 +878,23 @@ console.log(func());
 
 The await expression returns value 10 with promise resolution and the code after each await expression can be treated as existing in a `.then` callback. In this case, there is no return expression at the end of the function. Hence, the default return value of `undefined` is returned as the resolution of the promise.  The above async function is equivalent to below expression,
 
+<span dir="ltr" align="left" >
+
 ```javascript
 function func() {
    return Promise.resolve(10).then(() => undefined)
 }
 ```
+
+</span>
 </p>
 </details>
 
 ---
 
 #### 27. What is the output of below code
+
+<span dir="ltr" align="left" >
 
 ```javascript
 function delay() {
@@ -797,6 +915,8 @@ async function processArray(array) {
 processArray([1, 2, 3, 4]);
 ```
 
+</span>
+
 - 1: SyntaxError
 - 2: 1, 2, 3, 4
 - 3: 4, 4, 4, 4
@@ -815,6 +935,8 @@ Even though “processArray” is an async function, the anonymous function that
 ---
 
 #### 28. What is the output of below code
+
+<span dir="ltr" align="left" >
 
 ```javascript
 function delay() {
@@ -835,6 +957,8 @@ async function process(array) {
 process([1, 2, 3, 5]);
 ```
 
+</span>
+
 - 1: 1 2 3 5 and Process completed!
 - 2: 5 5 5 5 and Process completed!
 - 3: Process completed! and 5 5 5 5
@@ -849,6 +973,8 @@ The forEach method will not wait until all items are finished but it just runs t
 
 But you control the array sequence using for..of loop,
 
+<span dir="ltr" align="left" >
+
 ```javascript
 async function processArray(array) {
   for (const item of array) {
@@ -858,6 +984,8 @@ async function processArray(array) {
 }
 ```
 
+</span>
+
 </p>
 </details>
 
@@ -865,11 +993,15 @@ async function processArray(array) {
 
 #### 29. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 var set = new Set();
 set.add("+0").add("-0").add(NaN).add(undefined).add(NaN);;
 console.log(set);
 ```
+
+</span>
 
 - 1: Set(4) {"+0", "-0", NaN, undefined}
 - 2: Set(3) {"+0", NaN, undefined}
@@ -893,6 +1025,8 @@ Set has few exceptions from equality check,
 
 #### 30. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const sym1 = Symbol('one');
 const sym2 = Symbol('one');
@@ -902,6 +1036,8 @@ const sym4 = Symbol.for('two');
 
 console.log(sym1 === sym2, sym3 === sym4);
 ```
+
+</span>
 
 - 1: true, true
 - 2: true, false
@@ -927,10 +1063,14 @@ Symbol follows below conventions,
 
 #### 31. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const sym1 = new Symbol('one');
 console.log(sym1);
 ```
+
+</span>
 
 - 1: SyntaxError
 - 2: one
@@ -951,6 +1091,8 @@ console.log(sym1);
 
 #### 32. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 let myNumber = 100;
 let myString = '100';
@@ -967,6 +1109,8 @@ if (!typeof myString === "number"){
    console.log("It is a number!");
 }
 ```
+
+</span>
 
 - 1: SyntaxError
 - 2: It is not a string!, It is not a number!
@@ -987,10 +1131,14 @@ The return value of `typeof myNumber (OR) typeof myString` is always the truthy 
 
 #### 33. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 console.log(JSON.stringify({ myArray: ['one', undefined, function(){}, Symbol('')] }));
 console.log(JSON.stringify({ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]));
 ```
+
+</span>
 
 - 1: {"myArray":['one', undefined, {}, Symbol]}, {}
 - 2: {"myArray":['one', null,null,null]}, {}
@@ -1015,6 +1163,8 @@ The symbols has below constraints,
 
 #### 34. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 class A {
   constructor() {
@@ -1027,6 +1177,8 @@ class B extends A { constructor() { super() } }
 new A();
 new B();
 ```
+
+</span>
 
 - 1: A, A
 - 2: A, B
@@ -1045,10 +1197,14 @@ Using constructors, `new.target` refers to the constructor (points to the class 
 
 #### 35. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const [x, ...y,] = [1, 2, 3, 4];
 console.log(x, y);
 ```
+
+</span>
 
 - 1: 1, [2, 3, 4]
 - 2: 1, [2, 3]
@@ -1069,12 +1225,16 @@ It throws a syntax error because the rest element should not have a trailing com
 
 #### 36. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const {a: x = 10, b: y = 20} = {a: 30};
 
 console.log(x);
 console.log(y);
 ```
+
+</span>
 
 - 1: 30, 20
 - 2: 10, 20
@@ -1099,6 +1259,8 @@ The object property follows below rules,
 
 #### 37. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 function area({length = 10, width = 20}) {
   console.log(length*width);
@@ -1106,6 +1268,8 @@ function area({length = 10, width = 20}) {
 
 area();
 ```
+
+</span>
 
 - 1: 200
 - 2: Error
@@ -1123,6 +1287,8 @@ You can avoid the error with either of the below changes,
 
 1. **Pass at least an empty object:**
 
+<span dir="ltr" align="left" >
+
 ```javascript
 function area({length = 10, width = 20}) {
   console.log(length*width);
@@ -1131,7 +1297,11 @@ function area({length = 10, width = 20}) {
 area({});
 ```
 
+</span>
+
 2. **Assign default empty object:**
+
+<span dir="ltr" align="left" >
 
 ```javascript
 function area({length = 10, width = 20} = {}) {
@@ -1141,6 +1311,8 @@ function area({length = 10, width = 20} = {}) {
 area();
 ```
 
+</span>
+
 </p>
 
 </details>
@@ -1148,6 +1320,8 @@ area();
 ---
 
 #### 38. What is the output of below code
+
+<span dir="ltr" align="left" >
 
 ```javascript
 const props = [
@@ -1159,6 +1333,8 @@ const props = [
 const [,, { name }] = props;
 console.log(name);
 ```
+
+</span>
 
 - 1: Tom
 - 2: Error
@@ -1179,6 +1355,8 @@ It is possible to combine Array and Object destructuring. In this case, the thir
 
 #### 39. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 function checkType(num = 1) {
   console.log(typeof num);
@@ -1189,6 +1367,8 @@ checkType(undefined);
 checkType('');
 checkType(null);
 ```
+
+</span>
 
 - 1: number, undefined, string, object
 - 2: undefined, undefined, string, object
@@ -1215,6 +1395,8 @@ Hence, the result of function calls categorized as below,
 
 #### 40. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 function add(item, items = []) {
   items.push(item);
@@ -1224,6 +1406,8 @@ function add(item, items = []) {
 console.log(add('Orange'));
 console.log(add('Apple'));
 ```
+
+</span>
 
 - 1: ['Orange'], ['Orange', 'Apple']
 - 2: ['Orange'], ['Apple']
@@ -1243,6 +1427,8 @@ Since the default argument is evaluated at call time, a new object is created ea
 
 #### 41. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 function greet(greeting, name, message = greeting + ' ' + name) {
   console.log([name, greeting, message]);
@@ -1251,6 +1437,8 @@ function greet(greeting, name, message = greeting + ' ' + name) {
 greet('Hello', 'John');
 greet('Hello', 'John', 'Good morning!');
 ```
+
+</span>
 
 - 1: SyntaxError
 - 2: ['Hello', 'John', 'Hello John'], ['Hello', 'John', 'Good morning!']
@@ -1270,12 +1458,16 @@ Since parameters defined earlier are available to later default parameters, this
 
 #### 42. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 function outer(f = inner()) {
   function inner() { return 'Inner' }
 }
 outer();
 ```
+
+</span>
 
 - 1: ReferenceError
 - 2: Inner
@@ -1294,6 +1486,8 @@ The functions and variables declared in the function body cannot be referred fro
 
 #### 43. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 function myFun(x, y, ...manyMoreArgs) {
   console.log(manyMoreArgs)
@@ -1302,6 +1496,8 @@ function myFun(x, y, ...manyMoreArgs) {
 myFun(1, 2, 3, 4, 5);
 myFun(1, 2);
 ```
+
+</span>
 
 - 1: [3, 4, 5], undefined
 - 2: SyntaxError
@@ -1322,11 +1518,15 @@ The rest parameter is used to hold the remaining parameters of a function and it
 
 #### 44. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const obj = {'key': 'value'};
 const array = [...obj];
 console.log(array);
 ```
+
+</span>
 
 - 1: ['key', 'value']
 - 2: TypeError
@@ -1347,6 +1547,8 @@ Spread syntax can be applied only to iterable objects. By default, Objects are n
 
 #### 45. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 function* myGenFunc() {
     yield 1;
@@ -1356,6 +1558,8 @@ function* myGenFunc() {
 var myGenObj = new myGenFunc;
 console.log(myGenObj.next().value);
 ```
+
+</span>
 
 - 1: 1
 - 2: undefined
@@ -1377,6 +1581,8 @@ Generators are not constructible type. But if you still proceed to do, there wil
 
 #### 46. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 
 function* yieldAndReturn() {
@@ -1390,6 +1596,8 @@ console.log(myGenObj.next());
 console.log(myGenObj.next());
 console.log(myGenObj.next());
 ```
+
+</span>
 
 - 1: { value: 1, done: false }, { value: 2, done: true }, { value: undefined, done: true }
 - 2: { value: 1, done: false }, { value: 2, done: false }, { value: undefined, done: true }
@@ -1410,6 +1618,8 @@ A return statement in a generator function will make the generator finish. If a 
 
 #### 47. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const myGenerator = (function *(){
   yield 1;
@@ -1425,6 +1635,8 @@ for (const value of myGenerator) {
   console.log(value);
 }
 ```
+
+</span>
 
 - 1: 1,2,3 and 1,2,3
 - 2: 1,2,3 and 4,5,6
@@ -1445,10 +1657,14 @@ The generator should not be re-used once the iterator is closed. i.e, Upon exiti
 
 #### 48. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const num = 0o38;
 console.log(num);
 ```
+
+</span>
 
 - 1: SyntaxError
 - 2: 38
@@ -1465,6 +1681,8 @@ If you use an invalid number(outside of 0-7 range) in the octal literal, JavaScr
 ---
 
 #### 49. What is the output of below code
+
+<span dir="ltr" align="left" >
 
 ```javascript
 const squareObj = new Square(10);
@@ -1485,6 +1703,8 @@ class Square {
 }
 ```
 
+</span>
+
 - 1: 100
 - 2: ReferenceError
 
@@ -1503,6 +1723,8 @@ Unlike function declarations, class declarations are not hoisted. i.e, First You
 ---
 
 #### 50. What is the output of below code
+
+<span dir="ltr" align="left" >
 
 ```javascript
 function Person() { }
@@ -1523,6 +1745,8 @@ let run = Person.run;
 console.log(run());
 ```
 
+</span>
+
 - 1: undefined, undefined
 - 2: Person, Person
 - 3: SyntaxError
@@ -1542,6 +1766,8 @@ When a regular or prototype method is called without a value for **this**, the m
 ---
 
 #### 51. What is the output of below code
+
+<span dir="ltr" align="left" >
 
 ```javascript
 class Vehicle {
@@ -1565,6 +1791,8 @@ const car = new Car('BMW');
 console.log(car.start());
 ```
 
+</span>
+
 - 1: SyntaxError
 - 2: BMW vehicle started, BMW car started
 - 3: BMW car started, BMW vehicle started
@@ -1585,11 +1813,15 @@ The super keyword is used to call methods of a superclass. Unlike other language
 
 #### 52. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 const USER = {'age': 30};
 USER.age = 25;
 console.log(USER.age);
 ```
+
+</span>
 
 - 1: 30
 - 2: 25
@@ -1612,9 +1844,13 @@ Even though we used constant variables, the content of it is an object and the o
 
 #### 53. What is the output of below code
 
+<span dir="ltr" align="left" >
+
 ```javascript
 console.log('🙂' === '🙂');
 ```
+
+</span>
 
 - 1: false
 - 2: true
@@ -1635,9 +1871,13 @@ Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode c
 
 #### 54. What is the output of below code?
 
+<span dir="ltr" align="left" >
+
 ```javascript
 console.log(typeof typeof typeof true);
 ```
+
+</span>
 
 - 1: string
 - 2: boolean
@@ -1659,6 +1899,8 @@ The typeof operator on any primitive returns a string value. So even if you appl
 
 #### 55. What is the output of below code?
 
+<span dir="ltr" align="left" >
+
 ```javascript
 let zero = new Number(0);
 
@@ -1669,6 +1911,8 @@ if (zero) {
 }
 ```
 
+</span>
+
 - 1: If
 - 2: Else
 - 3: NaN
@@ -1678,7 +1922,7 @@ if (zero) {
 <p>
 
 ##### پاسخ: 1
-1. The type of operator on new Number always returns object. i.e, typeof new Number(0) --> object. 
+1. The type of operator on new Number always returns object. i.e, typeof new Number(0) --> object.
 2. Objects are always truthy in if block
 
 Hence the above code block always goes to if section.
@@ -1693,13 +1937,17 @@ Hence the above code block always goes to if section.
 
 #### 55. What is the output of below code in non strict mode?
 
+<span dir="ltr" align="left" >
+
 ```javascript
 let msg = "Good morning!!";
 
-msg.name = "John"; 
+msg.name = "John";
 
 console.log(msg.name);
 ```
+
+</span>
 
 - 1: ""
 - 2: Error
@@ -1717,5 +1965,5 @@ It returns undefined for non-strict mode and returns Error for strict mode. In n
 
 ---
 
-  
+
 </span>
