@@ -565,7 +565,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       // If the result is a non-null object then use it otherwise just use the new instance.
       console.log(result && typeof result === 'object' ? result : newInstance);
       ```
-      
+
       </span>
 
 
@@ -614,7 +614,6 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
    **[⬆ فهرست](#فهرست)**
 
 3. ### تفاوت‌های بین Call، Apply و Bind چیا هستن؟
-3. ### فرمت JSON چیه و عملیات‌های معمول بر روی آن چیا هستند؟
 
    تفاوت بین Call، Apply و Bind توی مثال‌های زیر توضیح داده شده
 
@@ -639,7 +638,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **Apply:** تابع رو فراخوانی میکنه و بهمون اجازه میده تا آرگومان‌ها رو به عنوان یه آرایه منتقل کنیم
 
-    
+
     <span dir="ltr" align="left">
 
     ```javascript
@@ -653,9 +652,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     invite.apply(employee1, ['Hello', 'How are you?']); // Hello John Rodson, How are you?
     invite.apply(employee2, ['Hello', 'How are you?']); // Hello Jimmy Baily, How are you?
     ```
-    
+
     </span>
-    
+
 
     **bind:** یه تابع جدید برمی‌گردونه، در حالی که بهمون اجازه میده هر تعداد آرگومانی که می خوایم رو توی یه آرایه منتقل کنیم
 
@@ -674,15 +673,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     inviteEmployee1('Hello', 'How are you?'); // Hello John Rodson, How are you?
     inviteEmployee2('Hello', 'How are you?'); // Hello Jimmy Baily, How are you?
     ```
-    
+
     </span>
-    
+
 
     Call and apply are pretty interchangeable. Both execute the current function immediately. You need to decide whether it’s easier to send in an array or a comma separated list of arguments. You can remember by treating Call is for comma (separated list) and Apply is for Array. Whereas Bind creates a new function that will have `this` set to the first parameter passed to bind().
 
     **[⬆ فهرست](#فهرست)**
 
-4. ### هدف از متد slice روی آرایه‌ها چیه؟
+4. ### فرمت JSON چیه و عملیات‌های معمول بر روی آن چیا هستند؟
 
    **JSON** یه قالب داده مبتنی برمتن هستش که از نحو آبجکت جاوا‌اسکریپت (javascript objext syntax) پیروی میکنه و توسط ‍‍`Douglas Crockford` رایج شد. کاربردش زمانیه که بخوایم داده‌ها رو از طریق شبکه انتقال بدیم و اساسا یه فایل متنی با پسوند .json و نوع MIME از application/json
    **تجزیه (Parsing):** تبدیل یه رشته به یه آبجکت محلی (native Object)
@@ -696,21 +695,21 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
    </span>
 
 
-    **رشته‌سازی:** تبدیل یه آبجکت محلی به یه رشته تا بتونه از طریق شبکه منتقل بشه 
+    **رشته‌سازی:** تبدیل یه آبجکت محلی به یه رشته تا بتونه از طریق شبکه منتقل بشه
 
-    
+
     <span dir="ltr" align="left">
 
     ```javascript
     JSON.stringify(object)
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-5. ### هدف از متد splice روی آرایه‌ها چیه؟
+4. ### هدف از متد slice روی آرایه‌ها چیه؟
 
    متد **slice()** عناصر انتخاب شده توی یه آرایه رو به عنوان یه آبجکت آرایه جدید برمی‌گردونه. این عناصر رو از اولین آرگومان داده شده انتخاب میکنه و با آرگومان پایانی و اختیاری داده شده بدون در نظر گرفتن آخرین عنصر به پایان می‌رسونه. اگه آرگومان دوم رو حذف کنیم تا آخر آرایه همه عناصر رو انتخاب میکنه. چند تا مثال در مورد این متد اینجا نوشته شده
 
@@ -730,7 +729,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-6. ### تفاوت متدهای slice و splice چیا هستن؟
+5. ### هدف از متد splice روی آرایه‌ها چیه؟
 
    متد **splice** برای اضافه کردن به آرایه یا حذف از اون استفاده میشه و مورد حذف شده رو برمی‌گردونه. آرگومان اول موقعیت آرایه رو برای درج یا حذف مشخص میکنه در حالی که آرگومان اختیاری دوم تعداد عناصر حذف شده رو مشخص میکنه. هر آرگومان اضافه‌ای به آرایه اضافه میشه. چند تا مثال در این مورد اینجا نوشته شده.
 
@@ -746,15 +745,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     let arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
     let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); //returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
     ```
-   
+
     </span>
-   
+
 
     **نکته:** متد Splice آرایه اصلی رو اصلاح میکنه و آرایه حذف شده رو برمی‌گردونه.
 
     **[⬆ فهرست](#فهرست)**
 
-7. ### تفاوت‌های Object و Map چیا هستن؟
+6. ### تفاوت متدهای slice و splice چیا هستن؟
 
    بعضی از تفاوت‌های عمده توی یه جدول
 
@@ -766,7 +765,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
    **[⬆ فهرست](#فهرست)**
 
-8. ### تفاوت‌های بین عملگرهای == و === چیا هستن؟
+7. ### تفاوت‌های Object و Map چیا هستن؟
 
    **آبجکت‌ها** شبیه به **نقشه‌ها (Maps)** هستن از این جهت که هردو بهمون این امکتن رو میدن که کلید‌ها رو روی مقادیر تنظیم کنیم، مقادیر رو بازیابی کنیم، کلید‌ها رو حذف کنیم و ببینیم چیزی توی یه کلید ذخیره شده یا نه. به همین دلیل از آبجکت‌ها به عنوان نقشه ها (Maps) در طول تاریخ استفاده شده. اما تفاوت‌های مهمی وجود داره که استفاده از نقشه (map) رو توی موارد خاص ترجبح میده.
 
@@ -779,7 +778,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
    **[⬆ فهرست](#فهرست)**
 
-9. ### توابع lambda یا arrow-function چی هستن؟
+8. ### تفاوت‌های بین عملگرهای == و === چیا هستن؟
 
    JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
   1. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions.
@@ -814,13 +813,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-10. ### یه تابع first-class چجور تابعی‌ـه؟
+9. ### توابع lambda یا arrow-function چی هستن؟
 
     arrow function ‌ها به صورت ساده‌تر و کوتاه‌تر تعریف میشن و **this، argumants، super یا new.target** ندارن. این توابع بدون متد هستند و به عنوان سازنده یا constructor استفاده نمیشن.
 
     **[⬆ فهرست](#فهرست)**
 
-11. ### یه تابع first-order چجور تابعی‌ـه؟
+10. ### یه تابع first-class چجور تابعی‌ـه؟
 .
 توی جاوااسکریپت، توابع آبجکت‌های کلاس اول یا first class هستن. توابع کلاس اول زمانی معنی میدن که توابع توی اون زبان باهاشون مثل بقیه متغیر‌ها رفتار بشه.
 
@@ -833,7 +832,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-12. ### یه تابع higher-order چجور تابعی‌ـه؟
+11. ### یه تابع first-order چجور تابعی‌ـه؟
 
     تابع مرتبه اول یا first-order تابعیه که هیچ تابع دیگه‌ای رو به عنوان آرگومان قبول نمیکنه و هیچ تابعی رو هم به عنوان مقدار برگشتی یا return value برنمی‌گردونه.
 
@@ -848,7 +847,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-13. ### یه تابع unary چجور تابعی‌ـه؟
+12. ### یه تابع higher-order چجور تابعی‌ـه؟
 
     توابع مرتبه بالا توابعی هستن که یه تابع رو به عنوان پارامتر ورودی دریافت و یا به عنوان خروجی ارسال میکنن.
 
@@ -860,13 +859,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     const higherOrder = ReturnFirstOrderFunc => ReturnFirstOrderFunc ();
     higherOrder (firstOrderFunc);
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-14. ###c؟urrying توابع یعنی چی؟               
+13. ### یه تابع unary چجور تابعی‌ـه؟
     تابع unary تابعیه که فقط یه آرگومان ورودی دریافت میکنه. بیاین یه مثال از توابع unary بزنیم.
 
     <span dir="ltr" align="left">
@@ -880,7 +879,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-15. ### چه توابعی pure هستن؟
+14. ### currying توابع یعنی چی؟
 
     به فرایندی که در اون یه تابع با چندین آرگومان رو به مجموعه‌ای از توابع که فقط یه آرگومان دریافت میکنن، تبدیل کنیم currying میگیم. Currying از نام یه ریاضی‌دان به اسم Haskell Curry گرفته شده. با استفاده از Currying در واقع یه تابع رو به یه تابع unary تبدیل میکنیم. بیاین یه مثال از یه تابع با چندین آرگومان و تبدیلش به تابع currying بزنیم.
 
@@ -894,15 +893,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     curryUnaryFunction (1) (2); // returns a function: c => 3 + c
     curryUnaryFunction (1) (2) (3); // returns the number 6
     ```
-    
+
     </span>
-    
+
 
     توابع Curried برای بهبود قابلیت استفاده مجدد کد و ترکیب عملکردی عالی هستن.
 
     **[⬆ فهرست](#فهرست)**
 
-16. ### هدف از کلمه کلیدی let چیه؟
+15. ### چه توابعی pure هستن؟
 
     **تابع خالص** تابعیه که مقدار برگشتیش فقط توسط آرگومان‌هاش تعیین میشه بدون هیج side effect یا عوارض جانبی. به عنوان مثال اگه ما یه تابع رو n بار در n جای مختلف برنامه فراخوانی کنیم همیشه یه مقدار مشخص برگشت داده میشه. بیاین یه مثال از تفاوت بین توابع خالص و توابع ناخالص بزنیم.
 
@@ -923,15 +922,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     console.log (pureAddNumber (7) (numberArray)); // returns [6, 7]
     console.log (numberArray); // returns [6]
     ```
-    
+
     </span>
-    
+
     بر اساس تکه کدهای بالا، تابع push با تغییر روی آرایه و برگردوندن شماره ایندکس push که مستقل از مقدار پارامتر هستش، یه تابع ناخالص به حساب میاد. در حالی که از یه طرف متد concat آرایه رو میگیره و اونو با یه آرایه دیگه ترکیب میکنه و یه آرایه کاملا جدید و بدون هیچ عوارض جانبی تولید میکنه. همچنین مقدار برگشتی با آرایه قبلی ترکیب شده هستش.
     Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and make it harder to break your application by not having any side effects. These principles are coming together with **Immutability** concept of ES6 by giving preference to **const** over **let** usage.
 
     **[⬆ فهرست](#فهرست)**
 
-17. ### تفاوت‌های کلمات کلیدی let و var چیا هستن؟
+16. ### هدف از کلمه کلیدی let چیه؟
 
     دستور `let` یه **متغیر محلی block scope** تعریف میکنه. از این رو متغیر‌هایی که با کلمه کلیدی let تعریف میشن محدود به همون اسکوپی که توش تعریف شدن، دستورها و عبارت‌های توی همون اسکوپ میشن. درحالی که متغیر‌های تعریف شده با کلمه کلیدی var برای تعریف یه متغیر توی سطح global یا محلی برای استفاده در کل توابع بدون در نظر گرفتن اسکوپی که توش تعریف شده، استفاده میشه. بیاین برای نشون دادن کاربردش یه مثال بزنیم.
 
@@ -951,19 +950,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-18. ### دلیل انتخاب کلمه کلیدی let چیه؟
+17. ### تفاوت‌های کلمات کلیدی let و var چیا هستن؟
 
     تفاوت‌ها رو توی جدول زیر میبینیم
 
     var :
-  1. از ابتدای جاوااسکریپت در دسترس هستش
-  2. دامنه تابع داره
-  3. متغیر‌ها Hoist میشن
+    1. از ابتدای جاوااسکریپت در دسترس هستش
+    2. دامنه تابع داره
+    3. متغیر‌ها Hoist میشن
 
-    let:
-  1. به عنوان بخشی از ES6 معرفی شده
-  2. محدود به scope یا دامنه هستش
-  3. Hoist شده ولی مقداردهی اولیه نمیشه
+      let:
+    1. به عنوان بخشی از ES6 معرفی شده
+    2. محدود به scope یا دامنه هستش
+    3. Hoist شده ولی مقداردهی اولیه نمیشه
 
     بیاین با یه مثال تفاوتش رو بهتر ببینیم
 
@@ -987,13 +986,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-19. ### چطوری می‌تونیم توی بلوک مربوط به switch بدون دریافت خطا متغیر تعریف کنیم؟
+18. ### دلیل انتخاب کلمه کلیدی let چیه؟
 
     Let یه عنوان ریاضی هستش که توسط زبان‌های برنامه‌نویسی اولیه مثل Scheme و Basic پذیرفته شده. این زبان از ده‌ها زبان دیگه گرفته شده که از let به عنوان یه کلمه کلیدی سنتی تا حد ممکن نزدیک به var استفاده میکنه.
 
     **[⬆ فهرست](#فهرست)**
 
-20. ###T؟emporal-Dead-Zone چیه؟     
+19. ### چطوری می‌تونیم توی بلوک مربوط به switch بدون دریافت خطا متغیر تعریف کنیم؟
     اگه بخوایم متغیر‌ها رو مجددا توی یه `switch block` تعریف کنیم، این کار باعث خطا میشه چون در واقع فقط یه بلاک وجود داره. به عنوان مثال توی کد زیر یه خطای نحوی ایجاد میشه
 
 
@@ -1011,9 +1010,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
         break;
     }
     ```
-    
+
     </span>
-    
+
     برای جلوگیری از این خطا، میتونیم یه بلاک تو در تو داخل case ایجاد کنیم و یه محیط واژگانی دارای محدوده بلاک جدید ایجاد کنیم.
 
 
@@ -1032,12 +1031,12 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
           }
         }
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-21. ###I؟IFE(توابع بلافاصله صدا زده شده) چی هستن؟         
+20. ### Temporal-Dead-Zone چیه؟
     Temporal Dead Zone رفتاری توی جاوااسکریپته که هنگام تعریف متغیر با کلمات کلیدی let و const رخ میده، نه با کلمه کلیدی var. توی اکما‌اسکریپت ۶، دستیابی به متغیر let و const قبل از تعریفش (توی scope خودش) باعث خطای refrence میشه. فاصله زمانی ایجاد اون، بین ایجاد اتصال متغیر و تعریف اون، منطقه Temporal Dead هستش. بیاین با یه مثال ببینیم،
 
     <span dir="ltr" align="left">
@@ -1056,7 +1055,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-22. ### مزایای استفاده از moduleها چیه؟
+21. ### IIFE(توابع بلافاصله صدا زده شده) چی هستن؟
 
     IIFE (فراخوانی عملکرد بلافاصله) یه تابع جاوا‌اسکریپته که به محض تعریف اجرا میشه.
     امضای اون به این صورته،
@@ -1088,21 +1087,21 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     )();
     console.log(message); //Error: message is not defined
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-23. ###M؟emoization چیه؟     
+22. ### مزایای استفاده از moduleها چیه؟
     استفاده از ماژول‌ها مزایای زیادی داره،
-  1. قابلیت نگهداری
-  2. قابلیت استفاده مجدد
-  3. نامگذاری
+    1. قابلیت نگهداری
+    2. قابلیت استفاده مجدد
+    3. نامگذاری
 
     **[⬆ فهرست](#فهرست)**
 
-24. ###H؟oisting چیه؟     
+23. ### Memoization چیه؟
     Memoization یه روش برنامه‌نوسی هست که سعی داره با ذخیره نتایج قبلی یه تابع عملکرد اون تابع رو افزایش بده. هر بار که یه تابع Memoize شده فراخوانی میشه، پارامتر‌های اون cache میشه یعنی توی حافظه پنهان ذخیره میشه. اگه داده وجود داشته باشه، بدون اجرای کل تابع میشه اونو برگردوند در غیر این صورت تابع اجرا میشه و بعدش نتیجه توی حافظه پنهان ذخیره میشه.
     بیاین یه مثال از نوشتن یه تابع با Memoization بزنیم،
 
@@ -1124,7 +1123,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       }
      }
     }
-    
+
     // returned function from memoizAddition
     const addition = memoizAddition();
     console.log(addition(20)); //output: 40 calculated
@@ -1136,7 +1135,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-25. ###C؟lassها توی ES6 چی هستن؟         
+24. ### Hoisting چیه؟
     Hoisting یه مکانیسم جاوا‌اسکریپته که متغیر‌ها و تعاریف توابع رو به بالای scope یا دامنه خودشون انتقال میده. یادمون باشه که جاوا‌اسکریپت فقط تعریف متغیر‌ها و توابع رو Hoist میکنه، نه مقداردهی اولیه اونا رو.
     بیاین یه مثال ساده از hoist کردن متغیر‌ها بزنیم،
 
@@ -1159,13 +1158,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     console.log(message);
     message = 'The variable Has been hoisted';
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-26. ###C؟losureها چیا هستن؟             
+25. ### Classها توی ES6 چی هستن؟
     In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
     For example, the prototype based inheritance written in function expression as below,
 
@@ -1206,7 +1205,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-27. ###M؟oduleها چیا هستن؟             
+26. ### Closureها چیا هستن؟
     کلاژور ترکیبی از یه تابع و محیط واژگانی هستش که تابع در اون تعریف شده. به عنوان مثال این یه تابع داخلیه که به متغیر‌های تابع خارجی دسترسی داره. کلاژور دارای سه زنجیره دامنه هستش
     ۱. دامنه رو جایی تعریف می کنیم که متغیر‌ها بین کرلی براکت‌های اون تعریف شده باشه
     ۲. متغیر‌های تابع بیرونی
@@ -1234,13 +1233,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-28. ### چرا به moduleها نیاز داریم؟
+27. ### Moduleها چیا هستن؟
 
     ماژول‌ها به واحد‌های کوچیکی از کد مستقل و قابل استفاده مجدد اشاره می‌کنن و همچنین به عنوان پایه بسیاری از الگو‌های طراحی javascript عمل می‌کنن. خروجی ماژول‌های javascript یه شی، یه تابع یا constructor هستش.
 
     **[⬆ فهرست](#فهرست)**
 
-29. ### توی جاواسکریپت scope چیه و چیکار می‌کنه؟
+28. ###  چرا به moduleها نیاز داریم؟
 
     لیستی از مزایای استفاده از ماژول‌ها در اکوسیستم جاوااسکریپت اینجا گفته شده
   1. قابلیت نگهداری
@@ -1249,46 +1248,46 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-30. ###s؟ervice-worker چیه؟     
+29. ### توی جاواسکریپت scope چیه و چیکار می‌کنه؟
     scope یا محدوده، دسترسی متغیر‌ها، توابع و اشیاء در بعضی از قسمت‌های کدمون در زمان اجرا هستش. به عبارت دیگه، دامنه قابلیت دیده شدن متغیر‌ها و بقیه منابع رو تو قسمت‌هایی از کدمون تعیین میکنه.
 
     **[⬆ فهرست](#فهرست)**
 
-31. ### توی service-worker چطوری میشه DOM رو دستکاری کرد؟
+30. ###s؟ervice-worker چیه؟
 
     service worker اساسا یه اسکریپت هستش که جدا از یه صفحه وب توی پس‌زمینه اجرا میشه و ویژگی‌هایی رو فراهم میکنه که نیازی به صفحه وب یا تعامل کاربر نداره. بعضی از ویژگی‌های عمده service worker ها عبارتند از: تجارب غنی آفلاین (اولین برنامه آفلاین وب)، همگام‌سازی دوره‌ای پس‌زمینه، push notification, رهگیری و رسیدگی به درخواست‌های شبکه و مدیریت برنامه‌ای cache response ها.
 
     **[⬆ فهرست](#فهرست)**
 
-32. ### چطوری می‌تونیم بین ریست شدن‌های service-worker داده‌های مورد نظرمون رو مجدد استفاده کنیم؟
+31. ### توی service-worker چطوری میشه DOM رو دستکاری کرد؟
 
     service worker مستقیما نمیتونه به DOM دسترسی پیدا کنه، اما میتونه با پاسخ به پیام‌های ارسالی از طریق رابط `postMessage` با صفحاتی که کنترل میکنه ارتباط برقرار کنه و این صفحات میتونن DOM رو دستکاری کنن.
 
     **[⬆ فهرست](#فهرست)**
 
-33. ###I؟ndexedDB چیه؟     
+32. ### چطوری می‌تونیم بین ریست شدن‌های service-worker داده‌های مورد نظرمون رو مجدد استفاده کنیم؟
     مشکلی که توی service worker وجود داره اینه که در صورت عدم استفاده خاتمه پیدا میکنه و در صورت نیاز بعدی دوباره راه‌اندازی میشه، بنابراین نمیتونیم به state های سراسری توی نگهدارنده‌های `onfetch` و `onmessage` یه service worker اعتماد کنیم. تو این حالت service worker برای تداوم کار و استفاده مجدد موقع شروع مجدد، به indexedDB API دسترسی خواهد داشت.
 
     **[⬆ فهرست](#فهرست)**
 
-34. ###W؟eb-storage چیه؟     
+33. ### IndexedDB چیه؟
     IndexedDB یه API سطح پایین برای ذخیره client-side یا سمت کاربر توی مقادیر بیشتری از داده ساخت‌ یافته شامل فایل‌ها و حباب‌ها هستش. این API از index ها برای فعال کردن جستجو‌های با کارایی بالا توی این داده‌ها استفاده میکنه.
 
     **[⬆ فهرست](#فهرست)**
 
-35. ###P؟ost-message چیه؟     
+34. ### Web-storage چیه؟
     web storage یه API هستش که مکانیسمی رو فراهم میکنه که مرورگر‌ها میتونن مقدار و کلید رو به صورت محلی توی مرورگر کاربر ذخیره کنن، به روشی کاملا قابل درک نسبت به استفاده از کوکی‌ها. فضای ذخیره‌سازی وب دو مکانیزم رو برای ذخیره اطلاعات روی مشتری فراهم میکنه.
   1. **Local storage:** داده ها رو برای مبدا فعلی و بدون تاریخ انقضا ذخیره میکنه.
   2. **Session storage:** داده‌ها رو برای یه جلسه ذخیره میکنه و با بسته شدن تب مرورگر داده‌ها از بین میرن.
 
     **[⬆ فهرست](#فهرست)**
 
-36. ###C؟ookie چیه؟     
+35. ### Post-message چیه؟
     Post message روشی هست که امکان ایجاد ارتباط متقابل بین آبجکت‌های window رو فراهم میکنه. (به عنوان مثال، بین یه صفحه و یه پنجره باز‌شو که باعث ایجاد اون شده، یا بین یه صفحه و یه iframe جاسازی شده در اون) به طور کل، اسکریپت‌های موجود در صفحات مختلف مجاز به دسترسی به همدیگه هستن، تنها در صورتی که صفحات از خط‌ مشی‌ یکسانی تبعیت کنن. (یعنی صفحات از پروتکل، شماره پورت و میزبان یکسانی برخوردار هستن)
 
     **[⬆ فهرست](#فهرست)**
 
-37. ### چرا به cookie نیاز داریم؟
+36. ### Cookie چیه؟
 
     کوکی قطعه‌ای از داده هستش که توی کامپیوترمون ذخیره میشه تا مرورگر به اون دسترسی داشته باشه. کوکی‌ها به عنوان جفت‌های کلید و مقدار ذخیره میشن.
     به عنوان مثال میتونیم یه کوکی با نام کاربری مثل زیر ایجاد کنیم،
@@ -1306,7 +1305,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-38. ### گزینه‌های قابل تنظیم توی cookie چیا هستن؟
+37. ### چرا به cookie نیاز داریم؟
 
     از کوکی ها برای به خاطر سپردن اطلاعات مربوط به مشخصات کاربر (مانند نام کاربری) استفاده میشه. در اصل شامل دو مرحله هستش،
     ۱. وقتی که کاربر از یه صفحه وب بازدید میکنه ، مشخصات کاربر میتونه توی یه کوکی ذخیره بشه.
@@ -1314,7 +1313,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-39. ### چطوری میشه یه cookie رو حذف کرد؟
+38. ### گزینه‌های قابل تنظیم توی cookie چیا هستن؟
 
     گزینه‌های زیر برای کوکی موجوده ،
     ۱. به طور پیش فرض ، کوکی موقع بسته شدن مرورگر حذف میشه اما با تنظیم تاریخ انقضا (به وقت UTC) می تونیم این رفتار رو تغییر بدیم.
@@ -1325,9 +1324,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     ```javascript
     document.cookie = "username=John; expires=Sat, 8 Jun 2019 12:00:00 UTC";
     ```
-    
+
     </span>
-    
+
     ۱. به طور پیش فرض ، کوکی به صفحه فعلی تعلق دارد. اما با استفاده از پارامتر path می تونیم به مرورگر بگیم که کوکی متعلق به چه مسیری هستش.
 
     <span dir="ltr" align="left">
@@ -1335,13 +1334,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     ```javascript
     document.cookie = "username=John; path=/services";
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-40. ### تفاوت‌های بین cookie، local-storage و session-storage چیا هستن؟
+39. ### چطوری میشه یه cookie رو حذف کرد؟
 
     با تنظیم تاریخ انقضا به عنوان تاریخ گذشته می تونیم کوکی رو حذف کنیم. تو این حالت نیازی به تعیین مقدار کوکی نیست.
     به عنوان مثال ، می تونیم کوکی نام کاربری رو توی صفحه فعلی به صورت زیر حذف کنیم.
@@ -1359,7 +1358,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-41. ### تفاوت‌های بین localStorage و sessionStorage چیا هستن؟
+40. ### تفاوت‌های بین cookie، local-storage و session-storage چیا هستن؟
 
     تفاوت‌های بین کوکی، لوکال استوریج و سشن استوریج اینها هستند:
 
@@ -1373,13 +1372,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-42. ### چطوری به web-storage دسترسی پیدا می‌کنی؟
+41. ### تفاوت‌های بین localStorage و sessionStorage چیا هستن؟
 
     لوکال استوریج همان سشن استوریج هستش اما داده‌ها با بستن و دوباره باز کردن مرورگر همچنان حفظ میشه (تاریخ انقضا نداره) در حالی که سشن استوریج داده‌ها رو با بستن پنجره مرورگر پاک میکنه.
 
     **[⬆ فهرست](#فهرست)**
 
-43. ### چه متد‌هایی روی session-storage قابل استفاده هستن؟
+42. ### چطوری به web-storage دسترسی پیدا می‌کنی؟
 
     شی window به ترتیب ویژگی‌های `WindowLocalStorage` و `WindowSessionStorage` رو که دارای ویژگی‌های `localStorage`(window.localStorage) و `sessionStorage`(window.sessionStorage) هستن رو پشتیبانی میکنه. این خصوصیات نمونه ای از شی Storage رو ایجاد میکنه که از طریق اون میشه موارد داده رو برای یه دامنه خاص و نوع ذخیره سازی (session یا محلی) تنظیم ، بازیابی و حذف کرد.
     به عنوان مثال ، میتونیم روی اشیای ذخیره سازی محلی مثل زیر بخونیم و بنویسیم
@@ -1396,7 +1395,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-44. ### رخداد storage چیه و چطوری ازش استفاده می‌کنیم؟
+43. ### چه متد‌هایی روی session-storage قابل استفاده هستن؟
 
     session storage متد‌هایی رو برای خواندن، نوشتن و پاکسازی داده‌های session ارائه میده.
 
@@ -1421,7 +1420,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-45. ### چرا به web-storage نیاز داریم؟
+44. ### رخداد storage چیه و چطوری ازش استفاده می‌کنیم؟
 
     storageEvent رویدادی هستش که با تغییر مکان ذخیره سازی در متن سند دیگه‌ای فعال میشه. در حالی که خاصیت ذخیره سازی یک EventHandler برای پردازش رویدادهای ذخیره سازی ست.
 
@@ -1445,18 +1444,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
         ' to ' + e.newValue + '.');
     };
     ```
-    
+
     </span>
 
     **[⬆ فهرست](#فهرست)**
 
-46. ### چطوری می‌تونیم پشتیبانی از web-storage توسط مرورگر رو بررسی کنیم؟
+45. ### چرا به web-storage نیاز داریم؟
 
     فضای ذخیره سازی وب از امنیت بیشتری برخورداره و مقدار زیادی داده میتونن به صورت محلی ذخیره بشن ، بدون اینکه روی عملکرد وب سایت تأثیر بذارن. همچنین ، اطلاعات هرگز به سرور منتقل نمیشن. به همین دلیل این روش نسبت به کوکی‌ها بیشتر توصیه میشه.
 
     **[⬆ فهرست](#فهرست)**
 
-47. ### چطوری می‌تونیم پشتیبانی از web-worker توسط مرورگر رو بررسی کنیم؟
+46. ### چطوری می‌تونیم پشتیبانی از web-storage توسط مرورگر رو بررسی کنیم؟
 
     قبل از استفاده از فضای ذخیره‌سازی وب، باید پشتیبانی مرورگر رو برای localStorage و sessionStorage بررسی کنیم.
 
@@ -1475,7 +1474,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-48. ### یه مثال از web-workerها می‌تونی بزنی؟
+47. ### چطوری می‌تونیم پشتیبانی از web-worker توسط مرورگر رو بررسی کنیم؟
 
     قبل از استفاده ، باید پشتیبانی مرورگر رو برای web worker ها بررسی کنیم
 
@@ -1494,7 +1493,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-49. ### محدودیت‌های web-workerها روی DOM چیا هستن؟
+48. ### یه مثال از web-workerها می‌تونی بزنی؟
 
     برای شروع استفاده از web worker ها برای مثال شمارنده باید مراحل زیر رو دنبال کنیم
     ۱. ساخت یه فایل Web Worker: برای افزایش مقدار شمارش، باید یه اسکریپت بنویسیم. بیاین اسمشو counter.js بذاریم
@@ -1538,9 +1537,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       document.getElementById("message").innerHTML = event.data;
     };
     ```
-    
+
     </span>
-    
+
 
     ۱. به پایان رساندن یه web Worker
     Web Worker ها تا زمان خاتمه یافتن پیام‌ها (حتی بعد از اتمام یه اسکریپت خارجی) به گوش دادن ادامه میدن. برای خاتمه دادن به گوش دادن به پیام‌ها میتونیم از دستور terminate() استفاده کنیم.
@@ -1550,9 +1549,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     ```javascript
     w.terminate();
     ```
-    
+
     </span>
-    
+
 
     ۱. استفاده مجدد از web worker : اگه متغیر worker رو undefined یا تعریف نشده تنظیم کنیم، میتونیم از کد استفاده مجدد کنیم.
 
@@ -1561,13 +1560,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     ```javascript
     w = undefined;
     ```
-    
+
     </span>
-    
+
 
     **[⬆ فهرست](#فهرست)**
 
-50. ###P؟romise چیه؟     
+49. ### محدودیت‌های web-workerها روی DOM چیا هستن؟
     WebWorker‌ها به اشیا جاوااسکریپت دسترسی ندارن چون توی یه فایل خارجی تعریف شدن.
   1. Window object
   2. Document object
@@ -1575,7 +1574,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-51. ### چرا به promise نیاز داریم؟
+50. ### Promise چیه؟
 
     A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
 
@@ -1607,9 +1606,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     promise.then(value => console.log(value));
     ```
-    
+
     </span>
-    
+
 
     The action flow of a promise will be as below,
 
@@ -1617,13 +1616,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-52. ### سه تا وضعیت ممکن برای یه promise چیا هستن؟
+51. ### چرا به promise نیاز داریم؟
 
     Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
 
     **[⬆ فهرست](#فهرست)**
 
-53. ### توابع callback چی هستن؟
+52. ### سه تا وضعیت ممکن برای یه promise چیا هستن؟
 
     Promises have three states:
   1. **Pending:** This is an initial state of the Promise before an operation begins
@@ -1632,7 +1631,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-54. ### چرا به توابع callback نیاز داریم؟
+53. ### توابع callback چی هستن؟
 
     A callback function is a function passed into another function as an argument. This function is invoked inside the outer function to complete an action.
     Let's take a simple example of how to use callback function
@@ -1657,7 +1656,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-55. ###C؟allback-hell یا جهنم توابع callback چیه؟     
+54. ### چرا به توابع callback نیاز داریم؟
     The callbacks are needed because javascript is an event driven language. That means instead of waiting for a response javascript will keep executing while listening for other events.
     Let's take an example with the first function invoking an API call(simulated by setTimeout) and the next function which logs the message.
 
@@ -1687,7 +1686,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-56. ###S؟erver-sent-events(SSE) چیه؟     
+55. ### Callback-hell یا جهنم توابع callback چیه؟
     Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard to read and debug when dealing with asynchronous logic. The callback hell looks like below,
 
     <span dir="ltr" align="left">
@@ -1709,13 +1708,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-57. ### چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟
+56. ### Server-sent-events(SSE) چیه؟
 
     Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP connection without resorting to polling. These are a one way communications channel - events flow from server to client only. This has been used in Facebook/Twitter updates, stock price updates, news feeds etc.
 
     **[⬆ فهرست](#فهرست)**
 
-58. ### چطوری می‌تونیم پشتیبانی مرورگر برای SSE رو بررسی کنیم؟
+57. ### چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟
 
     The EventSource object is used to receive server-sent event notifications. For example, you can receive messages from server as below,
 
@@ -1734,7 +1733,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-59. ### کدوم توابع روی SSE وجود دارن؟
+58. ### چطوری می‌تونیم پشتیبانی مرورگر برای SSE رو بررسی کنیم؟
 
     You can perform browser support for server-sent events before using it as below,
 
@@ -1752,7 +1751,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-60. ### اصلی‌ترین قوانین promiseها چیا هستن؟
+59. ### کدوم توابع روی SSE وجود دارن؟
 
     Below are the list of events available for server sent events
     | Event | Description |
@@ -1763,7 +1762,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-61. ###C؟allback توی callback چطوری رخ میده؟               
+60. ### اصلی‌ترین قوانین promiseها چیا هستن؟
     A promise must follow a specific set of rules,
   1. A promise is an object that supplies a standard-compliant `.then()` method
   2. A pending promise may transition into either fulfilled or rejected state
@@ -1772,7 +1771,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-62. ### زنجیره promiseها چیه؟
+61. ### Callback توی callback چطوری رخ میده؟
 
     You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks.
 
@@ -1801,7 +1800,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-63. ### کاربرد متد promise.all چیه؟
+62. ### زنجیره promiseها چیه؟
 
     The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining. Let's take an example of promise chaining for calculating the final result,
 
@@ -1840,7 +1839,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-64. ### هدف از متد race روی promise چیه؟
+63. ### کاربرد متد promise.all چیه؟
 
     Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved when all the promises get resolved or any one of them gets rejected. For example, the syntax of promise.all method is below,
 
@@ -1856,7 +1855,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-65. ### حالت strict توی جاواسکریپت چی کار میکنه؟
+64. ### هدف از متد race روی promise چیه؟
 
     Promise.race() method will return the promise instance which is firstly resolved or rejected. Let's take an example of race() method where promise2 is resolved first
 
@@ -1879,19 +1878,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-66. ### چرا به حالت strict نیاز داریم؟
+65. ### حالت strict توی جاواسکریپت چی کار میکنه؟
 
     Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression `"use strict";` instructs the browser to use the javascript code in the Strict mode.
 
     **[⬆ فهرست](#فهرست)**
 
-67. ### چطوری می‌تونیم حالت strict رو فعال کنیم؟
+66. ### چرا به حالت strict نیاز داریم؟
 
     Strict mode is useful to write "secure" JavaScript by notifying "bad syntax" into real errors. For example, it eliminates accidentally creating a global variable by throwing an error and also throws an error for assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object.
 
     **[⬆ فهرست](#فهرست)**
 
-68. ### هدف از عملگر نقیض دوتایی(!!) چیه؟
+67. ### چطوری می‌تونیم حالت strict رو فعال کنیم؟
 
     The strict mode is declared by adding "use strict"; to the beginning of a script or a function.
     If declared at the beginning of a script, it has global scope.
@@ -1923,7 +1922,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-69. ### هدف از عملگر delete چیه؟
+68. ### هدف از عملگر نقیض دوتایی(!!) چیه؟
 
     The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, true.
     For example, you can test IE version using this expression as below,
@@ -1952,7 +1951,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-70. ### عملگر typeof چیکار می‌کنه؟
+69. ### هدف از عملگر delete چیه؟
 
     The delete keyword is used to delete the property as well as its value.
 
@@ -1969,7 +1968,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-71. ###u؟ndefined چیه و چه زمانی undefined می‌گیریم؟          
+70. ### عملگر typeof چیکار می‌کنه؟
     You can use the JavaScript typeof operator to find the type of a JavaScript variable. It returns the type of a variable or an expression.
 
     <span dir="ltr" align="left">
@@ -1983,7 +1982,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-72. ###n؟ull چیه؟     
+71. ### undefined چیه و چه زمانی undefined می‌گیریم؟
     The undefined property indicates that a variable has not been assigned a value, or not declared at all. The type of undefined value is undefined too.
 
     <span dir="ltr" align="left">
@@ -2007,7 +2006,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-73. ### تفاوت‌های بین null و undefined چیا هستن؟
+72. ### null چیه؟
 
     The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object.
     You can empty the variable by setting the value to null.
@@ -2023,7 +2022,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-74. ###e؟val چیه؟     
+73. ### تفاوت‌های بین null و undefined چیا هستن؟
     Below are the main differences between null and undefined,
 
     | Null | Undefined |
@@ -2036,7 +2035,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-75. ### تفاوت‌های بین window و document چیا هستن؟
+74. ### eval چیه؟
 
     The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
 
@@ -2050,7 +2049,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-76. ### توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟
+75. ### تفاوت‌های بین window و document چیا هستن؟
 
     Below are the main differences between window and document,
 
@@ -2062,7 +2061,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-77. ### انواع داده‌های جاواسکریپت کدوما هستن؟
+76. ### توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟
 
     The window.history object contains the browser's history. You can load previous and next URLs in the history using back() and next() methods.
 
@@ -2083,7 +2082,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-78. ###i؟sNaN چیه و چیکار می‌کنه؟                    
+77. ### انواع داده‌های جاواسکریپت کدوما هستن؟
     Below are the list of javascript data types available
   1. Number
   2. String
@@ -2093,8 +2092,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-79. ### تفاوت‌های بین undeclared و undefined چیا هستن؟
-    
+78. ### isNaN چیه و چیکار می‌کنه؟
+
     The isNaN() function is used to determine whether a value is an illegal number (Not-a-Number) or not. i.e, This function returns true if the value equates to NaN. Otherwise it returns false.
 
     <span dir="ltr" align="left">
@@ -2108,7 +2107,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-80. ### کدوم متغیرها عمومی هستن؟
+79. ### تفاوت‌های بین undeclared و undefined چیا هستن؟
 
     Below are the major differences between undeclared and undefined variables,
 
@@ -2119,7 +2118,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-81. ### مشکلات متغیرهای عمومی چیا هستن؟
+80. ### کدوم متغیرها عمومی هستن؟
 
     Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
 
@@ -2133,13 +2132,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-82. ### مقدار NaN چیه؟
+81. ### مشکلات متغیرهای عمومی چیا هستن؟
 
     The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
 
     **[⬆ فهرست](#فهرست)**
 
-83. ### هدف از تابع isFinite چیه؟
+82. ### مقدار NaN چیه؟
 
     The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases
 
@@ -2154,7 +2153,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-84. ### یه event-flow چیه؟
+83. ### هدف از تابع isFinite چیه؟
 
     The isFinite() function is used to determine whether a number is a finite, legal number. It returns false if the value is +infinity, -infinity, or NaN (Not-a-Number), otherwise it returns true.
 
@@ -2172,7 +2171,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-85. ###E؟vent-bubbling چیه؟     
+84. ### یه event-flow چیه؟
     Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
     There are two ways of event flow
   1. Top to Bottom(Event Capturing)
@@ -2180,18 +2179,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-86. ###E؟vent-capturing چیه؟     
+85. ### Event-bubbling چیه؟
     Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
 
     **[⬆ فهرست](#فهرست)**
 
-87. ### چطوری میشه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟
+86. ### Event-capturing چیه؟
 
     Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
 
     **[⬆ فهرست](#فهرست)**
 
-88. ### چطوری میشه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟
+87. ### چطوری میشه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟
 
     You can submit a form using JavaScript use document.form[0].submit(). All the form input's information is submitted using onsubmit event handler
 
@@ -2207,7 +2206,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-89. ### تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟
+88. ### چطوری میشه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟
 
     The window.navigator object contains information about the visitor's browser OS details. Some of the OS properties are available under platform property,
 
@@ -2221,13 +2220,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-90. ### تفاوت‌های بین objectهای native، host و user چیا هستن؟
+89. ### تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟
 
     The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).
 
     **[⬆ فهرست](#فهرست)**
 
-91. ### کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟
+90. ### تفاوت‌های بین objectهای native، host و user چیا هستن؟
 
     `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
     `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
@@ -2235,7 +2234,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-92. ### مزایا و معایب استفاده از promiseها به جای callback چیا هستن؟
+91. ### کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟
 
     You can use below tools or techniques for debugging javascript
   1. Chrome Devtools
@@ -2244,7 +2243,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-93. ### تفاوت‌های بین attribute و property روی DOM چیا هستن؟
+92. ### مزایا و معایب استفاده از promiseها به جای callback چیا هستن؟
 
     Below are the list of pros and cons of promises over callbacks,
 
@@ -2260,7 +2259,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-94. ### سیاست same-origin چیه؟
+93. ### تفاوت‌های بین attribute و property روی DOM چیا هستن؟
 
     Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes type and value,
 
@@ -2297,13 +2296,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-95. ### هدف استفاده از void 0 چیه؟
+94. ### سیاست same-origin چیه؟
 
     The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
 
     **[⬆ فهرست](#فهرست)**
 
-96. ### جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟
+95. ### هدف استفاده از void 0 چیه؟
 
     Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML documents that use href="JavaScript:Void(0);" within an ```<a>``` element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
     For example, the below link notify the message without reloading the page
@@ -2318,24 +2317,24 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **[⬆ فهرست](#فهرست)**
 
-97. ### آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟
+96. ### جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟
 
     JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays  modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
 
     **[⬆ فهرست](#فهرست)**
 
-98. ### ارتباطی بین Java و JavaScript وجود داره؟
+97. ### آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟
 
     Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
 
     **[⬆ فهرست](#فهرست)**
 
-99. ###E؟ventها چی هستن؟            
+98. ### ارتباطی بین Java و JavaScript وجود داره؟
     No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
 
     **[⬆ فهرست](#فهرست)**
 
-100. ### کی جاواسکریپت رو ساخته؟
+99. ### Eventها چی هستن؟
 
      Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events. Some of the examples of HTML events are,
 
@@ -2367,13 +2366,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-101. ### هدف از متد preventDefault چیه؟
+100. ### کی جاواسکریپت رو ساخته؟
 
      JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. Initially it was developed under the name `Mocha`, but later the language was officially called `LiveScript` when it first shipped in beta releases of Netscape.
 
      **[⬆ فهرست](#فهرست)**
 
-102. ### کاربرد متد stopPropagation چیه؟
+101. ### هدف از متد preventDefault چیه؟
 
      The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behaviour that belongs to the event will not occur. For example, prevent form submission when clicking on submit button and prevent opening the page URL when clicking on hyperlink are some common use cases.
 
@@ -2391,7 +2390,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-103. ### مراحلی که هنگام استفاده از return false توی یه event-handler رخ میده چیا هستن؟
+102. ### کاربرد متد stopPropagation چیه؟
 
      The stopPropagation method is used to stop the event from bubbling up the event chain. For example, the below nested divs with stopPropagation method prevents default event propagation when clicking on nested div(Div1)
 
@@ -2419,7 +2418,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-104. ###B؟OM چیه؟     
+103. ### مراحلی که هنگام استفاده از return false توی یه event-handler رخ میده چیا هستن؟
      The return false statement in event handlers performs the below steps,
 
   1. First it stops the browser's default action or behaviour.
@@ -2428,7 +2427,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-105. ### موارد استفاده از setTimeout کدوما هستن؟
+104. ### BOM چیه؟
 
      The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It consists of the objects navigator, history, screen, location and document which are children of the window. The Browser Object Model is not standardized and can change based on different browsers.
 
@@ -2436,7 +2435,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-106. ### موارد استفاده از setInterval کدوما هستن؟
+105. ### موارد استفاده از setTimeout کدوما هستن؟
 
      The setTimeout() method is used to call a function or evaluate an expression after a specified number of milliseconds. For example, let's log a message after 2 seconds using setTimeout method,
 
@@ -2450,7 +2449,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-107. ### چرا جاواسکریپت رو به عنوان یه زبان تک thread می‌شناسن؟
+106. ### موارد استفاده از setInterval کدوما هستن؟
 
      The setInterval() method is used to call a function or evaluate an expression at specified intervals (in milliseconds). For example, let's log a message after 2 seconds using setInterval method,
 
@@ -2464,12 +2463,12 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-108. ###E؟vent-delegation چیه؟     
+107. ### چرا جاواسکریپت رو به عنوان یه زبان تک thread می‌شناسن؟
      JavaScript is a single-threaded language. Because the language specification does not allow the programmer to write code so that the interpreter can run parts of it in parallel in multiple threads or processes. Whereas languages like java, go, C++ can make multi-threaded and multi-process programs.
 
      **[⬆ فهرست](#فهرست)**
 
-109. ###E؟CMAScript چیه؟     
+108. ### Event-delegation چیه؟
      Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.
 
      For example, if you wanted to detect field changes in inside a specific form, you can use event delegation technique,
@@ -2492,18 +2491,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-110. ###J؟SON چیه؟     
+109. ### ECMAScript چیه؟
      ECMAScript is the scripting language that forms the basis of JavaScript. ECMAScript standardized by the ECMA International standards organization in the ECMA-262 and ECMA-402 specifications. The first edition of ECMAScript was released in 1997.
 
      **[⬆ فهرست](#فهرست)**
 
-111. ### قوانین فرمت JSON کدوما هستن؟
+110. ### JSON چیه؟
 
      JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
 
      **[⬆ فهرست](#فهرست)**
 
-112. ### هدف از متد JSON.stringify چیه؟
+111. ### قوانین فرمت JSON کدوما هستن؟
 
      Below are the list of syntax rules of JSON
   1. The data is in name/value pairs
@@ -2513,7 +2512,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-113. ### چطوری می‌تونیم یه رشته(string) JSON رو تجزیه کنیم؟
+112. ### هدف از متد JSON.stringify چیه؟
 
      When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
 
@@ -2529,7 +2528,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-114. ### چرا به JSON نیاز داریم؟
+113. ### چطوری می‌تونیم یه رشته(string) JSON رو تجزیه کنیم؟
 
      When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
 
@@ -2545,18 +2544,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-115. ###P؟WAها چی هستن؟            
+114. ### چرا به JSON نیاز داریم؟
      When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
 
      **[⬆ فهرست](#فهرست)**
 
-116. ### هدف از متد clearTimeout چیه؟
+115. ### PWAها چی هستن؟
 
      Progressive web applications (PWAs) are a type of mobile app delivered through the web, built using common web technologies including HTML, CSS and JavaScript. These PWAs are deployed to servers, accessible through URLs, and indexed by search engines.
 
      **[⬆ فهرست](#فهرست)**
 
-117. ### هدف از متد clearInterval چیه؟
+116. ### هدف از متد clearTimeout چیه؟
 
      The clearTimeout() function is used in javascript to clear the timeout which has been set by setTimeout()function before that. i.e, The return value of setTimeout() function is stored in a variable and it’s passed into the clearTimeout() function to clear the timer.
 
@@ -2585,7 +2584,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-118. ### توی جاواسکریپت، چطوری میشه به یه صفحه جدید redirect انجام داد؟
+117. ### هدف از متد clearInterval چیه؟
 
      The clearInterval() function is used in javascript to clear the interval which has been set by setInterval() function. i.e, The return value returned by setInterval() function is stored in a variable and it’s passed into the clearInterval() function to clear the interval.
 
@@ -2614,7 +2613,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-119. ### چطوری بررسی می‌کنین که یه string شامل یه substring هست یا نه؟
+118. ### توی جاواسکریپت، چطوری میشه به یه صفحه جدید redirect انجام داد؟
 
      In vanilla javascript, you can redirect to a new page using the `location` property of window object. The syntax would be as follows,
 
@@ -2630,7 +2629,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-120. ### توی جاواسکریپت، چطوری مقدار یه آدرس email رو اعتبارسنجی می‌کنین؟
+119. ### چطوری بررسی می‌کنین که یه string شامل یه substring هست یا نه؟
 
      There are 3 possible ways to check whether a string contains a substring or not,
   1. **Using includes:** ES6 provided `String.prototype.includes` method to test a string contains a substring
@@ -2668,7 +2667,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-121. ### چطوری می‌تونیم مقدار آدرس url جاری رو بخونیم؟
+120. ### توی جاواسکریپت، چطوری مقدار یه آدرس email رو اعتبارسنجی می‌کنین؟
 
      You can validate an email in javascript using regular expressions. It is recommended to do validations on the server side instead of the client side. Because the javascript can be disabled on the client side.
 
@@ -2687,7 +2686,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      The above regular expression accepts unicode characters.
 
-122. ### ویژگی‌های مختلف url روی object مربوط به history کدوما هستن؟
+121. ### چطوری می‌تونیم مقدار آدرس url جاری رو بخونیم؟
 
      You can use `window.location.href` expression to get the current url path and you can use the same expression for updating the URL too. You can also use `document.URL` for read-only purposes but this solution has issues in FF.
 
@@ -2701,7 +2700,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-123. ### توی جاواسکریپت چطوری می‌تونیم مقدار یه query-string رو بخونیم؟
+122. ### ویژگی‌های مختلف url روی object مربوط به history کدوما هستن؟
 
      The below `Location` object properties can be used to access URL components of the page,
   1. href - The entire URL
@@ -2715,7 +2714,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-124. ### چطوری می‌تونیم بررسی کنیم که آیا یه پراپرتی روی آبجکت وجود داره یا نه؟
+123. ### توی جاواسکریپت چطوری می‌تونیم مقدار یه query-string رو بخونیم؟
 
      You can use URLSearchParams to get query string values in javascript. Let's see an example to get the client code value from URL query string,
 
@@ -2730,7 +2729,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-125. ### How do you check if a key exists in an object
+124. ### چطوری می‌تونیم بررسی کنیم که آیا یه پراپرتی روی آبجکت وجود داره یا نه؟
 
      You can check whether a key exists in an object or not using three approaches,
 
