@@ -1,7 +1,9 @@
 <span dir="rtl">
 
 
-### تمرین کدنویسی
+#  🎮 تمرین کدنویسی
+می‌تونین با حل این سوالات و سپس مشاهده پاسخ صحیح، سطح دانش جاواسکریپت خودتون رو ارزیابی کنین و برای مصاحبه‌های شغلی پیش رو آماده بشین 💪.
+> اگه خوشتون اومد به گیت‌هابمون :star: بدین. اگر هم قصد مشارکت داشتید خیلی خوشحال می‌شیم :)
 
 #### 1. What is the output of below code
 
@@ -30,7 +32,7 @@ function Vehicle(model, color, year, country) {
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 The function declarations are hoisted similar to any variables. So the placement for `Vehicle` function declaration doesn't make any difference.
 
@@ -64,7 +66,7 @@ console.log(foo(), typeof x, typeof y);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 3
+##### ✅ پاسخ صحیح: 3
 
 Of course the return value of `foo()` is 1 due to the increment operator. But the statement `let x = y = 0` declares a local variable x. Whereas y declared as a global variable accidentally. This statement is equivalent to,
 
@@ -109,7 +111,7 @@ main();
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 The statements order is based on the event loop mechanism. The order of statements follows the below order,
 
@@ -145,7 +147,7 @@ console.log(0.1 + 0.2 === 0.3);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 This is due to the float point math problem. Since the floating point numbers are encoded in binary format, the addition operations on them lead to rounding errors. Hence, the comparison of floating points doesn't give expected results.
 You can find more details about the explanation here [0.30000000000000004.com/](https://0.30000000000000004.com/)
@@ -179,7 +181,7 @@ var y = 1;
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 The main points in the above code snippets are,
 
@@ -233,7 +235,7 @@ console.log(foo());
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 3
+##### ✅ پاسخ صحیح: 3
 
 This is a semicolon issue. Normally semicolons are optional in JavaScript. So if there are any statements(in this case, return) missing semicolon, it is automatically inserted immediately. Hence, the function returned as undefined.
 
@@ -281,7 +283,7 @@ console.log(myChars.length);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 3
+##### ✅ پاسخ صحیح: 3
 
 The `delete` operator will delete the object property but it will not reindex the array or change its length. So the number or elements or length of the array won't be changed.
 If you try to print myChars then you can observe that it doesn't set an undefined value, rather the property is removed from the array. The newer versions of Chrome use `empty` instead of `undefined` to make the difference a bit clearer.
@@ -316,7 +318,7 @@ console.log(array3);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 The latest chrome versions display `sparse array`(they are filled with holes) using this empty x n notation. Whereas the older versions have undefined x n notation.
 **Note:** The latest version of FF displays `n empty slots` notation.
@@ -351,7 +353,7 @@ console.log(obj.prop3());
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 ES6 provides method definitions and property shorthands for objects. So both prop2 and prop3 are treated as regular function values.
 </p>
@@ -378,7 +380,7 @@ console.log(3 > 2 > 1);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 The important point is that if the statement contains the same operators(e.g, < or >) then it can be evaluated from left to right.
 The first statement follows the below order,
@@ -421,7 +423,7 @@ printNumbers(1, 2, 3);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 In non-strict mode, the regular JavaScript functions allow duplicate named parameters. The above code snippet has duplicate parameters on 1st and 3rd parameters.
 The value of the first parameter is mapped to the third argument which is passed to the function. Hence, the 3rd argument overrides the first parameter.
@@ -453,7 +455,7 @@ printNumbersArrow(1, 2, 3);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 3
+##### ✅ پاسخ صحیح: 3
 
 Unlike regular functions, the arrow functions doesn't not allow duplicate parameters in either strict or non-strict mode. So you can see `SyntaxError` in the console.
 </p>
@@ -480,7 +482,7 @@ console.log(arrowFunc(1, 2, 3));
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 Arrow functions do not have an `arguments, super, this, or new.target` bindings. So any reference to `arguments` variable tries to resolve to a binding in a lexically enclosing environment. In this case, the arguments variable is not defined outside of the arrow function. Hence, you will receive a reference error.
 
@@ -530,7 +532,7 @@ console.log( String.prototype.trimLeft.name === 'trimStart' );
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 In order to be consistent with functions like `String.prototype.padStart`, the standard method name for trimming the whitespaces is considered as `trimStart`. Due to web web compatibility reasons, the old method name 'trimLeft' still acts as an alias for 'trimStart'. Hence, the prototype for 'trimLeft' is always 'trimStart'
 </p>
@@ -556,7 +558,7 @@ console.log(Math.max());
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 -Infinity is the initial comparant because almost every other value is bigger. So when no arguments are provided, -Infinity is going to be returned.
 **Note:** Zero number of arguments is a valid case.
@@ -584,7 +586,7 @@ console.log(10 == [[[[[[[10]]]]]]]);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 As per the comparison algorithm in the ECMAScript specification(ECMA-262), the above expression converted into JS as below
 <span dir="ltr" align="left" >
 
@@ -618,7 +620,7 @@ console.log(10 - '10');
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 The concatenation operator(+) is applicable for both number and string types. So if any operand is string type then both operands concatenated as strings. Whereas subtract(-) operator tries to convert the operands as number type.
 </p>
@@ -650,7 +652,7 @@ console.log("I'm False");
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 In comparison operators, the expression `[0]` converted to Number([0].valueOf().toString()) which is resolved to false. Whereas `[0]` just becomes a truthy value without any conversion because there is no comparison operator.
 </p>
@@ -674,7 +676,7 @@ console.log([1, 2] + [3, 4]);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 The + operator is not meant or defined for arrays. So it converts arrays into strings and concatenates them.
 </p>
@@ -704,7 +706,7 @@ console.log(browser);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 Since `Set` object is a collection of unique values, it won't allow duplicate values in the collection. At the same time, it is case sensitive data structure.
 </p>
@@ -728,7 +730,7 @@ console.log(NaN === NaN);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 JavaScript follows IEEE 754 spec standards. As per this spec, NaNs are never equal for floating-point numbers.
 </p>
@@ -755,7 +757,7 @@ console.log(numbers.indexOf(NaN));
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 The `indexOf` uses strict equality operator(===) internally and `NaN === NaN` evaluates to false. Since indexOf won't be able to find NaN inside an array, it returns -1 always.
 But you can use `Array.prototype.findIndex` method to find out the index of NaN in an array or You can use `Array.prototype.includes` to check if NaN is present in an array or not.
@@ -795,7 +797,7 @@ console.log(a, b);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 3
+##### ✅ پاسخ صحیح: 3
 
 When using rest parameters, trailing commas are not allowed and will throw a SyntaxError.
 If you remove the trailing comma then it displays 1st answer
@@ -835,7 +837,7 @@ console.log(func());
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 Async functions always return a promise. But even if the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise. The above async function is equivalent to below expression,
 
@@ -874,7 +876,7 @@ console.log(func());
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 The await expression returns value 10 with promise resolution and the code after each await expression can be treated as existing in a `.then` callback. In this case, there is no return expression at the end of the function. Hence, the default return value of `undefined` is returned as the resolution of the promise.  The above async function is equivalent to below expression,
 
@@ -925,7 +927,7 @@ processArray([1, 2, 3, 4]);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 Even though “processArray” is an async function, the anonymous function that we use for `forEach` is synchronous. If you use await inside a synchronous function then it throws a syntax error.
 </p>
@@ -967,7 +969,7 @@ process([1, 2, 3, 5]);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 The forEach method will not wait until all items are finished but it just runs the tasks and goes next. Hence, the last statement is displayed first followed by a sequence of promise resolutions.
 
@@ -1011,7 +1013,7 @@ console.log(set);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 Set has few exceptions from equality check,
 
@@ -1047,7 +1049,7 @@ console.log(sym1 === sym2, sym3 === sym4);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 3
+##### ✅ پاسخ صحیح: 3
 
 Symbol follows below conventions,
 
@@ -1080,7 +1082,7 @@ console.log(sym1);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 `Symbol` is a just a standard function and not an object constructor(unlike other primitives new Boolean, new String and new Number). So if you try to call it with the new operator will result in a TypeError
 </p>
@@ -1120,7 +1122,7 @@ if (!typeof myString === "number"){
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 The return value of `typeof myNumber (OR) typeof myString` is always the truthy value (either "number" or "string"). Since ! operator converts the value to a boolean value, the value of both `!typeof myNumber or !typeof myString` is always false. Hence the if condition fails and control goes to else block.
 </p>
@@ -1148,7 +1150,7 @@ console.log(JSON.stringify({ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]))
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 The symbols has below constraints,
 
@@ -1186,7 +1188,7 @@ new B();
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 Using constructors, `new.target` refers to the constructor (points to the class definition of class which is initialized) that was directly invoked by new. This also applies to the case if the constructor is in a parent class and was delegated from a child constructor.
 </p>
@@ -1214,7 +1216,7 @@ console.log(x, y);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 It throws a syntax error because the rest element should not have a trailing comma. You should always consider using a rest operator as the last element.
 </p>
@@ -1244,7 +1246,7 @@ console.log(y);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 The object property follows below rules,
 
@@ -1279,7 +1281,7 @@ area();
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 If you leave out the right-hand side assignment for the destructuring object, the function will look for at least one argument to be supplied when invoked. Otherwise you will receive an error `Error: Cannot read property 'length' of undefined` as mentioned above.
 
@@ -1344,7 +1346,7 @@ console.log(name);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 It is possible to combine Array and Object destructuring. In this case, the third element in the array props accessed first followed by name property in the object.
 </p>
@@ -1378,7 +1380,7 @@ checkType(null);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 3
+##### ✅ پاسخ صحیح: 3
 
 If the function argument is set implicitly(not passing argument) or explicitly to undefined, the value of the argument is the default parameter. Whereas for other falsy values('' or null), the value of the argument is passed as a parameter.
 
@@ -1415,7 +1417,7 @@ console.log(add('Apple'));
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 Since the default argument is evaluated at call time, a new object is created each time the function is called. So in this case, the new array is created and an element pushed to the default empty array.
 
@@ -1447,7 +1449,7 @@ greet('Hello', 'John', 'Good morning!');
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 Since parameters defined earlier are available to later default parameters, this code snippet doesn't throw any error.
 </p>
@@ -1475,7 +1477,7 @@ outer();
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 The functions and variables declared in the function body cannot be referred from default value parameter initializers. If you still try to access, it throws a run-time ReferenceError(i.e, `inner` is not defined).
 </p>
@@ -1507,7 +1509,7 @@ myFun(1, 2);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 3
+##### ✅ پاسخ صحیح: 3
 
 The rest parameter is used to hold the remaining parameters of a function and it becomes an empty array if the argument is not provided.
 </p>
@@ -1536,7 +1538,7 @@ console.log(array);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 Spread syntax can be applied only to iterable objects. By default, Objects are not iterable, but they become iterable when used in an Array, or with iterating functions such as `map(), reduce(), and assign()`. If you still try to do it, it still throws `TypeError: obj is not iterable`.
 </p>
@@ -1569,7 +1571,7 @@ console.log(myGenObj.next().value);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 Generators are not constructible type. But if you still proceed to do, there will be an error saying "TypeError: myGenFunc is not a constructor"
 
@@ -1607,7 +1609,7 @@ console.log(myGenObj.next());
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 
 A return statement in a generator function will make the generator finish. If a value is returned, it will be set as the value property of the object and done property to true. When a generator is finished, subsequent next() calls return an object of this form: `{value: undefined, done: true}`.
 </p>
@@ -1646,7 +1648,7 @@ for (const value of myGenerator) {
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 The generator should not be re-used once the iterator is closed. i.e, Upon exiting a loop(on completion or using break & return), the generator is closed and trying to iterate over it again does not yield any more results. Hence, the second loop doesn't print any value.
 </p>
@@ -1672,7 +1674,7 @@ console.log(num);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 If you use an invalid number(outside of 0-7 range) in the octal literal, JavaScript will throw a SyntaxError. In ES5, it treats the octal literal as a decimal number.
 </p>
 
@@ -1711,7 +1713,7 @@ class Square {
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 Unlike function declarations, class declarations are not hoisted. i.e, First You need to declare your class and then access it, otherwise it will throw a ReferenceError "Uncaught ReferenceError: Square is not defined".
 
@@ -1755,7 +1757,7 @@ console.log(run());
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 
 When a regular or prototype method is called without a value for **this**, the methods return an initial this value if the value is not undefined. Otherwise global window object will be returned. In our case, the initial `this` value is undefined so both methods return window objects.
 
@@ -1801,7 +1803,7 @@ console.log(car.start());
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 3
+##### ✅ پاسخ صحیح: 3
 
 The super keyword is used to call methods of a superclass. Unlike other languages the super invocation doesn't need to be a first statement. i.e, The statements will be executed in the same order of code.
 
@@ -1831,7 +1833,7 @@ console.log(USER.age);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 
 Even though we used constant variables, the content of it is an object and the object's contents (e.g properties) can be altered. Hence, the change is going to be valid in this case.
 </p>
@@ -1856,7 +1858,7 @@ console.log('🙂' === '🙂');
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 2
+##### ✅ پاسخ صحیح: 2
 Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode comparision of same emojies is equivalent to string comparison. Hence, the output is always true.
 
 </p>
@@ -1883,7 +1885,7 @@ console.log(typeof typeof typeof true);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 The typeof operator on any primitive returns a string value. So even if you apply the chain of typeof operators on the return value, it is always string.
 </p>
 
@@ -1915,7 +1917,7 @@ if (zero) {
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 1
+##### ✅ پاسخ صحیح: 1
 1. The type of operator on new Number always returns object. i.e, typeof new Number(0) --> object.
 2. Objects are always truthy in if block
 
@@ -1949,7 +1951,7 @@ console.log(msg.name);
 <details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
-##### پاسخ: 4
+##### ✅ پاسخ صحیح: 4
 It returns undefined for non-strict mode and returns Error for strict mode. In non-strict mode, the wrapper object is going to be created and get the mentioned property. But the object get disappeared after accessing the property in next line.
 </p>
 
