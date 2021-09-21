@@ -27,7 +27,7 @@ function Vehicle(model, color, year, country) {
 - 3: null
 - 4: {model: "Honda", color: "white", year: "2010", country: "UK"}
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -61,7 +61,7 @@ console.log(foo(), typeof x, typeof y);
 - 3: 1, undefined and number
 - 4: 1, number and number
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 3
@@ -106,7 +106,7 @@ main();
 - 3: A and C
 - 4: A, C and B
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -142,7 +142,7 @@ console.log(0.1 + 0.2 === 0.3);
 - 1: false
 - 2: true
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -176,7 +176,7 @@ var y = 1;
 - 3: ReferenceError
 - 4: 1undefined
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -230,7 +230,7 @@ console.log(foo());
 - 3: Undefined
 - 4: SyntaxError
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 3
@@ -278,7 +278,7 @@ console.log(myChars.length);
 - 3: [empty, 'b', 'c', 'd'], undefined, 4
 - 4: [null, 'b', 'c', 'd'], undefined, 4
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 3
@@ -313,7 +313,7 @@ console.log(array3);
 - 3: [null × 3], [null × 2, 100], [null × 3]
 - 4: [], [100], []
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -348,7 +348,7 @@ console.log(obj.prop3());
 - 3: 0, { return 1 }, { return 2 }
 - 4: 0, 1, undefined
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -375,7 +375,7 @@ console.log(3 > 2 > 1);
 - 3: SyntaxError, SyntaxError,
 - 4: false, false
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -418,7 +418,7 @@ printNumbers(1, 2, 3);
 - 3: SyntaxError: Duplicate parameter name not allowed in this context
 - 4: 1, 2, 1
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -450,7 +450,7 @@ printNumbersArrow(1, 2, 3);
 - 3: SyntaxError: Duplicate parameter name not allowed in this context
 - 4: 1, 2, 1
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 3
@@ -477,7 +477,7 @@ console.log(arrowFunc(1, 2, 3));
 - 3: undefined
 - 4: null
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -527,7 +527,7 @@ console.log( String.prototype.trimLeft.name === 'trimStart' );
 - 1: True, False
 - 2: False, True
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -553,7 +553,7 @@ console.log(Math.max());
 - 3: 0
 - 4: -Infinity
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -581,7 +581,7 @@ console.log(10 == [[[[[[[10]]]]]]]);
 - 3: False, False
 - 4: False, True
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -615,7 +615,7 @@ console.log(10 - '10');
 - 3: 1010, 10-10
 - 4: NaN, NaN
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -647,7 +647,7 @@ console.log("I'm False");
 - 3: False, I'm True
 - 4: False, I'm False
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -671,7 +671,7 @@ console.log([1, 2] + [3, 4]);
 - 3: SyntaxError
 - 4: 1,23,4
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -701,7 +701,7 @@ console.log(browser);
 - 3: [1, 2, 3, 4], ["F", "i", "r", "e", "o", "x"]
 - 4: {1, 1, 2, 3, 4}, {"F", "i", "r", "e", "f", "o", "x"}
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -725,7 +725,7 @@ console.log(NaN === NaN);
 - 1: True
 - 2: False
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -752,7 +752,7 @@ console.log(numbers.indexOf(NaN));
 - 3: SyntaxError
 - 4: -1
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -792,7 +792,7 @@ console.log(a, b);
 - 3: SyntaxError
 - 4: 1, [2, 3, 4]
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 3
@@ -832,7 +832,7 @@ console.log(func());
 - 3: SyntaxError
 - 4: Promise {<rejected>: 10}
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -871,7 +871,7 @@ console.log(func());
 - 3: SyntaxError
 - 4: Promise {<resolved>: undefined}
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -922,7 +922,7 @@ processArray([1, 2, 3, 4]);
 - 3: 4, 4, 4, 4
 - 4: 4, 3, 2, 1
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -964,7 +964,7 @@ process([1, 2, 3, 5]);
 - 3: Process completed! and 5 5 5 5
 - 4: Process completed! and 1 2 3 5
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -1008,7 +1008,7 @@ console.log(set);
 - 3: Set(5) {"+0", "-0", NaN, undefined, NaN}
 - 4: Set(4) {"+0", NaN, undefined, NaN}
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -1044,7 +1044,7 @@ console.log(sym1 === sym2, sym3 === sym4);
 - 3: false, true
 - 4: false, false
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 3
@@ -1077,7 +1077,7 @@ console.log(sym1);
 - 3: Symbol('one')
 - 4: Symbol
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -1117,7 +1117,7 @@ if (!typeof myString === "number"){
 - 3: It is not a string!, It is a number!
 - 4: It is a string!, It is a number!
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -1145,7 +1145,7 @@ console.log(JSON.stringify({ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]))
 - 3: {"myArray":['one', null,null,null]}, "{ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]"
 - 4: {"myArray":['one', undefined, function(){}, Symbol('')]}, {}
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -1183,7 +1183,7 @@ new B();
 - 1: A, A
 - 2: A, B
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -1211,7 +1211,7 @@ console.log(x, y);
 - 3: 1, [2]
 - 4: SyntaxError
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -1241,7 +1241,7 @@ console.log(y);
 - 3: 10, undefined
 - 4: 30, undefined
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -1276,7 +1276,7 @@ area();
 - 3: undefined
 - 4: 0
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -1341,7 +1341,7 @@ console.log(name);
 - 3: undefined
 - 4: John
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -1375,7 +1375,7 @@ checkType(null);
 - 3: number, number, string, object
 - 4: number, number, number, number
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 3
@@ -1412,7 +1412,7 @@ console.log(add('Apple'));
 - 1: ['Orange'], ['Orange', 'Apple']
 - 2: ['Orange'], ['Apple']
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -1444,7 +1444,7 @@ greet('Hello', 'John', 'Good morning!');
 - 2: ['Hello', 'John', 'Hello John'], ['Hello', 'John', 'Good morning!']
 
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -1472,7 +1472,7 @@ outer();
 - 1: ReferenceError
 - 2: Inner
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -1504,7 +1504,7 @@ myFun(1, 2);
 - 3: [3, 4, 5], []
 - 4: [3, 4, 5], [undefined]
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 3
@@ -1533,7 +1533,7 @@ console.log(array);
 - 3: []
 - 4: ['key']
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -1566,7 +1566,7 @@ console.log(myGenObj.next().value);
 - 3: SyntaxError
 - 4: TypeError
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -1604,7 +1604,7 @@ console.log(myGenObj.next());
 - 3: { value: 1, done: false }, { value: 2, done: true }, { value: 3, done: true }
 - 4: { value: 1, done: false }, { value: 2, done: false }, { value: 3, done: true }
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -1643,7 +1643,7 @@ for (const value of myGenerator) {
 - 3: 1 and 1
 - 4: 1
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -1669,7 +1669,7 @@ console.log(num);
 - 1: SyntaxError
 - 2: 38
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -1708,7 +1708,7 @@ class Square {
 - 1: 100
 - 2: ReferenceError
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -1752,7 +1752,7 @@ console.log(run());
 - 3: SyntaxError
 - 4: Window, Window
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
@@ -1798,7 +1798,7 @@ console.log(car.start());
 - 3: BMW car started, BMW vehicle started
 - 4: BMW car started, BMW car started
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 3
@@ -1828,7 +1828,7 @@ console.log(USER.age);
 - 3: Uncaught TypeError
 - 4: SyntaxError
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -1839,8 +1839,6 @@ Even though we used constant variables, the content of it is an object and the o
 </details>
 
 ---
-
-**[⬆ فهرست](#فهرست)**
 
 #### 53. What is the output of below code
 
@@ -1855,7 +1853,7 @@ console.log('🙂' === '🙂');
 - 1: false
 - 2: true
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 2
@@ -1866,8 +1864,6 @@ Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode c
 </details>
 
 ---
-
-**[⬆ فهرست](#فهرست)**
 
 #### 54. What is the output of below code?
 
@@ -1884,7 +1880,7 @@ console.log(typeof typeof typeof true);
 - 3: NaN
 - 4: number
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -1894,8 +1890,6 @@ The typeof operator on any primitive returns a string value. So even if you appl
 </details>
 
 ---
-
-**[⬆ فهرست](#فهرست)**
 
 #### 55. What is the output of below code?
 
@@ -1918,7 +1912,7 @@ if (zero) {
 - 3: NaN
 - 4: SyntaxError
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 1
@@ -1932,8 +1926,6 @@ Hence the above code block always goes to if section.
 </details>
 
 ---
-
-**[⬆ فهرست](#فهرست)**
 
 #### 55. What is the output of below code in non strict mode?
 
@@ -1954,7 +1946,7 @@ console.log(msg.name);
 - 3: John
 - 4: Undefined
 
-<details><summary><b>مشاهده پاسخ</b></summary>
+<details><summary><b>🤔 مشاهده پاسخ</b></summary>
 <p>
 
 ##### پاسخ: 4
