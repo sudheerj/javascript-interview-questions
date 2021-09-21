@@ -5,6 +5,9 @@
 
 #### 1. What is the output of below code
 
+    
+<span dir="ltr" align="left">
+
 ```javascript
 var car = new Vehicle("Honda", "white", "2010", "UK");
 console.log(car);
@@ -16,6 +19,8 @@ function Vehicle(model, color, year, country) {
     this.country = country;
 }
 ```
+
+</span>
 
 - 1: Undefined
 - 2: ReferenceError
@@ -124,10 +129,16 @@ The statements order is based on the event loop mechanism. The order of statemen
 
 #### 4. What is the output of below equality check
 
+    
+    
+<span dir="ltr" align="left">
+
 ```javascript
 console.log(0.1 + 0.2 === 0.3);
 ```
 
+</span>
+    
 - 1: false
 - 2: true
 
@@ -146,6 +157,10 @@ You can find more details about the explanation here [0.30000000000000004.com/](
 
 #### 5. What is the output of below code
 
+    
+    
+<span dir="ltr" align="left">
+    
 ```javascript
 var y = 1;
   if (function f(){}) {
@@ -154,6 +169,8 @@ var y = 1;
   console.log(y);
 ```
 
+</span>
+    
 - 1: 1function
 - 2: 1object
 - 3: ReferenceError
@@ -170,7 +187,10 @@ The main points in the above code snippets are,
 2. Since it is not declared(or assigned) anywhere, f is undefined and typeof f is undefined too.
 
 In other words, it is same as
-
+    
+    
+<span dir="ltr" align="left">
+    
 ```javascript
 var y = 1;
   if ('foo') {
@@ -179,6 +199,8 @@ var y = 1;
   console.log(y);
 ```
 
+</span>
+    
 **Note:** It returns 1object for MS Edge browser
 </p>
 </details>
