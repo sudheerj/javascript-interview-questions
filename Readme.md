@@ -13,6 +13,11 @@
 
 | [**نسخه MarkDown**](https://github.com/Mariotek/javascript-persian-interview-questions/blob/master/book.md) |
 |-------------------|
+  
+  
+| [**تمرین چند گزینه‌ای**](https://github.com/Mariotek/javascript-persian-interview-questions/blob/master/practice.md) |
+|-------------------|
+
 
 البته می‌تونید همه اینا رو باهم از بخش ریلیزهای گیت هاب دانلود کنین([این لینک](https://github.com/Mariotek/javascript-persian-interview-questions/releases)).
 
