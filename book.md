@@ -1576,9 +1576,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 50. ### Promise چیه؟
 
-    A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
-
-    The syntax of Promise creation looks like below,
+       A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
+   
+       The syntax of Promise creation looks like below,
 
     <span dir="ltr" align="left">
 
@@ -1618,7 +1618,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 51. ### چرا به promise نیاز داریم؟
 
-    Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
+پرامیس‌ها برای اداره عملیات غیر‌همزمان استفاده میشن. اونا با کاهش کال‌بک های جهنمی و کد تمیز‌تر رویکرد جایگزینی رو برای کال‌بک‌ها فراهم میکنن.
 
     **[⬆ فهرست](#فهرست)**
 
