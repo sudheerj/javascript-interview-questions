@@ -5,7 +5,7 @@
 می‌تونین با حل این سوالات و سپس مشاهده پاسخ صحیح، سطح دانش جاواسکریپت خودتون رو ارزیابی کنین و برای مصاحبه‌های شغلی پیش رو آماده بشین 💪.
 > اگه خوشتون اومد به گیت‌هابمون :star: بدین. اگر هم قصد مشارکت داشتید خیلی خوشحال می‌شیم :)
 
-#### 1. What is the output of below code
+#### 1. خروجی این کد چی میشه؟
 
 
 <span dir="ltr" align="left">
@@ -41,7 +41,7 @@ The function declarations are hoisted similar to any variables. So the placement
 
 ---
 
-#### 2. What is the output of below code
+#### 2. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left">
 
@@ -86,7 +86,7 @@ Since the block scoped variable x is undefined outside of the function, the type
 
 ---
 
-#### 3. What is the output of below code
+#### 3. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left">
 
@@ -129,7 +129,7 @@ The statements order is based on the event loop mechanism. The order of statemen
 
 ---
 
-#### 4. What is the output of below equality check
+#### 4. خروجی شرط برابری زیر چی میشه؟
 
 
 
@@ -157,7 +157,7 @@ You can find more details about the explanation here [0.30000000000000004.com/](
 
 ---
 
-#### 5. What is the output of below code
+#### 5. خروجی این کد چی میشه؟
 
 
 
@@ -209,7 +209,7 @@ var y = 1;
 
 ---
 
-#### 6. What is the output of below code
+#### 6. خروجی این کد چی میشه؟
 
 
 <span dir="ltr" align="left">
@@ -260,7 +260,7 @@ console.log(foo()); // {message: "Hello World"}
 
 ---
 
-#### 7. What is the output of below code
+#### 7. خروجی این کد چی میشه؟
 
 
 <span dir="ltr" align="left">
@@ -327,7 +327,7 @@ The latest chrome versions display `sparse array`(they are filled with holes) us
 
 ---
 
-#### 9. What is the output of below code
+#### 9. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -361,7 +361,7 @@ ES6 provides method definitions and property shorthands for objects. So both pro
 
 ---
 
-#### 10. What is the output of below code
+#### 10. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left">
 
@@ -434,7 +434,7 @@ The value of the first parameter is mapped to the third argument which is passed
 
 ---
 
-#### 12. What is the output of below code
+#### 12. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -463,7 +463,7 @@ Unlike regular functions, the arrow functions doesn't not allow duplicate parame
 
 ---
 
-#### 13. What is the output of below code
+#### 13. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -515,7 +515,7 @@ console.log(arrowFunc(1, 2, 3));
 
 ---
 
-#### 14. What is the output of below code
+#### 14. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -540,7 +540,7 @@ In order to be consistent with functions like `String.prototype.padStart`, the s
 
 ---
 
-#### 15. What is the output of below code
+#### 15. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -567,7 +567,7 @@ console.log(Math.max());
 
 ---
 
-#### 16. What is the output of below code
+#### 16. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -601,7 +601,7 @@ So it doesn't matter about number brackets([]) around the number, it is always c
 
 ---
 
-#### 17. What is the output of below code
+#### 17. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -628,7 +628,7 @@ The concatenation operator(+) is applicable for both number and string types. So
 
 ---
 
-#### 18. What is the output of below code
+#### 18. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -658,7 +658,7 @@ In comparison operators, the expression `[0]` converted to Number([0].valueOf().
 </p>
 </details>
 
-#### 19. What is the output of below code
+#### 19. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -684,7 +684,7 @@ The + operator is not meant or defined for arrays. So it converts arrays into st
 
 ---
 
-#### 20. What is the output of below code
+#### 20. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -714,7 +714,7 @@ Since `Set` object is a collection of unique values, it won't allow duplicate va
 
 ---
 
-#### 21. What is the output of below code
+#### 21. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -738,7 +738,7 @@ JavaScript follows IEEE 754 spec standards. As per this spec, NaNs are never equ
 
 ---
 
-#### 22. What is the output of below code
+#### 22. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -778,7 +778,7 @@ console.log(numbers.includes(Number.isNaN)); // true
 
 ---
 
-#### 23. What is the output of below code
+#### 23. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -816,7 +816,7 @@ console.log(a, b); // 1, [2, 3, 4, 5]
 
 ---
 
-#### 25. What is the output of below code
+#### 25. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -855,7 +855,7 @@ function func() {
 
 ---
 
-#### 26. What is the output of below code
+#### 26. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -894,7 +894,7 @@ function func() {
 
 ---
 
-#### 27. What is the output of below code
+#### 27. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -936,7 +936,7 @@ Even though “processArray” is an async function, the anonymous function that
 
 ---
 
-#### 28. What is the output of below code
+#### 28. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -993,7 +993,7 @@ async function processArray(array) {
 
 ---
 
-#### 29. What is the output of below code
+#### 29. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1025,7 +1025,7 @@ Set has few exceptions from equality check,
 
 ---
 
-#### 30. What is the output of below code
+#### 30. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1063,7 +1063,7 @@ Symbol follows below conventions,
 
 ---
 
-#### 31. What is the output of below code
+#### 31. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1091,7 +1091,7 @@ console.log(sym1);
 
 ---
 
-#### 32. What is the output of below code
+#### 32. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1131,7 +1131,7 @@ The return value of `typeof myNumber (OR) typeof myString` is always the truthy 
 
 ---
 
-#### 33. What is the output of below code
+#### 33. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1163,7 +1163,7 @@ The symbols has below constraints,
 
 ---
 
-#### 34. What is the output of below code
+#### 34. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1197,7 +1197,7 @@ Using constructors, `new.target` refers to the constructor (points to the class 
 
 ---
 
-#### 35. What is the output of below code
+#### 35. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1225,7 +1225,7 @@ It throws a syntax error because the rest element should not have a trailing com
 
 ---
 
-#### 36. What is the output of below code
+#### 36. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1259,7 +1259,7 @@ The object property follows below rules,
 
 ---
 
-#### 37. What is the output of below code
+#### 37. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1321,7 +1321,7 @@ area();
 
 ---
 
-#### 38. What is the output of below code
+#### 38. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1355,7 +1355,7 @@ It is possible to combine Array and Object destructuring. In this case, the thir
 
 ---
 
-#### 39. What is the output of below code
+#### 39. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1395,7 +1395,7 @@ Hence, the result of function calls categorized as below,
 
 ---
 
-#### 40. What is the output of below code
+#### 40. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1427,7 +1427,7 @@ Since the default argument is evaluated at call time, a new object is created ea
 
 ---
 
-#### 41. What is the output of below code
+#### 41. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1458,7 +1458,7 @@ Since parameters defined earlier are available to later default parameters, this
 
 ---
 
-#### 42. What is the output of below code
+#### 42. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1486,7 +1486,7 @@ The functions and variables declared in the function body cannot be referred fro
 
 ---
 
-#### 43. What is the output of below code
+#### 43. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1518,7 +1518,7 @@ The rest parameter is used to hold the remaining parameters of a function and it
 
 ---
 
-#### 44. What is the output of below code
+#### 44. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1547,7 +1547,7 @@ Spread syntax can be applied only to iterable objects. By default, Objects are n
 
 ---
 
-#### 45. What is the output of below code
+#### 45. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1581,7 +1581,7 @@ Generators are not constructible type. But if you still proceed to do, there wil
 
 ---
 
-#### 46. What is the output of below code
+#### 46. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1618,7 +1618,7 @@ A return statement in a generator function will make the generator finish. If a 
 
 ---
 
-#### 47. What is the output of below code
+#### 47. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1657,7 +1657,7 @@ The generator should not be re-used once the iterator is closed. i.e, Upon exiti
 
 ---
 
-#### 48. What is the output of below code
+#### 48. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1682,7 +1682,7 @@ If you use an invalid number(outside of 0-7 range) in the octal literal, JavaScr
 
 ---
 
-#### 49. What is the output of below code
+#### 49. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1724,7 +1724,7 @@ Unlike function declarations, class declarations are not hoisted. i.e, First You
 
 ---
 
-#### 50. What is the output of below code
+#### 50. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1767,7 +1767,7 @@ When a regular or prototype method is called without a value for **this**, the m
 
 ---
 
-#### 51. What is the output of below code
+#### 51. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1813,7 +1813,7 @@ The super keyword is used to call methods of a superclass. Unlike other language
 
 ---
 
-#### 52. What is the output of below code
+#### 52. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1842,7 +1842,7 @@ Even though we used constant variables, the content of it is an object and the o
 
 ---
 
-#### 53. What is the output of below code
+#### 53. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1867,7 +1867,7 @@ Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode c
 
 ---
 
-#### 54. What is the output of below code?
+#### 54. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1893,7 +1893,7 @@ The typeof operator on any primitive returns a string value. So even if you appl
 
 ---
 
-#### 55. What is the output of below code?
+#### 55. خروجی این کد چی میشه؟
 
 <span dir="ltr" align="left" >
 
@@ -1929,7 +1929,7 @@ Hence the above code block always goes to if section.
 
 ---
 
-#### 55. What is the output of below code in non strict mode?
+#### 55. خروجی این کد توی حالت غیر strict چی میشه؟
 
 <span dir="ltr" align="left" >
 
