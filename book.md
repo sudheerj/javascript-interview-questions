@@ -1619,22 +1619,22 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 51. ### چرا به promise نیاز داریم؟
 
 پرامیس‌ها برای اداره عملیات غیر‌همزمان استفاده میشن. اونا با کاهش کال‌بک های جهنمی و کد تمیز‌تر رویکرد جایگزینی رو برای کال‌بک‌ها فراهم میکنن.
-****
     **[⬆ فهرست](#فهرست)**
 
 52. ### سه تا وضعیت ممکن برای یه promise چیا هستن؟
 
-    Promises have three states:
-  1. **Pending:** This is an initial state of the Promise before an operation begins
-  2. **Fulfilled:** This state indicates that the specified operation was completed.
-  3. **Rejected:** This state indicates that the operation did not complete. In this case an error value will be thrown.
+    پرامیس‌ها سه حالت دارن:
+  1. **Pending:** این یه حالت اولیه از پرامیس قبل از شروع عملیات هستش. 
+  2. **Fulfilled:** این حالت نشون میده که عملیات مورد نظر به پایان رسیده.
+  3. **Rejected:** این حالت نشون میده که عملیات کامل نشده. تو این حالت مقدار خطا برگردونده میشه.
 
     **[⬆ فهرست](#فهرست)**
 
 53. ### توابع callback چی هستن؟
 
-    A callback function is a function passed into another function as an argument. This function is invoked inside the outer function to complete an action.
-    Let's take a simple example of how to use callback function
+    تابع callback تابعیه که به عنوان آرگومان به تابع دیگه‌ای منتقل میشه. این تابع داخل یه تابع خارجی برای تکمیل یه عمل فراخونی میشه.
+
+    بیاین یه مثال ساده از نحوه استفاده از عملکرد callback بزنیم
 
     <span dir="ltr" align="left">
 
@@ -1657,8 +1657,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     **[⬆ فهرست](#فهرست)**
 
 54. ### چرا به توابع callback نیاز داریم؟
-    The callbacks are needed because javascript is an event driven language. That means instead of waiting for a response javascript will keep executing while listening for other events.
-    Let's take an example with the first function invoking an API call(simulated by setTimeout) and the next function which logs the message.
+    
+    ما به callback‌ ها نیاز داریم چون جاوااسکریپت یه زبان رویداد محور هستش. این یعنی اینکه جاوااسکریپت به جای اینکه منتظر یه پاسخ بمونه، موقع گوش دادن به رویداد‌های دیگه به کار خودش ادامه میده.
+    بیاین یه مثال بزنیم از این دو تابع که اولی یه api رو فراخونی میکنه (شبیه‌سازی شده توسط setTimeout) و دومی یه پیامی رو چاپ میکنه.
 
     <span dir="ltr" align="left">
 
@@ -1682,12 +1683,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    As observed from the output, javascript didn't wait for the response of the first function and the remaining code block got executed. So callbacks are used in a way to make sure that certain code doesn’t execute until the other code finishes execution.
+    همونطور که توی خروجی مشاهده شد ، جاوا اسکریپت منتظر پاسخ اولین تابع نبود و بلاک کد  بعدی اجرا شد. بنابراین callback ها طوری مورد استفاده قرار میگیرن تا مطمئن بشن که کد خاصی تا زمان اجرای کد دیگه اجرا نمیشه .
 
     **[⬆ فهرست](#فهرست)**
 
 55. ### Callback-hell یا جهنم توابع callback چیه؟
-    Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard to read and debug when dealing with asynchronous logic. The callback hell looks like below,
+    
+    callback جهنمی مجموعه ای از چند callback تو در تو هست که خوندن و اشکال زدایی کد رو موقع عملیات غیر هم زمان دشوار میکنه. کد زیر نمونه ای از callback جهنمی هستش. 
 
     <span dir="ltr" align="left">
 
@@ -1716,7 +1718,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 57. ### چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟
 
-    The EventSource object is used to receive server-sent event notifications. For example, you can receive messages from server as below,
+    از شیء EventSource برای دریافت اعلان‌های رویداد ارسال شده توسط سرور استفاده میشه. به عنوان مثال ، میتونیم پیام هایی رو از سرور به صورت زیر دریافت کنیم 
 
     <span dir="ltr" align="left">
 
@@ -1735,7 +1737,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 58. ### چطوری می‌تونیم پشتیبانی مرورگر برای SSE رو بررسی کنیم؟
 
-    You can perform browser support for server-sent events before using it as below,
+    قبل از استفاده از موارد زیر ، میتونیم از مرورگر برای رویدادهای ارسال شده توسط سرور پشتیبانی کنیم ،
 
     <span dir="ltr" align="left">
 
@@ -1753,27 +1755,27 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 59. ### کدوم توابع روی SSE وجود دارن؟
 
-    Below are the list of events available for server sent events
-    | Event | Description |
+     لیستی از رویدادهای موجود برای رویدادهای ارسال شده توسط سرور:
+    | رویداد | توضیحات |
     |---- | ---------
-    | onopen  | It is used when a connection to the server is opened |
-    | onmessage | This event is used when a message is received  |
-    | onerror | It happens when an error occurs|
+    | onopen  | موقعی که اتصال به سرور باز میشه استفاده میشه |
+    | onmessage | این رویداد موقع دریافت پیام استفاده میشه  |
+    | onerror | زمانی اتفاق می افته که خطایی رخ بده|
 
     **[⬆ فهرست](#فهرست)**
 
 60. ### اصلی‌ترین قوانین promiseها چیا هستن؟
-    A promise must follow a specific set of rules,
-  1. A promise is an object that supplies a standard-compliant `.then()` method
-  2. A pending promise may transition into either fulfilled or rejected state
-  3. A fulfilled or rejected promise is settled and it must not transition into any other state.
-  4. Once a promise is settled, the value must not change.
+    promise باید از قوانین خاصی پیروی کنه ،
+  1. promise شی ای هست که متد `.then()` استانداردی رو ارائه میده.
+  2. یه promise در حالت pending ممکنه به یکی از دو حالت موفق یا رد شده تبدیل بشه.
+  3. یه promise به حالت موفق یا رد شده تبدیل میشه و نباید به هیچ حالت دیگه ای منتقل بشه. 
+  4. وقتی یه promise به پایان برسه مقدارش نباید تغییر کنه.
 
     **[⬆ فهرست](#فهرست)**
 
 61. ### Callback توی callback چطوری رخ میده؟
 
-    You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks.
+ میتونیم یه callback رو داخل یه callback دیگه قرار بدیم تا کارها رو به صورت متوالی و یک به یک اجرا کنیم.به این کار اصطلاحا callback in callback گفته میشه.
 
     <span dir="ltr" align="left">
 
