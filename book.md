@@ -1717,7 +1717,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     **[⬆ فهرست](#فهرست)**
 
 57. ### چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟
-
+    
     از شیء EventSource برای دریافت اعلان‌های رویداد ارسال شده توسط سرور استفاده میشه. به عنوان مثال ، میتونیم پیام هایی رو از سرور به صورت زیر دریافت کنیم 
 
     <span dir="ltr" align="left">
@@ -1803,8 +1803,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     **[⬆ فهرست](#فهرست)**
 
 62. ### زنجیره promiseها چیه؟
-
-    The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining. Let's take an example of promise chaining for calculating the final result,
+    
+    فرایند اجرای دنباله ای از عملیات ناهمزمان یکی بعد از دیگری با استفاده از promise ها ، به عنوان زنجیره promise شناخته میشه. بیاین یه مثال از زنجیره promise برای محاسبه نتیجه نهایی رو ببینیم  
 
     <span dir="ltr" align="left">
 
@@ -1833,17 +1833,17 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    In the above handlers, the result is passed to the chain of .then() handlers with the below work flow,
-  1. The initial promise resolves in 1 second,
-  2. After that `.then` handler is called by logging the result(1) and then return a promise with the value of result * 2.
-  3. After that the value passed to the next `.then` handler by logging the result(2) and return a promise with result * 3.
-  4. Finally the value passed to the last `.then` handler by logging the result(6) and return a promise with result * 4.
+    توی کنترل‌کننده های بالا نتیجه به زنجیره کنترل کننده .then() با ترتیب زیر فرستاده میشه. 
+  1. promise اولیه تو یه ثانیه حل میشه
+  2. بعد از اون کنترل کننده با چاپ نتیجه ۱ صدا زده میشه و بعدش promise ای با مقدار نتیجه ۲ برمی‌گردونه.  `.then`
+  3. بعد از اون، مقدار با چاپ نتیجه ۲ به نگهدارنده بعدی پاس داده میشه و یه promise با نتیجه ۳ برمیگردونه. `.then`
+  4. در آخر، مقدار با چاپ نتیجه ۶ به نگهدارنده اخری پاس داده میشه و پرامیسی با نتیجه ۶ برمیگردونه. `.then`
 
     **[⬆ فهرست](#فهرست)**
 
 63. ### کاربرد متد promise.all چیه؟
 
-    Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved when all the promises get resolved or any one of them gets rejected. For example, the syntax of promise.all method is below,
+    promise.all پرامیسیه که آرایه‌‌ای از پرامیس‌ها رو به عنوان ورودی (قابل تکرار) میگیره و زمانی resolve میشه که همه پرامیس‌ها resolve بشه یا هر کدوم از اونا reject بشه. متد promise.all به صورت زیر استفاده میشه،
 
     <span dir="ltr" align="left">
 
@@ -1853,13 +1853,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **Note:** Remember that the order of the promises(output the result) is maintained as per input order.
+    **Note:** به یاد داشته باشیم که ترتیب پرامیس‌ها طبق ترتیب ورودی‌ها هستش.
 
     **[⬆ فهرست](#فهرست)**
 
 64. ### هدف از متد race روی promise چیه؟
 
-    Promise.race() method will return the promise instance which is firstly resolved or rejected. Let's take an example of race() method where promise2 is resolved first
+    متد promise.race() اون پرامیسی رو برمیگردونه که زودتر resolve یا reject میشه. بیاین یه مثال از متد race() ببینیم که توی اون پرامیس ۲ زودتر resolve میشه.
 
     <span dir="ltr" align="left">
 
@@ -1882,7 +1882,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 65. ### حالت strict توی جاواسکریپت چی کار میکنه؟
 
-    Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression `"use strict";` instructs the browser to use the javascript code in the Strict mode.
+    Strict Mode یه ویژگی جدید توی ECMAScript 5 هستش که بهمون این امکان رو میده که یه برنامه یا یه تابع رو توی کانتکست  "strict" قرار بدیم. به این ترتیب از انجام بعضی اقدامات جلوگیری میکنه و استثنائات بیشتری رو ایجاد میکنه. عبارت تحت اللفظی "use strict" ؛ مرورگر رو راهنمایی میکنه تا از کد جاوا اسکریپت در حالت Strict استفاده کنه.
 
     **[⬆ فهرست](#فهرست)**
 
@@ -1894,8 +1894,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 67. ### چطوری می‌تونیم حالت strict رو فعال کنیم؟
 
-    The strict mode is declared by adding "use strict"; to the beginning of a script or a function.
-    If declared at the beginning of a script, it has global scope.
+    strict mode با اضافه کردن عبارت "use strict" به ابتدای یه اسکریپت یا یه تابع فعال میشه.
+    اگه ابتدای یه اسکریپت اضافه بشه، global scope هستش.
 
     <span dir="ltr" align="left">
 
@@ -1906,7 +1906,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    and if you declare inside a function, it has local scope
+    و اگه ابتدای یه تابع اضافه بشه، local scope با دامنه محلی هستش.
 
     <span dir="ltr" align="left">
 
@@ -1926,8 +1926,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 68. ### هدف از عملگر نقیض دوتایی(!!) چیه؟
 
-    The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, true.
-    For example, you can test IE version using this expression as below,
+    عملگر نقیض دوتایی(!!) تضمین میکنه که نوع نتیجه بولین هستش. اگر اشتباه بود (به عنوان مثال 0 ، null, undefined و غیره) ، false  برگردونده میشه ، در غیر این صورت ، true هستش.  به عنوان مثال ، میتونیم نسخه IE رو با استفاده از این عبارت مثل زیر آزمایش میکنیم ،
 
     <span dir="ltr" align="left">
 
@@ -1939,7 +1938,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    If you don't use this expression then it returns the original value.
+    اگه از این عبارت استفاده نکنیم، مقدار اولیه رو برمیگردونه.
 
     <span dir="ltr" align="left">
 
@@ -1949,13 +1948,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **Note:** The expression !! is not an operator, but it is just twice of ! operator.
+    **Note:** عبارت !! یه عملگر نیست، دو تا عملگر ! هستش.
 
     **[⬆ فهرست](#فهرست)**
 
 69. ### هدف از عملگر delete چیه؟
 
-    The delete keyword is used to delete the property as well as its value.
+    کلمه کلیدی delete برای حذف ویژگی و همچنین مقدار اون استفاده میشه.
 
     <span dir="ltr" align="left">
 
@@ -1971,7 +1970,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     **[⬆ فهرست](#فهرست)**
 
 70. ### عملگر typeof چیکار می‌کنه؟
-    You can use the JavaScript typeof operator to find the type of a JavaScript variable. It returns the type of a variable or an expression.
+
+    برای پیدا کردن نوع متغیر جاوا اسکریپت میتونیم از عملگر typeof جاوا اسکریپت استفاده کنیم. نوع متغیر یا عبارت رو برمی گردونه.
 
     <span dir="ltr" align="left">
 
