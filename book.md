@@ -1985,7 +1985,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     **[⬆ فهرست](#فهرست)**
 
 71. ### undefined چیه و چه زمانی undefined می‌گیریم؟
-    The undefined property indicates that a variable has not been assigned a value, or not declared at all. The type of undefined value is undefined too.
+    
+    undefined نشون میده که مقداری به متغیر داده نشده یا اصلا تعریف نشده. نوع مقدار تعریف نشده هم undefined هستش.
 
     <span dir="ltr" align="left">
 
@@ -1996,7 +1997,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    Any variable can be emptied by setting the value to undefined.
+    اگه مقدار یه متغیری رو undefined قرار بدیم در واقع اون متغیر رو خالی میکنیم.
 
     <span dir="ltr" align="left">
 
@@ -2010,8 +2011,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 72. ### null چیه؟
 
-    The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object.
-    You can empty the variable by setting the value to null.
+    مقدار null نشان‌دهنده یه آبجکت خالیه و یکی از مقادیر اولیه جاوااسکریپت هستش. نوع مقدار null آبجکت هستش. با قرار دادن مقدار null برای یه متغیر می تونیم مقدار رو خالی کنیم.
 
     <span dir="ltr" align="left">
 
@@ -2025,21 +2025,21 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     **[⬆ فهرست](#فهرست)**
 
 73. ### تفاوت‌های بین null و undefined چیا هستن؟
-    Below are the main differences between null and undefined,
+    تفاوت‌های بین null و undefined : 
 
     | Null | Undefined |
         |---- | -----------|
-    | It is an assignment value which indicates that variable points to no object.  | It is not an assignment value where a variable has been declared but has not yet been assigned a value. |
-    | Type of null is object | Type of undefined is undefined  |
-    | The null value is a primitive value that represents the null, empty, or non-existent reference. | The undefined value is a primitive value used when a variable has not been assigned a value.|
-    | Indicates the absence of a value for a variable | Indicates absence of variable itself |
-    | Converted to zero (0) while performing primitive operations | Converted to NaN while performing primitive operations |
+    | یه مقدار تخصیص داده شده هستش که مشخص میکنه متغیر آبجکت نیست  | مقداری به متغیر هنگام تعریفش تخصیص داده نشده   |
+    | نوع null آبجکت هستش |نوع undefined تعریف نشده هست  |
+    | مقدار null یه مقدار اولیه هستش که نشون میده متغیر میتونه null خالی یا ناموجود باشه | مقدار undefined یه مقدار اولیه هستش که زمانی استفاده میشه که مقداری به متغیر تخصیص داده نشده|
+    | عدم وجود مقدار برای یه متغیر رو نشان میده | عدم وجود خود متغیر رو نشون میده |
+    | موقع انجام عملیات اولیه به صفر (0) تبدیل میشه | موقع انجام عملیات اولیه به NaN تبدیل میشه |
 
     **[⬆ فهرست](#فهرست)**
 
 74. ### eval چیه؟
 
-    The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
+    تابع eval () کد جاوا اسکریپتی رو که به صورت یه رشته نمایش داده میشه ، ارزیابی میکنه. رشته میتونه یه عبارت جاوا اسکریپت ، متغیر ، جمله یا دنباله ای از جملات باشه.
 
     <span dir="ltr" align="left">
 
@@ -2053,19 +2053,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 75. ### تفاوت‌های بین window و document چیا هستن؟
 
-    Below are the main differences between window and document,
+    اینجا تفاوت های اصلی بین window و document گفته شده ،
 
     | Window | Document |
         |---- | ---------
-    | It is the root level element in any web page  | It is the direct child of the window object. This is also known as Document Object Model(DOM) |
-    | By default window object is available implicitly in the page | You can access it via window.document or document.  |
-    | It has methods like alert(), confirm() and properties like document, location | It provides methods like getElementById, getElementByTagName, createElement etc  |
+    |عنصر سطح ریشه توی هر صفحه از وب هستش | فرزند مستقیم شی window هستش . همچنین به عنوان مدل شی سند هم شناخته میشه (DOM) |
+    |به طور پیش فرض ، شیء window به طور ضمنی در صفحه موجوده | میتونیم از طریق window.document یا document به اون دسترسی داشته باشیم. |
+    | دارای متد‌هایی مثل alert () ، confirm () و ویژگی هایی مثل document و location هستش  | متد‌هایی مثل getElementById ، getElementByTagName ، createElement و غیره رو ارائه میده  |
 
     **[⬆ فهرست](#فهرست)**
 
 76. ### توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟
 
-    The window.history object contains the browser's history. You can load previous and next URLs in the history using back() and next() methods.
+    شیء window.history شامل تاریخچه مرورگر هستش. میتونیم URL های قبلی و بعدی رو در history با استفاده از متدهای back () و next () بارگذاری کنیم.
 
     <span dir="ltr" align="left">
 
@@ -2080,12 +2080,12 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **Note:** You can also access history without window prefix.
+    **Note:** همچنین میتونیم بدون پیشوند window به history دسترسی داشته باشیم.
 
     **[⬆ فهرست](#فهرست)**
 
 77. ### انواع داده‌های جاواسکریپت کدوما هستن؟
-    Below are the list of javascript data types available
+     اینجا لیستی از انواع داده های جاوا اسکریپت موجوده
   1. Number
   2. String
   3. Boolean
@@ -2096,7 +2096,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 78. ### isNaN چیه و چیکار می‌کنه؟
 
-    The isNaN() function is used to determine whether a value is an illegal number (Not-a-Number) or not. i.e, This function returns true if the value equates to NaN. Otherwise it returns false.
+    تابع isNaN () برای تعیین اینکه آیا مقدار یک شماره غیرقانونی (Not-a-Number) هست یا نه استفاده میشه. یعنی اگه این مقدار برابر با NaN باشه ، این تابع true برمی گردونه. در غیر این صورت false برمی گردونه.
 
     <span dir="ltr" align="left">
 
@@ -2111,18 +2111,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 79. ### تفاوت‌های بین undeclared و undefined چیا هستن؟
 
-    Below are the major differences between undeclared and undefined variables,
+      تفاوت های عمده بین متغیرهای undefined و undeclared اینجا ذکر شده ،
 
     | undeclared | undefined |
         |---- | ---------
-    | These variables do not exist in a program and are not declared  | These variables declared in the program but have not assigned any value |
-    | If you try to read the value of an undeclared variable, then a runtime error is encountered | If you try to read the value of an undefined variable, an undefined value is returned.  |
+    | این متغیرها توی برنامه وجود ندارن و اعلام نمیشن  | این متغیرها توی برنامه اعلام شدن  اما هیچ مقداری برای اونا تعیین نشده  |
+    | اگه بخوایم مقدار یه متغیر اعلام نشده رو بخونیم ، خطای زمان اجرا رخ میده | اگه بخوایم مقدار یه متغیر تعریف نشده رو بخونیم ، یه مقدار تعریف نشده برمیگرده.  |
 
     **[⬆ فهرست](#فهرست)**
 
 80. ### کدوم متغیرها عمومی هستن؟
 
-    Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
+    متغیرهای عمومی متغیرهایی هستند که همه جا بدون هیچ محدوده‌ای در دسترس هستند. کلمه کلیدی var برای تعریف یه متغیر محلی استفاده میشه اما اگه اونو حذف کنیم ، متغیر عمومی میشه
 
     <span dir="ltr" align="left">
 
@@ -2136,7 +2136,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 81. ### مشکلات متغیرهای عمومی چیا هستن؟
 
-    The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
+    مشکل متغیرهای عمومی ، تضاد نام متغیرهای محدوده محلی و عمومی هستش. اشکال زدایی و آزمایش کدی که بر مبنای متغیرهای عمومی هستش هم مشکله.
 
     **[⬆ فهرست](#فهرست)**
 
