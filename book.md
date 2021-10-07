@@ -2142,7 +2142,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 82. ### مقدار NaN چیه؟
 
-    The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases
+    ویژگی NaN یه ویژگی عمومیه که مقدار "Not-a-Number" رو نشون میده. یعنی نشان می دهد که مقدار یک عدد قانونی نیست. خیلی کم پیش میاد که از NAN توی برنامه استفاده بشه ، اما میتونه به عنوان مقدار بازگشتی توی موارد کمی مورد استفاده قرار بگیره
 
     <span dir="ltr" align="left">
 
@@ -2157,7 +2157,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 83. ### هدف از تابع isFinite چیه؟
 
-    The isFinite() function is used to determine whether a number is a finite, legal number. It returns false if the value is +infinity, -infinity, or NaN (Not-a-Number), otherwise it returns true.
+    تابع isFinite () برای تعیین اینکه آیا عدد یه عدد قانونی محدود هست یا نه استفاده میشه. اگه مقدار +infinity ، -infinity یا NaN (Not-a-Number) باشه ، false برمی گردونه ، در غیر این صورت true برمیگرده.
 
     <span dir="ltr" align="left">
 
@@ -2174,27 +2174,30 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     **[⬆ فهرست](#فهرست)**
 
 84. ### یه event-flow چیه؟
-    Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
-    There are two ways of event flow
-  1. Top to Bottom(Event Capturing)
-  2. Bottom to Top (Event Bubbling)
 
-    **[⬆ فهرست](#فهرست)**
+    event-flow ترتیب دریافت رویداد توی صفحه وب هستش. وقتی روی عنصری که توی عناصر مختلف دیگه قرار داره کلیک میکنیم ، قبل از اینکه کلیک ما به مقصد یا عنصر هدف برسه ، اول باید رویداد کلیک رو برای هر کدوم از عناصر والد خودش شروع کنه ، که از بالا با شی عمومی window شروع میشه.
+
+       event-flow دو روش داره
+   1. بالا به پایین(Event Capturing)
+   2. پایین به بالا (Event Bubbling)
+
+**[⬆ فهرست](#فهرست)**
 
 85. ### Event-bubbling چیه؟
-    Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
+
+    رویداد حبابی نوعی از رویداده که در اون رویداد اول روی درونی ترین عنصر هدف و بعد به طور پی در پی روی (والدین) عنصر هدف تو همون سلسله مراتب تودرتو تا رسیدن به بیرونی ترین عنصر DOM فعال میشه.
 
     **[⬆ فهرست](#فهرست)**
 
 86. ### Event-capturing چیه؟
 
-    Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
+    event-capturing نوعی انتشار رویداد هستش که در اون رویداد اول توسط بیرونی ترین عنصر ضبط میشه و بعد پی در پی بر فرزندان عنصر هدف تو همون سلسله مراتب تودرتو ایجاد میشه تا به داخلی ترین عنصر DOM برسه.
 
     **[⬆ فهرست](#فهرست)**
 
 87. ### چطوری میشه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟
 
-    You can submit a form using JavaScript use document.form[0].submit(). All the form input's information is submitted using onsubmit event handler
+    توی جاوااسکریپت با استفاده از document.form[0].submit() میتونیم یه فرم رو ارسال کنیم. تمام اطلاعات ورودی فرم با استفاده از کنترل کننده رویداد ارسال میشه.
 
     <span dir="ltr" align="left">
 
@@ -2210,7 +2213,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 88. ### چطوری میشه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟
 
-    The window.navigator object contains information about the visitor's browser OS details. Some of the OS properties are available under platform property,
+    شیء window.navigator حاوی اطلاعاتی در مورد جزئیات سیستم عامل مرورگر بازدید کننده هستش. بعضی از ویژگی‌های سیستم عامل تحت ویژگی platform موجوده ،
 
     <span dir="ltr" align="left">
 
@@ -2224,24 +2227,24 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 89. ### تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟
 
-    The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).
+    رویداد `DOMContentLoaded` زمانی فعال میشه که سند اولیه HTML به طور کامل بارگیری و تجزیه بشه ، بدون اینکه منتظر بمونیم تا asset ها (stylesheet ها ، تصاویر و subfram ها) بارگذاری رو به پایان برسونه. در حالی که رویداد load زمانی بارگیری میشه که کل صفحه بارگیری بشه ، از جمله همه منابع وابسته (stylesheet ، تصاویر).
 
     **[⬆ فهرست](#فهرست)**
 
 90. ### تفاوت‌های بین objectهای native، host و user چیا هستن؟
 
-    `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
-    `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
-    `User objects` are objects defined in the javascript code. For example, User objects created for profile information.
+    `Native objects` اشیایی که بخشی از زبان جاوا اسکریپت هستن که توسط مشخصات ECMAScript تعریف شدن. به عنوان مثال ، String ، Math ، RegExp ، Object ، Function و غیره اشیاء اصلی تعریف شده در مشخصات ECMAScript.
+    `Host objects` اشیایی هستن که توسط مرورگر یا محیط اجرا (Node) ارائه میشن. به عنوان مثال ، window ، XmlHttpRequest ، گره های DOM و غیره به عنوان شیء میزبان در نظر گرفته میشن.
+    `User objects` اشیایی هستن که توی کد جاوا اسکریپت تعریف شدن. به عنوان مثال ، اشیاء کاربر برای اطلاعات پروفایل ایجاد شده.
 
     **[⬆ فهرست](#فهرست)**
 
 91. ### کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟
 
-    You can use below tools or techniques for debugging javascript
-  1. Chrome Devtools
-  2. debugger statement
-  3. Good old console.log statement
+   برای اشکال زدایی javascript میتونیم از ابزارها یا تکنیک های زیر استفاده کنیم
+   1. Chrome Devtools
+   2. debugger statement
+   3. Good old console.log statement
 
     **[⬆ فهرست](#فهرست)**
 
