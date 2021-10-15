@@ -2174,14 +2174,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     **[⬆ فهرست](#فهرست)**
 
 84. ### یه event-flow چیه؟
-
+   
     event-flow ترتیب دریافت رویداد توی صفحه وب هستش. وقتی روی عنصری که توی عناصر مختلف دیگه قرار داره کلیک میکنیم ، قبل از اینکه کلیک ما به مقصد یا عنصر هدف برسه ، اول باید رویداد کلیک رو برای هر کدوم از عناصر والد خودش شروع کنه ، که از بالا با شی عمومی window شروع میشه.
 
-       event-flow دو روش داره
-   1. بالا به پایین(Event Capturing)
-   2. پایین به بالا (Event Bubbling)
+    event-flow دو روش داره
+  1. بالا به پایین(Event Capturing)
+  2. پایین به بالا (Event Bubbling)
 
-**[⬆ فهرست](#فهرست)**
+    **[⬆ فهرست](#فهرست)**
 
 85. ### Event-bubbling چیه؟
 
@@ -2242,31 +2242,32 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 91. ### کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟
 
    برای اشکال زدایی javascript میتونیم از ابزارها یا تکنیک های زیر استفاده کنیم
-   1. Chrome Devtools
-   2. debugger statement
-   3. Good old console.log statement
+  1. Chrome Devtools
+  2. debugger statement
+  3. Good old console.log statement
 
     **[⬆ فهرست](#فهرست)**
 
 92. ### مزایا و معایب استفاده از promiseها به جای callback چیا هستن؟
 
     Below are the list of pros and cons of promises over callbacks,
+    این پایین لیستی از مزایا و معایب استفاده از promise به جای callback گفته شده :
 
-    **Pros:**
-  1. It avoids callback hell which is unreadable
-  2. Easy to write sequential asynchronous code with .then()
-  3. Easy to write parallel asynchronous code with Promise.all()
-  4. Solves some of the common problems of callbacks(call the callback too late, too early, many times and swallow errors/exceptions)
+    **مزایا:**
+1. از callback های جهنمی که غیر‌قابل خوندنه جلوگیری میکنه.
+2. سادگی نوشتن کد غیر‌همزمان متوالی با then().
+3. سادگی نوشتن کد غیر‌همزمان موازی با promise.all().
+4. برطرف کردن بعضی مشکلات رایج callback ها (صدا زدن callback ها خیلی زود، خیلی دیر یا گاهی اوقات)
 
-    **Cons:**
-  1. It makes little complex code
-  2. You need to load a polyfill if ES6 is not supported
+**معایب:**
+1. کمی کد رو پیچیده میکنه.
+   2.اگه ES6 پشتیبانی نشه، باید یه polyfill رو بارگذاری کنیم.
 
-    **[⬆ فهرست](#فهرست)**
+**[⬆ فهرست](#فهرست)**
 
 93. ### تفاوت‌های بین attribute و property روی DOM چیا هستن؟
 
-    Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes type and value,
+    attribute ها روی html تعریف میشن در حالی که property ها روی DOM تعریف میشن. برای مثال، عنصر HTML زیر دارای ۲ attribute ، نوع و مقدار هستش.
 
     <span dir="ltr" align="left">
 
@@ -2276,7 +2277,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    You can retrieve the attribute value as below,
+میتونیم مقدار attribute رو اینطوری بازیابی کنیم
 
     <span dir="ltr" align="left">
 
@@ -2288,7 +2289,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    And after you change the value of the text field to "Good evening", it becomes like
+    و بعد از اینکه مقدار فیلد متن رو به "Good evening" تفییر دادیم، اینطوری میشه :
 
     <span dir="ltr" align="left">
 
@@ -2303,14 +2304,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 94. ### سیاست same-origin چیه؟
 
-    The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
+    خط مشی same-origin خط مشی ای هستش که مانع از درخواست جاوا اسکریپت در محدوده دامنه میشه. origin به عنوان ترکیبی از طرح URI ، نام میزبان و شماره پورت تعریف میشه. اگه این خط مشی رو فعال کنیم ، مانع از دسترسی اسکریپت های مخرب توی صفحه به داده های حساس توی صفحه وب دیگه با استفاده از Document Object Model (DOM) میشه.
 
     **[⬆ فهرست](#فهرست)**
 
 95. ### هدف استفاده از void 0 چیه؟
 
-    Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML documents that use href="JavaScript:Void(0);" within an ```<a>``` element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
-    For example, the below link notify the message without reloading the page
+    Void (0) برای جلوگیری از refresh شدن صفحه استفاده میشه و برای از بین بردن عوارض جانبی ناخواسته مفید خواهد بود ، چون مقدار اولیه تعریف‌ نشده رو برمی گردونه. معمولاً برای اسناد HTML استفاده میشه که از href = "JavaScript: Void (0)؛" توی یه عنصر "<a>" یعنی وقتی روی لینکی کلیک می کنیم ، مرورگر صفحه جدیدی رو بارگذاری میکنه یا همون صفحه رو refresh میکنه. اما با استفاده از این عبارت از این رفتار جلوگیری میشه.
+    به عنوان مثال ، لینک زیر پیام رو بدون بارگیری مجدد صفحه، اطلاع میده
 
     <span dir="ltr" align="left">
 
@@ -2324,56 +2325,57 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 96. ### جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟
 
-    JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays  modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+جاوا‌اسکریپت یه زبان تفسیری هستش نه یه زبان کامپایل شده. مترجم توی مرورگر کد جاوااسکریپت رو میخونه ، هر خط رو تفسیر میکنه و اونو اجرا میکنه. امروزه مرورگرهای مدرن از فناوری شناخته شده به عنوان کامپایل Just-In-Time (JIT) استفاده میکنن که JavaScript رو در زمان اجرا به بایت کد اجرایی کامپایل میکنه.
 
     **[⬆ فهرست](#فهرست)**
 
 97. ### آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟
 
-    Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
+بله ، جاوا اسکریپت یه زبان حساس به حروف هستش. کلمات کلیدی زبان ، متغیرها ، نام عملکردها و اشیاء و سایر شناسه های دیگه باید همیشه با حروف بزرگ نوشته بشن.
 
     **[⬆ فهرست](#فهرست)**
 
 98. ### ارتباطی بین Java و JavaScript وجود داره؟
-    No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
+
+    نه ، اونا کاملاً دو زبان برنامه نویسی متفاوت هستن و هیچ ارتباطی با همدیگه ندارن. اما هر دوی اونا زبان های برنامه نویسی شی گرا هستن و مثل خیلی از زبان های دیگه ، برای ویژگی های اساسی از نحو مشابهی پیروی میکنن (if, else, for, switch, break, continue و غیره).
 
     **[⬆ فهرست](#فهرست)**
 
 99. ### Eventها چی هستن؟
 
-     Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events. Some of the examples of HTML events are,
+    رویدادها "چیزهایی" هستند که برای عناصر HTML اتفاق می افته. وقتی از جاوا اسکریپت در صفحات HTML استفاده میشه ، جاوا اسکریپت میتونه در این رویدادها واکنش نشون بده. بعضی از نمونه های رویدادهای HTML عبارتند از ،
 
-  1. Web page has finished loading
-  2. Input field was changed
-  3. Button was clicked
+1. به پایان رسیدن بارگیری صفحه وب
+2. تغییر فیلد ورودی
+3. کلیک روی دکمه
 
-     Let's describe the behavior of click event for button element,
+   بیاین رفتار رویداد کلیک برای عنصر دکمه رو بررسی کنیم ،
 
-     <span dir="ltr" align="left">
+   <span dir="ltr" align="left">
 
-     ```html
-     <!doctype html>
-     <html>
-      <head>
-        <script>
-          function greeting() {
-            alert('Hello! Good morning');
-          }
-        </script>
-      </head>
-      <body>
-        <button type="button" onclick="greeting()">Click me</button>
-      </body>
-     </html>
-     ```
+   ```html
+   <!doctype html>
+   <html>
+    <head>
+      <script>
+        function greeting() {
+          alert('Hello! Good morning');
+        }
+      </script>
+    </head>
+    <body>
+      <button type="button" onclick="greeting()">Click me</button>
+    </body>
+   </html>
+   ```
 
-     </span>
+   </span>
 
-     **[⬆ فهرست](#فهرست)**
+   **[⬆ فهرست](#فهرست)**
 
 100. ### کی جاواسکریپت رو ساخته؟
 
-     JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. Initially it was developed under the name `Mocha`, but later the language was officially called `LiveScript` when it first shipped in beta releases of Netscape.
+     جاوااسکریپت توسط Brenden Eich در سال 1995 در زمان حضورش در Netscape Communications ایجاد شد. اولش با نام "Mocha" توسعه داده شد ، اما بعداً وقتی که برای اولین بار در نسخه های بتا Netscape منتشر شد ، این زبان به طور رسمی "LiveScript" نامیده شد.
 
      **[⬆ فهرست](#فهرست)**
 
