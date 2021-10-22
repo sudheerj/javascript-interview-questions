@@ -453,8 +453,9 @@ You can download the PDF and Epub version of this repository from the latest run
 |423| [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors)|
 |424| [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)|
 |425| [What is nullish coalescing operator(??)?](#what-is-nullish-coalescing-operator-(??))|
-|426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)
-[427] [What is the difference between == and === ?](#what-is-the-difference-between == and === ?)
+|426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)|
+|427| [What is the difference between == and === ?](#what-is-the-difference-between==and===)
+
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7281,7 +7282,7 @@ You can download the PDF and Epub version of this repository from the latest run
      **[⬆ Back to Top](#table-of-contents)**
 
 
-427. ### what-is-the-difference-between == and ===
+427. ### What is the difference between == and === ?
      == : There will be implicit conversion during comparison
      === : The value can be true only when the types and values are the same
 
