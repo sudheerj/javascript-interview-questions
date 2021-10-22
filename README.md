@@ -454,7 +454,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |424| [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)|
 |425| [What is nullish coalescing operator(??)?](#what-is-nullish-coalescing-operator-(??))|
 |426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)|
-|427| [What is the difference between == and === ?](#what-is-the-difference-between==and===)
+|427| [How many ways are there to bind click events?](#how-many-ways-are-there-to-bind-click-events)
 
 
 1. ### What are the possible ways to create objects in JavaScript
@@ -7282,9 +7282,16 @@ You can download the PDF and Epub version of this repository from the latest run
      **[⬆ Back to Top](#table-of-contents)**
 
 
-427. ### What is the difference between == and === ?
-     == : There will be implicit conversion during comparison
-     === : The value can be true only when the types and values are the same
+427. ### How many ways are there to bind click events?
+     Three:
+
+     ```js
+     xxx.onclick = function (){}
+     <xxx onclick=""></xxx>
+     xxx.addEventListence('click', function(){}, false)
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
 
