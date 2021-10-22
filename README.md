@@ -454,6 +454,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |424| [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)|
 |425| [What is nullish coalescing operator(??)?](#what-is-nullish-coalescing-operator-(??))|
 |426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)
+[427] [What is the difference between == and === ?](#what-is-the-difference-between == and === ?)
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7278,6 +7279,11 @@ You can download the PDF and Epub version of this repository from the latest run
      You can also use `console.groupCollapsed()` instead of `console.group()` if you want the groups to be collapsed by default.
          
      **[⬆ Back to Top](#table-of-contents)**
+
+
+427. ### what-is-the-difference-between == and ===
+     == : There will be implicit conversion during comparison
+     === : The value can be true only when the types and values are the same
 
 ### Coding Exercise
 
