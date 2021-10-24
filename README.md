@@ -7236,8 +7236,8 @@ You can download the PDF and Epub version of this repository from the latest run
         console.log(dt.toLocaleTimeString()); 
       }(new Date()); 
      ```
-
-    **[⬆ Back to Top](#table-of-contents)**
+     
+     **[⬆ Back to Top](#table-of-contents)**
 
 422. ### Is that possible to use expressions in switch cases?
      You might have seen expressions used in switch condition but it is also possible to use for switch cases by assigning true value for the switch condition. Let's see the weather condition based on temparature as an example,
