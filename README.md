@@ -6569,7 +6569,18 @@ You can download the PDF and Epub version of this repository from the latest run
 
 389. ### What are different event loops
 
-     **[⬆ Back to Top](#table-of-contents)**
+This is event loop visualisation, how event loop actually works
+![Screenshot](images/eventLoop.gif)
+
+Stack: This is where all your javascript code gets pushed and executed one by one as the interpreter reads your program, and gets popped out once the execution is done. If your statement is asynchronous: setTimeout, ajax(), promise, or click event, then that code gets forwarded to Event table, this table is responsible for moving your asynchronous code to callback/event queue after specified time.
+
+Heap: This is where all the memory allocation happens for your variables, that you have defined in your program.
+    
+Callback Queue: This is where your asynchronous code gets pushed to, and waits for the execution.
+     
+Event Loop: Then comes the Event Loop, which keeps running continuously and checks the Main stack, if it has any frames to execute, if not then it checks Callback queue, if Callback queue has codes to execute then it pops the message from it to the Main Stack for the execution.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 390. ### What is the purpose of queueMicrotask
 
