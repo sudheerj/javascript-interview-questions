@@ -5354,7 +5354,7 @@ You can download the PDF and Epub version of this repository from the latest run
          expertiseStr = 'junior developer';
        }
 
-       return ${str0}${userExp}${str1}${expertiseStr}${str2}${skillExp};
+       return `${str0}${userExp}${str1}${expertiseStr}${str2}${skillExp}`;
      }
 
      var output1 = myInfoTag`Mr/Ms. ${ user1 } is a/an ${ experience1 } in ${skill1}`;
