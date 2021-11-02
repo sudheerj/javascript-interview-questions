@@ -453,7 +453,9 @@ You can download the PDF and Epub version of this repository from the latest run
 |423| [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors)|
 |424| [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)|
 |425| [What is nullish coalescing operator(??)?](#what-is-nullish-coalescing-operator-(??))|
-|426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)
+|426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)|
+|427| [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays)|
+|428| [What are the different ways to create sparse arrays?](#what-are-the-different-ways-to-create-sparse-arrays)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7308,6 +7310,57 @@ You can download the PDF and Epub version of this repository from the latest run
      ```
      You can also use `console.groupCollapsed()` instead of `console.group()` if you want the groups to be collapsed by default.
          
+     **[⬆ Back to Top](#table-of-contents)**
+
+427. ### What is the difference between dense and sparse arrays?
+
+     An array contians items at each index starting from first(0) to last(array.length - 1) is called as Dense array. Whereas if at least one item is missing at any index, the array is called as sparse.
+
+     Let's see the below two kind of arrays,
+
+     ```js
+     const avengers = ['Ironman', 'Hulk', 'CaptainAmerica'];
+     console.log(avengers[0]); // 'Ironman'
+     console.log(avengers[1]); // 'Hulk'
+     console.log(avengers[2]); // 'CaptainAmerica'
+     console.log(avengers.length); // 3
+
+     const justiceLeague = ['Superman', 'Aquaman', ,'Batman'];
+     console.log(justiceLeague[0]); // 'Superman'
+     console.log(justiceLeague[1]); // 'Aquaman'
+     console.log(justiceLeague[2]); // undefined
+     console.log(justiceLeague[3]); // 'Batman'
+     console.log(justiceLeague.length); // 4
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+428. ### What are the different ways to create sparse arrays?
+
+     There are 4 different ways to create sparse arrays in JavaScript
+
+     1. **Array literal:** Omit a value when using the array literal 
+          ```js
+          const justiceLeague = ['Superman', 'Aquaman', ,'Batman'];
+          console.log(justiceLeague); // ['Superman', 'Aquaman', empty ,'Batman']
+          ```
+     2. **Array() constructor:** Invoking Array(length) or new Array(length)
+          ```js
+          const array = Array(3);
+          console.log(array); // [empty, empty ,empty]
+          ```
+     3. **Delete operator:** Using delete array[index] operator on the array
+          ```js
+          const justiceLeague = ['Superman', 'Aquaman', 'Batman'];
+          delete justiceLeague[1];
+          console.log(justiceLeague); // ['Superman', empty, ,'Batman']
+          ```
+     4. **Increase length property:** Increasing length property of an array
+          ```js
+          const justiceLeague = ['Superman', 'Aquaman', 'Batman'];
+          justiceLeague.length = 5;
+          console.log(justiceLeague); // ['Superman', 'Aquaman', 'Batman', empty, empty]
+          ```
      **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
