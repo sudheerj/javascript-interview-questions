@@ -7373,31 +7373,31 @@ You can download the PDF and Epub version of this repository from the latest run
 
 430. ### How do you encapsulate data in javascript
 
-    we can use closures for data encapsulate because closures retains environment of parent functions.   
+      we can use closures for data encapsulate because closures retains environment of parent functions.   
 
-    ```javascript
-    function employee(name,age,exp){
+        ```js
+        function employee(name,age,exp){
 
-          var __performance = Math.floor(Math.random() * 6);
-          function cal_sal_secret_func(){
-               // secret function which calculate salary of employee. this function should not be public
-               return __performance * 1000 * exp
-          }
+              var __performance = Math.floor(Math.random() * 6);
+              function cal_sal_secret_func(){
+                   // secret function which calculate salary of employee. this function should not be public
+                   return __performance * 1000 * exp
+              }
 
-          var salary = cal_sal_secret_func()
+              var salary = cal_sal_secret_func()
 
-          return {
-               name, age, salary:cal_sal_secret_func()
-          }
+              return {
+                   name, age, salary:cal_sal_secret_func()
+              }
 
 
-    }
-    
-    var employee1 = new employee("yashraj",22,2);
-    console.log(employee1.name) //yashraj
-    console.log(employee1.age) // 22
-    console.log(employee1.exp) // undefined
-    ```
+        }
+
+        var employee1 = new employee("yashraj",22,2);
+        console.log(employee1.name) //yashraj
+        console.log(employee1.age) // 22
+        console.log(employee1.exp) // undefined
+        ```
      **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
