@@ -454,6 +454,10 @@ You can download the PDF and Epub version of this repository from the latest run
 |424| [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)|
 |425| [What is nullish coalescing operator(??)?](#what-is-nullish-coalescing-operator-(??))|
 |426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)
+|427| [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays)
+|428| [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays-1)
+|429| [What is data encapsulation](#what-is-data-encapsulation)
+|430| [How do you encapsulate data in javascript](#how-do-you-encapsulate-data-in-javascript)
 
 1. ### What are the possible ways to create objects in JavaScript
 
