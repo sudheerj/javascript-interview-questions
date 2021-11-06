@@ -2381,7 +2381,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 101. ### هدف از متد preventDefault چیه؟
 
-     The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behaviour that belongs to the event will not occur. For example, prevent form submission when clicking on submit button and prevent opening the page URL when clicking on hyperlink are some common use cases.
+     متد ()preventDefault رویداد رو در صورتی که قابل لغو باشه لغو میکنه به این معنی که عمل یا رفتار پیش‌فرض متعلق به رویداد رخ نخواهد داد. به عنوان مثال، جلوگیری از ارسال فرم هنگام کلیک بر روی دکمه ارسال و جلوگیری از باز شدن URL صفحه هنگام کلیک کردن بر روی لینک از موارد رایج استفاده هستش.
 
      <span dir="ltr" align="left">
 
@@ -2393,13 +2393,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** Remember that not all events are cancelable.
+     **Note:** به یاد داشته باشین که همه رویدادها قابل لغو نیستن.
 
      **[⬆ فهرست](#فهرست)**
 
 102. ### کاربرد متد stopPropagation چیه؟
 
-     The stopPropagation method is used to stop the event from bubbling up the event chain. For example, the below nested divs with stopPropagation method prevents default event propagation when clicking on nested div(Div1)
+     روش stopPropagation برای جلوگیری از حبابی شدن رویداد توی زنجیره رویداد استفاده  میشه. به عنوان مثال، div های تودرتو زیر با متد stopPropagation از انتشار پیش فرض رویداد هنگام کلیک روی div تودرتو (Div1) جلوگیری میکنه.
 
      <span dir="ltr" align="left">
 
@@ -2426,17 +2426,17 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      **[⬆ فهرست](#فهرست)**
 
 103. ### مراحلی که هنگام استفاده از return false توی یه event-handler رخ میده چیا هستن؟
-     The return false statement in event handlers performs the below steps,
+     عبارت return false توی event-handler ها مراحل زیر رو انجام میده،
 
-  1. First it stops the browser's default action or behaviour.
-  2. It prevents the event from propagating the DOM
-  3. Stops callback execution and returns immediately when called.
+  1. ابتدا عملکرد یا رفتار پیش فرض مرورگر رو متوقف میکنه.
+  2. این رویداد از انتشار DOM جلوگیری میکنه
+  3. اجرای callback رو متوقف میکنه و بلافاصله بعد از فراخوانی return میکنه.
 
      **[⬆ فهرست](#فهرست)**
 
 104. ### BOM چیه؟
 
-     The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It consists of the objects navigator, history, screen, location and document which are children of the window. The Browser Object Model is not standardized and can change based on different browsers.
+     مدل شیء مرورگر (BOM) به جاوا اسکریپت اجازه میده تا با مرورگر "صحبت کنه". که شامل navigator اشیاء، تاریخچه، صفحه، مکان و سند هست که فرزندان پنجره هستند. مدل شیء مرورگر استاندارد نیست و میتونه بر اساس مرورگرهای مختلف تغییر کنه.
 
      ![Screenshot](images/bom.png)
 
@@ -2444,7 +2444,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 105. ### موارد استفاده از setTimeout کدوما هستن؟
 
-     The setTimeout() method is used to call a function or evaluate an expression after a specified number of milliseconds. For example, let's log a message after 2 seconds using setTimeout method,
+    متد setTimeout() برای فراخوانی یه تابع یا ارزیابی یه عبارت بعد از تعداد مشخصی از میلی ثانیه استفاده میشه. به عنوان مثال، بیاین یه پیام رو بعد از 2 ثانیه با استفاده از روش setTimeout چاپ کنیم.
 
      <span dir="ltr" align="left">
 
@@ -2458,7 +2458,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 106. ### موارد استفاده از setInterval کدوما هستن؟
 
-     The setInterval() method is used to call a function or evaluate an expression at specified intervals (in milliseconds). For example, let's log a message after 2 seconds using setInterval method,
+     متد setInterval() برای فراخوانی یه تابع یا ارزیابی یه عبارت توی بازه های زمانی مشخص (بر حسب میلی ثانیه) استفاده میشه. به عنوان مثال، بیاین یه پیام رو بعد از 2 ثانیه با استفاده از روش setInterval ثبت کنیم.
 
      <span dir="ltr" align="left">
 
@@ -2471,14 +2471,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      **[⬆ فهرست](#فهرست)**
 
 107. ### چرا جاواسکریپت رو به عنوان یه زبان تک thread می‌شناسن؟
-     JavaScript is a single-threaded language. Because the language specification does not allow the programmer to write code so that the interpreter can run parts of it in parallel in multiple threads or processes. Whereas languages like java, go, C++ can make multi-threaded and multi-process programs.
+     جاوا اسکریپت یه زبان تک thread ای هستش. چون مشخصات زبان به برنامه نویس اجازه نمیده که کد بنویسه تا مفسر بتونه بخش هایی از آن رو به صورت موازی توی چندین رشته یا پردازش اجرا کنه. در حالی که زبان هایی مثل java، go، C++ میتونن برنامه های چند thread ای و چند فرآیندی بسازن.
 
      **[⬆ فهرست](#فهرست)**
 
 108. ### Event-delegation چیه؟
-     Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.
+     
+     Event delegation تکنیکی برای گوش دادن به رویدادهاست که در اون یه عنصر والد رو به عنوان شنونده برای همه رویدادهایی که داخل اون اتفاق میافته به عنوان نماینده تعیین میکنیم.
 
-     For example, if you wanted to detect field changes in inside a specific form, you can use event delegation technique,
+     به عنوان مثال، اگه بخوایم تغییرات فیلد رو توی یه فرم خاص تشخیص بدیم میتونیم از تکنیک event delegation استفاده کنیم.
 
      <span dir="ltr" align="left">
 
@@ -2499,13 +2500,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      **[⬆ فهرست](#فهرست)**
 
 109. ### ECMAScript چیه؟
-     ECMAScript is the scripting language that forms the basis of JavaScript. ECMAScript standardized by the ECMA International standards organization in the ECMA-262 and ECMA-402 specifications. The first edition of ECMAScript was released in 1997.
+    ECMAScript زبان برنامه نویسی ای هستش که اساس جاوا اسکریپت رو تشکیل میده. ECMAScript توسط سازمان استاندارد بین المللی ECMA در مشخصات ECMA-262 و ECMA-402 استاندارد شده . اولین نسخه ECMAScript در سال 1997 منتشر شد.
 
      **[⬆ فهرست](#فهرست)**
 
 110. ### JSON چیه؟
 
-     JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
+     JSON (JavaScript Object Notation) یه فرمت سبک وزن هستش که برای تبادل داده ها استفاده میشه. و بر اساس زیرمجموعه ای از زبان جاوا‌اسکریپت به روشی هستش که اشیاء توی جاوا اسکریپت ساخته میشن.
 
      **[⬆ فهرست](#فهرست)**
 
