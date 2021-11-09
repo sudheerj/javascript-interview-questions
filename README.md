@@ -456,8 +456,8 @@ You can download the PDF and Epub version of this repository from the latest run
 |426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)
 |427| [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays)
 |428| [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays-1)
-|429| [What is data encapsulation](#what-is-data-encapsulation)
-|430| [How do you encapsulate data in javascript](#how-do-you-encapsulate-data-in-javascript)
+|429| [What is data encapsulation in javascript?](#what-is-data-encapsulation-in-javascript)
+|430| [How do you encapsulate data in javascript?](#how-do-you-encapsulate-data-in-javascript)
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7365,7 +7365,7 @@ You can download the PDF and Epub version of this repository from the latest run
           ```
      **[⬆ Back to Top](#table-of-contents)**
 
-429. ### What is data encapsulation.
+429. ### What is data encapsulation in JavaScript?
 
      Data encapsulation is object oriented programming technique to hide the internal data members.
      data encapsulation prevents direct access from the outside. Some data should be hidden otherwise 
@@ -7375,31 +7375,31 @@ You can download the PDF and Epub version of this repository from the latest run
      **[⬆ Back to Top](#table-of-contents)**
 
 
-430. ### How do you encapsulate data in javascript
+430. ### How do you encapsulate data in javascript?
 
       we can use closures for data encapsulate because closures retains environment of parent functions.   
 
         ```js
-        function employee(name,age,exp){
+        function Employee(name,age,exp){
 
-              var __performance = Math.floor(Math.random() * 6);
-              function cal_sal_secret_func(){
-                   // secret function which calculate salary of employee. this function should not be public
-                   return __performance * 1000 * exp
+              var __performance = Math.floor(Math.random() * 10)+1;
+              var __bonus = Math.floor(Math.random() * 5000) + 10000
+              function calculate_salary(){
+                   // secret function which calculate salary of employee
+                   return __performance * 10000 * exp + __bonus
               }
 
-              var salary = cal_sal_secret_func()
-
               return {
-                   name, age, salary:cal_sal_secret_func()
+                   name, age, salary:calculate_salary()
               }
 
 
         }
 
-        var employee1 = new employee("yashraj",22,2);
+        var employee = new Employee("yashraj",22,3);
         console.log(employee1.name) //yashraj
         console.log(employee1.age) // 22
+        console.log(employee1.salary) //280345
         console.log(employee1.exp) // undefined
         ```
      **[⬆ Back to Top](#table-of-contents)**
