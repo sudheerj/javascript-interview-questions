@@ -7333,7 +7333,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
      **[⬆ Back to Top](#table-of-contents)**
 
-428. ### What is the difference between dense and sparse arrays?
+428. ### What are different ways to create sparse arrays in JavaScript?
 
      There are 4 different ways to create sparse arrays in JavaScript
 
