@@ -6501,6 +6501,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
      The above examples can be tested on chrome(33+) browser's developer console.
      **Note:**  This API is still a working draft and only available in Chrome and Firefox browsers(ofcourse Chrome only implemented the specification)
+     
      **[⬆ Back to Top](#table-of-contents)**
 
 385. ### What is minimum timeout throttling
@@ -7254,7 +7255,7 @@ You can download the PDF and Epub version of this repository from the latest run
         }(10);
      ```
      
-    **[⬆ Back to Top](#table-of-contents)**
+     **[⬆ Back to Top](#table-of-contents)**
          
 423. ### What is the easiest way to ignore promise errors?    
      The easiest and safest way to ignore promise errors is void that error. This approach is ESLint friendly too.
