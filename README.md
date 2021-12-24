@@ -50,7 +50,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |20 | [How do you redeclare variables in switch block without an error](#how-do-you-redeclare-variables-in-switch-block-without-an-error)|
 |21 | [What is the Temporal Dead Zone](#what-is-the-temporal-dead-zone)|
 |22 | [What is IIFE(Immediately Invoked Function Expression)](#what-is-iifeimmediately-invoked-function-expression)|
-|23 | [What is the benefit of using modules](#what-is-the-benefit-of-using-modules)|
+|23 | [How do you decode or encode a URL in JavaScript?](#how-do-you-decode-or-encode-a-url-in-javascript)|
 |24 | [What is memoization](#what-is-memoization)|
 |25 | [What is Hoisting](#what-is-hoisting)|
 |26 | [What are classes in ES6](#what-are-classes-in-es6)|
@@ -959,12 +959,18 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-23. ### What is the benefit of using modules
+23. ### How do you decode or encode a URL in JavaScript?
 
-    There are a lot of benefits to using modules in favour of a sprawling. Some of the benefits are,
-    1. Maintainability
-    2. Reusability
-    3. Namespacing
+    `encodeURL()` function is used to encode an URL. This function requires a URL string as a parameter and return that encoded string.
+    `decodeURI()` function is used to deocde an URL. This function requires an encoded URL string as parameter and return that decoded string.
+
+     **Note:** If you want to encode characters such as `/ ? : @ & = + $ #` then you need to use `encodeURLComponent()`.
+
+     ```javascript
+     let uri = "employeeDetails?name=john&occupation=manager";
+     let encoded_uri = encodeURI(uri);
+     let decoded_uri = decodeURI(encoded_uri);
+     ```
 
     **[⬆ Back to Top](#table-of-contents)**
 
