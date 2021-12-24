@@ -8214,6 +8214,9 @@ async function process(array) {
 process([1, 2, 3, 5]);
 ```
 
+
+
+
 - 1: 1 2 3 5 and Process completed!
 - 2: 5 5 5 5 and Process completed!
 - 3: Process completed! and 5 5 5 5
@@ -9176,6 +9179,33 @@ Whereas the second console.log logs 10 by capturing the count variable from oute
  
 </p>
 
+</details>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 57.  What is the output of below code ?
+
+ - 1: console.log(true && 'hi');
+ - 2: console.log(true && 'hi' && 1);
+ - 3: console.log(true && '' && 0);
+ 
+<details><summary><b>Answer</b></summary>
+  
+ - 1: hi
+ - 2: 1
+ - 3: NULL
+  
+ Reason : Becauase by default if not an empty string is take it as truthy ,default value is 1 take it as truthy 
+ Accepted truthy and Falsy value JavaScript
+ - 1:  0 
+ - 2:  '' 
+ - 3:  null 
+ - 4:  undefined 
+ - 5:  NAN 
+  
+   Other than these value all are consider as truthy value
+   
+</p>
 </details>
 
 ---
