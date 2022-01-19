@@ -5821,7 +5821,7 @@ You can download the PDF and Epub version of this repository from the latest run
      ```javascript
      var array = [1, 2, 3, 4, 5, 6 ,7, 8, 9, 10];
 
-     var odd = element ==> element % 2 !== 0;
+     var odd = element => element % 2 !== 0;
 
      console.log(array.some(odd)); // true (the odd element exists)
      ```
