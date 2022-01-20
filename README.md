@@ -9199,17 +9199,16 @@ Whereas the second console.log logs 10 by capturing the count variable from oute
   
  - 1: hi
  - 2: 1
- - 3: NULL
+ - 3: ''
   
- Reason : Becauase by default if not an empty string is take it as truthy ,default value is 1 take it as truthy 
- Accepted truthy and Falsy value JavaScript
+ Reason : The operator returns the value of the first falsy operand encountered when evaluating from left to right, or the value of the last operand if they are all truthy.
+
+ **Note:** Below these values are consider as falsy value
  - 1:  0 
  - 2:  '' 
  - 3:  null 
  - 4:  undefined 
  - 5:  NAN 
-  
-   Other than these value all are consider as truthy value
    
 </p>
 </details>
