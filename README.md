@@ -9224,6 +9224,19 @@ let str = "1,2,3";
 console.log(arr == str);
 ```
 
+- 1: false
+- 2: Error
+- 3: true
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+Arrays have their own implementation of `toString` method that returns a comma-separated list of elements. So the above code snippet returns true. In order to avoid conversion of array type, we should use === for comparison.
+</p>
+
+</details>
+
 ## Disclaimer
 
 The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
