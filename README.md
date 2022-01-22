@@ -9215,9 +9215,14 @@ Whereas the second console.log logs 10 by capturing the count variable from oute
 
 ---
 
-**[⬆ Back to Top](#table-of-contents)**
+#### 58.  What is the output of below code ?
 
----
+```javascript
+let arr = [1, 2, 3];
+let str = "1,2,3";
+
+console.log(arr == str);
+```
 
 ## Disclaimer
 
