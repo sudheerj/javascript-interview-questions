@@ -456,6 +456,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)|
 |427| [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays)|
 |428| [What are the different ways to create sparse arrays?](#what-are-the-different-ways-to-create-sparse-arrays)|
+|429| [What is the difference between setTimeout and setImmediate and process.nextTick?](#what-is-the difference-between-setTimeout-and-setImmediate-and-processnextTick)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7368,6 +7369,14 @@ You can download the PDF and Epub version of this repository from the latest run
           justiceLeague.length = 5;
           console.log(justiceLeague); // ['Superman', 'Aquaman', 'Batman', empty, empty]
           ```
+     **[⬆ Back to Top](#table-of-contents)**
+
+429. ### What is the difference between setTimeout and setImmediate and process.nextTick?
+
+     1. **Set Timeout:** setTimeout() is to schedule execution of a one-time callback after delay milliseconds.
+     2. **Set Immediate:** setTimeout() is to schedule execution of a one-time callback after delay milliseconds.
+     3. **Process NextTick:**  If process.nextTick() is called in a given phase, all the callbacks passed to process.nextTick() will be resolved before the event loop continues. This will block the event loop and create I/O Starvation if process.nextTick() is called recursively.
+
      **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
