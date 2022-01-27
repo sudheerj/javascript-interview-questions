@@ -2330,7 +2330,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     **[⬆ فهرست](#فهرست)**
 
 98. ### ارتباطی بین Java و JavaScript وجود داره؟
-    No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
+
+     No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
 
     **[⬆ فهرست](#فهرست)**
 
@@ -2338,9 +2339,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events. Some of the examples of HTML events are,
 
-  1. Web page has finished loading
-  2. Input field was changed
-  3. Button was clicked
+     1. Web page has finished loading
+     2. Input field was changed
+     3. Button was clicked
 
      Let's describe the behavior of click event for button element,
 
