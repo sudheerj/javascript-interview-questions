@@ -2368,13 +2368,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 100. ### کی جاواسکریپت رو ساخته؟
 
-     JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. Initially it was developed under the name `Mocha`, but later the language was officially called `LiveScript` when it first shipped in beta releases of Netscape.
+جاوا اسکریپت توسط برندان ایچ در سال 1995 و در زمان او در نت اسکیپ ارتباطات ایجاد شد. در ابتدا با نام `Mocha` توسعه یافت، اما بعداً زمانی که برای اولین بار در نسخه های بتا نت اسکیپ عرضه شد، این زبان به طور رسمی `LiveScript` نامیده شد.
 
-     **[⬆ فهرست](#فهرست)**
+
+    **[⬆ فهرست](#فهرست)**
+
 
 101. ### هدف از متد preventDefault چیه؟
 
-     The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behaviour that belongs to the event will not occur. For example, prevent form submission when clicking on submit button and prevent opening the page URL when clicking on hyperlink are some common use cases.
+     متد `()preventDefault` اگر رویداد قابل لغو باشد، آن را لغو می‌کند، به این معنی که عمل یا رفتار پیش‌فرض متعلق به رویداد رخ نخواهد داد. به عنوان مثال، جلوگیری از ارسال فرم هنگام کلیک بر روی دکمه ارسال و جلوگیری از باز شدن `URL` صفحه هنگام کلیک کردن بر روی لینک از موارد رایج استفاده است.
 
      <span dir="ltr" align="left">
 
@@ -2392,7 +2394,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 102. ### کاربرد متد stopPropagation چیه؟
 
-     The stopPropagation method is used to stop the event from bubbling up the event chain. For example, the below nested divs with stopPropagation method prevents default event propagation when clicking on nested div(Div1)
+    روش `stopPropagation` برای جلوگیری از حبابی شدن رویداد در زنجیره رویداد استفاده می شود. به عنوان مثال، div های تودرتو زیر با متد `stopPropagation` از انتشار پیش فرض رویداد هنگام کلیک بر روی div (Div1) جلوگیری می کند.
 
      <span dir="ltr" align="left">
 
@@ -2419,17 +2421,17 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      **[⬆ فهرست](#فهرست)**
 
 103. ### مراحلی که هنگام استفاده از return false توی یه event-handler رخ میده چیا هستن؟
-     The return false statement in event handlers performs the below steps,
+     عبارت ‍‍‍‍`return false` در کنترل کننده رویداد مراحل زیر را انجام می دهد:
 
-  1. First it stops the browser's default action or behaviour.
-  2. It prevents the event from propagating the DOM
-  3. Stops callback execution and returns immediately when called.
+  1. ابتدا عملکرد یا رفتار پیش فرض مرورگر را متوقف می کند.
+  2. این رویداد از انتشار `DOM` جلوگیری می کند
+  3. اجرای ‍‍`callback` را متوقف می کند و بلافاصله پس از فراخوانی برمی گردد.
 
      **[⬆ فهرست](#فهرست)**
 
 104. ### BOM چیه؟
 
-     The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It consists of the objects navigator, history, screen, location and document which are children of the window. The Browser Object Model is not standardized and can change based on different browsers.
+     مدل شیء مرورگر (BOM) به جاوا اسکریپت اجازه می دهد تا با مرورگر "صحبت کند". این شامل ناوبر اشیاء، تاریخچه، صفحه، مکان و سند است که فرزندان پنجره هستند. مدل شیء مرورگر استاندارد نیست و می تواند بر اساس مرورگرهای مختلف تغییر کند.
 
      ![Screenshot](images/bom.png)
 
@@ -2437,7 +2439,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 105. ### موارد استفاده از setTimeout کدوما هستن؟
 
-     The setTimeout() method is used to call a function or evaluate an expression after a specified number of milliseconds. For example, let's log a message after 2 seconds using setTimeout method,
+     متد he `()setTimeout` برای فراخوانی یک تابع یا ارزیابی یک عبارت پس از تعداد مشخصی از میلی ثانیه استفاده می شود. به عنوان مثال، بیایید یک پیام را پس از 2 ثانیه با استفاده از روش `()setTimeout` ثبت کنیم.
 
      <span dir="ltr" align="left">
 
@@ -2451,7 +2453,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 106. ### موارد استفاده از setInterval کدوما هستن؟
 
-     The setInterval() method is used to call a function or evaluate an expression at specified intervals (in milliseconds). For example, let's log a message after 2 seconds using setInterval method,
+     متد `setInterval()` برای فراخوانی یک تابع یا ارزیابی یک عبارت در بازه های زمانی مشخص (بر حسب میلی ثانیه) استفاده می شود. به عنوان مثال، اجازه دهید یک پیام را پس از 2 ثانیه با استفاده از روش `setInterval` ثبت کنیم.
 
      <span dir="ltr" align="left">
 
@@ -2464,14 +2466,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      **[⬆ فهرست](#فهرست)**
 
 107. ### چرا جاواسکریپت رو به عنوان یه زبان تک thread می‌شناسن؟
-     JavaScript is a single-threaded language. Because the language specification does not allow the programmer to write code so that the interpreter can run parts of it in parallel in multiple threads or processes. Whereas languages like java, go, C++ can make multi-threaded and multi-process programs.
+     جاوا اسکریپت یک زبان تک رشته ای است. زیرا مشخصات زبان به برنامه نویس اجازه نمی دهد تا کد بنویسد تا مفسر بتواند بخش هایی از آن را به صورت موازی در چندین رشته یا پردازش اجرا کند. در حالی که زبان هایی مانند java، go، C++ می توانند برنامه های چند رشته ای و چند فرآیندی بسازند.
 
      **[⬆ فهرست](#فهرست)**
 
 108. ### Event-delegation چیه؟
-     Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.
+    تفویض رویداد تکنیکی برای گوش دادن به رویدادهاست که در آن یک عنصر والد را به عنوان شنونده برای همه رویدادهایی که در داخل آن اتفاق می‌افتد، تفویض می‌کنید.
 
-     For example, if you wanted to detect field changes in inside a specific form, you can use event delegation technique,
+     به عنوان مثال، اگر می خواهید تغییرات فیلد را در یک فرم خاص تشخیص دهید، می توانید از تکنیک انتقال رویداد استفاده کنید.
 
      <span dir="ltr" align="left">
 
@@ -2492,29 +2494,29 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      **[⬆ فهرست](#فهرست)**
 
 109. ### ECMAScript چیه؟
-     ECMAScript is the scripting language that forms the basis of JavaScript. ECMAScript standardized by the ECMA International standards organization in the ECMA-262 and ECMA-402 specifications. The first edition of ECMAScript was released in 1997.
+     `ECMAScript` زبان برنامه نویسی است که اساس جاوا اسکریپت را تشکیل می دهد. `ECMAScript` توسط سازمان استاندارد بین المللی `ECMA` در مشخصات `ECMA-262` و `ECMA-402` استاندارد شده است. اولین نسخه `ECMAScript` در سال 1997 منتشر شد.
 
      **[⬆ فهرست](#فهرست)**
 
 110. ### JSON چیه؟
 
-     JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
+     `JSON (JavaScript Object Notation)` یک فرمت سبک وزن است که برای تبادل داده ها استفاده می شود. این بر اساس زیرمجموعه ای از زبان جاوا اسکریپت است که اشیا در جاوا اسکریپت ساخته می شوند.
 
      **[⬆ فهرست](#فهرست)**
 
 111. ### قوانین فرمت JSON کدوما هستن؟
 
-     Below are the list of syntax rules of JSON
-  1. The data is in name/value pairs
-  2. The data is separated by commas
-  3. Curly braces hold objects
-  4. Square brackets hold arrays
+     در زیر لیستی از قوانین نحوی `JSON` آمده است
+  1. داده ها به صورت جفت نام/مقدار هستند
+  2. داده ها با کاما از هم جدا می شوند
+  3. براکت ها اجسام را نگه می دارند
+  4. براکت های مربعی آرایه ها را نگه می دارند
 
      **[⬆ فهرست](#فهرست)**
 
 112. ### هدف از متد JSON.stringify چیه؟
 
-     When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
+    هنگام ارسال داده ها به وب سرور، داده ها باید در قالب رشته ای باشند. شما می توانید با تبدیل شی `JSON` به رشته با استفاده از متد `stringify ()` به این هدف دست یابید.
 
      <span dir="ltr" align="left">
 
@@ -2530,7 +2532,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 113. ### چطوری می‌تونیم یه رشته(string) JSON رو تجزیه کنیم؟
 
-     When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
+     هنگام دریافت داده ها از یک وب سرور، داده ها همیشه در قالب رشته ای هستند. اما می توانید این مقدار رشته را با استفاده از متد `parse()` به یک شی جاوا اسکریپت تبدیل کنید.
 
      <span dir="ltr" align="left">
 
@@ -2545,7 +2547,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      **[⬆ فهرست](#فهرست)**
 
 114. ### چرا به JSON نیاز داریم؟
-     When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
+     هنگام تبادل داده بین مرورگر و سرور، داده ها فقط می توانند متنی باشند. از آنجایی که `JSON` فقط متنی است، می‌توان آن را به راحتی به سرور ارسال کرد و از آن به عنوان قالب داده توسط هر زبان برنامه‌نویسی استفاده کرد.
 
      **[⬆ فهرست](#فهرست)**
 
