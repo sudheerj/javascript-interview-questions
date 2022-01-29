@@ -2372,7 +2372,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      جاوا اسکریپت توسط برندان ایچ در سال 1995 و در زمان او در نت اسکیپ ارتباطات ایجاد شد. در ابتدا با نام `Mocha` توسعه یافت، اما بعداً زمانی که برای اولین بار در نسخه های بتا نت اسکیپ عرضه شد، این زبان به طور رسمی `LiveScript` نامیده شد.
 
 
-    **[⬆ فهرست](#فهرست)**
+     **[⬆ فهرست](#فهرست)**
 
 
 101. ### هدف از متد preventDefault چیه؟
@@ -2395,7 +2395,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 102. ### کاربرد متد stopPropagation چیه؟
 
-     روش `stopPropagation` برای جلوگیری از حبابی شدن رویداد در زنجیره رویداد استفاده می شود. به عنوان مثال، div های تودرتو زیر با متد `stopPropagation` از انتشار پیش فرض رویداد هنگام کلیک بر روی div (Div1) جلوگیری می کند.
+     روش `stopPropagation` برای جلوگیری از حبابی شدن رویداد در زنجیره رویداد استفاده میشه. به عنوان مثال، div های تودرتو زیر با متد `stopPropagation` از انتشار پیش فرض رویداد هنگام کلیک بر روی div (Div1) جلوگیری می‌کنه.
 
      <span dir="ltr" align="left">
 
@@ -2425,15 +2425,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      عبارت ‍‍‍‍`return false` در کنترل کننده رویداد مراحل زیر را انجام می دهد:
 
-  1. ابتدا عملکرد یا رفتار پیش فرض مرورگر را متوقف می کند.
-  2. این رویداد از انتشار `DOM` جلوگیری می کند
-  3. اجرای ‍‍`callback` را متوقف می کند و بلافاصله پس از فراخوانی برمی گردد.
+  1. ابتدا عملکرد یا رفتار پیش فرض مرورگر را متوقف می‌کنه.
+  2. این رویداد از انتشار `DOM` جلوگیری می‌کنه
+  3. اجرای ‍‍`callback` را متوقف می‌کنه و بلافاصله پس از فراخوانی برمی گردد.
 
      **[⬆ فهرست](#فهرست)**
 
 104. ### BOM چیه؟
 
-     مدل شیء مرورگر (BOM) به جاوا اسکریپت اجازه می دهد تا با مرورگر "صحبت کند". این شامل ناوبر اشیاء، تاریخچه، صفحه، مکان و سند است که فرزندان پنجره هستند. مدل شیء مرورگر استاندارد نیست و می تواند بر اساس مرورگرهای مختلف تغییر کند.
+     مدل شیء مرورگر (BOM) به جاوا اسکریپت اجازه می دهد تا با مرورگر "صحبت کند". این شامل ناوبر اشیاء، تاریخچه، صفحه، مکان و سند است که فرزندان پنجره هستند. مدل شیء مرورگر استاندارد نیست و می‌تونه بر اساس مرورگرهای مختلف تغییر کند.
 
      ![Screenshot](images/bom.png)
 
@@ -2441,7 +2441,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 105. ### موارد استفاده از setTimeout کدوما هستن؟
 
-     متد he `()setTimeout` برای فراخوانی یک تابع یا ارزیابی یک عبارت پس از تعداد مشخصی از میلی ثانیه استفاده می شود. به عنوان مثال، بیایید یک پیام را پس از 2 ثانیه با استفاده از روش `()setTimeout` ثبت کنیم.
+     متد he `()setTimeout` برای فراخوانی یک تابع یا ارزیابی یک عبارت پس از تعداد مشخصی از میلی ثانیه استفاده میشه. به عنوان مثال، بیایید یک پیام را پس از 2 ثانیه با استفاده از روش `setTimeout` ثبت کنیم.
 
      <span dir="ltr" align="left">
 
@@ -2455,7 +2455,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 106. ### موارد استفاده از setInterval کدوما هستن؟
 
-     متد `setInterval()` برای فراخوانی یک تابع یا ارزیابی یک عبارت در بازه های زمانی مشخص (بر حسب میلی ثانیه) استفاده می شود. به عنوان مثال، اجازه دهید یک پیام را پس از 2 ثانیه با استفاده از روش `setInterval` ثبت کنیم.
+     متد `()setInterval` برای فراخوانی یک تابع یا ارزیابی یک عبارت در بازه های زمانی مشخص (بر حسب میلی ثانیه) استفاده میشه. به عنوان مثال، اجازه دهید یک پیام را پس از 2 ثانیه با استفاده از روش `setInterval` ثبت کنیم.
 
      <span dir="ltr" align="left">
 
@@ -2505,7 +2505,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 110. ### JSON چیه؟
 
-     `JSON (JavaScript Object Notation)` یک فرمت سبک وزن است که برای تبادل داده ها استفاده می شود. این بر اساس زیرمجموعه ای از زبان جاوا اسکریپت است که اشیا در جاوا اسکریپت ساخته می شوند.
+     `JSON (JavaScript Object Notation)` یک فرمت سبک وزن است که برای تبادل داده ها استفاده می‌شه. این بر اساس زیرمجموعه ای از زبان جاوا اسکریپت است که اشیا در جاوا اسکریپت ساخته میشن.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -2513,7 +2513,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      در زیر لیستی از قوانین نحوی `JSON` آمده است
   1. داده ها به صورت جفت نام/مقدار هستند
-  2. داده ها با کاما از هم جدا می شوند
+  2. داده ها با کاما از هم جدا میشن
   3. براکت ها اجسام را نگه می دارند
   4. براکت های مربعی آرایه ها را نگه می دارند
 
@@ -2537,7 +2537,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 113. ### چطوری می‌تونیم یه رشته(string) JSON رو تجزیه کنیم؟
 
-     هنگام دریافت داده ها از یک وب سرور، داده ها همیشه در قالب رشته ای هستند. اما می توانید این مقدار رشته را با استفاده از متد `parse()` به یک شی جاوا اسکریپت تبدیل کنید.
+     هنگام دریافت داده ها از یک وب سرور، داده ها همیشه در قالب رشته ای هستند. اما میتونین این مقدار رشته را با استفاده از متد `parse()` به یک شی جاوا اسکریپت تبدیل کنید.
 
      <span dir="ltr" align="left">
 
@@ -2558,15 +2558,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 115. ### PWAها چی هستن؟
 
-     Progressive web applications (PWAs) are a type of mobile app delivered through the web, built using common web technologies including HTML, CSS and JavaScript. These PWAs are deployed to servers, accessible through URLs, and indexed by search engines.
+     `Progressive web applications (PWAs)` نوعی از برنامه های تلفن همراه هستند که از طریق وب ارائه میشن، و با استفاده از فناوری های رایج وب از جمله `HTML،` `CSS` و جاوا اسکریپت ساخته میشن،. این `PWA` ها در سرورها مستقر میشن، از طریق `URL` ها قابل دسترسی هستند و توسط موتورهای جستجو فهرست بندی میشن.
 
      **[⬆ فهرست](#فهرست)**
 
 116. ### هدف از متد clearTimeout چیه؟
 
-     The clearTimeout() function is used in javascript to clear the timeout which has been set by setTimeout()function before that. i.e, The return value of setTimeout() function is stored in a variable and it’s passed into the clearTimeout() function to clear the timer.
+     تابع `()clearTimeout` در جاوا اسکریپت برای پاک کردن بازه زمانی استفاده میشه که قبل از آن توسط تابع `setTimeout()` تنظیم شده است. یعنی مقدار بازگشتی تابع `setTimeout()` در یک متغیر ذخیره میشه و برای پاک کردن تایمر به تابع `clearTimeout()` منتقل میشه.
 
-     For example, the below setTimeout method is used to display the message after 3 seconds. This timeout can be cleared by the clearTimeout() method.
+     به عنوان مثال، از روش `setTimeout` زیر برای نمایش پیام پس از 3 ثانیه استفاده میشه. این مهلت زمانی را می توان با روش `()clearTimeout` پاک کرد.
 
      <span dir="ltr" align="left">
 
@@ -2593,9 +2593,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 117. ### هدف از متد clearInterval چیه؟
 
-     The clearInterval() function is used in javascript to clear the interval which has been set by setInterval() function. i.e, The return value returned by setInterval() function is stored in a variable and it’s passed into the clearInterval() function to clear the interval.
+     تابع `clearInterval()` در جاوا اسکریپت برای پاک کردن فاصله ای که توسط تابع `setInterval()` تنظیم شده است استفاده میشه. به عنوان مثال، مقدار بازگشتی که توسط تابع `setInterval()` برمی گردد در یک متغیر ذخیره میشه و برای پاک کردن فاصله به تابع `clearInterval()` ارسال میشه.
 
-     For example, the below setInterval method is used to display the message for every 3 seconds. This interval can be cleared by the clearInterval() method.
+     به عنوان مثال، از روش `setInterval` زیر برای نمایش پیام در هر 3 ثانیه استفاده میشه. این بازه را می توان با روش `clearInterval()` پاک کرد.
 
      <span dir="ltr" align="left">
 
@@ -2622,7 +2622,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 118. ### توی جاواسکریپت، چطوری میشه به یه صفحه جدید redirect انجام داد؟
 
-     In vanilla javascript, you can redirect to a new page using the `location` property of window object. The syntax would be as follows,
+     در `vanila` جاوا اسکریپت، می‌تونین با استفاده از ویژگی `location` شی پنجره به صفحه جدیدی هدایت بشین.
 
      <span dir="ltr" align="left">
 
@@ -2638,8 +2638,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 119. ### چطوری بررسی می‌کنین که یه string شامل یه substring هست یا نه؟
 
-     There are 3 possible ways to check whether a string contains a substring or not,
-  1. **Using includes:** ES6 provided `String.prototype.includes` method to test a string contains a substring
+     3 روش ممکن برای بررسی اینکه آیا یک رشته دارای یک رشته فرعی است یا خیر وجود داره.
+  1. **includes استفاده از متد:**  ES6 روش `String.prototype.includes‍` را برای آزمایش یک رشته حاوی یک رشته فرعی ارائه کرد.
 
      <span dir="ltr" align="left">
 
@@ -2650,7 +2650,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using indexOf:** In an ES5 or older environment, you can use `String.prototype.indexOf` which returns the index of a substring. If the index value is not equal to -1 then it means the substring exists in the main string.
+  1. **استفاده از متد indexOf():** در یک محیط ES5 یا قدیمی‌تر، می‌توانید از «String.prototype.indexOf» استفاده کنید که ایندکس یک رشته فرعی را برمی‌گرداند. اگر مقدار شاخص برابر با 1 نباشد، به این معنی است که رشته فرعی در رشته اصلی وجود دارد.
 
      <span dir="ltr" align="left">
 
@@ -2661,7 +2661,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using RegEx:** The advanced solution is using Regular expression's test method(`RegExp.test`), which allows for testing for against regular expressions
+  1. **استفاده از Regex:** راه حل پیشرفته از روش آزمون عبارت `Regular ('RegExp.test') `‍‍استفاده می کند، که امکان آزمایش در برابر عبارات منظم را فراهم می کند.
 
      <span dir="ltr" align="left">
 
@@ -2676,7 +2676,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 120. ### توی جاواسکریپت، چطوری مقدار یه آدرس email رو اعتبارسنجی می‌کنین؟
 
-     You can validate an email in javascript using regular expressions. It is recommended to do validations on the server side instead of the client side. Because the javascript can be disabled on the client side.
+     می‌توانید با استفاده از `Regex` ایمیل را در جاوا اسکریپت تأیید کنید. توصیه می شود به جای سمت کلاینت، اعتبارسنجی در سمت سرور انجام شود. زیرا جاوا اسکریپت را می توان در سمت کلاینت غیرفعال کرد.
 
      <span dir="ltr" align="left">
 
@@ -2691,11 +2691,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[⬆ فهرست](#فهرست)**
 
-     The above regular expression accepts unicode characters.
+     `Regex` بالا کاراکترهای یونیکد را می پذیرد.
 
 121. ### چطوری می‌تونیم مقدار آدرس url جاری رو بخونیم؟
 
-     You can use `window.location.href` expression to get the current url path and you can use the same expression for updating the URL too. You can also use `document.URL` for read-only purposes but this solution has issues in FF.
+     می‌توانید از عبارت `window.location.href` برای دریافت مسیر آدرس فعلی استفاده کنید و می‌توانید از همان عبارت برای به‌روزرسانی URL نیز استفاده کنید. همچنین می‌توانید از `document.URL` برای اهداف فقط خواندنی استفاده کنید، اما این راه‌حل مشکلاتی در FF دارد.
 
      <span dir="ltr" align="left">
 
@@ -2709,21 +2709,21 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 122. ### ویژگی‌های مختلف url روی object مربوط به history کدوما هستن؟
 
-     The below `Location` object properties can be used to access URL components of the page,
-  1. href - The entire URL
-  2. protocol - The protocol of the URL
-  3. host - The hostname and port of the URL
-  4. hostname - The hostname of the URL
-  5. port - The port number in the URL
-  6. pathname - The path name of the URL
-  7. search - The query portion of the URL
-  8. hash - The anchor portion of the URL
+     برای دسترسی به اجزای URL صفحه می‌توان از ویژگی‌های شی `location` زیر استفاده کرد.
+  1. href - ورودی URL
+  2. protocol - پروتکل استفاده شده URL
+  3. host - هاست و پورت URL
+  4. hostname - هاست URL
+  5. port - شماره پورت  URL
+  6. pathname - مسیر  URL
+  7. search - قسمت جستجو URL
+  8. hash - محل جای‌گیری URL
 
      **[⬆ فهرست](#فهرست)**
 
 123. ### توی جاواسکریپت چطوری می‌تونیم مقدار یه query-string رو بخونیم؟
 
-     You can use URLSearchParams to get query string values in javascript. Let's see an example to get the client code value from URL query string,
+     می توانید از `URLSearchParams` برای دریافت مقادیر رشته پرس و جو در جاوا اسکریپت استفاده کنید. بیایید مثالی برای دریافت مقدار کد مشتری از رشته پرس و جو `URL` ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -2738,9 +2738,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 124. ### چطوری می‌تونیم بررسی کنیم که آیا یه پراپرتی روی آبجکت وجود داره یا نه؟
 
-     You can check whether a key exists in an object or not using three approaches,
+     با استفاده از سه رویکرد می‌تونیم بررسی کنید که آیا یک کلید در یک شی وجود دارد یا خیر.
 
-  1. **Using in operator:** You can use the in operator whether a key exists in an object or not
+  1. **استفاده از عملگر ها:** شما می‌تونیم از عملگر in استفاده کنید که آیا کلیدی در یک شی وجود دارد یا خیر
 
      <span dir="ltr" align="left">
 
@@ -2750,7 +2750,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     and If you want to check if a key doesn't exist, remember to use parenthesis,
+     و اگر می خواهید بررسی کنید که آیا کلید وجود ندارد، به یاد داشته باشید که از پرانتز استفاده کنید،
 
      <span dir="ltr" align="left">
 
@@ -2760,7 +2760,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
+  1. **استفاده از متد hasOwnProperty:** می‌توانید از `hasOwnProperty` برای آزمایش ویژگی‌های نمونه شی (و نه ویژگی‌های ارثی) استفاده کنید.
 
      <span dir="ltr" align="left">
 
@@ -2770,7 +2770,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using undefined comparison:** If you access a non-existing property from an object, the result is undefined. Let’s compare the properties against undefined to determine the existence of the property.
+  1. **استفاده از مقایسه undifiend:** If you access a non-existing property from an object, the result is undefined. Let’s compare the properties against undefined to determine the existence of the property.
 
      <span dir="ltr" align="left">
 
@@ -2789,7 +2789,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 126. ### How do you loop through or enumerate javascript object
 
-     You can use the `for-in` loop to loop through javascript object. You can also make sure that the key you get is an actual property of an object, and doesn't come from the prototype using `hasOwnProperty` method.
+     می توانید از حلقه `for-in` برای حلقه زدن شی جاوا اسکریپت استفاده کنید. همچنین می‌توانید مطمئن شوید که کلیدی که دریافت می‌کنید یک ویژگی واقعی یک شی است و با استفاده از روش `hasOwnProperty` از نمونه اولیه نیست.
 
      <span dir="ltr" align="left">
 
