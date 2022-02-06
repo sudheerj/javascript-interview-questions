@@ -50,7 +50,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |20 | [How do you redeclare variables in switch block without an error](#how-do-you-redeclare-variables-in-switch-block-without-an-error)|
 |21 | [What is the Temporal Dead Zone](#what-is-the-temporal-dead-zone)|
 |22 | [What is IIFE(Immediately Invoked Function Expression)](#what-is-iifeimmediately-invoked-function-expression)|
-|23 | [What is the benefit of using modules](#what-is-the-benefit-of-using-modules)|
+|23 | [How do you decode or encode a URL in JavaScript?](#how-do-you-decode-or-encode-a-url-in-javascript)|
 |24 | [What is memoization](#what-is-memoization)|
 |25 | [What is Hoisting](#what-is-hoisting)|
 |26 | [What are classes in ES6](#what-are-classes-in-es6)|
@@ -453,11 +453,12 @@ You can download the PDF and Epub version of this repository from the latest run
 |423| [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors)|
 |424| [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)|
 |425| [What is nullish coalescing operator(??)?](#what-is-nullish-coalescing-operator-(??))|
-|426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)
-|427| [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays)
-|428| [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays-1)
-|429| [What is data encapsulation in javascript?](#what-is-data-encapsulation-in-javascript)
-|430| [How do you encapsulate data in javascript?](#how-do-you-encapsulate-data-in-javascript)
+|426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)|
+|427| [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays)|
+|428| [What are the different ways to create sparse arrays?](#what-are-the-different-ways-to-create-sparse-arrays)|
+|429| [What is the difference between setTimeout and setImmediate and process.nextTick?](#what-is-the difference-between-setTimeout-and-setImmediate-and-processnextTick)|
+|430| [What is data encapsulation in javascript?](#what-is-data-encapsulation-in-javascript)
+|431| [How do you encapsulate data in javascript?](#how-do-you-encapsulate-data-in-javascript)
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -961,12 +962,18 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-23. ### What is the benefit of using modules
+23. ### How do you decode or encode a URL in JavaScript?
 
-    There are a lot of benefits to using modules in favour of a sprawling. Some of the benefits are,
-    1. Maintainability
-    2. Reusability
-    3. Namespacing
+    `encodeURI()` function is used to encode an URL. This function requires a URL string as a parameter and return that encoded string.
+    `decodeURI()` function is used to deocde an URL. This function requires an encoded URL string as parameter and return that decoded string.
+
+     **Note:** If you want to encode characters such as `/ ? : @ & = + $ #` then you need to use `encodeURIComponent()`.
+
+     ```javascript
+     let uri = "employeeDetails?name=john&occupation=manager";
+     let encoded_uri = encodeURI(uri);
+     let decoded_uri = decodeURI(encoded_uri);
+     ```
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -5817,7 +5824,7 @@ You can download the PDF and Epub version of this repository from the latest run
      ```javascript
      var array = [1, 2, 3, 4, 5, 6 ,7, 8, 9, 10];
 
-     var odd = element ==> element % 2 !== 0;
+     var odd = element => element % 2 !== 0;
 
      console.log(array.some(odd)); // true (the odd element exists)
      ```
@@ -7022,7 +7029,7 @@ You can download the PDF and Epub version of this repository from the latest run
          });
 
          console.log(isPromise(i)); // false
-         console.log(isPromise(p)); // true
+         console.log(isPromise(promise)); // true
       ```
 
       Another way is to check for `.then()` handler type
@@ -7366,7 +7373,12 @@ You can download the PDF and Epub version of this repository from the latest run
           ```
      **[⬆ Back to Top](#table-of-contents)**
 
-429. ### What is data encapsulation in JavaScript?
+429. ### What is the difference between setTimeout and setImmediate and process.nextTick?
+
+     1. **Set Timeout:** setTimeout() is to schedule execution of a one-time callback after delay milliseconds.
+     2. **Set Immediate:** The setImmediate function is used to execute a function right after the current event loop finishes.
+     3. **Process NextTick:**  If process.nextTick() is called in a given phase, all the callbacks passed to process.nextTick() will be resolved before the event loop continues. This will block the event loop and create I/O Starvation if process.nextTick() is called recursively.
+430. ### What is data encapsulation in JavaScript?
 
      Data encapsulation is object oriented programming technique to hide the internal data members.
      data encapsulation prevents direct access from the outside. Some data should be hidden otherwise 
@@ -7376,7 +7388,7 @@ You can download the PDF and Epub version of this repository from the latest run
      **[⬆ Back to Top](#table-of-contents)**
 
 
-430. ### How do you encapsulate data in javascript?
+431. ### How do you encapsulate data in javascript?
 
       we can use closures for data encapsulate because closures retains environment of parent functions.   
 
@@ -7403,6 +7415,7 @@ You can download the PDF and Epub version of this repository from the latest run
         console.log(employee1.salary) //280345
         console.log(employee1.exp) // undefined
         ```
+
      **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
@@ -8254,6 +8267,9 @@ async function process(array) {
 }
 process([1, 2, 3, 5]);
 ```
+
+
+
 
 - 1: 1 2 3 5 and Process completed!
 - 2: 5 5 5 5 and Process completed!
@@ -9219,11 +9235,55 @@ Whereas the second console.log logs 10 by capturing the count variable from oute
 
 </details>
 
----
-
 **[⬆ Back to Top](#table-of-contents)**
 
+#### 57.  What is the output of below code ?
+
+ - 1: console.log(true && 'hi');
+ - 2: console.log(true && 'hi' && 1);
+ - 3: console.log(true && '' && 0);
+ 
+<details><summary><b>Answer</b></summary>
+  
+ - 1: hi
+ - 2: 1
+ - 3: ''
+  
+ Reason : The operator returns the value of the first falsy operand encountered when evaluating from left to right, or the value of the last operand if they are all truthy.
+
+ **Note:** Below these values are consider as falsy value
+ - 1:  0 
+ - 2:  '' 
+ - 3:  null 
+ - 4:  undefined 
+ - 5:  NAN 
+   
+</p>
+</details>
+
 ---
+
+#### 58.  What is the output of below code ?
+
+```javascript
+let arr = [1, 2, 3];
+let str = "1,2,3";
+
+console.log(arr == str);
+```
+
+- 1: false
+- 2: Error
+- 3: true
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+Arrays have their own implementation of `toString` method that returns a comma-separated list of elements. So the above code snippet returns true. In order to avoid conversion of array type, we should use === for comparison.
+</p>
+
+</details>
 
 ## Disclaimer
 
