@@ -2813,8 +2813,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 127. ### How do you test for an empty object
 
-     There are different solutions based on ECMAScript versions
-  1. **Using Object entries(ECMA 7+):** You can use object entries length along with constructor type.
+     راه حل های مختلفی بر اساس نسخه های `ECMAScript` وجود دارد
+  1. **استفاده Object entries(ECMA 7+):** 
+  میتونیم از ‍‍`object entries` استقاده کنیم و `length` اونا رو چک کنیم
 
      <span dir="ltr" align="left">
 
@@ -2824,7 +2825,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using Object keys(ECMA 5+):** You can use object keys length along with constructor type.
+  1. **استفاده از Object keys(ECMA 5+):** 
+  میتونیم از `object keys‍` استفاده کنیم و `length‍` اونو چک کنیم
 
      <span dir="ltr" align="left">
 
@@ -2834,7 +2836,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using for-in with hasOwnProperty(Pre-ECMA 5):** You can use a for-in loop along with hasOwnProperty.
+  1. **استفاده از for-in با متد hasOwnProperty(Pre-ECMA 5):** میتونیم از حلفه `for-in`استفاده کنیم و هر پارامتر رو با `hasOwnProperty‍` چک کنیم
 
      <span dir="ltr" align="left">
 
@@ -2856,7 +2858,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 128. ### What is an arguments object
 
-     The arguments object is an Array-like object accessible inside functions that contains the values of the arguments passed to that function. For example, let's see how to use arguments object inside sum function,
+     شیء آرگومان ها یک شیء آرایه ماننده که در داخل توابع قابل دسترسیه و حاوی مقادیر آرگومان های ارسال شده به اون تابعه. به عنوان مثال، بیایید ببینیم چگونه از شیء آرگومان ها در تابع sum استفاده کنیم
 
      <span dir="ltr" align="left">
 
@@ -2874,7 +2876,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** You can't apply array methods on arguments object. But you can convert into a regular array as below.
+     **Note:** شما نمیتونین از متد های ارایه برای این شی ارگومان ها استفاده کنین اما میتونین به ارایه تبدیلش کنین 
 
      <span dir="ltr" align="left">
 
@@ -2888,7 +2890,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 129. ### How do you make first letter of the string in an uppercase
 
-     You can create a function which uses a chain of string methods such as charAt, toUpperCase and slice methods to generate a string with the first letter in uppercase.
+     میتونیم با درست کردن یه فانکشن که با استفاده از زنجیره ای از متد های استرینگ ها مثلا `charAt` و `toUpperCase` و `slice` یه استرنیگ با حرف اول بزرگ ایجاد کرد
 
      <span dir="ltr" align="left">
 
@@ -2904,21 +2906,21 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 130. ### What are the pros and cons of for loop
 
-     The for-loop is a commonly used iteration syntax in javascript. It has both pros and cons
-     ####Pros
-  1. Works on every environment
-  2. You can use break and continue flow control statements
+     حلقه `for` یک سینتکس تکراری رایج در جاوا اسکریپته که هم مزایا و هم معایب داره
+     ####مزایا
+  1. توی همه‌ی محیط ها `env` کار میکنه
+  2. میتونیم از `break` و `‍continue‍` برای کنرل جریان داده استفاده کرد
 
-     ####Cons
-  1. Too verbose
-  2. Imperative
-  3. You might face one-by-off errors
+     ####معایب
+  1. پر هزینه
+  2. ضروریت
+  3. ممکنه با خطاهای یک به یک روبرو شین
 
      **[⬆ فهرست](#فهرست)**
 
 131. ### How do you display the current date in javascript
 
-     You can use `new Date()` to generate a new Date object containing the current date and time. For example, let's display the current date in mm/dd/yyyy
+     شما میتونین از کلاس `new Date()` استفاده کنین که یه ابجکت از زمان و تاریخ بهمون میده بریم یه مثال ازش ببینیم
 
      <span dir="ltr" align="left">
 
@@ -2938,7 +2940,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 132. ### How do you compare two date objects
 
-     You need to use date.getTime() method to compare date values instead of comparison operators (==, !=, ===, and !== operators)
+     برای این کار باید از متد getTime() که برا روی date قرار دارد استفاده کرد و نباید از اپراتور ها استفاده کنیم
 
      <span dir="ltr" align="left">
 
@@ -2955,7 +2957,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 133. ### How do you check if a string starts with another string
 
-     You can use ECMAScript 6's `String.prototype.startsWith()` method to check if a string starts with another string or not. But it is not yet supported in all browsers. Let's see an example to see this usage,
+     ما میتونیم از متد startWith() که بر روی پرتوتایپ رشته ها وجود دارد استفاده کرد که یک رشته رو میگیره و چک میکنه که با اون شروع میشه رشته مورد نظر یا نه بریم یه مثال ببینیم در موردش
 
      <span dir="ltr" align="left">
 
@@ -2970,7 +2972,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 134. ### How do you trim a string in javascript
 
-     JavaScript provided a trim method on string types to trim any whitespaces present at the beginning or ending of the string.
+     جاوا اسکریپت یه متد به ما میده به اسم `trim()` که روی استرینگ ها قرار داره با استفاده از این متد همه ی فضای خالی بین اون استرینگ برداشته میشه
 
      <span dir="ltr" align="left">
 
@@ -3002,7 +3004,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 135. ### How do you add a key value pair in javascript
 
-     There are two possible solutions to add new properties to an object. Let's take a simple object to explain these solutions.
+     برای اضافه کردن key جدید به ابجک ها دو روش وجود دارن
 
      <span dir="ltr" align="left">
 
@@ -3015,7 +3017,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using dot notation:** This solution is useful when you know the name of the property
+  1. **Using dot notation:** این روش زمانی موثر هستش که اسم پراپرتی رو میدونیم
 
      <span dir="ltr" align="left">
 
@@ -3025,7 +3027,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using square bracket notation:** This solution is useful when the name of the property is dynamically determined.
+  1. **Using square bracket notation:** این روش وقتی موثره که اسم پراپرتی داینامیک باشه
 
      <span dir="ltr" align="left">
 
@@ -3039,17 +3041,17 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 136. ### Is the !-- notation represents a special operator
 
-     No,that's not a special operator. But it is a combination of 2 standard operators one after the other,
-  1. A logical not (!)
-  2. A prefix decrement (--)
+     نه! اون یه اپراتور خاص نیست اما ترکیب شده دو تا اپراتور استاندارد هستش یکی بعد اون یکی
+  1. اپراتور نقییض (!)
+  2. کاهش کننده(--)
 
-     At first, the value decremented by one and then tested to see if it is equal to zero or not for determining the truthy/falsy value.
+     اول یک شماره از مقدار متغیر به مثال کم میشه بعد تست میشه که مساوی صفر هستش یا نه که مشخص‌کننده درست یا غلط بودن شرط هستش
 
      **[⬆ فهرست](#فهرست)**
 
 137. ### How do you assign default values to variables
 
-     You can use the logical or operator `||` in an assignment expression to provide a default value. The syntax looks like as below,
+     میتونیم از عملگر یا اپراتور ‍`||` استفاده تعریف یک مقدار دیفالت استفاده کرد مانند مثال زیر
 
      <span dir="ltr" align="left">
 
@@ -3059,7 +3061,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     As per the above expression, variable 'a 'will get the value of 'c' only if 'b' is falsy (if is null, false, undefined, 0, empty string, or NaN), otherwise 'a' will get the value of 'b'.
+     مثال تعریف شده بالا مقدار متغیر a زمانی برابر مقدار متغیر c خواهد شد که b خالی false یا undifined باشد 
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3213,7 +3215,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 147. ### What are the recommendations to create new object
 
-     It is recommended to avoid creating new objects using `new Object()`. Instead you can initialize values based on it's type to create the objects.
+     It is r
+     o avoid creating new objects using `new Object()`. Instead you can initialize values based on it's type to create the objects.
   1. Assign {} instead of new Object()
   2. Assign "" instead of new String()
   3. Assign 0 instead of new Number()
