@@ -3067,7 +3067,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 138. ### How do you define multiline strings
 
-     You can define multiline string literals using the '\' character followed by line terminator.
+     ما میتونیم از `/` برای تعریف کردن رشته های چند لایه استفاده کنیم برای مثال 
 
      <span dir="ltr" align="left">
 
@@ -3079,7 +3079,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     But if you have a space after the '\' character, the code will look exactly the same, but it will raise a SyntaxError.
+     اما اگه یه فاصله بعد ‍‍‍`/` داشته باشیم,کد دقیقا به همون حالتی که هست نشون داده میشه اما یه ارور خطای نوشتاری کد قراره داشته باشیم
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3091,7 +3091,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 140. ### Can we define properties for functions
 
-     Yes, We can define properties for functions because functions are also objects.
+     بله ما میتونیم برای توابع پراپرتی تعیین کنیم چون توابع اصولا ابجکت هستن.
 
      <span dir="ltr" align="left">
 
@@ -3113,7 +3113,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 141. ### What is the way to find the number of parameters expected by a function
 
-     You can use `function.length` syntax to find the number of parameters expected by a function. Let's take an example of `sum` function to calculate the sum of numbers,
+     با استفاده کردن از `function.length` ما میتونیم به تعداد پارامتر هایی که یه تابع انتظار داره بگیره دسترسی داشته باشیم بریم یه مثال درموردش ببینیم
 
      <span dir="ltr" align="left">
 
@@ -3130,13 +3130,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 142. ### What is a polyfill
 
-     A polyfill is a piece of JS code used to provide modern functionality on older browsers that do not natively support it. For example, Silverlight plugin polyfill can be used to mimic the functionality of an HTML Canvas element on Microsoft Internet Explorer 7.
+     یه `plyfill` یه قسمت از کد جاوااسکریپته که با استفاده از اون ما میتونیم توابع پیشرفته رو روی مروگر‌هایی که به طور طبیعی پشتیبانی نمیکنن,استفاده کنیم. پلاگین `Silverlight` که برای تقلید کردن توابع بر روی `canvas` یا مروگر `IE7` استفاده کرد
 
      **[⬆ فهرست](#فهرست)**
 
 143. ### What are break and continue statements
 
-     The break statement is used to "jump out" of a loop. i.e, It breaks the loop and continues executing the code after the loop.
+     دستور `break` برای "پرش به بیرون" از یک حلقه استفاده می شه. یعنی حلقه رو می شکنه و اجرای کد رو بعد از حلقه ادامه میده.
 
      <span dir="ltr" align="left">
 
@@ -3149,7 +3149,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The continue statement is used to "jump over" one iteration in the loop. i.e, It breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+     دستور `continue` برای "پرش از روی" یک تکرار در حلقه استفاده می شه. یعنی یک تکرار (در حلقه) را می شکنه، اگر شرایط مشخصی رخ بده، و با تکرار بعدی در حلقه ادامه می ده.
 
      <span dir="ltr" align="left">
 
@@ -3166,7 +3166,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 144. ### What are js labels
 
-     The label statement allows us to name loops and blocks in JavaScript. We can then use these labels to refer back to the code later. For example, the below code with labels avoids printing the numbers when they are same,
+     دستور `label` به ما اجازه می ده تا حلقه ها و بلوک ها را در جاوا اسکریپت نام گذاری کنیم. سپس می‌تونیم از این برچسب‌ها برای مراجعه به کد بعداً استفاده کنیم. برای مثال، کد زیر با برچسب ها از چاپ اعداد در صورت یکسان بودن آنها جلوگیری می کند.
 
      <span dir="ltr" align="left">
 
@@ -3196,36 +3196,35 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 145. ### What are the benefits of keeping declarations at the top
 
-     It is recommended to keep all declarations at the top of each script or function. The benefits of doing this are,
-  1. Gives cleaner code
-  2. It provides a single place to look for local variables
-  3. Easy to avoid unwanted global variables
-  4. It reduces the possibility of unwanted re-declarations
+     توصیه می شه تمام اعلان ها رو بالای هر اسکریپت یا تابع نگه دارین. مزیت این کار 
+  1. کد ما تمیز تر میشه
+  2. این یک مکان واحد برای جستجوی متغیرهای محلی فراهم می کنه
+  3. میشه راحت از استفاده متفیر های ناخواسته جلوگیری کرد 
+  4. این کار محاسبات ناخواسته رو کمتر میکنه
 
      **[⬆ فهرست](#فهرست)**
 
 146. ### What are the benefits of initializing variables
 
-     It is recommended to initialize variables because of the below benefits,
-  1. It gives cleaner code
-  2. It provides a single place to initialize variables
-  3. Avoid undefined values in the code
+     توضیه میشه که مقدار اولیه برای متغیرها تعیین بشه که دلایلشو چک میکنیم 
+  1. خروجیمون کد تمیز تری میشه
+  2. این کار باعث میشه یه جا برای این متغییر رزرو بشه
+  3. از برگشتن خطای `undefind`جلوگیری میشه
 
      **[⬆ فهرست](#فهرست)**
 
 147. ### What are the recommendations to create new object
 
-     It is r
-     o avoid creating new objects using `new Object()`. Instead you can initialize values based on it's type to create the objects.
-  1. Assign {} instead of new Object()
-  2. Assign "" instead of new String()
-  3. Assign 0 instead of new Number()
-  4. Assign false instead of new Boolean()
-  5. Assign [] instead of new Array()
-  6. Assign /()/ instead of new RegExp()
-  7. Assign function (){} instead of new Function()
+     برای ساخت یه `object` با مقادیر پیشفرش مثال های زیر روش های ساخت مقادیر پیشفرض رو بررسی می‌کنیم
+  1. استفاده از {} به جای `new Object()`
+  2. استفاده از "" به جای `new String()`
+  3. استفاده از 0 به جای `new Number()`
+  4. استفاده از false به جای  `new Boolean()`
+  5. استفاده از [] به جای `new Array()`
+  6. استفاده از /()/ به جای `new RegExp()`
+  7. استفاده از (){} به جای`new Function()`
 
-     You can define them as an example,
+     بریم یه چن تا مثال ببینیم
 
      <span dir="ltr" align="left">
 
@@ -3245,7 +3244,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 148. ### How do you define JSON arrays
 
-     JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
+     آرایه‌های JSON نوشته شده در داخل براکت ها و ارایه‌هایی که دارای object هستند بریم یه مثال درموردش ببینیم
 
      <span dir="ltr" align="left">
 
@@ -3263,7 +3262,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 149. ### How do you generate random integers
 
-     You can use Math.random() with Math.floor() to return random integers. For example, if you want generate random integers between 1 to 10, the multiplication factor should be 10,
+     ما میتونیم از متد Math.random() برای ساخت یک عدد رندوم بین ۰ تا یک و از متد Math.floor() برای رند کردن اون عدد استفاده کنیم حالا حاصل عدد به دست اومده رو ضربدر ده کنیم عددی بین یک تا ده خواهیم داشت
 
      <span dir="ltr" align="left">
 
@@ -3280,7 +3279,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 150. ### Can you write a random integers function to print integers with in a range
 
-     Yes, you can create a proper random function to return a random number between min and max (both included)
+     بله ما میتونیم این تابع رو داشته باشیم که مقادیر حداکثر و حداقل رو بگیره و برای ما عدد رندوم ایجاد کنه بریم ببینیم چطور همچین تابعی رو بنویسیم
 
      <span dir="ltr" align="left">
 
@@ -3304,19 +3303,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 152. ### What is the need of tree shaking
 
-     Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a “Hello World” Application using SPA frameworks then it will take around a few MBs, but by tree shaking it can bring down the size to just a few hundred KBs. Tree shaking is implemented in Rollup and Webpack bundlers.
+     Tree Shaking نوعی حذف کد مرده هستش. این بد این معنیه که ماژول‌های استفاده نشده در طول فرآیند ساخت در بسته گنجونده نمی‌شن و برای آن بر ساختار استاتیک ماژول ES2015 متکی است (یعنی واردات و صادرات). در ابتدا این باندلر ماژول ES2015 'rollup' رایج شد.
 
      **[⬆ فهرست](#فهرست)**
 
 153. ### Is it recommended to use eval
 
-     No, it allows arbitrary code to be run which causes a security problem. As we know that the eval() function is used to run text as code. In most of the cases, it should not be necessary to use it.
+     خیر، اجازه اجرای کد دلخواه را می دهد که باعث ایجاد مشکل امنیتی می شود. همانطور که می دانیم از تابع `eval()` برای اجرای متن به عنوان کد استفاده می شود. در بیشتر موارد استفاده از آن ضروری نیست.
 
      **[⬆ فهرست](#فهرست)**
 
 154. ### What is a Regular Expression
 
-     A regular expression is a sequence of characters that forms a search pattern. You can use this search pattern for searching data in a text. These can be used to perform all types of text search and text replace operations. Let's see the syntax format now,
+     regular expression یا همون Regex یه توالیه که یه ساختار جستجو ایجاد میکنه با استفاده از این ساختاذ ما میتونیم دیتامون رو بر اساس یه ساختار که مینویسم جستجو کنیم و به قولی دیتامون رو اعتبارسنجی کنیم
 
      <span dir="ltr" align="left">
 
@@ -3326,7 +3325,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     For example, the regular expression or search pattern with case-insensitive username would be,
+     برای مثال Regex حساس به حروف کوچک و بزرگ زبان انگلیسی به صورت ریر نوشته میشه
 
      <span dir="ltr" align="left">
 
@@ -3340,8 +3339,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 155. ### What are the string methods available in Regular expression
 
-     Regular Expressions has two string methods: search() and replace().
-     The search() method uses an expression to search for a match, and returns the position of the match.
+     Regular Expressions دو تا متد برای رشته‌ّها داره :‌ search() و replace(). متد search() یه عبارت رو میگیره اونو جسنجو میکنه و محل اون عبارت رو برمیگردونه
 
      <span dir="ltr" align="left">
 
@@ -3352,7 +3350,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The replace() method is used to return a modified string where the pattern is replaced.
+     متد replace() برای برگردوندن رشته اصلاح شده در جایی که الگو جایگزین میشه استفاده میشه
 
      <span dir="ltr" align="left">
 
@@ -3367,7 +3365,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 156. ### What are modifiers in regular expression
 
-     Modifiers can be used to perform case-insensitive and global searches. Let's list down some of the modifiers,
+     Modifier میتونن زمانی استفاده بشن که به جستجو های بدون حروف کوچک و بزرگ سراسری نیاز داریم بیاین یه مثال درموردشون ببینیم
 
      | Modifier | Description |
            |---- | ---------
@@ -3375,7 +3373,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      | g | Perform a global match rather than stops at first match  |
      | m | Perform multiline matching|
 
-     Let's take an example of global modifier,
+     بریم یه مثال از modifier  گلوبال ببینیم
 
      <span dir="ltr" align="left">
 
@@ -3391,28 +3389,27 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 157. ### What are regular expression patterns
 
-     Regular Expressions provide a group of patterns in order to match characters. Basically they are categorized into 3 types,
-  1. **Brackets:** These are used to find a range of characters.
-     For example, below are some use cases,
-    1. [abc]: Used to find any of the characters between the brackets(a,b,c)
-    2. [0-9]: Used to find any of the digits between the brackets
-    3. (a|b): Used to find any of the alternatives separated with |
-  2. **Metacharacters:** These are characters with a special meaning
-     For example, below are some use cases,
-    1. \\d: Used to find a digit
-    2. \\s: Used to find a whitespace character
-    3. \\b: Used to find a match at the beginning or ending of a word
-  3. **Quantifiers:** These are useful to define quantities
-     For example, below are some use cases,
-    1. n+: Used to find matches for any string that contains at least one n
-    2. n*: Used to find matches for any string that contains zero or more occurrences of n
-    3. n?: Used to find matches for any string that contains zero or one occurrences of n
-
+     Regex یه گروهی از ساختار ها برامون اماده کرده که با اونا کاراکتر ها رو چک کنیم اونا تو سه مدل طبفه بندی میشن
+  1. **براکت ها:** این ها استفاده میشن تا یه رنجی از کاراکتر رو پیدا کنن 
+     برای مثال پایین چن تا مورد اصتفاده لیست شدنهای
+    1. [abc]: استفاده میشه تا هر کاراکتری بین این سه کاراکتر پیدا بشه 
+    2. [0-9]: استفاده میشه تا ارقام بین این دو عدد پیدا بشه
+    3. (a|b): برای پیدا کردن هر یک از گزینه های جدا شده با | استفاده میشه
+  2. **کاراکتر برابر با:** این عبارت ها کاراکتر هایی با معنی خاص هستند
+     برای مثال پایین دو تا مورد که استفاده میشه ازشون رو ببینیم
+    1. \\d: استفاده برای پیدا کردن اعداد
+    2. \\s: استفاده برای ‍پیدا کردن فاصله ها
+    3. \\b: استفاده برای پیدا کردن کاراکتر های همخوانی داشته با شروع شدن یا پایانشون
+  3. **کمیت کننده ها:** این ها برای  تعریف کمیت ها موثر هستن
+     برای مثال پایین دو تا مورد استفاده براشون اوردیم
+    1. n+: برای پیدا کردن رشته همخوانی داشته با حداقل یک کاراکتر
+    2. n*: برای پیدا کردن همخوانی هر رشته شامل صفر یا بیشتر
+    3. n?: برای پیدا کردن هر رشته که شامل صفر یا یک کاراکنر میشه
      **[⬆ فهرست](#فهرست)**
 
 158. ### What is a RegExp object
 
-     RegExp object is a regular expression object with predefined properties and methods. Let's see the simple usage of RegExp object,
+     object های Regex یه عبارت معمولی با پراپرتی ها و متد های تعریف شده از قبله بریم یه مثال از نحوه استفادشون ببینیم.
 
      <span dir="ltr" align="left">
 
