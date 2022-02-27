@@ -456,7 +456,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |426| [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)|
 |427| [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays)|
 |428| [What are the different ways to create sparse arrays?](#what-are-the-different-ways-to-create-sparse-arrays)|
-|429| [What is the difference between setTimeout and setImmediate and process.nextTick?](#what-is-the difference-between-setTimeout-and-setImmediate-and-processnextTick)|
+|429| [What is the difference between setTimeout, setImmediate and process.nextTick?](#what-is-the-difference-between-setTimeout-,-setImmediate-and-processnextTick)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -480,11 +480,18 @@ You can download the PDF and Epub version of this repository from the latest run
 
    3. **Object literal syntax:**
 
-      The object literal syntax is equivalent to create method when it passes null as parameter
+      The object literal syntax (or object initializer), is a comma-separated set of name-value pairs wrapped in curly braces.
 
       ```javascript
-      var object = {};
+      var object = {
+           name: "Sudheer"
+           age: 34
+      };
+
+      Object literal property values can be of any data type, including array, function, and nested object.
       ```
+
+      **Note:** This is an easiest way to create an object
 
    4. **Function constructor:**
 
@@ -7371,7 +7378,7 @@ You can download the PDF and Epub version of this repository from the latest run
           ```
      **[⬆ Back to Top](#table-of-contents)**
 
-429. ### What is the difference between setTimeout and setImmediate and process.nextTick?
+429. ### What is the difference between setTimeout, setImmediate and process.nextTick?
 
      1. **Set Timeout:** setTimeout() is to schedule execution of a one-time callback after delay milliseconds.
      2. **Set Immediate:** The setImmediate function is used to execute a function right after the current event loop finishes.
