@@ -480,11 +480,18 @@ You can download the PDF and Epub version of this repository from the latest run
 
    3. **Object literal syntax:**
 
-      The object literal syntax is equivalent to create method when it passes null as parameter
+      The object literal syntax (or object initializer), is a comma-separated set of name-value pairs wrapped in curly braces.
 
       ```javascript
-      var object = {};
+      var object = {
+           name: "Sudheer"
+           age: 34
+      };
+
+      Object literal property values can be of any data type, including array, function, and nested object.
       ```
+
+      **Note:** This is an easiest way to create an object
 
    4. **Function constructor:**
 
