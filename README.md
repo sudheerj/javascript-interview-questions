@@ -23,7 +23,18 @@ You can download the PDF and Epub version of this repository from the latest run
 </p>
 
 ---
+<div align="center">
+    <p>
+        <a href="https://www.youtube.com/watch?v=Zb4dPi7CANU">
+            JavaScript Interview Questions | Top JavaScript Interview Questions and Answers.
+            <div>
+                <img src="https://img.youtube.com/vi/Zb4dPi7CANU/0.jpg" width="180" height="120" alt="JavaScript">
+            </div>
+        </a>
+    </p>
+</div>
 
+---
 ### Table of Contents
 
 | No. | Questions |
