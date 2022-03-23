@@ -468,6 +468,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |427| [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays)|
 |428| [What are the different ways to create sparse arrays?](#what-are-the-different-ways-to-create-sparse-arrays)|
 |429| [What is the difference between setTimeout, setImmediate and process.nextTick?](#what-is-the-difference-between-set-timeout-,-set-immediate-and-processnext-tick)|
+|430| [How do you reverse an array without modifying original array?](#how-do-you-reverse-an-array-without-modifying-original-array)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7395,6 +7396,78 @@ You can download the PDF and Epub version of this repository from the latest run
      2. **Set Immediate:** The setImmediate function is used to execute a function right after the current event loop finishes.
      3. **Process NextTick:**  If process.nextTick() is called in a given phase, all the callbacks passed to process.nextTick() will be resolved before the event loop continues. This will block the event loop and create I/O Starvation if process.nextTick() is called recursively.
 
+     **[⬆ Back to Top](#table-of-contents)**
+
+430. ### How do you reverse an array without modifying original array?
+     The `reverse()` method reverses the order of the elements in an array but it mutates the original array. Let's take a simple example to demonistrate this case,
+
+     ```javascript
+     const originalArray = [1, 2, 3, 4, 5];
+     const newArray = originalArray.reverse();
+
+     console.log(newArray); // [ 5, 4, 3, 2, 1]
+     console.log(originalArray); // [ 5, 4, 3, 2, 1]
+     ```
+     There are few solutions that won't mutate the original array. Let's take a look.
+
+     1. **Using slice and reverse methods:**
+        In this case, just invoke the `slice()` method on the array to create a shallow copy followed by `reverse()` method call on the copy.
+
+        ```javascript
+          const originalArray = [1, 2, 3, 4, 5];
+          const newArray = originalArray.slice().reverse(); //Slice an array gives a new copy
+
+          console.log(originalArray); // [1, 2, 3, 4, 5]
+          console.log(newArray); // [ 5, 4, 3, 2, 1]
+        ```
+     2. **Using spread and reverse methods:**
+        In this case, let's use the spread syntax (...) to create a copy of the array followed by `reverse()` method call on the copy.
+
+        ```javascript
+          const originalArray = [1, 2, 3, 4, 5];
+          const newArray = [...originalArray].reverse();
+
+          console.log(originalArray); // [1, 2, 3, 4, 5]
+          console.log(newArray); // [ 5, 4, 3, 2, 1]
+        ```
+
+     3. **Using reduce and spread methods:**
+          Here execute a reducer function on an array elements and append the accumulated array on right side using spread syntax
+         ```javascript
+          const originalArray = [1, 2, 3, 4, 5];
+          const newArray = originalArray.reduce((accumulator, value) => {
+               return [value, ...accumulator];
+          }, []);
+
+          console.log(originalArray); // [1, 2, 3, 4, 5]
+          console.log(newArray); // [ 5, 4, 3, 2, 1]
+         ```
+
+     4. **Using reduceRight and spread methods:**
+         Here execute a right reducer function(i.e. opposite direction of reduce method) on an array elements and append the accumulated array on left side using spread syntax
+         ```javascript
+               const originalArray = [1, 2, 3, 4, 5];
+               const newArray = originalArray.reduceRight((accumulator, value) => {
+                    return [...accumulator, value];
+               }, []);
+
+               console.log(originalArray); // [1, 2, 3, 4, 5]
+               console.log(newArray); // [ 5, 4, 3, 2, 1]
+         ```
+
+     5. **Using reduceRight and push methods:**
+        Here execute a right reducer function(i.e. opposite direction of reduce method) on an array elements and push the iterated value to the accumulator
+         ```javascript
+               const originalArray = [1, 2, 3, 4, 5];
+               const newArray = originalArray.reduceRight((accumulator, value) => {
+                    accumulator.push(value);
+                    return accumulator;
+               }, []);
+
+               console.log(originalArray); // [1, 2, 3, 4, 5]
+               console.log(newArray); // [ 5, 4, 3, 2, 1]
+         ```
+         
      **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
