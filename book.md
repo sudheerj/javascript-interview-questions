@@ -4241,7 +4241,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 201. ### How can you get the list of keys of any object
 
-     You can use the `Object.keys()` method which is used to return an array of a given object's own property names, in the same order as we get with a normal loop. For example, you can get the keys of a user object,
+     می‌توانید از متد Object.keys() استفاده کنید که برای برگرداندن آرایه‌ای از نام ویژگی‌های یک شی معین استفاده می‌شود، به همان ترتیبی که با یک حلقه معمولی دریافت می‌کنیم. به عنوان مثال، می توانید کلیدهای یک شی کاربر را دریافت کنید،
 
      <span dir="ltr" align="left">
 
@@ -4261,7 +4261,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 202. ### How do you create an object with prototype
 
-     The Object.create() method is used to create a new object with the specified prototype object and properties. i.e, It uses an existing object as the prototype of the newly created object. It returns a new object with the specified prototype object and properties.
+     متد Object.create () برای ایجاد یک شی جدید با شی نمونه اولیه و ویژگی های مشخص شده استفاده می شود. به عنوان مثال، از یک شی موجود به عنوان نمونه اولیه شی جدید ایجاد شده استفاده می کند. یک شی جدید را با شی نمونه اولیه و ویژگی های مشخص شده برمی گرداند.
 
      <span dir="ltr" align="left">
 
@@ -4286,7 +4286,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 203. ### What is a WeakSet
 
-     WeakSet is used to store a collection of weakly(weak references) held objects. The syntax would be as follows,
+     WeakSet برای ذخیره مجموعه ای از اشیاء ضعیف (مرجع ضعیف) استفاده می شود. نحو به صورت زیر خواهد بود
 
      <span dir="ltr" align="left">
 
@@ -4296,7 +4296,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Let's see the below example to explain it's behavior,
+     بیایید مثال زیر را برای توضیح رفتار آن ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -4315,23 +4315,23 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 204. ### What are the differences between WeakSet and Set
 
-     The main difference is that references to objects in Set are strong while references to objects in WeakSet are weak. i.e, An object in WeakSet can be garbage collected if there is no other reference to it.
-     Other differences are,
-  1. Sets can store any value Whereas WeakSets can store only collections of objects
-  2. WeakSet does not have size property unlike Set
-  3. WeakSet does not have methods such as clear, keys, values, entries, forEach.
-  4. WeakSet is not iterable.
+     تفاوت اصلی این است که ارجاع به اشیاء در Set قوی است در حالی که ارجاع به اشیا در WeakSet ضعیف است. به عنوان مثال، یک شی در WeakSet می تواند زباله جمع آوری شود اگر مرجع دیگری به آن وجود نداشته باشد.
+     تفاوت های دیگر عبارتند از
+  1. مجموعه ها می توانند هر مقداری را ذخیره کنند در حالی که WeakSets می تواند تنها مجموعه ای از اشیاء را ذخیره کند
+  2. WeakSet برخلاف Set دارای ویژگی اندازه نیست
+  3. WeakSet متدهایی مانند پاک کردن، کلیدها، مقادیر، ورودی ها، forEach را ندارد.
+  4.WeakSet قابل تکرار نیست.
 
      **[⬆ فهرست](#فهرست)**
 
 205. ### List down the collection of methods available on WeakSet
 
-     Below are the list of methods available on WeakSet,
-  1. add(value): A new object is appended with the given value to the weakset
-  2. delete(value): Deletes the value from the WeakSet collection.
-  3. has(value): It returns true if the value is present in the WeakSet Collection, otherwise it returns false.
-  4. length(): It returns the length of weakSetObject
-     Let's see the functionality of all the above methods in an example,
+     در زیر لیستی از روش های موجود در WeakSet آمده است،
+  1. add(value): یک شی جدید با مقدار داده شده به مجموعه ضعیف اضافه می شود
+  2. delete(value): مقدار را از مجموعه WeakSet حذف می کند.
+  3. has(value): اگر مقدار در مجموعه WeakSet وجود داشته باشد true را برمی گرداند، در غیر این صورت false را برمی گرداند.
+  4. length(): طول ضعیف SetObject را برمی گرداند
+     بیایید عملکرد تمام روش های بالا را در یک مثال ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -4353,8 +4353,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 206. ### What is a WeakMap
 
-     The WeakMap object is a collection of key/value pairs in which the keys are weakly referenced. In this case, keys must be objects and the values can be arbitrary values. The syntax is looking like as below,
-
+     شی WeakMap مجموعه ای از جفت های کلید/مقدار است که در آن کلیدها به صورت ضعیف ارجاع داده شده اند. در این حالت، کلیدها باید اشیا باشند و مقادیر می توانند مقادیر دلخواه باشند. نحو به شکل زیر است،
      <span dir="ltr" align="left">
 
      ```javascript
@@ -4363,7 +4362,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Let's see the below example to explain it's behavior,
+     بیایید مثال زیر را برای توضیح رفتار آن ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -4382,23 +4381,23 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 207. ### What are the differences between WeakMap and Map
 
-     The main difference is that references to key objects in Map are strong while references to key objects in WeakMap are weak. i.e, A key object in WeakMap can be garbage collected if there is no other reference to it.
-     Other differences are,
-  1. Maps can store any key type Whereas WeakMaps can store only collections of key objects
-  2. WeakMap does not have size property unlike Map
-  3. WeakMap does not have methods such as clear, keys, values, entries, forEach.
-  4. WeakMap is not iterable.
+     تفاوت اصلی این است که ارجاعات به اشیاء کلیدی در نقشه قوی هستند در حالی که ارجاعات به اشیاء کلیدی در WeakMap ضعیف هستند. به عنوان مثال، یک شی کلیدی در WeakMap در صورتی که هیچ مرجع دیگری به آن وجود نداشته باشد، می تواند زباله جمع آوری شود.
+     تفاوت های دیگر عبارتند از
+  1.نقشه ها می توانند هر نوع کلیدی را ذخیره کنند، در حالی که WeakMaps فقط می تواند مجموعه ای از اشیاء کلیدی را ذخیره کند
+  2. WeakMap برخلاف Map دارای ویژگی اندازه نیست
+  3. WeakMap متدهایی مانند پاک کردن، کلیدها، مقادیر، ورودی ها، forEach را ندارد.
+  4. WeakMap قابل تکرار نیست.
 
      **[⬆ فهرست](#فهرست)**
 
 208. ### List down the collection of methods available on WeakMap
 
-     Below are the list of methods available on WeakMap,
-  1. set(key, value): Sets the value for the key in the WeakMap object. Returns the WeakMap object.
-  2. delete(key): Removes any value associated to the key.
-  3. has(key): Returns a Boolean asserting whether a value has been associated to the key in the WeakMap object or not.
-  4. get(key): Returns the value associated to the key, or undefined if there is none.
-     Let's see the functionality of all the above methods in an example,
+     در زیر لیستی از روش های موجود در WeakMap آمده است،
+  1. set(key, value): مقدار کلید را در شی WeakMap تنظیم می کند. شی WeakMap را برمی گرداند.
+  2. delete(key): هر مقدار مربوط به کلید را حذف می کند.
+  3. has(key): یک Boolean را برمی‌گرداند که نشان می‌دهد آیا مقداری به کلید در شی WeakMap مرتبط شده است یا خیر.
+  4. get(key): مقدار مربوط به کلید را برمی‌گرداند، یا اگر کلیدی وجود نداشته باشد، تعریف نشده است.
+     بیایید عملکرد تمام روش های بالا را در یک مثال ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -4420,7 +4419,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 209. ### What is the purpose of uneval
 
-     The uneval() is an inbuilt function which is used to create a string representation of the source code of an Object. It is a top-level function and is not associated with any object. Let's see the below example to know more about it's functionality,
+     uneval() یک تابع داخلی است که برای ایجاد نمایش رشته ای از کد منبع یک شی استفاده می شود. این یک تابع سطح بالا است و با هیچ شیئی مرتبط نیست. بیایید مثال زیر را ببینیم تا در مورد عملکرد آن بیشتر بدانید،
 
      <span dir="ltr" align="left">
 
@@ -4436,7 +4435,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 210. ### How do you encode an URL
 
-     The encodeURI() function is used to encode complete URI which has special characters except (, / ? : @ & = + $ #) characters.
+     تابع encodeURI () برای رمزگذاری URI کامل استفاده می شود که دارای کاراکترهای خاص به جز (, / ? : @ & = + $ #) است.
 
      <span dir="ltr" align="left">
 
@@ -4452,7 +4451,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 211. ### How do you decode an URL
 
-     The decodeURI() function is used to decode a Uniform Resource Identifier (URI) previously created by encodeURI().
+     تابع ()decodeURI برای رمزگشایی یک شناسه منبع یکنواخت (URI) که قبلا توسط encodeURI ایجاد شده است استفاده می شود.
 
      <span dir="ltr" align="left">
 
@@ -4473,7 +4472,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 212. ### How do you print the contents of web page
 
-     The window object provided a print() method which is used to print the contents of the current window. It opens a Print dialog box which lets you choose between various printing options. Let's see the usage of print method in an example,
+     شی window یک متد print() ارائه می‌کند که برای چاپ محتویات پنجره فعلی استفاده می‌شود. یک کادر محاوره ای چاپ را باز می کند که به شما امکان می دهد بین گزینه های مختلف چاپ انتخاب کنید. بیایید استفاده از روش چاپ را در یک مثال ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -4483,13 +4482,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** In most browsers, it will block while the print dialog is open.
+     **نکته:** در اکثر مرورگرها، زمانی که کادر گفتگوی چاپ باز است، مسدود می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 213. ### What is the difference between uneval and eval
 
-     The `uneval` function returns the source of a given object; whereas the `eval` function does the opposite, by evaluating that source code in a different memory area. Let's see an example to clarify the difference,
+     تابع 'uneval' منبع یک شی معین را برمی گرداند. در حالی که تابع "eval" با ارزیابی آن کد منبع در یک ناحیه حافظه متفاوت، برعکس عمل می کند. بیایید مثالی را برای روشن شدن تفاوت ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -4505,7 +4504,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 214. ### What is an anonymous function
 
-     An anonymous function is a function without a name! Anonymous functions are commonly assigned to a variable name or used as a callback function. The syntax would be as below,
+     تابع ناشناس یک تابع بدون نام است! توابع ناشناس معمولاً به یک نام متغیر اختصاص داده می شوند یا به عنوان یک تابع فراخوانی استفاده می شوند. نحو به صورت زیر خواهد بود،
 
      <span dir="ltr" align="left">
 
@@ -4525,7 +4524,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Let's see the above anonymous function in an example,
+     بیایید تابع ناشناس بالا را در یک مثال ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -4541,7 +4540,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 215. ### What is the precedence order between local and global variables
 
-     A local variable takes precedence over a global variable with the same name. Let's see this behavior in an example.
+     یک متغیر محلی بر یک متغیر سراسری با همین نام ارجحیت دارد. بیایید این رفتار را در یک مثال ببینیم.
 
      <span dir="ltr" align="left">
 
@@ -4560,7 +4559,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 216. ### What are javascript accessors
 
-     ECMAScript 5 introduced javascript object accessors or computed properties through getters and setters. Getters uses the `get` keyword whereas Setters uses the `set` keyword.
+     ECMAScript 5 دسترسی‌های شی جاوا اسکریپت یا ویژگی‌های محاسبه‌شده را از طریق گیرنده‌ها و تنظیم‌کننده‌ها معرفی کرد. Getters از کلمه کلیدی "get" استفاده می کند در حالی که Setters از کلمه کلیدی "set" استفاده می کند.
 
      <span dir="ltr" align="left">
 
@@ -4587,7 +4586,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 217. ### How do you define property on Object constructor
 
-     The Object.defineProperty() static method is used to define a new property directly on an object, or modify an existing property on an object, and returns the object. Let's see an example to know how to define property,
+     متد استاتیک Object.defineProperty() برای تعریف یک ویژگی جدید به طور مستقیم بر روی یک شی یا تغییر ویژگی موجود روی یک شی استفاده می شود و شی را برمی گرداند. بیایید مثالی را ببینیم تا بدانیم چگونه ویژگی را تعریف کنیم،
 
      <span dir="ltr" align="left">
 
@@ -4611,24 +4610,24 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 218. ### What is the difference between get and defineProperty
 
-     Both have similar results until unless you use classes. If you use `get` the property will be defined on the prototype of the object whereas using `Object.defineProperty()` the property will be defined on the instance it is applied to.
+     هر دو نتایج مشابهی دارند مگر اینکه از کلاس ها استفاده کنید. اگر از «get» استفاده می‌کنید، ویژگی روی نمونه اولیه شی تعریف می‌شود، در حالی که با استفاده از «Object.defineProperty()»، ویژگی روی نمونه‌ای که به آن اعمال می‌شود، تعریف می‌شود.
 
      **[⬆ فهرست](#فهرست)**
 
 219. ### What are the advantages of Getters and Setters
 
-     Below are the list of benefits of Getters and Setters,
-  1. They provide simpler syntax
-  2. They are used for defining computed properties, or accessors in JS.
-  3. Useful to provide equivalence relation between properties and methods
-  4. They can provide better data quality
-  5. Useful for doing things behind the scenes with the encapsulated logic.
+     در زیر لیستی از مزایای Getters و Setter آمده است.
+  1. آنها نحو ساده تری ارائه می دهند
+  2. آنها برای تعریف ویژگی های محاسبه شده یا دسترسی ها در JS استفاده می شوند.
+  3. برای ارائه رابطه هم ارزی بین خواص و روش ها مفید است
+  4. آنها می توانند کیفیت داده های بهتری را ارائه دهند
+  5. برای انجام کارها در پشت صحنه با منطق محصور شده مفید است.
 
      **[⬆ فهرست](#فهرست)**
 
 220. ### Can I add getters and setters using defineProperty method
 
-     Yes, You can use the `Object.defineProperty()` method to add Getters and Setters. For example, the below counter object uses increment, decrement, add and subtract properties,
+     بله، می‌توانید از روش Object.defineProperty()» برای اضافه کردن Getters و Setter استفاده کنید. به عنوان مثال، شی شمارنده زیر از ویژگی های افزایش، کاهش، جمع و تفریق استفاده می کند.
 
      <span dir="ltr" align="left">
 
@@ -4663,7 +4662,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 221. ### What is the purpose of switch-case
 
-     The switch case statement in JavaScript is used for decision making purposes. In a few cases, using the switch case statement is going to be more convenient than if-else statements. The syntax would be as below,
+     عبارت switch case در جاوا اسکریپت برای اهداف تصمیم گیری استفاده می شود. در چند مورد، استفاده از دستور switch case راحت‌تر از if-else است. نحو به صورت زیر خواهد بود،
 
      <span dir="ltr" align="left">
 
@@ -4688,27 +4687,27 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The above multi-way branch statement provides an easy way to dispatch execution to different parts of code based on the value of the expression.
+     دستور شعبه چند طرفه بالا یک راه آسان برای ارسال اجرا به قسمت های مختلف کد بر اساس مقدار عبارت ارائه می دهد.
 
      **[⬆ فهرست](#فهرست)**
 
 222. ### What are the conventions to be followed for the usage of switch case
 
-     Below are the list of conventions should be taken care,
-  1. The expression can be of type either number or string.
-  2. Duplicate values are not allowed for the expression.
-  3. The default statement is optional. If the expression passed to switch does not match with any case value then the statement within default case will be executed.
-  4. The break statement is used inside the switch to terminate a statement sequence.
-  5. The break statement is optional. But if it is omitted, the execution will continue on into the next case.
+     در زیر لیستی از کنوانسیون ها وجود دارد که باید مراقب آنها بود،
+  1. عبارت می تواند از نوع عددی یا رشته ای باشد.
+  2. مقادیر تکراری برای عبارت مجاز نیستند.
+  3. بیانیه پیش فرض اختیاری است. اگر عبارت ارسال شده به سوئیچ با هیچ مقدار case مطابقت نداشته باشد، دستور در حالت پیش فرض اجرا خواهد شد.
+  4. دستور break در داخل سوئیچ برای پایان دادن به دنباله دستور استفاده می شود.
+  5. عبارت break اختیاری است. اما اگر حذف شود، اجرا در مورد بعدی ادامه می یابد.
 
      **[⬆ فهرست](#فهرست)**
 
 223. ### What are primitive data types
 
-     A primitive data type is data that has a primitive value (which has no properties or methods). There are 5 types of primitive data types.
+     یک نوع داده اولیه، داده‌ای است که دارای یک مقدار اولیه است (که هیچ ویژگی یا روشی ندارد). 5 نوع نوع داده اولیه وجود دارد.
 
-  1. string
-  2. number
+  1. رشته ها
+  2. اعداد
   3. boolean
   4. null
   5. undefined
@@ -4717,8 +4716,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 224. ### What are the different ways to access object properties
 
-     There are 3 possible ways for accessing the property of an object.
-  1. **Dot notation:** It uses dot for accessing the properties
+    3 راه ممکن برای دسترسی به ویژگی یک شی وجود دارد.
+  1. **Dot notation:** از نقطه برای دسترسی به ویژگی ها استفاده می کند
 
      <span dir="ltr" align="left">
 
@@ -4728,7 +4727,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Square brackets notation:** It uses square brackets for property access
+  1. **Square brackets notation:** از براکت های مربع برای دسترسی به دیتا استفاده می کند
 
      <span dir="ltr" align="left">
 
@@ -4738,8 +4737,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Expression notation:** It uses expression in the square brackets
-
+  1. **Expression notation:** از عبارت در کروشه استفاده می کند
      <span dir="ltr" align="left">
 
      ```javascript
@@ -4752,11 +4750,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 225. ### What are the function parameter rules
 
-     JavaScript functions follow below rules for parameters,
-  1. The function definitions do not specify data types for parameters.
-  2. Do not perform type checking on the passed arguments.
-  3. Do not check the number of arguments received.
-     i.e, The below function follows the above rules,
+   توابع جاوا اسکریپت از قوانین زیر برای پارامترها پیروی می کنند.
+  1. تعاریف تابع انواع داده ها را برای پارامترها مشخص نمی کند.
+  2.بررسی نوع آرگومان های ارسال شده را انجام ندهید.
+  3. تعداد آرگومان های دریافتی را بررسی نکنید.
+     یعنی تابع زیر از قوانین بالا پیروی می کند،
 
      <span dir="ltr" align="left">
 
@@ -4773,7 +4771,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 226. ### What is an error object
 
-     An error object is a built in error object that provides error information when an error occurs. It has two properties: name and message. For example, the below function logs error details,
+    یک شیء خطا، یک شیء خطای داخلی است که     هنگام بروز خطا، اطلاعات خطا را ارائه می دهد. این دو ویژگی دارد: نام و پیام. به عنوان مثال، تابع زیر جزئیات خطا را ثبت می کند،
 
      <span dir="ltr" align="left">
 
@@ -4792,8 +4790,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 227. ### When you get a syntax error
 
-     A SyntaxError is thrown if you try to evaluate code with a syntax error. For example, the below missing quote for the function parameter throws a syntax error
-
+     اگر بخواهید کد را با یک خطای نحوی ارزیابی کنید، یک SyntaxError پرتاب می شود. به عنوان مثال، نقل قول زیر برای پارامتر تابع یک خطای نحوی ایجاد می کند
      <span dir="ltr" align="left">
 
      ```javascript
@@ -4811,50 +4808,50 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 228. ### What are the different error names from error object
 
-     There are 6 different types of error names returned from error object,
-     | Error Name | Description |
-     |---- | ---------
-     | EvalError  | An error has occurred in the eval() function |
-     | RangeError | An error has occurred with a number "out of range"  |
-     | ReferenceError | An error due to an illegal reference|
-     | SyntaxError | An error due to a syntax error|
-     | TypeError | An error due to a type error |
-     | URIError | An error due to encodeURI() |
+     6 نوع مختلف نام خطا وجود دارد که از شی خطا بازگردانده می شود.
+      | نام خطا | توضیحات |
+      |---- | ---------
+      | EvalError | خطایی در تابع eval() رخ داده است
+      | RangeError | خطایی با عدد "خارج از محدوده" | رخ داده است
+      | خطای مرجع | خطا به دلیل ارجاع غیرقانونی|
+      | SyntaxError | خطای ناشی از خطای نحو|
+      | TypeError | خطای ناشی از خطای نوع |
+      | خطای URIE | یک خطا به دلیل () encodeURI |
 
      **[⬆ فهرست](#فهرست)**
 
 229. ### What are the various statements in error handling
 
-     Below are the list of statements used in an error handling,
-  1. **try:** This statement is used to test a block of code for errors
-  2. **catch:** This statement is used to handle the error
-  3. **throw:** This statement is used to create custom errors.
-  4. **finally:** This statement is used to execute code after try and catch regardless of the result.
+    در زیر لیستی از عبارات استفاده شده در مدیریت خطا آمده است.
+  1. **try:** این عبارت برای آزمایش یک بلوک کد برای خطاها استفاده می شود
+  2. **catch:** این عبارت برای رسیدگی به خطا استفاده می شود
+  3. **throw:**این عبارت برای ایجاد خطاهای سفارشی استفاده می شود.
+  4. **finally:**این عبارت برای اجرای کد پس از تلاش و گرفتن بدون توجه به نتیجه استفاده می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 230. ### What are the two types of loops in javascript
 
-  1. **Entry Controlled loops:** In this kind of loop type, the test condition is tested before entering the loop body. For example, For Loop and While Loop comes under this category.
-  2. **Exit Controlled Loops:** In this kind of loop type, the test condition is tested or evaluated at the end of the loop body. i.e, the loop body will execute at least once irrespective of test condition true or false. For example, do-while loop comes under this category.
+  1. **Entry Controlled loops:** در این نوع حلقه، شرایط تست قبل از ورود به بدنه حلقه آزمایش می شود. به عنوان مثال For Loop و while Loop در این دسته قرار می گیرند.
+  2. **Exit Controlled Loops:** در این نوع حلقه، شرایط تست در انتهای بدنه حلقه آزمایش یا ارزیابی می شود. یعنی بدنه حلقه حداقل یک بار بدون در نظر گرفتن شرایط تست true یا false اجرا می شود. به عنوان مثال، حلقه do-while در این دسته قرار می گیرد.
 
      **[⬆ فهرست](#فهرست)**
 
 231. ### What is nodejs
 
-     Node.js is a server-side platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. It is an event-based, non-blocking, asynchronous I/O runtime that uses Google's V8 JavaScript engine and libuv library.
+    Node.js یک پلتفرم سمت سرور است که بر اساس زمان اجرا جاوا اسکریپت کروم برای ساخت آسان برنامه های شبکه سریع و مقیاس پذیر ساخته شده است. این یک زمان اجرا I/O ناهمزمان مبتنی بر رویداد، غیر مسدود کننده است که از موتور جاوا اسکریپت V8 گوگل و کتابخانه libuv استفاده می کند.
 
      **[⬆ فهرست](#فهرست)**
 
 232. ### What is an Intl object
 
-     The Intl object is the namespace for the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, and date and time formatting. It provides access to several constructors and language sensitive functions.
+     شی Intl فضای نامی برای ECMAScript Internationalization API است که مقایسه رشته های حساس زبان، قالب بندی اعداد و قالب بندی تاریخ و زمان را ارائه می دهد. دسترسی به چندین سازنده و توابع حساس به زبان را فراهم می کند.
 
      **[⬆ فهرست](#فهرست)**
 
 233. ### How do you perform language specific date and time formatting
 
-     You can use the `Intl.DateTimeFormat` object which is a constructor for objects that enable language-sensitive date and time formatting. Let's see this behavior with an example,
+     می توانید از شی «Intl.DateTimeFormat» استفاده کنید که سازنده اشیایی است که قالب بندی تاریخ و زمان حساس به زبان را فعال می کند. بیایید این رفتار را با یک مثال ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -4870,19 +4867,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 234. ### What is an Iterator
 
-     An iterator is an object which defines a sequence and a return value upon its termination. It implements the Iterator protocol with a `next()` method which returns an object with two properties: `value` (the next value in the sequence) and `done` (which is true if the last value in the sequence has been consumed).
+     تکرار کننده شی ای است که پس از خاتمه، یک توالی و یک مقدار بازگشتی را تعریف می کند. پروتکل Iterator را با متد «next()» پیاده‌سازی می‌کند که یک شی را با دو ویژگی برمی‌گرداند: «value» (مقدار بعدی در دنباله) و «done» (که اگر آخرین مقدار در دنباله مصرف شده باشد درست است. ).
 
      **[⬆ فهرست](#فهرست)**
 
 235. ### How does synchronous iteration works
 
-     Synchronous iteration was introduced in ES6 and it works with below set of components,
+    تکرار همزمان در ES6 معرفی شد و با مجموعه ای از اجزای زیر کار می کند:
 
-     **Iterable:** It is an object which can be iterated over via a method whose key is Symbol.iterator.
-     **Iterator:** It is an object returned by invoking `[Symbol.iterator]()` on an iterable. This iterator object wraps each iterated element in an object and returns it via `next()` method one by one.
-     **IteratorResult:** It is an object returned by `next()` method. The object contains two properties; the `value` property contains an iterated element and the `done` property  determines whether the element is the last element or not.
+     **Iterable:** این یک شی است که می تواند از طریق روشی که کلید آن Symbol.iterator است، تکرار شود.
+     **Iterator:** این یک شی است که با فراخوانی «[Symbol.iterator]()» بر روی یک تکرار برگردانده می شود. این شئ تکرار شونده هر عنصر تکرار شده را در یک شی پیچیده می کند و آن را از طریق متد «next()» یکی یکی برمی گرداند.
+     **IteratorResult:** این یک شی است که با متد «next()» برگردانده می شود. شی شامل دو ویژگی است. ویژگی "value" حاوی یک عنصر تکرار شده است و ویژگی "done" تعیین می کند که آیا عنصر آخرین عنصر است یا خیر.
 
-     Let's demonstrate synchronous iteration with an array as below,
+     بیایید تکرار همزمان را با آرایه ای مانند زیر نشان دهیم،
 
      <span dir="ltr" align="left">
 
@@ -4901,19 +4898,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 236. ### What is an event loop
 
-     The Event Loop is a queue of callback functions. When an async function executes, the callback function is pushed into the queue. The JavaScript engine doesn't start processing the event loop until the async function has finished executing the code.
-     **Note:** It allows Node.js to perform non-blocking I/O operations even though JavaScript is single-threaded.
+     حلقه رویداد یک صف از توابع برگشت به تماس است. هنگامی که یک تابع async اجرا می شود، تابع callback در صف قرار می گیرد. موتور جاوا اسکریپت پردازش حلقه رویداد را شروع نمی کند تا زمانی که تابع async اجرای کد را به پایان برساند.
+     **Note:** این به Node.js اجازه می دهد تا عملیات I/O غیر مسدود کننده را انجام دهد حتی اگر جاوا اسکریپت تک رشته ای باشد.
 
      **[⬆ فهرست](#فهرست)**
 
 237. ### What is call stack
 
-     Call Stack is a data structure for javascript interpreters to keep track of function calls in the program. It has two major actions,
-  1. Whenever you call a function for its execution, you are pushing it to the stack.
-  2. Whenever the execution is completed, the function is popped out of the stack.
+     Call Stack یک ساختار داده برای مفسران جاوا اسکریپت است تا فراخوانی های تابع در برنامه را پیگیری کند. دو عمل عمده دارد،
+  1. هر زمان که یک تابع را برای اجرای آن فراخوانی می کنید، آن را به پشته هل می دهید.
+  2. هر زمان که اجرا به پایان برسد، تابع از پشته خارج می شود.
 
-     Let's take an example and it's state representation in a diagram format
-
+     بیایید مثالی بزنیم و نمایش حالت در قالب نمودار است
      <span dir="ltr" align="left">
 
      ```javascript
@@ -4930,12 +4926,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The above code  processed in a call stack as  below,
-  1. Add the `hungry()` function to the call stack list and execute the code.
-  2. Add the `eatFruits()` function to the call stack list and execute the code.
-  3. Delete the `eatFruits()` function from our call stack list.
-  4. Delete the `hungry()` function from the call stack list since there are no items anymore.
-
+     کد بالا در یک پشته تماس به صورت زیر پردازش می شود.
+  1. تابع 'hungry()' را به لیست پشته تماس اضافه کنید و کد را اجرا کنید.
+  2. تابع 'eatFruits()' را به لیست پشته تماس اضافه کنید و کد را اجرا کنید.
+  3.تابع 'eatFruits()' را از لیست پشته تماس ما حذف کنید.
+  4.تابع 'eatFruits()' را از لیست پشته تماس ما حذف کنید.
      ![Screenshot](images/call-stack.png)
 
      **[⬆ فهرست](#فهرست)**
@@ -4946,7 +4941,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 239. ### What is a decorator
 
-     A decorator is an expression that evaluates to a function and that takes the target, name, and decorator descriptor as arguments. Also, it optionally returns a decorator descriptor to install on the target object. Let's define admin decorator for user class at design time,
+     دکوراتور عبارتی است که یک تابع را ارزیابی می‌کند و هدف، نام و توصیف‌کننده تزئین را به عنوان آرگومان می‌گیرد. همچنین، به صورت اختیاری یک توصیفگر دکوراتور را برای نصب بر روی شی مورد نظر برمی گرداند. بیایید در زمان طراحی، دکوراتور ادمین را برای کلاس کاربر تعریف کنیم،
 
      <span dir="ltr" align="left">
 
@@ -4974,19 +4969,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 240. ### What are the properties of Intl object
 
-     Below are the list of properties available on Intl object,
-  1. **Collator:** These are the objects that enable language-sensitive string comparison.
-  2. **DateTimeFormat:** These are the objects that enable language-sensitive date and time formatting.
-  3. **ListFormat:** These are the objects that enable language-sensitive list formatting.
-  4. **NumberFormat:** Objects that enable language-sensitive number formatting.
-  5. **PluralRules:** Objects that enable plural-sensitive formatting and language-specific rules for plurals.
-  6. **RelativeTimeFormat:** Objects that enable language-sensitive relative time formatting.
+    در زیر لیستی از ویژگی های موجود در شیء Intl آمده است،
+  1. **Collator:** اینها اشیایی هستند که مقایسه رشته های حساس به زبان را امکان پذیر می کنند.
+  2. **DateTimeFormat:** اینها اشیایی هستند که قالب بندی تاریخ و زمان حساس به زبان را فعال می کنند.
+  3. **ListFormat:**اینها اشیایی هستند که قالب بندی لیست حساس به زبان را فعال می کنند.
+  4. **NumberFormat:** اشیایی که قالب بندی اعداد حساس به زبان را فعال می کنند.
+  5. **PluralRules:**اشیایی که قالب بندی حساس به جمع و قوانین خاص زبان را برای جمع فعال می کنند.
+  6. **RelativeTimeFormat:** اشیایی که قالب بندی زمان نسبی حساس به زبان را فعال می کنند.
 
      **[⬆ فهرست](#فهرست)**
 
 241. ### What is an Unary operator
 
-     The unary(+) operator is used to convert a variable to a number.If the variable cannot be converted, it will still become a number but with the value NaN. Let's see this behavior in an action.
+     عملگر unary(+) برای تبدیل یک متغیر به عدد استفاده می شود. اگر متغیر قابل تبدیل نباشد، همچنان به عدد تبدیل می شود اما با مقدار NaN. بیایید این رفتار را در یک عمل ببینیم.
 
      <span dir="ltr" align="left">
 
@@ -5006,7 +5001,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 242. ### How do you sort elements in an array
 
-     The sort() method is used to sort the elements of an array in place and returns the sorted array. The example usage would be as below,
+     متد sort() برای مرتب سازی عناصر یک آرایه در جای خود استفاده می شود و آرایه مرتب شده را برمی گرداند. استفاده از مثال زیر خواهد بود،
 
      <span dir="ltr" align="left">
 
@@ -5022,7 +5017,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 243. ### What is the purpose of compareFunction while sorting arrays
 
-     The compareFunction is used to define the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value. Let's take an example to see the usage of compareFunction,
+     از compareFunction برای تعریف ترتیب مرتب سازی استفاده می شود. اگر حذف شود، عناصر آرایه به رشته تبدیل می شوند، سپس بر اساس مقدار نقطه کد یونیکد هر کاراکتر مرتب می شوند. بیایید مثالی بزنیم تا کاربرد compareFunction را ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -5038,7 +5033,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 244. ### How do you reversing an array
 
-     You can use the reverse() method to reverse the elements in an array. This method is useful to sort an array in descending order. Let's see the usage of reverse() method in an example,
+     برای معکوس کردن عناصر یک آرایه می توانید از متد ()reverse استفاده کنید. این روش برای مرتب کردن یک آرایه به ترتیب نزولی مفید است. بیایید استفاده از متد ()reverse را در یک مثال ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -5055,7 +5050,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 245. ### How do you find min and max value in an array
 
-     You can use `Math.min` and `Math.max` methods on array variables to find the minimum and maximum elements within an array. Let's create two functions to find the min and max value with in an array,
+     می‌توانید از روش‌های «Math.min» و «Math.max» روی متغیرهای آرایه برای یافتن حداقل و حداکثر عناصر در یک آرایه استفاده کنید. بیایید دو تابع برای پیدا کردن مقدار min و max در یک آرایه ایجاد کنیم.
 
      <span dir="ltr" align="left">
 
@@ -5078,7 +5073,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 246. ### How do you find min and max values without Math functions
 
-     You can write functions which loop through an array comparing each value with the lowest value or highest value to find the min and max values. Let's create those functions to find min and max values,
+     دستور خالی یک نقطه ویرگول (;) است که نشان می دهد هیچ دستوری اجرا نخواهد شد، حتی اگر نحو جاوا اسکریپت به آن نیاز داشته باشد. از آنجایی که هیچ اقدامی با دستور خالی وجود ندارد، ممکن است فکر کنید که استفاده از آن بسیار کمتر است، اما دستور خالی گاهی اوقات زمانی مفید است که می خواهید حلقه ای ایجاد کنید که بدنه آن خالی است. به عنوان مثال، می توانید یک آرایه با مقادیر صفر را مانند زیر مقداردهی اولیه کنید.
 
      <span dir="ltr" align="left">
 
@@ -5116,7 +5111,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 247. ### What is an empty statement and purpose of it
 
-     The empty statement is a semicolon (;) indicating that no statement will be executed, even if JavaScript syntax requires one. Since there is no action with an empty statement you might think that it's usage is quite less, but the empty statement is occasionally useful when you want to create a loop that has an empty body. For example, you can initialize an array with zero values as below,
+     می‌توانید از شی «import.meta» استفاده کنید که یک ویژگی متا است که متا داده‌های متنی خاص را در یک ماژول جاوا اسکریپت قرار می‌دهد. این شامل اطلاعاتی در مورد ماژول فعلی، مانند URL ماژول است. در مرورگرها، ممکن است متا داده های متفاوتی نسبت به NodeJS دریافت کنید.
 
      <span dir="ltr" align="left">
 
@@ -5131,7 +5126,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 248. ### How do you get metadata of a module
 
-     You can use the `import.meta` object which is a meta-property exposing context-specific meta data to a JavaScript module. It contains information about the current module, such as the module's URL. In browsers, you might get different meta data than NodeJS.
+     عملگر کاما برای ارزیابی هر یک از عملوندهای آن از چپ به راست استفاده می شود و مقدار آخرین عملوند را برمی گرداند. این کاملاً با استفاده از کاما در آرایه ها، اشیاء و آرگومان ها و پارامترهای تابع متفاوت است. به عنوان مثال، استفاده از عبارات عددی به صورت زیر خواهد بود.
 
      <span dir="ltr" align="left">
 
@@ -5146,7 +5141,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 249. ### What is a comma operator
 
-     The comma operator is used to evaluate each of its operands from left to right and returns the value of the last operand. This is totally different from comma usage within arrays, objects, and function arguments and parameters. For example, the usage for numeric expressions would be as below,
+     عملگر کاما برای ارزیابی هر یک از عملوندهای آن از چپ به راست استفاده می شود و مقدار آخرین عملوند را برمی گرداند. این کاملاً با استفاده از کاما در آرایه ها، اشیاء و آرگومان ها و پارامترهای تابع متفاوت است. به عنوان مثال، استفاده از عبارات عددی به صورت زیر خواهد بود.
 
      <span dir="ltr" align="left">
 
@@ -5163,7 +5158,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 250. ### What is the advantage of a comma operator
 
-     It is normally used to include multiple expressions in a location that requires a single expression. One of the common usages of this comma operator is to supply multiple parameters in a `for` loop. For example, the below for loop uses multiple expressions in a single location using comma operator,
+     معمولاً برای گنجاندن چندین عبارت در مکانی که به یک عبارت واحد نیاز دارد استفاده می شود. یکی از کاربردهای رایج این عملگر کاما، ارائه چندین پارامتر در یک حلقه «for» است. به عنوان مثال، حلقه for زیر از چند عبارت در یک مکان واحد با استفاده از عملگر کاما استفاده می کند.
 
      <span dir="ltr" align="left">
 
@@ -5173,7 +5168,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     You can also use the comma operator in a return statement where it processes before returning.
+     همچنین می‌توانید از عملگر کاما در یک عبارت بازگشتی استفاده کنید، جایی که قبل از بازگشت پردازش می‌کند.
 
      <span dir="ltr" align="left">
 
