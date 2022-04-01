@@ -3297,7 +3297,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 151. ### What is tree shaking
 
-     Tree shaking is a form of dead code elimination. It means that unused modules will not be included in the bundle during the build process and for that it relies on the static structure of ES2015 module syntax,( i.e. import and export). Initially this has been popularized by the ES2015 module bundler `rollup`.
+     تکان دادن درخت نوعی حذف کد مرده است. این بدان معناست که ماژول‌های استفاده نشده در طول فرآیند ساخت در بسته گنجانده نمی‌شوند و برای این کار بر ساختار استاتیک ماژول ES2015 متکی است (یعنی واردات و صادرات). در ابتدا این باندلر ماژول ES2015 'rollup' رایج شد.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -3409,7 +3409,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 158. ### What is a RegExp object
 
-     object های Regex یه عبارت معمولی با پراپرتی ها و متد های تعریف شده از قبله بریم یه مثال از نحوه استفادشون ببینیم.
+     `object` های `Regex` یه عبارت معمولی با پراپرتی ها و متد های تعریف شده از قبله بریم یه مثال از نحوه استفادشون ببینیم.
 
      <span dir="ltr" align="left">
 
@@ -3425,7 +3425,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 159. ### How do you search a string for a pattern
 
-     You can use the test() method of regular expression in order to search a string for a pattern, and return true or false depending on the result.
+     می‌توانید از متد test() عبارت منظم برای جستجوی یک رشته برای الگو استفاده کنید و بسته به نتیجه، true یا false را برگردانید.
 
      <span dir="ltr" align="left">
 
@@ -3440,7 +3440,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 160. ### What is the purpose of exec method
 
-     The purpose of exec method is similar to test method but it executes a search for a match in a specified string and returns a result array, or null instead of returning true/false.
+     هدف متد exec شبیه به روش تست است، اما جستجوی یک تطابق در یک رشته مشخص را انجام می‌دهد و یک آرایه نتیجه یا null را به جای برگرداندن true/false برمی‌گرداند.
 
      <span dir="ltr" align="left">
 
@@ -3455,8 +3455,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 161. ### How do you change the style of a HTML element
 
-     You can change inline style or classname of a HTML element using javascript
-  1. **Using style property:** You can modify inline style using style property
+     شما می توانید سبک درون خطی یا نام کلاس یک عنصر HTML را با استفاده از جاوا اسکریپت تغییر دهید
+  1. **استفاده از پراپرتی استایل:** با استفاده از ویژگی style می توانید استایل درون خطی را تغییر دهید
 
      <span dir="ltr" align="left">
 
@@ -3466,7 +3466,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using ClassName property:** It is easy to modify element class using className property
+  1. **استفاده از پراپرتی className:** تغییر کلاس عنصر با استفاده از ویژگی className آسان است
 
      <span dir="ltr" align="left">
 
@@ -3480,15 +3480,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 162. ### What would be the result of 1+2+'3'
 
-     The output is going to be `33`. Since `1` and `2` are numeric values, the result of the first two digits is going to be a numeric value `3`. The next digit is a string type value because of that the addition of numeric value `3` and string type value `3` is just going to be a concatenation value `33`.
+     خروجی '33' خواهد بود. از آنجایی که «1» و «2» مقادیر عددی هستند، نتیجه دو رقم اول یک مقدار عددی «3» خواهد بود. رقم بعدی یک مقدار نوع رشته است، زیرا افزودن مقدار عددی «3» و مقدار رشته «3» فقط یک مقدار الحاقی «33» خواهد بود.
 
      **[⬆ فهرست](#فهرست)**
 
 163. ### What is a debugger statement
 
-     The debugger statement invokes any available debugging functionality, such as setting a breakpoint. If no debugging functionality is available, this statement has no effect.
-     For example, in the below function a debugger statement has been inserted. So
-     execution is paused at the debugger statement just like a breakpoint in the script source.
+     دستور دیباگر هر گونه عملکرد اشکال زدایی موجود را فراخوانی می کند، مانند تعیین نقطه شکست. اگر هیچ عملکرد اشکال زدایی در دسترس نباشد، این عبارت تاثیری ندارد.
+     به عنوان مثال، در تابع زیر یک دستور دیباگر درج شده است. بنابراین
+     اجرا در دستور دیباگر مانند یک نقطه شکست در منبع اسکریپت متوقف می شود.
 
      <span dir="ltr" align="left">
 
@@ -3506,13 +3506,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 164. ### What is the purpose of breakpoints in debugging
 
-     You can set breakpoints in the javascript code once the debugger statement is executed and the debugger window pops up. At each breakpoint, javascript will stop executing, and let you examine the JavaScript values. After examining values, you can resume the execution of code using the play button.
+     پس از اجرای دستور دیباگر و باز شدن پنجره دیباگر، می توانید نقاط شکست را در کد جاوا اسکریپت تنظیم کنید. در هر نقطه شکست، جاوا اسکریپت اجرا نمی شود و به شما اجازه می دهد مقادیر جاوا اسکریپت را بررسی کنید. پس از بررسی مقادیر، می توانید با استفاده از دکمه پخش، اجرای کد را از سر بگیرید.
 
      **[⬆ فهرست](#فهرست)**
 
 165. ### Can I use reserved words as identifiers
 
-     No, you cannot use the reserved words as variables, labels, object or function names. Let's see one simple example,
+     نه، شما نمی توانید از کلمات رزرو شده به عنوان متغیر، برچسب، نام شی یا تابع استفاده کنید. بیایید یک مثال ساده را ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -3526,7 +3526,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 166. ### How do you detect a mobile browser
 
-     You can use regex which returns a true or false value depending on whether or not the user is browsing with a mobile.
+     ما می‌تونیم با استفاده از Regex که یک boolean به ما برمیگردونه بفهمیم که مرورگری که کاربر داره ازش استفاده میکنه چیه.
 
      <span dir="ltr" align="left">
 
@@ -3544,7 +3544,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 167. ### How do you detect a mobile browser without regexp
 
-     You can detect mobile browsers by simply running through a list of devices and checking if the useragent matches anything. This is an alternative solution for RegExp usage,
+     می‌تونیم مرورگرهای تلفن همراه رو با اجرای فهرستی از دستگاه‌ها و بررسی اینکه آیا `useragent` با چیزی مطابقت دارد یا خیر، شناسایی کنید. این یک راه حل جایگزین برای استفاده از RegExp هستش
 
      <span dir="ltr" align="left">
 
@@ -3572,7 +3572,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 168. ### How do you get the image width and height using JS
 
-     You can programmatically get the image and check the dimensions(width and height) using Javascript.
+     ما می‌تونیم با استفاده از جاوا اسکریپت می توانید به صورت برنامه ریزی شده تصویر را بدست بیاریم و ابعاد (عرض و ارتفاع) رو بررسی کنیم.
 
      <span dir="ltr" align="left">
 
@@ -3590,7 +3590,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 169. ### How do you make synchronous HTTP request
 
-     Browsers provide an XMLHttpRequest object which can be used to make synchronous HTTP requests from JavaScript
+     مرورگرها یک شی `XMLHttpRequest` ارائه می‌دن که می تونه برای ایجاد درخواست های `HTTP` همزمان از جاوا اسکریپت استفاده شه.
 
      <span dir="ltr" align="left">
 
@@ -3609,7 +3609,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 170. ### How do you make asynchronous HTTP request
 
-     Browsers provide an XMLHttpRequest object which can be used to make asynchronous HTTP requests from JavaScript by passing the 3rd parameter as true.
+     مرورگرها یک شی `XMLHttpRequest` را ارائه می‌دن که می‌تونن برای درخواست های `HTTP` ناهمزمان از جاوا اسکریپت با ارسال پارامتر سوم به عنوان `true` استفاده کنن.
 
      <span dir="ltr" align="left">
 
@@ -3632,7 +3632,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 171. ### How do you convert date to another timezone in javascript
 
-     You can use the toLocaleString() method to convert dates in one timezone to another. For example, let's convert current date to British English timezone as below,
+     می‌تونیم از متد `toLocaleString()` برای تبدیل تاریخ ها در یک منطقه زمانی به منطقه زمانی دیگر استفاده کنیم.بریم یه مثال درموردش ببینیم.
 
      <span dir="ltr" align="left">
 
@@ -3646,7 +3646,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 172. ### What are the properties used to get size of window
 
-     You can use innerWidth, innerHeight, clientWidth, clientHeight properties of windows, document element and document body objects to find the size of a window. Let's use them combination of these properties to calculate the size of a window or document,
+     می‌تونیم از ویژگی های `innerWidth،` `innerHeight،` `clientWidth،` `clientHeight` ویندوز، عنصر سند و اشیاء بدنه سند برای یافتن اندازه یک پنجره استفاده کنیم. بیایید از ترکیب آنها برای محاسبه اندازه یک پنجره یا سند استفاده کنیم.
 
      <span dir="ltr" align="left">
 
@@ -3666,7 +3666,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 173. ### What is a conditional operator in javascript
 
-     The conditional (ternary) operator is the only JavaScript operator that takes three operands which acts as a shortcut for if statements.
+     عملگر شرطی (ternary) تنها عملگر جاوا اسکریپت هستش که سه عملوند را می‌گیره که به عنوان میانبر برای دستور if عمل می‌کنه.
 
      <span dir="ltr" align="left">
 
@@ -3681,7 +3681,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 174. ### Can you apply chaining on conditional operator
 
-     Yes, you can apply chaining on conditional operators similar to if … else if … else if … else chain. The syntax is going to be as below,
+     بله، می‌توانید زنجیره‌سازی را روی عملگرهای شرطی مشابه `if … else if … else if… other chain` اعمال کنیم.
 
      <span dir="ltr" align="left">
 
@@ -3709,7 +3709,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 175. ### What are the ways to execute javascript after page load
 
-     You can execute javascript after page load in many different ways,
+     ما می‌تونیم جاوا اسکریپت را پس از بارگذاری صفحه به روش های مختلف اجرا کنیم.
   1. **window.onload:**
 
      <span dir="ltr" align="left">
@@ -3744,7 +3744,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 176. ### What is the difference between proto and prototype
 
-     The `__proto__` object is the actual object that is used in the lookup chain to resolve methods, etc. Whereas `prototype` is the object that is used to build `__proto__` when you create an object with new
+     شی `__proto__` شی واقعیه که در زنجیره جستجو برای حل متدها و غیره استفاده می شه. در حالی که `prototype` شیئی است که برای ساخت `__proto__`استفاده می شه زمانی که یک شی با جدید ایجاد می کنید.
 
      <span dir="ltr" align="left">
 
@@ -3759,7 +3759,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 177. ### Give an example where do you really need semicolon
 
-     It is recommended to use semicolons after every statement in JavaScript. For example, in the below case it throws an error ".. is not a function" at runtime due to missing semicolon.
+     توصیه می‌شه بعد از هر عبارت در جاوا اسکریپت از نقطه ویرگول استفاده کنیم. به عنوان مثال، در مورد زیر به دلیل از دست دادن نقطه ویرگول، خطای `.. is not a function` را در زمان اجرا میندازه.
 
      <span dir="ltr" align="left">
 
@@ -3777,7 +3777,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     and it will be interpreted as
+     و از آن تعبیر خواهد شد
 
      <span dir="ltr" align="left">
 
@@ -3791,13 +3791,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     In this case, we are passing the second function as an argument to the first function and then trying to call the result of the first function call as a function. Hence, the second function will fail with a "... is not a function" error at runtime.
+     در این حالت، تابع دوم رو به عنوان آرگومان به تابع اول ارسال می کنیم و سعی می کنیم نتیجه فراخوانی تابع اول را به عنوان تابع فراخوانی کنیم. از این رو، تابع دوم با خطای "... یک تابع نیست" در زمان اجرا ارور می‌گیریم.
 
      **[⬆ فهرست](#فهرست)**
 
 178. ### What is a freeze method
 
-     The **freeze()** method is used to freeze an object. Freezing an object does not allow adding new properties to an object,prevents from removing and prevents changing the enumerability, configurability, or writability of existing properties. i.e, It returns the passed object and does not create a frozen copy.
+     متد **freeze()** برای فریز کردن یک شی استفاده می‌شه. ثابت کردن یک شی اجازه افزودن ویژگی های جدید به یک شی رو نمی‌ده. از حذف آن جلوگیری می‌کنه و از تغییر قابلیت شمارش پذیری، پیکربندی یا قابلیت نوشتن ویژگی های موجود جلوگیری می‌کنه. یعنی شیء ارسال شده را برمی‌گردونه و کپی ثابتی ایجاد نمی‌کنه.
 
      <span dir="ltr" align="left">
 
@@ -3814,28 +3814,30 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** It causes a TypeError if the argument passed is not an object.
+     **نکته:** یه تایپ ارور بهمون می‌ده که ارگومان داده شده `object` نیست
 
      **[⬆ فهرست](#فهرست)**
 
 179. ### What is the purpose of freeze method
 
-     Below are the main benefits of using freeze method,
+    
+     مزیت استفاده کردن از متد `freseze` رو ببینیم
 
-  1. It is used for freezing objects and arrays.
-  2. It is used to make an object immutable.
+  1. برای فریز کردن ابجکت ها و آرایه ها 
+  2. برای `imutable` کردن ابجکت ها
+
 
      **[⬆ فهرست](#فهرست)**
 
 180. ### Why do I need to use freeze method
 
-     In the Object-oriented paradigm, an existing API contains certain elements that are not intended to be extended, modified, or re-used outside of their current context. Hence it works as the `final` keyword which is used in various languages.
+     در پارادایم شی گرا، یک `API` موجود حاوی عناصر خاصی است که قصد توسعه، اصلاح یا استفاده مجدد در خارج از زمینه فعلی خود را ندارند. از این رو، این کلمه کلیدی `final` است که در زبان های مختلف استفاده می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 181. ### How do you detect a browser language preference
 
-     You can use navigator object to detect a browser language preference as below,
+     ما میتونیم از ابجکت `navigator` گه بر روری بروزر وجود داره این کارو انجام بدیم
 
      <span dir="ltr" align="left">
 
@@ -3853,7 +3855,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 182. ### How to convert string to title case with javascript
 
-     Title case means that the first letter of each word is capitalized. You can convert a string to title case using the below function,
+     این کار باعث میشه که حرف اول یه رشته به صورت بزرگ(زبان انگلیسی) نشون داده بشه که ما میتونیم با فانکشن زیر این کارو انجام بدیم
 
      <span dir="ltr" align="left">
 
@@ -3875,7 +3877,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 183. ### How do you detect javascript disabled in the page
 
-     You can use the `<noscript>` tag to detect javascript disabled or not. The code block inside `<noscript>` gets executed when JavaScript is disabled, and is typically used to display alternative content when the page generated in JavaScript.
+     برای تشخیص غیرفعال بودن یا نبودن جاوا اسکریپت می توانید از تگ `<noscript>` استفاده کنید. بلوک کد داخل `<noscript>` زمانی اجرا می‌شود که جاوا اسکریپت غیرفعال است، و معمولاً برای نمایش محتوای جایگزین زمانی که صفحه در جاوا اسکریپت تولید می‌شود، استفاده میشه.
 
      <span dir="ltr" align="left">
 
@@ -3894,19 +3896,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 184. ### What are various operators supported by javascript
 
-     An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
-  1. **Arithmetic Operators:** Includes + (Addition),– (Subtraction), * (Multiplication), / (Division), % (Modulus), + + (Increment)  and – – (Decrement)
-  2. **Comparison Operators:** Includes = =(Equal),!= (Not Equal), ===(Equal with type), > (Greater than),> = (Greater than or Equal to),< (Less than),<= (Less than or Equal to)
-  3. **Logical Operators:** Includes &&(Logical AND),||(Logical OR),!(Logical NOT)
-  4. **Assignment Operators:** Includes = (Assignment Operator), += (Add and Assignment Operator), – = (Subtract and Assignment Operator), *= (Multiply and Assignment), /= (Divide and Assignment), %= (Modules and Assignment)
-  5. **Ternary Operators:** It includes conditional(: ?) Operator
-  6. **typeof Operator:** It uses to find type of variable. The syntax looks like `typeof variable`
+     یک عملگر قادر به دستکاری (محاسبات ریاضی و منطقی) مقدار یا عملوند معینیه. اپراتورهای مختلفی توسط جاوا اسکریپت پشتیبانی میشن این اپراتور ها هستن
+  1. **عملگر های حسابی:** شامل + (اضافه),– (منها), * (ضرب), / (تقسیم), % (درصد), + + (اضافه کردن)  و – – (کم کردن)
+  2. **عملگر های مقایسه ای:** شامل = =(برابر),!= (غیر برابر), ===(برابر و تایپ برابر), > (بزرگتر),> = (بزرگتر مساوی),< (کوچکتر),<= (کوچکتر مساوی)
+  3. **عملگر های منطقی:** شامل &&("و"منطقی),||("یا"منظقی),!( منطقی"نه")
+  4. **عملگر های تعیین مقدار:** شامل = (اپراتور تعیین مقدار), += (اضافه کردن و تعیین مقدار), – = (منها کردن و تعیین مقدار), *= (ضرب و تعیین مقدار), /= (تقسیم و تعیین مقدار), %= (باقی مانده و تعیین مقدار)
+  5. **اپراتور سه تایی:**  شامل اپراتور های شرطی سه تایی
+  6. **اپراتور تایپ:** از اون برای پیدا کردن تایپ متغیر ها استفاده میشه به صورت `typeof variable`
 
      **[⬆ فهرست](#فهرست)**
 
 185. ### What is a rest parameter
 
-     Rest parameter is an improved way to handle function parameters which allows us to represent an indefinite number of arguments as an array. The syntax would be as below,
+     پارامتر `Rest` یک روش بهبود یافته برای مدیریت پارامترهای تابع هستش که به ما امکان میده تعداد نامحدودی از آرگومان ها رو به عنوان یک آرایه نمایش میدیم
 
      <span dir="ltr" align="left">
 
@@ -3918,7 +3920,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     For example, let's take a sum example to calculate on dynamic number of parameters,
+     به عنوان مثال، بیایید یک مثال مجموع برای محاسبه تعداد پویا پارامترها در نظر بگیریم،
 
      <span dir="ltr" align="left">
 
@@ -3944,7 +3946,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 186. ### What happens if you do not use rest parameter as a last argument
 
-     The rest parameter should be the last argument, as its job is to collect all the remaining arguments into an array. For example, if you define a function like below it doesn’t make any sense and will throw an error.
+     پارامتر ‍‍`Rest` باید آخرین آرگومان باشد، زیرا وظیفه آن جمع آوری تمام آرگومان های باقی مانده در یک آرایه هست. به عنوان مثال، اگر تابعیو مثل زیر تعریف کنیم معنی ندارد و یک خطا ایجاد می کنه.
 
      <span dir="ltr" align="left">
 
@@ -3961,20 +3963,20 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 187. ### What are the bitwise operators available in javascript
 
-     Below are the list of bitwise logical operators used in JavaScript
-  1. Bitwise AND ( & )
-  2. Bitwise OR ( | )
-  3. Bitwise XOR ( ^ )
-  4. Bitwise NOT ( ~ )
-  5. Left Shift ( << )
-  6. Sign Propagating Right Shift ( >> )
-  7. Zero fill Right Shift ( >>> )
+     در زیر لیستی از عملگرهای منطقی بیتی مورد استفاده در جاوا اسکریپت آمده است
+  1. به صورت بیتی AND ( & )
+  2. به صورت بیتی OR ( | )
+  3. به صورت بیتی XOR ( ^ )
+  4. به صورت بیتی NOT ( ~ )
+  5. تغییر مکان به چپ ( << )
+  6. علامت در حال انتشار به سمت راست ( >> )
+  7. صفر پر کردن Shift راست ( >>> )
 
      **[⬆ فهرست](#فهرست)**
 
 188. ### What is a spread operator
 
-     Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. Let's take an example to see this behavior,
+     عملگر Spread به تکرارپذیرها (آرایه ها / اشیاء / رشته ها) اجازه می دهد تا به آرگومان ها / عناصر منفرد گسترش یابند. برای مشاهده این رفتار مثالی بزنیم،
 
      <span dir="ltr" align="left">
 
@@ -3994,11 +3996,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 189. ### How do you determine whether object is frozen or not
 
-     Object.isFrozen() method is used to determine if an object is frozen or not.An object is frozen if all of the below conditions hold true,
-  1. If it is not extensible.
-  2. If all of its properties are non-configurable.
-  3. If all its data properties are non-writable.
-     The usage is going to be as follows,
+     متد Object.isFrozen() برای تعیین اینکه آیا یک شی منجمد است یا خیر استفاده می شود. اگر همه شرایط زیر درست باشد، یک شی منجمد می شود.
+  1. اگر قابل توسعه نباشد.
+  2. اگر تمام خصوصیات آن غیر قابل تنظیم باشند.
+  3. اگر تمام خصوصیات داده آن غیر قابل نوشتن باشد.
+     استفاده به صورت زیر خواهد بود
 
      <span dir="ltr" align="left">
 
@@ -4016,7 +4018,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 190. ### How do you determine two values same or not using object
 
-     The Object.is() method determines whether two values are the same value. For example, the usage with different types of values would be,
+     متد Object.is() تعیین می کند که آیا دو مقدار یک مقدار هستند یا خیر. به عنوان مثال، استفاده با انواع مختلف مقادیر،
 
      <span dir="ltr" align="left">
 
@@ -4028,33 +4030,33 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Two values are the same if one of the following holds:
-  1. both undefined
-  2. both null
-  3. both true or both false
-  4. both strings of the same length with the same characters in the same order
-  5. both the same object (means both object have same reference)
-  6. both numbers and
-     both +0
-     both -0
-     both NaN
-     both non-zero and both not NaN and both have the same value.
+     اگر یکی از موارد زیر برقرار باشد، دو مقدار یکسان هستند:
+  1. هردو undefined
+  2. هردو null
+  3. هردو true یا هر دو false
+  4. هر دو رشته با طول یکسان با کاراکترهای مشابه به ترتیب یکسان
+  5. هر دو یک شی (یعنی هر دو شی مرجع یکسان دارند)
+  6. هر دو عدد و
+     هر دو +0
+     هر دو -0
+     هر دو NaN
+     هر دو غیر صفر و هر دو NaN نیستند و هر دو دارای یک مقدار هستند.
 
      **[⬆ فهرست](#فهرست)**
 
 191. ### What is the purpose of using object is method
 
-     Some of the applications of Object's `is` method are follows,
-  1. It is used for comparison of two strings.
-  2. It is used for comparison of two numbers.
-  3. It is used for comparing the polarity of two numbers.
-  4. It is used for comparison of two objects.
+     برخی از کاربردهای متد «is» Object به شرح زیر است,
+  1. برای مقایسه دو رشته استفاده می شود.
+  2. برای مقایسه دو عدد استفاده می شود.
+  3. برای مقایسه قطبیت دو عدد استفاده می شود.
+  4. برای مقایسه دو شی استفاده می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 192. ### How do you copy properties from one object to other
 
-     You can use the Object.assign() method which is used to copy the values and properties from one or more source objects to a target object.  It returns the target object which has properties and values copied from the target object. The syntax would be as below,
+     می‌توانید از متد Object.assign() استفاده کنید که برای کپی کردن مقادیر و ویژگی‌ها از یک یا چند شی منبع به یک شی هدف استفاده می‌شود. شی مورد نظر را که دارای خواص و مقادیر کپی شده از شی مورد نظر است، برمی گرداند. نحو به صورت زیر خواهد بود،
 
      <span dir="ltr" align="left">
 
@@ -4064,7 +4066,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Let's take example with one source and one target object,
+     بیایید با یک منبع و یک شی هدف مثال بزنیم،
 
      <span dir="ltr" align="left">
 
@@ -4081,22 +4083,22 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     As observed in the above code, there is a common property(`b`) from source to target so it's value has been overwritten.
+     همانطور که در کد بالا مشاهده شد، یک ویژگی مشترک (`b`) از منبع به مقصد وجود دارد، بنابراین مقدار آن بازنویسی شده است.
 
      **[⬆ فهرست](#فهرست)**
 
 193. ### What are the applications of assign method
 
-     Below are the some of main applications of Object.assign() method,
+    در زیر تعدادی از کاربردهای اصلی متد Object.assign() آورده شده است.
 
-  1. It is used for cloning an object.
-  2. It is used to merge objects with the same properties.
+  1. برای شبیه سازی یک شی استفاده می شود.
+  2. برای ادغام اشیاء با ویژگی های یکسان استفاده می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 194. ### What is a proxy object
 
-     The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc. The syntax would be as follows,
+     شیء Proxy برای تعریف رفتار سفارشی برای عملیات های اساسی مانند جستجوی ویژگی، تخصیص، شمارش، فراخوانی تابع و غیره استفاده می شود. نحو به شرح زیر است:
 
      <span dir="ltr" align="left">
 
@@ -4106,7 +4108,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Let's take an example of proxy object,
+     بیایید مثالی از شیء پروکسی بزنیم،
 
      <span dir="ltr" align="left">
 
@@ -4129,13 +4131,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     In the above code, it uses `get` handler which define the behavior of the proxy when an operation is performed on it
+     در کد بالا، از کنترل‌کننده «get» استفاده می‌کند که رفتار پراکسی را هنگام انجام عملیات روی آن تعریف می‌کند.
 
      **[⬆ فهرست](#فهرست)**
 
 195. ### What is the purpose of seal method
 
-     The **Object.seal()** method is used to seal an object, by preventing new properties from being added to it and marking all existing properties as non-configurable. But values of present properties can still be changed as long as they are writable. Let's see the below example to understand more about seal() method
+     روش **Object.seal()** برای مهر و موم کردن یک شی، با جلوگیری از اضافه شدن ویژگی های جدید به آن و علامت گذاری تمام ویژگی های موجود به عنوان غیر قابل تنظیم، استفاده می شود. اما مقادیر ویژگی‌های فعلی تا زمانی که قابل نوشتن باشند همچنان قابل تغییر هستند. بیایید مثال زیر را برای درک بیشتر در مورد روش seal() ببینیم
 
      <span dir="ltr" align="left">
 
@@ -4156,25 +4158,25 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 196. ### What are the applications of seal method
 
-     Below are the main applications of Object.seal() method,
-  1. It is used for sealing objects and arrays.
-  2. It is used to make an object immutable.
+     در زیر کاربردهای اصلی متد Object.seal() آورده شده است.
+  1. برای آب بندی اشیا و آرایه ها استفاده می شود.
+  2. برای غیرقابل تغییر کردن یک جسم استفاده می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 197. ### What are the differences between freeze and seal methods
 
-     If an object is frozen using the Object.freeze() method then its properties become immutable and no changes can be made in them whereas if an object is sealed using the Object.seal() method then the changes can be made in the existing properties of the object.
+     اگر یک شی با استفاده از متد ()Object.freeze منجمد شود، ویژگی‌های آن تغییرناپذیر می‌شوند و هیچ تغییری در آن‌ها نمی‌توان ایجاد کرد، در حالی که اگر یک شی با استفاده از متد Object.seal () مهر و موم شده باشد، می‌توان تغییرات را در ویژگی‌های موجود ایجاد کرد. از شی
 
      **[⬆ فهرست](#فهرست)**
 
 198. ### How do you determine if an object is sealed or not
 
-     The Object.isSealed() method is used to determine if an object is sealed or not. An object is sealed if all of the below conditions hold true
-  1. If it is not extensible.
-  2. If all of its properties are non-configurable.
-  3. If it is not removable (but not necessarily non-writable).
-     Let's see it in the action
+     متد Object.isSealed() برای تعیین مهر و موم بودن یا نبودن یک شی استفاده می شود. اگر همه شرایط زیر درست باشد یک شی مهر و موم می شود
+  1. اگر قابل توسعه نباشد.
+  2. اگر تمام خصوصیات آن غیر قابل تنظیم باشند.
+  3. اگر قابل جابجایی نباشد (اما لزوماً غیرقابل نوشتن نیست).
+     بیایید آن را در عمل ببینیم
 
      <span dir="ltr" align="left">
 
@@ -4194,8 +4196,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 199. ### How do you get enumerable key and value pairs
 
-     The Object.entries() method is used to return an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop. Let's see the functionality of object.entries() method in an example,
-
+     متد Object.entries() برای برگرداندن آرایه‌ای از جفت‌های [key, value] دارای کلید رشته‌ای شمارش‌پذیر یک شی معین، به همان ترتیبی که توسط یک حلقه for...in ارائه می‌شود، استفاده می‌شود. بیایید عملکرد متد ()object.entries را در یک مثال ببینیم،
      <span dir="ltr" align="left">
 
      ```javascript
@@ -4212,13 +4213,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** The order is not guaranteed as object defined.
+     **نکته:** سفارش به عنوان شی تعریف شده تضمین نمی شود.
 
      **[⬆ فهرست](#فهرست)**
 
 200. ### What is the main difference between Object.values and Object.entries method
 
-     The Object.values() method's behavior is similar to Object.entries() method but it returns an array of values instead [key,value] pairs.
+     رفتار متد Object.values ​​() مشابه روش Object.entries() است اما به جای جفت [key,value] آرایه ای از مقادیر را برمی گرداند.
 
      <span dir="ltr" align="left">
 
