@@ -1042,6 +1042,16 @@ You can download the PDF and Epub version of this repository from the latest run
     message = 'The variable Has been hoisted';
     ```
 
+    In the same fashion, function declarations are hoisted too
+
+    ```javascript
+     message("Good morning"); //Good morning
+
+     function message(name) {
+          console.log(name);
+     }
+    ```
+
     **[⬆ Back to Top](#table-of-contents)**
 
 26. ### What are classes in ES6
