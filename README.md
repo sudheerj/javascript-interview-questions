@@ -1838,7 +1838,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 80. ### What are the differences between undeclared and undefined variables
 
-    Below are the major differences between undeclared and undefined variables,
+    Below are the major differences between undeclared(not defined) and undefined variables,
 
     | undeclared | undefined |
     |---- | ---------
