@@ -1026,7 +1026,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 25. ### What is Hoisting
 
-    Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
+    Hoisting is a JavaScript mechanism where variables, function declarations and classes are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
     Let's take a simple example of variable hoisting,
 
     ```javascript
@@ -1051,6 +1051,7 @@ You can download the PDF and Epub version of this repository from the latest run
           console.log(name);
      }
     ```
+    This hoisting makes functions to be safely used in code before they are declared.
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -9370,6 +9371,34 @@ Arrays have their own implementation of `toString` method that returns a comma-s
 </p>
 
 </details>
+
+---
+
+#### 59. What is the output of below code?
+
+```javascript
+getMessage();
+
+var getMessage = () => {
+     console.log("Good morning");
+}; 
+```
+
+- 1: Good morning
+- 2: getMessage is not a function
+- 3: getMessage is not defined
+- 4: Undefined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+Hoisting will move variables and functions to be the top of scope. Even though getMessage is an arrow function the above function will considered as a varible due to it's variable declaration or assignment. So the variables will have undefined value in memory phase and throws an error '`getMessage` is not a function' at the code execution phase.
+</p>
+
+</details>
+
+---
 
 ## Disclaimer
 
