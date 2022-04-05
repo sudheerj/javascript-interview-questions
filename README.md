@@ -2205,7 +2205,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
      ```javascript
      var userJSON = {'name': 'John', age: 31}
-     var userString = JSON.stringify(user);
+     var userString = JSON.stringify(userJSON);
      console.log(userString); //"{"name":"John","age":31}"
      ```
 
