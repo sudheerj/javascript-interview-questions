@@ -2000,7 +2000,7 @@ You can download the PDF and Epub version of this repository from the latest run
     And after you change the value of the text field to "Good evening", it becomes like
 
     ```javascript
-    console.log(input.getAttribute('value')); // Good morning
+    console.log(input.getAttribute('value')); // Good evening
     console.log(input.value); // Good evening
     ```
 
