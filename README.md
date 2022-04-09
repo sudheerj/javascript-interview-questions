@@ -469,7 +469,8 @@ You can download the PDF and Epub version of this repository from the latest run
 |428| [What are the different ways to create sparse arrays?](#what-are-the-different-ways-to-create-sparse-arrays)|
 |429| [What is the difference between setTimeout, setImmediate and process.nextTick?](#what-is-the-difference-between-set-timeout-,-set-immediate-and-processnext-tick)|
 |430| [How do you reverse an array without modifying original array?](#how-do-you-reverse-an-array-without-modifying-original-array)|
-|431| [How do you create custom HTML element?](#how-do-you-create-custom-html-element?)|
+|431| [How do you create custom HTML element?](#how-do-you-create-custom-html-element)|
+|432| [What is global execution context?](#what-is-global-execution-context)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7503,6 +7504,33 @@ You can download the PDF and Epub version of this repository from the latest run
           </body>
        ```
 
+     **[⬆ Back to Top](#table-of-contents)**
+
+432. ### What is global execution context?
+
+     The global execution context is the default or first execution context that is created by the JavaScript engine before any code is executed(i.e, when the file first loads in the browser). All the global code that is not inside a function or object will be executed inside this global execution context. Since JS engine is single threaded there will be only one global environment and there will be only one global execution context.
+
+     For example, the below code other than code inside any function or object is executed inside the global execution context.
+
+     ```javascript
+     var x = 10;
+
+     function A() {
+
+	     console.log("Start function A");
+
+	     function B(){
+		     console.log("In function B");
+	     }
+
+	     B();
+
+     }
+
+     A();
+
+     console.log("GlobalContext");
+     ```
      **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
