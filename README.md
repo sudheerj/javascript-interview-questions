@@ -4137,7 +4137,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 237. ### What is call stack
 
-     Call Stack is a data structure for javascript interpreters to keep track of function calls in the program. It has two major actions,
+     Call Stack is a data structure for javascript interpreters to keep track of function calls(creates execution context) in the program. It has two major actions,
      1. Whenever you call a function for its execution, you are pushing it to the stack.
      2. Whenever the execution is completed, the function is popped out of the stack.
 
