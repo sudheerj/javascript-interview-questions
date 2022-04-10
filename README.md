@@ -7758,11 +7758,13 @@ You can download the PDF and Epub version of this repository from the latest run
 
      **[⬆ Back to Top](#table-of-contents)**
 
-432. ### What is function execution context?
+433. ### What is function execution context?
+
+     Whenever a function is invoked, the JavaScript engine creates a different type of Execution Context known as a Function Execution Context (FEC) within the Global Execution Context (GEC) to evaluate and execute the code within that function.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-433. ### What is debouncing?
+434. ### What is debouncing?
 
      Debouncing is a programming pattern that allows delaying execution of some piece of code until a specified time to avoid unnecessary _CPU cycles, API calls and improve performance_. The debounce function make sure that your code is only triggered once per user input. The common usecases are Search box suggestions, text-field auto-saves, and eliminating double-button clicks.
 
@@ -7795,7 +7797,6 @@ You can download the PDF and Epub version of this repository from the latest run
      **Windows event:**
      ```html
      window.addEventListener("scroll", processChange);
-
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
