@@ -474,6 +474,8 @@ You can download the PDF and Epub version of this repository from the latest run
 | 430 | [How do you reverse an array without modifying original array?](#how-do-you-reverse-an-array-without-modifying-original-array)                                    |
 | 431 | [How do you create custom HTML element?](#how-do-you-create-custom-html-element)                                                                                  |
 | 432 | [What is global execution context?](#what-is-global-execution-context)                                                                                            |
+| 433 | [What is function execution context?](#what-is-function-execution-context) |
+| 434 | [What is debouncing?](#what-is-debouncing)|
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7752,6 +7754,48 @@ You can download the PDF and Epub version of this repository from the latest run
      A();
 
      console.log("GlobalContext");
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+432. ### What is function execution context?
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+433. ### What is debouncing?
+
+     Debouncing is a programming pattern that allows delaying execution of some piece of code until a specified time to avoid unnecessary _CPU cycles, API calls and improve performance_. The debounce function make sure that your code is only triggered once per user input. The common usecases are Search box suggestions, text-field auto-saves, and eliminating double-button clicks.
+
+     Let's say you want to show suggestions for a search query, but only after a visitor has finished typing it. So here you write a debounce function where the user keeps writing the characters with in 500ms then previous timer cleared out using `clearTimeout` and reschedule API call/DB query for a new time—300 ms in the future.
+
+     ```js
+     function debounce(func, timeout = 500){
+        let timer;
+          return (...args) => {
+               clearTimeout(timer);
+               timer = setTimeout(() => { func.apply(this, args); }, timeout);
+          };
+     }
+     function fetchResults(){
+          console.log('Fetching input suggestions');
+     }
+     const processChange = debounce(() => fetchResults());
+     ```
+
+     The _debounce()_ function can be used on input, button and window events
+
+     **Input:**
+     ```html
+     <input type="text" onkeyup="processChange()" />
+     ```
+     **Button:**
+     ```html
+     <button onclick="processChange()">Click me</button>
+     ```
+     **Windows event:**
+     ```html
+     window.addEventListener("scroll", processChange);
+
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
