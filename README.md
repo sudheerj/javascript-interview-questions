@@ -474,10 +474,10 @@ You can download the PDF and Epub version of this repository from the latest run
 | 430 | [How do you reverse an array without modifying original array?](#how-do-you-reverse-an-array-without-modifying-original-array)                                    |
 | 431 | [How do you create custom HTML element?](#how-do-you-create-custom-html-element)                                                                                  |
 | 432 | [What is global execution context?](#what-is-global-execution-context)                                                                                            |
-| 433 | [What is function execution context?](#what-is-function-execution-context) |
-| 434 | [What is debouncing?](#what-is-debouncing)|
-| 435 | [What is throttling?](#what-is-throttling)
- 
+| 433 | [What is function execution context?](#what-is-function-execution-context)                                                                                        |
+| 434 | [What is debouncing?](#what-is-debouncing)                                                                                                                        |
+| 435 | [What is throttling?](#what-is-throttling)                                                                                                                        |
+
 1. ### What are the possible ways to create objects in JavaScript
 
    There are many ways to create objects in javascript as below
@@ -586,7 +586,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language.
 
-   The prototype on object instance is available through **Object.getPrototypeOf(object)** or ****proto**** property whereas prototype on constructors function is available through **Object.prototype**.
+   The prototype on object instance is available through **Object.getPrototypeOf(object)** or \***\*proto\*\*** property whereas prototype on constructors function is available through **Object.prototype**.
 
    ![Screenshot](images/prototype_chain.png)
 
@@ -7577,7 +7577,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 427. ### What is the difference between dense and sparse arrays?
 
-     An array contians items at each index starting from first(0) to last(array.length - 1) is called as Dense array. Whereas if at least one item is missing at any index, the array is called as sparse.
+     An array contains items at each index starting from first(0) to last(array.length - 1) is called as Dense array. Whereas if at least one item is missing at any index, the array is called as sparse.
 
      Let's see the below two kind of arrays,
 
@@ -7772,15 +7772,17 @@ You can download the PDF and Epub version of this repository from the latest run
      Let's say you want to show suggestions for a search query, but only after a visitor has finished typing it. So here you write a debounce function where the user keeps writing the characters with in 500ms then previous timer cleared out using `clearTimeout` and reschedule API call/DB query for a new time—300 ms in the future.
 
      ```js
-     function debounce(func, timeout = 500){
-        let timer;
-          return (...args) => {
-               clearTimeout(timer);
-               timer = setTimeout(() => { func.apply(this, args); }, timeout);
-          };
+     function debounce(func, timeout = 500) {
+       let timer;
+       return (...args) => {
+         clearTimeout(timer);
+         timer = setTimeout(() => {
+           func.apply(this, args);
+         }, timeout);
+       };
      }
-     function fetchResults(){
-          console.log('Fetching input suggestions');
+     function fetchResults() {
+       console.log("Fetching input suggestions");
      }
      const processChange = debounce(() => fetchResults());
      ```
@@ -7788,14 +7790,19 @@ You can download the PDF and Epub version of this repository from the latest run
      The _debounce()_ function can be used on input, button and window events
 
      **Input:**
+
      ```html
      <input type="text" onkeyup="processChange()" />
      ```
+
      **Button:**
+
      ```html
      <button onclick="processChange()">Click me</button>
      ```
+
      **Windows event:**
+
      ```html
      window.addEventListener("scroll", processChange);
      ```
@@ -7810,17 +7817,17 @@ You can download the PDF and Epub version of this repository from the latest run
 
      ```js
      const throttle = (func, limit) => {
-          let inThrottle;
-          return (...args) => {
-               if (!inThrottle) {
-                    func.apply(this, args);
-                    inThrottle = true;
-                    setTimeout(() => inThrottle = false, limit);
-               }
-          }
-     }
-     window.addEventListener("scroll", () => { 
-          throttle(handleScrollAnimation, 100);
+       let inThrottle;
+       return (...args) => {
+         if (!inThrottle) {
+           func.apply(this, args);
+           inThrottle = true;
+           setTimeout(() => (inThrottle = false), limit);
+         }
+       };
+     };
+     window.addEventListener("scroll", () => {
+       throttle(handleScrollAnimation, 100);
      });
      ```
 
