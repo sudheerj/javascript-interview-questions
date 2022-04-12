@@ -5185,7 +5185,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 251. ### What is typescript
 
-     TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
+     TypeScript یک ابر مجموعه تایپ شده از جاوا اسکریپت است که توسط مایکروسافت ایجاد شده است که انواع اختیاری، کلاس ها، async/wait و بسیاری ویژگی های دیگر را اضافه می کند و به جاوا اسکریپت ساده کامپایل می کند. Angular به طور کامل در TypeScript ساخته شده و به عنوان زبان اصلی استفاده می شود. شما می توانید آن را به صورت جهانی نصب کنید
 
       <span dir="ltr" align="left">
 
@@ -5195,7 +5195,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
       </span>
 
-     Let's see a simple example of TypeScript usage,
+     بیایید یک مثال ساده از استفاده از TypeScript را ببینیم،
 
       ```typescript
       function greeting(name: string): string {
@@ -5207,36 +5207,36 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       console.log(greeting(user));
       ```
 
-     The greeting method allows only string type as argument.
+     متد خوشامدگویی فقط نوع رشته را به عنوان آرگومان مجاز می کند.
 
      **[⬆ فهرست](#فهرست)**
 
 252. ### What are the differences between javascript and typescript
 
-     Below are the list of differences between javascript and typescript,
+     در زیر لیستی از تفاوت های بین جاوا اسکریپت و تایپ اسکریپت آمده است.
 
-     | feature | typescript | javascript |
-          |---- | --------- | ----
-     | Language paradigm  | Object oriented programming language  | Scripting language |
-     | Typing support | Supports static typing  | It has dynamic typing |
-     | Modules | Supported | Not supported |
-     | Interface | It has interfaces concept | Doesn't support interfaces |
-     | Optional parameters | Functions support optional parameters | No support of optional parameters for functions |
+      | ویژگی | تایپ | جاوا اسکریپت |
+           |---- | --------- | ----
+      | پارادایم زبان | زبان برنامه نویسی شی گرا | زبان اسکریپت |
+      | پشتیبانی از تایپ | پشتیبانی از تایپ استاتیک | دارای تایپ پویا |
+      | ماژول ها | پشتیبانی شده | پشتیبانی نمی شود |
+      | رابط | دارای مفهوم رابط | از رابط ها پشتیبانی نمی کند |
+      | پارامترهای اختیاری | توابع از پارامترهای اختیاری پشتیبانی می کنند | عدم پشتیبانی از پارامترهای اختیاری برای توابع |
 
      **[⬆ فهرست](#فهرست)**
 
 253. ### What are the advantages of typescript over javascript
 
-     Below are some of the advantages of typescript over javascript,
-  1. TypeScript is able to find compile time errors at the development time only and it makes sures less runtime errors. Whereas javascript is an interpreted language.
-  2. TypeScript is strongly-typed or supports static typing which allows for checking type correctness at compile time. This is not available in javascript.
-  3. TypeScript compiler can compile the .ts files into ES3,ES4 and ES5 unlike ES6 features of javascript which may not be supported in some browsers.
+     در زیر برخی از مزایای تایپ اسکریپت نسبت به جاوا اسکریپت آورده شده است.
+  1. TypeScript می تواند خطاهای زمان کامپایل را فقط در زمان توسعه پیدا کند و باعث می شود خطاهای زمان اجرا کمتر شود. در حالی که جاوا اسکریپت یک زبان تفسیر شده است.
+  2. TypeScript به شدت تایپ می شود یا از تایپ استاتیک پشتیبانی می کند که امکان بررسی صحت نوع را در زمان کامپایل فراهم می کند. این در جاوا اسکریپت در دسترس نیست.
+  3. کامپایلر TypeScript برخلاف ویژگی های ES6 جاوا اسکریپت که ممکن است در برخی از مرورگرها پشتیبانی نشود، می تواند فایل های .ts را در ES3، ES4 و ES5 کامپایل کند.
 
      **[⬆ فهرست](#فهرست)**
 
 254. ### What is an object initializer
 
-     An object initializer is an expression that describes the initialization of an Object. The syntax for this expression is represented as a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({}). This is also known as literal notation. It is one of the ways to create an object.
+     یک شیء اولیه عبارتی است که مقدار دهی اولیه یک شی را توصیف می کند. نحو این عبارت به صورت فهرستی با کاما از صفر یا چند جفت نام ویژگی و مقادیر مرتبط یک شی، محصور در پرانتزهای فرفری ({}) نشان داده می‌شود. این همچنین به عنوان نماد تحت اللفظی شناخته می شود. یکی از راه های ایجاد یک شی است.
 
      <span dir="ltr" align="left">
 
@@ -5252,8 +5252,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 255. ### What is a constructor method
 
-     The constructor method is a special method for creating and initializing an object created within a class. If you do not specify a constructor method, a default constructor is used. The example usage of constructor would be as below,
-
+     متد سازنده یک متد خاص برای ایجاد و مقداردهی اولیه یک شی ایجاد شده در یک کلاس است. اگر متد سازنده را مشخص نکنید، از سازنده پیش فرض استفاده می شود. مثال استفاده از سازنده به صورت زیر خواهد بود.
      <span dir="ltr" align="left">
 
      ```javascript
@@ -5274,7 +5273,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 256. ### What happens if you write constructor more than once in a class
 
-     The "constructor" in a class is a special method and it should be defined only once in a class. i.e, If you write a constructor method more than once in a class it will throw a `SyntaxError` error.
+     "سازنده" در یک کلاس یک متد خاص است و باید فقط یک بار در یک کلاس تعریف شود. به عنوان مثال، اگر یک متد سازنده را بیش از یک بار در یک کلاس بنویسید، یک خطای «SyntaxError» ایجاد می کند.
 
      <span dir="ltr" align="left">
 
@@ -5299,7 +5298,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 257. ### How do you call the constructor of a parent class
 
-     You can use the `super` keyword to call the constructor of a parent class. Remember that `super()` must be called before using 'this' reference. Otherwise it will cause a reference error. Let's the usage of it,
+     می توانید از کلمه کلیدی super برای فراخوانی سازنده کلاس والد استفاده کنید. به یاد داشته باشید که «super()» باید قبل از استفاده از مرجع «this» فراخوانی شود. در غیر این صورت باعث خطای مرجع می شود. بیایید از آن استفاده کنیم،
 
      <span dir="ltr" align="left">
 
@@ -5326,8 +5325,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 258. ### How do you get the prototype of an object
 
-     You can use the `Object.getPrototypeOf(obj)` method to return the prototype of the specified object. i.e. The value of the internal `prototype` property. If there are no inherited properties then `null` value is returned.
-
+     می توانید از روش Object.getPrototypeOf(obj) برای برگرداندن نمونه اولیه شی مشخص شده استفاده کنید. یعنی مقدار ویژگی «نمونه اولیه» داخلی. اگر هیچ ویژگی ارثی وجود نداشته باشد، مقدار "null" برگردانده می شود.
      <span dir="ltr" align="left">
 
      ```javascript
@@ -5343,7 +5341,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 259. ### What happens If I pass string type for getPrototype method
 
-     In ES5, it will throw a TypeError exception if the obj parameter isn't an object. Whereas in ES2015, the parameter will be coerced to an `Object`.
+     در ES5، اگر پارامتر obj یک شی نباشد، یک استثنا TypeError ایجاد می کند. در حالی که در ES2015، پارامتر به یک «شیء» اجباری می شود.
 
      <span dir="ltr" align="left">
 
@@ -5360,7 +5358,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 260. ### How do you set prototype of one object to another
 
-     You can use the `Object.setPrototypeOf()` method that sets the prototype (i.e., the internal `Prototype` property) of a specified object to another object or null. For example, if you want to set prototype of a square object to rectangle object would be as follows,
+     می‌توانید از متد «Object.setPrototypeOf()» استفاده کنید که نمونه اولیه (یعنی ویژگی داخلی «Prototype») یک شی مشخص شده را روی یک شی دیگر یا تهی تنظیم می‌کند. به عنوان مثال، اگر می خواهید نمونه اولیه یک جسم مربع را روی شی مستطیلی تنظیم کنید، به صورت زیر است:
 
      <span dir="ltr" align="left">
 
@@ -5375,7 +5373,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 261. ### How do you check whether an object can be extendable or not
 
-     The `Object.isExtensible()` method is used to determine if an object is extendable or not. i.e, Whether it can have new properties added to it or not.
+     متد Object.isExtensible()` برای تعیین اینکه آیا یک شی قابل توسعه است یا نه استفاده می شود. یعنی اینکه آیا می تواند ویژگی های جدیدی به آن اضافه شود یا خیر.
 
      <span dir="ltr" align="left">
 
@@ -5386,13 +5384,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** By default, all the objects are extendable. i.e, The new properties can be added or modified.
+     **نکته:** به طور پیش فرض، تمام اشیاء قابل گسترش هستند. به عنوان مثال، ویژگی های جدید را می توان اضافه یا تغییر داد.
 
      **[⬆ فهرست](#فهرست)**
 
 262. ### How do you prevent an object to extend
 
-     The `Object.preventExtensions()` method is used to prevent new properties from ever being added to an object. In other words, it prevents future extensions to the object. Let's see the usage of this property,
+     متد «Object.preventExtensions()» برای جلوگیری از افزودن ویژگی های جدید به یک شی استفاده می شود. به عبارت دیگر، از پسوندهای بعدی به شی جلوگیری می کند. بیایید استفاده از این ویژگی را ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -5415,7 +5413,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 263. ### What are the different ways to make an object non-extensible
 
-     You can mark an object non-extensible in 3 ways,
+     شما می توانید یک شی غیر قابل گسترش را به 3 روش علامت گذاری کنید.
   1. Object.preventExtensions
   2. Object.seal
   3. Object.freeze
@@ -5441,7 +5439,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 264. ### How do you define multiple properties on an object
 
-     The `Object.defineProperties()` method is used to define new or modify existing properties directly on an object and returning the object. Let's define multiple properties on an empty object,
+     متد «Object.defineProperties()» برای تعریف یا اصلاح ویژگی‌های موجود مستقیماً روی یک شی و برگرداندن شی استفاده می‌شود. بیایید چندین ویژگی را روی یک شی خالی تعریف کنیم،
 
      <span dir="ltr" align="left">
 
@@ -5463,14 +5461,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 265. ### What is MEAN in javascript
 
-     The MEAN (MongoDB, Express, AngularJS, and Node.js) stack is the most popular open-source JavaScript software tech stack available for building dynamic web apps where you can write both the server-side and client-side halves of the web project entirely in JavaScript.
+     پشته MEAN (MongoDB، Express، AngularJS و Node.js) محبوب‌ترین پشته فناوری نرم‌افزار جاوا اسکریپت منبع باز است که برای ساخت برنامه‌های وب پویا در دسترس است، جایی که می‌توانید نیمه‌های سمت سرور و سمت مشتری پروژه وب را بنویسید. کاملا در جاوا اسکریپت
 
      **[⬆ فهرست](#فهرست)**
 
 266. ### What Is Obfuscation in javascript
 
-     Obfuscation is the deliberate act of creating obfuscated javascript code(i.e, source or machine code) that is difficult for humans to understand. It is something similar to encryption, but a machine can understand the code and execute it.
-     Let's see the below function before Obfuscation,
+    مبهم سازی عمل عمدی ایجاد کد جاوا اسکریپت مبهم (یعنی کد منبع یا ماشین) است که درک آن برای انسان دشوار است. این چیزی شبیه به رمزگذاری است، اما یک ماشین می تواند کد را درک کرده و آن را اجرا کند.
+      بیایید تابع زیر را قبل از Obfuscation ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -5482,8 +5480,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     And after the code Obfuscation, it would be appeared as below,
-
+     و بعد از کد Obfuscation به صورت زیر ظاهر می شود
      <span dir="ltr" align="left">
 
      ```javascript
@@ -5496,44 +5493,43 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 267. ### Why do you need Obfuscation
 
-     Below are the few reasons for Obfuscation,
-  1. The Code size will be reduced. So data transfers between server and client will be fast.
-  2. It hides the business logic from outside world and protects the code from others
-  3. Reverse engineering is highly difficult
-  4. The download time will be reduced
+    در زیر چند دلیل برای مبهم سازی آمده است،
+  1. اندازه کد کاهش می یابد. بنابراین انتقال داده بین سرور و مشتری سریع خواهد بود.
+  2. این منطق کسب و کار را از دنیای خارج پنهان می کند و از کد در برابر دیگران محافظت می کند
+  3. مهندسی معکوس بسیار دشوار است
+  4. زمان دانلود کاهش می یابد
 
      **[⬆ فهرست](#فهرست)**
 
 268. ### What is Minification
 
-     Minification is the process of removing all unnecessary characters(empty spaces are removed) and variables will be renamed without changing it's functionality. It is also a type of obfuscation .
+     کوچک سازی فرآیند حذف تمام کاراکترهای غیر ضروری است (فضاهای خالی حذف می شوند) و متغیرها بدون تغییر در عملکرد آن تغییر نام می دهند. همچنین نوعی مبهم است.
 
      **[⬆ فهرست](#فهرست)**
 
 269. ### What are the advantages of minification
 
-     Normally it is recommended to use minification for heavy traffic and intensive requirements of resources. It reduces file sizes with below benefits,
-  1. Decreases loading times of a web page
-  2. Saves bandwidth usages
+     به طور معمول توصیه می شود برای ترافیک سنگین و نیازهای فشرده منابع از Minification استفاده کنید. اندازه فایل را با مزایای زیر کاهش می دهد
+  1. زمان بارگذاری یک صفحه وب را کاهش می دهد
+  2. در مصرف پهنای باند صرفه جویی می کند
 
      **[⬆ فهرست](#فهرست)**
 
 270. ### What are the differences between Obfuscation and Encryption
 
-     Below are the main differences between Obfuscation and Encryption,
-
-     | Feature | Obfuscation | Encryption |
-          |---- | --------- | ----
-     | Definition  | Changing the form of any data in any other form  | Changing the form of information to an unreadable format by using a key |
-     | A key to decode | It can be decoded without any key  | It is required |
-     | Target data format | It will be converted to a complex form  | Converted into an unreadable format  |
+     در زیر تفاوت های اصلی بین مبهم سازی و رمزگذاری وجود دارد.
+| ویژگی | مبهم سازی | رمزگذاری |
+           |---- | --------- | ----
+      | تعریف | تغییر فرم هر داده به هر شکل دیگر | تغییر فرم اطلاعات به فرمت ناخوانا با استفاده از کلید |
+      | کلیدی برای رمزگشایی | می توان آن را بدون هیچ کلید رمزگشایی کرد | لازم است |
+      | فرمت داده های هدف | به فرم پیچیده تبدیل می شود | تبدیل به فرمت ناخوانا |
 
      **[⬆ فهرست](#فهرست)**
 
 271. ### What are the common tools used for minification
 
-     There are many online/offline tools to minify the javascript files,
-  1. Google's Closure Compiler
+     ابزارهای آنلاین/آفلاین زیادی برای کوچک کردن فایل‌های جاوا اسکریپت وجود دارد.
+  1. کامپایلر بسته شدن گوگل
   2. UglifyJS2
   3. jsmin
   4. javascript-minifier.com/
@@ -5543,8 +5539,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 272. ### How do you perform form validation using javascript
 
-     JavaScript can be used to perform HTML form validation. For example, if the form field is empty, the function needs to notify, and return false, to prevent the form being submitted.
-     Lets' perform user login in an html form,
+     از جاوا اسکریپت می توان برای اعتبار سنجی فرم HTML استفاده کرد. به عنوان مثال، اگر فیلد فرم خالی باشد، تابع باید اطلاع دهد و false را برگرداند تا از ارسال فرم جلوگیری شود.
+      اجازه دهید ورود کاربر را در فرم html انجام دهیم،
 
      <span dir="ltr" align="left">
 
@@ -5557,7 +5553,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     And the validation on user login is below,
+     و اعتبار سنجی ورود کاربر در زیر است،
 
      <span dir="ltr" align="left">
 
@@ -5577,7 +5573,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 273. ### How do you perform form validation without javascript
 
-     You can perform HTML form validation automatically without using javascript. The validation enabled by applying the `required` attribute to prevent form submission when the input is empty.
+     می توانید بدون استفاده از جاوا اسکریپت اعتبار سنجی فرم HTML را به صورت خودکار انجام دهید. اعتبار سنجی با اعمال ویژگی «لازم» برای جلوگیری از ارسال فرم زمانی که ورودی خالی است فعال می شود.
 
      <span dir="ltr" align="left">
 
@@ -5590,16 +5586,16 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** Automatic form validation does not work in Internet Explorer 9 or earlier.
+     **نکته:** اعتبار سنجی فرم خودکار در اینترنت اکسپلورر 9 یا قبل از آن کار نمی کند.
 
      **[⬆ فهرست](#فهرست)**
 
 274. ### What are the DOM methods available for constraint validation
 
-     The below DOM methods are available for constraint validation on an invalid input,
-  1. checkValidity(): It returns true if an input element contains valid data.
-  2. setCustomValidity(): It is used to set the validationMessage property of an input element.
-     Let's take an user login form with DOM validations
+     روش‌های DOM زیر برای اعتبارسنجی محدودیت در ورودی نامعتبر موجود است.
+  1. checkValidity(): اگر یک عنصر ورودی حاوی داده های معتبر باشد، مقدار true را برمی گرداند.
+  2. setCustomValidity(): برای تنظیم خاصیت validationMessage یک عنصر ورودی استفاده می شود.
+     بیایید یک فرم ورود کاربر با اعتبارسنجی DOM بگیریم
 
      <span dir="ltr" align="left">
 
@@ -5620,33 +5616,33 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 275. ### What are the available constraint validation DOM properties
 
-     Below are the list of some of the constraint validation DOM properties available,
+     در زیر لیستی از برخی از ویژگی های DOM اعتبارسنجی محدودیت موجود است،
 
-  1. validity: It provides a list of boolean properties related to the validity of an input element.
-  2. validationMessage: It displays the message when the validity is false.
-  3. willValidate: It indicates if an input element will be validated or not.
+  1. validity: فهرستی از ویژگی های بولی مربوط به اعتبار یک عنصر ورودی را ارائه می دهد.
+  2. validationMessage: زمانی که اعتبار نادرست باشد، پیام را نمایش می دهد.
+  3. willValidate: این نشان می دهد که آیا یک عنصر ورودی اعتبار سنجی می شود یا خیر.
 
      **[⬆ فهرست](#فهرست)**
 
 276. ### What are the list of validity properties
 
-     The validity property of an input element provides a set of properties related to the validity of data.
+     ویژگی اعتبار یک عنصر ورودی مجموعه ای از ویژگی های مربوط به اعتبار داده ها را ارائه می دهد.
 
-  1. customError: It returns true, if a custom validity message is set.
-  2. patternMismatch: It returns true, if an element's value does not match its pattern attribute.
-  3. rangeOverflow: It returns true, if an element's value is greater than its max attribute.
-  4. rangeUnderflow: It returns true, if an element's value is less than its min attribute.
-  5. stepMismatch: It returns true, if an element's value is invalid according to step attribute.
-  6. tooLong: It returns true, if an element's value exceeds its maxLength attribute.
-  7. typeMismatch: It returns true, if an element's value is invalid according to type attribute.
-  8. valueMissing: It returns true, if an element with a required attribute has no value.
-  9. valid: It returns true, if an element's value is valid.
+  1. customError: اگر یک پیام اعتبار سفارشی تنظیم شده باشد، true را برمی گرداند.
+  2. patternMismatch: اگر مقدار یک عنصر با ویژگی الگوی آن مطابقت نداشته باشد، مقدار true را برمی گرداند.
+  3. rangeOverflow: اگر مقدار یک عنصر از ویژگی max آن بیشتر باشد، مقدار true را برمی گرداند.
+  4. rangeUnderflow:اگر مقدار یک عنصر کمتر از ویژگی min باشد، مقدار true را برمی گرداند.
+  5. stepMismatch:اگر مقدار عنصر مطابق با ویژگی step نامعتبر باشد، مقدار true را برمی گرداند.
+  6. tooLong: اگر مقدار یک عنصر از ویژگی maxLength آن بیشتر شود، مقدار true را برمی گرداند.
+  7. typeMismatch: اگر مقدار یک عنصر بر اساس ویژگی نوع نامعتبر باشد، مقدار true را برمی گرداند.
+  8. valueMissing: اگر عنصری با ویژگی مورد نیاز ارزش نداشته باشد، مقدار true را برمی گرداند.
+  9. valid: اگر مقدار یک عنصر معتبر باشد، مقدار true را برمی گرداند.
 
      **[⬆ فهرست](#فهرست)**
 
 277. ### Give an example usage of rangeOverflow property
 
-     If an element's value is greater than its max attribute then rangeOverflow property returns true. For example, the below form submission throws an error if the value is more than 100,
+     اگر مقدار یک عنصر از ویژگی max آن بیشتر باشد، ویژگی rangeOverflow مقدار true را برمی گرداند. به عنوان مثال، فرم ارسالی زیر اگر مقدار آن بیش از 100 باشد، خطا می دهد.
 
      <span dir="ltr" align="left">
 
@@ -5673,7 +5669,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 278. ### Is enums feature available in javascript
 
-     No, javascript does not natively support enums. But there are different kinds of solutions to simulate them even though they may not provide exact equivalents. For example, you can use freeze or seal on object,
+     نه، جاوا اسکریپت به صورت بومی از enum ها پشتیبانی نمی کند. اما انواع مختلفی از راه‌حل‌ها برای شبیه‌سازی آنها وجود دارد، اگرچه ممکن است معادل‌های دقیقی ارائه نکنند. به عنوان مثال، می توانید از فریز یا مهر و موم روی شی استفاده کنید
 
      <span dir="ltr" align="left">
 
@@ -5687,8 +5683,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 279. ### What is an enum
 
-     An enum is a type restricting variables to one value from a predefined set of constants. JavaScript has no enums but typescript provides built-in enum support.
-
+     enum نوعی است که متغیرها را به یک مقدار از مجموعه ای از ثابت های از پیش تعریف شده محدود می کند. جاوا اسکریپت هیچ enum ندارد اما تایپ اسکریپت از enum داخلی پشتیبانی می کند.
      <span dir="ltr" align="left">
 
      ```javascript
@@ -5703,7 +5698,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 280. ### How do you list all properties of an object
 
-     You can use the `Object.getOwnPropertyNames()` method which returns an array of all properties found directly in a given object. Let's the usage of it in an example,
+     می‌توانید از متد Object.getOwnPropertyNames()» استفاده کنید که آرایه‌ای از تمام ویژگی‌هایی را که مستقیماً در یک شیء داده شده یافت می‌شود، برمی‌گرداند. بیایید استفاده از آن را در یک مثال بیان کنیم،
 
      <span dir="ltr" align="left">
 
@@ -5723,7 +5718,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 281. ### How do you get property descriptors of an object
 
-     You can use the `Object.getOwnPropertyDescriptors()` method which returns all own property descriptors of a given object. The example usage of this method is below,
+     می‌توانید از متد Object.getOwnPropertyDescriptors()» استفاده کنید که تمام توصیف‌گرهای ویژگی یک شی معین را برمی‌گرداند. مثال استفاده از این روش در زیر آمده است
 
      <span dir="ltr" align="left">
 
@@ -5746,19 +5741,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 282. ### What are the attributes provided by a property descriptor
 
-     A property descriptor is a record which has the following attributes
-  1. value: The value associated with the property
-  2. writable: Determines whether the value associated with the property can be changed or not
-  3. configurable: Returns true if the type of this property descriptor can be changed and if the property can be deleted from the corresponding object.
-  4. enumerable: Determines whether the property appears during enumeration of the properties on the corresponding object or not.
-  5. set: A function which serves as a setter for the property
-  6. get: A function which serves as a getter for the property
+     توصیفگر ویژگی رکوردی است که دارای ویژگی های زیر است
+  1. value:ارزش مرتبط با ملک
+  2. writable:تعیین می کند که آیا مقدار مرتبط با ویژگی قابل تغییر است یا خیر
+  3. configurable: اگر بتوان نوع توصیفگر این ویژگی را تغییر داد و اگر ویژگی را بتوان از شی مربوطه حذف کرد، مقدار true را برمی‌گرداند.
+  4. enumerable: تعیین می کند که آیا ویژگی در هنگام شمارش خصوصیات روی شی مربوطه ظاهر می شود یا خیر.
+  5. set: تابعی که به عنوان تنظیم کننده برای ویژگی عمل می کند
+  6. get: تابعی که به عنوان یک گیرنده برای ملک عمل می کند
 
      **[⬆ فهرست](#فهرست)**
 
 283. ### How do you extend classes
 
-     The `extends` keyword is used in class declarations/expressions to create a class which is a child of another class. It can be used to subclass custom classes as well as built-in objects. The syntax would be as below,
+     کلمه کلیدی "extends" در اعلان ها/عبارات کلاس برای ایجاد کلاسی که فرزند کلاس دیگری است استفاده می شود. می توان از آن برای زیر کلاس بندی کلاس های سفارشی و همچنین اشیاء داخلی استفاده کرد. نحو به صورت زیر خواهد بود،
 
      <span dir="ltr" align="left">
 
@@ -5768,7 +5763,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Let's take an example of Square subclass from Polygon parent class,
+     بیایید یک نمونه از زیر کلاس مربع از کلاس والد Polygon را مثال بزنیم،
 
      <span dir="ltr" align="left">
 
@@ -5795,7 +5790,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 284. ### How do I modify the url without reloading the page
 
-     The `window.location.url` property will be helpful to modify the url but it reloads the page. HTML5 introduced the `history.pushState()` and `history.replaceState()` methods, which allow you to add and modify history entries, respectively. For example, you can use pushState as below,
+     ویژگی «window.location.url» برای تغییر url مفید خواهد بود اما صفحه را دوباره بارگیری می کند. HTML5 متدهای «history.pushState()» و «history.replaceState()» را معرفی کرد که به شما اجازه می‌دهد به ترتیب ورودی‌های تاریخ را اضافه و تغییر دهید. به عنوان مثال، می توانید از pushState مانند زیر استفاده کنید.
 
      <span dir="ltr" align="left">
 
@@ -5809,7 +5804,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 285. ### How do you check whether an array includes a particular value or not
 
-     The `Array#includes()` method is used to determine whether an array includes a particular value among its entries by returning either true or false. Let's see an example to find an element(numeric and string) within an array.
+     متد «Array#includes()» برای تعیین اینکه آیا یک آرایه دارای مقدار خاصی در میان ورودی‌های خود با برگرداندن true یا false است یا خیر استفاده می‌شود. بیایید مثالی برای یافتن یک عنصر (عددی و رشته ای) در یک آرایه ببینیم.
 
      <span dir="ltr" align="left">
 
@@ -5827,7 +5822,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 286. ### How do you compare scalar arrays
 
-     You can use length and every method of arrays to compare two scalar(compared directly using ===) arrays. The combination of these expressions can give the expected result,
+     می توانید از طول و هر روش آرایه برای مقایسه دو آرایه اسکالر (مقایسه مستقیم با استفاده از ===) استفاده کنید. ترکیب این عبارات می تواند نتیجه مورد انتظار را به دست دهد،
 
      <span dir="ltr" align="left">
 
@@ -5840,7 +5835,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
 
-     If you would like to compare arrays irrespective of order then you should sort them before,
+     اگر می خواهید آرایه ها را بدون توجه به ترتیب مقایسه کنید، باید آنها را قبل از مرتب سازی، مرتب کنید.
 
      <span dir="ltr" align="left">
 
@@ -5856,7 +5851,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 287. ### How to get the value from get parameters
 
-     The `new URL()` object accepts the url string and `searchParams` property of this object can be used to access the get parameters. Remember that you may need to use polyfill or `window.location` to access the URL in older browsers(including IE).
+     شیء «URL()» رشته url را می‌پذیرد و از ویژگی «searchParams» این شی می‌توان برای دسترسی به پارامترهای get استفاده کرد. به یاد داشته باشید که ممکن است برای دسترسی به URL در مرورگرهای قدیمی (از جمله IE) نیاز به استفاده از polyfill یا «window.location» داشته باشید.
 
      <span dir="ltr" align="left">
 
@@ -5873,7 +5868,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 288. ### How do you print numbers with commas as thousand separators
 
-     You can use the `Number.prototype.toLocaleString()` method which returns a string with a language-sensitive representation such as thousand separator,currency etc of this number.
+     می‌توانید از متد «Number.prototype.toLocaleString()» استفاده کنید که رشته‌ای را با نمایشی حساس به زبان مانند جداکننده هزار، ارز و غیره از این عدد برمی‌گرداند.
 
      <span dir="ltr" align="left">
 
@@ -5891,20 +5886,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 289. ### What is the difference between java and javascript
 
-     Both are totally unrelated programming languages and no relation between them. Java is statically typed, compiled, runs on its own VM. Whereas Javascript is dynamically typed, interpreted, and runs in a browser and nodejs environments. Let's see the major differences in a tabular format,
-     | Feature | Java | JavaScript |
-     |---- | ---- | -----
-     | Typed  | It's a strongly typed language | It's a dynamic typed language |
-     | Paradigm | Object oriented programming  | Prototype based programming |
-     | Scoping | Block scoped | Function-scoped |
-     | Concurrency | Thread based | event based |
-     | Memory | Uses more memory | Uses less memory. Hence it will be used for web pages |
-
+     هر دو زبان برنامه نویسی کاملاً نامرتبط هستند و هیچ ارتباطی بین آنها وجود ندارد. جاوا بصورت ایستا تایپ می شود، کامپایل می شود، روی ماشین مجازی خود اجرا می شود. در حالی که جاوا اسکریپت به صورت پویا تایپ می شود، تفسیر می شود و در محیط های مرورگر و nodejs اجرا می شود. بیایید تفاوت های عمده را در قالب جدولی ببینیم،
+      | ویژگی | جاوا | جاوا اسکریپت |
+      |---- | ---- | -----
+      | تایپ شده | این یک زبان قوی تایپ شده است | این یک زبان تایپ شده پویا است |
+      | پارادایم | برنامه نویسی شی گرا | برنامه نویسی مبتنی بر نمونه اولیه |
+      | محدوده | محدوده بلوک | محدوده عملکردی |
+      | همزمانی | بر اساس موضوع | مبتنی بر رویداد |
+      | حافظه | از حافظه بیشتر استفاده می کند | از حافظه کمتری استفاده می کند. از این رو برای صفحات وب استفاده خواهد شد |
      **[⬆ فهرست](#فهرست)**
 
 290. ### Is javascript supports namespace
 
-     JavaScript doesn’t support namespace by default. So if you create any element(function, method, object, variable) then it becomes global and pollutes the global namespace. Let's take an example of defining two functions without any namespace,
+     جاوا اسکریپت به طور پیش فرض از فضای نام پشتیبانی نمی کند. بنابراین اگر هر عنصری (تابع، روش، شی، متغیر) ایجاد کنید، جهانی می شود و فضای نام جهانی را آلوده می کند. بیایید مثالی از تعریف دو تابع بدون فضای نام بیاوریم،
 
      <span dir="ltr" align="left">
 
@@ -5921,14 +5915,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     It always calls the second function definition. In this case, namespace will solve the name collision problem.
+     همیشه تعریف تابع دوم را فراخوانی می کند. در این صورت فضای نام مشکل برخورد نام را حل می کند.
 
      **[⬆ فهرست](#فهرست)**
 
 291. ### How do you declare namespace
 
-     Even though JavaScript lacks namespaces, we can use Objects , IIFE to create namespaces.
-  1. **Using Object Literal Notation:** Let's wrap variables and functions inside an Object literal which acts as a namespace. After that you can access them using object notation
+     حتی اگر جاوا اسکریپت فاقد فضاهای نام باشد، می‌توانیم از Objects، IIFE برای ایجاد فضاهای نام استفاده کنیم.
+  1. **Using Object Literal Notation:** بیایید متغیرها و توابع را درون یک Object literal بپیچیم که به عنوان فضای نام عمل می کند. پس از آن می توانید با استفاده از نماد شیء به آنها دسترسی داشته باشید
 
      <span dir="ltr" align="left">
 
@@ -5949,7 +5943,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using IIFE (Immediately invoked function expression):** The outer pair of parentheses of IIFE creates a local scope for all the code inside of it and makes the anonymous function a function expression. Due to that, you can create the same function in two different function expressions to act as a namespace.
+  1. **Using IIFE (Immediately invoked function expression):** جفت پرانتز بیرونی IIFE یک محدوده محلی برای تمام کدهای داخل آن ایجاد می کند و تابع ناشناس را به یک عبارت تابع تبدیل می کند. به همین دلیل، می توانید یک تابع را در دو عبارت تابع مختلف ایجاد کنید تا به عنوان فضای نام عمل کند.
 
      <span dir="ltr" align="left">
 
@@ -5969,7 +5963,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using a block and a let/const declaration:** In ECMAScript 6, you can simply use a block and a let declaration to restrict the scope of a variable to a block.
+  1. **Using a block and a let/const declaration:** در ECMAScript 6، شما می توانید به سادگی از یک بلوک و یک اعلان let برای محدود کردن دامنه یک متغیر به یک بلوک استفاده کنید.
 
      <span dir="ltr" align="left">
 
@@ -5997,7 +5991,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 292. ### How do you invoke javascript code in an iframe from parent page
 
-     Initially iFrame needs to be accessed using either `document.getElementBy` or `window.frames`. After that `contentWindow` property of iFrame gives the access for targetFunction
+     در ابتدا باید iFrame با استفاده از «document.getElementBy» یا «window.frames» قابل دسترسی باشد. پس از آن ویژگی «contentWindow» iFrame به targetFunction دسترسی می دهد
 
      <span dir="ltr" align="left">
 
@@ -6013,7 +6007,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 293. ### How do get the timezone offset from date
 
-     You can use the `getTimezoneOffset` method of the date object. This method returns the time zone difference, in minutes, from current locale (host system settings) to UTC
+     می‌توانید از روش «getTimezoneOffset» شی تاریخ استفاده کنید. این روش اختلاف منطقه زمانی را بر حسب دقیقه از محلی فعلی (تنظیمات سیستم میزبان) به UTC برمی گرداند
 
      <span dir="ltr" align="left">
 
@@ -6028,7 +6022,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 294. ### How do you load CSS and JS files dynamically
 
-     You can create both link and script elements in the DOM and append them as child to head tag. Let's create a function to add script and style resources as below,
+     شما می توانید هر دو عنصر پیوند و اسکریپت را در DOM ایجاد کنید و آنها را به عنوان فرزند به تگ head اضافه کنید. بیایید یک تابع برای اضافه کردن منابع اسکریپت و سبک مانند زیر ایجاد کنیم.
 
      <span dir="ltr" align="left">
 
@@ -6055,16 +6049,16 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 295. ### What are the different methods to find HTML elements in DOM
 
-     If you want to access any element in an HTML page, you need to start with accessing the document object. Later you can use any of the below methods to find the HTML element,
-  1. document.getElementById(id): It finds an element by Id
-  2. document.getElementsByTagName(name): It finds an element by tag name
-  3. document.getElementsByClassName(name): It finds an element by class name
+     اگر می خواهید به هر عنصری در صفحه HTML دسترسی داشته باشید، باید با دسترسی به شی سند شروع کنید. بعداً می توانید از یکی از روش های زیر برای یافتن عنصر HTML استفاده کنید.
+  1. document.getElementById(id): یک عنصر را با Id پیدا می کند
+  2. document.getElementsByTagName(name): یک عنصر را با نام تگ پیدا می کند
+  3. document.getElementsByClassName(name):یک عنصر را با نام کلاس پیدا می کند
 
      **[⬆ فهرست](#فهرست)**
 
 296. ### What is jQuery
 
-     jQuery is a popular cross-browser JavaScript library that provides Document Object Model (DOM) traversal, event handling, animations and AJAX interactions by minimizing the discrepancies across browsers. It is widely famous with its philosophy of “Write less, do more”. For example, you can display welcome message on the page load using jQuery as below,
+     jQuery یک کتابخانه جاوا اسکریپت متقابل مرورگر محبوب است که با به حداقل رساندن اختلاف بین مرورگرها، پیمایش مدل شی سند (DOM)، مدیریت رویداد، انیمیشن‌ها و تعاملات AJAX را فراهم می‌کند. با فلسفه اش «کمتر بنویس، بیشتر انجام بده» شهرت زیادی دارد. به عنوان مثال، می توانید پیام خوش آمدگویی را در بارگذاری صفحه با استفاده از jQuery به صورت زیر نمایش دهید.
 
      <span dir="ltr" align="left">
 
@@ -6076,20 +6070,20 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** You can download it from jquery's official site or install it from CDNs, like google.
+     **نکته:**می توانید آن را از سایت رسمی jquery دانلود کنید یا از CDN ها مانند گوگل نصب کنید.
 
      **[⬆ فهرست](#فهرست)**
 
 297. ### What is V8 JavaScript engine
 
-     V8 is an open source high-performance JavaScript engine used by the Google Chrome browser, written in C++. It is also being used in the node.js project. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors.
-     **Note:** It can run standalone, or can be embedded into any C++ application.
+     V8 یک موتور جاوا اسکریپت با کارایی بالا منبع باز است که توسط مرورگر Google Chrome استفاده می شود و به زبان C++ نوشته شده است. همچنین در پروژه node.js استفاده می شود. ECMAScript و WebAssembly را پیاده‌سازی می‌کند و روی ویندوز 7 یا بالاتر، macOS 10.12+ و سیستم‌های لینوکس که از پردازنده‌های x64، IA-32، ARM یا MIPS استفاده می‌کنند، اجرا می‌شود.
+     **نکته:** می تواند به صورت مستقل اجرا شود یا می تواند در هر برنامه C++ تعبیه شود.
 
      **[⬆ فهرست](#فهرست)**
 
 298. ### Why do we call javascript as dynamic language
 
-     JavaScript is a loosely typed or a dynamic language because variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned/reassigned with values of all types.
+     جاوا اسکریپت یک زبان ساده تایپ شده یا یک زبان پویا است زیرا متغیرها در جاوا اسکریپت مستقیماً با هیچ نوع مقدار خاصی مرتبط نیستند و هر متغیری را می توان با مقادیری از همه نوع تخصیص/تخصیص مجدد داد.
 
      <span dir="ltr" align="left">
 
@@ -6105,7 +6099,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 299. ### What is a void operator
 
-     The `void` operator evaluates the given expression and then returns undefined(i.e, without returning value). The syntax would be as below,
+     عملگر «void» عبارت داده شده را ارزیابی می کند و سپس تعریف نشده (یعنی بدون بازگشت مقدار) را برمی گرداند. نحو به صورت زیر خواهد بود،
 
      <span dir="ltr" align="left">
 
@@ -6116,8 +6110,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Let's display a message without any redirections or reloads
-
+     بیایید پیامی را بدون هیچ گونه تغییر مسیر یا بارگیری مجدد نمایش دهیم
      <span dir="ltr" align="left">
 
      ```javascript
@@ -6126,13 +6119,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** This operator is often used to obtain the undefined primitive value, using "void(0)".
+     **نکته:** این عملگر اغلب برای بدست آوردن مقدار اولیه تعریف نشده با استفاده از "void(0)" استفاده می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 300. ### How to set the cursor to wait
 
-     The cursor can be set to wait in JavaScript by using the property "cursor". Let's perform this behavior on page load using the below function.
+     مکان نما را می توان برای انتظار در جاوا اسکریپت با استفاده از ویژگی "cursor" تنظیم کرد. بیایید این رفتار را در بارگذاری صفحه با استفاده از تابع زیر انجام دهیم.
 
      <span dir="ltr" align="left">
 
@@ -6144,7 +6137,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     and this function invoked on page load
+     و این تابع در بارگذاری صفحه فراخوانی می شود
 
      <span dir="ltr" align="left">
 
