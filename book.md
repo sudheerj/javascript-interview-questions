@@ -19,7 +19,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 </div>'
 ---
 
-<span dir="rtl">
+<div dir="rtl" style="text-align: right">
 
 # مجموعه سوال و جواب‌های جاواسکریپتی
 
@@ -4211,7 +4211,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      }
      ```
 
-     </span>
+     </div>
 
      **نکته:** سفارش به عنوان شی تعریف شده تضمین نمی شود.
 
