@@ -6249,9 +6249,11 @@ You can download the PDF and Epub version of this repository from the latest run
        perimeter: () => 2 * Math.PI * this.radius,
      };
      ```
-
+     
+     ```javascript
      console.log(circle.diameter());
      console.log(circle.perimeter());
+     ```
 
      **Output:**
 
