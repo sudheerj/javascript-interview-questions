@@ -19,7 +19,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 </div>'
 ---
 
-<div dir="rtl" style="text-align: right">
+<div dir="rtl" align="right">
 
 # مجموعه سوال و جواب‌های جاواسکریپتی
 
@@ -462,7 +462,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 |419| [How do you define instance and non-instance properties]() |
 |420| [تفاوت‌های بین isNaN و Number.isNaN کدوما هستن؟]() |
 
-<div dir="rtl" style="text-align: right">
+<div dir="rtl" align="right">
 
 1. ### روش‌های ایجاد objects توی جاواسکریپت چیا هستن؟
 
