@@ -6151,7 +6151,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 301. ### How do you create an infinite loop
 
-     You can create infinite loops using for and while loops without using any expressions. The for loop construct or syntax is better approach in terms of ESLint and code optimizer tools,
+     شما می توانید حلقه های بی نهایت با استفاده از حلقه های for و while بدون استفاده از هیچ عبارتی ایجاد کنید. ساختار یا نحو حلقه for از نظر ESLint و ابزارهای بهینه ساز کد، رویکرد بهتری است.
 
      <span dir="ltr" align="left">
 
@@ -6167,7 +6167,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 302. ### Why do you need to avoid with statement
 
-     JavaScript's with statement was intended to provide a shorthand for writing recurring accesses to objects. So it can help reduce file size by reducing the need to repeat a lengthy object reference without performance penalty. Let's take an example where it is used to avoid redundancy when accessing an object several times.
+     دستور با جاوا اسکریپت در نظر گرفته شده بود که مختصری برای نوشتن دسترسی های تکرارشونده به اشیا ارائه دهد. بنابراین می‌تواند با کاهش نیاز به تکرار یک مرجع طولانی بدون جریمه عملکرد، به کاهش اندازه فایل کمک کند. بیایید مثالی بزنیم که در آن برای جلوگیری از افزونگی هنگام چندین بار دسترسی به یک شی استفاده می شود.
 
      <span dir="ltr" align="left">
 
@@ -6191,7 +6191,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     But this `with` statement creates performance problems since one cannot predict whether an argument will refer to a real variable or to a property inside the with argument.
+     اما این عبارت «with» مشکلات عملکردی ایجاد می‌کند، زیرا نمی‌توان پیش‌بینی کرد که آیا یک آرگومان به یک متغیر واقعی اشاره می‌کند یا به یک ویژگی درون آرگومان with.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -6211,19 +6211,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The output of the above for loops is 4 4 4 4 and 0 1 2 3
-     **Explanation:** Due to the event queue/loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with the `var` keyword it became a global variable and the value was equal to 4 using iteration when the time setTimeout function is invoked. Hence, the output of the first loop is `4 4 4 4`. Whereas in the second loop, the variable i is declared as the `let` keyword it becomes a block scoped variable and it holds a new value(0, 1 ,2 3) for each iteration. Hence, the output of the first loop is `0 1 2 3`.
+     خروجی حلقه های بالا 4 4 4 4 و 0 1 2 3 است
+     **توضیح:** با توجه به صف رویداد/حلقه جاوا اسکریپت، تابع 'setTimeout' پس از اجرای حلقه فراخوانی می شود. از آنجایی که متغیر i با کلمه کلیدی "var" اعلان می شود، به یک متغیر جهانی تبدیل می شود و با استفاده از تکرار زمانی که تابع time setTimeout فراخوانی می شود، مقدار آن برابر با 4 است. بنابراین، خروجی حلقه اول '4 4 4 4' است. در حالی که در حلقه دوم، متغیر i به‌عنوان کلمه کلیدی «let» اعلام می‌شود، به متغیری با محدوده بلوک تبدیل می‌شود و یک مقدار جدید (0, 1,2 3) برای هر تکرار دارد. بنابراین، خروجی حلقه اول «0 1 2 3» است.
 
      **[⬆ فهرست](#فهرست)**
 
 304. ### List down some of the features of ES6
 
-     Below are the list of some new features of ES6,
-  1. Support for constants or immutable variables
-  2. Block-scope support for variables, constants and functions
+     در زیر لیستی از برخی از ویژگی های جدید ES6 آمده است.
+  1. پشتیبانی از ثابت ها یا متغیرهای تغییرناپذیر
+  2. پشتیبانی Block-scope برای متغیرها، ثابت ها و توابع
   3. Arrow functions
-  4. Default parameters
-  5. Rest and Spread Parameters
+  4. پارامترهای پیش فرض
+  5. پارامتر های Rest and Spread 
   6. Template Literals
   7. Multi-line Strings
   8. Destructuring Assignment
@@ -6236,13 +6236,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 305. ### What is ES6
 
-     ES6 is the sixth edition of the javascript language and it was released in June 2015. It was initially known as ECMAScript 6 (ES6) and later renamed to ECMAScript 2015. Almost all the modern browsers support ES6 but for the old browsers there are many transpilers, like Babel.js etc.
+     ES6 ششمین نسخه از زبان جاوا اسکریپت است و در ژوئن 2015 منتشر شد. در ابتدا با نام ECMAScript 6 (ES6) شناخته شد و بعداً به ECMAScript 2015 تغییر نام داد. تقریباً همه مرورگرهای مدرن از ES6 پشتیبانی می کنند اما برای مرورگرهای قدیمی ترانسپایلرهای زیادی وجود دارد. ، مانند Babel.js و غیره
 
      **[⬆ فهرست](#فهرست)**
 
 306. ### Can I redeclare let and const variables
 
-     No, you cannot redeclare let and const variables. If you do, it throws below error
+     نه، شما نمی توانید متغیرهای let و const را مجدداً اعلام کنید. اگر این کار را انجام دهید، خطای زیر را نشان می دهد
 
      <span dir="ltr" align="left">
 
@@ -6252,7 +6252,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Explanation:** The variable declaration with `var` keyword refers to a function scope and the variable is treated as if it were declared at the top of the enclosing scope due to hoisting feature. So all the multiple declarations contributing to the same hoisted variable without any error. Let's take an example of re-declaring variables in the same scope for both var and let/const variables.
+     **توضیح:** اعلان متغیر با کلمه کلیدی "var" به یک محدوده تابع اشاره دارد و با متغیر به دلیل ویژگی بالا بردن به گونه ای رفتار می شود که گویی در بالای محدوده محصور اعلام شده است. بنابراین همه اعلان‌های چندگانه بدون هیچ خطایی در ایجاد یک متغیر hoisted مشترک نقش دارند. بیایید مثالی از اعلان مجدد متغیرها در یک محدوده برای متغیرهای var و let/const بزنیم.
 
      <span dir="ltr" align="left">
 
@@ -6269,7 +6269,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The block-scoped multi-declaration throws syntax error,
+     اعلان چندگانه با محدوده بلوک، خطای نحوی ایجاد می کند،
 
      <span dir="ltr" align="left">
 
@@ -6291,7 +6291,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 307. ### Is const variable makes the value immutable
 
-     No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
+     خیر، متغیر const مقدار را تغییرناپذیر نمی کند. اما تخصیص‌های بعدی را مجاز نمی‌داند (یعنی می‌توانید با تخصیص اعلام کنید اما بعداً نمی‌توانید مقدار دیگری را اختصاص دهید)
 
      <span dir="ltr" align="left">
 
@@ -6307,7 +6307,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 308. ### What are default parameters
 
-     In E5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
+     در E5، برای مدیریت مقادیر پیش‌فرض پارامترهای تابع، باید به عملگرهای OR منطقی وابسته باشیم. در حالی که در ES6، ویژگی پارامترهای تابع پیش‌فرض اجازه می‌دهد تا پارامترها با مقادیر پیش‌فرض مقداردهی اولیه شوند، اگر مقداری یا تعریف‌نشده ارسال نشود. بیایید رفتار را با یک مثال مقایسه کنیم،
 
      <span dir="ltr" align="left">
 
@@ -6324,7 +6324,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The default parameters makes the initialization more simpler,
+     پارامترهای پیش فرض، مقداردهی اولیه را ساده تر می کند،
 
      <span dir="ltr" align="left">
 
@@ -6343,8 +6343,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 309. ### What are template literals
 
-     Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
-     In E6, this feature enables using dynamic expressions as below,
+     حروف الفبای الگو یا رشته‌های الگو، حروف الفبای رشته‌ای هستند که امکان عبارات تعبیه‌شده را می‌دهند. اینها به جای گیومه های دوتایی یا تکی با کاراکتر بک تیک (`) محصور می شوند.
+      در E6، این ویژگی استفاده از عبارات پویا را به شرح زیر امکان پذیر می کند.
 
      <span dir="ltr" align="left">
 
@@ -6364,13 +6364,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** You can use multi-line strings and string interpolation features with template literals.
+     **نکته:** می‌توانید از رشته‌های چند خطی و ویژگی‌های درون‌یابی رشته‌ای با الفبای الگو استفاده کنید.
 
      **[⬆ فهرست](#فهرست)**
 
 310. ### How do you write multi-line strings in template literals
 
-     In ES5, you would have to use newline escape characters('\\n') and concatenation symbols(+) in order to get multi-line strings.
+     در ES5، برای بدست آوردن رشته های چند خطی، باید از کاراکترهای فرار از خط جدید ('\\n') و نمادهای الحاقی (+) استفاده کنید.
 
      <span dir="ltr" align="left">
 
@@ -6381,7 +6381,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Whereas in ES6, You don't need to mention any newline sequence character,
+     در حالی که در ES6، نیازی به ذکر کاراکتر دنباله خط جدید نیست،
 
      <span dir="ltr" align="left">
 
@@ -6396,7 +6396,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 311. ### What are nesting templates
 
-     The nesting template is a feature supported within template literals syntax to allow inner backticks inside a placeholder ${ } within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type,
+     الگوی تودرتو یک ویژگی است که در نحو تحت اللفظی الگو پشتیبانی می‌شود تا امکان بکتیک‌های درونی در یک مکان‌نمای ${ } را در قالب فراهم کند. برای مثال، الگوی تودرتو زیر برای نمایش نمادها بر اساس مجوزهای کاربر استفاده می‌شود، در حالی که الگوی بیرونی نوع پلت فرم را بررسی می‌کند.
 
      <span dir="ltr" align="left">
 
@@ -6407,7 +6407,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     You can write the above use case without nesting template features as well. However, the nesting template feature is more compact and readable.
+     می‌توانید مورد استفاده بالا را بدون ویژگی‌های الگوی تودرتو نیز بنویسید. با این حال، ویژگی الگوی تودرتو فشرده‌تر و خواناتر است.
 
      <span dir="ltr" align="left">
 
@@ -6423,7 +6423,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 312. ### What are tagged templates
 
-     Tagged templates are the advanced form of templates in which tags allow you to parse template literals with a function. The tag function accepts the first parameter as an array of strings and remaining parameters as expressions. This function can also return manipulated strings based on parameters. Let's see the usage of this tagged template behavior of an IT professional skill set in an organization,
+     الگوهای برچسب‌گذاری شده شکل پیشرفته‌ای از قالب‌ها هستند که در آن برچسب‌ها به شما اجازه می‌دهند تا کلمات قالب را با یک تابع تجزیه کنید. تابع تگ اولین پارامتر را به عنوان آرایه ای از رشته ها و پارامترهای باقی مانده را به عنوان عبارات می پذیرد. این تابع همچنین می تواند رشته های دستکاری شده را بر اساس پارامترها برگرداند. بیایید نحوه استفاده از رفتار الگوی برچسب گذاری شده مجموعه مهارت های حرفه ای فناوری اطلاعات در یک سازمان را ببینیم.
 
      <span dir="ltr" align="left">
 
@@ -6466,7 +6466,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 313. ### What are raw strings
 
-     ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
+     ES6 با استفاده از روش «String.raw()» ویژگی رشته‌های خام را ارائه می‌کند که برای دریافت شکل رشته خام رشته‌های الگو استفاده می‌شود. این ویژگی به شما این امکان را می‌دهد تا به رشته‌های خام همانطور که وارد شده‌اند، بدون پردازش دنباله‌های فرار دسترسی داشته باشید. به عنوان مثال، استفاده به صورت زیر خواهد بود،
 
       <span dir="ltr" align="left">
 
@@ -6477,7 +6477,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
       </span>
 
-     If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines
+     اگر از رشته های خام استفاده نمی کنید، دنباله کاراکترهای خط جدید با نمایش خروجی در چندین خط پردازش می شود.
 
      <span dir="ltr" align="left">
 
@@ -6490,7 +6490,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
       </span>
 
-     Also, the raw property is available on the first argument to the tag function
+     همچنین، ویژگی خام در اولین آرگومان تابع تگ موجود است
 
       <span dir="ltr" align="left">
 
@@ -6506,8 +6506,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 314. ### What is destructuring assignment
 
-     The destructuring assignment is a JavaScript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables.
-     Let's get the month values from an array using destructuring assignment
+     تخصیص تخریب ساختار یک عبارت جاوا اسکریپت است که امکان باز کردن مقادیر آرایه ها یا خصوصیات از اشیاء به متغیرهای مجزا را فراهم می کند.
+      بیایید مقادیر ماه را از یک آرایه با استفاده از تخصیص ساختارشکن به دست آوریم
 
      <span dir="ltr" align="left">
 
@@ -6521,7 +6521,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     and you can get user properties of an object using destructuring assignment,
+     و شما می توانید ویژگی های کاربر یک شی را با استفاده از انتساب تخریب، به دست آورید،
 
      <span dir="ltr" align="left">
 
@@ -6538,7 +6538,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 315. ### What are default values in destructuring assignment
 
-     A variable can be assigned a default value when the value unpacked from the array or object is undefined during destructuring assignment. It helps to avoid setting default values separately for each assignment. Let's take an example for both arrays and object use cases,
+     زمانی که مقدار باز شده از آرایه یا شیء در طول تخصیص ساختارشکن تعریف نشده باشد، می توان به یک متغیر یک مقدار پیش فرض اختصاص داد. این کمک می کند تا از تنظیم مقادیر پیش فرض جداگانه برای هر انتساب جلوگیری کنید. بیایید برای هر دو آرایه و موارد استفاده از شی مثالی بزنیم،
 
      **Arrays destructuring:**
 
@@ -6573,7 +6573,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 316. ### How do you swap variables in destructuring assignment
 
-     If you don't use destructuring assignment, swapping two values requires a temporary variable. Whereas using a destructuring feature, two variable values can be swapped in one destructuring expression. Let's swap two number variables in array destructuring assignment,
+     اگر از تخصیص تخریب ساختار استفاده نمی کنید، تعویض دو مقدار به یک متغیر موقت نیاز دارد. در حالی که با استفاده از یک ویژگی ساختارشکن، دو مقدار متغیر را می توان در یک عبارت ساختار شکن جایگزین کرد. بیایید دو متغیر عددی را در انتساب ساختارزدایی آرایه با هم عوض کنیم،
 
      <span dir="ltr" align="left">
 
@@ -6591,7 +6591,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 317. ### What are enhanced object literals
 
-     Object literals make it easy to quickly create objects with properties inside the curly braces. For example, it provides shorter syntax for common object property definition as below.
+     حروف الفبای شی، ایجاد سریع اجسام با ویژگی های درون بریس های فرفری را آسان می کند. برای مثال، نحو کوتاه‌تری را برای تعریف ویژگی شی مشترک به شرح زیر ارائه می‌کند.
 
      <span dir="ltr" align="left">
 
@@ -6612,8 +6612,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 318. ### What are dynamic imports
 
-     The dynamic imports using `import()` function syntax allows us to load modules on demand by using promises or the async/await syntax. Currently this feature is in [stage4 proposal](https://github.com/tc39/proposal-dynamic-import). The main advantage of dynamic imports is reduction of our bundle's sizes, the size/payload response of our requests and overall improvements in the user experience.
-     The syntax of dynamic imports would be as below,
+     واردات پویا با استفاده از نحو تابع «import()» به ما اجازه می‌دهد تا ماژول‌ها را در صورت تقاضا با استفاده از دستورات یا دستور async/await بارگذاری کنیم. در حال حاضر این ویژگی در [پیشنهاد مرحله4] (https://github.com/tc39/proposal-dynamic-import) است. مزیت اصلی واردات پویا کاهش اندازه بسته‌های ما، پاسخ حجم/بار بار درخواست‌های ما و بهبود کلی در تجربه کاربر است.
+      نحو واردات پویا به صورت زیر خواهد بود.
 
      <span dir="ltr" align="left">
 
@@ -6627,8 +6627,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 319. ### What are the use cases for dynamic imports
 
-     Below are some of the use cases of using dynamic imports over static imports,
-  1. Import a module on-demand or conditionally. For example, if you want to load a polyfill on legacy browser
+     در زیر برخی از موارد استفاده از واردات پویا نسبت به واردات استاتیک آورده شده است.
+  1. یک ماژول را به صورت درخواستی یا مشروط وارد کنید. به عنوان مثال، اگر می خواهید یک polyfill را در مرورگر قدیمی بارگذاری کنید
 
      <span dir="ltr" align="left">
 
@@ -6641,7 +6641,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. Compute the module specifier at runtime. For example, you can use it for internationalization.
+  1. تعیین کننده ماژول را در زمان اجرا محاسبه کنید. به عنوان مثال می توانید از آن برای بین المللی سازی استفاده کنید.
 
      <span dir="ltr" align="left">
 
@@ -6651,24 +6651,24 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. Import a module from within a regular script instead a module.
+  1. یک ماژول را از داخل یک اسکریپت معمولی به جای یک ماژول وارد کنید.
 
      **[⬆ فهرست](#فهرست)**
 
 320. ### What are typed arrays
 
-     Typed arrays are array-like objects from ECMAScript 6 API for handling binary data. JavaScript provides 8 Typed array types,
+     آرایه های تایپ شده اشیایی آرایه مانند از ECMAScript 6 API برای مدیریت داده های باینری هستند. جاوا اسکریپت 8 نوع آرایه تایپ شده را ارائه می دهد،
 
-  1. Int8Array: An array of 8-bit signed integers
-  2. Int16Array: An array of 16-bit signed integers
-  3. Int32Array: An array of 32-bit signed integers
-  4. Uint8Array: An array of 8-bit unsigned integers
-  5. Uint16Array: An array of 16-bit unsigned integers
-  6. Uint32Array: An array of 32-bit unsigned integers
-  7. Float32Array: An array of 32-bit floating point numbers
-  8. Float64Array: An array of 64-bit floating point numbers
+  1. Int8Array: آرایه ای از اعداد صحیح امضا شده 8 بیتی
+  2. Int16Array: آرایه ای از اعداد صحیح امضا شده 16 بیتی
+  3. Int32Array: آرایه ای از اعداد صحیح امضا شده 32 بیتی
+  4. Uint8Array: آرایه ای از اعداد صحیح بدون علامت 8 بیتی
+  5. Uint16Array: آرایه ای از اعداد صحیح بدون علامت 16 بیتی
+  6. Uint32Array:  آرایه ای از اعداد صحیح بدون علامت 32 بیتی
+  7. Float32Array:آرایه ای از اعداد ممیز شناور 32 بیتی
+  8. Float64Array: آرایه ای از اعداد ممیز شناور 64 بیتی
 
-     For example, you can create an array of 8-bit signed integers as below
+     به عنوان مثال، شما می توانید یک آرایه از اعداد صحیح امضا شده 8 بیتی مانند زیر ایجاد کنید
 
      <span dir="ltr" align="left">
 
@@ -6685,7 +6685,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 321. ### What are the advantages of module loaders
 
-     The module loaders provides the below features,
+     ماژول لودر ویژگی های زیر را ارائه می دهد
   1. Dynamic loading
   2. State isolation
   3. Global namespace isolation
@@ -6696,7 +6696,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 322. ### What is collation
 
-     Collation is used for sorting a set of strings and searching within a set of strings. It is parameterized by locale and aware of Unicode. Let's take comparison and sorting features,
+     Collation برای مرتب سازی مجموعه ای از رشته ها و جستجو در مجموعه ای از رشته ها استفاده می شود. این پارامتر توسط محلی و از Unicode آگاه است. بیایید ویژگی های مقایسه و مرتب سازی را در نظر بگیریم،
   1. **Comparison:**
 
      <span dir="ltr" align="left">
@@ -6729,7 +6729,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 323. ### What is for...of statement
 
-     The for...of statement creates a loop iterating over iterable objects or elements such as built-in String, Array, Array-like objects (like arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. The basic usage of for...of statement on arrays would be as below,
+     دستور for...of یک حلقه تکرار بر روی اشیاء یا عناصر قابل تکرار مانند رشته داخلی، آرایه، اشیاء آرایه مانند (مانند آرگومان ها یا NodeList)، TypedArray، Map، Set و تکرارهای تعریف شده توسط کاربر ایجاد می کند. کاربرد اصلی عبارت for...of در آرایه ها به صورت زیر خواهد بود.
 
      <span dir="ltr" align="left">
 
@@ -6756,20 +6756,20 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The output of the array is ['J', 'o', 'h', 'n', '', 'R', 'e', 's', 'i', 'g']
-     **Explanation:** The string is an iterable type and the spread operator within an array maps every character of an iterable to one element. Hence, each character of a string becomes an element within an Array.
+     خروجی آرایه ['J', 'o', 'h', 'n', ', 'R', 'e', 's', 'i', 'g'] است.
+      **توضیح:** رشته یک نوع تکرارپذیر است و عملگر spread در یک آرایه هر کاراکتر یک تکرارپذیر را به یک عنصر نگاشت می کند. از این رو، هر کاراکتر یک رشته به عنصری در یک آرایه تبدیل می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 325. ### Is PostMessage secure
 
-     Yes, postMessages can be considered very secure as long as the programmer/developer is careful about checking the origin and source of an arriving message. But if you try to send/receive a message without verifying its source will create cross-site scripting attacks.
+     بله، تا زمانی که برنامه‌نویس/توسعه‌دهنده مراقب منشأ و منبع پیام دریافتی باشد، postMessages را می‌توان بسیار امن در نظر گرفت. اما اگر بخواهید پیامی را بدون تأیید منبع آن ارسال یا دریافت کنید، حملات اسکریپت بین سایتی ایجاد می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 326. ### What are the problems with postmessage target origin as wildcard
 
-     The second argument of postMessage method specifies which origin is allowed to receive the message. If you use the wildcard “*” as an argument then any origin is allowed to receive the message. In this case, there is no way for the sender window to know if the target window is at the target origin when sending the message. If the target window has been navigated to another origin, the other origin would receive the data. Hence, this may lead to XSS vulnerabilities.
+     آرگومان دوم متد postMessage مشخص می کند که کدام مبدا مجاز به دریافت پیام است. اگر از علامت "*" به عنوان آرگومان استفاده کنید، هر منبعی مجاز به دریافت پیام است. در این حالت، هیچ راهی برای پنجره فرستنده وجود ندارد که بفهمد پنجره هدف در هنگام ارسال پیام در مبدأ هدف قرار دارد یا خیر. اگر پنجره هدف به مبدأ دیگری هدایت شود، مبدا دیگر داده ها را دریافت می کند. از این رو، این ممکن است منجر به آسیب پذیری های XSS شود.
 
      <span dir="ltr" align="left">
 
@@ -6783,7 +6783,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 327. ### How do you avoid receiving postMessages from attackers
 
-     Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker’s origin,  which gives an impression that the receiver received the message from the actual sender’s window. You can avoid this issue by validating the origin of the message on the receiver's end using the “message.origin” attribute. For examples, let's check the sender's origin [http://www.some-sender.com](http://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
+     از آنجایی که شنونده به هر پیامی گوش می دهد، مهاجم می تواند برنامه را با ارسال پیامی از مبدأ مهاجم فریب دهد، که این تصور را ایجاد می کند که گیرنده پیام را از پنجره فرستنده واقعی دریافت کرده است. شما می توانید با اعتبارسنجی مبدا پیام در انتهای گیرنده با استفاده از ویژگی "message.origin" از این مشکل جلوگیری کنید. برای مثال، اجازه دهید مبدا فرستنده [http://www.some-sender.com](http://www.some-sender.com) در سمت گیرنده [www.some-receiver.com] (www.some) را بررسی کنیم -receiver.com)،
 
      <span dir="ltr" align="left">
 
@@ -6802,38 +6802,38 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 328. ### Can I avoid using postMessages completely
 
-     You cannot avoid using postMessages completely(or 100%). Even though your application doesn’t use postMessage considering the risks, a lot of third party scripts use postMessage to communicate with the third party service. So your application might be using postMessage without your knowledge.
+     شما نمی توانید به طور کامل (یا 100٪) از postMessages استفاده نکنید. حتی اگر برنامه شما با توجه به خطرات از postMessage استفاده نمی کند، بسیاری از اسکریپت های شخص ثالث از postMessage برای برقراری ارتباط با سرویس شخص ثالث استفاده می کنند. بنابراین ممکن است برنامه شما بدون اطلاع شما از postMessage استفاده کند.
 
      **[⬆ فهرست](#فهرست)**
 
 329. ### Is postMessages synchronous
 
-     The postMessages are synchronous in IE8 browser but they are asynchronous in IE9 and all other modern browsers (i.e, IE9+, Firefox, Chrome, Safari).Due to this asynchronous behaviour, we use a callback mechanism when the postMessage is returned.
+     postMessages در مرورگر IE8 همگام هستند اما در IE9 و سایر مرورگرهای مدرن دیگر (یعنی IE9+، Firefox، Chrome، Safari) ناهمزمان هستند. به دلیل این رفتار ناهمزمان، زمانی که postMessage برگردانده می‌شود، از مکانیزم برگشت تماس استفاده می‌کنیم.
 
      **[⬆ فهرست](#فهرست)**
 
 330. ### What paradigm is Javascript
 
-     JavaScript is a multi-paradigm language, supporting imperative/procedural programming, Object-Oriented Programming and functional programming. JavaScript supports Object-Oriented Programming with prototypical inheritance.
+     جاوا اسکریپت یک زبان چند پارادایم است که از برنامه نویسی امری/روشی، برنامه نویسی شی گرا و برنامه نویسی تابعی پشتیبانی می کند. جاوا اسکریپت از برنامه نویسی شی گرا با وراثت اولیه پشتیبانی می کند.
 
      **[⬆ فهرست](#فهرست)**
 
 331. ### What is the difference between internal and external javascript
 
-     **Internal JavaScript:** It is the source code within the script tag.
-     **External JavaScript:** The source code is stored in an external file(stored with .js extension) and referred with in the tag.
+     **جاوا اسکریپت داخلی:** کد منبع درون تگ اسکریپت است.
+      **جاوا اسکریپت خارجی:** کد منبع در یک فایل خارجی (ذخیره شده با پسوند js.) ذخیره می شود و در تگ ارجاع می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 332. ### Is JavaScript faster than server side script
 
-     Yes, JavaScript is faster than server side script. Because JavaScript is a client-side script it does not require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
+     بله، جاوا اسکریپت سریعتر از اسکریپت سمت سرور است. از آنجایی که جاوا اسکریپت یک اسکریپت سمت کلاینت است، برای محاسبات یا محاسبات خود به کمک سرور وب نیازی ندارد. بنابراین جاوا اسکریپت همیشه سریعتر از هر اسکریپت سمت سرور مانند ASP، PHP و غیره است.
 
      **[⬆ فهرست](#فهرست)**
 
 333. ### How do you get the status of a checkbox
 
-     You can apply the `checked` property on the selected checkbox in the DOM. If the value is `True` means the checkbox is checked otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below,
+     می‌توانید ویژگی «checked» را در کادر انتخاب شده در DOM اعمال کنید. اگر مقدار "True" باشد به این معنی است که چک باکس علامت زده شده است در غیر این صورت علامت آن را بردارید. به عنوان مثال، عنصر چک باکس HTML زیر را می توان با استفاده از جاوا اسکریپت به صورت زیر در دسترس قرار داد.
 
      <span dir="ltr" align="left">
 
@@ -6855,13 +6855,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 334. ### What is the purpose of double tilde operator
 
-     The double tilde operator(~~) is known as double NOT bitwise operator. This operator is going to be a quicker substitute for Math.floor().
+     عملگر دابل tilde(~~) به عنوان عملگر bitwise double NOT شناخته می شود. این عملگر قرار است جایگزین سریع تری برای Math.floor().
 
      **[⬆ فهرست](#فهرست)**
 
 335. ### How do you convert character to ASCII code
 
-     You can use the `String.prototype.charCodeAt()` method to convert string characters to ASCII numbers. For example, let's find ASCII code for the first letter of 'ABC' string,
+     برای تبدیل کاراکترهای رشته به اعداد اسکی می توانید از متد «String.prototype.charCodeAt()» استفاده کنید. برای مثال، بیایید کد ASCII را برای حرف اول رشته «ABC» پیدا کنیم،
 
      <span dir="ltr" align="left">
 
@@ -6871,7 +6871,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Whereas `String.fromCharCode()` method converts numbers to equal ASCII characters.
+     در حالی که روش «String.fromCharCode()» اعداد را به کاراکترهای ASCII برابر تبدیل می کند.
 
      <span dir="ltr" align="left">
 
@@ -6885,7 +6885,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 336. ### What is ArrayBuffer
 
-     An ArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer. You can create it as below,
+     یک شی ArrayBuffer برای نشان دادن یک بافر داده باینری خام عمومی با طول ثابت استفاده می شود. می توانید آن را به صورت زیر ایجاد کنید،
 
      <span dir="ltr" align="left">
 
@@ -6896,7 +6896,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     To manipulate an ArrayBuffer, we need to use a “view” object.
+     برای دستکاری یک ArrayBuffer، باید از یک شی "view" استفاده کنیم.
 
      <span dir="ltr" align="left">
 
@@ -6919,14 +6919,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The output of the above expression is "W".
-     **Explanation:** The bracket notation with specific index on a string returns the character at a specific location. Hence, it returns the character "W" of the string. Since this is not supported in IE7 and below versions, you may need to use the .charAt() method to get the desired result.
+    خروجی عبارت فوق "W" است.
+      **توضیح:** نماد براکت با شاخص خاص روی یک رشته کاراکتر را در یک مکان خاص برمی گرداند. از این رو، کاراکتر "W" رشته را برمی گرداند. از آنجایی که این مورد در نسخه‌های IE7 و پایین‌تر پشتیبانی نمی‌شود، ممکن است لازم باشد از متد charAt() برای به دست آوردن نتیجه دلخواه استفاده کنید.
 
      **[⬆ فهرست](#فهرست)**
 
 338. ### What is the purpose of Error object
 
-     The Error constructor creates an error object and the instances of error objects are thrown when runtime errors occur. The Error object can also be used as a base object for user-defined exceptions. The syntax of error object would be as below,
+     سازنده Error یک شی خطا ایجاد می کند و نمونه هایی از اشیاء خطا هنگام رخ دادن خطاهای زمان اجرا پرتاب می شوند. شی Error همچنین می تواند به عنوان یک شی پایه برای استثناهای تعریف شده توسط کاربر استفاده شود. نحو شیء خطا به صورت زیر خواهد بود.
 
      <span dir="ltr" align="left">
 
@@ -6936,7 +6936,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     You can throw user defined exceptions or errors using Error object in try...catch block as below,
+     شما می توانید استثناها یا خطاهای تعریف شده توسط کاربر را با استفاده از شی Error در بلوک try...catch مانند زیر پرتاب کنید.
 
      <span dir="ltr" align="left">
 
@@ -6955,7 +6955,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 339. ### What is the purpose of EvalError object
 
-     The EvalError object indicates an error regarding the global `eval()` function. Even though this exception is not thrown by JavaScript anymore, the EvalError object remains for compatibility. The syntax of this expression would be as below,
+     شی EvalError یک خطا در رابطه با تابع "eval()" جهانی را نشان می دهد. حتی اگر این استثنا دیگر توسط جاوا اسکریپت پرتاب نمی شود، شی EvalError برای سازگاری باقی می ماند. نحو این عبارت به صورت زیر خواهد بود
 
      <span dir="ltr" align="left">
 
@@ -6965,7 +6965,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     You can throw EvalError with in try...catch block as below,
+     می توانید EvalError را با بلوک try...catch مانند زیر پرتاب کنید.
 
      <span dir="ltr" align="left">
 
@@ -6983,8 +6983,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 340. ### What are the list of cases error thrown from non-strict mode to strict mode
 
-     When you apply 'use strict'; syntax, some of the below cases will throw a SyntaxError before executing the script
-  1. When you use Octal syntax
+     وقتی «استفاده سخت» را اعمال می‌کنین. syntax، برخی از موارد زیر قبل از اجرای اسکریپت یک SyntaxError ایجاد می کنند
+  1. وقتی از دستور Octal استفاده می کنید
 
      <span dir="ltr" align="left">
 
@@ -6993,12 +6993,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      ```
 
      </span>
-
-  1. Using `with` statement
-  2. When you use delete operator on a variable name
-  3. Using eval or arguments as variable or function argument name
-  4. When you use newly reserved keywords
-  5. When you declare a function in a block
+   1. استفاده از عبارت «with».
+   2. وقتی از عملگر حذف روی نام متغیر استفاده می کنید
+   3. استفاده از eval یا آرگومان ها به عنوان متغیر یا نام آرگومان تابع
+   4. هنگامی که از کلمات کلیدی رزرو شده جدید استفاده می کنید
+   5. هنگامی که یک تابع را در یک بلوک اعلام می کنید
 
      <span dir="ltr" align="left">
 
@@ -7008,19 +7007,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Hence, the errors from above cases are helpful to avoid errors in development/production environments.
+     از این رو، خطاهای موارد فوق برای جلوگیری از خطا در محیط های توسعه/تولید مفید هستند.
 
      **[⬆ فهرست](#فهرست)**
 
 341. ### Is all objects have prototypes
 
-     No. All objects have prototypes except for the base object which is created by the user, or an object that is created using the new keyword.
+     خیر. همه اشیا دارای نمونه اولیه هستند به جز شی پایه که توسط کاربر ایجاد می شود یا شیئی که با استفاده از کلمه کلیدی جدید ایجاد می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 342. ### What is the difference between a parameter and an argument
 
-     Parameter is the variable name of a function definition whereas an argument represents the value given to a function when it is invoked. Let's explain this with a simple function
+     پارامتر نام متغیر تعریف یک تابع است در حالی که یک آرگومان نشان دهنده مقدار داده شده به یک تابع در هنگام فراخوانی آن است. بیایید این را با یک تابع ساده توضیح دهیم
 
      <span dir="ltr" align="left">
 
@@ -7039,7 +7038,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 343. ### What is the purpose of some method in arrays
 
-     The some() method is used to test whether at least one element in the array passes the test implemented by the provided function. The method returns a boolean value. Let's take an example to test for any odd elements,
+     متد some() برای آزمایش اینکه آیا حداقل یک عنصر در آرایه از آزمون پیاده‌سازی شده توسط تابع ارائه شده عبور می‌کند یا خیر استفاده می‌شود. متد یک مقدار بولی برمی گرداند. بیایید مثالی بزنیم تا هر عنصر عجیب و غریب را آزمایش کنیم،
 
      <span dir="ltr" align="left">
 
@@ -7057,7 +7056,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 344. ### How do you combine two or more arrays
 
-     The concat() method is used to join two or more arrays by returning a new array containing all the elements. The syntax would be as below,
+     متد concat() برای پیوستن دو یا چند آرایه با برگرداندن یک آرایه جدید حاوی تمام عناصر استفاده می شود. نحو به صورت زیر خواهد بود،
 
      <span dir="ltr" align="left">
 
@@ -7067,7 +7066,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Let's take an example of array's concatenation with veggies and fruits arrays,
+     بیایید مثالی از الحاق آرایه با آرایه های سبزیجات و میوه ها را مثال بزنیم.
 
      <span dir="ltr" align="left">
 
@@ -7084,12 +7083,12 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 345. ### What is the difference between Shallow and Deep copy
 
-     There are two ways to copy an object,
+     دو راه برای کپی کردن یک شی وجود دارد،
 
-     **Shallow Copy:**
-     Shallow copy is a bitwise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.
+     **کپی کم عمق:**
+      کپی کم عمق یک کپی بیتی از یک شی است. یک شی جدید ایجاد می شود که یک کپی دقیق از مقادیر موجود در شی اصلی دارد. اگر هر یک از فیلدهای شی ارجاع به اشیاء دیگر باشد، فقط آدرس های مرجع کپی می شوند، یعنی فقط آدرس حافظه کپی می شود.
 
-     **Example**
+     **مثال**
 
       <span dir="ltr" align="left">
 
@@ -7101,7 +7100,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
       </span>
 
-     to create a duplicate
+     برای ایجاد یک نسخه تکراری
 
       <span dir="ltr" align="left">
 
@@ -7111,7 +7110,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
       </span>
 
-     if we change some property value in the duplicate one like this:
+     اگر مقداری از ویژگی را در یک تکراری به این صورت تغییر دهیم:
 
       <span dir="ltr" align="left">
 
@@ -7121,10 +7120,10 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
       </span>
 
-     The above statement will also change the name of `empDetails`, since we have a shallow copy. That means we're losing the original data as well.
+     دستور بالا همچنین نام "empDetails" را تغییر می دهد، زیرا ما یک کپی کم عمق داریم. این بدان معناست که ما داده های اصلی را نیز از دست می دهیم.
 
      **Deep copy:**
-     A deep copy copies all fields, and makes copies of dynamically allocated memory pointed to by the fields. A deep copy occurs when an object is copied along with the objects to which it refers.
+     یک کپی عمیق همه فیلدها را کپی می کند و از حافظه تخصیص یافته به صورت پویا که توسط فیلدها به آن اشاره می شود کپی می کند. یک کپی عمیق زمانی اتفاق می افتد که یک شی همراه با اشیایی که به آن اشاره دارد کپی شود.
 
      **Example**
 
@@ -7138,7 +7137,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
       </span>
 
-     Create a deep copy by using the properties from the original object into new variable
+     یک کپی عمیق با استفاده از خواص از شی اصلی در متغیر جدید ایجاد کنید
 
       <span dir="ltr" align="left">
 
@@ -7152,14 +7151,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
       </span>
 
-     Now if you change `empDetailsDeepCopy.name`, it will only affect `empDetailsDeepCopy` & not `empDetails`
+     اکنون اگر «empDetailsDeepCopy.name» را تغییر دهید، فقط «empDetailsDeepCopy» و نه «empDetails» را تحت تأثیر قرار خواهد داد.
 
      **[⬆ فهرست](#فهرست)**
 
 346. ### How do you create specific number of copies of a string
 
-     The `repeat()` method is used to construct and return a new string which contains the specified number of copies of the string on which it was called, concatenated together. Remember that this method has been added to the ECMAScript 2015 specification.
-     Let's take an example of Hello string to repeat it 4 times,
+     متد «repeat()» برای ساخت و برگرداندن یک رشته جدید استفاده می‌شود که حاوی تعداد مشخصی از کپی‌های رشته‌ای است که روی آن فراخوانی شده و به هم پیوسته شده‌اند. به یاد داشته باشید که این روش به مشخصات ECMAScript 2015 اضافه شده است.
+      بیایید یک مثال از رشته Hello را برای تکرار آن 4 بار در نظر بگیریم.
 
      <span dir="ltr" align="left">
 
@@ -7171,7 +7170,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 347. ### How do you return all matching strings against a regular expression
 
-     The `matchAll()` method can be used to return an iterator of all results matching a string against a regular expression. For example, the below example returns an array of matching string results against a regular expression,
+     متد «matchAll()» می‌تواند برای برگرداندن یک تکرارکننده از تمام نتایجی که یک رشته با یک عبارت منظم مطابقت دارند، استفاده شود. به عنوان مثال، مثال زیر آرایه ای از نتایج رشته منطبق را در برابر یک عبارت منظم برمی گرداند.
 
      <span dir="ltr" align="left">
 
@@ -7192,7 +7191,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 348. ### How do you trim a string at the beginning or ending
 
-     The `trim` method of string prototype is used to trim on both sides of a string. But if you want to trim especially at the beginning or ending of the string then you can use `trimStart/trimLeft` and `trimEnd/trimRight` methods. Let's see an example of these methods on a greeting message,
+     روش «تریم» نمونه اولیه رشته برای برش دادن دو طرف یک رشته استفاده می شود. اما اگر می‌خواهید به‌خصوص در ابتدا یا انتهای رشته را برش دهید، می‌توانید از روش‌های «trimStart/trimLeft» و «trimEnd/trimRight» استفاده کنید. بیایید نمونه ای از این روش ها را در پیام تبریک ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -7213,7 +7212,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 349. ### What is the output of below console statement with unary operator
 
-     Let's take console statement with unary operator as given below,
+     بیایید دستور کنسول را با عملگر unary همانطور که در زیر نشان داده شده است، بگیریم.
 
      <span dir="ltr" align="left">
 
@@ -7223,7 +7222,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The output of the above console log statement returns NaN. Because the element is prefixed by the unary operator and the JavaScript interpreter will try to convert that element into a number type. Since the conversion fails, the value of the statement results in NaN value.
+     خروجی دستور log کنسول فوق NaN را برمی گرداند. از آنجا که عنصر توسط عملگر unary پیشوند است و مفسر جاوا اسکریپت سعی می کند آن عنصر را به یک نوع عدد تبدیل کند. از آنجایی که تبدیل با شکست مواجه می شود، مقدار عبارت به مقدار NaN منجر می شود.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -7233,7 +7232,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 351. ### What is a thunk function
 
-     A thunk is just a function which delays the evaluation of the value. It doesn’t take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
+     thunk فقط تابعی است که ارزیابی مقدار را به تاخیر می اندازد. هیچ آرگومانی نمی‌گیرد، اما هر زمان که thunk را فراخوانی می‌کنید، مقدار را می‌دهد. به عنوان مثال، از آن استفاده می شود که اکنون اجرا نشود، اما زمانی در آینده خواهد بود. بیایید یک مثال همزمان بگیریم،
 
      <span dir="ltr" align="left">
 
@@ -7251,7 +7250,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 352. ### What are asynchronous thunks
 
-     The asynchronous thunks are useful to make network requests.  Let's see an example of network requests,
+     Thunk های ناهمزمان برای ایجاد درخواست های شبکه مفید هستند. بیایید نمونه ای از درخواست های شبکه را ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -7273,7 +7272,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The `getData` function won't be called immediately but it will be invoked only when the data is available from API endpoint. The setTimeout function is also used to make our code asynchronous. The best real time example is redux state management library which uses the asynchronous thunks to delay the actions to dispatch.
+     تابع "getData" فوراً فراخوانی نمی شود، اما تنها زمانی فراخوانی می شود که داده ها از نقطه پایانی API در دسترس باشند. تابع setTimeout نیز برای ناهمزمان کردن کد ما استفاده می شود. بهترین مثال زمان واقعی، کتابخانه مدیریت حالت redux است که از thunk های ناهمزمان برای به تاخیر انداختن اعمال برای ارسال استفاده می کند.
 
      **[⬆ فهرست](#فهرست)**
 
@@ -7300,13 +7299,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **Output:**
 
-     The output is 40 and NaN. Remember that diameter is a regular function, whereas the value of perimeter is an arrow function. The `this` keyword of a regular function(i.e, diameter) refers to the surrounding scope which is a class(i.e, Shape object). Whereas this keyword of perimeter function refers to the surrounding scope which is a window object. Since there is no radius property on window objects it returns an undefined value and the multiple of number value returns NaN value.
+     خروجی 40 و NaN است. به یاد داشته باشید که قطر یک تابع منظم است، در حالی که مقدار محیط یک تابع فلش است. کلمه کلیدی «this» یک تابع معمولی (یعنی قطر) به محدوده اطراف که یک کلاس است (یعنی شی شکل) اشاره دارد. در حالی که این کلمه کلیدی تابع محیطی به محدوده اطراف که یک شی پنجره است اشاره دارد. از آنجایی که هیچ ویژگی شعاع در اشیاء پنجره وجود ندارد، یک مقدار تعریف نشده برمی‌گرداند و مضرب مقدار مقدار NaN را برمی‌گرداند.
 
      **[⬆ فهرست](#فهرست)**
 
 354. ### How to remove all line breaks from a string
 
-     The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
+     ساده ترین روش استفاده از عبارات منظم برای شناسایی و جایگزینی خطوط جدید در رشته است. در این حالت از تابع تعویض به همراه رشته برای جایگزینی استفاده می کنیم که در مورد ما یک رشته خالی است.
 
      <span dir="ltr" align="left">
 
@@ -7318,19 +7317,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     In the above expression, g and m are for global and multiline flags.
+     در عبارت فوق g و m برای پرچم های سراسری و چند خطی هستند.
 
      **[⬆ فهرست](#فهرست)**
 
 355. ### What is the difference between reflow and repaint
 
-     A *repaint* occurs when changes are made which affect the visibility of an element, but not its layout. Examples of this include outline, visibility, or background color. A *reflow* involves changes that affect the layout of a portion of the page (or the whole page). Resizing the browser window, changing the font, content changing (such as user typing text), using JavaScript methods involving computed styles, adding or removing elements from the DOM, and changing an element's classes are a few of the things that can trigger reflow. Reflow of an element causes the subsequent reflow of all child and ancestor elements as well as any elements following it in the DOM.
+     *رنگ‌آمیزی مجدد* زمانی اتفاق می‌افتد که تغییراتی ایجاد می‌شود که روی دید یک عنصر تأثیر می‌گذارد، اما روی طرح آن تأثیر نمی‌گذارد. نمونه هایی از این موارد شامل طرح کلی، نمایان بودن یا رنگ پس زمینه است. یک *reflow* شامل تغییراتی است که بر طرح بندی بخشی از صفحه (یا کل صفحه) تأثیر می گذارد. تغییر اندازه پنجره مرورگر، تغییر فونت، تغییر محتوا (مانند تایپ متن توسط کاربر)، استفاده از روش‌های جاوا اسکریپت شامل سبک‌های محاسبه‌شده، افزودن یا حذف عناصر از DOM، و تغییر کلاس‌های یک عنصر چند مورد از مواردی هستند که می‌توانند جریان مجدد را آغاز کنند. جریان مجدد یک عنصر باعث جریان مجدد بعدی همه عناصر فرزند و اجداد و همچنین هر عنصری که به دنبال آن در DOM است می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 356. ### What happens with negating an array
 
-     Negating an array with `!` character will coerce the array into a boolean. Since Arrays are considered to be truthy So negating it will return `false`.
+     نفی یک آرایه با کاراکتر «!»، آرایه را به یک بولی وادار می کند. از آنجایی که آرایه ها صدق در نظر گرفته می شوند، پس نفی آن "نادرست" را برمی گرداند.
 
      <span dir="ltr" align="left">
 
@@ -7344,7 +7343,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 357. ### What happens if we add two arrays
 
-     If you add two arrays together, it will convert them both to strings and concatenate them. For example, the result of adding arrays would be as below,
+     اگر دو آرایه را با هم اضافه کنید، هر دو آنها را به رشته تبدیل می کند و آنها را به هم متصل می کند. به عنوان مثال، نتیجه اضافه کردن آرایه ها به صورت زیر خواهد بود.
 
      <span dir="ltr" align="left">
 
@@ -7360,8 +7359,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 358. ### What is the output of prepend additive operator on falsy values
 
-     If you prepend the additive(+) operator on falsy values(null, undefined, NaN, false, ""), the falsy value converts to a number value zero. Let's display them on browser console as below,
-
+     اگر عملگر additive(+) را روی مقادیر نادرست (null، undefined، NaN، false، "") قرار دهید، مقدار falsy به مقدار عددی صفر تبدیل می شود. بیایید آنها را در کنسول مرورگر به صورت زیر نمایش دهیم،
      <span dir="ltr" align="left">
 
      ```javascript
@@ -7378,12 +7376,12 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 359. ### How do you create self string using special characters
 
-     The self string can be formed with the combination of `[]()!+` characters. You need to remember the below conventions to achieve this pattern.
-  1. Since Arrays are truthful values, negating the arrays will produce false: ![] === false
-  2. As per JavaScript coercion rules, the addition of arrays together will toString them: [] + [] === ""
-  3. Prepend an array with + operator will convert an array to false, the negation will make it true and finally converting the result will produce value '1': +(!(+[])) === 1
+     رشته self را می توان با ترکیب کاراکترهای `[]()!+` تشکیل داد. برای رسیدن به این الگو باید قراردادهای زیر را به خاطر بسپارید.
+   1. از آنجایی که آرایه ها مقادیر واقعی هستند، با نفی آرایه ها false تولید می شود: ![] === false
+   2. طبق قوانین اجباری جاوا اسکریپت، اضافه کردن آرایه‌ها به هم آنها را به رشته‌بندی تبدیل می‌کند: [] + [] === ""
+   3. Prepend یک آرایه با عملگر + یک آرایه را به نادرست تبدیل می کند، انکار آن را درست می کند و در نهایت تبدیل نتیجه مقدار '1' را تولید می کند: +(!(+[])) === 1
 
-     By applying the above rules, we can derive below conditions
+      با اعمال قوانین فوق می توانیم شرایط زیر را استخراج کنیم
 
      <span dir="ltr" align="left">
 
@@ -7394,7 +7392,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Now the character pattern would be created as below,
+     اکنون الگوی کاراکتر به صورت زیر ایجاد می شود.
 
      <span dir="ltr" align="left">
 
@@ -7418,7 +7416,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 360. ### How do you remove falsy values from an array
 
-     You can apply the filter method on the array by passing Boolean as a parameter. This way it removes all falsy values(0, undefined, null, false and "") from the array.
+     شما می توانید با وارد کردن Boolean به عنوان پارامتر، روش فیلتر را روی آرایه اعمال کنید. به این ترتیب تمام مقادیر نادرست (0، تعریف نشده، null، false و "") از آرایه حذف می شود.
 
      <span dir="ltr" align="left">
 
@@ -7433,7 +7431,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 361. ### How do you get unique values of an array
 
-     You can get unique values of an array with the combination of `Set` and rest expression/spread(...) syntax.
+     شما می توانید مقادیر منحصر به فرد یک آرایه را با ترکیب دستور "Set" و rest expression/spread(...) دریافت کنید.
 
      <span dir="ltr" align="left">
 
@@ -7447,7 +7445,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 362. ### What is destructuring aliases
 
-     Sometimes you would like to have a destructured variable with a different name than the property name. In that case, you'll use a `: newName` to specify a name for the variable. This process is called destructuring aliases.
+     گاهی اوقات شما دوست دارید یک متغیر تخریب شده با نامی متفاوت از نام ویژگی داشته باشید. در این صورت، از یک «: newName» برای تعیین نام برای متغیر استفاده خواهید کرد. این فرآیند نام مستعار تخریب ساختاری نامیده می شود.
 
      <span dir="ltr" align="left">
 
@@ -7463,7 +7461,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 363. ### How do you map the array values without using map method
 
-     You can map the array values without using the `map` method by just using the `from` method of Array. Let's map city names from Countries array,
+     می‌توانید مقادیر آرایه‌ها را بدون استفاده از روش «نقشه» تنها با استفاده از روش «از» آرایه ترسیم کنید. بیایید نام شهرها را از آرایه کشورها ترسیم کنیم،
 
      <span dir="ltr" align="left">
 
@@ -7487,7 +7485,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 364. ### How do you empty an array
 
-     You can empty an array quickly by setting the array length to zero.
+     با صفر کردن طول آرایه می توانید به سرعت یک آرایه را خالی کنید.
 
      <span dir="ltr" align="left">
 
@@ -7502,7 +7500,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 365. ### How do you rounding numbers to certain decimals
 
-     You can round numbers to a certain number of decimals using `toFixed` method from native javascript.
+     می‌توانید با استفاده از روش «toFixed» از جاوا اسکریپت، اعداد را به تعداد معینی از اعشار گرد کنید.
 
      <span dir="ltr" align="left">
 
@@ -7517,7 +7515,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 366. ### What is the easiest way to convert an array to an object
 
-     You can convert an array to an object with the same data using spread(...) operator.
+     شما می توانید با استفاده از عملگر spread(...) یک آرایه را به یک شی با همان داده تبدیل کنید.
 
      <span dir="ltr" align="left">
 
@@ -7533,7 +7531,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 367. ### How do you create an array with some data
 
-     You can create an array with some data or an array with the same values using `fill` method.
+     می توانید با استفاده از روش «fill» یک آرایه با مقداری داده یا یک آرایه با همان مقادیر ایجاد کنید.
 
      <span dir="ltr" align="left">
 
@@ -7548,11 +7546,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 368. ### What are the placeholders from console object
 
-     Below are the list of placeholders available from console object,
-  1. %o — It takes an object,
-  2. %s — It takes a string,
-  3. %d — It is used for a decimal or integer
-     These placeholders can be represented in the console.log as below
+     در زیر لیستی از متغیرهای موجود از شی کنسول وجود دارد،
+   1. %o - یک شی را می گیرد،
+   2. %s - یک رشته می‌گیرد،
+   3. %d - برای اعشار یا عدد صحیح استفاده می شود
+      این متغیرها را می توان در console.log به صورت زیر نشان داد
 
      <span dir="ltr" align="left">
 
@@ -7567,7 +7565,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 369. ### Is it possible to add CSS to console messages
 
-     Yes, you can apply CSS styles to console messages similar to html text on the web page.
+     بله، می‌توانید سبک‌های CSS را برای پیام‌های کنسول مشابه متن html در صفحه وب اعمال کنید.
 
      <span dir="ltr" align="left">
 
@@ -7577,16 +7575,16 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The text will be displayed as below,
+     متن به صورت زیر نمایش داده می شود
      ![Screenshot](images/console-css.png)
 
-     **Note:** All CSS styles can be applied to console messages.
+     **نکته:** تمام سبک های CSS را می توان برای پیام های کنسول اعمال کرد.
 
      **[⬆ فهرست](#فهرست)**
 
 370. ### What is the purpose of dir method of console object
 
-     The `console.dir()` is used to display an interactive list of the properties of the specified JavaScript object as JSON.
+     «console.dir()» برای نمایش یک لیست تعاملی از ویژگی های شی جاوا اسکریپت مشخص شده به عنوان JSON استفاده می شود.
 
      <span dir="ltr" align="left">
 
@@ -7597,14 +7595,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The user object displayed in JSON representation
+     شی کاربر نمایش داده شده در نمایش JSON
      ![Screenshot](images/console-dir.png)
 
      **[⬆ فهرست](#فهرست)**
 
 371. ### Is it possible to debug HTML elements in console
 
-     Yes, it is possible to get and debug HTML elements in the console just like inspecting elements.
+     بله، دریافت و اشکال زدایی عناصر HTML در کنسول، درست مانند بازرسی عناصر، امکان پذیر است.
 
      <span dir="ltr" align="left">
 
@@ -7615,7 +7613,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     It prints the HTML element in the console,
+     این عنصر HTML را در کنسول چاپ می کند،
 
      ![Screenshot](images/console-html.png)
 
@@ -7623,7 +7621,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 372. ### How do you display data in a tabular format using console object
 
-     The `console.table()` is used to display data in the console in a tabular format to visualize complex arrays or objects.
+     «console.table()» برای نمایش داده‌ها در کنسول در قالب جدولی برای تجسم آرایه‌ها یا اشیاء پیچیده استفاده می‌شود.
 
      <span dir="ltr" align="left">
 
@@ -7634,7 +7632,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The data visualized in a table format,
+     داده هایی که در قالب جدول مشاهده می شوند،
 
      ![Screenshot](images/console-table.png)
      **Not:** Remember that `console.table()` is not supported in IE.
@@ -7643,7 +7641,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 373. ### How do you verify that an argument is a Number or not
 
-     The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
+     ترکیبی از روش‌های IsNaN و isFinite برای تأیید عدد بودن یا نبودن آرگومان استفاده می‌شود.
 
      <span dir="ltr" align="left">
 
@@ -7659,7 +7657,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 374. ### How do you create copy to clipboard button
 
-     You need to select the content(using .select() method) of the input element and execute the copy command with execCommand (i.e, execCommand('copy')). You can also execute other system commands like cut and paste.
+     شما باید محتوا (با استفاده از روش .select()) عنصر ورودی را انتخاب کنید و دستور copy را با execCommand اجرا کنید (یعنی execCommand('copy')). شما همچنین می توانید سایر دستورات سیستم مانند cut و paste را اجرا کنید.
 
      <span dir="ltr" align="left">
 
@@ -7678,7 +7676,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 375. ### What is the shortcut to get timestamp
 
-     You can use `new Date().getTime()` to get the current timestamp. There is an alternative shortcut to get the value.
+     می‌توانید از «تاریخ جدید().getTime()» برای دریافت مهر زمانی فعلی استفاده کنید. یک میانبر جایگزین برای دریافت مقدار وجود دارد.
 
      <span dir="ltr" align="left">
 
@@ -7693,7 +7691,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 376. ### How do you flattening multi dimensional arrays
 
-     Flattening bi-dimensional arrays is trivial with Spread operator.
+     مسطح کردن آرایه های دو بعدی با عملگر Spread بی اهمیت است.
 
      <span dir="ltr" align="left">
 
@@ -7704,7 +7702,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     But you can make it work with multi-dimensional arrays by recursive calls,
+     اما شما می توانید آن را با آرایه های چند بعدی با تماس های بازگشتی کار کنید،
 
      <span dir="ltr" align="left">
 
@@ -7723,7 +7721,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 377. ### What is the easiest multi condition checking
 
-     You can use `indexOf` to compare input with multiple values instead of checking each value as one condition.
+     می‌توانید از «indexOf» برای مقایسه ورودی با چندین مقدار به جای بررسی هر مقدار به عنوان یک شرط استفاده کنید.
 
      <span dir="ltr" align="left">
 
@@ -7744,7 +7742,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 378. ### How do you capture browser back button
 
-     The `window.onbeforeunload` method is used to capture browser back button events. This is helpful to warn users about losing the current data.
+     روش «window.onbeforeunload» برای ضبط رویدادهای دکمه بازگشت مرورگر استفاده می‌شود. این برای هشدار دادن به کاربران در مورد از دست دادن داده های فعلی مفید است.
 
      <span dir="ltr" align="left">
 
@@ -7760,7 +7758,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 379. ### How do you disable right click in the web page
 
-     The right click on the page can be disabled by returning false from the `oncontextmenu` attribute on the body element.
+     کلیک راست روی صفحه را می توان با برگرداندن false از ویژگی «oncontextmenu» در عنصر بدنه غیرفعال کرد.
 
      <span dir="ltr" align="left">
 
@@ -7774,7 +7772,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 380. ### What are wrapper objects
 
-     Primitive Values like string,number and boolean don't have properties and methods but they are temporarily converted or coerced to an object(Wrapper object) when you try to perform actions on them. For example, if you apply toUpperCase() method on a primitive string value, it does not throw an error but returns uppercase of the string.
+     مقادیر اولیه مانند رشته، عدد و بولی خواص و روشی ندارند، اما زمانی که می‌خواهید اقداماتی را روی آن‌ها انجام دهید، به طور موقت به یک شی (ابجکت Wrapper) تبدیل یا مجبور می‌شوند. برای مثال، اگر متد ()UpperCase را روی یک مقدار رشته اولیه اعمال کنید، خطایی ایجاد نمی‌کند، اما حروف بزرگ رشته را برمی‌گرداند.
 
      <span dir="ltr" align="left">
 
@@ -7786,34 +7784,34 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     i.e, Every primitive except null and undefined have Wrapper Objects and the list of wrapper objects are String,Number,Boolean,Symbol and BigInt.
+    یعنی هر اولیه به جز null و undefined دارای Wrapper Object است و لیست اشیاء wrapper عبارتند از String، Number، Boolean، Symbol و BigInt.
 
      **[⬆ فهرست](#فهرست)**
 
 381. ### What is AJAX
 
-     AJAX stands for Asynchronous JavaScript and XML and it is a group of related technologies(HTML, CSS, JavaScript, XMLHttpRequest API etc) used to display data asynchronously. i.e. We can send data to the server and get data from the server without reloading the web page.
+     AJAX مخفف Asynchronous JavaScript و XML است و گروهی از فناوری های مرتبط (HTML، CSS، JavaScript، XMLHttpRequest API و غیره) است که برای نمایش داده ها به صورت ناهمزمان استفاده می شود. یعنی ما می توانیم داده ها را به سرور ارسال کنیم و بدون بارگیری مجدد صفحه وب، داده ها را از سرور دریافت کنیم.
 
      **[⬆ فهرست](#فهرست)**
 
 382. ### What are the different ways to deal with Asynchronous Code
 
-     Below are the list of different ways to deal with Asynchronous code.
-  1. Callbacks
-  2. Promises
-  3. Async/await
-  4. Third-party libraries such as async.js,bluebird etc
+     در زیر لیستی از روش های مختلف برای مقابله با کدهای ناهمزمان آورده شده است.
+   1.callback ها
+   2. پرامیس ها
+   3.Async/await
+   4. کتابخانه های شخص ثالث مانند async.js، bluebird و غیره
 
      **[⬆ فهرست](#فهرست)**
 
 383. ### How to cancel a fetch request
 
-     Until a few days back, One shortcoming of native promises is no direct way to cancel a fetch request. But the new `AbortController` from js specification allows you to use a signal to abort one or multiple fetch calls.
-     The basic flow of cancelling a fetch request would be as below,
-  1. Create an `AbortController` instance
-  2. Get the signal property of an instance and pass the signal as a fetch option for signal
-  3. Call the AbortController's abort property to cancel all fetches that use that signal
-     For example, let's pass the same signal to multiple fetch calls will cancel all requests with that signal,
+     تا چند روز پیش، یکی از کاستی‌های وعده‌های بومی راه مستقیمی برای لغو درخواست واکشی نیست. اما «AbortController» جدید از مشخصات js به شما امکان می‌دهد از سیگنالی برای لغو یک یا چند تماس واکشی استفاده کنید.
+      جریان اصلی لغو یک درخواست واکشی به صورت زیر خواهد بود.
+   1. یک نمونه «AbortController» ایجاد کنید
+   2. ویژگی سیگنال یک نمونه را دریافت کنید و سیگنال را به عنوان یک گزینه واکشی برای سیگنال ارسال کنید
+   3. برای لغو تمام واکشی‌هایی که از آن سیگنال استفاده می‌کنند، با ویژگی abort's AbortController تماس بگیرید.
+      به عنوان مثال، بیایید یک سیگنال را به چندین تماس واکشی ارسال کنیم، همه درخواست‌های با آن سیگنال لغو می‌شوند.
 
      <span dir="ltr" align="left">
 
@@ -7847,9 +7845,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 384. ### What is web speech API
 
-     Web speech API is used to enable modern browsers recognize and synthesize speech(i.e, voice data into web apps). This API has been introduced by W3C Community in the year 2012. It has two main parts,
-  1. **SpeechRecognition (Asynchronous Speech Recognition or Speech-to-Text):** It provides the ability to recognize voice context from an audio input and respond accordingly. This is accessed by the `SpeechRecognition` interface.
-     The below example shows on how to use this API to get text from speech,
+     API گفتار وب برای فعال کردن مرورگرهای مدرن برای شناسایی و ترکیب گفتار (یعنی داده‌های صوتی در برنامه‌های وب) استفاده می‌شود. این API توسط انجمن W3C در سال 2012 معرفی شده است. دارای دو بخش اصلی است.
+   1. **تشخیص گفتار (تشخیص گفتار ناهمزمان یا گفتار به متن):** این امکان را فراهم می کند که زمینه صدا را از ورودی صوتی تشخیص داده و به آن پاسخ دهید. این توسط رابط "SpeechRecognition" قابل دسترسی است.
+      مثال زیر نحوه استفاده از این API برای دریافت متن از گفتار را نشان می دهد.
 
      <span dir="ltr" align="left">
 
@@ -7865,9 +7863,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     In this API, browser is going to ask you for permission to use your microphone
-  1. **SpeechSynthesis (Text-to-Speech):** It provides the ability to recognize voice context from an audio input and respond. This is accessed by the `SpeechSynthesis` interface.
-     For example, the below code is used to get voice/speech from text,
+     در این API، مرورگر برای استفاده از میکروفون شما از شما اجازه می خواهد
+   1. **SpeechSynthesis (Text-to-Speech):** این امکان را فراهم می کند تا زمینه صدا را از ورودی صوتی تشخیص داده و پاسخ دهید. این توسط رابط "SpeechSynthesis" قابل دسترسی است.
+      به عنوان مثال، کد زیر برای دریافت صدا/گفتار از متن استفاده می شود.
 
      <span dir="ltr" align="left">
 
@@ -7881,17 +7879,17 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     The above examples can be tested on chrome(33+) browser's developer console.
-     **Note:**  This API is still a working draft and only available in Chrome and Firefox browsers(ofcourse Chrome only implemented the specification)
+     نمونه‌های بالا را می‌توان روی کنسول برنامه‌نویس مرورگر کروم (33+) آزمایش کرد.
+      **توجه:** این API هنوز یک پیش نویس فعال است و فقط در مرورگرهای کروم و فایرفاکس موجود است (البته کروم فقط مشخصات را اجرا کرده است)
      **[⬆ فهرست](#فهرست)**
 
 385. ### What is minimum timeout throttling
 
-     Both browser and NodeJS javascript environments throttles with a minimum delay that is greater than 0ms. That means even though setting a delay of 0ms will not happen instantaneously.
-     **Browsers:** They have a minimum delay of 4ms. This throttle occurs when successive calls are triggered due to callback nesting(certain depth) or after a certain number of successive intervals.
-     Note: The older browsers have a minimum delay of 10ms.
-     **Nodejs:** They have a minimum delay of 1ms. This throttle happens when the delay is larger than 2147483647 or less than 1.
-     The best example to explain this timeout throttling behavior is the order of below code snippet.
+     هم مرورگر و هم محیط های جاوا اسکریپت NodeJS با حداقل تاخیری که بیشتر از 0 میلی ثانیه است دریچه گاز را انجام می دهند. این بدان معناست که حتی اگر تنظیم یک تاخیر 0ms به طور آنی اتفاق نیفتد.
+      **مرورگرها:** حداقل 4 میلی ثانیه تاخیر دارند. این دریچه گاز زمانی اتفاق می‌افتد که تماس‌های متوالی به دلیل تودرتوی برگشت به تماس (عمق معین) یا پس از تعداد معینی فواصل متوالی آغاز شود.
+      توجه: مرورگرهای قدیمی حداقل 10 میلی ثانیه تاخیر دارند.
+      **Nodejs:** حداقل 1ms تاخیر دارند. این دریچه گاز زمانی اتفاق می افتد که تاخیر بزرگتر از 2147483647 یا کمتر از 1 باشد.
+      بهترین مثال برای توضیح این رفتار throttling وقفه، ترتیب قطعه کد زیر است.
 
      <span dir="ltr" align="left">
 
@@ -7905,7 +7903,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     and the output would be in
+     و خروجی در خواهد بود
 
      <span dir="ltr" align="left">
 
@@ -7916,7 +7914,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     If you don't use `setTimeout`, the order of logs will be sequential.
+     اگر از «setTimeout» استفاده نمی‌کنید، ترتیب گزارش‌ها به ترتیب خواهد بود.
 
      <span dir="ltr" align="left">
 
@@ -7930,7 +7928,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     and the output is,
+     و خروجی این است،
 
      <span dir="ltr" align="left">
 
@@ -7945,26 +7943,26 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 386. ### How do you implement zero timeout in modern browsers
 
-     You can't use setTimeout(fn, 0) to execute the code immediately due to minimum delay of greater than 0ms. But you can use window.postMessage() to achieve this behavior.
+     به دلیل حداقل تاخیر بیش از 0 میلی ثانیه، نمی توانید از setTimeout(fn, 0) برای اجرای فوری کد استفاده کنید. اما برای دستیابی به این رفتار می توانید از window.postMessage() استفاده کنید.
 
      **[⬆ فهرست](#فهرست)**
 
 387. ### What are tasks in event loop
 
-     A task is any javascript code/program which is scheduled to be run by the standard mechanisms such as initially starting to run a program, run an event callback, or an interval or timeout being fired. All these tasks are scheduled on a task queue.
-     Below are the list of use cases to add tasks to the task queue,
-  1. When a new javascript program is executed directly from console or running by the ```<script>``` element, the task will be added to the task queue.
-  2. When an event fires, the event callback added to task queue
-  3. When a setTimeout or setInterval is reached, the corresponding callback added to task queue
+     وظیفه هر کد/برنامه جاوا اسکریپتی است که قرار است توسط مکانیسم‌های استاندارد اجرا شود، مانند شروع اولیه اجرای یک برنامه، اجرای یک فراخوان رویداد، یا یک بازه زمانی یا وقفه در حال اجرا. همه این وظایف در یک صف کار برنامه ریزی می شوند.
+      در زیر لیستی از موارد استفاده برای افزودن وظایف به صف کار آمده است.
+   1. هنگامی که یک برنامه جاوا اسکریپت جدید مستقیماً از کنسول اجرا می شود یا توسط عنصر ```<script>``` اجرا می شود، وظیفه به صف کار اضافه می شود.
+   2. هنگامی که یک رویداد شلیک می شود، پاسخ تماس رویداد به صف کار اضافه می شود
+   3. وقتی به یک setTimeout یا setInterval رسید، پاسخ تماس مربوطه به صف کار اضافه می‌شود
 
      **[⬆ فهرست](#فهرست)**
 
 388. ### What is microtask
 
-     Microtask is the javascript code which needs to be executed immediately after the currently executing task/microtask is completed. They are kind of blocking in nature. i.e, The main thread will be blocked until the microtask queue is empty.
-     The main sources of microtasks are Promise.resolve, Promise.reject, MutationObservers, IntersectionObservers etc
+     Microtask کد جاوا اسکریپت است که باید بلافاصله پس از تکمیل وظیفه/میکرووظیفه در حال اجرا اجرا شود. آنها در طبیعت به نوعی مسدود کننده هستند. یعنی تا زمانی که صف microtask خالی نشود، رشته اصلی مسدود خواهد شد.
+      منابع اصلی ریزکارها عبارتند از Promise.resolve، Promise.reject، MutationObservers، IntersectionObservers و غیره.
 
-     **Note:** All of these microtasks are processed in the same turn of the event loop.
+      **توجه:** همه این ریزکارها در همان چرخش حلقه رویداد پردازش می شوند.
      **[⬆ فهرست](#فهرست)**
 
 389. ### What are different event loops
@@ -7977,7 +7975,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 391. ### How do you use javascript libraries in typescript file
 
-     It is known that not all JavaScript libraries or frameworks have TypeScript declaration files. But if you still want to use libraries or frameworks in our TypeScript files without getting compilation errors, the only solution is `declare` keyword along with a variable declaration. For example, let's imagine you have a library called `customLibrary` that doesn’t have a TypeScript declaration and have a namespace called `customLibrary` in the global namespace. You can use this library in typescript code as below,
+    مشخص است که همه کتابخانه‌ها یا چارچوب‌های جاوا اسکریپت دارای فایل‌های اعلان TypeScript نیستند. اما اگر همچنان می‌خواهید از کتابخانه‌ها یا فریم‌ورک‌ها در فایل‌های TypeScript خود بدون دریافت خطاهای کامپایل استفاده کنید، تنها راه‌حل کلمه کلیدی «اعلان» به همراه یک اعلان متغیر است. به عنوان مثال، بیایید تصور کنیم که شما یک کتابخانه به نام "customLibrary" دارید که اعلان TypeScript ندارد و فضای نامی به نام "customLibrary" در فضای نام جهانی دارد. می توانید از این کتابخانه در کد تایپ اسکریپت به صورت زیر استفاده کنید.
 
      <span dir="ltr" align="left">
 
@@ -7987,7 +7985,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     In the runtime, typescript will provide the type to the `customLibrary` variable as `any` type. The another alternative without using declare keyword is below
+     در زمان اجرا، تایپ اسکریپت نوع آن را به متغیر «کتابخانه سفارشی» به صورت «هرگونه» ارائه می‌کند. جایگزین دیگر بدون استفاده از کلمه کلیدی declare در زیر آمده است
 
      <span dir="ltr" align="left">
 
@@ -8001,22 +7999,22 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 392. ### What are the differences between promises and observables
 
-     Some of the major difference in a tabular form
+     برخی از تفاوت های عمده در شکل جدولی
 
-     | Promises | Observables |
-          |---- | ---------
-     | Emits only a single value at a time  | Emits multiple values over a period of time(stream of values ranging from 0 to multiple) |
-     | Eager in nature; they are going to be called immediately  | Lazy in nature; they require subscription to be invoked |
-     | Promise is always asynchronous even though it resolved immediately | Observable can be either synchronous or asynchronous|
-     | Doesn't provide any operators | Provides operators such as map, forEach, filter, reduce, retry, and retryWhen etc |
-     | Cannot be canceled | Canceled by using unsubscribe() method |
+      | وعده ها | قابل مشاهده |
+           |---- | ---------
+      | فقط یک مقدار را در یک زمان منتشر می کند | چندین مقدار را در یک دوره زمانی منتشر می کند (جریان مقادیری از 0 تا چندگانه) |
+      | مشتاق در طبیعت؛ قرار است فوراً فراخوانی شوند | تنبل در طبیعت؛ آنها برای فراخوانی نیاز به اشتراک دارند |
+      | Promise همیشه ناهمزمان است حتی اگر بلافاصله حل شود | قابل مشاهده می تواند همزمان یا ناهمزمان|
+      | هیچ اپراتور ارائه نمی دهد | اپراتورهایی مانند map، forEach، filter، reduce، retry و retryWhen و غیره را ارائه می دهد.
+      | قابل لغو نیست | با استفاده از روش unsubscribe() لغو شد
 
      **[⬆ فهرست](#فهرست)**
 
 393. ### What is heap
 
-     Heap(Or memory heap) is the memory location where objects are stored when we define variables. i.e, This is the place where all the memory allocations and de-allocation take place. Both heap and call-stack are two containers of JS runtime.
-     Whenever runtime comes across variables and function declarations in the code it stores them in the Heap.
+     Heap (یا پشته حافظه) مکانی است که در آن اشیا در هنگام تعریف متغیرها ذخیره می شوند. یعنی این مکانی است که تمام تخصیص حافظه و عدم تخصیص در آن انجام می شود. هر دو heap و call-stack دو ظرف زمان اجرا JS هستند.
+      هر زمان که زمان اجرا با متغیرها و اعلان های تابع در کد مواجه می شود، آنها را در Heap ذخیره می کند.
 
      ![Screenshot](images/heap.png)
 
@@ -8024,8 +8022,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 394. ### What is an event table
 
-     Event Table is a data structure that stores and keeps track of all the events which will be executed asynchronously like after some time interval or after the resolution of some API requests. i.e Whenever you call a setTimeout function or invoke async operation, it is added to the Event Table.
-     It doesn't not execute functions on it’s own. The main purpose of the event table is to keep track of events and send them to the Event Queue as shown in the below diagram.
+     Event Table یک ساختار داده ای است که تمام رویدادهایی را که به صورت ناهمزمان اجرا می شوند، مانند پس از مدتی فاصله زمانی یا پس از رفع برخی از درخواست های API، ذخیره و ردیابی می کند. یعنی هر زمان که یک تابع setTimeout را فراخوانی کنید یا عملیات async را فراخوانی کنید، به جدول رویداد اضافه می شود.
+      توابع را به تنهایی اجرا نمی کند. هدف اصلی جدول رویدادها پیگیری رویدادها و ارسال آنها به صف رویداد همانطور که در نمودار زیر نشان داده شده است.
 
      ![Screenshot](images/event-table.png)
 
@@ -8033,22 +8031,22 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 395. ### What is a microTask queue
 
-     Microtask Queue is the new queue where all the tasks initiated by promise objects get processed before the callback queue.
-     The microtasks queue are processed before the next rendering and painting jobs. But if these microtasks are running for a long time then it leads to visual degradation.
+     Microtask Queue صف جدیدی است که در آن تمام وظایف آغاز شده توسط اشیاء وعده قبل از صف برگشت پردازش می شوند.
+      صف microtasks قبل از کارهای رندر و نقاشی بعدی پردازش می شود. اما اگر این ریزکارها برای مدت طولانی اجرا شوند، منجر به تخریب بصری می شود.
 
      **[⬆ فهرست](#فهرست)**
 
 396. ### What is the difference between shim and polyfill
 
-     A shim is a library that brings a new API to an older environment, using only the means of that environment.  It isn't necessarily restricted to a web application. For example, es5-shim.js is used to emulate ES5 features on older browsers (mainly pre IE9).
-     Whereas polyfill is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively.
-     In a simple sentence, A polyfill is a shim for a browser API.
+     شیم کتابخانه ای است که یک API جدید را با استفاده از ابزارهای آن محیط به یک محیط قدیمی تر می آورد. لزوماً محدود به یک برنامه وب نیست. به عنوان مثال، es5-shim.js برای شبیه سازی ویژگی های ES5 در مرورگرهای قدیمی (عمدتا قبل از IE9) استفاده می شود.
+      در حالی که polyfill یک قطعه کد (یا افزونه) است که فناوری را ارائه می‌کند که شما، توسعه‌دهنده، از مرورگر انتظار دارید که به صورت بومی ارائه کند.
+      در یک جمله ساده، A polyfill یک شیم برای API مرورگر است.
 
      **[⬆ فهرست](#فهرست)**
 
 397. ### How do you detect primitive or non primitive value type
 
-     In JavaScript, primitive types include boolean, string, number, BigInt, null, Symbol and undefined. Whereas non-primitive types include the Objects. But you can easily identify them with the below function,
+     در جاوا اسکریپت، انواع ابتدایی عبارتند از boolean، string، number، BigInt، null، Symbol و undefined. در حالی که انواع غیر ابتدایی شامل Object ها می شود. اما با تابع زیر می توانید به راحتی آنها را شناسایی کنید
 
      <span dir="ltr" align="left">
 
@@ -8065,42 +8063,42 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     If the value is a primitive data type, the Object constructor creates a new wrapper object for the value. But If the value is a non-primitive data type (an object), the Object constructor will give the same object.
+     اگر مقدار یک نوع داده اولیه باشد، سازنده Object یک شیء پوشاننده جدید برای مقدار ایجاد می کند. اما اگر مقدار یک نوع داده غیر ابتدایی (یک شی) باشد، سازنده Object همان شی را می دهد.
 
      **[⬆ فهرست](#فهرست)**
 
 398. ### What is babel
 
-     Babel is a JavaScript transpiler to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Some of the main features are listed below,
-  1. Transform syntax
-  2. Polyfill features that are missing in your target environment (using @babel/polyfill)
-  3. Source code transformations (or codemods)
+     Babel یک ترانسپایلر جاوا اسکریپت برای تبدیل کد ECMAScript 2015+ به یک نسخه سازگار جاوا اسکریپت در مرورگرها یا محیط های فعلی و قدیمی تر است. برخی از ویژگی های اصلی در زیر ذکر شده است،
+   1. تبدیل نحو
+   2. ویژگی های Polyfill که در محیط هدف شما وجود ندارد (با استفاده از @babel/polyfill)
+   3. تبدیل کد منبع (یا کد مد)
 
      **[⬆ فهرست](#فهرست)**
 
 399. ### Is Node.js completely single threaded
 
-     Node is a single thread, but some of the functions included in the Node.js standard library(e.g, fs module functions) are not single threaded. i.e, Their logic runs outside of the Node.js single thread to improve the speed and performance of a program.
+     Node یک رشته است، اما برخی از توابع موجود در کتابخانه استاندارد Node.js (به عنوان مثال، توابع ماژول fs) تک رشته ای نیستند. یعنی منطق آنها خارج از رشته Node.js اجرا می شود تا سرعت و عملکرد یک برنامه را بهبود بخشد.
 
      **[⬆ فهرست](#فهرست)**
 
 400. ### What are the common use cases of observables
 
-     Some of the most common use cases of observables are web sockets with push notifications, user input changes, repeating intervals, etc
+     برخی از رایج‌ترین موارد استفاده از موارد مشاهده‌شده عبارتند از سوکت‌های وب با اعلان‌های فشار، تغییرات ورودی کاربر، فواصل تکراری و غیره.
 
      **[⬆ فهرست](#فهرست)**
 
 401. ### What is RxJS
 
-     RxJS (Reactive Extensions for JavaScript) is a library for implementing reactive programming using observables that makes it easier to compose asynchronous or callback-based code. It also provides utility functions for creating and working with observables.
+     RxJS (افزونه‌های واکنش‌گرا برای جاوا اسکریپت) کتابخانه‌ای برای پیاده‌سازی برنامه‌نویسی واکنش‌گرا با استفاده از مشاهده‌پذیر است که نوشتن کد ناهمزمان یا مبتنی بر تماس را آسان‌تر می‌کند. همچنین توابع کاربردی را برای ایجاد و کار با مشاهده پذیرها فراهم می کند.
 
      **[⬆ فهرست](#فهرست)**
 
 402. ### What is the difference between Function constructor and function declaration
 
-     The functions which are created with `Function constructor` do not create closures to their creation contexts but they are always created in the global scope. i.e, the function can access its own local variables and global scope variables only. Whereas function declarations can access outer function variables(closures) too.
+     توابعی که با "سازنده تابع" ایجاد می شوند، برای زمینه های ایجاد خود بسته ایجاد نمی کنند، اما همیشه در محدوده جهانی ایجاد می شوند. یعنی تابع فقط می تواند به متغیرهای محلی خود و متغیرهای دامنه جهانی دسترسی داشته باشد. در حالی که اعلان های تابع می توانند به متغیرهای تابع بیرونی (بسته شدن) نیز دسترسی داشته باشند.
 
-     Let's see this difference with an example,
+      بیایید این تفاوت را با یک مثال ببینیم،
 
      **Function Constructor:**
 
@@ -8138,7 +8136,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 403. ### What is a Short circuit condition
 
-     Short circuit conditions are meant for condensed way of writing simple if statements. Let's demonstrate the scenario using an example. If you would like to login to a portal with an authentication condition, the expression would be as below,
+     شرایط اتصال کوتاه برای روش فشرده نوشتن دستورات if ساده در نظر گرفته شده است. بیایید سناریو را با استفاده از یک مثال نشان دهیم. اگر می خواهید وارد پورتالی با شرایط احراز هویت شوید، عبارت زیر خواهد بود:
 
      <span dir="ltr" align="left">
 
@@ -8150,7 +8148,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Since the javascript logical operators evaluated from left to right, the above expression can be simplified using && logical operator
+     از آنجایی که عملگرهای منطقی جاوا اسکریپت از چپ به راست ارزیابی می شوند، عبارت فوق را می توان با استفاده از عملگر منطقی && ساده کرد.
 
      <span dir="ltr" align="left">
 
@@ -8164,7 +8162,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 404. ### What is the easiest way to resize an array
 
-     The length property of an array is useful to resize or empty an array quickly. Let's apply length property on number array to resize the number of elements from 5 to 2,
+     ویژگی length یک آرایه برای تغییر اندازه یا خالی کردن سریع آرایه مفید است. بیایید ویژگی length را روی آرایه اعداد اعمال کنیم تا تعداد عناصر را از 5 به 2 تغییر دهیم.
 
      <span dir="ltr" align="left">
 
@@ -8179,7 +8177,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     and the array can be emptied too
+     و آرایه را نیز می توان خالی کرد
 
      <span dir="ltr" align="left">
 
@@ -8196,8 +8194,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 405. ### What is an observable
 
-     An Observable is basically a function that can return a stream of values either synchronously or asynchronously to an observer over time. The consumer can get the value by calling `subscribe()` method.
-     Let's look at a simple example of an Observable
+     Observable اساساً تابعی است که می تواند جریانی از مقادیر را به صورت همزمان یا ناهمزمان به یک ناظر در طول زمان برگرداند. مصرف کننده می تواند با فراخوانی متد «subscribe()» مقدار را دریافت کند.
+      بیایید به یک مثال ساده از یک Observable نگاه کنیم
 
      <span dir="ltr" align="left">
 
@@ -8217,13 +8215,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      ![Screenshot](images/observables.png)
 
-     **Note:** Observables are not part of the JavaScript language yet but they are being proposed to be added to the language
+     **توجه:** مشاهده پذیرها هنوز بخشی از زبان جاوا اسکریپت نیستند اما پیشنهاد شده است که به زبان اضافه شوند.
 
      **[⬆ فهرست](#فهرست)**
 
 406. ### What is the difference between function and class declarations
 
-     The main difference between function declarations and class declarations is `hoisting`. The function declarations are hoisted but not class declarations.
+     تفاوت اصلی بین اعلان های تابع و اعلان های کلاس "بالا بردن" است. اعلان های تابع بالا می روند اما اعلان های کلاس نیستند.
 
      **Classes:**
 
@@ -8254,9 +8252,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 407. ### What is an async function
 
-     An async function is a function declared with the `async` keyword which enables asynchronous, promise-based behavior to be written in a cleaner style by avoiding promise chains. These functions can contain zero or more `await` expressions.
+     یک تابع همگام، تابعی است که با کلمه کلیدی «ناهمگام» اعلام شده است که با اجتناب از زنجیره وعده، رفتار ناهمزمان و مبتنی بر قول را قادر می‌سازد به سبک تمیزتری نوشته شود. این توابع می توانند شامل صفر یا بیشتر عبارت «انتظار» باشند.
 
-     Let's take a below async function example,
+      بیایید یک مثال تابع همگام زیر را در نظر بگیریم،
 
      <span dir="ltr" align="left">
 
@@ -8271,15 +8269,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     It is basically syntax sugar over ES2015 promises and generators.
-
+     این اساساً قند نحوی بیش از پرامیس ها و توابع جنریتور ES2015 است.
      **[⬆ فهرست](#فهرست)**
 
 408. ### How do you prevent promises swallowing errors
 
-     While using asynchronous code, JavaScript’s ES6 promises can make your life a lot easier without having callback pyramids and error handling on every second line. But Promises have some pitfalls and the biggest one is swallowing errors by default.
+     در حین استفاده از کد ناهمزمان، وعده‌های ES6 جاوا اسکریپت می‌تواند زندگی شما را بدون داشتن هرم برگشت تماس و مدیریت خطا در هر خط دوم بسیار آسان‌تر کند. اما Promises مشکلاتی دارد و بزرگ‌ترین آنها به‌طور پیش‌فرض بلعیدن خطاها است.
 
-     Let's say you expect to print an error to the console for all the below cases,
+      فرض کنید انتظار دارید برای تمام موارد زیر یک خطا در کنسول چاپ کنید.
 
      <span dir="ltr" align="left">
 
@@ -8299,7 +8296,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     But there are many modern JavaScript environments that won't print any errors. You can fix this problem in different ways,
+     اما بسیاری از محیط‌های جاوا اسکریپت مدرن وجود دارند که هیچ خطایی را چاپ نمی‌کنند. شما می توانید این مشکل را به روش های مختلف حل کنید،
 
   1. **Add catch block at the end of each chain:** You can add catch block to the end of each of your promise chains
 
@@ -8316,9 +8313,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
          </span>
 
-        But it is quite difficult to type for each promise chain and verbose too.
+        اما تایپ کردن برای هر زنجیره پرامیس ها و پرمخاطب نیز بسیار دشوار است.
 
-     2. **Add done method:** You can replace first solution's then and catch blocks with done method
+     2. **Add done method:** می توانید ابتدا راه حل ها را جایگزین کنید و سپس با روش انجام شده بلوک ها را بگیرید
 
 
          <span dir="ltr" align="left">
@@ -8332,7 +8329,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
          </span>
 
 
-Let's say you want to fetch data using HTTP and later perform processing on the resulting data asynchronously. You can write `done` block as below,
+          فرض کنید می خواهید داده ها را با استفاده از HTTP واکشی کنید و بعداً پردازش داده های حاصل را به صورت ناهمزمان انجام دهید. می‌توانید بلوک «انجام شد» را به صورت زیر بنویسید.
 
          <span dir="ltr" align="left">
 
@@ -8346,12 +8343,11 @@ Let's say you want to fetch data using HTTP and later perform processing on the 
            });
          ```
 
-         </span>
+          </span>
 
 
-In future, if the processing library API changed to synchronous then you can remove `done` block as below,
-
-         <span dir="ltr" align="left">
+     در آینده، اگر API کتابخانه پردازش به همگام تغییر کند، می‌توانید بلوک «انجام شد» را مانند زیر حذف کنید.
+     <span dir="ltr" align="left">
 
          ```javascript
           getDataFromHttp()
@@ -8360,15 +8356,15 @@ In future, if the processing library API changed to synchronous then you can rem
             })
          ```
 
-         </span>
+     </span>
 
 
-and then you forgot to add `done` block to `then` block leads to silent errors.
+و سپس فراموش کرده اید که بلوک «انجام شد» را به بلوک «سپس» اضافه کنید که منجر به خطاهای خاموش می شود.
 
-     3. **Extend ES6 Promises by Bluebird:**
-         Bluebird extends the ES6 Promises API to avoid the issue in the second solution. This library has a “default” onRejection handler which will print all errors from rejected Promises to stderr. After installation, you can process unhandled rejections
+3. **Extend ES6 Promises by Bluebird:**
+        Bluebird API ES6 Promises را گسترش می دهد تا در راه حل دوم مشکلی ایجاد نشود. این کتابخانه دارای یک کنترل کننده "پیش فرض" در Rejection است که تمام خطاها را از Promises رد شده به stderr چاپ می کند. پس از نصب، می توانید ردهای کنترل نشده را پردازش کنید
 
-         <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
          ```javascript
          Promise.onPossiblyUnhandledRejection(function(error){
@@ -8376,12 +8372,12 @@ and then you forgot to add `done` block to `then` block leads to silent errors.
          });
          ```
 
-         </span>
+     </span>
 
 
-and discard a rejection, just handle it with an empty catch
+و یک رد را دور بیندازید، فقط با یک شکار خالی آن را مدیریت کنید
 
-         <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
          ```javascript
          Promise.reject('error value').catch(function() {});
@@ -8394,15 +8390,15 @@ and discard a rejection, just handle it with an empty catch
 
 409. ### What is deno
 
-     Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 JavaScript engine and the Rust programming language.
+     Deno یک زمان اجرا ساده، مدرن و ایمن برای جاوا اسکریپت و تایپ اسکریپت است که از موتور جاوا اسکریپت V8 و زبان برنامه نویسی Rust استفاده می کند.
 
      **[⬆ فهرست](#فهرست)**
 
 410. ### How do you make an object iterable in javascript
 
-     By default, plain objects are not iterable. But you can make the object iterable by defining a `Symbol.iterator` property on it.
+     به طور پیش فرض، اشیاء ساده قابل تکرار نیستند. اما می‌توانید با تعریف ویژگی «Symbol.iterator» روی آن، شی را قابل تکرار کنید.
 
-     Let's demonstrate this with an example,
+      بیایید این را با یک مثال نشان دهیم،
 
      <span dir="ltr" align="left">
 
@@ -8436,7 +8432,7 @@ and discard a rejection, just handle it with an empty catch
      </span>
 
 
-     The above process can be simplified using a generator function,
+     فرآیند فوق را می توان با استفاده از یک تابع مولد ساده کرد،
 
      <span dir="ltr" align="left">
 
@@ -8465,9 +8461,9 @@ and discard a rejection, just handle it with an empty catch
 
 411. ### What is a Proper Tail Call
 
-     First, we should know about tail call before talking about "Proper Tail Call". A tail call is a subroutine or function call performed as the final action of a calling function. Whereas **Proper tail call(PTC)** is a technique where the program or code will not create additional stack frames for a recursion when the function call is a tail call.
+   ابتدا، قبل از صحبت در مورد "دوم خوانی مناسب" باید در مورد دم دم بدانیم. فراخوانی دنباله یک فراخوانی فرعی یا تابعی است که به عنوان آخرین عمل یک تابع فراخوانی انجام می شود. در حالی که ** فراخوانی دنباله مناسب (PTC)** تکنیکی است که در آن برنامه یا کد فریم های پشته ای اضافی برای بازگشت ایجاد نمی کند، زمانی که فراخوانی تابع یک فراخوانی دنباله است.
 
-     For example, the below classic or head recursion of factorial function relies on stack for each step. Each step need to be processed upto `n * factorial(n - 1)`
+      برای مثال، بازگشت کلاسیک یا سر تابع فاکتوریل زیر به پشته برای هر مرحله بستگی دارد. هر مرحله باید تا "n * فاکتوریل(n - 1)" پردازش شود
 
      <span dir="ltr" align="left">
 
@@ -8483,7 +8479,7 @@ and discard a rejection, just handle it with an empty catch
 
      </span>
 
-     But if you use Tail recursion functions, they keep passing all the necessary data it needs down the recursion without relying on the stack.
+     اما اگر از توابع بازگشتی Tail استفاده می‌کنید، آن‌ها تمام داده‌های لازم را که به آن نیاز دارد را بدون تکیه بر پشته، در بازگشت به پایین منتقل می‌کنند.
 
      <span dir="ltr" align="left">
 
@@ -8499,13 +8495,13 @@ and discard a rejection, just handle it with an empty catch
 
      </span>
 
-     The above pattern returns the same output as the first one. But the accumulator keeps track of total as an argument without using stack memory on recursive calls.
+     الگوی بالا همان خروجی مورد اول را برمی گرداند. اما انباشت کننده کل را به عنوان آرگومان بدون استفاده از حافظه پشته در تماس های بازگشتی ردیابی می کند.
 
      **[⬆ فهرست](#فهرست)**
 
 412. ### How do you check an object is a promise or not
 
-     If you don't know if a value is a promise or not, wrapping the value as `Promise.resolve(value)` which returns a promise
+     اگر نمی دانید یک مقدار یک وعده است یا نه، مقدار را به صورت «Promise.resolve(value)» بپیچید که یک قول را برمی گرداند.
 
       <span dir="ltr" align="left">
 
@@ -8529,7 +8525,7 @@ and discard a rejection, just handle it with an empty catch
 
       </span>
 
-     Another way is to check for `.then()` handler type
+     راه دیگر این است که نوع handler «.then()» را بررسی کنید
 
       <span dir="ltr" align="left">
 
@@ -8552,10 +8548,10 @@ and discard a rejection, just handle it with an empty catch
 
 413. ### How to detect if a function is called as constructor
 
-     You can use `new.target` pseudo-property to detect whether a function was called as a constructor(using the new operator) or as a regular function call.
+     می‌توانید از ویژگی شبه «new.target» برای تشخیص اینکه آیا یک تابع به عنوان سازنده (با استفاده از عملگر جدید) فراخوانی شده است یا به عنوان یک فراخوانی تابع معمولی استفاده کنید.
 
-  1. If a constructor or function invoked using the new operator, new.target returns a reference to the constructor or function.
-  2. For function calls, new.target is undefined.
+   1. اگر سازنده یا تابعی با استفاده از عملگر جدید فراخوانی شود، new.target یک مرجع به سازنده یا تابع برمی‌گرداند.
+   2. برای فراخوانی تابع، new.target تعریف نشده است.
 
       <span dir="ltr" align="left">
 
@@ -8579,23 +8575,23 @@ and discard a rejection, just handle it with an empty catch
 
 414. ### What are the differences between arguments object and rest parameter
 
-     There are three main differences between arguments object and rest parameters
+     سه تفاوت اصلی بین پارامترهای شیء آرگومان و پارامترهای استراحت وجود دارد
 
-  1. The arguments object is an array-like but not an array. Whereas the rest parameters are array instances.
-  2. The arguments object does not support methods such as sort, map, forEach, or pop. Whereas these methods can be used in rest parameters.
-  3. The rest parameters are only the ones that haven’t been given a separate name, while  the arguments object contains all arguments passed to the function
+   1. شیء آرگومان ها آرایه مانند است اما آرایه نیست. در حالی که بقیه پارامترها نمونه های آرایه هستند.
+   2. شیء آرگومان ها از روش هایی مانند sort، map، forEach یا pop پشتیبانی نمی کند. در حالی که این روش ها را می توان در پارامترهای استراحت استفاده کرد.
+   3. بقیه پارامترها فقط آنهایی هستند که نام جداگانه ای به آنها داده نشده است، در حالی که شیء آرگومان ها شامل تمام آرگومان های ارسال شده به تابع است.
 
      **[⬆ فهرست](#فهرست)**
 
 415. ### What are the differences between spread operator and rest parameter
 
-     Rest parameter collects all remaining elements into an array. Whereas Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. i.e, Rest parameter is opposite to the spread operator.
+     پارامتر Rest تمام عناصر باقی مانده را در یک آرایه جمع آوری می کند. در حالی که عملگر Spread به تکرارپذیرها (آرایه ها / اشیاء / رشته ها) اجازه می دهد تا به آرگومان ها / عناصر منفرد گسترش یابند. یعنی پارامتر Rest مخالف عملگر spread است.
 
      **[⬆ فهرست](#فهرست)**
 
 416. ### What are the different kinds of generators
 
-     There are five kinds of generators,
+     پنج نوع  تابع ژنراتور وجود دارد،
 
   1. **Generator function declaration:**
 
@@ -8684,25 +8680,25 @@ and discard a rejection, just handle it with an empty catch
 
 417. ### What are the built-in iterables
 
-     Below are the list of built-in iterables in javascript,
+     در زیر لیستی از تکرارهای داخلی در جاوا اسکریپت آمده است.
 
-  1. Arrays and TypedArrays
-  2. Strings: Iterate over each character or Unicode code-points
-  3. Maps: iterate over its key-value pairs
-  4. Sets: iterates over their elements
-  5. arguments: An array-like special variable in functions
-  6. DOM collection such as NodeList
+   1. آرایه ها و TypedArrays
+   2. رشته ها: روی هر کاراکتر یا نقاط کد یونیکد تکرار کنید
+   3. نقشه ها: روی جفت های کلید-مقدار آن تکرار شود
+   4. مجموعه ها: روی عناصر خود تکرار می شود
+   5. آرگومان ها: یک متغیر خاص آرایه مانند در توابع
+   6. مجموعه DOM مانند NodeList
 
      **[⬆ فهرست](#فهرست)**
 
 418. ### What are the differences between for...of and for...in statements
 
-     Both for...in and for...of statements iterate over js data structures. The only difference is over what they iterate:
+     هم برای...in و هم برای...از دستورات روی ساختارهای داده js تکرار می‌شن. تنها تفاوت در مورد  چیزیه که اونا تکرار میکننه:
 
-  1. for..in iterates over all enumerable property keys of an object
-  2. for..of iterates over the values of an iterable object.
+   1. for..in روی تمام کلیدهای خصوصیت شمارش پذیر یک شی تکرار می شود
+   2. for..of iterates بیش از مقادیر یک شی قابل تکرار.
 
-     Let's explain this difference with an example,
+     بیاین این تفاوت رو توی یه مثال ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -8724,13 +8720,13 @@ and discard a rejection, just handle it with an empty catch
 
      </span>
 
-     Since for..in loop iterates over the keys of the object, the first loop logs 0, 1, 2 and newProp while iterating over the array object. The for..of loop iterates over the values of a arr data structure and logs  a, b, c in the console.
+     از اونجا که حلقه for..in روی کلیدهای شی تکرار می‌شه حلقه اول 0، 1، 2 و newProp را در حین تکرار روی شی آرایه ثبت می‌کنه. حلقه for..of روی مقادیر یک ساختار داده arr تکرار می‌شه و a، b، c را در کنسول ثبت می‌کنه.
 
      **[⬆ فهرست](#فهرست)**
 
 419. ### How do you define instance and non-instance properties
 
-     The Instance properties must be defined inside of class methods. For example, name and age properties defined insider constructor as below,
+     خصوصیات Instance باید در داخل متدهای کلاس تعریف بشن. به عنوان مثال، مشخصات نام و سن سازنده داخلی هم مثل مثال پایین تعریف میشن.
 
      <span dir="ltr" align="left">
 
@@ -8745,7 +8741,7 @@ and discard a rejection, just handle it with an empty catch
 
      </span>
 
-     But Static(class) and prototype data properties must be defined outside of the ClassBody declaration. Let's assign the age value for Person class as below,
+     اما خصوصیات داده Static(class) و نمونه اولیه باید خارج از اعلان ClassBody تعریف بشن. بیاین مقدار سن را برای کلاس Person به صورت زیر اختصاص بدیم.
 
      <span dir="ltr" align="left">
 
@@ -8760,10 +8756,10 @@ and discard a rejection, just handle it with an empty catch
 
 420. ### What is the difference between isNaN and Number.isNaN?
 
-  1. **isNaN**: The global function `isNaN` converts the argument to a Number and returns true if the resulting value is NaN.
-  2. **Number.isNaN**: This method does not convert the argument. But it returns true when the type is a Number and value is NaN.
+  1. **isNaN**: تابع سراسری «isNaN» آرگومان را به عدد تبدیل می‌کند و اگر مقدار حاصل NaN باشد، true را برمی‌گرداند.
+   2. **Number.isNaN**: این روش آرگومان را تبدیل نمی کند. اما زمانی که نوع یک عدد و مقدار NaN باشد مقدار true را برمی گرداند.
 
-     Let's see the difference with an example,
+     بیایید تفاوت را با یک مثال ببینیم،
 
      <span dir="ltr" align="left">
 
