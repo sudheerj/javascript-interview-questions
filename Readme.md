@@ -4,7 +4,7 @@
     <img src="https://raw.githubusercontent.com/Mariotek/BetterUnderstandingOfJavascript/master/image-MariotekLogo.png" >
 </p>
 
-# مجموعه سوال و جواب‌های ری‌اکت (react.js)
+# مجموعه سوال و جواب‌های جاواسکریپت (javascript)
 
 این کتاب شامل سوال و جواب‌های جاواسکریپتی است که حدود `۵۰۰ سوال` و جواب حاضر شده و به شکل متن‌باز ارائه میشه.
 
@@ -35,7 +35,7 @@ https://zarinp.al/370791
 
 <div dir="ltr">
 
-# Top react interview questions
+# Top Javascript interview questions
 
 This book contains 325 repeated react.js interview questions which are asked in big companies interview sessions.
 It is in `200 pages` in Persian and also it is free and open source!
