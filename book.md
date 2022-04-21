@@ -466,9 +466,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 1. ### روش‌های ایجاد objects توی جاواسکریپت چیا هستن؟
 
-   روش‌‌ های زیادی برای ایجاد آبجکت‌ها توی جاوا‌اسکریپت وجود داره:
+     روش‌‌ های زیادی برای ایجاد آبجکت‌ها توی جاوا‌اسکریپت وجود داره:
 
-  1. **سازنده آبجکت:**
+     1. **سازنده آبجکت:**
 
      ساده‌ترین راه برای ایجاد یه آبجکت خالی استفاده از سازنده آبجکت هستش. در حال حاضر این روش توصیه نمیشه
 
@@ -480,8 +480,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-
-2. **متد ایجاد آبجکت:**
+     2. **متد ایجاد آبجکت:**
 
      متد ایجاد آبجکت با انتقال نمونه اولیه آبجکت به عنوان یه پارامتر، یه آبجکت جدید ایجاد میکنه
 
@@ -494,7 +493,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
 
-3. **Object literal syntax:**
+     3. **Object literal syntax:**
 
      The object literal syntax is equivalent to create method when it passes null as parameter
 
@@ -507,7 +506,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
 
-4. **سازنده تابع:**
+     4. **سازنده تابع:**
 
      هر تابعی که بخوایم رو ایجاد میکنیم و از طریق عملگر new یه نمونه آبجکت جدید می‌سازیم.
 
@@ -526,83 +525,83 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
 
-5. **سازنده تابع با نمونه اولیه؛**
+     5. **سازنده تابع با نمونه اولیه؛**
 
-   شبیه سازنده تابع هستش اما از نمونه اولیه برای متد‌ها و خصوصیاتشون استفاده میکنه
+     شبیه سازنده تابع هستش اما از نمونه اولیه برای متد‌ها و خصوصیاتشون استفاده میکنه
 
-   <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-   ```javascript
-   function Person(){}
-   Person.prototype.name = "Sudheer";
-   var object = new Person();
-   ```
+     ```javascript
+     function Person(){}
+     Person.prototype.name = "Sudheer";
+     var object = new Person();
+     ```
 
-   </span>
+     </span>
 
-   این معادل نمونه‌ای هستش که با متد ایجاد آبجکت با نمونه اولیه تابع ایجاد شده و تابع رو با یه نمونه و پارامتر‌هاش به عنوان آرگومان فراخوانی میکنه.
+     این معادل نمونه‌ای هستش که با متد ایجاد آبجکت با نمونه اولیه تابع ایجاد شده و تابع رو با یه نمونه و پارامتر‌هاش به عنوان آرگومان فراخوانی میکنه.
 
-   <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-   ```javascript
-   function func {};
+     ```javascript
+     function func {};
 
-   new func(x, y, z);
-   ```
+     new func(x, y, z);
+     ```
 
-   </span>
-
-
-      **(OR)**
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      // Create a new instance using function prototype.
-      var newInstance = Object.create(func.prototype)
-
-      // Call the function
-      var result = func.call(newInstance, x, y, z),
-
-      // If the result is a non-null object then use it otherwise just use the new instance.
-      console.log(result && typeof result === 'object' ? result : newInstance);
-      ```
-
-      </span>
+     </span>
 
 
-6. **ES6 Class syntax:**
+     **(یا)**
 
-   ES6 ویژگی‌های کلاس رو برای ایجاد آبجکت‌ها معرفی میکنه
+     <span dir="ltr" align="left">
 
-   <span dir="ltr" align="left">
+     ```javascript
+     // Create a new instance using function prototype.
+     var newInstance = Object.create(func.prototype)
 
-   ```javascript
-   class Person {
-      constructor(name) {
-         this.name = name;
-      }
-   }
+     // Call the function
+     var result = func.call(newInstance, x, y, z),
 
-   var object = new Person("Sudheer");
-   ```
+     // If the result is a non-null object then use it otherwise just use the new instance.
+     console.log(result && typeof result === 'object' ? result : newInstance);
+     ```
 
-   </span>
+     </span>
 
 
-7. **الگوی Singleton:**
+     6. **ES6 Class syntax:**
 
-   Singleton آبجکتیه که فقط یه بار قابل نمونه‌گیری هستش. فراخوانی‌های پی در پی با سازنده‌ش همون نمونه رو برمی‌گردونه و اینطوری میشه مطمئن شد که به طور تصادفی نمونه‌های مختلف ایجاد نمیشه.
+     ES6 ویژگی‌های کلاس رو برای ایجاد آبجکت‌ها معرفی میکنه
 
-   <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-   ```javascript
-   var object = new function(){
-      this.name = "Sudheer";
-   }
-   ```
+     ```javascript
+     class Person {
+          constructor(name) {
+          this.name = name;
+          }
+     }
 
-   </span>
+     var object = new Person("Sudheer");
+     ```
+
+     </span>
+
+
+     7. **الگوی Singleton:**
+
+     Singleton آبجکتیه که فقط یه بار قابل نمونه‌گیری هستش. فراخوانی‌های پی در پی با سازنده‌ش همون نمونه رو برمی‌گردونه و اینطوری میشه مطمئن شد که به طور تصادفی نمونه‌های مختلف ایجاد نمیشه.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     var object = new function(){
+          this.name = "Sudheer";
+     }
+     ```
+
+     </span>
 
 
       **[فهرست](#فهرست)**
@@ -674,7 +673,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      var inviteEmployee2 = invite.bind(employee2);
      inviteEmployee1('Hello', 'How are you?'); // Hello John Rodson, How are you?
      inviteEmployee2('Hello', 'How are you?'); // Hello Jimmy Baily, How are you?
-    ```
+     ```
 
      </span>
 
@@ -757,15 +756,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 6. ### تفاوت متدهای slice و splice چیا هستن؟
 
-   بعضی از تفاوت‌های عمده توی یه جدول
+     بعضی از تفاوت‌های عمده توی یه جدول
 
-   | Slice | Splice |
-       |---- | ---------
-   | آرایه اصلی رو تغییر نمیده (تغییرناپذیر)  | آرایه اصلی رو تغییر میده (تغییر پذیر) |
-   | زیر مجموعه آرایه اصلی رو برمی‌گردونه | عناصر حذف شده رو به عنوان آرایه برمی گردونه  |
-   | برای انتخاب عناصر از آرایه استفاده میشه | برای درج عناصر به آرایه یا حذف از اون استفاده میشه|
+     | Slice | Splice |
+     |---- | --------- |
+     | آرایه اصلی رو تغییر نمیده (تغییرناپذیر)  | آرایه اصلی رو تغییر میده (تغییر پذیر) |
+     | زیر مجموعه آرایه اصلی رو برمی‌گردونه | عناصر حذف شده رو به عنوان آرایه برمی گردونه  |
+     | برای انتخاب عناصر از آرایه استفاده میشه | برای درج عناصر به آرایه یا حذف از اون استفاده میشه|
 
-   **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 7. ### تفاوت‌های Object و Map چیا هستن؟
 
@@ -778,7 +777,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      5. آبجکت یه نمونه اولیه (prototype) داره، بنابراین کلید‌های پیش‌فرض توی map وجود داره که که اگه دقت نکنیم ممکنه با کلید‌هامون برخورد کنه. از زمان ES5 میتونیم با استفاده از map = Object.create(null)، این قضیه رو دور بزنیم ولی به‌ندرت این کار انجام میشه.
      6. نقشه ممکنه توی سناریوهای شامل جمع و حذف مکرر جفت کلیدها عملکرد بهتری داشته باشه
 
-   **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 8. ### تفاوت‌های بین عملگرهای == و === چیا هستن؟
 
@@ -827,10 +826,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      به عنوان مثال، توی چنین زبانی، یه تابع میتونه به عنوان آرگومان به یه تابع دیگه انتقال داده بشه، میتونه به عنوان مقدار نهایی یه تابع دیگه برگشت داده بشه و میتونه به یه متغیر دیگه به عنوان مقدار اختصاص داده بشه. به عنوان مثال توی کد زیر، توابع نگهدارنده یا handler به یه شنونده یا listener اختصاص داده شده.
 
+     <span dir="ltr" align="left">
+
      ```javascript
      const handler = () => console.log ('This is a click handler function');
      document.addEventListener ('click', handler);
      ```
+
+     </span>
 
      **[فهرست](#فهرست)**
 
@@ -868,910 +871,927 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      **[فهرست](#فهرست)**
 
 13. ### یه تابع unary چجور تابعی‌ـه؟
-    تابع unary تابعیه که فقط یه آرگومان ورودی دریافت میکنه. بیاین یه مثال از توابع unary بزنیم.
 
-    <span dir="ltr" align="left">
+     تابع unary تابعیه که فقط یه آرگومان ورودی دریافت میکنه. بیاین یه مثال از توابع unary بزنیم.
 
-    ```javascript
-    const unaryFunction = a => console.log (a + 10); // Add 10 to the given argument and display the value
-    ```
+     <span dir="ltr" align="left">
 
-    </span>
+     ```javascript
+     // Add 10 to the given argument and display the value
+     const unaryFunction = a => {
+          console.log (a + 10); 
+     };
+     ```
+
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 14. ### currying توابع یعنی چی؟
 
-    به فرایندی که در اون یه تابع با چندین آرگومان رو به مجموعه‌ای از توابع که فقط یه آرگومان دریافت میکنن، تبدیل کنیم currying میگیم. Currying از نام یه ریاضی‌دان به اسم Haskell Curry گرفته شده. با استفاده از Currying در واقع یه تابع رو به یه تابع unary تبدیل میکنیم. بیاین یه مثال از یه تابع با چندین آرگومان و تبدیلش به تابع currying بزنیم.
+     به فرایندی که در اون یه تابع با چندین آرگومان رو به مجموعه‌ای از توابع که فقط یه آرگومان دریافت میکنن، تبدیل کنیم currying میگیم. Currying از نام یه ریاضی‌دان به اسم Haskell Curry گرفته شده. با استفاده از Currying در واقع یه تابع رو به یه تابع unary تبدیل میکنیم. بیاین یه مثال از یه تابع با چندین آرگومان و تبدیلش به تابع currying بزنیم.
 
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    const multiArgFunction = (a, b, c) => a + b + c;
-    const curryUnaryFunction = a => b => c => a + b + c;
-    curryUnaryFunction (1); // returns a function: b => c =>  1 + b + c
-    curryUnaryFunction (1) (2); // returns a function: c => 3 + c
-    curryUnaryFunction (1) (2) (3); // returns the number 6
-    ```
+     ```javascript
+     const multiArgFunction = (a, b, c) => a + b + c;
+     const curryUnaryFunction = a => b => c => a + b + c;
+     curryUnaryFunction (1); // returns a function: b => c =>  1 + b + c
+     curryUnaryFunction (1) (2); // returns a function: c => 3 + c
+     curryUnaryFunction (1) (2) (3); // returns the number 6
+     ```
 
-    </span>
+     </span>
 
 
-    توابع Curried برای بهبود قابلیت استفاده مجدد کد و ترکیب عملکردی عالی هستن.
+     توابع Curried برای بهبود قابلیت استفاده مجدد کد و ترکیب عملکردی عالی هستن.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 15. ### چه توابعی pure هستن؟
 
-    **تابع خالص** تابعیه که مقدار برگشتیش فقط توسط آرگومان‌هاش تعیین میشه بدون هیج side effect یا عوارض جانبی. به عنوان مثال اگه ما یه تابع رو n بار در n جای مختلف برنامه فراخوانی کنیم همیشه یه مقدار مشخص برگشت داده میشه. بیاین یه مثال از تفاوت بین توابع خالص و توابع ناخالص بزنیم.
+     **تابع خالص** تابعیه که مقدار برگشتیش فقط توسط آرگومان‌هاش تعیین میشه بدون هیج side effect یا عوارض جانبی. به عنوان مثال اگه ما یه تابع رو n بار در n جای مختلف برنامه فراخوانی کنیم همیشه یه مقدار مشخص برگشت داده میشه. بیاین یه مثال از تفاوت بین توابع خالص و توابع ناخالص بزنیم.
 
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    //Impure
-    let numberArray = [];
-    const impureAddNumber = number => numberArray.push (number);
-    //Pure
-    const pureAddNumber = number => argNumberArray =>
-      argNumberArray.concat ([number]);
+     ```javascript
+     //Impure
+     let numberArray = [];
+     const impureAddNumber = number => numberArray.push (number);
+     //Pure
+     const pureAddNumber = number => argNumberArray =>
+          argNumberArray.concat ([number]);
 
-    //Display the results
-    console.log (impureAddNumber (6)); // returns 1
-    console.log (numberArray); // returns [6]
-    console.log (pureAddNumber (7) (numberArray)); // returns [6, 7]
-    console.log (numberArray); // returns [6]
-    ```
+     //Display the results
+     console.log (impureAddNumber (6)); // returns 1
+     console.log (numberArray); // returns [6]
+     console.log (pureAddNumber (7) (numberArray)); // returns [6, 7]
+     console.log (numberArray); // returns [6]
+     ```
 
-    </span>
+     </span>
 
-    بر اساس تکه کدهای بالا، تابع push با تغییر روی آرایه و برگردوندن شماره ایندکس push که مستقل از مقدار پارامتر هستش، یه تابع ناخالص به حساب میاد. در حالی که از یه طرف متد concat آرایه رو میگیره و اونو با یه آرایه دیگه ترکیب میکنه و یه آرایه کاملا جدید و بدون هیچ عوارض جانبی تولید میکنه. همچنین مقدار برگشتی با آرایه قبلی ترکیب شده هستش.
-    Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and make it harder to break your application by not having any side effects. These principles are coming together with **Immutability** concept of ES6 by giving preference to **const** over **let** usage.
+     بر اساس تکه کدهای بالا، تابع push با تغییر روی آرایه و برگردوندن شماره ایندکس push که مستقل از مقدار پارامتر هستش، یه تابع ناخالص به حساب میاد. در حالی که از یه طرف متد concat آرایه رو میگیره و اونو با یه آرایه دیگه ترکیب میکنه و یه آرایه کاملا جدید و بدون هیچ عوارض جانبی تولید میکنه. همچنین مقدار برگشتی با آرایه قبلی ترکیب شده هستش.
+     Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and make it harder to break your application by not having any side effects. These principles are coming together with **Immutability** concept of ES6 by giving preference to **const** over **let** usage.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 16. ### هدف از کلمه کلیدی let چیه؟
 
-    دستور `let` یه **متغیر محلی block scope** تعریف میکنه. از این رو متغیر‌هایی که با کلمه کلیدی let تعریف میشن محدود به همون اسکوپی که توش تعریف شدن، دستورها و عبارت‌های توی همون اسکوپ میشن. درحالی که متغیر‌های تعریف شده با کلمه کلیدی var برای تعریف یه متغیر توی سطح global یا محلی برای استفاده در کل توابع بدون در نظر گرفتن اسکوپی که توش تعریف شده، استفاده میشه. بیاین برای نشون دادن کاربردش یه مثال بزنیم.
+     دستور `let` یه **متغیر محلی block scope** تعریف میکنه. از این رو متغیر‌هایی که با کلمه کلیدی let تعریف میشن محدود به همون اسکوپی که توش تعریف شدن، دستورها و عبارت‌های توی همون اسکوپ میشن. درحالی که متغیر‌های تعریف شده با کلمه کلیدی var برای تعریف یه متغیر توی سطح global یا محلی برای استفاده در کل توابع بدون در نظر گرفتن اسکوپی که توش تعریف شده، استفاده میشه. بیاین برای نشون دادن کاربردش یه مثال بزنیم.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    let counter = 30;
-    if (counter === 30) {
-      let counter = 31;
-      console.log(counter); // 31
-    }
-    console.log(counter); // 30 (because if block variable won't exist here)
-    ```
+     ```javascript
+     let counter = 30;
+     if (counter === 30) {
+          let counter = 31;
+          console.log(counter); // 31
+     }
+     console.log(counter); // 30 (because if block variable won't exist here)
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 17. ### تفاوت‌های کلمات کلیدی let و var چیا هستن؟
 
-    تفاوت‌ها رو توی جدول زیر میبینیم
+     تفاوت‌ها رو توی جدول زیر می‌بینیم
 
-    var :
-    1. از ابتدای جاوااسکریپت در دسترس هستش
-    2. دامنه تابع داره
-    3. متغیر‌ها Hoist میشن
+     var :
+     1. از ابتدای جاوااسکریپت در دسترس هستش
+     2. دامنه تابع داره
+     3. متغیر‌ها Hoist میشن
 
-      let:
-    1. به عنوان بخشی از ES6 معرفی شده
-    2. محدود به scope یا دامنه هستش
-    3. Hoist شده ولی مقداردهی اولیه نمیشه
+          let:
+     1. به عنوان بخشی از ES6 معرفی شده
+     2. محدود به scope یا دامنه هستش
+     3. Hoist شده ولی مقداردهی اولیه نمیشه
 
-    بیاین با یه مثال تفاوتش رو بهتر ببینیم
+     بیاین با یه مثال تفاوتش رو بهتر ببینیم
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    function userDetails(username) {
-       if(username) {
-         console.log(salary); // undefined(due to hoisting)
-         console.log(age); // error: age is not defined
-         let age = 30;
-         var salary = 10000;
-       }
-       console.log(salary); //10000 (accessible to due function scope)
-       console.log(age); //error: age is not defined(due to block scope)
-    }
-    ```
+     ```javascript
+     function userDetails(username) {
+          if(username) {
+          console.log(salary); // undefined(due to hoisting)
+          console.log(age); // error: age is not defined
+          let age = 30;
+          var salary = 10000;
+          }
+          console.log(salary); //10000 (accessible to due function scope)
+          console.log(age); //error: age is not defined(due to block scope)
+     }
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 18. ### دلیل انتخاب کلمه کلیدی let چیه؟
 
-    Let یه عنوان ریاضی هستش که توسط زبان‌های برنامه‌نویسی اولیه مثل Scheme و Basic پذیرفته شده. این زبان از ده‌ها زبان دیگه گرفته شده که از let به عنوان یه کلمه کلیدی سنتی تا حد ممکن نزدیک به var استفاده میکنه.
+     Let یه عنوان ریاضی هستش که توسط زبان‌های برنامه‌نویسی اولیه مثل Scheme و Basic پذیرفته شده. این زبان از ده‌ها زبان دیگه گرفته شده که از let به عنوان یه کلمه کلیدی سنتی تا حد ممکن نزدیک به var استفاده میکنه.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 19. ### چطوری می‌تونیم توی بلوک مربوط به switch بدون دریافت خطا متغیر تعریف کنیم؟
-    اگه بخوایم متغیر‌ها رو مجددا توی یه `switch block` تعریف کنیم، این کار باعث خطا میشه چون در واقع فقط یه بلاک وجود داره. به عنوان مثال توی کد زیر یه خطای نحوی ایجاد میشه
+
+     اگه بخوایم متغیر‌ها رو مجددا توی یه `switch block` تعریف کنیم، این کار باعث خطا میشه چون در واقع فقط یه بلاک وجود داره. به عنوان مثال توی کد زیر یه خطای نحوی ایجاد میشه
 
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    let counter = 1;
-    switch(x) {
-      case 0:
-        let name;
-        break;
+     ```javascript
+     let counter = 1;
+     switch(x) {
+          case 0:
+          let name;
+          break;
 
-      case 1:
-        let name; // SyntaxError for redeclaration.
-        break;
-    }
-    ```
+          case 1:
+          let name; // SyntaxError for redeclaration.
+          break;
+     }
+     ```
 
-    </span>
+     </span>
 
-    برای جلوگیری از این خطا، میتونیم یه بلاک تو در تو داخل case ایجاد کنیم و یه محیط واژگانی دارای محدوده بلاک جدید ایجاد کنیم.
+     برای جلوگیری از این خطا، میتونیم یه بلاک تو در تو داخل case ایجاد کنیم و یه محیط واژگانی دارای محدوده بلاک جدید ایجاد کنیم.
 
+     <span dir="ltr" align="left">
 
-    <span dir="ltr" align="left">
-
-    ```javascript
-    let counter = 1;
-        switch(x) {
+     ```javascript
+     let counter = 1;
+          switch(x) {
           case 0: {
-            let name;
-            break;
+               let name;
+               break;
           }
           case 1: {
-            let name; // No SyntaxError for redeclaration.
-            break;
+               let name; // No SyntaxError for redeclaration.
+               break;
           }
-        }
-    ```
+     }
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 20. ### Temporal-Dead-Zone چیه؟
-    Temporal Dead Zone رفتاری توی جاوااسکریپته که هنگام تعریف متغیر با کلمات کلیدی let و const رخ میده، نه با کلمه کلیدی var. توی اکما‌اسکریپت ۶، دستیابی به متغیر let و const قبل از تعریفش (توی scope خودش) باعث خطای refrence میشه. فاصله زمانی ایجاد اون، بین ایجاد اتصال متغیر و تعریف اون، منطقه Temporal Dead هستش. بیاین با یه مثال ببینیم،
+     Temporal Dead Zone رفتاری توی جاوااسکریپته که هنگام تعریف متغیر با کلمات کلیدی let و const رخ میده، نه با کلمه کلیدی var. توی اکما‌اسکریپت ۶، دستیابی به متغیر let و const قبل از تعریفش (توی scope خودش) باعث خطای refrence میشه. فاصله زمانی ایجاد اون، بین ایجاد اتصال متغیر و تعریف اون، منطقه Temporal Dead هستش. بیاین با یه مثال ببینیم،
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    function somemethod() {
-      console.log(counter1); // undefined
-      console.log(counter2); // ReferenceError
-      var counter1 = 1;
-      let counter2 = 2;
-    }
-    ```
+     ```javascript
+     function somemethod() {
+          console.log(counter1); // undefined
+          console.log(counter2); // ReferenceError
+          var counter1 = 1;
+          let counter2 = 2;
+     }
+     ```
 
-    </span>
+     </span>
 
 
     **[فهرست](#فهرست)**
 
 21. ### IIFE(توابع بلافاصله صدا زده شده) چی هستن؟
 
-    IIFE (فراخوانی عملکرد بلافاصله) یه تابع جاوا‌اسکریپته که به محض تعریف اجرا میشه.
-    امضای اون به این صورته،
+     IIFE (فراخوانی عملکرد بلافاصله) یه تابع جاوا‌اسکریپته که به محض تعریف اجرا میشه.
+     امضای اون به این صورته،
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    (function ()
-        {
+     ```javascript
+     (function ()
+          {
           // logic here
-        }
+          }
      )
-    ();
-    ```
+     ();
+     ```
 
-    </span>
-
-
-    دلیل اصلی استفاده از IIFE بدست آوردن حریم خصوصی داده‌هاست، چون محیط خارجی به متغیر‌هایی که توی IIFE تعریف شده دسترسی نداره. به عنوان مثال، اگه سعی کنیم با IIFE به متغیر‌ها دسترسی پیدا کنیم این خطا رو میگیریم،
-
-    <span dir="ltr" align="left">
-
-    ```javascript
-    (function ()
-      {
-         var message = "IIFE";
-         console.log(message);
-      }
-    )();
-    console.log(message); //Error: message is not defined
-    ```
-
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     دلیل اصلی استفاده از IIFE بدست آوردن حریم خصوصی داده‌هاست، چون محیط خارجی به متغیر‌هایی که توی IIFE تعریف شده دسترسی نداره. به عنوان مثال، اگه سعی کنیم با IIFE به متغیر‌ها دسترسی پیدا کنیم این خطا رو میگیریم،
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     (function ()
+          {
+          var message = "IIFE";
+          console.log(message);
+          }
+     )();
+
+     console.log(message); //Error: message is not defined
+     ```
+
+     </span>
+
+
+     **[فهرست](#فهرست)**
 
 22. ### مزایای استفاده از moduleها چیه؟
-    استفاده از ماژول‌ها مزایای زیادی داره،
-    1. قابلیت نگهداری
-    2. قابلیت استفاده مجدد
-    3. نامگذاری
 
-    **[فهرست](#فهرست)**
+     استفاده از ماژول‌ها مزایای زیادی داره،
+     1. قابلیت نگهداری
+     2. قابلیت استفاده مجدد
+     3. نامگذاری
+
+     **[فهرست](#فهرست)**
 
 23. ### Memoization چیه؟
-    Memoization یه روش برنامه‌نوسی هست که سعی داره با ذخیره نتایج قبلی یه تابع عملکرد اون تابع رو افزایش بده. هر بار که یه تابع Memoize شده فراخوانی میشه، پارامتر‌های اون cache میشه یعنی توی حافظه پنهان ذخیره میشه. اگه داده وجود داشته باشه، بدون اجرای کل تابع میشه اونو برگردوند در غیر این صورت تابع اجرا میشه و بعدش نتیجه توی حافظه پنهان ذخیره میشه.
-    بیاین یه مثال از نوشتن یه تابع با Memoization بزنیم،
 
-    <span dir="ltr" align="left">
+     Memoization یه روش برنامه‌نوسی هست که سعی داره با ذخیره نتایج قبلی یه تابع عملکرد اون تابع رو افزایش بده. هر بار که یه تابع Memoize شده فراخوانی میشه، پارامتر‌های اون cache میشه یعنی توی حافظه پنهان ذخیره میشه. اگه داده وجود داشته باشه، بدون اجرای کل تابع میشه اونو برگردوند در غیر این صورت تابع اجرا میشه و بعدش نتیجه توی حافظه پنهان ذخیره میشه.
+     بیاین یه مثال از نوشتن یه تابع با Memoization بزنیم،
 
-    ```javascript
-    const memoizAddition = () => {
-      let cache = {};
-     return (value) => {
-      if (value in cache) {
-       console.log('Fetching from cache');
-       return cache[value]; // Here, cache.value cannot be used as property name starts with the number which is not a valid JavaScript  identifier. Hence, can only be accessed using the square bracket notation.
-      }
-      else {
-       console.log('Calculating result');
-       let result = value + 20;
-       cache[value] = result;
-       return result;
-      }
+     <span dir="ltr" align="left">
+
+     ```javascript
+     const memoizAddition = () => {
+          let cache = {};
+          return (value) => {
+               if (value in cache) {
+               console.log('Fetching from cache');
+               return cache[value]; // Here, cache.value cannot be used as property name starts with the number which is not a valid JavaScript  identifier. Hence, can only be accessed using the square bracket notation.
+               }
+               else {
+               console.log('Calculating result');
+               let result = value + 20;
+               cache[value] = result;
+               return result;
+               }
+          }
      }
-    }
 
-    // returned function from memoizAddition
-    const addition = memoizAddition();
-    console.log(addition(20)); //output: 40 calculated
-    console.log(addition(20)); //output: 40 cached
-    ```
+     // returned function from memoizAddition
+     const addition = memoizAddition();
+     console.log(addition(20)); //output: 40 calculated
+     console.log(addition(20)); //output: 40 cached
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 24. ### Hoisting چیه؟
-    Hoisting یه مکانیسم جاوا‌اسکریپته که متغیر‌ها و تعاریف توابع رو به بالای scope یا دامنه خودشون انتقال میده. یادمون باشه که جاوا‌اسکریپت فقط تعریف متغیر‌ها و توابع رو Hoist میکنه، نه مقداردهی اولیه اونا رو.
-    بیاین یه مثال ساده از hoist کردن متغیر‌ها بزنیم،
+     Hoisting یه مکانیسم جاوا‌اسکریپته که متغیر‌ها و تعاریف توابع رو به بالای scope یا دامنه خودشون انتقال میده. یادمون باشه که جاوا‌اسکریپت فقط تعریف متغیر‌ها و توابع رو Hoist میکنه، نه مقداردهی اولیه اونا رو.
+     بیاین یه مثال ساده از hoist کردن متغیر‌ها بزنیم،
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    console.log(message); //output : undefined
-    var message = 'The variable Has been hoisted';
-    ```
+     ```javascript
+     console.log(message); //output : undefined
+     var message = 'The variable Has been hoisted';
+     ```
 
-    </span>
-
-
-    ،ترجمه کد بالا اینطوری میشه
-
-    <span dir="ltr" align="left">
-
-    ```javascript
-    var message;
-    console.log(message);
-    message = 'The variable Has been hoisted';
-    ```
-
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     ،ترجمه کد بالا اینطوری میشه
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     var message;
+     console.log(message);
+     message = 'The variable Has been hoisted';
+     ```
+
+     </span>
+
+
+     **[فهرست](#فهرست)**
 
 25. ### Classها توی ES6 چی هستن؟
-    In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
-    For example, the prototype based inheritance written in function expression as below,
+     In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
+     For example, the prototype based inheritance written in function expression as below,
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    function Bike(model,color) {
-        this.model = model;
-        this.color = color;
-    }
+     ```javascript
+     function Bike(model,color) {
+          this.model = model;
+          this.color = color;
+     }
 
-    Bike.prototype.getDetails = function() {
-        return this.model + ' bike has' + this.color + ' color';
-    };
-    ```
+     Bike.prototype.getDetails = function() {
+          return this.model + ' bike has' + this.color + ' color';
+     };
+     ```
 
-    </span>
+     </span>
 
-    Whereas ES6 classes can be defined as an alternative
+     درحالیکه کلاس‌های ES6 به جای اونا و به شکل ساده‌تری تعریف یشن:
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    class Bike{
-      constructor(color, model) {
-        this.color= color;
-        this.model= model;
-      }
+     ```javascript
+     class Bike{
+          constructor(color, model) {
+          this.color= color;
+          this.model= model;
+          }
 
-      getDetails() {
-        return this.model + ' bike has' + this.color + ' color';
-      }
-    }
-    ```
+          getDetails() {
+          return this.model + ' bike has' + this.color + ' color';
+          }
+     }
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 26. ### Closureها چیا هستن؟
-    کلاژور ترکیبی از یه تابع و محیط واژگانی هستش که تابع در اون تعریف شده. به عنوان مثال این یه تابع داخلیه که به متغیر‌های تابع خارجی دسترسی داره. کلاژور دارای سه زنجیره دامنه هستش
-    ۱. دامنه رو جایی تعریف می کنیم که متغیر‌ها بین کرلی براکت‌های اون تعریف شده باشه
-    ۲. متغیر‌های تابع بیرونی
-    ۳. متغیر‌های محلی
-    بیاین یه مثال راجع به مفهوم کلاژور بزنیم
+     کلاژور ترکیبی از یه تابع و محیط واژگانی هستش که تابع در اون تعریف شده. به عنوان مثال این یه تابع داخلیه که به متغیر‌های تابع خارجی دسترسی داره. کلاژور دارای سه زنجیره دامنه هستش
+     ۱. دامنه رو جایی تعریف می کنیم که متغیر‌ها بین کرلی براکت‌های اون تعریف شده باشه
+     ۲. متغیر‌های تابع بیرونی
+     ۳. متغیر‌های محلی
+     بیاین یه مثال راجع به مفهوم کلاژور بزنیم
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    function Welcome(name){
-      var greetingInfo = function(message){
-       console.log(message+' '+name);
-      }
-    return greetingInfo;
-    }
-    var myFunction = Welcome('John');
-    myFunction('Welcome '); //Output: Welcome John
-    myFunction('Hello Mr.'); //output: Hello Mr.John
-    ```
+     ```javascript
+     function Welcome(name){
+          var greetingInfo = function(message){
+          console.log(message+' '+name);
+          }
+     return greetingInfo;
+     }
+     var myFunction = Welcome('John');
+     myFunction('Welcome '); //Output: Welcome John
+     myFunction('Hello Mr.'); //output: Hello Mr.John
+     ```
 
-    </span>
+     </span>
 
 
-    مطابق کد بالا، تابع داخلی (greetingInfo) حتی بعد از بازگشت تابع خارجی به متغیر‌های محدوده تابع خارجی (welcome) دسترسی داره.
+     مطابق کد بالا، تابع داخلی (greetingInfo) حتی بعد از بازگشت تابع خارجی به متغیر‌های محدوده تابع خارجی (welcome) دسترسی داره.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 27. ### Moduleها چیا هستن؟
 
-    ماژول‌ها به واحد‌های کوچیکی از کد مستقل و قابل استفاده مجدد اشاره می‌کنن و همچنین به عنوان پایه بسیاری از الگو‌های طراحی javascript عمل می‌کنن. خروجی ماژول‌های javascript یه شی، یه تابع یا constructor هستش.
+     ماژول‌ها به واحد‌های کوچیکی از کد مستقل و قابل استفاده مجدد اشاره می‌کنن و همچنین به عنوان پایه بسیاری از الگو‌های طراحی javascript عمل می‌کنن. خروجی ماژول‌های javascript یه شی، یه تابع یا constructor هستش.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 28. ###  چرا به moduleها نیاز داریم؟
 
-    لیستی از مزایای استفاده از ماژول‌ها در اکوسیستم جاوااسکریپت اینجا گفته شده
-  1. قابلیت نگهداری
-  2. قابلیت استفاده مجدد
-  3. نامگذاری
+     لیستی از مزایای استفاده از ماژول‌ها در اکوسیستم جاوااسکریپت اینجا گفته شده
+     1. قابلیت نگهداری
+     2. قابلیت استفاده مجدد
+     3. نامگذاری
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 29. ### توی جاواسکریپت scope چیه و چیکار می‌کنه؟
-    scope یا محدوده، دسترسی متغیر‌ها، توابع و اشیاء در بعضی از قسمت‌های کدمون در زمان اجرا هستش. به عبارت دیگه، دامنه قابلیت دیده شدن متغیر‌ها و بقیه منابع رو تو قسمت‌هایی از کدمون تعیین میکنه.
 
-    **[فهرست](#فهرست)**
+     scope یا محدوده، دسترسی متغیر‌ها، توابع و اشیاء در بعضی از قسمت‌های کدمون در زمان اجرا هستش. به عبارت دیگه، دامنه قابلیت دیده شدن متغیر‌ها و بقیه منابع رو تو قسمت‌هایی از کدمون تعیین میکنه.
+
+     **[فهرست](#فهرست)**
 
 30. ###s؟ervice-worker چیه؟
 
-    service worker اساسا یه اسکریپت هستش که جدا از یه صفحه وب توی پس‌زمینه اجرا میشه و ویژگی‌هایی رو فراهم میکنه که نیازی به صفحه وب یا تعامل کاربر نداره. بعضی از ویژگی‌های عمده service worker ها عبارتند از: تجارب غنی آفلاین (اولین برنامه آفلاین وب)، همگام‌سازی دوره‌ای پس‌زمینه، push notification, رهگیری و رسیدگی به درخواست‌های شبکه و مدیریت برنامه‌ای cache response ها.
+     service worker اساسا یه اسکریپت هستش که جدا از یه صفحه وب توی پس‌زمینه اجرا میشه و ویژگی‌هایی رو فراهم میکنه که نیازی به صفحه وب یا تعامل کاربر نداره. بعضی از ویژگی‌های عمده service worker ها عبارتند از: تجارب غنی آفلاین (اولین برنامه آفلاین وب)، همگام‌سازی دوره‌ای پس‌زمینه، push notification, رهگیری و رسیدگی به درخواست‌های شبکه و مدیریت برنامه‌ای cache response ها.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 31. ### توی service-worker چطوری میشه DOM رو دستکاری کرد؟
 
-    service worker مستقیما نمیتونه به DOM دسترسی پیدا کنه، اما میتونه با پاسخ به پیام‌های ارسالی از طریق رابط `postMessage` با صفحاتی که کنترل میکنه ارتباط برقرار کنه و این صفحات میتونن DOM رو دستکاری کنن.
+     service worker مستقیما نمیتونه به DOM دسترسی پیدا کنه، اما میتونه با پاسخ به پیام‌های ارسالی از طریق رابط `postMessage` با صفحاتی که کنترل میکنه ارتباط برقرار کنه و این صفحات میتونن DOM رو دستکاری کنن.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 32. ### چطوری می‌تونیم بین ریست شدن‌های service-worker داده‌های مورد نظرمون رو مجدد استفاده کنیم؟
-    مشکلی که توی service worker وجود داره اینه که در صورت عدم استفاده خاتمه پیدا میکنه و در صورت نیاز بعدی دوباره راه‌اندازی میشه، بنابراین نمیتونیم به state های سراسری توی نگهدارنده‌های `onfetch` و `onmessage` یه service worker اعتماد کنیم. تو این حالت service worker برای تداوم کار و استفاده مجدد موقع شروع مجدد، به indexedDB API دسترسی خواهد داشت.
 
-    **[فهرست](#فهرست)**
+     مشکلی که توی service worker وجود داره اینه که در صورت عدم استفاده خاتمه پیدا میکنه و در صورت نیاز بعدی دوباره راه‌اندازی میشه، بنابراین نمیتونیم به state های سراسری توی نگهدارنده‌های `onfetch` و `onmessage` یه service worker اعتماد کنیم. تو این حالت service worker برای تداوم کار و استفاده مجدد موقع شروع مجدد، به indexedDB API دسترسی خواهد داشت.
+
+     **[فهرست](#فهرست)**
 
 33. ### IndexedDB چیه؟
-    IndexedDB یه API سطح پایین برای ذخیره client-side یا سمت کاربر توی مقادیر بیشتری از داده ساخت‌ یافته شامل فایل‌ها و حباب‌ها هستش. این API از index ها برای فعال کردن جستجو‌های با کارایی بالا توی این داده‌ها استفاده میکنه.
 
-    **[فهرست](#فهرست)**
+     IndexedDB یه API سطح پایین برای ذخیره client-side یا سمت کاربر توی مقادیر بیشتری از داده ساخت‌ یافته شامل فایل‌ها و حباب‌ها هستش. این API از index ها برای فعال کردن جستجو‌های با کارایی بالا توی این داده‌ها استفاده میکنه.
+
+     **[فهرست](#فهرست)**
 
 34. ### Web-storage چیه؟
+
      web storage یه API هستش که مکانیسمی رو فراهم میکنه که مرورگر‌ها میتونن مقدار و کلید رو ب    صورت محلی توی مرورگر کاربر ذخیره کنن، ب    روشی کاملا قابل درک نسبت به استفاده ا      کوکی‌ها. فضای ذخیره‌سازی وب دو مکانیزم ر برای ذخیره اطلاعات روی مشتری فراهم میکنه.
      1. **Local storage:** داده ها رو برای مبدا فعلی و بدون تاریخ انقضا ذخیره میکنه.
      2. **Session storage:** داده‌ها رو برای یه جلسه ذخیره میکنه و با بسته شدن تب مرورگر داده‌ها از بین میرن.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-35. ### Post-message چیه
+35. ### Post-message چیه؟
+
      Post message روشی هست که امکان ایجاد ارتباط متقابل بین آبجکت‌های window رو فراهم میکنه     (به عنوان مثال، بین یه صفحه و یه پنجره باز‌شو که باعث ایجاد اون شده، یا بین یه صفح     و یه iframe جاسازی شده در اون) به طور کل    اسکریپت‌های موجود در صفحات مختلف مجاز ب    دسترسی به همدیگه هستن، تنها در صورتی که     صفحات از خط‌ مشی‌ یکسانی تبعیت کنن. (یعنی صفحات از پروتکل، شماره پورت و میزبان یکسانی   برخوردار هستن)
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 36. ### Cookie چیه؟
 
-    کوکی قطعه‌ای از داده هستش که توی کامپیوترمون ذخیره میشه تا مرورگر به اون دسترسی داشته باشه. کوکی‌ها به عنوان جفت‌های کلید و مقدار ذخیره میشن.
-    به عنوان مثال میتونیم یه کوکی با نام کاربری مثل زیر ایجاد کنیم،
+     کوکی قطعه‌ای از داده هستش که توی کامپیوترمون ذخیره میشه تا مرورگر به اون دسترسی داشته باشه. کوکی‌ها به عنوان جفت‌های کلید و مقدار ذخیره میشن.
+     به عنوان مثال میتونیم یه کوکی با نام کاربری مثل زیر ایجاد کنیم،
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    document.cookie = "username=John";
-    ```
+     ```javascript
+     document.cookie = "username=John";
+     ```
 
-    </span>
+     </span>
 
 
-    ![Screenshot](images/cookie.png)
+     ![Screenshot](images/cookie.png)
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 37. ### چرا به cookie نیاز داریم؟
 
-    از کوکی ها برای به خاطر سپردن اطلاعات مربوط به مشخصات کاربر (مانند نام کاربری) استفاده میشه. در اصل شامل دو مرحله هستش،
-    ۱. وقتی که کاربر از یه صفحه وب بازدید میکنه ، مشخصات کاربر میتونه توی یه کوکی ذخیره بشه.
-    ۲. دفعه بعد که کاربر از صفحه بازدید کرد ، کوکی مشخصات کاربر رو به خاطر میاره.
+     از کوکی ها برای به خاطر سپردن اطلاعات مربوط به مشخصات کاربر (مانند نام کاربری) استفاده میشه. در اصل شامل دو مرحله هستش،
+     ۱. وقتی که کاربر از یه صفحه وب بازدید میکنه ، مشخصات کاربر میتونه توی یه کوکی ذخیره بشه.
+     ۲. دفعه بعد که کاربر از صفحه بازدید کرد ، کوکی مشخصات کاربر رو به خاطر میاره.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 38. ### گزینه‌های قابل تنظیم توی cookie چیا هستن؟
 
-    گزینه‌های زیر برای کوکی موجوده ،
-    ۱. به طور پیش فرض ، کوکی موقع بسته شدن مرورگر حذف میشه اما با تنظیم تاریخ انقضا (به وقت UTC) می تونیم این رفتار رو تغییر بدیم.
+     گزینه‌های زیر برای کوکی موجوده ،
+     ۱. به طور پیش فرض ، کوکی موقع بسته شدن مرورگر حذف میشه اما با تنظیم تاریخ انقضا (به وقت UTC) می تونیم این رفتار رو تغییر بدیم.
 
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    document.cookie = "username=John; expires=Sat, 8 Jun 2019 12:00:00 UTC";
-    ```
+     ```javascript
+     document.cookie = "username=John; expires=Sat, 8 Jun 2019 12:00:00 UTC";
+     ```
 
-    </span>
+     </span>
 
-    ۱. به طور پیش فرض ، کوکی به صفحه فعلی تعلق دارد. اما با استفاده از پارامتر path می تونیم به مرورگر بگیم که کوکی متعلق به چه مسیری هستش.
+     ۱. به طور پیش فرض ، کوکی به صفحه فعلی تعلق دارد. اما با استفاده از پارامتر path می تونیم به مرورگر بگیم که کوکی متعلق به چه مسیری هستش.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    document.cookie = "username=John; path=/services";
-    ```
+     ```javascript
+     document.cookie = "username=John; path=/services";
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 39. ### چطوری میشه یه cookie رو حذف کرد؟
 
-    با تنظیم تاریخ انقضا به عنوان تاریخ گذشته می تونیم کوکی رو حذف کنیم. تو این حالت نیازی به تعیین مقدار کوکی نیست.
-    به عنوان مثال ، می تونیم کوکی نام کاربری رو توی صفحه فعلی به صورت زیر حذف کنیم.
+     با تنظیم تاریخ انقضا به عنوان تاریخ گذشته می تونیم کوکی رو حذف کنیم. تو این حالت نیازی به تعیین مقدار کوکی نیست.
+     به عنوان مثال ، می تونیم کوکی نام کاربری رو توی صفحه فعلی به صورت زیر حذف کنیم.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    document.cookie = "username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;";
-    ```
+     ```javascript
+     document.cookie = "username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;";
+     ```
 
-    </span>
+     </span>
 
 
-    **نکته** برای اطمینان از نحوه درست پاک کردن کوکی باید گزینه مسیر کوکی رو تعیین کنیم. بعضی از مرورگرها تا زمانی که پارامتر مسیر رو تعیین نکنیم اجازه حذف کوکی رو نمیدن.
+     **نکته** برای اطمینان از نحوه درست پاک کردن کوکی باید گزینه مسیر کوکی رو تعیین کنیم. بعضی از مرورگرها تا زمانی که پارامتر مسیر رو تعیین نکنیم اجازه حذف کوکی رو نمیدن.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 40. ### تفاوت‌های بین cookie، local-storage و session-storage چیا هستن؟
 
-    تفاوت‌های بین کوکی، لوکال استوریج و سشن استوریج اینها هستند:
+     تفاوت‌های بین کوکی، لوکال استوریج و سشن استوریج اینها هستند:
 
-    ویژگی‌ | کوکی | لوکال استوریج | سشن استوریج
-    قابل دسترسی از طرف سرویس گیرنده یا سرور | هردو سرویس دهنده و سرویس گیرنده | فقط سرویس گیرنده | فقط سرویس گیرنده |
-    طول عمر | پیکربندی‌شده با استفاده از گزینه اکسپایر | تا زمانی که حذف بشه | تا زمانی که پنجره مرورگر بسته بشه
-    پشتیبانی از SSL | پشتیبانی میشه | پشتیبانی نمیشه  | پشتیبانی نمیشه
-    حداکثر اندازه داده | ۴ کیلوبایت | ۵ مگابایت | ۵ مگابایت
+     | ویژگی‌ | کوکی | لوکال استوریج | سشن استوریج |
+     | ----- | ----- | ----- | -----‌ |‌ 
+     | قابل دسترسی از طرف سرویس گیرنده یا سرور | هردو سرویس دهنده و سرویس گیرنده | فقط سرویس گیرنده | فقط سرویس گیرنده |
+     طول عمر | پیکربندی‌شده با استفاده از گزینه اکسپایر | تا زمانی که حذف بشه | تا زمانی که پنجره مرورگر بسته بشه
+     پشتیبانی از SSL | پشتیبانی میشه | پشتیبانی نمیشه  | پشتیبانی نمیشه
+     | حداکثر اندازه داده | ۴ کیلوبایت | ۵ مگابایت | ۵ مگابایت |
 
 
-
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 41. ### تفاوت‌های بین localStorage و sessionStorage چیا هستن؟
 
-    لوکال استوریج همان سشن استوریج هستش اما داده‌ها با بستن و دوباره باز کردن مرورگر همچنان حفظ میشه (تاریخ انقضا نداره) در حالی که سشن استوریج داده‌ها رو با بستن پنجره مرورگر پاک میکنه.
+     لوکال استوریج همان سشن استوریج هستش اما داده‌ها با بستن و دوباره باز کردن مرورگر همچنان حفظ میشه (تاریخ انقضا نداره) در حالی که سشن استوریج داده‌ها رو با بستن پنجره مرورگر پاک میکنه.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 42. ### چطوری به web-storage دسترسی پیدا می‌کنی؟
 
-    شی window به ترتیب ویژگی‌های `WindowLocalStorage` و `WindowSessionStorage` رو که دارای ویژگی‌های `localStorage`(window.localStorage) و `sessionStorage`(window.sessionStorage) هستن رو پشتیبانی میکنه. این خصوصیات نمونه ای از شی Storage رو ایجاد میکنه که از طریق اون میشه موارد داده رو برای یه دامنه خاص و نوع ذخیره سازی (session یا محلی) تنظیم ، بازیابی و حذف کرد.
-    به عنوان مثال ، میتونیم روی اشیای ذخیره سازی محلی مثل زیر بخونیم و بنویسیم
+     شی window به ترتیب ویژگی‌های `WindowLocalStorage` و `WindowSessionStorage` رو که دارای ویژگی‌های `localStorage`(window.localStorage) و `sessionStorage`(window.sessionStorage) هستن رو پشتیبانی میکنه. این خصوصیات نمونه ای از شی Storage رو ایجاد میکنه که از طریق اون میشه موارد داده رو برای یه دامنه خاص و نوع ذخیره سازی (session یا محلی) تنظیم ، بازیابی و حذف کرد.
+     به عنوان مثال ، میتونیم روی اشیای ذخیره سازی محلی مثل زیر بخونیم و بنویسیم
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    localStorage.setItem('logo', document.getElementById('logo').value);
-    localStorage.getItem('logo');
-    ```
+     ```javascript
+     localStorage.setItem('logo', document.getElementById('logo').value);
+     localStorage.getItem('logo');
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 43. ### چه متد‌هایی روی session-storage قابل استفاده هستن؟
 
-    session storage متد‌هایی رو برای خواندن، نوشتن و پاکسازی داده‌های session ارائه میده.
+     session storage متد‌هایی رو برای خواندن، نوشتن و پاکسازی داده‌های session ارائه میده.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    // Save data to sessionStorage
-    sessionStorage.setItem('key', 'value');
+     ```javascript
+     // Save data to sessionStorage
+     sessionStorage.setItem('key', 'value');
 
-    // Get saved data from sessionStorage
-    let data = sessionStorage.getItem('key');
+     // Get saved data from sessionStorage
+     let data = sessionStorage.getItem('key');
 
-    // Remove saved data from sessionStorage
-    sessionStorage.removeItem('key');
+     // Remove saved data from sessionStorage
+     sessionStorage.removeItem('key');
 
-    // Remove all saved data from sessionStorage
-    sessionStorage.clear();
-    ```
+     // Remove all saved data from sessionStorage
+     sessionStorage.clear();
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 44. ### رخداد storage چیه و چطوری ازش استفاده می‌کنیم؟
 
-    storageEvent رویدادی هستش که با تغییر مکان ذخیره سازی در متن سند دیگه‌ای فعال میشه. در حالی که خاصیت ذخیره سازی یک EventHandler برای پردازش رویدادهای ذخیره سازی ست.
+     storageEvent رویدادی هستش که با تغییر مکان ذخیره سازی در متن سند دیگه‌ای فعال میشه. در حالی که خاصیت ذخیره سازی یک EventHandler برای پردازش رویدادهای ذخیره سازی ست.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
+     ```javascript
      window.onstorage = functionRef;
-    ```
+     ```
 
-    </span>
+     </span>
 
 
-    بیاین به عنوان مثال استفاده از رویداد onstorage رو ببینیم که کلید ذخیره و مقادیر اونو ثبت میکنه
+     بیاین به عنوان مثال استفاده از رویداد onstorage رو ببینیم که کلید ذخیره و مقادیر اونو ثبت میکنه
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    window.onstorage = function(e) {
-      console.log('The ' + e.key +
-        ' key has been changed from ' + e.oldValue +
-        ' to ' + e.newValue + '.');
-    };
-    ```
+     ```javascript
+     window.onstorage = function(e) {
+          console.log('The ' + e.key +
+          ' key has been changed from ' + e.oldValue +
+          ' to ' + e.newValue + '.');
+     };
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 45. ### چرا به web-storage نیاز داریم؟
 
-    فضای ذخیره سازی وب از امنیت بیشتری برخورداره و مقدار زیادی داده میتونن به صورت محلی ذخیره بشن ، بدون اینکه روی عملکرد وب سایت تأثیر بذارن. همچنین ، اطلاعات هرگز به سرور منتقل نمیشن. به همین دلیل این روش نسبت به کوکی‌ها بیشتر توصیه میشه.
+     فضای ذخیره سازی وب از امنیت بیشتری برخورداره و مقدار زیادی داده میتونن به صورت محلی ذخیره بشن ، بدون اینکه روی عملکرد وب سایت تأثیر بذارن. همچنین ، اطلاعات هرگز به سرور منتقل نمیشن. به همین دلیل این روش نسبت به کوکی‌ها بیشتر توصیه میشه.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 46. ### چطوری می‌تونیم پشتیبانی از web-storage توسط مرورگر رو بررسی کنیم؟
 
-    قبل از استفاده از فضای ذخیره‌سازی وب، باید پشتیبانی مرورگر رو برای localStorage و sessionStorage بررسی کنیم.
+     قبل از استفاده از فضای ذخیره‌سازی وب، باید پشتیبانی مرورگر رو برای localStorage و sessionStorage بررسی کنیم.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    if (typeof(Storage) !== "undefined") {
-      // Code for localStorage/sessionStorage.
-    } else {
-      // Sorry! No Web Storage support..
-    }
-    ```
+     ```javascript
+     if (typeof(Storage) !== "undefined") {
+          // Code for localStorage/sessionStorage.
+     } else {
+          // Sorry! No Web Storage support..
+     }
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 47. ### چطوری می‌تونیم پشتیبانی از web-worker توسط مرورگر رو بررسی کنیم؟
 
-    قبل از استفاده ، باید پشتیبانی مرورگر رو برای web worker ها بررسی کنیم
+     قبل از استفاده ، باید پشتیبانی مرورگر رو برای web worker ها بررسی کنیم
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    if (typeof(Worker) !== "undefined") {
-      // code for Web worker support.
-    } else {
-      // Sorry! No Web Worker support..
-    }
-    ```
+     ```javascript
+     if (typeof(Worker) !== "undefined") {
+          // code for Web worker support.
+     } else {
+          // Sorry! No Web Worker support..
+     }
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 48. ### یه مثال از web-workerها می‌تونی بزنی؟
 
-    برای شروع استفاده از web worker ها برای مثال شمارنده باید مراحل زیر رو دنبال کنیم
-    ۱. ساخت یه فایل Web Worker: برای افزایش مقدار شمارش، باید یه اسکریپت بنویسیم. بیاین اسمشو counter.js بذاریم
+     برای شروع استفاده از web worker ها برای مثال شمارنده باید مراحل زیر رو دنبال کنیم
+     ۱. ساخت یه فایل Web Worker: برای افزایش مقدار شمارش، باید یه اسکریپت بنویسیم. بیاین اسمشو counter.js بذاریم
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    let i = 0;
+     ```javascript
+     let i = 0;
 
-    function timedCount() {
-      i = i + 1;
-      postMessage(i);
-      setTimeout("timedCount()",500);
-    }
+     function timedCount() {
+          i = i + 1;
+          postMessage(i);
+          setTimeout("timedCount()",500);
+     }
 
-    timedCount();
-    ```
+     timedCount();
+     ```
 
-    </span>
+     </span>
 
-    اینجا از روش postMessage() برای ارسال پیام به صفحه HTML استفاده میشه
-    ۱. ایجاد شی Web Worker: با بررسی پشتیبانی مرورگر میتونیم یه شی Web Worker ایجاد کنیم. بیاین اسم این فایل رو web_worker_example.js بذاریم.
+     اینجا از روش postMessage() برای ارسال پیام به صفحه HTML استفاده میشه
+     ۱. ایجاد شی Web Worker: با بررسی پشتیبانی مرورگر میتونیم یه شی Web Worker ایجاد کنیم. بیاین اسم این فایل رو web_worker_example.js بذاریم.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    if (typeof(w) == "undefined") {
-      w = new Worker("counter.js");
-    }
-    ```
+     ```javascript
+     if (typeof(w) == "undefined") {
+          w = new Worker("counter.js");
+     }
+     ```
 
-    </span>
-
-
-    و ما میتونیم پیام‌ها رو از web worker دریافت کنیم
-
-    <span dir="ltr" align="left">
-
-    ```javascript
-    w.onmessage = function(event){
-      document.getElementById("message").innerHTML = event.data;
-    };
-    ```
-
-    </span>
+     </span>
 
 
-    ۱. به پایان رساندن یه web Worker
-    Web Worker ها تا زمان خاتمه یافتن پیام‌ها (حتی بعد از اتمام یه اسکریپت خارجی) به گوش دادن ادامه میدن. برای خاتمه دادن به گوش دادن به پیام‌ها میتونیم از دستور terminate() استفاده کنیم.
+     و ما میتونیم پیام‌ها رو از web worker دریافت کنیم
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    w.terminate();
-    ```
+     ```javascript
+     w.onmessage = function(event){
+          document.getElementById("message").innerHTML = event.data;
+     };
+     ```
 
-    </span>
-
-
-    ۱. استفاده مجدد از web worker : اگه متغیر worker رو undefined یا تعریف نشده تنظیم کنیم، میتونیم از کد استفاده مجدد کنیم.
-
-    <span dir="ltr" align="left">
-
-    ```javascript
-    w = undefined;
-    ```
-
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     ۱. به پایان رساندن یه web Worker
+     Web Worker ها تا زمان خاتمه یافتن پیام‌ها (حتی بعد از اتمام یه اسکریپت خارجی) به گوش دادن ادامه میدن. برای خاتمه دادن به گوش دادن به پیام‌ها میتونیم از دستور terminate() استفاده کنیم.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     w.terminate();
+     ```
+
+     </span>
+
+
+     ۱. استفاده مجدد از web worker : اگه متغیر worker رو undefined یا تعریف نشده تنظیم کنیم، میتونیم از کد استفاده مجدد کنیم.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     w = undefined;
+     ```
+
+     </span>
+
+
+     **[فهرست](#فهرست)**
 
 49. ### محدودیت‌های web-workerها روی DOM چیا هستن؟
-    WebWorker‌ها به اشیا جاوااسکریپت دسترسی ندارن چون توی یه فایل خارجی تعریف شدن.
-    1. Window object
-    2. Document object
-    3. Parent object
 
-    **[فهرست](#فهرست)**
+     WebWorker‌ها به اشیا جاوااسکریپت دسترسی ندارن چون توی یه فایل خارجی تعریف شدن.
+     1. Window object
+     2. Document object
+     3. Parent object
+
+     **[فهرست](#فهرست)**
 
 50. ### Promise چیه؟
 
-    A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
+     A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
 
-    The syntax of Promise creation looks like below,
+     The syntax of Promise creation looks like below,
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    const promise = new Promise(function(resolve, reject) {
-      // promise description
-    })
-    ```
+     ```javascript
+     const promise = new Promise(function(resolve, reject) {
+          // promise description
+     })
+     ```
 
-    </span>
-
-
-    The usage of a promise would be as below,
-
-    <span dir="ltr" align="left">
-
-    ```javascript
-    const promise = new Promise(resolve => {
-      setTimeout(() => {
-        resolve("I'm a Promise!");
-      }, 5000);
-    }, reject => {
-
-    });
-
-    promise.then(value => console.log(value));
-    ```
-
-    </span>
+     </span>
 
 
-    The action flow of a promise will be as below,
+     The usage of a promise would be as below,
 
-    ![Screenshot](images/promises.png)
+     <span dir="ltr" align="left">
 
-    **[فهرست](#فهرست)**
+     ```javascript
+     const promise = new Promise(resolve => {
+          setTimeout(() => {
+          resolve("I'm a Promise!");
+          }, 5000);
+     }, reject => {
+
+     });
+
+     promise.then(value => console.log(value));
+     ```
+
+     </span>
+
+
+     The action flow of a promise will be as below,
+
+     ![Screenshot](images/promises.png)
+
+     **[فهرست](#فهرست)**
 
 51. ### چرا به promise نیاز داریم؟
 
-    Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
+     Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 52. ### سه تا وضعیت ممکن برای یه promise چیا هستن؟
 
-    Promises have three states:
-    1. **Pending:** This is an initial state of the Promise before an operation begins
-    2. **Fulfilled:** This state indicates that   the specified operation was completed.
-    3. **Rejected:** This state indicates that the operation did not complete. In this case an error value will be thrown.
+     Promises have three states:
+     1. **Pending:** This is an initial state of the Promise before an operation begins
+     2. **Fulfilled:** This state indicates that   the specified operation was completed.
+     3. **Rejected:** This state indicates that the operation did not complete. In this case an error value will be thrown.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 53. ### توابع callback چی هستن؟
 
-    A callback function is a function passed into another function as an argument. This function is invoked inside the outer function to complete an action.
-    Let's take a simple example of how to use callback function
+     A callback function is a function passed into another function as an argument. This function is invoked inside the outer function to complete an action.
+     Let's take a simple example of how to use callback function
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    function callbackFunction(name) {
-      console.log('Hello ' + name);
-    }
+     ```javascript
+     function callbackFunction(name) {
+          console.log('Hello ' + name);
+     }
 
-    function outerFunction(callback) {
-      let name = prompt('Please enter your name.');
-      callback(name);
-    }
+     function outerFunction(callback) {
+          let name = prompt('Please enter your name.');
+          callback(name);
+     }
 
-    outerFunction(callbackFunction);
-    ```
+     outerFunction(callbackFunction);
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 54. ### چرا به توابع callback نیاز داریم؟
-    The callbacks are needed because javascript is an event driven language. That means instead of waiting for a response javascript will keep executing while listening for other events.
-    Let's take an example with the first function invoking an API call(simulated by setTimeout) and the next function which logs the message.
 
-    <span dir="ltr" align="left">
+     The callbacks are needed because javascript is an event driven language. That means instead of waiting for a response javascript will keep executing while listening for other events.
+     Let's take an example with the first function invoking an API call(simulated by setTimeout) and the next function which logs the message.
 
-    ```javascript
-    function firstFunction(){
-      // Simulate a code delay
-      setTimeout( function(){
-        console.log('First function called');
-      }, 1000 );
-    }
-    function secondFunction(){
-      console.log('Second function called');
-    }
-    firstFunction();
-    secondFunction();
+     <span dir="ltr" align="left">
 
-    // Output :
-    // Second function called
-    // First function called
-    ```
+     ```javascript
+     function firstFunction(){
+          // Simulate a code delay
+          setTimeout( function(){
+          console.log('First function called');
+          }, 1000 );
+     }
+     function secondFunction(){
+          console.log('Second function called');
+     }
+     firstFunction();
+     secondFunction();
 
-    </span>
+     // Output :
+     // Second function called
+     // First function called
+     ```
 
-    As observed from the output, javascript didn't wait for the response of the first function and the remaining code block got executed. So callbacks are used in a way to make sure that certain code doesn’t execute until the other code finishes execution.
+     </span>
 
-    **[فهرست](#فهرست)**
+     As observed from the output, javascript didn't wait for the response of the first function and the remaining code block got executed. So callbacks are used in a way to make sure that certain code doesn’t execute until the other code finishes execution.
+
+     **[فهرست](#فهرست)**
 
 55. ### Callback-hell یا جهنم توابع callback چیه؟
-    Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard to read and debug when dealing with asynchronous logic. The callback hell looks like below,
 
-    <span dir="ltr" align="left">
+     Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard to read and debug when dealing with asynchronous logic. The callback hell looks like below,
 
-    ```javascript
-    async1(function(){
-        async2(function(){
-            async3(function(){
-                async4(function(){
+     <span dir="ltr" align="left">
+
+     ```javascript
+     async1(function(){
+          async2(function(){
+               async3(function(){
+                    async4(function(){
                     ....
-                });
-            });
-        });
-    });
-    ```
+                    });
+               });
+          });
+     });
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 56. ### Server-sent-events(SSE) چیه؟
 
-    Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP connection without resorting to polling. These are a one way communications channel - events flow from server to client only. This has been used in Facebook/Twitter updates, stock price updates, news feeds etc.
+     Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP connection without resorting to polling. These are a one way communications channel - events flow from server to client only. This has been used in Facebook/Twitter updates, stock price updates, news feeds etc.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 57. ### چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟
 
-    The EventSource object is used to receive server-sent event notifications. For example, you can receive messages from server as below,
+     The EventSource object is used to receive server-sent event notifications. For example, you can receive messages from server as below,
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    if(typeof(EventSource) !== "undefined") {
-      var source = new EventSource("sse_generator.js");
-      source.onmessage = function(event) {
-        document.getElementById("output").innerHTML += event.data + "<br>";
-      };
-    }
-    ```
+     ```javascript
+     if(typeof(EventSource) !== "undefined") {
+          var source = new EventSource("sse_generator.js");
+          source.onmessage = function(event) {
+          document.getElementById("output").innerHTML += event.data + "<br>";
+          };
+     }
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 58. ### چطوری می‌تونیم پشتیبانی مرورگر برای SSE رو بررسی کنیم؟
 
-    You can perform browser support for server-sent events before using it as below,
+     You can perform browser support for server-sent events before using it as below,
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    if(typeof(EventSource) !== "undefined") {
-      // Server-sent events supported. Let's have some code here!
-    } else {
-      // No server-sent events supported
-    }
-    ```
+     ```javascript
+     if(typeof(EventSource) !== "undefined") {
+          // Server-sent events supported. Let's have some code here!
+     } else {
+          // No server-sent events supported
+     }
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 59. ### کدوم توابع روی SSE وجود دارن؟
 
-    Below are the list of events available for server sent events
-    | Event | Description |
-    |---- | ---------
-    | onopen  | It is used when a connection to the server is opened |
-    | onmessage | This event is used when a message is received  |
-    | onerror | It happens when an error occurs|
+     Below are the list of events available for server sent events
 
-    **[فهرست](#فهرست)**
+     | Event | Description |
+     |---- | --------- |
+     | onopen  | It is used when a connection to the server is opened |
+     | onmessage | This event is used when a message is received  |
+     | onerror | It happens when an error occurs|
+
+     **[فهرست](#فهرست)**
 
 60. ### اصلی‌ترین قوانین promiseها چیا هستن؟
-    A promise must follow a specific set of rules,
-    1. A promise is an object that supplies a standard-compliant `.then()` method
-    2. A pending promise may transition into either fulfilled or rejected state
-    3. A fulfilled or rejected promise is settled and it must not transition into any other state.
-    4. Once a promise is settled, the value must not change.
 
-    **[فهرست](#فهرست)**
+     A promise must follow a specific set of rules,
+     1. A promise is an object that supplies a standard-compliant `.then()` method
+     2. A pending promise may transition into either fulfilled or rejected state
+     3. A fulfilled or rejected promise is settled and it must not transition into any other state.
+     4. Once a promise is settled, the value must not change.
+
+     **[فهرست](#فهرست)**
 
 61. ### Callback توی callback چطوری رخ میده؟
 
@@ -1781,561 +1801,565 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     ```javascript
     loadScript('/script1.js', function(script) {
-       console.log('first script is loaded');
+          console.log('first script is loaded');
 
-      loadScript('/script2.js', function(script) {
+          loadScript('/script2.js', function(script) {
 
-        console.log('second script is loaded');
+               console.log('second script is loaded');
 
-        loadScript('/script3.js', function(script) {
+               loadScript('/script3.js', function(script) {
 
-            console.log('third script is loaded');
-          // after all scripts are loaded
-        });
+                    console.log('third script is loaded');
+                    // after all scripts are loaded
+               });
+          })
+     });
+     ```
 
-      })
+     </span>
 
-    });
-    ```
-
-    </span>
-
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 62. ### زنجیره promiseها چیه؟
 
-    The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining. Let's take an example of promise chaining for calculating the final result,
+     The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining. Let's take an example of promise chaining for calculating the final result,
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    new Promise(function(resolve, reject) {
+     ```javascript
+     new Promise(function(resolve, reject) {
 
-      setTimeout(() => resolve(1), 1000);
+          setTimeout(() => resolve(1), 1000);
 
-    }).then(function(result) {
+     }).then(function(result) {
 
-      console.log(result); // 1
-      return result * 2;
+          console.log(result); // 1
+          return result * 2;
 
-    }).then(function(result) {
+     }).then(function(result) {
 
-      console.log(result); // 2
-      return result * 3;
+          console.log(result); // 2
+          return result * 3;
 
-    }).then(function(result) {
+     }).then(function(result) {
 
-      console.log(result); // 6
-      return result * 4;
+          console.log(result); // 6
+          return result * 4;
 
-    });
-    ```
+     });
+     ```
 
-    </span>
+     </span>
 
-    In the above handlers, the result is passed to the chain of .then() handlers with the below work flow,
-    1. The initial promise resolves in 1 second,
-    2. After that `.then` handler is called by   logging the result(1) and then return a   promise with the value of result * 2.
-    3. After that the value passed to the next `.  then` handler by logging the result(2) and   return a promise with result * 3.
-    4. Finally the value passed to the last `.  then` handler by logging the result(6) and   return a promise with result * 4.
+     In the above handlers, the result is passed to the chain of .then() handlers with the below work flow,
+     1. The initial promise resolves in 1 second,
+     2. After that `.then` handler is called by   logging the result(1) and then return a   promise with the value of result * 2.
+     3. After that the value passed to the next `.  then` handler by logging the result(2) and   return a promise with result * 3.
+     4. Finally the value passed to the last `.  then` handler by logging the result(6) and   return a promise with result * 4.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 63. ### کاربرد متد promise.all چیه؟
 
-    Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved when all the promises get resolved or any one of them gets rejected. For example, the syntax of promise.all method is below,
+     Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved when all the promises get resolved or any one of them gets rejected. For example, the syntax of promise.all method is below,
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    Promise.all([Promise1, Promise2, Promise3]) .then(result) => {   console.log(result) }) .catch(error => console.log(`Error in promises ${error}`))
-    ```
+     ```javascript
+     Promise.all([Promise1, Promise2, Promise3]) .then(result) => {   console.log(result) }) .catch(error => console.log(`Error in promises ${error}`))
+     ```
 
-    </span>
+     </span>
 
-    **Note:** Remember that the order of the promises(output the result) is maintained as per input order.
+     **Note:** Remember that the order of the promises(output the result) is maintained as per input order.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 64. ### هدف از متد race روی promise چیه؟
 
-    Promise.race() method will return the promise instance which is firstly resolved or rejected. Let's take an example of race() method where promise2 is resolved first
+     Promise.race() method will return the promise instance which is firstly resolved or rejected. Let's take an example of race() method where promise2 is resolved first
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    var promise1 = new Promise(function(resolve, reject) {
-        setTimeout(resolve, 500, 'one');
-    });
-    var promise2 = new Promise(function(resolve, reject) {
-        setTimeout(resolve, 100, 'two');
-    });
+     ```javascript
+     var promise1 = new Promise(function(resolve, reject) {
+          setTimeout(resolve, 500, 'one');
+     });
+     var promise2 = new Promise(function(resolve, reject) {
+          setTimeout(resolve, 100, 'two');
+     });
 
-    Promise.race([promise1, promise2]).then(function(value) {
-      console.log(value); // "two" // Both promises will resolve, but promise2 is faster
-    });
-    ```
+     Promise.race([promise1, promise2]).then(function(value) {
+          console.log(value); // "two" // Both promises will resolve, but promise2 is faster
+     });
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 65. ### حالت strict توی جاواسکریپت چی کار میکنه؟
 
-    Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression `"use strict";` instructs the browser to use the javascript code in the Strict mode.
+     Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression `"use strict";` instructs the browser to use the javascript code in the Strict mode.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 66. ### چرا به حالت strict نیاز داریم؟
 
-    Strict mode is useful to write "secure" JavaScript by notifying "bad syntax" into real errors. For example, it eliminates accidentally creating a global variable by throwing an error and also throws an error for assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object.
+     Strict mode is useful to write "secure" JavaScript by notifying "bad syntax" into real errors. For example, it eliminates accidentally creating a global variable by throwing an error and also throws an error for assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 67. ### چطوری می‌تونیم حالت strict رو فعال کنیم؟
 
-    The strict mode is declared by adding "use strict"; to the beginning of a script or a function.
-    If declared at the beginning of a script, it has global scope.
+     The strict mode is declared by adding "use strict"; to the beginning of a script or a function.
+     If declared at the beginning of a script, it has global scope.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    "use strict";
-    x = 3.14; // This will cause an error because x is not declared
-    ```
+     ```javascript
+     "use strict";
+     x = 3.14; // This will cause an error because x is not declared
+     ```
 
-    </span>
+     </span>
 
-    and if you declare inside a function, it has local scope
+     and if you declare inside a function, it has local scope
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    x = 3.14;       // This will not cause an error.
-    myFunction();
+     ```javascript
+     x = 3.14;       // This will not cause an error.
+     myFunction();
 
-    function myFunction() {
-      "use strict";
-      y = 3.14;   // This will cause an error
-    }
-    ```
+     function myFunction() {
+          "use strict";
+          y = 3.14;   // This will cause an error
+     }
+     ```
 
-    </span>
+     </span>
 
     **[فهرست](#فهرست)**
 
 68. ### هدف از عملگر نقیض دوتایی(!!) چیه؟
 
-    The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, true.
-    For example, you can test IE version using this expression as below,
+     The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, true.
+     For example, you can test IE version using this expression as below,
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    let isIE8 = false;
-    isIE8 = !! navigator.userAgent.match(/MSIE 8.0/);
-    console.log(isIE8); // returns true or false
-    ```
+     ```javascript
+     let isIE8 = false;
+     isIE8 = !! navigator.userAgent.match(/MSIE 8.0/);
+     console.log(isIE8); // returns true or false
+     ```
 
-    </span>
+     </span>
 
-    If you don't use this expression then it returns the original value.
+     If you don't use this expression then it returns the original value.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    console.log(navigator.userAgent.match(/MSIE 8.0/));  // returns either an Array or null
-    ```
+     ```javascript
+     console.log(navigator.userAgent.match(/MSIE 8.0/));  // returns either an Array or null
+     ```
 
-    </span>
+     </span>
 
-    **Note:** The expression !! is not an operator, but it is just twice of ! operator.
+     **Note:** The expression !! is not an operator, but it is just twice of ! operator.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 69. ### هدف از عملگر delete چیه؟
 
-    The delete keyword is used to delete the property as well as its value.
+     The delete keyword is used to delete the property as well as its value.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    var user= {name: "John", age:20};
-    delete user.age;
+     ```javascript
+     var user= {name: "John", age:20};
+     delete user.age;
 
-    console.log(user); // {name: "John"}
-    ```
+     console.log(user); // {name: "John"}
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 70. ### عملگر typeof چیکار می‌کنه؟
-    You can use the JavaScript typeof operator to find the type of a JavaScript variable. It returns the type of a variable or an expression.
 
-    <span dir="ltr" align="left">
+     You can use the JavaScript typeof operator to find the type of a JavaScript variable. It returns the type of a variable or an expression.
 
-    ```javascript
-    typeof "John Abraham"     // Returns "string"
-    typeof (1 + 2)        // Returns "number"
-    ```
+     <span dir="ltr" align="left">
 
-    </span>
+     ```javascript
+     typeof "John Abraham"     // Returns "string"
+     typeof (1 + 2)        // Returns "number"
+     ```
 
-    **[فهرست](#فهرست)**
+     </span>
+
+     **[فهرست](#فهرست)**
 
 71. ### undefined چیه و چه زمانی undefined می‌گیریم؟
-    The undefined property indicates that a variable has not been assigned a value, or not declared at all. The type of undefined value is undefined too.
 
-    <span dir="ltr" align="left">
+     The undefined property indicates that a variable has not been assigned a value, or not declared at all. The type of undefined value is undefined too.
 
-    ```javascript
-    var user;    // Value is undefined, type is undefined
-    console.log(typeof(user)) //undefined
-    ```
+     <span dir="ltr" align="left">
 
-    </span>
+     ```javascript
+     var user;    // Value is undefined, type is undefined
+     console.log(typeof(user)) //undefined
+     ```
 
-    Any variable can be emptied by setting the value to undefined.
+     </span>
 
-    <span dir="ltr" align="left">
+     Any variable can be emptied by setting the value to undefined.
 
-    ```javascript
-    user = undefined
-    ```
+     <span dir="ltr" align="left">
 
-    </span>
+     ```javascript
+     user = undefined
+     ```
 
-    **[فهرست](#فهرست)**
+     </span>
+
+     **[فهرست](#فهرست)**
 
 72. ### null چیه؟
 
-    The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object.
-    You can empty the variable by setting the value to null.
+     The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object.
+     You can empty the variable by setting the value to null.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    var user = null;
-    console.log(typeof(user)) //object
-    ```
+     ```javascript
+     var user = null;
+     console.log(typeof(user)) //object
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 73. ### تفاوت‌های بین null و undefined چیا هستن؟
-    Below are the main differences between null and undefined,
 
-    | Null | Undefined |
-        |---- | -----------|
-    | It is an assignment value which indicates that variable points to no object.  | It is not an assignment value where a variable has been declared but has not yet been assigned a value. |
-    | Type of null is object | Type of undefined is undefined  |
-    | The null value is a primitive value that represents the null, empty, or non-existent reference. | The undefined value is a primitive value used when a variable has not been assigned a value.|
-    | Indicates the absence of a value for a variable | Indicates absence of variable itself |
-    | Converted to zero (0) while performing primitive operations | Converted to NaN while performing primitive operations |
+     Below are the main differences between null and undefined,
 
-    **[فهرست](#فهرست)**
+     | Null | Undefined |
+     |---- | -----------|
+     | It is an assignment value which indicates that variable points to no object.  | It is not an assignment value where a variable has been declared but has not yet been assigned a value. |
+     | Type of null is object | Type of undefined is undefined  |
+     | The null value is a primitive value that represents the null, empty, or non-existent reference. | The undefined value is a primitive value used when a variable has not been assigned a value.|
+     | Indicates the absence of a value for a variable | Indicates absence of variable itself |
+     | Converted to zero (0) while performing primitive operations | Converted to NaN while performing primitive operations |
+
+     **[فهرست](#فهرست)**
 
 74. ### eval چیه؟
 
-    The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
+     The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    console.log(eval('1 + 2')); //  3
-    ```
+     ```javascript
+     console.log(eval('1 + 2')); //  3
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 75. ### تفاوت‌های بین window و document چیا هستن؟
 
-    Below are the main differences between window and document,
+     Below are the main differences between window and document,
 
-    | Window | Document |
-        |---- | ---------
-    | It is the root level element in any web page  | It is the direct child of the window object. This is also known as Document Object Model(DOM) |
-    | By default window object is available implicitly in the page | You can access it via window.document or document.  |
-    | It has methods like alert(), confirm() and properties like document, location | It provides methods like getElementById, getElementByTagName, createElement etc  |
+     | Window | Document |
+     |---- | --------- |
+     | It is the root level element in any web page  | It is the direct child of the window object. This is also known as Document Object Model(DOM) |
+     | By default window object is available implicitly in the page | You can access it via window.document or document.  |
+     | It has methods like alert(), confirm() and properties like document, location | It provides methods like getElementById, getElementByTagName, createElement etc  |
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 76. ### توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟
 
-    The window.history object contains the browser's history. You can load previous and next URLs in the history using back() and next() methods.
+     The window.history object contains the browser's history. You can load previous and next URLs in the history using back() and next() methods.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    function goBack() {
-      window.history.back()
-    }
-    function goForward() {
-      window.history.forward()
-    }
-    ```
+     ```javascript
+     function goBack() {
+          window.history.back()
+     }
+     function goForward() {
+          window.history.forward()
+     }
+     ```
 
-    </span>
+     </span>
 
-    **Note:** You can also access history without window prefix.
+     **Note:** You can also access history without window prefix.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 77. ### انواع داده‌های جاواسکریپت کدوما هستن؟
-    Below are the list of javascript data types available
-    1. Number
-    2. String
-    3. Boolean
-    4. Object
-    5. Undefined
 
-    **[فهرست](#فهرست)**
+     Below are the list of javascript data types available
+     1. Number
+     2. String
+     3. Boolean
+     4. Object
+     5. Undefined
+
+     **[فهرست](#فهرست)**
 
 78. ### isNaN چیه و چیکار می‌کنه؟
 
-    The isNaN() function is used to determine whether a value is an illegal number (Not-a-Number) or not. i.e, This function returns true if the value equates to NaN. Otherwise it returns false.
+     The isNaN() function is used to determine whether a value is an illegal number (Not-a-Number) or not. i.e, This function returns true if the value equates to NaN. Otherwise it returns false.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    isNaN('Hello') //true
-    isNaN('100') //false
-    ```
+     ```javascript
+     isNaN('Hello') //true
+     isNaN('100') //false
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 79. ### تفاوت‌های بین undeclared و undefined چیا هستن؟
 
-    Below are the major differences between undeclared and undefined variables,
+     Below are the major differences between undeclared and undefined variables,
 
-    | undeclared | undefined |
-        |---- | ---------
-    | These variables do not exist in a program and are not declared  | These variables declared in the program but have not assigned any value |
-    | If you try to read the value of an undeclared variable, then a runtime error is encountered | If you try to read the value of an undefined variable, an undefined value is returned.  |
+     | undeclared | undefined |
+     |---- | --------- |
+     | These variables do not exist in a program and are not declared  | These variables declared in the program but have not assigned any value |
+     | If you try to read the value of an undeclared variable, then a runtime error is encountered | If you try to read the value of an undefined variable, an undefined value is returned.  |
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 80. ### کدوم متغیرها عمومی هستن؟
 
-    Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
+     Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    msg = "Hello" // var is missing, it becomes global variable
-    ```
+     ```javascript
+     msg = "Hello" // var is missing, it becomes global variable
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 81. ### مشکلات متغیرهای عمومی چیا هستن؟
 
-    The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
+     The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 82. ### مقدار NaN چیه؟
 
-    The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases
+     The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    Math.sqrt(-1)
-    parseInt("Hello")
-    ```
+     ```javascript
+     Math.sqrt(-1)
+     parseInt("Hello")
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 83. ### هدف از تابع isFinite چیه؟
 
-    The isFinite() function is used to determine whether a number is a finite, legal number. It returns false if the value is +infinity, -infinity, or NaN (Not-a-Number), otherwise it returns true.
+     The isFinite() function is used to determine whether a number is a finite, legal number. It returns false if the value is +infinity, -infinity, or NaN (Not-a-Number), otherwise it returns true.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    isFinite(Infinity);  // false
-    isFinite(NaN);       // false
-    isFinite(-Infinity); // false
+     ```javascript
+     isFinite(Infinity);  // false
+     isFinite(NaN);       // false
+     isFinite(-Infinity); // false
 
-    isFinite(100);         // true
-    ```
+     isFinite(100);         // true
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 84. ### یه event-flow چیه؟
-    Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
-    There are two ways of event flow
-  1. Top to Bottom(Event Capturing)
-  2. Bottom to Top (Event Bubbling)
 
-    **[فهرست](#فهرست)**
+     Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
+     There are two ways of event flow
+     1. Top to Bottom(Event Capturing)
+     2. Bottom to Top (Event Bubbling)
+
+     **[فهرست](#فهرست)**
 
 85. ### Event-bubbling چیه؟
-    Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
 
-    **[فهرست](#فهرست)**
+     Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
+
+     **[فهرست](#فهرست)**
 
 86. ### Event-capturing چیه؟
 
-    Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
+     Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 87. ### چطوری میشه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟
 
-    You can submit a form using JavaScript use document.form[0].submit(). All the form input's information is submitted using onsubmit event handler
+     You can submit a form using JavaScript use document.form[0].submit(). All the form input's information is submitted using onsubmit event handler
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    function submit() {
-        document.form[0].submit();
-    }
-    ```
+     ```javascript
+     function submit() {
+          document.form[0].submit();
+     }
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 88. ### چطوری میشه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟
 
-    The window.navigator object contains information about the visitor's browser OS details. Some of the OS properties are available under platform property,
+     The window.navigator object contains information about the visitor's browser OS details. Some of the OS properties are available under platform property,
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    console.log(navigator.platform);
-    ```
+     ```javascript
+     console.log(navigator.platform);
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 89. ### تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟
 
-    The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).
+     The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 90. ### تفاوت‌های بین objectهای native، host و user چیا هستن؟
 
-    `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
-    `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
-    `User objects` are objects defined in the javascript code. For example, User objects created for profile information.
+     `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
+     `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
+     `User objects` are objects defined in the javascript code. For example, User objects created for profile information.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 91. ### کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟
 
-    You can use below tools or techniques for debugging javascript
-    1. Chrome Devtools
-    2. debugger statement
-    3. Good old console.log statement
+     You can use below tools or techniques for debugging javascript
+     1. Chrome Devtools
+     2. debugger statement
+     3. Good old console.log statement
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 92. ### مزایا و معایب استفاده از promiseها به جای callback چیا هستن؟
 
-    Below are the list of pros and cons of promises over callbacks,
+     Below are the list of pros and cons of promises over callbacks,
 
-    **Pros:**
-    1. It avoids callback hell which is unreadable
-    2. Easy to write sequential asynchronous code   with .then()
-    3. Easy to write parallel asynchronous code   with Promise.all()
-    4. Solves some of the common problems of   callbacks(call the callback too late, too   early, many times and swallow errors/  exceptions)
+     **مزایا:**
+     1. It avoids callback hell which is unreadable
+     2. Easy to write sequential asynchronous code   with .then()
+     3. Easy to write parallel asynchronous code   with Promise.all()
+     4. Solves some of the common problems of   callbacks(call the callback too late, too   early, many times and swallow errors/  exceptions)
 
-    **Cons:**
-    1. It makes little complex code
-    2. You need to load a polyfill if ES6 is not   supported
+     **معایب:**
+     1. It makes little complex code
+     2. You need to load a polyfill if ES6 is not   supported
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 93. ### تفاوت‌های بین attribute و property روی DOM چیا هستن؟
 
-    Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes type and value,
+     Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes type and value,
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    <input type="text" value="Name:">
-    ```
+     ```javascript
+     <input type="text" value="Name:">
+     ```
 
-    </span>
+     </span>
 
-    You can retrieve the attribute value as below,
+     You can retrieve the attribute value as below,
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    const input = document.querySelector('input');
-    console.log(input.getAttribute('value')); // Good morning
-    console.log(input.value); // Good morning
-    ```
+     ```javascript
+     const input = document.querySelector('input');
+     console.log(input.getAttribute('value')); // Good morning
+     console.log(input.value); // Good morning
+     ```
 
-    </span>
+     </span>
 
-    And after you change the value of the text field to "Good evening", it becomes like
+     And after you change the value of the text field to "Good evening", it becomes like
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    console.log(input.getAttribute('value')); // Good morning
-    console.log(input.value); // Good evening
-    ```
+     ```javascript
+     console.log(input.getAttribute('value')); // Good morning
+     console.log(input.value); // Good evening
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 94. ### سیاست same-origin چیه؟
 
-    The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
+     The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 95. ### هدف استفاده از void 0 چیه؟
 
-    Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML documents that use href="JavaScript:Void(0);" within an ```<a>``` element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
-    For example, the below link notify the message without reloading the page
+     Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML documents that use href="JavaScript:Void(0);" within an ```<a>``` element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
+     For example, the below link notify the message without reloading the page
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```html
-    <a href="JavaScript:void(0);" onclick="alert('Well done!')">Click Me!</a>
-    ```
+     ```html
+     <a href="JavaScript:void(0);" onclick="alert('Well done!')">Click Me!</a>
+     ```
 
-    </span>
+     </span>
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 96. ### جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟
 
-    JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays  modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+     JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays  modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 97. ### آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟
 
-    Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
+     Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 98. ### ارتباطی بین Java و JavaScript وجود داره؟
 
      No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 99. ### Eventها چی هستن؟
 
@@ -3554,12 +3578,12 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      ```javascript
      function detectmob() {
       if( navigator.userAgent.match(/Android/i)
-      || navigator.userAgent.match(/webOS/i)
-      || navigator.userAgent.match(/iPhone/i)
-      || navigator.userAgent.match(/iPad/i)
-      || navigator.userAgent.match(/iPod/i)
-      || navigator.userAgent.match(/BlackBerry/i)
-      || navigator.userAgent.match(/Windows Phone/i)
+          || navigator.userAgent.match(/webOS/i)
+          || navigator.userAgent.match(/iPhone/i)
+          || navigator.userAgent.match(/iPad/i)
+          || navigator.userAgent.match(/iPod/i)
+          || navigator.userAgent.match(/BlackBerry/i)
+          || navigator.userAgent.match(/Windows Phone/i)
       ){
          return true;
        }
@@ -3655,12 +3679,12 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      ```javascript
      var width = window.innerWidth
-     || document.documentElement.clientWidth
-     || document.body.clientWidth;
+          || document.documentElement.clientWidth
+          || document.body.clientWidth;
 
      var height = window.innerHeight
-     || document.documentElement.clientHeight
-     || document.body.clientHeight;
+          || document.documentElement.clientHeight
+          || document.body.clientHeight;
      ```
 
      </span>
@@ -4204,13 +4228,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      ```javascript
      const object = {
-       a: 'Good morning',
-       b: 100
+          a: 'Good morning',
+          b: 100
      };
 
      for (let [key, value] of Object.entries(object)) {
-       console.log(`${key}: ${value}`); // a: 'Good morning'
-                                        // b: 100
+          console.log(`${key}: ${value}`);      
+          // a: 'Good morning'
+          // b: 100
      }
      ```
 
@@ -4227,20 +4252,20 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      <span dir="ltr" align="left">
 
      ```javascript
-      const object = {
-        a: 'Good morning',
-        b: 100
-      };
+     const object = {
+          a: 'Good morning',
+          b: 100
+     };
 
-      for (let value of Object.values(object)) {
-        console.log(`${value}`); // 'Good morning'
-                                     100
-      }
+     for (let value of Object.values(object)) {
+          console.log(`${value}`); // 'Good morning' 100
+     }
      ```
 
      </span>
 
      **[فهرست](#فهرست)**
+
 
 201. ### How can you get the list of keys of any object
 
@@ -4719,7 +4744,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 224. ### What are the different ways to access object properties
 
-    3 راه ممکن برای دسترسی به ویژگی یک شی وجود دارد.
+     3 راه ممکن برای دسترسی به ویژگی یک شی وجود دارد.
      1. **Dot notation:** از نقطه برای دسترسی به ویژگی ها استفاده می کند
 
      <span dir="ltr" align="left">
@@ -4774,16 +4799,16 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 226. ### What is an error object
 
-    یک شیء خطا، یک شیء خطای داخلی است که     هنگام بروز خطا، اطلاعات خطا را ارائه می دهد. این دو ویژگی دارد: نام و پیام. به عنوان مثال، تابع زیر جزئیات خطا را ثبت می کند،
+     یک شیء خطا، یک شیء خطای داخلی است که هنگام بروز خطا، اطلاعات خطا را ارائه می دهد. این دو ویژگی دارد: نام و پیام. به عنوان مثال، تابع زیر جزئیات خطا را ثبت می کند،
 
      <span dir="ltr" align="left">
 
      ```javascript
      try {
-       greeting("Welcome");
+          greeting("Welcome");
      }
      catch(err) {
-       console.log(err.name + "<br>" + err.message);
+          console.log(err.name + "<br>" + err.message);
      }
      ```
 
@@ -4812,20 +4837,20 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 228. ### What are the different error names from error object
 
      6 نوع مختلف نام خطا وجود دارد که از شی خطا بازگردانده می شود.
-      | نام خطا | توضیحات |
-      |---- | ---------
-      | EvalError | خطایی در تابع eval() رخ داده است
-      | RangeError | خطایی با عدد "خارج از محدوده" | رخ داده است
-      | خطای مرجع | خطا به دلیل ارجاع غیرقانونی|
-      | SyntaxError | خطای ناشی از خطای نحو|
-      | TypeError | خطای ناشی از خطای نوع |
-      | خطای URIE | یک خطا به دلیل () encodeURI |
+     | نام خطا | توضیحات |
+     |---- | --------- |
+     | EvalError | خطایی در تابع eval() رخ داده است
+     | RangeError | خطایی با عدد "خارج از محدوده" | رخ داده است
+     | خطای مرجع | خطا به دلیل ارجاع غیرقانونی|
+     | SyntaxError | خطای ناشی از خطای نحو|
+     | TypeError | خطای ناشی از خطای نوع |
+     | خطای URIE | یک خطا به دلیل () encodeURI |
 
      **[فهرست](#فهرست)**
 
 229. ### What are the various statements in error handling
 
-    در زیر لیستی از عبارات استفاده شده در مدیریت خطا آمده است.
+     در زیر لیستی از عبارات استفاده شده در مدیریت خطا آمده است.
      1. **try:** این عبارت برای آزمایش یک بلوک کد برای خطاها استفاده می شود
      2. **catch:** این عبارت برای رسیدگی به خطا استفاده می شود
      3. **throw:**این عبارت برای ایجاد خطاهای سفارشی استفاده می شود.
@@ -4842,7 +4867,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 231. ### What is nodejs
 
-    Node.js یک پلتفرم سمت سرور است که بر اساس زمان اجرا جاوا اسکریپت کروم برای ساخت آسان برنامه های شبکه سریع و مقیاس پذیر ساخته شده است. این یک زمان اجرا I/O ناهمزمان مبتنی بر رویداد، غیر مسدود کننده است که از موتور جاوا اسکریپت V8 گوگل و کتابخانه libuv استفاده می کند.
+     Node.js یک پلتفرم سمت سرور است که بر اساس زمان اجرا جاوا اسکریپت کروم برای ساخت آسان برنامه های شبکه سریع و مقیاس پذیر ساخته شده است. این یک زمان اجرا I/O ناهمزمان مبتنی بر رویداد، غیر مسدود کننده است که از موتور جاوا اسکریپت V8 گوگل و کتابخانه libuv استفاده می کند.
 
      **[فهرست](#فهرست)**
 
@@ -4876,7 +4901,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 235. ### How does synchronous iteration works
 
-    تکرار همزمان در ES6 معرفی شد و با مجموعه ای از اجزای زیر کار می کند:
+     تکرار همزمان در ES6 معرفی شد و با مجموعه ای از اجزای زیر کار می کند:
 
      **Iterable:** این یک شی است که می تواند از طریق روشی که کلید آن Symbol.iterator است، تکرار شود.
      **Iterator:** این یک شی است که با فراخوانی «[Symbol.iterator]()» بر روی یک تکرار برگردانده می شود. این شئ تکرار شونده هر عنصر تکرار شده را در یک شی پیچیده می کند و آن را از طریق متد «next()» یکی یکی برمی گرداند.
@@ -4930,10 +4955,10 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
      کد بالا در یک پشته تماس به صورت زیر پردازش می شود.
-  1. تابع 'hungry()' را به لیست پشته تماس اضافه کنید و کد را اجرا کنید.
-  2. تابع 'eatFruits()' را به لیست پشته تماس اضافه کنید و کد را اجرا کنید.
-  3.تابع 'eatFruits()' را از لیست پشته تماس ما حذف کنید.
-  4.تابع 'eatFruits()' را از لیست پشته تماس ما حذف کنید.
+     1. تابع 'hungry()' را به لیست پشته تماس اضافه کنید و کد را اجرا کنید.
+     2. تابع 'eatFruits()' را به لیست پشته تماس اضافه کنید و کد را اجرا کنید.
+     3.تابع 'eatFruits()' را از لیست پشته تماس ما حذف کنید.
+     4.تابع 'eatFruits()' را از لیست پشته تماس ما حذف کنید.
      ![Screenshot](images/call-stack.png)
 
      **[فهرست](#فهرست)**
@@ -5200,6 +5225,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      بیایید یک مثال ساده از استفاده از TypeScript را ببینیم،
 
+      <span dir="ltr" align="left">
+
       ```typescript
       function greeting(name: string): string {
          return "Hello, " + name;
@@ -5210,6 +5237,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       console.log(greeting(user));
       ```
 
+      </span>
+
      متد خوشامدگویی فقط نوع رشته را به عنوان آرگومان مجاز می کند.
 
      **[فهرست](#فهرست)**
@@ -5218,13 +5247,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      در زیر لیستی از تفاوت های بین جاوا اسکریپت و تایپ اسکریپت آمده است.
 
-      | ویژگی | تایپ | جاوا اسکریپت |
-           |---- | --------- | ----
-      | پارادایم زبان | زبان برنامه نویسی شی گرا | زبان اسکریپت |
-      | پشتیبانی از تایپ | پشتیبانی از تایپ استاتیک | دارای تایپ پویا |
-      | ماژول ها | پشتیبانی شده | پشتیبانی نمی شود |
-      | رابط | دارای مفهوم رابط | از رابط ها پشتیبانی نمی کند |
-      | پارامترهای اختیاری | توابع از پارامترهای اختیاری پشتیبانی می کنند | عدم پشتیبانی از پارامترهای اختیاری برای توابع |
+     | ویژگی | تایپ | جاوا اسکریپت |
+     |---- | --------- | ---- |
+     | پارادایم زبان | زبان برنامه نویسی شی گرا | زبان اسکریپت |
+     | پشتیبانی از تایپ | پشتیبانی از تایپ استاتیک | دارای تایپ پویا |
+     | ماژول ها | پشتیبانی شده | پشتیبانی نمی شود |
+     | رابط | دارای مفهوم رابط | از رابط ها پشتیبانی نمی کند |
+     | پارامترهای اختیاری | توابع از پارامترهای اختیاری پشتیبانی می کنند | عدم پشتیبانی از پارامترهای اختیاری برای توابع |
 
      **[فهرست](#فهرست)**
 
@@ -5256,6 +5285,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 255. ### What is a constructor method
 
      متد سازنده یک متد خاص برای ایجاد و مقداردهی اولیه یک شی ایجاد شده در یک کلاس است. اگر متد سازنده را مشخص نکنید، از سازنده پیش فرض استفاده می شود. مثال استفاده از سازنده به صورت زیر خواهد بود.
+     
      <span dir="ltr" align="left">
 
      ```javascript
@@ -5470,14 +5500,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 266. ### What Is Obfuscation in javascript
 
-    مبهم سازی عمل عمدی ایجاد کد جاوا اسکریپت مبهم (یعنی کد منبع یا ماشین) است که درک آن برای انسان دشوار است. این چیزی شبیه به رمزگذاری است، اما یک ماشین می تواند کد را درک کرده و آن را اجرا کند.
-      بیایید تابع زیر را قبل از Obfuscation ببینیم،
+     مبهم سازی عمل عمدی ایجاد کد جاوا اسکریپت مبهم (یعنی کد منبع یا ماشین) است که درک آن برای انسان دشوار است. این چیزی شبیه به رمزگذاری است، اما یک ماشین می تواند کد را درک کرده و آن را اجرا کند.
+          بیایید تابع زیر را قبل از Obfuscation ببینیم،
 
      <span dir="ltr" align="left">
 
      ```javascript
      function greeting() {
-        console.log('Hello, welcome to JS world');
+          console.log('Hello, welcome to JS world');
      }
      ```
 
@@ -5496,7 +5526,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 267. ### Why do you need Obfuscation
 
-    در زیر چند دلیل برای مبهم سازی آمده است،
+     در زیر چند دلیل برای مبهم سازی آمده است،
      1. اندازه کد کاهش می یابد. بنابراین انتقال داده بین سرور و مشتری سریع خواهد بود.
      2. این منطق کسب و کار را از دنیای خارج پنهان می کند و از کد در برابر دیگران محافظت می کند
      3. مهندسی معکوس بسیار دشوار است
@@ -6922,7 +6952,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-    خروجی عبارت فوق "W" است.
+     خروجی عبارت فوق "W" است.
       **توضیح:** نماد براکت با شاخص خاص روی یک رشته کاراکتر را در یک مکان خاص برمی گرداند. از این رو، کاراکتر "W" رشته را برمی گرداند. از آنجایی که این مورد در نسخه‌های IE7 و پایین‌تر پشتیبانی نمی‌شود، ممکن است لازم باشد از متد charAt() برای به دست آوردن نتیجه دلخواه استفاده کنید.
 
      **[فهرست](#فهرست)**
@@ -7787,7 +7817,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-    یعنی هر اولیه به جز null و undefined دارای Wrapper Object است و لیست اشیاء wrapper عبارتند از String، Number، Boolean، Symbol و BigInt.
+     یعنی هر اولیه به جز null و undefined دارای Wrapper Object است و لیست اشیاء wrapper عبارتند از String، Number، Boolean، Symbol و BigInt.
 
      **[فهرست](#فهرست)**
 
@@ -7980,7 +8010,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 391. ### How do you use javascript libraries in typescript file
 
-    مشخص است که همه کتابخانه‌ها یا چارچوب‌های جاوا اسکریپت دارای فایل‌های اعلان TypeScript نیستند. اما اگر همچنان می‌خواهید از کتابخانه‌ها یا فریم‌ورک‌ها در فایل‌های TypeScript خود بدون دریافت خطاهای کامپایل استفاده کنید، تنها راه‌حل کلمه کلیدی «اعلان» به همراه یک اعلان متغیر است. به عنوان مثال، بیایید تصور کنیم که شما یک کتابخانه به نام "customLibrary" دارید که اعلان TypeScript ندارد و فضای نامی به نام "customLibrary" در فضای نام جهانی دارد. می توانید از این کتابخانه در کد تایپ اسکریپت به صورت زیر استفاده کنید.
+     مشخص است که همه کتابخانه‌ها یا چارچوب‌های جاوا اسکریپت دارای فایل‌های اعلان TypeScript نیستند. اما اگر همچنان می‌خواهید از کتابخانه‌ها یا فریم‌ورک‌ها در فایل‌های TypeScript خود بدون دریافت خطاهای کامپایل استفاده کنید، تنها راه‌حل کلمه کلیدی «اعلان» به همراه یک اعلان متغیر است. به عنوان مثال، بیایید تصور کنیم که شما یک کتابخانه به نام "customLibrary" دارید که اعلان TypeScript ندارد و فضای نامی به نام "customLibrary" در فضای نام جهانی دارد. می توانید از این کتابخانه در کد تایپ اسکریپت به صورت زیر استفاده کنید.
 
      <span dir="ltr" align="left">
 
@@ -8007,7 +8037,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      برخی از تفاوت های عمده در شکل جدولی
 
       | وعده ها | قابل مشاهده |
-           |---- | ---------
+      |---- | --------- |
       | فقط یک مقدار را در یک زمان منتشر می کند | چندین مقدار را در یک دوره زمانی منتشر می کند (جریان مقادیری از 0 تا چندگانه) |
       | مشتاق در طبیعت؛ قرار است فوراً فراخوانی شوند | تنبل در طبیعت؛ آنها برای فراخوانی نیاز به اشتراک دارند |
       | Promise همیشه ناهمزمان است حتی اگر بلافاصله حل شود | قابل مشاهده می تواند همزمان یا ناهمزمان|
@@ -8364,15 +8394,16 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       سپس فراموش کرده اید که بلوک «انجام شد» را به بلوک «سپس» اضافه کنید که منجر به خطاهای خاموش می شود.
 
      3. **Extend ES6 Promises by Bluebird:**
+
         Bluebird API ES6 Promises را گسترش می دهد تا در راه حل دوم مشکلی ایجاد نشود. این کتابخانه دارای یک کنترل کننده "پیش فرض" در Rejection است که تمام خطاها را از Promises رد شده به stderr چاپ می کند. پس از نصب، می توانید ردهای کنترل نشده را پردازش کنید
 
      <span dir="ltr" align="left">
 
-         ```javascript
-         Promise.onPossiblyUnhandledRejection(function(error){
-             throw error;
-         });
-         ```
+     ```javascript
+     Promise.onPossiblyUnhandledRejection(function(error){
+          throw error;
+     });
+     ```
 
      </span>
 
@@ -8380,9 +8411,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      <span dir="ltr" align="left">
 
-         ```javascript
-         Promise.reject('error value').catch(function() {});
-         ```
+     ```javascript
+     Promise.reject('error value').catch(function() {});
+     ```
 
      </span>
 
