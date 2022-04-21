@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "rm -rf docs && mkdir docs && cp book.html docs/index.html && cp CNAME docs/CNAME && gh-pages -d docs -r https://$GH_TOKEN@github.com/Mariotek/javascript-persian-interview-questions",
+    "deploy": "rm -rf docs && mkdir docs && cp book.html docs/index.html && cp CNAME docs/CNAME && cp -R fonts docs/fonts && cp -R images docs/images",
     "test": "echo \"Will write tests soon ....\""
   },
   "repository": {
