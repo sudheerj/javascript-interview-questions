@@ -483,47 +483,47 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 2. **متد ایجاد آبجکت:**
 
-   متد ایجاد آبجکت با انتقال نمونه اولیه آبجکت به عنوان یه پارامتر، یه آبجکت جدید ایجاد میکنه
+     متد ایجاد آبجکت با انتقال نمونه اولیه آبجکت به عنوان یه پارامتر، یه آبجکت جدید ایجاد میکنه
 
-   <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-   ```javascript
-   var object = Object.create(null);
-   ```
+     ```javascript
+     var object = Object.create(null);
+     ```
 
-   </span>
+     </span>
 
 
 3. **Object literal syntax:**
 
-   The object literal syntax is equivalent to create method when it passes null as parameter
+     The object literal syntax is equivalent to create method when it passes null as parameter
 
-   <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-   ```javascript
-   var object = {};
-   ```
+     ```javascript
+     var object = {};
+     ```
 
-   </span>
+     </span>
 
 
 4. **سازنده تابع:**
 
-   هر تابعی که بخوایم رو ایجاد میکنیم و از طریق عملگر new یه نمونه آبجکت جدید می‌سازیم.
+     هر تابعی که بخوایم رو ایجاد میکنیم و از طریق عملگر new یه نمونه آبجکت جدید می‌سازیم.
 
-   <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-   ```javascript
-   function Person(name){
+     ```javascript
+     function Person(name){
       var object = {};
       object.name=name;
       object.age=21;
       return object;
-   }
-   var object = new Person("Sudheer");
-   ```
+     }
+     var object = new Person("Sudheer");
+     ```
 
-   </span>
+     </span>
 
 
 5. **سازنده تابع با نمونه اولیه؛**
@@ -609,151 +609,151 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 2. ### زنجیره prototype چیه؟
 
-   **زنجیره prototype** برای ساخت انواع جدیدی از آبجکت‌ها بر‌اساس موارد موجود استفاده میشه. این کار شبیه ارث بری توی یه زبان مبتنی بر کلاس هستش. prototype روی نمونه آبجکت از طریق ویژگی **Object.getPrototypeOf(object)** یا **__proto__** در دسترسه در حالی که نمونه اولیه توی عملکرد سازنده‌ها از طریق object.prototype در دسترسه.
+     **زنجیره prototype** برای ساخت انواع جدیدی از آبجکت‌ها بر‌اساس موارد موجود استفاده میشه. این کار شبیه ارث بری توی یه زبان مبتنی بر کلاس هستش. prototype روی نمونه آبجکت از طریق ویژگی **Object.getPrototypeOf(object)** یا **__proto__** در دسترسه در حالی که نمونه اولیه توی عملکرد سازنده‌ها از طریق object.prototype در دسترسه.
 
-   ![Screenshot](images/prototype_chain.png)
+     ![Screenshot](images/prototype_chain.png)
 
-   **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 3. ### تفاوت‌های بین Call، Apply و Bind چیا هستن؟
 
-   تفاوت بین Call، Apply و Bind توی مثال‌های زیر توضیح داده شده
+     تفاوت بین Call، Apply و Bind توی مثال‌های زیر توضیح داده شده
 
-   **Call:** متد call() یه تابع با یه مقدار `this` و آرگومان‌های ارائه شده رو دونه دونه فراخوانی میکنه
+     **Call:** متد call() یه تابع با یه مقدار `this` و آرگومان‌های ارائه شده رو دونه دونه فراخوانی میکنه
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    var employee1 = {firstName: 'John', lastName: 'Rodson'};
-    var employee2 = {firstName: 'Jimmy', lastName: 'Baily'};
+     ```javascript
+     var employee1 = {firstName: 'John', lastName: 'Rodson'};
+     var employee2 = {firstName: 'Jimmy', lastName: 'Baily'};
 
-    function invite(greeting1, greeting2) {
+     function invite(greeting1, greeting2) {
         console.log(greeting1 + ' ' + this.firstName + ' ' + this.lastName+ ', '+ greeting2);
-    }
+     }
 
-    invite.call(employee1, 'Hello', 'How are you?'); // Hello John Rodson, How are you?
-    invite.call(employee2, 'Hello', 'How are you?'); // Hello Jimmy Baily, How are you?
+     invite.call(employee1, 'Hello', 'How are you?'); // Hello John Rodson, How are you?
+     invite.call(employee2, 'Hello', 'How are you?'); // Hello Jimmy Baily, How are you?
+     ```
+
+     </span>
+
+
+     **Apply:** تابع رو فراخوانی میکنه و بهمون اجازه میده تا آرگومان‌ها رو به عنوان یه آرایه منتقل کنیم
+
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     var employee1 = {firstName: 'John', lastName: 'Rodson'};
+     var employee2 = {firstName: 'Jimmy', lastName: 'Baily'};
+
+     function invite(greeting1, greeting2) {
+        console.log(greeting1 + ' ' + this.firstName + ' ' + this.lastName+ ', '+ greeting2);
+     }
+
+     invite.apply(employee1, ['Hello', 'How are you?']); // Hello John Rodson, How are you?
+     invite.apply(employee2, ['Hello', 'How are you?']); // Hello Jimmy Baily, How are you?
+     ```
+
+     </span>
+
+
+     **bind:** یه تابع جدید برمی‌گردونه، در حالی که بهمون اجازه میده هر تعداد آرگومانی که می خوایم رو توی یه آرایه منتقل کنیم
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     var employee1 = {firstName: 'John', lastName: 'Rodson'};
+     var employee2 = {firstName: 'Jimmy', lastName: 'Baily'};
+
+     function invite(greeting1, greeting2) {
+        console.log(greeting1 + ' ' + this.firstName + ' ' + this.lastName+ ', '+ greeting2);
+     }
+
+     var inviteEmployee1 = invite.bind(employee1);
+     var inviteEmployee2 = invite.bind(employee2);
+     inviteEmployee1('Hello', 'How are you?'); // Hello John Rodson, How are you?
+     inviteEmployee2('Hello', 'How are you?'); // Hello Jimmy Baily, How are you?
     ```
 
-   </span>
+     </span>
 
 
-    **Apply:** تابع رو فراخوانی میکنه و بهمون اجازه میده تا آرگومان‌ها رو به عنوان یه آرایه منتقل کنیم
+     Call and apply are pretty interchangeable. Both execute the current function immediately. You need to decide whether it’s easier to send in an array or a comma separated list of arguments. You can remember by treating Call is for comma (separated list) and Apply is for Array. Whereas Bind creates a new function that will have `this` set to the first parameter passed to bind().
 
-
-    <span dir="ltr" align="left">
-
-    ```javascript
-    var employee1 = {firstName: 'John', lastName: 'Rodson'};
-    var employee2 = {firstName: 'Jimmy', lastName: 'Baily'};
-
-    function invite(greeting1, greeting2) {
-        console.log(greeting1 + ' ' + this.firstName + ' ' + this.lastName+ ', '+ greeting2);
-    }
-
-    invite.apply(employee1, ['Hello', 'How are you?']); // Hello John Rodson, How are you?
-    invite.apply(employee2, ['Hello', 'How are you?']); // Hello Jimmy Baily, How are you?
-    ```
-
-    </span>
-
-
-    **bind:** یه تابع جدید برمی‌گردونه، در حالی که بهمون اجازه میده هر تعداد آرگومانی که می خوایم رو توی یه آرایه منتقل کنیم
-
-    <span dir="ltr" align="left">
-
-    ```javascript
-    var employee1 = {firstName: 'John', lastName: 'Rodson'};
-    var employee2 = {firstName: 'Jimmy', lastName: 'Baily'};
-
-    function invite(greeting1, greeting2) {
-        console.log(greeting1 + ' ' + this.firstName + ' ' + this.lastName+ ', '+ greeting2);
-    }
-
-    var inviteEmployee1 = invite.bind(employee1);
-    var inviteEmployee2 = invite.bind(employee2);
-    inviteEmployee1('Hello', 'How are you?'); // Hello John Rodson, How are you?
-    inviteEmployee2('Hello', 'How are you?'); // Hello Jimmy Baily, How are you?
-    ```
-
-    </span>
-
-
-    Call and apply are pretty interchangeable. Both execute the current function immediately. You need to decide whether it’s easier to send in an array or a comma separated list of arguments. You can remember by treating Call is for comma (separated list) and Apply is for Array. Whereas Bind creates a new function that will have `this` set to the first parameter passed to bind().
-
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 4. ### فرمت JSON چیه و عملیات‌های معمول بر روی آن چیا هستند؟
 
-   **JSON** یه قالب داده مبتنی برمتن هستش که از نحو آبجکت جاوا‌اسکریپت (javascript objext syntax) پیروی میکنه و توسط ‍‍`Douglas Crockford` رایج شد. کاربردش زمانیه که بخوایم داده‌ها رو از طریق شبکه انتقال بدیم و اساسا یه فایل متنی با پسوند .json و نوع MIME از application/json
-   **تجزیه (Parsing):** تبدیل یه رشته به یه آبجکت محلی (native Object)
+     **JSON** یه قالب داده مبتنی برمتن هستش که از نحو آبجکت جاوا‌اسکریپت (javascript objext syntax) پیروی میکنه و توسط ‍‍`Douglas Crockford` رایج شد. کاربردش زمانیه که بخوایم داده‌ها رو از طریق شبکه انتقال بدیم و اساسا یه فایل متنی با پسوند .json و نوع MIME از application/json
+     **تجزیه (Parsing):** تبدیل یه رشته به یه آبجکت محلی (native Object)
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    JSON.parse(text)
-    ```
+     ```javascript
+     JSON.parse(text)
+     ```
 
-   </span>
-
-
-    **رشته‌سازی:** تبدیل یه آبجکت محلی به یه رشته تا بتونه از طریق شبکه منتقل بشه
+     </span>
 
 
-    <span dir="ltr" align="left">
-
-    ```javascript
-    JSON.stringify(object)
-    ```
-
-    </span>
+     **رشته‌سازی:** تبدیل یه آبجکت محلی به یه رشته تا بتونه از طریق شبکه منتقل بشه
 
 
-    **[فهرست](#فهرست)**
+     <span dir="ltr" align="left">
+
+     ```javascript
+     JSON.stringify(object)
+     ```
+
+     </span>
+
+
+     **[فهرست](#فهرست)**
 
 4. ### هدف از متد slice روی آرایه‌ها چیه؟
 
-   متد **slice()** عناصر انتخاب شده توی یه آرایه رو به عنوان یه آبجکت آرایه جدید برمی‌گردونه. این عناصر رو از اولین آرگومان داده شده انتخاب میکنه و با آرگومان پایانی و اختیاری داده شده بدون در نظر گرفتن آخرین عنصر به پایان می‌رسونه. اگه آرگومان دوم رو حذف کنیم تا آخر آرایه همه عناصر رو انتخاب میکنه. چند تا مثال در مورد این متد اینجا نوشته شده
+     متد **slice()** عناصر انتخاب شده توی یه آرایه رو به عنوان یه آبجکت آرایه جدید برمی‌گردونه. این عناصر رو از اولین آرگومان داده شده انتخاب میکنه و با آرگومان پایانی و اختیاری داده شده بدون در نظر گرفتن آخرین عنصر به پایان می‌رسونه. اگه آرگومان دوم رو حذف کنیم تا آخر آرایه همه عناصر رو انتخاب میکنه. چند تا مثال در مورد این متد اینجا نوشته شده
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    let arrayIntegers = [1, 2, 3, 4, 5];
-    let arrayIntegers1 = arrayIntegers.slice(0,2); // returns [1,2]
-    let arrayIntegers2 = arrayIntegers.slice(2,3); // returns [3]
-    let arrayIntegers3 = arrayIntegers.slice(4); //returns [5]
-    ```
+     ```javascript
+     let arrayIntegers = [1, 2, 3, 4, 5];
+     let arrayIntegers1 = arrayIntegers.slice(0,2); // returns [1,2]
+     let arrayIntegers2 = arrayIntegers.slice(2,3); // returns [3]
+     let arrayIntegers3 = arrayIntegers.slice(4); //returns [5]
+     ```
 
-    </span>
+     </span>
 
 
-    **نکته:** متد Slice‌ آرایه اصلی رو تغییر نمیده ولی یه زیر‌مجموعه به عنوان یه آرایه جدید برمی‌گردونه
+     **نکته:** متد Slice‌ آرایه اصلی رو تغییر نمیده ولی یه زیر‌مجموعه به عنوان یه آرایه جدید برمی‌گردونه
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 5. ### هدف از متد splice روی آرایه‌ها چیه؟
 
-   متد **splice** برای اضافه کردن به آرایه یا حذف از اون استفاده میشه و مورد حذف شده رو برمی‌گردونه. آرگومان اول موقعیت آرایه رو برای درج یا حذف مشخص میکنه در حالی که آرگومان اختیاری دوم تعداد عناصر حذف شده رو مشخص میکنه. هر آرگومان اضافه‌ای به آرایه اضافه میشه. چند تا مثال در این مورد اینجا نوشته شده.
+     متد**splice** برای اضافه کردن به آرایه یا حذف از اون استفاده میشه و مورد حذف شده رو برمی‌گردونه. آرگومان اول موقعیت آرایه رو برای درج یا حذف مشخص میکنه در حالی که آرگومان اختیاری دوم تعداد عناصر حذف شده رو مشخص میکنه. هر آرگومان اضافه‌ای به آرایه اضافه میشه. چند تا مثال در این مورد اینجا نوشته شده.
 
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
-    let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
-    let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
+     ```javascript
+     let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
+     let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
+     let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
 
-    let arrayIntegers1 = arrayIntegersOriginal1.splice(0,2); // returns [1, 2]; original array: [3, 4, 5]
-    let arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
-    let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); //returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
-    ```
+     let arrayIntegers1 = arrayIntegersOriginal1.splice(0,2); // returns [1, 2]; original array: [3, 4, 5]
+     let arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
+     let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); //returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
+     ```
 
-    </span>
+     </span>
 
 
-    **نکته:** متد Splice آرایه اصلی رو اصلاح میکنه و آرایه حذف شده رو برمی‌گردونه.
+     **نکته:** متد Splice آرایه اصلی رو اصلاح میکنه و آرایه حذف شده رو برمی‌گردونه.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 6. ### تفاوت متدهای slice و splice چیا هستن؟
 
@@ -769,103 +769,103 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 7. ### تفاوت‌های Object و Map چیا هستن؟
 
-   **آبجکت‌ها** شبیه به **نقشه‌ها (Maps)** هستن از این جهت که هردو بهمون این امکتن رو میدن که کلید‌ها رو روی مقادیر تنظیم کنیم، مقادیر رو بازیابی کنیم، کلید‌ها رو حذف کنیم و ببینیم چیزی توی یه کلید ذخیره شده یا نه. به همین دلیل از آبجکت‌ها به عنوان نقشه ها (Maps) در طول تاریخ استفاده شده. اما تفاوت‌های مهمی وجود داره که استفاده از نقشه (map) رو توی موارد خاص ترجبح میده.
+     **آبجکت‌ها** شبیه به **نقشه‌ها (Maps)** هستن از این جهت که هردو بهمون این امکتن رو میدن که کلید‌ها رو روی مقادیر تنظیم کنیم، مقادیر رو بازیابی کنیم، کلید‌ها رو حذف کنیم و ببینیم چیزی توی یه کلید ذخیره شده یا نه. به همین دلیل از آبجکت‌ها به عنوان نقشه ها (Maps) در طول تاریخ استفاده شده. اما تفاوت‌های مهمی وجود داره که استفاده از نقشه (map) رو توی موارد خاص ترجبح میده.
 
-  1. کلید‌های یه آبجکت رشته ها و نماد‌ها هستن، در حالی که برای نقشه مقادیر مختلفی میتونه وجود داشته باشه که شامل توابع، آبجکت‌ها و هر نوع اولیه دیگه‌ای میشه.
-  2. کلید‌های نقشه (map) مرتب میشن در حالی که کلید‌های اضافه شده به آبجکت اینطوری نیستن. بنابراین موقع تکرار روی اون، object map کلیدها رو به ترتیب اضافه شدنشون برمی‌گردونه.
-  3. اندازه map رو میتونیم به راحتی با ویژگی سایز بدست بیاریم، در حالی که تعداد خصوصیات یه آبجکت باید به صورت دستی حساب بشه.
-  4. نقشه قابل تکراره و میتونه مستقیما تکرار بشه، در حالی که تکرار روی یه آبجکت مستلزم بدست آوردن کلیدهای اون به روشی خاص و تکرار روی اونهاست.
-  5. آبجکت یه نمونه اولیه (prototype) داره، بنابراین کلید‌های پیش‌فرض توی map وجود داره که که اگه دقت نکنیم ممکنه با کلید‌هامون برخورد کنه. از زمان ES5 میتونیم با استفاده از map = Object.create(null)، این قضیه رو دور بزنیم ولی به‌ندرت این کار انجام میشه.
-  6. نقشه ممکنه توی سناریوهای شامل جمع و حذف مکرر جفت کلیدها عملکرد بهتری داشته باشه
+     1. کلید‌های یه آبجکت رشته ها و نماد‌ها هستن، در حالی که برای نقشه مقادیر مختلفی میتونه وجود داشته باشه که شامل توابع، آبجکت‌ها و هر نوع اولیه دیگه‌ای میشه.
+     2. کلید‌های نقشه (map) مرتب میشن در حالی که کلید‌های اضافه شده به آبجکت اینطوری نیستن. بنابراین موقع تکرار روی اون، object map کلیدها رو به ترتیب اضافه شدنشون برمی‌گردونه.
+     3. اندازه map رو میتونیم به راحتی با ویژگی سایز بدست بیاریم، در حالی که تعداد خصوصیات یه آبجکت باید به صورت دستی حساب بشه.
+     4. نقشه قابل تکراره و میتونه مستقیما تکرار بشه، در حالی که تکرار روی یه آبجکت مستلزم بدست آوردن کلیدهای اون به روشی خاص و تکرار روی اونهاست.
+     5. آبجکت یه نمونه اولیه (prototype) داره، بنابراین کلید‌های پیش‌فرض توی map وجود داره که که اگه دقت نکنیم ممکنه با کلید‌هامون برخورد کنه. از زمان ES5 میتونیم با استفاده از map = Object.create(null)، این قضیه رو دور بزنیم ولی به‌ندرت این کار انجام میشه.
+     6. نقشه ممکنه توی سناریوهای شامل جمع و حذف مکرر جفت کلیدها عملکرد بهتری داشته باشه
 
    **[فهرست](#فهرست)**
 
 8. ### تفاوت‌های بین عملگرهای == و === چیا هستن؟
 
-   JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
-  1. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions.
-  2. Two numbers are strictly equal when they are numerically equal. i.e, Having the same number value.
+     JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
+     1. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions.
+     2. Two numbers are strictly equal when they are numerically equal. i.e, Having the same number value.
      There are two special cases in this,
-    1. NaN is not equal to anything, including NaN.
-    2. Positive and negative zeros are equal to one another.
-  3. Two Boolean operands are strictly equal if both are true or both are false.
-  4. Two objects are strictly equal if they refer to the same Object.
-  5. Null and Undefined types are not equal with ===, but equal with ==. i.e,
+     1. NaN is not equal to anything, including NaN.
+     2. Positive and negative zeros are equal to one another.
+     3. Two Boolean operands are strictly equal if both are true or both are false.
+     4. Two objects are strictly equal if they refer to the same Object.
+     5. Null and Undefined types are not equal with ===, but equal with ==. i.e,
      null===undefined --> false but null==undefined --> true
 
-   Some of the example which covers the above cases,
+     Some of the example which covers the above cases,
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    0 == false   // true
-    0 === false  // false
-    1 == "1"     // true
-    1 === "1"    // false
-    null == undefined // true
-    null === undefined // false
-    '0' == false // true
-    '0' === false // false
-    []==[] or []===[] //false, refer different objects in memory
-    {}=={} or {}==={} //false, refer different objects in memory
-    ```
+     ```javascript
+     0 == false   // true
+     0 === false  // false
+     1 == "1"     // true
+     1 === "1"    // false
+     null == undefined // true
+     null === undefined // false
+     '0' == false // true
+     '0' === false // false
+     []==[] or []===[] //false, refer different objects in memory
+     {}=={} or {}==={} //false, refer different objects in memory
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 9. ### توابع lambda یا arrow-function چی هستن؟
 
-    arrow function ‌ها به صورت ساده‌تر و کوتاه‌تر تعریف میشن و **this، argumants، super یا new.target** ندارن. این توابع بدون متد هستند و به عنوان سازنده یا constructor استفاده نمیشن.
+     arrow function ‌ها به صورت ساده‌تر و کوتاه‌تر تعریف میشن و **this، argumants، super یا new.target** ندارن. این توابع بدون متد هستند و به عنوان سازنده یا constructor استفاده نمیشن.
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 10. ### یه تابع first-class چجور تابعی‌ـه؟
-.
-توی جاوااسکریپت، توابع آبجکت‌های کلاس اول یا first class هستن. توابع کلاس اول زمانی معنی میدن که توابع توی اون زبان باهاشون مثل بقیه متغیر‌ها رفتار بشه.
 
-    به عنوان مثال، توی چنین زبانی، یه تابع میتونه به عنوان آرگومان به یه تابع دیگه انتقال داده بشه، میتونه به عنوان مقدار نهایی یه تابع دیگه برگشت داده بشه و میتونه به یه متغیر دیگه به عنوان مقدار اختصاص داده بشه. به عنوان مثال توی کد زیر، توابع نگهدارنده یا handler به یه شنونده یا listener اختصاص داده شده.
+     توی جاوااسکریپت، توابع آبجکت‌های کلاس اول یا first class هستن. توابع کلاس اول زمانی معنی میدن که توابع توی اون زبان باهاشون مثل بقیه متغیر‌ها رفتار بشه.
 
-    ```javascript
-    const handler = () => console.log ('This is a click handler function');
-    document.addEventListener ('click', handler);
-    ```
+     به عنوان مثال، توی چنین زبانی، یه تابع میتونه به عنوان آرگومان به یه تابع دیگه انتقال داده بشه، میتونه به عنوان مقدار نهایی یه تابع دیگه برگشت داده بشه و میتونه به یه متغیر دیگه به عنوان مقدار اختصاص داده بشه. به عنوان مثال توی کد زیر، توابع نگهدارنده یا handler به یه شنونده یا listener اختصاص داده شده.
 
-    **[فهرست](#فهرست)**
+     ```javascript
+     const handler = () => console.log ('This is a click handler function');
+     document.addEventListener ('click', handler);
+     ```
+
+     **[فهرست](#فهرست)**
 
 11. ### یه تابع first-order چجور تابعی‌ـه؟
 
-    تابع مرتبه اول یا first-order تابعیه که هیچ تابع دیگه‌ای رو به عنوان آرگومان قبول نمیکنه و هیچ تابعی رو هم به عنوان مقدار برگشتی یا return value برنمی‌گردونه.
+     تابع مرتبه اول یا first-order تابعیه که هیچ تابع دیگه‌ای رو به عنوان آرگومان قبول نمیکنه و هیچ تابعی رو هم به عنوان مقدار برگشتی یا return value برنمی‌گردونه.
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    const firstOrder = () => console.log ('I am a first order function!');
-    ```
+     ```javascript
+     const firstOrder = () => console.log ('I am a first order function!');
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 12. ### یه تابع higher-order چجور تابعی‌ـه؟
 
-    توابع مرتبه بالا توابعی هستن که یه تابع رو به عنوان پارامتر ورودی دریافت و یا به عنوان خروجی ارسال میکنن.
+     توابع مرتبه بالا توابعی هستن که یه تابع رو به عنوان پارامتر ورودی دریافت و یا به عنوان خروجی ارسال میکنن.
 
 
-    <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-    ```javascript
-    const firstOrderFunc = () => console.log ('Hello I am a First order function');
-    const higherOrder = ReturnFirstOrderFunc => ReturnFirstOrderFunc ();
-    higherOrder (firstOrderFunc);
-    ```
+     ```javascript
+     const firstOrderFunc = () => console.log ('Hello I am a First order function');
+     const higherOrder = ReturnFirstOrderFunc => ReturnFirstOrderFunc ();
+     higherOrder (firstOrderFunc);
+     ```
 
-    </span>
+     </span>
 
 
-    **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 13. ### یه تابع unary چجور تابعی‌ـه؟
     تابع unary تابعیه که فقط یه آرگومان ورودی دریافت میکنه. بیاین یه مثال از توابع unary بزنیم.
@@ -1278,14 +1278,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     **[فهرست](#فهرست)**
 
 34. ### Web-storage چیه؟
-    web storage یه API هستش که مکانیسمی رو فراهم میکنه که مرورگر‌ها میتونن مقدار و کلید رو به صورت محلی توی مرورگر کاربر ذخیره کنن، به روشی کاملا قابل درک نسبت به استفاده از کوکی‌ها. فضای ذخیره‌سازی وب دو مکانیزم رو برای ذخیره اطلاعات روی مشتری فراهم میکنه.
-  1. **Local storage:** داده ها رو برای مبدا فعلی و بدون تاریخ انقضا ذخیره میکنه.
-  2. **Session storage:** داده‌ها رو برای یه جلسه ذخیره میکنه و با بسته شدن تب مرورگر داده‌ها از بین میرن.
+     web storage یه API هستش که مکانیسمی رو فراهم میکنه که مرورگر‌ها میتونن مقدار و کلید رو ب    صورت محلی توی مرورگر کاربر ذخیره کنن، ب    روشی کاملا قابل درک نسبت به استفاده ا      کوکی‌ها. فضای ذخیره‌سازی وب دو مکانیزم ر برای ذخیره اطلاعات روی مشتری فراهم میکنه.
+     1. **Local storage:** داده ها رو برای مبدا فعلی و بدون تاریخ انقضا ذخیره میکنه.
+     2. **Session storage:** داده‌ها رو برای یه جلسه ذخیره میکنه و با بسته شدن تب مرورگر داده‌ها از بین میرن.
 
     **[فهرست](#فهرست)**
 
-35. ### Post-message چیه؟
-    Post message روشی هست که امکان ایجاد ارتباط متقابل بین آبجکت‌های window رو فراهم میکنه. (به عنوان مثال، بین یه صفحه و یه پنجره باز‌شو که باعث ایجاد اون شده، یا بین یه صفحه و یه iframe جاسازی شده در اون) به طور کل، اسکریپت‌های موجود در صفحات مختلف مجاز به دسترسی به همدیگه هستن، تنها در صورتی که صفحات از خط‌ مشی‌ یکسانی تبعیت کنن. (یعنی صفحات از پروتکل، شماره پورت و میزبان یکسانی برخوردار هستن)
+35. ### Post-message چیه
+     Post message روشی هست که امکان ایجاد ارتباط متقابل بین آبجکت‌های window رو فراهم میکنه     (به عنوان مثال، بین یه صفحه و یه پنجره باز‌شو که باعث ایجاد اون شده، یا بین یه صفح     و یه iframe جاسازی شده در اون) به طور کل    اسکریپت‌های موجود در صفحات مختلف مجاز ب    دسترسی به همدیگه هستن، تنها در صورتی که     صفحات از خط‌ مشی‌ یکسانی تبعیت کنن. (یعنی صفحات از پروتکل، شماره پورت و میزبان یکسانی   برخوردار هستن)
 
     **[فهرست](#فهرست)**
 
@@ -1570,9 +1570,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 49. ### محدودیت‌های web-workerها روی DOM چیا هستن؟
     WebWorker‌ها به اشیا جاوااسکریپت دسترسی ندارن چون توی یه فایل خارجی تعریف شدن.
-  1. Window object
-  2. Document object
-  3. Parent object
+    1. Window object
+    2. Document object
+    3. Parent object
 
     **[فهرست](#فهرست)**
 
@@ -1627,9 +1627,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 52. ### سه تا وضعیت ممکن برای یه promise چیا هستن؟
 
     Promises have three states:
-  1. **Pending:** This is an initial state of the Promise before an operation begins
-  2. **Fulfilled:** This state indicates that the specified operation was completed.
-  3. **Rejected:** This state indicates that the operation did not complete. In this case an error value will be thrown.
+    1. **Pending:** This is an initial state of the Promise before an operation begins
+    2. **Fulfilled:** This state indicates that   the specified operation was completed.
+    3. **Rejected:** This state indicates that the operation did not complete. In this case an error value will be thrown.
 
     **[فهرست](#فهرست)**
 
@@ -1766,10 +1766,10 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 60. ### اصلی‌ترین قوانین promiseها چیا هستن؟
     A promise must follow a specific set of rules,
-  1. A promise is an object that supplies a standard-compliant `.then()` method
-  2. A pending promise may transition into either fulfilled or rejected state
-  3. A fulfilled or rejected promise is settled and it must not transition into any other state.
-  4. Once a promise is settled, the value must not change.
+    1. A promise is an object that supplies a standard-compliant `.then()` method
+    2. A pending promise may transition into either fulfilled or rejected state
+    3. A fulfilled or rejected promise is settled and it must not transition into any other state.
+    4. Once a promise is settled, the value must not change.
 
     **[فهرست](#فهرست)**
 
@@ -1834,10 +1834,10 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
     In the above handlers, the result is passed to the chain of .then() handlers with the below work flow,
-  1. The initial promise resolves in 1 second,
-  2. After that `.then` handler is called by logging the result(1) and then return a promise with the value of result * 2.
-  3. After that the value passed to the next `.then` handler by logging the result(2) and return a promise with result * 3.
-  4. Finally the value passed to the last `.then` handler by logging the result(6) and return a promise with result * 4.
+    1. The initial promise resolves in 1 second,
+    2. After that `.then` handler is called by   logging the result(1) and then return a   promise with the value of result * 2.
+    3. After that the value passed to the next `.  then` handler by logging the result(2) and   return a promise with result * 3.
+    4. Finally the value passed to the last `.  then` handler by logging the result(6) and   return a promise with result * 4.
 
     **[فهرست](#فهرست)**
 
@@ -2086,11 +2086,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 77. ### انواع داده‌های جاواسکریپت کدوما هستن؟
     Below are the list of javascript data types available
-  1. Number
-  2. String
-  3. Boolean
-  4. Object
-  5. Undefined
+    1. Number
+    2. String
+    3. Boolean
+    4. Object
+    5. Undefined
 
     **[فهرست](#فهرست)**
 
@@ -2239,9 +2239,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 91. ### کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟
 
     You can use below tools or techniques for debugging javascript
-  1. Chrome Devtools
-  2. debugger statement
-  3. Good old console.log statement
+    1. Chrome Devtools
+    2. debugger statement
+    3. Good old console.log statement
 
     **[فهرست](#فهرست)**
 
@@ -2250,14 +2250,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     Below are the list of pros and cons of promises over callbacks,
 
     **Pros:**
-  1. It avoids callback hell which is unreadable
-  2. Easy to write sequential asynchronous code with .then()
-  3. Easy to write parallel asynchronous code with Promise.all()
-  4. Solves some of the common problems of callbacks(call the callback too late, too early, many times and swallow errors/exceptions)
+    1. It avoids callback hell which is unreadable
+    2. Easy to write sequential asynchronous code   with .then()
+    3. Easy to write parallel asynchronous code   with Promise.all()
+    4. Solves some of the common problems of   callbacks(call the callback too late, too   early, many times and swallow errors/  exceptions)
 
     **Cons:**
-  1. It makes little complex code
-  2. You need to load a polyfill if ES6 is not supported
+    1. It makes little complex code
+    2. You need to load a polyfill if ES6 is not   supported
 
     **[فهرست](#فهرست)**
 
@@ -2427,9 +2427,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      عبارت ‍‍‍‍`return false` در کنترل کننده رویداد مراحل زیر را انجام می دهد:
 
-  1. ابتدا عملکرد یا رفتار پیش فرض مرورگر را متوقف می‌کنه.
-  2. این رویداد از انتشار `DOM` جلوگیری می‌کنه
-  3. اجرای ‍‍`callback` را متوقف می‌کنه و بلافاصله پس از فراخوانی برمی گردد.
+     1. ابتدا عملکرد یا رفتار پیش فرض مرورگر را متوقف می‌کنه.
+     2. این رویداد از انتشار `DOM` جلوگیری می‌کنه
+     3. اجرای ‍‍`callback` را متوقف می‌کنه و بلافاصله پس از فراخوانی برمی گردد.
 
      **[فهرست](#فهرست)**
 
@@ -2514,10 +2514,10 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 111. ### قوانین فرمت JSON کدوما هستن؟
 
      در زیر لیستی از قوانین نحوی `JSON` آمده است
-  1. داده ها به صورت جفت نام/مقدار هستند
-  2. داده ها با کاما از هم جدا میشن
-  3. براکت ها اجسام را نگه می دارند
-  4. براکت های مربعی آرایه ها را نگه می دارند
+     1. داده ها به صورت جفت نام/مقدار هستند
+     2. داده ها با کاما از هم جدا میشن
+     3. براکت ها اجسام را نگه می دارند
+     4. براکت های مربعی آرایه ها را نگه می دارند
 
      **[فهرست](#فهرست)**
 
@@ -2641,7 +2641,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 119. ### چطوری بررسی می‌کنین که یه string شامل یه substring هست یا نه؟
 
      3 روش ممکن برای بررسی اینکه آیا یک رشته دارای یک رشته فرعی است یا خیر وجود داره.
-  1. **includes استفاده از متد:**  ES6 روش `String.prototype.includes‍` را برای آزمایش یک رشته حاوی یک رشته فرعی ارائه کرد.
+     1. **includes استفاده از متد:**  ES6 روش    `String.prototype.includes‍` را برای آزمایش یک    رشته حاوی یک رشته فرعی ارائه کرد.
 
      <span dir="ltr" align="left">
 
@@ -2652,7 +2652,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **استفاده از متد indexOf():** در یک محیط ES5 یا قدیمی‌تر، می‌توانید از «String.prototype.indexOf» استفاده کنید که ایندکس یک رشته فرعی را برمی‌گرداند. اگر مقدار شاخص برابر با 1 نباشد، به این معنی است که رشته فرعی در رشته اصلی وجود دارد.
+     1. **استفاده از متد indexOf():** در یک محیط    ES5 یا قدیمی‌تر، می‌توانید از «String.   prototype.indexOf» استفاده کنید که ایندکس یک    رشته فرعی را برمی‌گرداند. اگر مقدار شاخص برابر با 1 نباشد، به این معنی است که رشته فرعی در       رشته اصلی وجود دارد.
 
      <span dir="ltr" align="left">
 
@@ -2663,7 +2663,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **استفاده از Regex:** راه حل پیشرفته از روش آزمون عبارت `Regular ('RegExp.test') `‍‍استفاده می کند، که امکان آزمایش در برابر عبارات منظم را فراهم می کند.
+     1. **استفاده از Regex:** راه حل پیشرفته از روش    آزمون عبارت `Regular ('RegExp.test')    `‍‍استفاده می کند، که امکان آزمایش در برابر    عبارات منظم را فراهم می کند.
 
      <span dir="ltr" align="left">
 
@@ -2712,14 +2712,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 122. ### ویژگی‌های مختلف url روی object مربوط به history کدوما هستن؟
 
      برای دسترسی به اجزای URL صفحه می‌توان از ویژگی‌های شی `location` زیر استفاده کرد.
-  1. href - ورودی URL
-  2. protocol - پروتکل استفاده شده URL
-  3. host - هاست و پورت URL
-  4. hostname - هاست URL
-  5. port - شماره پورت  URL
-  6. pathname - مسیر  URL
-  7. search - قسمت جستجو URL
-  8. hash - محل جای‌گیری URL
+     1. href - ورودی URL
+     2. protocol - پروتکل استفاده شده URL
+     3. host - هاست و پورت URL
+     4. hostname - هاست URL
+     5. port - شماره پورت  URL
+     6. pathname - مسیر  URL
+     7. search - قسمت جستجو URL
+     8. hash - محل جای‌گیری URL
 
      **[فهرست](#فهرست)**
 
@@ -2742,7 +2742,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      با استفاده از سه رویکرد می‌تونیم بررسی کنید که آیا یک کلید در یک شی وجود دارد یا خیر.
 
-  1. **استفاده از عملگر ها:** شما می‌تونیم از عملگر in استفاده کنید که آیا کلیدی در یک شی وجود دارد یا خیر
+     1. **استفاده از عملگر ها:** شما می‌تونیم از عملگر in استفاده کنید که آیا کلیدی در یک شی       وجود دارد یا خیر
 
      <span dir="ltr" align="left">
 
@@ -2762,7 +2762,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **استفاده از متد hasOwnProperty:** می‌توانید از `hasOwnProperty` برای آزمایش ویژگی‌های نمونه شی (و نه ویژگی‌های ارثی) استفاده کنید.
+     1. **استفاده از متد hasOwnProperty:**    می‌توانید از `hasOwnProperty` برای آزمایش ویژگی‌های نمونه شی (و نه ویژگی‌های ارثی)       استفاده کنید.
 
      <span dir="ltr" align="left">
 
@@ -2772,7 +2772,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **استفاده از مقایسه undifiend:** If you access a non-existing property from an object, the result is undefined. Let’s compare the properties against undefined to determine the existence of the property.
+     1. **استفاده از مقایسه undifiend:** If you    access a non-existing property from an object,    the result is undefined. Let’s compare the    properties against undefined to determine the    existence of the property.
 
      <span dir="ltr" align="left">
 
@@ -2827,8 +2827,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **استفاده از Object keys(ECMA 5+):** 
-  میتونیم از `object keys‍` استفاده کنیم و `length‍` اونو چک کنیم
+     1. **استفاده از Object keys(ECMA 5+):** 
+     میتونیم از `object keys‍` استفاده کنیم و    `length‍` اونو چک کنیم
 
      <span dir="ltr" align="left">
 
@@ -2838,7 +2838,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **استفاده از for-in با متد hasOwnProperty(Pre-ECMA 5):** میتونیم از حلفه `for-in`استفاده کنیم و هر پارامتر رو با `hasOwnProperty‍` چک کنیم
+     1. **استفاده از for-in با متد hasOwnProperty   (Pre-ECMA 5):** میتونیم از حلفه    `for-in`استفاده کنیم و هر پارامتر رو با    `hasOwnProperty‍` چک کنیم
 
      <span dir="ltr" align="left">
 
@@ -2910,13 +2910,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      حلقه `for` یک سینتکس تکراری رایج در جاوا اسکریپته که هم مزایا و هم معایب داره
      ####مزایا
-  1. توی همه‌ی محیط ها `env` کار میکنه
-  2. میتونیم از `break` و `‍continue‍` برای کنرل جریان داده استفاده کرد
+     1. توی همه‌ی محیط ها `env` کار میکنه
+     2. میتونیم از `break` و `‍continue‍` برای کنرل    جریان داده استفاده کرد
 
      ####معایب
-  1. پر هزینه
-  2. ضروریت
-  3. ممکنه با خطاهای یک به یک روبرو شین
+     1. پر هزینه
+     2. ضروریت
+     3. ممکنه با خطاهای یک به یک روبرو شین
 
      **[فهرست](#فهرست)**
 
@@ -3019,7 +3019,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using dot notation:** این روش زمانی موثر هستش که اسم پراپرتی رو میدونیم
+     1. **Using dot notation:** این روش زمانی موثر    هستش که اسم پراپرتی رو میدونیم
 
      <span dir="ltr" align="left">
 
@@ -3029,7 +3029,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using square bracket notation:** این روش وقتی موثره که اسم پراپرتی داینامیک باشه
+     1. **Using square bracket notation:** این روش    وقتی موثره که اسم پراپرتی داینامیک باشه
 
      <span dir="ltr" align="left">
 
@@ -3044,8 +3044,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 136. ### Is the !-- notation represents a special operator
 
      نه! اون یه اپراتور خاص نیست اما ترکیب شده دو تا اپراتور استاندارد هستش یکی بعد اون یکی
-  1. اپراتور نقییض (!)
-  2. کاهش کننده(--)
+     1. اپراتور نقییض (!)
+     2. کاهش کننده(--)
 
      اول یک شماره از مقدار متغیر به مثال کم میشه بعد تست میشه که مساوی صفر هستش یا نه که مشخص‌کننده درست یا غلط بودن شرط هستش
 
@@ -3199,32 +3199,32 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 145. ### What are the benefits of keeping declarations at the top
 
      توصیه می شه تمام اعلان ها رو بالای هر اسکریپت یا تابع نگه دارین. مزیت این کار 
-  1. کد ما تمیز تر میشه
-  2. این یک مکان واحد برای جستجوی متغیرهای محلی فراهم می کنه
-  3. میشه راحت از استفاده متفیر های ناخواسته جلوگیری کرد 
-  4. این کار محاسبات ناخواسته رو کمتر میکنه
+     1. کد ما تمیز تر میشه
+     2. این یک مکان واحد برای جستجوی متغیرهای محلی    فراهم می کنه
+     3. میشه راحت از استفاده متفیر های ناخواسته    جلوگیری کرد 
+     4. این کار محاسبات ناخواسته رو کمتر میکنه
 
      **[فهرست](#فهرست)**
 
 146. ### What are the benefits of initializing variables
 
      توضیه میشه که مقدار اولیه برای متغیرها تعیین بشه که دلایلشو چک میکنیم 
-  1. خروجیمون کد تمیز تری میشه
-  2. این کار باعث میشه یه جا برای این متغییر رزرو بشه
-  3. از برگشتن خطای `undefind`جلوگیری میشه
+     1. خروجیمون کد تمیز تری میشه
+     2. این کار باعث میشه یه جا برای این متغییر    رزرو بشه
+     3. از برگشتن خطای `undefind`جلوگیری میشه
 
      **[فهرست](#فهرست)**
 
 147. ### What are the recommendations to create new object
 
      برای ساخت یه `object` با مقادیر پیشفرش مثال های زیر روش های ساخت مقادیر پیشفرض رو بررسی می‌کنیم
-  1. استفاده از {} به جای `new Object()`
-  2. استفاده از "" به جای `new String()`
-  3. استفاده از 0 به جای `new Number()`
-  4. استفاده از false به جای  `new Boolean()`
-  5. استفاده از [] به جای `new Array()`
-  6. استفاده از /()/ به جای `new RegExp()`
-  7. استفاده از (){} به جای`new Function()`
+     1. استفاده از {} به جای `new Object()`
+     2. استفاده از "" به جای `new String()`
+     3. استفاده از 0 به جای `new Number()`
+     4. استفاده از false به جای  `new Boolean()`
+     5. استفاده از [] به جای `new Array()`
+     6. استفاده از /()/ به جای `new RegExp()`
+     7. استفاده از (){} به جای`new Function()`
 
      بریم یه چن تا مثال ببینیم
 
@@ -3392,21 +3392,22 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 157. ### What are regular expression patterns
 
      Regex یه گروهی از ساختار ها برامون اماده کرده که با اونا کاراکتر ها رو چک کنیم اونا تو سه مدل طبفه بندی میشن
-  1. **براکت ها:** این ها استفاده میشن تا یه رنجی از کاراکتر رو پیدا کنن 
+     1. **براکت ها:** این ها استفاده میشن تا یه        رنجی از کاراکتر رو پیدا کنن 
      برای مثال پایین چن تا مورد اصتفاده لیست شدنهای
-    1. [abc]: استفاده میشه تا هر کاراکتری بین این سه کاراکتر پیدا بشه 
-    2. [0-9]: استفاده میشه تا ارقام بین این دو عدد پیدا بشه
-    3. (a|b): برای پیدا کردن هر یک از گزینه های جدا شده با | استفاده میشه
-  2. **کاراکتر برابر با:** این عبارت ها کاراکتر هایی با معنی خاص هستند
+     1. [abc]: استفاده میشه تا هر کاراکتری بین    این سه کاراکتر پیدا بشه 
+     2. [0-9]: استفاده میشه تا ارقام بین این دو   عدد پیدا بشه
+     3. (a|b): برای پیدا کردن هر یک از گزینه های جدا شده با | استفاده میشه
+     2. **کاراکتر برابر با:** این عبارت ها کاراکتر هایی با معنی خاص هستند
      برای مثال پایین دو تا مورد که استفاده میشه ازشون رو ببینیم
-    1. \\d: استفاده برای پیدا کردن اعداد
-    2. \\s: استفاده برای ‍پیدا کردن فاصله ها
-    3. \\b: استفاده برای پیدا کردن کاراکتر های همخوانی داشته با شروع شدن یا پایانشون
-  3. **کمیت کننده ها:** این ها برای  تعریف کمیت ها موثر هستن
+     1. \\d: استفاده برای پیدا کردن اعداد
+     2. \\s: استفاده برای ‍پیدا کردن فاصله ها
+     3. \\b: استفاده برای پیدا کردن کاراکتر های همخوانی داشته با شروع شدن یا پایانشون
+     3. **کمیت کننده ها:** این ها برای  تعریف کمیت ها موثر هستن
      برای مثال پایین دو تا مورد استفاده براشون اوردیم
-    1. n+: برای پیدا کردن رشته همخوانی داشته با حداقل یک کاراکتر
-    2. n*: برای پیدا کردن همخوانی هر رشته شامل صفر یا بیشتر
-    3. n?: برای پیدا کردن هر رشته که شامل صفر یا یک کاراکنر میشه
+     1. n+: برای پیدا کردن رشته همخوانی داشته با حداقل یک کاراکتر
+     2. n*: برای پیدا کردن همخوانی هر رشته شامل صفر یا بیشتر
+     3. n?: برای پیدا کردن هر رشته که شامل صفر یا یک کاراکنر میشه
+     
      **[فهرست](#فهرست)**
 
 158. ### What is a RegExp object
@@ -3458,7 +3459,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 161. ### How do you change the style of a HTML element
 
      شما می توانید سبک درون خطی یا نام کلاس یک عنصر HTML را با استفاده از جاوا اسکریپت تغییر دهید
-  1. **استفاده از پراپرتی استایل:** با استفاده از ویژگی style می توانید استایل درون خطی را تغییر دهید
+     1. **استفاده از پراپرتی استایل:** با استفاده از ویژگی style می توانید استایل درون خطی را تغییر دهید
 
      <span dir="ltr" align="left">
 
@@ -3468,7 +3469,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **استفاده از پراپرتی className:** تغییر کلاس عنصر با استفاده از ویژگی className آسان است
+     1. **استفاده از پراپرتی className:** تغییر کلاس عنصر با استفاده از ویژگی className آسان است
 
      <span dir="ltr" align="left">
 
@@ -3712,7 +3713,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 175. ### What are the ways to execute javascript after page load
 
      ما می‌تونیم جاوا اسکریپت را پس از بارگذاری صفحه به روش های مختلف اجرا کنیم.
-  1. **window.onload:**
+     1. **window.onload:**
 
      <span dir="ltr" align="left">
 
@@ -3722,7 +3723,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **document.onload:**
+     1. **document.onload:**
 
      <span dir="ltr" align="left">
 
@@ -3732,7 +3733,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **body onload:**
+     1. **body onload:**
 
      <span dir="ltr" align="left">
 
@@ -3825,8 +3826,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     
      مزیت استفاده کردن از متد `freseze` رو ببینیم
 
-  1. برای فریز کردن ابجکت ها و آرایه ها 
-  2. برای `imutable` کردن ابجکت ها
+     1. برای فریز کردن ابجکت ها و آرایه ها 
+     2. برای `imutable` کردن ابجکت ها
 
 
      **[فهرست](#فهرست)**
@@ -3899,12 +3900,12 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 184. ### What are various operators supported by javascript
 
      یک عملگر قادر به دستکاری (محاسبات ریاضی و منطقی) مقدار یا عملوند معینیه. اپراتورهای مختلفی توسط جاوا اسکریپت پشتیبانی میشن این اپراتور ها هستن
-  1. **عملگر های حسابی:** شامل + (اضافه),– (منها), * (ضرب), / (تقسیم), % (درصد), + + (اضافه کردن)  و – – (کم کردن)
-  2. **عملگر های مقایسه ای:** شامل = =(برابر),!= (غیر برابر), ===(برابر و تایپ برابر), > (بزرگتر),> = (بزرگتر مساوی),< (کوچکتر),<= (کوچکتر مساوی)
-  3. **عملگر های منطقی:** شامل &&("و"منطقی),||("یا"منظقی),!( منطقی"نه")
-  4. **عملگر های تعیین مقدار:** شامل = (اپراتور تعیین مقدار), += (اضافه کردن و تعیین مقدار), – = (منها کردن و تعیین مقدار), *= (ضرب و تعیین مقدار), /= (تقسیم و تعیین مقدار), %= (باقی مانده و تعیین مقدار)
-  5. **اپراتور سه تایی:**  شامل اپراتور های شرطی سه تایی
-  6. **اپراتور تایپ:** از اون برای پیدا کردن تایپ متغیر ها استفاده میشه به صورت `typeof variable`
+     1. **عملگر های حسابی:** شامل + (اضافه),– (منها), * (ضرب), / (تقسیم), % (درصد), + + (اضافه کردن)  و – – (کم کردن)
+     2. **عملگر های مقایسه ای:** شامل = =(برابر),!= (غیر برابر), ===(برابر و تایپ برابر), > (بزرگتر),> = (بزرگتر مساوی),< (کوچکتر),<= (کوچکتر مساوی)
+     3. **عملگر های منطقی:** شامل &&("و"منطقی),||("یا"منظقی),!( منطقی"نه")
+     4. **عملگر های تعیین مقدار:** شامل = (اپراتور تعیین مقدار), += (اضافه کردن و تعیین مقدار), – = (منها کردن و تعیین مقدار), *= (ضرب و تعیین مقدار), /= (تقسیم و تعیین مقدار), %= (باقی مانده و تعیین مقدار)
+     5. **اپراتور سه تایی:**  شامل اپراتور های شرطی سه تایی
+     6. **اپراتور تایپ:** از اون برای پیدا کردن تایپ متغیر ها استفاده میشه به صورت `typeof variable`
 
      **[فهرست](#فهرست)**
 
@@ -3966,13 +3967,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 187. ### What are the bitwise operators available in javascript
 
      در زیر لیستی از عملگرهای منطقی بیتی مورد استفاده در جاوا اسکریپت آمده است
-  1. به صورت بیتی AND ( & )
-  2. به صورت بیتی OR ( | )
-  3. به صورت بیتی XOR ( ^ )
-  4. به صورت بیتی NOT ( ~ )
-  5. تغییر مکان به چپ ( << )
-  6. علامت در حال انتشار به سمت راست ( >> )
-  7. صفر پر کردن Shift راست ( >>> )
+     1. به صورت بیتی AND ( & )
+     2. به صورت بیتی OR ( | )
+     3. به صورت بیتی XOR ( ^ )
+     4. به صورت بیتی NOT ( ~ )
+     5. تغییر مکان به چپ ( << )
+     6. علامت در حال انتشار به سمت راست ( >> )
+     7. صفر پر کردن Shift راست ( >>> )
 
      **[فهرست](#فهرست)**
 
@@ -3999,9 +4000,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 189. ### How do you determine whether object is frozen or not
 
      متد Object.isFrozen() برای تعیین اینکه آیا یک شی منجمد است یا خیر استفاده می شود. اگر همه شرایط زیر درست باشد، یک شی منجمد می شود.
-  1. اگر قابل توسعه نباشد.
-  2. اگر تمام خصوصیات آن غیر قابل تنظیم باشند.
-  3. اگر تمام خصوصیات داده آن غیر قابل نوشتن باشد.
+     1. اگر قابل توسعه نباشد.
+     2. اگر تمام خصوصیات آن غیر قابل تنظیم باشند.
+     3. اگر تمام خصوصیات داده آن غیر قابل نوشتن باشد.
      استفاده به صورت زیر خواهد بود
 
      <span dir="ltr" align="left">
@@ -4033,12 +4034,12 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
      اگر یکی از موارد زیر برقرار باشد، دو مقدار یکسان هستند:
-  1. هردو undefined
-  2. هردو null
-  3. هردو true یا هر دو false
-  4. هر دو رشته با طول یکسان با کاراکترهای مشابه به ترتیب یکسان
-  5. هر دو یک شی (یعنی هر دو شی مرجع یکسان دارند)
-  6. هر دو عدد و
+     1. هردو undefined
+     2. هردو null
+     3. هردو true یا هر دو false
+     4. هر دو رشته با طول یکسان با کاراکترهای مشابه به ترتیب یکسان
+     5. هر دو یک شی (یعنی هر دو شی مرجع یکسان دارند)
+     6. هر دو عدد و
      هر دو +0
      هر دو -0
      هر دو NaN
@@ -4049,10 +4050,10 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 191. ### What is the purpose of using object is method
 
      برخی از کاربردهای متد «is» Object به شرح زیر است,
-  1. برای مقایسه دو رشته استفاده می شود.
-  2. برای مقایسه دو عدد استفاده می شود.
-  3. برای مقایسه قطبیت دو عدد استفاده می شود.
-  4. برای مقایسه دو شی استفاده می شود.
+     1. برای مقایسه دو رشته استفاده می شود.
+     2. برای مقایسه دو عدد استفاده می شود.
+     3. برای مقایسه قطبیت دو عدد استفاده می شود.
+     4. برای مقایسه دو شی استفاده می شود.
 
      **[فهرست](#فهرست)**
 
@@ -4093,8 +4094,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     در زیر تعدادی از کاربردهای اصلی متد Object.assign() آورده شده است.
 
-  1. برای شبیه سازی یک شی استفاده می شود.
-  2. برای ادغام اشیاء با ویژگی های یکسان استفاده می شود.
+     1. برای شبیه سازی یک شی استفاده می شود.
+     2. برای ادغام اشیاء با ویژگی های یکسان استفاده می شود.
 
      **[فهرست](#فهرست)**
 
@@ -4161,8 +4162,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 196. ### What are the applications of seal method
 
      در زیر کاربردهای اصلی متد Object.seal() آورده شده است.
-  1. برای آب بندی اشیا و آرایه ها استفاده می شود.
-  2. برای غیرقابل تغییر کردن یک جسم استفاده می شود.
+     1. برای آب بندی اشیا و آرایه ها استفاده می شود.
+     2. برای غیرقابل تغییر کردن یک جسم استفاده می شود.
 
      **[فهرست](#فهرست)**
 
@@ -4175,9 +4176,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 198. ### How do you determine if an object is sealed or not
 
      متد Object.isSealed() برای تعیین مهر و موم بودن یا نبودن یک شی استفاده می شود. اگر همه شرایط زیر درست باشد یک شی مهر و موم می شود
-  1. اگر قابل توسعه نباشد.
-  2. اگر تمام خصوصیات آن غیر قابل تنظیم باشند.
-  3. اگر قابل جابجایی نباشد (اما لزوماً غیرقابل نوشتن نیست).
+     1. اگر قابل توسعه نباشد.
+     2. اگر تمام خصوصیات آن غیر قابل تنظیم باشند.
+     3. اگر قابل جابجایی نباشد (اما لزوماً غیرقابل نوشتن نیست).
      بیایید آن را در عمل ببینیم
 
      <span dir="ltr" align="left">
@@ -4319,20 +4320,20 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      تفاوت اصلی این است که ارجاع به اشیاء در Set قوی است در حالی که ارجاع به اشیا در WeakSet ضعیف است. به عنوان مثال، یک شی در WeakSet می تواند زباله جمع آوری شود اگر مرجع دیگری به آن وجود نداشته باشد.
      تفاوت های دیگر عبارتند از
-  1. مجموعه ها می توانند هر مقداری را ذخیره کنند در حالی که WeakSets می تواند تنها مجموعه ای از اشیاء را ذخیره کند
-  2. WeakSet برخلاف Set دارای ویژگی اندازه نیست
-  3. WeakSet متدهایی مانند پاک کردن، کلیدها، مقادیر، ورودی ها، forEach را ندارد.
-  4.WeakSet قابل تکرار نیست.
+     1. مجموعه ها می توانند هر مقداری را ذخیره کنند در حالی که WeakSets می تواند تنها مجموعه ای از اشیاء را ذخیره کند
+     2. WeakSet برخلاف Set دارای ویژگی اندازه نیست
+     3. WeakSet متدهایی مانند پاک کردن، کلیدها، مقادیر، ورودی ها، forEach را ندارد.
+     4. WeakSet قابل تکرار نیست.
 
      **[فهرست](#فهرست)**
 
 205. ### List down the collection of methods available on WeakSet
 
      در زیر لیستی از روش های موجود در WeakSet آمده است،
-  1. add(value): یک شی جدید با مقدار داده شده به مجموعه ضعیف اضافه می شود
-  2. delete(value): مقدار را از مجموعه WeakSet حذف می کند.
-  3. has(value): اگر مقدار در مجموعه WeakSet وجود داشته باشد true را برمی گرداند، در غیر این صورت false را برمی گرداند.
-  4. length(): طول ضعیف SetObject را برمی گرداند
+     1. add(value): یک شی جدید با مقدار داده شده به مجموعه ضعیف اضافه می شود
+     2. delete(value): مقدار را از مجموعه WeakSet حذف می کند.
+     3. has(value): اگر مقدار در مجموعه WeakSet وجود داشته باشد true را برمی گرداند، در غیر این صورت false را برمی گرداند.
+     4. length(): طول ضعیف SetObject را برمی گرداند
      بیایید عملکرد تمام روش های بالا را در یک مثال ببینیم،
 
      <span dir="ltr" align="left">
@@ -4385,20 +4386,20 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      تفاوت اصلی این است که ارجاعات به اشیاء کلیدی در نقشه قوی هستند در حالی که ارجاعات به اشیاء کلیدی در WeakMap ضعیف هستند. به عنوان مثال، یک شی کلیدی در WeakMap در صورتی که هیچ مرجع دیگری به آن وجود نداشته باشد، می تواند زباله جمع آوری شود.
      تفاوت های دیگر عبارتند از
-  1.نقشه ها می توانند هر نوع کلیدی را ذخیره کنند، در حالی که WeakMaps فقط می تواند مجموعه ای از اشیاء کلیدی را ذخیره کند
-  2. WeakMap برخلاف Map دارای ویژگی اندازه نیست
-  3. WeakMap متدهایی مانند پاک کردن، کلیدها، مقادیر، ورودی ها، forEach را ندارد.
-  4. WeakMap قابل تکرار نیست.
+     1. نقشه ها می توانند هر نوع کلیدی را ذخیره کنند، در حالی که WeakMaps فقط می تواند مجموعه ای از اشیاء کلیدی را ذخیره کند
+     2. WeakMap برخلاف Map دارای ویژگی اندازه نیست
+     3. WeakMap متدهایی مانند پاک کردن، کلیدها، مقادیر، ورودی ها، forEach را ندارد.
+     4. WeakMap قابل تکرار نیست.
 
      **[فهرست](#فهرست)**
 
 208. ### List down the collection of methods available on WeakMap
 
      در زیر لیستی از روش های موجود در WeakMap آمده است،
-  1. set(key, value): مقدار کلید را در شی WeakMap تنظیم می کند. شی WeakMap را برمی گرداند.
-  2. delete(key): هر مقدار مربوط به کلید را حذف می کند.
-  3. has(key): یک Boolean را برمی‌گرداند که نشان می‌دهد آیا مقداری به کلید در شی WeakMap مرتبط شده است یا خیر.
-  4. get(key): مقدار مربوط به کلید را برمی‌گرداند، یا اگر کلیدی وجود نداشته باشد، تعریف نشده است.
+     1. set(key, value): مقدار کلید را در شی WeakMap تنظیم می کند. شی WeakMap را برمی گرداند.
+     2. delete(key): هر مقدار مربوط به کلید را حذف می کند.
+     3. has(key): یک Boolean را برمی‌گرداند که نشان می‌دهد آیا مقداری به کلید در شی WeakMap مرتبط شده است یا خیر.
+     4. get(key): مقدار مربوط به کلید را برمی‌گرداند، یا اگر کلیدی وجود نداشته باشد، تعریف نشده است.
      بیایید عملکرد تمام روش های بالا را در یک مثال ببینیم،
 
      <span dir="ltr" align="left">
@@ -4619,11 +4620,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 219. ### What are the advantages of Getters and Setters
 
      در زیر لیستی از مزایای Getters و Setter آمده است.
-  1. آنها نحو ساده تری ارائه می دهند
-  2. آنها برای تعریف ویژگی های محاسبه شده یا دسترسی ها در JS استفاده می شوند.
-  3. برای ارائه رابطه هم ارزی بین خواص و روش ها مفید است
-  4. آنها می توانند کیفیت داده های بهتری را ارائه دهند
-  5. برای انجام کارها در پشت صحنه با منطق محصور شده مفید است.
+     1. آنها نحو ساده تری ارائه می دهند
+     2. آنها برای تعریف ویژگی های محاسبه شده یا دسترسی ها در JS استفاده می شوند.
+     3. برای ارائه رابطه هم ارزی بین خواص و روش ها مفید است
+     4. آنها می توانند کیفیت داده های بهتری را ارائه دهند
+     5. برای انجام کارها در پشت صحنه با منطق محصور شده مفید است.
 
      **[فهرست](#فهرست)**
 
@@ -4696,11 +4697,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 222. ### What are the conventions to be followed for the usage of switch case
 
      در زیر لیستی از کنوانسیون ها وجود دارد که باید مراقب آنها بود،
-  1. عبارت می تواند از نوع عددی یا رشته ای باشد.
-  2. مقادیر تکراری برای عبارت مجاز نیستند.
-  3. بیانیه پیش فرض اختیاری است. اگر عبارت ارسال شده به سوئیچ با هیچ مقدار case مطابقت نداشته باشد، دستور در حالت پیش فرض اجرا خواهد شد.
-  4. دستور break در داخل سوئیچ برای پایان دادن به دنباله دستور استفاده می شود.
-  5. عبارت break اختیاری است. اما اگر حذف شود، اجرا در مورد بعدی ادامه می یابد.
+     1. عبارت می تواند از نوع عددی یا رشته ای باشد.
+     2. مقادیر تکراری برای عبارت مجاز نیستند.
+     3. بیانیه پیش فرض اختیاری است. اگر عبارت ارسال شده به سوئیچ با هیچ مقدار case مطابقت نداشته باشد، دستور در حالت پیش فرض اجرا خواهد شد.
+     4. دستور break در داخل سوئیچ برای پایان دادن به دنباله دستور استفاده می شود.
+     5. عبارت break اختیاری است. اما اگر حذف شود، اجرا در مورد بعدی ادامه می یابد.
 
      **[فهرست](#فهرست)**
 
@@ -4708,18 +4709,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      یک نوع داده اولیه، داده‌ای است که دارای یک مقدار اولیه است (که هیچ ویژگی یا روشی ندارد). 5 نوع نوع داده اولیه وجود دارد.
 
-  1. رشته ها
-  2. اعداد
-  3. boolean
-  4. null
-  5. undefined
+     1. رشته ها
+     2. اعداد
+     3. boolean
+     4. null
+     5. undefined
 
      **[فهرست](#فهرست)**
 
 224. ### What are the different ways to access object properties
 
     3 راه ممکن برای دسترسی به ویژگی یک شی وجود دارد.
-  1. **Dot notation:** از نقطه برای دسترسی به ویژگی ها استفاده می کند
+     1. **Dot notation:** از نقطه برای دسترسی به ویژگی ها استفاده می کند
 
      <span dir="ltr" align="left">
 
@@ -4729,7 +4730,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Square brackets notation:** از براکت های مربع برای دسترسی به دیتا استفاده می کند
+     1. **Square brackets notation:** از براکت های مربع برای دسترسی به دیتا استفاده می کند
 
      <span dir="ltr" align="left">
 
@@ -4739,7 +4740,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Expression notation:** از عبارت در کروشه استفاده می کند
+     1. **Expression notation:** از عبارت در کروشه استفاده می کند
      <span dir="ltr" align="left">
 
      ```javascript
@@ -4753,9 +4754,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 225. ### What are the function parameter rules
 
    توابع جاوا اسکریپت از قوانین زیر برای پارامترها پیروی می کنند.
-  1. تعاریف تابع انواع داده ها را برای پارامترها مشخص نمی کند.
-  2.بررسی نوع آرگومان های ارسال شده را انجام ندهید.
-  3. تعداد آرگومان های دریافتی را بررسی نکنید.
+     1. تعاریف تابع انواع داده ها را برای پارامترها مشخص نمی کند.
+     2. بررسی نوع آرگومان های ارسال شده را انجام ندهید.
+     3. تعداد آرگومان های دریافتی را بررسی نکنید.
      یعنی تابع زیر از قوانین بالا پیروی می کند،
 
      <span dir="ltr" align="left">
@@ -4825,17 +4826,17 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 229. ### What are the various statements in error handling
 
     در زیر لیستی از عبارات استفاده شده در مدیریت خطا آمده است.
-  1. **try:** این عبارت برای آزمایش یک بلوک کد برای خطاها استفاده می شود
-  2. **catch:** این عبارت برای رسیدگی به خطا استفاده می شود
-  3. **throw:**این عبارت برای ایجاد خطاهای سفارشی استفاده می شود.
-  4. **finally:**این عبارت برای اجرای کد پس از تلاش و گرفتن بدون توجه به نتیجه استفاده می شود.
+     1. **try:** این عبارت برای آزمایش یک بلوک کد برای خطاها استفاده می شود
+     2. **catch:** این عبارت برای رسیدگی به خطا استفاده می شود
+     3. **throw:**این عبارت برای ایجاد خطاهای سفارشی استفاده می شود.
+     4. **finally:**این عبارت برای اجرای کد پس از تلاش و گرفتن بدون توجه به نتیجه استفاده می شود.
 
      **[فهرست](#فهرست)**
 
 230. ### What are the two types of loops in javascript
 
-  1. **Entry Controlled loops:** در این نوع حلقه، شرایط تست قبل از ورود به بدنه حلقه آزمایش می شود. به عنوان مثال For Loop و while Loop در این دسته قرار می گیرند.
-  2. **Exit Controlled Loops:** در این نوع حلقه، شرایط تست در انتهای بدنه حلقه آزمایش یا ارزیابی می شود. یعنی بدنه حلقه حداقل یک بار بدون در نظر گرفتن شرایط تست true یا false اجرا می شود. به عنوان مثال، حلقه do-while در این دسته قرار می گیرد.
+     1. **Entry Controlled loops:** در این نوع حلقه، شرایط تست قبل از ورود به بدنه حلقه آزمایش می شود. به عنوان مثال For Loop و while Loop در این دسته قرار می گیرند.
+     2. **Exit Controlled Loops:** در این نوع حلقه، شرایط تست در انتهای بدنه حلقه آزمایش یا ارزیابی می شود. یعنی بدنه حلقه حداقل یک بار بدون در نظر گرفتن شرایط تست true یا false اجرا می شود. به عنوان مثال، حلقه do-while در این دسته قرار می گیرد.
 
      **[فهرست](#فهرست)**
 
@@ -4908,8 +4909,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 237. ### What is call stack
 
      Call Stack یک ساختار داده برای مفسران جاوا اسکریپت است تا فراخوانی های تابع در برنامه را پیگیری کند. دو عمل عمده دارد،
-  1. هر زمان که یک تابع را برای اجرای آن فراخوانی می کنید، آن را به پشته هل می دهید.
-  2. هر زمان که اجرا به پایان برسد، تابع از پشته خارج می شود.
+     1. هر زمان که یک تابع را برای اجرای آن فراخوانی می کنید، آن را به پشته هل می دهید.
+     2. هر زمان که اجرا به پایان برسد، تابع از پشته خارج می شود.
 
      بیایید مثالی بزنیم و نمایش حالت در قالب نمودار است
      <span dir="ltr" align="left">
@@ -4972,12 +4973,12 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 240. ### What are the properties of Intl object
 
     در زیر لیستی از ویژگی های موجود در شیء Intl آمده است،
-  1. **Collator:** اینها اشیایی هستند که مقایسه رشته های حساس به زبان را امکان پذیر می کنند.
-  2. **DateTimeFormat:** اینها اشیایی هستند که قالب بندی تاریخ و زمان حساس به زبان را فعال می کنند.
-  3. **ListFormat:**اینها اشیایی هستند که قالب بندی لیست حساس به زبان را فعال می کنند.
-  4. **NumberFormat:** اشیایی که قالب بندی اعداد حساس به زبان را فعال می کنند.
-  5. **PluralRules:**اشیایی که قالب بندی حساس به جمع و قوانین خاص زبان را برای جمع فعال می کنند.
-  6. **RelativeTimeFormat:** اشیایی که قالب بندی زمان نسبی حساس به زبان را فعال می کنند.
+     1. **Collator:** اینها اشیایی هستند که مقایسه رشته های حساس به زبان را امکان پذیر می کنند.
+     2. **DateTimeFormat:** اینها اشیایی هستند که قالب بندی تاریخ و زمان حساس به زبان را فعال می کنند.
+     3. **ListFormat:**اینها اشیایی هستند که قالب بندی لیست حساس به زبان را فعال می کنند.
+     4. **NumberFormat:** اشیایی که قالب بندی اعداد حساس به زبان را فعال می کنند.
+     5. **PluralRules:**اشیایی که قالب بندی حساس به جمع و قوانین خاص زبان را برای جمع فعال می کنند.
+     6. **RelativeTimeFormat:** اشیایی که قالب بندی زمان نسبی حساس به زبان را فعال می کنند.
 
      **[فهرست](#فهرست)**
 
@@ -5230,9 +5231,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 253. ### What are the advantages of typescript over javascript
 
      در زیر برخی از مزایای تایپ اسکریپت نسبت به جاوا اسکریپت آورده شده است.
-  1. TypeScript می تواند خطاهای زمان کامپایل را فقط در زمان توسعه پیدا کند و باعث می شود خطاهای زمان اجرا کمتر شود. در حالی که جاوا اسکریپت یک زبان تفسیر شده است.
-  2. TypeScript به شدت تایپ می شود یا از تایپ استاتیک پشتیبانی می کند که امکان بررسی صحت نوع را در زمان کامپایل فراهم می کند. این در جاوا اسکریپت در دسترس نیست.
-  3. کامپایلر TypeScript برخلاف ویژگی های ES6 جاوا اسکریپت که ممکن است در برخی از مرورگرها پشتیبانی نشود، می تواند فایل های .ts را در ES3، ES4 و ES5 کامپایل کند.
+     1. TypeScript می تواند خطاهای زمان کامپایل را فقط در زمان توسعه پیدا کند و باعث می شود خطاهای زمان اجرا کمتر شود. در حالی که جاوا اسکریپت یک زبان تفسیر شده است.
+     2. TypeScript به شدت تایپ می شود یا از تایپ استاتیک پشتیبانی می کند که امکان بررسی صحت نوع را در زمان کامپایل فراهم می کند. این در جاوا اسکریپت در دسترس نیست.
+     3. کامپایلر TypeScript برخلاف ویژگی های ES6 جاوا اسکریپت که ممکن است در برخی از مرورگرها پشتیبانی نشود، می تواند فایل های .ts را در ES3، ES4 و ES5 کامپایل کند.
 
      **[فهرست](#فهرست)**
 
@@ -5416,9 +5417,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 263. ### What are the different ways to make an object non-extensible
 
      شما می توانید یک شی غیر قابل گسترش را به 3 روش علامت گذاری کنید.
-  1. Object.preventExtensions
-  2. Object.seal
-  3. Object.freeze
+     1. Object.preventExtensions
+     2. Object.seal
+     3. Object.freeze
 
      <span dir="ltr" align="left">
 
@@ -5496,10 +5497,10 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 267. ### Why do you need Obfuscation
 
     در زیر چند دلیل برای مبهم سازی آمده است،
-  1. اندازه کد کاهش می یابد. بنابراین انتقال داده بین سرور و مشتری سریع خواهد بود.
-  2. این منطق کسب و کار را از دنیای خارج پنهان می کند و از کد در برابر دیگران محافظت می کند
-  3. مهندسی معکوس بسیار دشوار است
-  4. زمان دانلود کاهش می یابد
+     1. اندازه کد کاهش می یابد. بنابراین انتقال داده بین سرور و مشتری سریع خواهد بود.
+     2. این منطق کسب و کار را از دنیای خارج پنهان می کند و از کد در برابر دیگران محافظت می کند
+     3. مهندسی معکوس بسیار دشوار است
+     4. زمان دانلود کاهش می یابد
 
      **[فهرست](#فهرست)**
 
@@ -5512,16 +5513,16 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 269. ### What are the advantages of minification
 
      به طور معمول توصیه می شود برای ترافیک سنگین و نیازهای فشرده منابع از Minification استفاده کنید. اندازه فایل را با مزایای زیر کاهش می دهد
-  1. زمان بارگذاری یک صفحه وب را کاهش می دهد
-  2. در مصرف پهنای باند صرفه جویی می کند
+     1. زمان بارگذاری یک صفحه وب را کاهش می دهد
+     2. در مصرف پهنای باند صرفه جویی می کند
 
      **[فهرست](#فهرست)**
 
 270. ### What are the differences between Obfuscation and Encryption
 
      در زیر تفاوت های اصلی بین مبهم سازی و رمزگذاری وجود دارد.
-| ویژگی | مبهم سازی | رمزگذاری |
-           |---- | --------- | ----
+     | ویژگی | مبهم سازی | رمزگذاری |
+     |---- | --------- | ----
       | تعریف | تغییر فرم هر داده به هر شکل دیگر | تغییر فرم اطلاعات به فرمت ناخوانا با استفاده از کلید |
       | کلیدی برای رمزگشایی | می توان آن را بدون هیچ کلید رمزگشایی کرد | لازم است |
       | فرمت داده های هدف | به فرم پیچیده تبدیل می شود | تبدیل به فرمت ناخوانا |
@@ -5531,11 +5532,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 271. ### What are the common tools used for minification
 
      ابزارهای آنلاین/آفلاین زیادی برای کوچک کردن فایل‌های جاوا اسکریپت وجود دارد.
-  1. کامپایلر بسته شدن گوگل
-  2. UglifyJS2
-  3. jsmin
-  4. javascript-minifier.com/
-  5. prettydiff.com
+     1. کامپایلر بسته شدن گوگل
+     2. UglifyJS2
+     3. jsmin
+     4. javascript-minifier.com/
+     5. prettydiff.com
 
      **[فهرست](#فهرست)**
 
@@ -5595,8 +5596,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 274. ### What are the DOM methods available for constraint validation
 
      روش‌های DOM زیر برای اعتبارسنجی محدودیت در ورودی نامعتبر موجود است.
-  1. checkValidity(): اگر یک عنصر ورودی حاوی داده های معتبر باشد، مقدار true را برمی گرداند.
-  2. setCustomValidity(): برای تنظیم خاصیت validationMessage یک عنصر ورودی استفاده می شود.
+     1. checkValidity(): اگر یک عنصر ورودی حاوی داده های معتبر باشد، مقدار true را برمی گرداند.
+     2. setCustomValidity(): برای تنظیم خاصیت validationMessage یک عنصر ورودی استفاده می شود.
      بیایید یک فرم ورود کاربر با اعتبارسنجی DOM بگیریم
 
      <span dir="ltr" align="left">
@@ -5620,9 +5621,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      در زیر لیستی از برخی از ویژگی های DOM اعتبارسنجی محدودیت موجود است،
 
-  1. validity: فهرستی از ویژگی های بولی مربوط به اعتبار یک عنصر ورودی را ارائه می دهد.
-  2. validationMessage: زمانی که اعتبار نادرست باشد، پیام را نمایش می دهد.
-  3. willValidate: این نشان می دهد که آیا یک عنصر ورودی اعتبار سنجی می شود یا خیر.
+     1. validity: فهرستی از ویژگی های بولی مربوط به اعتبار یک عنصر ورودی را ارائه می دهد.
+     2. validationMessage: زمانی که اعتبار نادرست باشد، پیام را نمایش می دهد.
+     3. willValidate: این نشان می دهد که آیا یک عنصر ورودی اعتبار سنجی می شود یا خیر.
 
      **[فهرست](#فهرست)**
 
@@ -5630,15 +5631,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      ویژگی اعتبار یک عنصر ورودی مجموعه ای از ویژگی های مربوط به اعتبار داده ها را ارائه می دهد.
 
-  1. customError: اگر یک پیام اعتبار سفارشی تنظیم شده باشد، true را برمی گرداند.
-  2. patternMismatch: اگر مقدار یک عنصر با ویژگی الگوی آن مطابقت نداشته باشد، مقدار true را برمی گرداند.
-  3. rangeOverflow: اگر مقدار یک عنصر از ویژگی max آن بیشتر باشد، مقدار true را برمی گرداند.
-  4. rangeUnderflow:اگر مقدار یک عنصر کمتر از ویژگی min باشد، مقدار true را برمی گرداند.
-  5. stepMismatch:اگر مقدار عنصر مطابق با ویژگی step نامعتبر باشد، مقدار true را برمی گرداند.
-  6. tooLong: اگر مقدار یک عنصر از ویژگی maxLength آن بیشتر شود، مقدار true را برمی گرداند.
-  7. typeMismatch: اگر مقدار یک عنصر بر اساس ویژگی نوع نامعتبر باشد، مقدار true را برمی گرداند.
-  8. valueMissing: اگر عنصری با ویژگی مورد نیاز ارزش نداشته باشد، مقدار true را برمی گرداند.
-  9. valid: اگر مقدار یک عنصر معتبر باشد، مقدار true را برمی گرداند.
+     1. customError: اگر یک پیام اعتبار سفارشی تنظیم شده باشد، true را برمی گرداند.
+     2. patternMismatch: اگر مقدار یک عنصر با ویژگی الگوی آن مطابقت نداشته باشد، مقدار true را برمی گرداند.
+     3. rangeOverflow: اگر مقدار یک عنصر از ویژگی max آن بیشتر باشد، مقدار true را برمی گرداند.
+     4. rangeUnderflow:اگر مقدار یک عنصر کمتر از ویژگی min باشد، مقدار true را برمی گرداند.
+     5. stepMismatch:اگر مقدار عنصر مطابق با ویژگی step نامعتبر باشد، مقدار true را برمی گرداند.
+     6. tooLong: اگر مقدار یک عنصر از ویژگی maxLength آن بیشتر شود، مقدار true را برمی گرداند.
+     7. typeMismatch: اگر مقدار یک عنصر بر اساس ویژگی نوع نامعتبر باشد، مقدار true را برمی گرداند.
+     8. valueMissing: اگر عنصری با ویژگی مورد نیاز ارزش نداشته باشد، مقدار true را برمی گرداند.
+     9. valid: اگر مقدار یک عنصر معتبر باشد، مقدار true را برمی گرداند.
 
      **[فهرست](#فهرست)**
 
@@ -5744,12 +5745,12 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 282. ### What are the attributes provided by a property descriptor
 
      توصیفگر ویژگی رکوردی است که دارای ویژگی های زیر است
-  1. value:ارزش مرتبط با ملک
-  2. writable:تعیین می کند که آیا مقدار مرتبط با ویژگی قابل تغییر است یا خیر
-  3. configurable: اگر بتوان نوع توصیفگر این ویژگی را تغییر داد و اگر ویژگی را بتوان از شی مربوطه حذف کرد، مقدار true را برمی‌گرداند.
-  4. enumerable: تعیین می کند که آیا ویژگی در هنگام شمارش خصوصیات روی شی مربوطه ظاهر می شود یا خیر.
-  5. set: تابعی که به عنوان تنظیم کننده برای ویژگی عمل می کند
-  6. get: تابعی که به عنوان یک گیرنده برای ملک عمل می کند
+     1. value:ارزش مرتبط با ملک
+     2. writable:تعیین می کند که آیا مقدار مرتبط با ویژگی قابل تغییر است یا خیر
+     3. configurable: اگر بتوان نوع توصیفگر این ویژگی را تغییر داد و اگر ویژگی را بتوان از شی مربوطه حذف کرد، مقدار true را برمی‌گرداند.
+     4. enumerable: تعیین می کند که آیا ویژگی در هنگام شمارش خصوصیات روی شی مربوطه ظاهر می شود یا خیر.
+     5. set: تابعی که به عنوان تنظیم کننده برای ویژگی عمل می کند
+     6. get: تابعی که به عنوان یک گیرنده برای ملک عمل می کند
 
      **[فهرست](#فهرست)**
 
@@ -5924,7 +5925,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 291. ### How do you declare namespace
 
      حتی اگر جاوا اسکریپت فاقد فضاهای نام باشد، می‌توانیم از Objects، IIFE برای ایجاد فضاهای نام استفاده کنیم.
-  1. **Using Object Literal Notation:** بیایید متغیرها و توابع را درون یک Object literal بپیچیم که به عنوان فضای نام عمل می کند. پس از آن می توانید با استفاده از نماد شیء به آنها دسترسی داشته باشید
+     1. **Using Object Literal Notation:** بیایید متغیرها و توابع را درون یک Object literal بپیچیم که به عنوان فضای نام عمل می کند. پس از آن می توانید با استفاده از نماد شیء به آنها دسترسی داشته باشید
 
      <span dir="ltr" align="left">
 
@@ -5945,7 +5946,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using IIFE (Immediately invoked function expression):** جفت پرانتز بیرونی IIFE یک محدوده محلی برای تمام کدهای داخل آن ایجاد می کند و تابع ناشناس را به یک عبارت تابع تبدیل می کند. به همین دلیل، می توانید یک تابع را در دو عبارت تابع مختلف ایجاد کنید تا به عنوان فضای نام عمل کند.
+     2. **Using IIFE (Immediately invoked function expression):** جفت پرانتز بیرونی IIFE یک محدوده محلی برای تمام کدهای داخل آن ایجاد می کند و تابع ناشناس را به یک عبارت تابع تبدیل می کند. به همین دلیل، می توانید یک تابع را در دو عبارت تابع مختلف ایجاد کنید تا به عنوان فضای نام عمل کند.
 
      <span dir="ltr" align="left">
 
@@ -5965,7 +5966,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Using a block and a let/const declaration:** در ECMAScript 6، شما می توانید به سادگی از یک بلوک و یک اعلان let برای محدود کردن دامنه یک متغیر به یک بلوک استفاده کنید.
+     3. **Using a block and a let/const declaration:** در ECMAScript 6، شما می توانید به سادگی از یک بلوک و یک اعلان let برای محدود کردن دامنه یک متغیر به یک بلوک استفاده کنید.
 
      <span dir="ltr" align="left">
 
@@ -6052,9 +6053,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 295. ### What are the different methods to find HTML elements in DOM
 
      اگر می خواهید به هر عنصری در صفحه HTML دسترسی داشته باشید، باید با دسترسی به شی سند شروع کنید. بعداً می توانید از یکی از روش های زیر برای یافتن عنصر HTML استفاده کنید.
-  1. document.getElementById(id): یک عنصر را با Id پیدا می کند
-  2. document.getElementsByTagName(name): یک عنصر را با نام تگ پیدا می کند
-  3. document.getElementsByClassName(name):یک عنصر را با نام کلاس پیدا می کند
+     1. document.getElementById(id): یک عنصر را با Id پیدا می کند
+     2. document.getElementsByTagName(name): یک عنصر را با نام تگ پیدا می کند
+     3. document.getElementsByClassName(name):یک عنصر را با نام کلاس پیدا می کند
 
      **[فهرست](#فهرست)**
 
@@ -6221,18 +6222,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 304. ### List down some of the features of ES6
 
      در زیر لیستی از برخی از ویژگی های جدید ES6 آمده است.
-  1. پشتیبانی از ثابت ها یا متغیرهای تغییرناپذیر
-  2. پشتیبانی Block-scope برای متغیرها، ثابت ها و توابع
-  3. Arrow functions
-  4. پارامترهای پیش فرض
-  5. پارامتر های Rest and Spread 
-  6. Template Literals
-  7. Multi-line Strings
-  8. Destructuring Assignment
-  9. Enhanced Object Literals
-  10. Promises
-  11. Classes
-  12. Modules
+     1. پشتیبانی از ثابت ها یا متغیرهای تغییرناپذیر
+     2. پشتیبانی Block-scope برای متغیرها، ثابت ها و توابع
+     3. Arrow functions
+     4. پارامترهای پیش فرض
+     5. پارامتر های Rest and Spread 
+     6. Template Literals
+     7. Multi-line Strings
+     8. Destructuring Assignment
+     9. Enhanced Object Literals
+     10. Promises
+     11. Classes
+     12. Modules
 
      **[فهرست](#فهرست)**
 
@@ -6630,7 +6631,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 319. ### What are the use cases for dynamic imports
 
      در زیر برخی از موارد استفاده از واردات پویا نسبت به واردات استاتیک آورده شده است.
-  1. یک ماژول را به صورت درخواستی یا مشروط وارد کنید. به عنوان مثال، اگر می خواهید یک polyfill را در مرورگر قدیمی بارگذاری کنید
+     1. یک ماژول را به صورت درخواستی یا مشروط وارد کنید. به عنوان مثال، اگر می خواهید یک polyfill را در مرورگر قدیمی بارگذاری کنید
 
      <span dir="ltr" align="left">
 
@@ -6643,7 +6644,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. تعیین کننده ماژول را در زمان اجرا محاسبه کنید. به عنوان مثال می توانید از آن برای بین المللی سازی استفاده کنید.
+     2. تعیین کننده ماژول را در زمان اجرا محاسبه کنید. به عنوان مثال می توانید از آن برای بین المللی سازی استفاده کنید.
 
      <span dir="ltr" align="left">
 
@@ -6653,7 +6654,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. یک ماژول را از داخل یک اسکریپت معمولی به جای یک ماژول وارد کنید.
+     3. یک ماژول را از داخل یک اسکریپت معمولی به جای یک ماژول وارد کنید.
 
      **[فهرست](#فهرست)**
 
@@ -6661,14 +6662,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      آرایه های تایپ شده اشیایی آرایه مانند از ECMAScript 6 API برای مدیریت داده های باینری هستند. جاوا اسکریپت 8 نوع آرایه تایپ شده را ارائه می دهد،
 
-  1. Int8Array: آرایه ای از اعداد صحیح امضا شده 8 بیتی
-  2. Int16Array: آرایه ای از اعداد صحیح امضا شده 16 بیتی
-  3. Int32Array: آرایه ای از اعداد صحیح امضا شده 32 بیتی
-  4. Uint8Array: آرایه ای از اعداد صحیح بدون علامت 8 بیتی
-  5. Uint16Array: آرایه ای از اعداد صحیح بدون علامت 16 بیتی
-  6. Uint32Array:  آرایه ای از اعداد صحیح بدون علامت 32 بیتی
-  7. Float32Array:آرایه ای از اعداد ممیز شناور 32 بیتی
-  8. Float64Array: آرایه ای از اعداد ممیز شناور 64 بیتی
+     1. Int8Array: آرایه ای از اعداد صحیح امضا شده 8 بیتی
+     2. Int16Array: آرایه ای از اعداد صحیح امضا شده 16 بیتی
+     3. Int32Array: آرایه ای از اعداد صحیح امضا شده 32 بیتی
+     4. Uint8Array: آرایه ای از اعداد صحیح بدون علامت 8 بیتی
+     5. Uint16Array: آرایه ای از اعداد صحیح بدون علامت 16 بیتی
+     6. Uint32Array:  آرایه ای از اعداد صحیح بدون علامت 32 بیتی
+     7. Float32Array:آرایه ای از اعداد ممیز شناور 32 بیتی
+     8. Float64Array: آرایه ای از اعداد ممیز شناور 64 بیتی
 
      به عنوان مثال، شما می توانید یک آرایه از اعداد صحیح امضا شده 8 بیتی مانند زیر ایجاد کنید
 
@@ -6688,18 +6689,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 321. ### What are the advantages of module loaders
 
      ماژول لودر ویژگی های زیر را ارائه می دهد
-  1. Dynamic loading
-  2. State isolation
-  3. Global namespace isolation
-  4. Compilation hooks
-  5. Nested virtualization
+     1. Dynamic loading
+     2. State isolation
+     3. Global namespace isolation
+     4. Compilation hooks
+     5. Nested virtualization
 
      **[فهرست](#فهرست)**
 
 322. ### What is collation
 
      Collation برای مرتب سازی مجموعه ای از رشته ها و جستجو در مجموعه ای از رشته ها استفاده می شود. این پارامتر توسط محلی و از Unicode آگاه است. بیایید ویژگی های مقایسه و مرتب سازی را در نظر بگیریم،
-  1. **Comparison:**
+     1. **Comparison:**
 
      <span dir="ltr" align="left">
 
@@ -6713,7 +6714,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-  1. **Sorting:**
+     2. **Sorting:**
 
      <span dir="ltr" align="left">
 
@@ -6986,7 +6987,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 340. ### What are the list of cases error thrown from non-strict mode to strict mode
 
      وقتی «استفاده سخت» را اعمال می‌کنین. syntax، برخی از موارد زیر قبل از اجرای اسکریپت یک SyntaxError ایجاد می کنند
-  1. وقتی از دستور Octal استفاده می کنید
+     1. وقتی از دستور Octal استفاده می کنید
 
      <span dir="ltr" align="left">
 
@@ -6995,11 +6996,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      ```
 
      </span>
-   1. استفاده از عبارت «with».
-   2. وقتی از عملگر حذف روی نام متغیر استفاده می کنید
-   3. استفاده از eval یا آرگومان ها به عنوان متغیر یا نام آرگومان تابع
-   4. هنگامی که از کلمات کلیدی رزرو شده جدید استفاده می کنید
-   5. هنگامی که یک تابع را در یک بلوک اعلام می کنید
+     2. استفاده از عبارت «with».
+     3. وقتی از عملگر حذف روی نام متغیر استفاده می کنید
+     4. استفاده از eval یا آرگومان ها به عنوان متغیر یا نام آرگومان تابع
+     5. هنگامی که از کلمات کلیدی رزرو شده جدید استفاده می کنید
+     6. هنگامی که یک تابع را در یک بلوک اعلام می کنید
 
      <span dir="ltr" align="left">
 
@@ -7379,9 +7380,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 359. ### How do you create self string using special characters
 
      رشته self را می توان با ترکیب کاراکترهای `[]()!+` تشکیل داد. برای رسیدن به این الگو باید قراردادهای زیر را به خاطر بسپارید.
-   1. از آنجایی که آرایه ها مقادیر واقعی هستند، با نفی آرایه ها false تولید می شود: ![] === false
-   2. طبق قوانین اجباری جاوا اسکریپت، اضافه کردن آرایه‌ها به هم آنها را به رشته‌بندی تبدیل می‌کند: [] + [] === ""
-   3. Prepend یک آرایه با عملگر + یک آرایه را به نادرست تبدیل می کند، انکار آن را درست می کند و در نهایت تبدیل نتیجه مقدار '1' را تولید می کند: +(!(+[])) === 1
+     1. از آنجایی که آرایه ها مقادیر واقعی هستند، با نفی آرایه ها false تولید می شود: ![] === false
+     2. طبق قوانین اجباری جاوا اسکریپت، اضافه کردن آرایه‌ها به هم آنها را به رشته‌بندی تبدیل می‌کند: [] + [] === ""
+     3. Prepend یک آرایه با عملگر + یک آرایه را به نادرست تبدیل می کند، انکار آن را درست می کند و در نهایت تبدیل نتیجه مقدار '1' را تولید می کند: +(!(+[])) === 1
 
       با اعمال قوانین فوق می توانیم شرایط زیر را استخراج کنیم
 
@@ -7549,9 +7550,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 368. ### What are the placeholders from console object
 
      در زیر لیستی از متغیرهای موجود از شی کنسول وجود دارد،
-   1. %o - یک شی را می گیرد،
-   2. %s - یک رشته می‌گیرد،
-   3. %d - برای اعشار یا عدد صحیح استفاده می شود
+     1. %o - یک شی را می گیرد،
+     2. %s - یک رشته می‌گیرد،
+     3. %d - برای اعشار یا عدد صحیح استفاده می شود
       این متغیرها را می توان در console.log به صورت زیر نشان داد
 
      <span dir="ltr" align="left">
@@ -7799,10 +7800,10 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 382. ### What are the different ways to deal with Asynchronous Code
 
      در زیر لیستی از روش های مختلف برای مقابله با کدهای ناهمزمان آورده شده است.
-   1.callback ها
-   2. پرامیس ها
-   3.Async/await
-   4. کتابخانه های شخص ثالث مانند async.js، bluebird و غیره
+     1. callback ها
+     2. پرامیس ها
+     3. Async/await
+     4. کتابخانه های شخص ثالث مانند async.js، bluebird و غیره
 
      **[فهرست](#فهرست)**
 
@@ -7810,9 +7811,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      تا چند روز پیش، یکی از کاستی‌های وعده‌های بومی راه مستقیمی برای لغو درخواست واکشی نیست. اما «AbortController» جدید از مشخصات js به شما امکان می‌دهد از سیگنالی برای لغو یک یا چند تماس واکشی استفاده کنید.
       جریان اصلی لغو یک درخواست واکشی به صورت زیر خواهد بود.
-   1. یک نمونه «AbortController» ایجاد کنید
-   2. ویژگی سیگنال یک نمونه را دریافت کنید و سیگنال را به عنوان یک گزینه واکشی برای سیگنال ارسال کنید
-   3. برای لغو تمام واکشی‌هایی که از آن سیگنال استفاده می‌کنند، با ویژگی abort's AbortController تماس بگیرید.
+     1. یک نمونه «AbortController» ایجاد کنید
+     2. ویژگی سیگنال یک نمونه را دریافت کنید و سیگنال را به عنوان یک گزینه واکشی برای سیگنال ارسال کنید
+     3. برای لغو تمام واکشی‌هایی که از آن سیگنال استفاده می‌کنند، با ویژگی abort's AbortController تماس بگیرید.
       به عنوان مثال، بیایید یک سیگنال را به چندین تماس واکشی ارسال کنیم، همه درخواست‌های با آن سیگنال لغو می‌شوند.
 
      <span dir="ltr" align="left">
@@ -7848,7 +7849,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 384. ### What is web speech API
 
      API گفتار وب برای فعال کردن مرورگرهای مدرن برای شناسایی و ترکیب گفتار (یعنی داده‌های صوتی در برنامه‌های وب) استفاده می‌شود. این API توسط انجمن W3C در سال 2012 معرفی شده است. دارای دو بخش اصلی است.
-   1. **تشخیص گفتار (تشخیص گفتار ناهمزمان یا گفتار به متن):** این امکان را فراهم می کند که زمینه صدا را از ورودی صوتی تشخیص داده و به آن پاسخ دهید. این توسط رابط "SpeechRecognition" قابل دسترسی است.
+     1. **تشخیص گفتار (تشخیص گفتار ناهمزمان یا گفتار به متن):** این امکان را فراهم می کند که زمینه صدا را از ورودی صوتی تشخیص داده و به آن پاسخ دهید. این توسط رابط "SpeechRecognition" قابل دسترسی است.
       مثال زیر نحوه استفاده از این API برای دریافت متن از گفتار را نشان می دهد.
 
      <span dir="ltr" align="left">
@@ -7866,7 +7867,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
      در این API، مرورگر برای استفاده از میکروفون شما از شما اجازه می خواهد
-   1. **SpeechSynthesis (Text-to-Speech):** این امکان را فراهم می کند تا زمینه صدا را از ورودی صوتی تشخیص داده و پاسخ دهید. این توسط رابط "SpeechSynthesis" قابل دسترسی است.
+     2. **SpeechSynthesis (Text-to-Speech):** این امکان را فراهم می کند تا زمینه صدا را از ورودی صوتی تشخیص داده و پاسخ دهید. این توسط رابط "SpeechSynthesis" قابل دسترسی است.
       به عنوان مثال، کد زیر برای دریافت صدا/گفتار از متن استفاده می شود.
 
      <span dir="ltr" align="left">
@@ -7883,6 +7884,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      نمونه‌های بالا را می‌توان روی کنسول برنامه‌نویس مرورگر کروم (33+) آزمایش کرد.
       **توجه:** این API هنوز یک پیش نویس فعال است و فقط در مرورگرهای کروم و فایرفاکس موجود است (البته کروم فقط مشخصات را اجرا کرده است)
+     
      **[فهرست](#فهرست)**
 
 385. ### What is minimum timeout throttling
@@ -7953,9 +7955,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      وظیفه هر کد/برنامه جاوا اسکریپتی است که قرار است توسط مکانیسم‌های استاندارد اجرا شود، مانند شروع اولیه اجرای یک برنامه، اجرای یک فراخوان رویداد، یا یک بازه زمانی یا وقفه در حال اجرا. همه این وظایف در یک صف کار برنامه ریزی می شوند.
       در زیر لیستی از موارد استفاده برای افزودن وظایف به صف کار آمده است.
-   1. هنگامی که یک برنامه جاوا اسکریپت جدید مستقیماً از کنسول اجرا می شود یا توسط عنصر ```<script>``` اجرا می شود، وظیفه به صف کار اضافه می شود.
-   2. هنگامی که یک رویداد شلیک می شود، پاسخ تماس رویداد به صف کار اضافه می شود
-   3. وقتی به یک setTimeout یا setInterval رسید، پاسخ تماس مربوطه به صف کار اضافه می‌شود
+     1. هنگامی که یک برنامه جاوا اسکریپت جدید مستقیماً از کنسول اجرا می شود یا توسط عنصر ```<script>``` اجرا می شود، وظیفه به صف کار اضافه می شود.
+     2. هنگامی که یک رویداد شلیک می شود، پاسخ تماس رویداد به صف کار اضافه می شود
+     3. وقتی به یک setTimeout یا setInterval رسید، پاسخ تماس مربوطه به صف کار اضافه می‌شود
 
      **[فهرست](#فهرست)**
 
@@ -7965,6 +7967,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       منابع اصلی ریزکارها عبارتند از Promise.resolve، Promise.reject، MutationObservers، IntersectionObservers و غیره.
 
       **توجه:** همه این ریزکارها در همان چرخش حلقه رویداد پردازش می شوند.
+     
      **[فهرست](#فهرست)**
 
 389. ### What are different event loops
@@ -8301,70 +8304,66 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      اما بسیاری از محیط‌های جاوا اسکریپت مدرن وجود دارند که هیچ خطایی را چاپ نمی‌کنند. شما می توانید این مشکل را به روش های مختلف حل کنید،
 
-  1. **Add catch block at the end of each chain:** You can add catch block to the end of each of your promise chains
+     1. **Add catch block at the end of each chain:** You can add catch block to the end of each of your promise chains
 
 
-         <span dir="ltr" align="left">
-
-         ```javascript
-         Promise.resolve('promised value').then(function() {
-             throw new Error('error');
-         }).catch(function(error) {
-           console.error(error.stack);
-         });
-         ```
-
-         </span>
-
-        اما تایپ کردن برای هر زنجیره پرامیس ها و پرمخاطب نیز بسیار دشوار است.
-
-     2. **Add done method:** می توانید ابتدا راه حل ها را جایگزین کنید و سپس با روش انجام شده بلوک ها را بگیرید
-
-
-         <span dir="ltr" align="left">
-
-         ```javascript
-         Promise.resolve('promised value').done(function() {
-             throw new Error('error');
-         });
-         ```
-
-         </span>
-
-
-          فرض کنید می خواهید داده ها را با استفاده از HTTP واکشی کنید و بعداً پردازش داده های حاصل را به صورت ناهمزمان انجام دهید. می‌توانید بلوک «انجام شد» را به صورت زیر بنویسید.
-
-         <span dir="ltr" align="left">
-
-         ```javascript
-         getDataFromHttp()
-           .then(function(result) {
-             return processDataAsync(result);
-           })
-           .done(function(processed) {
-             displayData(processed);
-           });
-         ```
-
-          </span>
-
-
-     در آینده، اگر API کتابخانه پردازش به همگام تغییر کند، می‌توانید بلوک «انجام شد» را مانند زیر حذف کنید.
      <span dir="ltr" align="left">
 
-         ```javascript
-          getDataFromHttp()
-            .then(function(result) {
-              return displayData(processDataAsync(result));
-            })
-         ```
+     ```javascript
+     Promise.resolve('promised value').th    (function() {
+         throw new Error('error');
+     }).catch(function(error) {
+       console.error(error.stack);
+     });
+     ```
 
      </span>
 
+     اما تایپ کردن برای هر زنجیره پرامیس ها و پرمخاطب نیز بسیار دشوار است.
 
-و سپس فراموش کرده اید که بلوک «انجام شد» را به بلوک «سپس» اضافه کنید که منجر به خطاهای خاموش می شود.
+     2. **Add done method:** می توانید ابتدا راه حل ها را جایگزین کنید و سپس با روش انجام شده بلوک ها را بگیرید
 
-3. **Extend ES6 Promises by Bluebird:**
+     <span dir="ltr" align="left">
+
+     ```javascript
+     Promise.resolve('promised value').don(function() {
+         throw new Error('error');
+     });
+     ```
+
+     </span>
+
+     فرض کنید می خواهید داده ها را با استفاده از HTTP واکشی کنید و بعداً پردازش داده های حاصل را به صورت ناهمزمان انجام دهید. می‌توانید بلوک «انجام شد» را به صورت زیر بنویسید.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     getDataFromHttp()
+       .then(function(result) {
+         return processDataAsync(result);
+       })
+       .done(function(processed) {
+         displayData(processed);
+       });
+     ```
+
+     </span>
+
+     در آینده، اگر API کتابخانه پردازش به همگام تغییر کند، می‌توانید بلوک «انجام شد» را مانند زیر حذف کنید.
+
+     <span dir="ltr" align="left">
+
+      ```javascript
+       getDataFromHttp()
+         .then(function(result) {
+           return displayData(processDataAsyn(result));
+        })
+     ```
+     </span>
+
+      سپس فراموش کرده اید که بلوک «انجام شد» را به بلوک «سپس» اضافه کنید که منجر به خطاهای خاموش می شود.
+
+     3. **Extend ES6 Promises by Bluebird:**
         Bluebird API ES6 Promises را گسترش می دهد تا در راه حل دوم مشکلی ایجاد نشود. این کتابخانه دارای یک کنترل کننده "پیش فرض" در Rejection است که تمام خطاها را از Promises رد شده به stderr چاپ می کند. پس از نصب، می توانید ردهای کنترل نشده را پردازش کنید
 
      <span dir="ltr" align="left">
@@ -8377,8 +8376,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-
-و یک رد را دور بیندازید، فقط با یک شکار خالی آن را مدیریت کنید
+      یک رد را دور بیندازید، فقط با یک شکار خالی آن را مدیریت کنید
 
      <span dir="ltr" align="left">
 
@@ -8386,10 +8384,10 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
          Promise.reject('error value').catch(function() {});
          ```
 
-         </span>
+     </span>
 
 
-**[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 409. ### What is deno
 
@@ -8553,8 +8551,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      می‌توانید از ویژگی شبه «new.target» برای تشخیص اینکه آیا یک تابع به عنوان سازنده (با استفاده از عملگر جدید) فراخوانی شده است یا به عنوان یک فراخوانی تابع معمولی استفاده کنید.
 
-   1. اگر سازنده یا تابعی با استفاده از عملگر جدید فراخوانی شود، new.target یک مرجع به سازنده یا تابع برمی‌گرداند.
-   2. برای فراخوانی تابع، new.target تعریف نشده است.
+     1. اگر سازنده یا تابعی با استفاده از عملگر جدید فراخوانی شود، new.target یک مرجع به سازنده یا تابع برمی‌گرداند.
+     2. برای فراخوانی تابع، new.target تعریف نشده است.
 
       <span dir="ltr" align="left">
 
@@ -8580,9 +8578,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      سه تفاوت اصلی بین پارامترهای شیء آرگومان و پارامترهای استراحت وجود دارد
 
-   1. شیء آرگومان ها آرایه مانند است اما آرایه نیست. در حالی که بقیه پارامترها نمونه های آرایه هستند.
-   2. شیء آرگومان ها از روش هایی مانند sort، map، forEach یا pop پشتیبانی نمی کند. در حالی که این روش ها را می توان در پارامترهای استراحت استفاده کرد.
-   3. بقیه پارامترها فقط آنهایی هستند که نام جداگانه ای به آنها داده نشده است، در حالی که شیء آرگومان ها شامل تمام آرگومان های ارسال شده به تابع است.
+     1. شیء آرگومان ها آرایه مانند است اما آرایه نیست. در حالی که بقیه پارامترها نمونه های آرایه هستند.
+     2. شیء آرگومان ها از روش هایی مانند sort، map، forEach یا pop پشتیبانی نمی کند. در حالی که این روش ها را می توان در پارامترهای استراحت استفاده کرد.
+     3. بقیه پارامترها فقط آنهایی هستند که نام جداگانه ای به آنها داده نشده است، در حالی که شیء آرگومان ها شامل تمام آرگومان های ارسال شده به تابع است.
 
      **[فهرست](#فهرست)**
 
