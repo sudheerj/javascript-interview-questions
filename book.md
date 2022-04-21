@@ -678,7 +678,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
 
-     Call and apply are pretty interchangeable. Both execute the current function immediately. You need to decide whether it’s easier to send in an array or a comma separated list of arguments. You can remember by treating Call is for comma (separated list) and Apply is for Array. Whereas Bind creates a new function that will have `this` set to the first parameter passed to bind().
+     `Call` و `Apply` تقریباً قابل تعویض هستند. هر دو بلافاصله تابع فعلی را اجرا می کنند. شما باید تصمیم بگیرید که ارسال آرایه در آرایه آسان تر است یا فهرستی از آرگومان های جدا شده با کاما. می توانید به خاطر داشته باشید که Call برای کاما (فهرست جدا شده) و Apply برای Array است. در حالی که Bind یک تابع جدید ایجاد می کند که «this» روی اولین پارامتر ارسال شده به «bind()» تنظیم می شود.
 
      **[فهرست](#فهرست)**
 
@@ -781,18 +781,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 8. ### تفاوت‌های بین عملگرهای == و === چیا هستن؟
 
-     JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
-     1. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions.
-     2. Two numbers are strictly equal when they are numerically equal. i.e, Having the same number value.
-     There are two special cases in this,
-     1. NaN is not equal to anything, including NaN.
-     2. Positive and negative zeros are equal to one another.
-     3. Two Boolean operands are strictly equal if both are true or both are false.
-     4. Two objects are strictly equal if they refer to the same Object.
-     5. Null and Undefined types are not equal with ===, but equal with ==. i.e,
-     null===undefined --> false but null==undefined --> true
+     جاوا اسکریپت مقایسه برابری سخت (===، !==) و تبدیل نوع (==، !=) را فراهم می کند. عملگرهای سختگیرانه نوع متغیر را در نظر می گیرند، در حالی که عملگرهای غیر دقیق، اصلاح/تبدیل نوع را بر اساس مقادیر متغیرها انجام می دهند. اپراتورهای سختگیر از شرایط زیر برای انواع مختلف پیروی می کنند.
+     1. دو رشته زمانی کاملاً برابر هستند که توالی کاراکترهای یکسان، طول یکسان و کاراکترهای مشابه در موقعیت‌های متناظر داشته باشند.
+     2. دو عدد زمانی که از نظر عددی مساوی باشند کاملاً برابر هستند. یعنی داشتن مقدار عددی یکسان.
+      دو مورد خاص در این مورد وجود دارد،
+     1. NaN با هیچ چیز از جمله NaN برابر نیست.
+     2. صفرهای مثبت و منفی با هم برابرند.
+     3. اگر هر دو درست یا نادرست باشند، دو عملوند بولی کاملاً برابر هستند.
+     4. اگر دو شیء به یک شیء اشاره کنند کاملاً برابر هستند.
+     5. انواع Null و Undefined با === برابر نیستند، بلکه با == برابر هستند. یعنی
+     null===undefined --> false اما null==undefined --> true
 
-     Some of the example which covers the above cases,
+     برخی از مثال هایی که موارد فوق را پوشش می دهد،
 
      <span dir="ltr" align="left">
 
@@ -935,7 +935,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
      بر اساس تکه کدهای بالا، تابع push با تغییر روی آرایه و برگردوندن شماره ایندکس push که مستقل از مقدار پارامتر هستش، یه تابع ناخالص به حساب میاد. در حالی که از یه طرف متد concat آرایه رو میگیره و اونو با یه آرایه دیگه ترکیب میکنه و یه آرایه کاملا جدید و بدون هیچ عوارض جانبی تولید میکنه. همچنین مقدار برگشتی با آرایه قبلی ترکیب شده هستش.
-     Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and make it harder to break your application by not having any side effects. These principles are coming together with **Immutability** concept of ES6 by giving preference to **const** over **let** usage.
+     به یاد داشته باشید که توابع خالص مهم هستند زیرا آنها تست واحد را بدون هیچ گونه عوارض جانبی و بدون نیاز به تزریق وابستگی ساده می کنند. آنها همچنین از اتصال محکم جلوگیری می کنند و با نداشتن عوارض جانبی، شکستن برنامه شما را سخت تر می کنند. این اصول در کنار هم قرار می گیرند **تغییرناپذیری** مفهوم ES6 با ارجحیت به **const** نسبت به استفاده **let**.
 
      **[فهرست](#فهرست)**
 
@@ -968,7 +968,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      2. دامنه تابع داره
      3. متغیر‌ها Hoist میشن
 
-          let:
+     let:
      1. به عنوان بخشی از ES6 معرفی شده
      2. محدود به scope یا دامنه هستش
      3. Hoist شده ولی مقداردهی اولیه نمیشه
@@ -1177,8 +1177,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      **[فهرست](#فهرست)**
 
 25. ### Classها توی ES6 چی هستن؟
-     In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
-     For example, the prototype based inheritance written in function expression as below,
+     در ES6، کلاس‌های جاوا اسکریپت عمدتاً قند نحوی بر وراثت مبتنی بر نمونه اولیه جاوا اسکریپت است.
+      به عنوان مثال، وراثت مبتنی بر نمونه اولیه که در عبارت تابع به صورت زیر نوشته شده است.
 
      <span dir="ltr" align="left">
 
@@ -1594,9 +1594,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 50. ### Promise چیه؟
 
-     A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
+     یک promise آبجکتی است که ممکن است در آینده یک مقدار واحد را با یک مقدار حل شده یا به دلیل حل نشدن آن (مثلاً خطای شبکه) تولید کند. در یکی از 3 حالت ممکن خواهد بود: انجام شده، رد شده، یا در انتظار.
 
-     The syntax of Promise creation looks like below,
+     برای ساختن Promise ها از سینتکس زیر استفاده میشه
 
      <span dir="ltr" align="left">
 
@@ -1609,7 +1609,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
 
-     The usage of a promise would be as below,
+     استفاده از پرامیس ها رو هم باهم ببینیم
 
      <span dir="ltr" align="left">
 
@@ -1628,7 +1628,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
 
-     The action flow of a promise will be as below,
+     جریان عمل یک پرامیس به صورت زیر خواهد بود:
 
      ![Screenshot](images/promises.png)
 
@@ -1636,23 +1636,23 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 51. ### چرا به promise نیاز داریم؟
 
-     Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
+     Promises برای رسیدگی به عملیات ناهمزمان استفاده می شود. آنها با کاهش جهنم برگشت تماس و نوشتن کد پاک‌کننده، یک رویکرد جایگزین برای تماس‌های برگشتی ارائه می‌کنند.
 
      **[فهرست](#فهرست)**
 
 52. ### سه تا وضعیت ممکن برای یه promise چیا هستن؟
 
-     Promises have three states:
-     1. **Pending:** This is an initial state of the Promise before an operation begins
-     2. **Fulfilled:** This state indicates that   the specified operation was completed.
-     3. **Rejected:** This state indicates that the operation did not complete. In this case an error value will be thrown.
+     پرامیس ها ها سه حالت دارند:
+     1. **Pending:** این حالت اولیه Promise قبل از شروع عملیات است
+     2. **Fulfilled:** این حالت نشان می دهد که عملیات مشخص شده تکمیل شده است.
+     3. **Rejected:** این حالت نشان می دهد که عملیات کامل نشده است. در این حالت یک مقدار خطا داده خواهد شد.
 
      **[فهرست](#فهرست)**
 
 53. ### توابع callback چی هستن؟
 
-     A callback function is a function passed into another function as an argument. This function is invoked inside the outer function to complete an action.
-     Let's take a simple example of how to use callback function
+     تابع callback تابعی است که به عنوان آرگومان به تابع دیگری منتقل می شود. این تابع در داخل تابع خارجی برای تکمیل یک عمل فراخوانی می شود.
+      بیایید یک مثال ساده از نحوه استفاده از تابع callback بزنیم
 
      <span dir="ltr" align="left">
 
@@ -1676,8 +1676,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 54. ### چرا به توابع callback نیاز داریم؟
 
-     The callbacks are needed because javascript is an event driven language. That means instead of waiting for a response javascript will keep executing while listening for other events.
-     Let's take an example with the first function invoking an API call(simulated by setTimeout) and the next function which logs the message.
+     callback ها مورد نیاز هستند زیرا جاوا اسکریپت یک زبان رویداد محور است. این بدان معناست که به جای منتظر ماندن برای پاسخ، جاوا اسکریپت در حین گوش دادن به رویدادهای دیگر اجرا می شود.
+      بیایید مثالی را با اولین تابع callbackی یک API (شبیه‌سازی شده توسط setTimeout) و تابع بعدی که پیام را ثبت می‌کند، بیاوریم.
 
      <span dir="ltr" align="left">
 
@@ -1701,13 +1701,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     As observed from the output, javascript didn't wait for the response of the first function and the remaining code block got executed. So callbacks are used in a way to make sure that certain code doesn’t execute until the other code finishes execution.
+     همانطور که از خروجی مشاهده می شود، جاوا اسکریپت منتظر پاسخ اولین تابع نبود و بلوک کد باقی مانده اجرا شد. بنابراین از callback ها به گونه ای استفاده می شود تا مطمئن شویم که کد خاصی تا زمانی که اجرای کد دیگر به پایان نرسد اجرا نمی شود.
 
      **[فهرست](#فهرست)**
 
 55. ### Callback-hell یا جهنم توابع callback چیه؟
 
-     Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard to read and debug when dealing with asynchronous logic. The callback hell looks like below,
+     Callback Hell یک ضد الگو با چندین تماس تو در تو است که خواندن کد و اشکال زدایی را در هنگام برخورد با منطق ناهمزمان سخت می کند. جهنم برگشت به تماس شبیه زیر است،
 
      <span dir="ltr" align="left">
 
@@ -1730,13 +1730,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 56. ### Server-sent-events(SSE) چیه؟
 
-     Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP connection without resorting to polling. These are a one way communications channel - events flow from server to client only. This has been used in Facebook/Twitter updates, stock price updates, news feeds etc.
+     رویدادهای ارسال شده توسط سرور (SSE) یک فناوری فشار سرور است که به مرورگر امکان می‌دهد به‌روزرسانی‌های خودکار را از طریق اتصال HTTP بدون استفاده از نظرسنجی دریافت کند. اینها یک کانال ارتباطی یک طرفه هستند - رویدادها فقط از سروری به مشتری دیگر منتقل می شوند. این در به‌روزرسانی‌های فیس‌بوک/تویتر، به‌روزرسانی قیمت سهام، فیدهای خبری و غیره استفاده شده است.
 
      **[فهرست](#فهرست)**
 
 57. ### چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟
 
-     The EventSource object is used to receive server-sent event notifications. For example, you can receive messages from server as below,
+     شی EventSource برای دریافت اعلان های رویداد ارسال شده از سرور استفاده می شود. به عنوان مثال، می توانید پیام هایی را از سرور به صورت زیر دریافت کنید.
 
      <span dir="ltr" align="left">
 
@@ -1755,7 +1755,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 58. ### چطوری می‌تونیم پشتیبانی مرورگر برای SSE رو بررسی کنیم؟
 
-     You can perform browser support for server-sent events before using it as below,
+     می‌توانید قبل از استفاده از رویدادهای ارسال شده توسط مرورگر مانند زیر، پشتیبانی مرورگر را انجام دهید.
 
      <span dir="ltr" align="left">
 
@@ -1773,29 +1773,29 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 59. ### کدوم توابع روی SSE وجود دارن؟
 
-     Below are the list of events available for server sent events
+     در زیر لیستی از رویدادهای موجود برای رویدادهای ارسال شده توسط سرور آمده است
 
      | Event | Description |
      |---- | --------- |
-     | onopen  | It is used when a connection to the server is opened |
-     | onmessage | This event is used when a message is received  |
-     | onerror | It happens when an error occurs|
+     | onopen  | هنگامی که اتصال به سرور باز می شود استفاده می شود |
+     | onmessage | این رویداد زمانی استفاده می شود که پیامی دریافت شود  |
+     | onerror | زمانی اتفاق می افتد که خطایی رخ دهد|
 
      **[فهرست](#فهرست)**
 
 60. ### اصلی‌ترین قوانین promiseها چیا هستن؟
 
-     A promise must follow a specific set of rules,
-     1. A promise is an object that supplies a standard-compliant `.then()` method
-     2. A pending promise may transition into either fulfilled or rejected state
-     3. A fulfilled or rejected promise is settled and it must not transition into any other state.
-     4. Once a promise is settled, the value must not change.
+     یک پرامیس باید از یک سری قوانین خاص پیروی کند،
+     1. پرامیس آبجکتی است که متد «.then()» سازگار با استاندارد را ارائه می کند
+     2. یک پرامیس معلق ممکن است به حالت تحقق یافته یا رد شده تبدیل شود
+     3. پرامیس تمام شده یا رد شده حل و فصل می شود و نباید به حالت دیگری تبدیل شود.
+     4. پس از اتمام قول، ارزش آن نباید تغییر کند.
 
      **[فهرست](#فهرست)**
 
 61. ### Callback توی callback چطوری رخ میده؟
 
-    You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks.
+    می‌توانید یک پاسخ تماس را در داخل یک تماس دیگر قرار دهید تا اقدامات را به صورت متوالی یکی یکی انجام دهید. این به عنوان callback در callbacks شناخته می شود.
 
     <span dir="ltr" align="left">
 
@@ -1822,7 +1822,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 62. ### زنجیره promiseها چیه؟
 
-     The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining. Let's take an example of promise chaining for calculating the final result,
+     فرآیند اجرای دنباله ای از وظایف ناهمزمان یکی پس از دیگری با استفاده از پرامیس ها به عنوان Promise chaining شناخته می شود. بیایید برای محاسبه نتیجه نهایی مثالی از زنجیره قولی بزنیم.
 
      <span dir="ltr" align="left">
 
@@ -1851,17 +1851,17 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     In the above handlers, the result is passed to the chain of .then() handlers with the below work flow,
-     1. The initial promise resolves in 1 second,
-     2. After that `.then` handler is called by   logging the result(1) and then return a   promise with the value of result * 2.
-     3. After that the value passed to the next `.  then` handler by logging the result(2) and   return a promise with result * 3.
-     4. Finally the value passed to the last `.  then` handler by logging the result(6) and   return a promise with result * 4.
+     در دسته‌های فوق، نتیجه به زنجیره‌های .then() handler با جریان کار زیر منتقل می‌شود.
+     1. پرامیس اولیه در 1 ثانیه حل می شود،
+     2. پس از آن، handler «.then» با ثبت نتیجه (1) فراخوانی می شود و سپس یک پرامیس با مقدار نتیجه * 2 برمی گرداند.
+     3. پس از آن مقدار به بعدی منتقل شد. سپس با ثبت نتیجه (2) و بازگرداندن یک پرامیس با نتیجه *3.
+     4. در نهایت مقدار به آخرین . سپس با ثبت نتیجه (6) و یک پرامیس با نتیجه * 4، handler`.
 
      **[فهرست](#فهرست)**
 
 63. ### کاربرد متد promise.all چیه؟
 
-     Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved when all the promises get resolved or any one of them gets rejected. For example, the syntax of promise.all method is below,
+     Promise.all یک پرامیس است که آرایه ای از پرامیس ها را به عنوان ورودی می گیرد (یک تکرار) و زمانی حل می شود که همه پرامیس ها حل شوند یا یکی از آنها رد شود. به عنوان مثال، نحو متد premt.all در زیر آمده است.
 
      <span dir="ltr" align="left">
 
@@ -1871,13 +1871,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** Remember that the order of the promises(output the result) is maintained as per input order.
+     **نکته:** به یاد داشته باشید که ترتیب پرامیس ها (خروجی نتیجه) طبق ترتیب ورودی حفظ می‌شود.
 
      **[فهرست](#فهرست)**
 
 64. ### هدف از متد race روی promise چیه؟
 
-     Promise.race() method will return the promise instance which is firstly resolved or rejected. Let's take an example of race() method where promise2 is resolved first
+     متد Promise.race نمونه ای از پرامیس را که ابتدا حل یا رد شده است برمی گرداند. بیایید مثالی از متد ()race را در نظر بگیریم که در آن پرامیس2 ابتدا حل می‌شود
 
      <span dir="ltr" align="left">
 
@@ -1900,20 +1900,20 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 65. ### حالت strict توی جاواسکریپت چی کار میکنه؟
 
-     Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression `"use strict";` instructs the browser to use the javascript code in the Strict mode.
+     Strict Mode یک ویژگی جدید در ECMAScript 5 است که به شما امکان می دهد یک برنامه یا یک تابع را در یک زمینه عملیاتی "سخت" قرار دهید. به این ترتیب از انجام برخی اقدامات جلوگیری می کند و استثناهای بیشتری را ایجاد می کند. عبارت تحت اللفظی "استفاده از سخت"؛ به مرورگر دستور می دهد تا از کد جاوا اسکریپت در حالت Strict استفاده کند.
 
      **[فهرست](#فهرست)**
 
 66. ### چرا به حالت strict نیاز داریم؟
 
-     Strict mode is useful to write "secure" JavaScript by notifying "bad syntax" into real errors. For example, it eliminates accidentally creating a global variable by throwing an error and also throws an error for assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object.
+     حالت سخت گیرانه برای نوشتن جاوا اسکریپت "امن" با اطلاع رسانی "بد نحوی" به خطاهای واقعی مفید است. به عنوان مثال، ایجاد تصادفی یک متغیر سراسری را با پرتاب یک خطا حذف می کند و همچنین یک خطا برای انتساب به یک ویژگی غیرقابل نوشتن، یک ویژگی فقط گیرنده، یک ویژگی غیرموجود، یک متغیر غیرموجود یا یک ویژگی غیر قابل نوشتن پرتاب می کند. شی موجود
 
      **[فهرست](#فهرست)**
 
 67. ### چطوری می‌تونیم حالت strict رو فعال کنیم؟
 
-     The strict mode is declared by adding "use strict"; to the beginning of a script or a function.
-     If declared at the beginning of a script, it has global scope.
+     حالت سخت با اضافه کردن "استفاده از سخت" اعلام می شود. به ابتدای یک اسکریپت یا یک تابع.
+      اگر در ابتدای یک اسکریپت اعلام شود، دامنه جهانی دارد.
 
      <span dir="ltr" align="left">
 
@@ -1924,7 +1924,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     and if you declare inside a function, it has local scope
+     و اگر در داخل یک تابع اعلام کنید، محدوده محلی دارد
 
      <span dir="ltr" align="left">
 
@@ -1944,8 +1944,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 68. ### هدف از عملگر نقیض دوتایی(!!) چیه؟
 
-     The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, true.
-     For example, you can test IE version using this expression as below,
+     تعجب مضاعف یا نفی (!!) تضمین می کند که نوع حاصل یک بولی است. اگر نادرست بود (به عنوان مثال 0، تهی، تعریف نشده، و غیره)، نادرست خواهد بود، در غیر این صورت، درست است.
+      به عنوان مثال، می توانید نسخه IE را با استفاده از عبارت زیر آزمایش کنید.
 
      <span dir="ltr" align="left">
 
@@ -1957,7 +1957,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     If you don't use this expression then it returns the original value.
+     اگر از این عبارت استفاده نکنید، مقدار اصلی را برمی گرداند.
 
      <span dir="ltr" align="left">
 
@@ -1967,13 +1967,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** The expression !! is not an operator, but it is just twice of ! operator.
+     **نکته:** بیان!! یک اپراتور نیست، اما فقط دو برابر است! اپراتور.
 
      **[فهرست](#فهرست)**
 
 69. ### هدف از عملگر delete چیه؟
 
-     The delete keyword is used to delete the property as well as its value.
+     کلمه کلیدی delete برای حذف ویژگی و همچنین مقدار آن استفاده می شود.
 
      <span dir="ltr" align="left">
 
@@ -1990,7 +1990,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 70. ### عملگر typeof چیکار می‌کنه؟
 
-     You can use the JavaScript typeof operator to find the type of a JavaScript variable. It returns the type of a variable or an expression.
+     برای یافتن نوع متغیر جاوا اسکریپت می توانید از عملگر typeof JavaScript استفاده کنید. نوع یک متغیر یا یک عبارت را برمی گرداند.
 
      <span dir="ltr" align="left">
 
@@ -2005,7 +2005,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 71. ### undefined چیه و چه زمانی undefined می‌گیریم؟
 
-     The undefined property indicates that a variable has not been assigned a value, or not declared at all. The type of undefined value is undefined too.
+     ویژگی تعریف نشده نشان می دهد که به یک متغیر مقداری اختصاص داده نشده است یا اصلاً اعلام نشده است. نوع مقدار تعریف نشده نیز تعریف نشده است.
 
      <span dir="ltr" align="left">
 
@@ -2016,7 +2016,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     Any variable can be emptied by setting the value to undefined.
+     هر متغیری را می توان با تنظیم مقدار روی undefined خالی کرد.
 
      <span dir="ltr" align="left">
 
@@ -2030,8 +2030,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 72. ### null چیه؟
 
-     The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object.
-     You can empty the variable by setting the value to null.
+     مقدار null عدم وجود عمدی هر مقدار شی را نشان می دهد. این یکی از مقادیر اولیه جاوا اسکریپت است. نوع مقدار null شی است.
+      با قرار دادن مقدار null می توانید متغیر را خالی کنید.
 
      <span dir="ltr" align="left">
 
@@ -2046,21 +2046,21 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 73. ### تفاوت‌های بین null و undefined چیا هستن؟
 
-     Below are the main differences between null and undefined,
+     در زیر تفاوت های اصلی بین null و undefined آورده شده است.
 
      | Null | Undefined |
      |---- | -----------|
-     | It is an assignment value which indicates that variable points to no object.  | It is not an assignment value where a variable has been declared but has not yet been assigned a value. |
-     | Type of null is object | Type of undefined is undefined  |
-     | The null value is a primitive value that represents the null, empty, or non-existent reference. | The undefined value is a primitive value used when a variable has not been assigned a value.|
-     | Indicates the absence of a value for a variable | Indicates absence of variable itself |
-     | Converted to zero (0) while performing primitive operations | Converted to NaN while performing primitive operations |
+     | این یک مقدار انتساب است که نشان می دهد متغیر به هیچ شیئی اشاره نمی کند. | این یک مقدار انتساب نیست که در آن متغیری اعلام شده باشد اما هنوز مقداری به آن اختصاص داده نشده باشد. |
+     | تایپ null آبجکت است | تایپ undefined undefined است   |
+     | مقدار null یک مقدار اولیه است که نشان دهنده مرجع تهی، خالی یا غیر موجود است. | مقدار تعریف نشده یک مقدار اولیه است used زمانی که به یک متغیر مقداری اختصاص داده نشده باشد.|
+     | عدم وجود مقدار برای یک متغیر را نشان می دهد| عدم وجود خود متغیر را نشان می دهد |
+     | در حین انجام عملیات اولیه به صفر (0) تبدیل شد | در حین انجام عملیات اولیه به NaN تبدیل می شود |
 
      **[فهرست](#فهرست)**
 
 74. ### eval چیه؟
 
-     The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
+     تابع ()eval کد جاوا اسکریپت را که به صورت رشته نمایش داده شده است ارزیابی می کند. رشته می تواند یک عبارت جاوا اسکریپت، متغیر، دستور یا دنباله ای از عبارات باشد.
 
      <span dir="ltr" align="left">
 
@@ -2074,19 +2074,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 75. ### تفاوت‌های بین window و document چیا هستن؟
 
-     Below are the main differences between window and document,
+     در زیر تفاوت های اصلی بین پنجره و سند وجود دارد.
 
      | Window | Document |
      |---- | --------- |
-     | It is the root level element in any web page  | It is the direct child of the window object. This is also known as Document Object Model(DOM) |
-     | By default window object is available implicitly in the page | You can access it via window.document or document.  |
-     | It has methods like alert(), confirm() and properties like document, location | It provides methods like getElementById, getElementByTagName, createElement etc  |
+     | این عنصر سطح ریشه در هر صفحه وب است | این فرزند مستقیم شی پنجره است. این همچنین به عنوان مدل شیء سند (DOM) | شناخته می شود
+      | به طور پیش فرض شی پنجره به طور ضمنی در صفحه | موجود است شما می توانید از طریق window.document یا سند به آن دسترسی داشته باشید. |
+      | دارای متدهایی مانند alert()، confirm() و ویژگی هایی مانند document، location | متدهایی مانند getElementById، getElementByTagName، createElement و غیره را فراهم می کند |
 
      **[فهرست](#فهرست)**
 
 76. ### توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟
 
-     The window.history object contains the browser's history. You can load previous and next URLs in the history using back() and next() methods.
+     شی window.history حاوی تاریخچه مرورگر است. با استفاده از متدهای `back()` و ‍`next()` می توانید URL های قبلی و بعدی را در تاریخچه بارگذاری کنید.
 
      <span dir="ltr" align="left">
 
@@ -2101,13 +2101,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** You can also access history without window prefix.
+     **نکته:** همچنین می توانید بدون پیشوند پنجره به تاریخچه دسترسی داشته باشید.
 
      **[فهرست](#فهرست)**
 
 77. ### انواع داده‌های جاواسکریپت کدوما هستن؟
 
-     Below are the list of javascript data types available
+     در زیر لیستی از انواع داده های جاوا اسکریپت موجود است
      1. Number
      2. String
      3. Boolean
@@ -2118,7 +2118,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 78. ### isNaN چیه و چیکار می‌کنه؟
 
-     The isNaN() function is used to determine whether a value is an illegal number (Not-a-Number) or not. i.e, This function returns true if the value equates to NaN. Otherwise it returns false.
+     تابع`isNaN()` برای تعیین اینکه آیا یک مقدار یک عدد غیرقانونی (Not-a-Number) است یا خیر استفاده می شود. یعنی اگر مقدار برابر با NaN باشد، این تابع true برمی گرداند. در غیر این صورت false برمیگرده.
 
      <span dir="ltr" align="left">
 
@@ -2133,18 +2133,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 79. ### تفاوت‌های بین undeclared و undefined چیا هستن؟
 
-     Below are the major differences between undeclared and undefined variables,
+     در زیر تفاوت عمده بین متغیرهای اعلام نشده و تعریف نشده آورده شده است.
 
      | undeclared | undefined |
      |---- | --------- |
-     | These variables do not exist in a program and are not declared  | These variables declared in the program but have not assigned any value |
-     | If you try to read the value of an undeclared variable, then a runtime error is encountered | If you try to read the value of an undefined variable, an undefined value is returned.  |
+     | این متغیرها در یک برنامه وجود ندارند و | تعریف نمی شوند این متغیرها در برنامه اعلام شده اما هیچ مقدار | اختصاص نداده اند
+      | اگر سعی کنید مقدار یک متغیر اعلام نشده را بخوانید، با خطای زمان اجرا مواجه می شوید | اگر سعی کنید مقدار یک متغیر تعریف نشده را بخوانید، یک مقدار تعریف نشده برگردانده می شود. |
 
      **[فهرست](#فهرست)**
 
 80. ### کدوم متغیرها عمومی هستن؟
 
-     Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
+     متغیرهای سراسری آنهایی هستند که در طول کد بدون هیچ محدوده ای در دسترس هستند. کلمه کلیدی var برای اعلام یک متغیر محلی استفاده می شود، اما اگر آن را حذف کنید، تبدیل به متغیر جهانی می شود.
 
      <span dir="ltr" align="left">
 
@@ -2158,13 +2158,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 81. ### مشکلات متغیرهای عمومی چیا هستن؟
 
-     The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
+     مشکل متغیرهای سراسری تضاد نام متغیرها با دامنه محلی و جهانی است. همچنین اشکال زدایی و آزمایش کدی که به متغیرهای سراسری متکی است دشوار است.
 
      **[فهرست](#فهرست)**
 
 82. ### مقدار NaN چیه؟
 
-     The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases
+     ویژگی NaN یک ویژگی جهانی است که مقدار "Not-a-Number" را نشان می دهد. یعنی نشان می دهد که یک مقدار یک عدد قانونی نیست. استفاده از NaN در یک برنامه بسیار نادر است، اما می توان از آن به عنوان مقدار بازگشتی برای موارد کمی استفاده کرد
 
      <span dir="ltr" align="left">
 
@@ -2179,7 +2179,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 83. ### هدف از تابع isFinite چیه؟
 
-     The isFinite() function is used to determine whether a number is a finite, legal number. It returns false if the value is +infinity, -infinity, or NaN (Not-a-Number), otherwise it returns true.
+     تابع`isFinite()`برای تعیین اینکه آیا یک عدد یک عدد محدود و قانونی است استفاده می شود. اگر مقدار +infinity، -infinity یا NaN (Not-a-Number) باشد false برمی‌گرداند، در غیر این صورت true را برمی‌گرداند.
 
      <span dir="ltr" align="left">
 
@@ -2197,28 +2197,28 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 84. ### یه event-flow چیه؟
 
-     Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
-     There are two ways of event flow
-     1. Top to Bottom(Event Capturing)
-     2. Bottom to Top (Event Bubbling)
+     جریان رویداد ترتیبی است که رویداد در صفحه وب دریافت می شود. وقتی روی عنصری کلیک می‌کنید که در عناصر مختلف دیگر تودرتو است، قبل از اینکه کلیک شما واقعاً به مقصد یا عنصر هدف برسد، باید رویداد کلیک را برای هر یک از عناصر والد خود ابتدا راه‌اندازی کند و از بالا با شی پنجره جهانی شروع شود.
+      دو راه برای جریان رویداد وجود دارد
+     1. از بالا به پایین(Event Capturing) 
+     2. از پایین به بالا (Event Capturing)
 
      **[فهرست](#فهرست)**
 
 85. ### Event-bubbling چیه؟
 
-     Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
+     حباب کردن رویداد نوعی انتشار رویداد است که در آن رویداد ابتدا روی درونی‌ترین عنصر هدف راه‌اندازی می‌شود، و سپس به‌طور متوالی روی اجداد (والد) عنصر هدف در همان سلسله مراتب تودرتو راه‌اندازی می‌شود تا زمانی که به بیرونی‌ترین عنصر DOM برسد.
 
      **[فهرست](#فهرست)**
 
 86. ### Event-capturing چیه؟
 
-     Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
+     ثبت رویداد نوعی انتشار رویداد است که در آن رویداد ابتدا توسط بیرونی ترین عنصر ثبت می شود و سپس به طور متوالی بر روی فرزندان (فرزندان) عنصر هدف در همان سلسله مراتب تودرتو راه اندازی می شود تا زمانی که به درونی ترین عنصر DOM برسد.
 
      **[فهرست](#فهرست)**
 
 87. ### چطوری میشه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟
 
-     You can submit a form using JavaScript use document.form[0].submit(). All the form input's information is submitted using onsubmit event handler
+     می توانید با استفاده از جاوا اسکریپت فرمی را ارسال کنید use document.form[0].submit(). تمام اطلاعات ورودی فرم با استفاده از onsubmit event handler ارسال می شود
 
      <span dir="ltr" align="left">
 
@@ -2234,7 +2234,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 88. ### چطوری میشه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟
 
-     The window.navigator object contains information about the visitor's browser OS details. Some of the OS properties are available under platform property,
+     شی window.navigator حاوی اطلاعاتی درباره جزئیات سیستم عامل مرورگر بازدیدکننده است. برخی از ویژگی های سیستم عامل تحت ویژگی پلتفرم در دسترس هستند،
 
      <span dir="ltr" align="left">
 
@@ -2248,46 +2248,46 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 89. ### تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟
 
-     The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).
+     رویداد «DOMContentLoaded» زمانی فعال می‌شود که سند اولیه HTML به‌طور کامل بارگیری و تجزیه شده باشد، بدون اینکه منتظر بمانید تا دارایی‌ها (سبک‌ها، تصاویر و فریم‌های فرعی) بارگیری تمام شود. در حالی که رویداد بارگیری زمانی فعال می شود که کل صفحه بارگیری شود، از جمله تمام منابع وابسته (شیوه ها، تصاویر).
 
      **[فهرست](#فهرست)**
 
 90. ### تفاوت‌های بین objectهای native، host و user چیا هستن؟
 
-     `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
-     `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
-     `User objects` are objects defined in the javascript code. For example, User objects created for profile information.
+     "اشیاء بومی" اشیایی هستند که بخشی از زبان جاوا اسکریپت تعریف شده توسط مشخصات ECMAScript هستند. به عنوان مثال، اشیاء اصلی رشته، ریاضی، RegExp، Object، Function و غیره که در مشخصات ECMAScript تعریف شده اند.
+      «اشیاء میزبان» اشیایی هستند که توسط مرورگر یا محیط زمان اجرا (Node) ارائه می‌شوند. به عنوان مثال، پنجره، XmlHttpRequest، گره های DOM و غیره به عنوان اشیاء میزبان در نظر گرفته می شوند.
+      "اشیاء کاربر" اشیایی هستند که در کد جاوا اسکریپت تعریف شده اند. به عنوان مثال، اشیاء کاربر ایجاد شده برای اطلاعات پروفایل.
 
      **[فهرست](#فهرست)**
 
 91. ### کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟
 
-     You can use below tools or techniques for debugging javascript
+     می توانید از ابزارها یا تکنیک های زیر برای اشکال زدایی جاوا اسکریپت استفاده کنید
      1. Chrome Devtools
      2. debugger statement
-     3. Good old console.log statement
+     3. console.log statement
 
      **[فهرست](#فهرست)**
 
 92. ### مزایا و معایب استفاده از promiseها به جای callback چیا هستن؟
 
-     Below are the list of pros and cons of promises over callbacks,
+     در زیر لیستی از مزایا و معایب وعده‌های مربوط به تماس‌های تلفنی آورده شده است.
 
      **مزایا:**
-     1. It avoids callback hell which is unreadable
-     2. Easy to write sequential asynchronous code   with .then()
-     3. Easy to write parallel asynchronous code   with Promise.all()
-     4. Solves some of the common problems of   callbacks(call the callback too late, too   early, many times and swallow errors/  exceptions)
+     1. از جهنم callback که قابل خواندن نیست جلوگیری می کند
+     2. نوشتن کدهای ناهمزمان متوالی با .then() آسان است.
+     3. نوشتن کد ناهمزمان موازی آسان با Promise.all()
+     4. برخی از مشکلات رایج callbackهای برگشتی را حل می‌کند (بسیار دیر، خیلی زود، بارها callback و خطاها/ استثناها را بپذیرید)
 
      **معایب:**
-     1. It makes little complex code
-     2. You need to load a polyfill if ES6 is not   supported
+     1. کد کمی پیچیده می سازد
+     2. اگر ES6 پشتیبانی نمی شود، باید یک polyfill بارگذاری کنید
 
      **[فهرست](#فهرست)**
 
 93. ### تفاوت‌های بین attribute و property روی DOM چیا هستن؟
 
-     Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes type and value,
+     ویژگی ها در نشانه گذاری HTML تعریف می شوند در حالی که ویژگی ها در DOM تعریف می شوند. به عنوان مثال، عنصر HTML زیر دارای 2 ویژگی نوع و مقدار است،
 
      <span dir="ltr" align="left">
 
@@ -2297,7 +2297,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     You can retrieve the attribute value as below,
+     می توانید مقدار ویژگی را به صورت زیر بازیابی کنید
 
      <span dir="ltr" align="left">
 
@@ -2309,7 +2309,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     And after you change the value of the text field to "Good evening", it becomes like
+     و بعد از اینکه مقدار فیلد متن را به "Good evening" تغییر دادید مانند می شود
 
      <span dir="ltr" align="left">
 
@@ -2324,14 +2324,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 94. ### سیاست same-origin چیه؟
 
-     The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
+     خط مشی همان مبدا خط مشی است که از درخواست جاوا اسکریپت در سراسر مرزهای دامنه جلوگیری می کند. مبدا به عنوان ترکیبی از طرح URI، نام میزبان و شماره پورت تعریف می شود. اگر این خط‌مشی را فعال کنید، از دسترسی یک اسکریپت مخرب در یک صفحه به داده‌های حساس در صفحه وب دیگر با استفاده از Document Object Model (DOM) جلوگیری می‌کند.
 
      **[فهرست](#فهرست)**
 
 95. ### هدف استفاده از void 0 چیه؟
 
-     Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML documents that use href="JavaScript:Void(0);" within an ```<a>``` element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
-     For example, the below link notify the message without reloading the page
+     Void(0) برای جلوگیری از به روز رسانی صفحه استفاده می شود. این برای از بین بردن عارضه جانبی ناخواسته مفید خواهد بود، زیرا مقدار اولیه تعریف نشده را برمی گرداند. معمولاً برای اسناد HTML استفاده می شود که از href="JavaScript:Void(0);" استفاده می کنند. در یک عنصر ```<a>```. یعنی وقتی روی یک پیوند کلیک می کنید، مرورگر یک صفحه جدید را بارگیری می کند یا همان صفحه را تازه می کند. اما با استفاده از این عبارت از این رفتار جلوگیری می شود.
+      به عنوان مثال، پیوند زیر پیام را بدون بارگیری مجدد صفحه مطلع می کند
 
      <span dir="ltr" align="left">
 
@@ -2345,31 +2345,31 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 96. ### جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟
 
-     JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays  modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+     جاوا اسکریپت یک زبان تفسیر شده است، نه یک زبان کامپایل شده. یک مفسر در مرورگر کد جاوا اسکریپت را می خواند، هر خط را تفسیر می کند و آن را اجرا می کند. امروزه مرورگرهای مدرن از فناوری موسوم به کامپایل Just-In-Time (JIT) استفاده می کنند که جاوا اسکریپت را در زمانی که در شرف اجراست به بایت کد اجرایی کامپایل می کند.
 
      **[فهرست](#فهرست)**
 
 97. ### آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟
 
-     Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
+     بله، جاوا اسکریپت یک زبان حساس به حروف کوچک و بزرگ است. کلمات کلیدی زبان، متغیرها، نام تابع و اشیا، و هر شناسه دیگر باید همیشه با حروف بزرگ تایپ شوند.
 
      **[فهرست](#فهرست)**
 
 98. ### ارتباطی بین Java و JavaScript وجود داره؟
 
-     No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
+     نه، آنها کاملاً دو زبان برنامه نویسی متفاوت هستند و هیچ ارتباطی با یکدیگر ندارند. اما هر دوی آنها زبان های برنامه نویسی شی گرا هستند و مانند بسیاری از زبان های دیگر، از نحو مشابهی برای ویژگی های اساسی (اگر، غیره، برای، سوئیچ، شکستن، ادامه و غیره) پیروی می کنند.
 
      **[فهرست](#فهرست)**
 
 99. ### Eventها چی هستن؟
 
-     Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events. Some of the examples of HTML events are,
+     رویدادها «چیزهایی» هستند که برای عناصر HTML اتفاق می‌افتند. هنگامی که جاوا اسکریپت در صفحات HTML استفاده می شود، جاوا اسکریپت می تواند به این رویدادها واکنش نشان دهد. برخی از نمونه های رویدادهای HTML عبارتند از:
 
-     1. Web page has finished loading
-     2. Input field was changed
-     3. Button was clicked
+     1.  بارگیری صفحه وب به پایان رسید
+     2.  فیلد ورودی تغییر کرد
+     3.  دکمه کلیک شد
 
-     Let's describe the behavior of click event for button element,
+     بیایید رفتار رویداد کلیک را برای عنصر دکمه شرح دهیم،
 
      <span dir="ltr" align="left">
 
@@ -2415,7 +2415,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** Remember that not all events are cancelable.
+     **نکته:** Remember that not all events are cancelable.
 
      **[فهرست](#فهرست)**
 
@@ -2902,7 +2902,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** شما نمیتونین از متد های ارایه برای این شی ارگومان ها استفاده کنین اما میتونین به ارایه تبدیلش کنین 
+     **نکته:** شما نمیتونین از متد های ارایه برای این شی ارگومان ها استفاده کنین اما میتونین به ارایه تبدیلش کنین 
 
      <span dir="ltr" align="left">
 
@@ -2916,7 +2916,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 129. ### How do you make first letter of the string in an uppercase
 
-     میتونیم با درست کردن یه فانکشن که با استفاده از زنجیره ای از متد های استرینگ ها مثلا `charAt` و `toUpperCase` و `slice` یه استرنیگ با حرف اول بزرگ ایجاد کرد
+     میتونیم با درست کردن یه تابع که با استفاده از زنجیره ای از متد های استرینگ ها مثلا `charAt` و `toUpperCase` و `slice` یه استرنیگ با حرف اول بزرگ ایجاد کرد
 
      <span dir="ltr" align="left">
 
@@ -3299,7 +3299,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive)
+     **نکته:** Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive)
 
      **[فهرست](#فهرست)**
 
@@ -3882,7 +3882,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 182. ### How to convert string to title case with javascript
 
-     این کار باعث میشه که حرف اول یه رشته به صورت بزرگ(زبان انگلیسی) نشون داده بشه که ما میتونیم با فانکشن زیر این کارو انجام بدیم
+     این کار باعث میشه که حرف اول یه رشته به صورت بزرگ(زبان انگلیسی) نشون داده بشه که ما میتونیم با تابع زیر این کارو انجام بدیم
 
      <span dir="ltr" align="left">
 
@@ -3967,7 +3967,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **Note:** Rest parameter is added in ES2015 or ES6
+     **نکته:** Rest parameter is added in ES2015 or ES6
 
      **[فهرست](#فهرست)**
 
@@ -4927,7 +4927,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 236. ### What is an event loop
 
      حلقه رویداد یک صف از توابع برگشت به تماس است. هنگامی که یک تابع async اجرا می شود، تابع callback در صف قرار می گیرد. موتور جاوا اسکریپت پردازش حلقه رویداد را شروع نمی کند تا زمانی که تابع async اجرای کد را به پایان برساند.
-     **Note:** این به Node.js اجازه می دهد تا عملیات I/O غیر مسدود کننده را انجام دهد حتی اگر جاوا اسکریپت تک رشته ای باشد.
+     **نکته:** این به Node.js اجازه می دهد تا عملیات I/O غیر مسدود کننده را انجام دهد حتی اگر جاوا اسکریپت تک رشته ای باشد.
 
      **[فهرست](#فهرست)**
 
