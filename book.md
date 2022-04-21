@@ -605,7 +605,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
    </span>
 
 
-      **[⬆ فهرست](#فهرست)**
+      **[فهرست](#فهرست)**
 
 2. ### زنجیره prototype چیه؟
 
@@ -613,7 +613,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
    ![Screenshot](images/prototype_chain.png)
 
-   **[⬆ فهرست](#فهرست)**
+   **[فهرست](#فهرست)**
 
 3. ### تفاوت‌های بین Call، Apply و Bind چیا هستن؟
 
@@ -681,7 +681,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     Call and apply are pretty interchangeable. Both execute the current function immediately. You need to decide whether it’s easier to send in an array or a comma separated list of arguments. You can remember by treating Call is for comma (separated list) and Apply is for Array. Whereas Bind creates a new function that will have `this` set to the first parameter passed to bind().
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 4. ### فرمت JSON چیه و عملیات‌های معمول بر روی آن چیا هستند؟
 
@@ -709,7 +709,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 4. ### هدف از متد slice روی آرایه‌ها چیه؟
 
@@ -729,7 +729,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **نکته:** متد Slice‌ آرایه اصلی رو تغییر نمیده ولی یه زیر‌مجموعه به عنوان یه آرایه جدید برمی‌گردونه
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 5. ### هدف از متد splice روی آرایه‌ها چیه؟
 
@@ -753,7 +753,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **نکته:** متد Splice آرایه اصلی رو اصلاح میکنه و آرایه حذف شده رو برمی‌گردونه.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 6. ### تفاوت متدهای slice و splice چیا هستن؟
 
@@ -765,7 +765,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
    | زیر مجموعه آرایه اصلی رو برمی‌گردونه | عناصر حذف شده رو به عنوان آرایه برمی گردونه  |
    | برای انتخاب عناصر از آرایه استفاده میشه | برای درج عناصر به آرایه یا حذف از اون استفاده میشه|
 
-   **[⬆ فهرست](#فهرست)**
+   **[فهرست](#فهرست)**
 
 7. ### تفاوت‌های Object و Map چیا هستن؟
 
@@ -778,7 +778,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   5. آبجکت یه نمونه اولیه (prototype) داره، بنابراین کلید‌های پیش‌فرض توی map وجود داره که که اگه دقت نکنیم ممکنه با کلید‌هامون برخورد کنه. از زمان ES5 میتونیم با استفاده از map = Object.create(null)، این قضیه رو دور بزنیم ولی به‌ندرت این کار انجام میشه.
   6. نقشه ممکنه توی سناریوهای شامل جمع و حذف مکرر جفت کلیدها عملکرد بهتری داشته باشه
 
-   **[⬆ فهرست](#فهرست)**
+   **[فهرست](#فهرست)**
 
 8. ### تفاوت‌های بین عملگرهای == و === چیا هستن؟
 
@@ -813,13 +813,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 9. ### توابع lambda یا arrow-function چی هستن؟
 
     arrow function ‌ها به صورت ساده‌تر و کوتاه‌تر تعریف میشن و **this، argumants، super یا new.target** ندارن. این توابع بدون متد هستند و به عنوان سازنده یا constructor استفاده نمیشن.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 10. ### یه تابع first-class چجور تابعی‌ـه؟
 .
@@ -832,7 +832,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     document.addEventListener ('click', handler);
     ```
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 11. ### یه تابع first-order چجور تابعی‌ـه؟
 
@@ -847,7 +847,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 12. ### یه تابع higher-order چجور تابعی‌ـه؟
 
@@ -865,7 +865,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 13. ### یه تابع unary چجور تابعی‌ـه؟
     تابع unary تابعیه که فقط یه آرگومان ورودی دریافت میکنه. بیاین یه مثال از توابع unary بزنیم.
@@ -879,7 +879,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 14. ### currying توابع یعنی چی؟
 
@@ -901,7 +901,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     توابع Curried برای بهبود قابلیت استفاده مجدد کد و ترکیب عملکردی عالی هستن.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 15. ### چه توابعی pure هستن؟
 
@@ -930,7 +930,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     بر اساس تکه کدهای بالا، تابع push با تغییر روی آرایه و برگردوندن شماره ایندکس push که مستقل از مقدار پارامتر هستش، یه تابع ناخالص به حساب میاد. در حالی که از یه طرف متد concat آرایه رو میگیره و اونو با یه آرایه دیگه ترکیب میکنه و یه آرایه کاملا جدید و بدون هیچ عوارض جانبی تولید میکنه. همچنین مقدار برگشتی با آرایه قبلی ترکیب شده هستش.
     Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and make it harder to break your application by not having any side effects. These principles are coming together with **Immutability** concept of ES6 by giving preference to **const** over **let** usage.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 16. ### هدف از کلمه کلیدی let چیه؟
 
@@ -950,7 +950,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 17. ### تفاوت‌های کلمات کلیدی let و var چیا هستن؟
 
@@ -986,13 +986,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 18. ### دلیل انتخاب کلمه کلیدی let چیه؟
 
     Let یه عنوان ریاضی هستش که توسط زبان‌های برنامه‌نویسی اولیه مثل Scheme و Basic پذیرفته شده. این زبان از ده‌ها زبان دیگه گرفته شده که از let به عنوان یه کلمه کلیدی سنتی تا حد ممکن نزدیک به var استفاده میکنه.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 19. ### چطوری می‌تونیم توی بلوک مربوط به switch بدون دریافت خطا متغیر تعریف کنیم؟
     اگه بخوایم متغیر‌ها رو مجددا توی یه `switch block` تعریف کنیم، این کار باعث خطا میشه چون در واقع فقط یه بلاک وجود داره. به عنوان مثال توی کد زیر یه خطای نحوی ایجاد میشه
@@ -1036,7 +1036,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 20. ### Temporal-Dead-Zone چیه؟
     Temporal Dead Zone رفتاری توی جاوااسکریپته که هنگام تعریف متغیر با کلمات کلیدی let و const رخ میده، نه با کلمه کلیدی var. توی اکما‌اسکریپت ۶، دستیابی به متغیر let و const قبل از تعریفش (توی scope خودش) باعث خطای refrence میشه. فاصله زمانی ایجاد اون، بین ایجاد اتصال متغیر و تعریف اون، منطقه Temporal Dead هستش. بیاین با یه مثال ببینیم،
@@ -1055,7 +1055,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 21. ### IIFE(توابع بلافاصله صدا زده شده) چی هستن؟
 
@@ -1093,7 +1093,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 22. ### مزایای استفاده از moduleها چیه؟
     استفاده از ماژول‌ها مزایای زیادی داره،
@@ -1101,7 +1101,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     2. قابلیت استفاده مجدد
     3. نامگذاری
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 23. ### Memoization چیه؟
     Memoization یه روش برنامه‌نوسی هست که سعی داره با ذخیره نتایج قبلی یه تابع عملکرد اون تابع رو افزایش بده. هر بار که یه تابع Memoize شده فراخوانی میشه، پارامتر‌های اون cache میشه یعنی توی حافظه پنهان ذخیره میشه. اگه داده وجود داشته باشه، بدون اجرای کل تابع میشه اونو برگردوند در غیر این صورت تابع اجرا میشه و بعدش نتیجه توی حافظه پنهان ذخیره میشه.
@@ -1135,7 +1135,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 24. ### Hoisting چیه؟
     Hoisting یه مکانیسم جاوا‌اسکریپته که متغیر‌ها و تعاریف توابع رو به بالای scope یا دامنه خودشون انتقال میده. یادمون باشه که جاوا‌اسکریپت فقط تعریف متغیر‌ها و توابع رو Hoist میکنه، نه مقداردهی اولیه اونا رو.
@@ -1164,7 +1164,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 25. ### Classها توی ES6 چی هستن؟
     In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
@@ -1205,7 +1205,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 26. ### Closureها چیا هستن؟
     کلاژور ترکیبی از یه تابع و محیط واژگانی هستش که تابع در اون تعریف شده. به عنوان مثال این یه تابع داخلیه که به متغیر‌های تابع خارجی دسترسی داره. کلاژور دارای سه زنجیره دامنه هستش
@@ -1233,13 +1233,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     مطابق کد بالا، تابع داخلی (greetingInfo) حتی بعد از بازگشت تابع خارجی به متغیر‌های محدوده تابع خارجی (welcome) دسترسی داره.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 27. ### Moduleها چیا هستن؟
 
     ماژول‌ها به واحد‌های کوچیکی از کد مستقل و قابل استفاده مجدد اشاره می‌کنن و همچنین به عنوان پایه بسیاری از الگو‌های طراحی javascript عمل می‌کنن. خروجی ماژول‌های javascript یه شی، یه تابع یا constructor هستش.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 28. ###  چرا به moduleها نیاز داریم؟
 
@@ -1248,46 +1248,46 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   2. قابلیت استفاده مجدد
   3. نامگذاری
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 29. ### توی جاواسکریپت scope چیه و چیکار می‌کنه؟
     scope یا محدوده، دسترسی متغیر‌ها، توابع و اشیاء در بعضی از قسمت‌های کدمون در زمان اجرا هستش. به عبارت دیگه، دامنه قابلیت دیده شدن متغیر‌ها و بقیه منابع رو تو قسمت‌هایی از کدمون تعیین میکنه.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 30. ###s؟ervice-worker چیه؟
 
     service worker اساسا یه اسکریپت هستش که جدا از یه صفحه وب توی پس‌زمینه اجرا میشه و ویژگی‌هایی رو فراهم میکنه که نیازی به صفحه وب یا تعامل کاربر نداره. بعضی از ویژگی‌های عمده service worker ها عبارتند از: تجارب غنی آفلاین (اولین برنامه آفلاین وب)، همگام‌سازی دوره‌ای پس‌زمینه، push notification, رهگیری و رسیدگی به درخواست‌های شبکه و مدیریت برنامه‌ای cache response ها.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 31. ### توی service-worker چطوری میشه DOM رو دستکاری کرد؟
 
     service worker مستقیما نمیتونه به DOM دسترسی پیدا کنه، اما میتونه با پاسخ به پیام‌های ارسالی از طریق رابط `postMessage` با صفحاتی که کنترل میکنه ارتباط برقرار کنه و این صفحات میتونن DOM رو دستکاری کنن.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 32. ### چطوری می‌تونیم بین ریست شدن‌های service-worker داده‌های مورد نظرمون رو مجدد استفاده کنیم؟
     مشکلی که توی service worker وجود داره اینه که در صورت عدم استفاده خاتمه پیدا میکنه و در صورت نیاز بعدی دوباره راه‌اندازی میشه، بنابراین نمیتونیم به state های سراسری توی نگهدارنده‌های `onfetch` و `onmessage` یه service worker اعتماد کنیم. تو این حالت service worker برای تداوم کار و استفاده مجدد موقع شروع مجدد، به indexedDB API دسترسی خواهد داشت.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 33. ### IndexedDB چیه؟
     IndexedDB یه API سطح پایین برای ذخیره client-side یا سمت کاربر توی مقادیر بیشتری از داده ساخت‌ یافته شامل فایل‌ها و حباب‌ها هستش. این API از index ها برای فعال کردن جستجو‌های با کارایی بالا توی این داده‌ها استفاده میکنه.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 34. ### Web-storage چیه؟
     web storage یه API هستش که مکانیسمی رو فراهم میکنه که مرورگر‌ها میتونن مقدار و کلید رو به صورت محلی توی مرورگر کاربر ذخیره کنن، به روشی کاملا قابل درک نسبت به استفاده از کوکی‌ها. فضای ذخیره‌سازی وب دو مکانیزم رو برای ذخیره اطلاعات روی مشتری فراهم میکنه.
   1. **Local storage:** داده ها رو برای مبدا فعلی و بدون تاریخ انقضا ذخیره میکنه.
   2. **Session storage:** داده‌ها رو برای یه جلسه ذخیره میکنه و با بسته شدن تب مرورگر داده‌ها از بین میرن.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 35. ### Post-message چیه؟
     Post message روشی هست که امکان ایجاد ارتباط متقابل بین آبجکت‌های window رو فراهم میکنه. (به عنوان مثال، بین یه صفحه و یه پنجره باز‌شو که باعث ایجاد اون شده، یا بین یه صفحه و یه iframe جاسازی شده در اون) به طور کل، اسکریپت‌های موجود در صفحات مختلف مجاز به دسترسی به همدیگه هستن، تنها در صورتی که صفحات از خط‌ مشی‌ یکسانی تبعیت کنن. (یعنی صفحات از پروتکل، شماره پورت و میزبان یکسانی برخوردار هستن)
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 36. ### Cookie چیه؟
 
@@ -1305,7 +1305,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     ![Screenshot](images/cookie.png)
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 37. ### چرا به cookie نیاز داریم؟
 
@@ -1313,7 +1313,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     ۱. وقتی که کاربر از یه صفحه وب بازدید میکنه ، مشخصات کاربر میتونه توی یه کوکی ذخیره بشه.
     ۲. دفعه بعد که کاربر از صفحه بازدید کرد ، کوکی مشخصات کاربر رو به خاطر میاره.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 38. ### گزینه‌های قابل تنظیم توی cookie چیا هستن؟
 
@@ -1340,7 +1340,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 39. ### چطوری میشه یه cookie رو حذف کرد؟
 
@@ -1358,7 +1358,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **نکته** برای اطمینان از نحوه درست پاک کردن کوکی باید گزینه مسیر کوکی رو تعیین کنیم. بعضی از مرورگرها تا زمانی که پارامتر مسیر رو تعیین نکنیم اجازه حذف کوکی رو نمیدن.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 40. ### تفاوت‌های بین cookie، local-storage و session-storage چیا هستن؟
 
@@ -1372,13 +1372,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 41. ### تفاوت‌های بین localStorage و sessionStorage چیا هستن؟
 
     لوکال استوریج همان سشن استوریج هستش اما داده‌ها با بستن و دوباره باز کردن مرورگر همچنان حفظ میشه (تاریخ انقضا نداره) در حالی که سشن استوریج داده‌ها رو با بستن پنجره مرورگر پاک میکنه.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 42. ### چطوری به web-storage دسترسی پیدا می‌کنی؟
 
@@ -1395,7 +1395,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 43. ### چه متد‌هایی روی session-storage قابل استفاده هستن؟
 
@@ -1420,7 +1420,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 44. ### رخداد storage چیه و چطوری ازش استفاده می‌کنیم؟
 
@@ -1449,13 +1449,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 45. ### چرا به web-storage نیاز داریم؟
 
     فضای ذخیره سازی وب از امنیت بیشتری برخورداره و مقدار زیادی داده میتونن به صورت محلی ذخیره بشن ، بدون اینکه روی عملکرد وب سایت تأثیر بذارن. همچنین ، اطلاعات هرگز به سرور منتقل نمیشن. به همین دلیل این روش نسبت به کوکی‌ها بیشتر توصیه میشه.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 46. ### چطوری می‌تونیم پشتیبانی از web-storage توسط مرورگر رو بررسی کنیم؟
 
@@ -1474,7 +1474,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 47. ### چطوری می‌تونیم پشتیبانی از web-worker توسط مرورگر رو بررسی کنیم؟
 
@@ -1493,7 +1493,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 48. ### یه مثال از web-workerها می‌تونی بزنی؟
 
@@ -1566,7 +1566,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 49. ### محدودیت‌های web-workerها روی DOM چیا هستن؟
     WebWorker‌ها به اشیا جاوااسکریپت دسترسی ندارن چون توی یه فایل خارجی تعریف شدن.
@@ -1574,7 +1574,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   2. Document object
   3. Parent object
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 50. ### Promise چیه؟
 
@@ -1616,13 +1616,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     ![Screenshot](images/promises.png)
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 51. ### چرا به promise نیاز داریم؟
 
     Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 52. ### سه تا وضعیت ممکن برای یه promise چیا هستن؟
 
@@ -1631,7 +1631,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   2. **Fulfilled:** This state indicates that the specified operation was completed.
   3. **Rejected:** This state indicates that the operation did not complete. In this case an error value will be thrown.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 53. ### توابع callback چی هستن؟
 
@@ -1656,7 +1656,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 54. ### چرا به توابع callback نیاز داریم؟
     The callbacks are needed because javascript is an event driven language. That means instead of waiting for a response javascript will keep executing while listening for other events.
@@ -1686,7 +1686,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     As observed from the output, javascript didn't wait for the response of the first function and the remaining code block got executed. So callbacks are used in a way to make sure that certain code doesn’t execute until the other code finishes execution.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 55. ### Callback-hell یا جهنم توابع callback چیه؟
     Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard to read and debug when dealing with asynchronous logic. The callback hell looks like below,
@@ -1708,13 +1708,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     </span>
 
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 56. ### Server-sent-events(SSE) چیه؟
 
     Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP connection without resorting to polling. These are a one way communications channel - events flow from server to client only. This has been used in Facebook/Twitter updates, stock price updates, news feeds etc.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 57. ### چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟
 
@@ -1733,7 +1733,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 58. ### چطوری می‌تونیم پشتیبانی مرورگر برای SSE رو بررسی کنیم؟
 
@@ -1751,7 +1751,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 59. ### کدوم توابع روی SSE وجود دارن؟
 
@@ -1762,7 +1762,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     | onmessage | This event is used when a message is received  |
     | onerror | It happens when an error occurs|
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 60. ### اصلی‌ترین قوانین promiseها چیا هستن؟
     A promise must follow a specific set of rules,
@@ -1771,7 +1771,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   3. A fulfilled or rejected promise is settled and it must not transition into any other state.
   4. Once a promise is settled, the value must not change.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 61. ### Callback توی callback چطوری رخ میده؟
 
@@ -1800,7 +1800,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 62. ### زنجیره promiseها چیه؟
 
@@ -1839,7 +1839,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   3. After that the value passed to the next `.then` handler by logging the result(2) and return a promise with result * 3.
   4. Finally the value passed to the last `.then` handler by logging the result(6) and return a promise with result * 4.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 63. ### کاربرد متد promise.all چیه؟
 
@@ -1855,7 +1855,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **Note:** Remember that the order of the promises(output the result) is maintained as per input order.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 64. ### هدف از متد race روی promise چیه؟
 
@@ -1878,19 +1878,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 65. ### حالت strict توی جاواسکریپت چی کار میکنه؟
 
     Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression `"use strict";` instructs the browser to use the javascript code in the Strict mode.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 66. ### چرا به حالت strict نیاز داریم؟
 
     Strict mode is useful to write "secure" JavaScript by notifying "bad syntax" into real errors. For example, it eliminates accidentally creating a global variable by throwing an error and also throws an error for assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 67. ### چطوری می‌تونیم حالت strict رو فعال کنیم؟
 
@@ -1922,7 +1922,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 68. ### هدف از عملگر نقیض دوتایی(!!) چیه؟
 
@@ -1951,7 +1951,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **Note:** The expression !! is not an operator, but it is just twice of ! operator.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 69. ### هدف از عملگر delete چیه؟
 
@@ -1968,7 +1968,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 70. ### عملگر typeof چیکار می‌کنه؟
     You can use the JavaScript typeof operator to find the type of a JavaScript variable. It returns the type of a variable or an expression.
@@ -1982,7 +1982,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 71. ### undefined چیه و چه زمانی undefined می‌گیریم؟
     The undefined property indicates that a variable has not been assigned a value, or not declared at all. The type of undefined value is undefined too.
@@ -2006,7 +2006,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 72. ### null چیه؟
 
@@ -2022,7 +2022,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 73. ### تفاوت‌های بین null و undefined چیا هستن؟
     Below are the main differences between null and undefined,
@@ -2035,7 +2035,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     | Indicates the absence of a value for a variable | Indicates absence of variable itself |
     | Converted to zero (0) while performing primitive operations | Converted to NaN while performing primitive operations |
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 74. ### eval چیه؟
 
@@ -2049,7 +2049,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 75. ### تفاوت‌های بین window و document چیا هستن؟
 
@@ -2061,7 +2061,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     | By default window object is available implicitly in the page | You can access it via window.document or document.  |
     | It has methods like alert(), confirm() and properties like document, location | It provides methods like getElementById, getElementByTagName, createElement etc  |
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 76. ### توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟
 
@@ -2082,7 +2082,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     **Note:** You can also access history without window prefix.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 77. ### انواع داده‌های جاواسکریپت کدوما هستن؟
     Below are the list of javascript data types available
@@ -2092,7 +2092,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   4. Object
   5. Undefined
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 78. ### isNaN چیه و چیکار می‌کنه؟
 
@@ -2107,7 +2107,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 79. ### تفاوت‌های بین undeclared و undefined چیا هستن؟
 
@@ -2118,7 +2118,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     | These variables do not exist in a program and are not declared  | These variables declared in the program but have not assigned any value |
     | If you try to read the value of an undeclared variable, then a runtime error is encountered | If you try to read the value of an undefined variable, an undefined value is returned.  |
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 80. ### کدوم متغیرها عمومی هستن؟
 
@@ -2132,13 +2132,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 81. ### مشکلات متغیرهای عمومی چیا هستن؟
 
     The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 82. ### مقدار NaN چیه؟
 
@@ -2153,7 +2153,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 83. ### هدف از تابع isFinite چیه؟
 
@@ -2171,7 +2171,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 84. ### یه event-flow چیه؟
     Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
@@ -2179,18 +2179,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   1. Top to Bottom(Event Capturing)
   2. Bottom to Top (Event Bubbling)
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 85. ### Event-bubbling چیه؟
     Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 86. ### Event-capturing چیه؟
 
     Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 87. ### چطوری میشه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟
 
@@ -2206,7 +2206,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 88. ### چطوری میشه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟
 
@@ -2220,13 +2220,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 89. ### تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟
 
     The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 90. ### تفاوت‌های بین objectهای native، host و user چیا هستن؟
 
@@ -2234,7 +2234,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
     `User objects` are objects defined in the javascript code. For example, User objects created for profile information.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 91. ### کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟
 
@@ -2243,7 +2243,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   2. debugger statement
   3. Good old console.log statement
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 92. ### مزایا و معایب استفاده از promiseها به جای callback چیا هستن؟
 
@@ -2259,7 +2259,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   1. It makes little complex code
   2. You need to load a polyfill if ES6 is not supported
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 93. ### تفاوت‌های بین attribute و property روی DOM چیا هستن؟
 
@@ -2296,13 +2296,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 94. ### سیاست same-origin چیه؟
 
     The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 95. ### هدف استفاده از void 0 چیه؟
 
@@ -2317,25 +2317,25 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     </span>
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 96. ### جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟
 
     JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays  modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 97. ### آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟
 
     Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 98. ### ارتباطی بین Java و JavaScript وجود داره؟
 
      No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
 
-    **[⬆ فهرست](#فهرست)**
+    **[فهرست](#فهرست)**
 
 99. ### Eventها چی هستن؟
 
@@ -2367,14 +2367,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 100. ### کی جاواسکریپت رو ساخته؟
 
      جاوا اسکریپت توسط برندان ایچ در سال 1995 و در زمان او در نت اسکیپ ارتباطات ایجاد شد. در ابتدا با نام `Mocha` توسعه یافت، اما بعداً زمانی که برای اولین بار در نسخه های بتا نت اسکیپ عرضه شد، این زبان به طور رسمی `LiveScript` نامیده شد.
 
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 
 101. ### هدف از متد preventDefault چیه؟
@@ -2393,7 +2393,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **Note:** Remember that not all events are cancelable.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 102. ### کاربرد متد stopPropagation چیه؟
 
@@ -2421,7 +2421,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 103. ### مراحلی که هنگام استفاده از return false توی یه event-handler رخ میده چیا هستن؟
 
@@ -2431,7 +2431,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   2. این رویداد از انتشار `DOM` جلوگیری می‌کنه
   3. اجرای ‍‍`callback` را متوقف می‌کنه و بلافاصله پس از فراخوانی برمی گردد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 104. ### BOM چیه؟
 
@@ -2439,7 +2439,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      ![Screenshot](images/bom.png)
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 105. ### موارد استفاده از setTimeout کدوما هستن؟
 
@@ -2453,7 +2453,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 106. ### موارد استفاده از setInterval کدوما هستن؟
 
@@ -2467,13 +2467,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 107. ### چرا جاواسکریپت رو به عنوان یه زبان تک thread می‌شناسن؟
 
      جاوا اسکریپت یک زبان تک رشته ای است. زیرا مشخصات زبان به برنامه نویس اجازه نمی دهد تا کد بنویسد تا مفسر بتواند بخش هایی از آن را به صورت موازی در چندین رشته یا پردازش اجرا کند. در حالی که زبان هایی مانند java، go، C++ می توانند برنامه های چند رشته ای و چند فرآیندی بسازند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 108. ### Event-delegation چیه؟
 
@@ -2497,19 +2497,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 109. ### ECMAScript چیه؟
 
      `ECMAScript` زبان برنامه نویسی است که اساس جاوا اسکریپت را تشکیل می دهد. `ECMAScript` توسط سازمان استاندارد بین المللی `ECMA` در مشخصات `ECMA-262` و `ECMA-402` استاندارد شده است. اولین نسخه `ECMAScript` در سال 1997 منتشر شد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 110. ### JSON چیه؟
 
      `JSON (JavaScript Object Notation)` یک فرمت سبک وزن است که برای تبادل داده ها استفاده می‌شه. این بر اساس زیرمجموعه ای از زبان جاوا اسکریپت است که اشیا در جاوا اسکریپت ساخته میشن.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 111. ### قوانین فرمت JSON کدوما هستن؟
 
@@ -2519,7 +2519,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   3. براکت ها اجسام را نگه می دارند
   4. براکت های مربعی آرایه ها را نگه می دارند
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 112. ### هدف از متد JSON.stringify چیه؟
 
@@ -2535,7 +2535,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 113. ### چطوری می‌تونیم یه رشته(string) JSON رو تجزیه کنیم؟
 
@@ -2551,18 +2551,18 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 114. ### چرا به JSON نیاز داریم؟
      هنگام تبادل داده بین مرورگر و سرور، داده ها فقط می توانند متنی باشند. از آنجایی که `JSON` فقط متنی است، می‌توان آن را به راحتی به سرور ارسال کرد و از آن به عنوان قالب داده توسط هر زبان برنامه‌نویسی استفاده کرد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 115. ### PWAها چی هستن؟
 
      `Progressive web applications (PWAs)` نوعی از برنامه های تلفن همراه هستند که از طریق وب ارائه میشن، و با استفاده از فناوری های رایج وب از جمله `HTML،` `CSS` و جاوا اسکریپت ساخته میشن،. این `PWA` ها در سرورها مستقر میشن، از طریق `URL` ها قابل دسترسی هستند و توسط موتورهای جستجو فهرست بندی میشن.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 116. ### هدف از متد clearTimeout چیه؟
 
@@ -2591,7 +2591,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 117. ### هدف از متد clearInterval چیه؟
 
@@ -2620,7 +2620,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 118. ### توی جاواسکریپت، چطوری میشه به یه صفحه جدید redirect انجام داد؟
 
@@ -2636,7 +2636,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 119. ### چطوری بررسی می‌کنین که یه string شامل یه substring هست یا نه؟
 
@@ -2674,7 +2674,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 120. ### توی جاواسکریپت، چطوری مقدار یه آدرس email رو اعتبارسنجی می‌کنین؟
 
@@ -2691,7 +2691,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
      `Regex` بالا کاراکترهای یونیکد را می پذیرد.
 
@@ -2707,7 +2707,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 122. ### ویژگی‌های مختلف url روی object مربوط به history کدوما هستن؟
 
@@ -2721,7 +2721,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   7. search - قسمت جستجو URL
   8. hash - محل جای‌گیری URL
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 123. ### توی جاواسکریپت چطوری می‌تونیم مقدار یه query-string رو بخونیم؟
 
@@ -2736,7 +2736,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 124. ### چطوری می‌تونیم بررسی کنیم که آیا یه پراپرتی روی آبجکت وجود داره یا نه؟
 
@@ -2787,7 +2787,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 126. ### How do you loop through or enumerate javascript object
 
@@ -2811,7 +2811,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 127. ### How do you test for an empty object
 
@@ -2856,7 +2856,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 128. ### What is an arguments object
 
@@ -2888,7 +2888,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 129. ### How do you make first letter of the string in an uppercase
 
@@ -2904,7 +2904,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 130. ### What are the pros and cons of for loop
 
@@ -2918,7 +2918,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   2. ضروریت
   3. ممکنه با خطاهای یک به یک روبرو شین
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 131. ### How do you display the current date in javascript
 
@@ -2938,7 +2938,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 132. ### How do you compare two date objects
 
@@ -2955,7 +2955,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 133. ### How do you check if a string starts with another string
 
@@ -2970,7 +2970,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 134. ### How do you trim a string in javascript
 
@@ -3002,7 +3002,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 135. ### How do you add a key value pair in javascript
 
@@ -3039,7 +3039,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 136. ### Is the !-- notation represents a special operator
 
@@ -3049,7 +3049,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      اول یک شماره از مقدار متغیر به مثال کم میشه بعد تست میشه که مساوی صفر هستش یا نه که مشخص‌کننده درست یا غلط بودن شرط هستش
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 137. ### How do you assign default values to variables
 
@@ -3065,7 +3065,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      مثال تعریف شده بالا مقدار متغیر a زمانی برابر مقدار متغیر c خواهد شد که b خالی false یا undifined باشد 
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 138. ### How do you define multiline strings
 
@@ -3083,13 +3083,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      اما اگه یه فاصله بعد ‍‍‍`/` داشته باشیم,کد دقیقا به همون حالتی که هست نشون داده میشه اما یه ارور خطای نوشتاری کد قراره داشته باشیم
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 139. ### What is an app shell model
 
      An application shell (or app shell) architecture is one way to build a Progressive Web App that reliably and instantly loads on your users' screens, similar to what you see in native applications. It is useful for getting some initial HTML to the screen fast without a network.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 140. ### Can we define properties for functions
 
@@ -3111,7 +3111,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 141. ### What is the way to find the number of parameters expected by a function
 
@@ -3128,13 +3128,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 142. ### What is a polyfill
 
      یه `plyfill` یه قسمت از کد جاوااسکریپته که با استفاده از اون ما میتونیم توابع پیشرفته رو روی مروگر‌هایی که به طور طبیعی پشتیبانی نمیکنن,استفاده کنیم. پلاگین `Silverlight` که برای تقلید کردن توابع بر روی `canvas` یا مروگر `IE7` استفاده کرد
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 143. ### What are break and continue statements
 
@@ -3164,7 +3164,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 144. ### What are js labels
 
@@ -3194,7 +3194,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 145. ### What are the benefits of keeping declarations at the top
 
@@ -3204,7 +3204,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   3. میشه راحت از استفاده متفیر های ناخواسته جلوگیری کرد 
   4. این کار محاسبات ناخواسته رو کمتر میکنه
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 146. ### What are the benefits of initializing variables
 
@@ -3213,7 +3213,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   2. این کار باعث میشه یه جا برای این متغییر رزرو بشه
   3. از برگشتن خطای `undefind`جلوگیری میشه
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 147. ### What are the recommendations to create new object
 
@@ -3242,7 +3242,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 148. ### How do you define JSON arrays
 
@@ -3260,7 +3260,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 149. ### How do you generate random integers
 
@@ -3277,7 +3277,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **Note:** Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive)
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 150. ### Can you write a random integers function to print integers with in a range
 
@@ -3295,25 +3295,25 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 151. ### What is tree shaking
 
      تکان دادن درخت نوعی حذف کد مرده است. این بدان معناست که ماژول‌های استفاده نشده در طول فرآیند ساخت در بسته گنجانده نمی‌شوند و برای این کار بر ساختار استاتیک ماژول ES2015 متکی است (یعنی واردات و صادرات). در ابتدا این باندلر ماژول ES2015 'rollup' رایج شد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 152. ### What is the need of tree shaking
 
      Tree Shaking نوعی حذف کد مرده هستش. این بد این معنیه که ماژول‌های استفاده نشده در طول فرآیند ساخت در بسته گنجونده نمی‌شن و برای آن بر ساختار استاتیک ماژول ES2015 متکی است (یعنی واردات و صادرات). در ابتدا این باندلر ماژول ES2015 'rollup' رایج شد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 153. ### Is it recommended to use eval
 
      خیر، اجازه اجرای کد دلخواه را می دهد که باعث ایجاد مشکل امنیتی می شود. همانطور که می دانیم از تابع `eval()` برای اجرای متن به عنوان کد استفاده می شود. در بیشتر موارد استفاده از آن ضروری نیست.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 154. ### What is a Regular Expression
 
@@ -3337,7 +3337,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 155. ### What are the string methods available in Regular expression
 
@@ -3363,7 +3363,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 156. ### What are modifiers in regular expression
 
@@ -3387,7 +3387,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
       </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 157. ### What are regular expression patterns
 
@@ -3407,7 +3407,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     1. n+: برای پیدا کردن رشته همخوانی داشته با حداقل یک کاراکتر
     2. n*: برای پیدا کردن همخوانی هر رشته شامل صفر یا بیشتر
     3. n?: برای پیدا کردن هر رشته که شامل صفر یا یک کاراکنر میشه
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 158. ### What is a RegExp object
 
@@ -3423,7 +3423,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 159. ### How do you search a string for a pattern
 
@@ -3438,7 +3438,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 160. ### What is the purpose of exec method
 
@@ -3453,7 +3453,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 161. ### How do you change the style of a HTML element
 
@@ -3478,13 +3478,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 162. ### What would be the result of 1+2+'3'
 
      خروجی '33' خواهد بود. از آنجایی که «1» و «2» مقادیر عددی هستند، نتیجه دو رقم اول یک مقدار عددی «3» خواهد بود. رقم بعدی یک مقدار نوع رشته است، زیرا افزودن مقدار عددی «3» و مقدار رشته «3» فقط یک مقدار الحاقی «33» خواهد بود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 163. ### What is a debugger statement
 
@@ -3504,13 +3504,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 164. ### What is the purpose of breakpoints in debugging
 
      پس از اجرای دستور دیباگر و باز شدن پنجره دیباگر، می توانید نقاط شکست را در کد جاوا اسکریپت تنظیم کنید. در هر نقطه شکست، جاوا اسکریپت اجرا نمی شود و به شما اجازه می دهد مقادیر جاوا اسکریپت را بررسی کنید. پس از بررسی مقادیر، می توانید با استفاده از دکمه پخش، اجرای کد را از سر بگیرید.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 165. ### Can I use reserved words as identifiers
 
@@ -3524,7 +3524,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 166. ### How do you detect a mobile browser
 
@@ -3542,7 +3542,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 167. ### How do you detect a mobile browser without regexp
 
@@ -3570,7 +3570,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 168. ### How do you get the image width and height using JS
 
@@ -3588,7 +3588,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 169. ### How do you make synchronous HTTP request
 
@@ -3607,7 +3607,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 170. ### How do you make asynchronous HTTP request
 
@@ -3630,7 +3630,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 171. ### How do you convert date to another timezone in javascript
 
@@ -3644,7 +3644,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 172. ### What are the properties used to get size of window
 
@@ -3664,7 +3664,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 173. ### What is a conditional operator in javascript
 
@@ -3679,7 +3679,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 174. ### Can you apply chaining on conditional operator
 
@@ -3707,7 +3707,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 175. ### What are the ways to execute javascript after page load
 
@@ -3742,7 +3742,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 176. ### What is the difference between proto and prototype
 
@@ -3757,7 +3757,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 177. ### Give an example where do you really need semicolon
 
@@ -3795,7 +3795,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      در این حالت، تابع دوم رو به عنوان آرگومان به تابع اول ارسال می کنیم و سعی می کنیم نتیجه فراخوانی تابع اول را به عنوان تابع فراخوانی کنیم. از این رو، تابع دوم با خطای "... یک تابع نیست" در زمان اجرا ارور می‌گیریم.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 178. ### What is a freeze method
 
@@ -3818,7 +3818,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **نکته:** یه تایپ ارور بهمون می‌ده که ارگومان داده شده `object` نیست
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 179. ### What is the purpose of freeze method
 
@@ -3829,13 +3829,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   2. برای `imutable` کردن ابجکت ها
 
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 180. ### Why do I need to use freeze method
 
      در پارادایم شی گرا، یک `API` موجود حاوی عناصر خاصی است که قصد توسعه، اصلاح یا استفاده مجدد در خارج از زمینه فعلی خود را ندارند. از این رو، این کلمه کلیدی `final` است که در زبان های مختلف استفاده می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 181. ### How do you detect a browser language preference
 
@@ -3853,7 +3853,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 182. ### How to convert string to title case with javascript
 
@@ -3875,7 +3875,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 183. ### How do you detect javascript disabled in the page
 
@@ -3894,7 +3894,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 184. ### What are various operators supported by javascript
 
@@ -3906,7 +3906,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   5. **اپراتور سه تایی:**  شامل اپراتور های شرطی سه تایی
   6. **اپراتور تایپ:** از اون برای پیدا کردن تایپ متغیر ها استفاده میشه به صورت `typeof variable`
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 185. ### What is a rest parameter
 
@@ -3944,7 +3944,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **Note:** Rest parameter is added in ES2015 or ES6
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 186. ### What happens if you do not use rest parameter as a last argument
 
@@ -3961,7 +3961,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 187. ### What are the bitwise operators available in javascript
 
@@ -3974,7 +3974,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   6. علامت در حال انتشار به سمت راست ( >> )
   7. صفر پر کردن Shift راست ( >>> )
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 188. ### What is a spread operator
 
@@ -3994,7 +3994,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 189. ### How do you determine whether object is frozen or not
 
@@ -4016,7 +4016,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 190. ### How do you determine two values same or not using object
 
@@ -4044,7 +4044,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      هر دو NaN
      هر دو غیر صفر و هر دو NaN نیستند و هر دو دارای یک مقدار هستند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 191. ### What is the purpose of using object is method
 
@@ -4054,7 +4054,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   3. برای مقایسه قطبیت دو عدد استفاده می شود.
   4. برای مقایسه دو شی استفاده می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 192. ### How do you copy properties from one object to other
 
@@ -4087,7 +4087,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      همانطور که در کد بالا مشاهده شد، یک ویژگی مشترک (`b`) از منبع به مقصد وجود دارد، بنابراین مقدار آن بازنویسی شده است.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 193. ### What are the applications of assign method
 
@@ -4096,7 +4096,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   1. برای شبیه سازی یک شی استفاده می شود.
   2. برای ادغام اشیاء با ویژگی های یکسان استفاده می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 194. ### What is a proxy object
 
@@ -4135,7 +4135,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      در کد بالا، از کنترل‌کننده «get» استفاده می‌کند که رفتار پراکسی را هنگام انجام عملیات روی آن تعریف می‌کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 195. ### What is the purpose of seal method
 
@@ -4156,7 +4156,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 196. ### What are the applications of seal method
 
@@ -4164,13 +4164,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   1. برای آب بندی اشیا و آرایه ها استفاده می شود.
   2. برای غیرقابل تغییر کردن یک جسم استفاده می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 197. ### What are the differences between freeze and seal methods
 
      اگر یک شی با استفاده از متد ()Object.freeze منجمد شود، ویژگی‌های آن تغییرناپذیر می‌شوند و هیچ تغییری در آن‌ها نمی‌توان ایجاد کرد، در حالی که اگر یک شی با استفاده از متد Object.seal () مهر و موم شده باشد، می‌توان تغییرات را در ویژگی‌های موجود ایجاد کرد. از شی
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 198. ### How do you determine if an object is sealed or not
 
@@ -4194,7 +4194,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 199. ### How do you get enumerable key and value pairs
 
@@ -4217,7 +4217,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **نکته:** سفارش به عنوان شی تعریف شده تضمین نمی شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 200. ### What is the main difference between Object.values and Object.entries method
 
@@ -4239,7 +4239,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 201. ### How can you get the list of keys of any object
 
@@ -4259,7 +4259,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 202. ### How do you create an object with prototype
 
@@ -4284,7 +4284,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 203. ### What is a WeakSet
 
@@ -4313,7 +4313,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 204. ### What are the differences between WeakSet and Set
 
@@ -4324,7 +4324,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   3. WeakSet متدهایی مانند پاک کردن، کلیدها، مقادیر، ورودی ها، forEach را ندارد.
   4.WeakSet قابل تکرار نیست.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 205. ### List down the collection of methods available on WeakSet
 
@@ -4351,7 +4351,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 206. ### What is a WeakMap
 
@@ -4379,7 +4379,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 207. ### What are the differences between WeakMap and Map
 
@@ -4390,7 +4390,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   3. WeakMap متدهایی مانند پاک کردن، کلیدها، مقادیر، ورودی ها، forEach را ندارد.
   4. WeakMap قابل تکرار نیست.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 208. ### List down the collection of methods available on WeakMap
 
@@ -4417,7 +4417,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 209. ### What is the purpose of uneval
 
@@ -4433,7 +4433,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 210. ### How do you encode an URL
 
@@ -4449,7 +4449,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 211. ### How do you decode an URL
 
@@ -4470,7 +4470,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 212. ### How do you print the contents of web page
 
@@ -4486,7 +4486,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **نکته:** در اکثر مرورگرها، زمانی که کادر گفتگوی چاپ باز است، مسدود می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 213. ### What is the difference between uneval and eval
 
@@ -4502,7 +4502,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 214. ### What is an anonymous function
 
@@ -4538,7 +4538,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 215. ### What is the precedence order between local and global variables
 
@@ -4557,7 +4557,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 216. ### What are javascript accessors
 
@@ -4584,7 +4584,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 217. ### How do you define property on Object constructor
 
@@ -4608,13 +4608,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 218. ### What is the difference between get and defineProperty
 
      هر دو نتایج مشابهی دارند مگر اینکه از کلاس ها استفاده کنید. اگر از «get» استفاده می‌کنید، ویژگی روی نمونه اولیه شی تعریف می‌شود، در حالی که با استفاده از «Object.defineProperty()»، ویژگی روی نمونه‌ای که به آن اعمال می‌شود، تعریف می‌شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 219. ### What are the advantages of Getters and Setters
 
@@ -4625,7 +4625,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   4. آنها می توانند کیفیت داده های بهتری را ارائه دهند
   5. برای انجام کارها در پشت صحنه با منطق محصور شده مفید است.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 220. ### Can I add getters and setters using defineProperty method
 
@@ -4660,7 +4660,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 221. ### What is the purpose of switch-case
 
@@ -4691,7 +4691,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      دستور شعبه چند طرفه بالا یک راه آسان برای ارسال اجرا به قسمت های مختلف کد بر اساس مقدار عبارت ارائه می دهد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 222. ### What are the conventions to be followed for the usage of switch case
 
@@ -4702,7 +4702,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   4. دستور break در داخل سوئیچ برای پایان دادن به دنباله دستور استفاده می شود.
   5. عبارت break اختیاری است. اما اگر حذف شود، اجرا در مورد بعدی ادامه می یابد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 223. ### What are primitive data types
 
@@ -4714,7 +4714,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   4. null
   5. undefined
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 224. ### What are the different ways to access object properties
 
@@ -4748,7 +4748,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 225. ### What are the function parameter rules
 
@@ -4769,7 +4769,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 226. ### What is an error object
 
@@ -4788,7 +4788,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 227. ### When you get a syntax error
 
@@ -4806,7 +4806,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 228. ### What are the different error names from error object
 
@@ -4820,7 +4820,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       | TypeError | خطای ناشی از خطای نوع |
       | خطای URIE | یک خطا به دلیل () encodeURI |
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 229. ### What are the various statements in error handling
 
@@ -4830,26 +4830,26 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   3. **throw:**این عبارت برای ایجاد خطاهای سفارشی استفاده می شود.
   4. **finally:**این عبارت برای اجرای کد پس از تلاش و گرفتن بدون توجه به نتیجه استفاده می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 230. ### What are the two types of loops in javascript
 
   1. **Entry Controlled loops:** در این نوع حلقه، شرایط تست قبل از ورود به بدنه حلقه آزمایش می شود. به عنوان مثال For Loop و while Loop در این دسته قرار می گیرند.
   2. **Exit Controlled Loops:** در این نوع حلقه، شرایط تست در انتهای بدنه حلقه آزمایش یا ارزیابی می شود. یعنی بدنه حلقه حداقل یک بار بدون در نظر گرفتن شرایط تست true یا false اجرا می شود. به عنوان مثال، حلقه do-while در این دسته قرار می گیرد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 231. ### What is nodejs
 
     Node.js یک پلتفرم سمت سرور است که بر اساس زمان اجرا جاوا اسکریپت کروم برای ساخت آسان برنامه های شبکه سریع و مقیاس پذیر ساخته شده است. این یک زمان اجرا I/O ناهمزمان مبتنی بر رویداد، غیر مسدود کننده است که از موتور جاوا اسکریپت V8 گوگل و کتابخانه libuv استفاده می کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 232. ### What is an Intl object
 
      شی Intl فضای نامی برای ECMAScript Internationalization API است که مقایسه رشته های حساس زبان، قالب بندی اعداد و قالب بندی تاریخ و زمان را ارائه می دهد. دسترسی به چندین سازنده و توابع حساس به زبان را فراهم می کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 233. ### How do you perform language specific date and time formatting
 
@@ -4865,13 +4865,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 234. ### What is an Iterator
 
      تکرار کننده شی ای است که پس از خاتمه، یک توالی و یک مقدار بازگشتی را تعریف می کند. پروتکل Iterator را با متد «next()» پیاده‌سازی می‌کند که یک شی را با دو ویژگی برمی‌گرداند: «value» (مقدار بعدی در دنباله) و «done» (که اگر آخرین مقدار در دنباله مصرف شده باشد درست است. ).
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 235. ### How does synchronous iteration works
 
@@ -4896,14 +4896,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 236. ### What is an event loop
 
      حلقه رویداد یک صف از توابع برگشت به تماس است. هنگامی که یک تابع async اجرا می شود، تابع callback در صف قرار می گیرد. موتور جاوا اسکریپت پردازش حلقه رویداد را شروع نمی کند تا زمانی که تابع async اجرای کد را به پایان برساند.
      **Note:** این به Node.js اجازه می دهد تا عملیات I/O غیر مسدود کننده را انجام دهد حتی اگر جاوا اسکریپت تک رشته ای باشد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 237. ### What is call stack
 
@@ -4935,11 +4935,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   4.تابع 'eatFruits()' را از لیست پشته تماس ما حذف کنید.
      ![Screenshot](images/call-stack.png)
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 238. ### What is an event queue
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 239. ### What is a decorator
 
@@ -4967,7 +4967,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 240. ### What are the properties of Intl object
 
@@ -4979,7 +4979,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   5. **PluralRules:**اشیایی که قالب بندی حساس به جمع و قوانین خاص زبان را برای جمع فعال می کنند.
   6. **RelativeTimeFormat:** اشیایی که قالب بندی زمان نسبی حساس به زبان را فعال می کنند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 241. ### What is an Unary operator
 
@@ -4999,7 +4999,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 242. ### How do you sort elements in an array
 
@@ -5015,7 +5015,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 243. ### What is the purpose of compareFunction while sorting arrays
 
@@ -5031,7 +5031,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 244. ### How do you reversing an array
 
@@ -5048,7 +5048,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 245. ### How do you find min and max value in an array
 
@@ -5071,7 +5071,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 246. ### How do you find min and max values without Math functions
 
@@ -5109,7 +5109,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 247. ### What is an empty statement and purpose of it
 
@@ -5124,7 +5124,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 248. ### How do you get metadata of a module
 
@@ -5139,7 +5139,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 249. ### What is a comma operator
 
@@ -5156,7 +5156,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 250. ### What is the advantage of a comma operator
 
@@ -5183,7 +5183,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 251. ### What is typescript
 
@@ -5211,7 +5211,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      متد خوشامدگویی فقط نوع رشته را به عنوان آرگومان مجاز می کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 252. ### What are the differences between javascript and typescript
 
@@ -5225,7 +5225,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       | رابط | دارای مفهوم رابط | از رابط ها پشتیبانی نمی کند |
       | پارامترهای اختیاری | توابع از پارامترهای اختیاری پشتیبانی می کنند | عدم پشتیبانی از پارامترهای اختیاری برای توابع |
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 253. ### What are the advantages of typescript over javascript
 
@@ -5234,7 +5234,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   2. TypeScript به شدت تایپ می شود یا از تایپ استاتیک پشتیبانی می کند که امکان بررسی صحت نوع را در زمان کامپایل فراهم می کند. این در جاوا اسکریپت در دسترس نیست.
   3. کامپایلر TypeScript برخلاف ویژگی های ES6 جاوا اسکریپت که ممکن است در برخی از مرورگرها پشتیبانی نشود، می تواند فایل های .ts را در ES3، ES4 و ES5 کامپایل کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 254. ### What is an object initializer
 
@@ -5250,7 +5250,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 255. ### What is a constructor method
 
@@ -5271,7 +5271,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 256. ### What happens if you write constructor more than once in a class
 
@@ -5296,7 +5296,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 257. ### How do you call the constructor of a parent class
 
@@ -5323,7 +5323,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 258. ### How do you get the prototype of an object
 
@@ -5339,7 +5339,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 259. ### What happens If I pass string type for getPrototype method
 
@@ -5356,7 +5356,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 260. ### How do you set prototype of one object to another
 
@@ -5371,7 +5371,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 261. ### How do you check whether an object can be extendable or not
 
@@ -5388,7 +5388,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **نکته:** به طور پیش فرض، تمام اشیاء قابل گسترش هستند. به عنوان مثال، ویژگی های جدید را می توان اضافه یا تغییر داد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 262. ### How do you prevent an object to extend
 
@@ -5411,7 +5411,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 263. ### What are the different ways to make an object non-extensible
 
@@ -5437,7 +5437,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 264. ### How do you define multiple properties on an object
 
@@ -5459,13 +5459,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 265. ### What is MEAN in javascript
 
      پشته MEAN (MongoDB، Express، AngularJS و Node.js) محبوب‌ترین پشته فناوری نرم‌افزار جاوا اسکریپت منبع باز است که برای ساخت برنامه‌های وب پویا در دسترس است، جایی که می‌توانید نیمه‌های سمت سرور و سمت مشتری پروژه وب را بنویسید. کاملا در جاوا اسکریپت
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 266. ### What Is Obfuscation in javascript
 
@@ -5491,7 +5491,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 267. ### Why do you need Obfuscation
 
@@ -5501,13 +5501,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   3. مهندسی معکوس بسیار دشوار است
   4. زمان دانلود کاهش می یابد
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 268. ### What is Minification
 
      کوچک سازی فرآیند حذف تمام کاراکترهای غیر ضروری است (فضاهای خالی حذف می شوند) و متغیرها بدون تغییر در عملکرد آن تغییر نام می دهند. همچنین نوعی مبهم است.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 269. ### What are the advantages of minification
 
@@ -5515,7 +5515,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   1. زمان بارگذاری یک صفحه وب را کاهش می دهد
   2. در مصرف پهنای باند صرفه جویی می کند
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 270. ### What are the differences between Obfuscation and Encryption
 
@@ -5526,7 +5526,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       | کلیدی برای رمزگشایی | می توان آن را بدون هیچ کلید رمزگشایی کرد | لازم است |
       | فرمت داده های هدف | به فرم پیچیده تبدیل می شود | تبدیل به فرمت ناخوانا |
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 271. ### What are the common tools used for minification
 
@@ -5537,7 +5537,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   4. javascript-minifier.com/
   5. prettydiff.com
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 272. ### How do you perform form validation using javascript
 
@@ -5571,7 +5571,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 273. ### How do you perform form validation without javascript
 
@@ -5590,7 +5590,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **نکته:** اعتبار سنجی فرم خودکار در اینترنت اکسپلورر 9 یا قبل از آن کار نمی کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 274. ### What are the DOM methods available for constraint validation
 
@@ -5614,7 +5614,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 275. ### What are the available constraint validation DOM properties
 
@@ -5624,7 +5624,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   2. validationMessage: زمانی که اعتبار نادرست باشد، پیام را نمایش می دهد.
   3. willValidate: این نشان می دهد که آیا یک عنصر ورودی اعتبار سنجی می شود یا خیر.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 276. ### What are the list of validity properties
 
@@ -5640,7 +5640,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   8. valueMissing: اگر عنصری با ویژگی مورد نیاز ارزش نداشته باشد، مقدار true را برمی گرداند.
   9. valid: اگر مقدار یک عنصر معتبر باشد، مقدار true را برمی گرداند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 277. ### Give an example usage of rangeOverflow property
 
@@ -5667,7 +5667,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 278. ### Is enums feature available in javascript
 
@@ -5681,7 +5681,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 279. ### What is an enum
 
@@ -5696,7 +5696,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 280. ### How do you list all properties of an object
 
@@ -5716,7 +5716,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 281. ### How do you get property descriptors of an object
 
@@ -5739,7 +5739,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 282. ### What are the attributes provided by a property descriptor
 
@@ -5751,7 +5751,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   5. set: تابعی که به عنوان تنظیم کننده برای ویژگی عمل می کند
   6. get: تابعی که به عنوان یک گیرنده برای ملک عمل می کند
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 283. ### How do you extend classes
 
@@ -5788,7 +5788,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 284. ### How do I modify the url without reloading the page
 
@@ -5802,7 +5802,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 285. ### How do you check whether an array includes a particular value or not
 
@@ -5820,7 +5820,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 286. ### How do you compare scalar arrays
 
@@ -5849,7 +5849,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 287. ### How to get the value from get parameters
 
@@ -5866,7 +5866,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 288. ### How do you print numbers with commas as thousand separators
 
@@ -5884,7 +5884,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 289. ### What is the difference between java and javascript
 
@@ -5896,7 +5896,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       | محدوده | محدوده بلوک | محدوده عملکردی |
       | همزمانی | بر اساس موضوع | مبتنی بر رویداد |
       | حافظه | از حافظه بیشتر استفاده می کند | از حافظه کمتری استفاده می کند. از این رو برای صفحات وب استفاده خواهد شد |
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 290. ### Is javascript supports namespace
 
@@ -5919,7 +5919,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      همیشه تعریف تابع دوم را فراخوانی می کند. در این صورت فضای نام مشکل برخورد نام را حل می کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 291. ### How do you declare namespace
 
@@ -5989,7 +5989,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 292. ### How do you invoke javascript code in an iframe from parent page
 
@@ -6005,7 +6005,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 293. ### How do get the timezone offset from date
 
@@ -6020,7 +6020,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 294. ### How do you load CSS and JS files dynamically
 
@@ -6047,7 +6047,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 295. ### What are the different methods to find HTML elements in DOM
 
@@ -6056,7 +6056,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   2. document.getElementsByTagName(name): یک عنصر را با نام تگ پیدا می کند
   3. document.getElementsByClassName(name):یک عنصر را با نام کلاس پیدا می کند
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 296. ### What is jQuery
 
@@ -6074,14 +6074,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **نکته:**می توانید آن را از سایت رسمی jquery دانلود کنید یا از CDN ها مانند گوگل نصب کنید.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 297. ### What is V8 JavaScript engine
 
      V8 یک موتور جاوا اسکریپت با کارایی بالا منبع باز است که توسط مرورگر Google Chrome استفاده می شود و به زبان C++ نوشته شده است. همچنین در پروژه node.js استفاده می شود. ECMAScript و WebAssembly را پیاده‌سازی می‌کند و روی ویندوز 7 یا بالاتر، macOS 10.12+ و سیستم‌های لینوکس که از پردازنده‌های x64، IA-32، ARM یا MIPS استفاده می‌کنند، اجرا می‌شود.
      **نکته:** می تواند به صورت مستقل اجرا شود یا می تواند در هر برنامه C++ تعبیه شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 298. ### Why do we call javascript as dynamic language
 
@@ -6097,7 +6097,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 299. ### What is a void operator
 
@@ -6123,7 +6123,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **نکته:** این عملگر اغلب برای بدست آوردن مقدار اولیه تعریف نشده با استفاده از "void(0)" استفاده می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 300. ### How to set the cursor to wait
 
@@ -6149,7 +6149,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 301. ### How do you create an infinite loop
 
@@ -6165,7 +6165,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 302. ### Why do you need to avoid with statement
 
@@ -6195,7 +6195,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      اما این عبارت «with» مشکلات عملکردی ایجاد می‌کند، زیرا نمی‌توان پیش‌بینی کرد که آیا یک آرگومان به یک متغیر واقعی اشاره می‌کند یا به یک ویژگی درون آرگومان with.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 303. ### What is the output of below for loops
 
@@ -6216,7 +6216,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      خروجی حلقه های بالا 4 4 4 4 و 0 1 2 3 است
      **توضیح:** با توجه به صف رویداد/حلقه جاوا اسکریپت، تابع 'setTimeout' پس از اجرای حلقه فراخوانی می شود. از آنجایی که متغیر i با کلمه کلیدی "var" اعلان می شود، به یک متغیر جهانی تبدیل می شود و با استفاده از تکرار زمانی که تابع time setTimeout فراخوانی می شود، مقدار آن برابر با 4 است. بنابراین، خروجی حلقه اول '4 4 4 4' است. در حالی که در حلقه دوم، متغیر i به‌عنوان کلمه کلیدی «let» اعلام می‌شود، به متغیری با محدوده بلوک تبدیل می‌شود و یک مقدار جدید (0, 1,2 3) برای هر تکرار دارد. بنابراین، خروجی حلقه اول «0 1 2 3» است.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 304. ### List down some of the features of ES6
 
@@ -6234,13 +6234,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   11. Classes
   12. Modules
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 305. ### What is ES6
 
      ES6 ششمین نسخه از زبان جاوا اسکریپت است و در ژوئن 2015 منتشر شد. در ابتدا با نام ECMAScript 6 (ES6) شناخته شد و بعداً به ECMAScript 2015 تغییر نام داد. تقریباً همه مرورگرهای مدرن از ES6 پشتیبانی می کنند اما برای مرورگرهای قدیمی ترانسپایلرهای زیادی وجود دارد. ، مانند Babel.js و غیره
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 306. ### Can I redeclare let and const variables
 
@@ -6289,7 +6289,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 307. ### Is const variable makes the value immutable
 
@@ -6305,7 +6305,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 308. ### What are default parameters
 
@@ -6341,7 +6341,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 309. ### What are template literals
 
@@ -6368,7 +6368,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **نکته:** می‌توانید از رشته‌های چند خطی و ویژگی‌های درون‌یابی رشته‌ای با الفبای الگو استفاده کنید.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 310. ### How do you write multi-line strings in template literals
 
@@ -6394,7 +6394,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 311. ### What are nesting templates
 
@@ -6421,7 +6421,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 312. ### What are tagged templates
 
@@ -6464,7 +6464,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 313. ### What are raw strings
 
@@ -6504,7 +6504,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
       </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 314. ### What is destructuring assignment
 
@@ -6536,7 +6536,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 315. ### What are default values in destructuring assignment
 
@@ -6571,7 +6571,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 316. ### How do you swap variables in destructuring assignment
 
@@ -6589,7 +6589,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 317. ### What are enhanced object literals
 
@@ -6610,7 +6610,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 318. ### What are dynamic imports
 
@@ -6625,7 +6625,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 319. ### What are the use cases for dynamic imports
 
@@ -6655,7 +6655,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
   1. یک ماژول را از داخل یک اسکریپت معمولی به جای یک ماژول وارد کنید.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 320. ### What are typed arrays
 
@@ -6683,7 +6683,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 321. ### What are the advantages of module loaders
 
@@ -6694,7 +6694,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
   4. Compilation hooks
   5. Nested virtualization
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 322. ### What is collation
 
@@ -6727,7 +6727,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 323. ### What is for...of statement
 
@@ -6746,7 +6746,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 324. ### What is the output of below spread operator array
 
@@ -6761,13 +6761,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      خروجی آرایه ['J', 'o', 'h', 'n', ', 'R', 'e', 's', 'i', 'g'] است.
       **توضیح:** رشته یک نوع تکرارپذیر است و عملگر spread در یک آرایه هر کاراکتر یک تکرارپذیر را به یک عنصر نگاشت می کند. از این رو، هر کاراکتر یک رشته به عنصری در یک آرایه تبدیل می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 325. ### Is PostMessage secure
 
      بله، تا زمانی که برنامه‌نویس/توسعه‌دهنده مراقب منشأ و منبع پیام دریافتی باشد، postMessages را می‌توان بسیار امن در نظر گرفت. اما اگر بخواهید پیامی را بدون تأیید منبع آن ارسال یا دریافت کنید، حملات اسکریپت بین سایتی ایجاد می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 326. ### What are the problems with postmessage target origin as wildcard
 
@@ -6781,7 +6781,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 327. ### How do you avoid receiving postMessages from attackers
 
@@ -6800,38 +6800,38 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 328. ### Can I avoid using postMessages completely
 
      شما نمی توانید به طور کامل (یا 100٪) از postMessages استفاده نکنید. حتی اگر برنامه شما با توجه به خطرات از postMessage استفاده نمی کند، بسیاری از اسکریپت های شخص ثالث از postMessage برای برقراری ارتباط با سرویس شخص ثالث استفاده می کنند. بنابراین ممکن است برنامه شما بدون اطلاع شما از postMessage استفاده کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 329. ### Is postMessages synchronous
 
      postMessages در مرورگر IE8 همگام هستند اما در IE9 و سایر مرورگرهای مدرن دیگر (یعنی IE9+، Firefox، Chrome، Safari) ناهمزمان هستند. به دلیل این رفتار ناهمزمان، زمانی که postMessage برگردانده می‌شود، از مکانیزم برگشت تماس استفاده می‌کنیم.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 330. ### What paradigm is Javascript
 
      جاوا اسکریپت یک زبان چند پارادایم است که از برنامه نویسی امری/روشی، برنامه نویسی شی گرا و برنامه نویسی تابعی پشتیبانی می کند. جاوا اسکریپت از برنامه نویسی شی گرا با وراثت اولیه پشتیبانی می کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 331. ### What is the difference between internal and external javascript
 
      **جاوا اسکریپت داخلی:** کد منبع درون تگ اسکریپت است.
       **جاوا اسکریپت خارجی:** کد منبع در یک فایل خارجی (ذخیره شده با پسوند js.) ذخیره می شود و در تگ ارجاع می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 332. ### Is JavaScript faster than server side script
 
      بله، جاوا اسکریپت سریعتر از اسکریپت سمت سرور است. از آنجایی که جاوا اسکریپت یک اسکریپت سمت کلاینت است، برای محاسبات یا محاسبات خود به کمک سرور وب نیازی ندارد. بنابراین جاوا اسکریپت همیشه سریعتر از هر اسکریپت سمت سرور مانند ASP، PHP و غیره است.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 333. ### How do you get the status of a checkbox
 
@@ -6853,13 +6853,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 334. ### What is the purpose of double tilde operator
 
      عملگر دابل tilde(~~) به عنوان عملگر bitwise double NOT شناخته می شود. این عملگر قرار است جایگزین سریع تری برای Math.floor().
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 335. ### How do you convert character to ASCII code
 
@@ -6883,7 +6883,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 336. ### What is ArrayBuffer
 
@@ -6909,7 +6909,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 337. ### What is the output of below string expression
 
@@ -6924,7 +6924,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
     خروجی عبارت فوق "W" است.
       **توضیح:** نماد براکت با شاخص خاص روی یک رشته کاراکتر را در یک مکان خاص برمی گرداند. از این رو، کاراکتر "W" رشته را برمی گرداند. از آنجایی که این مورد در نسخه‌های IE7 و پایین‌تر پشتیبانی نمی‌شود، ممکن است لازم باشد از متد charAt() برای به دست آوردن نتیجه دلخواه استفاده کنید.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 338. ### What is the purpose of Error object
 
@@ -6953,7 +6953,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 339. ### What is the purpose of EvalError object
 
@@ -6981,7 +6981,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 340. ### What are the list of cases error thrown from non-strict mode to strict mode
 
@@ -7011,13 +7011,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      از این رو، خطاهای موارد فوق برای جلوگیری از خطا در محیط های توسعه/تولید مفید هستند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 341. ### Is all objects have prototypes
 
      خیر. همه اشیا دارای نمونه اولیه هستند به جز شی پایه که توسط کاربر ایجاد می شود یا شیئی که با استفاده از کلمه کلیدی جدید ایجاد می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 342. ### What is the difference between a parameter and an argument
 
@@ -7036,7 +7036,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 343. ### What is the purpose of some method in arrays
 
@@ -7054,7 +7054,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 344. ### How do you combine two or more arrays
 
@@ -7081,7 +7081,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 345. ### What is the difference between Shallow and Deep copy
 
@@ -7155,7 +7155,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      اکنون اگر «empDetailsDeepCopy.name» را تغییر دهید، فقط «empDetailsDeepCopy» و نه «empDetails» را تحت تأثیر قرار خواهد داد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 346. ### How do you create specific number of copies of a string
 
@@ -7189,7 +7189,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 348. ### How do you trim a string at the beginning or ending
 
@@ -7210,7 +7210,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 349. ### What is the output of below console statement with unary operator
 
@@ -7226,11 +7226,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      خروجی دستور log کنسول فوق NaN را برمی گرداند. از آنجا که عنصر توسط عملگر unary پیشوند است و مفسر جاوا اسکریپت سعی می کند آن عنصر را به یک نوع عدد تبدیل کند. از آنجایی که تبدیل با شکست مواجه می شود، مقدار عبارت به مقدار NaN منجر می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 350. ### Does javascript uses mixins
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 351. ### What is a thunk function
 
@@ -7248,7 +7248,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 352. ### What are asynchronous thunks
 
@@ -7276,7 +7276,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      تابع "getData" فوراً فراخوانی نمی شود، اما تنها زمانی فراخوانی می شود که داده ها از نقطه پایانی API در دسترس باشند. تابع setTimeout نیز برای ناهمزمان کردن کد ما استفاده می شود. بهترین مثال زمان واقعی، کتابخانه مدیریت حالت redux است که از thunk های ناهمزمان برای به تاخیر انداختن اعمال برای ارسال استفاده می کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 353. ### What is the output of below function calls
 
@@ -7303,7 +7303,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      خروجی 40 و NaN است. به یاد داشته باشید که قطر یک تابع منظم است، در حالی که مقدار محیط یک تابع فلش است. کلمه کلیدی «this» یک تابع معمولی (یعنی قطر) به محدوده اطراف که یک کلاس است (یعنی شی شکل) اشاره دارد. در حالی که این کلمه کلیدی تابع محیطی به محدوده اطراف که یک شی پنجره است اشاره دارد. از آنجایی که هیچ ویژگی شعاع در اشیاء پنجره وجود ندارد، یک مقدار تعریف نشده برمی‌گرداند و مضرب مقدار مقدار NaN را برمی‌گرداند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 354. ### How to remove all line breaks from a string
 
@@ -7321,13 +7321,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      در عبارت فوق g و m برای پرچم های سراسری و چند خطی هستند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 355. ### What is the difference between reflow and repaint
 
      *رنگ‌آمیزی مجدد* زمانی اتفاق می‌افتد که تغییراتی ایجاد می‌شود که روی دید یک عنصر تأثیر می‌گذارد، اما روی طرح آن تأثیر نمی‌گذارد. نمونه هایی از این موارد شامل طرح کلی، نمایان بودن یا رنگ پس زمینه است. یک *reflow* شامل تغییراتی است که بر طرح بندی بخشی از صفحه (یا کل صفحه) تأثیر می گذارد. تغییر اندازه پنجره مرورگر، تغییر فونت، تغییر محتوا (مانند تایپ متن توسط کاربر)، استفاده از روش‌های جاوا اسکریپت شامل سبک‌های محاسبه‌شده، افزودن یا حذف عناصر از DOM، و تغییر کلاس‌های یک عنصر چند مورد از مواردی هستند که می‌توانند جریان مجدد را آغاز کنند. جریان مجدد یک عنصر باعث جریان مجدد بعدی همه عناصر فرزند و اجداد و همچنین هر عنصری که به دنبال آن در DOM است می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 356. ### What happens with negating an array
 
@@ -7341,7 +7341,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 357. ### What happens if we add two arrays
 
@@ -7357,7 +7357,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 358. ### What is the output of prepend additive operator on falsy values
 
@@ -7374,7 +7374,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 359. ### How do you create self string using special characters
 
@@ -7414,7 +7414,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 360. ### How do you remove falsy values from an array
 
@@ -7429,7 +7429,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 361. ### How do you get unique values of an array
 
@@ -7443,7 +7443,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 362. ### What is destructuring aliases
 
@@ -7459,7 +7459,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 363. ### How do you map the array values without using map method
 
@@ -7483,7 +7483,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 364. ### How do you empty an array
 
@@ -7498,7 +7498,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 365. ### How do you rounding numbers to certain decimals
 
@@ -7513,7 +7513,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 366. ### What is the easiest way to convert an array to an object
 
@@ -7529,7 +7529,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 367. ### How do you create an array with some data
 
@@ -7544,7 +7544,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 368. ### What are the placeholders from console object
 
@@ -7563,7 +7563,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 369. ### Is it possible to add CSS to console messages
 
@@ -7582,7 +7582,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **نکته:** تمام سبک های CSS را می توان برای پیام های کنسول اعمال کرد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 370. ### What is the purpose of dir method of console object
 
@@ -7600,7 +7600,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      شی کاربر نمایش داده شده در نمایش JSON
      ![Screenshot](images/console-dir.png)
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 371. ### Is it possible to debug HTML elements in console
 
@@ -7619,7 +7619,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      ![Screenshot](images/console-html.png)
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 372. ### How do you display data in a tabular format using console object
 
@@ -7639,7 +7639,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      ![Screenshot](images/console-table.png)
      **Not:** Remember that `console.table()` is not supported in IE.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 373. ### How do you verify that an argument is a Number or not
 
@@ -7655,7 +7655,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 374. ### How do you create copy to clipboard button
 
@@ -7674,7 +7674,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 375. ### What is the shortcut to get timestamp
 
@@ -7689,7 +7689,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 376. ### How do you flattening multi dimensional arrays
 
@@ -7719,7 +7719,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 377. ### What is the easiest multi condition checking
 
@@ -7740,7 +7740,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 378. ### How do you capture browser back button
 
@@ -7756,7 +7756,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 379. ### How do you disable right click in the web page
 
@@ -7770,7 +7770,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 380. ### What are wrapper objects
 
@@ -7788,13 +7788,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
     یعنی هر اولیه به جز null و undefined دارای Wrapper Object است و لیست اشیاء wrapper عبارتند از String، Number، Boolean، Symbol و BigInt.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 381. ### What is AJAX
 
      AJAX مخفف Asynchronous JavaScript و XML است و گروهی از فناوری های مرتبط (HTML، CSS، JavaScript، XMLHttpRequest API و غیره) است که برای نمایش داده ها به صورت ناهمزمان استفاده می شود. یعنی ما می توانیم داده ها را به سرور ارسال کنیم و بدون بارگیری مجدد صفحه وب، داده ها را از سرور دریافت کنیم.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 382. ### What are the different ways to deal with Asynchronous Code
 
@@ -7804,7 +7804,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
    3.Async/await
    4. کتابخانه های شخص ثالث مانند async.js، bluebird و غیره
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 383. ### How to cancel a fetch request
 
@@ -7843,7 +7843,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 384. ### What is web speech API
 
@@ -7883,7 +7883,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      نمونه‌های بالا را می‌توان روی کنسول برنامه‌نویس مرورگر کروم (33+) آزمایش کرد.
       **توجه:** این API هنوز یک پیش نویس فعال است و فقط در مرورگرهای کروم و فایرفاکس موجود است (البته کروم فقط مشخصات را اجرا کرده است)
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 385. ### What is minimum timeout throttling
 
@@ -7941,13 +7941,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 386. ### How do you implement zero timeout in modern browsers
 
      به دلیل حداقل تاخیر بیش از 0 میلی ثانیه، نمی توانید از setTimeout(fn, 0) برای اجرای فوری کد استفاده کنید. اما برای دستیابی به این رفتار می توانید از window.postMessage() استفاده کنید.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 387. ### What are tasks in event loop
 
@@ -7957,7 +7957,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
    2. هنگامی که یک رویداد شلیک می شود، پاسخ تماس رویداد به صف کار اضافه می شود
    3. وقتی به یک setTimeout یا setInterval رسید، پاسخ تماس مربوطه به صف کار اضافه می‌شود
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 388. ### What is microtask
 
@@ -7965,15 +7965,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       منابع اصلی ریزکارها عبارتند از Promise.resolve، Promise.reject، MutationObservers، IntersectionObservers و غیره.
 
       **توجه:** همه این ریزکارها در همان چرخش حلقه رویداد پردازش می شوند.
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 389. ### What are different event loops
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 390. ### What is the purpose of queueMicrotask
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 391. ### How do you use javascript libraries in typescript file
 
@@ -7997,7 +7997,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 392. ### What are the differences between promises and observables
 
@@ -8011,7 +8011,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       | هیچ اپراتور ارائه نمی دهد | اپراتورهایی مانند map، forEach، filter، reduce، retry و retryWhen و غیره را ارائه می دهد.
       | قابل لغو نیست | با استفاده از روش unsubscribe() لغو شد
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 393. ### What is heap
 
@@ -8020,7 +8020,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      ![Screenshot](images/heap.png)
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 394. ### What is an event table
 
@@ -8029,14 +8029,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      ![Screenshot](images/event-table.png)
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 395. ### What is a microTask queue
 
      Microtask Queue صف جدیدی است که در آن تمام وظایف آغاز شده توسط اشیاء وعده قبل از صف برگشت پردازش می شوند.
       صف microtasks قبل از کارهای رندر و نقاشی بعدی پردازش می شود. اما اگر این ریزکارها برای مدت طولانی اجرا شوند، منجر به تخریب بصری می شود.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 396. ### What is the difference between shim and polyfill
 
@@ -8044,7 +8044,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       در حالی که polyfill یک قطعه کد (یا افزونه) است که فناوری را ارائه می‌کند که شما، توسعه‌دهنده، از مرورگر انتظار دارید که به صورت بومی ارائه کند.
       در یک جمله ساده، A polyfill یک شیم برای API مرورگر است.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 397. ### How do you detect primitive or non primitive value type
 
@@ -8067,34 +8067,35 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      اگر مقدار یک نوع داده اولیه باشد، سازنده Object یک شیء پوشاننده جدید برای مقدار ایجاد می کند. اما اگر مقدار یک نوع داده غیر ابتدایی (یک شی) باشد، سازنده Object همان شی را می دهد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 398. ### What is babel
 
      Babel یک ترانسپایلر جاوا اسکریپت برای تبدیل کد ECMAScript 2015+ به یک نسخه سازگار جاوا اسکریپت در مرورگرها یا محیط های فعلی و قدیمی تر است. برخی از ویژگی های اصلی در زیر ذکر شده است،
-   1. تبدیل نحو
-   2. ویژگی های Polyfill که در محیط هدف شما وجود ندارد (با استفاده از @babel/polyfill)
-   3. تبدیل کد منبع (یا کد مد)
+     1. تبدیل نحو
+     2. ویژگی های Polyfill که در محیط هدف شما وجود ندارد (با استفاده از @babel/polyfill)
+     3. تبدیل کد منبع (یا کد مد)
 
-     **[⬆ فهرست](#فهرست)**
+
+     **[فهرست](#فهرست)**
 
 399. ### Is Node.js completely single threaded
 
      Node یک رشته است، اما برخی از توابع موجود در کتابخانه استاندارد Node.js (به عنوان مثال، توابع ماژول fs) تک رشته ای نیستند. یعنی منطق آنها خارج از رشته Node.js اجرا می شود تا سرعت و عملکرد یک برنامه را بهبود بخشد.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 400. ### What are the common use cases of observables
 
      برخی از رایج‌ترین موارد استفاده از موارد مشاهده‌شده عبارتند از سوکت‌های وب با اعلان‌های فشار، تغییرات ورودی کاربر، فواصل تکراری و غیره.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 401. ### What is RxJS
 
      RxJS (افزونه‌های واکنش‌گرا برای جاوا اسکریپت) کتابخانه‌ای برای پیاده‌سازی برنامه‌نویسی واکنش‌گرا با استفاده از مشاهده‌پذیر است که نوشتن کد ناهمزمان یا مبتنی بر تماس را آسان‌تر می‌کند. همچنین توابع کاربردی را برای ایجاد و کار با مشاهده پذیرها فراهم می کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 402. ### What is the difference between Function constructor and function declaration
 
@@ -8134,7 +8135,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 403. ### What is a Short circuit condition
 
@@ -8160,7 +8161,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 404. ### What is the easiest way to resize an array
 
@@ -8192,7 +8193,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 405. ### What is an observable
 
@@ -8219,7 +8220,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **توجه:** مشاهده پذیرها هنوز بخشی از زبان جاوا اسکریپت نیستند اما پیشنهاد شده است که به زبان اضافه شوند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 406. ### What is the difference between function and class declarations
 
@@ -8250,7 +8251,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 407. ### What is an async function
 
@@ -8272,7 +8273,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
      این اساساً قند نحوی بیش از پرامیس ها و توابع جنریتور ES2015 است.
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 408. ### How do you prevent promises swallowing errors
 
@@ -8388,13 +8389,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
          </span>
 
 
-**[⬆ فهرست](#فهرست)**
+**[فهرست](#فهرست)**
 
 409. ### What is deno
 
      Deno یک زمان اجرا ساده، مدرن و ایمن برای جاوا اسکریپت و تایپ اسکریپت است که از موتور جاوا اسکریپت V8 و زبان برنامه نویسی Rust استفاده می کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 410. ### How do you make an object iterable in javascript
 
@@ -8459,13 +8460,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      </span>
 
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 411. ### What is a Proper Tail Call
 
-   ابتدا، قبل از صحبت در مورد "دوم خوانی مناسب" باید در مورد دم دم بدانیم. فراخوانی دنباله یک فراخوانی فرعی یا تابعی است که به عنوان آخرین عمل یک تابع فراخوانی انجام می شود. در حالی که ** فراخوانی دنباله مناسب (PTC)** تکنیکی است که در آن برنامه یا کد فریم های پشته ای اضافی برای بازگشت ایجاد نمی کند، زمانی که فراخوانی تابع یک فراخوانی دنباله است.
+     ابتدا، قبل از صحبت در مورد "دوم خوانی مناسب" باید در مورد دم دم بدانیم. فراخوانی دنباله یک فراخوانی فرعی یا تابعی است که به عنوان آخرین عمل یک تابع فراخوانی انجام می شود. در حالی که ** فراخوانی دنباله مناسب (PTC)** تکنیکی است که در آن برنامه یا کد فریم های پشته ای اضافی برای بازگشت ایجاد نمی کند، زمانی که فراخوانی تابع یک فراخوانی دنباله است.
 
-      برای مثال، بازگشت کلاسیک یا سر تابع فاکتوریل زیر به پشته برای هر مرحله بستگی دارد. هر مرحله باید تا "n * فاکتوریل(n - 1)" پردازش شود
+     برای مثال، بازگشت کلاسیک یا سر تابع فاکتوریل زیر به پشته برای هر مرحله بستگی دارد. هر مرحله باید تا "n * فاکتوریل(n - 1)" پردازش شود
 
      <span dir="ltr" align="left">
 
@@ -8499,7 +8500,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      الگوی بالا همان خروجی مورد اول را برمی گرداند. اما انباشت کننده کل را به عنوان آرگومان بدون استفاده از حافظه پشته در تماس های بازگشتی ردیابی می کند.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 412. ### How do you check an object is a promise or not
 
@@ -8546,7 +8547,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
       </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 413. ### How to detect if a function is called as constructor
 
@@ -8573,7 +8574,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
       </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 414. ### What are the differences between arguments object and rest parameter
 
@@ -8583,19 +8584,19 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
    2. شیء آرگومان ها از روش هایی مانند sort، map، forEach یا pop پشتیبانی نمی کند. در حالی که این روش ها را می توان در پارامترهای استراحت استفاده کرد.
    3. بقیه پارامترها فقط آنهایی هستند که نام جداگانه ای به آنها داده نشده است، در حالی که شیء آرگومان ها شامل تمام آرگومان های ارسال شده به تابع است.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 415. ### What are the differences between spread operator and rest parameter
 
      پارامتر Rest تمام عناصر باقی مانده را در یک آرایه جمع آوری می کند. در حالی که عملگر Spread به تکرارپذیرها (آرایه ها / اشیاء / رشته ها) اجازه می دهد تا به آرگومان ها / عناصر منفرد گسترش یابند. یعنی پارامتر Rest مخالف عملگر spread است.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 416. ### What are the different kinds of generators
 
      پنج نوع  تابع ژنراتور وجود دارد،
 
-  1. **Generator function declaration:**
+     1. **Generator function declaration:**
 
        <span dir="ltr" align="left">
 
@@ -8610,7 +8611,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
        </span>
 
-  2. **Generator function expressions:**
+     2. **Generator function expressions:**
 
        <span dir="ltr" align="left">
 
@@ -8625,7 +8626,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
        </span>
 
-  3. **Generator method definitions in object literals:**
+     3. **Generator method definitions in object literals:**
 
        <span dir="ltr" align="left">
 
@@ -8642,7 +8643,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
        </span>
 
-  4. **Generator method definitions in class:**
+     4. **Generator method definitions in class:**
 
        <span dir="ltr" align="left">
 
@@ -8660,7 +8661,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
        </span>
 
-  5. **Generator as a computed property:**
+     5. **Generator as a computed property:**
 
        <span dir="ltr" align="left">
 
@@ -8678,27 +8679,27 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
        </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 417. ### What are the built-in iterables
 
      در زیر لیستی از تکرارهای داخلی در جاوا اسکریپت آمده است.
 
-   1. آرایه ها و TypedArrays
-   2. رشته ها: روی هر کاراکتر یا نقاط کد یونیکد تکرار کنید
-   3. نقشه ها: روی جفت های کلید-مقدار آن تکرار شود
-   4. مجموعه ها: روی عناصر خود تکرار می شود
-   5. آرگومان ها: یک متغیر خاص آرایه مانند در توابع
-   6. مجموعه DOM مانند NodeList
+     1. آرایه ها و TypedArrays
+     2. رشته ها: روی هر کاراکتر یا نقاط کد یونیکد تکرار کنید
+     3. نقشه ها: روی جفت های کلید-مقدار آن تکرار شود
+     4. مجموعه ها: روی عناصر خود تکرار می شود
+     5. آرگومان ها: یک متغیر خاص آرایه مانند در توابع
+     6. مجموعه DOM مانند NodeList
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 418. ### What are the differences between for...of and for...in statements
 
      هم برای...in و هم برای...از دستورات روی ساختارهای داده js تکرار می‌شن. تنها تفاوت در مورد  چیزیه که اونا تکرار میکننه:
 
-   1. for..in روی تمام کلیدهای خصوصیت شمارش پذیر یک شی تکرار می شود
-   2. for..of iterates بیش از مقادیر یک شی قابل تکرار.
+     1. for..in روی تمام کلیدهای خصوصیت شمارش پذیر یک شی تکرار می شود
+     2. for..of iterates بیش از مقادیر یک شی قابل تکرار.
 
      بیاین این تفاوت رو توی یه مثال ببینیم،
 
@@ -8724,7 +8725,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      از اونجا که حلقه for..in روی کلیدهای شی تکرار می‌شه حلقه اول 0، 1، 2 و newProp را در حین تکرار روی شی آرایه ثبت می‌کنه. حلقه for..of روی مقادیر یک ساختار داده arr تکرار می‌شه و a، b، c را در کنسول ثبت می‌کنه.
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 419. ### How do you define instance and non-instance properties
 
@@ -8754,12 +8755,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     **[⬆ فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 420. ### What is the difference between isNaN and Number.isNaN?
 
-  1. **isNaN**: تابع سراسری «isNaN» آرگومان را به عدد تبدیل می‌کند و اگر مقدار حاصل NaN باشد، true را برمی‌گرداند.
-   2. **Number.isNaN**: این روش آرگومان را تبدیل نمی کند. اما زمانی که نوع یک عدد و مقدار NaN باشد مقدار true را برمی گرداند.
+     1. **isNaN**: تابع سراسری «isNaN» آرگومان را به عدد تبدیل می‌کند و اگر مقدار حاصل NaN باشد، true را برمی‌گرداند.
+
+     2. **Number.isNaN**: این روش آرگومان را تبدیل نمی کند. اما زمانی که نوع یک عدد و مقدار NaN باشد مقدار true را برمی گرداند.
 
      بیایید تفاوت را با یک مثال ببینیم،
 
@@ -8772,6 +8774,6 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-**[⬆ فهرست](#فهرست)**
+**[فهرست](#فهرست)**
 
 </div>
