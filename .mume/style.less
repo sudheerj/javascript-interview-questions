@@ -1,0 +1,298 @@
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+@font-face {
+  font-family: BYekan;
+  src: url("fonts/yekan/BYekan.woff") format("woff");
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('fonts/vazir/Farsi-Digits/Vazir-FD.eot');
+  src: url('fonts/vazir/Farsi-Digits/Vazir-FD.eot?#iefix') format('embedded-opentype'),
+       url('fonts/vazir/Farsi-Digits/Vazir-FD.woff2') format('woff2'),
+       url('fonts/vazir/Farsi-Digits/Vazir-FD.woff') format('woff'),
+       url('fonts/vazir/Farsi-Digits/Vazir-FD.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('fonts/vazir/Farsi-Digits/Vazir-Bold-FD.eot');
+  src: url('fonts/vazir/Farsi-Digits/Vazir-Bold-FD.eot?#iefix') format('embedded-opentype'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Bold-FD.woff2') format('woff2'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Bold-FD.woff') format('woff'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Bold-FD.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('fonts/vazir/Farsi-Digits/Vazir-Thin-FD.eot');
+  src: url('fonts/vazir/Farsi-Digits/Vazir-Thin-FD.eot?#iefix') format('embedded-opentype'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Thin-FD.woff2') format('woff2'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Thin-FD.woff') format('woff'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Thin-FD.ttf') format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('fonts/vazir/Farsi-Digits/Vazir-Light-FD.eot');
+  src: url('fonts/vazir/Farsi-Digits/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Light-FD.woff2') format('woff2'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Light-FD.woff') format('woff'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Light-FD.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('fonts/vazir/Farsi-Digits/Vazir-Medium-FD.eot');
+  src: url('fonts/vazir/Farsi-Digits/Vazir-Medium-FD.eot?#iefix') format('embedded-opentype'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Medium-FD.woff2') format('woff2'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Medium-FD.woff') format('woff'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Medium-FD.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('fonts/vazir/Farsi-Digits/Vazir-Black-FD.eot');
+  src: url('fonts/vazir/Farsi-Digits/Vazir-Black-FD.eot?#iefix') format('embedded-opentype'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Black-FD.woff2') format('woff2'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Black-FD.woff') format('woff'),
+       url('fonts/vazir/Farsi-Digits/Vazir-Black-FD.ttf') format('truetype');
+  font-weight: 900;
+}
+
+// @font-face {
+//   font-family: Vazir-Black;
+//   src: url("fonts/vazir/Farsi-Digits/Vazir-Black-FD.woff") format("woff");
+// }
+
+// @font-face {
+//   font-family: Vazir-Bold;
+//   src: url("fonts/vazir/Farsi-Digits/Vazir-Bold-FD.woff") format("woff");
+// }
+
+// @font-face {
+//   font-family: Vazir-Light;
+//   src: url("fonts/vazir/Farsi-Digits/Vazir-Light-FD.woff") format("woff");
+// }
+
+// @font-face {
+//   font-family: Vazir-Medium;
+//   src: url("fonts/vazir/Farsi-Digits/Vazir-Medium-FD.woff") format("woff");
+// }
+
+// @font-face {
+//   font-family: Vazir-Thin;
+//   src: url("fonts/vazir/Farsi-Digits/Vazir-Thin-FD.woff") format("woff");
+// }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.markdown-preview.markdown-preview {
+  scroll-behavior: smooth;
+  font-family: Vazir, sans-serif;
+  color: #333;
+  font-size: 14px;
+  background: transparent;
+
+  h1 {
+    font-family: Vazir;
+    font-weight: 900;
+  }
+  h2 {
+    font-weight: 600;
+  }
+  a,
+  h1 > a,
+  h2 > a,
+  h3 > a,
+  h4 > a,
+  h5 > a {
+    color: #222;
+  }
+  table {
+    font-family: Vazir;
+  }
+
+  .backToTop {
+    color: #808aff !important
+  }
+
+  h1,
+  h2 {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eaecef;
+  }
+
+  .yekan,
+  td:first-child {
+    font-family: BYekan;
+  }
+  p > strong > a {
+    margin: 20px 0 40px 0;
+    display: block;
+    &::before {
+      content: "⬆ ";
+    }
+    &::after {
+      content: " مطالب";
+    }
+  }
+
+  tr:nth-child(2n) {
+    background-color: #f6f8fa;
+  }
+
+  [dir="rtl"] blockquote {
+    border-left: none;
+    border-right: 4px solid #d6d6d6;
+    padding: 12px;
+  }
+
+  .rtl {
+    direction: rtl;
+  }
+  .center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .a4 {
+    position: relative;
+    direction: rtl;
+    display: block;
+    width: 100%;
+    min-height: 210mm;
+    max-height: 212mm;
+
+    &.pishgoftar {
+      margin-top: 190mm;
+      min-height: 420mm;
+      max-height: 420mm;
+    }
+    img {
+      max-height: 300px;
+    }
+  }
+
+  ol {
+    font-family: BYekan;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      font-family: Vazir;
+    }
+  }
+  .font-black {
+    font-family: Vazir;
+    font-weight: 900;
+  }
+
+  .book-starter {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 12px;
+  }
+  .book-name {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%);
+    text-align: center;
+    flex-direction: column;
+    border-right: 15px solid #f0f0f0;
+    text-align: right;
+    align-items: start !important;
+    padding-right: 26px;
+    span {
+      font-size: 34px;
+      margin-right: 8px;
+    }
+    .font-black {
+      font-size: 50px;
+    }
+  }
+  .book-author {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+  }
+
+  .empty {
+    min-height: 21mm !important;
+    max-height: 21mm !important;
+  }
+
+  .show-in-print {
+    display: none;
+  }
+
+  @media print {
+    // PDF only styles
+    .empty {
+      display: block;
+      width: 100%;
+      min-height: 213mm !important;
+      max-height: 213mm !important;
+    }
+    .hide-in-print,
+    .main-title {
+      display: none;
+    }
+
+    .show-in-print {
+      display: block;
+    }
+
+    .backToTop {
+      font-size: 0;
+    }
+
+    pre {
+      white-space: pre-wrap;
+    }
+
+    h3 {
+      font-size: 1.3em !important;
+    }
+  }
+
+    .hider {
+      position: absolute;
+      top: 213mm;
+      left: 50%;
+      transform: translate(-50%, -20px);
+      background: #000;
+      width: 20px;
+      height: 20px;
+      &:nth-child(2) {
+        top: 426mm;
+      }
+      &:nth-child(3) {
+        top: 639mm;
+      }
+      &:nth-child(4) {
+        top: 852mm;
+      }
+      &:nth-child(5) {
+        top: 600mm;
+      }
+    }
+
+}
