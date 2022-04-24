@@ -8550,7 +8550,7 @@ console.log(numbers.includes(NaN)); // true
 #### 23. What is the output of below code
 
 ```javascript
-let [a, ...b] = [1, 2, 3, 4, 5];
+let [a, ...b,] = [1, 2, 3, 4, 5];
 console.log(a, b);
 ```
 
