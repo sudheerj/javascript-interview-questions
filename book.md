@@ -2547,7 +2547,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 112. ### هدف از متد JSON.stringify چیه؟
 
-    هنگام ارسال داده ها به وب سرور، داده ها باید در قالب رشته ای باشند. شما می توانید با تبدیل شی `JSON` به رشته با استفاده از متد `stringify ()` به این هدف دست یابید.
+     هنگام ارسال داده ها به وب سرور، داده ها باید در قالب رشته ای باشند. شما می توانید با تبدیل شی `JSON` به رشته با استفاده از متد `stringify ()` به این هدف دست یابید.
 
      <span dir="ltr" align="left">
 
@@ -4116,6 +4116,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 193. ### What are the applications of assign method
 
+
      در زیر تعدادی از کاربردهای اصلی متد Object.assign() آورده شده است.
 
      1. برای شبیه سازی یک شی استفاده می شود.
@@ -4225,6 +4226,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      متد Object.entries() برای برگرداندن آرایه‌ای از جفت‌های [key, value] دارای کلید رشته‌ای شمارش‌پذیر یک شی معین، به همان ترتیبی که توسط یک حلقه for...in ارائه می‌شود، استفاده می‌شود. بیایید عملکرد متد ()object.entries را در یک مثال ببینیم،
      
+
      <span dir="ltr" align="left">
 
      ```javascript
@@ -4464,7 +4466,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 210. ### How do you encode an URL
 
-     تابع encodeURI () برای رمزگذاری URI کامل استفاده می شود که دارای کاراکترهای خاص به جز (, / ? : @ & = + $ #) است.
+     تابع encodeURI برای رمزگذاری URI کامل استفاده می شود که دارای کاراکترهای خاص به جز (, / ? : @ & = + $ #) است.
 
      <span dir="ltr" align="left">
 
@@ -4480,7 +4482,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 211. ### How do you decode an URL
 
-     تابع ()decodeURI برای رمزگشایی یک شناسه منبع یکنواخت (URI) که قبلا توسط encodeURI ایجاد شده است استفاده می شود.
+     تابع decodeURI برای رمزگشایی یک شناسه منبع یکنواخت (URI) که قبلا توسط encodeURI ایجاد شده است استفاده می شود.
 
      <span dir="ltr" align="left">
 
@@ -4501,7 +4503,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 212. ### How do you print the contents of web page
 
-     شی window یک متد print() ارائه می‌کند که برای چاپ محتویات پنجره فعلی استفاده می‌شود. یک کادر محاوره ای چاپ را باز می کند که به شما امکان می دهد بین گزینه های مختلف چاپ انتخاب کنید. بیایید استفاده از روش چاپ را در یک مثال ببینیم،
+     شی window یک متد print ارائه می‌کند که برای چاپ محتویات پنجره فعلی استفاده می‌شود. یک کادر محاوره ای چاپ را باز می کند که به شما امکان می دهد بین گزینه های مختلف چاپ انتخاب کنید. بیایید استفاده از روش چاپ را در یک مثال ببینیم،
 
      <span dir="ltr" align="left">
 
@@ -4615,7 +4617,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 217. ### How do you define property on Object constructor
 
-     متد استاتیک Object.defineProperty() برای تعریف یک ویژگی جدید به طور مستقیم بر روی یک شی یا تغییر ویژگی موجود روی یک شی استفاده می شود و شی را برمی گرداند. بیایید مثالی را ببینیم تا بدانیم چگونه ویژگی را تعریف کنیم،
+     متد استاتیک Object.defineProperty برای تعریف یک ویژگی جدید به طور مستقیم بر روی یک شی یا تغییر ویژگی موجود روی یک شی استفاده می شود و شی را برمی گرداند. بیایید مثالی را ببینیم تا بدانیم چگونه ویژگی را تعریف کنیم،
 
      <span dir="ltr" align="left">
 
@@ -4639,7 +4641,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 218. ### What is the difference between get and defineProperty
 
-     هر دو نتایج مشابهی دارند مگر اینکه از کلاس ها استفاده کنید. اگر از «get» استفاده می‌کنید، ویژگی روی نمونه اولیه شی تعریف می‌شود، در حالی که با استفاده از «Object.defineProperty()»، ویژگی روی نمونه‌ای که به آن اعمال می‌شود، تعریف می‌شود.
+     هر دو نتایج مشابهی دارند مگر اینکه از کلاس ها استفاده کنید. اگر از «get» استفاده می‌کنید، ویژگی روی نمونه اولیه شی تعریف می‌شود، در حالی که با استفاده از «Object.defineProperty»، ویژگی روی نمونه‌ای که به آن اعمال می‌شود، تعریف می‌شود.
 
      **[فهرست](#فهرست)**
 
@@ -4656,7 +4658,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 220. ### Can I add getters and setters using defineProperty method
 
-     بله، می‌توانید از روش Object.defineProperty()» برای اضافه کردن Getters و Setter استفاده کنید. به عنوان مثال، شی شمارنده زیر از ویژگی های افزایش، کاهش، جمع و تفریق استفاده می کند.
+     بله، می‌توانید از روش Object.defineProperty» برای اضافه کردن Getters و Setter استفاده کنید. به عنوان مثال، شی شمارنده زیر از ویژگی های افزایش، کاهش، جمع و تفریق استفاده می کند.
 
      <span dir="ltr" align="left">
 
@@ -4779,7 +4781,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 225. ### What are the function parameter rules
 
-   توابع جاوا اسکریپت از قوانین زیر برای پارامترها پیروی می کنند.
+     توابع جاوا اسکریپت از قوانین زیر برای پارامترها پیروی می کنند.
      1. تعاریف تابع انواع داده ها را برای پارامترها مشخص نمی کند.
      2. بررسی نوع آرگومان های ارسال شده را انجام ندهید.
      3. تعداد آرگومان های دریافتی را بررسی نکنید.
@@ -4820,6 +4822,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 227. ### When you get a syntax error
 
      اگر بخواهید کد را با یک خطای نحوی ارزیابی کنید، یک SyntaxError پرتاب می شود. به عنوان مثال، نقل قول زیر برای پارامتر تابع یک خطای نحوی ایجاد می کند
+     
      <span dir="ltr" align="left">
 
      ```javascript
@@ -4840,12 +4843,12 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      6 نوع مختلف نام خطا وجود دارد که از شی خطا بازگردانده می شود.
      | نام خطا | توضیحات |
      |---- | --------- |
-     | EvalError | خطایی در تابع eval() رخ داده است
+     | EvalError | خطایی در تابع eval رخ داده است
      | RangeError | خطایی با عدد "خارج از محدوده" | رخ داده است
      | خطای مرجع | خطا به دلیل ارجاع غیرقانونی|
      | SyntaxError | خطای ناشی از خطای نحو|
      | TypeError | خطای ناشی از خطای نوع |
-     | خطای URIE | یک خطا به دلیل () encodeURI |
+     | خطای URIE | یک خطا به دلیل encodeURI |
 
      **[فهرست](#فهرست)**
 
@@ -4997,13 +5000,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      **[فهرست](#فهرست)**
 
 240. ### What are the properties of Intl object
+     
+     در زیر لیستی از ویژگی های موجود در شیء Intl آمده است،
 
-    در زیر لیستی از ویژگی های موجود در شیء Intl آمده است،
      1. **Collator:** اینها اشیایی هستند که مقایسه رشته های حساس به زبان را امکان پذیر می کنند.
      2. **DateTimeFormat:** اینها اشیایی هستند که قالب بندی تاریخ و زمان حساس به زبان را فعال می کنند.
-     3. **ListFormat:**اینها اشیایی هستند که قالب بندی لیست حساس به زبان را فعال می کنند.
+     3. **ListFormat:** اینها اشیایی هستند که قالب بندی لیست حساس به زبان را فعال می کنند.
      4. **NumberFormat:** اشیایی که قالب بندی اعداد حساس به زبان را فعال می کنند.
-     5. **PluralRules:**اشیایی که قالب بندی حساس به جمع و قوانین خاص زبان را برای جمع فعال می کنند.
+     5. **PluralRules:** اشیایی که قالب بندی حساس به جمع و قوانین خاص زبان را برای جمع فعال می کنند.
      6. **RelativeTimeFormat:** اشیایی که قالب بندی زمان نسبی حساس به زبان را فعال می کنند.
 
      **[فهرست](#فهرست)**
@@ -5216,17 +5220,17 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      TypeScript یک ابر مجموعه تایپ شده از جاوا اسکریپت است که توسط مایکروسافت ایجاد شده است که انواع اختیاری، کلاس ها، async/wait و بسیاری ویژگی های دیگر را اضافه می کند و به جاوا اسکریپت ساده کامپایل می کند. Angular به طور کامل در TypeScript ساخته شده و به عنوان زبان اصلی استفاده می شود. شما می توانید آن را به صورت جهانی نصب کنید
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
       ```bash
       npm install -g typescript
       ```
 
-      </span>
+     </span>
 
      بیایید یک مثال ساده از استفاده از TypeScript را ببینیم،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
       ```typescript
       function greeting(name: string): string {
@@ -5238,7 +5242,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       console.log(greeting(user));
       ```
 
-      </span>
+     </span>
 
      متد خوشامدگویی فقط نوع رشته را به عنوان آرگومان مجاز می کند.
 
@@ -5287,6 +5291,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      متد سازنده یک متد خاص برای ایجاد و مقداردهی اولیه یک شی ایجاد شده در یک کلاس است. اگر متد سازنده را مشخص نکنید، از سازنده پیش فرض استفاده می شود. مثال استفاده از سازنده به صورت زیر خواهد بود.
      
+
      <span dir="ltr" align="left">
 
      ```javascript
@@ -5360,6 +5365,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 258. ### How do you get the prototype of an object
 
      می توانید از روش Object.getPrototypeOf(obj) برای برگرداندن نمونه اولیه شی مشخص شده استفاده کنید. یعنی مقدار ویژگی «نمونه اولیه» داخلی. اگر هیچ ویژگی ارثی وجود نداشته باشد، مقدار "null" برگردانده می شود.
+     
      <span dir="ltr" align="left">
 
      ```javascript
@@ -5580,8 +5586,8 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      ```html
      <form name="myForm" onsubmit="return validateForm()" method="post">
-     User name: <input type="text" name="uname">
-     <input type="submit" value="Submit">
+          User name: <input type="text" name="uname">
+          <input type="submit" value="Submit">
      </form>
      ```
 
@@ -5718,6 +5724,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 279. ### What is an enum
 
      enum نوعی است که متغیرها را به یک مقدار از مجموعه ای از ثابت های از پیش تعریف شده محدود می کند. جاوا اسکریپت هیچ enum ندارد اما تایپ اسکریپت از enum داخلی پشتیبانی می کند.
+     
      <span dir="ltr" align="left">
 
      ```javascript
@@ -6165,7 +6172,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      ```javascript
      function myFunction() {
-     window.document.body.style.cursor = "wait";
+          window.document.body.style.cursor = "wait";
      }
      ```
 
@@ -6191,6 +6198,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      ```javascript
      for (;;) {}
+
      while(true) {
      }
      ```
