@@ -4116,7 +4116,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
 193. ### What are the applications of assign method
 
-    در زیر تعدادی از کاربردهای اصلی متد Object.assign() آورده شده است.
+     در زیر تعدادی از کاربردهای اصلی متد Object.assign() آورده شده است.
 
      1. برای شبیه سازی یک شی استفاده می شود.
      2. برای ادغام اشیاء با ویژگی های یکسان استفاده می شود.
@@ -4224,6 +4224,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 199. ### How do you get enumerable key and value pairs
 
      متد Object.entries() برای برگرداندن آرایه‌ای از جفت‌های [key, value] دارای کلید رشته‌ای شمارش‌پذیر یک شی معین، به همان ترتیبی که توسط یک حلقه for...in ارائه می‌شود، استفاده می‌شود. بیایید عملکرد متد ()object.entries را در یک مثال ببینیم،
+     
      <span dir="ltr" align="left">
 
      ```javascript
@@ -4245,7 +4246,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-200. ### What is the main difference between Object.values and Object.entries method
+200. ### What is the main difference between Object.values and Object.entries method?
 
      رفتار متد Object.values ​​() مشابه روش Object.entries() است اما به جای جفت [key,value] آرایه ای از مقادیر را برمی گرداند.
 
