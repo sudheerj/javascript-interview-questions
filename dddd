@@ -1,0 +1,294 @@
+- چطوری روی یه object حلقه میزنی؟
+ - چطوری تست می‌کنی که یه object خالیه؟
+ - arguments object چیه؟
+ - چطوری حرف اول یه رشته رو به حرف بزرگ تبدیل می‌کنی؟
+ - مزایا و معایب حلقه for چیا هستن؟
+ - چطوری تاریخ جاری رو توی جاواسکریپت نشون میدی؟
+ - چطوری دو تا date object رو با هم مقایسه می‌کنی؟
+ - چطوری بررسی می‌کنی که یه رشته با یه رشته دیگه شروع میشه؟
+ - چطوری یه رشته رو trim میکنی؟
+ - توی جاواسکریپت چطوری می‌تونیم یه زوج مرتب از key یه valueها بسازیم؟
+ - آیا عبارت '!--' عملگر خاصی هست؟
+ - چطوری می‌تونیم به متغیرهامون مقادیر اولیه بدیم؟
+ - چطوری می‌تونیم متن‌های چند خطی درست کنیم؟
+ - مدل app-shell چیه؟
+ - چطوری می‌تونیم روی یه تابع property اضافه کنیم؟
+ - چطوری می‌تونیم تعداد پارامترهای ورودی یه تابع رو به دست بیاریم؟
+ - Polyfill چیه؟
+ - عبارات Break و continue چی هستن؟
+ - توی جاواسکریپت labelها چیکار می‌کنن؟
+ - مزایای declare کردن متغیرها در اوایل کد چیه؟
+ - مزایای مقداردهی اولیه متغیرها چیه؟
+ - روش توصیه شده برای ایجاد object چیه؟
+ - چطوری می‌تونیم آرایه‌ JSON تعریف کنیم؟
+ - چطوری می‌تونیم اعداد تصادفی تولید کنیم؟
+ - می‌تونی یه تابع تولید اعداد تصادفی توی یه بازه مشخص بنویسی؟
+ - Tree-shaking چیه؟
+ - دلایل نیاز به tree-shaking کدوما هستن؟
+ - آیا استفاده از eval توصیه میشه؟
+ - Regular-Expression چیه؟
+ - متدهای رشته که روی Regular-expression مجاز هستن کدوماست؟
+ - توی Regex بخش modifiersها چیکار می‌کنه؟
+ - پترن‌های regular-expression چیه؟
+ - آبجکت RegExp چیه؟
+ - چطوری روی یه رشته دنبال یه پترن RegExp می‌گردی؟
+ - هدف از متد exec چیه؟
+ - چطوری استایل‌های یه المنت HTML رو تغییر میدی؟
+ - نتیجه عبارت 1+2+'3' چی میشه؟
+ - عبارت debugger چیکار میکنه؟
+ - هدف از breakpointها توی debugging چیه؟
+ - آیا می‌تونیم از عبارت‌های رزرو شده در تعریف identifierها(اسم متغیر، کلاس و ...) استفاده کنیم؟
+ - چطوری تشخیص بدیم که یه مرورگر mobile هست یا نه؟
+ - چطوری بدون Regex تشخیص بدیم که یه مرورگر mobile هست یا نه؟
+ - چطوری طول و عرض یه تصویر رو با جاواسکریپت به دست میاری؟
+ - چطوری درخواست‌های synchronous HTTP بزنیم؟
+ - چطوری درخواست‌های asynchronous HTTP بزنیم؟
+ - چطوری یه تاریخ رو به یه تاریخ در timezone دیگه تبدیل کنیم؟
+ - چه propertyهایی برای اندازه‌گیزی سایز window به کار میره؟
+ - What is a conditional operator in javascript
+ - Can you apply chaining on conditional operator
+ - What are the ways to execute javascript after page load
+ - What is the difference between proto and prototype
+ - Give an example where do you really need semicolon
+ - What is a freeze method
+ - What is the purpose of freeze method
+ - Why do I need to use freeze method
+ - How do you detect a browser language preference
+ - How to convert string to title case with javascript
+ - How do you detect javascript disabled in the page
+ - What are various operators supported by javascript
+ - What is a rest parameter
+ - What happens if you do not use rest parameter as a last argument
+ - What are the bitwise operators available in javascript
+ - What is a spread operator
+ - How do you determine whether object is frozen or not
+ - How do you determine two values same or not using object
+ - What is the purpose of using object is method
+ - How do you copy properties from one object to other
+ - What are the applications of assign method
+ - What is a proxy object
+ - What is the purpose of seal method
+ - What are the applications of seal method
+ - What are the differences between freeze and seal methods
+ - How do you determine if an object is sealed or not
+ - How do you get enumerable key and value pairs
+ - What is the main difference between Object.values and Object.entries method
+ - How can you get the list of keys of any object
+ - How do you create an object with prototype
+ - What is a WeakSet
+ - What are the differences between WeakSet and Set
+ - List down the collection of methods available on WeakSet
+ - What is a WeakMap
+ - What are the differences between WeakMap and Map
+ - List down the collection of methods available on WeakMap
+ - What is the purpose of uneval
+ - How do you encode an URL
+ - How do you decode an URL
+ - How do you print the contents of web page
+ - What is the difference between uneval and eval
+ - What is an anonymous function
+ - What is the precedence order between local and global variables
+ - What are javascript accessors
+ - How do you define property on Object constructor
+ - What is the difference between get and defineProperty
+ - What are the advantages of Getters and Setters
+ - Can I add getters and setters using defineProperty method
+ - What is the purpose of switch-case
+ - What are the conventions to be followed for the usage of swtich case
+ - What are primitive data types
+ - What are the different ways to access object properties
+ - What are the function parameter rules
+ - What is an error object
+ - When you get a syntax error
+ - What are the different error names from error object
+ - What are the various statements in error handling
+ - What are the two types of loops in javascript
+ - nodejs چیه؟
+ - What is an Intl object
+ - How do you perform language specific date and time formatting
+ - What is an Iterator
+ - How does synchronous iteration works
+ - What is an event loop
+ - What is call stack
+ - What is an event queue
+ - What is a decorator
+ - What are the properties of Intl object
+ - What is an Unary operator
+ - How do you sort elements in an array
+ - What is the purpose of compareFunction while sorting arrays
+ - How do you reversing an array
+ - How do you find min and max value in an array
+ - How do you find min and max values without Math functions
+ - What is an empty statement and purpose of it
+ - How do you get meta data of a module
+ - What is a comma operator
+ - What is the advantage of a comma operator
+ - What is typescript
+ - What are the differences between javascript and typescript
+ - What are the advantages of typescript over javascript
+ - What is an object initializer
+ - What is a constructor method
+ - What happens if you write constructor more than once in a class
+ - How do you call the constructor of a parent class
+ - How do you get the prototype of an object
+ - What happens If I pass string type for getPrototype method
+ - How do you set prototype of one object to another
+ - How do you check whether an object can be extendable or not
+ - How do you prevent an object to extend
+ - What are the different ways to make an object non-extensible
+ - How do you define multiple properties on an object
+ - منظور از MEAN توی جاواسکریپت چیه؟ javascript
+ - Obfuscation توی جاواسکریپت چیه و چیکار می‌کنه؟ javascript
+ - چه نیازی به Obfuscate کردن داریم؟
+ - Minification چیه؟
+ - What are the advantages of minification
+ - What are the differences between Obfuscation and Encryption
+ - What are the common tools used for minification
+ - How do you perform form validation using javascript
+ - How do you perform form validation without javascript
+ - What are the DOM methods available for constraint validation
+ - What are the available constraint validation DOM properties
+ - What are the list of validity properties
+ - Give an example usage of rangeOverflow property
+ - جاواسکریپت قابلیت استفاده از enum رو پیش‌فرض توی خودش داره؟
+ - enum چیه؟
+ - How do you list all properties of an object
+ - How do you get property descriptors of an object
+ - What are the attributes provided by a property descriptor
+ - How do you extend classes
+ - How do I modify the url without reloading the page
+ - How do you check whether an array includes a particular value or not
+ - How do you compare scalar arrays
+ - How to get the value from get parameters
+ - How do you print numbers with commas as thousand separators
+ - What is the difference between java and javascript
+ - Is javascript supports namespace
+ - How do you declare namespace
+ - How do you invoke javascript code in an iframe from parent page
+ - How do get the timezone offset from date
+ - How do you load CSS and JS files dynamically
+ - What are the different methods to find HTML elements in DOM
+ - What is jQuery
+ - What is V8 JavaScript engine
+ - Why do we call javascript as dynamic language
+ - What is a void operator
+ - How to set the cursor to wait
+ - How do you create an infinite loop
+ - Why do you need to avoid with statement
+ - What is the output of below for loops
+ - List down some of the features of ES6
+ - What is ES6
+ - Can I redeclare let and const variables
+ - Is const variable makes the value immutable
+ - What are default parameters
+ - What are template literals
+ - How do you write multi-line strings in template literals
+ - What are nesting templates
+ - What are tagged templates
+ - What are raw strings
+ - What is destructuring assignment
+ - What are default values in destructuring assignment
+ - How do you swap variables in destructuring assignment
+ - What are enhanced object literals
+ - What are dynamic imports
+ - What are the use cases for dynamic imports
+ - What are typed arrays
+ - What are the advantages of module loaders
+ - What is collation
+ - What is for...of statement
+ - What is the output of below spread operator array
+ - Is PostMessage secure
+ - What are the problems with postmessage target origin as wildcard
+ - How do you avoid receiving postMessages from attackers
+ - Can I avoid using postMessages completely
+ - Is postMessages synchronous
+ - What paradigm is Javascript
+ - What is the difference between internal and external javascript
+ - Is JavaScript faster than server side script
+ - How do you get the status of a checkbox
+ - What is the purpose of double tilde operator
+ - How do you convert character to ASCII code
+ - What is ArrayBuffer
+ - What is the output of below string expression
+ - What is the purpose of Error object
+ - What is the purpose of EvalError object
+ - What are the list of cases error thrown from non-strict mode to strict mode
+ - Is all objects have prototypes
+ - What is the difference between a parameter and an argument
+ - What is the purpose of some method in arrays
+ - How do you combine two or more arrays
+ - What is the difference between Shallow and Deep copy
+ - How do you create specific number of copies of a string
+ - How do you return all matching strings against a regular expression
+ - How do you trim a string at the beginning or ending
+ - What is the output of below console statement with unary operator
+ - Does javascript uses mixins
+ - What is a thunk function
+ - What are asynchronous thunks
+ - What is the output of below function calls
+ - How to remove all line breaks from a string
+ - What is the difference between reflow and repaint
+ - What happens with negating an array
+ - What happens if we add two arrays
+ - What is the output of prepend additive operator on falsy values
+ - How do you create self string using special characters
+ - How do you remove falsy values from an array
+ - How do you get unique values of an array
+ - What is destructuring aliases
+ - How do you map the array values without using map method
+ - How do you empty an array
+ - How do you rounding numbers to certain decimals
+ - What is the easiest way to convert an array to an object
+ - How do you create an array with some data
+ - What are the placeholders from console object
+ - Is it possible to add CSS to console messages
+ - What is the purpose of dir method of console object
+ - Is it possible to debug HTML elements in console
+ - How do you display data in a tabular format using console object
+ - How do you verify that an argument is a Number or not
+ - How do you create copy to clipboard button
+ - What is the shortcut to get timestamp
+ - How do you flattening multi dimensional arrays
+ - What is the easiest multi condition checking
+ - How do you capture browser back button
+ - How do you disable right click in the web page
+ - What are wrapper objects
+ - What is AJAX
+ - What are the different ways to deal with Asynchronous Code
+ - How to cancel a fetch request
+ - What is web speech API
+ - What is minimum timeout throttling
+ - How do you implement zero timeout in modern browsers
+ - What are tasks in event loop
+ - What are microtasks
+ - What are different event loops
+ - What is the purpose of queueMicrotask
+ - How do you use javascript libraries in typescript file
+ - What are the differences between promises and observables
+ - What is heap
+ - What is an event table
+ - What is a microTask queue
+ - What is the difference between shim and polyfill
+ - How do you detect primitive or non primitive value type
+ - What is babel
+ - Is Node.js completely single threaded
+ - What are the common use cases of observables
+ - What is RxJS
+ - What is the difference between Function constructor and function declaration
+ - What is a Short circuit condition
+ - What is the easiest way to resize an array
+ - What is an observable
+ - What is the difference between function and class declarations
+ - What is an async function
+ - How do you prevent promises swallowing errors
+ - Deno چیه؟
+ - How do you make an object iterable in javascript
+ - What is a Proper Tail Call
+ - How do you check an object is a promise or not
+ - How to detect if a function is called as constructor
+ - What are the differences between arguments object and rest parameter
+ - What are the differences between spread operator and rest parameter
+ - What are the different kinds of generators
+ - What are the built-in iterables
+ - What are the differences between for...of and for...in statements
+ - How do you define instance and non-instance properties
