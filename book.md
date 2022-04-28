@@ -166,301 +166,301 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 |123| [ویژگی‌های مختلف url روی object مربوط به history کدوما هستن؟](#ویژگیهای-مختلف-url-روی-object-مربوط-به-history-کدوما-هستن) |
 |124| [توی جاواسکریپت چطوری می‌تونیم مقدار یه query-string رو بخونیم؟](#توی-جاواسکریپت-چطوری-میتونیم-مقدار-یه-query-string-رو-بخونیم) |
 |125| [چطوری می‌تونیم بررسی کنیم که آیا یه پراپرتی روی آبجکت وجود داره یا نه؟](#چطوری-میتونیم-بررسی-کنیم-که-آیا-یه-پراپرتی-روی-آبجکت-وجود-داره-یا-نه) |
-|126| [How do you loop through or enumerate javascript object]() |
-|127| [How do you test for an empty object]() |
-|128| [What is an arguments object]() |
-|129| [How do you make first letter of the string in an uppercase]() |
-|130| [What are the pros and cons of for loop]() |
-|131| [How do you display the current date in javascript]() |
-|132| [How do you compare two date objects]() |
-|133| [How do you check if a string starts with another string]() |
-|134| [How do you trim a string in javascript]() |
-|135| [How do you add a key value pair in javascript]() |
-|136| [Is the '!--' notation represents a special operator]() |
-|137| [How do you assign default values to variables]() |
-|138| [How do you define multiline strings]() |
-|139| [What is an app shell model]() |
-|140| [Can we define properties for functions]() |
-|141| [What is the way to find the number of parameters expected by a function]() |
-|142| [What is a polyfill]() |
-|143| [What are break and continue statements]() |
-|144| [What are js labels]() |
-|145| [What are the benefits of keeping declarations at the top]() |
-|146| [What are the benefits of initializing variables]() |
-|147| [What are the recommendations to create new object]() |
-|148| [How do you define JSON arrays]() |
-|149| [How do you generate random integers]() |
-|150| [Can you write a random integers function to print integers with in a range]() |
-|151| [What is tree shaking]() |
-|152| [What is the need of tree shaking]() |
-|153| [Is it recommended to use eval]() |
-|154| [What is a Regular Expression]() |
-|155| [What are the string methods available in Regular expression]() |
-|156| [What are modifiers in regular expression]() |
-|157| [What are regular expression patterns]() |
-|158| [What is a RegExp object]() |
-|159| [How do you search a string for a pattern]() |
-|160| [What is the purpose of exec method]() |
-|161| [How do you change style of a HTML element]() |
-|162| [What would be the result of 1+2+'3']() |
-|163| [What is a debugger statement]() |
-|164| [What is the purpose of breakpoints in debugging]() |
-|165| [Can I use reserved words as identifiers]() |
-|166| [How do you detect a mobile browser]() |
-|167| [How do you detect a mobile browser without regexp]() |
-|168| [How do you get the image width and height using JS]() |
-|169| [How do you make synchronous HTTP request]() |
-|170| [How do you make asynchronous HTTP request]() |
-|171| [How do you convert date to another timezone in javascript]() |
-|172| [What are the properties used to get size of window]() |
-|173| [What is a conditional operator in javascript]() |
-|174| [Can you apply chaining on conditional operator]() |
-|175| [What are the ways to execute javascript after page load]() |
-|176| [What is the difference between proto and prototype]() |
-|177| [Give an example where do you really need semicolon]() |
-|178| [What is a freeze method]() |
-|179| [What is the purpose of freeze method]() |
-|180| [Why do I need to use freeze method]() |
-|181| [How do you detect a browser language preference]() |
-|182| [How to convert string to title case with javascript]() |
-|183| [How do you detect javascript disabled in the page]() |
-|184| [What are various operators supported by javascript]() |
-|185| [What is a rest parameter]() |
-|186| [What happens if you do not use rest parameter as a last argument]() |
-|187| [What are the bitwise operators available in javascript]() |
-|188| [What is a spread operator]() |
-|189| [How do you determine whether object is frozen or not]() |
-|190| [How do you determine two values same or not using object]() |
-|191| [What is the purpose of using object is method]() |
-|192| [How do you copy properties from one object to other]() |
-|193| [What are the applications of assign method]() |
-|194| [What is a proxy object]() |
-|195| [What is the purpose of seal method]() |
-|196| [What are the applications of seal method]() |
-|197| [What are the differences between freeze and seal methods]() |
-|198| [How do you determine if an object is sealed or not]() |
-|199| [How do you get enumerable key and value pairs]() |
-|200| [What is the main difference between Object.values and Object.entries method]() |
-|201| [How can you get the list of keys of any object]() |
-|202| [How do you create an object with prototype]() |
-|203| [What is a WeakSet]() |
-|204| [What are the differences between WeakSet and Set]() |
-|205| [List down the collection of methods available on WeakSet]() |
-|206| [What is a WeakMap]() |
-|207| [What are the differences between WeakMap and Map]() |
-|208| [List down the collection of methods available on WeakMap]() |
-|209| [What is the purpose of uneval]() |
-|210| [How do you encode an URL]() |
-|211| [How do you decode an URL]() |
-|212| [How do you print the contents of web page]() |
-|213| [What is the difference between uneval and eval]() |
-|214| [What is an anonymous function]() |
-|215| [What is the precedence order between local and global variables]() |
-|216| [What are javascript accessors]() |
-|217| [How do you define property on Object constructor]() |
-|218| [What is the difference between get and defineProperty]() |
-|219| [What are the advantages of Getters and Setters]() |
-|220| [Can I add getters and setters using defineProperty method]() |
-|221| [What is the purpose of switch-case]() |
-|222| [What are the conventions to be followed for the usage of swtich case]() |
-|223| [What are primitive data types]() |
-|224| [What are the different ways to access object properties]() |
-|225| [What are the function parameter rules]() |
-|226| [What is an error object]() |
-|227| [When you get a syntax error]() |
-|228| [What are the different error names from error object]() |
-|229| [What are the various statements in error handling]() |
-|230| [What are the two types of loops in javascript]() |
-|231| [nodejs چیه؟]() |
-|232| [What is an Intl object]() |
-|233| [How do you perform language specific date and time formatting]() |
-|234| [What is an Iterator]() |
-|235| [How does synchronous iteration works]() |
-|236| [What is an event loop]() |
-|237| [What is call stack]() |
-|238| [What is an event queue]() |
-|239| [What is a decorator]() |
-|240| [What are the properties of Intl object]() |
-|241| [What is an Unary operator]() |
-|242| [How do you sort elements in an array]() |
-|243| [What is the purpose of compareFunction while sorting arrays]() |
-|244| [How do you reversing an array]() |
-|245| [How do you find min and max value in an array]() |
-|246| [How do you find min and max values without Math functions]() |
-|247| [What is an empty statement and purpose of it]() |
-|248| [How do you get meta data of a module]() |
-|249| [What is a comma operator]() |
-|250| [What is the advantage of a comma operator]() |
-|251| [What is typescript]() |
-|252| [What are the differences between javascript and typescript]() |
-|253| [What are the advantages of typescript over javascript]() |
-|254| [What is an object initializer]() |
-|255| [What is a constructor method]() |
-|256| [What happens if you write constructor more than once in a class]() |
-|257| [How do you call the constructor of a parent class]() |
-|258| [How do you get the prototype of an object]() |
-|259| [What happens If I pass string type for getPrototype method]() |
-|260| [How do you set prototype of one object to another]() |
-|261| [How do you check whether an object can be extendable or not]() |
-|262| [How do you prevent an object to extend]() |
-|263| [What are the different ways to make an object non-extensible]() |
-|264| [How do you define multiple properties on an object]() |
-|265| [منظور از MEAN توی جاواسکریپت چیه؟ javascript]() |
-|266| [Obfuscation توی جاواسکریپت چیه و چیکار می‌کنه؟ javascript]() |
-|267| [چه نیازی به Obfuscate کردن داریم؟]() |
-|268| [Minification چیه؟]() |
-|269| [What are the advantages of minification]() |
-|270| [What are the differences between Obfuscation and Encryption]() |
-|271| [What are the common tools used for minification]() |
-|272| [How do you perform form validation using javascript]() |
-|273| [How do you perform form validation without javascript]() |
-|274| [What are the DOM methods available for constraint validation]() |
-|275| [What are the available constraint validation DOM properties]() |
-|276| [What are the list of validity properties]() |
-|277| [Give an example usage of rangeOverflow property]() |
-|278| [جاواسکریپت قابلیت استفاده از enum رو پیش‌فرض توی خودش داره؟]() |
-|279| [enum چیه؟]() |
-|280| [How do you list all properties of an object]() |
-|281| [How do you get property descriptors of an object]() |
-|282| [What are the attributes provided by a property descriptor]() |
-|283| [How do you extend classes]() |
-|284| [How do I modify the url without reloading the page]() |
-|285| [How do you check whether an array includes a particular value or not]() |
-|286| [How do you compare scalar arrays]() |
-|287| [How to get the value from get parameters]() |
-|288| [How do you print numbers with commas as thousand separators]() |
-|289| [What is the difference between java and javascript]() |
-|290| [Is javascript supports namespace]() |
-|291| [How do you declare namespace]() |
-|292| [How do you invoke javascript code in an iframe from parent page]() |
-|293| [How do get the timezone offset from date]() |
-|294| [How do you load CSS and JS files dynamically]() |
-|295| [What are the different methods to find HTML elements in DOM]() |
-|296| [What is jQuery]() |
-|297| [What is V8 JavaScript engine]() |
-|298| [Why do we call javascript as dynamic language]() |
-|299| [What is a void operator]() |
-|300| [How to set the cursor to wait]() |
-|301| [How do you create an infinite loop]() |
-|302| [Why do you need to avoid with statement]() |
-|303| [What is the output of below for loops]() |
-|304| [List down some of the features of ES6]() |
-|305| [What is ES6]() |
-|306| [Can I redeclare let and const variables]() |
-|307| [Is const variable makes the value immutable]() |
-|308| [What are default parameters]() |
-|309| [What are template literals]() |
-|310| [How do you write multi-line strings in template literals]() |
-|311| [What are nesting templates]() |
-|312| [What are tagged templates]() |
-|313| [What are raw strings]() |
-|314| [What is destructuring assignment]() |
-|315| [What are default values in destructuring assignment]() |
-|316| [How do you swap variables in destructuring assignment]() |
-|317| [What are enhanced object literals]() |
-|318| [What are dynamic imports]() |
-|319| [What are the use cases for dynamic imports]() |
-|320| [What are typed arrays]() |
-|321| [What are the advantages of module loaders]() |
-|322| [What is collation]() |
-|323| [What is for...of statement]() |
-|324| [What is the output of below spread operator array]() |
-|325| [Is PostMessage secure]() |
-|326| [What are the problems with postmessage target origin as wildcard]() |
-|327| [How do you avoid receiving postMessages from attackers]() |
-|328| [Can I avoid using postMessages completely]() |
-|329| [Is postMessages synchronous]() |
-|330| [What paradigm is Javascript]() |
-|331| [What is the difference between internal and external javascript]() |
-|332| [Is JavaScript faster than server side script]() |
-|333| [How do you get the status of a checkbox]() |
-|334| [What is the purpose of double tilde operator]() |
-|335| [How do you convert character to ASCII code]() |
-|336| [What is ArrayBuffer]() |
-|337| [What is the output of below string expression]() |
-|338| [What is the purpose of Error object]() |
-|339| [What is the purpose of EvalError object]() |
-|340| [What are the list of cases error thrown from non-strict mode to strict mode]() |
-|341| [Is all objects have prototypes]() |
-|342| [What is the difference between a parameter and an argument]() |
-|343| [What is the purpose of some method in arrays]() |
-|344| [How do you combine two or more arrays]() |
-|345| [What is the difference between Shallow and Deep copy]() |
-|346| [How do you create specific number of copies of a string]() |
-|347| [How do you return all matching strings against a regular expression]() |
-|348| [How do you trim a string at the beginning or ending]() |
-|349| [What is the output of below console statement with unary operator]() |
-|350| [Does javascript uses mixins]() |
-|351| [What is a thunk function]() |
-|352| [What are asynchronous thunks]() |
-|353| [What is the output of below function calls]() |
-|354| [How to remove all line breaks from a string]() |
-|355| [What is the difference between reflow and repaint]() |
-|356| [What happens with negating an array]() |
-|357| [What happens if we add two arrays]() |
-|358| [What is the output of prepend additive operator on falsy values]() |
-|359| [How do you create self string using special characters]() |
-|360| [How do you remove falsy values from an array]() |
-|361| [How do you get unique values of an array]() |
-|362| [What is destructuring aliases]() |
-|363| [How do you map the array values without using map method]() |
-|364| [How do you empty an array]() |
-|365| [How do you rounding numbers to certain decimals]() |
-|366| [What is the easiest way to convert an array to an object]() |
-|367| [How do you create an array with some data]() |
-|368| [What are the placeholders from console object]() |
-|369| [Is it possible to add CSS to console messages]() |
-|370| [What is the purpose of dir method of console object]() |
-|371| [Is it possible to debug HTML elements in console]() |
-|372| [How do you display data in a tabular format using console object]() |
-|373| [How do you verify that an argument is a Number or not]() |
-|374| [How do you create copy to clipboard button]() |
-|375| [What is the shortcut to get timestamp]() |
-|376| [How do you flattening multi dimensional arrays]() |
-|377| [What is the easiest multi condition checking]() |
-|378| [How do you capture browser back button]() |
-|379| [How do you disable right click in the web page]() |
-|380| [What are wrapper objects]() |
-|381| [What is AJAX]() |
-|382| [What are the different ways to deal with Asynchronous Code]() |
-|383| [How to cancel a fetch request]() |
-|384| [What is web speech API]() |
-|385| [What is minimum timeout throttling]() |
-|386| [How do you implement zero timeout in modern browsers]() |
-|387| [What are tasks in event loop]() |
-|388| [What are microtasks]() |
-|389| [What are different event loops]() |
-|390| [What is the purpose of queueMicrotask]() |
-|391| [How do you use javascript libraries in typescript file]() |
-|392| [What are the differences between promises and observables]() |
-|393| [What is heap]() |
-|394| [What is an event table]() |
-|395| [What is a microTask queue]() |
-|396| [What is the difference between shim and polyfill]() |
-|397| [How do you detect primitive or non primitive value type]() |
-|398| [What is babel]() |
-|399| [Is Node.js completely single threaded]() |
-|400| [What are the common use cases of observables]() |
-|401| [What is RxJS]() |
-|402| [What is the difference between Function constructor and function declaration]() |
-|403| [What is a Short circuit condition]() |
-|404| [What is the easiest way to resize an array]() |
-|405| [What is an observable]() |
-|406| [What is the difference between function and class declarations]() |
-|407| [What is an async function]() |
-|408| [How do you prevent promises swallowing errors]() |
-|409| [What is deno]() |
-|410| [How do you make an object iterable in javascript]() |
-|411| [What is a Proper Tail Call]() |
-|412| [How do you check an object is a promise or not]() |
-|413| [How to detect if a function is called as constructor]() |
-|414| [What are the differences between arguments object and rest parameter]() |
-|415| [What are the differences between spread operator and rest parameter]() |
-|416| [What are the different kinds of generators]() |
-|417| [What are the built-in iterables]() |
-|418| [What are the differences between for...of and for...in statements]() |
-|419| [How do you define instance and non-instance properties]() |
-|420| [تفاوت‌های بین isNaN و Number.isNaN کدوما هستن؟]() |
+|126| [ری روی یه object حلقه میزنی؟](#چطوری-روی-یه-object-حلقه-میزنی) |
+|127| [چطوری تست می‌کنی که یه object خالیه؟](#چطوری-تست-میکنی-که-یه-object-خالیه) |
+|128| [arguments object چیه؟](#arguments-object-چیه) |
+|129| [چطوری حرف اول یه رشته رو به حرف بزرگ تبدیل می‌کنی؟](#چطوری-حرف-اول-یه-رشته-رو-به-حرف-بزرگ-تبدیل-میکنی) |
+|130| [مزایا و معایب حلقه for چیا هستن؟](#مزایا-و-معایب-حلقه-for-چیا-هستن) |
+|131| [چطوری تاریخ جاری رو توی جاواسکریپت نشون میدی؟](#چطوری-تاریخ-جاری-رو-توی-جاواسکریپت-نشون-میدی) |
+|132| [چطوری دو تا date object رو با هم مقایسه می‌کنی؟](#چطوری-دو-تا-date-object-رو-با-هم-مقایسه-میکنی) |
+|133| [چطوری بررسی می‌کنی که یه رشته با یه رشته دیگه شروع میشه؟](#چطوری-بررسی-میکنی-که-یه-رشته-با-یه-رشته-دیگه-شروع-میشه) |
+|134| [چطوری یه رشته رو trim میکنی؟](#چطوری-یه-رشته-رو-trim-میکنی) |
+|135| [توی جاواسکریپت چطوری می‌تونیم یه زوج مرتب از key یه valueها بسازیم؟](#توی-جاواسکریپت-چطوری-میتونیم-یه-زوج-مرتب-از-key-یه-valueها-بسازیم) |
+|136| [آیا عبارت '!--' عملگر خاصی هست؟](#آیا-عبارت-!---عملگر-خاصی-هست) |
+|137| [چطوری می‌تونیم به متغیرهامون مقادیر اولیه بدیم؟](#چطوری-میتونیم-به-متغیرهامون-مقادیر-اولیه-بدیم) |
+|138| [چطوری می‌تونیم متن‌های چند خطی درست کنیم؟](#چطوری-میتونیم-متنهای-چند-خطی-درست-کنیم) |
+|139| [مدل app-shell چیه؟](#مدل-app-shell-چیه) |
+|140| [چطوری می‌تونیم روی یه تابع property اضافه کنیم؟](#چطوری-میتونیم-روی-یه-تابع-property-اضافه-کنیم) |
+|141| [چطوری می‌تونیم تعداد پارامترهای ورودی یه تابع رو به دست بیاریم؟](#چطوری-میتونیم-تعداد-پارامترهای-ورودی-یه-تابع-رو-به-دست-بیاریم) |
+|142| [Polyfill چیه؟](#Polyfill-چیه) |
+|143| [عبارات Break و continue چی هستن؟](#عبارات-Break-و-continue-چی-هستن) |
+|144| [توی جاواسکریپت labelها چیکار می‌کنن؟](#توی-جاواسکریپت-labelها-چیکار-میکنن) |
+|145| [مزایای declare کردن متغیرها در اوایل کد چیه؟](#مزایای-declare-کردن-متغیرها-در-اوایل-کد-چیه) |
+|146| [مزایای مقداردهی اولیه متغیرها چیه؟](#مزایای-مقداردهی-اولیه-متغیرها-چیه) |
+|147| [روش توصیه شده برای ایجاد object چیه؟](#روش-توصیه-شده-برای-ایجاد-object-چیه) |
+|148| [چطوری می‌تونیم آرایه‌ JSON تعریف کنیم؟](#چطوری-میتونیم-آرایه-JSON-تعریف-کنیم) |
+|149| [چطوری می‌تونیم اعداد تصادفی تولید کنیم؟](#چطوری-میتونیم-اعداد-تصادفی-تولید-کنیم) |
+|150| [می‌تونی یه تابع تولید اعداد تصادفی توی یه بازه مشخص بنویسی؟](#میتونی-یه-تابع-تولید-اعداد-تصادفی-توی-یه-بازه-مشخص-بنویسی) |
+|151| [Tree-shaking چیه؟](#Tree-shaking-چیه) |
+|152| [دلایل نیاز به tree-shaking کدوما هستن؟](#دلایل-نیاز-به-tree-shaking-کدوما-هستن) |
+|153| [آیا استفاده از eval توصیه میشه؟](#آیا-استفاده-از-eval-توصیه-میشه) |
+|154| [Regular-Expression چیه؟](#Regular-Expression-چیه) |
+|155| [متدهای رشته که روی Regular-expression مجاز هستن کدوماست؟](#متدهای-رشته-که-روی-Regular-expression-مجاز-هستن-کدوماست) |
+|156| [توی Regex بخش modifiersها چیکار می‌کنه؟](#توی-Regex-بخش-modifiersها-چیکار-میکنه) |
+|157| [پترن‌های regular-expression چیه؟](#پترنهای-regular-expression-چیه) |
+|158| [آبجکت RegExp چیه؟](#آبجکت-RegExp-چیه) |
+|159| [چطوری روی یه رشته دنبال یه پترن RegExp می‌گردی؟](#چطوری-روی-یه-رشته-دنبال-یه-پترن-RegExp-میگردی) |
+|160| [هدف از متد exec چیه؟](#هدف-از-متد-exec-چیه) |
+|161| [چطوری استایل‌های یه المنت HTML رو تغییر میدی؟](#چطوری-استایلهای-یه-المنت-HTML-رو-تغییر-میدی) |
+|162| [نتیجه عبارت 1+2+'3' چی میشه؟](#نتیجه-عبارت-1+2+3-چی-میشه) |
+|163| [عبارت debugger چیکار میکنه؟](#عبارت-debugger-چیکار-میکنه) |
+|164| [هدف از breakpointها توی debugging چیه؟](#هدف-از-breakpointها-توی-debugging-چیه) |
+|165| [آیا می‌تونیم از عبارت‌های رزرو شده در تعریف identifierها(اسم متغیر، کلاس و ...) استفاده کنیم؟](#آیا-میتونیم-از-عبارتهای-رزرو-شده-در-تعریف-identifierهااسم-متغیر،-کلاس-و--استفاده-کنیم) |
+|166| [چطوری تشخیص بدیم که یه مرورگر mobile هست یا نه؟](#چطوری-تشخیص-بدیم-که-یه-مرورگر-mobile-هست-یا-نه) |
+|167| [چطوری بدون Regex تشخیص بدیم که یه مرورگر mobile هست یا نه؟](#چطوری-بدون-Regex-تشخیص-بدیم-که-یه-مرورگر-mobile-هست-یا-نه) |
+|168| [چطوری طول و عرض یه تصویر رو با جاواسکریپت به دست میاری؟](#چطوری-طول-و-عرض-یه-تصویر-رو-با-جاواسکریپت-به-دست-میاری) |
+|169| [چطوری درخواست‌های synchronous HTTP بزنیم؟](#چطوری-درخواستهای-synchronous-HTTP-بزنیم) |
+|170| [چطوری درخواست‌های asynchronous HTTP بزنیم؟](#چطوری-درخواستهای-asynchronous-HTTP-بزنیم) |
+|171| [چطوری یه تاریخ رو به یه تاریخ در timezone دیگه تبدیل کنیم؟](#چطوری-یه-تاریخ-رو-به-یه-تاریخ-در-timezone-دیگه-تبدیل-کنیم) |
+|172| [چه propertyهایی برای اندازه‌گیزی سایز window به کار میره؟](#چه-propertyهایی-برای-اندازهگیزی-سایز-window-به-کار-میره) |
+|173| [عملگر شرطی سه گانه توی جاواسکریپت چیه؟](#عملگر-شرطی-سه-گانه-توی-جاواسکریپت-چیه) |
+|174| [آیا میشه روی عملگر شرطی زنجیره شرط‌ها رو اعمال کرد؟](#آیا-میشه-روی-عملگر-شرطی-زنجیره-شرطها-رو-اعمال-کرد) |
+|175| [روش‌های اجرای جاواسکریپت بعد از لود شدن صفحه کدوما هستن؟](#روشهای-اجرای-جاواسکریپت-بعد-از-لود-شدن-صفحه-کدوما-هستن) |
+|176| [تفاوت‌های بین proto و prototype کدوما هستن؟](#تفاوتهای-بین-proto-و-prototype-کدوما-هستن) |
+|177| [میتونی یه مثال از زمانی که واقعا به سمیکولون(;) نیاز هست بزنی؟](#میتونی-یه-مثال-از-زمانی-که-واقعا-به-سمیکولون-نیاز-هست-بزنی) |
+|178| [متد freeze چیکار میکنه؟](#متد-freeze-چیکار-میکنه) |
+|179| [هدف از متد freeze چیه؟](#هدف-از-متد-freeze-چیه) |
+|180| [چرا به متد freeze نیاز داریم؟](#چرا-به-متد-freeze-نیاز-داریم) |
+|181| [چطوری می‌تونیم زبان ترجیحی یه مرورگر رو تشخیص بدیم؟](#چطوری-میتونیم-زبان-ترجیحی-یه-مرورگر-رو-تشخیص-بدیم) |
+|182| [چطوری می‌تونیم حرف اول همه کلمات یه رشته رو به حرف بزرگ تبدیل کنیم؟](#چطوری-میتونیم-حرف-اول-همه-کلمات-یه-رشته-رو-به-حرف-بزرگ-تبدیل-کنیم) |
+|183| [چطوری میشه تشخیص داد که جاواسکریپت یه صفحه وب غیرفعال شده؟](#چطوری-میشه-تشخیص-داد-که-جاواسکریپت-یه-صفحه-وب-غیرفعال-شده) |
+|184| [عملگرهای پشتیبانی شده توسط جاواسکریپت کدوما هستن؟](#عملگرهای-پشتیبانی-شده-توسط-جاواسکریپت-کدوما-هستن) |
+|185| [پارامتر rest چیکار میکنه؟](#پارامتر-rest-چیکار-میکنه) |
+|186| [اگه پارامتر rest رو به عنوان آخرین پارامتر استفاده نکنیم چی میشه؟](#اگه-پارامتر-rest-رو-به-عنوان-آخرین-پارامتر-استفاده-نکنیم-چی-میشه) |
+|187| [عملگرهای منطقی باینری توی جاواسکریپت کدوما هستن؟](#عملگرهای-منطقی-باینری-توی-جاواسکریپت-کدوما-هستن) |
+|188| [عملگر spread چیکار میکنه؟](#عملگر-spread-چیکار-میکنه) |
+|189| [چطوری تشخیص میدی که یه آبجکت freeze شده یا نه؟](#چطوری-تشخیص-میدی-که-یه-آبجکت-freeze-شده-یا-نه) |
+|190| [چطوری بررسی کنیم که دو تا مقدار(شامل آبجکت) با هم برابرن یا نه؟](#چطوری-بررسی-کنیم-که-دو-تا-مقدارشامل-آبجکت-با-هم-برابرن-یا-نه) |
+|191| [هدف از متد is روی object چیه؟](#هدف-از-متد-is-روی-object-چیه) |
+|192| [چطوری propertyهای یه object رو به یه object دیگه کپی می‌کنی؟](#چطوری-propertyهای-یه-object-رو-به-یه-object-دیگه-کپی-میکنی) |
+|193| [کاربردهای ممتد assign چیه؟](#کاربردهای-ممتد-assign-چیه) |
+|194| [آبجکت proxy چیه؟](#آبجکت-proxy-چیه) |
+|195| [هدف از متد seal چیه؟](#هدف-از-متد-seal-چیه) |
+|196| [کاربردهای متد seal چیه؟](#کاربردهای-متد-seal-چیه) |
+|197| [تفاوت‌های بین متدهای freeze و seal چیا هست؟](#تفاوتهای-بین-متدهای-freeze-و-seal-چیا-هست) |
+|198| [چطوری تشخیص میدی که یه آبجکت seal شده یا نه؟](#چطوری-تشخیص-میدی-که-یه-آبجکت-seal-شده-یا-نه) |
+|199| [چطوری کلید و مقدارهای enumerable رو به دست میاری؟](#چطوری-کلید-و-مقدارهای-enumerable-رو-به-دست-میاری) |
+|200| [تفاوت‌های بین متدهای Object.values و Object.entries چیا هست؟](#تفاوتهای-بین-متدهای-Objectvalues-و-Objectentries-چیا-هست) |
+|201| [چطوری لیست کلیدهای یه object رو بدست میاری؟](#چطوری-لیست-کلیدهای-یه-object-رو-بدست-میاری) |
+|202| [چطوری یه object با prototype درست می‌کنی؟](#چطوری-یه-object-با-prototype-درست-میکنی) |
+|203| [WeakSet چیه؟](#WeakSet-چیه) |
+|204| [تفاوت‌های بین WeakSet و Set کدوما هستن؟](#تفاوتهای-بین-WeakSet-و-Set-کدوما-هستن) |
+|205| [لیست متدهایی که رو WeakSet قابل استفاده هستن رو می‌تونی بگی؟](#لیست-متدهایی-که-رو-WeakSet-قابل-استفاده-هستن-رو-میتونی-بگی) |
+|206| [WeakMap چیه؟](#WeakMap-چیه) |
+|207| [تفاوت‌های بین WeakMap و Map کدوما هستن؟](#تفاوتهای-بین-WeakMap-و-Map-کدوما-هستن) |
+|208| [لیست متدهایی که رو WeakMap قابل استفاده هستن رو می‌تونی بگی؟](#لیست-متدهایی-که-رو-WeakMap-قابل-استفاده-هستن-رو-میتونی-بگی) |
+|209| [هدف از متد uneval چیه؟](#هدف-از-متد-uneval-چیه) |
+|210| [چطوری یه URL رو encode می‌کنی؟](#چطوری-یه-URL-رو-encode-میکنی) |
+|211| [چطوری یه URL رو decode می‌کنی؟](#چطوری-یه-URL-رو-decode-میکنی) |
+|212| [چطوری محتوای یه صفحه رو پرینت می‌گیری؟](#چطوری-محتوای-یه-صفحه-رو-پرینت-میگیری) |
+|213| [تفاوت‌های بین uneval و eval چیا هستن؟](#تفاوتهای-بین-uneval-و-eval-چیا-هستن) |
+|214| [تابع anonymous چیه؟](#تابع-anonymous-چیه) |
+|215| [تفاوت تقدم بین متغیرهای local و global چطوریه؟](#تفاوت-تقدم-بین-متغیرهای-local-و-global-چطوریه) |
+|216| [accessorهای جاواسکریپت چیکار می‌کنن؟](#accessorهای-جاواسکریپت-چیکار-میکنن) |
+|217| [چطوری روی constructor یه Object یه مقدار تعریف می‌کنی؟](#چطوری-روی-constructor-یه-Object-یه-مقدار-تعریف-میکنی) |
+|218| [تفاوت‌های بین get و defineProperty چیا هست؟](#تفاوتهای-بین-get-و-defineProperty-چیا-هست) |
+|219| [مزایای استفاده از Getter و Setter چیه؟](#مزایای-استفاده-از-Getter-و-Setter-چیه) |
+|220| [می‌تونیم getter و setter رو با استفاده از متد defineProperty تعریف کنیم؟](#میتونیم-getter-و-setter-رو-با-استفاده-از-متد-defineProperty-تعریف-کنیم) |
+|221| [هدف استفاده از switch-case چیه؟](#هدف-استفاده-از-switch-case-چیه) |
+|222| [چه قواعدی برای استفاده از swtich-case باید رعایت بشه؟](#چه-قواعدی-برای-استفاده-از-swtich-case-باید-رعایت-بشه) |
+|223| [نوع داده‌های primitive کدوما هستن؟](#نوع-دادههای-primitive-کدوما-هستن) |
+|224| [روش‌های مختلف دسترسی به propertyهای object کدوما هستن؟](#روشهای-مختلف-دسترسی-به-propertyهای-object-کدوما-هستن) |
+|225| [قوانین پارامترهای توابع کدوما هستن؟](#قوانین-پارامترهای-توابع-کدوما-هستن) |
+|226| [آبجکت error چیه؟](#آبجکت-error-چیه) |
+|227| [چه موقعی خطای syntax دریافت می‌کنیم؟](#چه-موقعی-خطای-syntax-دریافت-میکنیم) |
+|228| [عنوان خطاهای مختلف که روی error-object برمیگردن کدوما هستن؟](#عنوان-خطاهای-مختلف-که-روی-error-object-برمیگردن-کدوما-هستن) |
+|229| [عبارات مختلف که در هنگام مدیریت error استفاده میشن کدوما هستن؟](#عبارات-مختلف-که-در-هنگام-مدیریت-error-استفاده-میشن-کدوما-هستن) |
+|230| [دو نوع مختلف حلفه‌ها در جاواسکریپت کدوما هستن؟](#دو-نوع-مختلف-حلفهها-در-جاواسکریپت-کدوما-هستن) |
+|231| [nodejs چیه؟](#nodejs-چیه) |
+|232| [آبجکت Intl چیه؟](#آبجکت-Intl-چیه) |
+|233| [چطوری تاریخ و زمان رو بر اساس زبان جاری سیستم کاربر نمایش بدیم؟](#چطوری-تاریخ-و-زمان-رو-بر-اساس-زبان-جاری-سیستم-کاربر-نمایش-بدیم) |
+|234| [Iterator چیه؟](#Iterator-چیه) |
+|235| [حلفه‌های synchronous(همزمان) چطوری کار می‌کنن؟](#حلفههای-synchronousهمزمان-چطوری-کار-میکنن) |
+|236| [Event-loop چیه؟](#Event-loop-چیه) |
+|237| [Call-stack چیه؟](#Call-stack-چیه) |
+|238| [Event-queue چیه؟](#Event-queue-چیه) |
+|239| [Decorator چیه؟](#Decorator-چیه) |
+|240| [مقادیر موجود روی آبجکت Intl کدوما هستن؟](#مقادیر-موجود-روی-آبجکت-Intl-کدوما-هستن) |
+|241| [عملگر Unary چیه؟](#عملگر-Unary-چیه) |
+|242| [چطوری المنت‌های موجود تو یه آرایه رو مرتب می‌کنی؟](#چطوری-المنتهای-موجود-تو-یه-آرایه-رو-مرتب-میکنی) |
+|243| [هدف از تابع مرتب‌سازی موقع استفاده از متد sort چیه؟](#هدف-از-تابع-مرتبسازی-موقع-استفاده-از-متد-sort-چیه) |
+|244| [چطوری آیتم‌های یه آرایه رو معکوس مرتب کنیم؟](#چطوری-آیتمهای-یه-آرایه-رو-معکوس-مرتب-کنیم) |
+|245| [چطوری حداقل و حداکثر مقدار یه آرایه رو بدست بیاریم؟](#چطوری-حداقل-و-حداکثر-مقدار-یه-آرایه-رو-بدست-بیاریم) |
+|246| [چطوری حداقل و حداکثر مقدار یه آرایه رو بدون استفاده از متدهای Math بدست بیاریم؟](#چطوری-حداقل-و-حداکثر-مقدار-یه-آرایه-رو-بدون-استفاده-از-متدهای-Math-بدست-بیاریم) |
+|247| [عبارت خالی چیه و هدف از استفاده ازش چیه؟](#عبارت-خالی-چیه-و-هدف-از-استفاده-ازش-چیه) |
+|248| [چطوری metadata یه ماژول رو بدست میاری؟ meta data of a module](#چطوری-metadata-یه-ماژول-رو-بدست-میاری-meta-data-of-a-module) |
+|249| [عملگر comma چیه و چیکار می‌کنه؟](#عملگر-comma-چیه-و-چیکار-میکنه) |
+|250| [مزایای استفاده از عملگر comma چیه؟](#مزایای-استفاده-از-عملگر-comma-چیه) |
+|251| [Typescript چیه؟](#Typescript-چیه) |
+|252| [تفاوت‌های بین javascript و typescript کدوما هستن؟](#تفاوتهای-بین-javascript-و-typescript-کدوما-هستن) |
+|253| [مزایای typescript نسبت به javascript چیاست؟](#مزایای-typescript-نسبت-به-javascript-چیاست) |
+|254| [object-initializer چیه؟](#object-initializer-چیه) |
+|255| [متد constructor چیه؟](#متد-constructor-چیه) |
+|256| [اگه متد constructor رو بیش از یه بار توی کلاس بنویسیم چی میشه؟](#اگه-متد-constructor-رو-بیش-از-یه-بار-توی-کلاس-بنویسیم-چی-میشه) |
+|257| [چطوری متد constructor کلاس والد رو صدا بزنیم؟](#چطوری-متد-constructor-کلاس-والد-رو-صدا-بزنیم) |
+|258| [چطوری prototype یه object رو به دست میاری؟](#چطوری-prototype-یه-object-رو-به-دست-میاری) |
+|259| [اگه به متد getPrototype رشته پاس بدیم چی میشه؟](#اگه-به-متد-getPrototype-رشته-پاس-بدیم-چی-میشه) |
+|260| [چطوری prototype یه object روی یه object دیگه ست کنیم؟](#چطوری-prototype-یه-object-روی-یه-object-دیگه-ست-کنیم) |
+|261| [چطوری بررسی می‌کنی که یه object قابل extend هست یا نه؟](#چطوری-بررسی-میکنی-که-یه-object-قابل-extend-هست-یا-نه) |
+|262| [چطوری جلوی extend یه object رو بگیریم؟](#چطوری-جلوی-extend-یه-object-رو-بگیریم) |
+|263| [روش‌های مختلف برای تبدیل یه object به object غیرقابل extend چیه؟](#روشهای-مختلف-برای-تبدیل-یه-object-به-object-غیرقابل-extend-چیه) |
+|264| [چطوری propertyهای متعددی رو روی یه object تعریف می‌کنی؟](#چطوری-propertyهای-متعددی-رو-روی-یه-object-تعریف-میکنی) |
+|265| [منظور از MEAN توی جاواسکریپت چیه؟ javascript](#منظور-از-MEAN-توی-جاواسکریپت-چیه-javascript) |
+|266| [Obfuscation توی جاواسکریپت چیه و چیکار می‌کنه؟ javascript](#Obfuscation-توی-جاواسکریپت-چیه-و-چیکار-میکنه-javascript) |
+|267| [چه نیازی به Obfuscate کردن داریم؟](#چه-نیازی-به-Obfuscate-کردن-داریم) |
+|268| [Minification چیه؟](#Minification-چیه) |
+|269| [مزایای minification یا کم حجم‌سازی چیه؟](#مزایای-minification-یا-کم-حجمسازی-چیه) |
+|270| [تفاوت‌های بین Obfuscation و Encryption چیه؟](#تفاوتهای-بین-Obfuscation-و-Encryption-چیه) |
+|271| [ابزارهای مختلف برای minification کدوما هستن؟](#ابزارهای-مختلف-برای-minification-کدوما-هستن) |
+|272| [چطوری اعتبارسنجی فرم رو با javascript انجام میدی؟](#چطوری-اعتبارسنجی-فرم-رو-با-javascript-انجام-میدی) |
+|273| [چطوری اعتبارسنجی فرم رو بدون javascript انجام میدی؟](#چطوری-اعتبارسنجی-فرم-رو-بدون-javascript-انجام-میدی) |
+|274| [متدهای موجود روی DOM برای اعتبارسنجی کدوما هستن؟](#متدهای-موجود-روی-DOM-برای-اعتبارسنجی-کدوما-هستن) |
+|275| [مقادیر موجود روی DOM برای اعتبارسنجی کدوما هستن؟](#مقادیر-موجود-روی-DOM-برای-اعتبارسنجی-کدوما-هستن) |
+|276| [مقادیر موجود روی input برای اعتبارسنجی کدوما هستن؟](#مقادیر-موجود-روی-input-برای-اعتبارسنجی-کدوما-هستن) |
+|277| [یه مثال از استفاده ویژگی rangeOverflow می‌تونی بزنی؟](#یه-مثال-از-استفاده-ویژگی-rangeOverflow-میتونی-بزنی) |
+|278| [جاواسکریپت قابلیت استفاده از enum رو پیش‌فرض توی خودش داره؟](#جاواسکریپت-قابلیت-استفاده-از-enum-رو-پیشفرض-توی-خودش-داره) |
+|279| [enum چیه؟](#enum-چیه) |
+|280| [چطوری همه propertyهای یه object رو به دست بیاریم؟](#چطوری-همه-propertyهای-یه-object-رو-به-دست-بیاریم) |
+|281| [چطوری get property descriptors of an object](#چطوری-get-property-descriptors-of-an-object) |
+|282| [گزینه‌هایی که موقع تعریف ویژگی object با descriptor داریم کدوما هستن؟](#گزینههایی-که-موقع-تعریف-ویژگی-object-با-descriptor-داریم-کدوما-هستن) |
+|283| [چطوری کلاس‌ها رو extend می‌کنی؟](#چطوری-کلاسها-رو-extend-میکنی) |
+|284| [چطوری آدرس صفحه رو بدون رفرش صفحه عوض کنیم؟](#چطوری-آدرس-صفحه-رو-بدون-رفرش-صفحه-عوض-کنیم) |
+|285| [چطوری بررسی می‌کنی که یه آرایه یه مقدار مشخص رو داره یا نه؟](#چطوری-بررسی-میکنی-که-یه-آرایه-یه-مقدار-مشخص-رو-داره-یا-نه) |
+|286| [چطوری آرایه‌های scalar رو با هم مقایسه می‌کنی؟](#چطوری-آرایههای-scalar-رو-با-هم-مقایسه-میکنی) |
+|287| [چطوری میشه پارامترهای صفحه رو از متد GET گرفت؟](#چطوری-میشه-پارامترهای-صفحه-رو-از-متد-GET-گرفت) |
+|288| [چطوری اعداد رو میشه سه رقم سه رقم جدا کرد؟](#چطوری-اعداد-رو-میشه-سه-رقم-سه-رقم-جدا-کرد) |
+|289| [تفاوت‌ بین java و javascript چیه؟](#تفاوت-بین-java-و-javascript-چیه) |
+|290| [آیا جاواسکریپت namespace رو پشتیبانی می‌کنه؟](#آیا-جاواسکریپت-namespace-رو-پشتیبانی-میکنه) |
+|291| [چطوری namespace تعریف می‌کنی؟](#چطوری-namespace-تعریف-میکنی) |
+|292| [چطوری می‌تونیم تکه کد جاواسکریپت داخل یه iframe رو از صفحه والد صدا بزنیم؟](#چطوری-میتونیم-تکه-کد-جاواسکریپت-داخل-یه-iframe-رو-از-صفحه-والد-صدا-بزنیم) |
+|293| [چطوری میشه اختلاف timezone رو از آبجکت date بگیریم؟](#چطوری-میشه-اختلاف-timezone-رو-از-آبجکت-date-بگیریم) |
+|294| [چطوری فایل‌های CSS و JS رو به شکل داینامیک بارگذاری کنیم؟](#چطوری-فایلهای-CSS-و-JS-رو-به-شکل-داینامیک-بارگذاری-کنیم) |
+|295| [روش‌های مختلف برای پیدا کردن elementها توی DOM کدوما هستن؟](#روشهای-مختلف-برای-پیدا-کردن-elementها-توی-DOM-کدوما-هستن) |
+|296| [jQuery چیه؟](#jQuery-چیه) |
+|297| [موتور V8 جاواسکریپت چیه؟](#موتور-V8-جاواسکریپت-چیه) |
+|298| [چرا ما جاواسکریپت رو به عنوان یه زبان داینامیک می‌شناسیم؟](#چرا-ما-جاواسکریپت-رو-به-عنوان-یه-زبان-داینامیک-میشناسیم) |
+|299| [عملگر void چیکار می‌کنه؟](#عملگر-void-چیکار-میکنه) |
+|300| [چطوری میشه نمایشگر موس صفحه رو به درحال لود تغییر داد؟](#چطوری-میشه-نمایشگر-موس-صفحه-رو-به-درحال-لود-تغییر-داد) |
+|301| [چطوری میشه یه حلقه بی‌نهایت درست کرد؟](#چطوری-میشه-یه-حلقه-بینهایت-درست-کرد) |
+|302| [چرا باید در استفاده از عبارت with تجدیدنظر کرد؟](#چرا-باید-در-استفاده-از-عبارت-with-تجدیدنظر-کرد) |
+|303| [خروجی این حلقه‌ها چی میشه؟](#خروجی-این-حلقهها-چی-میشه) |
+|304| [می‌تونی یه سری از ویژگی‌های ES6 رو اسم ببری؟](#میتونی-یه-سری-از-ویژگیهای-ES6-رو-اسم-ببری) |
+|305| [ES6 چیه؟](#ES6-چیه) |
+|306| [آیا می‌تونیم متغیرهای تعریف شده با let و const رو مجددا declare کنیم؟](#آیا-میتونیم-متغیرهای-تعریف-شده-با-let-و-const-رو-مجددا-declare-کنیم) |
+|307| [آیا استفاده از const برای تعریف متغیر اونا رو immutable می‌کنه؟](#آیا-استفاده-از-const-برای-تعریف-متغیر-اونا-رو-immutable-میکنه) |
+|308| [parameterهای پیش‌فرض چی هستن؟](#parameterهای-پیشفرض-چی-هستن) |
+|309| [template-literalها چی هستن؟](#template-literalها-چی-هستن) |
+|310| [چطوری رشته‌های چند خطی رو توی template-literalها می‌نویسیم؟](#چطوری-رشتههای-چند-خطی-رو-توی-template-literalها-مینویسیم) |
+|311| [template-literal‌های تودرتو چی هستن؟](#template-literalهای-تودرتو-چی-هستن) |
+|312| [tagged-templateها چی هستن؟](#tagged-templateها-چی-هستن) |
+|313| [رشته‌های خام چی هستن؟](#رشتههای-خام-چی-هستن) |
+|314| [assign کردن با destructuring چیه و چطوری انجام میشه؟](#assign-کردن-با-destructuring-چیه-و-چطوری-انجام-میشه) |
+|315| [موقع assign کردن با destructuring چطوری میشه مقدار اولیه تعریف کرد؟](#موقع-assign-کردن-با-destructuring-چطوری-میشه-مقدار-اولیه-تعریف-کرد) |
+|316| [چطوری می‌تونیم مقدار یه آرایه رو با استفاده از destructuring-assignment تعویض کنیم؟](#چطوری-میتونیم-مقدار-یه-آرایه-رو-با-استفاده-از-destructuring-assignment-تعویض-کنیم) |
+|317| [Enhanced-object-literalها چی هستن؟](#Enhanced-object-literalها-چی-هستن) |
+|318| [importهای داینامیک چی هستن؟](#importهای-داینامیک-چی-هستن) |
+|319| [کاربرد importهای داینامیک چیه؟](#کاربرد-importهای-داینامیک-چیه) |
+|320| [آرایه‌های نوع‌دار(typed-arrays) چیه؟](#آرایههای-نوعدارtyped-arrays-چیه) |
+|321| [مزایای لودر ماژول‌ها چیه؟](#مزایای-لودر-ماژولها-چیه) |
+|322| [collation چیه؟](#collation-چیه) |
+|323| [عبارت for...of چیه؟](#عبارت-forof-چیه) |
+|324| [خروجی عملگر spread روی آرایه زیر چیه؟](#خروجی-عملگر-spread-روی-آرایه-زیر-چیه) |
+|325| [آیا PostMessage امنه؟](#آیا-PostMessage-امنه) |
+|326| [مشکلات استفاده از postmessage با origin روی wildcard چیه؟](#مشکلات-استفاده-از-postmessage-با-origin-روی-wildcard-چیه) |
+|327| [چطوری از دریافت postMessageهای ناخواسته و ناامن از طرف هکرها جلوگیری کنیم؟](#چطوری-از-دریافت-postMessageهای-ناخواسته-و-ناامن-از-طرف-هکرها-جلوگیری-کنیم) |
+|328| [می‌تونیم کلا postMessageها رو غیرفعال کنیم؟](#میتونیم-کلا-postMessageها-رو-غیرفعال-کنیم) |
+|329| [آیا postMessageها به صورت synchronous و همزمان کار می‌کنن؟](#آیا-postMessageها-به-صورت-synchronous-و-همزمان-کار-میکنن) |
+|330| [پارادیم زبان جاواسکریپت چیه؟](#پارادیم-زبان-جاواسکریپت-چیه) |
+|331| [تفاوت‌های بین جاواسکریپت داخلی و خارجی چیه؟](#تفاوتهای-بین-جاواسکریپت-داخلی-و-خارجی-چیه) |
+|332| [آیا جاواسکریپت سریعتر از اسکریپت‌های سمت سرور است؟](#آیا-جاواسکریپت-سریعتر-از-اسکریپتهای-سمت-سرور-است) |
+|333| [چطوری وضعیت چک بودن یه checkbox رو بدست بیاریم؟](#چطوری-وضعیت-چک-بودن-یه-checkbox-رو-بدست-بیاریم) |
+|334| [هدف از عملگر double-tilde چیه؟](#هدف-از-عملگر-double-tilde-چیه) |
+|335| [چطوری یه کاراکتر رو به کد ASCII تبدیل کنیم؟](#چطوری-یه-کاراکتر-رو-به-کد-ASCII-تبدیل-کنیم) |
+|336| [ArrayBuffer چیه؟](#ArrayBuffer-چیه) |
+|337| [خروجی کد زیر چی خواهد بود؟](#خروجی-کد-زیر-چی-خواهد-بود) |
+|338| [هدف از Error-object چیه؟](#هدف-از-Error-object-چیه) |
+|339| [هدف از EvalError-object چیه؟](#هدف-از-EvalError-object-چیه) |
+|340| [خطاهایی که در حالت strict-mode رخ میدن ولی در غیر اون وجود ندارن کدوما هستن؟](#خطاهایی-که-در-حالت-strict-mode-رخ-میدن-ولی-در-غیر-اون-وجود-ندارن-کدوما-هستن) |
+|341| [آیا همه objectها دارای prototype هستن؟](#آیا-همه-objectها-دارای-prototype-هستن) |
+|342| [تفاوت‌های بین parameter و argument چیه؟](#تفاوتهای-بین-parameter-و-argument-چیه) |
+|343| [هدف از متد some روی آرایه‌ها چیه؟](#هدف-از-متد-some-روی-آرایهها-چیه) |
+|344| [چطوری دو یا تعداد بیشتری از آرایه‌ها رو با هم ترکیب کنیم؟](#چطوری-دو-یا-تعداد-بیشتری-از-آرایهها-رو-با-هم-ترکیب-کنیم) |
+|345| [تفاوت‌های بین Shallow و Deep کپی چیه؟](#تفاوتهای-بین-Shallow-و-Deep-کپی-چیه) |
+|346| [چطوری می‌تونیم به یه تعداد مشخص از یه رشته کپی کنیم؟](#چطوری-میتونیم-به-یه-تعداد-مشخص-از-یه-رشته-کپی-کنیم) |
+|347| [چطوری همه stringهای match شده با یه regular-expression رو برگردونیم؟](#چطوری-همه-stringهای-match-شده-با-یه-regular-expression-رو-برگردونیم) |
+|348| [چطوری یه رشته رو از اول یا از آخر trim کنیم؟](#چطوری-یه-رشته-رو-از-اول-یا-از-آخر-trim-کنیم) |
+|349| [خروجی کنسول زیر با عملگر unary چی میشه؟](#خروجی-کنسول-زیر-با-عملگر-unary-چی-میشه) |
+|350| [آیا جاواسکریپت از mixinها استفاده می‌کنه؟](#آیا-جاواسکریپت-از-mixinها-استفاده-میکنه) |
+|351| [تابع thunk چیه و چیکار می‌کنه؟](#تابع-thunk-چیه-و-چیکار-میکنه) |
+|352| [thunkهای asynchronous چیکار می‌کنن؟](#thunkهای-asynchronous-چیکار-میکنن) |
+|353| [خروجی فراخوانی‌های توابع زیر چی میشه؟](#خروجی-فراخوانیهای-توابع-زیر-چی-میشه) |
+|354| [چطوری همه خطوط جدید رو از یه رشته حذف کرد؟](#چطوری-همه-خطوط-جدید-رو-از-یه-رشته-حذف-کرد) |
+|355| [تفاوت‌ بین reflow و repaint چیه؟](#تفاوت-بین-reflow-و-repaint-چیه) |
+|356| [اگه قبل از یه آرایه عملگر نفی «!» بزاریم چی میشه؟](#اگه-قبل-از-یه-آرایه-عملگر-نفی-«!»-بزاریم-چی-میشه) |
+|357| [اگه دو تا آرایه رو با هم جمع ببندیم چی میشه؟](#اگه-دو-تا-آرایه-رو-با-هم-جمع-ببندیم-چی-میشه) |
+|358| [اگه عملگر جمع «+» روی قبل از مقادیر falsy قرار بدیم چی میشه؟](#اگه-عملگر-جمع-«+»-روی-قبل-از-مقادیر-falsy-قرار-بدیم-چی-میشه) |
+|359| [چطوری با استفاده از آرایه‌ها و عملگرهای منطقی می‌تونیم رشته self رو تولید کنیم؟](#چطوری-با-استفاده-از-آرایهها-و-عملگرهای-منطقی-میتونیم-رشته-self-رو-تولید-کنیم) |
+|360| [چطوری می‌تونیم مقادیر falsy رو از آرایه حذف کنیم؟](#چطوری-میتونیم-مقادیر-falsy-رو-از-آرایه-حذف-کنیم) |
+|361| [چطوری مقادیر تکراری رو از یه آرایه حذف کنیم؟](#چطوری-مقادیر-تکراری-رو-از-یه-آرایه-حذف-کنیم) |
+|362| [aliaseهای همزمان با destructuring چطوری کار می‌کنن؟](#aliaseهای-همزمان-با-destructuring-چطوری-کار-میکنن) |
+|363| [چطوری آیتم‌های یه آرایه رو بدون استفاده از متد map پیمایش کنیم؟](#چطوری-آیتمهای-یه-آرایه-رو-بدون-استفاده-از-متد-map-پیمایش-کنیم) |
+|364| [چطوری یه آرایه رو خالی کنیم؟](#چطوری-یه-آرایه-رو-خالی-کنیم) |
+|365| [چطوری اعداد رو با تعداد رقم اعشار مشخص رند می‌کنی؟](#چطوری-اعداد-رو-با-تعداد-رقم-اعشار-مشخص-رند-میکنی) |
+|366| [ساده‌ترین روش برای تبدیل آرایه به object چیه؟](#سادهترین-روش-برای-تبدیل-آرایه-به-object-چیه) |
+|367| [چطوری یه آرایه با یه سری داده درست کنیم؟](#چطوری-یه-آرایه-با-یه-سری-داده-درست-کنیم) |
+|368| [متغیرهای موجود روی آبجکت console کدوما هستن؟](#متغیرهای-موجود-روی-آبجکت-console-کدوما-هستن) |
+|369| [میشه پیام‌های کنسول رو استایل‌دهی کرد؟](#میشه-پیامهای-کنسول-رو-استایلدهی-کرد) |
+|370| [هدف از متد dir روی آبجکت console چیه؟](#هدف-از-متد-dir-روی-آبجکت-console-چیه) |
+|371| [آیا میشه المنت‌های HTML رو توی console دیباگ کرد؟](#آیا-میشه-المنتهای-HTML-رو-توی-console-دیباگ-کرد) |
+|372| [چطوری میشه داده‌ها رو به شکل جدولی توی console نمایش بدیم؟](#چطوری-میشه-دادهها-رو-به-شکل-جدولی-توی-console-نمایش-بدیم) |
+|373| [چطوری میشه بررسی کرد که یه پارامتر Number هست یا نه؟](#چطوری-میشه-بررسی-کرد-که-یه-پارامتر-Number-هست-یا-نه) |
+|374| [چطوری یه متن رو می‌تونیم به clipboard کپی کنیم؟](#چطوری-یه-متن-رو-میتونیم-به-clipboard-کپی-کنیم) |
+|375| [چطوری میشه timestamp رو بدست آورد؟](#چطوری-میشه-timestamp-رو-بدست-آورد) |
+|376| [چطوری یه آرایه چندسطحی رو تک سطحی کنیم؟](#چطوری-یه-آرایه-چندسطحی-رو-تک-سطحی-کنیم) |
+|377| [ساده‌ترین روش برای بررسی چندشرطی چیه؟](#سادهترین-روش-برای-بررسی-چندشرطی-چیه) |
+|378| [چطوری کلیک روی دکمه برگشت مرورگر رو متوجه بشیم؟](#چطوری-کلیک-روی-دکمه-برگشت-مرورگر-رو-متوجه-بشیم) |
+|379| [چطوری می‌تونیم کلیک راست رو غیرفعال کنیم؟](#چطوری-میتونیم-کلیک-راست-رو-غیرفعال-کنیم) |
+|380| [object-wrapperها چی هستن؟](#object-wrapperها-چی-هستن) |
+|381| [AJAX چیه؟](#AJAX-چیه) |
+|382| [روش‌های مختلف مدیریت یه کد Asynchronous چیه؟](#روشهای-مختلف-مدیریت-یه-کد-Asynchronous-چیه) |
+|383| [چطوری یه درخواست fetch رو کنسل کنیم؟](#چطوری-یه-درخواست-fetch-رو-کنسل-کنیم) |
+|384| [Speech-API چیه؟](#Speech-API-چیه) |
+|385| [حداقل timeout توی throttling چقدره؟](#حداقل-timeout-توی-throttling-چقدره) |
+|386| [چطوری میشه یه timeout صفر توی مرورگر اجرا کرد؟](#چطوری-میشه-یه-timeout-صفر-توی-مرورگر-اجرا-کرد) |
+|387| [taskها توی event-loop چی هستن؟](#taskها-توی-event-loop-چی-هستن) |
+|388| [microtaskها چی هستن؟](#microtaskها-چی-هستن) |
+|389| [event-loopهای مختلف کدوما هستن؟](#event-loopهای-مختلف-کدوما-هستن) |
+|390| [هدف از queueMicrotask چیه؟](#هدف-از-queueMicrotask-چیه) |
+|391| [چطوری میشه از کتابخونه‌های جاواسکریپت توی فایل typescript استفاده کرد؟](#چطوری-میشه-از-کتابخونههای-جاواسکریپت-توی-فایل-typescript-استفاده-کرد) |
+|392| [تفاوت‌های بین promiseها و observableها کدوما هستن؟](#تفاوتهای-بین-promiseها-و-observableها-کدوما-هستن) |
+|393| [heap چیه؟](#heap-چیه) |
+|394| [event-table چیه؟](#event-table-چیه) |
+|395| [صف microTask چیه؟](#صف-microTask-چیه) |
+|396| [تفاوت بین shim و polyfill چیه؟](#تفاوت-بین-shim-و-polyfill-چیه) |
+|397| [چطوری متوجه primitive یا غیر primitive بودن یه نوع داده میشیم؟](#چطوری-متوجه-primitive-یا-غیر-primitive-بودن-یه-نوع-داده-میشیم) |
+|398| [babel چیه؟](#babel-چیه) |
+|399| [آیا Node.js به شکل کامل تک thread کار میکنه؟](#آیا-Nodejs-به-شکل-کامل-تک-thread-کار-میکنه) |
+|400| [کاربردهای مرسوم observableها کدوما هستن؟](#کاربردهای-مرسوم-observableها-کدوما-هستن) |
+|401| [RxJS چیه؟](#RxJS-چیه) |
+|402| [تفاوت بین Function-constructor و function-declaration چیه؟](#تفاوت-بین-Function-constructor-و-function-declaration-چیه) |
+|403| [شرط Short-circuit یا اتصال کوتاه چیه؟](#شرط-Short-circuit-یا-اتصال-کوتاه-چیه) |
+|404| [ساده‌ترین روش برای تغییر سایز یه آرایه چیه؟](#سادهترین-روش-برای-تغییر-سایز-یه-آرایه-چیه) |
+|405| [observable چیه؟](#observable-چیه) |
+|406| [تفاوت‌های بین توابع و کلاس‌ها چیه؟](#تفاوتهای-بین-توابع-و-کلاسها-چیه) |
+|407| [تابع async چیه؟](#تابع-async-چیه) |
+|408| [چطوری خطاهای ایجاد شده هنگام استفاده از promiseها رو کنترل کنیم؟](#چطوری-خطاهای-ایجاد-شده-هنگام-استفاده-از-promiseها-رو-کنترل-کنیم) |
+|409| [Deno چیه؟](#Deno-چیه) |
+|410| [توی جاواسکریپت چطوری یه object قابل پیمایش درست کنیم؟](#توی-جاواسکریپت-چطوری-یه-object-قابل-پیمایش-درست-کنیم) |
+|411| [روش مناسب برای فراخوانی توابع بازگشتی چیه؟](#روش-مناسب-برای-فراخوانی-توابع-بازگشتی-چیه) |
+|412| [چطوری بررسی کنیم که یه آبجکت promise هست یا نه؟](#چطوری-بررسی-کنیم-که-یه-آبجکت-promise-هست-یا-نه) |
+|413| [چطوری متوجه بشیم که یا تابع با تابع constructor صدا زده شده یا نه؟](#چطوری-متوجه-بشیم-که-یا-تابع-با-تابع-constructor-صدا-زده-شده-یا-نه) |
+|414| [تفاوت‌های بین آبجکت argument و پارامتر rest چیه؟](#تفاوتهای-بین-آبجکت-argument-و-پارامتر-rest-چیه) |
+|415| [تفاوت‌های بین عملگر spread و پارامتر rest چیه؟](#تفاوتهای-بین-عملگر-spread-و-پارامتر-rest-چیه) |
+|416| [نوع‌های مختلف generatorها کدوما هستن؟](#نوعهای-مختلف-generatorها-کدوما-هستن) |
+|417| [iterableهای built-in کدوما هستن؟](#iterableهای-built-in-کدوما-هستن) |
+|418| [تفاوت‌های بین حلقه for...of و for...in چیه؟](#تفاوتهای-بین-حلقه-forof-و-forin-چیه) |
+|419| [چطوری propertyهای instance و غیر instanceای تعریف می‌کنی؟](#چطوری-propertyهای-instance-و-غیر-instanceای-تعریف-میکنی) |
+|420| [تفاوت‌های بین isNaN و Number.isNaN کدوما هستن؟](#تفاوتهای-بین-isNaN-و-NumberisNaN-کدوما-هستن) |
 
 <div dir="rtl" align="right">
 
@@ -2813,7 +2813,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-126. ### How do you loop through or enumerate javascript object
+126. ### چطوری روی یه object حلقه میزنی؟
 
      می توانید از حلقه `for-in` برای حلقه زدن شی جاوا اسکریپت استفاده کنید. همچنین می‌توانید مطمئن شوید که کلیدی که دریافت می‌کنید یک ویژگی واقعی یک شی است و با استفاده از روش `hasOwnProperty` از نمونه اولیه نیست.
 
@@ -2837,7 +2837,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-127. ### How do you test for an empty object
+127. ### چطوری تست می‌کنی که یه object خالیه؟
 
      راه حل های مختلفی بر اساس نسخه های `ECMAScript` وجود دارد
   1. **استفاده Object entries(ECMA 7+):** 
@@ -2882,7 +2882,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-128. ### What is an arguments object
+128. ### arguments object چیه؟
 
      شیء آرگومان ها یک شیء آرایه ماننده که در داخل توابع قابل دسترسیه و حاوی مقادیر آرگومان های ارسال شده به اون تابعه. به عنوان مثال، بیایید ببینیم چگونه از شیء آرگومان ها در تابع sum استفاده کنیم
 
@@ -2914,7 +2914,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-129. ### How do you make first letter of the string in an uppercase
+129. ### چطوری حرف اول یه رشته رو به حرف بزرگ تبدیل می‌کنی؟
 
      میتونیم با درست کردن یه تابع که با استفاده از زنجیره ای از متد های استرینگ ها مثلا `charAt` و `toUpperCase` و `slice` یه استرنیگ با حرف اول بزرگ ایجاد کرد
 
@@ -2930,21 +2930,22 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-130. ### What are the pros and cons of for loop
+130. ### مزایا و معایب حلقه for چیا هستن؟
 
      حلقه `for` یک سینتکس تکراری رایج در جاوا اسکریپته که هم مزایا و هم معایب داره
-     ####مزایا
+     
+     #### مزایا
      1. توی همه‌ی محیط ها `env` کار میکنه
      2. میتونیم از `break` و `‍continue‍` برای کنرل    جریان داده استفاده کرد
 
-     ####معایب
+     #### معایب
      1. پر هزینه
      2. ضروریت
      3. ممکنه با خطاهای یک به یک روبرو شین
 
      **[فهرست](#فهرست)**
 
-131. ### How do you display the current date in javascript
+131. ### چطوری تاریخ جاری رو توی جاواسکریپت نشون میدی؟
 
      شما میتونین از کلاس `new Date` استفاده کنین که یه ابجکت از زمان و تاریخ بهمون میده بریم یه مثال ازش ببینیم
 
@@ -2964,7 +2965,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-132. ### How do you compare two date objects
+132. ### چطوری دو تا date object رو با هم مقایسه می‌کنی؟
 
      برای این کار باید از متد getTime که برا روی date قرار دارد استفاده کرد و نباید از اپراتور ها استفاده کنیم
 
@@ -2981,7 +2982,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-133. ### How do you check if a string starts with another string
+133. ### چطوری بررسی می‌کنی که یه رشته با یه رشته دیگه شروع میشه؟
 
      ما میتونیم از متد startWith که بر روی پرتوتایپ رشته ها وجود دارد استفاده کرد که یک رشته رو میگیره و چک میکنه که با اون شروع میشه رشته مورد نظر یا نه بریم یه مثال ببینیم در موردش
 
@@ -2996,7 +2997,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-134. ### How do you trim a string in javascript
+134. ### چطوری یه رشته رو trim میکنی؟
 
      جاوا اسکریپت یه متد به ما میده به اسم `trim` که روی استرینگ ها قرار داره با استفاده از این متد همه ی فضای خالی بین اون استرینگ برداشته میشه
 
@@ -3028,7 +3029,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-135. ### How do you add a key value pair in javascript
+135. ### توی جاواسکریپت چطوری می‌تونیم یه زوج مرتب از key یه valueها بسازیم؟
 
      برای اضافه کردن key جدید به ابجک ها دو روش وجود دارن
 
@@ -3065,7 +3066,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-136. ### Is the !-- notation represents a special operator
+136. ### آیا عبارت '!--' عملگر خاصی هست؟
 
      نه! اون یه اپراتور خاص نیست اما ترکیب شده دو تا اپراتور استاندارد هستش یکی بعد اون یکی
      1. اپراتور نقییض (!)
@@ -3075,7 +3076,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-137. ### How do you assign default values to variables
+137. ### چطوری می‌تونیم به متغیرهامون مقادیر اولیه بدیم؟
 
      میتونیم از عملگر یا اپراتور ‍`||` استفاده تعریف یک مقدار دیفالت استفاده کرد مانند مثال زیر
 
@@ -3091,7 +3092,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-138. ### How do you define multiline strings
+138. ### چطوری می‌تونیم متن‌های چند خطی درست کنیم؟
 
      ما میتونیم از `/` برای تعریف کردن رشته های چند لایه استفاده کنیم برای مثال 
 
@@ -3109,13 +3110,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-139. ### What is an app shell model
+139. ### مدل app-shell چیه؟
 
      An application shell (or app shell) architecture is one way to build a Progressive Web App that reliably and instantly loads on your users' screens, similar to what you see in native applications. It is useful for getting some initial HTML to the screen fast without a network.
 
      **[فهرست](#فهرست)**
 
-140. ### Can we define properties for functions
+140. ### چطوری می‌تونیم روی یه تابع property اضافه کنیم؟
 
      بله ما میتونیم برای توابع پراپرتی تعیین کنیم چون توابع اصولا ابجکت هستن.
 
@@ -3137,7 +3138,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-141. ### What is the way to find the number of parameters expected by a function
+141. ### چطوری می‌تونیم تعداد پارامترهای ورودی یه تابع رو به دست بیاریم؟
 
      با استفاده کردن از `function.length` ما میتونیم به تعداد پارامتر هایی که یه تابع انتظار داره بگیره دسترسی داشته باشیم بریم یه مثال درموردش ببینیم
 
@@ -3154,13 +3155,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-142. ### What is a polyfill
+142. ### Polyfill چیه؟
 
      یه `plyfill` یه قسمت از کد جاوااسکریپته که با استفاده از اون ما میتونیم توابع پیشرفته رو روی مروگر‌هایی که به طور طبیعی پشتیبانی نمیکنن,استفاده کنیم. پلاگین `Silverlight` که برای تقلید کردن توابع بر روی `canvas` یا مروگر `IE7` استفاده کرد
 
      **[فهرست](#فهرست)**
 
-143. ### What are break and continue statements
+143. ### عبارات Break و continue چی هستن؟
 
      دستور `break` برای "پرش به بیرون" از یک حلقه استفاده می شه. یعنی حلقه رو می شکنه و اجرای کد رو بعد از حلقه ادامه میده.
 
@@ -3190,7 +3191,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-144. ### What are js labels
+144. ### توی جاواسکریپت labelها چیکار می‌کنن؟
 
      دستور `label` به ما اجازه می ده تا حلقه ها و بلوک ها را در جاوا اسکریپت نام گذاری کنیم. سپس می‌تونیم از این برچسب‌ها برای مراجعه به کد بعداً استفاده کنیم. برای مثال، کد زیر با برچسب ها از چاپ اعداد در صورت یکسان بودن آنها جلوگیری می کند.
 
@@ -3220,7 +3221,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-145. ### What are the benefits of keeping declarations at the top
+145. ### مزایای declare کردن متغیرها در اوایل کد چیه؟
 
      توصیه می شه تمام اعلان ها رو بالای هر اسکریپت یا تابع نگه دارین. مزیت این کار 
      1. کد ما تمیز تر میشه
@@ -3230,7 +3231,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-146. ### What are the benefits of initializing variables
+146. ### مزایای مقداردهی اولیه متغیرها چیه؟
 
      توضیه میشه که مقدار اولیه برای متغیرها تعیین بشه که دلایلشو چک میکنیم 
      1. خروجیمون کد تمیز تری میشه
@@ -3239,7 +3240,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-147. ### What are the recommendations to create new object
+147. ### روش توصیه شده برای ایجاد object چیه؟
 
      برای ساخت یه `object` با مقادیر پیشفرش مثال های زیر روش های ساخت مقادیر پیشفرض رو بررسی می‌کنیم
      1. استفاده از {} به جای `new Object`
@@ -3268,7 +3269,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-148. ### How do you define JSON arrays
+148. ### چطوری می‌تونیم آرایه‌ JSON تعریف کنیم؟
 
      آرایه‌های JSON نوشته شده در داخل براکت ها و ارایه‌هایی که دارای object هستند بریم یه مثال درموردش ببینیم
 
@@ -3286,7 +3287,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-149. ### How do you generate random integers
+149. ### چطوری می‌تونیم اعداد تصادفی تولید کنیم؟
 
      ما میتونیم از متد Math.random برای ساخت یک عدد رندوم بین ۰ تا یک و از متد Math.floor برای رند کردن اون عدد استفاده کنیم حالا حاصل عدد به دست اومده رو ضربدر ده کنیم عددی بین یک تا ده خواهیم داشت
 
@@ -3303,7 +3304,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-150. ### Can you write a random integers function to print integers with in a range
+150. ### می‌تونی یه تابع تولید اعداد تصادفی توی یه بازه مشخص بنویسی؟
 
      بله ما میتونیم این تابع رو داشته باشیم که مقادیر حداکثر و حداقل رو بگیره و برای ما عدد رندوم ایجاد کنه بریم ببینیم چطور همچین تابعی رو بنویسیم
 
@@ -3321,25 +3322,25 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-151. ### What is tree shaking
+151. ### Tree-shaking چیه؟
 
      تکان دادن درخت نوعی حذف کد مرده است. این بدان معناست که ماژول‌های استفاده نشده در طول فرآیند ساخت در بسته گنجانده نمی‌شوند و برای این کار بر ساختار استاتیک ماژول ES2015 متکی است (یعنی واردات و صادرات). در ابتدا این باندلر ماژول ES2015 'rollup' رایج شد.
 
      **[فهرست](#فهرست)**
 
-152. ### What is the need of tree shaking
+152. ### دلایل نیاز به tree-shaking کدوما هستن؟
 
      Tree Shaking نوعی حذف کد مرده هستش. این بد این معنیه که ماژول‌های استفاده نشده در طول فرآیند ساخت در بسته گنجونده نمی‌شن و برای آن بر ساختار استاتیک ماژول ES2015 متکی است (یعنی واردات و صادرات). در ابتدا این باندلر ماژول ES2015 'rollup' رایج شد.
 
      **[فهرست](#فهرست)**
 
-153. ### Is it recommended to use eval
+153. ### آیا استفاده از eval توصیه میشه؟
 
      خیر، اجازه اجرای کد دلخواه را می دهد که باعث ایجاد مشکل امنیتی می شود. همانطور که می دانیم از تابع `eval` برای اجرای متن به عنوان کد استفاده می شود. در بیشتر موارد استفاده از آن ضروری نیست.
 
      **[فهرست](#فهرست)**
 
-154. ### What is a Regular Expression
+154. ### Regular-Expression چیه؟
 
      regular expression یا همون Regex یه توالیه که یه ساختار جستجو ایجاد میکنه با استفاده از این ساختاذ ما میتونیم دیتامون رو بر اساس یه ساختار که مینویسم جستجو کنیم و به قولی دیتامون رو اعتبارسنجی کنیم
 
@@ -3363,7 +3364,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-155. ### What are the string methods available in Regular expression
+155. ### متدهای رشته که روی Regular-expression مجاز هستن کدوماست؟
 
      Regular Expressions دو تا متد برای رشته‌ّها داره :‌ search و replace. متد search یه عبارت رو میگیره اونو جسنجو میکنه و محل اون عبارت رو برمیگردونه
 
@@ -3389,7 +3390,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-156. ### What are modifiers in regular expression
+156. ### توی Regex بخش modifiersها چیکار می‌کنه؟
 
      Modifier میتونن زمانی استفاده بشن که به جستجو های بدون حروف کوچک و بزرگ سراسری نیاز داریم بیاین یه مثال درموردشون ببینیم
 
@@ -3413,7 +3414,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-157. ### What are regular expression patterns
+157. ### پترن‌های regular-expression چیه؟
 
      Regex یه گروهی از ساختار ها برامون اماده کرده که با اونا کاراکتر ها رو چک کنیم اونا تو سه مدل طبفه بندی میشن
      1. **براکت ها:** این ها استفاده میشن تا یه        رنجی از کاراکتر رو پیدا کنن 
@@ -3434,7 +3435,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      
      **[فهرست](#فهرست)**
 
-158. ### What is a RegExp object
+158. ### آبجکت RegExp چیه؟
 
      `object` های `Regex` یه عبارت معمولی با پراپرتی ها و متد های تعریف شده از قبله بریم یه مثال از نحوه استفادشون ببینیم.
 
@@ -3450,7 +3451,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-159. ### How do you search a string for a pattern
+159. ### چطوری روی یه رشته دنبال یه پترن RegExp می‌گردی؟
 
      می‌توانید از متد test عبارت منظم برای جستجوی یک رشته برای الگو استفاده کنید و بسته به نتیجه، true یا false را برگردانید.
 
@@ -3465,7 +3466,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-160. ### What is the purpose of exec method
+160. ### هدف از متد exec چیه؟
 
      هدف متد exec شبیه به روش تست است، اما جستجوی یک تطابق در یک رشته مشخص را انجام می‌دهد و یک آرایه نتیجه یا null را به جای برگرداندن true/false برمی‌گرداند.
 
@@ -3480,7 +3481,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-161. ### How do you change the style of a HTML element
+161. ### چطوری استایل‌های یه المنت HTML رو تغییر میدی؟
 
      شما می توانید سبک درون خطی یا نام کلاس یک عنصر HTML را با استفاده از جاوا اسکریپت تغییر دهید
      1. **استفاده از پراپرتی استایل:** با استفاده از ویژگی style می توانید استایل درون خطی را تغییر دهید
@@ -3505,13 +3506,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-162. ### What would be the result of 1+2+'3'
+162. ### نتیجه عبارت 1+2+'3' چی میشه؟
 
      خروجی '33' خواهد بود. از آنجایی که «1» و «2» مقادیر عددی هستند، نتیجه دو رقم اول یک مقدار عددی «3» خواهد بود. رقم بعدی یک مقدار نوع رشته است، زیرا افزودن مقدار عددی «3» و مقدار رشته «3» فقط یک مقدار الحاقی «33» خواهد بود.
 
      **[فهرست](#فهرست)**
 
-163. ### What is a debugger statement
+163. ### عبارت debugger چیکار میکنه؟
 
      دستور دیباگر هر گونه عملکرد اشکال زدایی موجود را فراخوانی می کند، مانند تعیین نقطه شکست. اگر هیچ عملکرد اشکال زدایی در دسترس نباشد، این عبارت تاثیری ندارد.
      به عنوان مثال، در تابع زیر یک دستور دیباگر درج شده است. بنابراین
@@ -3531,13 +3532,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-164. ### What is the purpose of breakpoints in debugging
+164. ### هدف از breakpointها توی debugging چیه؟
 
      پس از اجرای دستور دیباگر و باز شدن پنجره دیباگر، می توانید نقاط شکست را در کد جاوا اسکریپت تنظیم کنید. در هر نقطه شکست، جاوا اسکریپت اجرا نمی شود و به شما اجازه می دهد مقادیر جاوا اسکریپت را بررسی کنید. پس از بررسی مقادیر، می توانید با استفاده از دکمه پخش، اجرای کد را از سر بگیرید.
 
      **[فهرست](#فهرست)**
 
-165. ### Can I use reserved words as identifiers
+165. ### آیا می‌تونیم از عبارت‌های رزرو شده در تعریف identifierها(اسم متغیر، کلاس و ...) استفاده کنیم؟
 
      نه، شما نمی توانید از کلمات رزرو شده به عنوان متغیر، برچسب، نام شی یا تابع استفاده کنید. بیایید یک مثال ساده را ببینیم،
 
@@ -3551,7 +3552,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-166. ### How do you detect a mobile browser
+166. ### چطوری تشخیص بدیم که یه مرورگر mobile هست یا نه؟
 
      ما می‌تونیم با استفاده از Regex که یک boolean به ما برمیگردونه بفهمیم که مرورگری که کاربر داره ازش استفاده میکنه چیه.
 
@@ -3569,7 +3570,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-167. ### How do you detect a mobile browser without regexp
+167. ### چطوری بدون Regex تشخیص بدیم که یه مرورگر mobile هست یا نه؟
 
      می‌تونیم مرورگرهای تلفن همراه رو با اجرای فهرستی از دستگاه‌ها و بررسی اینکه آیا `useragent` با چیزی مطابقت دارد یا خیر، شناسایی کنید. این یک راه حل جایگزین برای استفاده از RegExp هستش
 
@@ -3597,7 +3598,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-168. ### How do you get the image width and height using JS
+168. ### چطوری طول و عرض یه تصویر رو با جاواسکریپت به دست میاری؟
 
      ما می‌تونیم با استفاده از جاوا اسکریپت می توانید به صورت برنامه ریزی شده تصویر را بدست بیاریم و ابعاد (عرض و ارتفاع) رو بررسی کنیم.
 
@@ -3615,7 +3616,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-169. ### How do you make synchronous HTTP request
+169. ### چطوری درخواست‌های synchronous HTTP بزنیم؟
 
      مرورگرها یک شی `XMLHttpRequest` ارائه می‌دن که می تونه برای ایجاد درخواست های `HTTP` همزمان از جاوا اسکریپت استفاده شه.
 
@@ -3634,7 +3635,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-170. ### How do you make asynchronous HTTP request
+170. ### چطوری درخواست‌های asynchronous HTTP بزنیم؟
 
      مرورگرها یک شی `XMLHttpRequest` را ارائه می‌دن که می‌تونن برای درخواست های `HTTP` ناهمزمان از جاوا اسکریپت با ارسال پارامتر سوم به عنوان `true` استفاده کنن.
 
@@ -3657,7 +3658,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-171. ### How do you convert date to another timezone in javascript
+171. ### چطوری یه تاریخ رو به یه تاریخ در timezone دیگه تبدیل کنیم؟
 
      می‌تونیم از متد `toLocaleString` برای تبدیل تاریخ ها در یک منطقه زمانی به منطقه زمانی دیگر استفاده کنیم.بریم یه مثال درموردش ببینیم.
 
@@ -3671,7 +3672,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-172. ### What are the properties used to get size of window
+172. ### چه propertyهایی برای اندازه‌گیزی سایز window به کار میره؟
 
      می‌تونیم از ویژگی های `innerWidth،` `innerHeight،` `clientWidth،` `clientHeight` ویندوز، عنصر سند و اشیاء بدنه سند برای یافتن اندازه یک پنجره استفاده کنیم. بیایید از ترکیب آنها برای محاسبه اندازه یک پنجره یا سند استفاده کنیم.
 
@@ -3691,7 +3692,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-173. ### What is a conditional operator in javascript
+173. ### عملگر شرطی سه گانه توی جاواسکریپت چیه؟
 
      عملگر شرطی (ternary) تنها عملگر جاوا اسکریپت هستش که سه عملوند را می‌گیره که به عنوان میانبر برای دستور if عمل می‌کنه.
 
@@ -3706,7 +3707,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-174. ### Can you apply chaining on conditional operator
+174. ### آیا میشه روی عملگر شرطی زنجیره شرط‌ها رو اعمال کرد؟
 
      بله، می‌توانید زنجیره‌سازی را روی عملگرهای شرطی مشابه `if … else if … else if… other chain` اعمال کنیم.
 
@@ -3734,9 +3735,10 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-175. ### What are the ways to execute javascript after page load
+175. ### روش‌های اجرای جاواسکریپت بعد از لود شدن صفحه کدوما هستن؟
 
      ما می‌تونیم جاوا اسکریپت را پس از بارگذاری صفحه به روش های مختلف اجرا کنیم.
+     
      1. **window.onload:**
 
      <span dir="ltr" align="left">
@@ -3747,7 +3749,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     1. **document.onload:**
+     2. **document.onload:**
 
      <span dir="ltr" align="left">
 
@@ -3757,7 +3759,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     1. **body onload:**
+     3. **body onload:**
 
      <span dir="ltr" align="left">
 
@@ -3769,7 +3771,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-176. ### What is the difference between proto and prototype
+176. ### تفاوت‌های بین proto و prototype کدوما هستن؟
 
      شی `__proto__` شی واقعیه که در زنجیره جستجو برای حل متدها و غیره استفاده می شه. در حالی که `prototype` شیئی است که برای ساخت `__proto__`استفاده می شه زمانی که یک شی با جدید ایجاد می کنید.
 
@@ -3784,7 +3786,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-177. ### Give an example where do you really need semicolon
+177. ### میتونی یه مثال از زمانی که واقعا به سمیکولون(;) نیاز هست بزنی؟
 
      توصیه می‌شه بعد از هر عبارت در جاوا اسکریپت از نقطه ویرگول استفاده کنیم. به عنوان مثال، در مورد زیر به دلیل از دست دادن نقطه ویرگول، خطای `.. is not a function` را در زمان اجرا میندازه.
 
@@ -3822,7 +3824,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-178. ### What is a freeze method
+178. ### متد freeze چیکار میکنه؟
 
      متد **freeze** برای فریز کردن یک شی استفاده می‌شه. ثابت کردن یک شی اجازه افزودن ویژگی های جدید به یک شی رو نمی‌ده. از حذف آن جلوگیری می‌کنه و از تغییر قابلیت شمارش پذیری، پیکربندی یا قابلیت نوشتن ویژگی های موجود جلوگیری می‌کنه. یعنی شیء ارسال شده را برمی‌گردونه و کپی ثابتی ایجاد نمی‌کنه.
 
@@ -3845,7 +3847,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-179. ### What is the purpose of freeze method
+179. ### هدف از متد freeze چیه؟
 
     
      مزیت استفاده کردن از متد `freseze` رو ببینیم
@@ -3856,13 +3858,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-180. ### Why do I need to use freeze method
+180. ### چرا به متد freeze نیاز داریم؟
 
      در پارادایم شی گرا، یک `API` موجود حاوی عناصر خاصی است که قصد توسعه، اصلاح یا استفاده مجدد در خارج از زمینه فعلی خود را ندارند. از این رو، این کلمه کلیدی `final` است که در زبان های مختلف استفاده می شود.
 
      **[فهرست](#فهرست)**
 
-181. ### How do you detect a browser language preference
+181. ### چطوری می‌تونیم زبان ترجیحی یه مرورگر رو تشخیص بدیم؟
 
      ما میتونیم از ابجکت `navigator` گه بر روری بروزر وجود داره این کارو انجام بدیم
 
@@ -3880,7 +3882,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-182. ### How to convert string to title case with javascript
+182. ### چطوری می‌تونیم حرف اول همه کلمات یه رشته رو به حرف بزرگ تبدیل کنیم؟
 
      این کار باعث میشه که حرف اول یه رشته به صورت بزرگ(زبان انگلیسی) نشون داده بشه که ما میتونیم با تابع زیر این کارو انجام بدیم
 
@@ -3902,7 +3904,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-183. ### How do you detect javascript disabled in the page
+183. ### چطوری میشه تشخیص داد که جاواسکریپت یه صفحه وب غیرفعال شده؟
 
      برای تشخیص غیرفعال بودن یا نبودن جاوا اسکریپت می توانید از تگ `<noscript>` استفاده کنید. بلوک کد داخل `<noscript>` زمانی اجرا می‌شود که جاوا اسکریپت غیرفعال است، و معمولاً برای نمایش محتوای جایگزین زمانی که صفحه در جاوا اسکریپت تولید می‌شود، استفاده میشه.
 
@@ -3921,7 +3923,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-184. ### What are various operators supported by javascript
+184. ### عملگرهای پشتیبانی شده توسط جاواسکریپت کدوما هستن؟
 
      یک عملگر قادر به دستکاری (محاسبات ریاضی و منطقی) مقدار یا عملوند معینیه. اپراتورهای مختلفی توسط جاوا اسکریپت پشتیبانی میشن این اپراتور ها هستن
      1. **عملگر های حسابی:** شامل + (اضافه),– (منها), * (ضرب), / (تقسیم), % (درصد), + + (اضافه کردن)  و – – (کم کردن)
@@ -3933,7 +3935,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-185. ### What is a rest parameter
+185. ### پارامتر rest چیکار میکنه؟
 
      پارامتر `Rest` یک روش بهبود یافته برای مدیریت پارامترهای تابع هستش که به ما امکان میده تعداد نامحدودی از آرگومان ها رو به عنوان یک آرایه نمایش میدیم
 
@@ -3971,7 +3973,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-186. ### What happens if you do not use rest parameter as a last argument
+186. ### اگه پارامتر rest رو به عنوان آخرین پارامتر استفاده نکنیم چی میشه؟
 
      پارامتر ‍‍`Rest` باید آخرین آرگومان باشد، زیرا وظیفه آن جمع آوری تمام آرگومان های باقی مانده در یک آرایه هست. به عنوان مثال، اگر تابعیو مثل زیر تعریف کنیم معنی ندارد و یک خطا ایجاد می کنه.
 
@@ -3988,7 +3990,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-187. ### What are the bitwise operators available in javascript
+187. ### عملگرهای منطقی باینری توی جاواسکریپت کدوما هستن؟
 
      در زیر لیستی از عملگرهای منطقی بیتی مورد استفاده در جاوا اسکریپت آمده است
      1. به صورت بیتی AND ( & )
@@ -4001,7 +4003,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-188. ### What is a spread operator
+188. ### عملگر spread چیکار میکنه؟
 
      عملگر Spread به تکرارپذیرها (آرایه ها / اشیاء / رشته ها) اجازه می دهد تا به آرگومان ها / عناصر منفرد گسترش یابند. برای مشاهده این رفتار مثالی بزنیم،
 
@@ -4021,7 +4023,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-189. ### How do you determine whether object is frozen or not
+189. ### چطوری تشخیص میدی که یه آبجکت freeze شده یا نه؟
 
      متد Object.isFrozen برای تعیین اینکه آیا یک شی منجمد است یا خیر استفاده می شود. اگر همه شرایط زیر درست باشد، یک شی منجمد می شود.
      1. اگر قابل توسعه نباشد.
@@ -4043,7 +4045,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-190. ### How do you determine two values same or not using object
+190. ### چطوری بررسی کنیم که دو تا مقدار(شامل آبجکت) با هم برابرن یا نه؟
 
      متد Object.is تعیین می کند که آیا دو مقدار یک مقدار هستند یا خیر. به عنوان مثال، استفاده با انواع مختلف مقادیر،
 
@@ -4071,7 +4073,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-191. ### What is the purpose of using object is method
+191. ### هدف از متد is روی object چیه؟
 
      برخی از کاربردهای متد «is» Object به شرح زیر است,
      1. برای مقایسه دو رشته استفاده می شود.
@@ -4081,7 +4083,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-192. ### How do you copy properties from one object to other
+192. ### چطوری propertyهای یه object رو به یه object دیگه کپی می‌کنی؟
 
      می‌توانید از متد Object.assign استفاده کنید که برای کپی کردن مقادیر و ویژگی‌ها از یک یا چند شی منبع به یک شی هدف استفاده می‌شود. شی مورد نظر را که دارای خواص و مقادیر کپی شده از شی مورد نظر است، برمی گرداند. نحو به صورت زیر خواهد بود،
 
@@ -4114,7 +4116,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-193. ### What are the applications of assign method
+193. ### کاربردهای ممتد assign چیه؟
 
 
      در زیر تعدادی از کاربردهای اصلی متد Object.assign آورده شده است.
@@ -4124,7 +4126,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-194. ### What is a proxy object
+194. ### آبجکت proxy چیه؟
 
      شیء Proxy برای تعریف رفتار سفارشی برای عملیات های اساسی مانند جستجوی ویژگی، تخصیص، شمارش، فراخوانی تابع و غیره استفاده می شود. نحو به شرح زیر است:
 
@@ -4163,7 +4165,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-195. ### What is the purpose of seal method
+195. ### هدف از متد seal چیه؟
 
      روش **Object.seal** برای مهر و موم کردن یک شی، با جلوگیری از اضافه شدن ویژگی های جدید به آن و علامت گذاری تمام ویژگی های موجود به عنوان غیر قابل تنظیم، استفاده می شود. اما مقادیر ویژگی‌های فعلی تا زمانی که قابل نوشتن باشند همچنان قابل تغییر هستند. بیایید مثال زیر را برای درک بیشتر در مورد روش seal ببینیم
 
@@ -4184,7 +4186,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-196. ### What are the applications of seal method
+196. ### کاربردهای متد seal چیه؟
 
      در زیر کاربردهای اصلی متد Object.seal آورده شده است.
      1. برای آب بندی اشیا و آرایه ها استفاده می شود.
@@ -4192,13 +4194,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-197. ### What are the differences between freeze and seal methods
+197. ### تفاوت‌های بین متدهای freeze و seal چیا هست؟
 
      اگر یک شی با استفاده از متد Object.freeze منجمد شود، ویژگی‌های آن تغییرناپذیر می‌شوند و هیچ تغییری در آن‌ها نمی‌توان ایجاد کرد، در حالی که اگر یک شی با استفاده از متد Object.seal مهر و موم شده باشد، می‌توان تغییرات را در ویژگی‌های موجود ایجاد کرد. از شی
 
      **[فهرست](#فهرست)**
 
-198. ### How do you determine if an object is sealed or not
+198. ### چطوری تشخیص میدی که یه آبجکت seal شده یا نه؟
 
      متد Object.isSealed برای تعیین مهر و موم بودن یا نبودن یک شی استفاده می شود. اگر همه شرایط زیر درست باشد یک شی مهر و موم می شود
      1. اگر قابل توسعه نباشد.
@@ -4222,7 +4224,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-199. ### How do you get enumerable key and value pairs
+199. ### چطوری کلید و مقدارهای enumerable رو به دست میاری؟
 
      متد Object.entries برای برگرداندن آرایه‌ای از جفت‌های [key, value] دارای کلید رشته‌ای شمارش‌پذیر یک شی معین، به همان ترتیبی که توسط یک حلقه for...in ارائه می‌شود، استفاده می‌شود. بیایید عملکرد متد object.entries را در یک مثال ببینیم،
      
@@ -4244,13 +4246,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </div>
 
-     **نکته:** سفارش به عنوان شی تعریف شده تضمین نمی شود.
+      **نکته:** سفارش به عنوان شی تعریف شده تضمین نمی شود.
 
-     **[فهرست](#فهرست)**
+      **[فهرست](#فهرست)**
 
-200. ### What is the main difference between Object.values and Object.entries method?
+
+200. ### تفاوت‌های بین متدهای Object.values و Object.entries چیا هست؟
 
      رفتار متد Object.values مشابه روش Object.entries است اما به جای جفت [key,value] آرایه ای از مقادیر را برمی گرداند.
+
 
      <span dir="ltr" align="left">
 
@@ -4270,7 +4274,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      **[فهرست](#فهرست)**
 
 
-201. ### How can you get the list of keys of any object
+201. ### چطوری لیست کلیدهای یه object رو بدست میاری؟
 
      می‌توانید از متد Object.keys استفاده کنید که برای برگرداندن آرایه‌ای از نام ویژگی‌های یک شی معین استفاده می‌شود، به همان ترتیبی که با یک حلقه معمولی دریافت می‌کنیم. به عنوان مثال، می توانید کلیدهای یک شی کاربر را دریافت کنید،
 
@@ -4290,7 +4294,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-202. ### How do you create an object with prototype
+202. ### چطوری یه object با prototype درست می‌کنی؟
 
      متد Object.create برای ایجاد یک شی جدید با شی نمونه اولیه و ویژگی های مشخص شده استفاده می شود. به عنوان مثال، از یک شی موجود به عنوان نمونه اولیه شی جدید ایجاد شده استفاده می کند. یک شی جدید را با شی نمونه اولیه و ویژگی های مشخص شده برمی گرداند.
 
@@ -4315,7 +4319,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-203. ### What is a WeakSet
+203. ### WeakSet چیه؟
 
      WeakSet برای ذخیره مجموعه ای از اشیاء ضعیف (مرجع ضعیف) استفاده می شود. نحو به صورت زیر خواهد بود
 
@@ -4344,7 +4348,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-204. ### What are the differences between WeakSet and Set
+204. ### تفاوت‌های بین WeakSet و Set کدوما هستن؟
 
      تفاوت اصلی این است که ارجاع به اشیاء در Set قوی است در حالی که ارجاع به اشیا در WeakSet ضعیف است. به عنوان مثال، یک شی در WeakSet می تواند زباله جمع آوری شود اگر مرجع دیگری به آن وجود نداشته باشد.
      تفاوت های دیگر عبارتند از
@@ -4355,7 +4359,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-205. ### List down the collection of methods available on WeakSet
+205. ### لیست متدهایی که رو WeakSet قابل استفاده هستن رو می‌تونی بگی؟
 
      در زیر لیستی از روش های موجود در WeakSet آمده است،
      1. add(value): یک شی جدید با مقدار داده شده به مجموعه ضعیف اضافه می شود
@@ -4382,7 +4386,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-206. ### What is a WeakMap
+206. ### WeakMap چیه؟
 
      شی WeakMap مجموعه ای از جفت های کلید/مقدار است که در آن کلیدها به صورت ضعیف ارجاع داده شده اند. در این حالت، کلیدها باید اشیا باشند و مقادیر می توانند مقادیر دلخواه باشند. نحو به شکل زیر است،
      <span dir="ltr" align="left">
@@ -4410,7 +4414,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-207. ### What are the differences between WeakMap and Map
+207. ### تفاوت‌های بین WeakMap و Map کدوما هستن؟
 
      تفاوت اصلی این است که ارجاعات به اشیاء کلیدی در نقشه قوی هستند در حالی که ارجاعات به اشیاء کلیدی در WeakMap ضعیف هستند. به عنوان مثال، یک شی کلیدی در WeakMap در صورتی که هیچ مرجع دیگری به آن وجود نداشته باشد، می تواند زباله جمع آوری شود.
      تفاوت های دیگر عبارتند از
@@ -4421,7 +4425,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-208. ### List down the collection of methods available on WeakMap
+208. ### لیست متدهایی که رو WeakMap قابل استفاده هستن رو می‌تونی بگی؟
 
      در زیر لیستی از روش های موجود در WeakMap آمده است،
      1. set(key, value): مقدار کلید را در شی WeakMap تنظیم می کند. شی WeakMap را برمی گرداند.
@@ -4448,7 +4452,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-209. ### What is the purpose of uneval
+209. ### هدف از متد uneval چیه؟
 
      uneval یک تابع داخلی است که برای ایجاد نمایش رشته ای از کد منبع یک شی استفاده می شود. این یک تابع سطح بالا است و با هیچ شیئی مرتبط نیست. بیایید مثال زیر را ببینیم تا در مورد عملکرد آن بیشتر بدانید،
 
@@ -4464,7 +4468,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-210. ### How do you encode an URL
+210. ### چطوری یه URL رو encode می‌کنی؟
 
      تابع encodeURI برای رمزگذاری URI کامل استفاده می شود که دارای کاراکترهای خاص به جز (, / ? : @ & = + $ #) است.
 
@@ -4480,7 +4484,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-211. ### How do you decode an URL
+211. ### چطوری یه URL رو decode می‌کنی؟
 
      تابع decodeURI برای رمزگشایی یک شناسه منبع یکنواخت (URI) که قبلا توسط encodeURI ایجاد شده است استفاده می شود.
 
@@ -4501,7 +4505,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-212. ### How do you print the contents of web page
+212. ### چطوری محتوای یه صفحه رو پرینت می‌گیری؟
 
      شی window یک متد print ارائه می‌کند که برای چاپ محتویات پنجره فعلی استفاده می‌شود. یک کادر محاوره ای چاپ را باز می کند که به شما امکان می دهد بین گزینه های مختلف چاپ انتخاب کنید. بیایید استفاده از روش چاپ را در یک مثال ببینیم،
 
@@ -4517,7 +4521,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-213. ### What is the difference between uneval and eval
+213. ### تفاوت‌های بین uneval و eval چیا هستن؟
 
      تابع 'uneval' منبع یک شی معین را برمی گرداند. در حالی که تابع "eval" با ارزیابی آن کد منبع در یک ناحیه حافظه متفاوت، برعکس عمل می کند. بیایید مثالی را برای روشن شدن تفاوت ببینیم،
 
@@ -4533,7 +4537,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-214. ### What is an anonymous function
+214. ### تابع anonymous چیه؟
 
      تابع ناشناس یک تابع بدون نام است! توابع ناشناس معمولاً به یک نام متغیر اختصاص داده می شوند یا به عنوان یک تابع فراخوانی استفاده می شوند. نحو به صورت زیر خواهد بود،
 
@@ -4569,7 +4573,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-215. ### What is the precedence order between local and global variables
+215. ### تفاوت تقدم بین متغیرهای local و global چطوریه؟
 
      یک متغیر محلی بر یک متغیر سراسری با همین نام ارجحیت دارد. بیایید این رفتار را در یک مثال ببینیم.
 
@@ -4588,7 +4592,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-216. ### What are javascript accessors
+216. ### accessorهای جاواسکریپت چیکار می‌کنن؟
 
      ECMAScript 5 دسترسی‌های شی جاوا اسکریپت یا ویژگی‌های محاسبه‌شده را از طریق گیرنده‌ها و تنظیم‌کننده‌ها معرفی کرد. Getters از کلمه کلیدی "get" استفاده می کند در حالی که Setters از کلمه کلیدی "set" استفاده می کند.
 
@@ -4615,7 +4619,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-217. ### How do you define property on Object constructor
+217. ### چطوری روی constructor یه Object یه مقدار تعریف می‌کنی؟
 
      متد استاتیک Object.defineProperty برای تعریف یک ویژگی جدید به طور مستقیم بر روی یک شی یا تغییر ویژگی موجود روی یک شی استفاده می شود و شی را برمی گرداند. بیایید مثالی را ببینیم تا بدانیم چگونه ویژگی را تعریف کنیم،
 
@@ -4639,13 +4643,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-218. ### What is the difference between get and defineProperty
+218. ### تفاوت‌های بین get و defineProperty چیا هست؟
 
      هر دو نتایج مشابهی دارند مگر اینکه از کلاس ها استفاده کنید. اگر از «get» استفاده می‌کنید، ویژگی روی نمونه اولیه شی تعریف می‌شود، در حالی که با استفاده از «Object.defineProperty»، ویژگی روی نمونه‌ای که به آن اعمال می‌شود، تعریف می‌شود.
 
      **[فهرست](#فهرست)**
 
-219. ### What are the advantages of Getters and Setters
+219. ### مزایای استفاده از Getter و Setter چیه؟
 
      در زیر لیستی از مزایای Getters و Setter آمده است.
      1. آنها نحو ساده تری ارائه می دهند
@@ -4656,7 +4660,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-220. ### Can I add getters and setters using defineProperty method
+220. ### می‌تونیم getter و setter رو با استفاده از متد defineProperty تعریف کنیم؟
 
      بله، می‌توانید از روش Object.defineProperty» برای اضافه کردن Getters و Setter استفاده کنید. به عنوان مثال، شی شمارنده زیر از ویژگی های افزایش، کاهش، جمع و تفریق استفاده می کند.
 
@@ -4691,7 +4695,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-221. ### What is the purpose of switch-case
+221. ### هدف استفاده از switch-case چیه؟
 
      عبارت switch case در جاوا اسکریپت برای اهداف تصمیم گیری استفاده می شود. در چند مورد، استفاده از دستور switch case راحت‌تر از if-else است. نحو به صورت زیر خواهد بود،
 
@@ -4722,7 +4726,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-222. ### What are the conventions to be followed for the usage of switch case
+222. ### چه قواعدی برای استفاده از swtich-case باید رعایت بشه؟
 
      در زیر لیستی از کنوانسیون ها وجود دارد که باید مراقب آنها بود،
      1. عبارت می تواند از نوع عددی یا رشته ای باشد.
@@ -4733,7 +4737,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-223. ### What are primitive data types
+223. ### نوع داده‌های primitive کدوما هستن؟
 
      یک نوع داده اولیه، داده‌ای است که دارای یک مقدار اولیه است (که هیچ ویژگی یا روشی ندارد). 5 نوع نوع داده اولیه وجود دارد.
 
@@ -4745,7 +4749,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-224. ### What are the different ways to access object properties
+224. ### روش‌های مختلف دسترسی به propertyهای object کدوما هستن؟
 
      3 راه ممکن برای دسترسی به ویژگی یک شی وجود دارد.
      1. **Dot notation:** از نقطه برای دسترسی به ویژگی ها استفاده می کند
@@ -4779,7 +4783,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-225. ### What are the function parameter rules
+225. ### قوانین پارامترهای توابع کدوما هستن؟
 
      توابع جاوا اسکریپت از قوانین زیر برای پارامترها پیروی می کنند.
      1. تعاریف تابع انواع داده ها را برای پارامترها مشخص نمی کند.
@@ -4800,7 +4804,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-226. ### What is an error object
+226. ### آبجکت error چیه؟
 
      یک شیء خطا، یک شیء خطای داخلی است که هنگام بروز خطا، اطلاعات خطا را ارائه می دهد. این دو ویژگی دارد: نام و پیام. به عنوان مثال، تابع زیر جزئیات خطا را ثبت می کند،
 
@@ -4819,7 +4823,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-227. ### When you get a syntax error
+227. ### چه موقعی خطای syntax دریافت می‌کنیم؟
 
      اگر بخواهید کد را با یک خطای نحوی ارزیابی کنید، یک SyntaxError پرتاب می شود. به عنوان مثال، نقل قول زیر برای پارامتر تابع یک خطای نحوی ایجاد می کند
      
@@ -4838,7 +4842,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-228. ### What are the different error names from error object
+228. ### عنوان خطاهای مختلف که روی error-object برمیگردن کدوما هستن؟
 
      6 نوع مختلف نام خطا وجود دارد که از شی خطا بازگردانده می شود.
      | نام خطا | توضیحات |
@@ -4852,36 +4856,36 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-229. ### What are the various statements in error handling
+229. ### عبارات مختلف که در هنگام مدیریت error استفاده میشن کدوما هستن؟
 
      در زیر لیستی از عبارات استفاده شده در مدیریت خطا آمده است.
      1. **try:** این عبارت برای آزمایش یک بلوک کد برای خطاها استفاده می شود
      2. **catch:** این عبارت برای رسیدگی به خطا استفاده می شود
-     3. **throw:**این عبارت برای ایجاد خطاهای سفارشی استفاده می شود.
-     4. **finally:**این عبارت برای اجرای کد پس از تلاش و گرفتن بدون توجه به نتیجه استفاده می شود.
+     3. **throw:** این عبارت برای ایجاد خطاهای سفارشی استفاده می شود.
+     4. **finally:** این عبارت برای اجرای کد پس از تلاش و گرفتن بدون توجه به نتیجه استفاده می شود.
 
      **[فهرست](#فهرست)**
 
-230. ### What are the two types of loops in javascript
+230. ### دو نوع مختلف حلفه‌ها در جاواسکریپت کدوما هستن؟
 
      1. **Entry Controlled loops:** در این نوع حلقه، شرایط تست قبل از ورود به بدنه حلقه آزمایش می شود. به عنوان مثال For Loop و while Loop در این دسته قرار می گیرند.
      2. **Exit Controlled Loops:** در این نوع حلقه، شرایط تست در انتهای بدنه حلقه آزمایش یا ارزیابی می شود. یعنی بدنه حلقه حداقل یک بار بدون در نظر گرفتن شرایط تست true یا false اجرا می شود. به عنوان مثال، حلقه do-while در این دسته قرار می گیرد.
 
      **[فهرست](#فهرست)**
 
-231. ### What is nodejs
+231. ### nodejs چیه؟
 
      Node.js یک پلتفرم سمت سرور است که بر اساس زمان اجرا جاوا اسکریپت کروم برای ساخت آسان برنامه های شبکه سریع و مقیاس پذیر ساخته شده است. این یک زمان اجرا I/O ناهمزمان مبتنی بر رویداد، غیر مسدود کننده است که از موتور جاوا اسکریپت V8 گوگل و کتابخانه libuv استفاده می کند.
 
      **[فهرست](#فهرست)**
 
-232. ### What is an Intl object
+232. ### آبجکت Intl چیه؟
 
      شی Intl فضای نامی برای ECMAScript Internationalization API است که مقایسه رشته های حساس زبان، قالب بندی اعداد و قالب بندی تاریخ و زمان را ارائه می دهد. دسترسی به چندین سازنده و توابع حساس به زبان را فراهم می کند.
 
      **[فهرست](#فهرست)**
 
-233. ### How do you perform language specific date and time formatting
+233. ### چطوری تاریخ و زمان رو بر اساس زبان جاری سیستم کاربر نمایش بدیم؟
 
      می توانید از شی «Intl.DateTimeFormat» استفاده کنید که سازنده اشیایی است که قالب بندی تاریخ و زمان حساس به زبان را فعال می کند. بیایید این رفتار را با یک مثال ببینیم،
 
@@ -4897,13 +4901,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-234. ### What is an Iterator
+234. ### Iterator چیه؟
 
      تکرار کننده شی ای است که پس از خاتمه، یک توالی و یک مقدار بازگشتی را تعریف می کند. پروتکل Iterator را با متد «next» پیاده‌سازی می‌کند که یک شی را با دو ویژگی برمی‌گرداند: «value» (مقدار بعدی در دنباله) و «done» (که اگر آخرین مقدار در دنباله مصرف شده باشد درست است. ).
 
      **[فهرست](#فهرست)**
 
-235. ### How does synchronous iteration works
+235. ### حلفه‌های synchronous(همزمان) چطوری کار می‌کنن؟
 
      تکرار همزمان در ES6 معرفی شد و با مجموعه ای از اجزای زیر کار می کند:
 
@@ -4928,14 +4932,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-236. ### What is an event loop
+236. ### Event-loop چیه؟
 
      حلقه رویداد یک صف از توابع برگشت به تماس است. هنگامی که یک تابع async اجرا می شود، تابع callback در صف قرار می گیرد. موتور جاوا اسکریپت پردازش حلقه رویداد را شروع نمی کند تا زمانی که تابع async اجرای کد را به پایان برساند.
      **نکته:** این به Node.js اجازه می دهد تا عملیات I/O غیر مسدود کننده را انجام دهد حتی اگر جاوا اسکریپت تک رشته ای باشد.
 
      **[فهرست](#فهرست)**
 
-237. ### What is call stack
+237. ### Call-stack چیه؟
 
      Call Stack یک ساختار داده برای مفسران جاوا اسکریپت است تا فراخوانی های تابع در برنامه را پیگیری کند. دو عمل عمده دارد،
      1. هر زمان که یک تابع را برای اجرای آن فراخوانی می کنید، آن را به پشته هل می دهید.
@@ -4969,11 +4973,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-238. ### What is an event queue
+238. ### Event-queue چیه؟
 
      **[فهرست](#فهرست)**
 
-239. ### What is a decorator
+239. ### Decorator چیه؟
 
      دکوراتور عبارتی است که یک تابع را ارزیابی می‌کند و هدف، نام و توصیف‌کننده تزئین را به عنوان آرگومان می‌گیرد. همچنین، به صورت اختیاری یک توصیفگر دکوراتور را برای نصب بر روی شی مورد نظر برمی گرداند. بیایید در زمان طراحی، دکوراتور ادمین را برای کلاس کاربر تعریف کنیم،
 
@@ -5001,7 +5005,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-240. ### What are the properties of Intl object
+240. ### مقادیر موجود روی آبجکت Intl کدوما هستن؟
      
      در زیر لیستی از ویژگی های موجود در شیء Intl آمده است،
 
@@ -5014,7 +5018,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-241. ### What is an Unary operator
+241. ### عملگر Unary چیه؟
 
      عملگر unary(+) برای تبدیل یک متغیر به عدد استفاده می شود. اگر متغیر قابل تبدیل نباشد، همچنان به عدد تبدیل می شود اما با مقدار NaN. بیایید این رفتار را در یک عمل ببینیم.
 
@@ -5034,7 +5038,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-242. ### How do you sort elements in an array
+242. ### چطوری المنت‌های موجود تو یه آرایه رو مرتب می‌کنی؟
 
      متد sort برای مرتب سازی عناصر یک آرایه در جای خود استفاده می شود و آرایه مرتب شده را برمی گرداند. استفاده از مثال زیر خواهد بود،
 
@@ -5050,7 +5054,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-243. ### What is the purpose of compareFunction while sorting arrays
+243. ### هدف از تابع مرتب‌سازی موقع استفاده از متد sort چیه؟
 
      از compareFunction برای تعریف ترتیب مرتب سازی استفاده می شود. اگر حذف شود، عناصر آرایه به رشته تبدیل می شوند، سپس بر اساس مقدار نقطه کد یونیکد هر کاراکتر مرتب می شوند. بیایید مثالی بزنیم تا کاربرد compareFunction را ببینیم،
 
@@ -5066,7 +5070,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-244. ### How do you reversing an array
+244. ### چطوری آیتم‌های یه آرایه رو معکوس مرتب کنیم؟
 
      برای معکوس کردن عناصر یک آرایه می توانید از متد reverse استفاده کنید. این روش برای مرتب کردن یک آرایه به ترتیب نزولی مفید است. بیایید استفاده از متد reverse را در یک مثال ببینیم،
 
@@ -5083,7 +5087,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-245. ### How do you find min and max value in an array
+245. ### چطوری حداقل و حداکثر مقدار یه آرایه رو بدست بیاریم؟
 
      می‌توانید از روش‌های «Math.min» و «Math.max» روی متغیرهای آرایه برای یافتن حداقل و حداکثر عناصر در یک آرایه استفاده کنید. بیایید دو تابع برای پیدا کردن مقدار min و max در یک آرایه ایجاد کنیم.
 
@@ -5106,7 +5110,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-246. ### How do you find min and max values without Math functions
+246. ### چطوری حداقل و حداکثر مقدار یه آرایه رو بدون استفاده از متدهای Math بدست بیاریم؟
 
      دستور خالی یک نقطه ویرگول (;) است که نشان می دهد هیچ دستوری اجرا نخواهد شد، حتی اگر نحو جاوا اسکریپت به آن نیاز داشته باشد. از آنجایی که هیچ اقدامی با دستور خالی وجود ندارد، ممکن است فکر کنید که استفاده از آن بسیار کمتر است، اما دستور خالی گاهی اوقات زمانی مفید است که می خواهید حلقه ای ایجاد کنید که بدنه آن خالی است. به عنوان مثال، می توانید یک آرایه با مقادیر صفر را مانند زیر مقداردهی اولیه کنید.
 
@@ -5144,7 +5148,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-247. ### What is an empty statement and purpose of it
+247. ### عبارت خالی چیه و هدف از استفاده ازش چیه؟
 
      می‌توانید از شی «import.meta» استفاده کنید که یک ویژگی متا است که متا داده‌های متنی خاص را در یک ماژول جاوا اسکریپت قرار می‌دهد. این شامل اطلاعاتی در مورد ماژول فعلی، مانند URL ماژول است. در مرورگرها، ممکن است متا داده های متفاوتی نسبت به NodeJS دریافت کنید.
 
@@ -5159,7 +5163,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-248. ### How do you get metadata of a module
+248. ### چطوری metadata یه ماژول رو بدست میاری؟ meta data of a module
 
      عملگر کاما برای ارزیابی هر یک از عملوندهای آن از چپ به راست استفاده می شود و مقدار آخرین عملوند را برمی گرداند. این کاملاً با استفاده از کاما در آرایه ها، اشیاء و آرگومان ها و پارامترهای تابع متفاوت است. به عنوان مثال، استفاده از عبارات عددی به صورت زیر خواهد بود.
 
@@ -5174,7 +5178,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-249. ### What is a comma operator
+249. ### عملگر comma چیه و چیکار می‌کنه؟
 
      عملگر کاما برای ارزیابی هر یک از عملوندهای آن از چپ به راست استفاده می شود و مقدار آخرین عملوند را برمی گرداند. این کاملاً با استفاده از کاما در آرایه ها، اشیاء و آرگومان ها و پارامترهای تابع متفاوت است. به عنوان مثال، استفاده از عبارات عددی به صورت زیر خواهد بود.
 
@@ -5191,7 +5195,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-250. ### What is the advantage of a comma operator
+250. ### مزایای استفاده از عملگر comma چیه؟
 
      معمولاً برای گنجاندن چندین عبارت در مکانی که به یک عبارت واحد نیاز دارد استفاده می شود. یکی از کاربردهای رایج این عملگر کاما، ارائه چندین پارامتر در یک حلقه «for» است. به عنوان مثال، حلقه for زیر از چند عبارت در یک مکان واحد با استفاده از عملگر کاما استفاده می کند.
 
@@ -5218,7 +5222,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-251. ### What is typescript
+251. ### Typescript چیه؟
 
      TypeScript یک ابر مجموعه تایپ شده از جاوا اسکریپت است که توسط مایکروسافت ایجاد شده است که انواع اختیاری، کلاس ها، async/wait و بسیاری ویژگی های دیگر را اضافه می کند و به جاوا اسکریپت ساده کامپایل می کند. Angular به طور کامل در TypeScript ساخته شده و به عنوان زبان اصلی استفاده می شود. شما می توانید آن را به صورت جهانی نصب کنید
 
@@ -5250,7 +5254,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-252. ### What are the differences between javascript and typescript
+252. ### تفاوت‌های بین javascript و typescript کدوما هستن؟
 
      در زیر لیستی از تفاوت های بین جاوا اسکریپت و تایپ اسکریپت آمده است.
 
@@ -5264,7 +5268,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-253. ### What are the advantages of typescript over javascript
+253. ### مزایای typescript نسبت به javascript چیاست؟
 
      در زیر برخی از مزایای تایپ اسکریپت نسبت به جاوا اسکریپت آورده شده است.
      1. TypeScript می تواند خطاهای زمان کامپایل را فقط در زمان توسعه پیدا کند و باعث می شود خطاهای زمان اجرا کمتر شود. در حالی که جاوا اسکریپت یک زبان تفسیر شده است.
@@ -5273,7 +5277,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-254. ### What is an object initializer
+254. ### object-initializer چیه؟
 
      یک شیء اولیه عبارتی است که مقدار دهی اولیه یک شی را توصیف می کند. نحو این عبارت به صورت فهرستی با کاما از صفر یا چند جفت نام ویژگی و مقادیر مرتبط یک شی، محصور در پرانتزهای فرفری ({}) نشان داده می‌شود. این همچنین به عنوان نماد تحت اللفظی شناخته می شود. یکی از راه های ایجاد یک شی است.
 
@@ -5289,7 +5293,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-255. ### What is a constructor method
+255. ### متد constructor چیه؟
 
      متد سازنده یک متد خاص برای ایجاد و مقداردهی اولیه یک شی ایجاد شده در یک کلاس است. اگر متد سازنده را مشخص نکنید، از سازنده پیش فرض استفاده می شود. مثال استفاده از سازنده به صورت زیر خواهد بود.
      
@@ -5312,7 +5316,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-256. ### What happens if you write constructor more than once in a class
+256. ### اگه متد constructor رو بیش از یه بار توی کلاس بنویسیم چی میشه؟
 
      "سازنده" در یک کلاس یک متد خاص است و باید فقط یک بار در یک کلاس تعریف شود. به عنوان مثال، اگر یک متد سازنده را بیش از یک بار در یک کلاس بنویسید، یک خطای «SyntaxError» ایجاد می کند.
 
@@ -5337,7 +5341,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-257. ### How do you call the constructor of a parent class
+257. ### چطوری متد constructor کلاس والد رو صدا بزنیم؟
 
      می توانید از کلمه کلیدی super برای فراخوانی سازنده کلاس والد استفاده کنید. به یاد داشته باشید که «super» باید قبل از استفاده از مرجع «this» فراخوانی شود. در غیر این صورت باعث خطای مرجع می شود. بیایید از آن استفاده کنیم،
 
@@ -5364,7 +5368,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-258. ### How do you get the prototype of an object
+258. ### چطوری prototype یه object رو به دست میاری؟
 
      می توانید از روش Object.getPrototypeOf(obj) برای برگرداندن نمونه اولیه شی مشخص شده استفاده کنید. یعنی مقدار ویژگی «نمونه اولیه» داخلی. اگر هیچ ویژگی ارثی وجود نداشته باشد، مقدار "null" برگردانده می شود.
      
@@ -5381,7 +5385,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-259. ### What happens If I pass string type for getPrototype method
+259. ### اگه به متد getPrototype رشته پاس بدیم چی میشه؟
 
      در ES5، اگر پارامتر obj یک شی نباشد، یک استثنا TypeError ایجاد می کند. در حالی که در ES2015، پارامتر به یک «شیء» اجباری می شود.
 
@@ -5398,7 +5402,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-260. ### How do you set prototype of one object to another
+260. ### چطوری prototype یه object روی یه object دیگه ست کنیم؟
 
      می‌توانید از متد «Object.setPrototypeOf» استفاده کنید که نمونه اولیه (یعنی ویژگی داخلی «Prototype») یک شی مشخص شده را روی یک شی دیگر یا تهی تنظیم می‌کند. به عنوان مثال، اگر می خواهید نمونه اولیه یک جسم مربع را روی شی مستطیلی تنظیم کنید، به صورت زیر است:
 
@@ -5413,7 +5417,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-261. ### How do you check whether an object can be extendable or not
+261. ### چطوری بررسی می‌کنی که یه object قابل extend هست یا نه؟
 
      متد Object.isExtensible` برای تعیین اینکه آیا یک شی قابل توسعه است یا نه استفاده می شود. یعنی اینکه آیا می تواند ویژگی های جدیدی به آن اضافه شود یا خیر.
 
@@ -5430,7 +5434,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-262. ### How do you prevent an object to extend
+262. ### چطوری جلوی extend یه object رو بگیریم؟
 
      متد «Object.preventExtensions» برای جلوگیری از افزودن ویژگی های جدید به یک شی استفاده می شود. به عبارت دیگر، از پسوندهای بعدی به شی جلوگیری می کند. بیایید استفاده از این ویژگی را ببینیم،
 
@@ -5453,7 +5457,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-263. ### What are the different ways to make an object non-extensible
+263. ### روش‌های مختلف برای تبدیل یه object به object غیرقابل extend چیه؟
 
      شما می توانید یک شی غیر قابل گسترش را به 3 روش علامت گذاری کنید.
      1. Object.preventExtensions
@@ -5479,7 +5483,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-264. ### How do you define multiple properties on an object
+264. ### چطوری propertyهای متعددی رو روی یه object تعریف می‌کنی؟
 
      متد «Object.defineProperties» برای تعریف یا اصلاح ویژگی‌های موجود مستقیماً روی یک شی و برگرداندن شی استفاده می‌شود. بیایید چندین ویژگی را روی یک شی خالی تعریف کنیم،
 
@@ -5501,13 +5505,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-265. ### What is MEAN in javascript
+265. ### منظور از MEAN توی جاواسکریپت چیه؟ javascript
 
      پشته MEAN (MongoDB، Express، AngularJS و Node.js) محبوب‌ترین پشته فناوری نرم‌افزار جاوا اسکریپت منبع باز است که برای ساخت برنامه‌های وب پویا در دسترس است، جایی که می‌توانید نیمه‌های سمت سرور و سمت مشتری پروژه وب را بنویسید. کاملا در جاوا اسکریپت
 
      **[فهرست](#فهرست)**
 
-266. ### What Is Obfuscation in javascript
+266. ### Obfuscation توی جاواسکریپت چیه و چیکار می‌کنه؟ javascript
 
      مبهم سازی عمل عمدی ایجاد کد جاوا اسکریپت مبهم (یعنی کد منبع یا ماشین) است که درک آن برای انسان دشوار است. این چیزی شبیه به رمزگذاری است، اما یک ماشین می تواند کد را درک کرده و آن را اجرا کند.
           بیایید تابع زیر را قبل از Obfuscation ببینیم،
@@ -5533,7 +5537,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-267. ### Why do you need Obfuscation
+267. ### چه نیازی به Obfuscate کردن داریم؟
 
      در زیر چند دلیل برای مبهم سازی آمده است،
      1. اندازه کد کاهش می یابد. بنابراین انتقال داده بین سرور و مشتری سریع خواهد بود.
@@ -5543,13 +5547,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-268. ### What is Minification
+268. ### Minification چیه؟
 
      کوچک سازی فرآیند حذف تمام کاراکترهای غیر ضروری است (فضاهای خالی حذف می شوند) و متغیرها بدون تغییر در عملکرد آن تغییر نام می دهند. همچنین نوعی مبهم است.
 
      **[فهرست](#فهرست)**
 
-269. ### What are the advantages of minification
+269. ### مزایای minification یا کم حجم‌سازی چیه؟
 
      به طور معمول توصیه می شود برای ترافیک سنگین و نیازهای فشرده منابع از Minification استفاده کنید. اندازه فایل را با مزایای زیر کاهش می دهد
      1. زمان بارگذاری یک صفحه وب را کاهش می دهد
@@ -5557,7 +5561,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-270. ### What are the differences between Obfuscation and Encryption
+270. ### تفاوت‌های بین Obfuscation و Encryption چیه؟
 
      در زیر تفاوت های اصلی بین مبهم سازی و رمزگذاری وجود دارد.
      | ویژگی | مبهم سازی | رمزگذاری |
@@ -5568,7 +5572,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-271. ### What are the common tools used for minification
+271. ### ابزارهای مختلف برای minification کدوما هستن؟
 
      ابزارهای آنلاین/آفلاین زیادی برای کوچک کردن فایل‌های جاوا اسکریپت وجود دارد.
      1. کامپایلر بسته شدن گوگل
@@ -5579,7 +5583,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-272. ### How do you perform form validation using javascript
+272. ### چطوری اعتبارسنجی فرم رو با javascript انجام میدی؟
 
      از جاوا اسکریپت می توان برای اعتبار سنجی فرم HTML استفاده کرد. به عنوان مثال، اگر فیلد فرم خالی باشد، تابع باید اطلاع دهد و false را برگرداند تا از ارسال فرم جلوگیری شود.
       اجازه دهید ورود کاربر را در فرم html انجام دهیم،
@@ -5613,7 +5617,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-273. ### How do you perform form validation without javascript
+273. ### چطوری اعتبارسنجی فرم رو بدون javascript انجام میدی؟
 
      می توانید بدون استفاده از جاوا اسکریپت اعتبار سنجی فرم HTML را به صورت خودکار انجام دهید. اعتبار سنجی با اعمال ویژگی «لازم» برای جلوگیری از ارسال فرم زمانی که ورودی خالی است فعال می شود.
 
@@ -5632,7 +5636,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-274. ### What are the DOM methods available for constraint validation
+274. ### متدهای موجود روی DOM برای اعتبارسنجی کدوما هستن؟
 
      روش‌های DOM زیر برای اعتبارسنجی محدودیت در ورودی نامعتبر موجود است.
      1. checkValidity: اگر یک عنصر ورودی حاوی داده های معتبر باشد، مقدار true را برمی گرداند.
@@ -5656,7 +5660,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-275. ### What are the available constraint validation DOM properties
+275. ### مقادیر موجود روی DOM برای اعتبارسنجی کدوما هستن؟
 
      در زیر لیستی از برخی از ویژگی های DOM اعتبارسنجی محدودیت موجود است،
 
@@ -5666,7 +5670,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-276. ### What are the list of validity properties
+276. ### مقادیر موجود روی input برای اعتبارسنجی کدوما هستن؟
 
      ویژگی اعتبار یک عنصر ورودی مجموعه ای از ویژگی های مربوط به اعتبار داده ها را ارائه می دهد.
 
@@ -5682,7 +5686,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-277. ### Give an example usage of rangeOverflow property
+277. ### یه مثال از استفاده ویژگی rangeOverflow می‌تونی بزنی؟
 
      اگر مقدار یک عنصر از ویژگی max آن بیشتر باشد، ویژگی rangeOverflow مقدار true را برمی گرداند. به عنوان مثال، فرم ارسالی زیر اگر مقدار آن بیش از 100 باشد، خطا می دهد.
 
@@ -5709,7 +5713,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-278. ### Is enums feature available in javascript
+278. ### جاواسکریپت قابلیت استفاده از enum رو پیش‌فرض توی خودش داره؟
 
      نه، جاوا اسکریپت به صورت بومی از enum ها پشتیبانی نمی کند. اما انواع مختلفی از راه‌حل‌ها برای شبیه‌سازی آنها وجود دارد، اگرچه ممکن است معادل‌های دقیقی ارائه نکنند. به عنوان مثال، می توانید از فریز یا مهر و موم روی شی استفاده کنید
 
@@ -5723,7 +5727,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-279. ### What is an enum
+279. ### enum چیه؟
 
      enum نوعی است که متغیرها را به یک مقدار از مجموعه ای از ثابت های از پیش تعریف شده محدود می کند. جاوا اسکریپت هیچ enum ندارد اما تایپ اسکریپت از enum داخلی پشتیبانی می کند.
      
@@ -5739,7 +5743,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-280. ### How do you list all properties of an object
+280. ### چطوری همه propertyهای یه object رو به دست بیاریم؟
 
      می‌توانید از متد Object.getOwnPropertyNames» استفاده کنید که آرایه‌ای از تمام ویژگی‌هایی را که مستقیماً در یک شیء داده شده یافت می‌شود، برمی‌گرداند. بیایید استفاده از آن را در یک مثال بیان کنیم،
 
@@ -5759,7 +5763,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-281. ### How do you get property descriptors of an object
+281. ### چطوری get property descriptors of an object
 
      می‌توانید از متد Object.getOwnPropertyDescriptors» استفاده کنید که تمام توصیف‌گرهای ویژگی یک شی معین را برمی‌گرداند. مثال استفاده از این روش در زیر آمده است
 
@@ -5782,7 +5786,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-282. ### What are the attributes provided by a property descriptor
+282. ### گزینه‌هایی که موقع تعریف ویژگی object با descriptor داریم کدوما هستن؟
 
      توصیفگر ویژگی رکوردی است که دارای ویژگی های زیر است
      1. value:ارزش مرتبط با ملک
@@ -5794,7 +5798,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-283. ### How do you extend classes
+283. ### چطوری کلاس‌ها رو extend می‌کنی؟
 
      کلمه کلیدی "extends" در اعلان ها/عبارات کلاس برای ایجاد کلاسی که فرزند کلاس دیگری است استفاده می شود. می توان از آن برای زیر کلاس بندی کلاس های سفارشی و همچنین اشیاء داخلی استفاده کرد. نحو به صورت زیر خواهد بود،
 
@@ -5831,7 +5835,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-284. ### How do I modify the url without reloading the page
+284. ### چطوری آدرس صفحه رو بدون رفرش صفحه عوض کنیم؟
 
      ویژگی «window.location.url» برای تغییر url مفید خواهد بود اما صفحه را دوباره بارگیری می کند. HTML5 متدهای «history.pushState» و «history.replaceState» را معرفی کرد که به شما اجازه می‌دهد به ترتیب ورودی‌های تاریخ را اضافه و تغییر دهید. به عنوان مثال، می توانید از pushState مانند زیر استفاده کنید.
 
@@ -5845,7 +5849,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-285. ### How do you check whether an array includes a particular value or not
+285. ### چطوری بررسی می‌کنی که یه آرایه یه مقدار مشخص رو داره یا نه؟
 
      متد «Array#includes» برای تعیین اینکه آیا یک آرایه دارای مقدار خاصی در میان ورودی‌های خود با برگرداندن true یا false است یا خیر استفاده می‌شود. بیایید مثالی برای یافتن یک عنصر (عددی و رشته ای) در یک آرایه ببینیم.
 
@@ -5863,7 +5867,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-286. ### How do you compare scalar arrays
+286. ### چطوری آرایه‌های scalar رو با هم مقایسه می‌کنی؟
 
      می توانید از طول و هر روش آرایه برای مقایسه دو آرایه اسکالر (مقایسه مستقیم با استفاده از ===) استفاده کنید. ترکیب این عبارات می تواند نتیجه مورد انتظار را به دست دهد،
 
@@ -5892,7 +5896,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-287. ### How to get the value from get parameters
+287. ### چطوری میشه پارامترهای صفحه رو از متد GET گرفت؟
 
      شیء «URL» رشته url را می‌پذیرد و از ویژگی «searchParams» این شی می‌توان برای دسترسی به پارامترهای get استفاده کرد. به یاد داشته باشید که ممکن است برای دسترسی به URL در مرورگرهای قدیمی (از جمله IE) نیاز به استفاده از polyfill یا «window.location» داشته باشید.
 
@@ -5909,7 +5913,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-288. ### How do you print numbers with commas as thousand separators
+288. ### چطوری اعداد رو میشه سه رقم سه رقم جدا کرد؟
 
      می‌توانید از متد «Number.prototype.toLocaleString» استفاده کنید که رشته‌ای را با نمایشی حساس به زبان مانند جداکننده هزار، ارز و غیره از این عدد برمی‌گرداند.
 
@@ -5927,7 +5931,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-289. ### What is the difference between java and javascript
+289. ### تفاوت‌ بین java و javascript چیه؟
 
      هر دو زبان برنامه نویسی کاملاً نامرتبط هستند و هیچ ارتباطی بین آنها وجود ندارد. جاوا بصورت ایستا تایپ می شود، کامپایل می شود، روی ماشین مجازی خود اجرا می شود. در حالی که جاوا اسکریپت به صورت پویا تایپ می شود، تفسیر می شود و در محیط های مرورگر و nodejs اجرا می شود. بیایید تفاوت های عمده را در قالب جدولی ببینیم،
       | ویژگی | جاوا | جاوا اسکریپت |
@@ -5939,7 +5943,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
       | حافظه | از حافظه بیشتر استفاده می کند | از حافظه کمتری استفاده می کند. از این رو برای صفحات وب استفاده خواهد شد |
      **[فهرست](#فهرست)**
 
-290. ### Is javascript supports namespace
+290. ### آیا جاواسکریپت namespace رو پشتیبانی می‌کنه؟
 
      جاوا اسکریپت به طور پیش فرض از فضای نام پشتیبانی نمی کند. بنابراین اگر هر عنصری (تابع، روش، شی، متغیر) ایجاد کنید، جهانی می شود و فضای نام جهانی را آلوده می کند. بیایید مثالی از تعریف دو تابع بدون فضای نام بیاوریم،
 
@@ -5962,7 +5966,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-291. ### How do you declare namespace
+291. ### چطوری namespace تعریف می‌کنی؟
 
      حتی اگر جاوا اسکریپت فاقد فضاهای نام باشد، می‌توانیم از Objects، IIFE برای ایجاد فضاهای نام استفاده کنیم.
      1. **Using Object Literal Notation:** بیایید متغیرها و توابع را درون یک Object literal بپیچیم که به عنوان فضای نام عمل می کند. پس از آن می توانید با استفاده از نماد شیء به آنها دسترسی داشته باشید
@@ -6032,7 +6036,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-292. ### How do you invoke javascript code in an iframe from parent page
+292. ### چطوری می‌تونیم تکه کد جاواسکریپت داخل یه iframe رو از صفحه والد صدا بزنیم؟
 
      در ابتدا باید iFrame با استفاده از «document.getElementBy» یا «window.frames» قابل دسترسی باشد. پس از آن ویژگی «contentWindow» iFrame به targetFunction دسترسی می دهد
 
@@ -6048,7 +6052,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-293. ### How do get the timezone offset from date
+293. ### چطوری میشه اختلاف timezone رو از آبجکت date بگیریم؟
 
      می‌توانید از روش «getTimezoneOffset» شی تاریخ استفاده کنید. این روش اختلاف منطقه زمانی را بر حسب دقیقه از محلی فعلی (تنظیمات سیستم میزبان) به UTC برمی گرداند
 
@@ -6063,7 +6067,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-294. ### How do you load CSS and JS files dynamically
+294. ### چطوری فایل‌های CSS و JS رو به شکل داینامیک بارگذاری کنیم؟
 
      شما می توانید هر دو عنصر پیوند و اسکریپت را در DOM ایجاد کنید و آنها را به عنوان فرزند به تگ head اضافه کنید. بیایید یک تابع برای اضافه کردن منابع اسکریپت و سبک مانند زیر ایجاد کنیم.
 
@@ -6090,7 +6094,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-295. ### What are the different methods to find HTML elements in DOM
+295. ### روش‌های مختلف برای پیدا کردن elementها توی DOM کدوما هستن؟
 
      اگر می خواهید به هر عنصری در صفحه HTML دسترسی داشته باشید، باید با دسترسی به شی سند شروع کنید. بعداً می توانید از یکی از روش های زیر برای یافتن عنصر HTML استفاده کنید.
      1. document.getElementById(id): یک عنصر را با Id پیدا می کند
@@ -6099,7 +6103,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-296. ### What is jQuery
+296. ### jQuery چیه؟
 
      jQuery یک کتابخانه جاوا اسکریپت متقابل مرورگر محبوب است که با به حداقل رساندن اختلاف بین مرورگرها، پیمایش مدل شی سند (DOM)، مدیریت رویداد، انیمیشن‌ها و تعاملات AJAX را فراهم می‌کند. با فلسفه اش «کمتر بنویس، بیشتر انجام بده» شهرت زیادی دارد. به عنوان مثال، می توانید پیام خوش آمدگویی را در بارگذاری صفحه با استفاده از jQuery به صورت زیر نمایش دهید.
 
@@ -6117,14 +6121,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-297. ### What is V8 JavaScript engine
+297. ### موتور V8 جاواسکریپت چیه؟
 
      V8 یک موتور جاوا اسکریپت با کارایی بالا منبع باز است که توسط مرورگر Google Chrome استفاده می شود و به زبان C++ نوشته شده است. همچنین در پروژه node.js استفاده می شود. ECMAScript و WebAssembly را پیاده‌سازی می‌کند و روی ویندوز 7 یا بالاتر، macOS 10.12+ و سیستم‌های لینوکس که از پردازنده‌های x64، IA-32، ARM یا MIPS استفاده می‌کنند، اجرا می‌شود.
      **نکته:** می تواند به صورت مستقل اجرا شود یا می تواند در هر برنامه C++ تعبیه شود.
 
      **[فهرست](#فهرست)**
 
-298. ### Why do we call javascript as dynamic language
+298. ### چرا ما جاواسکریپت رو به عنوان یه زبان داینامیک می‌شناسیم؟
 
      جاوا اسکریپت یک زبان ساده تایپ شده یا یک زبان پویا است زیرا متغیرها در جاوا اسکریپت مستقیماً با هیچ نوع مقدار خاصی مرتبط نیستند و هر متغیری را می توان با مقادیری از همه نوع تخصیص/تخصیص مجدد داد.
 
@@ -6140,7 +6144,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-299. ### What is a void operator
+299. ### عملگر void چیکار می‌کنه؟
 
      عملگر «void» عبارت داده شده را ارزیابی می کند و سپس تعریف نشده (یعنی بدون بازگشت مقدار) را برمی گرداند. نحو به صورت زیر خواهد بود،
 
@@ -6166,7 +6170,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-300. ### How to set the cursor to wait
+300. ### چطوری میشه نمایشگر موس صفحه رو به درحال لود تغییر داد؟
 
      مکان نما را می توان برای انتظار در جاوا اسکریپت با استفاده از ویژگی "cursor" تنظیم کرد. بیایید این رفتار را در بارگذاری صفحه با استفاده از تابع زیر انجام دهیم.
 
@@ -6192,7 +6196,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-301. ### How do you create an infinite loop
+301. ### چطوری میشه یه حلقه بی‌نهایت درست کرد؟
 
      شما می توانید حلقه های بی نهایت با استفاده از حلقه های for و while بدون استفاده از هیچ عبارتی ایجاد کنید. ساختار یا نحو حلقه for از نظر ESLint و ابزارهای بهینه ساز کد، رویکرد بهتری است.
 
@@ -6209,7 +6213,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-302. ### Why do you need to avoid with statement
+302. ### چرا باید در استفاده از عبارت with تجدیدنظر کرد؟
 
      دستور با جاوا اسکریپت در نظر گرفته شده بود که مختصری برای نوشتن دسترسی های تکرارشونده به اشیا ارائه دهد. بنابراین می‌تواند با کاهش نیاز به تکرار یک مرجع طولانی بدون جریمه عملکرد، به کاهش اندازه فایل کمک کند. بیایید مثالی بزنیم که در آن برای جلوگیری از افزونگی هنگام چندین بار دسترسی به یک شی استفاده می شود.
 
@@ -6239,7 +6243,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-303. ### What is the output of below for loops
+303. ### خروجی این حلقه‌ها چی میشه؟
 
      <span dir="ltr" align="left">
 
@@ -6255,14 +6259,16 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-     خروجی حلقه های بالا 4 4 4 4 و 0 1 2 3 است
+     خروجی حلقه های بالا 4 4 4 4 و 0 1 2 3 است.
+
      **توضیح:** با توجه به صف رویداد/حلقه جاوا اسکریپت، تابع 'setTimeout' پس از اجرای حلقه فراخوانی می شود. از آنجایی که متغیر i با کلمه کلیدی "var" اعلان می شود، به یک متغیر جهانی تبدیل می شود و با استفاده از تکرار زمانی که تابع time setTimeout فراخوانی می شود، مقدار آن برابر با 4 است. بنابراین، خروجی حلقه اول '4 4 4 4' است. در حالی که در حلقه دوم، متغیر i به‌عنوان کلمه کلیدی «let» اعلام می‌شود، به متغیری با محدوده بلوک تبدیل می‌شود و یک مقدار جدید (0, 1,2 3) برای هر تکرار دارد. بنابراین، خروجی حلقه اول «0 1 2 3» است.
 
      **[فهرست](#فهرست)**
 
-304. ### List down some of the features of ES6
+304. ### می‌تونی یه سری از ویژگی‌های ES6 رو اسم ببری؟
 
      در زیر لیستی از برخی از ویژگی های جدید ES6 آمده است.
+
      1. پشتیبانی از ثابت ها یا متغیرهای تغییرناپذیر
      2. پشتیبانی Block-scope برای متغیرها، ثابت ها و توابع
      3. Arrow functions
@@ -6278,13 +6284,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-305. ### What is ES6
+305. ### ES6 چیه؟
 
      ES6 ششمین نسخه از زبان جاوا اسکریپت است و در ژوئن 2015 منتشر شد. در ابتدا با نام ECMAScript 6 (ES6) شناخته شد و بعداً به ECMAScript 2015 تغییر نام داد. تقریباً همه مرورگرهای مدرن از ES6 پشتیبانی می کنند اما برای مرورگرهای قدیمی ترانسپایلرهای زیادی وجود دارد. ، مانند Babel.js و غیره
 
      **[فهرست](#فهرست)**
 
-306. ### Can I redeclare let and const variables
+306. ### آیا می‌تونیم متغیرهای تعریف شده با let و const رو مجددا declare کنیم؟
 
      نه، شما نمی توانید متغیرهای let و const را مجدداً اعلام کنید. اگر این کار را انجام دهید، خطای زیر را نشان می دهد
 
@@ -6333,7 +6339,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-307. ### Is const variable makes the value immutable
+307. ### آیا استفاده از const برای تعریف متغیر اونا رو immutable می‌کنه؟
 
      خیر، متغیر const مقدار را تغییرناپذیر نمی کند. اما تخصیص‌های بعدی را مجاز نمی‌داند (یعنی می‌توانید با تخصیص اعلام کنید اما بعداً نمی‌توانید مقدار دیگری را اختصاص دهید)
 
@@ -6349,7 +6355,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-308. ### What are default parameters
+308. ### parameterهای پیش‌فرض چی هستن؟
 
      در E5، برای مدیریت مقادیر پیش‌فرض پارامترهای تابع، باید به عملگرهای OR منطقی وابسته باشیم. در حالی که در ES6، ویژگی پارامترهای تابع پیش‌فرض اجازه می‌دهد تا پارامترها با مقادیر پیش‌فرض مقداردهی اولیه شوند، اگر مقداری یا تعریف‌نشده ارسال نشود. بیایید رفتار را با یک مثال مقایسه کنیم،
 
@@ -6385,7 +6391,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-309. ### What are template literals
+309. ### template-literalها چی هستن؟
 
      حروف الفبای الگو یا رشته‌های الگو، حروف الفبای رشته‌ای هستند که امکان عبارات تعبیه‌شده را می‌دهند. اینها به جای گیومه های دوتایی یا تکی با کاراکتر بک تیک (`) محصور می شوند.
       در E6، این ویژگی استفاده از عبارات پویا را به شرح زیر امکان پذیر می کند.
@@ -6412,7 +6418,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-310. ### How do you write multi-line strings in template literals
+310. ### چطوری رشته‌های چند خطی رو توی template-literalها می‌نویسیم؟
 
      در ES5، برای بدست آوردن رشته های چند خطی، باید از کاراکترهای فرار از خط جدید ('\\n') و نمادهای الحاقی (+) استفاده کنید.
 
@@ -6438,7 +6444,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-311. ### What are nesting templates
+311. ### template-literal‌های تودرتو چی هستن؟
 
      الگوی تودرتو یک ویژگی است که در نحو تحت اللفظی الگو پشتیبانی می‌شود تا امکان بکتیک‌های درونی در یک مکان‌نمای ${ } را در قالب فراهم کند. برای مثال، الگوی تودرتو زیر برای نمایش نمادها بر اساس مجوزهای کاربر استفاده می‌شود، در حالی که الگوی بیرونی نوع پلت فرم را بررسی می‌کند.
 
@@ -6465,7 +6471,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-312. ### What are tagged templates
+312. ### tagged-templateها چی هستن؟
 
      الگوهای برچسب‌گذاری شده شکل پیشرفته‌ای از قالب‌ها هستند که در آن برچسب‌ها به شما اجازه می‌دهند تا کلمات قالب را با یک تابع تجزیه کنید. تابع تگ اولین پارامتر را به عنوان آرایه ای از رشته ها و پارامترهای باقی مانده را به عنوان عبارات می پذیرد. این تابع همچنین می تواند رشته های دستکاری شده را بر اساس پارامترها برگرداند. بیایید نحوه استفاده از رفتار الگوی برچسب گذاری شده مجموعه مهارت های حرفه ای فناوری اطلاعات در یک سازمان را ببینیم.
 
@@ -6508,7 +6514,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-313. ### What are raw strings
+313. ### رشته‌های خام چی هستن؟
 
      ES6 با استفاده از روش «String.raw» ویژگی رشته‌های خام را ارائه می‌کند که برای دریافت شکل رشته خام رشته‌های الگو استفاده می‌شود. این ویژگی به شما این امکان را می‌دهد تا به رشته‌های خام همانطور که وارد شده‌اند، بدون پردازش دنباله‌های فرار دسترسی داشته باشید. به عنوان مثال، استفاده به صورت زیر خواهد بود،
 
@@ -6548,7 +6554,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-314. ### What is destructuring assignment
+314. ### assign کردن با destructuring چیه و چطوری انجام میشه؟
 
      تخصیص تخریب ساختار یک عبارت جاوا اسکریپت است که امکان باز کردن مقادیر آرایه ها یا خصوصیات از اشیاء به متغیرهای مجزا را فراهم می کند.
       بیایید مقادیر ماه را از یک آرایه با استفاده از تخصیص ساختارشکن به دست آوریم
@@ -6580,7 +6586,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-315. ### What are default values in destructuring assignment
+315. ### موقع assign کردن با destructuring چطوری میشه مقدار اولیه تعریف کرد؟
 
      زمانی که مقدار باز شده از آرایه یا شیء در طول تخصیص ساختارشکن تعریف نشده باشد، می توان به یک متغیر یک مقدار پیش فرض اختصاص داد. این کمک می کند تا از تنظیم مقادیر پیش فرض جداگانه برای هر انتساب جلوگیری کنید. بیایید برای هر دو آرایه و موارد استفاده از شی مثالی بزنیم،
 
@@ -6615,7 +6621,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-316. ### How do you swap variables in destructuring assignment
+316. ### چطوری می‌تونیم مقدار یه آرایه رو با استفاده از destructuring-assignment تعویض کنیم؟
 
      اگر از تخصیص تخریب ساختار استفاده نمی کنید، تعویض دو مقدار به یک متغیر موقت نیاز دارد. در حالی که با استفاده از یک ویژگی ساختارشکن، دو مقدار متغیر را می توان در یک عبارت ساختار شکن جایگزین کرد. بیایید دو متغیر عددی را در انتساب ساختارزدایی آرایه با هم عوض کنیم،
 
@@ -6633,7 +6639,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-317. ### What are enhanced object literals
+317. ### Enhanced-object-literalها چی هستن؟
 
      حروف الفبای شی، ایجاد سریع اجسام با ویژگی های درون بریس های فرفری را آسان می کند. برای مثال، نحو کوتاه‌تری را برای تعریف ویژگی شی مشترک به شرح زیر ارائه می‌کند.
 
@@ -6654,7 +6660,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-318. ### What are dynamic imports
+318. ### importهای داینامیک چی هستن؟
 
      واردات پویا با استفاده از نحو تابع «import» به ما اجازه می‌دهد تا ماژول‌ها را در صورت تقاضا با استفاده از دستورات یا دستور async/await بارگذاری کنیم. در حال حاضر این ویژگی در [پیشنهاد مرحله4] (https://github.com/tc39/proposal-dynamic-import) است. مزیت اصلی واردات پویا کاهش اندازه بسته‌های ما، پاسخ حجم/بار بار درخواست‌های ما و بهبود کلی در تجربه کاربر است.
       نحو واردات پویا به صورت زیر خواهد بود.
@@ -6669,7 +6675,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-319. ### What are the use cases for dynamic imports
+319. ### کاربرد importهای داینامیک چیه؟
 
      در زیر برخی از موارد استفاده از واردات پویا نسبت به واردات استاتیک آورده شده است.
      1. یک ماژول را به صورت درخواستی یا مشروط وارد کنید. به عنوان مثال، اگر می خواهید یک polyfill را در مرورگر قدیمی بارگذاری کنید
@@ -6699,7 +6705,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-320. ### What are typed arrays
+320. ### آرایه‌های نوع‌دار(typed-arrays) چیه؟
 
      آرایه های تایپ شده اشیایی آرایه مانند از ECMAScript 6 API برای مدیریت داده های باینری هستند. جاوا اسکریپت 8 نوع آرایه تایپ شده را ارائه می دهد،
 
@@ -6727,7 +6733,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-321. ### What are the advantages of module loaders
+321. ### مزایای لودر ماژول‌ها چیه؟
 
      ماژول لودر ویژگی های زیر را ارائه می دهد
      1. Dynamic loading
@@ -6738,7 +6744,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-322. ### What is collation
+322. ### collation چیه؟
 
      Collation برای مرتب سازی مجموعه ای از رشته ها و جستجو در مجموعه ای از رشته ها استفاده می شود. این پارامتر توسط محلی و از Unicode آگاه است. بیایید ویژگی های مقایسه و مرتب سازی را در نظر بگیریم،
      1. **Comparison:**
@@ -6771,7 +6777,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-323. ### What is for...of statement
+323. ### عبارت for...of چیه؟
 
      دستور for...of یک حلقه تکرار بر روی اشیاء یا عناصر قابل تکرار مانند رشته داخلی، آرایه، اشیاء آرایه مانند (مانند آرگومان ها یا NodeList)، TypedArray، Map، Set و تکرارهای تعریف شده توسط کاربر ایجاد می کند. کاربرد اصلی عبارت for...of در آرایه ها به صورت زیر خواهد بود.
 
@@ -6790,7 +6796,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-324. ### What is the output of below spread operator array
+324. ### خروجی عملگر spread روی آرایه زیر چیه؟
 
      <span dir="ltr" align="left">
 
@@ -6805,13 +6811,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-325. ### Is PostMessage secure
+325. ### آیا PostMessage امنه؟
 
      بله، تا زمانی که برنامه‌نویس/توسعه‌دهنده مراقب منشأ و منبع پیام دریافتی باشد، postMessages را می‌توان بسیار امن در نظر گرفت. اما اگر بخواهید پیامی را بدون تأیید منبع آن ارسال یا دریافت کنید، حملات اسکریپت بین سایتی ایجاد می شود.
 
      **[فهرست](#فهرست)**
 
-326. ### What are the problems with postmessage target origin as wildcard
+326. ### مشکلات استفاده از postmessage با origin روی wildcard چیه؟
 
      آرگومان دوم متد postMessage مشخص می کند که کدام مبدا مجاز به دریافت پیام است. اگر از علامت "*" به عنوان آرگومان استفاده کنید، هر منبعی مجاز به دریافت پیام است. در این حالت، هیچ راهی برای پنجره فرستنده وجود ندارد که بفهمد پنجره هدف در هنگام ارسال پیام در مبدأ هدف قرار دارد یا خیر. اگر پنجره هدف به مبدأ دیگری هدایت شود، مبدا دیگر داده ها را دریافت می کند. از این رو، این ممکن است منجر به آسیب پذیری های XSS شود.
 
@@ -6825,7 +6831,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-327. ### How do you avoid receiving postMessages from attackers
+327. ### چطوری از دریافت postMessageهای ناخواسته و ناامن از طرف هکرها جلوگیری کنیم؟
 
      از آنجایی که شنونده به هر پیامی گوش می دهد، مهاجم می تواند برنامه را با ارسال پیامی از مبدأ مهاجم فریب دهد، که این تصور را ایجاد می کند که گیرنده پیام را از پنجره فرستنده واقعی دریافت کرده است. شما می توانید با اعتبارسنجی مبدا پیام در انتهای گیرنده با استفاده از ویژگی "message.origin" از این مشکل جلوگیری کنید. برای مثال، اجازه دهید مبدا فرستنده [http://www.some-sender.com](http://www.some-sender.com) در سمت گیرنده [www.some-receiver.com] (www.some) را بررسی کنیم -receiver.com)،
 
@@ -6844,38 +6850,38 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-328. ### Can I avoid using postMessages completely
+328. ### می‌تونیم کلا postMessageها رو غیرفعال کنیم؟
 
      شما نمی توانید به طور کامل (یا 100٪) از postMessages استفاده نکنید. حتی اگر برنامه شما با توجه به خطرات از postMessage استفاده نمی کند، بسیاری از اسکریپت های شخص ثالث از postMessage برای برقراری ارتباط با سرویس شخص ثالث استفاده می کنند. بنابراین ممکن است برنامه شما بدون اطلاع شما از postMessage استفاده کند.
 
      **[فهرست](#فهرست)**
 
-329. ### Is postMessages synchronous
+329. ### آیا postMessageها به صورت synchronous و همزمان کار می‌کنن؟
 
      postMessages در مرورگر IE8 همگام هستند اما در IE9 و سایر مرورگرهای مدرن دیگر (یعنی IE9+، Firefox، Chrome، Safari) ناهمزمان هستند. به دلیل این رفتار ناهمزمان، زمانی که postMessage برگردانده می‌شود، از مکانیزم برگشت تماس استفاده می‌کنیم.
 
      **[فهرست](#فهرست)**
 
-330. ### What paradigm is Javascript
+330. ### پارادیم زبان جاواسکریپت چیه؟
 
      جاوا اسکریپت یک زبان چند پارادایم است که از برنامه نویسی امری/روشی، برنامه نویسی شی گرا و برنامه نویسی تابعی پشتیبانی می کند. جاوا اسکریپت از برنامه نویسی شی گرا با وراثت اولیه پشتیبانی می کند.
 
      **[فهرست](#فهرست)**
 
-331. ### What is the difference between internal and external javascript
+331. ### تفاوت‌های بین جاواسکریپت داخلی و خارجی چیه؟
 
      **جاوا اسکریپت داخلی:** کد منبع درون تگ اسکریپت است.
       **جاوا اسکریپت خارجی:** کد منبع در یک فایل خارجی (ذخیره شده با پسوند js.) ذخیره می شود و در تگ ارجاع می شود.
 
      **[فهرست](#فهرست)**
 
-332. ### Is JavaScript faster than server side script
+332. ### آیا جاواسکریپت سریعتر از اسکریپت‌های سمت سرور است؟
 
      بله، جاوا اسکریپت سریعتر از اسکریپت سمت سرور است. از آنجایی که جاوا اسکریپت یک اسکریپت سمت کلاینت است، برای محاسبات یا محاسبات خود به کمک سرور وب نیازی ندارد. بنابراین جاوا اسکریپت همیشه سریعتر از هر اسکریپت سمت سرور مانند ASP، PHP و غیره است.
 
      **[فهرست](#فهرست)**
 
-333. ### How do you get the status of a checkbox
+333. ### چطوری وضعیت چک بودن یه checkbox رو بدست بیاریم؟
 
      می‌توانید ویژگی «checked» را در کادر انتخاب شده در DOM اعمال کنید. اگر مقدار "True" باشد به این معنی است که چک باکس علامت زده شده است در غیر این صورت علامت آن را بردارید. به عنوان مثال، عنصر چک باکس HTML زیر را می توان با استفاده از جاوا اسکریپت به صورت زیر در دسترس قرار داد.
 
@@ -6897,13 +6903,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-334. ### What is the purpose of double tilde operator
+334. ### هدف از عملگر double-tilde چیه؟
 
      عملگر دابل tilde(~~) به عنوان عملگر bitwise double NOT شناخته می شود. این عملگر قرار است جایگزین سریع تری برای Math.floor.
 
      **[فهرست](#فهرست)**
 
-335. ### How do you convert character to ASCII code
+335. ### چطوری یه کاراکتر رو به کد ASCII تبدیل کنیم؟
 
      برای تبدیل کاراکترهای رشته به اعداد اسکی می توانید از متد «String.prototype.charCodeAt» استفاده کنید. برای مثال، بیایید کد ASCII را برای حرف اول رشته «ABC» پیدا کنیم،
 
@@ -6927,7 +6933,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-336. ### What is ArrayBuffer
+336. ### ArrayBuffer چیه؟
 
      یک شی ArrayBuffer برای نشان دادن یک بافر داده باینری خام عمومی با طول ثابت استفاده می شود. می توانید آن را به صورت زیر ایجاد کنید،
 
@@ -6953,7 +6959,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-337. ### What is the output of below string expression
+337. ### خروجی کد زیر چی خواهد بود؟
 
      <span dir="ltr" align="left">
 
@@ -6968,7 +6974,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-338. ### What is the purpose of Error object
+338. ### هدف از Error-object چیه؟
 
      سازنده Error یک شی خطا ایجاد می کند و نمونه هایی از اشیاء خطا هنگام رخ دادن خطاهای زمان اجرا پرتاب می شوند. شی Error همچنین می تواند به عنوان یک شی پایه برای استثناهای تعریف شده توسط کاربر استفاده شود. نحو شیء خطا به صورت زیر خواهد بود.
 
@@ -6997,7 +7003,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-339. ### What is the purpose of EvalError object
+339. ### هدف از EvalError-object چیه؟
 
      شی EvalError یک خطا در رابطه با تابع "eval" جهانی را نشان می دهد. حتی اگر این استثنا دیگر توسط جاوا اسکریپت پرتاب نمی شود، شی EvalError برای سازگاری باقی می ماند. نحو این عبارت به صورت زیر خواهد بود
 
@@ -7025,9 +7031,10 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-340. ### What are the list of cases error thrown from non-strict mode to strict mode
+340. ### خطاهایی که در حالت strict-mode رخ میدن ولی در غیر اون وجود ندارن کدوما هستن؟
 
-     وقتی «استفاده سخت» را اعمال می‌کنین. syntax، برخی از موارد زیر قبل از اجرای اسکریپت یک SyntaxError ایجاد می کنند
+     وقتی «strict-mode» را اعمال می‌کنین. syntax، برخی از موارد زیر قبل از اجرای اسکریپت یک SyntaxError ایجاد می کنند
+     
      1. وقتی از دستور Octal استفاده می کنید
 
      <span dir="ltr" align="left">
@@ -7037,6 +7044,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      ```
 
      </span>
+     
      2. استفاده از عبارت «with».
      3. وقتی از عملگر حذف روی نام متغیر استفاده می کنید
      4. استفاده از eval یا آرگومان ها به عنوان متغیر یا نام آرگومان تابع
@@ -7055,13 +7063,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-341. ### Is all objects have prototypes
+341. ### آیا همه objectها دارای prototype هستن؟
 
      خیر. همه اشیا دارای نمونه اولیه هستند به جز شی پایه که توسط کاربر ایجاد می شود یا شیئی که با استفاده از کلمه کلیدی جدید ایجاد می شود.
 
      **[فهرست](#فهرست)**
 
-342. ### What is the difference between a parameter and an argument
+342. ### تفاوت‌های بین parameter و argument چیه؟
 
      پارامتر نام متغیر تعریف یک تابع است در حالی که یک آرگومان نشان دهنده مقدار داده شده به یک تابع در هنگام فراخوانی آن است. بیایید این را با یک تابع ساده توضیح دهیم
 
@@ -7080,7 +7088,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-343. ### What is the purpose of some method in arrays
+343. ### هدف از متد some روی آرایه‌ها چیه؟
 
      متد some برای آزمایش اینکه آیا حداقل یک عنصر در آرایه از آزمون پیاده‌سازی شده توسط تابع ارائه شده عبور می‌کند یا خیر استفاده می‌شود. متد یک مقدار بولی برمی گرداند. بیایید مثالی بزنیم تا هر عنصر عجیب و غریب را آزمایش کنیم،
 
@@ -7098,7 +7106,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-344. ### How do you combine two or more arrays
+344. ### چطوری دو یا تعداد بیشتری از آرایه‌ها رو با هم ترکیب کنیم؟
 
      متد concat برای پیوستن دو یا چند آرایه با برگرداندن یک آرایه جدید حاوی تمام عناصر استفاده می شود. نحو به صورت زیر خواهد بود،
 
@@ -7125,7 +7133,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-345. ### What is the difference between Shallow and Deep copy
+345. ### تفاوت‌های بین Shallow و Deep کپی چیه؟
 
      دو راه برای کپی کردن یک شی وجود دارد،
 
@@ -7199,7 +7207,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-346. ### How do you create specific number of copies of a string
+346. ### چطوری می‌تونیم به یه تعداد مشخص از یه رشته کپی کنیم؟
 
      متد «repeat» برای ساخت و برگرداندن یک رشته جدید استفاده می‌شود که حاوی تعداد مشخصی از کپی‌های رشته‌ای است که روی آن فراخوانی شده و به هم پیوسته شده‌اند. به یاد داشته باشید که این روش به مشخصات ECMAScript 2015 اضافه شده است.
       بیایید یک مثال از رشته Hello را برای تکرار آن 4 بار در نظر بگیریم.
@@ -7212,7 +7220,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      </span>
 
-347. ### How do you return all matching strings against a regular expression
+347. ### چطوری همه stringهای match شده با یه regular-expression رو برگردونیم؟
 
      متد «matchAll» می‌تواند برای برگرداندن یک تکرارکننده از تمام نتایجی که یک رشته با یک عبارت منظم مطابقت دارند، استفاده شود. به عنوان مثال، مثال زیر آرایه ای از نتایج رشته منطبق را در برابر یک عبارت منظم برمی گرداند.
 
@@ -7233,7 +7241,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-348. ### How do you trim a string at the beginning or ending
+348. ### چطوری یه رشته رو از اول یا از آخر trim کنیم؟
 
      روش «تریم» نمونه اولیه رشته برای برش دادن دو طرف یک رشته استفاده می شود. اما اگر می‌خواهید به‌خصوص در ابتدا یا انتهای رشته را برش دهید، می‌توانید از روش‌های «trimStart/trimLeft» و «trimEnd/trimRight» استفاده کنید. بیایید نمونه ای از این روش ها را در پیام تبریک ببینیم،
 
@@ -7254,7 +7262,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-349. ### What is the output of below console statement with unary operator
+349. ### خروجی کنسول زیر با عملگر unary چی میشه؟
 
      بیایید دستور کنسول را با عملگر unary همانطور که در زیر نشان داده شده است، بگیریم.
 
@@ -7270,11 +7278,11 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-350. ### Does javascript uses mixins
+350. ### آیا جاواسکریپت از mixinها استفاده می‌کنه؟
 
      **[فهرست](#فهرست)**
 
-351. ### What is a thunk function
+351. ### تابع thunk چیه و چیکار می‌کنه؟
 
      thunk فقط تابعی است که ارزیابی مقدار را به تاخیر می اندازد. هیچ آرگومانی نمی‌گیرد، اما هر زمان که thunk را فراخوانی می‌کنید، مقدار را می‌دهد. به عنوان مثال، از آن استفاده می شود که اکنون اجرا نشود، اما زمانی در آینده خواهد بود. بیایید یک مثال همزمان بگیریم،
 
@@ -7292,7 +7300,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-352. ### What are asynchronous thunks
+352. ### thunkهای asynchronous چیکار می‌کنن؟
 
      Thunk های ناهمزمان برای ایجاد درخواست های شبکه مفید هستند. بیایید نمونه ای از درخواست های شبکه را ببینیم،
 
@@ -7320,7 +7328,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-353. ### What is the output of below function calls
+353. ### خروجی فراخوانی‌های توابع زیر چی میشه؟
 
      **Code snippet:**
 
@@ -7347,7 +7355,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-354. ### How to remove all line breaks from a string
+354. ### چطوری همه خطوط جدید رو از یه رشته حذف کرد؟
 
      ساده ترین روش استفاده از عبارات منظم برای شناسایی و جایگزینی خطوط جدید در رشته است. در این حالت از تابع تعویض به همراه رشته برای جایگزینی استفاده می کنیم که در مورد ما یک رشته خالی است.
 
@@ -7365,13 +7373,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-355. ### What is the difference between reflow and repaint
+355. ### تفاوت‌ بین reflow و repaint چیه؟
 
      *رنگ‌آمیزی مجدد* زمانی اتفاق می‌افتد که تغییراتی ایجاد می‌شود که روی دید یک عنصر تأثیر می‌گذارد، اما روی طرح آن تأثیر نمی‌گذارد. نمونه هایی از این موارد شامل طرح کلی، نمایان بودن یا رنگ پس زمینه است. یک *reflow* شامل تغییراتی است که بر طرح بندی بخشی از صفحه (یا کل صفحه) تأثیر می گذارد. تغییر اندازه پنجره مرورگر، تغییر فونت، تغییر محتوا (مانند تایپ متن توسط کاربر)، استفاده از روش‌های جاوا اسکریپت شامل سبک‌های محاسبه‌شده، افزودن یا حذف عناصر از DOM، و تغییر کلاس‌های یک عنصر چند مورد از مواردی هستند که می‌توانند جریان مجدد را آغاز کنند. جریان مجدد یک عنصر باعث جریان مجدد بعدی همه عناصر فرزند و اجداد و همچنین هر عنصری که به دنبال آن در DOM است می شود.
 
      **[فهرست](#فهرست)**
 
-356. ### What happens with negating an array
+356. ### اگه قبل از یه آرایه عملگر نفی «!» بزاریم چی میشه؟
 
      نفی یک آرایه با کاراکتر «!»، آرایه را به یک بولی وادار می کند. از آنجایی که آرایه ها صدق در نظر گرفته می شوند، پس نفی آن "نادرست" را برمی گرداند.
 
@@ -7385,7 +7393,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-357. ### What happens if we add two arrays
+357. ### اگه دو تا آرایه رو با هم جمع ببندیم چی میشه؟
 
      اگر دو آرایه را با هم اضافه کنید، هر دو آنها را به رشته تبدیل می کند و آنها را به هم متصل می کند. به عنوان مثال، نتیجه اضافه کردن آرایه ها به صورت زیر خواهد بود.
 
@@ -7401,9 +7409,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-358. ### What is the output of prepend additive operator on falsy values
+358. ### اگه عملگر جمع «+» روی قبل از مقادیر falsy قرار بدیم چی میشه؟
 
-     اگر عملگر additive(+) را روی مقادیر نادرست (null، undefined، NaN، false، "") قرار دهید، مقدار falsy به مقدار عددی صفر تبدیل می شود. بیایید آنها را در کنسول مرورگر به صورت زیر نمایش دهیم،
+     اگر عملگر جمع(+) رو روی مقادیر نادرست (null، undefined، NaN، false، "") قرار دهید، مقدار falsy به مقدار عددی صفر تبدیل می شود. بیایید آنها را در کنسول مرورگر به صورت زیر نمایش دهیم،
      <span dir="ltr" align="left">
 
      ```javascript
@@ -7418,7 +7426,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-359. ### How do you create self string using special characters
+359. ### چطوری با استفاده از آرایه‌ها و عملگرهای منطقی می‌تونیم رشته self رو تولید کنیم؟
 
      رشته self را می توان با ترکیب کاراکترهای `[]()!+` تشکیل داد. برای رسیدن به این الگو باید قراردادهای زیر را به خاطر بسپارید.
      1. از آنجایی که آرایه ها مقادیر واقعی هستند، با نفی آرایه ها false تولید می شود: ![] === false
@@ -7458,7 +7466,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-360. ### How do you remove falsy values from an array
+360. ### چطوری می‌تونیم مقادیر falsy رو از آرایه حذف کنیم؟
 
      شما می توانید با وارد کردن Boolean به عنوان پارامتر، روش فیلتر را روی آرایه اعمال کنید. به این ترتیب تمام مقادیر نادرست (0، تعریف نشده، null، false و "") از آرایه حذف می شود.
 
@@ -7473,7 +7481,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-361. ### How do you get unique values of an array
+361. ### چطوری مقادیر تکراری رو از یه آرایه حذف کنیم؟
 
      شما می توانید مقادیر منحصر به فرد یک آرایه را با ترکیب دستور "Set" و rest expression/spread(...) دریافت کنید.
 
@@ -7487,7 +7495,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-362. ### What is destructuring aliases
+362. ### aliaseهای همزمان با destructuring چطوری کار می‌کنن؟
 
      گاهی اوقات شما دوست دارید یک متغیر تخریب شده با نامی متفاوت از نام ویژگی داشته باشید. در این صورت، از یک «: newName» برای تعیین نام برای متغیر استفاده خواهید کرد. این فرآیند نام مستعار تخریب ساختاری نامیده می شود.
 
@@ -7503,7 +7511,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-363. ### How do you map the array values without using map method
+363. ### چطوری آیتم‌های یه آرایه رو بدون استفاده از متد map پیمایش کنیم؟
 
      می‌توانید مقادیر آرایه‌ها را بدون استفاده از روش «نقشه» تنها با استفاده از روش «از» آرایه ترسیم کنید. بیایید نام شهرها را از آرایه کشورها ترسیم کنیم،
 
@@ -7527,7 +7535,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-364. ### How do you empty an array
+364. ### چطوری یه آرایه رو خالی کنیم؟
 
      با صفر کردن طول آرایه می توانید به سرعت یک آرایه را خالی کنید.
 
@@ -7542,7 +7550,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-365. ### How do you rounding numbers to certain decimals
+365. ### چطوری اعداد رو با تعداد رقم اعشار مشخص رند می‌کنی؟
 
      می‌توانید با استفاده از روش «toFixed» از جاوا اسکریپت، اعداد را به تعداد معینی از اعشار گرد کنید.
 
@@ -7557,7 +7565,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-366. ### What is the easiest way to convert an array to an object
+366. ### ساده‌ترین روش برای تبدیل آرایه به object چیه؟
 
      شما می توانید با استفاده از عملگر spread(...) یک آرایه را به یک شی با همان داده تبدیل کنید.
 
@@ -7573,7 +7581,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-367. ### How do you create an array with some data
+367. ### چطوری یه آرایه با یه سری داده درست کنیم؟
 
      می توانید با استفاده از روش «fill» یک آرایه با مقداری داده یا یک آرایه با همان مقادیر ایجاد کنید.
 
@@ -7588,7 +7596,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-368. ### What are the placeholders from console object
+368. ### متغیرهای موجود روی آبجکت console کدوما هستن؟
 
      در زیر لیستی از متغیرهای موجود از شی کنسول وجود دارد،
      1. %o - یک شی را می گیرد،
@@ -7607,7 +7615,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-369. ### Is it possible to add CSS to console messages
+369. ### میشه پیام‌های کنسول رو استایل‌دهی کرد؟
 
      بله، می‌توانید سبک‌های CSS را برای پیام‌های کنسول مشابه متن html در صفحه وب اعمال کنید.
 
@@ -7626,7 +7634,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-370. ### What is the purpose of dir method of console object
+370. ### هدف از متد dir روی آبجکت console چیه؟
 
      «console.dir» برای نمایش یک لیست تعاملی از ویژگی های شی جاوا اسکریپت مشخص شده به عنوان JSON استفاده می شود.
 
@@ -7644,7 +7652,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-371. ### Is it possible to debug HTML elements in console
+371. ### آیا میشه المنت‌های HTML رو توی console دیباگ کرد؟
 
      بله، دریافت و اشکال زدایی عناصر HTML در کنسول، درست مانند بازرسی عناصر، امکان پذیر است.
 
@@ -7663,7 +7671,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-372. ### How do you display data in a tabular format using console object
+372. ### چطوری میشه داده‌ها رو به شکل جدولی توی console نمایش بدیم؟
 
      «console.table» برای نمایش داده‌ها در کنسول در قالب جدولی برای تجسم آرایه‌ها یا اشیاء پیچیده استفاده می‌شود.
 
@@ -7683,7 +7691,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-373. ### How do you verify that an argument is a Number or not
+373. ### چطوری میشه بررسی کرد که یه پارامتر Number هست یا نه؟
 
      ترکیبی از روش‌های IsNaN و isFinite برای تأیید عدد بودن یا نبودن آرگومان استفاده می‌شود.
 
@@ -7699,7 +7707,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-374. ### How do you create copy to clipboard button
+374. ### چطوری یه متن رو می‌تونیم به clipboard کپی کنیم؟
 
      شما باید محتوا (با استفاده از روش .select) عنصر ورودی را انتخاب کنید و دستور copy را با execCommand اجرا کنید (یعنی execCommand('copy')). شما همچنین می توانید سایر دستورات سیستم مانند cut و paste را اجرا کنید.
 
@@ -7718,7 +7726,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-375. ### What is the shortcut to get timestamp
+375. ### چطوری میشه timestamp رو بدست آورد؟
 
      می‌توانید از «تاریخ جدید().getTime» برای دریافت مهر زمانی فعلی استفاده کنید. یک میانبر جایگزین برای دریافت مقدار وجود دارد.
 
@@ -7733,7 +7741,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-376. ### How do you flattening multi dimensional arrays
+376. ### چطوری یه آرایه چندسطحی رو تک سطحی کنیم؟
 
      مسطح کردن آرایه های دو بعدی با عملگر Spread بی اهمیت است.
 
@@ -7763,7 +7771,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-377. ### What is the easiest multi condition checking
+377. ### ساده‌ترین روش برای بررسی چندشرطی چیه؟
 
      می‌توانید از «indexOf» برای مقایسه ورودی با چندین مقدار به جای بررسی هر مقدار به عنوان یک شرط استفاده کنید.
 
@@ -7784,7 +7792,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-378. ### How do you capture browser back button
+378. ### چطوری کلیک روی دکمه برگشت مرورگر رو متوجه بشیم؟
 
      روش «window.onbeforeunload» برای ضبط رویدادهای دکمه بازگشت مرورگر استفاده می‌شود. این برای هشدار دادن به کاربران در مورد از دست دادن داده های فعلی مفید است.
 
@@ -7800,7 +7808,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-379. ### How do you disable right click in the web page
+379. ### چطوری می‌تونیم کلیک راست رو غیرفعال کنیم؟
 
      کلیک راست روی صفحه را می توان با برگرداندن false از ویژگی «oncontextmenu» در عنصر بدنه غیرفعال کرد.
 
@@ -7814,7 +7822,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-380. ### What are wrapper objects
+380. ### object-wrapperها چی هستن؟
 
      مقادیر اولیه مانند رشته، عدد و بولی خواص و روشی ندارند، اما زمانی که می‌خواهید اقداماتی را روی آن‌ها انجام دهید، به طور موقت به یک شی (ابجکت Wrapper) تبدیل یا مجبور می‌شوند. برای مثال، اگر متد UpperCase را روی یک مقدار رشته اولیه اعمال کنید، خطایی ایجاد نمی‌کند، اما حروف بزرگ رشته را برمی‌گرداند.
 
@@ -7832,13 +7840,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-381. ### What is AJAX
+381. ### AJAX چیه؟
 
      AJAX مخفف Asynchronous JavaScript و XML است و گروهی از فناوری های مرتبط (HTML، CSS، JavaScript، XMLHttpRequest API و غیره) است که برای نمایش داده ها به صورت ناهمزمان استفاده می شود. یعنی ما می توانیم داده ها را به سرور ارسال کنیم و بدون بارگیری مجدد صفحه وب، داده ها را از سرور دریافت کنیم.
 
      **[فهرست](#فهرست)**
 
-382. ### What are the different ways to deal with Asynchronous Code
+382. ### روش‌های مختلف مدیریت یه کد Asynchronous چیه؟
 
      در زیر لیستی از روش های مختلف برای مقابله با کدهای ناهمزمان آورده شده است.
      1. callback ها
@@ -7848,7 +7856,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-383. ### How to cancel a fetch request
+383. ### چطوری یه درخواست fetch رو کنسل کنیم؟
 
      تا چند روز پیش، یکی از کاستی‌های وعده‌های بومی راه مستقیمی برای لغو درخواست واکشی نیست. اما «AbortController» جدید از مشخصات js به شما امکان می‌دهد از سیگنالی برای لغو یک یا چند تماس واکشی استفاده کنید.
       جریان اصلی لغو یک درخواست واکشی به صورت زیر خواهد بود.
@@ -7887,7 +7895,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-384. ### What is web speech API
+384. ### Speech-API چیه؟
 
      API گفتار وب برای فعال کردن مرورگرهای مدرن برای شناسایی و ترکیب گفتار (یعنی داده‌های صوتی در برنامه‌های وب) استفاده می‌شود. این API توسط انجمن W3C در سال 2012 معرفی شده است. دارای دو بخش اصلی است.
      1. **تشخیص گفتار (تشخیص گفتار ناهمزمان یا گفتار به متن):** این امکان را فراهم می کند که زمینه صدا را از ورودی صوتی تشخیص داده و به آن پاسخ دهید. این توسط رابط "SpeechRecognition" قابل دسترسی است.
@@ -7928,7 +7936,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      
      **[فهرست](#فهرست)**
 
-385. ### What is minimum timeout throttling
+385. ### حداقل timeout توی throttling چقدره؟
 
      هم مرورگر و هم محیط های جاوا اسکریپت NodeJS با حداقل تاخیری که بیشتر از 0 میلی ثانیه است دریچه گاز را انجام می دهند. این بدان معناست که حتی اگر تنظیم یک تاخیر 0ms به طور آنی اتفاق نیفتد.
       **مرورگرها:** حداقل 4 میلی ثانیه تاخیر دارند. این دریچه گاز زمانی اتفاق می‌افتد که تماس‌های متوالی به دلیل تودرتوی برگشت به تماس (عمق معین) یا پس از تعداد معینی فواصل متوالی آغاز شود.
@@ -7986,13 +7994,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-386. ### How do you implement zero timeout in modern browsers
+386. ### چطوری میشه یه timeout صفر توی مرورگر اجرا کرد؟
 
      به دلیل حداقل تاخیر بیش از 0 میلی ثانیه، نمی توانید از setTimeout(fn, 0) برای اجرای فوری کد استفاده کنید. اما برای دستیابی به این رفتار می توانید از window.postMessage استفاده کنید.
 
      **[فهرست](#فهرست)**
 
-387. ### What are tasks in event loop
+387. ### taskها توی event-loop چی هستن؟
 
      وظیفه هر کد/برنامه جاوا اسکریپتی است که قرار است توسط مکانیسم‌های استاندارد اجرا شود، مانند شروع اولیه اجرای یک برنامه، اجرای یک فراخوان رویداد، یا یک بازه زمانی یا وقفه در حال اجرا. همه این وظایف در یک صف کار برنامه ریزی می شوند.
       در زیر لیستی از موارد استفاده برای افزودن وظایف به صف کار آمده است.
@@ -8002,7 +8010,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-388. ### What is microtask
+388. ### microtaskها چی هستن؟
 
      Microtask کد جاوا اسکریپت است که باید بلافاصله پس از تکمیل وظیفه/میکرووظیفه در حال اجرا اجرا شود. آنها در طبیعت به نوعی مسدود کننده هستند. یعنی تا زمانی که صف microtask خالی نشود، رشته اصلی مسدود خواهد شد.
       منابع اصلی ریزکارها عبارتند از Promise.resolve، Promise.reject، MutationObservers، IntersectionObservers و غیره.
@@ -8011,15 +8019,15 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      
      **[فهرست](#فهرست)**
 
-389. ### What are different event loops
+389. ### event-loopهای مختلف کدوما هستن؟
 
      **[فهرست](#فهرست)**
 
-390. ### What is the purpose of queueMicrotask
+390. ### هدف از queueMicrotask چیه؟
 
      **[فهرست](#فهرست)**
 
-391. ### How do you use javascript libraries in typescript file
+391. ### چطوری میشه از کتابخونه‌های جاواسکریپت توی فایل typescript استفاده کرد؟
 
      مشخص است که همه کتابخانه‌ها یا چارچوب‌های جاوا اسکریپت دارای فایل‌های اعلان TypeScript نیستند. اما اگر همچنان می‌خواهید از کتابخانه‌ها یا فریم‌ورک‌ها در فایل‌های TypeScript خود بدون دریافت خطاهای کامپایل استفاده کنید، تنها راه‌حل کلمه کلیدی «اعلان» به همراه یک اعلان متغیر است. به عنوان مثال، بیایید تصور کنیم که شما یک کتابخانه به نام "customLibrary" دارید که اعلان TypeScript ندارد و فضای نامی به نام "customLibrary" در فضای نام جهانی دارد. می توانید از این کتابخانه در کد تایپ اسکریپت به صورت زیر استفاده کنید.
 
@@ -8043,7 +8051,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-392. ### What are the differences between promises and observables
+392. ### تفاوت‌های بین promiseها و observableها کدوما هستن؟
 
      برخی از تفاوت های عمده در شکل جدولی
 
@@ -8057,7 +8065,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-393. ### What is heap
+393. ### heap چیه؟
 
      Heap (یا پشته حافظه) مکانی است که در آن اشیا در هنگام تعریف متغیرها ذخیره می شوند. یعنی این مکانی است که تمام تخصیص حافظه و عدم تخصیص در آن انجام می شود. هر دو heap و call-stack دو ظرف زمان اجرا JS هستند.
       هر زمان که زمان اجرا با متغیرها و اعلان های تابع در کد مواجه می شود، آنها را در Heap ذخیره می کند.
@@ -8066,7 +8074,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-394. ### What is an event table
+394. ### event-table چیه؟
 
      Event Table یک ساختار داده ای است که تمام رویدادهایی را که به صورت ناهمزمان اجرا می شوند، مانند پس از مدتی فاصله زمانی یا پس از رفع برخی از درخواست های API، ذخیره و ردیابی می کند. یعنی هر زمان که یک تابع setTimeout را فراخوانی کنید یا عملیات async را فراخوانی کنید، به جدول رویداد اضافه می شود.
       توابع را به تنهایی اجرا نمی کند. هدف اصلی جدول رویدادها پیگیری رویدادها و ارسال آنها به صف رویداد همانطور که در نمودار زیر نشان داده شده است.
@@ -8075,14 +8083,14 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-395. ### What is a microTask queue
+395. ### صف microTask چیه؟
 
      Microtask Queue صف جدیدی است که در آن تمام وظایف آغاز شده توسط اشیاء وعده قبل از صف برگشت پردازش می شوند.
       صف microtasks قبل از کارهای رندر و نقاشی بعدی پردازش می شود. اما اگر این ریزکارها برای مدت طولانی اجرا شوند، منجر به تخریب بصری می شود.
 
      **[فهرست](#فهرست)**
 
-396. ### What is the difference between shim and polyfill
+396. ### تفاوت بین shim و polyfill چیه؟
 
      شیم کتابخانه ای است که یک API جدید را با استفاده از ابزارهای آن محیط به یک محیط قدیمی تر می آورد. لزوماً محدود به یک برنامه وب نیست. به عنوان مثال، es5-shim.js برای شبیه سازی ویژگی های ES5 در مرورگرهای قدیمی (عمدتا قبل از IE9) استفاده می شود.
       در حالی که polyfill یک قطعه کد (یا افزونه) است که فناوری را ارائه می‌کند که شما، توسعه‌دهنده، از مرورگر انتظار دارید که به صورت بومی ارائه کند.
@@ -8090,7 +8098,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-397. ### How do you detect primitive or non primitive value type
+397. ### چطوری متوجه primitive یا غیر primitive بودن یه نوع داده میشیم؟
 
      در جاوا اسکریپت، انواع ابتدایی عبارتند از boolean، string، number، BigInt، null، Symbol و undefined. در حالی که انواع غیر ابتدایی شامل Object ها می شود. اما با تابع زیر می توانید به راحتی آنها را شناسایی کنید
 
@@ -8113,7 +8121,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-398. ### What is babel
+398. ### babel چیه؟
 
      Babel یک ترانسپایلر جاوا اسکریپت برای تبدیل کد ECMAScript 2015+ به یک نسخه سازگار جاوا اسکریپت در مرورگرها یا محیط های فعلی و قدیمی تر است. برخی از ویژگی های اصلی در زیر ذکر شده است،
      1. تبدیل نحو
@@ -8123,25 +8131,25 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-399. ### Is Node.js completely single threaded
+399. ### آیا Node.js به شکل کامل تک thread کار میکنه؟
 
      Node یک رشته است، اما برخی از توابع موجود در کتابخانه استاندارد Node.js (به عنوان مثال، توابع ماژول fs) تک رشته ای نیستند. یعنی منطق آنها خارج از رشته Node.js اجرا می شود تا سرعت و عملکرد یک برنامه را بهبود بخشد.
 
      **[فهرست](#فهرست)**
 
-400. ### What are the common use cases of observables
+400. ### کاربردهای مرسوم observableها کدوما هستن؟
 
      برخی از رایج‌ترین موارد استفاده از موارد مشاهده‌شده عبارتند از سوکت‌های وب با اعلان‌های فشار، تغییرات ورودی کاربر، فواصل تکراری و غیره.
 
      **[فهرست](#فهرست)**
 
-401. ### What is RxJS
+401. ### RxJS چیه؟
 
      RxJS (افزونه‌های واکنش‌گرا برای جاوا اسکریپت) کتابخانه‌ای برای پیاده‌سازی برنامه‌نویسی واکنش‌گرا با استفاده از مشاهده‌پذیر است که نوشتن کد ناهمزمان یا مبتنی بر تماس را آسان‌تر می‌کند. همچنین توابع کاربردی را برای ایجاد و کار با مشاهده پذیرها فراهم می کند.
 
      **[فهرست](#فهرست)**
 
-402. ### What is the difference between Function constructor and function declaration
+402. ### تفاوت بین Function-constructor و function-declaration چیه؟
 
      توابعی که با "سازنده تابع" ایجاد می شوند، برای زمینه های ایجاد خود بسته ایجاد نمی کنند، اما همیشه در محدوده جهانی ایجاد می شوند. یعنی تابع فقط می تواند به متغیرهای محلی خود و متغیرهای دامنه جهانی دسترسی داشته باشد. در حالی که اعلان های تابع می توانند به متغیرهای تابع بیرونی (بسته شدن) نیز دسترسی داشته باشند.
 
@@ -8181,7 +8189,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-403. ### What is a Short circuit condition
+403. ### شرط Short-circuit یا اتصال کوتاه چیه؟
 
      شرایط اتصال کوتاه برای روش فشرده نوشتن دستورات if ساده در نظر گرفته شده است. بیایید سناریو را با استفاده از یک مثال نشان دهیم. اگر می خواهید وارد پورتالی با شرایط احراز هویت شوید، عبارت زیر خواهد بود:
 
@@ -8207,7 +8215,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-404. ### What is the easiest way to resize an array
+404. ### ساده‌ترین روش برای تغییر سایز یه آرایه چیه؟
 
      ویژگی length یک آرایه برای تغییر اندازه یا خالی کردن سریع آرایه مفید است. بیایید ویژگی length را روی آرایه اعداد اعمال کنیم تا تعداد عناصر را از 5 به 2 تغییر دهیم.
 
@@ -8239,7 +8247,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-405. ### What is an observable
+405. ### observable چیه؟
 
      Observable اساساً تابعی است که می تواند جریانی از مقادیر را به صورت همزمان یا ناهمزمان به یک ناظر در طول زمان برگرداند. مصرف کننده می تواند با فراخوانی متد «subscribe» مقدار را دریافت کند.
       بیایید به یک مثال ساده از یک Observable نگاه کنیم
@@ -8266,7 +8274,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-406. ### What is the difference between function and class declarations
+406. ### تفاوت‌های بین توابع و کلاس‌ها چیه؟
 
      تفاوت اصلی بین اعلان های تابع و اعلان های کلاس "بالا بردن" است. اعلان های تابع بالا می روند اما اعلان های کلاس نیستند.
 
@@ -8297,7 +8305,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-407. ### What is an async function
+407. ### تابع async چیه؟
 
      یک تابع همگام، تابعی است که با کلمه کلیدی «ناهمگام» اعلام شده است که با اجتناب از زنجیره وعده، رفتار ناهمزمان و مبتنی بر قول را قادر می‌سازد به سبک تمیزتری نوشته شود. این توابع می توانند شامل صفر یا بیشتر عبارت «انتظار» باشند.
 
@@ -8319,7 +8327,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      این اساساً قند نحوی بیش از پرامیس ها و توابع جنریتور ES2015 است.
      **[فهرست](#فهرست)**
 
-408. ### How do you prevent promises swallowing errors
+408. ### چطوری خطاهای ایجاد شده هنگام استفاده از promiseها رو کنترل کنیم؟
 
      در حین استفاده از کد ناهمزمان، وعده‌های ES6 جاوا اسکریپت می‌تواند زندگی شما را بدون داشتن هرم برگشت تماس و مدیریت خطا در هر خط دوم بسیار آسان‌تر کند. اما Promises مشکلاتی دارد و بزرگ‌ترین آنها به‌طور پیش‌فرض بلعیدن خطاها است.
 
@@ -8431,13 +8439,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-409. ### What is deno
+409. ### Deno چیه؟
 
      Deno یک زمان اجرا ساده، مدرن و ایمن برای جاوا اسکریپت و تایپ اسکریپت است که از موتور جاوا اسکریپت V8 و زبان برنامه نویسی Rust استفاده می کند.
 
      **[فهرست](#فهرست)**
 
-410. ### How do you make an object iterable in javascript
+410. ### توی جاواسکریپت چطوری یه object قابل پیمایش درست کنیم؟
 
      به طور پیش فرض، اشیاء ساده قابل تکرار نیستند. اما می‌توانید با تعریف ویژگی «Symbol.iterator» روی آن، شی را قابل تکرار کنید.
 
@@ -8502,9 +8510,9 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-411. ### What is a Proper Tail Call
+411. ### روش مناسب برای فراخوانی توابع بازگشتی چیه؟
 
-     ابتدا، قبل از صحبت در مورد "دوم خوانی مناسب" باید در مورد دم دم بدانیم. فراخوانی دنباله یک فراخوانی فرعی یا تابعی است که به عنوان آخرین عمل یک تابع فراخوانی انجام می شود. در حالی که ** فراخوانی دنباله مناسب (PTC)** تکنیکی است که در آن برنامه یا کد فریم های پشته ای اضافی برای بازگشت ایجاد نمی کند، زمانی که فراخوانی تابع یک فراخوانی دنباله است.
+     ابتدا، قبل از صحبت در مورد "دوم خوانی مناسب" باید در مورد دم دم بدانیم. فراخوانی دنباله یک فراخوانی فرعی یا تابعی است که به عنوان آخرین عمل یک تابع فراخوانی انجام می شود. در حالی که **فراخوانی دنباله مناسب (PTC)** تکنیکی است که در آن برنامه یا کد فریم های پشته ای اضافی برای بازگشت ایجاد نمی کند، زمانی که فراخوانی تابع یک فراخوانی دنباله است.
 
      برای مثال، بازگشت کلاسیک یا سر تابع فاکتوریل زیر به پشته برای هر مرحله بستگی دارد. هر مرحله باید تا "n * فاکتوریل(n - 1)" پردازش شود
 
@@ -8542,7 +8550,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-412. ### How do you check an object is a promise or not
+412. ### چطوری بررسی کنیم که یه آبجکت promise هست یا نه؟
 
      اگر نمی دانید یک مقدار یک وعده است یا نه، مقدار را به صورت «Promise.resolve(value)» بپیچید که یک قول را برمی گرداند.
 
@@ -8589,7 +8597,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-413. ### How to detect if a function is called as constructor
+413. ### چطوری متوجه بشیم که یا تابع با تابع constructor صدا زده شده یا نه؟
 
      می‌توانید از ویژگی شبه «new.target» برای تشخیص اینکه آیا یک تابع به عنوان سازنده (با استفاده از عملگر جدید) فراخوانی شده است یا به عنوان یک فراخوانی تابع معمولی استفاده کنید.
 
@@ -8616,7 +8624,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-414. ### What are the differences between arguments object and rest parameter
+414. ### تفاوت‌های بین آبجکت argument و پارامتر rest چیه؟
 
      سه تفاوت اصلی بین پارامترهای شیء آرگومان و پارامترهای استراحت وجود دارد
 
@@ -8626,13 +8634,13 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-415. ### What are the differences between spread operator and rest parameter
+415. ### تفاوت‌های بین عملگر spread و پارامتر rest چیه؟
 
      پارامتر Rest تمام عناصر باقی مانده را در یک آرایه جمع آوری می کند. در حالی که عملگر Spread به تکرارپذیرها (آرایه ها / اشیاء / رشته ها) اجازه می دهد تا به آرگومان ها / عناصر منفرد گسترش یابند. یعنی پارامتر Rest مخالف عملگر spread است.
 
      **[فهرست](#فهرست)**
 
-416. ### What are the different kinds of generators
+416. ### نوع‌های مختلف generatorها کدوما هستن؟
 
      پنج نوع  تابع ژنراتور وجود دارد،
 
@@ -8721,7 +8729,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-417. ### What are the built-in iterables
+417. ### iterableهای built-in کدوما هستن؟
 
      در زیر لیستی از تکرارهای داخلی در جاوا اسکریپت آمده است.
 
@@ -8734,7 +8742,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-418. ### What are the differences between for...of and for...in statements
+418. ### تفاوت‌های بین حلقه for...of و for...in چیه؟
 
      هم برای...in و هم برای...از دستورات روی ساختارهای داده js تکرار می‌شن. تنها تفاوت در مورد  چیزیه که اونا تکرار میکننه:
 
@@ -8767,7 +8775,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-419. ### How do you define instance and non-instance properties
+419. ### چطوری propertyهای instance و غیر instanceای تعریف می‌کنی؟
 
      خصوصیات Instance باید در داخل متدهای کلاس تعریف بشن. به عنوان مثال، مشخصات نام و سن سازنده داخلی هم مثل مثال پایین تعریف میشن.
 
@@ -8797,7 +8805,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-420. ### What is the difference between isNaN and Number.isNaN?
+420. ### تفاوت‌های بین isNaN و Number.isNaN کدوما هستن؟
 
      1. **isNaN**: تابع سراسری «isNaN» آرگومان را به عدد تبدیل می‌کند و اگر مقدار حاصل NaN باشد، true را برمی‌گرداند.
 
