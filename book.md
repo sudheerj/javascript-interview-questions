@@ -4234,7 +4234,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
      }
      ```
 
-     </div>
+     </span>
 
      **نکته:** سفارش به عنوان شی تعریف شده تضمین نمی‌شه.
 
