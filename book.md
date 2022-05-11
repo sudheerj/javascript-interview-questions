@@ -5,462 +5,457 @@ date: August 30, 2020
 export_on_save:
 html: true
 puppeteer:
-landscape: false
-printBackground: true
-timeout: 3000
-width: "170mm"
-height: "240mm"
-margin: { top: '50px', bottom: '55px', right: '40px', left: '40px'}
-displayHeaderFooter: true
-headerTemplate: '<div />'
-footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;font-family: BYekan;direction:rtl;position: relative; bottom: -15px">
-<span style="position: relative; top:50px"><span class="pageNumber"></span></span>
-<img style="width:100px;float:right;display: inline-block" src="data:image/png;base64,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" /><img src="data:image/png;base64,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" style="float:left;width: 100px;display: inline-block" />
-</div>'
+     landscape: false
+     printBackground: true
+     timeout: 3000
+     width: "170mm"
+     height: "240mm"
+     margin: { top: '50px', bottom: '55px', right: '40px', left: '40px'}
+     displayHeaderFooter: true
+     headerTemplate: '2222'
+     footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;font-family: BYekan;direction:rtl;position: relative; bottom: -15px">
+     <span style="position: relative; top:50px"><span class="pageNumber"></span></span>
+     <img style="width:100px;float:right;display: inline-block" src="data:image/png;base64,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" /><img src="data:image/png;base64,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" style="float:left;width: 100px;display: inline-block" />
+     </div>'
 ---
 
 <div dir="rtl" align="right">
 
 # مجموعه سوال و جواب‌های جاواسکریپتی
 
-> اگه خوشتون اومد به گیت‌هابمون مراجعه کنین و بهمون :star: بدین. اگه هم قصد مشارکت داشتید خیلی خوشحال می‌شیم :)
+> اگه از کتاب خوشتون اومد به گیت‌هابمون مراجعه کنین و بهمون :star: بدین. اگه هم قصد مشارکت داشتید خیلی خوشحال می‌شیم :) <a href="http://github.com/mariotek" class="show-in-print">http://github.com/mariotek</a>
 
 ## دانلود کتاب به فرمت‌های PDF/Epub
 
-می‌تونید از بخش ریلیزهای گیت‌هاب دانلود کنین([این لینک](https://github.com/Mariotek/advanced-javascript/releases)).
+می‌تونین خیلی راحت نسخه آنلاین کتاب استفاده کنین یا اگه به فایل کتاب می‌خوایین دسترسی داشته باشین، از بخش ریلیزهای گیت‌هاب به فرمت‌های مختلف آخرین نسخه کتاب رو می‌تونین دریافت کنین.
 
-
-## پیش گفتار
-
-پرسش و پاسخ‌های پیش رو، حاصل گردآوری سوالات پرتکراری‌ست که در جلسات مصاحبه‌ برای موقعیت‌‌های کاری مرتبط با جاواسکریپت پرسیده می‌شه. 
-امیدواریم که با مطالعه این سوالات توی مصاحبه‌های شغلی‌تون موفق باشین و به دانش‌تون اضافه بشه.
-
----
 
 ### فهرست
 
-| ردیف | سوال |
-|---- | ---------
-|1  | [روش‌های ایجاد objects توی جاواسکریپت چیا هستن؟](#روشهای-ایجاد-objects-توی-جاواسکریپت-چیا-هستن) |
-|2  | [زنجیره prototype چیه؟](#زنجیره-prototype-چیه) |
-|3  | [تفاوت‌های بین Call، Apply و Bind چیا هستن؟](#تفاوتهای-بین-Call،-Apply-و-Bind-چیا-هستن) |
-|4  | [فرمت JSON چیه و عملیات‌های معمول بر روی آن چیا هستن؟](#فرمت-JSON-چیه-و-عملیاتهای-معمول-بر-روی-آن-چیا-هستن) |
-|5  | [هدف از متد slice روی آرایه‌ها چیه؟](#هدف-از-متد-slice-روی-آرایهها-چیه) |
-|6  | [هدف از متد splice روی آرایه‌ها چیه؟](#هدف-از-متد-splice-روی-آرایهها-چیه) |
-|7  | [تفاوت متدهای slice و splice چیا هستن؟](#تفاوت-متدهای-slice-و-splice-چیا-هستن) |
-|8  | [تفاوت‌های Object و Map چیا هستن؟](#تفاوتهای-Object-و-Map-چیا-هستن) |
-|9  | [تفاوت‌های بین عملگرهای == و === چیا هستن؟](#تفاوتهای-بین-عملگرهای-و-چیا-هستن) |
-|10 | [توابع lambda یا arrow-function چی هستن؟](#توابع-lambda-یا-arrow-function-چی-هستن) |
-|11 | [یه تابع first-class چجور تابعی‌ـه؟](#یه-تابع-first-class-چجور-تابعیـه) |
-|12 | [یه تابع first-order چجور تابعی‌ـه؟](#یه-تابع-first-order-چجور-تابعیـه) |
-|13 | [یه تابع higher-order چجور تابعی‌ـه؟](#یه-تابع-higher-order-چجور-تابعیـه) |
-|14 | [یه تابع unary چجور تابعی‌ـه؟](#یه-تابع-unary-چجور-تابعیـه) |
-|15 | [currying توابع یعنی چی؟](#currying-توابع-یعنی-چی) |
-|16 | [چه توابعی pure هستن؟](#چه-توابعی-pure-هستن) |
-|17 | [هدف از کلمه کلیدی let چیه؟](#هدف-از-کلمه-کلیدی-let-چیه) |
-|18 | [تفاوت‌های کلمات کلیدی let و var چیا هستن؟](#تفاوتهای-کلمات-کلیدی-let-و-var-چیا-هستن) |
-|19 | [دلیل انتخاب کلمه کلیدی let چیه؟](#دلیل-انتخاب-کلمه-کلیدی-let-چیه) |
-|20 | [چطوری می‌تونیم توی بلوک مربوط به switch بدون دریافت خطا متغیر تعریف کنیم؟](#چطوری-می‌تونیم-توی-بلوک-مربوط-به-switch-بدون-دریافت-خطا-متغیر-تعریف-کنیم) |
-|21 | [Temporal-Dead-Zone چیه؟](#Temporal-Dead-Zone-چیه  ) |
-|22 | [IIFE(توابع بلافاصله صدا زده شده) چی هستن؟](#IIFEتوابع-بلافاصله-صدا-زده-شده-چی-هستن) |
-|23 | [مزایای استفاده از moduleها چیه؟](#مزایای-استفاده-از-moduleها-چیه) |
-|24 | [Memoization چیه؟](#Memoization-چیه) |
-|25 | [Hoisting چیه؟](#Hoisting-چیه) |
-|26 | [Classها توی ES6 چی هستن؟](#Classها-توی-ES6-چی-هستن) |
-|27 | [Closureها چیا هستن؟](#Closureها-چیا-هستن) |
-|28 | [Moduleها چیا هستن؟](#Moduleها-چیا-هستن) |
-|29 | [چرا به moduleها نیاز داریم؟](#چرا-به-moduleها-نیاز-داریم) |
-|30 | [توی جاواسکریپت scope چیه و چیکار می‌کنه؟](#توی-جاواسکریپت-scope-چیه-و-چیکار-می‌کنه) |
-|31 | [service-worker چیه؟](#service-worker-چیه) |
-|32 | [توی service-worker چطوری می‌شه DOM رو دستکاری کرد؟](#توی-service-worker-چطوری-می‌شه-DOM-رو-دستکاری-کرد) |
-|33 | [چطوری می‌تونیم بین ریست شدن‌های service-worker داده‌های مورد نظرمون رو مجدد استفاده کنیم؟](#چطوری-می‌تونیم-بین-ریست-شدنهای-service-worker-دادههای-مورد-نظرمون-رو-مجدد-استفاده-کنیم) |
-|34 | [IndexedDB چیه؟](#IndexedDB-چیه) |
-|35 | [Web-storage چیه؟](#Web-storage-چیه) |
-|36 | [Post-message چیه؟](#Post-message-چیه) |
-|37 | [Cookie چیه؟](#Cookie-چیه) |
-|38 | [چرا به cookie نیاز داریم؟](#چرا-به-cookie-نیاز-داریم) |
-|39 | [گزینه‌های قابل تنظیم توی cookie چیا هستن؟](#گزینههای-قابل-تنظیم-توی-cookie-چیا-هستن) |
-|40 | [چطوری می‌شه یه cookie رو حذف کرد؟](#چطوری-می‌شه-یه-cookie-رو-حذف-کرد) |
-|41 | [تفاوت‌های بین cookie، local-storage و session-storage چیا هستن؟](#تفاوتهای-بین-cookie،-local-storage-و-session-storage-چیا-هستن) |
-|42 | [تفاوت‌های بین localStorage و sessionStorage چیا هستن؟](#تفاوتهای-بین-localStorage-و-sessionStorage-چیا-هستن) |
-|43 | [چطوری به web-storage دسترسی پیدا می‌کنی؟](#چطوری-به-web-storage-دسترسی-پیدا-می‌کنی) |
-|44 | [چه متد‌هایی روی session-storage قابل استفاده هستن؟](#چه-متدهایی-روی-session-storage-قابل-استفاده-هستن) |
-|45 | [رخداد storage چیه و چطوری ازش استفاده می‌کنیم؟](#رخداد-storage-چیه-و-چطوری-ازش-استفاده-می‌کنیم) |
-|46 | [چرا به web-storage نیاز داریم؟](#چرا-به-web-storage-نیاز-داریم) |
-|47 | [چطوری می‌تونیم پشتیبانی از web-storage توسط مرورگر رو بررسی کنیم؟](#چطوری-می‌تونیم-پشتیبانی-از-web-storage-توسط-مرورگر-رو-بررسی-کنیم) |
-|48 | [چطوری می‌تونیم پشتیبانی از web-worker توسط مرورگر رو بررسی کنیم؟](#چطوری-می‌تونیم-پشتیبانی-از-web-worker-توسط-مرورگر-رو-بررسی-کنیم) |
-|49 | [یه مثال از web-workerها می‌تونی بزنی؟](#یه-مثال-از-web-workerها-میتونی-بزنی) |
-|50 | [محدودیت‌های web-workerها روی DOM چیا هستن؟](#محدودیتهای-web-workerها-روی-DOM-چیا-هستن) |
-|51 | [Promise چیه؟](#Promise-چیه  ) |
-|52 | [چرا به promise نیاز داریم؟](#چرا-به-promise-نیاز-داریم) |
-|53 | [سه تا وضعیت ممکن برای یه promise چیا هستن؟](#سه-تا-وضعیت-ممکن-برای-یه-promise-چیا-هستن) |
-|54 | [توابع callback چی هستن؟](#توابع-callback-چی-هستن) |
-|55 | [چرا به توابع callback نیاز داریم؟](#چرا-به-توابع-callback-نیاز-داریم) |
-|56 | [Callback-hell یا جهنم توابع callback چیه؟](#Callback-hell-یا-جهنم-توابع-callback-چیه  ) |
-|57 | [Server-sent-events(SSE) چیه؟](#Server-sent-eventsSSE-چیه  ) |
-|58 | [چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟](#چطوری-می‌تونیم-اعلانهای-server-sent-event-رو-دریافت-کنیم) |
-|59 | [چطوری می‌تونیم پشتیبانی مرورگر برای SSE رو بررسی کنیم؟](#چطوری-می‌تونیم-پشتیبانی-مرورگر-برای-SSE-رو-بررسی-کنیم) |
-|60 | [کدوم توابع روی SSE وجود دارن؟](#کدوم-توابع-روی-SSE-وجود-دارن) |
-|61 | [اصلی‌ترین قوانین promiseها چیا هستن؟](#اصلیترین-قوانین-promiseها-چیا-هستن) |
-|62 | [Callback توی callback چطوری رخ میده؟](#Callback-توی-callback-چطوری-رخ-میده            ) |
-|63 | [زنجیره promiseها چیه؟](#زنجیره-promiseها-چیه) |
-|64 | [کاربرد متد promise.all چیه؟](#کاربرد-متد-promise.all-چیه) |
-|65 | [هدف از متد race روی promise چیه؟](#هدف-از-متد-race-روی-promise-چیه) |
-|66 | [حالت strict توی جاواسکریپت چی کار می‌کنه؟](#حالت-strict-توی-جاواسکریپت-چی-کار-می‌کنه) |
-|67 | [چرا به حالت strict نیاز داریم؟](#چرا-به-حالت-strict-نیاز-داریم) |
-|68 | [چطوری می‌تونیم حالت strict رو فعال کنیم؟](#چطوری-می‌تونیم-حالت-strict-رو-فعال-کنیم) |
-|69 | [هدف از عملگر نقیض دوتایی(!!) چیه؟](#هدف-از-عملگر-نقیض-دوتایی!!-چیه) |
-|70 | [هدف از عملگر delete چیه؟](#هدف-از-عملگر-delete-چیه) |
-|71 | [عملگر typeof چیکار می‌کنه؟](#عملگر-typeof-چیکار-می‌کنه) |
-|72 | [undefined چیه و چه زمانی undefined می‌گیریم؟](#undefined-چیه-و-چه-زمانی-undefined-می‌گیریم      ) |
-|73 | [null چیه؟](#null-چیه  ) |
-|74 | [تفاوت‌های بین null و undefined چیا هستن؟](#تفاوتهای-بین-null-و-undefined-چیا-هستن) |
-|75 | [eval چیه؟](#eval-چیه  ) |
-|76 | [تفاوت‌های بین window و document چیا هستن؟](#تفاوتهای-بین-window-و-document-چیا-هستن) |
-|77 | [توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟](#توی-جاواسکریپت-چطوری-می‌تونیم-به-history-دسترسی-داشته-باشیم) |
-|78 | [انواع داده‌های جاواسکریپت کدوما هستن؟](#انواع-دادههای-جاواسکریپت-کدوما-هستن) |
-|79 | [isNaN چیه و چیکار می‌کنه؟](#isNaN-چیه-و-چیکار-می‌کنه                ) |
-|80 | [تفاوت‌های بین undeclared و undefined چیا هستن؟](#تفاوتهای-بین-undeclared-و-undefined-چیا-هستن) |
-|81 | [کدوم متغیرها عمومی هستن؟](#کدوم-متغیرها-عمومی-هستن) |
-|82 | [مشکلات متغیرهای عمومی چیا هستن؟](#مشکلات-متغیرهای-عمومی-چیا-هستن) |
-|83 | [مقدار NaN چیه؟](#مقدار-NaN-چیه) |
-|84 | [هدف از تابع isFinite چیه؟](#هدف-از-تابع-isFinite-چیه) |
-|85 | [یه event-flow چیه؟](#یه-event-flow-چیه) |
-|86 | [Event-bubbling چیه؟](#Event-bubbling-چیه  ) |
-|87 | [Event-capturing چیه؟](#Event-capturing-چیه  ) |
-|88 | [چطوری می‌شه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟](#چطوری-می‌شه-یه-فرم-رو-با-استفاده-از-جاواسکریپت-ثبت-کرد) |
-|89 | [چطوری می‌شه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟](#چطوری-می‌شه-به-اطلاعات-مربوط-به-سیستم-عامل-کاربر-دسترسی-داشت) |
-|90 | [تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟](#تفاوتهای-بین-رخدادهای-document-load-و-DOMContentLoaded-چیا-هستن) |
-|91 | [تفاوت‌های بین objectهای native، host و user چیا هستن؟](#تفاوتهای-بین-objectهای-native،-host-و-user-چیا-هستن) |
-|92 | [کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟](#کدوم-ابزار-و-تکنیکها-برای-دیباگ-کردن-برنامه-جاواسکریپتی-استفاده-میشن) |
-|93 | [مزایا و معایب استفاده از promiseها به جای callback چیا هستن؟](#مزایا-و-معایب-استفاده-از-promiseها-به-جای-callback-چیا-هستن) |
-|94 | [تفاوت‌های بین attribute و property روی DOM چیا هستن؟](#تفاوتهای-بین-attribute-و-property-روی-DOM-چیا-هستن) |
-|95 | [سیاست same-origin چیه؟](#سیاست-same-origin-چیه) |
-|96 | [هدف استفاده از void 0 چیه؟](#هدف-استفاده-از-void-0-چیه) |
-|97 | [جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟](#جاواسکریپت-یه-زبان-تفسیری-هست-یا-کامپایلری) |
-|98 | [آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟](#آیا-جاواسکریپت-یه-زبان-حساس-به-بزرگی-و-کوچکیcase-sensitive-حروف-است) |
-|99 | [ارتباطی بین Java و JavaScript وجود داره؟](#ارتباطی-بین-Java-و-JavaScript-وجود-داره) |
-|100| [Eventها چی هستن؟](#Eventها-چی-هستن) |
-|101| [کی جاواسکریپت رو ساخته؟](#کی-جاواسکریپت-رو-ساخته) |
-|102| [هدف از متد preventDefault چیه؟](#هدف-از-متد-preventDefault-چیه) |
-|103| [کاربرد متد stopPropagation چیه؟](#کاربرد-متد-stopPropagation-چیه) |
-|104| [مراحلی که موقع استفاده از return false توی یه event-handler رخ میده چیا هستن؟](#مراحلی-که-موقع-استفاده-از-return-false-توی-یه-event-handler-رخ-میده-چیا-هستن) |
-|105| [BOM چیه؟](#BOM-چیه) |
-|106| [موارد استفاده از setTimeout کدوما هستن؟](#موارد-استفاده-از-setTimeout-کدوما-هستن) |
-|107| [موارد استفاده از setInterval کدوما هستن؟](#موارد-استفاده-از-setInterval-کدوما-هستن) |
-|108| [چرا جاواسکریپت رو به عنوان یه زبان تک thread می‌شناسن؟](#چرا-جاواسکریپت-رو-به-عنوان-یه-زبان-تک-thread-میشناسن) |
-|109| [Event-delegation چیه؟](#Event-delegation-چیه) |
-|110| [ECMAScript چیه؟](#ECMAScript-چیه) |
-|111| [JSON چیه؟](#JSON-چیه) |
-|112| [قوانین فرمت JSON کدوما هستن؟](#قوانین-فرمت-JSON-کدوما-هستن) |
-|113| [هدف از متد JSON.stringify چیه؟](#هدف-از-متد-JSON.stringify-چیه) |
-|114| [چطوری می‌تونیم یه رشته(string) JSON رو تجزیه کنیم؟](#چطوری-می‌تونیم-یه-رشتهstring-JSON-رو-تجزیه-کنیم) |
-|115| [چرا به JSON نیاز داریم؟](#چرا-به-JSON-نیاز-داریم) |
-|116| [PWAها چی هستن؟](#PWAها-چی-هستن) |
-|117| [هدف از متد clearTimeout چیه؟](#هدف-از-متد-clearTimeout-چیه) |
-|118| [هدف از متد clearInterval چیه؟](#هدف-از-متد-clearInterval-چیه) |
-|119| [توی جاواسکریپت، چطوری می‌شه به یه صفحه جدید redirect انجام داد؟](#توی-جاواسکریپت،-چطوری-می‌شه-به-یه-صفحه-جدید-redirect-انجام-داد) |
-|120| [چطوری بررسی می‌کنین که یه string شامل یه substring هست یا نه؟](#چطوری-بررسی-می‌کنین-که-یه-string-شامل-یه-substring-هست-یا-نه) |
-|121| [توی جاواسکریپت، چطوری مقدار یه آدرس email رو اعتبارسنجی می‌کنین؟](#توی-جاواسکریپت،-چطوری-مقدار-یه-آدرس-email-رو-اعتبارسنجی-می‌کنین) |
-|122| [چطوری می‌تونیم مقدار آدرس url جاری رو بخونیم؟](#چطوری-می‌تونیم-مقدار-آدرس-url-جاری-رو-بخونیم) |
-|123| [ویژگی‌های مختلف url روی object مربوط به history کدوما هستن؟](#ویژگیهای-مختلف-url-روی-object-مربوط-به-history-کدوما-هستن) |
-|124| [توی جاواسکریپت چطوری می‌تونیم مقدار یه query-string رو بخونیم؟](#توی-جاواسکریپت-چطوری-می‌تونیم-مقدار-یه-query-string-رو-بخونیم) |
-|125| [چطوری می‌تونیم بررسی کنیم که آیا یه پراپرتی روی آبجکت وجود داره یا نه؟](#چطوری-می‌تونیم-بررسی-کنیم-که-آیا-یه-پراپرتی-روی-آبجکت-وجود-داره-یا-نه) |
-|126| [ری روی یه object حلقه میزنی؟](#چطوری-روی-یه-object-حلقه-میزنی) |
-|127| [چطوری تست می‌کنی که یه object خالیه؟](#چطوری-تست-می‌کنی-که-یه-object-خالیه) |
-|128| [arguments object چیه؟](#arguments-object-چیه) |
-|129| [چطوری حرف اول یه رشته رو به حرف بزرگ تبدیل می‌کنی؟](#چطوری-حرف-اول-یه-رشته-رو-به-حرف-بزرگ-تبدیل-می‌کنی) |
-|130| [مزایا و معایب حلقه for چیا هستن؟](#مزایا-و-معایب-حلقه-for-چیا-هستن) |
-|131| [چطوری تاریخ جاری رو توی جاواسکریپت نشون میدی؟](#چطوری-تاریخ-جاری-رو-توی-جاواسکریپت-نشون-میدی) |
-|132| [چطوری دو تا date object رو با هم مقایسه می‌کنی؟](#چطوری-دو-تا-date-object-رو-با-هم-مقایسه-می‌کنی) |
-|133| [چطوری بررسی می‌کنی که یه رشته با یه رشته دیگه شروع می‌شه؟](#چطوری-بررسی-می‌کنی-که-یه-رشته-با-یه-رشته-دیگه-شروع-می‌شه) |
-|134| [چطوری یه رشته رو trim می‌کنی؟](#چطوری-یه-رشته-رو-trim-می‌کنی) |
-|135| [توی جاواسکریپت چطوری می‌تونیم یه زوج مرتب از key یه valueها بسازیم؟](#توی-جاواسکریپت-چطوری-می‌تونیم-یه-زوج-مرتب-از-key-یه-valueها-بسازیم) |
-|136| [آیا عبارت '!--' عملگر خاصی هست؟](#آیا-عبارت-!---عملگر-خاصی-هست) |
-|137| [چطوری می‌تونیم به متغیرهامون مقادیر اولیه بدیم؟](#چطوری-می‌تونیم-به-متغیرهامون-مقادیر-اولیه-بدیم) |
-|138| [چطوری می‌تونیم متن‌های چند خطی درست کنیم؟](#چطوری-می‌تونیم-متنهای-چند-خطی-درست-کنیم) |
-|139| [مدل app-shell چیه؟](#مدل-app-shell-چیه) |
-|140| [چطوری می‌تونیم روی یه تابع property اضافه کنیم؟](#چطوری-می‌تونیم-روی-یه-تابع-property-اضافه-کنیم) |
-|141| [چطوری می‌تونیم تعداد پارامترهای ورودی یه تابع رو به دست بیاریم؟](#چطوری-می‌تونیم-تعداد-پارامترهای-ورودی-یه-تابع-رو-به-دست-بیاریم) |
-|142| [Polyfill چیه؟](#Polyfill-چیه) |
-|143| [عبارات Break و continue چی هستن؟](#عبارات-Break-و-continue-چی-هستن) |
-|144| [توی جاواسکریپت labelها چیکار می‌کنن؟](#توی-جاواسکریپت-labelها-چیکار-میکنن) |
-|145| [مزایای declare کردن متغیرها در اوایل کد چیه؟](#مزایای-declare-کردن-متغیرها-در-اوایل-کد-چیه) |
-|146| [مزایای مقداردهی اولیه متغیرها چیه؟](#مزایای-مقداردهی-اولیه-متغیرها-چیه) |
-|147| [روش توصیه شده برای ایجاد object چیه؟](#روش-توصیه-شده-برای-ایجاد-object-چیه) |
-|148| [چطوری می‌تونیم آرایه‌ JSON تعریف کنیم؟](#چطوری-می‌تونیم-آرایه-JSON-تعریف-کنیم) |
-|149| [چطوری می‌تونیم اعداد تصادفی تولید کنیم؟](#چطوری-می‌تونیم-اعداد-تصادفی-تولید-کنیم) |
-|150| [می‌تونی یه تابع تولید اعداد تصادفی توی یه بازه مشخص بنویسی؟](#میتونی-یه-تابع-تولید-اعداد-تصادفی-توی-یه-بازه-مشخص-بنویسی) |
-|151| [Tree-shaking چیه؟](#Tree-shaking-چیه) |
-|152| [دلایل نیاز به tree-shaking کدوما هستن؟](#دلایل-نیاز-به-tree-shaking-کدوما-هستن) |
-|153| [آیا استفاده از eval توصیه می‌شه؟](#آیا-استفاده-از-eval-توصیه-می‌شه) |
-|154| [Regular-Expression چیه؟](#Regular-Expression-چیه) |
-|155| [متدهای رشته که روی Regular-expression مجاز هستن کدوماست؟](#متدهای-رشته-که-روی-Regular-expression-مجاز-هستن-کدوماست) |
-|156| [توی Regex بخش modifiersها چیکار می‌کنه؟](#توی-Regex-بخش-modifiersها-چیکار-می‌کنه) |
-|157| [پترن‌های regular-expression چیه؟](#پترنهای-regular-expression-چیه) |
-|158| [آبجکت RegExp چیه؟](#آبجکت-RegExp-چیه) |
-|159| [چطوری روی یه رشته دنبال یه پترن RegExp می‌گردی؟](#چطوری-روی-یه-رشته-دنبال-یه-پترن-RegExp-میگردی) |
-|160| [هدف از متد exec چیه؟](#هدف-از-متد-exec-چیه) |
-|161| [چطوری استایل‌های یه المنت HTML رو تغییر میدی؟](#چطوری-استایلهای-یه-المنت-HTML-رو-تغییر-میدی) |
-|162| [نتیجه عبارت 1+2+'3' چی می‌شه؟](#نتیجه-عبارت-1+2+3-چی-می‌شه) |
-|163| [عبارت debugger چیکار می‌کنه؟](#عبارت-debugger-چیکار-می‌کنه) |
-|164| [هدف از breakpointها توی debugging چیه؟](#هدف-از-breakpointها-توی-debugging-چیه) |
-|165| [آیا می‌تونیم از عبارت‌های رزرو شده در تعریف identifierها(اسم متغیر، کلاس و ...) استفاده کنیم؟](#آیا-می‌تونیم-از-عبارتهای-رزرو-شده-در-تعریف-identifierهااسم-متغیر،-کلاس-و--استفاده-کنیم) |
-|166| [چطوری تشخیص بدیم که یه مرورگر mobile هست یا نه؟](#چطوری-تشخیص-بدیم-که-یه-مرورگر-mobile-هست-یا-نه) |
-|167| [چطوری بدون Regex تشخیص بدیم که یه مرورگر mobile هست یا نه؟](#چطوری-بدون-Regex-تشخیص-بدیم-که-یه-مرورگر-mobile-هست-یا-نه) |
-|168| [چطوری طول و عرض یه تصویر رو با جاواسکریپت به دست میاری؟](#چطوری-طول-و-عرض-یه-تصویر-رو-با-جاواسکریپت-به-دست-میاری) |
-|169| [چطوری درخواست‌های synchronous HTTP بزنیم؟](#چطوری-درخواستهای-synchronous-HTTP-بزنیم) |
-|170| [چطوری درخواست‌های asynchronous HTTP بزنیم؟](#چطوری-درخواستهای-asynchronous-HTTP-بزنیم) |
-|171| [چطوری یه تاریخ رو به یه تاریخ در timezone دیگه تبدیل کنیم؟](#چطوری-یه-تاریخ-رو-به-یه-تاریخ-در-timezone-دیگه-تبدیل-کنیم) |
-|172| [چه propertyهایی برای اندازه‌گیزی سایز window به کار میره؟](#چه-propertyهایی-برای-اندازهگیزی-سایز-window-به-کار-میره) |
-|173| [عملگر شرطی سه گانه توی جاواسکریپت چیه؟](#عملگر-شرطی-سه-گانه-توی-جاواسکریپت-چیه) |
-|174| [آیا می‌شه روی عملگر شرطی زنجیره شرط‌ها رو اعمال کرد؟](#آیا-می‌شه-روی-عملگر-شرطی-زنجیره-شرطها-رو-اعمال-کرد) |
-|175| [روش‌های اجرای جاواسکریپت بعد از لود شدن صفحه کدوما هستن؟](#روشهای-اجرای-جاواسکریپت-بعد-از-لود-شدن-صفحه-کدوما-هستن) |
-|176| [تفاوت‌های بین proto و prototype کدوما هستن؟](#تفاوتهای-بین-proto-و-prototype-کدوما-هستن) |
-|177| [میتونی یه مثال از زمانی که واقعا به سمیکولون(;) نیاز هست بزنی؟](#میتونی-یه-مثال-از-زمانی-که-واقعا-به-سمیکولون-نیاز-هست-بزنی) |
-|178| [متد freeze چیکار می‌کنه؟](#متد-freeze-چیکار-می‌کنه) |
-|179| [هدف از متد freeze چیه؟](#هدف-از-متد-freeze-چیه) |
-|180| [چرا به متد freeze نیاز داریم؟](#چرا-به-متد-freeze-نیاز-داریم) |
-|181| [چطوری می‌تونیم زبان ترجیحی یه مرورگر رو تشخیص بدیم؟](#چطوری-می‌تونیم-زبان-ترجیحی-یه-مرورگر-رو-تشخیص-بدیم) |
-|182| [چطوری می‌تونیم حرف اول همه کلمات یه رشته رو به حرف بزرگ تبدیل کنیم؟](#چطوری-می‌تونیم-حرف-اول-همه-کلمات-یه-رشته-رو-به-حرف-بزرگ-تبدیل-کنیم) |
-|183| [چطوری می‌شه تشخیص داد که جاواسکریپت یه صفحه وب غیرفعال شده؟](#چطوری-می‌شه-تشخیص-داد-که-جاواسکریپت-یه-صفحه-وب-غیرفعال-شده) |
-|184| [عملگرهای پشتیبانی شده توسط جاواسکریپت کدوما هستن؟](#عملگرهای-پشتیبانی-شده-توسط-جاواسکریپت-کدوما-هستن) |
-|185| [پارامتر rest چیکار می‌کنه؟](#پارامتر-rest-چیکار-می‌کنه) |
-|186| [اگه پارامتر rest رو به عنوان آخرین پارامتر استفاده نکنیم چی می‌شه؟](#اگه-پارامتر-rest-رو-به-عنوان-آخرین-پارامتر-استفاده-نکنیم-چی-می‌شه) |
-|187| [عملگرهای منطقی باینری توی جاواسکریپت کدوما هستن؟](#عملگرهای-منطقی-باینری-توی-جاواسکریپت-کدوما-هستن) |
-|188| [عملگر spread چیکار می‌کنه؟](#عملگر-spread-چیکار-می‌کنه) |
-|189| [چطوری تشخیص میدی که یه آبجکت freeze شده یا نه؟](#چطوری-تشخیص-میدی-که-یه-آبجکت-freeze-شده-یا-نه) |
-|190| [چطوری بررسی کنیم که دو تا مقدار(شامل آبجکت) با هم برابرن یا نه؟](#چطوری-بررسی-کنیم-که-دو-تا-مقدارشامل-آبجکت-با-هم-برابرن-یا-نه) |
-|191| [هدف از متد is روی object چیه؟](#هدف-از-متد-is-روی-object-چیه) |
-|192| [چطوری propertyهای یه object رو به یه object دیگه کپی می‌کنی؟](#چطوری-propertyهای-یه-object-رو-به-یه-object-دیگه-کپی-می‌کنی) |
-|193| [کاربردهای ممتد assign چیه؟](#کاربردهای-ممتد-assign-چیه) |
-|194| [آبجکت proxy چیه؟](#آبجکت-proxy-چیه) |
-|195| [هدف از متد seal چیه؟](#هدف-از-متد-seal-چیه) |
-|196| [کاربردهای متد seal چیه؟](#کاربردهای-متد-seal-چیه) |
-|197| [تفاوت‌های بین متدهای freeze و seal چیا هست؟](#تفاوتهای-بین-متدهای-freeze-و-seal-چیا-هست) |
-|198| [چطوری تشخیص میدی که یه آبجکت seal شده یا نه؟](#چطوری-تشخیص-میدی-که-یه-آبجکت-seal-شده-یا-نه) |
-|199| [چطوری کلید و مقدارهای enumerable رو به دست میاری؟](#چطوری-کلید-و-مقدارهای-enumerable-رو-به-دست-میاری) |
-|200| [تفاوت‌های بین متدهای Object.values و Object.entries چیا هست؟](#تفاوتهای-بین-متدهای-Objectvalues-و-Objectentries-چیا-هست) |
-|201| [چطوری لیست کلیدهای یه object رو بدست میاری؟](#چطوری-لیست-کلیدهای-یه-object-رو-بدست-میاری) |
-|202| [چطوری یه object با prototype درست می‌کنی؟](#چطوری-یه-object-با-prototype-درست-می‌کنی) |
-|203| [WeakSet چیه؟](#WeakSet-چیه) |
-|204| [تفاوت‌های بین WeakSet و Set کدوما هستن؟](#تفاوتهای-بین-WeakSet-و-Set-کدوما-هستن) |
-|205| [لیست متدهایی که رو WeakSet قابل استفاده هستن رو می‌تونی بگی؟](#لیست-متدهایی-که-رو-WeakSet-قابل-استفاده-هستن-رو-میتونی-بگی) |
-|206| [WeakMap چیه؟](#WeakMap-چیه) |
-|207| [تفاوت‌های بین WeakMap و Map کدوما هستن؟](#تفاوتهای-بین-WeakMap-و-Map-کدوما-هستن) |
-|208| [لیست متدهایی که رو WeakMap قابل استفاده هستن رو می‌تونی بگی؟](#لیست-متدهایی-که-رو-WeakMap-قابل-استفاده-هستن-رو-میتونی-بگی) |
-|209| [هدف از متد uneval چیه؟](#هدف-از-متد-uneval-چیه) |
-|210| [چطوری یه URL رو encode می‌کنی؟](#چطوری-یه-URL-رو-encode-می‌کنی) |
-|211| [چطوری یه URL رو decode می‌کنی؟](#چطوری-یه-URL-رو-decode-می‌کنی) |
-|212| [چطوری محتوای یه صفحه رو پرینت می‌گیری؟](#چطوری-محتوای-یه-صفحه-رو-پرینت-می‌گیری) |
-|213| [تفاوت‌های بین uneval و eval چیا هستن؟](#تفاوتهای-بین-uneval-و-eval-چیا-هستن) |
-|214| [تابع anonymous چیه؟](#تابع-anonymous-چیه) |
-|215| [تفاوت تقدم بین متغیرهای local و global چطوریه؟](#تفاوت-تقدم-بین-متغیرهای-local-و-global-چطوریه) |
-|216| [accessorهای جاواسکریپت چیکار می‌کنن؟](#accessorهای-جاواسکریپت-چیکار-میکنن) |
-|217| [چطوری روی constructor یه Object یه مقدار تعریف می‌کنی؟](#چطوری-روی-constructor-یه-Object-یه-مقدار-تعریف-می‌کنی) |
-|218| [تفاوت‌های بین get و defineProperty چیا هست؟](#تفاوتهای-بین-get-و-defineProperty-چیا-هست) |
-|219| [مزایای استفاده از Getter و Setter چیه؟](#مزایای-استفاده-از-Getter-و-Setter-چیه) |
-|220| [می‌تونیم getter و setter رو با استفاده از متد defineProperty تعریف کنیم؟](#می‌تونیم-getter-و-setter-رو-با-استفاده-از-متد-defineProperty-تعریف-کنیم) |
-|221| [هدف استفاده از switch-case چیه؟](#هدف-استفاده-از-switch-case-چیه) |
-|222| [چه قواعدی برای استفاده از swtich-case باید رعایت بشه؟](#چه-قواعدی-برای-استفاده-از-swtich-case-باید-رعایت-بشه) |
-|223| [نوع داده‌های primitive کدوما هستن؟](#نوع-دادههای-primitive-کدوما-هستن) |
-|224| [روش‌های مختلف دسترسی به propertyهای object کدوما هستن؟](#روشهای-مختلف-دسترسی-به-propertyهای-object-کدوما-هستن) |
-|225| [قوانین پارامترهای توابع کدوما هستن؟](#قوانین-پارامترهای-توابع-کدوما-هستن) |
-|226| [آبجکت error چیه؟](#آبجکت-error-چیه) |
-|227| [چه موقعی خطای syntax دریافت می‌کنیم؟](#چه-موقعی-خطای-syntax-دریافت-می‌کنیم) |
-|228| [عنوان خطاهای مختلف که روی error-object برمیگردن کدوما هستن؟](#عنوان-خطاهای-مختلف-که-روی-error-object-برمیگردن-کدوما-هستن) |
-|229| [عبارات مختلف که در هنگام مدیریت error استفاده میشن کدوما هستن؟](#عبارات-مختلف-که-در-هنگام-مدیریت-error-استفاده-میشن-کدوما-هستن) |
-|230| [دو نوع مختلف حلفه‌ها در جاواسکریپت کدوما هستن؟](#دو-نوع-مختلف-حلفهها-در-جاواسکریپت-کدوما-هستن) |
-|231| [nodejs چیه؟](#nodejs-چیه) |
-|232| [آبجکت Intl چیه؟](#آبجکت-Intl-چیه) |
-|233| [چطوری تاریخ و زمان رو بر اساس زبان جاری سیستم کاربر نمایش بدیم؟](#چطوری-تاریخ-و-زمان-رو-بر-اساس-زبان-جاری-سیستم-کاربر-نمایش-بدیم) |
-|234| [Iterator چیه؟](#Iterator-چیه) |
-|235| [حلفه‌های synchronous(همزمان) چطوری کار می‌کنن؟](#حلفههای-synchronousهمزمان-چطوری-کار-میکنن) |
-|236| [Event-loop چیه؟](#Event-loop-چیه) |
-|237| [Call-stack چیه؟](#Call-stack-چیه) |
-|238| [Event-queue چیه؟](#Event-queue-چیه) |
-|239| [Decorator چیه؟](#Decorator-چیه) |
-|240| [مقادیر موجود روی آبجکت Intl کدوما هستن؟](#مقادیر-موجود-روی-آبجکت-Intl-کدوما-هستن) |
-|241| [عملگر Unary چیه؟](#عملگر-Unary-چیه) |
-|242| [چطوری المنت‌های موجود تو یه آرایه رو مرتب می‌کنی؟](#چطوری-المنتهای-موجود-تو-یه-آرایه-رو-مرتب-می‌کنی) |
-|243| [هدف از تابع مرتب‌سازی موقع استفاده از متد sort چیه؟](#هدف-از-تابع-مرتبسازی-موقع-استفاده-از-متد-sort-چیه) |
-|244| [چطوری آیتم‌های یه آرایه رو معکوس مرتب کنیم؟](#چطوری-آیتمهای-یه-آرایه-رو-معکوس-مرتب-کنیم) |
-|245| [چطوری حداقل و حداکثر مقدار یه آرایه رو بدست بیاریم؟](#چطوری-حداقل-و-حداکثر-مقدار-یه-آرایه-رو-بدست-بیاریم) |
-|246| [چطوری حداقل و حداکثر مقدار یه آرایه رو بدون استفاده از متدهای Math بدست بیاریم؟](#چطوری-حداقل-و-حداکثر-مقدار-یه-آرایه-رو-بدون-استفاده-از-متدهای-Math-بدست-بیاریم) |
-|247| [عبارت خالی چیه و هدف از استفاده ازش چیه؟](#عبارت-خالی-چیه-و-هدف-از-استفاده-ازش-چیه) |
-|248| [چطوری metadata یه ماژول رو بدست میاری؟ meta data of a module](#چطوری-metadata-یه-ماژول-رو-بدست-میاری-meta-data-of-a-module) |
-|249| [عملگر comma چیه و چیکار می‌کنه؟](#عملگر-comma-چیه-و-چیکار-می‌کنه) |
-|250| [مزایای استفاده از عملگر comma چیه؟](#مزایای-استفاده-از-عملگر-comma-چیه) |
-|251| [Typescript چیه؟](#Typescript-چیه) |
-|252| [تفاوت‌های بین javascript و typescript کدوما هستن؟](#تفاوتهای-بین-javascript-و-typescript-کدوما-هستن) |
-|253| [مزایای typescript نسبت به javascript چیاست؟](#مزایای-typescript-نسبت-به-javascript-چیاست) |
-|254| [object-initializer چیه؟](#object-initializer-چیه) |
-|255| [متد constructor چیه؟](#متد-constructor-چیه) |
-|256| [اگه متد constructor رو بیش از یه بار توی کلاس بنویسیم چی می‌شه؟](#اگه-متد-constructor-رو-بیش-از-یه-بار-توی-کلاس-بنویسیم-چی-می‌شه) |
-|257| [چطوری متد constructor کلاس والد رو صدا بزنیم؟](#چطوری-متد-constructor-کلاس-والد-رو-صدا-بزنیم) |
-|258| [چطوری prototype یه object رو به دست میاری؟](#چطوری-prototype-یه-object-رو-به-دست-میاری) |
-|259| [اگه به متد getPrototype رشته پاس بدیم چی می‌شه؟](#اگه-به-متد-getPrototype-رشته-پاس-بدیم-چی-می‌شه) |
-|260| [چطوری prototype یه object روی یه object دیگه ست کنیم؟](#چطوری-prototype-یه-object-روی-یه-object-دیگه-ست-کنیم) |
-|261| [چطوری بررسی می‌کنی که یه object قابل extend هست یا نه؟](#چطوری-بررسی-می‌کنی-که-یه-object-قابل-extend-هست-یا-نه) |
-|262| [چطوری جلوی extend یه object رو بگیریم؟](#چطوری-جلوی-extend-یه-object-رو-بگیریم) |
-|263| [روش‌های مختلف برای تبدیل یه object به object غیرقابل extend چیه؟](#روشهای-مختلف-برای-تبدیل-یه-object-به-object-غیرقابل-extend-چیه) |
-|264| [چطوری propertyهای متعددی رو روی یه object تعریف می‌کنی؟](#چطوری-propertyهای-متعددی-رو-روی-یه-object-تعریف-می‌کنی) |
-|265| [منظور از MEAN توی جاواسکریپت چیه؟ javascript](#منظور-از-MEAN-توی-جاواسکریپت-چیه-javascript) |
-|266| [Obfuscation توی جاواسکریپت چیه و چیکار می‌کنه؟ javascript](#Obfuscation-توی-جاواسکریپت-چیه-و-چیکار-می‌کنه-javascript) |
-|267| [چه نیازی به Obfuscate کردن داریم؟](#چه-نیازی-به-Obfuscate-کردن-داریم) |
-|268| [Minification چیه؟](#Minification-چیه) |
-|269| [مزایای minification یا کم حجم‌سازی چیه؟](#مزایای-minification-یا-کم-حجمسازی-چیه) |
-|270| [تفاوت‌های بین Obfuscation و Encryption چیه؟](#تفاوتهای-بین-Obfuscation-و-Encryption-چیه) |
-|271| [ابزارهای مختلف برای minification کدوما هستن؟](#ابزارهای-مختلف-برای-minification-کدوما-هستن) |
-|272| [چطوری اعتبارسنجی فرم رو با javascript انجام میدی؟](#چطوری-اعتبارسنجی-فرم-رو-با-javascript-انجام-میدی) |
-|273| [چطوری اعتبارسنجی فرم رو بدون javascript انجام میدی؟](#چطوری-اعتبارسنجی-فرم-رو-بدون-javascript-انجام-میدی) |
-|274| [متدهای موجود روی DOM برای اعتبارسنجی کدوما هستن؟](#متدهای-موجود-روی-DOM-برای-اعتبارسنجی-کدوما-هستن) |
-|275| [مقادیر موجود روی DOM برای اعتبارسنجی کدوما هستن؟](#مقادیر-موجود-روی-DOM-برای-اعتبارسنجی-کدوما-هستن) |
-|276| [مقادیر موجود روی input برای اعتبارسنجی کدوما هستن؟](#مقادیر-موجود-روی-input-برای-اعتبارسنجی-کدوما-هستن) |
-|277| [یه مثال از استفاده ویژگی rangeOverflow می‌تونی بزنی؟](#یه-مثال-از-استفاده-ویژگی-rangeOverflow-میتونی-بزنی) |
-|278| [جاواسکریپت قابلیت استفاده از enum رو پیش‌فرض توی خودش داره؟](#جاواسکریپت-قابلیت-استفاده-از-enum-رو-پیشفرض-توی-خودش-داره) |
-|279| [enum چیه؟](#enum-چیه) |
-|280| [چطوری همه propertyهای یه object رو به دست بیاریم؟](#چطوری-همه-propertyهای-یه-object-رو-به-دست-بیاریم) |
-|281| [چطوری get property descriptors of an object](#چطوری-get-property-descriptors-of-an-object) |
-|282| [گزینه‌هایی که موقع تعریف ویژگی object با descriptor داریم کدوما هستن؟](#گزینههایی-که-موقع-تعریف-ویژگی-object-با-descriptor-داریم-کدوما-هستن) |
-|283| [چطوری کلاس‌ها رو extend می‌کنی؟](#چطوری-کلاسها-رو-extend-می‌کنی) |
-|284| [چطوری آدرس صفحه رو بدون رفرش صفحه عوض کنیم؟](#چطوری-آدرس-صفحه-رو-بدون-رفرش-صفحه-عوض-کنیم) |
-|285| [چطوری بررسی می‌کنی که یه آرایه یه مقدار مشخص رو داره یا نه؟](#چطوری-بررسی-می‌کنی-که-یه-آرایه-یه-مقدار-مشخص-رو-داره-یا-نه) |
-|286| [چطوری آرایه‌های scalar رو با هم مقایسه می‌کنی؟](#چطوری-آرایههای-scalar-رو-با-هم-مقایسه-می‌کنی) |
-|287| [چطوری می‌شه پارامترهای صفحه رو از متد GET گرفت؟](#چطوری-می‌شه-پارامترهای-صفحه-رو-از-متد-GET-گرفت) |
-|288| [چطوری اعداد رو می‌شه سه رقم سه رقم جدا کرد؟](#چطوری-اعداد-رو-می‌شه-سه-رقم-سه-رقم-جدا-کرد) |
-|289| [تفاوت‌ بین java و javascript چیه؟](#تفاوت-بین-java-و-javascript-چیه) |
-|290| [آیا جاواسکریپت namespace رو پشتیبانی می‌کنه؟](#آیا-جاواسکریپت-namespace-رو-پشتیبانی-می‌کنه) |
-|291| [چطوری namespace تعریف می‌کنی؟](#چطوری-namespace-تعریف-می‌کنی) |
-|292| [چطوری می‌تونیم تکه کد جاواسکریپت داخل یه iframe رو از صفحه والد صدا بزنیم؟](#چطوری-می‌تونیم-تکه-کد-جاواسکریپت-داخل-یه-iframe-رو-از-صفحه-والد-صدا-بزنیم) |
-|293| [چطوری می‌شه اختلاف timezone رو از آبجکت date بگیریم؟](#چطوری-می‌شه-اختلاف-timezone-رو-از-آبجکت-date-بگیریم) |
-|294| [چطوری فایل‌های CSS و JS رو به شکل داینامیک بارگذاری کنیم؟](#چطوری-فایلهای-CSS-و-JS-رو-به-شکل-داینامیک-بارگذاری-کنیم) |
-|295| [روش‌های مختلف برای پیدا کردن elementها توی DOM کدوما هستن؟](#روشهای-مختلف-برای-پیدا-کردن-elementها-توی-DOM-کدوما-هستن) |
-|296| [jQuery چیه؟](#jQuery-چیه) |
-|297| [موتور V8 جاواسکریپت چیه؟](#موتور-V8-جاواسکریپت-چیه) |
-|298| [چرا ما جاواسکریپت رو به عنوان یه زبان داینامیک می‌شناسیم؟](#چرا-ما-جاواسکریپت-رو-به-عنوان-یه-زبان-داینامیک-میشناسیم) |
-|299| [عملگر void چیکار می‌کنه؟](#عملگر-void-چیکار-می‌کنه) |
-|300| [چطوری می‌شه نمایشگر موس صفحه رو به درحال لود تغییر داد؟](#چطوری-می‌شه-نمایشگر-موس-صفحه-رو-به-درحال-لود-تغییر-داد) |
-|301| [چطوری می‌شه یه حلقه بی‌نهایت درست کرد؟](#چطوری-می‌شه-یه-حلقه-بینهایت-درست-کرد) |
-|302| [چرا باید در استفاده از عبارت with تجدیدنظر کرد؟](#چرا-باید-در-استفاده-از-عبارت-with-تجدیدنظر-کرد) |
-|303| [خروجی این حلقه‌ها چی می‌شه؟](#خروجی-این-حلقهها-چی-می‌شه) |
-|304| [می‌تونی یه سری از ویژگی‌های ES6 رو اسم ببری؟](#میتونی-یه-سری-از-ویژگیهای-ES6-رو-اسم-ببری) |
-|305| [ES6 چیه؟](#ES6-چیه) |
-|306| [آیا می‌تونیم متغیرهای تعریف شده با let و const رو مجددا declare کنیم؟](#آیا-می‌تونیم-متغیرهای-تعریف-شده-با-let-و-const-رو-مجددا-declare-کنیم) |
-|307| [آیا استفاده از const برای تعریف متغیر اونا رو immutable می‌کنه؟](#آیا-استفاده-از-const-برای-تعریف-متغیر-اونا-رو-immutable-می‌کنه) |
-|308| [parameterهای پیش‌فرض چی هستن؟](#parameterهای-پیشفرض-چی-هستن) |
-|309| [template-literalها چی هستن؟](#template-literalها-چی-هستن) |
-|310| [چطوری رشته‌های چند خطی رو توی template-literalها می‌نویسیم؟](#چطوری-رشتههای-چند-خطی-رو-توی-template-literalها-مینویسیم) |
-|311| [template-literal‌های تودرتو چی هستن؟](#template-literalهای-تودرتو-چی-هستن) |
-|312| [tagged-templateها چی هستن؟](#tagged-templateها-چی-هستن) |
-|313| [رشته‌های خام چی هستن؟](#رشتههای-خام-چی-هستن) |
-|314| [assign کردن با destructuring چیه و چطوری انجام می‌شه؟](#assign-کردن-با-destructuring-چیه-و-چطوری-انجام-می‌شه) |
-|315| [موقع assign کردن با destructuring چطوری می‌شه مقدار اولیه تعریف کرد؟](#موقع-assign-کردن-با-destructuring-چطوری-می‌شه-مقدار-اولیه-تعریف-کرد) |
-|316| [چطوری می‌تونیم مقدار یه آرایه رو با استفاده از destructuring-assignment تعویض کنیم؟](#چطوری-می‌تونیم-مقدار-یه-آرایه-رو-با-استفاده-از-destructuring-assignment-تعویض-کنیم) |
-|317| [Enhanced-object-literalها چی هستن؟](#Enhanced-object-literalها-چی-هستن) |
-|318| [importهای داینامیک چی هستن؟](#importهای-داینامیک-چی-هستن) |
-|319| [کاربرد importهای داینامیک چیه؟](#کاربرد-importهای-داینامیک-چیه) |
-|320| [آرایه‌های نوع‌دار(typed-arrays) چیه؟](#آرایههای-نوعدارtyped-arrays-چیه) |
-|321| [مزایای لودر ماژول‌ها چیه؟](#مزایای-لودر-ماژولها-چیه) |
-|322| [collation چیه؟](#collation-چیه) |
-|323| [عبارت for...of چیه؟](#عبارت-forof-چیه) |
-|324| [خروجی عملگر spread روی آرایه زیر چیه؟](#خروجی-عملگر-spread-روی-آرایه-زیر-چیه) |
-|325| [آیا PostMessage امنه؟](#آیا-PostMessage-امنه) |
-|326| [مشکلات استفاده از postmessage با origin روی wildcard چیه؟](#مشکلات-استفاده-از-postmessage-با-origin-روی-wildcard-چیه) |
-|327| [چطوری از دریافت postMessageهای ناخواسته و ناامن از طرف هکرها جلوگیری کنیم؟](#چطوری-از-دریافت-postMessageهای-ناخواسته-و-ناامن-از-طرف-هکرها-جلوگیری-کنیم) |
-|328| [می‌تونیم کلا postMessageها رو غیرفعال کنیم؟](#می‌تونیم-کلا-postMessageها-رو-غیرفعال-کنیم) |
-|329| [آیا postMessageها به صورت synchronous و همزمان کار می‌کنن؟](#آیا-postMessageها-به-صورت-synchronous-و-همزمان-کار-میکنن) |
-|330| [پارادیم زبان جاواسکریپت چیه؟](#پارادیم-زبان-جاواسکریپت-چیه) |
-|331| [تفاوت‌های بین جاواسکریپت داخلی و خارجی چیه؟](#تفاوتهای-بین-جاواسکریپت-داخلی-و-خارجی-چیه) |
-|332| [آیا جاواسکریپت سریعتر از اسکریپت‌های سمت سرور است؟](#آیا-جاواسکریپت-سریعتر-از-اسکریپتهای-سمت-سرور-است) |
-|333| [چطوری وضعیت چک بودن یه checkbox رو بدست بیاریم؟](#چطوری-وضعیت-چک-بودن-یه-checkbox-رو-بدست-بیاریم) |
-|334| [هدف از عملگر double-tilde چیه؟](#هدف-از-عملگر-double-tilde-چیه) |
-|335| [چطوری یه کاراکتر رو به کد ASCII تبدیل کنیم؟](#چطوری-یه-کاراکتر-رو-به-کد-ASCII-تبدیل-کنیم) |
-|336| [ArrayBuffer چیه؟](#ArrayBuffer-چیه) |
-|337| [خروجی کد زیر چی خواهد بود؟](#خروجی-کد-زیر-چی-خواهد-بود) |
-|338| [هدف از Error-object چیه؟](#هدف-از-Error-object-چیه) |
-|339| [هدف از EvalError-object چیه؟](#هدف-از-EvalError-object-چیه) |
-|340| [خطاهایی که در حالت strict-mode رخ میدن ولی در غیر اون وجود ندارن کدوما هستن؟](#خطاهایی-که-در-حالت-strict-mode-رخ-میدن-ولی-در-غیر-اون-وجود-ندارن-کدوما-هستن) |
-|341| [آیا همه objectها دارای prototype هستن؟](#آیا-همه-objectها-دارای-prototype-هستن) |
-|342| [تفاوت‌های بین parameter و argument چیه؟](#تفاوتهای-بین-parameter-و-argument-چیه) |
-|343| [هدف از متد some روی آرایه‌ها چیه؟](#هدف-از-متد-some-روی-آرایهها-چیه) |
-|344| [چطوری دو یا تعداد بیشتری از آرایه‌ها رو با هم ترکیب کنیم؟](#چطوری-دو-یا-تعداد-بیشتری-از-آرایهها-رو-با-هم-ترکیب-کنیم) |
-|345| [تفاوت‌های بین Shallow و Deep کپی چیه؟](#تفاوتهای-بین-Shallow-و-Deep-کپی-چیه) |
-|346| [چطوری می‌تونیم به یه تعداد مشخص از یه رشته کپی کنیم؟](#چطوری-می‌تونیم-به-یه-تعداد-مشخص-از-یه-رشته-کپی-کنیم) |
-|347| [چطوری همه stringهای match شده با یه regular-expression رو برگردونیم؟](#چطوری-همه-stringهای-match-شده-با-یه-regular-expression-رو-برگردونیم) |
-|348| [چطوری یه رشته رو از اول یا از آخر trim کنیم؟](#چطوری-یه-رشته-رو-از-اول-یا-از-آخر-trim-کنیم) |
-|349| [خروجی کنسول زیر با عملگر unary چی می‌شه؟](#خروجی-کنسول-زیر-با-عملگر-unary-چی-می‌شه) |
-|350| [آیا جاواسکریپت از mixinها استفاده می‌کنه؟](#آیا-جاواسکریپت-از-mixinها-استفاده-می‌کنه) |
-|351| [تابع thunk چیه و چیکار می‌کنه؟](#تابع-thunk-چیه-و-چیکار-می‌کنه) |
-|352| [thunkهای asynchronous چیکار می‌کنن؟](#thunkهای-asynchronous-چیکار-میکنن) |
-|353| [خروجی فراخوانی‌های توابع زیر چی می‌شه؟](#خروجی-فراخوانیهای-توابع-زیر-چی-می‌شه) |
-|354| [چطوری همه خطوط جدید رو از یه رشته حذف کرد؟](#چطوری-همه-خطوط-جدید-رو-از-یه-رشته-حذف-کرد) |
-|355| [تفاوت‌ بین reflow و repaint چیه؟](#تفاوت-بین-reflow-و-repaint-چیه) |
-|356| [اگه قبل از یه آرایه عملگر نفی «!» بزاریم چی می‌شه؟](#اگه-قبل-از-یه-آرایه-عملگر-نفی-«!»-بزاریم-چی-می‌شه) |
-|357| [اگه دو تا آرایه رو با هم جمع ببندیم چی می‌شه؟](#اگه-دو-تا-آرایه-رو-با-هم-جمع-ببندیم-چی-می‌شه) |
-|358| [اگه عملگر جمع «+» روی قبل از مقادیر falsy قرار بدیم چی می‌شه؟](#اگه-عملگر-جمع-«+»-روی-قبل-از-مقادیر-falsy-قرار-بدیم-چی-می‌شه) |
-|359| [چطوری با استفاده از آرایه‌ها و عملگرهای منطقی می‌تونیم رشته self رو تولید کنیم؟](#چطوری-با-استفاده-از-آرایهها-و-عملگرهای-منطقی-می‌تونیم-رشته-self-رو-تولید-کنیم) |
-|360| [چطوری می‌تونیم مقادیر falsy رو از آرایه حذف کنیم؟](#چطوری-می‌تونیم-مقادیر-falsy-رو-از-آرایه-حذف-کنیم) |
-|361| [چطوری مقادیر تکراری رو از یه آرایه حذف کنیم؟](#چطوری-مقادیر-تکراری-رو-از-یه-آرایه-حذف-کنیم) |
-|362| [aliaseهای همزمان با destructuring چطوری کار می‌کنن؟](#aliaseهای-همزمان-با-destructuring-چطوری-کار-میکنن) |
-|363| [چطوری آیتم‌های یه آرایه رو بدون استفاده از متد map پیمایش کنیم؟](#چطوری-آیتمهای-یه-آرایه-رو-بدون-استفاده-از-متد-map-پیمایش-کنیم) |
-|364| [چطوری یه آرایه رو خالی کنیم؟](#چطوری-یه-آرایه-رو-خالی-کنیم) |
-|365| [چطوری اعداد رو با تعداد رقم اعشار مشخص رند می‌کنی؟](#چطوری-اعداد-رو-با-تعداد-رقم-اعشار-مشخص-رند-می‌کنی) |
-|366| [ساده‌ترین روش برای تبدیل آرایه به object چیه؟](#سادهترین-روش-برای-تبدیل-آرایه-به-object-چیه) |
-|367| [چطوری یه آرایه با یه سری داده درست کنیم؟](#چطوری-یه-آرایه-با-یه-سری-داده-درست-کنیم) |
-|368| [متغیرهای موجود روی آبجکت console کدوما هستن؟](#متغیرهای-موجود-روی-آبجکت-console-کدوما-هستن) |
-|369| [می‌شه پیام‌های کنسول رو استایل‌دهی کرد؟](#می‌شه-پیامهای-کنسول-رو-استایلدهی-کرد) |
-|370| [هدف از متد dir روی آبجکت console چیه؟](#هدف-از-متد-dir-روی-آبجکت-console-چیه) |
-|371| [آیا می‌شه المنت‌های HTML رو توی console دیباگ کرد؟](#آیا-می‌شه-المنتهای-HTML-رو-توی-console-دیباگ-کرد) |
-|372| [چطوری می‌شه داده‌ها رو به شکل جدولی توی console نمایش بدیم؟](#چطوری-می‌شه-دادهها-رو-به-شکل-جدولی-توی-console-نمایش-بدیم) |
-|373| [چطوری می‌شه بررسی کرد که یه پارامتر Number هست یا نه؟](#چطوری-می‌شه-بررسی-کرد-که-یه-پارامتر-Number-هست-یا-نه) |
-|374| [چطوری یه متن رو می‌تونیم به clipboard کپی کنیم؟](#چطوری-یه-متن-رو-می‌تونیم-به-clipboard-کپی-کنیم) |
-|375| [چطوری می‌شه timestamp رو بدست آورد؟](#چطوری-می‌شه-timestamp-رو-بدست-آورد) |
-|376| [چطوری یه آرایه چندسطحی رو تک سطحی کنیم؟](#چطوری-یه-آرایه-چندسطحی-رو-تک-سطحی-کنیم) |
-|377| [ساده‌ترین روش برای بررسی چندشرطی چیه؟](#سادهترین-روش-برای-بررسی-چندشرطی-چیه) |
-|378| [چطوری کلیک روی دکمه برگشت مرورگر رو متوجه بشیم؟](#چطوری-کلیک-روی-دکمه-برگشت-مرورگر-رو-متوجه-بشیم) |
-|379| [چطوری می‌تونیم کلیک راست رو غیرفعال کنیم؟](#چطوری-می‌تونیم-کلیک-راست-رو-غیرفعال-کنیم) |
-|380| [object-wrapperها چی هستن؟](#object-wrapperها-چی-هستن) |
-|381| [AJAX چیه؟](#AJAX-چیه) |
-|382| [روش‌های مختلف مدیریت یه کد Asynchronous چیه؟](#روشهای-مختلف-مدیریت-یه-کد-Asynchronous-چیه) |
-|383| [چطوری یه درخواست fetch رو کنسل کنیم؟](#چطوری-یه-درخواست-fetch-رو-کنسل-کنیم) |
-|384| [Speech-API چیه؟](#Speech-API-چیه) |
-|385| [حداقل timeout توی throttling چقدره؟](#حداقل-timeout-توی-throttling-چقدره) |
-|386| [چطوری می‌شه یه timeout صفر توی مرورگر اجرا کرد؟](#چطوری-می‌شه-یه-timeout-صفر-توی-مرورگر-اجرا-کرد) |
-|387| [taskها توی event-loop چی هستن؟](#taskها-توی-event-loop-چی-هستن) |
-|388| [microtaskها چی هستن؟](#microtaskها-چی-هستن) |
-|389| [event-loopهای مختلف کدوما هستن؟](#event-loopهای-مختلف-کدوما-هستن) |
-|390| [هدف از queueMicrotask چیه؟](#هدف-از-queueMicrotask-چیه) |
-|391| [چطوری می‌شه از کتابخونه‌های جاواسکریپت توی فایل typescript استفاده کرد؟](#چطوری-می‌شه-از-کتابخونههای-جاواسکریپت-توی-فایل-typescript-استفاده-کرد) |
-|392| [تفاوت‌های بین promiseها و observableها کدوما هستن؟](#تفاوتهای-بین-promiseها-و-observableها-کدوما-هستن) |
-|393| [heap چیه؟](#heap-چیه) |
-|394| [event-table چیه؟](#event-table-چیه) |
-|395| [صف microTask چیه؟](#صف-microTask-چیه) |
-|396| [تفاوت بین shim و polyfill چیه؟](#تفاوت-بین-shim-و-polyfill-چیه) |
-|397| [چطوری متوجه primitive یا غیر primitive بودن یه نوع داده میشیم؟](#چطوری-متوجه-primitive-یا-غیر-primitive-بودن-یه-نوع-داده-میشیم) |
-|398| [babel چیه؟](#babel-چیه) |
-|399| [آیا Node.js به شکل کامل تک thread کار می‌کنه؟](#آیا-Nodejs-به-شکل-کامل-تک-thread-کار-می‌کنه) |
-|400| [کاربردهای مرسوم observableها کدوما هستن؟](#کاربردهای-مرسوم-observableها-کدوما-هستن) |
-|401| [RxJS چیه؟](#RxJS-چیه) |
-|402| [تفاوت بین Function-constructor و function-declaration چیه؟](#تفاوت-بین-Function-constructor-و-function-declaration-چیه) |
-|403| [شرط Short-circuit یا اتصال کوتاه چیه؟](#شرط-Short-circuit-یا-اتصال-کوتاه-چیه) |
-|404| [ساده‌ترین روش برای تغییر سایز یه آرایه چیه؟](#سادهترین-روش-برای-تغییر-سایز-یه-آرایه-چیه) |
-|405| [observable چیه؟](#observable-چیه) |
-|406| [تفاوت‌های بین توابع و کلاس‌ها چیه؟](#تفاوتهای-بین-توابع-و-کلاسها-چیه) |
-|407| [تابع async چیه؟](#تابع-async-چیه) |
-|408| [چطوری خطاهای ایجاد شده هنگام استفاده از promiseها رو کنترل کنیم؟](#چطوری-خطاهای-ایجاد-شده-هنگام-استفاده-از-promiseها-رو-کنترل-کنیم) |
-|409| [Deno چیه؟](#Deno-چیه) |
-|410| [توی جاواسکریپت چطوری یه object قابل پیمایش درست کنیم؟](#توی-جاواسکریپت-چطوری-یه-object-قابل-پیمایش-درست-کنیم) |
-|411| [روش مناسب برای فراخوانی توابع بازگشتی چیه؟](#روش-مناسب-برای-فراخوانی-توابع-بازگشتی-چیه) |
-|412| [چطوری بررسی کنیم که یه آبجکت promise هست یا نه؟](#چطوری-بررسی-کنیم-که-یه-آبجکت-promise-هست-یا-نه) |
-|413| [چطوری متوجه بشیم که یا تابع با تابع constructor صدا زده شده یا نه؟](#چطوری-متوجه-بشیم-که-یا-تابع-با-تابع-constructor-صدا-زده-شده-یا-نه) |
-|414| [تفاوت‌های بین آبجکت argument و پارامتر rest چیه؟](#تفاوتهای-بین-آبجکت-argument-و-پارامتر-rest-چیه) |
-|415| [تفاوت‌های بین عملگر spread و پارامتر rest چیه؟](#تفاوتهای-بین-عملگر-spread-و-پارامتر-rest-چیه) |
-|416| [نوع‌های مختلف generatorها کدوما هستن؟](#نوعهای-مختلف-generatorها-کدوما-هستن) |
-|417| [iterableهای built-in کدوما هستن؟](#iterableهای-built-in-کدوما-هستن) |
-|418| [تفاوت‌های بین حلقه for...of و for...in چیه؟](#تفاوتهای-بین-حلقه-forof-و-forin-چیه) |
-|419| [چطوری propertyهای instance و غیر instanceای تعریف می‌کنی؟](#چطوری-propertyهای-instance-و-غیر-instanceای-تعریف-می‌کنی) |
-|420| [تفاوت‌های بین isNaN و Number.isNaN کدوما هستن؟](#تفاوتهای-بین-isNaN-و-NumberisNaN-کدوما-هستن) |
+| ردیف | سوال | صفحه |
+| ---- | --------- | ------- |
+|1  | [روش‌های ایجاد objects توی جاواسکریپت چیا هستن؟](#روشهای-ایجاد-objects-توی-جاواسکریپت-چیا-هستن) |  |
+|2  | [زنجیره prototype چیه؟](#زنجیره-prototype-چیه) |  |
+|3  | [تفاوت‌های بین Call، Apply و Bind چیا هستن؟](#تفاوتهای-بین-Call،-Apply-و-Bind-چیا-هستن) |  |
+|4  | [فرمت JSON چیه و عملیات‌های معمول بر روی آن چیا هستن؟](#فرمت-JSON-چیه-و-عملیاتهای-معمول-بر-روی-آن-چیا-هستن) |  |
+|5  | [هدف از متد slice روی آرایه‌ها چیه؟](#هدف-از-متد-slice-روی-آرایهها-چیه) |  |
+|6  | [هدف از متد splice روی آرایه‌ها چیه؟](#هدف-از-متد-splice-روی-آرایهها-چیه) |  |
+|7  | [تفاوت متدهای slice و splice چیا هستن؟](#تفاوت-متدهای-slice-و-splice-چیا-هستن) |  |
+|8  | [تفاوت‌های Object و Map چیا هستن؟](#تفاوتهای-Object-و-Map-چیا-هستن) |  |
+|9  | [تفاوت‌های بین عملگرهای == و === چیا هستن؟](#تفاوتهای-بین-عملگرهای-و-چیا-هستن) |  |
+|10 | [توابع lambda یا arrow-function چی هستن؟](#توابع-lambda-یا-arrow-function-چی-هستن) |  |
+|11 | [یه تابع first-class چجور تابعی‌ـه؟](#یه-تابع-first-class-چجور-تابعیـه) |  |
+|12 | [یه تابع first-order چجور تابعی‌ـه؟](#یه-تابع-first-order-چجور-تابعیـه) |  |
+|13 | [یه تابع higher-order چجور تابعی‌ـه؟](#یه-تابع-higher-order-چجور-تابعیـه) |  |
+|14 | [یه تابع unary چجور تابعی‌ـه؟](#یه-تابع-unary-چجور-تابعیـه) |  |
+|15 | [currying توابع یعنی چی؟](#currying-توابع-یعنی-چی) |  |
+|16 | [چه توابعی pure هستن؟](#چه-توابعی-pure-هستن) |  |
+|17 | [هدف از کلمه کلیدی let چیه؟](#هدف-از-کلمه-کلیدی-let-چیه) |  |
+|18 | [تفاوت‌های کلمات کلیدی let و var چیا هستن؟](#تفاوتهای-کلمات-کلیدی-let-و-var-چیا-هستن) |  |
+|19 | [دلیل انتخاب کلمه کلیدی let چیه؟](#دلیل-انتخاب-کلمه-کلیدی-let-چیه) |  |
+|20 | [چطوری می‌تونیم توی بلوک مربوط به switch بدون دریافت خطا متغیر تعریف کنیم؟](#چطوری-می‌تونیم-توی-بلوک-مربوط-به-switch-بدون-دریافت-خطا-متغیر-تعریف-کنیم) | |
+|21 | [Temporal-Dead-Zone چیه؟](#Temporal-Dead-Zone-چیه  ) |  |
+|22 | [IIFE(توابع بلافاصله صدا زده شده) چی هستن؟](#IIFEتوابع-بلافاصله-صدا-زده-شده-چی-هستن) |  |
+|23 | [مزایای استفاده از moduleها چیه؟](#مزایای-استفاده-از-moduleها-چیه) |  |
+|24 | [Memoization چیه؟](#Memoization-چیه) |  |
+|25 | [Hoisting چیه؟](#Hoisting-چیه) |  |
+|26 | [Classها توی ES6 چی هستن؟](#Classها-توی-ES6-چی-هستن) |  |
+|27 | [Closureها چیا هستن؟](#Closureها-چیا-هستن) |  |
+|28 | [Moduleها چیا هستن؟](#Moduleها-چیا-هستن) |  |
+|29 | [چرا به moduleها نیاز داریم؟](#چرا-به-moduleها-نیاز-داریم) |  |
+|30 | [توی جاواسکریپت scope چیه و چیکار می‌کنه؟](#توی-جاواسکریپت-scope-چیه-و-چیکار-می‌کنه) |  |
+|31 | [service-worker چیه؟](#service-worker-چیه) |  |
+|32 | [توی service-worker چطوری می‌شه DOM رو دستکاری کرد؟](#توی-service-worker-چطوری-می‌شه-DOM-رو-دستکاری-کرد) |  |
+|33 | [چطوری می‌تونیم بین ریست شدن‌های service-worker داده‌های مورد نظرمون رو مجدد استفاده کنیم؟](#چطوری-می‌تونیم-بین-ریست-شدنهای-service-worker-دادههای-مورد-نظرمون-رو-مجدد-استفاده-کنیم) | |
+|34 | [IndexedDB چیه؟](#IndexedDB-چیه) |  |
+|35 | [Web-storage چیه؟](#Web-storage-چیه) |  |
+|36 | [Post-message چیه؟](#Post-message-چیه) |  |
+|37 | [Cookie چیه؟](#Cookie-چیه) |  |
+|38 | [چرا به cookie نیاز داریم؟](#چرا-به-cookie-نیاز-داریم) |  |
+|39 | [گزینه‌های قابل تنظیم توی cookie چیا هستن؟](#گزینههای-قابل-تنظیم-توی-cookie-چیا-هستن) |  |
+|40 | [چطوری می‌شه یه cookie رو حذف کرد؟](#چطوری-می‌شه-یه-cookie-رو-حذف-کرد) |  |
+|41 | [تفاوت‌های بین cookie، local-storage و session-storage چیا هستن؟](#تفاوتهای-بین-cookie،-local-storage-و-session-storage-چیا-هستن) |  |
+|42 | [تفاوت‌های بین localStorage و sessionStorage چیا هستن؟](#تفاوتهای-بین-localStorage-و-sessionStorage-چیا-هستن) |  |
+|43 | [چطوری به web-storage دسترسی پیدا می‌کنی؟](#چطوری-به-web-storage-دسترسی-پیدا-می‌کنی) |  |
+|44 | [چه متد‌هایی روی session-storage قابل استفاده هستن؟](#چه-متدهایی-روی-session-storage-قابل-استفاده-هستن) |  |
+|45 | [رخداد storage چیه و چطوری ازش استفاده می‌کنیم؟](#رخداد-storage-چیه-و-چطوری-ازش-استفاده-می‌کنیم) |  |
+|46 | [چرا به web-storage نیاز داریم؟](#چرا-به-web-storage-نیاز-داریم) |  |
+|47 | [چطوری می‌تونیم پشتیبانی از web-storage توسط مرورگر رو بررسی کنیم؟](#چطوری-می‌تونیم-پشتیبانی-از-web-storage-توسط-مرورگر-رو-بررسی-کنیم) | |
+|48 | [چطوری می‌تونیم پشتیبانی از web-worker توسط مرورگر رو بررسی کنیم؟](#چطوری-می‌تونیم-پشتیبانی-از-web-worker-توسط-مرورگر-رو-بررسی-کنیم) | |
+|49 | [یه مثال از web-workerها می‌تونی بزنی؟](#یه-مثال-از-web-workerها-میتونی-بزنی) |  |
+|50 | [محدودیت‌های web-workerها روی DOM چیا هستن؟](#محدودیتهای-web-workerها-روی-DOM-چیا-هستن) |  |
+|51 | [Promise چیه؟](#Promise-چیه  ) |  |
+|52 | [چرا به promise نیاز داریم؟](#چرا-به-promise-نیاز-داریم) |  |
+|53 | [سه تا وضعیت ممکن برای یه promise چیا هستن؟](#سه-تا-وضعیت-ممکن-برای-یه-promise-چیا-هستن) |  |
+|54 | [توابع callback چی هستن؟](#توابع-callback-چی-هستن) |  |
+|55 | [چرا به توابع callback نیاز داریم؟](#چرا-به-توابع-callback-نیاز-داریم) |  |
+|56 | [Callback-hell یا جهنم توابع callback چیه؟](#Callback-hell-یا-جهنم-توابع-callback-چیه  ) |  |
+|57 | [Server-sent-events(SSE) چیه؟](#Server-sent-eventsSSE-چیه  ) |  |
+|58 | [چطوری می‌تونیم اعلان‌های server-sent-event رو دریافت کنیم؟](#چطوری-می‌تونیم-اعلانهای-server-sent-event-رو-دریافت-کنیم) |  |
+|59 | [چطوری می‌تونیم پشتیبانی مرورگر برای SSE رو بررسی کنیم؟](#چطوری-می‌تونیم-پشتیبانی-مرورگر-برای-SSE-رو-بررسی-کنیم) |  |
+|60 | [کدوم توابع روی SSE وجود دارن؟](#کدوم-توابع-روی-SSE-وجود-دارن) |  |
+|61 | [اصلی‌ترین قوانین promiseها چیا هستن؟](#اصلیترین-قوانین-promiseها-چیا-هستن) |  |
+|62 | [Callback توی callback چطوری رخ میده؟](#Callback-توی-callback-چطوری-رخ-میده            ) |  |
+|63 | [زنجیره promiseها چیه؟](#زنجیره-promiseها-چیه) |  |
+|64 | [کاربرد متد promise.all چیه؟](#کاربرد-متد-promise.all-چیه) |  |
+|65 | [هدف از متد race روی promise چیه؟](#هدف-از-متد-race-روی-promise-چیه) |  |
+|66 | [حالت strict توی جاواسکریپت چی کار می‌کنه؟](#حالت-strict-توی-جاواسکریپت-چی-کار-می‌کنه) |  |
+|67 | [چرا به حالت strict نیاز داریم؟](#چرا-به-حالت-strict-نیاز-داریم) |  |
+|68 | [چطوری می‌تونیم حالت strict رو فعال کنیم؟](#چطوری-می‌تونیم-حالت-strict-رو-فعال-کنیم) |  |
+|69 | [هدف از عملگر نقیض دوتایی(!!) چیه؟](#هدف-از-عملگر-نقیض-دوتایی!!-چیه) |  |
+|70 | [هدف از عملگر delete چیه؟](#هدف-از-عملگر-delete-چیه) |  |
+|71 | [عملگر typeof چیکار می‌کنه؟](#عملگر-typeof-چیکار-می‌کنه) |  |
+|72 | [undefined چیه و چه زمانی undefined می‌گیریم؟](#undefined-چیه-و-چه-زمانی-undefined-می‌گیریم      ) |  |
+|73 | [null چیه؟](#null-چیه  ) |  |
+|74 | [تفاوت‌های بین null و undefined چیا هستن؟](#تفاوتهای-بین-null-و-undefined-چیا-هستن) |  |
+|75 | [eval چیه؟](#eval-چیه  ) |  |
+|76 | [تفاوت‌های بین window و document چیا هستن؟](#تفاوتهای-بین-window-و-document-چیا-هستن) |  |
+|77 | [توی جاواسکریپت چطوری می‌تونیم به history دسترسی داشته باشیم؟](#توی-جاواسکریپت-چطوری-می‌تونیم-به-history-دسترسی-داشته-باشیم) |  |
+|78 | [انواع داده‌های جاواسکریپت کدوما هستن؟](#انواع-دادههای-جاواسکریپت-کدوما-هستن) |  |
+|79 | [isNaN چیه و چیکار می‌کنه؟](#isNaN-چیه-و-چیکار-می‌کنه                ) |  |
+|80 | [تفاوت‌های بین undeclared و undefined چیا هستن؟](#تفاوتهای-بین-undeclared-و-undefined-چیا-هستن) |  |
+|81 | [کدوم متغیرها عمومی هستن؟](#کدوم-متغیرها-عمومی-هستن) |  |
+|82 | [مشکلات متغیرهای عمومی چیا هستن؟](#مشکلات-متغیرهای-عمومی-چیا-هستن) |  |
+|83 | [مقدار NaN چیه؟](#مقدار-NaN-چیه) |  |
+|84 | [هدف از تابع isFinite چیه؟](#هدف-از-تابع-isFinite-چیه) |  |
+|85 | [یه event-flow چیه؟](#یه-event-flow-چیه) |  |
+|86 | [Event-bubbling چیه؟](#Event-bubbling-چیه  ) |  |
+|87 | [Event-capturing چیه؟](#Event-capturing-چیه  ) |  |
+|88 | [چطوری می‌شه یه فرم رو با استفاده از جاواسکریپت ثبت کرد؟](#چطوری-می‌شه-یه-فرم-رو-با-استفاده-از-جاواسکریپت-ثبت-کرد) |  |
+|89 | [چطوری می‌شه به اطلاعات مربوط به سیستم عامل کاربر دسترسی داشت؟](#چطوری-می‌شه-به-اطلاعات-مربوط-به-سیستم-عامل-کاربر-دسترسی-داشت) | |
+|90 | [تفاوت‌های بین رخدادهای document-load و DOMContentLoaded چیا هستن؟](#تفاوتهای-بین-رخدادهای-document-load-و-DOMContentLoaded-چیا-هستن) | |
+|91 | [تفاوت‌های بین objectهای native، host و user چیا هستن؟](#تفاوتهای-بین-objectهای-native،-host-و-user-چیا-هستن) |  |
+|92 | [کدوم ابزار و تکنیک‌ها برای دیباگ کردن برنامه جاواسکریپتی استفاده میشن؟](#کدوم-ابزار-و-تکنیکها-برای-دیباگ-کردن-برنامه-جاواسکریپتی-استفاده-میشن) | |
+|93 | [مزایا و معایب استفاده از promiseها به جای callback چیا هستن؟](#مزایا-و-معایب-استفاده-از-promiseها-به-جای-callback-چیا-هستن) |  |
+|94 | [تفاوت‌های بین attribute و property روی DOM چیا هستن؟](#تفاوتهای-بین-attribute-و-property-روی-DOM-چیا-هستن) |  |
+|95 | [سیاست same-origin چیه؟](#سیاست-same-origin-چیه) |  |
+|96 | [هدف استفاده از void 0 چیه؟](#هدف-استفاده-از-void-0-چیه) |  |
+|97 | [جاواسکریپت یه زبان تفسیری هست یا کامپایلری؟](#جاواسکریپت-یه-زبان-تفسیری-هست-یا-کامپایلری) |  |
+|98 | [آیا جاواسکریپت یه زبان حساس به بزرگی و کوچکی(case-sensitive) حروف است؟](#آیا-جاواسکریپت-یه-زبان-حساس-به-بزرگی-و-کوچکیcase-sensitive-حروف-است) | |
+|99 | [ارتباطی بین Java و JavaScript وجود داره؟](#ارتباطی-بین-Java-و-JavaScript-وجود-داره) |  |
+|100| [Eventها چی هستن؟](#Eventها-چی-هستن) |  |
+|101| [کی جاواسکریپت رو ساخته؟](#کی-جاواسکریپت-رو-ساخته) |  |
+|102| [هدف از متد preventDefault چیه؟](#هدف-از-متد-preventDefault-چیه) |  |
+|103| [کاربرد متد stopPropagation چیه؟](#کاربرد-متد-stopPropagation-چیه) |  |
+|104| [مراحلی که موقع استفاده از return false توی یه event-handler رخ میده چیا هستن؟](#مراحلی-که-موقع-استفاده-از-return-false-توی-یه-event-handler-رخ-میده-چیا-هستن) | |
+|105| [BOM چیه؟](#BOM-چیه) |  |
+|106| [موارد استفاده از setTimeout کدوما هستن؟](#موارد-استفاده-از-setTimeout-کدوما-هستن) |  |
+|107| [موارد استفاده از setInterval کدوما هستن؟](#موارد-استفاده-از-setInterval-کدوما-هستن) |  |
+|108| [چرا جاواسکریپت رو به عنوان یه زبان تک thread می‌شناسن؟](#چرا-جاواسکریپت-رو-به-عنوان-یه-زبان-تک-thread-میشناسن) |  |
+|109| [Event-delegation چیه؟](#Event-delegation-چیه) |  |
+|110| [ECMAScript چیه؟](#ECMAScript-چیه) |  |
+|111| [JSON چیه؟](#JSON-چیه) |  |
+|112| [قوانین فرمت JSON کدوما هستن؟](#قوانین-فرمت-JSON-کدوما-هستن) |  |
+|113| [هدف از متد JSON.stringify چیه؟](#هدف-از-متد-JSON.stringify-چیه) |  |
+|114| [چطوری می‌تونیم یه رشته(string) JSON رو تجزیه کنیم؟](#چطوری-می‌تونیم-یه-رشتهstring-JSON-رو-تجزیه-کنیم) |  |
+|115| [چرا به JSON نیاز داریم؟](#چرا-به-JSON-نیاز-داریم) |  |
+|116| [PWAها چی هستن؟](#PWAها-چی-هستن) |  |
+|117| [هدف از متد clearTimeout چیه؟](#هدف-از-متد-clearTimeout-چیه) |  |
+|118| [هدف از متد clearInterval چیه؟](#هدف-از-متد-clearInterval-چیه) |  |
+|119| [توی جاواسکریپت، چطوری می‌شه به یه صفحه جدید redirect انجام داد؟](#توی-جاواسکریپت،-چطوری-می‌شه-به-یه-صفحه-جدید-redirect-انجام-داد) | |
+|120| [چطوری بررسی می‌کنین که یه string شامل یه substring هست یا نه؟](#چطوری-بررسی-می‌کنین-که-یه-string-شامل-یه-substring-هست-یا-نه) | |
+|121| [توی جاواسکریپت، چطوری مقدار یه آدرس email رو اعتبارسنجی می‌کنین؟](#توی-جاواسکریپت،-چطوری-مقدار-یه-آدرس-email-رو-اعتبارسنجی-می‌کنین) | |
+|122| [چطوری می‌تونیم مقدار آدرس url جاری رو بخونیم؟](#چطوری-می‌تونیم-مقدار-آدرس-url-جاری-رو-بخونیم) |  |
+|123| [ویژگی‌های مختلف url روی object مربوط به history کدوما هستن؟](#ویژگیهای-مختلف-url-روی-object-مربوط-به-history-کدوما-هستن) |  |
+|124| [توی جاواسکریپت چطوری می‌تونیم مقدار یه query-string رو بخونیم؟](#توی-جاواسکریپت-چطوری-می‌تونیم-مقدار-یه-query-string-رو-بخونیم) | |
+|125| [چطوری می‌تونیم بررسی کنیم که آیا یه پراپرتی روی آبجکت وجود داره یا نه؟](#چطوری-می‌تونیم-بررسی-کنیم-که-آیا-یه-پراپرتی-روی-آبجکت-وجود-داره-یا-نه) |  |
+|126| [ری روی یه object حلقه میزنی؟](#چطوری-روی-یه-object-حلقه-میزنی) |  |
+|127| [چطوری تست می‌کنی که یه object خالیه؟](#چطوری-تست-می‌کنی-که-یه-object-خالیه) |  |
+|128| [arguments object چیه؟](#arguments-object-چیه) |  |
+|129| [چطوری حرف اول یه رشته رو به حرف بزرگ تبدیل می‌کنی؟](#چطوری-حرف-اول-یه-رشته-رو-به-حرف-بزرگ-تبدیل-می‌کنی) |  |
+|130| [مزایا و معایب حلقه for چیا هستن؟](#مزایا-و-معایب-حلقه-for-چیا-هستن) |  |
+|131| [چطوری تاریخ جاری رو توی جاواسکریپت نشون میدی؟](#چطوری-تاریخ-جاری-رو-توی-جاواسکریپت-نشون-میدی) |  |
+|132| [چطوری دو تا date object رو با هم مقایسه می‌کنی؟](#چطوری-دو-تا-date-object-رو-با-هم-مقایسه-می‌کنی) |  |
+|133| [چطوری بررسی می‌کنی که یه رشته با یه رشته دیگه شروع می‌شه؟](#چطوری-بررسی-می‌کنی-که-یه-رشته-با-یه-رشته-دیگه-شروع-می‌شه) |  |
+|134| [چطوری یه رشته رو trim می‌کنی؟](#چطوری-یه-رشته-رو-trim-می‌کنی) |  |
+|135| [توی جاواسکریپت چطوری می‌تونیم یه زوج مرتب از key یه valueها بسازیم؟](#توی-جاواسکریپت-چطوری-می‌تونیم-یه-زوج-مرتب-از-key-یه-valueها-بسازیم) |  |
+|136| [آیا عبارت '!--' عملگر خاصی هست؟](#آیا-عبارت-!---عملگر-خاصی-هست) |  |
+|137| [چطوری می‌تونیم به متغیرهامون مقادیر اولیه بدیم؟](#چطوری-می‌تونیم-به-متغیرهامون-مقادیر-اولیه-بدیم) |  |
+|138| [چطوری می‌تونیم متن‌های چند خطی درست کنیم؟](#چطوری-می‌تونیم-متنهای-چند-خطی-درست-کنیم) |  |
+|139| [مدل app-shell چیه؟](#مدل-app-shell-چیه) |  |
+|140| [چطوری می‌تونیم روی یه تابع property اضافه کنیم؟](#چطوری-می‌تونیم-روی-یه-تابع-property-اضافه-کنیم) |  |
+|141| [چطوری می‌تونیم تعداد پارامترهای ورودی یه تابع رو به دست بیاریم؟](#چطوری-می‌تونیم-تعداد-پارامترهای-ورودی-یه-تابع-رو-به-دست-بیاریم) |  |
+|142| [Polyfill چیه؟](#Polyfill-چیه) |  |
+|143| [عبارات Break و continue چی هستن؟](#عبارات-Break-و-continue-چی-هستن) |  |
+|144| [توی جاواسکریپت labelها چیکار می‌کنن؟](#توی-جاواسکریپت-labelها-چیکار-میکنن) |  |
+|145| [مزایای declare کردن متغیرها در اوایل کد چیه؟](#مزایای-declare-کردن-متغیرها-در-اوایل-کد-چیه) |  |
+|146| [مزایای مقداردهی اولیه متغیرها چیه؟](#مزایای-مقداردهی-اولیه-متغیرها-چیه) |  |
+|147| [روش توصیه شده برای ایجاد object چیه؟](#روش-توصیه-شده-برای-ایجاد-object-چیه) |  |
+|148| [چطوری می‌تونیم آرایه‌ JSON تعریف کنیم؟](#چطوری-می‌تونیم-آرایه-JSON-تعریف-کنیم) |  |
+|149| [چطوری می‌تونیم اعداد تصادفی تولید کنیم؟](#چطوری-می‌تونیم-اعداد-تصادفی-تولید-کنیم) |  |
+|150| [می‌تونی یه تابع تولید اعداد تصادفی توی یه بازه مشخص بنویسی؟](#میتونی-یه-تابع-تولید-اعداد-تصادفی-توی-یه-بازه-مشخص-بنویسی) |  |
+|151| [Tree-shaking چیه؟](#Tree-shaking-چیه) |  |
+|152| [دلایل نیاز به tree-shaking کدوما هستن؟](#دلایل-نیاز-به-tree-shaking-کدوما-هستن) |  |
+|153| [آیا استفاده از eval توصیه می‌شه؟](#آیا-استفاده-از-eval-توصیه-می‌شه) |  |
+|154| [Regular-Expression چیه؟](#Regular-Expression-چیه) |  |
+|155| [متدهای رشته که روی Regular-expression مجاز هستن کدوماست؟](#متدهای-رشته-که-روی-Regular-expression-مجاز-هستن-کدوماست) |  |
+|156| [توی Regex بخش modifiersها چیکار می‌کنه؟](#توی-Regex-بخش-modifiersها-چیکار-می‌کنه) |  |
+|157| [پترن‌های regular-expression چیه؟](#پترنهای-regular-expression-چیه) |  |
+|158| [آبجکت RegExp چیه؟](#آبجکت-RegExp-چیه) |  |
+|159| [چطوری روی یه رشته دنبال یه پترن RegExp می‌گردی؟](#چطوری-روی-یه-رشته-دنبال-یه-پترن-RegExp-میگردی) |  |
+|160| [هدف از متد exec چیه؟](#هدف-از-متد-exec-چیه) |  |
+|161| [چطوری استایل‌های یه المنت HTML رو تغییر میدی؟](#چطوری-استایلهای-یه-المنت-HTML-رو-تغییر-میدی) |  |
+|162| [نتیجه عبارت 1+2+'3' چی می‌شه؟](#نتیجه-عبارت-1+2+3-چی-می‌شه) |  |
+|163| [عبارت debugger چیکار می‌کنه؟](#عبارت-debugger-چیکار-می‌کنه) |  |
+|164| [هدف از breakpointها توی debugging چیه؟](#هدف-از-breakpointها-توی-debugging-چیه) |  |
+|165| [آیا می‌تونیم از عبارت‌های رزرو شده در تعریف identifierها(اسم متغیر، کلاس و ...) استفاده کنیم؟](#آیا-می‌تونیم-از-عبارتهای-رزرو-شده-در-تعریف-identifierهااسم-متغیر،-کلاس-و--استفاده-کنیم) |  |
+|166| [چطوری تشخیص بدیم که یه مرورگر mobile هست یا نه؟](#چطوری-تشخیص-بدیم-که-یه-مرورگر-mobile-هست-یا-نه) |  |
+|167| [چطوری بدون Regex تشخیص بدیم که یه مرورگر mobile هست یا نه؟](#چطوری-بدون-Regex-تشخیص-بدیم-که-یه-مرورگر-mobile-هست-یا-نه) |  |
+|168| [چطوری طول و عرض یه تصویر رو با جاواسکریپت به دست میاری؟](#چطوری-طول-و-عرض-یه-تصویر-رو-با-جاواسکریپت-به-دست-میاری) |  |
+|169| [چطوری درخواست‌های synchronous HTTP بزنیم؟](#چطوری-درخواستهای-synchronous-HTTP-بزنیم) |  |
+|170| [چطوری درخواست‌های asynchronous HTTP بزنیم؟](#چطوری-درخواستهای-asynchronous-HTTP-بزنیم) |  |
+|171| [چطوری یه تاریخ رو به یه تاریخ در timezone دیگه تبدیل کنیم؟](#چطوری-یه-تاریخ-رو-به-یه-تاریخ-در-timezone-دیگه-تبدیل-کنیم) |  |
+|172| [چه propertyهایی برای اندازه‌گیزی سایز window به کار میره؟](#چه-propertyهایی-برای-اندازهگیزی-سایز-window-به-کار-میره) |  |
+|173| [عملگر شرطی سه گانه توی جاواسکریپت چیه؟](#عملگر-شرطی-سه-گانه-توی-جاواسکریپت-چیه) |  |
+|174| [آیا می‌شه روی عملگر شرطی زنجیره شرط‌ها رو اعمال کرد؟](#آیا-می‌شه-روی-عملگر-شرطی-زنجیره-شرطها-رو-اعمال-کرد) |  |
+|175| [روش‌های اجرای جاواسکریپت بعد از لود شدن صفحه کدوما هستن؟](#روشهای-اجرای-جاواسکریپت-بعد-از-لود-شدن-صفحه-کدوما-هستن) |  |
+|176| [تفاوت‌های بین proto و prototype کدوما هستن؟](#تفاوتهای-بین-proto-و-prototype-کدوما-هستن) |  |
+|177| [میتونی یه مثال از زمانی که واقعا به سمیکولون( ; ) نیاز هست بزنی؟](#میتونی-یه-مثال-از-زمانی-که-واقعا-به-سمیکولون-نیاز-هست-بزنی) |  |
+|178| [متد freeze چیکار می‌کنه؟](#متد-freeze-چیکار-می‌کنه) |  |
+|179| [هدف از متد freeze چیه؟](#هدف-از-متد-freeze-چیه) |  |
+|180| [چرا به متد freeze نیاز داریم؟](#چرا-به-متد-freeze-نیاز-داریم) |  |
+|181| [چطوری می‌تونیم زبان ترجیحی یه مرورگر رو تشخیص بدیم؟](#چطوری-می‌تونیم-زبان-ترجیحی-یه-مرورگر-رو-تشخیص-بدیم) |  |
+|182| [چطوری می‌تونیم حرف اول همه کلمات یه رشته رو به حرف بزرگ تبدیل کنیم؟](#چطوری-می‌تونیم-حرف-اول-همه-کلمات-یه-رشته-رو-به-حرف-بزرگ-تبدیل-کنیم) |  |
+|183| [چطوری می‌شه تشخیص داد که جاواسکریپت یه صفحه وب غیرفعال شده؟](#چطوری-می‌شه-تشخیص-داد-که-جاواسکریپت-یه-صفحه-وب-غیرفعال-شده) |  |
+|184| [عملگرهای پشتیبانی شده توسط جاواسکریپت کدوما هستن؟](#عملگرهای-پشتیبانی-شده-توسط-جاواسکریپت-کدوما-هستن) |  |
+|185| [پارامتر rest چیکار می‌کنه؟](#پارامتر-rest-چیکار-می‌کنه) |  |
+|186| [اگه پارامتر rest رو به عنوان آخرین پارامتر استفاده نکنیم چی می‌شه؟](#اگه-پارامتر-rest-رو-به-عنوان-آخرین-پارامتر-استفاده-نکنیم-چی-می‌شه) |  |
+|187| [عملگرهای منطقی باینری توی جاواسکریپت کدوما هستن؟](#عملگرهای-منطقی-باینری-توی-جاواسکریپت-کدوما-هستن) |  |
+|188| [عملگر spread چیکار می‌کنه؟](#عملگر-spread-چیکار-می‌کنه) |  |
+|189| [چطوری تشخیص میدی که یه آبجکت freeze شده یا نه؟](#چطوری-تشخیص-میدی-که-یه-آبجکت-freeze-شده-یا-نه) |  |
+|190| [چطوری بررسی کنیم که دو تا مقدار(شامل آبجکت) با هم برابرن یا نه؟](#چطوری-بررسی-کنیم-که-دو-تا-مقدارشامل-آبجکت-با-هم-برابرن-یا-نه) |  |
+|191| [هدف از متد is روی object چیه؟](#هدف-از-متد-is-روی-object-چیه) |  |
+|192| [چطوری propertyهای یه object رو به یه object دیگه کپی می‌کنی؟](#چطوری-propertyهای-یه-object-رو-به-یه-object-دیگه-کپی-می‌کنی) |  |
+|193| [کاربردهای ممتد assign چیه؟](#کاربردهای-ممتد-assign-چیه) |  |
+|194| [آبجکت proxy چیه؟](#آبجکت-proxy-چیه) |  |
+|195| [هدف از متد seal چیه؟](#هدف-از-متد-seal-چیه) |  |
+|196| [کاربردهای متد seal چیه؟](#کاربردهای-متد-seal-چیه) |  |
+|197| [تفاوت‌های بین متدهای freeze و seal چیا هست؟](#تفاوتهای-بین-متدهای-freeze-و-seal-چیا-هست) |  |
+|198| [چطوری تشخیص میدی که یه آبجکت seal شده یا نه؟](#چطوری-تشخیص-میدی-که-یه-آبجکت-seal-شده-یا-نه) |  |
+|199| [چطوری کلید و مقدارهای enumerable رو به دست میاری؟](#چطوری-کلید-و-مقدارهای-enumerable-رو-به-دست-میاری) |  |
+|200| [تفاوت‌های بین متدهای Object.values و Object.entries چیا هست؟](#تفاوتهای-بین-متدهای-Objectvalues-و-Objectentries-چیا-هست) |  |
+|201| [چطوری لیست کلیدهای یه object رو بدست میاری؟](#چطوری-لیست-کلیدهای-یه-object-رو-بدست-میاری) |  |
+|202| [چطوری یه object با prototype درست می‌کنی؟](#چطوری-یه-object-با-prototype-درست-می‌کنی) |  |
+|203| [WeakSet چیه؟](#WeakSet-چیه) |  |
+|204| [تفاوت‌های بین WeakSet و Set کدوما هستن؟](#تفاوتهای-بین-WeakSet-و-Set-کدوما-هستن) |  |
+|205| [لیست متدهایی که رو WeakSet قابل استفاده هستن رو می‌تونی بگی؟](#لیست-متدهایی-که-رو-WeakSet-قابل-استفاده-هستن-رو-میتونی-بگی) |  |
+|206| [WeakMap چیه؟](#WeakMap-چیه) |  |
+|207| [تفاوت‌های بین WeakMap و Map کدوما هستن؟](#تفاوتهای-بین-WeakMap-و-Map-کدوما-هستن) |  |
+|208| [لیست متدهایی که رو WeakMap قابل استفاده هستن رو می‌تونی بگی؟](#لیست-متدهایی-که-رو-WeakMap-قابل-استفاده-هستن-رو-میتونی-بگی) |  |
+|209| [هدف از متد uneval چیه؟](#هدف-از-متد-uneval-چیه) |  |
+|210| [چطوری یه URL رو encode می‌کنی؟](#چطوری-یه-URL-رو-encode-می‌کنی) |  |
+|211| [چطوری یه URL رو decode می‌کنی؟](#چطوری-یه-URL-رو-decode-می‌کنی) |  |
+|212| [چطوری محتوای یه صفحه رو پرینت می‌گیری؟](#چطوری-محتوای-یه-صفحه-رو-پرینت-می‌گیری) |  |
+|213| [تفاوت‌های بین uneval و eval چیا هستن؟](#تفاوتهای-بین-uneval-و-eval-چیا-هستن) |  |
+|214| [تابع anonymous چیه؟](#تابع-anonymous-چیه) |  |
+|215| [تفاوت تقدم بین متغیرهای local و global چطوریه؟](#تفاوت-تقدم-بین-متغیرهای-local-و-global-چطوریه) |  |
+|216| [accessorهای جاواسکریپت چیکار می‌کنن؟](#accessorهای-جاواسکریپت-چیکار-میکنن) |  |
+|217| [چطوری روی constructor یه Object یه مقدار تعریف می‌کنی؟](#چطوری-روی-constructor-یه-Object-یه-مقدار-تعریف-می‌کنی) |  |
+|218| [تفاوت‌های بین get و defineProperty چیا هست؟](#تفاوتهای-بین-get-و-defineProperty-چیا-هست) |  |
+|219| [مزایای استفاده از Getter و Setter چیه؟](#مزایای-استفاده-از-Getter-و-Setter-چیه) |  |
+|220| [می‌تونیم getter و setter رو با استفاده از متد defineProperty تعریف کنیم؟](#می‌تونیم-getter-و-setter-رو-با-استفاده-از-متد-defineProperty-تعریف-کنیم) |  |
+|221| [هدف استفاده از switch-case چیه؟](#هدف-استفاده-از-switch-case-چیه) |  |
+|222| [چه قواعدی برای استفاده از swtich-case باید رعایت بشه؟](#چه-قواعدی-برای-استفاده-از-swtich-case-باید-رعایت-بشه) |  |
+|223| [نوع داده‌های primitive کدوما هستن؟](#نوع-دادههای-primitive-کدوما-هستن) |  |
+|224| [روش‌های مختلف دسترسی به propertyهای object کدوما هستن؟](#روشهای-مختلف-دسترسی-به-propertyهای-object-کدوما-هستن) |  |
+|225| [قوانین پارامترهای توابع کدوما هستن؟](#قوانین-پارامترهای-توابع-کدوما-هستن) |  |
+|226| [آبجکت error چیه؟](#آبجکت-error-چیه) |  |
+|227| [چه موقعی خطای syntax دریافت می‌کنیم؟](#چه-موقعی-خطای-syntax-دریافت-می‌کنیم) |  |
+|228| [عنوان خطاهای مختلف که روی error-object برمیگردن کدوما هستن؟](#عنوان-خطاهای-مختلف-که-روی-error-object-برمیگردن-کدوما-هستن) |  |
+|229| [عبارات مختلف که در هنگام مدیریت error استفاده میشن کدوما هستن؟](#عبارات-مختلف-که-در-هنگام-مدیریت-error-استفاده-میشن-کدوما-هستن) |  |
+|230| [دو نوع مختلف حلفه‌ها در جاواسکریپت کدوما هستن؟](#دو-نوع-مختلف-حلفهها-در-جاواسکریپت-کدوما-هستن) |  |
+|231| [nodejs چیه؟](#nodejs-چیه) |  |
+|232| [آبجکت Intl چیه؟](#آبجکت-Intl-چیه) |  |
+|233| [چطوری تاریخ و زمان رو بر اساس زبان جاری سیستم کاربر نمایش بدیم؟](#چطوری-تاریخ-و-زمان-رو-بر-اساس-زبان-جاری-سیستم-کاربر-نمایش-بدیم) |  |
+|234| [Iterator چیه؟](#Iterator-چیه) |  |
+|235| [حلفه‌های synchronous(همزمان) چطوری کار می‌کنن؟](#حلفههای-synchronousهمزمان-چطوری-کار-میکنن) |  |
+|236| [Event-loop چیه؟](#Event-loop-چیه) |  |
+|237| [Call-stack چیه؟](#Call-stack-چیه) |  |
+|238| [Event-queue چیه؟](#Event-queue-چیه) |  |
+|239| [Decorator چیه؟](#Decorator-چیه) |  |
+|240| [مقادیر موجود روی آبجکت Intl کدوما هستن؟](#مقادیر-موجود-روی-آبجکت-Intl-کدوما-هستن) |  |
+|241| [عملگر Unary چیه؟](#عملگر-Unary-چیه) |  |
+|242| [چطوری المنت‌های موجود تو یه آرایه رو مرتب می‌کنی؟](#چطوری-المنتهای-موجود-تو-یه-آرایه-رو-مرتب-می‌کنی) |  |
+|243| [هدف از تابع مرتب‌سازی موقع استفاده از متد sort چیه؟](#هدف-از-تابع-مرتبسازی-موقع-استفاده-از-متد-sort-چیه) |  |
+|244| [چطوری آیتم‌های یه آرایه رو معکوس مرتب کنیم؟](#چطوری-آیتمهای-یه-آرایه-رو-معکوس-مرتب-کنیم) |  |
+|245| [چطوری حداقل و حداکثر مقدار یه آرایه رو بدست بیاریم؟](#چطوری-حداقل-و-حداکثر-مقدار-یه-آرایه-رو-بدست-بیاریم) |  |
+|246| [چطوری حداقل و حداکثر مقدار یه آرایه رو بدون استفاده از متدهای Math بدست بیاریم؟](#چطوری-حداقل-و-حداکثر-مقدار-یه-آرایه-رو-بدون-استفاده-از-متدهای-Math-بدست-بیاریم) |  |
+|247| [عبارت خالی چیه و هدف از استفاده ازش چیه؟](#عبارت-خالی-چیه-و-هدف-از-استفاده-ازش-چیه) |  |
+|248| [چطوری metadata یه ماژول رو بدست میاری؟ meta data of a module](#چطوری-metadata-یه-ماژول-رو-بدست-میاری-meta-data-of-a-module) |  |
+|249| [عملگر comma چیه و چیکار می‌کنه؟](#عملگر-comma-چیه-و-چیکار-می‌کنه) |  |
+|250| [مزایای استفاده از عملگر comma چیه؟](#مزایای-استفاده-از-عملگر-comma-چیه) |  |
+|251| [Typescript چیه؟](#Typescript-چیه) |  |
+|252| [تفاوت‌های بین javascript و typescript کدوما هستن؟](#تفاوتهای-بین-javascript-و-typescript-کدوما-هستن) |  |
+|253| [مزایای typescript نسبت به javascript چیاست؟](#مزایای-typescript-نسبت-به-javascript-چیاست) |  |
+|254| [object-initializer چیه؟](#object-initializer-چیه) |  |
+|255| [متد constructor چیه؟](#متد-constructor-چیه) |  |
+|256| [اگه متد constructor رو بیش از یه بار توی کلاس بنویسیم چی می‌شه؟](#اگه-متد-constructor-رو-بیش-از-یه-بار-توی-کلاس-بنویسیم-چی-می‌شه) |  |
+|257| [چطوری متد constructor کلاس والد رو صدا بزنیم؟](#چطوری-متد-constructor-کلاس-والد-رو-صدا-بزنیم) |  |
+|258| [چطوری prototype یه object رو به دست میاری؟](#چطوری-prototype-یه-object-رو-به-دست-میاری) |  |
+|259| [اگه به متد getPrototype رشته پاس بدیم چی می‌شه؟](#اگه-به-متد-getPrototype-رشته-پاس-بدیم-چی-می‌شه) |  |
+|260| [چطوری prototype یه object روی یه object دیگه ست کنیم؟](#چطوری-prototype-یه-object-روی-یه-object-دیگه-ست-کنیم) |  |
+|261| [چطوری بررسی می‌کنی که یه object قابل extend هست یا نه؟](#چطوری-بررسی-می‌کنی-که-یه-object-قابل-extend-هست-یا-نه) |  |
+|262| [چطوری جلوی extend یه object رو بگیریم؟](#چطوری-جلوی-extend-یه-object-رو-بگیریم) |  |
+|263| [روش‌های مختلف برای تبدیل یه object به object غیرقابل extend چیه؟](#روشهای-مختلف-برای-تبدیل-یه-object-به-object-غیرقابل-extend-چیه) |  |
+|264| [چطوری propertyهای متعددی رو روی یه object تعریف می‌کنی؟](#چطوری-propertyهای-متعددی-رو-روی-یه-object-تعریف-می‌کنی) |  |
+|265| [منظور از MEAN توی جاواسکریپت چیه؟ javascript](#منظور-از-MEAN-توی-جاواسکریپت-چیه-javascript) |  |
+|266| [Obfuscation توی جاواسکریپت چیه و چیکار می‌کنه؟ javascript](#Obfuscation-توی-جاواسکریپت-چیه-و-چیکار-می‌کنه-javascript) |  |
+|267| [چه نیازی به Obfuscate کردن داریم؟](#چه-نیازی-به-Obfuscate-کردن-داریم) |  |
+|268| [Minification چیه؟](#Minification-چیه) |  |
+|269| [مزایای minification یا کم حجم‌سازی چیه؟](#مزایای-minification-یا-کم-حجمسازی-چیه) |  |
+|270| [تفاوت‌های بین Obfuscation و Encryption چیه؟](#تفاوتهای-بین-Obfuscation-و-Encryption-چیه) |  |
+|271| [ابزارهای مختلف برای minification کدوما هستن؟](#ابزارهای-مختلف-برای-minification-کدوما-هستن) |  |
+|272| [چطوری اعتبارسنجی فرم رو با javascript انجام میدی؟](#چطوری-اعتبارسنجی-فرم-رو-با-javascript-انجام-میدی) |  |
+|273| [چطوری اعتبارسنجی فرم رو بدون javascript انجام میدی؟](#چطوری-اعتبارسنجی-فرم-رو-بدون-javascript-انجام-میدی) |  |
+|274| [متدهای موجود روی DOM برای اعتبارسنجی کدوما هستن؟](#متدهای-موجود-روی-DOM-برای-اعتبارسنجی-کدوما-هستن) |  |
+|275| [مقادیر موجود روی DOM برای اعتبارسنجی کدوما هستن؟](#مقادیر-موجود-روی-DOM-برای-اعتبارسنجی-کدوما-هستن) |  |
+|276| [مقادیر موجود روی input برای اعتبارسنجی کدوما هستن؟](#مقادیر-موجود-روی-input-برای-اعتبارسنجی-کدوما-هستن) |  |
+|277| [یه مثال از استفاده ویژگی rangeOverflow می‌تونی بزنی؟](#یه-مثال-از-استفاده-ویژگی-rangeOverflow-میتونی-بزنی) |  |
+|278| [جاواسکریپت قابلیت استفاده از enum رو پیش‌فرض توی خودش داره؟](#جاواسکریپت-قابلیت-استفاده-از-enum-رو-پیشفرض-توی-خودش-داره) |  |
+|279| [enum چیه؟](#enum-چیه) |  |
+|280| [چطوری همه propertyهای یه object رو به دست بیاریم؟](#چطوری-همه-propertyهای-یه-object-رو-به-دست-بیاریم) |  |
+|281| [چطوری get property descriptors of an object](#چطوری-get-property-descriptors-of-an-object) |  |
+|282| [گزینه‌هایی که موقع تعریف ویژگی object با descriptor داریم کدوما هستن؟](#گزینههایی-که-موقع-تعریف-ویژگی-object-با-descriptor-داریم-کدوما-هستن) |  |
+|283| [چطوری کلاس‌ها رو extend می‌کنی؟](#چطوری-کلاسها-رو-extend-می‌کنی) |  |
+|284| [چطوری آدرس صفحه رو بدون رفرش صفحه عوض کنیم؟](#چطوری-آدرس-صفحه-رو-بدون-رفرش-صفحه-عوض-کنیم) |  |
+|285| [چطوری بررسی می‌کنی که یه آرایه یه مقدار مشخص رو داره یا نه؟](#چطوری-بررسی-می‌کنی-که-یه-آرایه-یه-مقدار-مشخص-رو-داره-یا-نه) |  |
+|286| [چطوری آرایه‌های scalar رو با هم مقایسه می‌کنی؟](#چطوری-آرایههای-scalar-رو-با-هم-مقایسه-می‌کنی) |  |
+|287| [چطوری می‌شه پارامترهای صفحه رو از متد GET گرفت؟](#چطوری-می‌شه-پارامترهای-صفحه-رو-از-متد-GET-گرفت) |  |
+|288| [چطوری اعداد رو می‌شه سه رقم سه رقم جدا کرد؟](#چطوری-اعداد-رو-می‌شه-سه-رقم-سه-رقم-جدا-کرد) |  |
+|289| [تفاوت‌ بین java و javascript چیه؟](#تفاوت-بین-java-و-javascript-چیه) |  |
+|290| [آیا جاواسکریپت namespace رو پشتیبانی می‌کنه؟](#آیا-جاواسکریپت-namespace-رو-پشتیبانی-می‌کنه) |  |
+|291| [چطوری namespace تعریف می‌کنی؟](#چطوری-namespace-تعریف-می‌کنی) |  |
+|292| [چطوری می‌تونیم تکه کد جاواسکریپت داخل یه iframe رو از صفحه والد صدا بزنیم؟](#چطوری-می‌تونیم-تکه-کد-جاواسکریپت-داخل-یه-iframe-رو-از-صفحه-والد-صدا-بزنیم) |  |
+|293| [چطوری می‌شه اختلاف timezone رو از آبجکت date بگیریم؟](#چطوری-می‌شه-اختلاف-timezone-رو-از-آبجکت-date-بگیریم) |  |
+|294| [چطوری فایل‌های CSS و JS رو به شکل داینامیک بارگذاری کنیم؟](#چطوری-فایلهای-CSS-و-JS-رو-به-شکل-داینامیک-بارگذاری-کنیم) |  |
+|295| [روش‌های مختلف برای پیدا کردن elementها توی DOM کدوما هستن؟](#روشهای-مختلف-برای-پیدا-کردن-elementها-توی-DOM-کدوما-هستن) |  |
+|296| [jQuery چیه؟](#jQuery-چیه) |  |
+|297| [موتور V8 جاواسکریپت چیه؟](#موتور-V8-جاواسکریپت-چیه) |  |
+|298| [چرا ما جاواسکریپت رو به عنوان یه زبان داینامیک می‌شناسیم؟](#چرا-ما-جاواسکریپت-رو-به-عنوان-یه-زبان-داینامیک-میشناسیم) |  |
+|299| [عملگر void چیکار می‌کنه؟](#عملگر-void-چیکار-می‌کنه) |  |
+|300| [چطوری می‌شه نمایشگر موس صفحه رو به درحال لود تغییر داد؟](#چطوری-می‌شه-نمایشگر-موس-صفحه-رو-به-درحال-لود-تغییر-داد) |  |
+|301| [چطوری می‌شه یه حلقه بی‌نهایت درست کرد؟](#چطوری-می‌شه-یه-حلقه-بینهایت-درست-کرد) |  |
+|302| [چرا باید در استفاده از عبارت with تجدیدنظر کرد؟](#چرا-باید-در-استفاده-از-عبارت-with-تجدیدنظر-کرد) |  |
+|303| [خروجی این حلقه‌ها چی می‌شه؟](#خروجی-این-حلقهها-چی-می‌شه) |  |
+|304| [می‌تونی یه سری از ویژگی‌های ES6 رو اسم ببری؟](#میتونی-یه-سری-از-ویژگیهای-ES6-رو-اسم-ببری) |  |
+|305| [ES6 چیه؟](#ES6-چیه) |  |
+|306| [آیا می‌تونیم متغیرهای تعریف شده با let و const رو مجددا declare کنیم؟](#آیا-می‌تونیم-متغیرهای-تعریف-شده-با-let-و-const-رو-مجددا-declare-کنیم) |  |
+|307| [آیا استفاده از const برای تعریف متغیر اونا رو immutable می‌کنه؟](#آیا-استفاده-از-const-برای-تعریف-متغیر-اونا-رو-immutable-می‌کنه) |  |
+|308| [parameterهای پیش‌فرض چی هستن؟](#parameterهای-پیشفرض-چی-هستن) |  |
+|309| [template-literalها چی هستن؟](#template-literalها-چی-هستن) |  |
+|310| [چطوری رشته‌های چند خطی رو توی template-literalها می‌نویسیم؟](#چطوری-رشتههای-چند-خطی-رو-توی-template-literalها-مینویسیم) |  |
+|311| [template-literal‌های تودرتو چی هستن؟](#template-literalهای-تودرتو-چی-هستن) |  |
+|312| [tagged-templateها چی هستن؟](#tagged-templateها-چی-هستن) |  |
+|313| [رشته‌های خام چی هستن؟](#رشتههای-خام-چی-هستن) |  |
+|314| [assign کردن با destructuring چیه و چطوری انجام می‌شه؟](#assign-کردن-با-destructuring-چیه-و-چطوری-انجام-می‌شه) |  |
+|315| [موقع assign کردن با destructuring چطوری می‌شه مقدار اولیه تعریف کرد؟](#موقع-assign-کردن-با-destructuring-چطوری-می‌شه-مقدار-اولیه-تعریف-کرد) |  |
+|316| [چطوری می‌تونیم مقدار یه آرایه رو با استفاده از destructuring-assignment تعویض کنیم؟](#چطوری-می‌تونیم-مقدار-یه-آرایه-رو-با-استفاده-از-destructuring-assignment-تعویض-کنیم) |  |
+|317| [Enhanced-object-literalها چی هستن؟](#Enhanced-object-literalها-چی-هستن) |  |
+|318| [importهای داینامیک چی هستن؟](#importهای-داینامیک-چی-هستن) |  |
+|319| [کاربرد importهای داینامیک چیه؟](#کاربرد-importهای-داینامیک-چیه) |  |
+|320| [آرایه‌های نوع‌دار(typed-arrays) چیه؟](#آرایههای-نوعدارtyped-arrays-چیه) |  |
+|321| [مزایای لودر ماژول‌ها چیه؟](#مزایای-لودر-ماژولها-چیه) |  |
+|322| [collation چیه؟](#collation-چیه) |  |
+|323| [عبارت for...of چیه؟](#عبارت-forof-چیه) |  |
+|324| [خروجی عملگر spread روی آرایه زیر چیه؟](#خروجی-عملگر-spread-روی-آرایه-زیر-چیه) |  |
+|325| [آیا PostMessage امنه؟](#آیا-PostMessage-امنه) |  |
+|326| [مشکلات استفاده از postmessage با origin روی wildcard چیه؟](#مشکلات-استفاده-از-postmessage-با-origin-روی-wildcard-چیه) |  |
+|327| [چطوری از دریافت postMessageهای ناخواسته و ناامن از طرف هکرها جلوگیری کنیم؟](#چطوری-از-دریافت-postMessageهای-ناخواسته-و-ناامن-از-طرف-هکرها-جلوگیری-کنیم) |  |
+|328| [می‌تونیم کلا postMessageها رو غیرفعال کنیم؟](#می‌تونیم-کلا-postMessageها-رو-غیرفعال-کنیم) |  |
+|329| [آیا postMessageها به صورت synchronous و همزمان کار می‌کنن؟](#آیا-postMessageها-به-صورت-synchronous-و-همزمان-کار-میکنن) |  |
+|330| [پارادیم زبان جاواسکریپت چیه؟](#پارادیم-زبان-جاواسکریپت-چیه) |  |
+|331| [تفاوت‌های بین جاواسکریپت داخلی و خارجی چیه؟](#تفاوتهای-بین-جاواسکریپت-داخلی-و-خارجی-چیه) |  |
+|332| [آیا جاواسکریپت سریعتر از اسکریپت‌های سمت سرور است؟](#آیا-جاواسکریپت-سریعتر-از-اسکریپتهای-سمت-سرور-است) |  |
+|333| [چطوری وضعیت چک بودن یه checkbox رو بدست بیاریم؟](#چطوری-وضعیت-چک-بودن-یه-checkbox-رو-بدست-بیاریم) |  |
+|334| [هدف از عملگر double-tilde چیه؟](#هدف-از-عملگر-double-tilde-چیه) |  |
+|335| [چطوری یه کاراکتر رو به کد ASCII تبدیل کنیم؟](#چطوری-یه-کاراکتر-رو-به-کد-ASCII-تبدیل-کنیم) |  |
+|336| [ArrayBuffer چیه؟](#ArrayBuffer-چیه) |  |
+|337| [خروجی کد زیر چی خواهد بود؟](#خروجی-کد-زیر-چی-خواهد-بود) |  |
+|338| [هدف از Error-object چیه؟](#هدف-از-Error-object-چیه) |  |
+|339| [هدف از EvalError-object چیه؟](#هدف-از-EvalError-object-چیه) |  |
+|340| [خطاهایی که در حالت strict-mode رخ میدن ولی در غیر اون وجود ندارن کدوما هستن؟](#خطاهایی-که-در-حالت-strict-mode-رخ-میدن-ولی-در-غیر-اون-وجود-ندارن-کدوما-هستن) |  |
+|341| [آیا همه objectها دارای prototype هستن؟](#آیا-همه-objectها-دارای-prototype-هستن) |  |
+|342| [تفاوت‌های بین parameter و argument چیه؟](#تفاوتهای-بین-parameter-و-argument-چیه) |  |
+|343| [هدف از متد some روی آرایه‌ها چیه؟](#هدف-از-متد-some-روی-آرایهها-چیه) |  |
+|344| [چطوری دو یا تعداد بیشتری از آرایه‌ها رو با هم ترکیب کنیم؟](#چطوری-دو-یا-تعداد-بیشتری-از-آرایهها-رو-با-هم-ترکیب-کنیم) |  |
+|345| [تفاوت‌های بین Shallow و Deep کپی چیه؟](#تفاوتهای-بین-Shallow-و-Deep-کپی-چیه) |  |
+|346| [چطوری می‌تونیم به یه تعداد مشخص از یه رشته کپی کنیم؟](#چطوری-می‌تونیم-به-یه-تعداد-مشخص-از-یه-رشته-کپی-کنیم) |  |
+|347| [چطوری همه stringهای match شده با یه regular-expression رو برگردونیم؟](#چطوری-همه-stringهای-match-شده-با-یه-regular-expression-رو-برگردونیم) |  |
+|348| [چطوری یه رشته رو از اول یا از آخر trim کنیم؟](#چطوری-یه-رشته-رو-از-اول-یا-از-آخر-trim-کنیم) |  |
+|349| [خروجی کنسول زیر با عملگر unary چی می‌شه؟](#خروجی-کنسول-زیر-با-عملگر-unary-چی-می‌شه) |  |
+|350| [آیا جاواسکریپت از mixinها استفاده می‌کنه؟](#آیا-جاواسکریپت-از-mixinها-استفاده-می‌کنه) |  |
+|351| [تابع thunk چیه و چیکار می‌کنه؟](#تابع-thunk-چیه-و-چیکار-می‌کنه) |  |
+|352| [thunkهای asynchronous چیکار می‌کنن؟](#thunkهای-asynchronous-چیکار-میکنن) |  |
+|353| [خروجی فراخوانی‌های توابع زیر چی می‌شه؟](#خروجی-فراخوانیهای-توابع-زیر-چی-می‌شه) |  |
+|354| [چطوری همه خطوط جدید رو از یه رشته حذف کرد؟](#چطوری-همه-خطوط-جدید-رو-از-یه-رشته-حذف-کرد) |  |
+|355| [تفاوت‌ بین reflow و repaint چیه؟](#تفاوت-بین-reflow-و-repaint-چیه) |  |
+|356| [اگه قبل از یه آرایه عملگر نفی «!» بزاریم چی می‌شه؟](#اگه-قبل-از-یه-آرایه-عملگر-نفی-«!»-بزاریم-چی-می‌شه) |  |
+|357| [اگه دو تا آرایه رو با هم جمع ببندیم چی می‌شه؟](#اگه-دو-تا-آرایه-رو-با-هم-جمع-ببندیم-چی-می‌شه) |  |
+|358| [اگه عملگر جمع «+» روی قبل از مقادیر falsy قرار بدیم چی می‌شه؟](#اگه-عملگر-جمع-«+»-روی-قبل-از-مقادیر-falsy-قرار-بدیم-چی-می‌شه)   ||
+|359| [چطوری با استفاده از آرایه‌ها و عملگرهای منطقی می‌تونیم رشته self رو تولید کنیم؟](#چطوری-با-استفاده-از-آرایهها-و-عملگرهای-منطقی-می‌تونیم-رشته-self-رو-تولید-کنیم) |  |
+|360| [چطوری می‌تونیم مقادیر falsy رو از آرایه حذف کنیم؟](#چطوری-می‌تونیم-مقادیر-falsy-رو-از-آرایه-حذف-کنیم) |  |
+|361| [چطوری مقادیر تکراری رو از یه آرایه حذف کنیم؟](#چطوری-مقادیر-تکراری-رو-از-یه-آرایه-حذف-کنیم) |  |
+|362| [aliaseهای همزمان با destructuring چطوری کار می‌کنن؟](#aliaseهای-همزمان-با-destructuring-چطوری-کار-میکنن) |  |
+|363| [چطوری آیتم‌های یه آرایه رو بدون استفاده از متد map پیمایش کنیم؟](#چطوری-آیتمهای-یه-آرایه-رو-بدون-استفاده-از-متد-map-پیمایش-کنیم) |  |
+|364| [چطوری یه آرایه رو خالی کنیم؟](#چطوری-یه-آرایه-رو-خالی-کنیم) |  |
+|365| [چطوری اعداد رو با تعداد رقم اعشار مشخص رند می‌کنی؟](#چطوری-اعداد-رو-با-تعداد-رقم-اعشار-مشخص-رند-می‌کنی) |  |
+|366| [ساده‌ترین روش برای تبدیل آرایه به object چیه؟](#سادهترین-روش-برای-تبدیل-آرایه-به-object-چیه) |  |
+|367| [چطوری یه آرایه با یه سری داده درست کنیم؟](#چطوری-یه-آرایه-با-یه-سری-داده-درست-کنیم) |  |
+|368| [متغیرهای موجود روی آبجکت console کدوما هستن؟](#متغیرهای-موجود-روی-آبجکت-console-کدوما-هستن) |  |
+|369| [می‌شه پیام‌های کنسول رو استایل‌دهی کرد؟](#می‌شه-پیامهای-کنسول-رو-استایلدهی-کرد) |  |
+|370| [هدف از متد dir روی آبجکت console چیه؟](#هدف-از-متد-dir-روی-آبجکت-console-چیه) |  |
+|371| [آیا می‌شه المنت‌های HTML رو توی console دیباگ کرد؟](#آیا-می‌شه-المنتهای-HTML-رو-توی-console-دیباگ-کرد) |  |
+|372| [چطوری می‌شه داده‌ها رو به شکل جدولی توی console نمایش بدیم؟](#چطوری-می‌شه-دادهها-رو-به-شکل-جدولی-توی-console-نمایش-بدیم) |  |
+|373| [چطوری می‌شه بررسی کرد که یه پارامتر Number هست یا نه؟](#چطوری-می‌شه-بررسی-کرد-که-یه-پارامتر-Number-هست-یا-نه) |  |
+|374| [چطوری یه متن رو می‌تونیم به clipboard کپی کنیم؟](#چطوری-یه-متن-رو-می‌تونیم-به-clipboard-کپی-کنیم) |  |
+|375| [چطوری می‌شه timestamp رو بدست آورد؟](#چطوری-می‌شه-timestamp-رو-بدست-آورد) |  |
+|376| [چطوری یه آرایه چندسطحی رو تک سطحی کنیم؟](#چطوری-یه-آرایه-چندسطحی-رو-تک-سطحی-کنیم) |  |
+|377| [ساده‌ترین روش برای بررسی چندشرطی چیه؟](#سادهترین-روش-برای-بررسی-چندشرطی-چیه) |  |
+|378| [چطوری کلیک روی دکمه برگشت مرورگر رو متوجه بشیم؟](#چطوری-کلیک-روی-دکمه-برگشت-مرورگر-رو-متوجه-بشیم) |  |
+|379| [چطوری می‌تونیم کلیک راست رو غیرفعال کنیم؟](#چطوری-می‌تونیم-کلیک-راست-رو-غیرفعال-کنیم) |  |
+|380| [object-wrapperها چی هستن؟](#object-wrapperها-چی-هستن) |  |
+|381| [AJAX چیه؟](#AJAX-چیه) |  |
+|382| [روش‌های مختلف مدیریت یه کد Asynchronous چیه؟](#روشهای-مختلف-مدیریت-یه-کد-Asynchronous-چیه) |  |
+|383| [چطوری یه درخواست fetch رو کنسل کنیم؟](#چطوری-یه-درخواست-fetch-رو-کنسل-کنیم) |  |
+|384| [Speech-API چیه؟](#Speech-API-چیه) |  |
+|385| [حداقل timeout توی throttling چقدره؟](#حداقل-timeout-توی-throttling-چقدره) |  |
+|386| [چطوری می‌شه یه timeout صفر توی مرورگر اجرا کرد؟](#چطوری-می‌شه-یه-timeout-صفر-توی-مرورگر-اجرا-کرد) |  |
+|387| [taskها توی event-loop چی هستن؟](#taskها-توی-event-loop-چی-هستن) |  |
+|388| [microtaskها چی هستن؟](#microtaskها-چی-هستن) |  |
+|389| [event-loopهای مختلف کدوما هستن؟](#event-loopهای-مختلف-کدوما-هستن) |  |
+|390| [هدف از queueMicrotask چیه؟](#هدف-از-queueMicrotask-چیه) |  |
+|391| [چطوری می‌شه از کتابخونه‌های جاواسکریپت توی فایل typescript استفاده کرد؟](#چطوری-می‌شه-از-کتابخونههای-جاواسکریپت-توی-فایل-typescript-استفاده-کرد) |  |
+|392| [تفاوت‌های بین promiseها و observableها کدوما هستن؟](#تفاوتهای-بین-promiseها-و-observableها-کدوما-هستن) |  |
+|393| [heap چیه؟](#heap-چیه) |  |
+|394| [event-table چیه؟](#event-table-چیه) |  |
+|395| [صف microTask چیه؟](#صف-microTask-چیه) |  |
+|396| [تفاوت بین shim و polyfill چیه؟](#تفاوت-بین-shim-و-polyfill-چیه) |  |
+|397| [چطوری متوجه primitive یا غیر primitive بودن یه نوع داده میشیم؟](#چطوری-متوجه-primitive-یا-غیر-primitive-بودن-یه-نوع-داده-میشیم) |  |
+|398| [babel چیه؟](#babel-چیه) |  |
+|399| [آیا Node.js به شکل کامل تک thread کار می‌کنه؟](#آیا-Nodejs-به-شکل-کامل-تک-thread-کار-می‌کنه) |  |
+|400| [کاربردهای مرسوم observableها کدوما هستن؟](#کاربردهای-مرسوم-observableها-کدوما-هستن) |  |
+|401| [RxJS چیه؟](#RxJS-چیه) |  |
+|402| [تفاوت بین Function-constructor و function-declaration چیه؟](#تفاوت-بین-Function-constructor-و-function-declaration-چیه) |  |
+|403| [شرط Short-circuit یا اتصال کوتاه چیه؟](#شرط-Short-circuit-یا-اتصال-کوتاه-چیه) |  |
+|404| [ساده‌ترین روش برای تغییر سایز یه آرایه چیه؟](#سادهترین-روش-برای-تغییر-سایز-یه-آرایه-چیه) |  |
+|405| [observable چیه؟](#observable-چیه) |  |
+|406| [تفاوت‌های بین توابع و کلاس‌ها چیه؟](#تفاوتهای-بین-توابع-و-کلاسها-چیه) |  |
+|407| [تابع async چیه؟](#تابع-async-چیه) |  |
+|408| [چطوری خطاهای ایجاد شده هنگام استفاده از promiseها رو کنترل کنیم؟](#چطوری-خطاهای-ایجاد-شده-هنگام-استفاده-از-promiseها-رو-کنترل-کنیم) |  |
+|409| [Deno چیه؟](#Deno-چیه) |  |
+|410| [توی جاواسکریپت چطوری یه object قابل پیمایش درست کنیم؟](#توی-جاواسکریپت-چطوری-یه-object-قابل-پیمایش-درست-کنیم) |  |
+|411| [روش مناسب برای فراخوانی توابع بازگشتی چیه؟](#روش-مناسب-برای-فراخوانی-توابع-بازگشتی-چیه) |  |
+|412| [چطوری بررسی کنیم که یه آبجکت promise هست یا نه؟](#چطوری-بررسی-کنیم-که-یه-آبجکت-promise-هست-یا-نه) |  |
+|413| [چطوری متوجه بشیم که یا تابع با تابع constructor صدا زده شده یا نه؟](#چطوری-متوجه-بشیم-که-یا-تابع-با-تابع-constructor-صدا-زده-شده-یا-نه) |  |
+|414| [تفاوت‌های بین آبجکت argument و پارامتر rest چیه؟](#تفاوتهای-بین-آبجکت-argument-و-پارامتر-rest-چیه) |  |
+|415| [تفاوت‌های بین عملگر spread و پارامتر rest چیه؟](#تفاوتهای-بین-عملگر-spread-و-پارامتر-rest-چیه) |  |
+|416| [نوع‌های مختلف generatorها کدوما هستن؟](#نوعهای-مختلف-generatorها-کدوما-هستن) |  |
+|417| [iterableهای built-in کدوما هستن؟](#iterableهای-built-in-کدوما-هستن) |  |
+|418| [تفاوت‌های بین حلقه for...of و for...in چیه؟](#تفاوتهای-بین-حلقه-forof-و-forin-چیه) |  |
+|419| [چطوری propertyهای instance و غیر instanceای تعریف می‌کنی؟](#چطوری-propertyهای-instance-و-غیر-instanceای-تعریف-می‌کنی) |  |
+|420| [تفاوت‌های بین isNaN و Number.isNaN کدوما هستن؟](#تفاوتهای-بین-isNaN-و-NumberisNaN-کدوما-هستن) |  |
+
+{Pishgoftar}
 
 <div dir="rtl" align="right">
 
@@ -3777,7 +3772,7 @@ footerTemplate: '<div style="width: 297mm;text-align: center;font-size: 10px;fon
 
      **[فهرست](#فهرست)**
 
-177. ### میتونی یه مثال از زمانی که واقعا به سمیکولون(;) نیاز هست بزنی؟
+177. ### میتونی یه مثال از زمانی که واقعا به سمیکولون( ; ) نیاز هست بزنی؟
 
      توصیه می‌شه بعد از هر عبارت در جاواسکریپت از نقطه ویرگول استفاده کنیم. برای مثال، در مورد زیر به دلیل از دست دادن نقطه ویرگول، خطای `.. is not a function` رو در زمان اجرا میندازه.
 
