@@ -3344,107 +3344,106 @@ puppeteer:
 
       **[فهرست](#فهرست)**
 
-150.  ### می‌تونی یه تابع تولید اعداد تصادفی توی یه بازه مشخص بنویسی؟
 
-           می‌تونیم کد زیر رو برای این تابع داشته باشیم که مقادیر حداکثر و حداقل رو بگیره و
+150. ### می‌تونی یه تابع تولید اعداد تصادفی توی یه بازه مشخص بنویسی؟
 
-      برای ما عدد رندوم ایجاد کنه:
+     بله ما می‌تونیم کد زیر رو برای این تابع داشته باشیم که مقادیر حداکثر و حداقل رو بگیره و برای ما عدد رندوم ایجاد کنه:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function randomInteger(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
-      randomInteger(1, 100); // returns a random integer from 1 to 100
-      randomInteger(1, 1000); // returns a random integer from 1 to 1000
-      ```
+     ```javascript
+     function randomInteger(min, max) {
+       return Math.floor(Math.random() * (max - min + 1) ) + min;
+     }
+     randomInteger(1, 100); // returns a random integer from 1 to 100
+     randomInteger(1, 1000); // returns a random integer from 1 to 1000
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-151.  ### Tree-shaking چیه؟
+151. ### Tree-shaking چیه؟
 
-      `Tree Shaking` نوعی حذف کد مرده هستش و به این معنیه که ماژول‌های استفاده نشده در طول فرآیند ساخت در بسته گنجونده نمی‌شن و برای اون بر ساختار استاتیک ماژول ES2015 متکیه (یعنی import و export). از باندلر ماژول ES2015 'rollup' میشه برای انجام این عمل بهره برد.
+     `Tree Shaking` نوعی حذف کد مرده هستش و به این معنیه که ماژول‌های استفاده نشده در طول فرآیند ساخت در بسته گنجونده نمی‌شن و برای اون بر ساختار استاتیک ماژول ES2015 متکیه (یعنی import و export).  توی باندلر ماژول ES2015 'rollup' از این عملکرد استفاده شده. 
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-152.  ### دلایل نیاز به tree-shaking کدوما هستن؟
+152. ### دلایل نیاز به tree-shaking کدوما هستن؟
 
-      `Tree Shaking` می‌تونه اندازه کد رو در هر برنامه ای به میزان قابل توجهی کاهش بده. یعنی هرچی کد کمتری از طریق سیم بفرستیم برنامه کاربردی تره. به عنوان مثال، اگر فقط بخواهیم یه برنامه Hello World با استفاده از چارچوب‌های SPA ایجاد کنیم، حدود چند مگابایت حافظه رو اشغال میکنه، اما tree-shaking می‌تونه اندازه رو به چند صد کیلوبایت کاهش بده. tree-shaking تو باندلرهای `Rollup` و `Webpack` پیاده سازی شده.
+     `Tree Shaking` می‌تونه اندازه کد رو در هر برنامه ای به میزان قابل توجهی کاهش بده. یعنی هرچی کد کمتری از طریق سیم بفرستیم برنامه کاربردی تره. به عنوان مثال، اگه فقط بخواهیم یه برنامه Hello World با استفاده از چارچوب‌های SPA ایجاد کنیم، حدود چند مگابایت حافظه رو اشغال می‌کنه، اما tree-shaking می‌تونه اندازه رو به چند صد کیلوبایت کاهش بده. tree-shaking تو باندلرهای `Rollup` و `Webpack` پیاده سازی شده.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-153.  ### آیا استفاده از eval توصیه می‌شه؟
+153. ### آیا استفاده از eval توصیه می‌شه؟
 
-      نه، `eval` اجازه اجرای کد دلخواه رو میده که باعث ایجاد مشکل امنیتی می‌شه. همونطور که میدونیم از تابع `eval` برای اجرای متن به عنوان کد استفاده می‌شه. در بیشتر موارد استفاده از اون ضروری نیست.
+     نه،  `eval` اجازه اجرای کد دلخواه رو میده که باعث ایجاد مشکل امنیتی می‌شه. همونطور که میدونیم از تابع `eval` برای اجرای متن به عنوان کد استفاده می‌شه. در بیشتر موارد استفاده از اون ضروری نیست.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-154.  ### Regular-Expression چیه؟
+154. ### Regular-Expression چیه؟
 
-      `regular expression` یا همون `Regex` یه توالیه که یه ساختار جستجو ایجاد می‌کنه با استفاده از این ساختار ما می‌تونیم دیتامون رو جستجو کنیم و به قولی دیتامون رو اعتبارسنجی کنیم.
+     `regular expression` یا همون `Regex` یه توالیه که یه ساختار جستجو ایجاد می‌کنه با استفاده از این ساختار ما می‌تونیم دیتامون رو جستجو کنیم و به قولی دیتامون رو اعتبارسنجی کنیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      /pattern/modifiers;
-      ```
+     ```javascript
+     /pattern/modifiers;
+     ```
 
-      </span>
+     </span>
 
-      برای مثال Regex حساس به حروف کوچک و بزرگ زبان انگلیسی به صورت ریر نوشته می‌شه:
+     برای مثال Regex حساس به حروف کوچک و بزرگ زبان انگلیسی به صورت ریر نوشته می‌شه:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      /John/i;
-      ```
+     ```javascript
+     /John/i
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-155.  ### متدهای رشته که روی Regular-expression مجاز هستن کدوماست؟
+155. ### متدهای رشته که روی Regular-expression مجاز هستن کدوماست؟
 
-      Regular Expressions دو تا متد برای رشته‌ها داره :‌ `search` و `replace`. متد `search` یه عبارت رو می‌گیره اونو جستجو می‌کنه و محل اون عبارت رو برمی‌گردونه:
+     Regular Expressions دو تا متد برای رشته‌ها داره :‌ `search` و `replace`. متد `search` یه عبارت رو می‌گیره اونو جستجو می‌کنه و محل اون عبارت رو برمی‌گردونه:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var msg = "Hello John";
-      var n = msg.search(/John/i); // 6
-      ```
+     ```javascript
+     var msg = "Hello John";
+     var n = msg.search(/John/i); // 6
+     ```
 
-      </span>
+     </span>
 
-      متد replace برای برگردوندن رشته اصلاح شده تو جایی که الگو جایگزین می‌شه، استفاده می‌شه:
+     متد replace برای برگردوندن رشته اصلاح شده تو جایی که الگو جایگزین می‌شه، استفاده می‌شه:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var msg = "Hello John";
-      var n = msg.replace(/John/i, "Buttler"); // Hello Buttler
-      ```
+     ```javascript
+     var msg = "Hello John";
+     var n = msg.replace(/John/i, "Buttler"); // Hello Buttler
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-156.  ### توی Regex بخش modifiersها چیکار می‌کنه؟
+156. ### توی Regex بخش modifiersها چیکار می‌کنه؟
 
-      `Modifiers` ها میتونن زمانی استفاده بشن که به جستجو‌های بدون حروف کوچک و بزرگ سراسری نیاز داریم بیاین یه مثال درموردشون ببینیم:
+     `Modifiers` ها میتونن زمانی استفاده بشن که به جستجو‌های بدون حروف کوچک و بزرگ سراسری نیاز داریم بیاین یه مثال درموردشون ببینیم:
 
-      | اصلاح کننده |                توضیح                 |
-      | :---------: | :----------------------------------: |
-      |      i      |          تظبیق حساس به حروف          |
-      |      g      | تطبیق کلی به جای توقف در اولین تشابه |
-      |      m      |             تطبیق چندخطی             |
+     | اصلاح کننده | توضیح |
+     |:----: | :---------:
+     | i  | تظبیق حساس به حروف |
+     | g | تطبیق کلی به جای توقف در اولین تشابه  |
+     | m | تطبیق چندخطی|
 
-      بریم یه مثال از modifier گلوبال ببینیم:
+     بریم یه مثال از modifier  گلوبال ببینیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
       ```javascript
       const text = "Learn JS one by one";
@@ -3452,906 +3451,884 @@ puppeteer:
       const result = text.match(pattern); // one,one
       ```
 
-       </span>
-
-      **[فهرست](#فهرست)**
-
-157.  ### پترن‌های regular-expression چیه؟
-
-      Regex یه گروهی از ساختار‌ها برامون اماده کرده که با اونا کاراکتر‌ها رو چک کنیم اونا تو سه مدل طبفه بندی میشن
-
-      1. **براکت‌ها:** برای پیدا کردن رنجی از کاراکتر استفاده میشن
-         برای مثال پایین چن تا مورد استفاده لیست شدن
-         1. [abc]: برای پیدا کردن هر کاراکتری بین این سه کاراکتر استفاده میشه
-         2. [0-9]: برای پیدا کردن ارقام بین این دو عدد استفاده میشه
-         3. (a|b): برای پیدا کردن هر یه از گزینه‌های جدا شده با | استفاده می‌شه
-      2. **کاراکتر برابر با:** این عبارت‌ها کاراکتر‌هایی با معنی خاص هستن
-         برای مثال پایین دو تا مورد که استفاده می‌شه ازشون رو ببینیم
-         1. \\d: برای پیدا کردن اعداد استفاده میشه
-         2. \\s: برای پیدا کردن فاصله‌ها استفاده میشه
-         3. \\b: برای پیدا کردن کاراکتر‌های همخوانی داشته با شروع شدن یا پایانشون استفاده میشه
-      3. **کمیت کننده‌ها:** این‌ها برای تعریف کمیت‌ها موثر هستن
-         برای مثال پایین دو تا مورد استفاده براشون اوردیم
-         1. n+: برای پیدا کردن رشته همخوانی داشته با حداقل یه کاراکتر
-         2. n\*: برای پیدا کردن همخوانی هر رشته شامل صفر یا بیشتر
-         3. n?: برای پیدا کردن هر رشته که شامل صفر یا یه کاراکنر می‌شه
-
-      **[فهرست](#فهرست)**
-
-158.  ### آبجکت RegExp چیه؟
-
-      `object`‌های `Regex` یه عبارت معمولی با پراپرتی‌ها و متد‌های تعریف شده از قبل هس. بریم یه مثال از نحوه استفادشون ببینیم.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      var regexp = new RegExp("\\w+");
-      console.log(regexp);
-      // expected output: /\w+/
-      ```
-
       </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-159.  ### چطوری روی یه رشته دنبال یه پترن RegExp می‌گردی؟
+157. ### پترن‌های regular-expression چیه؟
 
-      می‌تونیم از متد test عبارت منظم برای جستجوی یه رشته برای الگو استفاده کنیم که بسته به نتیجه، true یا false رو برمیگردونه.
+     Regex یه گروهی از ساختار‌ها برامون اماده کرده که با اونا کاراکتر‌ها رو چک کنیم اونا تو سه مدل طبفه بندی میشن
+     1. **براکت‌ها:** برای پیدا کردن رنجی از کاراکتر استفاده میشن 
+     برای مثال پایین چن تا مورد استفاده لیست شدن
+        1. [abc]: برای پیدا کردن هر کاراکتری بین   این سه کاراکتر استفاده میشه 
+        2. [0-9]: برای پیدا کردن ارقام بین این دو   عدد استفاده میشه
+        3. (a|b): برای پیدا کردن هر یه از گزینه‌های جدا شده با | استفاده می‌شه
+     2. **کاراکتر برابر با:** این عبارت‌ها کاراکتر‌هایی با معنی خاص هستن
+     برای مثال پایین سه تا مورد که استفاده می‌شه ازشون رو ببینیم
+        1. \\d:  برای پیدا کردن اعداد استفاده میشه
+        2. \\s:  برای پیدا کردن فاصله‌ها استفاده میشه
+        3. \\b:  برای پیدا کردن کاراکتر‌های همخوانی داشته با شروع شدن یا  پایانشون استفاده میشه
+     3. **کمیت کننده‌ها:** این‌ها برای  تعریف کمیت‌ها موثر هستن
+     برای مثال پایین دو تا مورد استفاده براشون اوردیم
+        1. n+: برای پیدا کردن رشته همخوانی داشته با حداقل یه کاراکتر
+        2. n*: برای پیدا کردن همخوانی هر رشته شامل صفر یا بیشتر
+        3. n?: برای پیدا کردن هر رشته که شامل صفر یا یه کاراکنر می‌شه
+     
+     **[فهرست](#فهرست)**
 
-      <span dir="ltr" align="left">
+158. ### آبجکت RegExp چیه؟
 
-      ```javascript
-      var pattern = /you/;
-      console.log(pattern.test("How are you?")); //true
-      ```
+     `object`‌های `Regex` یه عبارت معمولی با پراپرتی‌ها و متد‌های تعریف شده از قبل هس. بریم یه مثال از نحوه استفادشون ببینیم.
 
-      </span>
+     <span dir="ltr" align="left">
 
-      **[فهرست](#فهرست)**
+     ```javascript
+     var regexp = new RegExp('\\w+');
+     console.log(regexp);
+     // expected output: /\w+/
+     ```
 
-160.  ### هدف از متد exec چیه؟
+     </span>
 
-      هدف متد exec شبیه به روش تسته اما جستجوی یه تطابق تو یه رشته مشخص رو انجام میده و یه آرایه نتیجه یا null رو به جای برگردوندن true/false برمی‌گردونه.
+     **[فهرست](#فهرست)**
 
-      <span dir="ltr" align="left">
+159. ### چطوری روی یه رشته دنبال یه پترن RegExp می‌گردی؟
 
-      ```javascript
-      var pattern = /you/;
-      console.log(pattern.exec("How are you?")); //["you", index: 8, input: "How are you?", groups: undefined]
-      ```
+     می‌تونیم از متد test عبارت منظم برای جستجوی یه رشته برای الگو استفاده کنیم که بسته به نتیجه، true یا false رو برمیگردونه.
 
-      </span>
+     <span dir="ltr" align="left">
 
-      **[فهرست](#فهرست)**
+     ```javascript
+     var pattern = /you/;
+     console.log(pattern.test("How are you?")); //true
+     ```
 
-161.  ### چطوری استایل‌های یه المنت HTML رو تغییر میدی؟
+     </span>
 
-      شما می‌تونین سبک درون خطی یا اسم کلاس یه عنصر HTML رو با استفاده از جاواسکریپت تغییر بدین
+     **[فهرست](#فهرست)**
 
-      1. **استفاده از پراپرتی style:** با استفاده از ویژگی style می‌تونین استایل درون خطی رو تغییر بدین
+160. ### هدف از متد exec چیه؟
 
-      <span dir="ltr" align="left">
+     هدف متد exec شبیه به روش تسته اما جستجوی یه تطابق تو یه رشته مشخص رو انجام میده و یه آرایه نتیجه یا null رو به جای برگردوندن true/false برمی‌گردونه.
 
-      ```javascript
-      document.getElementById("title").style.fontSize = "30px";
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     var pattern = /you/;
+     console.log(pattern.exec("How are you?")); //["you", index: 8, input: "How are you?", groups: undefined]
+     ```
 
-      2. **استفاده از پراپرتی className:** تغییر کلاس عنصر با استفاده از ویژگی className آسان است
+     </span>
 
-      <span dir="ltr" align="left">
+     **[فهرست](#فهرست)**
 
-      ```javascript
+161. ### چطوری استایل‌های یه المنت HTML رو تغییر میدی؟
+
+     شما می‌تونین سبک درون خطی یا اسم کلاس یه عنصر HTML رو با استفاده از جاواسکریپت تغییر بدین
+
+     1. **استفاده از پراپرتی style:** با استفاده از ویژگی style می‌تونین استایل درون خطی رو تغییر بدین
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     document.getElementById("title").style.fontSize = "30px";
+     ```
+
+     </span>
+
+     2. **استفاده از پراپرتی className:** تغییر کلاس عنصر با استفاده از ویژگی className آسان است
+
+     <span dir="ltr" align="left">
+
+     ```javascript
       document.getElementById("title").style.className = "custom-title";
-      ```
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-162.  ### نتیجه عبارت 1+2+'3' چی می‌شه؟
+162. ### نتیجه عبارت 1+2+'3' چی می‌شه؟
 
-      خروجی '33' می‌شه. از اونجایی که «1» و «2» مقادیر عددی هستن، نتیجه دو رقم اول یه مقدار عددی «3» خواهد بود. رقم بعدی یه مقدار نوع رشته اس چون افزودن مقدار عددی «3» و مقدار رشته «3» فقط یه مقدار الحاقی «33» می‌شه.
+     خروجی '33' می‌شه. از اونجایی که «1» و «2» مقادیر عددی هستن، نتیجه دو رقم اول یه مقدار عددی «3» خواهد بود. رقم بعدی یه مقدار نوع رشته اس چون افزودن مقدار عددی «3» و مقدار رشته «3» فقط یه مقدار الحاقی «33» می‌شه.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-163.  ### عبارت debugger چیکار می‌کنه؟
+163. ### عبارت debugger چیکار می‌کنه؟
 
-      دستور debugger هر گونه عملکرد اشکال زدایی موجود رو فراخوانی می‌کنه، مانند تعیین breakpoint. اگه هیچ عملکرد اشکال زدایی در دسترس نباشه، این عبارت تاثیری نداره.
-      برای مثال، در تابع زیر یه دستور debugger درج شده. بنابراین اجرا تو دستور debugger مثل یه breakpoint در منبع اسکریپت متوقف می‌شه.
+     دستور debugger هر گونه عملکرد اشکال زدایی موجود رو فراخوانی می‌کنه، مانند تعیین breakpoint. اگه هیچ عملکرد اشکال زدایی در دسترس نباشه، این عبارت تاثیری نداره.
+     برای مثال، در تابع زیر یه دستور debugger درج شده. بنابراین اجرا تو دستور debugger مثل یه breakpoint در منبع اسکریپت متوقف می‌شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function getProfile() {
-        // code goes here
-        debugger;
-        // code goes here
-      }
-      ```
+     ```javascript
+     function getProfile() {
+     // code goes here
+     debugger;
+     // code goes here
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-164.  ### هدف از breakpointها توی debugging چیه؟
+164. ### هدف از breakpointها توی debugging چیه؟
 
-      پس از اجرای دستور debugger و باز شدن پنجره دیباگر، می‌تونیم breakpointها رو در کد جاواسکریپت تنظیم کنیم. در هر breakpoint، جاواسکریپت اجرا نمی‌شه و به ما اجازه میده مقادیر جاواسکریپت رو بررسی کنیم. پس از بررسی مقادیر، می‌تونیم با استفاده از دکمه پخش، اجرای کد رو ادامه بدیم.
+     پس از اجرای دستور debugger و باز شدن پنجره دیباگر، می‌تونیم breakpointها رو در کد جاواسکریپت تنظیم کنیم. در هر breakpoint، جاواسکریپت اجرا نمی‌شه و به ما اجازه میده مقادیر جاواسکریپت رو بررسی کنیم. پس از بررسی مقادیر، می‌تونیم با استفاده از دکمه پخش، اجرای کد رو ادامه بدیم.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-165.  ### آیا می‌تونیم از عبارت‌های رزرو شده در تعریف identifierها(اسم متغیر، کلاس و ...) استفاده کنیم؟
+165. ### آیا می‌تونیم از عبارت‌های رزرو شده در تعریف identifierها(اسم متغیر، کلاس و ...) استفاده کنیم؟
 
-      نه، ما نمی‌تونیم از کلمات رزرو شده به عنوان متغیر، برچسب، اسم آبجکت یا تابع استفاده کنیم. بیاین یه مثال ساده رو ببینیم:
+     نه، ما نمی‌تونیم از کلمات رزرو شده به عنوان متغیر، برچسب، اسم آبجکت یا تابع استفاده کنیم. بیاین یه مثال ساده رو ببینیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      let else = "hello"; // Uncaught SyntaxError: Unexpected token else
-      ```
+     ```javascript
+     let else = "hello"; // Uncaught SyntaxError: Unexpected token else
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-166.  ### چطوری تشخیص بدیم که یه مرورگر mobile هست یا نه؟
+166. ### چطوری تشخیص بدیم که یه مرورگر mobile هست یا نه؟
 
-      ما می‌تونیم با استفاده از Regex که یه boolean به ما برمی‌گردونه بفهمیم که مرورگری که کاربر داره ازش استفاده می‌کنه موبایل هست یا نه، کد تشخیص به این صورت نوشته میشه:
+     ما می‌تونیم با استفاده از Regex که یه boolean به ما برمی‌گردونه بفهمیم که مرورگری که کاربر داره ازش استفاده می‌کنه موبایل هست یا نه، کد تشخیص به این صورت نوشته میشه:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      window.mobilecheck = function () {
-        var mobileCheck = false;
-        (function (a) {
-          if (
-            /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
-              a
-            ) ||
-            /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(
-              a.substr(0, 4)
-            )
-          )
-            mobileCheck = true;
-        })(navigator.userAgent || navigator.vendor || window.opera);
-        return mobileCheck;
-      };
-      ```
+     ```javascript
+     window.mobilecheck = function() {
+       var mobileCheck = false;
+       (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) mobileCheck = true;})(navigator.userAgent||navigator.vendor||window.opera);
+       return mobileCheck;
+     };
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-167.  ### چطوری بدون Regex تشخیص بدیم که یه مرورگر mobile هست یا نه؟
+167. ### چطوری بدون Regex تشخیص بدیم که یه مرورگر mobile هست یا نه؟
 
-      می‌تونیم مرورگرهای تلفن همراه رو با اجرای فهرستی از دستگاه‌ها و بررسی اینکه آیا `useragent` با چیزی مطابقت داره یا نه، شناسایی کنیم. این یه راه حل جایگزین برای استفاده از RegExp هستش
+     می‌تونیم مرورگرهای تلفن همراه رو با اجرای فهرستی از دستگاه‌ها و بررسی اینکه آیا `useragent` با چیزی مطابقت داره یا نه، شناسایی کنیم. این یه راه حل جایگزین برای استفاده از RegExp هستش
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function detectmob() {
-        if (
-          navigator.userAgent.match(/Android/i) ||
-          navigator.userAgent.match(/webOS/i) ||
-          navigator.userAgent.match(/iPhone/i) ||
-          navigator.userAgent.match(/iPad/i) ||
-          navigator.userAgent.match(/iPod/i) ||
-          navigator.userAgent.match(/BlackBerry/i) ||
-          navigator.userAgent.match(/Windows Phone/i)
-        ) {
-          return true;
-        } else {
-          return false;
-        }
-      }
-      ```
+     ```javascript
+     function detectmob() {
+      if( navigator.userAgent.match(/Android/i)
+          || navigator.userAgent.match(/webOS/i)
+          || navigator.userAgent.match(/iPhone/i)
+          || navigator.userAgent.match(/iPad/i)
+          || navigator.userAgent.match(/iPod/i)
+          || navigator.userAgent.match(/BlackBerry/i)
+          || navigator.userAgent.match(/Windows Phone/i)
+      ){
+         return true;
+       }
+      else {
+         return false;
+       }
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-168.  ### چطوری طول و عرض یه تصویر رو با جاواسکریپت به دست میاری؟
+168. ### چطوری طول و عرض یه تصویر رو با جاواسکریپت به دست میاری؟
 
-      می‌تونیم با استفاده از جاواسکریپت به صورت برنامه ریزی شده تصویر رو بدست بیاریم و ابعاد (عرض و ارتفاع) رو بررسی کنیم، برای مثال syntax بررسی میتونه طبق مثال زیر انجام بشه:
+     می‌تونیم با استفاده از جاواسکریپت به صورت برنامه‌ریزی شده تصویر رو بدست بیاریم و ابعاد (عرض و ارتفاع) رو بررسی کنیم، برای مثال syntax بررسی میتونه طبق مثال زیر انجام بشه:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const img = new Image();
-      img.onload = function () {
-        console.log(this.width + "x" + this.height);
-      };
-      img.src = "http://www.google.com/intl/en_ALL/images/logo.gif";
-      ```
+     ```javascript
+     const img = new Image();
+     img.onload = function() {
+       console.log(this.width + 'x' + this.height);
+     }
+     img.src = 'http://www.google.com/intl/en_ALL/images/logo.gif';
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-169.  ### چطوری درخواست‌های synchronous HTTP بزنیم؟
+169. ### چطوری درخواست‌های synchronous HTTP بزنیم؟
 
-      مرورگرها یه کلاس `XMLHttpRequest` ارائه می‌دن که می‌تونه برای ایجاد درخواست‌های `HTTP` همزمان از جاواسکریپت استفاده شه.
+     مرورگرها یه کلاس `XMLHttpRequest` ارائه می‌دن که می‌تونه برای ایجاد درخواست‌های `HTTP` همزمان از جاواسکریپت استفاده شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function httpGet(theUrl) {
-        const xmlHttpReq = new XMLHttpRequest();
-        xmlHttpReq.open("GET", theUrl, false); // false for synchronous request
-        xmlHttpReq.send(null);
-        return xmlHttpReq.responseText;
-      }
-      ```
+     ```javascript
+     function httpGet(theUrl) {
+         const xmlHttpReq = new XMLHttpRequest();
+         xmlHttpReq.open( "GET", theUrl, false ); // false for synchronous request
+         xmlHttpReq.send( null );
+         return xmlHttpReq.responseText;
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-170.  ### چطوری درخواست‌های asynchronous HTTP بزنیم؟
+170. ### چطوری درخواست‌های asynchronous HTTP بزنیم؟
 
-      مرورگرها یه کلاس `XMLHttpRequest` رو ارائه می‌دن که می‌تونن برای درخواست‌های `HTTP` ناهمزمان از جاواسکریپت با ارسال پارامتر سوم به عنوان `true` استفاده کنن.
+     مرورگرها یه کلاس `XMLHttpRequest` رو ارائه می‌دن که می‌تونن برای درخواست‌های `HTTP` ناهمزمان از جاواسکریپت با ارسال پارامتر سوم به عنوان `true` استفاده کنن.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function httpGetAsync(theUrl, callback) {
-        var xmlHttpReq = new XMLHttpRequest();
-        xmlHttpReq.onreadystatechange = function () {
-          if (xmlHttpReq.readyState == 4 && xmlHttpReq.status == 200)
-            callback(xmlHttpReq.responseText);
-        };
-        xmlHttp.open("GET", theUrl, true); // true for asynchronous
-        xmlHttp.send(null);
-      }
-      ```
+     ```javascript
+     function httpGetAsync(theUrl, callback)
+     {
+         var xmlHttpReq = new XMLHttpRequest();
+         xmlHttpReq.onreadystatechange = function() {
+             if (xmlHttpReq.readyState == 4 && xmlHttpReq.status == 200)
+                 callback(xmlHttpReq.responseText);
+         }
+         xmlHttp.open("GET", theUrl, true); // true for asynchronous
+         xmlHttp.send(null);
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-171.  ### چطوری یه تاریخ رو به یه تاریخ در timezone دیگه تبدیل کنیم؟
+171. ### چطوری یه تاریخ رو به یه تاریخ در timezone دیگه تبدیل کنیم؟
 
-      می‌تونیم از متد `toLocaleString` برای تبدیل تاریخ‌ها تو یه منطقه زمانی به منطقه زمانی دیگه استفاده کنیم.بریم یه مثال درموردش ببینیم.
+     می‌تونیم از متد `toLocaleString` برای تبدیل تاریخ‌ها تو یه منطقه زمانی به منطقه زمانی دیگه استفاده کنیم.بریم یه مثال درموردش ببینیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      console.log(event.toLocaleString("en-GB", { timeZone: "UTC" })); //29/06/2019, 09:56:00
-      ```
+     ```javascript
+     console.log(event.toLocaleString('en-GB', { timeZone: 'UTC' })); //29/06/2019, 09:56:00
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-172.  ### چه propertyهایی برای اندازه‌گیزی سایز window به کار میره؟
+172. ### چه propertyهایی برای اندازه‌گیزی سایز window به کار میره؟
 
-      می‌تونیم از ویژگی‌های `innerWidth،` `innerHeight،` `clientWidth،` `clientHeight` ویندوز، عنصر document و آبجکت body document برای پیدا کردن اندازه یه پنجره استفاده کنیم. بیاین از ترکیب اونا برای محاسبه اندازه یه window یا document استفاده کنیم.
+     می‌تونیم از ویژگی‌های `innerWidth،` `innerHeight،` `clientWidth،` `clientHeight` ویندوز، عنصر document و آبجکت body document برای پیدا کردن اندازه یه پنجره استفاده کنیم. بیاین از ترکیب اونا برای محاسبه اندازه یه window یا document استفاده کنیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const width =
-        window.innerWidth ||
-        document.documentElement.clientWidth ||
-        document.body.clientWidth;
+     ```javascript
+     const width = window.innerWidth
+          || document.documentElement.clientWidth
+          || document.body.clientWidth;
 
-      const height =
-        window.innerHeight ||
-        document.documentElement.clientHeight ||
-        document.body.clientHeight;
-      ```
+     const height = window.innerHeight
+          || document.documentElement.clientHeight
+          || document.body.clientHeight;
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-173.  ### عملگر شرطی سه گانه توی جاواسکریپت چیه؟
+173. ### عملگر شرطی سه گانه توی جاواسکریپت چیه؟
 
-      عملگر شرطی `ternary` تنها عملگر جاواسکریپت هستش که سه عملوند رو می‌گیره که به عنوان میانبر برای دستور if عمل می‌کنه.
+     عملگر شرطی `ternary` تنها عملگر جاواسکریپت هستش که سه عملوند رو می‌گیره که به عنوان میانبر برای دستور if عمل می‌کنه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var isAuthenticated = false;
-      console.log(
-        isAuthenticated ? "Hello, welcome" : "Sorry, you are not authenticated"
-      ); //Sorry, you are not authenticated
-      ```
+     ```javascript
+     var isAuthenticated = false;
+     console.log(isAuthenticated ? 'Hello, welcome' : 'Sorry, you are not authenticated'); //Sorry, you are not authenticated
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-174.  ### آیا می‌شه روی عملگر شرطی زنجیره شرط‌ها رو اعمال کرد؟
+174. ### آیا می‌شه روی عملگر شرطی زنجیره شرط‌ها رو اعمال کرد؟
 
-      بله، می‌تونیم زنجیره‌سازی رو روی عملگرهای شرطی مشابه `if … else if … else if… other chain` اعمال کنیم.
+     بله، می‌تونیم زنجیره‌سازی رو روی عملگرهای شرطی مشابه `if … else if … else if… other chain` اعمال کنیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function traceValue(someParam) {
-        return condition1
-          ? value1
-          : condition2
-          ? value2
-          : condition3
-          ? value3
-          : value4;
-      }
+     ```javascript
+     function traceValue(someParam) {
+         return condition1 ? value1
+              : condition2 ? value2
+              : condition3 ? value3
+              : value4;
+     }
 
-      // The above conditional operator is equivalent to:
+     // The above conditional operator is equivalent to:
 
-      function traceValue(someParam) {
-        if (condition1) {
-          return value1;
-        } else if (condition2) {
-          return value2;
-        } else if (condition3) {
-          return value3;
-        } else {
-          return value4;
-        }
-      }
-      ```
+     function traceValue(someParam) {
+         if (condition1) { return value1; }
+         else if (condition2) { return value2; }
+         else if (condition3) { return value3; }
+         else { return value4; }
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-175.  ### روش‌های اجرای جاواسکریپت بعد از لود شدن صفحه کدوما هستن؟
+175. ### روش‌های اجرای جاواسکریپت بعد از لود شدن صفحه کدوما هستن؟
 
-      1. **window.onload:**
+     1. **window.onload:**
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      window.onload = function ...
-      ```
+     ```javascript
+     window.onload = function ...
+     ```
 
-      </span>
+     </span>
 
-      2. **document.onload:**
+     2. **document.onload:**
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      document.onload = function ...
-      ```
+     ```javascript
+     document.onload = function ...
+     ```
 
-      </span>
+     </span>
 
-      3. **body onload:**
+     3. **body onload:**
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      <body onload="script();">
-      ```
+     ```javascript
+     <body onload="script();">
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-176.  ### تفاوت‌های بین proto و prototype کدوما هستن؟
+176. ### تفاوت‌های بین proto و prototype کدوما هستن؟
 
-      `__proto__` آبجکت واقعیه که در زنجیره جستجو برای حل متدها و غیره استفاده می‌شه. در حالی که `prototype` آبجکت‌ای‌ـه که برای ساخت `__proto__`استفاده می‌شه زمانی که یه آبجکت با `new Object()` ایجاد می‌کنیم.
+     `__proto__` آبجکت واقعیه که در زنجیره جستجو برای حل متدها و غیره استفاده می‌شه. در حالی که `prototype` آبجکت‌ای‌ـه که برای ساخت `__proto__`استفاده می‌شه زمانی که یه آبجکت با `new Object()` ایجاد می‌کنیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      new Employee().__proto__ === Employee.prototype;
-      new Employee().prototype === undefined;
-      ```
+     ```javascript
+     ( new Employee ).__proto__ === Employee.prototype;
+     ( new Employee ).prototype === undefined;
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-177.  ### میتونی یه مثال از زمانی که واقعا به سمیکولون( ; ) نیاز هست بزنی؟
+177. ### میتونی یه مثال از زمانی که واقعا به سمیکولون( ; ) نیاز هست بزنی؟
 
-      توصیه می‌شه که بعد از هر عبارت در جاواسکریپت از سیمیکالن استفاده کنیم. برای مثال، توی مثال زیر نذاشتن سیمیکالن، خطای `.. is not a function` رو در زمان اجرا ایجاد می‌کنه.
+     توصیه می‌شه که بعد از هر عبارت در جاواسکریپت از سیمیکالن استفاده کنیم. برای مثال، توی مثال زیر نذاشتن سیمیکالن، خطای `.. is not a function` رو در زمان اجرا ایجاد می‌کنه:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      // define a function
-      const fn = (function () {
-        //...
-      })(
-        // semicolon missing at this line
+     ```javascript
+     // define a function
+     const fn = function () {
+         //...
+     } // semicolon missing at this line
 
-        // then execute some code inside a closure
-        function () {
-          //...
-        }
-      )();
-      ```
+     // then execute some code inside a closure
+     (function () {
+         //...
+     })();
+     ```
 
-      </span>
+     </span>
 
-      از مثال بالا جاواسکریپت اینطور برداشت میکنه
+     از مثال بالا جاواسکریپت اینطور برداشت میکنه
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const fn = (function () {
-        //...
-      })(function () {
-        //...
-      })();
-      ```
+     ```javascript
+     const fn = function () {
+         //...
+     }(function () {
+         //...
+     })();
+     ```
 
-      </span>
+     </span>
 
-      در این حالت، تابع دوم رو به عنوان آرگومان به تابع اول ارسال می‌کنیم و سعی می‌کنیم نتیجه فراخوانی تابع اول رو به عنوان تابع فراخوانی کنیم.بخاطر همین برای تابع دوم خطای`.. is not a function` رو موقع اجرا می‌گیریم.
+     در این حالت، تابع دوم رو به عنوان آرگومان به تابع اول ارسال می‌کنیم و سعی می‌کنیم نتیجه فراخوانی تابع اول رو به عنوان تابع فراخوانی کنیم.بخاطر همین برای تابع دوم خطای`.. is not a function` رو موقع اجرا می‌گیریم.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-178.  ### متد freeze چیکار می‌کنه؟
+178. ### متد freeze چیکار می‌کنه؟
 
-      متد **freeze** برای فریز کردن یه آبجکت استفاده می‌شه. ثابت کردن یه آبجکت اجازه افزودن ویژگی‌های جدید به یه آبجکت رو نمی‌ده. از حذفش جلوگیری می‌کنه و از تغییر قابلیت شمارش پذیری، پیکربندی یا قابلیت نوشتن ویژگی‌های موجود جلوگیری می‌کنه. یعنی آبجکتء ارسال شده رو برمی‌گردونه و کپی ثابتی ایجاد نمی‌کنه.
+     متد **freeze** برای فریز کردن یه آبجکت استفاده می‌شه. ثابت کردن یه آبجکت اجازه افزودن ویژگی‌های جدید به یه آبجکت رو نمی‌ده. از حذفش جلوگیری می‌کنه و از تغییر قابلیت شمارش پذیری، پیکربندی یا قابلیت نوشتن ویژگی‌های موجود جلوگیری می‌کنه. یعنی آبجکتء ارسال شده رو برمی‌گردونه و کپی ثابتی ایجاد نمی‌کنه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const obj = {
-        prop: 100,
-      };
+     ```javascript
+     const obj = {
+       prop: 100
+     };
 
-      Object.freeze(obj);
-      obj.prop = 200; // Throws an error in strict mode
+     Object.freeze(obj);
+     obj.prop = 200; // Throws an error in strict mode
 
-      console.log(obj.prop); //100
-      ```
+     console.log(obj.prop); //100
+     ```
 
-      </span>
+     </span>
 
-      **نکته:** یه تایپ ارور بهمون می‌ده که ارگومان داده شده `object` نیست
+     **نکته:** یه تایپ ارور بهمون می‌ده که ارگومان داده شده `object` نیست
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-179.  ### هدف از متد freeze چیه؟
+179. ### هدف از متد freeze چیه؟
 
-      1. برای فریز کردن آبجکت‌ها و آرایه‌ها
-      2. برای `imutable` کردن آبجکت‌ها
+     1. برای فریز کردن آبجکت‌ها و آرایه‌ها 
+     2. برای `imutable` کردن آبجکت‌ها
 
-      **[فهرست](#فهرست)**
 
-180.  ### چرا به متد freeze نیاز داریم؟
+     **[فهرست](#فهرست)**
 
-      در پارادایم شی گرا، یه `API` موجود حاوی عناصر خاصیه که قصد توسعه، اصلاح یا استفاده مجدد رو خارج از زمینه فعلی خودشون ندارن. در زبان‌های مختلف کلمه کلیدیه `final`برای داشتن همچین خاصیتی استفاده می‌شه.
+180. ### چرا به متد freeze نیاز داریم؟
 
-      **[فهرست](#فهرست)**
+     در پارادایم شی گرا، یه `API` موجود حاوی عناصر خاصیه که قصد توسعه، اصلاح یا استفاده مجدد رو خارج از زمینه فعلی خودشون ندارن. در زبان‌های مختلف کلمه کلیدیه `final`برای داشتن همچین خاصیتی استفاده می‌شه.
 
-181.  ### چطوری می‌تونیم زبان ترجیحی یه مرورگر رو تشخیص بدیم؟
+     **[فهرست](#فهرست)**
 
-      ما می‌تونیم از آبجکت `navigator` که بر روری مرورگر وجود داره این کارو انجام بدیم
+181. ### چطوری می‌تونیم زبان ترجیحی یه مرورگر رو تشخیص بدیم؟
 
-      <span dir="ltr" align="left">
+     ما می‌تونیم از آبجکت `navigator` که بر روری مرورگر وجود داره این کارو انجام بدیم
 
-      ```javascript
-      var language =
-        (navigator.languages && navigator.languages[0]) || // Chrome / Firefox
-        navigator.language || // All browsers
-        navigator.userLanguage; // IE <= 10
+     <span dir="ltr" align="left">
 
-      console.log(language);
-      ```
+     ```javascript
+     var language = navigator.languages && navigator.languages[0] || // Chrome / Firefox
+                    navigator.language ||   // All browsers
+                    navigator.userLanguage; // IE <= 10
 
-      </span>
+     console.log(language);
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-182.  ### چطوری می‌تونیم حرف اول همه کلمات یه رشته رو به حرف بزرگ تبدیل کنیم؟
+     **[فهرست](#فهرست)**
 
-      ما می‌تونیم با تابع زیر این کارو انجام بدیم:
+182. ### چطوری می‌تونیم حرف اول همه کلمات یه رشته رو به حرف بزرگ تبدیل کنیم؟
 
-      <span dir="ltr" align="left">
+     ما می‌تونیم با تابع زیر این کارو انجام بدیم:
 
-      ```javascript
-      function toTitleCase(str) {
-        return str.replace(/\w\S*/g, function (txt) {
-          return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-        });
-      }
-      toTitleCase("good morning john"); // Good Morning John
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+         function toTitleCase(str) {
+             return str.replace(
+                 /\w\S*/g,
+                 function(txt) {
+                     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                 }
+             );
+         }
+         toTitleCase("good morning john"); // Good Morning John
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-183.  ### چطوری می‌شه تشخیص داد که جاواسکریپت یه صفحه وب غیرفعال شده؟
+     **[فهرست](#فهرست)**
 
-      برای تشخیص غیرفعال بودن یا نبودن جاواسکریپت می‌تونیم از تگ `<noscript>` استفاده کنین. بلوک کد داخل `<noscript>` زمانی اجرا می‌شه که جاواسکریپت غیرفعاله و معمولاً برای نمایش محتوای جایگزین زمانی که صفحه در جاواسکریپت تولید می‌شه، استفاده می‌شه.
+183. ### چطوری می‌شه تشخیص داد که جاواسکریپت یه صفحه وب غیرفعال شده؟
 
-      <span dir="ltr" align="left">
+     برای تشخیص غیرفعال بودن یا نبودن جاواسکریپت می‌تونیم از تگ `<noscript>` استفاده کنین. بلوک کد داخل `<noscript>` زمانی اجرا می‌شه که جاواسکریپت غیرفعاله و معمولاً برای نمایش محتوای جایگزین زمانی که صفحه در جاواسکریپت تولید می‌شه، استفاده می‌شه.
 
-      ```html
-      <script type="javascript">
-        // JS related code goes here
-      </script>
-      <noscript>
-        <a href="next_page.html?noJS=true"
-          >JavaScript is disabled in the page. Please click Next Page</a
-        >
-      </noscript>
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```html
+     <script type="javascript">
+         // JS related code goes here
+     </script>
+     <noscript>
+         <a href="next_page.html?noJS=true">JavaScript is disabled in the page. Please click Next Page</a>
+     </noscript>
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-184.  ### عملگرهای پشتیبانی شده توسط جاواسکریپت کدوما هستن؟
+     **[فهرست](#فهرست)**
 
-      یه عملگر قادر به دستکاری (محاسبات ریاضی و منطقی) مقدار یا عملوند معینه. اپراتورهای مختلفی توسط جاواسکریپت پشتیبانی میشن این اپراتور‌ها هستن
+184. ### عملگرهای پشتیبانی شده توسط جاواسکریپت کدوما هستن؟
 
-      1. **عملگر‌های حسابی:** شامل + (اضافه),– (منها), \* (ضرب), / (تقسیم), % (درصد), + + (اضافه کردن) و – – (کم کردن)
-      2. **عملگر‌های مقایسه ای:** شامل = =(برابر),!= (غیر برابر), ===(برابر و تایپ برابر), > (بزرگتر),> = (بزرگتر مساوی),< (کوچکتر),<= (کوچکتر مساوی)
-      3. **عملگر‌های منطقی:** شامل &&("و"منطقی),||("یا"منظقی),!( منطقی"نه")
-      4. **عملگر‌های تعیین مقدار:** شامل = (اپراتور تعیین مقدار), += (اضافه کردن و تعیین مقدار), – = (منها کردن و تعیین مقدار), \*= (ضرب و تعیین مقدار), /= (تقسیم و تعیین مقدار), %= (باقی مانده و تعیین مقدار)
-      5. **اپراتور سه تایی:** شامل اپراتور‌های شرطی سه تایی
-      6. **اپراتور تایپ:** از اون برای پیدا کردن تایپ متغیر‌ها استفاده می‌شه به صورت `typeof variable`
+     یه عملگر قادر به دستکاری (محاسبات ریاضی و منطقی) مقدار یا عملوند معینه. اپراتورهای مختلفی توسط جاواسکریپت پشتیبانی میشن این اپراتور‌ها هستن
+     1. **عملگر‌های حسابی:** شامل + (اضافه),– (منها), * (ضرب), / (تقسیم), % (درصد), + + (اضافه کردن)  و – – (کم کردن)
+     2. **عملگر‌های مقایسه ای:** شامل = =(برابر),!= (غیر برابر), ===(برابر و تایپ برابر), > (بزرگتر),> = (بزرگتر مساوی),< (کوچکتر),<= (کوچکتر مساوی)
+     3. **عملگر‌های منطقی:** شامل &&("و"منطقی),||("یا"منظقی),!( منطقی"نه")
+     4. **عملگر‌های تعیین مقدار:** شامل = (اپراتور تعیین مقدار), += (اضافه کردن و تعیین مقدار), – = (منها کردن و تعیین مقدار), *= (ضرب و تعیین مقدار), /= (تقسیم و تعیین مقدار), %= (باقی مانده و تعیین مقدار)
+     5. **اپراتور سه تایی:**  شامل اپراتور‌های شرطی سه تایی
+     6. **اپراتور تایپ:** از اون برای پیدا کردن تایپ متغیر‌ها استفاده می‌شه به صورت `typeof variable`
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-185.  ### پارامتر rest چیکار می‌کنه؟
+185. ### پارامتر rest چیکار می‌کنه؟
 
-      پارامتر `Rest` یه روش بهبود یافته برای مدیریت پارامترهای تابع هستش که به ما امکان میده تعداد نامحدودی از آرگومان‌ها رو به عنوان یه آرایه دریافت کنیم:
+     پارامتر `Rest` یه روش بهبود یافته برای مدیریت پارامترهای تابع هستش که به ما امکان میده تعداد نامحدودی از آرگومان‌ها رو به عنوان یه آرایه دریافت کنیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function f(a, b, ...theArgs) {
-        // ...
-      }
-      ```
+     ```javascript
+     function f(a, b, ...theArgs) {
+       // ...
+     }
+     ```
 
-      </span>
+     </span>
 
-      برای مثال، بیاین یه مثال مجموع برای محاسبه تعداد پویا پارامترها در نظر بگیریم،
+     برای مثال، بیاین یه مثال مجموع برای محاسبه تعداد پویا پارامترها در نظر بگیریم،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function total(…args){
-           let sum = 0;
-           for(let i of args){
-                sum+=i;
-           }
-           return sum;
-      }
-      console.log(fun(1,2)); //3
-      console.log(fun(1,2,3)); //6
-      console.log(fun(1,2,3,4)); //13
-      console.log(fun(1,2,3,4,5)); //15
-      ```
+     ```javascript
+     function total(…args){
+          let sum = 0;
+          for(let i of args){
+               sum+=i;
+          }
+          return sum;
+     }
+     console.log(fun(1,2)); //3
+     console.log(fun(1,2,3)); //6
+     console.log(fun(1,2,3,4)); //13
+     console.log(fun(1,2,3,4,5)); //15
+     ```
 
-      </span>
+     </span>
 
-      **نکته:** پارامتر`Rest` در ES6 به استاندارد جاوااسکریپت اضافه شد
+     **نکته:** پارامتر`Rest` در ES6 به استاندارد جاوااسکریپت اضافه شد
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-186.  ### اگه پارامتر rest رو به عنوان آخرین پارامتر استفاده نکنیم چی می‌شه؟
+186. ### اگه پارامتر rest رو به عنوان آخرین پارامتر استفاده نکنیم چی می‌شه؟
 
-      پارامتر ‍‍`Rest` چون وظیفه اش جمع آوری تمام آرگومان‌های باقی مونده تو یه آرایه اس پس باید همیشه آخرین پارامتر باشه. برای مثال، اگه تابعیو مثل کد زیر تعریف کنیم معنی نداره و یه خطا ایجاد می کنه:
+     پارامتر ‍‍`Rest` چون وظیفه اش جمع آوری تمام آرگومان‌های باقی مونده تو یه آرایه اس پس باید همیشه آخرین پارامتر باشه. برای مثال، اگه تابعیو مثل کد زیر تعریف کنیم معنی نداره و یه خطا ایجاد می کنه:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function someFunc(a,…b,c){
-           //You code goes here
-           return;
-      }
-      ```
+     ```javascript
+     function someFunc(a,…b,c){
+          //You code goes here
+          return;
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-187.  ### عملگرهای منطقی باینری توی جاواسکریپت کدوما هستن؟
+187. ### عملگرهای منطقی باینری توی جاواسکریپت کدوما هستن؟
 
-      1. به صورت بیتی AND ( & )
-      2. به صورت بیتی OR ( | )
-      3. به صورت بیتی XOR ( ^ )
-      4. به صورت بیتی NOT ( ~ )
-      5. تغییر مکان به چپ ( << )
-      6. علامت در حال انتشار به سمت راست ( >> )
-      7. صفر پر کردن Shift راست ( >>> )
+     1. به صورت بیتی AND ( & )
+     2. به صورت بیتی OR ( | )
+     3. به صورت بیتی XOR ( ^ )
+     4. به صورت بیتی NOT ( ~ )
+     5. تغییر مکان به چپ ( << )
+     6. علامت در حال انتشار به سمت راست ( >> )
+     7. صفر پر کردن Shift راست ( >>> )
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-188.  ### عملگر spread چیکار می‌کنه؟
+188. ### عملگر spread چیکار می‌کنه؟
 
-      عملگر Spread به تکرارپذیرها (آرایه‌ها / اشیاء / رشته‌ها) اجازه میده تا به آرگومان‌ها / عناصر منفرد گسترش پیدا کنن. برای مشاهده این رفتار مثالی بزنیم:
+     عملگر Spread به تکرارپذیرها (آرایه‌ها / اشیاء / رشته‌ها) اجازه میده تا به آرگومان‌ها / عناصر منفرد گسترش پیدا کنن. برای مشاهده این رفتار مثالی بزنیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function calculateSum(x, y, z) {
-        return x + y + z;
-      }
+     ```javascript
+     function calculateSum(x, y, z) {
+       return x + y + z;
+     }
 
-      const numbers = [1, 2, 3];
+     const numbers = [1, 2, 3];
 
-      console.log(calculateSum(...numbers)); // 6
-      ```
+     console.log(calculateSum(...numbers)); // 6
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-189.  ### چطوری تشخیص میدی که یه آبجکت freeze شده یا نه؟
+189. ### چطوری تشخیص میدی که یه آبجکت freeze شده یا نه؟
 
-      متد `Object.isFrozen` برای تعیین اینکه آیا یه آبجکت منجمد هس یا نه استفاده می‌شه. اگه همه شرایط زیر درست باشه، یه آبجکت منجمد می‌شه.
+     متد `Object.isFrozen` برای تعیین اینکه آیا یه آبجکت منجمد هس یا نه استفاده می‌شه. اگه همه شرایط زیر درست باشه، یه آبجکت منجمد می‌شه.
+     1. اگه قابل توسعه نباشه.
+     2. اگه تمام خصوصیاتش غیر قابل تنظیم باشن.
+     3. اگه تمام خصوصیات داده اون غیر قابل نوشتن باشه.
 
-      1. اگه قابل توسعه نباشه.
-      2. اگه تمام خصوصیاتش غیر قابل تنظیم باشن.
-      3. اگه تمام خصوصیات داده اون غیر قابل نوشتن باشه.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     const object = {
+        property: 'Welcome JS world'
+     };
+     Object.freeze(object);
+     console.log(Object.isFrozen(object));
+     ```
 
-      ```javascript
+     </span>
+
+     **[فهرست](#فهرست)**
+
+190. ### چطوری بررسی کنیم که دو تا مقدار(شامل آبجکت) با هم برابرن یا نه؟
+
+     متد `Object.is` تعیین می‌کنه که آیا دو مقدار یه مقدار هستن یا نه. برای مثال، استفاده با انواع مختلف مقادیر،
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     Object.is('hello', 'hello');     // true
+     Object.is(window, window);   // true
+     Object.is([], []) // false
+     ```
+
+     </span>
+
+     اگه یکی از موارد زیر برقرار باشه، دو مقدار یکسان در نظر گرفته میشه:
+     1. هردو undefined
+     2. هردو null
+     3. هردو true یا هر دو false
+     4. هر دو رشته با طول یکسان با کاراکترهای مشابه به ترتیب یکسان
+     5. هر دو یه آبجکت (یعنی هر دو شی رفرنس یکسان دارن)
+     6. هر دو عدد و
+     هر دو +0
+     هر دو -0
+     هر دو NaN
+     هر دو غیر صفر و هر دو NaN نیستن و هر دو دارای یه مقدار هستن.
+
+     **[فهرست](#فهرست)**
+
+191. ### هدف از متد is روی object چیه؟
+
+     برای مقایسه دو رشته یا عدد و یا ابجکت با همدیگه و یا پیدا کردن قطبیت دو عدد استفاده میشه:
+
+     **[فهرست](#فهرست)**
+
+192. ### چطوری propertyهای یه object رو به یه object دیگه کپی می‌کنی؟
+
+     می‌تونیم از متد `Object.assign` استفاده کنیم که برای کپی کردن مقادیر و ویژگی‌ها از یه یا چند آبجکت منبع به یه آبجکت هدف استفاده می‌شه. آبجکت مورد نظر رو که دارای خواص و مقادیر کپی شده از آبجکت اولیه اس رو برمی‌گردونه.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     Object.assign(target, ...sources)
+     ```
+
+     </span>
+
+     بیاین با یه منبع و یه شی هدف مثال بزنیم،
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     const target = { a: 1, b: 2 };
+     const source = { b: 3, c: 4 };
+
+     const returnedTarget = Object.assign(target, source);
+
+     console.log(target); // { a: 1, b: 3, c: 4 }
+
+     console.log(returnedTarget); // { a: 1, b: 3, c: 4 }
+     ```
+
+     </span>
+
+     همونطور که در کد بالا مشاهده شد، یه ویژگی مشترک (`b`) از منبع به مقصد وجود داره، بنابراین مقداش بازنویسی شده.
+
+     **[فهرست](#فهرست)**
+
+193. ### کاربردهای ممتد assign چیه؟
+
+     1. برای شبیه سازی یه آبجکت .
+     2. برای ادغام آبجکت ها با ویژگی‌های یکسان .
+
+     **[فهرست](#فهرست)**
+
+194. ### آبجکت proxy چیه؟
+
+     آبجکت Proxy برای تعریف رفتار سفارشی برای عملیات‌های اساسی مثل جستجوی ویژگی، تخصیص، شمارش، فراخوانی تابع و غیره استفاده می‌شه.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     var p = new Proxy(target, handler);
+     ```
+
+     </span>
+
+     بیاین مثالی از شیء پروکسی بزنیم،
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     const handler = {
+         get: function(obj, prop) {
+             return prop in obj ?
+                 obj[prop] :
+                 100;
+         }
+     };
+
+     const p = new Proxy({}, handler);
+     p.a = 10;
+     p.b = null;
+
+     console.log(p.a, p.b); // 10, null
+     console.log('c' in p, p.c); // false, 100
+     ```
+
+     </span>
+
+     در کد بالا، از کنترل‌کننده «get» استفاده می‌کنه که رفتار پراکسی رو موقع انجام عملیات روی اون تعریف می‌کنه.
+
+     **[فهرست](#فهرست)**
+
+195. ### هدف از متد seal چیه؟
+
+     روش **Object.seal** برای مهر و موم کردن یه آبجکت با جلوگیری از اضافه شدن ویژگی‌های جدید بهش و علامت گذاری تمام ویژگی‌های موجود به عنوان غیر قابل تنظیم، استفاده می‌شه. اما مقادیر پراپرتی‌های فعلی تا زمانی که قابل نوشتن باشن , قابل تغییر هستن. بیاین مثال زیرو برای درک بیشتر در مورد روش seal ببینیم
+
+     <span dir="ltr" align="left">
+
+     ```javascript
       const object = {
-        property: "Welcome JS world",
-      };
-      Object.freeze(object);
-      console.log(Object.isFrozen(object));
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-190.  ### چطوری بررسی کنیم که دو تا مقدار(شامل آبجکت) با هم برابرن یا نه؟
-
-      متد `Object.is` تعیین می‌کنه که آیا دو مقدار یه مقدار هستن یا نه. برای مثال، استفاده با انواع مختلف مقادیر،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      Object.is("hello", "hello"); // true
-      Object.is(window, window); // true
-      Object.is([], []); // false
-      ```
-
-      </span>
-
-      اگه یکی از موارد زیر برقرار باشه، دو مقدار یکسان در نظر گرفته میشه:
-
-      1. هردو undefined
-      2. هردو null
-      3. هردو true یا هر دو false
-      4. هر دو رشته با طول یکسان با کاراکترهای مشابه به ترتیب یکسان
-      5. هر دو یه آبجکت (یعنی هر دو شی رفرنس یکسان دارن)
-      6. هر دو عدد و
-         هر دو +0
-         هر دو -0
-         هر دو NaN
-         هر دو غیر صفر و هر دو NaN نیستن و هر دو دارای یه مقدار هستن.
-
-      **[فهرست](#فهرست)**
-
-191.  ### هدف از متد is روی object چیه؟
-
-      برای مقایسه دو رشته یا عدد و یا ابجکت با همدیگه و یا پیدا کردن قطبیت دو عدد استفاده میشه:
-
-      **[فهرست](#فهرست)**
-
-192.  ### چطوری propertyهای یه object رو به یه object دیگه کپی می‌کنی؟
-
-      می‌تونیم از متد `Object.assign` استفاده کنیم که برای کپی کردن مقادیر و ویژگی‌ها از یه یا چند آبجکت منبع به یه آبجکت هدف استفاده می‌شه. آبجکت مورد نظر رو که دارای خواص و مقادیر کپی شده از آبجکت اولیه اس رو برمی‌گردونه.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      Object.assign(target, ...sources);
-      ```
-
-      </span>
-
-      بیاین با یه منبع و یه شی هدف مثال بزنیم،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      const target = { a: 1, b: 2 };
-      const source = { b: 3, c: 4 };
-
-      const returnedTarget = Object.assign(target, source);
-
-      console.log(target); // { a: 1, b: 3, c: 4 }
-
-      console.log(returnedTarget); // { a: 1, b: 3, c: 4 }
-      ```
-
-      </span>
-
-      همونطور که در کد بالا مشاهده شد، یه ویژگی مشترک (`b`) از منبع به مقصد وجود داره، بنابراین مقداش بازنویسی شده.
-
-      **[فهرست](#فهرست)**
-
-193.  ### کاربردهای ممتد assign چیه؟
-
-      1. برای شبیه سازی یه آبجکت .
-      2. برای ادغام آبجکت ها با ویژگی‌های یکسان .
-
-      **[فهرست](#فهرست)**
-
-194.  ### آبجکت proxy چیه؟
-
-      آبجکت Proxy برای تعریف رفتار سفارشی برای عملیات‌های اساسی مثل جستجوی ویژگی، تخصیص، شمارش، فراخوانی تابع و غیره استفاده می‌شه.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      var p = new Proxy(target, handler);
-      ```
-
-      </span>
-
-      بیاین مثالی از شیء پروکسی بزنیم،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      const handler = {
-        get: function (obj, prop) {
-          return prop in obj ? obj[prop] : 100;
-        },
-      };
-
-      const p = new Proxy({}, handler);
-      p.a = 10;
-      p.b = null;
-
-      console.log(p.a, p.b); // 10, null
-      console.log("c" in p, p.c); // false, 100
-      ```
-
-      </span>
-
-      در کد بالا، از کنترل‌کننده «get» استفاده می‌کنه که رفتار پراکسی رو موقع انجام عملیات روی اون تعریف می‌کنه.
-
-      **[فهرست](#فهرست)**
-
-195.  ### هدف از متد seal چیه؟
-
-      روش **Object.seal** برای مهر و موم کردن یه آبجکت با جلوگیری از اضافه شدن ویژگی‌های جدید بهش و علامت گذاری تمام ویژگی‌های موجود به عنوان غیر قابل تنظیم، استفاده می‌شه. اما مقادیر پراپرتی‌های فعلی تا زمانی که قابل نوشتن باشن , قابل تغییر هستن. بیاین مثال زیرو برای درک بیشتر در مورد روش seal ببینیم
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      const object = {
-        property: "Welcome JS world",
+         property: 'Welcome JS world'
       };
       Object.seal(object);
-      object.property = "Welcome to object world";
+      object.property = 'Welcome to object world';
       console.log(Object.isSealed(object)); // true
       delete object.property; // You cannot delete when sealed
       console.log(object.property); //Welcome to object world
-      ```
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-196.  ### کاربردهای متد seal چیه؟
+196. ### کاربردهای متد seal چیه؟
 
-      1. برای آب بندی آبجکت‌ها و آرایه‌ها استفاده می‌شه.
-      2. برای غیرقابل تغییر کردن یه آبجکت استفاده می‌شه.
+     1. برای آب بندی آبجکت‌ها و آرایه‌ها استفاده می‌شه.
+     2. برای غیرقابل تغییر کردن یه آبجکت استفاده می‌شه.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-197.  ### تفاوت‌های بین متدهای freeze و seal چیا هست؟
+197. ### تفاوت‌های بین متدهای freeze و seal چیا هست؟
 
-      اگه یه آبجکت با استفاده از متد `Object.freeze` منجمد شه، ویژگی‌هاش تغییرناپذیر می‌شن و هیچ تغییری در اونا نمیتونیم ایجاد کنیم در حالی که اگه یه آبجکت با استفاده از متد `Object.seal` مهر و موم شده باشه، می‌شه تغییرات روی ویژگی‌های موجود ایجاد کرد. از آبجکت
+     اگه یه آبجکت با استفاده از متد `Object.freeze` منجمد شه، ویژگی‌هاش تغییرناپذیر می‌شن و هیچ تغییری در اونا نمیتونیم ایجاد کنیم در حالی که اگه یه آبجکت با استفاده از متد `Object.seal` مهر و موم شده باشه، می‌شه تغییرات روی ویژگی‌های موجود ایجاد کرد. 
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-198.  ### چطوری تشخیص میدی که یه آبجکت seal شده یا نه؟
+198. ### چطوری تشخیص میدی که یه آبجکت seal شده یا نه؟
 
-      متد `Object.isSealed` برای تعیین مهر و موم بودن یا نبودن یه آبجکت استفاده می‌شه. اگه همه شرایط زیر درست باشه یه شی مهر و موم می‌شه
+     متد `Object.isSealed` برای تعیین مهر و موم بودن یا نبودن یه آبجکت استفاده می‌شه. اگه همه شرایط زیر درست باشه یه شی مهر و موم می‌شه
+     1.  اگه قابل توسعه نباشه.
+     2.  اگه تمام خصوصیات اون غیر قابل تنظیم باشن.
+     3.  اگه قابل جابجایی نباشه (اما لزوماً غیرقابل نوشتن نیست).
+     بیاین اونو در عمل ببینیم:
 
-      1. اگه قابل توسعه نباشه.
-      2. اگه تمام خصوصیات اون غیر قابل تنظیم باشن.
-      3. اگه قابل جابجایی نباشه (اما لزوماً غیرقابل نوشتن نیست).
-         بیاین اونو در عمل ببینیم:
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     const object = {
+     property: 'Hello, Good morning'
+     };
 
-      ```javascript
-      const object = {
-        property: "Hello, Good morning",
-      };
+     Object.seal(object); // Using seal() method to seal the object
 
-      Object.seal(object); // Using seal() method to seal the object
+     console.log(Object.isSealed(object));      // checking whether the object is sealed or not
+     ```
 
-      console.log(Object.isSealed(object)); // checking whether the object is sealed or not
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+199. ### چطوری کلید و مقدارهای enumerable رو به دست میاری؟
+     
 
-199.  ### چطوری کلید و مقدارهای enumerable رو به دست میاری؟
+     متد `Object.entries` برای برگردوندن آرایه‌ای از جفت‌های [key, value] دارای کلید رشته‌ای شمارش‌پذیر یه شی معین، به همون ترتیبی که توسط یه حلقه for...in ارائه می‌شه، استفاده می‌شه. بیاین عملکرد متد `object.entries` رو تو یه مثال ببینیم،
 
-      متد `Object.entries` برای برگردوندن آرایه‌ای از جفت‌های [key, value] دارای کلید رشته‌ای شمارش‌پذیر یه شی معین، به همون ترتیبی که توسط یه حلقه for...in ارائه می‌شه، استفاده می‌شه. بیاین عملکرد متد `object.entries` رو تو یه مثال ببینیم،
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     const object = {
+          a: 'Good morning',
+          b: 100
+     };
 
-      ```javascript
-      const object = {
-        a: "Good morning",
-        b: 100,
-      };
+     for (let [key, value] of Object.entries(object)) {
+          console.log(`${key}: ${value}`);      
+          // a: 'Good morning'
+          // b: 100
+     }
+     ```
 
-      for (let [key, value] of Object.entries(object)) {
-        console.log(`${key}: ${value}`);
-        // a: 'Good morning'
-        // b: 100
-      }
-      ```
+     </span>
 
-      </span>
+     **نکته:** ترتیب به عنوان آبجکت تعریف شده تضمین نمی‌شه.
 
-      **نکته:** ترتیب به عنوان آبجکت تعریف شده تضمین نمی‌شه.
 
-200.  ### تفاوت‌های بین متدهای Object.values و Object.entries چیا هست؟
+200. ### تفاوت‌های بین متدهای Object.values و Object.entries چیا هست؟
 
-      رفتار متد `Object.values` مشابه روش `Object.entries` هست اما به جای جفت [key,value] آرایه ای از مقادیر را برمی گردونه.
+     رفتار متد `Object.values` مشابه روش `Object.entries` هست اما به جای جفت [key,value] آرایه ای از مقادیر را برمی گردونه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const object = {
-        a: "Good morning",
-        b: 100,
-      };
+     ```javascript
+     const object = {
+          a: 'Good morning',
+          b: 100
+     };
 
-      for (let value of Object.values(object)) {
-        console.log(`${value}`); // 'Good morning' 100
-      }
-      ```
+     for (let value of Object.values(object)) {
+          console.log(`${value}`); // 'Good morning' 100
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-201.  ### چطوری لیست کلیدهای یه object رو بدست میاری؟
 
-      می‌تونین از متد `Object.keys` استفاده کنین که برای برگردوندن آرایه‌ای از اسم ویژگی‌های یه آبجکت معین استفاده می‌شه، به همون ترتیبی که با یه حلقه معمولی دریافت می‌کنیم. برای مثال:
+201. ### چطوری لیست کلیدهای یه object رو بدست میاری؟
 
-      <span dir="ltr" align="left">
+     می‌تونین از متد `Object.keys` استفاده کنین که برای برگردوندن آرایه‌ای از اسم ویژگی‌های یه آبجکت معین استفاده می‌شه، به همون ترتیبی که با یه حلقه معمولی دریافت می‌کنیم. برای مثال:
 
-      ```javascript
+     <span dir="ltr" align="left">
+
+     ```javascript
+     const user = {
+       name: 'John',
+       gender: 'male',
+       age: 40
+     };
+
+     console.log(Object.keys(user)); //['name', 'gender', 'age']
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+202. ### چطوری یه object با prototype درست می‌کنی؟
+
+     متد `Object.create`  برای ایجاد یه object جدید با object prototype و ویژگی‌های مشخص شده استفاده می‌شه. برای مثال، از یه object موجود به عنوان prototype object جدید ایجاد شده استفاده می‌کنه. یه object جدید رو با object prototype و ویژگی‌های مشخص شده برمی‌گردونه.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
       const user = {
-        name: "John",
-        gender: "male",
-        age: 40,
-      };
-
-      console.log(Object.keys(user)); //['name', 'gender', 'age']
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-202.  ### چطوری یه object با prototype درست می‌کنی؟
-
-      متد `Object.create` برای ایجاد یه object جدید با object prototype و ویژگی‌های مشخص شده استفاده می‌شه. برای مثال، از یه object موجود به عنوان prototype object جدید ایجاد شده استفاده می‌کنه. یه object جدید رو با object prototype و ویژگی‌های مشخص شده برمی‌گردونه.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      const user = {
-        name: "John",
+        name: 'John',
         printInfo: function () {
           console.log(`My name is ${this.name}.`);
-        },
+        }
       };
 
       const admin = Object.create(user);
@@ -4359,948 +4336,935 @@ puppeteer:
       admin.name = "Nick"; // Remember that "name" is a property set on "admin" but not on "user" object
 
       admin.printInfo(); // My name is Nick
-      ```
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-203.  ### WeakSet چیه؟
+203. ### WeakSet چیه؟
 
-      WeakSet برای ذخیره مجموعه ای از اشیاء ضعیف (مرجع ضعیف) استفاده می‌شه.
+     WeakSet برای ذخیره مجموعه ای از اشیاء ضعیف (مرجع ضعیف) استفاده می‌شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      new WeakSet([iterable]);
-      ```
+     ```javascript
+     new WeakSet([iterable]);
+     ```
 
-      </span>
+     </span>
 
-      بیاین مثال زیرو برای توضیح رفتارش ببینیم،
+     بیاین مثال زیرو برای توضیح رفتارش ببینیم،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var ws = new WeakSet();
-      var user = {};
-      ws.add(user);
-      ws.has(user); // true
-      ws.delete(user); // removes user from the set
-      ws.has(user); // false, user has been removed
-      ```
+     ```javascript
+     var ws = new WeakSet();
+     var user = {};
+     ws.add(user);
+     ws.has(user);    // true
+     ws.delete(user); // removes user from the set
+     ws.has(user);    // false, user has been removed
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-204.  ### تفاوت‌های بین WeakSet و Set کدوما هستن؟
+204. ### تفاوت‌های بین WeakSet و Set کدوما هستن؟
 
-      تفاوت اصلی اینه که ارجاع به اشیاء تو Set قویه در حالی که ارجاع به اشیا تو WeakSet ضعیفه. برای مثال، یه شی تو WeakSet میتونه زباله جمع آوری شه اگه مرجع دیگری به اون وجود نداشته باشه.
-      تفاوت‌های دیگر عبارتند از
+     تفاوت اصلی اینه که ارجاع به اشیاء تو Set قویه در حالی که ارجاع به اشیا تو WeakSet ضعیفه. برای مثال، یه شی تو WeakSet  میتونه زباله جمع آوری شه اگه مرجع دیگری به اون وجود نداشته باشه.
+     تفاوت‌های دیگر عبارتند از
+     1. مجموعه‌ها میتونن هر مقداری رو ذخیره کنن در حالی که WeakSets میتونه تنها مجموعه ای از اشیاء رو ذخیره کنه
+     2. WeakSet برخلاف Set دارای ویژگی اندازه نیست
+     3. WeakSet متدهایی مانند پاک کردن، کلیدها، مقادیر، ورودی‌ها، forEach رو نداره.
+     4. WeakSet قابل تکرار نیست.
 
-      1. مجموعه‌ها میتونن هر مقداری رو ذخیره کنن در حالی که WeakSets میتونه تنها مجموعه ای از اشیاء رو ذخیره کنه
-      2. WeakSet برخلاف Set دارای ویژگی اندازه نیست
-      3. WeakSet متدهایی مانند پاک کردن، کلیدها، مقادیر، ورودی‌ها، forEach رو نداره.
-      4. WeakSet قابل تکرار نیست.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+205. ### لیست متدهایی که رو WeakSet قابل استفاده هستن رو می‌تونی بگی؟
 
-205.  ### لیست متدهایی که رو WeakSet قابل استفاده هستن رو می‌تونی بگی؟
+     در زیر لیستی از روش‌های موجود در WeakSet آمده است،
+     1. add(value): یه شی جدید با مقدار داده شده به مجموعه ضعیف اضافه می‌شه
+     2. delete(value): مقدار رو از مجموعه WeakSet حذف می‌کنه.
+     3. has(value): اگه مقدار در مجموعه WeakSet وجود داشته باشه true رو برمی‌گردونه در غیر این صورت false رو برمی گردونه.
+     4. length: طول ضعیف SetObject رو برمی‌گردونه
+     بیاین عملکرد تمام روش‌های بالا رو توی یه مثال ببینیم،
 
-      در زیر لیستی از روش‌های موجود در WeakSet آمده است،
+     <span dir="ltr" align="left">
 
-      1. add(value): یه شی جدید با مقدار داده شده به مجموعه ضعیف اضافه می‌شه
-      2. delete(value): مقدار رو از مجموعه WeakSet حذف می‌کنه.
-      3. has(value): اگه مقدار در مجموعه WeakSet وجود داشته باشه true رو برمی‌گردونه در غیر این صورت false رو برمی گردونه.
-      4. length: طول ضعیف SetObject رو برمی‌گردونه
-         بیاین عملکرد تمام روش‌های بالا رو توی یه مثال ببینیم،
+     ```javascript
+     var weakSetObject = new WeakSet();
+     var firstObject = {};
+     var secondObject = {};
+     // add(value)
+     weakSetObject.add(firstObject);
+     weakSetObject.add(secondObject);
+     console.log(weakSetObject.has(firstObject)); //true
+     console.log(weakSetObject.length()); //2
+     weakSetObject.delete(secondObject);
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      var weakSetObject = new WeakSet();
-      var firstObject = {};
-      var secondObject = {};
-      // add(value)
-      weakSetObject.add(firstObject);
-      weakSetObject.add(secondObject);
-      console.log(weakSetObject.has(firstObject)); //true
-      console.log(weakSetObject.length()); //2
-      weakSetObject.delete(secondObject);
-      ```
+     **[فهرست](#فهرست)**
 
-      </span>
+206. ### WeakMap چیه؟
 
-      **[فهرست](#فهرست)**
+     آبجکت WeakMap مجموعه ای از جفت‌های کلید/مقداره که تو اون کلیدها به صورت ضعیف ارجاع داده شدن. در این حالت، کلیدها باید اشیا باشن و مقادیر میتونن مقادیر دلخواه باشن.برای مثال:
 
-206.  ### WeakMap چیه؟
+     <span dir="ltr" align="left">
 
-      آبجکت WeakMap مجموعه ای از جفت‌های کلید/مقداره که تو اون کلیدها به صورت ضعیف ارجاع داده شدن. در این حالت، کلیدها باید اشیا باشن و مقادیر میتونن مقادیر دلخواه باشن.برای مثال:
+     ```javascript
+     new WeakMap([iterable])
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      new WeakMap([iterable]);
-      ```
+     بیاین مثال زیرو برای توضیح رفتار اون ببینیم،
 
-      </span>
+     <span dir="ltr" align="left">
 
-      بیاین مثال زیرو برای توضیح رفتار اون ببینیم،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
+     ```javascript
       var ws = new WeakMap();
       var user = {};
       ws.set(user);
-      ws.has(user); // true
+      ws.has(user);    // true
       ws.delete(user); // removes user from the map
-      ws.has(user); // false, user has been removed
-      ```
+      ws.has(user);    // false, user has been removed
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-207.  ### تفاوت‌های بین WeakMap و Map کدوما هستن؟
+207. ### تفاوت‌های بین WeakMap و Map کدوما هستن؟
 
-      تفاوت اصلی اینه که ارجاعات به آبجکت‌ها کلیدی در نقشه قوی هستن در حالی که ارجاعات به اشیاء کلیدی در WeakMap ضعیف هستن. برای مثال، یه شی کلیدی در WeakMap در صورتی که هیچ مرجع دیگری بهش وجود نداشته باشه، میتونه زباله جمع آوری شه.
-      تفاوت‌های دیگر عبارتند از
+     تفاوت اصلی اینه که ارجاعات به آبجکت‌ها کلیدی در نقشه قوی هستن در حالی که ارجاعات به اشیاء کلیدی در WeakMap ضعیف هستن. برای مثال، یه شی کلیدی در WeakMap در صورتی که هیچ مرجع دیگری بهش وجود نداشته باشه، میتونه زباله جمع آوری شه.
+     تفاوت‌های دیگر عبارتند از
+     1. Map‌ها میتونن هر نوع کلیدی رو ذخیره کنن، در حالی که WeakMaps فقط میتونه مجموعه ای از اشیاء کلیدی رو ذخیره کنه
+     2. WeakMap برخلاف Map دارای ویژگی size نیست
+     3. WeakMap متدهایی مثل clear, keys, values, entries forEach رو نداره.
+     4. WeakMap قابل تکرار نیست.
 
-      1. Map‌ها میتونن هر نوع کلیدی رو ذخیره کنن، در حالی که WeakMaps فقط میتونه مجموعه ای از اشیاء کلیدی رو ذخیره کنه
-      2. WeakMap برخلاف Map دارای ویژگی size نیست
-      3. WeakMap متدهایی مثل clear, keys, values, entries forEach رو نداره.
-      4. WeakMap قابل تکرار نیست.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+208. ### لیست متدهایی که رو WeakMap قابل استفاده هستن رو می‌تونی بگی؟
 
-208.  ### لیست متدهایی که رو WeakMap قابل استفاده هستن رو می‌تونی بگی؟
+     1. set(key, value): مقدار کلید رو در آبجکت WeakMap تنظیم می‌کنه. آبجکت WeakMap رو برمی‌گردونه.
+     2. delete(key): هر مقدار مربوط به کلید رو حذف می‌کنه.
+     3. has(key): یه Boolean رو برمی‌گردونه که نشون میده آیا مقداری به کلید در آبجکت WeakMap مرتبط شده اس یا نه.
+     4. get(key): مقدار مربوط به کلید رو برمی‌گردونه، یا اگه کلیدی وجود نداشته باشه، تعریف نشده.
+     بیاین عملکرد تمام روش‌های بالا رو تو یه مثال ببینیم،
 
-      1. set(key, value): مقدار کلید رو در آبجکت WeakMap تنظیم می‌کنه. آبجکت WeakMap رو برمی‌گردونه.
-      2. delete(key): هر مقدار مربوط به کلید رو حذف می‌کنه.
-      3. has(key): یه Boolean رو برمی‌گردونه که نشون میده آیا مقداری به کلید در شی WeakMap مرتبط شده اس یا نه.
-      4. get(key): مقدار مربوط به کلید رو برمی‌گردونه، یا اگه کلیدی وجود نداشته باشه، تعریف نشده.
-         بیاین عملکرد تمام روش‌های بالا رو تو یه مثال ببینیم،
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     const weakMapObject = new WeakMap();
+     const firstObject = {};
+     const secondObject = {};
+     // set(key, value)
+     weakMapObject.set(firstObject, 'John');
+     weakMapObject.set(secondObject, 100);
+     console.log(weakMapObject.has(firstObject)); //true
+     console.log(weakMapObject.get(firstObject)); // John
+     weakMapObject.delete(secondObject);
+     ```
 
-      ```javascript
-      const weakMapObject = new WeakMap();
-      const firstObject = {};
-      const secondObject = {};
-      // set(key, value)
-      weakMapObject.set(firstObject, "John");
-      weakMapObject.set(secondObject, 100);
-      console.log(weakMapObject.has(firstObject)); //true
-      console.log(weakMapObject.get(firstObject)); // John
-      weakMapObject.delete(secondObject);
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+209. ### هدف از متد uneval چیه؟
 
-209.  ### هدف از متد uneval چیه؟
+     `uneval` یه تابع داخلی‌ـه که برای ایجاد نمایش رشته‌ای از کد منبع یه شی استفاده می‌شه. این یه تابع سطح بالاس و با هیچ آبجکت‌ای مرتبط نیست. بیاین مثال زیر رو درموردش ببینیم:
 
-      `uneval` یه تابع داخلی‌ـه که برای ایجاد نمایش رشته‌ای از کد منبع یه شی استفاده می‌شه. این یه تابع سطح بالاس و با هیچ آبجکت‌ای مرتبط نیست. بیاین مثال زیر رو درموردش ببینیم:
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     var a = 1;
+     uneval(a); // returns a String containing 1
+     uneval(function user() {}); // returns "(function user(){})"
+     ```
 
-      ```javascript
-      var a = 1;
-      uneval(a); // returns a String containing 1
-      uneval(function user() {}); // returns "(function user(){})"
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+210. ### چطوری یه URL رو encode می‌کنی؟
 
-210.  ### چطوری یه URL رو encode می‌کنی؟
+     تابع `encodeURI` برای رمزگذاری URI کامل استفاده می‌شه که دارای کاراکترهای خاص به جز (, / ? : @ & = + $ #) هست.
 
-      تابع `encodeURI` برای رمزگذاری URI کامل استفاده می‌شه که دارای کاراکترهای خاص به جز (, / ? : @ & = + $ #) هست.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     var uri = 'https://mozilla.org/?x=шеллы';
+     var encoded = encodeURI(uri);
+     console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
+     ```
 
-      ```javascript
-      var uri = "https://mozilla.org/?x=шеллы";
+     </span>
+
+     **[فهرست](#فهرست)**
+
+211. ### چطوری یه URL رو decode می‌کنی؟
+
+     تابع `decodeURI` برای رمزگشایی یه شناسه منبع یکنواخت (URI) که قبلا توسط encodeURI ایجاد شده اس، استفاده می‌شه.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+      var uri = 'https://mozilla.org/?x=шеллы';
       var encoded = encodeURI(uri);
       console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
-      ```
+     try {
+       console.log(decodeURI(encoded)); // "https://mozilla.org/?x=шеллы"
+     } catch(e) { // catches a malformed URI
+       console.error(e);
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-211.  ### چطوری یه URL رو decode می‌کنی؟
+212. ### چطوری محتوای یه صفحه رو پرینت می‌گیری؟
 
-      تابع `decodeURI` برای رمزگشایی یه شناسه منبع یکنواخت (URI) که قبلا توسط encodeURI ایجاد شده اس استفاده می‌شه.
+     آبجکت window یه متد print ارائه می‌کنه که برای چاپ محتویات پنجره فعلی استفاده می‌شه. یه کادر محاوره ای چاپ رو باز می‌کنه که به شما امکان میده بین گزینه‌های مختلف چاپ انتخاب کنین. بیاین استفاده از روش چاپ رو تو یه مثال ببینیم،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var uri = "https://mozilla.org/?x=шеллы";
-      var encoded = encodeURI(uri);
-      console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
-      try {
-        console.log(decodeURI(encoded)); // "https://mozilla.org/?x=шеллы"
-      } catch (e) {
-        // catches a malformed URI
-        console.error(e);
-      }
-      ```
+     ```html
+     <input type="button" value="Print" onclick="window.print()" />
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **نکته:** بیشتر مرورگرها، زمانی که کادر چاپ بازه صفحه قفل می‌شه.
 
-212.  ### چطوری محتوای یه صفحه رو پرینت می‌گیری؟
+     **[فهرست](#فهرست)**
 
-      شی window یه متد print ارائه می‌کنه که برای چاپ محتویات پنجره فعلی استفاده می‌شه. یه کادر محاوره ای چاپ رو باز می‌کنه که به شما امکان میده بین گزینه‌های مختلف چاپ انتخاب کنین. بیاین استفاده از روش چاپ رو تو یه مثال ببینیم،
+213. ### تفاوت‌های بین uneval و eval چیا هستن؟
 
-      <span dir="ltr" align="left">
+     تابع 'uneval' منبع یه شی معین رو برمی‌گردونه. در حالی که تابع "eval" با ارزیابی اون کد منبع تو یه ناحیه حافظه متفاوت، برعکس عمل می‌کنه. بیاین مثالی رو برای روشن شدن تفاوت ببینیم،
 
-      ```html
-      <input type="button" value="Print" onclick="window.print()" />
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     var msg = uneval(function greeting() { return 'Hello, Good morning'; });
+     var greeting = eval(msg);
+     greeting(); // returns "Hello, Good morning"
+     ```
 
-      **نکته:**بیشتر مرورگرها، زمانی که کادر گفتگوی چاپ بازه مسدود می‌شه.
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-213.  ### تفاوت‌های بین uneval و eval چیا هستن؟
+214. ### تابع anonymous چیه؟
 
-      تابع 'uneval' منبع یه شی معین رو برمی‌گردونه. در حالی که تابع "eval" با ارزیابی اون کد منبع تو یه ناحیه حافظه متفاوت، برعکس عمل می‌کنه. بیاین مثالی رو برای روشن شدن تفاوت ببینیم،
+     تابع ناشناس یه تابع بدون اسمه! توابع ناشناس معمولاً به یه نام متغیر اختصاص داده می شن یا به عنوان یه تابع callback استفاده میشن بریم یه مثال در موردش ببینیم،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var msg = uneval(function greeting() {
-        return "Hello, Good morning";
-      });
-      var greeting = eval(msg);
-      greeting(); // returns "Hello, Good morning"
-      ```
+     ```javascript
+     function (optionalParameters) {
+       //do something
+     }
 
-      </span>
+     const myFunction = function(){ //Anonymous function assigned to a variable
+       //do something
+     };
 
-      **[فهرست](#فهرست)**
+     [1, 2, 3].map(function(element){ //Anonymous function used as a callback function
+       //do something
+     });
+     ```
 
-214.  ### تابع anonymous چیه؟
+     </span>
 
-      تابع ناشناس یه تابع بدون اسمه! توابع ناشناس معمولاً به یه نام متغیر اختصاص داده می شن یا به عنوان یه تابع callback استفاده میشن بریم یه مثال در موردش ببینیم،
+     بیاین تابع ناشناس بالا رو تو یه مثال ببینیم،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function (optionalParameters) {
-        //do something
-      }
+     ```javascript
+     var x = function (a, b) {return a * b};
+     var z = x(5, 10);
+     console.log(z); // 50
+     ```
 
-      const myFunction = function(){ //Anonymous function assigned to a variable
-        //do something
-      };
+     </span>
 
-      [1, 2, 3].map(function(element){ //Anonymous function used as a callback function
-        //do something
-      });
-      ```
+     **[فهرست](#فهرست)**
 
-      </span>
+215. ### تفاوت تقدم بین متغیرهای local و global چطوریه؟
 
-      بیاین تابع ناشناس بالا رو تو یه مثال ببینیم،
+     یه متغیر local بر یه متغیر global با همون اسم ارجعیت داره. بیاین این رفتار رو تو یه مثال ببینیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var x = function (a, b) {
-        return a * b;
-      };
-      var z = x(5, 10);
-      console.log(z); // 50
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-215.  ### تفاوت تقدم بین متغیرهای local و global چطوریه؟
-
-      یه متغیر local بر یه متغیر global با همون اسم ارجعیت داره. بیاین این رفتار رو تو یه مثال ببینیم.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      const msg = "Good morning";
-      function greeting() {
+     ```javascript
+     const msg = "Good morning";
+     function greeting() {
         msg = "Good Evening";
         console.log(msg);
-      }
-      greeting();
-      ```
+     }
+     greeting();
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-216.  ### accessorهای جاواسکریپت چیکار می‌کنن؟
+216. ### accessorهای جاواسکریپت چیکار می‌کنن؟
 
-      ECMAScript 5 `accessor` های آبجکت جاواسکریپت یا ویژگی‌های محاسبه‌شده رو از طریق گیرنده‌ها و تنظیم‌کندنه‌ها معرفی کرد. Getters از کلمه کلیدی "get" استفاده می‌کنه در حالی که Setters از کلمه کلیدی "set" استفاده می‌کنه.
+     ECMAScript 5 `accessor` های آبجکت جاواسکریپت یا ویژگی‌های محاسبه‌شده رو از طریق گیرنده‌ها و تنظیم‌کندنه‌ها معرفی کرد. Getters از کلمه کلیدی "get" استفاده می‌کنه در حالی که Setters از کلمه کلیدی "set" استفاده می‌کنه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const user = {
-        firstName: "John",
-        lastName : "Abraham",
-        language : "en",
-        get lang() {
-          return this.language;
+     ```javascript
+     const user = {
+       firstName: "John",
+       lastName : "Abraham",
+       language : "en",
+       get lang() {
+         return this.language;
+       }
+       set lang(lang) {
+       this.language = lang;
+       }
+     };
+     console.log(user.lang); // getter access lang as en
+     user.lang = 'fr';
+     console.log(user.lang); // setter used to set lang as fr
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+217. ### چطوری روی constructor یه Object یه مقدار تعریف می‌کنی؟
+
+     متد استاتیک `Object.defineProperty` برای تعریف یه ویژگی جدید به طور مستقیم بر روی یه آبجکت یا تغییر ویژگی موجود روی یه آبجکت استفاده می‌شه و آبجکت رو برمی‌گردونه. بیاین مثالی رو ببینیم تا بدونیم چجوری ویژگی رو تعریف کنیم:
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     const newObject = {};
+
+     Object.defineProperty(newObject, 'newProperty', {
+       value: 100,
+       writable: false
+     });
+
+     console.log(newObject.newProperty); // 100
+
+     newObject.newProperty = 200; // It throws an error in strict mode due to writable setting
+
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+218. ### تفاوت‌های بین get و defineProperty چیا هست؟
+
+     هر دو نتایج مشابهی دارن مگه اینکه از کلاس‌ها استفاده کنین. اگه از «get» استفاده می‌کنین ویژگی روی prototype شی تعریف می‌شه، در حالی که با استفاده از `Object.defineProperty`، ویژگی روی نمونه‌ای که بهش اعمال می‌شه، تعریف می‌شه.
+
+     **[فهرست](#فهرست)**
+
+219. ### مزایای استفاده از Getter و Setter چیه؟
+
+     1. اونا syntax ساده تری ارائه می دن
+     2. اونا برای تعریف ویژگی‌های محاسبه شده یا دسترسی‌ها در JS استفاده میشن
+     3. برای ارائه رابطه هم ارزی بین خواص و روش‌ها مفیدن
+     4. اونا میتونن کیفیت داده‌های بهتری رو ارائه بدن
+     5. برای انجام کارها در پشت صحنه با منطق محصور شده مفیدن.
+
+     **[فهرست](#فهرست)**
+
+220. ### می‌تونیم getter و setter رو با استفاده از متد defineProperty تعریف کنیم؟
+
+     بله، می‌تونیم از روش `Object.defineProperty` برای اضافه کردن Getters و Setter استفاده کنیم. برای مثال،آبجکت شمارنده زیر از ویژگی‌های افزایش، کاهش، جمع و تفریق استفاده می‌کنه:
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     const obj = {counter : 0};
+
+     // Define getters
+     Object.defineProperty(obj, "increment", {
+       get : function () {this.counter++;}
+     });
+     Object.defineProperty(obj, "decrement", {
+       get : function () {this.counter--;}
+     });
+
+     // Define setters
+     Object.defineProperty(obj, "add", {
+       set : function (value) {this.counter += value;}
+     });
+     Object.defineProperty(obj, "subtract", {
+       set : function (value) {this.counter -= value;}
+     });
+
+     obj.add = 10;
+     obj.subtract = 5;
+     console.log(obj.increment); //6
+     console.log(obj.decrement); //5
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+221. ### هدف استفاده از switch-case چیه؟
+
+     عبارت `switch case` تو جاواسکریپت برای اهداف تصمیم گیری استفاده می‌شه. توی چند مورد، استفاده از دستور switch case راحت‌تر از if-else هست. بریم یه مثال در موردش ببینیم:
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     switch (expression)
+     {
+         case value1:
+             statement1;
+             break;
+         case value2:
+             statement2;
+             break;
+         .
+         .
+         case valueN:
+             statementN;
+             break;
+         default:
+             statementDefault;
+     }
+     ```
+
+     </span>
+
+     دستور چند حالته بالا یه راه آسون برای انجام عملیات مختلف بهمون میده که بر اساس مقدار مبنا میشه عملکرد های مختلفی رو در نظر گرفت.
+
+     **[فهرست](#فهرست)**
+
+222. ### چه قواعدی برای استفاده از swtich-case باید رعایت بشه؟
+
+     1. عبارت میتونه از نوع عددی یا رشته‌ای باشه.
+     2. مقادیر تکراری برای عبارت مجاز نیستن.
+     3. بیانیه default اختیاریه. اگه عبارت ارسال شده به سوئیچ با هیچ مقدار case مطابقت نداشته باشه، دستور تو حالت پیش فرض اجرا میشه.
+     4. دستور break در داخل سوئیچ برای پایان دادن به دنباله دستور استفاده می‌شه.
+     5. عبارت break اختیاریه. اما اگه حذف شه، اجرا در مورد بعدی ادامه پیدا می‌کنه
+
+     **[فهرست](#فهرست)**
+
+223. ### نوع داده‌های primitive کدوما هستن؟
+
+     یه نوع داده `primitive` داده‌ایه که دارای یه مقدار اولیه اس (که هیچ ویژگی یا روشی نداره). 5 نوع نوع داده اولیه وجود داره.
+
+     1. string
+     2. number
+     3. boolean
+     4. null
+     5. undefined
+
+     **[فهرست](#فهرست)**
+
+224. ### روش‌های مختلف دسترسی به propertyهای object کدوما هستن؟
+
+     1. **دسترسی با نقطه:** از نقطه برای دسترسی به ویژگی‌ها استفاده می‌کنه
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     objectName.property
+     ```
+
+     </span>
+
+     1. **دسترسی با کروشه:** از کروشه برای دسترسی به دیتا استفاده می‌کنه
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     objectName["property"]
+     ```
+
+     </span>
+
+     1. **دسترسی عبارتی:** از عبارت توی کروشه استفاده می‌کنه
+     <span dir="ltr" align="left">
+
+     ```javascript
+     objectName[expression]
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+225. ### قوانین پارامترهای توابع کدوما هستن؟
+
+     1. تعاریف تابع انواع داده‌ها رو برای پارامترها مشخص نمی‌کنه.
+     2. بررسی نوع آرگومان‌های ارسال شده رو انجام ندین.
+     3. تعداد آرگومان‌های دریافتی رو بررسی نکنین.
+     تابع زیر از قوانین بالا پیروی می‌کنه،
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     function functionName(parameter1, parameter2, parameter3) {
+       console.log(parameter1); // 1
+     }
+     functionName(1);
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+226. ### آبجکت error چیه؟
+
+     `error object` یه آبجکت خطای داخلیه که موقع بروز خطا، اطلاعات خطا رو ارائه میده و این دو ویژگی رو داخلش داره: name و messge. برای مثال، تابع زیر جزئیات خطا رو ثبت می‌کنه:
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     try {
+          greeting("Welcome");
+     }
+     catch(err) {
+          console.log(err.name + "<br>" + err.message);
+     }
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+227. ### چه موقعی خطای syntax دریافت می‌کنیم؟
+
+     اگه بخواین کد رو با یه خطای syntax ارزیابی کنین یه SyntaxError ارسال می‌شه. برای مثال، کد زیر برای پارامتر تابع یه خطای syntax ایجاد می‌کنه:
+     
+     <span dir="ltr" align="left">
+
+     ```javascript
+     try {
+       eval("greeting('welcome)");   // Missing ' will produce an error
+     }
+     catch(err) {
+       console.log(err.name);
+     }
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+228. ### عنوان خطاهای مختلف که روی error-object برمیگردن کدوما هستن؟
+
+     | نام خطا | توضیحات |
+     |---- | --------- |
+     | EvalError | خطایی تو تابع eval رخ داده
+     | RangeError | خطایی با عدد "خارج از محدوده" | رخ داده
+     | خطای مرجع | خطا به دلیل ارجاع غیرقانونی|
+     | SyntaxError | خطای ناشی از خطای syntax|
+     | TypeError | خطای ناشی از خطای type |
+     | خطای URIE | یه خطا به دلیل encodeURI |
+
+     **[فهرست](#فهرست)**
+
+229. ### عبارات مختلف که در هنگام مدیریت error استفاده میشن کدوما هستن؟
+
+     1. **try:** این عبارت برای آزمایش یه بلوک کد برای خطاها استفاده می‌شه
+     2. **catch:** این عبارت برای رسیدگی به خطا استفاده می‌شه
+     3. **throw:** این عبارت برای ایجاد خطاهای سفارشی استفاده می‌شه.
+     4. **finally:** این عبارت برای اجرای کد پس از تلاش و گرفتن بدون توجه به نتیجه استفاده می‌شه.
+
+     **[فهرست](#فهرست)**
+
+230. ### دو نوع مختلف حلقه‌ها تو جاواسکریپت کدوما هستن؟
+
+     1. **حلقه های کنترل شده توسط ورودی:** تو این نوع حلقه، شرایط تست قبل از ورود به بدنه حلقه آزمایش می‌شه. برای مثال For Loop و while Loop تو این دسته قرار می‌گیرن.
+     2. **حلقه های کنترل شده توسط خروجی:** در این نوع حلقه، شرایط تست در انتهای بدنه حلقه آزمایش یا ارزیابی می‌شه. یعنی بدنه حلقه حداقل یه بار بدون در نظر گرفتن شرایط تست true یا false اجرا می‌شه. برای مثال، حلقه do-while در این دسته قرار می‌گیره.
+
+     **[فهرست](#فهرست)**
+
+231. ### nodejs چیه؟
+
+     Node.js یه پلتفرم سمت سروره که بر اساس زمان اجرا جاواسکریپت کروم برای ساخت آسان برنامه‌های شبکه سریع و مقیاس پذیر ساخته شده. این یه زمان اجرا I/O ناهمزمان مبتنی بر رویداد، غیر مسدود کننده اس که از موتور جاواسکریپت V8 گوگل و کتابخونه libuv استفاده می‌کنه.
+
+     **[فهرست](#فهرست)**
+
+232. ### آبجکت Intl چیه؟
+
+     آبجکت `Intl` فضای نامی برای `ECMAScript Internationalization` API اس که مقایسه رشته‌های حساس زبان، قالب بندی اعداد و قالب بندی تاریخ و زمان رو ارائه میده. دسترسی به چندین سازنده و توابع حساس به زبان رو فراهم می‌کنه.
+
+     **[فهرست](#فهرست)**
+
+233. ### چطوری تاریخ و زمان رو بر اساس زبان جاری سیستم کاربر نمایش بدیم؟
+
+     می‌تونین از کلاس `Intl.DateTimeFormat` استفاده کنیم که سازنده آبجکت‌هاییه که قالب بندی تاریخ و زمان حساس به زبان رو فعال می‌کنه. بیاین این رفتار رو با یه مثال ببینیم،
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     var date = new Date(Date.UTC(2019, 07, 07, 3, 0, 0));
+     console.log(new Intl.DateTimeFormat('en-GB').format(date)); // 07/08/2019
+     console.log(new Intl.DateTimeFormat('en-AU').format(date)); // 07/08/2019
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+234. ### Iterator چیه؟
+
+     `Iterator` آبجکت‌ای‌ـه که پس از خاتمه، یه توالی و یه مقدار بازگشتی رو تعریف می‌کنه. پروتکل Iterator رو با متد «next» پیاده‌سازی می‌کنه که یه شی رو با دو ویژگی برمی‌گردونه: «value» (مقدار بعدی در دنباله) و «done» (که اگه آخرین مقدار در دنباله مصرف شده باشه درسته. ).
+
+     **[فهرست](#فهرست)**
+
+235. ### حلقه‌های synchronous(همزمان) چطوری کار می‌کنن؟
+
+     تکرار همزمان در ES6 معرفی شد و با مجموعه ای از اجزای زیر کار می‌کنه:
+
+     **Iterable:** این یه آبجکت‌ای‌ـه که میتونه از طریق روشی که کلید اون Symbol.iterator هس تکرار شه.
+     **Iterator:** این یه آبجکت‌ای‌ـه که با فراخوانی «[Symbol.iterator]» بر روی یه تکرار برگردونده می‌شه. این آبجکت تکرار شونده هر عنصر تکرار شده رو تو یه آبجکت پیچیده می‌کنه و اونو از طریق متد «next» یکی یکی برمی‌گردونه.
+     **IteratorResult:** این یه آبجکت‌ای‌ـه که با متد «next» برگردونده می‌شه. آبجکت شامل دو ویژگی است. ویژگی "value" حاوی یه عنصر تکرار شده و ویژگی "done" تعیین می‌کنه که آیا عنصر آخرین عنصر هست یا نه.
+
+     بیاین تکرار همزمان رو با آرایه ای مانند زیر نشون بدیم،
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     const iterable = ['one', 'two', 'three'];
+     const iterator = iterable[Symbol.iterator]();
+     console.log(iterator.next());  // { value: 'one', done: false }
+     console.log(iterator.next());  // { value: 'two', done: false }
+     console.log(iterator.next());  // { value: 'three', done: false }
+     console.log(iterator.next());  // { value: 'undefined, done: true }
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+236. ### Event-loop چیه؟
+
+     `event loop` یه صف از توابع callback موقعی که یه تابع async اجرا می‌شه، تابع callback در صف قرار می‌گیرد. موتور جاواسکریپت پردازش حلقه رویداد رو شروع نمی‌کنه تا زمانی که تابع async اجرای کد رو تموم کنه.
+     
+     **نکته:** این به Node.js اجازه میده تا عملیات I/O غیر مسدود کننده رو انجام بده حتی اگه جاواسکریپت تک رشته‌ای باشه.
+
+     **[فهرست](#فهرست)**
+
+237. ### Call-stack چیه؟
+
+     Call Stack یه ساختار داده برای مفسران جاواسکریپت‌ـه تا فراخونی‌های تابع تو برنامه رو پیگیری کنه و دو عمل عمده داره،
+     
+     1. هر زمان که یه تابع رو برای اجرای آن فراخوانی می‌کنیم اونو به `stack` هدایت می‌شه.
+     2. هر زمان که اجرا کد تموم شه، تابع از `stack` خارج می‌شه.
+
+     بیاین یه مثال و توضیح خلاصه اون در قالب نمودار رو باهم ببینیم:
+     
+     <span dir="ltr" align="left">
+
+     ```javascript
+     function hungry() {
+         eatFruits();
+     }
+     function eatFruits() {
+         return "I'm eating fruits";
+     }
+
+     // Invoke the `hungry` function
+     hungry();
+     ```
+
+     </span>
+
+     کد بالا تو یه call-stack به صورت زیر پردازش می‌شه.
+
+     1. تابع 'hungry' رو به لیست call-stack اضافه میشه و کد رو اجرا میشه.
+     2. تابع 'eatFruits' رو به لیست call-stack اضافه میشه و کد رو اجرا میشه.
+     3. تابع 'eatFruits' از لیست call-stack ما حذف میشه.
+     4. تابع 'eatFruits' از لیست call-stack ما حذف میشه.
+
+     ![Screenshot](images/call-stack.png)
+
+     **[فهرست](#فهرست)**
+
+238. ### Event-queue چیه؟
+
+     `Event-queue` مسئول ارسال توابع جدید به stack برای پردازشه.  ساختارش به صورت صف داده اس تا توالی درستی رو نگه داره و همه عملیات باید برای اجرا ارسال شن.
+
+     **[فهرست](#فهرست)**
+
+239. ### Decorator چیه؟
+
+     `Decorator` عبارتیه که یه تابع رو ارزیابی می‌کنه و هدف، نام و توصیف‌کننده تزئین رو به عنوان آرگومان می‌گیره. همچنین، به صورت اختیاری یه توصیفگر دکوراتور رو برای نصب بر روی آبجکت مورد نظر برمی‌گردونه. بیاین در زمان طراحی، دکوراتور ادمین رو برای کلاس کاربر تعریف کنیم:
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     function admin(isAdmin) {
+        return function(target) {
+            target.isAdmin = isAdmin;
         }
-        set lang(lang) {
-        this.language = lang;
-        }
-      };
-      console.log(user.lang); // getter access lang as en
-      user.lang = 'fr';
-      console.log(user.lang); // setter used to set lang as fr
-      ```
+     }
 
-      </span>
+     @admin(true)
+     class User() {
+     }
+     console.log(User.isAdmin); //true
 
-      **[فهرست](#فهرست)**
-
-217.  ### چطوری روی constructor یه Object یه مقدار تعریف می‌کنی؟
-
-      متد استاتیک `Object.defineProperty` برای تعریف یه ویژگی جدید به طور مستقیم بر روی یه آبجکت یا تغییر ویژگی موجود روی یه آبجکت استفاده می‌شه و آبجکت رو برمی‌گردونه. بیاین مثالی رو ببینیم تا بدونیم چجوری ویژگی رو تعریف کنیم:
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      const newObject = {};
-
-      Object.defineProperty(newObject, "newProperty", {
-        value: 100,
-        writable: false,
-      });
-
-      console.log(newObject.newProperty); // 100
-
-      newObject.newProperty = 200; // It throws an error in strict mode due to writable setting
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-218.  ### تفاوت‌های بین get و defineProperty چیا هست؟
-
-      هر دو نتایج مشابهی دارن مگه اینکه از کلاس‌ها استفاده کنین. اگه از «get» استفاده می‌کنین ویژگی روی prototype شی تعریف می‌شه، در حالی که با استفاده از `Object.defineProperty`، ویژگی روی نمونه‌ای که بهش اعمال می‌شه، تعریف می‌شه.
-
-      **[فهرست](#فهرست)**
-
-219.  ### مزایای استفاده از Getter و Setter چیه؟
-
-      1. اونا syntax ساده تری ارائه می دن
-      2. اونا برای تعریف ویژگی‌های محاسبه شده یا دسترسی‌ها در JS استفاده میشن
-      3. برای ارائه رابطه هم ارزی بین خواص و روش‌ها مفیدن
-      4. اونا میتونن کیفیت داده‌های بهتری رو ارائه بدن
-      5. برای انجام کارها در پشت صحنه با منطق محصور شده مفیدن.
-
-      **[فهرست](#فهرست)**
-
-220.  ### می‌تونیم getter و setter رو با استفاده از متد defineProperty تعریف کنیم؟
-
-      بله، می‌تونیم از روش `Object.defineProperty` برای اضافه کردن Getters و Setter استفاده کنیم. برای مثال،آبجکت شمارنده زیر از ویژگی‌های افزایش، کاهش، جمع و تفریق استفاده می‌کنه:
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      const obj = { counter: 0 };
-
-      // Define getters
-      Object.defineProperty(obj, "increment", {
-        get: function () {
-          this.counter++;
-        },
-      });
-      Object.defineProperty(obj, "decrement", {
-        get: function () {
-          this.counter--;
-        },
-      });
-
-      // Define setters
-      Object.defineProperty(obj, "add", {
-        set: function (value) {
-          this.counter += value;
-        },
-      });
-      Object.defineProperty(obj, "subtract", {
-        set: function (value) {
-          this.counter -= value;
-        },
-      });
-
-      obj.add = 10;
-      obj.subtract = 5;
-      console.log(obj.increment); //6
-      console.log(obj.decrement); //5
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-221.  ### هدف استفاده از switch-case چیه؟
-
-      عبارت switch case تو جاواسکریپت برای اهداف تصمیم گیری استفاده می‌شه. توی چند مورد، استفاده از دستور switch case راحت‌تر از if-else هست. بریم یه مثال در موردش ببینیم،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      switch (expression)
-      {
-          case value1:
-              statement1;
-              break;
-          case value2:
-              statement2;
-              break;
-          .
-          .
-          case valueN:
-              statementN;
-              break;
-          default:
-              statementDefault;
-      }
-      ```
-
-      </span>
-
-      دستور چند شعبه بالا یه راه آسون برای ارسال اجرا به قسمت‌های مختلف کد بر اساس مقدار عبارت ارائه میده.
-
-      **[فهرست](#فهرست)**
-
-222.  ### چه قواعدی برای استفاده از swtich-case باید رعایت بشه؟
-
-      1. عبارت میتونه از نوع عددی یا رشته‌ای باشه.
-      2. مقادیر تکراری برای عبارت مجاز نیستن.
-      3. بیانیه default اختیاریه. اگه عبارت ارسال شده به سوئیچ با هیچ مقدار case مطابقت نداشته باشه، دستور تو حالت پیش فرض اجرا میشه.
-      4. دستور break در داخل سوئیچ برای پایان دادن به دنباله دستور استفاده می‌شه.
-      5. عبارت break اختیاریه. اما اگه حذف شه، اجرا در مورد بعدی ادامه پیدا می‌کنه
-
-      **[فهرست](#فهرست)**
-
-223.  ### نوع داده‌های primitive کدوما هستن؟
-
-      یه نوع داده `primitive` داده‌ایه که دارای یه مقدار اولیه اس (که هیچ ویژگی یا روشی نداره). 5 نوع نوع داده اولیه وجود داره.
-
-      1. string
-      2. number
-      3. boolean
-      4. null
-      5. undefined
-
-      **[فهرست](#فهرست)**
-
-224.  ### روش‌های مختلف دسترسی به propertyهای object کدوما هستن؟
-
-      1. **دسترسی با نقطه:** از نقطه برای دسترسی به ویژگی‌ها استفاده می‌کنه
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      objectName.property;
-      ```
-
-      </span>
-
-      1. **دسترسی با کروشه:** از کروشه برای دسترسی به دیتا استفاده می‌کنه
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      objectName["property"];
-      ```
-
-      </span>
-
-      1. **دسترسی عبارتی:** از عبارت توی کروشه استفاده می‌کنه
-         <span dir="ltr" align="left">
-
-      ```javascript
-      objectName[expression];
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-225.  ### قوانین پارامترهای توابع کدوما هستن؟
-
-      1. تعاریف تابع انواع داده‌ها رو برای پارامترها مشخص نمی‌کنه.
-      2. بررسی نوع آرگومان‌های ارسال شده رو انجام ندین.
-      3. تعداد آرگومان‌های دریافتی رو بررسی نکنین.
-         تابع زیر از قوانین بالا پیروی می‌کنه،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      function functionName(parameter1, parameter2, parameter3) {
-        console.log(parameter1); // 1
-      }
-      functionName(1);
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-226.  ### آبجکت error چیه؟
-
-      `error object` یه آبجکت خطای داخلیه که موقع بروز خطا، اطلاعات خطا رو ارائه میده. این دو ویژگی رو داخلش داره: نام و پیام. برای مثال، تابع زیر جزئیات خطا رو ثبت می‌کنه،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      try {
-        greeting("Welcome");
-      } catch (err) {
-        console.log(err.name + "<br>" + err.message);
-      }
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-227.  ### چه موقعی خطای syntax دریافت می‌کنیم؟
-
-      اگه بخواین کد رو با یه خطای syntax ارزیابی کنین یه SyntaxError ارسال می‌شه. برای مثال، نقل قول زیر برای پارامتر تابع یه خطای syntax ایجاد می‌کنه:
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      try {
-        eval("greeting('welcome)"); // Missing ' will produce an error
-      } catch (err) {
-        console.log(err.name);
-      }
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-228.  ### عنوان خطاهای مختلف که روی error-object برمیگردن کدوما هستن؟
-
-      | نام خطا     | توضیحات                       |
-      | ----------- | ----------------------------- | ------- |
-      | EvalError   | خطایی تو تابع eval رخ داده    |
-      | RangeError  | خطایی با عدد "خارج از محدوده" | رخ داده |
-      | خطای مرجع   | خطا به دلیل ارجاع غیرقانونی   |
-      | SyntaxError | خطای ناشی از خطای syntax      |
-      | TypeError   | خطای ناشی از خطای type        |
-      | خطای URIE   | یه خطا به دلیل encodeURI      |
-
-      **[فهرست](#فهرست)**
-
-229.  ### عبارات مختلف که در هنگام مدیریت error استفاده میشن کدوما هستن؟
-
-      1. **try:** این عبارت برای آزمایش یه بلوک کد برای خطاها استفاده می‌شه
-      2. **catch:** این عبارت برای رسیدگی به خطا استفاده می‌شه
-      3. **throw:** این عبارت برای ایجاد خطاهای سفارشی استفاده می‌شه.
-      4. **finally:** این عبارت برای اجرای کد پس از تلاش و گرفتن بدون توجه به نتیجه استفاده می‌شه.
-
-      **[فهرست](#فهرست)**
-
-230.  ### دو نوع مختلف حلقه‌ها تو جاواسکریپت کدوما هستن؟
-
-      1. **حلقه های کنترل شده توسط ورودی:** تو این نوع حلقه، شرایط تست قبل از ورود به بدنه حلقه آزمایش می‌شه. برای مثال For Loop و while Loop تو این دسته قرار می‌گیرن.
-      2. **حلقه های کنترل شده توسط خروجی:** در این نوع حلقه، شرایط تست در انتهای بدنه حلقه آزمایش یا ارزیابی می‌شه. یعنی بدنه حلقه حداقل یه بار بدون در نظر گرفتن شرایط تست true یا false اجرا می‌شه. برای مثال، حلقه do-while در این دسته قرار می‌گیره.
-
-      **[فهرست](#فهرست)**
-
-231.  ### nodejs چیه؟
-
-      Node.js یه پلتفرم سمت سروره که بر اساس زمان اجرا جاواسکریپت کروم برای ساخت آسان برنامه‌های شبکه سریع و مقیاس پذیر ساخته شده. این یه زمان اجرا I/O ناهمزمان مبتنی بر رویداد، غیر مسدود کننده اس که از موتور جاواسکریپت V8 گوگل و کتابخونه libuv استفاده می‌کنه.
-
-      **[فهرست](#فهرست)**
-
-232.  ### آبجکت Intl چیه؟
-
-      آبجکت `Intl` فضای نامی برای `ECMAScript Internationalization` API اس که مقایسه رشته‌های حساس زبان، قالب بندی اعداد و قالب بندی تاریخ و زمان رو ارائه میده. دسترسی به چندین سازنده و توابع حساس به زبان رو فراهم می‌کنه.
-
-      **[فهرست](#فهرست)**
-
-233.  ### چطوری تاریخ و زمان رو بر اساس زبان جاری سیستم کاربر نمایش بدیم؟
-
-      می‌تونین از کلاس `Intl.DateTimeFormat` استفاده کنیم که سازنده آبجکت‌هاییه که قالب بندی تاریخ و زمان حساس به زبان رو فعال می‌کنه. بیاین این رفتار رو با یه مثال ببینیم،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      var date = new Date(Date.UTC(2019, 07, 07, 3, 0, 0));
-      console.log(new Intl.DateTimeFormat("en-GB").format(date)); // 07/08/2019
-      console.log(new Intl.DateTimeFormat("en-AU").format(date)); // 07/08/2019
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-234.  ### Iterator چیه؟
-
-      `Iterator` آبجکت‌ای‌ـه که پس از خاتمه، یه توالی و یه مقدار بازگشتی رو تعریف می‌کنه. پروتکل Iterator رو با متد «next» پیاده‌سازی می‌کنه که یه شی رو با دو ویژگی برمی‌گردونه: «value» (مقدار بعدی در دنباله) و «done» (که اگه آخرین مقدار در دنباله مصرف شده باشه درسته. ).
-
-      **[فهرست](#فهرست)**
-
-235.  ### حلقه‌های synchronous(همزمان) چطوری کار می‌کنن؟
-
-      تکرار همزمان در ES6 معرفی شد و با مجموعه ای از اجزای زیر کار می‌کنه:
-
-      **Iterable:** این یه آبجکت‌ای‌ـه که میتونه از طریق روشی که کلید اون Symbol.iterator هس تکرار شه.
-      **Iterator:** این یه آبجکت‌ای‌ـه که با فراخوانی «[Symbol.iterator]» بر روی یه تکرار برگردونده می‌شه. این آبجکت تکرار شونده هر عنصر تکرار شده رو تو یه آبجکت پیچیده می‌کنه و اونو از طریق متد «next» یکی یکی برمی‌گردونه.
-      **IteratorResult:** این یه آبجکت‌ای‌ـه که با متد «next» برگردونده می‌شه. آبجکت شامل دو ویژگی است. ویژگی "value" حاوی یه عنصر تکرار شده و ویژگی "done" تعیین می‌کنه که آیا عنصر آخرین عنصر هست یا نه.
-
-      بیاین تکرار همزمان رو با آرایه ای مانند زیر نشون بدیم،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      const iterable = ["one", "two", "three"];
-      const iterator = iterable[Symbol.iterator]();
-      console.log(iterator.next()); // { value: 'one', done: false }
-      console.log(iterator.next()); // { value: 'two', done: false }
-      console.log(iterator.next()); // { value: 'three', done: false }
-      console.log(iterator.next()); // { value: 'undefined, done: true }
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-236.  ### Event-loop چیه؟
-
-      `event loop` یه صف از توابع callback موقعی که یه تابع async اجرا می‌شه، تابع callback در صف قرار می‌گیرد. موتور جاواسکریپت پردازش حلقه رویداد رو شروع نمی‌کنه تا زمانی که تابع async اجرای کد رو تموم کنه.
-
-      **نکته:** این به Node.js اجازه میده تا عملیات I/O غیر مسدود کننده رو انجام بده حتی اگه جاواسکریپت تک رشته‌ای باشه.
-
-      **[فهرست](#فهرست)**
-
-237.  ### Call-stack چیه؟
-
-      Call Stack یه ساختار داده برای مفسران جاواسکریپت‌ـه تا فراخونی‌های تابع تو برنامه رو پیگیری کنه و دو عمل عمده داره،
-
-      1. هر زمان که یه تابع رو برای اجرای آن فراخوانی می‌کنیم اونو به `stack` هدایت می‌شه.
-      2. هر زمان که اجرا کد تموم شه، تابع از `stack` خارج می‌شه.
-
-      بیاین یه مثال و توضیح خلاصه اون در قالب نمودار رو باهم ببینیم:
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      function hungry() {
-        eatFruits();
-      }
-      function eatFruits() {
-        return "I'm eating fruits";
-      }
-
-      // Invoke the `hungry` function
-      hungry();
-      ```
-
-      </span>
-
-      کد بالا تو یه call-stack به صورت زیر پردازش می‌شه.
-
-      1. تابع 'hungry' رو به لیست call-stack اضافه میشه و کد رو اجرا میشه.
-      2. تابع 'eatFruits' رو به لیست call-stack اضافه میشه و کد رو اجرا میشه.
-      3. تابع 'eatFruits' از لیست call-stack ما حذف میشه.
-      4. تابع 'eatFruits' از لیست call-stack ما حذف میشه.
-
-      ![Screenshot](images/call-stack.png)
-
-      **[فهرست](#فهرست)**
-
-238.  ### Event-queue چیه؟
-
-      `Event-queue` مسئول ارسال توابع جدید به stack برای پردازشه. ساختارش به صورت صف داده اس تا توالی درستی رو نگه داره و همه عملیات باید برای اجرا ارسال شن.
-
-      **[فهرست](#فهرست)**
-
-239.  ### Decorator چیه؟
-
-      دکوراتور عبارتیه که یه تابع رو ارزیابی می‌کنه و هدف، نام و توصیف‌کننده تزئین رو به عنوان آرگومان می‌گیره. همچنین، به صورت اختیاری یه توصیفگر دکوراتور رو برای نصب بر روی آبجکت مورد نظر برمی‌گردونه. بیاین در زمان طراحی، دکوراتور ادمین رو برای کلاس کاربر تعریف کنیم:
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      function admin(isAdmin) {
-         return function(target) {
-             target.isAdmin = isAdmin;
-         }
-      }
-
-      @admin(true)
+      @admin(false)
       class User() {
       }
-      console.log(User.isAdmin); //true
+      console.log(User.isAdmin); //false
+     ```
 
-       @admin(false)
-       class User() {
-       }
-       console.log(User.isAdmin); //false
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+240. ### مقادیر موجود روی آبجکت Intl کدوما هستن؟
+     
 
-240.  ### مقادیر موجود روی آبجکت Intl کدوما هستن؟
+     1. **Collator:** آبجکت‌هایی هستن که مقایسه رشته‌های حساس به زبان رو امکان پذیر می‌کنن.
+     2. **DateTimeFormat:** آبجکت‌هایی هستن که قالب بندی تاریخ و زمان حساس به زبان رو فعال می‌کنن.
+     3. **ListFormat:**  آبجکت‌هایی هستن که قالب بندی لیست حساس به زبان رو فعال می‌کنن.
+     4. **NumberFormat:** آبجکت‌هایی که قالب بندی اعداد حساس به زبان رو فعال می‌کنن.
+     5. **PluralRules:** آبجکت‌هایی که قالب بندی حساس به جمع و قوانین خاص زبان رو برای جمع فعال می‌کنن.
+     6. **RelativeTimeFormat:** آبجکت‌هایی که قالب بندی زمان نسبی حساس به زبان رو فعال می‌کنن.
 
-      1. **Collator:** اینا آبجکت‌هایی هستن که مقایسه رشته‌های حساس به زبان رو امکان پذیر می‌کنن.
-      2. **DateTimeFormat:** اینا آبجکت‌هایی هستن که قالب بندی تاریخ و زمان حساس به زبان رو فعال می‌کنن.
-      3. **ListFormat:**اینا آبجکت‌هایی هستن که قالب بندی لیست حساس به زبان رو فعال می‌کنن.
-      4. **NumberFormat:** آبجکت‌هایی که قالب بندی اعداد حساس به زبان رو فعال می‌کنن.
-      5. **PluralRules:**آبجکت‌هایی که قالب بندی حساس به جمع و قوانین خاص زبان رو برای جمع فعال می‌کنن.
-      6. **RelativeTimeFormat:** آبجکت‌هایی که قالب بندی زمان نسبی حساس به زبان رو فعال می‌کنن.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+241. ### عملگر Unary چیه؟
 
-241.  ### عملگر Unary چیه؟
+     عملگر unary(+) برای تبدیل یه متغیر به عدد استفاده می‌شه. اگه متغیر قابل تبدیل نباشه، همچنان به عدد تبدیل می‌شه اما با مقدار NaN. بیاین این رفتار رو تو یه عمل ببینیم:
 
-      عملگر unary(+) برای تبدیل یه متغیر به عدد استفاده می‌شه. اگه متغیر قابل تبدیل نباشه، همچنان به عدد تبدیل می‌شه اما با مقدار NaN. بیاین این رفتار رو تو یه عمل ببینیم.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     const x = "100";
+     const y = + x;
+     console.log(typeof x, typeof y); // string, number
 
-      ```javascript
-      var x = "100";
-      var y = +x;
-      console.log(typeof x, typeof y); // string, number
+     const a = "Hello";
+     const b = + a;
+     console.log(typeof a, typeof b, b); // string, number, NaN
+     ```
 
-      var a = "Hello";
-      var b = +a;
-      console.log(typeof a, typeof b, b); // string, number, NaN
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+242. ### چطوری المنت‌های موجود تو یه آرایه رو مرتب می‌کنی؟
 
-242.  ### چطوری المنت‌های موجود تو یه آرایه رو مرتب می‌کنی؟
+     متد `sort` برای مرتب سازی عناصر یه آرایه در جای خود استفاده می‌شه و آرایه مرتب شده رو برمی‌گردونه. برای مثال 
 
-      متد sort برای مرتب سازی عناصر یه آرایه در جای خود استفاده می‌شه و آرایه مرتب شده رو برمی‌گردونه. برای مثال
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     const months = ["Aug", "Sep", "Jan", "June"];
+     months.sort();
+     console.log(months); //  ["Aug", "Jan", "June", "Sep"]
+     ```
 
-      ```javascript
-      var months = ["Aug", "Sep", "Jan", "June"];
-      months.sort();
-      console.log(months); //  ["Aug", "Jan", "June", "Sep"]
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+243. ### هدف از تابع مرتب‌سازی موقع استفاده از متد sort چیه؟
 
-243.  ### هدف از تابع مرتب‌سازی موقع استفاده از متد sort چیه؟
+     از `compareFunction` برای تعریف ترتیب مرتب سازی استفاده می‌شه. اگه حذف شه، عناصر آرایه به رشته تبدیل می‌شن، سپس بر اساس مقدار نقطه کد یونیک هر کاراکتر مرتب میشن بیاین مثالی بزنیم تا کاربرد compareFunction رو ببینیم،
 
-      از compareFunction برای تعریف ترتیب مرتب سازی استفاده می‌شه. اگه حذف شه، عناصر آرایه به رشته تبدیل می‌شن، سپس بر اساس مقدار نقطه کد یونیکد هر کاراکتر مرتب میشن بیاین مثالی بزنیم تا کاربرد compareFunction رو ببینیم،
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     let numbers = [1, 2, 5, 3, 4];
+     numbers.sort((a, b) => b - a);
+     console.log(numbers); // [5, 4, 3, 2, 1]
+     ```
 
-      ```javascript
-      let numbers = [1, 2, 5, 3, 4];
-      numbers.sort((a, b) => b - a);
-      console.log(numbers); // [5, 4, 3, 2, 1]
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+244. ### چطوری آیتم‌های یه آرایه رو معکوس مرتب کنیم؟
 
-244.  ### چطوری آیتم‌های یه آرایه رو معکوس مرتب کنیم؟
+     برای معکوس کردن عناصر یه آرایه می‌تونین از متد reverse استفاده کنین. این روش برای مرتب کردن یه آرایه به ترتیب نزولی مفید است. بیاین استفاده از متد reverse رو تو یه مثال ببینیم،
 
-      برای معکوس کردن عناصر یه آرایه می‌تونین از متد reverse استفاده کنین. این روش برای مرتب کردن یه آرایه به ترتیب نزولی مفید است. بیاین استفاده از متد reverse رو تو یه مثال ببینیم،
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     let numbers = [1, 2, 5, 3, 4];
+     numbers.sort((a, b) => b - a);
+     console.log(numbers); // [5 ,4 ,3 ,2 ,1]
+     ```
 
-      ```javascript
-      let numbers = [1, 2, 5, 3, 4];
-      numbers.sort((a, b) => b - a);
-      numbers.reverse();
-      console.log(numbers); // [1, 2, 3, 4 ,5]
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+245. ### چطوری حداقل و حداکثر مقدار یه آرایه رو بدست بیاریم؟
 
-245.  ### چطوری حداقل و حداکثر مقدار یه آرایه رو بدست بیاریم؟
+     می‌تونین از روش‌های `Math.mix` و `Math.max` روی متغیرهای آرایه برای یافتن حداقل و حداکثر عناصر تو یه آرایه استفاده کنین. بیاین دو تابع برای پیدا کردن مقدار min و max تو یه آرایه ایجاد کنیم:
 
-      می‌تونین از روش‌های «Math.min» و «Math.max» روی متغیرهای آرایه برای یافتن حداقل و حداکثر عناصر تو یه آرایه استفاده کنین. بیاین دو تابع برای پیدا کردن مقدار min و max تو یه آرایه ایجاد کنیم.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     const marks = [50, 20, 70, 60, 45, 30];
+     function findMin(arr) {
+       return Math.min(...arr)
+     }
+     function findMax(arr) {
+       return Math.max(...arr));
+     }
 
-      ```javascript
-      var marks = [50, 20, 70, 60, 45, 30];
+     console.log(findMin(marks));
+     console.log(findMax(marks));
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+246. ### چطوری حداقل و حداکثر مقدار یه آرایه رو بدون استفاده از متدهای Math بدست بیاریم؟
+
+
+     ما میتونیم توابعی بنویسیم که تو یه آرایه حلقه می زنن و هر مقدار را با کمترین یا بالاترین مقدار مقایسه می کنن تا مقادیر حداقل و حداکثر رو پیدا کنن. بریم یه مثال درموردش ببینیم:
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+      const marks = [50, 20, 70, 60, 45, 30];
       function findMin(arr) {
-        return Math.min.apply(null, arr);
-      }
-      function findMax(arr) {
-        return Math.max.apply(null, arr);
-      }
-
-      console.log(findMin(marks));
-      console.log(findMax(marks));
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-246.  ### چطوری حداقل و حداکثر مقدار یه آرایه رو بدون استفاده از متدهای Math بدست بیاریم؟
-
-      ما میتونیم توابعی بنویسیم که تو یه آرایه حلقه می زنن و هر مقدار را با کمترین یا بالاترین مقدار مقایسه می کنن تا مقادیر حداقل و حداکثر رو پیدا کنن. بریم یه مثال درموردش ببینیم.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      var marks = [50, 20, 70, 60, 45, 30];
-      function findMin(arr) {
-        var length = arr.length;
-        var min = Infinity;
-        while (length--) {
-          if (arr[length] < min) {
-            min = arr[len];
-          }
+       let min = arr[0];
+       for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < minNumber) {
+            min = arr[i]
         }
+       }
         return min;
       }
 
       function findMax(arr) {
-        var length = arr.length;
-        var max = -Infinity;
-        while (len--) {
-          if (arr[length] > max) {
-            max = arr[length];
-          }
+       let max = arr[0];
+       for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > minNumber) {
+            max = arr[i]
         }
+      }
         return max;
       }
 
       console.log(findMin(marks));
       console.log(findMax(marks));
-      ```
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-247.  ### عبارت خالی چیه و هدف از استفاده ازش چیه؟
+247. ### عبارت خالی چیه و هدف از استفاده ازش چیه؟
 
-      ویرگول (;) هس که نشون میده هیچ دستوری اجرا نخواهد شد، حتی اگه نحو جاواسکریپت به اون نیاز داشته باشه. از اونجایی که هیچ اقدامی با دستور خالی وجود نداره، ممکنه فکر کنین که استفاده از اون خیلی کمه اما دستور خالی گاهی اوقات موقعی مفیده که می‌خواین حلقه ای ایجاد کنین که بدنش خالیه. برای مثال، می‌تونین یه آرایه با مقادیر صفر رو مانند زیر مقداردهی اولیه کنین.
+      سیمیکالن `;` هس که نشون میده هیچ دستوری اجرا نمیشه، حتی اگه syntax جاواسکریپت به اون نیاز داشته باشه. از اونجایی که هیچ اقدامی با دستور خالی وجود نداره، ممکنه فکر کنین که استفاده از اون خیلی کمه اما دستور خالی موقعی مفیده که می‌خواین یه حلقه ایجاد کنین که بدنه‌اش خالیه. برای مثال، می‌تونین یه آرایه با مقادیر صفر رو مثل کد زیر مقداردهی اولیه کنین.
 
-      <span dir="ltr" align="left">
 
-      ```javascript
-      // Initialize an array a
-      for(int i=0; i < a.length; a[i++] = 0) ;
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     // Initialize an array a
+     for(int i=0; i < a.length; a[i++] = 0) ;
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-248.  ### چطوری metadata یه ماژول رو بدست میاری؟
+     **[فهرست](#فهرست)**
 
-      میتونیم از آبجکت `import.meta‍` استفاده کنیم که یه ویژگی متاعه که متا داده‌های متنی خاص رو تو یه ماژول جاوا اسکریپت قرار می‌ده. این شامل اطلاعاتی در مورد ماژول فعلی، مانند URL ماژوله. در مرورگرها، ممکنه متا داده های متفاوتی نسبت به NodeJS دریافت کنیم.
+248. ### چطوری metadata یه ماژول رو بدست میاری؟
 
-      <span dir="ltr" align="left">
+     میتونیم از آبجکت `import.meta‍` استفاده کنیم که یه ویژگی متاعه که متا داده‌های متنی خاص رو تو یه ماژول جاوا اسکریپت قرار می‌ده. این شامل اطلاعاتی در مورد ماژول فعلی، مانند URL ماژوله. در مرورگرها، ممکنه متا داده های متفاوتی نسبت به NodeJS دریافت کنیم.
 
-      ```html
-      <script type="module" src="welcome-module.js"></script>
+     <span dir="ltr" align="left">
 
-      <script>
-        console.log(import.meta);
-        // { url: "file:///home/user/welcome-module.js" }
-      </script>
-      ```
+     ```html
+     <script type="module" src="welcome-module.js"></script>
 
-      </span>
+     <script>
+     console.log(import.meta); 
+     // { url: "file:///home/user/welcome-module.js" }
+     </script>
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-249.  ### عملگر comma چیه و چیکار می‌کنه؟
+     **[فهرست](#فهرست)**
 
-      عملگر کاما برای ارزیابی هر یه از عملوندهاش از چپ به راست استفاده می‌شه و مقدار آخرین عملوند رو برمی‌گردونه. این کاملاً با استفاده از کاما در آرایه‌ها، اشیاء و آرگومان‌ها و پارامترهای تابع متفاوته. بریم یه مثال در موردش ببینیم.
+249. ### عملگر comma چیه و چیکار می‌کنه؟
 
-      <span dir="ltr" align="left">
+     عملگر کاما برای ارزیابی هر یه از عملوندهاش از چپ به راست استفاده می‌شه و مقدار آخرین عملوند رو برمی‌گردونه. این کاملاً با استفاده از کاما در آرایه‌ها، اشیاء و آرگومان‌ها و پارامترهای تابع متفاوته. بریم یه مثال در موردش ببینیم.
 
-      ```javascript
-      var x = 1;
-      x = (x++, x);
+     <span dir="ltr" align="left">
 
-      console.log(x); // 2
-      ```
+     ```javascript
+     var x = 1;
+     x = (x++, x);
 
-      </span>
+     console.log(x); // 2
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-250.  ### مزایای استفاده از عملگر comma چیه؟
+     **[فهرست](#فهرست)**
 
-      معمولاً برای گنجوندن چندین عبارت در مکانی که به یه عبارت واحد نیاز داره استفاده می‌شه. یکی از کاربردهای رایج این عملگر کاما، ارائه چندین پارامتر تو یه حلقه «for» است. برای مثال، حلقه for زیر از چند عبارت تو یه مکان واحد با استفاده از عملگر کاما استفاده می‌کنه.
+250. ### مزایای استفاده از عملگر comma چیه؟
 
-      <span dir="ltr" align="left">
+     معمولاً برای گنجوندن چن تا عبارت تو جایی که به یه عبارت واحد نیاز داره استفاده می‌شه. یکی از کاربردهای رایج این عملگر کاما، ارائه چندین پارامتر تو یه حلقه «for» اس. برای مثال، حلقه for زیر از چند عبارت تو یه مکان واحد با استفاده از عملگر کاما استفاده می‌کنه.
 
-      ```javascript
-      for (var a = 0, b =10; a <= 10; a++, b--)
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     for (var a = 0, b =10; a <= 10; a++, b--)
+     ```
 
-      همچنین می‌تونین از عملگر کاما تو یه عبارت بازگشتی استفاده کنین جایی که قبل از بازگشت پردازش می‌کنه.
+     </span>
 
-      <span dir="ltr" align="left">
+     همچنین می‌تونین از عملگر کاما تو یه عبارت بازگشتی استفاده کنین جایی که قبل از بازگشت پردازش می‌کنه.
 
-      ```javascript
-      function myFunction() {
-        var a = 1;
-        return (a += 10), a; // 11
-      }
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     function myFunction() {
+        let a = 1;
+        return (a += 10, a); // 11
+     }
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-251.  ### Typescript چیه؟
+     **[فهرست](#فهرست)**
 
-      TypeScript یه ابر مجموعه تایپ شده از جاواسکریپت‌ـه که توسط مایکروسافت ایجاد شده که انواع اختیاری، کلاس‌ها، async/wait و بسیاری ویژگی‌های دیگر رو اضافه می‌کنه و به جاواسکریپت ساده کامپایل می‌کنه. Angular به طور کامل در TypeScript ساخته شده و به عنوان زبان اصلی استفاده می‌شه. شما می‌تونین اونو به صورت گلوبال نصب کنین
+251. ### Typescript چیه؟
 
-      <span dir="ltr" align="left">
+     TypeScript یه ابر مجموعه تایپ شده از جاواسکریپت‌ـه که توسط مایکروسافت ایجاد شده که انواع اختیاری، کلاس‌ها، async/wait و بسیاری ویژگی‌های دیگر رو اضافه می‌کنه و به جاواسکریپت ساده کامپایل می‌کنه. Angular به طور کامل در TypeScript ساخته شده و به عنوان زبان اصلی استفاده می‌شه. شما می‌تونین اونو به صورت گلوبال نصب کنین:
+
+     <span dir="ltr" align="left">
 
       ```bash
       npm install -g typescript
       ```
 
-      </span>
+     </span>
 
-      بیاین یه مثال ساده از استفاده از TypeScript رو ببینیم،
+     بیاین یه مثال ساده از استفاده از TypeScript رو ببینیم،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
       ```typescript
       function greeting(name: string): string {
-        return "Hello, " + name;
+         return "Hello, " + name;
       }
 
       let user = "Ali Karimi";
@@ -5308,607 +5272,570 @@ puppeteer:
       console.log(greeting(user));
       ```
 
-      </span>
+     </span>
 
-      متد greeting فقط نوع رشته رو به عنوان آرگومان مجاز می‌کنه.
+     متد `greeting` فقط نوع رشته رو به عنوان آرگومان مجاز می‌کنه.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-252.  ### تفاوت‌های بین javascript و typescript کدوما هستن؟
+252. ### تفاوت‌های بین javascript و typescript کدوما هستن؟
 
-      | ویژگی              | typescript                                  | javascript                                    |
-      | ------------------ | ------------------------------------------- | --------------------------------------------- |
-      | پارادایم زبان      | زبان برنامه نویسی شی گرا                    | زبان اسکریپت                                  |
-      | پشتیبانی از تایپ   | پشتیبانی از تایپ استاتیک                    | دارای تایپ پویا                               |
-      | ماژول‌ها           | پشتیبانی شده                                | پشتیبانی نمی‌شه                               |
-      | رابط               | دارای مفهوم رابط                            | از رابط‌ها پشتیبانی نمی‌کنه                   |
-      | پارامترهای اختیاری | توابع از پارامترهای اختیاری پشتیبانی می‌کنن | عدم پشتیبانی از پارامترهای اختیاری برای توابع |
 
-      **[فهرست](#فهرست)**
+     | ویژگی | typescript | javascript |
+     |---- | --------- | ---- |
+     | پارادایم زبان | زبان برنامه نویسی شی گرا | زبان اسکریپت |
+     | پشتیبانی از تایپ | پشتیبانی از تایپ استاتیک | دارای تایپ پویا |
+     | ماژول‌ها | پشتیبانی شده | پشتیبانی نمی‌شه |
+     | رابط | دارای مفهوم رابط | از رابط‌ها پشتیبانی نمی‌کنه |
+     | پارامترهای اختیاری | توابع از پارامترهای اختیاری پشتیبانی می‌کنن | عدم پشتیبانی از پارامترهای اختیاری برای توابع |
 
-253.  ### مزایای typescript نسبت به javascript چیاست؟
+     **[فهرست](#فهرست)**
 
-      1. TypeScript میتونه خطاهای زمان کامپایل رو فقط در زمان توسعه پیدا کنه و باعث می‌شه خطاهای زمان اجرا کمتر شه. در حالی که جاواسکریپت یه زبان تفسیر شده است.
-      2. TypeScript به شدت تایپ می‌شه یا از تایپ استاتیک پشتیبانی می‌کنه که امکان بررسی صحت نوع رو در زمان کامپایل فراهم می‌کنه. این در جاواسکریپت در دسترس نیست.
-      3. کامپایلر TypeScript برخلاف ویژگی‌های ES6 جاواسکریپت که ممکنه در بعضی از مرورگرها پشتیبانی نشه، میتونه فایل‌های .ts رو در ES3، ES4 و ES5 کامپایل کنه.
+253. ### مزایای typescript نسبت به javascript چیاست؟
 
-      **[فهرست](#فهرست)**
+     
+     1. TypeScript میتونه خطاهای زمان کامپایل رو فقط در زمان توسعه پیدا کنه و باعث می‌شه خطاهای زمان اجرا کمتر شه. در حالی که جاواسکریپت یه زبان تفسیر شده است.
+     2. TypeScript به شدت تایپ می‌شه یا از تایپ استاتیک پشتیبانی می‌کنه که امکان بررسی صحت نوع رو در زمان کامپایل فراهم می‌کنه. این در جاواسکریپت در دسترس نیست.
+     3. کامپایلر TypeScript برخلاف ویژگی‌های ES6 جاواسکریپت که ممکنه در بعضی از مرورگرها پشتیبانی نشه، میتونه فایل‌های .ts رو در ES3، ES4 و ES5 کامپایل کنه.
 
-254.  ### object-initializer چیه؟
+     **[فهرست](#فهرست)**
 
-      یه آبجکت اولیه عبارتیه که مقدار دهی اولیه یه آبجکت رو توصیف می‌کنه. نحو این عبارت به صورت فهرستی با کاما از صفر یا چند جفت نام ویژگی و مقادیر مرتبط یه آبجکت، محصور در براکت ({}) نشون داده می‌شه. این همچنین به عنوان نماد تحت اللفظی شناخته می‌شه. یکی از راه‌های ایجاد یه آبجکته.
+254. ### object-initializer چیه؟
 
-      <span dir="ltr" align="left">
+     `object-initializer` عبارتیه که مقدار دهی اولیه یه آبجکت رو توصیف می‌کنه. syntax این عبارت به صورت فهرستی با کاما از صفر یا چند جفت نام ویژگی و مقادیر مرتبط یه آبجکت، محصور در براکت ({}) نشون داده می‌شه. این همچنین به عنوان نماد تحت اللفظی شناخته می‌شه. یکی از راه‌های ایجاد یه آبجکته.
 
-      ```javascript
-      var initObject = { a: "John", b: 50, c: {} };
+     <span dir="ltr" align="left">
 
-      console.log(initObject.a); // John
-      ```
+     ```javascript
+     const initObject = {a: 'John', b: 50, c: {}};
 
-      </span>
+     console.log(initObject.a); // John
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-255.  ### متد constructor چیه؟
+     **[فهرست](#فهرست)**
 
-      متد سازنده یه متد خاص برای ایجاد و مقداردهی اولیه یه آبجکت ایجاد شده تو یه کلاس است. اگه متد سازنده رو مشخص نکنین از سازنده پیش فرض استفاده می‌شه. بریم یه مثال در موردش ببینیم.
+255. ### متد constructor چیه؟
 
-      <span dir="ltr" align="left">
+     متد `constructor` یه متد خاص برای ایجاد و مقداردهی اولیه یه آبجکت ایجاد شده تو یه کلاسه. اگه متد constructor رو مشخص نکنین از constructor پیش فرض استفاده می‌شه. بریم یه مثال در موردش ببینیم:
+     
 
-      ```javascript
+     <span dir="ltr" align="left">
+
+     ```javascript
+     class Employee {
+       constructor() {
+         this.name = "John";
+       }
+     }
+
+     const employeeObject = new Employee();
+
+     console.log(employeeObject.name); // John
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+256. ### اگه متد constructor رو بیش از یه بار توی کلاس بنویسیم چی می‌شه؟
+
+     `constructor` تو یه کلاس یه متد خاصه و باید فقط یه بار تو یه کلاس تعریف شه. اگه یه متد سازنده رو بیش از یه بار تو یه کلاس بنویسیم، یه خطای ‍`SyntaxError` ایجاد میشه.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
       class Employee {
         constructor() {
           this.name = "John";
         }
+        constructor() {   //  Uncaught SyntaxError: A class may only have one constructor
+          this.age = 30;
+        }
       }
 
-      var employeeObject = new Employee();
+      const employeeObject = new Employee();
 
-      console.log(employeeObject.name); // John
-      ```
+      console.log(employeeObject.name);
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-256.  ### اگه متد constructor رو بیش از یه بار توی کلاس بنویسیم چی می‌شه؟
+257. ### چطوری متد constructor کلاس والد رو صدا بزنیم؟
 
-      `constructor` تو یه کلاس یه متد خاصه و باید فقط یه بار تو یه کلاس تعریف شه. برای مثال، اگه یه متد سازنده رو بیش از یه بار تو یه کلاس بنویسین، یه خطای «SyntaxError» ایجاد می‌کنه.
+     می‌تونین از کلمه کلیدی `super` برای فراخوانی constructor کلاس والد استفاده کنین. یادمون باشه که `super` باید قبل از استفاده از مرجع `this‍` فراخوانی شه. در غیر این صورت باعث خطای `Reference error` می‌شه. بیاین از اون استفاده کنیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-       class Employee {
-         constructor() {
-           this.name = "John";
-         }
-         constructor() {   //  Uncaught SyntaxError: A class may only have one constructor
-           this.age = 30;
-         }
+     ```javascript
+     class Square extends Rectangle {
+       constructor(length) {
+         super(length, length);
+         this.name = 'Square';
        }
 
-       var employeeObject = new Employee();
+       get area() {
+         return this.width * this.height;
+       }
 
-       console.log(employeeObject.name);
-      ```
+       set area(value) {
+         this.area = value;
+       }
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-257.  ### چطوری متد constructor کلاس والد رو صدا بزنیم؟
+258. ### چطوری prototype یه object رو به دست میاری؟
 
-      می‌تونین از کلمه کلیدی super برای فراخوانی سازنده کلاس والد استفاده کنین. یادتون باشه که «super» باید قبل از استفاده از مرجع «this» فراخوانی شه. در غیر این صورت باعث خطای Reference error می‌شه. بیاین از اون استفاده کنیم:
+     می‌تونیم از روش `Object.getPrototypeOf`(obj) برای برگردوندن `prototype` آبجکت مشخص شده استفاده کنین. یعنی مقدار ویژگی `prototype` داخلی. اگه هیچ ویژگی ارثی وجود نداشته باشه، مقدار `null` برگردونده می‌شه.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     const newPrototype = {};
+     const newObject = Object.create(newPrototype);
 
-      ```javascript
-      class Square extends Rectangle {
-        constructor(length) {
-          super(length, length);
-          this.name = "Square";
-        }
+     console.log(Object.getPrototypeOf(newObject) === newPrototype); // true
+     ```
 
-        get area() {
-          return this.width * this.height;
-        }
+     </span>
 
-        set area(value) {
-          this.area = value;
-        }
-      }
-      ```
+     **[فهرست](#فهرست)**
 
-      </span>
+259. ### اگه به متد getPrototype رشته پاس بدیم چی می‌شه؟
 
-      **[فهرست](#فهرست)**
+     در ES5، اگه پارامتر obj یه آبجکت نباشه، یه استثنا TypeError ایجاد می‌کنه. در حالی که در ES2015، پارامتر به یه آبجکت اجباری تبدیل می‌شه.
 
-258.  ### چطوری prototype یه object رو به دست میاری؟
+     <span dir="ltr" align="left">
 
-      می‌تونین از روش `Object.getPrototypeOf`(obj) برای برگردوندن prototype شی مشخص شده استفاده کنین. یعنی مقدار ویژگی «prototype» داخلی. اگه هیچ ویژگی ارثی وجود نداشته باشه، مقدار "null" برگردونده می‌شه.
-      <span dir="ltr" align="left">
+     ```javascript
+     // ES5
+     Object.getPrototypeOf('James'); // TypeError: "James" is not an object
+     // ES2015
+     Object.getPrototypeOf('James'); // String.prototype
+     ```
 
-      ```javascript
-      const newPrototype = {};
-      const newObject = Object.create(newPrototype);
+     </span>
 
-      console.log(Object.getPrototypeOf(newObject) === newPrototype); // true
-      ```
+     **[فهرست](#فهرست)**
 
-      </span>
+260. ### چطوری prototype یه object روی یه object دیگه ست کنیم؟
 
-      **[فهرست](#فهرست)**
+     می‌تونین از متد ‍`Object.setPrototypeOf` استفاده کنین که prototype (یعنی ویژگی داخلی «Prototype») یه آبجکت مشخص شده رو روی یه آبجکت دیگه یا تهی تنظیم می‌کنه. برای مثال، اگه بخوایم prototype آبجکت Square رو روی آبجکت Rectangle تنظیم کنین این شکلی میشه این کارو انجام داد:
 
-259.  ### اگه به متد getPrototype رشته پاس بدیم چی می‌شه؟
+     <span dir="ltr" align="left">
 
-      در ES5، اگه پارامتر obj یه آبجکت نباشه، یه استثنا TypeError ایجاد می‌کنه. در حالی که در ES2015، پارامتر به یه آبجکت اجباری تبدیل می‌شه.
+     ```javascript
+     Object.setPrototypeOf(Square.prototype, Rectangle.prototype);
+     Object.setPrototypeOf({}, null);
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      // ES5
-      Object.getPrototypeOf("James"); // TypeError: "James" is not an object
-      // ES2015
-      Object.getPrototypeOf("James"); // String.prototype
-      ```
+     **[فهرست](#فهرست)**
 
-      </span>
+261. ### چطوری بررسی می‌کنی که یه object قابل extend هست یا نه؟
 
-      **[فهرست](#فهرست)**
+     متد `Object.isExtensible` برای تعیین اینکه یه آبجکت قابل توسعه هس یا نه ( یعنی اینکه میتونه ویژگی‌های جدیدی به اون اضافه شه یا نه) استفاده میشه.
 
-260.  ### چطوری prototype یه object روی یه object دیگه ست کنیم؟
+     <span dir="ltr" align="left">
 
-      می‌تونین از متد ‍`Object.setPrototypeOf` استفاده کنین که prototype (یعنی ویژگی داخلی «Prototype») یه آبجکت مشخص شده رو روی یه آبجکت دیگه یا تهی تنظیم می‌کنه. برای مثال، اگه می‌خواین prototype یه جسم مربع رو روی شی مستطیلی تنظیم کنین این شکلی میشه این کارو انجام داد:
+     ```javascript
+     const newObject = {};
+     console.log(Object.isExtensible(newObject)); //true
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      Object.setPrototypeOf(Square.prototype, Rectangle.prototype);
-      Object.setPrototypeOf({}, null);
-      ```
+     **نکته:** به طور پیش فرض، همه ی آبجکت ها قابل گسترش هستن. برای مثال، ویژگی‌های جدید رو می‌تونیم اضافه یا تغییر بدیم.
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+262. ### چطوری جلوی extend یه object رو بگیریم؟
 
-261.  ### چطوری بررسی می‌کنی که یه object قابل extend هست یا نه؟
+     متد `Object.preventExtensions` برای جلوگیری از افزودن ویژگی‌های جدید به یه آبجکت استفاده می‌شه. به عبارت دیگر، از پسوندهای بعدی به آبجکت جلوگیری می‌کنه. بیاین استفاده از این ویژگی رو ببینیم:
 
-      متد `Object.isExtensible` برای تعیین اینکه یه آبجکت قابل توسعه هس یا نه استفاده می‌شه. یعنی اینکه میتونه ویژگی‌های جدیدی به اون اضافه شه یا نه.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     const newObject = {};
+     Object.preventExtensions(newObject); // NOT extendable
 
-      ```javascript
-      const newObject = {};
-      console.log(Object.isExtensible(newObject)); //true
-      ```
+     try {
+       Object.defineProperty(newObject, 'newProperty', { // Adding new property
+         value: 100
+       });
+     } catch (e) {
+       console.log(e); // TypeError: Cannot define property newProperty, object is not extensible
+     }
+     ```
 
-      </span>
+     </span>
 
-      **نکته:** به طور پیش فرض، همه ی آبجکت ها قابل گسترش هستن. برای مثال، ویژگی‌های جدید رو می‌تونیم اضافه یا تغییر بدیم.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+263. ### روش‌های مختلف برای تبدیل یه object به object غیرقابل extend چیه؟
 
-262.  ### چطوری جلوی extend یه object رو بگیریم؟
+     می‌تونیم یه آبجکت غیر قابل گسترش رو به 3 روش علامت گذاری کنیم.
+     1. Object.preventExtensions
+     2. Object.seal
+     3. Object.freeze
 
-      متد `Object.preventExtensions` برای جلوگیری از افزودن ویژگی‌های جدید به یه شی استفاده می‌شه. به عبارت دیگر، از پسوندهای بعدی به شی جلوگیری می‌کنه. بیاین استفاده از این ویژگی رو ببینیم،
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     var newObject = {};
 
-      ```javascript
-      const newObject = {};
-      Object.preventExtensions(newObject); // NOT extendable
+     Object.preventExtensions(newObject); // Prevent objects are non-extensible
+     Object.isExtensible(newObject); // false
 
-      try {
-        Object.defineProperty(newObject, "newProperty", {
-          // Adding new property
-          value: 100,
-        });
-      } catch (e) {
-        console.log(e); // TypeError: Cannot define property newProperty, object is not extensible
-      }
-      ```
+     var sealedObject = Object.seal({}); // Sealed objects are non-extensible
+     Object.isExtensible(sealedObject); // false
 
-      </span>
+     var frozenObject = Object.freeze({}); // Frozen objects are non-extensible
+     Object.isExtensible(frozenObject); // false
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-263.  ### روش‌های مختلف برای تبدیل یه object به object غیرقابل extend چیه؟
+     **[فهرست](#فهرست)**
 
-      می‌تونیم یه آبجکت غیر قابل گسترش رو به 3 روش علامت گذاری کنیم.
+264. ### چطوری propertyهای متعددی رو روی یه object تعریف می‌کنی؟
 
-      1. Object.preventExtensions
-      2. Object.seal
-      3. Object.freeze
+     متد `Object.defineProperties` برای تعریف یا اصلاح ویژگی‌های موجود مستقیماً روی یه آبجکت و برگردوندن آبجکت استفاده می‌شه. بیاین چندین ویژگی رو روی یه آبجکت خالی تعریف کنیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var newObject = {};
+     ```javascript
+     const newObject = {};
 
-      Object.preventExtensions(newObject); // Prevent objects are non-extensible
-      Object.isExtensible(newObject); // false
+     Object.defineProperties(newObject, {
+       newProperty1: {
+         value: 'John',
+         writable: true
+       },
+       newProperty2: {}
+     });
+     ```
 
-      var sealedObject = Object.seal({}); // Sealed objects are non-extensible
-      Object.isExtensible(sealedObject); // false
+     </span>
 
-      var frozenObject = Object.freeze({}); // Frozen objects are non-extensible
-      Object.isExtensible(frozenObject); // false
-      ```
+     **[فهرست](#فهرست)**
 
-      </span>
+265. ### منظور از MEAN توی جاواسکریپت چیه؟
 
-      **[فهرست](#فهرست)**
+     پشته MEAN (MongoDB، Express، AngularJS و Node.js) محبوب‌ترین پشته فناوری نرم‌افزار جاواسکریپت منبع بازه که برای ساخت برنامه‌های وب پویا در دسترسه، جایی که می‌تونین نیمه‌های سمت سرور و سمت کلاینت پروژه وب رو بنویسین. کاملا در جاواسکریپت
 
-264.  ### چطوری propertyهای متعددی رو روی یه object تعریف می‌کنی؟
+     **[فهرست](#فهرست)**
 
-      متد `Object.defineProperties` برای تعریف یا اصلاح ویژگی‌های موجود مستقیماً روی یه آبجکت و برگردوندن آبجکت استفاده می‌شه. بیاین چندین ویژگی رو روی یه آبجکت خالی تعریف کنیم:
+266. ### Obfuscation توی جاواسکریپت چیه و چیکار می‌کنه؟
 
-      <span dir="ltr" align="left">
+     `Obfuscation` عمل عمدی ایجاد کد جاواسکریپت مبهم (یعنی کد منبع یا ماشین) هس که درک اون برای انسان سخته. این چیزی شبیه به رمزگذاریه، اما یه ماشین میتونه کد رو درک کنه و اونو اجرا کنه.
+     بیاین تابع زیر رو قبل از Obfuscation ببینیم،
 
-      ```javascript
-      const newObject = {};
+     <span dir="ltr" align="left">
 
-      Object.defineProperties(newObject, {
-        newProperty1: {
-          value: "John",
-          writable: true,
-        },
-        newProperty2: {},
-      });
-      ```
+     ```javascript
+     function greeting() {
+          console.log('Hello, welcome to JS world');
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     و بعد از کد Obfuscation به صورت زیر ظاهر می‌شه
+     <span dir="ltr" align="left">
 
-265.  ### منظور از MEAN توی جاواسکریپت چیه؟
+     ```javascript
+     eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('2 1(){0.3(\'4, 7 6 5 8\')}',9,9,'console|greeting|function|log|Hello|JS|to|welcome|world'.split('|'),0,{}))
+     ```
 
-      پشته MEAN (MongoDB، Express، AngularJS و Node.js) محبوب‌ترین پشته فناوری نرم‌افزار جاواسکریپت منبع بازه که برای ساخت برنامه‌های وب پویا در دسترسه، جایی که می‌تونین نیمه‌های سمت سرور و سمت کلاینت پروژه وب رو بنویسین. کاملا در جاواسکریپت
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-266.  ### Obfuscation توی جاواسکریپت چیه و چیکار می‌کنه؟
+267. ### چه نیازی به Obfuscate کردن داریم؟
 
-      `Obfuscation` عمل عمدی ایجاد کد جاواسکریپت مبهم (یعنی کد منبع یا ماشین) هس که درک اون برای انسان سخته. این چیزی شبیه به رمزگذاریه، اما یه ماشین میتونه کد رو درک کنه و اونو اجرا کنه.
-      بیاین تابع زیر رو قبل از Obfuscation ببینیم،
+     1. اندازه کد کمتر میشه. بنابراین انتقال داده بین سرور و مشتری سریع تر انجام میشه.
+     2. این منطق کسب و کار رو از دنیای خارج پنهان می‌کنه و از کد در برابر دیگران محافظت می‌کنه
+     3. مهندسی معکوس کردن کد رو سخت میکنه
+     4. زمان دانلود کاهش پیدا می‌کنه
 
-      <span dir="ltr" align="left">
+     **[فهرست](#فهرست)**
 
-      ```javascript
-      function greeting() {
-        console.log("Hello, welcome to JS world");
-      }
-      ```
+268. ### Minification چیه؟
 
-      </span>
+     `Minification` حذف تمام کاراکترهای غیر ضروریه (فضاهای خالی حذف می‌شن) و متغیرها بدون تغییر در عملکر اون تغییر نام می دن همچنین نوعی تکنیک مبهم سازیه کده.
 
-      و بعد از کد Obfuscation به صورت زیر ظاهر می‌شه
-      <span dir="ltr" align="left">
+     **[فهرست](#فهرست)**
 
-      ```javascript
-      eval(
-        (function (p, a, c, k, e, d) {
-          e = function (c) {
-            return c;
-          };
-          if (!"".replace(/^/, String)) {
-            while (c--) {
-              d[c] = k[c] || c;
-            }
-            k = [
-              function (e) {
-                return d[e];
-              },
-            ];
-            e = function () {
-              return "\\w+";
-            };
-            c = 1;
-          }
-          while (c--) {
-            if (k[c]) {
-              p = p.replace(new RegExp("\\b" + e(c) + "\\b", "g"), k[c]);
-            }
-          }
-          return p;
-        })(
-          "2 1(){0.3('4, 7 6 5 8')}",
-          9,
-          9,
-          "console|greeting|function|log|Hello|JS|to|welcome|world".split("|"),
-          0,
-          {}
-        )
-      );
-      ```
+269. ### مزایای minification یا کم حجم‌سازی چیه؟
 
-      </span>
+     به طور معمول توصیه می‌شه برای ترافیک سنگین و نیازهای فشرده منابع از Minification استفاده کنین. اندازه فایل رو با مزایای زیر کاهش میده
+     1. زمان بارگذاری یه صفحه وب رو کاهش میده
+     2. در مصرف پهنای باند صرفه جویی می‌کنه
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-267.  ### چه نیازی به Obfuscate کردن داریم؟
+270. ### تفاوت‌های بین Obfuscation و Encryption چیه؟
 
-      1. اندازه کد کمتر میشه. بنابراین انتقال داده بین سرور و مشتری سریع تر انجام میشه.
-      2. این منطق کسب و کار رو از دنیای خارج پنهان می‌کنه و از کد در برابر دیگران محافظت می‌کنه
-      3. مهندسی معکوس کردن کد رو سخت میکنه
-      4. زمان دانلود کاهش پیدا می‌کنه
+     | ویژگی | Obfuscation | Encryption |
+     |---- | --------- | ----
+      | تعریف | تغییر فرم هر داده به هر شکل دیگر | تغییر فرم اطلاعات به فرمت ناخوانا با استفاده از کلید |
+      | کلیدی برای رمزگشایی | می‌شه اونو بدون هیچ کلید رمزگشایی کرد | برای رمز گشایی کلید لازمه |
+      | فرمت داده‌های هدف | به فرم پیچیده تبدیل می‌شه | تبدیل به فرمت ناخوانا |
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-268.  ### Minification چیه؟
+271. ### ابزارهای مختلف برای minification کدوما هستن؟
 
-      `Minification` حذف تمام کاراکترهای غیر ضروریه (فضاهای خالی حذف می‌شن) و متغیرها بدون تغییر در عملکر اون تغییر نام می دن همچنین نوعی تکنیک مبهم سازیه کده.
+     1. کامپایلر بسته شدن گوگل
+     2. UglifyJS2
+     3. jsmin
+     4. javascript-minifier.com/
+     5. prettydiff.com
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-269.  ### مزایای minification یا کم حجم‌سازی چیه؟
+272. ### چطوری اعتبارسنجی فرم رو با javascript انجام میدی؟
 
-      به طور معمول توصیه می‌شه برای ترافیک سنگین و نیازهای فشرده منابع از Minification استفاده کنین. اندازه فایل رو با مزایای زیر کاهش میده
-
-      1. زمان بارگذاری یه صفحه وب رو کاهش میده
-      2. در مصرف پهنای باند صرفه جویی می‌کنه
-
-      **[فهرست](#فهرست)**
-
-270.  ### تفاوت‌های بین Obfuscation و Encryption چیه؟
-
-      | ویژگی               | Obfuscation                           | Encryption                                           |
-      | ------------------- | ------------------------------------- | ---------------------------------------------------- |
-      | تعریف               | تغییر فرم هر داده به هر شکل دیگر      | تغییر فرم اطلاعات به فرمت ناخوانا با استفاده از کلید |
-      | کلیدی برای رمزگشایی | می‌شه اونو بدون هیچ کلید رمزگشایی کرد | برای رمز گشایی کلید لازمه                            |
-      | فرمت داده‌های هدف   | به فرم پیچیده تبدیل می‌شه             | تبدیل به فرمت ناخوانا                                |
-
-      **[فهرست](#فهرست)**
-
-271.  ### ابزارهای مختلف برای minification کدوما هستن؟
-
-      1. کامپایلر بسته شدن گوگل
-      2. UglifyJS2
-      3. jsmin
-      4. javascript-minifier.com/
-      5. prettydiff.com
-
-      **[فهرست](#فهرست)**
-
-272.  ### چطوری اعتبارسنجی فرم رو با javascript انجام میدی؟
-
-      از جاواسکریپت می‌شه برای اعتبار سنجی فرم HTML استفاده کرد. برای مثال، اگه فیلد فرم خالی باشه، تابع باید اطلاع بده و false رو برگردونه تا از ارسال فرم جلوگیری شه.
+     از جاواسکریپت می‌شه برای اعتبار سنجی فرم HTML استفاده کرد. برای مثال، اگه فیلد فرم خالی باشه، تابع باید اطلاع بده و false رو برگردونه تا از ارسال فرم جلوگیری شه.
       اجازه بدین ورود کاربر رو در فرم html انجام بدیم،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```html
-      <form name="myForm" onsubmit="return validateForm()" method="post">
-        User name: <input type="text" name="uname" />
-        <input type="submit" value="Submit" />
-      </form>
-      ```
+     ```html
+     <form name="myForm" onsubmit="return validateForm()" method="post">
+          User name: <input type="text" name="uname">
+          <input type="submit" value="Submit">
+     </form>
+     ```
 
-      </span>
+     </span>
 
-      و اعتبار سنجی ورود کاربر به این شکل هست.
+     و اعتبار سنجی ورود کاربر به این شکل هست.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function validateForm() {
-        var x = document.forms["myForm"]["uname"].value;
-        if (x == "") {
-          alert("The username shouldn't be empty");
-          return false;
-        }
-      }
-      ```
+     ```javascript
+     function validateForm() {
+       var x = document.forms["myForm"]["uname"].value;
+       if (x == "") {
+         alert("The username shouldn't be empty");
+         return false;
+       }
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-273.  ### چطوری اعتبارسنجی فرم رو بدون javascript انجام میدی؟
+273. ### چطوری اعتبارسنجی فرم رو بدون javascript انجام میدی؟
 
-      می‌تونین بدون استفاده از جاواسکریپت اعتبار سنجی فرم HTML رو به صورت خودکار انجام بدین. اعتبار سنجی با اعمال ویژگی `required` برای جلوگیری از ارسال فرم زمانی که ورودی خالیه فعال می‌شه.
+     می‌تونین بدون استفاده از جاواسکریپت اعتبار سنجی فرم HTML رو به صورت خودکار انجام بدین. اعتبار سنجی با اعمال ویژگی `required` برای جلوگیری از ارسال فرم زمانی که ورودی خالیه فعال می‌شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```html
-      <form method="post">
-        <input type="text" name="uname" required />
-        <input type="submit" value="Submit" />
-      </form>
-      ```
+     ```html
+     <form method="post">
+       <input type="text" name="uname" required>
+       <input type="submit" value="Submit">
+     </form>
+     ```
 
-      </span>
+     </span>
 
-      **نکته:** اعتبار سنجی فرم خودکار در اینترنت اکسپلورر 9 یا قبل از اون کار نمی‌کنه.
+     **نکته:** اعتبار سنجی فرم خودکار در اینترنت اکسپلورر 9 یا قبل از اون کار نمی‌کنه.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-274.  ### متدهای موجود روی DOM برای اعتبارسنجی کدوما هستن؟
+274. ### متدهای موجود روی DOM برای اعتبارسنجی کدوما هستن؟
 
-      روش‌های DOM زیر برای اعتبارسنجی محدودیت در ورودی نامعتبر موجود است.
+     روش‌های DOM زیر برای اعتبارسنجی محدودیت در ورودی نامعتبر موجود است.
+     1. checkValidity: اگه یه عنصر ورودی حاوی داده‌های معتبر باشه، مقدار true رو برمی‌گردونه.
+     2. setCustomValidity: برای تنظیم خاصیت validationMessage یه عنصر ورودی استفاده می‌شه.
+     بیاین یه فرم ورود کاربر با اعتبارسنجی DOM بگیریم
 
-      1. checkValidity: اگه یه عنصر ورودی حاوی داده‌های معتبر باشه، مقدار true رو برمی‌گردونه.
-      2. setCustomValidity: برای تنظیم خاصیت validationMessage یه عنصر ورودی استفاده می‌شه.
-         بیاین یه فرم ورود کاربر با اعتبارسنجی DOM بگیریم
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     function myFunction() {
+       var userName = document.getElementById("uname");
+       if (!userName.checkValidity()) {
+         document.getElementById("message").innerHTML = userName.validationMessage;
+       } else {
+         document.getElementById("message").innerHTML = "Entered a valid username";
+       }
+     }
+     ```
 
-      ```javascript
-      function myFunction() {
-        var userName = document.getElementById("uname");
-        if (!userName.checkValidity()) {
-          document.getElementById("message").innerHTML =
-            userName.validationMessage;
-        } else {
-          document.getElementById("message").innerHTML =
-            "Entered a valid username";
-        }
-      }
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+275. ### مقادیر موجود روی DOM برای اعتبارسنجی کدوما هستن؟
 
-275.  ### مقادیر موجود روی DOM برای اعتبارسنجی کدوما هستن؟
+     در زیر لیستی از بعضی از ویژگی‌های DOM اعتبارسنجی محدودیت موجود است،
 
-      در زیر لیستی از بعضی از ویژگی‌های DOM اعتبارسنجی محدودیت موجود است،
+     1. validity: فهرستی از ویژگی‌های بولین مربوط به اعتبار یه عنصر ورودی رو ارائه میده.
+     2. validationMessage: زمانی که اعتبار نادرست باشه، پیام رو نمایش میده.
+     3. willValidate: این نشون میده که آیا یه عنصر ورودی اعتبار سنجی می‌شه یا نه.
 
-      1. validity: فهرستی از ویژگی‌های بولین مربوط به اعتبار یه عنصر ورودی رو ارائه میده.
-      2. validationMessage: زمانی که اعتبار نادرست باشه، پیام رو نمایش میده.
-      3. willValidate: این نشون میده که آیا یه عنصر ورودی اعتبار سنجی می‌شه یا نه.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+276. ### مقادیر موجود روی input برای اعتبارسنجی کدوما هستن؟
 
-276.  ### مقادیر موجود روی input برای اعتبارسنجی کدوما هستن؟
+     ویژگی اعتبار یه عنصر ورودی مجموعه ای از ویژگی‌های مربوط به اعتبار داده‌ها رو ارائه میده.
 
-      ویژگی اعتبار یه عنصر ورودی مجموعه ای از ویژگی‌های مربوط به اعتبار داده‌ها رو ارائه میده.
+     1. customError: اگه یه پیام اعتبار سفارشی تنظیم شده باشه، true رو برمی‌گردونه.
+     2. patternMismatch: اگه مقدار یه عنصر با ویژگی الگوی آن مطابقت نداشته باشه، مقدار true رو برمی‌گردونه.
+     3. rangeOverflow: اگه مقدار یه عنصر از ویژگی max آن بیشتر باشه، مقدار true رو برمی‌گردونه.
+     4. rangeUnderflow:اگه مقدار یه عنصر کمتر از ویژگی min باشه، مقدار true رو برمی‌گردونه.
+     5. stepMismatch:اگه مقدار عنصر مطابق با ویژگی step نامعتبر باشه، مقدار true رو برمی‌گردونه.
+     6. tooLong: اگه مقدار یه عنصر از ویژگی maxLength آن بیشتر شه، مقدار true رو برمی‌گردونه.
+     7. typeMismatch: اگه مقدار یه عنصر بر اساس ویژگی نوع نامعتبر باشه، مقدار true رو برمی‌گردونه.
+     8. valueMissing: اگه عنصری با ویژگی مورد نیاز ارزش نداشته باشه، مقدار true رو برمی‌گردونه.
+     9. valid: اگه مقدار یه عنصر معتبر باشه، مقدار true رو برمی‌گردونه.
 
-      1. customError: اگه یه پیام اعتبار سفارشی تنظیم شده باشه، true رو برمی‌گردونه.
-      2. patternMismatch: اگه مقدار یه عنصر با ویژگی الگوی آن مطابقت نداشته باشه، مقدار true رو برمی‌گردونه.
-      3. rangeOverflow: اگه مقدار یه عنصر از ویژگی max آن بیشتر باشه، مقدار true رو برمی‌گردونه.
-      4. rangeUnderflow:اگه مقدار یه عنصر کمتر از ویژگی min باشه، مقدار true رو برمی‌گردونه.
-      5. stepMismatch:اگه مقدار عنصر مطابق با ویژگی step نامعتبر باشه، مقدار true رو برمی‌گردونه.
-      6. tooLong: اگه مقدار یه عنصر از ویژگی maxLength آن بیشتر شه، مقدار true رو برمی‌گردونه.
-      7. typeMismatch: اگه مقدار یه عنصر بر اساس ویژگی نوع نامعتبر باشه، مقدار true رو برمی‌گردونه.
-      8. valueMissing: اگه عنصری با ویژگی مورد نیاز ارزش نداشته باشه، مقدار true رو برمی‌گردونه.
-      9. valid: اگه مقدار یه عنصر معتبر باشه، مقدار true رو برمی‌گردونه.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+277. ### یه مثال از استفاده ویژگی rangeOverflow می‌تونی بزنی؟
 
-277.  ### یه مثال از استفاده ویژگی rangeOverflow می‌تونی بزنی؟
+     اگه مقدار یه عنصر از ویژگی max آن بیشتر باشه، ویژگی rangeOverflow مقدار true رو برمی‌گردونه. برای مثال، فرم ارسالی زیر اگه مقدار آن بیش از 100 باشه، خطا میده.
 
-      اگه مقدار یه عنصر از ویژگی max آن بیشتر باشه، ویژگی rangeOverflow مقدار true رو برمی‌گردونه. برای مثال، فرم ارسالی زیر اگه مقدار آن بیش از 100 باشه، خطا میده.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```html
+     <input id="age" type="number" max="100">
+     <button onclick="myOverflowFunction()">OK</button>
+     ```
 
-      ```html
-      <input id="age" type="number" max="100" />
-      <button onclick="myOverflowFunction()">OK</button>
-      ```
+     </span>
 
-      </span>
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     function myOverflowFunction() {
+       if (document.getElementById("age").validity.rangeOverflow) {
+         alert("The mentioned age is not allowed");
+       }
+     }
+     ```
 
-      ```javascript
-      function myOverflowFunction() {
-        if (document.getElementById("age").validity.rangeOverflow) {
-          alert("The mentioned age is not allowed");
-        }
-      }
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+278. ### جاواسکریپت قابلیت استفاده از enum رو پیش‌فرض توی خودش داره؟
 
-278.  ### جاواسکریپت قابلیت استفاده از enum رو پیش‌فرض توی خودش داره؟
+     نه، جاواسکریپت به صورت بومی از enum‌ها پشتیبانی نمی‌کنه. اما انواع مختلفی از راه‌حل‌ها برای شبیه‌سازی اونا وجود داره، اگرچه ممکنه معادل‌های دقیقی ارائه نکنن. برای مثال، می‌تونیم از freeze یا seal روی آبجکت استفاده کنیم:
 
-      نه، جاواسکریپت به صورت بومی از enum‌ها پشتیبانی نمی‌کنه. اما انواع مختلفی از راه‌حل‌ها برای شبیه‌سازی اونا وجود داره، اگرچه ممکنه معادل‌های دقیقی ارائه نکنن. برای مثال، می‌تونین از فریز یا مهر و موم روی شی استفاده کنین
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     var DaysEnum = Object.freeze({"monday":1, "tuesday":2, "wednesday":3, ...})
+     ```
 
-      ```javascript
-      var DaysEnum = Object.freeze({"monday":1, "tuesday":2, "wednesday":3, ...})
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+279. ### enum چیه؟
 
-279.  ### enum چیه؟
+     `enum` نوعیه که متغیرها رو به یه مقدار از مجموعه ای از ثابت‌های از پیش تعریف شده محدود می‌کنه. جاواسکریپت هیچ enum نداره اما تایپ اسکریپت از enum داخلی پشتیبانی می‌کنه.
+     <span dir="ltr" align="left">
 
-      enum نوعیه که متغیرها رو به یه مقدار از مجموعه ای از ثابت‌های از پیش تعریف شده محدود می‌کنه. جاواسکریپت هیچ enum نداره اما تایپ اسکریپت از enum داخلی پشتیبانی می‌کنه.
-      <span dir="ltr" align="left">
+     ```javascript
+     enum Color {
+      RED, GREEN, BLUE
+     }
+     ```
 
-      ```javascript
-      enum Color {
-       RED, GREEN, BLUE
-      }
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+280. ### چطوری همه propertyهای یه object رو به دست بیاریم؟
 
-280.  ### چطوری همه propertyهای یه object رو به دست بیاریم؟
+     می‌تونین از متد `Object.getOwnPropertyNames` استفاده کنین که آرایه‌ای از تمام ویژگی‌هایی رو که مستقیماً تو آبجکت داده شده یافت می‌شه رو برمی‌گردونه. بیاین استفاده از اونو تو یه مثال ببینیم:
 
-      می‌تونین از متد Object.getOwnPropertyNames» استفاده کنین که آرایه‌ای از تمام ویژگی‌هایی رو که مستقیماً تو یه شیء داده شده یافت می‌شه، برمی‌گردونه. بیاین استفاده از اونو تو یه مثال بیان کنیم:
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     const newObject = {
+       a: 1,
+       b: 2,
+       c: 3
+     };
 
-      ```javascript
+     console.log(Object.getOwnPropertyNames(newObject));  ["a", "b", "c"]
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+281. ### چطوری property-descriptorهای یه آبجکت رو بدست بیاریم؟
+
+     می‌تونین از متد `Object.getOwnPropertyDescriptors` استفاده کنین که تمام توصیف‌گرهای ویژگی یه آبجکت معین رو برمی‌گردونه. بیاین استفاده از اونو توی یه مثال ببینیم:
+
+     <span dir="ltr" align="left">
+
+     ```javascript
       const newObject = {
         a: 1,
         b: 2,
-        c: 3,
+        c: 3
       };
+     const descriptorsObject = Object.getOwnPropertyDescriptors(newObject);
+     console.log(descriptorsObject.a.writable); //true
+     console.log(descriptorsObject.a.configurable); //true
+     console.log(descriptorsObject.a.enumerable); //true
+     console.log(descriptorsObject.a.value); // 1
+     ```
 
-      console.log(Object.getOwnPropertyNames(newObject));
-      ["a", "b", "c"];
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+282. ### گزینه‌هایی که موقع تعریف ویژگی object با descriptor داریم کدوما هستن؟
 
-281.  ### چطوری property-descriptorهای یه آبجکت رو بدست بیاریم؟
+     1. value: ارزش مرتبط با پراپرتی
+     2. writable:تعیین می‌کنه که آیا مقدار مرتبط با ویژگی قابل تغییر هس یا نه
+     3. configurable: اگه بتونیم نوع descriptor این ویژگی رو تغییر بدیم و اگه بتونیم ویژگی رو از آبجکت مربوطه حذف کنیم، مقدار true رو برمی‌گردونه.
+     4. enumerable: تعیین می‌کنه که ویژگی در موقع شمارش خصوصیات روی آبجکت مربوطه ظاهر می‌شه یا نه.
+     5. set: تابعی که به عنوان تنظیم کننده برای ویژگی عمل می‌کنه
+     6. get: تابعی که به عنوان یه گیرنده برای ملک عمل می‌کنه
 
-      می‌تونین از متد Object.getOwnPropertyDescriptors» استفاده کنین که تمام توصیف‌گرهای ویژگی یه شی معین رو برمی‌گردونه. مثال استفاده از این روش در زیر آمده است
+     **[فهرست](#فهرست)**
 
-      <span dir="ltr" align="left">
+283. ### چطوری کلاس‌ها رو extend می‌کنی؟
 
-      ```javascript
-      const newObject = {
-        a: 1,
-        b: 2,
-        c: 3,
-      };
-      const descriptorsObject = Object.getOwnPropertyDescriptors(newObject);
-      console.log(descriptorsObject.a.writable); //true
-      console.log(descriptorsObject.a.configurable); //true
-      console.log(descriptorsObject.a.enumerable); //true
-      console.log(descriptorsObject.a.value); // 1
-      ```
+     کلمه کلیدی "extends" در اعلان‌ها/عبارات کلاس برای ایجاد کلاسی که فرزند کلاس دیگه ایه استفاده می‌شه. می‌شه از اون برای زیر کلاس بندی کلاس‌های سفارشی و همچنین اشیاء داخلی استفاده کرد. بریم یه مثال در موردش ببینیم،
 
-      </span>
+     <span dir="ltr" align="left">
 
-      **[فهرست](#فهرست)**
+     ```javascript
+     class ChildClass extends ParentClass { ... }
+     ```
 
-282.  ### گزینه‌هایی که موقع تعریف ویژگی object با descriptor داریم کدوما هستن؟
+     </span>
 
-      1. value:ارزش مرتبط با ملک
-      2. writable:تعیین می‌کنه که آیا مقدار مرتبط با ویژگی قابل تغییر هس یا نه
-      3. configurable: اگه بتوان نوع توصیفگر این ویژگی رو تغییر داد و اگه ویژگی رو بتوان از شی مربوطه حذف کرد، مقدار true رو برمی‌گردونه.
-      4. enumerable: تعیین می‌کنه که آیا ویژگی در موقع شمارش خصوصیات روی شی مربوطه ظاهر می‌شه یا نه.
-      5. set: تابعی که به عنوان تنظیم کننده برای ویژگی عمل می‌کنه
-      6. get: تابعی که به عنوان یه گیرنده برای ملک عمل می‌کنه
+     بیاین یه نمونه از زیر کلاس مربع از کلاس والد Polygon رو مثال بزنیم،
 
-      **[فهرست](#فهرست)**
+     <span dir="ltr" align="left">
 
-283.  ### چطوری کلاس‌ها رو extend می‌کنی؟
-
-      کلمه کلیدی "extends" در اعلان‌ها/عبارات کلاس برای ایجاد کلاسی که فرزند کلاس دیگه ایه استفاده می‌شه. می‌شه از اون برای زیر کلاس بندی کلاس‌های سفارشی و همچنین اشیاء داخلی استفاده کرد. بریم یه مثال در موردش ببینیم،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      class ChildClass extends ParentClass { ... }
-      ```
-
-      </span>
-
-      بیاین یه نمونه از زیر کلاس مربع از کلاس والد Polygon رو مثال بزنیم،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
+     ```javascript
       class Square extends Rectangle {
         constructor(length) {
           super(length, length);
-          this.name = "Square";
+          this.name = 'Square';
         }
 
         get area() {
@@ -5919,118 +5846,111 @@ puppeteer:
           this.area = value;
         }
       }
-      ```
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-284.  ### چطوری آدرس صفحه رو بدون رفرش صفحه عوض کنیم؟
+284. ### چطوری آدرس صفحه رو بدون رفرش صفحه عوض کنیم؟
 
-      ویژگی «window.location.url» برای تغییر url مفید خواهد بود اما صفحه رو دوباره بارگیری می‌کنه. HTML5 متدهای «history.pushState» و «history.replaceState» رو معرفی کرد که به شما اجازه میده به ترتیب ورودی‌های تاریخ رو اضافه و تغییر بدین. برای مثال، می‌تونین از pushState مانند زیر استفاده کنین.
+     برای تغییر url میشه از`window.location.url` استفاده کرد اما این کار باعث بارگیری دوباره صفحه میشه. HTML5 متدهای `history.pushState` و `history.replaceState` رو معرفی کرد که به شما اجازه میده به ترتیب ورودی‌های تاریخ رو اضافه و تغییر بدین. برای مثال، می‌تونین از pushState مثل کد زیر استفاده کنین.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      window.history.pushState("page2", "Title", "/page2.html");
-      ```
+     ```javascript
+     window.history.pushState('page2', 'Title', '/page2.html');
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-285.  ### چطوری بررسی می‌کنی که یه آرایه یه مقدار مشخص رو داره یا نه؟
+285. ### چطوری بررسی می‌کنی که یه آرایه یه مقدار مشخص رو داره یا نه؟
 
-      متد «Array#includes» برای تعیین اینکه آیا یه آرایه دارای مقدار خاصی در میان ورودی‌های خود با برگردوندن true یا false هس یا نه استفاده می‌شه. بیاین مثالی برای یافتن یه عنصر (عددی و رشته‌ای) تو یه آرایه ببینیم.
+     متد `Array.includes` برای تعیین اینکه آیا یه آرایه مقدار خاصی رو بین ورودی‌های خودش داره یا نه با برگردوندن true یا false استفاده می‌شه. بیاین مثالی برای پیداکردن یه عنصر (عددی و رشته‌ای) تو یه آرایه ببینیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var numericArray = [1, 2, 3, 4];
-      console.log(numericArray.includes(3)); // true
+     ```javascript
+     const numericArray = [1, 2, 3, 4];
+     console.log(numericArray.includes(3)); // true
 
-      var stringArray = ["green", "yellow", "blue"];
-      console.log(stringArray.includes("blue")); //true
-      ```
+     const stringArray = ['green', 'yellow', 'blue'];
+     console.log(stringArray.includes('blue')); //true
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-286.  ### چطوری آرایه‌های scalar رو با هم مقایسه می‌کنی؟
+286. ### چطوری آرایه‌های scalar رو با هم مقایسه می‌کنی؟
 
-      می‌تونین از طول و هر روش آرایه برای مقایسه دو آرایه اسکالر (مقایسه مستقیم با استفاده از ===) استفاده کنین. ترکیب این عبارات میتونه نتیجه مورد انتظار رو به دست بده،
+     می‌تونیم از length و هر روش آرایه برای مقایسه دو آرایه اسکالر (مقایسه مستقیم با استفاده از ===) استفاده کنیم. ترکیب این دو تا روش میتونه نتیجه مورد نیازمون رو به ما بده:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const arrayFirst = [1, 2, 3, 4, 5];
-      const arraySecond = [1, 2, 3, 4, 5];
-      console.log(
-        arrayFirst.length === arraySecond.length &&
-          arrayFirst.every((value, index) => value === arraySecond[index])
-      ); // true
-      ```
+     ```javascript
+     const arrayFirst = [1,2,3,4,5];
+     const arraySecond = [1,2,3,4,5];
+     console.log(arrayFirst.length === arraySecond.length && arrayFirst.every((value, index) => value === arraySecond[index])); // true
+     ```
 
-      </span>
+     </span>
 
-      اگه می‌خواین آرایه‌ها رو بدون توجه به ترتیب مقایسه کنین باید اونا رو قبل از مرتب سازی، مرتب کنین.
 
-      <span dir="ltr" align="left">
+     اگه بخوایم آرایه‌ها رو بدون توجه به ترتیب مقایسه کنیم باید اونا رو قبل از مقایسه، مرتب کنیم.
 
-      ```javascript
-      const arrayFirst = [2, 3, 1, 4, 5];
-      const arraySecond = [1, 2, 3, 4, 5];
-      console.log(
-        arrayFirst.length === arraySecond.length &&
-          arrayFirst
-            .sort()
-            .every((value, index) => value === arraySecond[index])
-      ); //true
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     const arrayFirst = [2,3,1,4,5];
+     const arraySecond = [1,2,3,4,5];
+     console.log(arrayFirst.length === arraySecond.length && arrayFirst.sort().every((value, index) => value === arraySecond[index])); //true
+     ````
 
-      **[فهرست](#فهرست)**
+     </span>
 
-287.  ### چطوری می‌شه پارامترهای صفحه رو از متد GET گرفت؟
+     **[فهرست](#فهرست)**
 
-      شیء «URL» رشته url رو می‌پذیرد و از ویژگی «searchParams» این شی می‌توان برای دسترسی به پارامترهای get استفاده کرد. یادتون باشه که ممکنه برای دسترسی به URL در مرورگرهای قدیمی (از جمله IE) نیاز به استفاده از polyfill یا «window.location» داشته باشیم.
+287. ### چطوری می‌شه پارامترهای صفحه رو از متد GET گرفت؟
 
-      <span dir="ltr" align="left">
+     آبجکت `URL` رشته url رو می‌پذیرد و از ویژگی ‍`searchParams` این آبجکت میتونیم برای دسترسی به پارامترهای get استفاده کنیم. ممکنه برای دسترسی به URL در مرورگرهای قدیمی (از جمله IE) نیاز به استفاده از polyfill یا `window.location` داشته باشیم.
 
-      ```javascript
-      let urlString = "http://www.some-domain.com/about.html?x=1&y=2&z=3"; //window.location.href
-      let url = new URL(urlString);
-      let parameterZ = url.searchParams.get("z");
-      console.log(parameterZ); // 3
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     let urlString = "http://www.some-domain.com/about.html?x=1&y=2&z=3"; //window.location.href
+     let url = new URL(urlString);
+     let parameterZ = url.searchParams.get("z");
+     console.log(parameterZ); // 3
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-288.  ### چطوری اعداد رو می‌شه سه رقم سه رقم جدا کرد؟
+     **[فهرست](#فهرست)**
 
-      می‌تونین از متد «Number.prototype.toLocaleString» استفاده کنین که رشته‌ای رو با نمایشی حساس به زبان مانند جداکننده هزار، ارز و غیره از این عدد برمی‌گردونه.
+288. ### چطوری اعداد رو می‌شه سه رقم سه رقم جدا کرد؟
 
-      <span dir="ltr" align="left">
+     می‌تونیم از متد `Number.prototype.toLocaleString` استفاده کنیم که رشته‌ای رو با نمایشی حساس به زبان مثل جداکننده هزار، ارز و غیره از این عدد برمی‌گردونه.
 
-      ```javascript
-      function convertToThousandFormat(x) {
-        return x.toLocaleString(); // 12,345.679
-      }
+     <span dir="ltr" align="left">
 
-      console.log(convertToThousandFormat(12345.6789));
-      ```
+     ```javascript
+     function convertToThousandFormat(x){
+       return x.toLocaleString(); // 12,345.679
+     }
 
-      </span>
+     console.log(convertToThousandFormat(12345.6789));
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-289.  ### تفاوت‌ بین java و javascript چیه؟
+     **[فهرست](#فهرست)**
 
-      هر دو زبان برنامه نویسی کاملاً نامرتبط هستن و هیچ ارتباطی بین اونا وجود نداره. جاوا بصورت ایستا تایپ می‌شه، کامپایل می‌شه، روی ماشین مجازی خود اجرا می‌شه. در حالی که جاواسکریپت به صورت پویا تایپ می‌شه، تفسیر می‌شه و در محیط‌های مرورگر و nodejs اجرا می‌شه. بیاین تفاوت‌های عمده رو در قالب جدولی ببینیم،
+289. ### تفاوت‌ بین java و javascript چیه؟
+
+     هر دو زبان برنامه نویسی کاملاً نامرتبط هستن و هیچ ارتباطی بین اونا وجود نداره. جاوا بصورت ایستا تایپ می‌شه، کامپایل می‌شه، روی ماشین مجازی خودش اجرا می‌شه. در حالی که جاواسکریپت به صورت پویا تایپ می‌شه، تفسیر می‌شه و در محیط‌های مرورگر و nodejs اجرا می‌شه. بیاین تفاوت‌های عمده رو در قالب جدولی ببینیم:
       | ویژگی | جاوا | جاواسکریپت |
       |---- | ---- | -----
       | تایپ شده | این یه زبان قوی تایپ شده اس| این یه زبان تایپ شده پویاس |
@@ -6038,2719 +5958,2669 @@ puppeteer:
       | محدوده | محدوده بلوک | محدوده عملکردی |
       | همزمانی | بر اساس موضوع | مبتنی بر رویداد |
       | حافظه | از حافظه بیشتر استفاده می‌کنه | از حافظه کمتری استفاده می‌کنه. از این رو برای صفحات وب استفاده خواهد شد |
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-290.  ### آیا جاواسکریپت namespace رو پشتیبانی می‌کنه؟
+290. ### آیا جاواسکریپت namespace رو پشتیبانی می‌کنه؟
 
-      جاواسکریپت به طور پیش فرض از فضای نام پشتیبانی نمی‌کنه. بنابراین اگه هر عنصری (تابع، روش، شی، متغیر) ایجاد کنین گلوبال می‌شه و فضای نام گلوبال رو آلوده می‌کنه. بیاین مثالی از تعریف دو تابع بدون فضای نام بزنیم،
+     جاواسکریپت به طور پیش فرض از namespace پشتیبانی نمی‌کنه. بنابراین اگه هر عنصری (تابع، متد، آبجکت، متغیر) ایجاد کنین گلوبال می‌شه و namespace گلوبال رو آلوده می‌کنه. بیاین مثالی از تعریف دو تابع بدون namespace بزنیم،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function func1() {
+     ```javascript
+     function func1() {
+         console.log("This is a first definition");
+
+     }
+     function func1() {
+         console.log("This is a second definition");
+     }
+     func1(); // This is a second definition
+     ```
+
+     </span>
+
+     همی‌شه تعریف تابع دوم رو فراخوانی می‌کنه. در این صورت namespace مشکل برخورد نام رو حل می‌کنه.
+
+     **[فهرست](#فهرست)**
+
+291. ### چطوری namespace تعریف می‌کنی؟
+
+     حتی اگه جاواسکریپت فاقد namespace باشه، می‌تونیم از Objects، IIFE برای ایجاد namespace استفاده کنیم.
+     1. **استفاده از Object literal:** بیاین متغیرها و توابع رو درون یه Object literal بپیچیم که به عنوان namespace عمل می‌کنه. پس از اون می‌تونیم با استفاده از نماد آبجکت به اونا دسترسی داشته باشیم
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     const namespaceOne = {
+        function func1() {
+            console.log("This is a first definition");
+        }
+     }
+     const namespaceTwo = {
+          function func1() {
+              console.log("This is a second definition");
+          }
+      }
+     namespaceOne.func1(); // This is a first definition
+     namespaceTwo.func1(); // This is a second definition
+     ```
+
+     </span>
+
+     2. **استفاده از IIFE (توابع بیانی بلافاصله صدازده شده  ):** جفت پرانتز بیرونی IIFE یه محدوده محلی برای تمام کدهای داخلش ایجاد می‌کنه و تابع ناشناس رو به یه عبارت تابع تبدیل می‌کنه. به همین دلیل، می‌تونیم یه تابع رو در تو دو عبارت تابع مختلف ایجاد کنیم تا به عنوان namespace عمل کنه.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     (function() {
+      function fun1(){
         console.log("This is a first definition");
-      }
-      function func1() {
-        console.log("This is a second definition");
-      }
-      func1(); // This is a second definition
-      ```
+        } fun1();
+     }());
 
-      </span>
+     (function() {
+         function fun1(){
+            console.log("This is a second definition");
+        } fun1();
+      }());
+     ```
 
-      همی‌شه تعریف تابع دوم رو فراخوانی می‌کنه. در این صورت فضای نام مشکل برخورد نام رو حل می‌کنه.
+     </span>
 
-      **[فهرست](#فهرست)**
+     3. **استفاده کردن از بلوک و تعریف‌کننده let و const:** در ES6، می‌تونیم از یه بلوک و یه اعلان let برای محدود کردن دامنه یه متغیر به یه بلوک استفاده کنیم.
 
-291.  ### چطوری namespace تعریف می‌کنی؟
+     <span dir="ltr" align="left">
 
-      حتی اگه جاواسکریپت فاقد فضاهای نام باشه، می‌تونیم از Objects، IIFE برای ایجاد فضاهای نام استفاده کنیم.
-
-      1. **Using Object Literal Notation:** بیاین متغیرها و توابع رو درون یه Object literal بپیچیم که به عنوان فضای نام عمل می‌کنه. پس از اون می‌تونین با استفاده از نماد شیء به اونا دسترسی داشته باشیم
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      var namespaceOne = {
-         function func1() {
-             console.log("This is a first definition");
-         }
-      }
-      var namespaceTwo = {
-           function func1() {
-               console.log("This is a second definition");
-           }
+     ```javascript
+      {
+       let myFunction= function fun1(){
+       console.log("This is a first definition");
        }
-      namespaceOne.func1(); // This is a first definition
-      namespaceTwo.func1(); // This is a second definition
-      ```
-
-      </span>
-
-      2. **Using IIFE (Immediately invoked function expression):** جفت پرانتز بیرونی IIFE یه محدوده محلی برای تمام کدهای داخل آن ایجاد می‌کنه و تابع ناشناس رو به یه عبارت تابع تبدیل می‌کنه. به همین دلیل، می‌تونین یه تابع رو در دو عبارت تابع مختلف ایجاد کنین تا به عنوان فضای نام عمل کنه.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      (function () {
-        function fun1() {
-          console.log("This is a first definition");
-        }
-        fun1();
-      })();
-
-      (function () {
-        function fun1() {
-          console.log("This is a second definition");
-        }
-        fun1();
-      })();
-      ```
-
-      </span>
-
-      3. **Using a block and a let/const declaration:** در ECMAScript 6، شما می‌تونین به سادگی از یه بلوک و یه اعلان let برای محدود کردن دامنه یه متغیر به یه بلوک استفاده کنین.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      {
-        let myFunction = function fun1() {
-          console.log("This is a first definition");
-        };
-        myFunction();
+       myFunction();
       }
-      //myFunction(): ReferenceError: myFunction is not defined.
+       //myFunction(): ReferenceError: myFunction is not defined.
 
       {
-        let myFunction = function fun1() {
-          console.log("This is a second definition");
-        };
-        myFunction();
+       let myFunction= function fun1(){
+       console.log("This is a second definition");
+       }
+       myFunction();
       }
-      //myFunction(): ReferenceError: myFunction is not defined.
-      ```
+       //myFunction(): ReferenceError: myFunction is not defined.
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-292.  ### چطوری می‌تونیم تکه کد جاواسکریپت داخل یه iframe رو از صفحه والد صدا بزنیم؟
+292. ### چطوری می‌تونیم تکه کد جاواسکریپت داخل یه iframe رو از صفحه والد صدا بزنیم؟
 
-      در ابتدا باید iFrame با استفاده از «document.getElementBy» یا «window.frames» قابل دسترسی باشه. پس از اون ویژگی «contentWindow» iFrame به targetFunction دسترسی میده
+     در ابتدا باید `iFrame` با استفاده از `document.getElementBy‍` یا `window.frames` قابل دسترسی باشه. پس از اون ویژگی `contentWindow iFrame` به `targetFunction` دسترسی میده
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      document.getElementById("targetFrame").contentWindow.targetFunction();
-      window.frames[0].frameElement.contentWindow.targetFunction(); // Accessing iframe this way may not work in latest versions chrome and firefox
-      ```
+     ```javascript
+     document.getElementById('targetFrame').contentWindow.targetFunction();
+     window.frames[0].frameElement.contentWindow.targetFunction(); // Accessing iframe this way may not work in latest versions chrome and firefox
 
-      </span>
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-293.  ### چطوری می‌شه اختلاف timezone رو از آبجکت date بگیریم؟
+     **[فهرست](#فهرست)**
 
-      می‌تونین از روش «getTimezoneOffset» شی تاریخ استفاده کنین. این روش اختلاف منطقه زمانی رو بر حسب دقیقه از محلی فعلی (تنظیمات سیستم میزبان) به UTC برمی‌گردونه
+293. ### چطوری می‌شه اختلاف timezone رو از آبجکت date بگیریم؟
 
-      <span dir="ltr" align="left">
+     می‌تونیم از روش `getTimezoneOffset` کلاس Date استفاده کنیم. این روش اختلاف منطقه زمانی رو بر حسب دقیقه از محلی فعلی (تنظیمات سیستم میزبان) به UTC برمی‌گردونه.
 
-      ```javascript
-      var offset = new Date().getTimezoneOffset();
-      console.log(offset); // -480
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     const offset = new Date().getTimezoneOffset();
+     console.log(offset); // -480
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-294.  ### چطوری فایل‌های CSS و JS رو به شکل داینامیک بارگذاری کنیم؟
+     **[فهرست](#فهرست)**
 
-      شما می‌تونین هر دو عنصر پیوند و اسکریپت رو در DOM ایجاد کنین و اونا رو به عنوان فرزند به تگ head اضافه کنین. بیاین یه تابع برای اضافه کردن منابع اسکریپت و سبک مثل زیر ایجاد کنیم.
+294. ### چطوری فایل‌های CSS و JS رو به شکل داینامیک بارگذاری کنیم؟
 
-      <span dir="ltr" align="left">
+     می‌تونیم هر دو عنصر پیوند و اسکریپت رو توی DOM ایجاد کنیم و اونا رو به عنوان child به تگ head اضافه کنیم. بیاین یه تابع برای اضافه کردن منابع اسکریپت و سبک مثل زیر ایجاد کنیم:
 
-      ```javascript
-      function loadAssets(filename, filetype) {
-        if (filetype == "css") {
-          // External CSS file
-          var fileReference = document.createElement("link");
-          fileReference.setAttribute("rel", "stylesheet");
-          fileReference.setAttribute("type", "text/css");
-          fileReference.setAttribute("href", filename);
-        } else if (filetype == "js") {
-          // External JavaScript file
-          var fileReference = document.createElement("script");
-          fileReference.setAttribute("type", "text/javascript");
-          fileReference.setAttribute("src", filename);
-        }
-        if (typeof fileReference != "undefined")
-          document.getElementsByTagName("head")[0].appendChild(fileReference);
+     <span dir="ltr" align="left">
+
+     ```javascript
+     function loadAssets(filename, filetype) {
+       if (filetype == "css") { // External CSS file
+            const fileReference = document.createElement("link")
+            fileReference.setAttribute("rel", "stylesheet");
+            fileReference.setAttribute("type", "text/css");
+            fileReference.setAttribute("href", filename);
+       } else if (filetype == "js") { // External JavaScript file
+            const fileReference = document.createElement('script');
+            fileReference.setAttribute("type", "text/javascript");
+            fileReference.setAttribute("src", filename);
+       }
+       if (typeof fileReference != "undefined")
+            document.getElementsByTagName("head")[0].appendChild(fileReference)
       }
-      ```
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-295.  ### روش‌های مختلف برای پیدا کردن elementها توی DOM کدوما هستن؟
+295. ### روش‌های مختلف برای پیدا کردن elementها توی DOM کدوما هستن؟
 
-      اگه می‌خواین به هر عنصری در صفحه HTML دسترسی داشته باشیم، باید با دسترسی به ابجکت document شروع کنین. بعداً می‌تونین از یکی از روش‌های زیر برای یافتن عنصر HTML استفاده کنین.
+     اگه بخوایم به هر عنصری در صفحه HTML دسترسی داشته باشیم، باید با دسترسی به ابجکت document شروع کنیم. بعداً می‌تونیم از یکی از روش‌های زیر برای پیداکردن عنصر HTML استفاده کنیم.
+     1. document.getElementById(id): یه عنصر رو با Id پیدا می‌کنه
+     2. document.getElementsByTagName(name): یه عنصر رو با اسم تگ پیدا می‌کنه
+     3. document.getElementsByClassName(name):یک عنصر رو با اسم کلاس پیدا می‌کنه
 
-      1. document.getElementById(id): یه عنصر رو با Id پیدا می‌کنه
-      2. document.getElementsByTagName(name): یه عنصر رو با نام تگ پیدا می‌کنه
-      3. document.getElementsByClassName(name):یک عنصر رو با نام کلاس پیدا می‌کنه
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+296. ### jQuery چیه؟
 
-296.  ### jQuery چیه؟
+     jQuery یه کتابخونه جاواسکریپت متقابل مرورگر محبوبه که با به حداقل رسوندن اختلاف بین مرورگرها، پیمایش مدل ابجکت document (DOM)، مدیریت رویداد، انیمیشن‌ها و تعاملات AJAX رو فراهم می‌کنه. با فلسفه اش «کمتر بنویس، بیشتر انجام بده» شهرت زیادی داره. برای مثال، می‌تونیم پیام خوش آمدگویی رو موقع بارگذاری صفحه با استفاده از jQuery به صورت زیر نمایش بدین.
 
-      jQuery یه کتابخونه جاواسکریپت متقابل مرورگر محبوبه که با به حداقل رسوندن اختلاف بین مرورگرها، پیمایش مدل ابجکت document (DOM)، مدیریت رویداد، انیمیشن‌ها و تعاملات AJAX رو فراهم می‌کنه. با فلسفه اش «کمتر بنویس، بیشتر انجام بده» شهرت زیادی داره. برای مثال، می‌تونین پیام خوش آمدگویی رو در بارگذاری صفحه با استفاده از jQuery به صورت زیر نمایش بدین.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     $(document).ready(function(){ // It selects the document and apply the function on page load
+         alert('Welcome to jQuery world');
+     });
+     ```
 
-      ```javascript
-      $(document).ready(function () {
-        // It selects the document and apply the function on page load
-        alert("Welcome to jQuery world");
-      });
-      ```
+     </span>
 
-      </span>
+     **نکته:**می‌تونین اونو از سایت رسمی jquery دانلود کنین یا از CDN‌ها مثل گوگل نصب کنین.
 
-      **نکته:**می‌تونین اونو از سایت رسمی jquery دانلود کنین یا از CDN‌ها مانند گوگل نصب کنین.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+297. ### موتور V8 جاواسکریپت چیه؟
 
-297.  ### موتور V8 جاواسکریپت چیه؟
+     V8 یه موتور جاواسکریپت با کارایی بالا منبع بازه که توسط مرورگر Google Chrome استفاده می‌شه و به زبان C++ نوشته شده است. توی پروژه node.js استفاده می‌شه. ECMAScript و WebAssembly رو پیاده‌سازی می‌کنه و روی ویندوز 7 یا بالاتر، macOS 10.12+ و سیستم‌های لینوکس که از پردازنده‌های x64، IA-32، ARM یا MIPS استفاده میکنن اجرا می‌شه.
+     **نکته:** میتونه به صورت مستقل اجرا شه یا میتونه در هر برنامه C++ تعبیه شه.
 
-      V8 یه موتور جاواسکریپت با کارایی بالا منبع بازه که توسط مرورگر Google Chrome استفاده می‌شه و به زبان C++ نوشته شده است. همچنین در پروژه node.js استفاده می‌شه. ECMAScript و WebAssembly رو پیاده‌سازی می‌کنه و روی ویندوز 7 یا بالاتر، macOS 10.12+ و سیستم‌های لینوکس که از پردازنده‌های x64، IA-32، ARM یا MIPS استفاده میکنن اجرا می‌شه.
-      **نکته:** میتونه به صورت مستقل اجرا شه یا میتونه در هر برنامه C++ تعبیه شه.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+298. ### چرا ما جاواسکریپت رو به عنوان یه زبان داینامیک می‌شناسیم؟
 
-298.  ### چرا ما جاواسکریپت رو به عنوان یه زبان داینامیک می‌شناسیم؟
+     جاواسکریپت یه زبان ساده تایپ شده یا یه زبان پویاعه چون متغیرها در جاواسکریپت مستقیماً با هیچ نوع مقدار خاصی مرتبط نیستن و هر متغیری رو می‌شه با مقادیری از همه نوع تخصیص/تخصیص مجدد داد.
 
-      جاواسکریپت یه زبان ساده تایپ شده یا یه زبان پویاعه چون متغیرها در جاواسکریپت مستقیماً با هیچ نوع مقدار خاصی مرتبط نیستن و هر متغیری رو می‌شه با مقادیری از همه نوع تخصیص/تخصیص مجدد داد.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     let age = 50;    // age is a number now
+     age  = 'old'; // age is a string now
+     age  = true;  // age is a boolean
+     ```
 
-      ```javascript
-      let age = 50; // age is a number now
-      age = "old"; // age is a string now
-      age = true; // age is a boolean
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+299. ### عملگر void چیکار می‌کنه؟
 
-299.  ### عملگر void چیکار می‌کنه؟
+     عملگر `‍void` عبارت داده شده رو ارزیابی می‌کنه و بعد تعریف نشده (یعنی بدون برگشتن مقدار) رو برمی‌گردونه. بریم یه مثال در موردش ببینیم:
 
-      عملگر `‍void` عبارت داده شده رو ارزیابی می‌کنه و بعد تعریف نشده (یعنی بدون بازگشت مقدار) رو برمی‌گردونه. بریم یه مثال در موردش ببینیم،
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     void (expression)
+     void expression
+     ```
 
-      ```javascript
-      void expression;
-      void expression;
-      ```
+     </span>
 
-      </span>
+     بیاین پیامی رو بدون هیچ گونه تغییر مسیر یا بارگیری مجدد نمایش بدیم
+     <span dir="ltr" align="left">
 
-      بیاین پیامی رو بدون هیچ گونه تغییر مسیر یا بارگیری مجدد نمایش بدیم
-      <span dir="ltr" align="left">
+     ```javascript
+     <a href="javascript:void(alert('Welcome to JS world'))">Click here to see a message</a>
+     ```
 
-      ```javascript
-      <a href="javascript:void(alert('Welcome to JS world'))">
-        Click here to see a message
-      </a>
-      ```
+     </span>
 
-      </span>
+     **نکته:** این عملگر بیشتر برای بدست آوردن مقدار اولیه تعریف نشده با استفاده از "void(0)" استفاده می‌شه.
 
-      **نکته:** این عملگر بیشتر برای بدست آوردن مقدار اولیه تعریف نشده با استفاده از "void(0)" استفاده می‌شه.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+300. ### چطوری می‌شه نمایشگر موس صفحه رو به درحال لود تغییر داد؟
 
-300.  ### چطوری می‌شه نمایشگر موس صفحه رو به درحال لود تغییر داد؟
+     مکان نما رو می‌شه برای انتظار در جاواسکریپت با استفاده از ویژگی `cursor`تنظیم کرد. بیاین این رفتار رو در بارگذاری صفحه با استفاده از تابع زیر انجام بدیم:
 
-      مکان نما رو می‌شه برای انتظار در جاواسکریپت با استفاده از ویژگی `cursor`تنظیم کرد. بیاین این رفتار رو در بارگذاری صفحه با استفاده از تابع زیر انجام بدیم.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     function myFunction() {
+          window.document.body.style.cursor = "wait";
+     }
+     ```
 
-      ```javascript
-      function myFunction() {
-        window.document.body.style.cursor = "wait";
-      }
-      ```
+     </span>
 
-      </span>
+     و این تابع در بارگذاری صفحه فراخوانی می‌شه
 
-      و این تابع در بارگذاری صفحه فراخوانی می‌شه
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```html
+     <body onload="myFunction()">
+     ```
 
-      ```html
-      <body onload="myFunction()"></body>
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+301. ### چطوری می‌شه یه حلقه بی‌نهایت درست کرد؟
 
-301.  ### چطوری می‌شه یه حلقه بی‌نهایت درست کرد؟
+     می‌تونیم حلقه‌های بی نهایت با استفاده از حلقه‌های for و while بدون استفاده از هیچ عبارتی ایجاد کنیم. ساختار یا syntax حلقه for از نظر ESLint و ابزارهای بهینه ساز کد، رویکرد بهتری برای این کار هست.
 
-      شما می‌تونین حلقه‌های بی نهایت با استفاده از حلقه‌های for و while بدون استفاده از هیچ عبارتی ایجاد کنین. ساختار یا نحو حلقه for از نظر ESLint و ابزارهای بهینه ساز کد، رویکرد بهتریه.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     for (;;) {}
 
-      ```javascript
-      for (;;) {}
+     while(true) {
+     }
+     ```
 
-      while (true) {}
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+302. ### چرا باید در استفاده از عبارت with تجدیدنظر کرد؟
 
-302.  ### چرا باید در استفاده از عبارت with تجدیدنظر کرد؟
+     دستور with جاواسکریپت در نظر گرفته شده بود که مختصری برای نوشتن دسترسی‌های تکرارشونده به آبجکت ارائه بده. بنابراین میتونه با کاهش نیاز به تکرار یه مرجع طولانی بدون جریمه عملکرد، به کاهش اندازه فایل کمک کنه. بیاین مثالی بزنیم که تو اون برای جلوگیری از افزونگی موقع چندین بار دسترسی به یه آبجکت استفاده می‌شه.
 
-      دستور با جاواسکریپت در نظر گرفته شده بود که مختصری برای نوشتن دسترسی‌های تکرارشونده به اشیا ارائه بده. بنابراین میتونه با کاهش نیاز به تکرار یه مرجع طولانی بدون جریمه عملکرد، به کاهش اندازه فایل کمک کنه. بیاین مثالی بزنیم که تو اون برای جلوگیری از افزونگی موقع چندین بار دسترسی به یه شی استفاده می‌شه.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     a.b.c.greeting   = 'welcome';
+     a.b.c.age = 32;
+     ```
 
-      ```javascript
-      a.b.c.greeting = "welcome";
-      a.b.c.age = 32;
-      ```
+     </span>
 
-      </span>
+     استفاده از "with" کد رو به این شکل تبدیل می کنه:
 
-      استفاده از "with" کد رو به این شکل تبدیل می کنه:
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     with(a.b.c) {
+          greeting   = "welcome";
+          age = 32;
+     }
+     ```
 
-      ```javascript
-      with (a.b.c) {
-        greeting = "welcome";
-        age = 32;
-      }
-      ```
+     </span>
 
-      </span>
+     اما این عبارت `with` مشکلات عملکردی ایجاد می‌کنه، چون نمی‌شه پیش‌بینی کرد که آیا یه آرگومان به یه متغیر واقعی اشاره می‌کنه یا به یه ویژگی توی آرگومان with.
 
-      اما این عبارت `with` مشکلات عملکردی ایجاد می‌کنه، چون نمی‌شه پیش‌بینی کرد که آیا یه آرگومان به یه متغیر واقعی اشاره می‌کنه یا به یه ویژگی درون آرگومان with.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+303. ### خروجی این حلقه‌ها چی می‌شه؟
 
-303.  ### خروجی این حلقه‌ها چی می‌شه؟
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     for (var i = 0; i < 4; i++) { // global scope
+       setTimeout(() => console.log(i));
+     }
 
-      ```javascript
-      for (var i = 0; i < 4; i++) {
-        // global scope
-        setTimeout(() => console.log(i));
-      }
+     for (let i = 0; i < 4; i++) { // block scope
+       setTimeout(() => console.log(i));
+     }
+     ```
 
-      for (let i = 0; i < 4; i++) {
-        // block scope
-        setTimeout(() => console.log(i));
-      }
-      ```
+     </span>
 
-      </span>
+     خروجی حلقه‌های بالا 4 4 4 4 و 0 1 2 3 است
+     **توضیح:** با توجه به صف رویداد/حلقه جاواسکریپت، تابع 'setTimeout' بعد از اجرای حلقه فراخونی می‌شه. از اونجایی که متغیر i با کلمه کلیدی `var` تعریف می‌شه، به یه متغیر گلوبال تبدیل می‌شه و با استفاده از تکرار زمانی که تابع time setTimeout فراخوانی می‌شه، مقدارش برابر با 4. بنابراین، خروجی حلقه اول '4 4 4 4' میشه. حالا توی حلقه دوم، متغیر i به‌عنوان کلمه کلیدی `let` تعریف می‌شه، به متغیری با محدوده بلوک تبدیل می‌شه و یه مقدار جدید (0, 1,2 3) برای هر تکرار داره. بنابراین، خروجی حلقه دوم «0 1 2 3» میشه.
 
-      خروجی حلقه‌های بالا 4 4 4 4 و 0 1 2 3 است
-      **توضیح:** با توجه به صف رویداد/حلقه جاواسکریپت، تابع 'setTimeout' پس از اجرای حلقه فراخوانی می‌شه. از اونجایی که متغیر i با کلمه کلیدی "var" اعلان می‌شه، به یه متغیر جهانی تبدیل می‌شه و با استفاده از تکرار زمانی که تابع time setTimeout فراخوانی می‌شه، مقدار آن برابر با 4. بنابراین، خروجی حلقه اول '4 4 4 4' است. در حالی که در حلقه دوم، متغیر i به‌عنوان کلمه کلیدی «let» اعلام می‌شه، به متغیری با محدوده بلوک تبدیل می‌شه و یه مقدار جدید (0, 1,2 3) برای هر تکرار داره. بنابراین، خروجی حلقه اول «0 1 2 3» است.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+304. ### می‌تونی یه سری از ویژگی‌های ES6 رو اسم ببری؟
 
-304.  ### می‌تونی یه سری از ویژگی‌های ES6 رو اسم ببری؟
+     1. پشتیبانی از ثابت‌ها یا متغیرهای تغییرناپذیر
+     2. پشتیبانی Block-scope برای متغیرها، ثابت‌ها و توابع
+     3. Arrow functions
+     4. پارامترهای پیش فرض
+     5. پارامتر‌های Rest and Spread 
+     6. Template Literals
+     7. Multi-line Strings
+     8. Destructuring Assignment
+     9. Enhanced Object Literals
+     10. Promises
+     11. Classes
+     12. Modules
 
-      در زیر لیستی از بعضی از ویژگی‌های جدید ES6 اومده.
+     **[فهرست](#فهرست)**
 
-      1. پشتیبانی از ثابت‌ها یا متغیرهای تغییرناپذیر
-      2. پشتیبانی Block-scope برای متغیرها، ثابت‌ها و توابع
-      3. Arrow functions
-      4. پارامترهای پیش فرض
-      5. پارامتر‌های Rest and Spread
-      6. Template Literals
-      7. Multi-line Strings
-      8. Destructuring Assignment
-      9. Enhanced Object Literals
-      10. Promises
-      11. Classes
-      12. Modules
+305. ### ES6 چیه؟
 
-      **[فهرست](#فهرست)**
+     ES6 ششمین نسخه از زبان جاواسکریپت‌ـه و در ژوئن 2015 منتشر شد. در ابتدا با نام ECMAScript 6 (ES6) شناخته شد و بعداً به ECMAScript 2015 تغییر نام داد. تقریباً همه مرورگرهای مدرن از ES6 پشتیبانی می‌کنن اما برای مرورگرهای قدیمی ترانسپایلرهای زیادی وجود داره.، مثل Babel.js و غیره
 
-305.  ### ES6 چیه؟
+     **[فهرست](#فهرست)**
 
-      ES6 ششمین نسخه از زبان جاواسکریپت‌ـه و در ژوئن 2015 منتشر شد. در ابتدا با نام ECMAScript 6 (ES6) شناخته شد و بعداً به ECMAScript 2015 تغییر نام داد. تقریباً همه مرورگرهای مدرن از ES6 پشتیبانی می‌کنن اما برای مرورگرهای قدیمی ترانسپایلرهای زیادی وجود داره.، مانند Babel.js و غیره
+306. ### آیا می‌تونیم متغیرهای تعریف شده با let و const رو مجددا declare کنیم؟
 
-      **[فهرست](#فهرست)**
+     نه، شما نمی‌تونین متغیرهای let و const رو مجدداً تعریف کنین. اگه این کار رو انجام بدین، خطای زیر ارسال میشه:
 
-306.  ### آیا می‌تونیم متغیرهای تعریف شده با let و const رو مجددا declare کنیم؟
+     <span dir="ltr" align="left">
 
-      نه، شما نمی‌تونین متغیرهای let و const رو مجدداً اعلام کنین. اگه این کار رو انجام بدین، خطای زیر رو نشون میده
+     ```bash
+     Uncaught SyntaxError: Identifier 'someVariable' has already been declared
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```bash
-      Uncaught SyntaxError: Identifier 'someVariable' has already been declared
-      ```
+     **توضیح:** اعلان متغیر با کلمه کلیدی "var" به یه محدوده تابع اشاره داره و با متغیر به دلیل ویژگی بالا بردن به گونه ای رفتار می‌شه که مثلا در بالای محدوده محصور تعریف شده. پس همه اعلان‌های چندگانه بدون هیچ خطایی تو ایجاد یه متغیر hoisted مشترک نقش دارن. بیاین مثالی از اعلان مجدد متغیرها تو یه محدوده برای متغیرهای var و let/const بزنیم.
 
-      </span>
+     <span dir="ltr" align="left">
 
-      **توضیح:** اعلان متغیر با کلمه کلیدی "var" به یه محدوده تابع اشاره داره و با متغیر به دلیل ویژگی بالا بردن به گونه ای رفتار می‌شه که گویی در بالای محدوده محصور اعلام شده است. بنابراین همه اعلان‌های چندگانه بدون هیچ خطایی در ایجاد یه متغیر hoisted مشترک نقش دارن. بیاین مثالی از اعلان مجدد متغیرها تو یه محدوده برای متغیرهای var و let/const بزنیم.
+     ```javascript
+     var name = 'John';
+     function myFunc() {
+         var name = 'Nick';
+         var name = 'Abraham'; // Re-assigned in the same function block
+         alert(name); // Abraham
+     }
+     myFunc();
+     alert(name); // John
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      var name = "John";
-      function myFunc() {
-        var name = "Nick";
-        var name = "Abraham"; // Re-assigned in the same function block
-        alert(name); // Abraham
-      }
-      myFunc();
-      alert(name); // John
-      ```
+     اعلان چندگانه با محدوده بلوک، خطای syntax ایجاد می‌کنه،
 
-      </span>
+     <span dir="ltr" align="left">
 
-      اعلان چندگانه با محدوده بلوک، خطای نحوی ایجاد می‌کنه،
+     ```javascript
+     let name = 'John';
+     function myFunc() {
+         let name = 'Nick';
+         let name = 'Abraham'; // Uncaught SyntaxError: Identifier 'name' has already been declared
+         alert(name);
+     }
 
-      <span dir="ltr" align="left">
+     myFunc();
+     alert(name);
+     ```
 
-      ```javascript
-      let name = "John";
-      function myFunc() {
-        let name = "Nick";
-        let name = "Abraham"; // Uncaught SyntaxError: Identifier 'name' has already been declared
-        alert(name);
-      }
+     </span>
 
-      myFunc();
-      alert(name);
-      ```
+     **[فهرست](#فهرست)**
 
-      </span>
+307. ### آیا استفاده از const برای تعریف متغیر اونا رو immutable می‌کنه؟
 
-      **[فهرست](#فهرست)**
+     نه، متغیر const مقدار رو تغییرناپذیر نمی‌کنه. اما تخصیص‌های بعدی رو مجاز نمی‌دونه (یعنی می‌تونیم با ایجاد متغیر اعلام کنیم اما بعداً نمی‌تونیم مقدار دیگه ای رو یا نوع اون متغیر رو عوض کنیم)
 
-307.  ### آیا استفاده از const برای تعریف متغیر اونا رو immutable می‌کنه؟
+     <span dir="ltr" align="left">
 
-      خیر، متغیر const مقدار رو تغییرناپذیر نمی‌کنه. اما تخصیص‌های بعدی رو مجاز نمی‌داند (یعنی می‌تونین با تخصیص اعلام کنین اما بعداً نمی‌تونین مقدار دیگری رو اختصاص بدین)
+     ```javascript
+     const userList = [];
+     userList.push('John'); // Can mutate even though it can't re-assign
+     console.log(userList); // ['John']
+     uerList = 123; //throws an error
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      const userList = [];
-      userList.push("John"); // Can mutate even though it can't re-assign
-      console.log(userList); // ['John']
-      ```
+     **[فهرست](#فهرست)**
 
-      </span>
+308. ### parameterهای پیش‌فرض چی هستن؟
 
-      **[فهرست](#فهرست)**
+     در E5، برای مدیریت مقادیر پیش‌فرض پارامترهای تابع، باید به عملگرهای OR منطقی وابسته باشیم.ولی در ES6، ویژگی پارامترهای تابع پیش‌فرض اجازه میده تا پارامترها با مقادیر پیش‌فرض مقداردهی اولیه بشن، اگه مقداری یا تعریف‌نشده ارسال نشه. بیاین رفتار رو با یه مثال مقایسه کنیم:
 
-308.  ### parameterهای پیش‌فرض چی هستن؟
+     <span dir="ltr" align="left">
 
-      در E5، برای مدیریت مقادیر پیش‌فرض پارامترهای تابع، باید به عملگرهای OR منطقی وابسته باشیم. در حالی که در ES6، ویژگی پارامترهای تابع پیش‌فرض اجازه میده تا پارامترها با مقادیر پیش‌فرض مقداردهی اولیه بشن، اگه مقداری یا تعریف‌نشده ارسال نشه. بیاین رفتار رو با یه مثال مقایسه کنیم:
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      //ES5
-      var calculateArea = function (height, width) {
-        height = height || 50;
+     ```javascript
+     //ES5
+     var calculateArea = function(height, width) {
+        height =  height || 50;
         width = width || 60;
 
         return width * height;
-      };
-      console.log(calculateArea()); //300
-      ```
+     }
+     console.log(calculateArea()); //300
+     ```
 
-      </span>
+     </span>
 
-      پارامترهای پیش فرض، مقداردهی اولیه رو ساده تر می‌کنه،
+     پارامترهای پیش فرض، مقداردهی اولیه رو ساده تر می‌کنه،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      //ES6
-      var calculateArea = function (height = 50, width = 60) {
+     ```javascript
+     //ES6
+     var calculateArea = function(height = 50, width = 60) {
         return width * height;
-      };
+     }
 
-      console.log(calculateArea()); //300
-      ```
+     console.log(calculateArea()); //300
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-309.  ### template-literalها چی هستن؟
+309. ### template-literalها چی هستن؟
 
-      حروف الفبای الگو یا رشته‌های الگو، حروف الفبای رشته‌ای هستن که امکان عبارات تعبیه‌شده رو میدن. اینا به جای گیومه‌های دوتایی یا تکی با کاراکتر بک تیک (`) محصور میشن
-      در E6، این ویژگی استفاده از عبارات پویا رو به شرح زیر امکان پذیر می‌کنه.
+     حروف الفبای الگو یا رشته‌های الگو، حروف الفبای رشته‌ای هستن که امکان عبارات تعبیه‌شده رو میدن. اینا به جای گیومه‌های دوتایی یا تکی با کاراکتر بک تیک (`) محصور میشن در E6، این ویژگی استفاده از عبارات پویا رو به شرح زیر امکان پذیر می‌کنه.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     const greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`
+     ```
+
+     </span>
+
+     توی ES5 لازمه که ما کدمون رو این شکلی بنویسیم.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
+     ```
+
+     </span>
+
+     **نکته:** می‌تونین از رشته‌های چند خطی و ویژگی‌های درون‌یابی رشته‌ای با الفبای الگو استفاده کنین.
+
+     **[فهرست](#فهرست)**
+
+310. ### چطوری رشته‌های چند خطی رو توی template-literalها می‌نویسیم؟
+
+     در ES5، برای بدست آوردن رشته‌های چند خطی، باید از کاراکترهای فرار از خط جدید ('\\n') و نمادهای الحاقی (+) استفاده کنین.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     console.log('This is string sentence 1\n' +
+     'This is string sentence 2');
+     ```
+
+     </span>
+
+     در حالی که در ES6، نیازی به ذکر کاراکتر دنباله خط جدید نیست،
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     console.log(`This is string sentence
+     'This is string sentence 2`);
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+311. ### template-literal‌های تودرتو چی هستن؟
+
+     الگوی تودرتو یه ویژگیه که در نحو تحت اللفظی الگو پشتیبانی می‌شه تا امکان بکتیک‌های درونی تو یه مکان‌نمای ${ } رو در قالب فراهم کنه. برای مثال، الگوی تودرتو زیر برای نمایش نمادها بر اساس مجوزهای کاربر استفاده می‌شه، در حالی که الگوی بیرونی نوع پلت فرم رو بررسی می‌کنه.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     const iconStyles = `icon ${ isMobilePlatform() ? '' :
+      `icon-${user.isAuthorized ? 'submit' : 'disabled'}` }`;
+     ```
+
+     </span>
+
+     می‌تونین مورد استفاده بالا رو بدون ویژگی‌های الگوی تودرتو هم بنویسین. با این حال، ویژگی الگوی تودرتو فشرده‌تر و خواناتر است.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     //Without nesting templates
+      const iconStyles = `icon ${ isMobilePlatform() ? '' :
+       (user.isAuthorized ? 'icon-submit' : 'icon-disabled'}`;
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+312. ### tagged-templateها چی هستن؟
+
+     الگوهای برچسب‌گذاری شده شکل پیشرفته‌ای از قالب‌ها هستن که تو اون برچسب‌ها به شما اجازه میدن تا کلمات قالب رو با یه تابع تجزیه کنین. تابع تگ اولین پارامتر رو به عنوان آرایه ای از رشته‌ها و پارامترهای باقی مانده رو به عنوان عبارات می پذیرد. این تابع همچنین میتونه رشته‌های دستکاری شده رو بر اساس پارامترها برگردونه. بیاین نحوه استفاده از رفتار الگوی برچسب گذاری شده مجموعه مهارت‌های حرفه ای فناوری اطلاعات تو یه سازمان رو ببینیم.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     var user1 = 'John';
+     var skill1 = 'JavaScript';
+     var experience1 = 15;
+
+     var user2 = 'Kane';
+     var skill2 = 'JavaScript';
+     var experience2 = 5;
+
+     function myInfoTag(strings, userExp, experienceExp, skillExp) {
+       var str0 = strings[0]; // "Mr/Ms. "
+       var str1 = strings[1]; // " is a/an "
+       var str2 = strings[2]; // "in"
+
+       var expertiseStr;
+       if (experienceExp > 10){
+         expertiseStr = 'expert developer';
+       } else if(skillExp > 5 && skillExp <= 10) {
+         expertiseStr = 'senior developer';
+       } else {
+         expertiseStr = 'junior developer';
+       }
+
+       return ${str0}${userExp}${str1}${expertiseStr}${str2}${skillExp};
+     }
+
+     var output1 = myInfoTag`Mr/Ms. ${ user1 } is a/an ${ experience1 } in ${skill1}`;
+     var output2 = myInfoTag`Mr/Ms. ${ user2 } is a/an ${ experience2 } in ${skill2}`;
+
+     console.log(output1);// Mr/Ms. John is a/an expert developer in JavaScript
+     console.log(output2);// Mr/Ms. Kane is a/an junior developer in JavaScript
+     ```
+
+     </span>
+
+     **[فهرست](#فهرست)**
+
+313. ### رشته‌های خام چی هستن؟
+
+     ES6 با استفاده از روش «String.raw» ویژگی رشته‌های خام رو ارائه می‌کنه که برای دریافت شکل رشته خام رشته‌های الگو استفاده می‌شه. این ویژگی به شما این امکان رو میده تا به رشته‌های خام همونطور که وارد شده‌اند، بدون پردازش دنباله‌های فرار دسترسی داشته باشیم. بریم یه مثال در موردش ببینیم،
 
       <span dir="ltr" align="left">
 
       ```javascript
-      var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
-      ```
-
-      </span>
-
-      In ES5, you need break string like below,
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
-      ```
-
-      </span>
-
-      **نکته:** می‌تونین از رشته‌های چند خطی و ویژگی‌های درون‌یابی رشته‌ای با الفبای الگو استفاده کنین.
-
-      **[فهرست](#فهرست)**
-
-310.  ### چطوری رشته‌های چند خطی رو توی template-literalها می‌نویسیم؟
-
-      در ES5، برای بدست آوردن رشته‌های چند خطی، باید از کاراکترهای فرار از خط جدید ('\\n') و نمادهای الحاقی (+) استفاده کنین.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      console.log("This is string sentence 1\n" + "This is string sentence 2");
-      ```
-
-      </span>
-
-      در حالی که در ES6، نیازی به ذکر کاراکتر دنباله خط جدید نیست،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      console.log(`This is string sentence
-      'This is string sentence 2`);
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-311.  ### template-literal‌های تودرتو چی هستن؟
-
-      الگوی تودرتو یه ویژگیه که در نحو تحت اللفظی الگو پشتیبانی می‌شه تا امکان بکتیک‌های درونی تو یه مکان‌نمای ${ } رو در قالب فراهم کنه. برای مثال، الگوی تودرتو زیر برای نمایش نمادها بر اساس مجوزهای کاربر استفاده می‌شه، در حالی که الگوی بیرونی نوع پلت فرم رو بررسی می‌کنه.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      const iconStyles = `icon ${
-        isMobilePlatform()
-          ? ""
-          : `icon-${user.isAuthorized ? "submit" : "disabled"}`
-      }`;
-      ```
-
-      </span>
-
-      می‌تونین مورد استفاده بالا رو بدون ویژگی‌های الگوی تودرتو هم بنویسین. با این حال، ویژگی الگوی تودرتو فشرده‌تر و خواناتر است.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      //Without nesting templates
-       const iconStyles = `icon ${ isMobilePlatform() ? '' :
-        (user.isAuthorized ? 'icon-submit' : 'icon-disabled'}`;
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-312.  ### tagged-templateها چی هستن؟
-
-      الگوهای برچسب‌گذاری شده شکل پیشرفته‌ای از قالب‌ها هستن که تو اون برچسب‌ها به شما اجازه میدن تا کلمات قالب رو با یه تابع تجزیه کنین. تابع تگ اولین پارامتر رو به عنوان آرایه ای از رشته‌ها و پارامترهای باقی مانده رو به عنوان عبارات می پذیرد. این تابع همچنین میتونه رشته‌های دستکاری شده رو بر اساس پارامترها برگردونه. بیاین نحوه استفاده از رفتار الگوی برچسب گذاری شده مجموعه مهارت‌های حرفه ای فناوری اطلاعات تو یه سازمان رو ببینیم.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      var user1 = 'John';
-      var skill1 = 'JavaScript';
-      var experience1 = 15;
-
-      var user2 = 'Kane';
-      var skill2 = 'JavaScript';
-      var experience2 = 5;
-
-      function myInfoTag(strings, userExp, experienceExp, skillExp) {
-        var str0 = strings[0]; // "Mr/Ms. "
-        var str1 = strings[1]; // " is a/an "
-        var str2 = strings[2]; // "in"
-
-        var expertiseStr;
-        if (experienceExp > 10){
-          expertiseStr = 'expert developer';
-        } else if(skillExp > 5 && skillExp <= 10) {
-          expertiseStr = 'senior developer';
-        } else {
-          expertiseStr = 'junior developer';
-        }
-
-        return ${str0}${userExp}${str1}${expertiseStr}${str2}${skillExp};
-      }
-
-      var output1 = myInfoTag`Mr/Ms. ${ user1 } is a/an ${ experience1 } in ${skill1}`;
-      var output2 = myInfoTag`Mr/Ms. ${ user2 } is a/an ${ experience2 } in ${skill2}`;
-
-      console.log(output1);// Mr/Ms. John is a/an expert developer in JavaScript
-      console.log(output2);// Mr/Ms. Kane is a/an junior developer in JavaScript
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-313.  ### رشته‌های خام چی هستن؟
-
-      ES6 با استفاده از روش «String.raw» ویژگی رشته‌های خام رو ارائه می‌کنه که برای دریافت شکل رشته خام رشته‌های الگو استفاده می‌شه. این ویژگی به شما این امکان رو میده تا به رشته‌های خام همونطور که وارد شده‌اند، بدون پردازش دنباله‌های فرار دسترسی داشته باشیم. بریم یه مثال در موردش ببینیم،
-
-       <span dir="ltr" align="left">
-
-      ```javascript
-      var calculationString = String.raw`The sum of numbers is \n${
-        1 + 2 + 3 + 4
-      }!`;
+      var calculationString = String.raw `The sum of numbers is \n${1+2+3+4}!`;
       console.log(calculationString); // The sum of numbers is 10
       ```
 
-       </span>
+      </span>
 
-      اگه از رشته‌های خام استفاده نمی‌کنین دنباله کاراکترهای خط جدید با نمایش خروجی در چندین خط پردازش می‌شه.
+     اگه از رشته‌های خام استفاده نمی‌کنین دنباله کاراکترهای خط جدید با نمایش خروجی در چندین خط پردازش می‌شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
       ```javascript
-      var calculationString = `The sum of numbers is \n${1 + 2 + 3 + 4}!`;
+      var calculationString = `The sum of numbers is \n${1+2+3+4}!`;
       console.log(calculationString);
       // The sum of numbers is
       // 10
       ```
 
-       </span>
+      </span>
 
-      همچنین، ویژگی خام در اولین آرگومان تابع تگ موجود است
+     همچنین، ویژگی خام در اولین آرگومان تابع تگ موجود است
 
-       <span dir="ltr" align="left">
+      <span dir="ltr" align="left">
 
       ```javascript
       function tag(strings) {
-        console.log(strings.raw[0]);
+         console.log(strings.raw[0]);
       }
       ```
 
-       </span>
+      </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-314.  ### assign کردن با destructuring چیه و چطوری انجام می‌شه؟
+314. ### assign کردن با destructuring چیه و چطوری انجام می‌شه؟
 
-      تخصیص `destructuring` یه عبارت جاواسکریپت‌ـه که امکان باز کردن مقادیر آرایه‌ها یا خصوصیات از اشیاء به متغیرهای مجزا رو فراهم می‌کنه.
+     تخصیص `destructuring` یه عبارت جاواسکریپت‌ـه که امکان باز کردن مقادیر آرایه‌ها یا خصوصیات از اشیاء به متغیرهای مجزا رو فراهم می‌کنه.
       بیاین مقادیر ماه رو از یه آرایه با استفاده از تخصیص ساختارشکن به دست آوریم
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var [one, two, three] = ["JAN", "FEB", "MARCH"];
+     ```javascript
+     var [one, two, three] = ['JAN', 'FEB', 'MARCH'];
 
-      console.log(one); // "JAN"
-      console.log(two); // "FEB"
-      console.log(three); // "MARCH"
-      ```
+     console.log(one); // "JAN"
+     console.log(two); // "FEB"
+     console.log(three); // "MARCH"
+     ```
 
-      </span>
+     </span>
 
-      و شما می‌تونین ویژگی‌های کاربر یه آبجکت رو با استفاده از انتساب destructuring به دست بیارین،
+     و شما می‌تونین ویژگی‌های کاربر یه آبجکت رو با استفاده از انتساب destructuring به دست بیارین،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var { name, age } = { name: "John", age: 32 };
+     ```javascript
+     var {name, age} = {name: 'John', age: 32};
 
-      console.log(name); // John
-      console.log(age); // 32
-      ```
+     console.log(name); // John
+     console.log(age); // 32
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-315.  ### موقع assign کردن با destructuring چطوری می‌شه مقدار اولیه تعریف کرد؟
+315. ### موقع assign کردن با destructuring چطوری می‌شه مقدار اولیه تعریف کرد؟
 
-      زمانی که مقدار باز شده از آرایه یا شیء در طول تخصیص ساختارشکن تعریف نشده باشه، می‌شه به یه متغیر یه مقدار پیش فرض اختصاص داد. این کمک می‌کنه تا از تنظیم مقادیر پیش فرض جداگانه برای هر انتساب جلوگیری کنین. بیاین برای هر دو آرایه و موارد استفاده از شی مثالی بزنیم،
+     زمانی که مقدار باز شده از آرایه یا شیء در طول تخصیص ساختارشکن تعریف نشده باشه، می‌شه به یه متغیر یه مقدار پیش فرض اختصاص داد. این کمک می‌کنه تا از تنظیم مقادیر پیش فرض جداگانه برای هر انتساب جلوگیری کنین. بیاین برای هر دو آرایه و موارد استفاده از شی مثالی بزنیم،
 
-      **Arrays destructuring:**
+     **Arrays destructuring:**
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var x, y, z;
+     ```javascript
+     var x, y, z;
 
-      [x = 2, y = 4, z = 6] = [10];
-      console.log(x); // 10
-      console.log(y); // 4
-      console.log(z); // 6
-      ```
+     [x=2, y=4, z=6] = [10];
+     console.log(x); // 10
+     console.log(y); // 4
+     console.log(z); // 6
+     ```
 
-      </span>
+     </span>
 
-      **Objects destructuring:**
+     **Objects destructuring:**
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var { x = 2, y = 4, z = 6 } = { x: 10 };
+     ```javascript
+     var {x=2, y=4, z=6} = {x: 10};
 
-      console.log(x); // 10
-      console.log(y); // 4
-      console.log(z); // 6
-      ```
+     console.log(x); // 10
+     console.log(y); // 4
+     console.log(z); // 6
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-316.  ### چطوری می‌تونیم مقدار یه آرایه رو با استفاده از destructuring-assignment تعویض کنیم؟
+316. ### چطوری می‌تونیم مقدار یه آرایه رو با استفاده از destructuring-assignment تعویض کنیم؟
 
-      اگه از destructuring-assignment استفاده نمی‌کنین تعویض دو مقدار به یه متغیر موقت نیاز داره. در حالی که با استفاده از یه ویژگی ساختارشکن، دو مقدار متغیر رو می‌شه تو یه عبارت ساختار شکن جایگزین کرد. بیاین دو متغیر عددی رو در انتساب ساختارزدایی آرایه با هم عوض کنیم:
+     اگه از destructuring-assignment استفاده نمی‌کنین تعویض دو مقدار به یه متغیر موقت نیاز داره. در حالی که با استفاده از یه ویژگی ساختارشکن، دو مقدار متغیر رو می‌شه تو یه عبارت ساختار شکن جایگزین کرد. بیاین دو متغیر عددی رو در انتساب ساختارزدایی آرایه با هم عوض کنیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var x = 10,
-        y = 20;
+     ```javascript
+     var x = 10, y = 20;
 
-      [x, y] = [y, x];
-      console.log(x); // 20
-      console.log(y); // 10
-      ```
+     [x, y] = [y, x];
+     console.log(x); // 20
+     console.log(y); // 10
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-317.  ### Enhanced-object-literalها چی هستن؟
+317. ### Enhanced-object-literalها چی هستن؟
 
-      Enhanced-object-literal ایجاد سریع اجسام با ویژگی‌های درون براکت رو آسان می‌کنه. برای مثال، نحو کوتاه‌تری رو برای تعریف ویژگی شی مشترک به شرح زیر ارائه می‌کنه.
+     Enhanced-object-literal ایجاد سریع اجسام با ویژگی‌های درون براکت رو آسان می‌کنه. برای مثال، نحو کوتاه‌تری رو برای تعریف ویژگی شی مشترک به شرح زیر ارائه می‌کنه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      //ES6
-      var x = 10,
-        y = 20;
-      obj = { x, y };
-      console.log(obj); // {x: 10, y:20}
-      //ES5
-      var x = 10,
-        y = 20;
-      obj = { x: x, y: y };
-      console.log(obj); // {x: 10, y:20}
-      ```
+     ```javascript
+     //ES6
+     var x = 10, y = 20
+     obj = { x, y }
+     console.log(obj); // {x: 10, y:20}
+     //ES5
+     var x = 10, y = 20
+     obj = { x : x, y : y}
+     console.log(obj); // {x: 10, y:20}
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-318.  ### importهای داینامیک چی هستن؟
+318. ### importهای داینامیک چی هستن؟
 
-      واردات پویا با استفاده از نحو تابع «import» به ما اجازه میده تا ماژول‌ها رو در صورت تقاضا با استفاده از دستورات یا دستور async/await بارگذاری کنیم. در حال حاضر این ویژگی در [پیشنهاد مرحله4] (https://github.com/tc39/proposal-dynamic-import) هستش. مزیت اصلی واردات پویا کاهش اندازه بسته‌های ما، پاسخ حجم/بار بار درخواست‌های ما و بهبود کلی در تجربه کاربر است.
+     واردات پویا با استفاده از نحو تابع «import» به ما اجازه میده تا ماژول‌ها رو در صورت تقاضا با استفاده از دستورات یا دستور async/await بارگذاری کنیم. در حال حاضر این ویژگی در [پیشنهاد مرحله4] (https://github.com/tc39/proposal-dynamic-import) هستش. مزیت اصلی واردات پویا کاهش اندازه بسته‌های ما، پاسخ حجم/بار بار درخواست‌های ما و بهبود کلی در تجربه کاربر است.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      import("./Module").then((Module) => Module.method());
-      ```
+     ```javascript
+     import('./Module').then(Module => Module.method());
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-319.  ### کاربرد importهای داینامیک چیه؟
+319. ### کاربرد importهای داینامیک چیه؟
 
-      در زیر بعضی از موارد استفاده از واردات پویا نسبت به واردات استاتیک آورده شده است.
+     در زیر بعضی از موارد استفاده از واردات پویا نسبت به واردات استاتیک آورده شده است.
+     1. یه ماژول رو به صورت درخواستی یا مشروط وارد کنین. برای مثال، اگه می‌خواین یه polyfill رو در مرورگر قدیمی بارگذاری کنین
 
-      1. یه ماژول رو به صورت درخواستی یا مشروط وارد کنین. برای مثال، اگه می‌خواین یه polyfill رو در مرورگر قدیمی بارگذاری کنین
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     if (isLegacyBrowser()) {
+         import(···)
+         .then(···);
+     }
+     ```
 
-      ```javascript
-      if (isLegacyBrowser()) {
-          import(···)
-          .then(···);
-      }
-      ```
+     </span>
 
-      </span>
+     2. تعیین کننده ماژول رو در زمان اجرا محاسبه کنین. برای مثال می‌تونین از اون برای گلوبال سازی استفاده کنین.
 
-      2. تعیین کننده ماژول رو در زمان اجرا محاسبه کنین. برای مثال می‌تونین از اون برای گلوبال سازی استفاده کنین.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     import(`messages_${getLocale()}.js`).then(···);
+     ```
 
-      ```javascript
-      import(`messages_${getLocale()}.js`).then(···);
-      ```
+     </span>
 
-      </span>
+     3. یه ماژول رو از داخل یه اسکریپت معمولی به جای یه ماژول وارد کنین.
 
-      3. یه ماژول رو از داخل یه اسکریپت معمولی به جای یه ماژول وارد کنین.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+320. ### آرایه‌های نوع‌دار(typed-arrays) چیه؟
 
-320.  ### آرایه‌های نوع‌دار(typed-arrays) چیه؟
+     آرایه‌های تایپ شده آبجکت‌هایی آرایه مانند از ECMAScript 6 API برای مدیریت داده‌های باینری هستن. جاواسکریپت 8 نوع آرایه تایپ شده رو ارائه میده،
 
-      آرایه‌های تایپ شده آبجکت‌هایی آرایه مانند از ECMAScript 6 API برای مدیریت داده‌های باینری هستن. جاواسکریپت 8 نوع آرایه تایپ شده رو ارائه میده،
+     1. Int8Array: آرایه ای از اعداد صحیح امضا شده 8 بیتی
+     2. Int16Array: آرایه ای از اعداد صحیح امضا شده 16 بیتی
+     3. Int32Array: آرایه ای از اعداد صحیح امضا شده 32 بیتی
+     4. Uint8Array: آرایه ای از اعداد صحیح بدون علامت 8 بیتی
+     5. Uint16Array: آرایه ای از اعداد صحیح بدون علامت 16 بیتی
+     6. Uint32Array:  آرایه ای از اعداد صحیح بدون علامت 32 بیتی
+     7. Float32Array:آرایه ای از اعداد ممیز شناور 32 بیتی
+     8. Float64Array: آرایه ای از اعداد ممیز شناور 64 بیتی
 
-      1. Int8Array: آرایه ای از اعداد صحیح امضا شده 8 بیتی
-      2. Int16Array: آرایه ای از اعداد صحیح امضا شده 16 بیتی
-      3. Int32Array: آرایه ای از اعداد صحیح امضا شده 32 بیتی
-      4. Uint8Array: آرایه ای از اعداد صحیح بدون علامت 8 بیتی
-      5. Uint16Array: آرایه ای از اعداد صحیح بدون علامت 16 بیتی
-      6. Uint32Array: آرایه ای از اعداد صحیح بدون علامت 32 بیتی
-      7. Float32Array:آرایه ای از اعداد ممیز شناور 32 بیتی
-      8. Float64Array: آرایه ای از اعداد ممیز شناور 64 بیتی
+     برای مثال، شما می‌تونین یه آرایه از اعداد صحیح امضا شده 8 بیتی مانند زیر ایجاد کنین
 
-      برای مثال، شما می‌تونین یه آرایه از اعداد صحیح امضا شده 8 بیتی مانند زیر ایجاد کنین
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     const a = new Int8Array();
+     // You can pre-allocate n bytes
+     const bytes = 1024
+     const a = new Int8Array(bytes)
+     ```
 
-      ```javascript
-      const a = new Int8Array();
-      // You can pre-allocate n bytes
-      const bytes = 1024;
-      const a = new Int8Array(bytes);
-      ```
+     </span>
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+321. ### مزایای لودر ماژول‌ها چیه؟
 
-321.  ### مزایای لودر ماژول‌ها چیه؟
+     ماژول لودر ویژگی‌های زیر رو ارائه میده
+     1. Dynamic loading
+     2. State isolation
+     3. Global namespace isolation
+     4. Compilation hooks
+     5. Nested virtualization
 
-      ماژول لودر ویژگی‌های زیر رو ارائه میده
+     **[فهرست](#فهرست)**
 
-      1. Dynamic loading
-      2. State isolation
-      3. Global namespace isolation
-      4. Compilation hooks
-      5. Nested virtualization
+322. ### collation چیه؟
 
-      **[فهرست](#فهرست)**
+     Collation برای مرتب سازی مجموعه ای از رشته‌ها و جستجو در مجموعه ای از رشته‌ها استفاده می‌شه. این پارامتر توسط محلی و از Unicode آگاه است. بیاین ویژگی‌های مقایسه و مرتب سازی رو در نظر بگیریم،
+     1. **Comparison:**
 
-322.  ### collation چیه؟
+     <span dir="ltr" align="left">
 
-      Collation برای مرتب سازی مجموعه ای از رشته‌ها و جستجو در مجموعه ای از رشته‌ها استفاده می‌شه. این پارامتر توسط محلی و از Unicode آگاه است. بیاین ویژگی‌های مقایسه و مرتب سازی رو در نظر بگیریم،
+     ```javascript
+     const list = [ "ä", "a", "z" ]; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
+     const l10nDE = new Intl.Collator("de");
+     const l10nSV = new Intl.Collator("sv");
+     console.log(l10nDE.compare("ä", "z") === -1); // true
+     console.log(l10nSV.compare("ä", "z") === +1); // true
+     ```
 
-      1. **Comparison:**
+     </span>
 
-      <span dir="ltr" align="left">
+     2. **Sorting:**
 
-      ```javascript
-      const list = ["ä", "a", "z"]; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
-      const l10nDE = new Intl.Collator("de");
-      const l10nSV = new Intl.Collator("sv");
-      console.log(l10nDE.compare("ä", "z") === -1); // true
-      console.log(l10nSV.compare("ä", "z") === +1); // true
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     const list = [ "ä", "a", "z" ]; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
+     const l10nDE = new Intl.Collator("de");
+     const l10nSV = new Intl.Collator("sv");
+     console.log(list.sort(l10nDE.compare)) // [ "a", "ä", "z" ]
+     console.log(list.sort(l10nSV.compare)) // [ "a", "z", "ä" ]
+     ```
 
-      2. **Sorting:**
+     </span>
 
-      <span dir="ltr" align="left">
+     **[فهرست](#فهرست)**
 
-      ```javascript
-      const list = ["ä", "a", "z"]; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
-      const l10nDE = new Intl.Collator("de");
-      const l10nSV = new Intl.Collator("sv");
-      console.log(list.sort(l10nDE.compare)); // [ "a", "ä", "z" ]
-      console.log(list.sort(l10nSV.compare)); // [ "a", "z", "ä" ]
-      ```
+323. ### عبارت for...of چیه؟
 
-      </span>
+     دستور for...of یه حلقه تکرار بر روی اشیاء یا عناصر قابل تکرار مثل رشته داخلی، آرایه، اشیاء آرایه مانند (مثل آرگومان‌ها یا NodeList)، TypedArray، Map، Set و تکرارهای تعریف شده توسط کاربر ایجاد می‌کنه. 
 
-      **[فهرست](#فهرست)**
+     <span dir="ltr" align="left">
 
-323.  ### عبارت for...of چیه؟
+     ```javascript
+     let arrayIterable = [10, 20, 30, 40, 50];
 
-      دستور for...of یه حلقه تکرار بر روی اشیاء یا عناصر قابل تکرار مثل رشته داخلی، آرایه، اشیاء آرایه مانند (مثل آرگومان‌ها یا NodeList)، TypedArray، Map، Set و تکرارهای تعریف شده توسط کاربر ایجاد می‌کنه.
+     for (let value of arrayIterable) {
+       value ++;
+       console.log(value); // 11 21 31 41 51
+     }
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      let arrayIterable = [10, 20, 30, 40, 50];
+     **[فهرست](#فهرست)**
 
-      for (let value of arrayIterable) {
-        value++;
-        console.log(value); // 11 21 31 41 51
-      }
-      ```
+324. ### خروجی عملگر spread روی آرایه زیر چیه؟
 
-      </span>
+     <span dir="ltr" align="left">
 
-      **[فهرست](#فهرست)**
+     ```javascript
+     [...'John Resig']
+     ```
 
-324.  ### خروجی عملگر spread روی آرایه زیر چیه؟
+     </span>
 
-      <span dir="ltr" align="left">
-
-      ```javascript
-      [..."John Resig"];
-      ```
-
-      </span>
-
-      خروجی آرایه ['J', 'o', 'h', 'n', ', 'R', 'e', 's', 'i', 'g'] است.
+     خروجی آرایه ['J', 'o', 'h', 'n', ', 'R', 'e', 's', 'i', 'g'] است.
       **توضیح:** رشته یه نوع تکرارپذیره و عملگر spread تو یه آرایه هر کاراکتر یه تکرارپذیر رو به یه عنصر نگاشت می‌کنه. از این رو، هر کاراکتر یه رشته به عنصری تو یه آرایه تبدیل می‌شه.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-325.  ### آیا PostMessage امنه؟
+325. ### آیا PostMessage امنه؟
 
-      بله، تا زمانی که برنامه‌نویس/توسعه‌دهنده مراقب منشأ و منبع پیام دریافتی باشه، postMessages رو می‌شه بسیار امن در نظر گرفت. اما اگه بخواین پیامی رو بدون تأیید منبع آن ارسال یا دریافت کنین حملات اسکریپت بین سایتی ایجاد می‌شه.
+     بله، تا زمانی که برنامه‌نویس/توسعه‌دهنده مراقب منشأ و منبع پیام دریافتی باشه، postMessages رو می‌شه بسیار امن در نظر گرفت. اما اگه بخواین پیامی رو بدون تأیید منبع آن ارسال یا دریافت کنین حملات اسکریپت بین سایتی ایجاد می‌شه.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-326.  ### مشکلات استفاده از postmessage با origin روی wildcard چیه؟
+326. ### مشکلات استفاده از postmessage با origin روی wildcard چیه؟
 
-      آرگومان دوم متد postMessage مشخص می‌کنه که کدوم مبدا مجاز به دریافت پیامه. اگه از علامت "\*" به عنوان آرگومان استفاده کنین هر منبعی مجاز به دریافت پیامه. در این حالت، هیچ راهی برای پنجره فرستنده وجود نداره که بفهمه پنجره هدف در موقع ارسال پیام در مبدأ هدف قرار داره یا نه. اگه پنجره هدف به مبدأ دیگری هدایت شه، مبدا دیگر داده‌ها رو دریافت می‌کنه. از این رو، این ممکنه منجر به آسیب پذیری‌های XSS شه.
+     آرگومان دوم متد postMessage مشخص می‌کنه که کدوم مبدا مجاز به دریافت پیامه. اگه از علامت "*" به عنوان آرگومان استفاده کنین هر منبعی مجاز به دریافت پیامه. در این حالت، هیچ راهی برای پنجره فرستنده وجود نداره که بفهمه پنجره هدف در موقع ارسال پیام در مبدأ هدف قرار داره یا نه. اگه پنجره هدف به مبدأ دیگری هدایت شه، مبدا دیگر داده‌ها رو دریافت می‌کنه. از این رو، این ممکنه منجر به آسیب پذیری‌های XSS شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      targetWindow.postMessage(message, "*");
-      ```
+     ```javascript
+     targetWindow.postMessage(message, '*');
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-327.  ### چطوری از دریافت postMessageهای ناخواسته و ناامن از طرف هکرها جلوگیری کنیم؟
+327. ### چطوری از دریافت postMessageهای ناخواسته و ناامن از طرف هکرها جلوگیری کنیم؟
 
-      از اونجایی که شنونده به هر پیامی گوش میده، مهاجم میتونه برنامه رو با ارسال پیامی از مبدأ مهاجم فریب بده که این تصور رو ایجاد می‌کنه که گیرنده پیام رو از پنجره فرستنده واقعی دریافت کرده. شما می‌تونین با اعتبارسنجی مبدا پیام در انتهای گیرنده با استفاده از ویژگی "message.origin" از این مشکل جلوگیری کنین. برای مثال، اجازه بدین مبدا فرستنده [http://www.some-sender.com](http://www.some-sender.com) در سمت گیرنده [www.some-receiver.com] (www.some) رو بررسی کنیم -receiver.com)،
+     از اونجایی که شنونده به هر پیامی گوش میده، مهاجم میتونه برنامه رو با ارسال پیامی از مبدأ مهاجم فریب بده که این تصور رو ایجاد می‌کنه که گیرنده پیام رو از پنجره فرستنده واقعی دریافت کرده. شما می‌تونین با اعتبارسنجی مبدا پیام در انتهای گیرنده با استفاده از ویژگی "message.origin" از این مشکل جلوگیری کنین. برای مثال، اجازه بدین مبدا فرستنده [http://www.some-sender.com](http://www.some-sender.com) در سمت گیرنده [www.some-receiver.com] (www.some) رو بررسی کنیم -receiver.com)،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      //Listener on http://www.some-receiver.com/
-      window.addEventListener("message", function(message){
-          if(/^http://www\.some-sender\.com$/.test(message.origin)){
-               console.log('You received the data from valid sender', message.data);
-         }
-      });
-      ```
+     ```javascript
+     //Listener on http://www.some-receiver.com/
+     window.addEventListener("message", function(message){
+         if(/^http://www\.some-sender\.com$/.test(message.origin)){
+              console.log('You received the data from valid sender', message.data);
+        }
+     });
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-328.  ### می‌تونیم کلا postMessageها رو غیرفعال کنیم؟
+328. ### می‌تونیم کلا postMessageها رو غیرفعال کنیم؟
 
-      شما نمی‌تونین به طور کامل (یا 100٪) از postMessages استفاده نکنین. حتی اگه برنامه شما با توجه به خطرات از postMessage استفاده نمی‌کنه، بسیاری از اسکریپت‌های شخص ثالث از postMessage برای برقراری ارتباط با سرویس شخص ثالث استفاده می‌کنن. بنابراین ممکنه برنامه شما بدون اطلاع شما از postMessage استفاده کنه.
+     شما نمی‌تونین به طور کامل (یا 100٪) از postMessages استفاده نکنین. حتی اگه برنامه شما با توجه به خطرات از postMessage استفاده نمی‌کنه، بسیاری از اسکریپت‌های شخص ثالث از postMessage برای برقراری ارتباط با سرویس شخص ثالث استفاده می‌کنن. بنابراین ممکنه برنامه شما بدون اطلاع شما از postMessage استفاده کنه.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-329.  ### آیا postMessageها به صورت synchronous و همزمان کار می‌کنن؟
+329. ### آیا postMessageها به صورت synchronous و همزمان کار می‌کنن؟
 
-      postMessages در مرورگر IE8 همگام هستن اما در IE9 و سایر مرورگرهای مدرن دیگر (یعنی IE9+، Firefox، Chrome، Safari) ناهمزمان هستن. به دلیل این رفتار ناهمزمان، زمانی که postMessage برگردونده می‌شه، از مکانیزم callback استفاده می‌کنیم.
+     postMessages در مرورگر IE8 همگام هستن اما در IE9 و سایر مرورگرهای مدرن دیگر (یعنی IE9+، Firefox، Chrome، Safari) ناهمزمان هستن. به دلیل این رفتار ناهمزمان، زمانی که postMessage برگردونده می‌شه، از مکانیزم callback استفاده می‌کنیم.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-330.  ### پارادیم زبان جاواسکریپت چیه؟
+330. ### پارادیم زبان جاواسکریپت چیه؟
 
-      جاواسکریپت یه زبان چند پارادایمه که از برنامه نویسی امری/روشی، برنامه نویسی شی گرا و برنامه نویسی تابعی پشتیبانی می‌کنه. جاواسکریپت از برنامه نویسی شی گرا با وراثت اولیه پشتیبانی می‌کنه.
+     جاواسکریپت یه زبان چند پارادایمه که از برنامه نویسی امری/روشی، برنامه نویسی شی گرا و برنامه نویسی تابعی پشتیبانی می‌کنه. جاواسکریپت از برنامه نویسی شی گرا با وراثت اولیه پشتیبانی می‌کنه.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-331.  ### تفاوت‌های بین جاواسکریپت داخلی و خارجی چیه؟
+331. ### تفاوت‌های بین جاواسکریپت داخلی و خارجی چیه؟
 
-      **جاواسکریپت داخلی:** کد منبع درون تگ اسکریپته.
+     **جاواسکریپت داخلی:** کد منبع درون تگ اسکریپته.
       **جاواسکریپت خارجی:** کد منبع تو یه فایل خارجی (ذخیره شده با پسوند js.) ذخیره می‌شه و در تگ ارجاع می‌شه.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-332.  ### آیا جاواسکریپت سریعتر از اسکریپت‌های سمت سرور است؟
+332. ### آیا جاواسکریپت سریعتر از اسکریپت‌های سمت سرور است؟
 
-      بله، جاواسکریپت سریعتر از اسکریپت سمت سروره. از اونجایی که جاواسکریپت یه اسکریپت سمت کلاینته برای محاسبات یا محاسبات خودش به کمک سرور وب نیازی نداره. بنابراین جاواسکریپت همی‌شه سریعتر از هر اسکریپت سمت سرور مانند ASP، PHP و غیره اس.
+     بله، جاواسکریپت سریعتر از اسکریپت سمت سروره. از اونجایی که جاواسکریپت یه اسکریپت سمت کلاینته برای محاسبات یا محاسبات خودش به کمک سرور وب نیازی نداره. بنابراین جاواسکریپت همی‌شه سریعتر از هر اسکریپت سمت سرور مانند ASP، PHP و غیره اس.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-333.  ### چطوری وضعیت چک بودن یه checkbox رو بدست بیاریم؟
+333. ### چطوری وضعیت چک بودن یه checkbox رو بدست بیاریم؟
 
-      می‌تونین ویژگی`‍checked` رو در کادر انتخاب شده در DOM اعمال کنین. اگه مقدار "True" باشه به این معنیه که چک باکس علامت زده شده در غیر این صورت علامت اونو بردارین. برای مثال، عنصر چک باکس HTML زیر رو می‌شه با استفاده از جاواسکریپت به صورت زیر در دسترس قرار داد.
+     می‌تونین ویژگی`‍checked` رو در کادر انتخاب شده در DOM اعمال کنین. اگه مقدار "True" باشه به این معنیه که چک باکس علامت زده شده در غیر این صورت علامت اونو بردارین. برای مثال، عنصر چک باکس HTML زیر رو می‌شه با استفاده از جاواسکریپت به صورت زیر در دسترس قرار داد.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```html
-      <input type="checkbox" name="checkboxname" value="Agree" /> Agree the
-      conditions<br />
-      ```
+     ```html
+       <input type="checkbox" name="checkboxname" value="Agree"> Agree the conditions<br>
+     ```
 
-      </span>
+     </span>
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      console.log(document.getElementById(‘checkboxname’).checked); // true or false
-      ```
+     ```javascript
+     console.log(document.getElementById(‘checkboxname’).checked); // true or false
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-334.  ### هدف از عملگر double-tilde چیه؟
+334. ### هدف از عملگر double-tilde چیه؟
 
-      عملگر دابل tilde(~~) به عنوان عملگر bitwise double NOT شناخته می‌شه. این عملگر قراره جایگزین سریع تری برای `Math.floor`.
+     عملگر دابل tilde(~~) به عنوان عملگر bitwise double NOT شناخته می‌شه. این عملگر قراره جایگزین سریع تری برای `Math.floor`.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-335.  ### چطوری یه کاراکتر رو به کد ASCII تبدیل کنیم؟
+335. ### چطوری یه کاراکتر رو به کد ASCII تبدیل کنیم؟
 
-      برای تبدیل کاراکترهای رشته به اعداد اسکی می‌تونین از متد `String.prototype.charCodeAt` استفاده کنین. برای مثال، بیاین کد ASCII رو برای حرف اول رشته «ABC» پیدا کنیم:
+     برای تبدیل کاراکترهای رشته به اعداد اسکی می‌تونین از متد `String.prototype.charCodeAt` استفاده کنین. برای مثال، بیاین کد ASCII رو برای حرف اول رشته «ABC» پیدا کنیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      "ABC".charCodeAt(0); // returns 65
-      ```
+     ```javascript
+     "ABC".charCodeAt(0) // returns 65
+     ```
 
-      </span>
+     </span>
 
-      در حالی که روش `String.fromCharCode` اعداد رو به کاراکترهای `ASCII` برابر تبدیل می‌کنه.
+     در حالی که روش `String.fromCharCode` اعداد رو به کاراکترهای `ASCII` برابر تبدیل می‌کنه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      String.fromCharCode(65, 66, 67); // returns 'ABC'
-      ```
+     ```javascript
+     String.fromCharCode(65,66,67); // returns 'ABC'
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-336.  ### ArrayBuffer چیه؟
+336. ### ArrayBuffer چیه؟
 
-      یه گلاس ArrayBuffer برای نشون دادن یه بافر داده باینری خام عمومی با طول ثابت استفاده می‌شه. می‌تونین اونو به صورت زیر ایجاد کنین
+     یه گلاس ArrayBuffer برای نشون دادن یه بافر داده باینری خام عمومی با طول ثابت استفاده می‌شه. می‌تونین اونو به صورت زیر ایجاد کنین
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      let buffer = new ArrayBuffer(16); // create a buffer of length 16
-      alert(buffer.byteLength); // 16
-      ```
+     ```javascript
+     let buffer = new ArrayBuffer(16); // create a buffer of length 16
+     alert(buffer.byteLength); // 16
+     ```
 
-      </span>
+     </span>
 
-      برای دستکاری یه ArrayBuffer، باید از یه شی "view" استفاده کنیم.
+     برای دستکاری یه ArrayBuffer، باید از یه شی "view" استفاده کنیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      //Create a DataView referring to the buffer
+     ```javascript
+     //Create a DataView referring to the buffer
       let view = new DataView(buffer);
-      ```
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-337.  ### خروجی کد زیر چی خواهد بود؟
+337. ### خروجی کد زیر چی خواهد بود؟
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      console.log("Welcome to JS world"[0]);
-      ```
+     ```javascript
+     console.log("Welcome to JS world"[0])
+     ```
 
-      </span>
+     </span>
 
-      خروجی عبارت بالا "W" عه.
+     خروجی عبارت بالا "W" عه.
       **توضیح:** نماد براکت با شاخص خاص روی یه رشته کاراکتر رو تو یه مکان خاص برمی‌گردونه. از این رو، کاراکتر "W" رشته رو برمی‌گردونه. از اونجایی که این مورد در نسخه‌های IE7 و پایین‌تر پشتیبانی نمی‌شه، ممکنه لازم باشه از متد charAt برای به دست آوردن نتیجه دلخواه استفاده کنین.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-338.  ### هدف از Error-object چیه؟
+338. ### هدف از Error-object چیه؟
 
-      سازنده Error یه آبجکت error ایجاد می‌کنه و نمونه‌هایی از آبجکت‌های خطا موقع رخ دادن خطاهای زمان اجرا ارسال میشن، آبجکت Error همچنین میتونه به عنوان یه آبجکت پایه برای استثناهای تعریف شده توسط کاربر استفاده شه. برای مثال
+     کلاس Error یه آبجکت error ایجاد می‌کنه و نمونه‌هایی از آبجکت‌های خطا موقع رخ دادن خطاهای زمان اجرا ارسال میشن، آبجکت Error همچنین میتونه به عنوان یه آبجکت پایه برای استثناهای تعریف شده توسط کاربر استفاده شه. برای مثال
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      new Error([message[, fileName[, lineNumber]]])
-      ```
+     ```javascript
+     new Error([message[, fileName[, lineNumber]]])
+     ```
 
-      </span>
+     </span>
 
-      شما می‌تونین استثناها یا خطاهای تعریف شده توسط کاربر رو با استفاده از آبجکت Error در بلوک try...catch مثل کد زیر ارسال کنین.
+     شما می‌تونین استثناها یا خطاهای تعریف شده توسط کاربر رو با استفاده از آبجکت Error در بلوک try...catch مثل کد زیر ارسال کنین.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      try {
-        if (withdraw > balance)
-          throw new Error("Oops! You don't have enough balance");
-      } catch (e) {
-        console.log(e.name + ": " + e.message);
-      }
-      ```
+     ```javascript
+     try {
+       if(withdraw > balance)
+       throw new Error("Oops! You don't have enough balance");
+     } catch (e) {
+       console.log(e.name + ': ' + e.message);
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-339.  ### هدف از EvalError-object چیه؟
+339. ### هدف از EvalError-object چیه؟
 
-      آبجکت `EvalError` یه خطا در رابطه با تابع `eval` گلوبال رو نشون میده. حتی اگه این استثنا دیگر توسط جاواسکریپت پرتاب نمی‌شه، آبجکت EvalError برای سازگاری باقی می ماند. برای مثال
+     آبجکت `EvalError` یه خطا در رابطه با تابع `eval` گلوبال رو نشون میده. حتی اگه این استثنا دیگر توسط جاواسکریپت پرتاب نمی‌شه، آبجکت EvalError برای سازگاری باقی می ماند. برای مثال
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      new EvalError([message[, fileName[, lineNumber]]])
-      ```
+     ```javascript
+     new EvalError([message[, fileName[, lineNumber]]])
+     ```
 
-      </span>
+     </span>
 
-      می‌تونین EvalError رو با بلوک try...catch مثل کد زیر ارسال کنین.
+     می‌تونین EvalError رو با بلوک try...catch مثل کد زیر ارسال کنین.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      try {
-        throw new EvalError("Eval function error", "someFile.js", 100);
-      } catch (e) {
-        console.log(e.message, e.name, e.fileName); // "Eval function error", "EvalError", "someFile.js"
-      }
-      ```
+     ```javascript
+     try {
+       throw new EvalError('Eval function error', 'someFile.js', 100);
+     } catch (e) {
+       console.log(e.message, e.name, e.fileName);              // "Eval function error", "EvalError", "someFile.js"
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-340.  ### خطاهایی که در حالت strict-mode رخ میدن ولی در غیر اون وجود ندارن کدوما هستن؟
+340. ### خطاهایی که در حالت strict-mode رخ میدن ولی در غیر اون وجود ندارن کدوما هستن؟
 
-      وقتی `use strict` رو اعمال می‌کنین. syntax، بعضی از موارد زیر قبل از اجرای اسکریپت یه SyntaxError ایجاد می‌کنن
+     وقتی `use strict` رو اعمال می‌کنین. syntax، بعضی از موارد زیر قبل از اجرای اسکریپت یه SyntaxError ایجاد می‌کنن
+     1. وقتی از دستور `Octal` استفاده می‌کنین
 
-      1. وقتی از دستور `Octal` استفاده می‌کنین
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     const n = 022;
+     ```
 
-      ```javascript
-      const n = 022;
-      ```
+     </span>
+     
+     2. استفاده از عبارت ‍‍‍`with`.
+     3. وقتی از عملگر حذف روی نام متغیر استفاده می‌کنین
+     4. استفاده از eval یا آرگومان‌ها به عنوان متغیر یا نام آرگومان تابع
+     5. موقعی که از کلمات کلیدی رزرو شده جدید استفاده می‌کنین
+     6. موقعی که یه تابع رو تو یه بلوک اعلام می‌کنین
 
-      </span>
+     <span dir="ltr" align="left">
 
-      2. استفاده از عبارت ‍‍‍`with`.
-      3. وقتی از عملگر حذف روی نام متغیر استفاده می‌کنین
-      4. استفاده از eval یا آرگومان‌ها به عنوان متغیر یا نام آرگومان تابع
-      5. موقعی که از کلمات کلیدی رزرو شده جدید استفاده می‌کنین
-      6. موقعی که یه تابع رو تو یه بلوک اعلام می‌کنین
+     ```javascript
+     if (someCondition) { function f() {} }
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      if (someCondition) {
-        function f() {}
-      }
-      ```
+     از این رو، خطاهای موارد بالا برای جلوگیری از خطا در محیط‌های توسعه/تولید مفید هستن.
 
-      </span>
+     **[فهرست](#فهرست)**
 
-      از این رو، خطاهای موارد بالا برای جلوگیری از خطا در محیط‌های توسعه/تولید مفید هستن.
+341. ### آیا همه objectها دارای prototype هستن؟
 
-      **[فهرست](#فهرست)**
+     خیر. همه objectها دارای prototype هستن به جز object پایه که توسط کاربر ایجاد می‌شه یا آبجکت‌ای که با استفاده از کلمه کلیدی new ایجاد می‌شه.
 
-341.  ### آیا همه objectها دارای prototype هستن؟
+     **[فهرست](#فهرست)**
 
-      خیر. همه objectها دارای prototype هستن به جز object پایه که توسط کاربر ایجاد می‌شه یا آبجکت‌ای که با استفاده از کلمه کلیدی new ایجاد می‌شه.
+342. ### تفاوت‌های بین parameter و argument چیه؟
 
-      **[فهرست](#فهرست)**
+     parameter نام متغیر تعریف یه تابعه در حالی که یه argument نشون دهنده مقدار داده شده به تابع موقع کال شدنشه. بیاین این رو با یه تابع ساده توضیح بدیم
 
-342.  ### تفاوت‌های بین parameter و argument چیه؟
+     <span dir="ltr" align="left">
 
-      parameter نام متغیر تعریف یه تابعه در حالی که یه argument نشون دهنده مقدار داده شده به تابع موقع کال شدنشه. بیاین این رو با یه تابع ساده توضیح بدیم
+     ```javascript
+     function myFunction(parameter1, parameter2, parameter3) {
+       console.log(arguments[0]) // "argument1"
+       console.log(arguments[1]) // "argument2"
+       console.log(arguments[2]) // "argument3"
+     }
+     myFunction("argument1", "argument2", "argument3")
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      function myFunction(parameter1, parameter2, parameter3) {
-        console.log(arguments[0]); // "argument1"
-        console.log(arguments[1]); // "argument2"
-        console.log(arguments[2]); // "argument3"
-      }
-      myFunction("argument1", "argument2", "argument3");
-      ```
+     **[فهرست](#فهرست)**
 
-      </span>
+343. ### هدف از متد some روی آرایه‌ها چیه؟
 
-      **[فهرست](#فهرست)**
+     متد `some` برای آزمایش اینکه آیا حداقل یه عنصر در آرایه از آزمون پیاده‌سازی شده توسط تابع ارائه شده عبور می‌کنه یا نه استفاده می‌شه. متد یه مقدار بولین برمی‌گردونه. بیاین مثالی بزنیم تا هر عنصر رو بر اساس داشتن عدد زوج آزمایش کنیم،
 
-343.  ### هدف از متد some روی آرایه‌ها چیه؟
+     <span dir="ltr" align="left">
 
-      متد `some` برای آزمایش اینکه آیا حداقل یه عنصر در آرایه از آزمون پیاده‌سازی شده توسط تابع ارائه شده عبور می‌کنه یا نه استفاده می‌شه. متد یه مقدار بولین برمی‌گردونه. بیاین مثالی بزنیم تا هر عنصر عجیب و غریب رو آزمایش کنیم،
+     ```javascript
+     const array = [1, 2, 3, 4, 5, 6 ,7, 8, 9, 10];
 
-      <span dir="ltr" align="left">
+     const odd = element => element % 2 !== 0;
 
-      ```javascript
-      var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+     console.log(array.some(odd)); // true (the odd element exists)
+     ```
 
-      var odd = (element) => element % 2 !== 0;
+     </span>
 
-      console.log(array.some(odd)); // true (the odd element exists)
-      ```
+     **[فهرست](#فهرست)**
 
-      </span>
+344. ### چطوری دو یا تعداد بیشتری از آرایه‌ها رو با هم ترکیب کنیم؟
 
-      **[فهرست](#فهرست)**
+     متد `concat` برای پیوستن دو یا چند آرایه با برگردوندن یه آرایه جدید حاوی تمام عناصر استفاده می‌شه.مثال:
 
-344.  ### چطوری دو یا تعداد بیشتری از آرایه‌ها رو با هم ترکیب کنیم؟
+     <span dir="ltr" align="left">
 
-      متد `concat` برای پیوستن دو یا چند آرایه با برگردوندن یه آرایه جدید حاوی تمام عناصر استفاده می‌شه.مثال:
+     ```javascript
+     array1.concat(array2, array3, ..., arrayX)
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      array1.concat(array2, array3, ..., arrayX)
-      ```
+     بیاین مثالی از الحاق آرایه با آرایه‌های veggies و fruits رو مثال بزنیم.
 
-      </span>
+     <span dir="ltr" align="left">
 
-      بیاین مثالی از الحاق آرایه با آرایه‌های veggies و fruits رو مثال بزنیم.
+     ```javascript
+       const veggies = ["Tomato", "Carrot", "Cabbage"];
+       const fruits = ["Apple", "Orange", "Pears"];
+       const veggiesAndFruits = veggies.concat(fruits);
+       console.log(veggiesAndFruits); // Tomato, Carrot, Cabbage, Apple, Orange, Pears
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      const veggies = ["Tomato", "Carrot", "Cabbage"];
-      const fruits = ["Apple", "Orange", "Pears"];
-      const veggiesAndFruits = veggies.concat(fruits);
-      console.log(veggiesAndFruits); // Tomato, Carrot, Cabbage, Apple, Orange, Pears
-      ```
+     **[فهرست](#فهرست)**
 
-      </span>
+345. ### تفاوت‌های بین Shallow و Deep کپی چیه؟
 
-      **[فهرست](#فهرست)**
 
-345.  ### تفاوت‌های بین Shallow و Deep کپی چیه؟
-
-      **کپی کم عمق:**
+     **کپی کم عمق:**
       کپی کم عمق یه کپی بیتی از یه شی است. یه شی جدید ایجاد می‌شه که یه کپی دقیق از مقادیر موجود در شی اصلی داره. اگه هر یه از فیلدهای شی ارجاع به آبجکت‌های دیگه باشه، فقط آدرس‌های مرجع کپی می شن یعنی فقط آدرس حافظه کپی می‌شه.
 
-      **مثال**
+     **مثال**
 
-       <span dir="ltr" align="left">
+      <span dir="ltr" align="left">
 
       ```javascript
       const empDetails = {
-        name: "John",
-        age: 25,
-        expertise: "Software Developer",
-      };
+        name: "John", age: 25, expertise: "Software Developer"
+      }
       ```
 
-       </span>
+      </span>
 
-      برای ایجاد یه نسخه تکراری
+     برای ایجاد یه نسخه تکراری
 
-       <span dir="ltr" align="left">
+      <span dir="ltr" align="left">
 
       ```javascript
-      const empDetailsShallowCopy = empDetails; //Shallow copying!
+      const empDetailsShallowCopy = empDetails    //Shallow copying!
       ```
 
-       </span>
+      </span>
 
-      اگه مقداری از ویژگی رو تو یه تکراری به این صورت تغییر بدیم:
+     اگه مقداری از ویژگی رو تو یه تکراری به این صورت تغییر بدیم:
 
-       <span dir="ltr" align="left">
+      <span dir="ltr" align="left">
 
       ```javascript
-      empDetailsShallowCopy.name = "Johnson";
+      empDetailsShallowCopy.name = "Johnson"
       ```
 
-       </span>
+      </span>
 
-      دستور بالا همچنین نام ‍`empDetails` رو تغییر میده، چون ما یه کپی کم عمق داریم. یعنی ما داده‌های اصلی رو هم از دست می دیم.
+     دستور بالا همچنین نام ‍`empDetails` رو تغییر میده، چون ما یه کپی کم عمق داریم. یعنی ما داده‌های اصلی رو هم از دست می دیم.
 
-      **کپی عمیق(Deep):**
-      یه کپی عمیق همه فیلدها رو کپی می‌کنه و از حافظه تخصیص یافته به صورت پویا که توسط فیلدها به آن اشاره می‌شه کپی می‌کنه. یه کپی عمیق زمانی اتفاق میوفته که یه شی همراه با آبجکت‌هایی که به اون اشاره داره کپی شه.
+     **کپی عمیق(Deep):**
+     یه کپی عمیق همه فیلدها رو کپی می‌کنه و از حافظه تخصیص یافته به صورت پویا که توسط فیلدها به آن اشاره می‌شه کپی می‌کنه. یه کپی عمیق زمانی اتفاق میوفته که یه شی همراه با آبجکت‌هایی که به اون اشاره داره کپی شه.
 
-      **Example**
+     **Example**
 
-       <span dir="ltr" align="left">
+      <span dir="ltr" align="left">
 
       ```javascript
       var empDetails = {
-        name: "John",
-        age: 25,
-        expertise: "Software Developer",
-      };
+        name: "John", age: 25, expertise: "Software Developer"
+      }
       ```
 
-       </span>
+      </span>
 
-      یه کپی عمیق با استفاده از خواص از ابجکت اصلی در متغیر جدید ایجاد کنیم
+     یه کپی عمیق با استفاده از خواص از ابجکت اصلی در متغیر جدید ایجاد کنیم
 
-       <span dir="ltr" align="left">
+      <span dir="ltr" align="left">
 
       ```javascript
       var empDetailsDeepCopy = {
         name: empDetails.name,
         age: empDetails.age,
-        expertise: empDetails.expertise,
-      };
+        expertise: empDetails.expertise
+      }
       ```
 
-       </span>
+      </span>
 
       اگه ‍‍`empDetailsDeepCopy.name` رو تغییر بدین، فقط `empDetailsDeepCopy` و نه `empDetails` رو تحت تأثیر قرار خواهد داد.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-346.  ### چطوری می‌تونیم به یه تعداد مشخص از یه رشته کپی کنیم؟
+346. ### چطوری می‌تونیم به یه تعداد مشخص از یه رشته کپی کنیم؟
 
-      متد`repeat` برای ساخت و برگردوندن یه رشته جدید استفاده می‌شه که حاوی تعداد مشخصی از کپی‌های رشته‌ای هس که روی اون فراخوانی شده و به هم پیوسته شدن. یادتون باشه که این روش به مشخصات ECMAScript 2015 اضافه شده است.
-      بیاین یه مثال از رشته Hello رو برای تکرارش 4 بار در نظر بگیریم.
+     متد`repeat` برای ساخت و برگردوندن یه رشته جدید استفاده می‌شه که حاوی تعداد مشخصی از کپی‌های رشته‌ای هس که روی اون فراخوانی شده و به هم پیوسته شدن. یادتون باشه که این روش به مشخصات ECMAScript 2015 اضافه شده است.
+     بیاین یه مثال از رشته Hello رو برای تکرارش 4 بار در نظر بگیریم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      "Hello".repeat(4); // 'HelloHelloHelloHello'
-      ```
+     ```javascript
+     'Hello'.repeat(4);  // 'HelloHelloHelloHello'
+     ```
 
-      </span>
+     </span>
 
-347.  ### چطوری همه stringهای match شده با یه regular-expression رو برگردونیم؟
+347. ### چطوری همه stringهای match شده با یه regular-expression رو برگردونیم؟
 
-      متد `matchAl` می‌تواند برای برگردوندن یه تکرارکننده از تمام نتایجی که یه رشته با یه عبارت منظم مطابقت دارن، استفاده شه. برای مثال، مثال زیر آرایه ای از نتایج رشته منطبق رو در برابر یه عبارت منظم برمی‌گردونه:
+     متد `matchAl` می‌تواند برای برگردوندن یه تکرارکننده از تمام نتایجی که یه رشته با یه عبارت منظم مطابقت دارن، استفاده شه. برای مثال، مثال زیر آرایه ای از نتایج رشته منطبق رو در برابر یه عبارت منظم برمی‌گردونه:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      let regexp = /Hello(\d?))/g;
-      let greeting = "Hello1Hello2Hello3";
+     ```javascript
+     let regexp = /Hello(\d?))/g;
+     let greeting = 'Hello1Hello2Hello3';
 
-      let greetingList = [...greeting.matchAll(regexp)];
+     let greetingList = [...greeting.matchAll(regexp)];
 
-      console.log(greetingList[0]); //Hello1
-      console.log(greetingList[1]); //Hello2
-      console.log(greetingList[2]); //Hello3
-      ```
+     console.log(greetingList[0]); //Hello1
+     console.log(greetingList[1]); //Hello2
+     console.log(greetingList[2]); //Hello3
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-348.  ### چطوری یه رشته رو از اول یا از آخر trim کنیم؟
+348. ### چطوری یه رشته رو از اول یا از آخر trim کنیم؟
 
-      روش `trim prototype` رشته برای برش دادن دو طرف یه رشته استفاده می‌شه. اما اگه بخوایم به‌خصوص در ابتدا یا انتهای رشته رو برش بدیم، می‌تونیم از روش‌های `trimStart/trimLeft` و `trimEnd/trimRight` استفاده کنیم. بیاین نمونه ای از این روش‌ها رو در پیام greeting ببینیم،
+     روش `trim prototype` رشته برای برش دادن دو طرف یه رشته استفاده می‌شه. اما اگه بخوایم به‌خصوص در ابتدا یا انتهای رشته رو برش بدیم، می‌تونیم از روش‌های `trimStart/trimLeft` و `trimEnd/trimRight` استفاده کنیم. بیاین نمونه ای از این روش‌ها رو در پیام greeting ببینیم،
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const greeting = "   Hello, Goodmorning!   ";
+     ```javascript
+     const greeting = '   Hello, Goodmorning!   ';
 
-      console.log(greeting); // "   Hello, Goodmorning!   "
-      console.log(greeting.trimStart()); // "Hello, Goodmorning!   "
-      console.log(greeting.trimLeft()); // "Hello, Goodmorning!   "
+     console.log(greeting); // "   Hello, Goodmorning!   "
+     console.log(greeting.trimStart()); // "Hello, Goodmorning!   "
+     console.log(greeting.trimLeft()); // "Hello, Goodmorning!   "
 
-      console.log(greeting.trimEnd()); // "   Hello, Goodmorning!"
-      console.log(greeting.trimRight()); // "   Hello, Goodmorning!"
-      ```
+     console.log(greeting.trimEnd()); // "   Hello, Goodmorning!"
+     console.log(greeting.trimRight()); // "   Hello, Goodmorning!"
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-349.  ### خروجی کنسول زیر با عملگر unary چی می‌شه؟
+349. ### خروجی کنسول زیر با عملگر unary چی می‌شه؟
 
-      <span dir="ltr" align="left">
 
-      ```javascript
-      console.log(+"Hello");
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     console.log(+'Hello');
+     ```
 
-      خروجی دستور log کنسول بالا NaN رو برمی‌گردونه. از اونجا که عنصر توسط عملگر unary پیشونده و مفسر جاواسکریپت سعی می‌کنه اون عنصر رو به یه نوع عدد تبدیل کنه. از اونجایی که تبدیل با شکست مواجه می‌شه، مقدار عبارت به مقدار NaN منجر می‌شه.
+     </span>
 
-      **[فهرست](#فهرست)**
+     خروجی دستور log کنسول بالا NaN رو برمی‌گردونه. از اونجا که عنصر توسط عملگر unary پیشونده و مفسر جاواسکریپت سعی می‌کنه اون عنصر رو به یه نوع عدد تبدیل کنه. از اونجایی که تبدیل با شکست مواجه می‌شه، مقدار عبارت به مقدار NaN منجر می‌شه.
 
-350.  ### آیا جاواسکریپت از mixinها استفاده می‌کنه؟
+     **[فهرست](#فهرست)**
 
-      Mixin - یک اصطلاح برنامه نویسی شی گرا عمومیه: کلاسی که شامل متدهایی برای کلاس های دیگه اس. برخی از زبان های دیگر به ارث بردن چندگانه اجازه می دن. جاوا اسکریپت از وراثت چندگانه پشتیبانی نمی کنه، اما Mixin ها رو می شه با کپی کردن متد ها در نمونه اولیه پیاده سازی کرد.
+350. ### آیا جاواسکریپت از mixinها استفاده می‌کنه؟
 
-      **[فهرست](#فهرست)**
+     Mixin - یک اصطلاح برنامه نویسی شی گرا عمومیه: کلاسی که شامل متدهایی برای کلاس های دیگه اس. برخی از زبان های دیگر به ارث بردن چندگانه اجازه می دن. جاوا اسکریپت از وراثت چندگانه پشتیبانی نمی کنه، اما Mixin ها رو می شه با کپی کردن متد ها در نمونه اولیه پیاده سازی کرد.
 
-351.  ### تابع thunk چیه و چیکار می‌کنه؟
+     **[فهرست](#فهرست)**
 
-      thunk فقط تابعیه که ارزیابی مقدار رو به تاخیر میندازه. هیچ آرگومانی نمی‌گیره، اما هر زمان که thunk رو فراخوانی می‌کنین مقدار رو میده. برای مثال، از اون استفاده می‌شه که الان اجرا نشه، اما زمانی در آینده اجرا می‌شه. بیاین یه مثال همزمان بگیریم،
+351. ### تابع thunk چیه و چیکار می‌کنه؟
 
-      <span dir="ltr" align="left">
+     thunk فقط تابعیه که ارزیابی مقدار رو به تاخیر میندازه. هیچ آرگومانی نمی‌گیره، اما هر زمان که thunk رو فراخوانی می‌کنین مقدار رو میده. برای مثال، از اون استفاده می‌شه که الان اجرا نشه، اما زمانی در آینده اجرا می‌شه. بیاین یه مثال همزمان بگیریم،
 
-      ```javascript
-      const add = (x, y) => x + y;
+     <span dir="ltr" align="left">
 
-      const thunk = () => add(2, 3);
+     ```javascript
+     const add = (x,y) => x + y;
 
-      thunk(); // 5
-      ```
+     const thunk = () => add(2,3);
 
-      </span>
+     thunk() // 5
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-352.  ### thunkهای asynchronous چیکار می‌کنن؟
+     **[فهرست](#فهرست)**
 
-      Thunk‌های ناهمزمان برای ایجاد درخواست‌های شبکه مفید هستن. بیاین نمونه ای از درخواست‌های شبکه رو ببینیم،
+352. ### thunkهای asynchronous چیکار می‌کنن؟
 
-      <span dir="ltr" align="left">
+     Thunk‌های ناهمزمان برای ایجاد درخواست‌های شبکه مفید هستن. بیاین نمونه ای از درخواست‌های شبکه رو ببینیم،
 
-      ```javascript
-      function fetchData(fn) {
-        fetch("https://jsonplaceholder.typicode.com/todos/1")
-          .then((response) => response.json())
-          .then((json) => fn(json));
-      }
+     <span dir="ltr" align="left">
 
-      const asyncThunk = function () {
-        return fetchData(function getData(data) {
-          console.log(data);
-        });
-      };
+     ```javascript
+     function fetchData(fn){
+       fetch('https://jsonplaceholder.typicode.com/todos/1')
+       .then(response => response.json())
+       .then(json => fn(json))
+     }
 
-      asyncThunk();
-      ```
+     const asyncThunk = function (){
+        return fetchData(function getData(data){
+           console.log(data)
+       })
+     }
 
-      </span>
+     asyncThunk()
+     ```
 
-      تابع `getData` فوراً فراخونی نمی‌شه و تنها زمانی فراخونی می‌شه که داده‌ها از نقطه پایانی API در دسترس باشن. تابع setTimeout هم برای ناهمزمان کردن کد ما استفاده می‌شه. بهترین مثال زمان واقعی، کتابخونه مدیریت حالت redux هس که از thunk‌های ناهمزمان برای به تاخیر انداختن اعمال برای ارسال استفاده می‌کنه.
+     </span>
 
-      **[فهرست](#فهرست)**
+     تابع `getData` فوراً فراخونی نمی‌شه و تنها زمانی فراخونی می‌شه که داده‌ها از نقطه پایانی API در دسترس باشن. تابع setTimeout هم برای ناهمزمان کردن کد ما استفاده می‌شه. بهترین مثال زمان واقعی، کتابخونه مدیریت حالت redux هس که از thunk‌های ناهمزمان برای به تاخیر انداختن اعمال برای ارسال استفاده می‌کنه.
 
-353.  ### خروجی فراخوانی‌های توابع زیر چی می‌شه؟
+     **[فهرست](#فهرست)**
 
-      **قسمت کد:**
+353. ### خروجی فراخوانی‌های توابع زیر چی می‌شه؟
 
-      <span dir="ltr" align="left">
+     **قسمت کد:**
 
-      ```javascript
-      const circle = {
-        radius: 20,
-        diameter() {
-          return this.radius * 2;
-        },
-        perimeter: () => 2 * Math.PI * this.radius,
-      };
+     <span dir="ltr" align="left">
 
-      console.log(circle.diameter());
-      console.log(circle.perimeter());
-      ```
+     ```javascript
+     const circle = {
+       radius: 20,
+       diameter() {
+         return this.radius * 2;
+       },
+       perimeter: () => 2 * Math.PI * this.radius
+     };
 
-      </span>
+     console.log(circle.diameter());
+     console.log(circle.perimeter());
+     ```
 
-      **خروجی:**
+     </span>
 
-      خروجی 40 و NaN هس. یادتون باشه که diameter یه تابع منظمه در حالی که مقدار perimeter یه `arrow function` هستش. کلمه کلیدی `this‍` یه تابع معمولی (یعنی diameter) به محدوده اطراف که یه کلاسه (یعنی آبجکت circle) اشاره داره. در حالی که این کلمه کلیدی تابع perimeter به محدوده اطراف که یه آبجکت window هس اشاره داره. از اونجایی که هیچ ویژگی radius در آبجکت‌های window وجود نداره، یه مقدار undefined برمی‌گردونه و ضرب مقدار، مقدار NaN رو برمی‌گردونه.
+     **خروجی:**
 
-      **[فهرست](#فهرست)**
+     خروجی 40 و NaN هس. یادتون باشه که diameter یه تابع منظمه در حالی که مقدار perimeter یه `arrow function` هستش. کلمه کلیدی `this‍` یه تابع معمولی (یعنی diameter) به محدوده اطراف که یه کلاسه (یعنی آبجکت circle) اشاره داره. در حالی که این کلمه کلیدی تابع perimeter به محدوده اطراف که یه آبجکت window هس اشاره داره. از اونجایی که هیچ ویژگی radius در آبجکت‌های window وجود نداره، یه مقدار undefined برمی‌گردونه و ضرب مقدار، مقدار NaN رو برمی‌گردونه.
 
-354.  ### چطوری همه خطوط جدید رو از یه رشته حذف کرد؟
+     **[فهرست](#فهرست)**
 
-      ساده ترین روش ٍ استفاده از regex برای شناسایی و جایگزینی خطوط جدید توی رشته اس. در این حالت از تابع replace به همراه رشته برای جایگزینی استفاده می‌کنیم که در این مثال یه رشته خالیه.
+354. ### چطوری همه خطوط جدید رو از یه رشته حذف کرد؟
 
-      <span dir="ltr" align="left">
+     ساده ترین روش  ٍ استفاده از regex برای شناسایی و جایگزینی خطوط جدید توی رشته اس. در این حالت از تابع replace به همراه رشته برای جایگزینی استفاده می‌کنیم که در این مثال یه رشته خالیه.
 
-      ```javascript
-      function remove_linebreaks( var message ) {
-          return message.replace( /[\r\n]+/gm, "" );
-      }
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     function remove_linebreaks( var message ) {
+         return message.replace( /[\r\n]+/gm, "" );
+     }
+     ```
 
-      تو عبارت بالا g و m برای flag های سراسری و چند خطی هستن.
+     </span>
 
-      **[فهرست](#فهرست)**
+     تو عبارت بالا g و m برای flag های سراسری و چند خطی هستن.
 
-355.  ### تفاوت‌ بین reflow و repaint چیه؟
+     **[فهرست](#فهرست)**
 
-      repaintزمانی اتفاق می‌افتد که تغییراتی ایجاد می‌شه که روی دید یه عنصر تأثیر میذاره، اما روی طرح اون تأثیر نمیذاره،. نمونه‌هایی از این موارد شامل طرح کلی، نمایان بودن یا رنگ پس زمینه اس. یه _reflow_ شامل تغییراتیه که بر طرح بندی بخشی از صفحه (یا کل صفحه) تأثیر میزاره. تغییر اندازه پنجره مرورگر، تغییر فونت، تغییر محتوا (مانند تایپ متن توسط کاربر)، استفاده از روش‌های جاواسکریپت شامل سبک‌های محاسبه‌شده، افزودن یا حذف عناصر از DOM، و تغییر کلاس‌های یه عنصر چند مورد از مواردی هستن که می‌تونن جریان مجدد رو آغاز کنن. جریان مجدد یه عنصر باعث جریان مجدد بعدی همه عناصر فرزند و اجداد و همچنین هر عنصری که به دنبال اون توی DOM هس می‌شه.
+355. ### تفاوت‌ بین reflow و repaint چیه؟
 
-      **[فهرست](#فهرست)**
+      repaintزمانی اتفاق می‌افتد که تغییراتی ایجاد می‌شه که روی دید یه عنصر تأثیر میذاره، اما روی طرح اون تأثیر نمیذاره،. نمونه‌هایی از این موارد شامل طرح کلی، نمایان بودن یا رنگ پس زمینه اس. یه *reflow* شامل تغییراتیه که بر طرح بندی بخشی از صفحه (یا کل صفحه) تأثیر میزاره. تغییر اندازه پنجره مرورگر، تغییر فونت، تغییر محتوا (مانند تایپ متن توسط کاربر)، استفاده از روش‌های جاواسکریپت شامل سبک‌های محاسبه‌شده، افزودن یا حذف عناصر از DOM، و تغییر کلاس‌های یه عنصر چند مورد از مواردی هستن که می‌تونن جریان مجدد رو آغاز کنن. جریان مجدد یه عنصر باعث جریان مجدد بعدی همه عناصر فرزند و اجداد و همچنین هر عنصری که به دنبال اون توی DOM هس می‌شه.
 
-356.  ### اگه قبل از یه آرایه عملگر نفی «!» بزاریم چی می‌شه؟
+     **[فهرست](#فهرست)**
 
-      نفی یه آرایه با کاراکتر «!»، آرایه رو به یه بولین تبدیل می‌کنه. از اونجایی که آرایه‌ها true در نظر گرفته می شن، پس نفی اون false رو برمی‌گردونه.
+356. ### اگه قبل از یه آرایه عملگر نفی «!» بزاریم چی می‌شه؟
 
-      <span dir="ltr" align="left">
+     نفی یه آرایه با کاراکتر «!»، آرایه رو به یه بولین تبدیل می‌کنه. از اونجایی که آرایه‌ها true در نظر گرفته می شن، پس نفی اون false رو برمی‌گردونه.
 
-      ```javascript
-      console.log(![]); // false
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     console.log(![]); // false
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-357.  ### اگه دو تا آرایه رو با هم جمع ببندیم چی می‌شه؟
+     **[فهرست](#فهرست)**
 
-      اگه دو آرایه رو با هم اضافه کنین هر دو اونا رو به رشته تبدیل می‌کنه و اونا رو به هم متصل می‌کنه. برای بریم یه مثال در موردش ببینیم.
+357. ### اگه دو تا آرایه رو با هم جمع ببندیم چی می‌شه؟
 
-      <span dir="ltr" align="left">
+     اگه دو آرایه رو با هم اضافه کنین هر دو اونا رو به رشته تبدیل می‌کنه و اونا رو به هم متصل می‌کنه. برای بریم یه مثال در موردش ببینیم.
 
-      ```javascript
-      console.log(["a"] + ["b"]); // "ab"
-      console.log([] + []); // ""
-      console.log(![] + []); // "false", because ![] returns false.
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     console.log(['a'] + ['b']);  // "ab"
+     console.log([] + []); // ""
+     console.log(![] + []); // "false", because ![] returns false.
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-358.  ### اگه عملگر جمع «+» روی قبل از مقادیر falsy قرار بدیم چی می‌شه؟
+     **[فهرست](#فهرست)**
 
-      اگه عملگر additive(+) رو روی مقادیر نادرست (null، undefined، NaN، false، "") قرار بدیم، مقدار falsy به مقدار عددی صفر تبدیل می‌شه. بیاین اونا رو توی کنسول مرورگر به صورت زیر نمایش بدیم،
-      <span dir="ltr" align="left">
+358. ### اگه عملگر جمع «+» روی قبل از مقادیر falsy قرار بدیم چی می‌شه؟
 
-      ```javascript
-      console.log(+null); // 0
-      console.log(+undefined); // NaN
-      console.log(+false); // 0
-      console.log(+NaN); // NaN
-      console.log(+""); // 0
-      ```
+     اگه عملگر additive(+) رو روی مقادیر نادرست (null، undefined، NaN، false، "") قرار بدیم، مقدار falsy به مقدار عددی صفر تبدیل می‌شه. بیاین اونا رو توی کنسول مرورگر به صورت زیر نمایش بدیم،
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     console.log(+null); // 0
+     console.log(+undefined);// NaN
+     console.log(+false); // 0
+     console.log(+NaN); // NaN
+     console.log(+""); // 0
+     ```
 
-      **[فهرست](#فهرست)**
+     </span>
 
-359.  ### چطوری با استفاده از آرایه‌ها و عملگرهای منطقی می‌تونیم رشته self رو تولید کنیم؟
+     **[فهرست](#فهرست)**
 
-      رشته self رو می‌شه با ترکیب کاراکترهای `[]()!+` تشکیل داد. برای رسیدن به این الگو باید موارد زیر رو بدونیم:
+359. ### چطوری با استفاده از آرایه‌ها و عملگرهای منطقی می‌تونیم رشته self رو تولید کنیم؟
 
-      1. از اونجایی که آرایه‌ها مقادیر true هستن، با نفی آرایه‌ها false تولید می‌شه: ![] === false
-      2. طبق قوانین اجباری جاواسکریپت، اضافه کردن آرایه‌ها به هم اونا رو به رشته‌بندی تبدیل می‌کنه: [] + [] === ""
-      3. Prepend یه آرایه با عملگر + یه آرایه رو به نادرست تبدیل می‌کنه، انکار اونو درست می‌کنه و در نهایت تبدیل نتیجه مقدار '1' رو تولید می‌کنه: +(!(+[])) === 1
+     رشته self رو می‌شه با ترکیب کاراکترهای `[]()!+` تشکیل داد. برای رسیدن به این الگو باید موارد زیر رو بدونیم:
+     1. از اونجایی که آرایه‌ها مقادیر true هستن، با نفی آرایه‌ها false تولید می‌شه: ![] === false
+     2. طبق قوانین اجباری جاواسکریپت، اضافه کردن آرایه‌ها به هم اونا رو به رشته‌بندی تبدیل می‌کنه: [] + [] === ""
+     3. Prepend یه آرایه با عملگر + یه آرایه رو به نادرست تبدیل می‌کنه، انکار اونو درست می‌کنه و در نهایت تبدیل نتیجه مقدار '1' رو تولید می‌کنه: +(!(+[])) === 1
 
       با اعمال قوانین بالا می‌تونیم شرایط زیر رو استخراج کنیم
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      (![] + [] === "false" + !+[]) === 1;
-      ```
+     ```javascript
+     ![] + [] === "false"
+     +!+[] === 1
+     ```
 
-      </span>
+     </span>
 
-      اکنون الگوی کاراکتر به صورت زیر ایجاد می‌شه.
+     اکنون الگوی کاراکتر به صورت زیر ایجاد می‌شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-            s               e               l               f
-       ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
+     ```javascript
+           s               e               l               f
+      ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
 
-       (![] + [])[3] + (![] + [])[4] + (![] + [])[2] + (![] + [])[0]
-       ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
-      (![] + [])[+!+[]+!+[]+!+[]] +
-      (![] + [])[+!+[]+!+[]+!+[]+!+[]] +
-      (![] + [])[+!+[]+!+[]] +
-      (![] + [])[+[]]
-      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-      (![]+[])[+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]]+(![]+[])[+[]]
-      ```
+      (![] + [])[3] + (![] + [])[4] + (![] + [])[2] + (![] + [])[0]
+      ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
+     (![] + [])[+!+[]+!+[]+!+[]] +
+     (![] + [])[+!+[]+!+[]+!+[]+!+[]] +
+     (![] + [])[+!+[]+!+[]] +
+     (![] + [])[+[]]
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     (![]+[])[+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]]+(![]+[])[+[]]
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-360.  ### چطوری می‌تونیم مقادیر falsy رو از آرایه حذف کنیم؟
+360. ### چطوری می‌تونیم مقادیر falsy رو از آرایه حذف کنیم؟
 
-      می‌تونیم با وارد کردن Boolean به عنوان پارامتر، روش فیلتر رو روی آرایه اعمال کنیم. به این ترتیب تمام مقادیر falsy (0، undifined، null، false و "") از آرایه حذف می‌شه.
+     می‌تونیم با وارد کردن Boolean به عنوان پارامتر، روش فیلتر رو روی آرایه اعمال کنیم. به این ترتیب تمام مقادیر falsy (0، undifined، null، false و "") از آرایه حذف می‌شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const myArray = [false, null, 1, 5, undefined];
-      myArray.filter(Boolean); // [1, 5] // is same as myArray.filter(x => x);
-      ```
+     ```javascript
+     const myArray = [false, null, 1,5, undefined]
+     myArray.filter(Boolean); // [1, 5] // is same as myArray.filter(x => x);
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-361.  ### چطوری مقادیر تکراری رو از یه آرایه حذف کنیم؟
+361. ### چطوری مقادیر تکراری رو از یه آرایه حذف کنیم؟
 
-      می‌تونیم مقادیر یونیک یه آرایه رو با ترکیب دستور "Set" و rest expression/spread(...) دریافت کنیم.
+     می‌تونیم مقادیر یونیک یه آرایه رو با ترکیب دستور "Set" و rest expression/spread(...) دریافت کنیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      console.log([...new Set([1, 2, 4, 4, 3])]); // [1, 2, 4, 3]
-      ```
+     ```javascript
+     console.log([...new Set([1, 2, 4, 4, 3])]); // [1, 2, 4, 3]
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-362.  ### aliaseهای همزمان با destructuring چطوری کار می‌کنن؟
+362. ### aliaseهای همزمان با destructuring چطوری کار می‌کنن؟
 
-      گاهی اوقات شما دوست دارید یه متغیر `destructure` شده با نامی متفاوت از نام ویژگی داشته باشیم. در این صورت، از یه `: newName‍` برای تعیین اسم برای متغیر استفاده می‌کنیم. این فرآیند `destructuring aliase` نامیده می‌شه.
+     گاهی اوقات شما دوست دارید یه متغیر `destructure` شده با نامی متفاوت از نام ویژگی داشته باشیم. در این صورت، از یه `: newName‍` برای تعیین اسم برای متغیر استفاده می‌کنیم. این فرآیند `destructuring aliase` نامیده می‌شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const obj = { x: 1 };
-      // Grabs obj.x as as { otherName }
-      const { x: otherName } = obj;
-      ```
+     ```javascript
+     const obj = { x: 1 };
+     // Grabs obj.x as as { otherName }
+     const { x: otherName } = obj;
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-363.  ### چطوری آیتم‌های یه آرایه رو بدون استفاده از متد map پیمایش کنیم؟
+363. ### چطوری آیتم‌های یه آرایه رو بدون استفاده از متد map پیمایش کنیم؟
 
-      می‌تونیم مقادیر آرایه‌ها رو بدون استفاده از متد `map` تنها با استفاده از روش `from` آرایه ترسیم کنیم. بیاین نام شهرها رو از آرایه کشورها ترسیم کنیم:
+     می‌تونیم مقادیر آرایه‌ها رو بدون استفاده از متد `map` تنها با استفاده از روش `from` آرایه ترسیم کنیم. بیاین نام شهرها رو از آرایه کشورها ترسیم کنیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const countries = [
-        { name: "India", capital: "Delhi" },
-        { name: "US", capital: "Washington" },
-        { name: "Russia", capital: "Moscow" },
-        { name: "Singapore", capital: "Singapore" },
-        { name: "China", capital: "Beijing" },
-        { name: "France", capital: "Paris" },
-      ];
+     ```javascript
+     const countries = [
+         { name: 'India', capital: 'Delhi' },
+         { name: 'US', capital: 'Washington' },
+         { name: 'Russia', capital: 'Moscow' },
+         { name: 'Singapore', capital: 'Singapore' },
+         { name: 'China', capital: 'Beijing' },
+         { name: 'France', capital: 'Paris' },
+     ];
 
-      const cityNames = Array.from(countries, ({ capital }) => capital);
-      console.log(cityNames); // ['Delhi, 'Washington', 'Moscow', 'Singapore', 'Beijing', 'Paris']
-      ```
+     const cityNames = Array.from(countries, ({ capital}) => capital);
+     console.log(cityNames); // ['Delhi, 'Washington', 'Moscow', 'Singapore', 'Beijing', 'Paris']
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-364.  ### چطوری یه آرایه رو خالی کنیم؟
+364. ### چطوری یه آرایه رو خالی کنیم؟
 
-      با صفر کردن طول آرایه می‌تونیم به سرعت یه آرایه رو خالی کنیم.
+     با صفر کردن طول آرایه می‌تونیم به سرعت یه آرایه رو خالی کنیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      let cities = ["Singapore", "Delhi", "London"];
-      cities.length = 0; // cities becomes []
-      ```
+     ```javascript
+     let cities = ['Singapore', 'Delhi', 'London'];
+     cities.length = 0; // cities becomes []
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-365.  ### چطوری اعداد رو با تعداد رقم اعشار مشخص رند می‌کنی؟
+365. ### چطوری اعداد رو با تعداد رقم اعشار مشخص رند می‌کنی؟
 
-      می‌تونیم با استفاده از روش ‍`toFixed` از جاواسکریپت، اعداد رو به تعداد معینی از اعشار گرد کنیم.
+     می‌تونیم با استفاده از روش ‍`toFixed` از جاواسکریپت، اعداد رو به تعداد معینی از اعشار گرد کنیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      let pie = 3.141592653;
-      pie = pie.toFixed(3); // 3.142
-      ```
+     ```javascript
+     let pie = 3.141592653;
+     pie = pie.toFixed(3); // 3.142
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-366.  ### ساده‌ترین روش برای تبدیل آرایه به object چیه؟
+366. ### ساده‌ترین روش برای تبدیل آرایه به object چیه؟
 
-      می‌تونیم با استفاده از عملگر spread(...) یه آرایه رو به یه آبجکت با همون داده تبدیل کنیم.
+     می‌تونیم با استفاده از عملگر spread(...) یه آرایه رو به یه آبجکت با همون داده تبدیل کنیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var fruits = ["banana", "apple", "orange", "watermelon"];
-      var fruitsObject = { ...fruits };
-      console.log(fruitsObject); // {0: "banana", 1: "apple", 2: "orange", 3: "watermelon"}
-      ```
+     ```javascript
+     var fruits = ["banana", "apple", "orange", "watermelon"];
+     var fruitsObject = {...fruits};
+     console.log(fruitsObject); // {0: "banana", 1: "apple", 2: "orange", 3: "watermelon"}
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-367.  ### چطوری یه آرایه با یه سری داده درست کنیم؟
+367. ### چطوری یه آرایه با یه سری داده درست کنیم؟
 
-      می‌تونیم با استفاده از روش ‍`fill` یه آرایه با مقداری داده یا یه آرایه با همون مقادیر ایجاد کنین.
+     می‌تونیم با استفاده از روش ‍`fill` یه آرایه با مقداری داده یا یه آرایه با همون مقادیر ایجاد کنین.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var newArray = new Array(5).fill("0");
-      console.log(newArray); // ["0", "0", "0", "0", "0"]
-      ```
+     ```javascript
+     var newArray = new Array(5).fill("0");
+     console.log(newArray); // ["0", "0", "0", "0", "0"]
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-368.  ### متغیرهای موجود روی آبجکت console کدوما هستن؟
+368. ### متغیرهای موجود روی آبجکت console کدوما هستن؟
 
-      1. %o - یه آبجکت رو می‌گیرد،
-      2. %s - یه رشته می‌گیره،
-      3. %d - برای اعشار یا عدد صحیح استفاده می‌شه
-         این متغیرها رو می‌شه توی console.log به صورت زیر نشون داد
+     1. %o - یه آبجکت رو می‌گیرد،
+     2. %s - یه رشته می‌گیره،
+     3. %d - برای اعشار یا عدد صحیح استفاده می‌شه
+      این متغیرها رو می‌شه توی console.log به صورت زیر نشون داد
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const user = { name: "John", id: 1, city: "Delhi" };
-      console.log(
-        "Hello %s, your details %o are available in the object form",
-        "John",
-        user
-      ); // Hello John, your details {name: "John", id: 1, city: "Delhi"} are available in object
-      ```
+     ```javascript
+     const user = { "name":"John", "id": 1, "city": "Delhi"};
+     console.log("Hello %s, your details %o are available in the object form", "John", user); // Hello John, your details {name: "John", id: 1, city: "Delhi"} are available in object
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-369.  ### می‌شه پیام‌های کنسول رو استایل‌دهی کرد؟
+369. ### می‌شه پیام‌های کنسول رو استایل‌دهی کرد؟
 
-      بله، می‌تونیم سبک‌های CSS رو برای پیام‌های کنسول مشابه متن html در صفحه وب اعمال کنیم.
+     بله، می‌تونیم سبک‌های CSS رو برای پیام‌های کنسول مشابه متن html در صفحه وب اعمال کنیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      console.log(
-        "%c The text has blue color, with large font and red background",
-        "color: blue; font-size: x-large; background: red"
-      );
-      ```
+     ```javascript
+     console.log('%c The text has blue color, with large font and red background', 'color: blue; font-size: x-large; background: red');
+     ```
 
-      </span>
+     </span>
 
-      متن به صورت زیر نمایش داده می‌شه
-      ![Screenshot](images/console-css.png)
+     متن به صورت زیر نمایش داده می‌شه
+     ![Screenshot](images/console-css.png)
 
-      **نکته:** تمام سبک‌های CSS رو می‌شه برای پیام‌های کنسول اعمال کرد.
+     **نکته:** تمام سبک‌های CSS رو می‌شه برای پیام‌های کنسول اعمال کرد.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-370.  ### هدف از متد dir روی آبجکت console چیه؟
+370. ### هدف از متد dir روی آبجکت console چیه؟
 
-      ‍`console.dir` برای نمایش یه لیست تعاملی از ویژگی‌های آبجکت جاواسکریپت مشخص شده به عنوان JSON استفاده می‌شه.
+     ‍`console.dir` برای نمایش یه لیست تعاملی از ویژگی‌های آبجکت جاواسکریپت مشخص شده به عنوان JSON استفاده می‌شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const user = { name: "John", id: 1, city: "Delhi" };
-      console.dir(user);
-      ```
+     ```javascript
+     const user = { "name":"John", "id": 1, "city": "Delhi"};
+     console.dir(user);
+     ```
 
-      </span>
+     </span>
 
-      آبجکت user نمایش داده شده توی حالت JSON
-      ![Screenshot](images/console-dir.png)
+     آبجکت user نمایش داده شده توی حالت JSON
+     ![Screenshot](images/console-dir.png)
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-371.  ### آیا می‌شه المنت‌های HTML رو توی console دیباگ کرد؟
+371. ### آیا می‌شه المنت‌های HTML رو توی console دیباگ کرد؟
 
-      بله، دریافت و اشکال زدایی عناصر HTML توی کنسول، درست مثل بررسی عناصر، امکان پذیره.
+     بله، دریافت و اشکال زدایی عناصر HTML توی کنسول، درست مثل بررسی عناصر، امکان پذیره.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const element = document.getElementsByTagName("body")[0];
-      console.log(element);
-      ```
+     ```javascript
+     const element = document.getElementsByTagName("body")[0];
+     console.log(element);
+     ```
 
-      </span>
+     </span>
 
-      این عنصر HTML رو توی کنسول چاپ می‌کنه،
+     این عنصر HTML رو توی کنسول چاپ می‌کنه،
 
-      ![Screenshot](images/console-html.png)
+     ![Screenshot](images/console-html.png)
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-372.  ### چطوری می‌شه داده‌ها رو به شکل جدولی توی console نمایش بدیم؟
+372. ### چطوری می‌شه داده‌ها رو به شکل جدولی توی console نمایش بدیم؟
 
-      `console.table` برای نمایش داده‌ها توی کنسول توی یه قالب جدولی برای تجسم آرایه‌ها یا آبجکت های پیچیده استفاده می‌شه.
+     `console.table` برای نمایش داده‌ها توی کنسول توی یه قالب جدولی برای تجسم آرایه‌ها یا آبجکت های پیچیده استفاده می‌شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```js
-      const users = [
-        { name: "John", id: 1, city: "Delhi" },
-        { name: "Max", id: 2, city: "London" },
-        { name: "Rod", id: 3, city: "Paris" },
-      ];
-      console.table(users);
-      ```
+     ```js
+     const users = [{ "name":"John", "id": 1, "city": "Delhi"}, { "name":"Max", "id": 2, "city": "London"}, { "name":"Rod", "id": 3, "city": "Paris"} ];
+     console.table(users);
+     ```
 
-      </span>
+     </span>
 
-      داده‌هایی که در قالب جدول مشاهده می‌شن،
+     داده‌هایی که در قالب جدول مشاهده می‌شن،
 
-      ![Screenshot](images/console-table.png)
+     ![Screenshot](images/console-table.png)
 
-      **نکته:** یادتون باشه `console.table` توی مرورگر IE پشتیبانی نمی‌شه :-/
+     **نکته:** یادتون باشه `console.table` توی مرورگر IE پشتیبانی نمی‌شه :-/
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-373.  ### چطوری می‌شه بررسی کرد که یه پارامتر Number هست یا نه؟
+373. ### چطوری می‌شه بررسی کرد که یه پارامتر Number هست یا نه؟
 
-      ترکیبی از روش‌های IsNaN و isFinite برای تأیید عدد بودن یا نبودن آرگومان استفاده می‌شه.
+     ترکیبی از روش‌های IsNaN و isFinite برای تأیید عدد بودن یا نبودن آرگومان استفاده می‌شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function isNumber(n) {
-        return !isNaN(parseFloat(n)) && isFinite(n);
-      }
-      ```
+     ```javascript
+     function isNumber(n){
+         return !isNaN(parseFloat(n)) && isFinite(n);
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-374.  ### چطوری یه متن رو می‌تونیم به clipboard کپی کنیم؟
+374. ### چطوری یه متن رو می‌تونیم به clipboard کپی کنیم؟
 
-      ما باید محتوا (با استفاده از روش .select) عنصر ورودی رو انتخاب کنیم و دستور copy رو با execCommand اجرا کنیم (یعنی execCommand('copy')). همچنین می‌تونیم سایر دستورات سیستم مثل cut و paste رو اجرا کنیم.
+     ما باید محتوا (با استفاده از روش .select) عنصر ورودی رو انتخاب کنیم و دستور copy رو با execCommand اجرا کنیم (یعنی execCommand('copy')). همچنین می‌تونیم سایر دستورات سیستم مثل cut و paste رو اجرا کنیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      document.querySelector("#copy-button").onclick = function () {
-        // Select the content
-        document.querySelector("#copy-input").select();
-        // Copy to the clipboard
-        document.execCommand("copy");
-      };
-      ```
+     ```javascript
+     document.querySelector("#copy-button").onclick = function() {
+       // Select the content
+       document.querySelector("#copy-input").select();
+       // Copy to the clipboard
+       document.execCommand('copy');
+     };
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-375.  ### چطوری می‌شه timestamp رو بدست آورد؟
+375. ### چطوری می‌شه timestamp رو بدست آورد؟
 
-      می‌تونیم از `‍Date.getTime` برای دریافت مهر زمانی فعلی استفاده کنیم. یه میانبر جایگزین برای دریافت مقدار وجود داره.
+     می‌تونیم از `‍Date.getTime` برای دریافت مهر زمانی فعلی استفاده کنیم. یه میانبر جایگزین برای دریافت مقدار وجود داره.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      console.log(+new Date());
-      console.log(Date.now());
-      ```
+     ```javascript
+     console.log(+new Date());
+     console.log(Date.now());
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-376.  ### چطوری یه آرایه چندسطحی رو تک سطحی کنیم؟
+376. ### چطوری یه آرایه چندسطحی رو تک سطحی کنیم؟
 
-      مسطح کردن آرایه‌های دو بعدی با عملگر Spread کاربرد نداره.
+     مسطح کردن آرایه‌های دو بعدی با عملگر Spread کاربرد نداره.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const biDimensionalArr = [11, [22, 33], [44, 55], [66, 77], 88, 99];
-      const flattenArr = [].concat(...biDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
-      ```
+     ```javascript
+     const biDimensionalArr = [11, [22, 33], [44, 55], [66, 77], 88, 99];
+     const flattenArr = [].concat(...biDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
+     ```
 
-      </span>
+     </span>
 
-      اما ما می‌تونیم اونو با آرایه‌های چند بعدی با فراخوانی‌های `recursive` کال کنیم:
+     اما ما می‌تونیم اونو با آرایه‌های چند بعدی با فراخوانی‌های `recursive` کال کنیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function flattenMultiArray(arr) {
-        const flattened = [].concat(...arr);
-        return flattened.some((item) => Array.isArray(item))
-          ? flattenMultiArray(flattened)
-          : flattened;
-      }
-      const multiDimensionalArr = [
-        11,
-        [22, 33],
-        [44, [55, 66, [77, [88]], 99]],
-      ];
-      const flatArr = flattenMultiArray(multiDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
-      ```
+     ```javascript
+     function flattenMultiArray(arr) {
+         const flattened = [].concat(...arr);
+         return flattened.some(item => Array.isArray(item)) ? flattenMultiArray(flattened) : flattened;
+     }
+     const multiDimensionalArr = [11, [22, 33], [44, [55, 66, [77, [88]], 99]]];
+     const flatArr = flattenMultiArray(multiDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-377.  ### ساده‌ترین روش برای بررسی چندشرطی چیه؟
+377. ### ساده‌ترین روش برای بررسی چندشرطی چیه؟
 
-      می‌تونین از ‍`indexOf`» برای مقایسه ورودی با چندین مقدار به جای بررسی هر مقدار به عنوان یه شرط استفاده کنین.
+     می‌تونین از ‍`indexOf`» برای مقایسه ورودی با چندین مقدار به جای بررسی هر مقدار به عنوان یه شرط استفاده کنین.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      // Verbose approach
-      if (
-        input === "first" ||
-        input === 1 ||
-        input === "second" ||
-        input === 2
-      ) {
-        someFunction();
-      }
-      // Shortcut
-      if (["first", 1, "second", 2].indexOf(input) !== -1) {
-        someFunction();
-      }
-      ```
+     ```javascript
+     // Verbose approach
+     if (input === 'first' || input === 1 || input === 'second' || input === 2) {
+       someFunction();
+     }
+     // Shortcut
+     if (['first', 1, 'second', 2].indexOf(input) !== -1) {
+       someFunction();
+     }
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-378.  ### چطوری کلیک روی دکمه برگشت مرورگر رو متوجه بشیم؟
+378. ### چطوری کلیک روی دکمه برگشت مرورگر رو متوجه بشیم؟
 
-      روش `window.onbeforeunload` برای ضبط رویدادهای دکمه بازگشت مرورگر استفاده می‌شه. این برای هشدار دادن به کاربرها در مورد از دست دادن داده‌های فعلی میتونه استفاده. syntax تعریف کردنش به صورت زیر هست:
+     روش `window.onbeforeunload` برای ضبط رویدادهای دکمه بازگشت مرورگر استفاده می‌شه. این برای هشدار دادن به کاربرها در مورد از دست دادن داده‌های فعلی میتونه استفاده. syntax تعریف کردنش به صورت زیر هست:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      window.onbeforeunload = function () {
-        alert("You work will be lost");
-      };
-      ```
+     ```javascript
+     window.onbeforeunload = function() {
+         alert("You work will be lost");
+     };
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-379.  ### چطوری می‌تونیم کلیک راست رو غیرفعال کنیم؟
+379. ### چطوری می‌تونیم کلیک راست رو غیرفعال کنیم؟
 
-      کلیک راست روی صفحه رو می‌شه با برگردوندن false از ویژگی ‍`oncontextmenu` در تگ body غیرفعال کرد.
+     کلیک راست روی صفحه رو می‌شه با برگردوندن false از ویژگی ‍`oncontextmenu` در تگ body غیرفعال کرد.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```html
-      <body oncontextmenu="return false;"></body>
-      ```
+     ```html
+     <body oncontextmenu="return false;">
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-380.  ### object-wrapperها چی هستن؟
+380. ### object-wrapperها چی هستن؟
 
-      مقادیر اولیه مانند رشته، عدد و بولین پراپرتی و متدی ندارن، اما زمانی که می‌خوایم کارهایی رو روی اونا انجام بدیم، به طور موقت به یه آبجکت (آبجکت Wrapper) تبدیل می‌شن. برای مثال، اگه متد UpperCase رو روی یه مقدار رشته اولیه اعمال کنین خطایی ایجاد نمی‌کنه، اما حروف بزرگ رشته رو برمی‌گردونه.
+     مقادیر اولیه مانند رشته، عدد و بولین پراپرتی و متدی ندارن، اما زمانی که می‌خوایم کارهایی رو روی اونا انجام بدیم، به طور موقت به یه آبجکت (آبجکت Wrapper) تبدیل می‌شن. برای مثال، اگه متد UpperCase رو روی یه مقدار رشته اولیه اعمال کنین خطایی ایجاد نمی‌کنه، اما حروف بزرگ رشته رو برمی‌گردونه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      let name = "john";
+     ```javascript
+     let name = "john";
 
-      console.log(name.toUpperCase()); // Behind the scenes treated as console.log(new String(name).toUpperCase());
-      ```
+     console.log(name.toUpperCase());  // Behind the scenes treated as console.log(new String(name).toUpperCase());
+     ```
 
-      </span>
+     </span>
 
-      یعنی هر اولیه به جز null و undefined دارای Wrapper Object هس و لیست اشیاء wrapper عبارتند از String، Number، Boolean، Symbol و BigInt.
+     یعنی هر اولیه به جز null و undefined دارای Wrapper Object هس و لیست اشیاء wrapper عبارتند از String، Number، Boolean، Symbol و BigInt.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-381.  ### AJAX چیه؟
+381. ### AJAX چیه؟
 
-      `AJAX` مخفف `Asynchronous JavaScript XML` هس و گروهی از فناوری‌های مرتبط (HTML، CSS، JavaScript، XMLHttpRequest API و غیره) که برای نمایش داده‌ها به صورت ناهمزمان استفاده می‌شه. یعنی ما می‌تونیم داده‌ها رو به سرور ارسال کنیم و بدون بارگیری مجدد صفحه وب، داده‌ها رو از سرور دریافت کنیم.
+     `AJAX` مخفف `Asynchronous JavaScript XML` هس و گروهی از فناوری‌های مرتبط (HTML، CSS، JavaScript، XMLHttpRequest API و غیره) که برای نمایش داده‌ها به صورت ناهمزمان استفاده می‌شه. یعنی ما می‌تونیم داده‌ها رو به سرور ارسال کنیم و بدون بارگیری مجدد صفحه وب، داده‌ها رو از سرور دریافت کنیم.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-382.  ### روش‌های مختلف مدیریت یه کد Asynchronous چیه؟
+382. ### روش‌های مختلف مدیریت یه کد Asynchronous چیه؟
 
-      1. callback‌ها
-      2. promise‌ها
-      3. Async/await
-      4. کتابخونه‌های شخص ثالث مانند async.js، bluebird و غیره
+     1. callback ‌ها
+     2. Promise ها
+     3. Async/await
+     4. کتابخونه‌های شخص ثالث مانند async.js، bluebird و غیره
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-383.  ### چطوری یه درخواست fetch رو کنسل کنیم؟
+383. ### چطوری یه درخواست fetch رو کنسل کنیم؟
 
-      یکی از ضعف Promise ها اینه که native راه مستقیمی برای لغو درخواست fetch نیست. اما `AbortController` جدید از مشخصات js به شما امکان میده از سیگنالی برای لغو یه یا چند درخواست fetch استفاده کنین.
-      جریان اصلی لغو یه درخواست fetch اینجوری می‌شه.
+     یکی از ضعف Promise ها اینه که native راه مستقیمی برای لغو درخواست fetch نیست. اما `AbortController` جدید از مشخصات js به شما امکان میده از سیگنالی برای لغو یه یا چند درخواست fetch استفاده کنین.
+     جریان اصلی لغو یه درخواست fetch اینجوری می‌شه.
 
-      1. یه کلاس ‍`AbortControlle` ایجاد کنین
-      2. ویژگی سیگنال اون آبجکت ساخته شده رو دریافت کنین و سیگنال رو به عنوان یه option به متد fetch ارسال کنین
-      3. برای لغو تمام fetch‌هایی که از اون سیگنال استفاده می‌کنن با ویژگی abort از AbortController رو فراخوانی کنین.
-         برای مثال، بیاین یه سیگنال رو به چندین درخواست fetch ارسال کنیم، همه درخواست‌ها بااون سیگنال لغو میشن.
+     1. یه کلاس ‍`AbortControlle` ایجاد کنین
+     2. ویژگی سیگنال اون آبجکت ساخته شده رو دریافت کنین و سیگنال رو به عنوان یه option به متد fetch ارسال کنین
+     3. برای لغو تمام fetch‌هایی که از اون سیگنال استفاده می‌کنن با ویژگی abort از AbortController رو فراخوانی کنین.
+     برای مثال، بیاین یه سیگنال رو به چندین درخواست fetch ارسال کنیم، همه درخواست‌ها بااون سیگنال لغو میشن.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const controller = new AbortController();
-      const { signal } = controller;
+     ```javascript
+     const controller = new AbortController();
+     const { signal } = controller;
 
-      fetch("http://localhost:8000", { signal })
-        .then((response) => {
-          console.log(`Request 1 is complete!`);
-        })
-        .catch((e) => {
-          if (e.name === "AbortError") {
-            // We know it's been canceled!
-          }
-        });
+     fetch("http://localhost:8000", { signal }).then(response => {
+        console.log(`Request 1 is complete!`);
+     }).catch(e => {
+         if(e.name === "AbortError") {
+             // We know it's been canceled!
+         }
+     });
 
-      fetch("http://localhost:8000", { signal })
-        .then((response) => {
-          console.log(`Request 2 is complete!`);
-        })
-        .catch((e) => {
-          if (e.name === "AbortError") {
-            // We know it's been canceled!
-          }
-        });
+     fetch("http://localhost:8000", { signal }).then(response => {
+         console.log(`Request 2 is complete!`);
+     }).catch(e => {
+         if(e.name === "AbortError") {
+             // We know it's been canceled!
+         }
+     });
 
-      // Wait 2 seconds to abort both requests
-      setTimeout(() => controller.abort(), 2000);
-      ```
+     // Wait 2 seconds to abort both requests
+     setTimeout(() => controller.abort(), 2000);
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-384.  ### Speech-API چیه؟
+384. ### Speech-API چیه؟
 
-      API گفتار وب برای فعال کردن مرورگرهای مدرن برای شناسایی و ترکیب گفتار (یعنی داده‌های صوتی در برنامه‌های وب) استفاده می‌شه. این API توسط انجمن W3C در سال 2012 معرفی شد و دارای دو بخش اصلیه.
+     API گفتار وب برای فعال کردن مرورگرهای مدرن برای شناسایی و ترکیب گفتار (یعنی داده‌های صوتی در برنامه‌های وب) استفاده می‌شه. این API توسط انجمن W3C در سال 2012 معرفی شد و دارای دو بخش اصلیه.
+     1. **تشخیص گفتار (تشخیص گفتار ناهمزمان یا گفتار به متن):** این امکان رو فراهم می‌کنه که زمینه صدا رو از ورودی صوتی تشخیص داده و به اون پاسخ بدین. این توسط رابط "SpeechRecognition" قابل دسترسیه.
+      مثال زیر نحوه استفاده از این API برای دریافت متن از گفتار رو نشون میده.
 
-      1. **تشخیص گفتار (تشخیص گفتار ناهمزمان یا گفتار به متن):** این امکان رو فراهم می‌کنه که زمینه صدا رو از ورودی صوتی تشخیص داده و به اون پاسخ بدین. این توسط رابط "SpeechRecognition" قابل دسترسیه.
-         مثال زیر نحوه استفاده از این API برای دریافت متن از گفتار رو نشون میده.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;  // webkitSpeechRecognition for Chrome and SpeechRecognition for FF
+     const recognition = new window.SpeechRecognition();
+     recognition.onresult = (event) => { // SpeechRecognitionEvent type
+       const speechToText = event.results[0][0].transcript;
+       console.log(speechToText);
+     }
+     recognition.start();
+     ```
 
-      ```javascript
-      window.SpeechRecognition =
-        window.webkitSpeechRecognition || window.SpeechRecognition; // webkitSpeechRecognition for Chrome and SpeechRecognition for FF
-      const recognition = new window.SpeechRecognition();
-      recognition.onresult = (event) => {
-        // SpeechRecognitionEvent type
-        const speechToText = event.results[0][0].transcript;
-        console.log(speechToText);
-      };
-      recognition.start();
-      ```
+     </span>
 
-      </span>
-
-      در این API، مرورگر برای استفاده از میکروفون شما از شما اجازه می خواهد 2. **SpeechSynthesis (Text-to-Speech):** این امکان رو فراهم می‌کنه تا زمینه صدا رو از ورودی صوتی تشخیص داده و پاسخ بده. این توسط رابط "SpeechSynthesis" قابل دسترسیه.
+     در این API، مرورگر برای استفاده از میکروفون شما از شما اجازه می خواهد
+     2. **SpeechSynthesis (Text-to-Speech):** این امکان رو فراهم می‌کنه تا زمینه صدا رو از ورودی صوتی تشخیص داده و پاسخ بده. این توسط رابط "SpeechSynthesis" قابل دسترسیه.
       برای مثال، کد زیر برای دریافت صدا/گفتار از متن استفاده می‌شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      if ("speechSynthesis" in window) {
-        const speech = new SpeechSynthesisUtterance("Hello World!");
-        speech.lang = "en-US";
-        window.speechSynthesis.speak(speech);
-      }
-      ```
+     ```javascript
+     if('speechSynthesis' in window){
+         const speech = new SpeechSynthesisUtterance('Hello World!');
+         speech.lang = 'en-US';
+         window.speechSynthesis.speak(speech);
+     }
+     ```
 
-      </span>
+     </span>
 
-      نمونه‌های بالا رو می‌شه روی کنسول برنامه‌نویس مرورگر کروم (33+) آزمایش کرد.
+     نمونه‌های بالا رو می‌شه روی کنسول برنامه‌نویس مرورگر کروم (33+) آزمایش کرد.
       **توجه:** این API هنوز یه پیش نویس فعاله و فقط در مرورگرهای کروم و فایرفاکس وجود داره (البته کروم فقط مشخصات رو اجرا می‌کنه)
+     
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+385. ### حداقل timeout توی throttling چقدره؟
 
-385.  ### حداقل timeout توی throttling چقدره؟
-
-      هم مرورگر و هم محیط‌های جاواسکریپت NodeJS با حداقل تاخیری که بیشتر از 0 میلی ثانیه اس throttles رو انجام می دن. یعنی حتی اگه تنظیم یه تاخیر 0ms به طور آنی اتفاق نیوفته.
+     هم مرورگر و هم محیط‌های جاواسکریپت NodeJS با حداقل تاخیری که بیشتر از 0 میلی ثانیه اس throttles رو انجام می دن. یعنی حتی اگه تنظیم یه تاخیر 0ms به طور آنی اتفاق نیوفته.
       **مرورگرها:** حداقل 4 میلی ثانیه تاخیر دارن. این throttles زمانی اتفاق میوفته که تماس‌های متوالی به دلیل تودرتوی Callback (عمق معین) یا پس از تعداد معینی فواصل متوالی آغاز شه.
       توجه: مرورگرهای قدیمی حداقل 10 میلی ثانیه تاخیر دارن.
       **Nodejs:** حداقل 1ms تاخیر دارن. این throttles زمانی اتفاق میوفته که تاخیر بزرگتر از 2147483647 یا کمتر از 1 باشه.
       بهترین مثال برای توضیح این رفتار throttling وقفه، ترتیب قطعه کد.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function runMeFirst() {
-        console.log("My script is initialized");
-      }
-      setTimeout(runMeFirst, 0);
-      console.log("Script loaded");
-      ```
+     ```javascript
+     function runMeFirst() {
+         console.log('My script is initialized');
+     }
+     setTimeout(runMeFirst, 0);
+     console.log('Script loaded');
+     ```
 
-      </span>
+     </span>
 
-      و خروجی
+     و خروجی
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```cmd
-      Script loaded
-      My script is initialized
-      ```
+     ```cmd
+     Script loaded
+     My script is initialized
+     ```
 
-      </span>
+     </span>
 
-      اگه از «setTimeout» استفاده نمی‌کنین ترتیب گزارش‌ها این شکلی می‌شه.
+     اگه از «setTimeout» استفاده نمی‌کنین ترتیب گزارش‌ها این شکلی می‌شه.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      function runMeFirst() {
-        console.log("My script is initialized");
-      }
-      runMeFirst();
-      console.log("Script loaded");
-      ```
+     ```javascript
+     function runMeFirst() {
+        console.log('My script is initialized');
+     }
+     runMeFirst();
+     console.log('Script loaded');
+     ```
 
-      </span>
+     </span>
 
-      و خروجی
+     و خروجی
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```cmd
-      My script is initialized
-      Script loaded
-      ```
+     ```cmd
+     My script is initialized
+     Script loaded
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-386.  ### چطوری می‌شه یه timeout صفر توی مرورگر اجرا کرد؟
+386. ### چطوری می‌شه یه timeout صفر توی مرورگر اجرا کرد؟
 
-      به دلیل حداقل تاخیر بیش از 0 میلی ثانیه، نمی‌تونین از setTimeout(fn, 0) برای اجرای فوری کد استفاده کنین. اما برای دستیابی به این رفتار می‌تونین از window.postMessage() استفاده کنین.
+     به دلیل حداقل تاخیر بیش از 0 میلی ثانیه، نمی‌تونین از setTimeout(fn, 0) برای اجرای فوری کد استفاده کنین. اما برای دستیابی به این رفتار می‌تونین از window.postMessage() استفاده کنین.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-387.  ### taskها توی event-loop چی هستن؟
+387. ### taskها توی event-loop چی هستن؟
 
-      وظیفه هر کد/برنامه جاواسکریپتیه که قراره توسط مکانیسم‌های استانداره اجرا شه، مثل شروع اولیه اجرای یه برنامه، اجرای یه رویداد، callback یا یه بازه زمانی یا وقفه در حال اجرا. همه این وظایف تو یه صف کار برنامه ریزی میشن
-      موارد استفاده برای افزودن وظایف به صف کار اینا هستن.
+     وظیفه هر کد/برنامه جاواسکریپتیه که قراره توسط مکانیسم‌های استانداره اجرا شه، مثل شروع اولیه اجرای یه برنامه، اجرای یه رویداد، callback یا یه بازه زمانی یا وقفه در حال اجرا. همه این وظایف تو یه صف کار برنامه ریزی میشن
+     موارد استفاده برای افزودن وظایف به صف کار اینا هستن.
+     1. موقعی که یه برنامه جاواسکریپت جدید مستقیماً از کنسول اجرا می‌شه یا توسط عنصر ```<script>``` اجرا می‌شه، وظیفه به صف کار اضافه می‌شه.
+     2. موقعی که یه رویداد فراخونی میشه، callback رویداد به صف کار اضافه می‌شه
+     3. وقتی به یه setTimeout یا setInterval رسید، callback مربوطه به صف کار اضافه می‌شه
 
-      1. موقعی که یه برنامه جاواسکریپت جدید مستقیماً از کنسول اجرا می‌شه یا توسط عنصر `<script>` اجرا می‌شه، وظیفه به صف کار اضافه می‌شه.
-      2. موقعی که یه رویداد فراخونی میشه، callback رویداد به صف کار اضافه می‌شه
-      3. وقتی به یه setTimeout یا setInterval رسید، callback مربوطه به صف کار اضافه می‌شه
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+388. ### microtaskها چی هستن؟
 
-388.  ### microtaskها چی هستن؟
+     Microtask کد جاواسکریپت‌ـه که باید بلافاصله پس از تکمیل task/Microtask در حال اجرا اجرا شه. اونا در واقع به نوعی مسدود کننده هستن. یعنی تا زمانی که صف microtask خالی نشه، رشته اصلی مسدود می‌شه.
+     منابع اصلی Microtaskها عبارتند از Promise.resolve، Promise.reject، MutationObservers، IntersectionObservers و غیره.
 
-      Microtask کد جاواسکریپت‌ـه که باید بلافاصله پس از تکمیل task/Microtask در حال اجرا اجرا شه. اونا در واقع به نوعی مسدود کننده هستن. یعنی تا زمانی که صف microtask خالی نشه، رشته اصلی مسدود می‌شه.
-      منابع اصلی Microtaskها عبارتند از Promise.resolve، Promise.reject، MutationObservers، IntersectionObservers و غیره.
+     **توجه:** همه این Microtaskها توی همون چرخش event-loop پردازش میشن.
+     
+     **[فهرست](#فهرست)**
 
-      **توجه:** همه این Microtaskها توی همون چرخش event-loop پردازش میشن.
+389. ### event-loopهای مختلف کدوما هستن؟
 
-      **[فهرست](#فهرست)**
+     MainAppLoop - این حلقه اصلی یه برنامه اس. به طور معمول این تو پایین صفحه اصلیه. خروج معمولاً نشون دهنده تمایل به بسته شدن برنامه اس. توی هر برنامه فقط یکی از این موارد می‌تونه وجود داشته باشه. ThreadLoop - این حلقه ایه که معمولاً تو پایین رویه اصلی یه UI Thread یافت می‌شه.
 
-389.  ### event-loopهای مختلف کدوما هستن؟
+     **[فهرست](#فهرست)**
 
-      MainAppLoop - این حلقه اصلی یه برنامه اس. به طور معمول این تو پایین صفحه اصلیه. خروج معمولاً نشون دهنده تمایل به بسته شدن برنامه اس. توی هر برنامه فقط یکی از این موارد می‌تونه وجود داشته باشه. ThreadLoop - این حلقه ایه که معمولاً تو پایین رویه اصلی یه UI Thread یافت می‌شه.
+390. ### هدف از queueMicrotask چیه؟
 
-      **[فهرست](#فهرست)**
+     این به کد شما اجازه میده بدون تداخل با کد دیگه با اولویت بالاتری که در حالت تعلیقه، اجرا بشه اما قبل از اینکه مرورگر کنترل روی زمینه اجرا رو دوباره به دست آورد، بسته به کاری که باید تکمیل کنین.
 
-390.  ### هدف از queueMicrotask چیه؟
+     **[فهرست](#فهرست)**
 
-      این به کد شما اجازه میده بدون تداخل با کد دیگه با اولویت بالاتری که در حالت تعلیقه، اجرا بشه اما قبل از اینکه مرورگر کنترل روی زمینه اجرا رو دوباره به دست آورد، بسته به کاری که باید تکمیل کنین.
+391. ### چطوری می‌شه از کتابخونه‌های جاواسکریپت توی فایل typescript استفاده کرد؟
 
-      **[فهرست](#فهرست)**
+     مشخصه که همه‌ی کتابخونه‌ها یا چارچوب‌های جاواسکریپت دارای فایل‌های اعلان TypeScript نیستن. اما اگه هنوزم می‌خواین از کتابخونه‌ها یا فریم‌ورک‌ها تو فایل‌های TypeScript بدون دریافت خطاهای کامپایل استفاده کنین تنها راه‌حل کلمه کلیدی `declare` به همراه یه اعلان متغیره. برای مثال، بیاین تصور کنیم که شما یه کتابخونه‌ به نام "customLibrary" دارید که اعلان TypeScript نداره و فضای نامی به نام customLibrary توی فضای نام گلوبال داره. می‌تونین از این کتابخونه توی کد تایپ اسکریپت به صورت زیر استفاده کنین.
 
-391.  ### چطوری می‌شه از کتابخونه‌های جاواسکریپت توی فایل typescript استفاده کرد؟
+     <span dir="ltr" align="left">
 
-      مشخصه که همه‌ی کتابخونه‌ها یا چارچوب‌های جاواسکریپت دارای فایل‌های اعلان TypeScript نیستن. اما اگه هنوزم می‌خواین از کتابخونه‌ها یا فریم‌ورک‌ها تو فایل‌های TypeScript بدون دریافت خطاهای کامپایل استفاده کنین تنها راه‌حل کلمه کلیدی `declare` به همراه یه اعلان متغیره. برای مثال، بیاین تصور کنیم که شما یه کتابخونه‌ به نام "customLibrary" دارید که اعلان TypeScript نداره و فضای نامی به نام customLibrary توی فضای نام گلوبال داره. می‌تونین از این کتابخونه توی کد تایپ اسکریپت به صورت زیر استفاده کنین.
+     ```javascript
+     declare var customLibrary;
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      declare var customLibrary;
-      ```
+     در زمان اجرا، تایپ اسکریپت نوع اونو به متغیر `customLibrary` به صورت any ارائه می‌کنه. جایگزین دیگه بدون استفاده از کلمه کلیدی declare رو تو مثال زیر ببینیم:
 
-      </span>
+     <span dir="ltr" align="left">
 
-      در زمان اجرا، تایپ اسکریپت نوع اونو به متغیر `customLibrary` به صورت any ارائه می‌کنه. جایگزین دیگه بدون استفاده از کلمه کلیدی declare رو تو مثال زیر ببینیم:
+     ```javascript
+     var customLibrary: any;
+     ```
 
-      <span dir="ltr" align="left">
+     </span>
 
-      ```javascript
-      var customLibrary: any;
-      ```
+     **[فهرست](#فهرست)**
 
-      </span>
+392. ### تفاوت‌های بین promiseها و observableها کدوما هستن؟
 
-      **[فهرست](#فهرست)**
 
-392.  ### تفاوت‌های بین promiseها و observableها کدوما هستن؟
+      | promise‌ها | observableها |
+      |---- | --------- |
+      | فقط یه مقدار رو تو یه زمان منتشر می‌کنه | چندین مقدار رو تو یه دوره زمانی منتشر می‌کنه (جریان مقادیری از 0 تا چندگانه) |
+      | قراره فوراً فراخوانی شن | اونا برای فراخوانی نیاز به اشتراک دارن |
+      | Promise همی‌شه ناهمزمانه حتی اگه بلافاصله حل شه | observableها میتونن همزمان یا ناهمزمان|
+      | هیچ اپراتور ارائه نمیده | اپراتورهایی مانند map، forEach، filter، reduce، retry و retryWhen و غیره رو ارائه میده.
+      | قابل لغو نیست | با استفاده از روش unsubscribe لغو میشن
 
-      | promise‌ها                                      | observableها                                                                            |
-      | ----------------------------------------------- | --------------------------------------------------------------------------------------- |
-      | فقط یه مقدار رو تو یه زمان منتشر می‌کنه         | چندین مقدار رو تو یه دوره زمانی منتشر می‌کنه (جریان مقادیری از 0 تا چندگانه)            |
-      | قراره فوراً فراخوانی شن                         | اونا برای فراخوانی نیاز به اشتراک دارن                                                  |
-      | Promise همی‌شه ناهمزمانه حتی اگه بلافاصله حل شه | observableها میتونن همزمان یا ناهمزمان                                                  |
-      | هیچ اپراتور ارائه نمیده                         | اپراتورهایی مانند map، forEach، filter، reduce، retry و retryWhen و غیره رو ارائه میده. |
-      | قابل لغو نیست                                   | با استفاده از روش unsubscribe لغو میشن                                                  |
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+393. ### heap چیه؟
 
-393.  ### heap چیه؟
+     Heap (یا memory heap) محلیه که تو اون آبجکت‌ها موقع تعریف متغیرها ذخیره میشن یعنی این محلیه که تمام تخصیص حافظه و عدم تخصیص تو اون انجام می‌شه. هر دو heap و call-stack دو ظرف زمان اجرا JS هستن.
+     هر زمان که زمان اجرا با متغیرها و اعلان‌های تابع در کد مواجه می‌شه، اونا رو توی Heap ذخیره می‌کنه.
 
-      Heap (یا memory heap) محلیه که تو اون آبجکت‌ها موقع تعریف متغیرها ذخیره میشن یعنی این محلیه که تمام تخصیص حافظه و عدم تخصیص تو اون انجام می‌شه. هر دو heap و call-stack دو ظرف زمان اجرا JS هستن.
-      هر زمان که زمان اجرا با متغیرها و اعلان‌های تابع در کد مواجه می‌شه، اونا رو توی Heap ذخیره می‌کنه.
+     ![Screenshot](images/heap.png)
 
-      ![Screenshot](images/heap.png)
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+394. ### event-table چیه؟
 
-394.  ### event-table چیه؟
+     `Event-Table` یه ساختار داده‌ای‌ـه که تمام رویدادهایی رو که به صورت ناهمزمان اجرا می‌شن، مثل بعد از مدتی فاصله زمانی یا پس از رفع بعضی از درخواست‌های API، ذخیره و ردیابی می‌کنه. یعنی هر زمان که یه تابع setTimeout رو فراخوانی کنین یا عملیات async رو فراخوانی کنین به جدول رویداد اضافه می‌شه.
+     توابع رو به تنهایی اجرا نمی‌کنه. هدف اصلی جدول رویدادها پیگیری رویدادها و فرستادنشون به صف رویداد همونطور که توی نمودار زیر می‌بینیم.
 
-      `Event-Table` یه ساختار داده‌ای‌ـه که تمام رویدادهایی رو که به صورت ناهمزمان اجرا می‌شن، مثل بعد از مدتی فاصله زمانی یا پس از رفع بعضی از درخواست‌های API، ذخیره و ردیابی می‌کنه. یعنی هر زمان که یه تابع setTimeout رو فراخوانی کنین یا عملیات async رو فراخوانی کنین به جدول رویداد اضافه می‌شه.
-      توابع رو به تنهایی اجرا نمی‌کنه. هدف اصلی جدول رویدادها پیگیری رویدادها و فرستادنشون به صف رویداد همونطور که توی نمودار زیر می‌بینیم.
+     ![Screenshot](images/event-table.png)
 
-      ![Screenshot](images/event-table.png)
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+395. ### صف microTask چیه؟
 
-395.  ### صف microTask چیه؟
+     Microtask Queue صف جدیدیه که تو اون تمام وظایف آغاز شده توسط آبجکت promise قبل از صف برگشت پردازش میشن
+     صف microtasks قبل از کارهای رندر و نقاشی بعدی پردازش می‌شه. اما اگه این ریزکارها برای مدت طولانی اجرا شن، منجر به مشکل بصری میشن.
 
-      Microtask Queue صف جدیدیه که تو اون تمام وظایف آغاز شده توسط آبجکت promise قبل از صف برگشت پردازش میشن
-      صف microtasks قبل از کارهای رندر و نقاشی بعدی پردازش می‌شه. اما اگه این ریزکارها برای مدت طولانی اجرا شن، منجر به مشکل بصری میشن.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+396. ### تفاوت بین shim و polyfill چیه؟
 
-396.  ### تفاوت بین shim و polyfill چیه؟
-
-      shim کتابخونه ایه که یه API جدید رو با استفاده از ابزارهای اون محیط به یه محیط قدیمی تر میاره. لزوماً محدود به یه برنامه وب نیست. برای مثال، es5-shim.js برای شبیه سازی ویژگی‌های ES5 توی مرورگرهای قدیمی (عمدتا قبل از IE9) استفاده می‌شه.
+     shim کتابخونه ایه که یه API جدید رو با استفاده از ابزارهای اون محیط به یه محیط قدیمی تر میاره. لزوماً محدود به یه برنامه وب نیست. برای مثال، es5-shim.js برای شبیه سازی ویژگی‌های ES5 توی مرورگرهای قدیمی (عمدتا قبل از IE9) استفاده می‌شه.
       در حالی که polyfill یه قطعه کد (یا افزونه) اس که فناوری رو ارائه می‌کنه که شما، توسعه‌دهنده، از مرورگر انتظار دارید که به صورت بومی ارائه کنه.
       تو یه جمله ساده، A polyfill یه shim برای API مرورگره.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-397.  ### چطوری متوجه primitive یا غیر primitive بودن یه نوع داده میشیم؟
+397. ### چطوری متوجه primitive یا غیر primitive بودن یه نوع داده میشیم؟
 
-      در جاواسکریپت، دیتای `primitive` عبارتند از `boolean،` `string،` `number،` `BigInt،` `null،` `Symbol` و `undefined`. در حالی که انواع غیر primitive شامل Object‌ها می‌شه. اما با تابع زیر می‌تونین به راحتی اونا رو شناسایی کنین
+     در جاواسکریپت، دیتای `primitive` عبارتند از `boolean،` `string،` `number،` `BigInt،` `null،` `Symbol` و `undefined`. در حالی که انواع غیر primitive شامل Object‌ها می‌شه. اما با تابع زیر می‌تونین به راحتی اونا رو شناسایی کنین
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const myPrimitive = 30;
-      const myNonPrimitive = {};
-      function isPrimitive(val) {
-        return Object(val) !== val;
-      }
+     ```javascript
+     const myPrimitive = 30;
+     const myNonPrimitive = {};
+     function isPrimitive(val) {
+         return Object(val) !== val;
+     }
 
-      isPrimitive(myPrimitive);
-      isPrimitive(myNonPrimitive);
-      ```
+     isPrimitive(myPrimitive);
+     isPrimitive(myNonPrimitive);
+     ```
 
-      </span>
+     </span>
 
-      اگه مقدار یه نوع داده اولیه باشه، سازنده Object یه آبجکت wrapper جدید برای مقدار ایجاد می‌کنه. اما اگه مقدار یه نوع داده non-primitive (یک آبجکت) باشه، سازنده Object همون آبجکت رو میده.
+     اگه مقدار یه نوع داده اولیه باشه، سازنده Object یه آبجکت wrapper جدید برای مقدار ایجاد می‌کنه. اما اگه مقدار یه نوع داده non-primitive (یک آبجکت) باشه، سازنده Object همون آبجکت رو میده.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-398.  ### babel چیه؟
+398. ### babel چیه؟
 
-      Babel یه ترانسپایلر جاواسکریپت برای تبدیل کد ECMAScript 2015+ به یه نسخه سازگار جاواسکریپت تو مرورگرها یا محیط‌های فعلی و قدیمی تره. که میشه موارد زیر رو درموردش نوشت:
+     Babel یه ترانسپایلر جاواسکریپت برای تبدیل کد ECMAScript 2015+ به یه نسخه سازگار جاواسکریپت تو مرورگرها یا محیط‌های فعلی و قدیمی تره. که میشه موارد زیر رو درموردش نوشت:
+     1.  تبدیل syntax
+     2.  ویژگی‌های Polyfill که در محیط هدف شما وجود نداره (با استفاده از @babel/polyfill)
+     3.  تبدیل کد منبع
 
-      1. تبدیل syntax
-      2. ویژگی‌های Polyfill که در محیط هدف شما وجود نداره (با استفاده از @babel/polyfill)
-      3. تبدیل کد منبع
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-399.  ### آیا Node.js به شکل کامل تک thread کار می‌کنه؟
+399. ### آیا Node.js به شکل کامل تک thread کار می‌کنه؟
 
-      Node یه رشته است، اما بعضی از توابع موجود توی کتابخونه استانداره Node.js (برای مثال، توابع ماژول fs) تک رشته‌ای نیستن. یعنی منطق اونا خارج از رشته Node.js اجرا می‌شه تا سرعت و عملکرد یه برنامه رو بهبود بخشد.
+     Node یه رشته است، اما بعضی از توابع موجود توی کتابخونه استانداره Node.js (برای مثال، توابع ماژول fs) تک رشته‌ای نیستن. یعنی منطق اونا خارج از رشته Node.js اجرا می‌شه تا سرعت و عملکرد یه برنامه رو بهبود بخشد.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-400.  ### کاربردهای مرسوم observableها کدوما هستن؟
+400. ### کاربردهای مرسوم observableها کدوما هستن؟
 
-      بعضی از رایج‌ترین موارد استفاده اش، سوکت‌های وب با اعلان‌های فشار، تغییرات ورودی کاربر، فواصل تکراری و غیره اس.
+     بعضی از رایج‌ترین موارد استفاده اش، سوکت‌های وب با اعلان‌های فشار، تغییرات ورودی کاربر، فواصل تکراری و غیره اس.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-401.  ### RxJS چیه؟
+401. ### RxJS چیه؟
 
-      RxJS (افزونه‌های واکنش‌گرا برای جاواسکریپت) کتابخونه‌ای برای پیاده‌سازی برنامه‌نویسی واکنش‌گرا با استفاده از مشاهده‌پذیره که نوشتن کد ناهمزمان یا مبتنی بر تماس رو آسان‌تر می‌کنه. همچنین توابع کاربردی رو برای ایجاد و کار با مشاهده پذیرها فراهم می‌کنه.
+     RxJS (افزونه‌های واکنش‌گرا برای جاواسکریپت) کتابخونه‌ای برای پیاده‌سازی برنامه‌نویسی واکنش‌گرا با استفاده از مشاهده‌پذیره که نوشتن کد ناهمزمان یا مبتنی بر تماس رو آسان‌تر می‌کنه. همچنین توابع کاربردی رو برای ایجاد و کار با مشاهده پذیرها فراهم می‌کنه.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-402.  ### تفاوت بین Function-constructor و function-declaration چیه؟
+402. ### تفاوت بین Function-constructor و function-declaration چیه؟
 
-      توابعی که با `Function-constructor` ایجاد می‌شن، برای زمینه‌های ایجاد خود بسته ایجاد نمی‌کنن، اما همی‌شه در محدوده جهانی ایجاد میشن یعنی تابع فقط میتونه به متغیرهای محلی خود و متغیرهای دامنه جهانی دسترسی داشته باشه. در حالی که اعلان‌های تابع میتونن به متغیرهای تابع بیرونی (بسته شدن) هم دسترسی داشته باشن.
+     توابعی که با `Function-constructor` ایجاد می‌شن، برای زمینه‌های ایجاد خود بسته ایجاد نمی‌کنن، اما همی‌شه در محدوده جهانی ایجاد میشن یعنی تابع فقط میتونه به متغیرهای محلی خود و متغیرهای دامنه جهانی دسترسی داشته باشه. در حالی که اعلان‌های تابع میتونن به متغیرهای تابع بیرونی (بسته شدن) هم دسترسی داشته باشن.
 
       بیاین این تفاوت رو با یه مثال ببینیم،
 
-      **Function Constructor:**
+     **Function Constructor:**
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var a = 100;
-      function createFunction() {
-        var a = 200;
-        return new Function("return a;");
-      }
-      console.log(createFunction()()); // 100
-      ```
+     ```javascript
+     var a = 100;
+     function createFunction() {
+         var a = 200;
+         return new Function('return a;');
+     }
+     console.log(createFunction()()); // 100
+     ```
 
-      </span>
+     </span>
 
-      **Function declaration:**
+     **Function declaration:**
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var a = 100;
-      function createFunction() {
-        var a = 200;
-        return function func() {
-          return a;
-        };
-      }
-      console.log(createFunction()()); // 200
-      ```
+     ```javascript
+     var a = 100;
+     function createFunction() {
+         var a = 200;
+         return function func() {
+             return a;
+         }
+     }
+     console.log(createFunction()()); // 200
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-403.  ### شرط Short-circuit یا اتصال کوتاه چیه؟
+403. ### شرط Short-circuit یا اتصال کوتاه چیه؟
 
-      شرایط اتصال کوتاه برای روش فشرده نوشتن دستورات if ساده در نظر گرفته شده است. بیاین سناریو رو با استفاده از یه مثال نشون بدیم. اگه می‌خواین وارد پورتالی با شرایط احراز هویت شین، عبارت زیر خواهد بود:
+     شرایط اتصال کوتاه برای روش فشرده نوشتن دستورات if ساده در نظر گرفته شده است. بیاین سناریو رو با استفاده از یه مثال نشون بدیم. اگه می‌خواین وارد پورتالی با شرایط احراز هویت شین، عبارت زیر خواهد بود:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      if (authenticate) {
+     ```javascript
+     if (authenticate) {
         loginToPorta();
-      }
-      ```
+     }
+     ```
 
-      </span>
+     </span>
 
-      از اونجایی که عملگرهای منطقی جاواسکریپت از چپ به راست ارزیابی می شن عبارت بالا رو می‌شه با استفاده از عملگر منطقی && ساده کرد.
+     از اونجایی که عملگرهای منطقی جاواسکریپت از چپ به راست ارزیابی می شن عبارت بالا رو می‌شه با استفاده از عملگر منطقی && ساده کرد.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      authenticate && loginToPorta();
-      ```
+     ```javascript
+     authenticate && loginToPorta();
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-404.  ### ساده‌ترین روش برای تغییر سایز یه آرایه چیه؟
+404. ### ساده‌ترین روش برای تغییر سایز یه آرایه چیه؟
 
-      ویژگی length یه آرایه برای تغییر اندازه یا خالی کردن سریع آرایه اس. بیاین ویژگی length رو روی آرایه اعداد اعمال کنیم تا تعداد عناصر رو از 5 به 2 تغییر بدیم.
+     ویژگی length یه آرایه برای تغییر اندازه یا خالی کردن سریع آرایه اس. بیاین ویژگی length رو روی آرایه اعداد اعمال کنیم تا تعداد عناصر رو از 5 به 2 تغییر بدیم.
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var array = [1, 2, 3, 4, 5];
-      console.log(array.length); // 5
+     ```javascript
+     var array = [1, 2, 3, 4, 5];
+     console.log(array.length); // 5
 
-      array.length = 2;
-      console.log(array.length); // 2
-      console.log(array); // [1,2]
-      ```
+     array.length = 2;
+     console.log(array.length); // 2
+     console.log(array); // [1,2]
+     ```
 
-      </span>
+     </span>
 
-      و آرایه رو هم می‌شه خالی کرد
+     و آرایه رو هم می‌شه خالی کرد
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      var array = [1, 2, 3, 4, 5];
-      array.length = 0;
-      console.log(array.length); // 0
-      console.log(array); // []
-      ```
+     ```javascript
+     var array = [1, 2, 3, 4, 5];
+     array.length = 0;
+     console.log(array.length); // 0
+     console.log(array); // []
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-405.  ### observable چیه؟
+405. ### observable چیه؟
 
-      `Observable` اساساً تابعیه که میتونه جریانی از مقادیر رو به صورت همزمان یا ناهمزمان به یه ناظر در طول زمان برگردونه. مصرف کننده میتونه با فراخوانی متد `subscribe` مقدار رو دریافت کنه.
+     `Observable` اساساً تابعیه که میتونه جریانی از مقادیر رو به صورت همزمان یا ناهمزمان به یه ناظر در طول زمان برگردونه. مصرف کننده میتونه با فراخوانی متد `subscribe` مقدار رو دریافت کنه.
       بیاین به یه مثال ساده از یه Observable نگاه کنیم:
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      import { Observable } from "rxjs";
+     ```javascript
+     import { Observable } from 'rxjs';
 
-      const observable = new Observable((observer) => {
-        setTimeout(() => {
-          observer.next("Message from a Observable!");
-        }, 3000);
-      });
+     const observable = new Observable(observer => {
+       setTimeout(() => {
+         observer.next('Message from a Observable!');
+       }, 3000);
+     });
 
-      observable.subscribe((value) => console.log(value));
-      ```
+     observable.subscribe(value => console.log(value));
+     ```
 
-      </span>
+     </span>
 
-      ![Screenshot](images/observables.png)
+     ![Screenshot](images/observables.png)
 
-      **توجه:** Observableها هنوز بخشی از زبان جاواسکریپت نیستن اما پیشنهاد شده که به زبان اضافه بشن.
+     **توجه:** Observableها هنوز بخشی از زبان جاواسکریپت نیستن اما پیشنهاد شده که به زبان اضافه بشن.
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-406.  ### تفاوت‌های بین توابع و کلاس‌ها چیه؟
+406. ### تفاوت‌های بین توابع و کلاس‌ها چیه؟
 
-      تفاوت اصلی بین اعلان‌های تابع و اعلان‌های کلاس "بالا بردن" هس. اعلان‌های تابع بالا می رن اما اعلان‌های کلاس نه.
+     تفاوت اصلی بین اعلان‌های تابع و اعلان‌های کلاس "بالا بردن" هس. اعلان‌های تابع بالا می رن اما اعلان‌های کلاس نه.
 
-      **Classes:**
+     **Classes:**
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      const user = new User(); // ReferenceError
+     ```javascript
+     const user = new User(); // ReferenceError
 
-      class User {}
-      ```
+     class User {}
+     ```
 
-      </span>
+     </span>
 
-      **Constructor Function:**
+     **Constructor Function:**
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
+     ```javascript
       const user = new User(); // No error
 
-      function User() {}
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-407.  ### تابع async چیه؟
-
-      یه تابع async تابعیه که با کلمه کلیدی `async` اعلام شده که با اجتناب از زنجیره promise رفتار ناهمزمان و مبتنی بر قول به سبک تمیزتری نوشته شه. این توابع میتونن شامل صفر یا بیشتر عبارت `await` باشن.
-
-      بیاین یه مثال تابع همگام زیر رو در نظر بگیریم،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      async function logger() {
-        let data = await fetch("http://someapi.com/users"); // pause until fetch returns
-        console.log(data);
+      function User() {
       }
-      logger();
-      ```
+     ```
 
-      </span>
+     </span>
 
-      این اساساً خوبی نحوی بیش از promise‌ها و توابع جنریتور ES2015 هست.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+407. ### تابع async چیه؟
 
-408.  ### چطوری خطاهای ایجاد شده هنگام استفاده از promiseها رو کنترل کنیم؟
+     یه تابع async تابعیه که با کلمه کلیدی `async` اعلام شده که با اجتناب از زنجیره پرامیس رفتار ناهمزمان و مبتنی بر قول به سبک تمیزتری نوشته شه. این توابع میتونن شامل صفر یا بیشتر عبارت `await` باشن.
 
-      در حین استفاده از کد ناهمزمان، promiseهای ES6 جاواسکریپت میتونن زندگی شما رو بدون داشتن هرم callbackها و مدیریت خطا در هر خط دوم بسیار آسان‌تر کنن. اما Promiseها مشکلاتی دارن و بزرگ‌ترین اونا به‌طور پیش‌فرض بلعیدن خطاهاس.
+     بیاین یه مثال تابع همگام زیر رو در نظر بگیریم،
 
-      فرض کنین انتظار دارین برای تمام موارد زیر یه خطا توی کنسول چاپ بشه.
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     async function logger() {
+
+       let data = await fetch('http://someapi.com/users'); // pause until fetch returns
+       console.log(data)
+     }
+     logger();
+     ```
+
+     </span>
+
+     این اساساً خوبی نحوی بیش از پرامیس‌ها و توابع جنریتور ES2015 هست.
+
+     **[فهرست](#فهرست)**
+
+408. ### چطوری خطاهای ایجاد شده هنگام استفاده از promiseها رو کنترل کنیم؟
+
+     در حین استفاده از کد ناهمزمان، promiseهای ES6 جاواسکریپت میتونن زندگی شما رو بدون داشتن هرم callbackها و مدیریت خطا در هر خط دوم بسیار آسان‌تر کنن. اما Promiseها مشکلاتی دارن و بزرگ‌ترین اونا به‌طور پیش‌فرض بلعیدن خطاهاس.
+
+     فرض کنین انتظار دارین برای تمام موارد زیر یه خطا توی کنسول چاپ بشه.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+      Promise.resolve('promised value').then(function() {
+            throw new Error('error');
+      });
+
+      Promise.reject('error value').catch(function() {
+            throw new Error('error');
+      });
+
+      new Promise(function(resolve, reject) {
+            throw new Error('error');
+      });
+     ```
+
+     </span>
+
+     اما خیلی از محیط‌های جاواسکریپت مدرن وجود دارن که هیچ خطایی رو چاپ نمی‌کنن. شما می‌تونین این مشکل رو به روش‌های مختلف حل کنین
+
+     1. **اضافه کردن یه بلوک catch به اخر هر زنجیره:** ما میتونیم یه بلوک `catch` به أخر زنجیره پرامیس هامون اضافه گنیم
+
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     Promise.resolve('promised value').th    (function() {
+         throw new Error('error');
+     }).catch(function(error) {
+       console.error(error.stack);
+     });
+     ```
+
+     </span>
+
+     اما تایپ کردن برای هر زنجیره پرامیس‌ها و پرمخاطب هم خیلی سخته.
+
+     2. **اضافه کردن متد done:** می‌تونین ابتدا راه حل‌ها رو جایگزین کنین و بعد با روش انجام شده بلوک‌ها رو بگیرید
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     Promise.resolve('promised value').done(function() {
+         throw new Error('error');
+     });
+     ```
+
+     </span>
+
+     فرض کنین می‌خواین داده‌ها رو با استفاده از HTTP fetch کنین و بعداً پردازش داده‌های حاصل رو به صورت ناهمزمان انجام بدین. می‌تونین بلوک done رو به صورت زیر بنویسین.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     getDataFromHttp()
+       .then(function(result) {
+         return processDataAsync(result);
+       })
+       .done(function(processed) {
+         displayData(processed);
+       });
+     ```
+
+     </span>
+
+     در آینده، اگه API کتابخونه پردازش به همگام تغییر کنه، می‌تونین بلوک done رو حذف کنین.
+
+     <span dir="ltr" align="left">
 
       ```javascript
-      Promise.resolve("promised value").then(function () {
-        throw new Error("error");
-      });
-
-      Promise.reject("error value").catch(function () {
-        throw new Error("error");
-      });
-
-      new Promise(function (resolve, reject) {
-        throw new Error("error");
-      });
-      ```
-
-      </span>
-
-      اما خیلی از محیط‌های جاواسکریپت مدرن وجود دارن که هیچ خطایی رو چاپ نمی‌کنن. شما می‌تونین این مشکل رو به روش‌های مختلف حل کنین
-
-      1. **اضافه کردن یه بلوک catch به اخر هر زنجیره:** میتونیم یه بلوک `catch` به أخر زنجیره promiseهامون اضافه کنیم
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      Promise.resolve("promised value")
-        .then(function () {
-          throw new Error("error");
+       getDataFromHttp()
+         .then(function(result) {
+           return displayData(processDataAsyn(result));
         })
-        .catch(function (error) {
-          console.error(error.stack);
-        });
-      ```
-
-      </span>
-
-      اما تایپ کردن برای هر زنجیره promise‌ها و پرمخاطب هم خیلی سخته.
-
-      2. **اضافه کردن متد done:** می‌تونین ابتدا راه حل‌ها رو جایگزین کنین و بعد با روش انجام شده بلوک‌ها رو بگیرید
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      Promise.resolve("promised value").done(function () {
-        throw new Error("error");
-      });
-      ```
-
-      </span>
-
-      فرض کنین می‌خواین داده‌ها رو با استفاده از HTTP fetch کنین و بعداً پردازش داده‌های حاصل رو به صورت ناهمزمان انجام بدین. می‌تونین بلوک done رو به صورت زیر بنویسین.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      getDataFromHttp()
-        .then(function (result) {
-          return processDataAsync(result);
-        })
-        .done(function (processed) {
-          displayData(processed);
-        });
-      ```
-
-      </span>
-
-      در آینده، اگه API کتابخونه پردازش به همگام تغییر کنه، می‌تونین بلوک done رو حذف کنین.
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      getDataFromHttp().then(function (result) {
-        return displayData(processDataAsyn(result));
-      });
-      ```
-
-      </span>
+     ```
+     </span>
 
       سپس فراموش کردین که بلوک «انجام شد» رو به بلوک then اضافه کنین که منجر به خطاهای خاموش می‌شه.
 
-      3. **Extend ES6 Promises by Bluebird:**
+     3. **Extend ES6 Promises by Bluebird:**
 
-         Bluebird-API میاد Promiseهای اکما اسکریپت رو گسترش میده تا در راه حل دوم مشکلی ایجاد نشه. این کتابخونه یه کنترل کننده "پیش فرض" در Rejection هس که تمام خطاها رو از Promises رد شده به stderr چاپ می‌کنه. پس از نصب، می‌تونین ردهای کنترل نشده رو پردازش کنین
+        Bluebird-API میاد Promiseهای اکما اسکریپت رو گسترش میده تا در راه حل دوم مشکلی ایجاد نشه. این کتابخونه یه کنترل کننده "پیش فرض" در Rejection هس که تمام خطاها رو از Promises رد شده به stderr چاپ می‌کنه. پس از نصب، می‌تونین ردهای کنترل نشده رو پردازش کنین
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      Promise.onPossiblyUnhandledRejection(function (error) {
-        throw error;
-      });
-      ```
+     ```javascript
+     Promise.onPossiblyUnhandledRejection(function(error){
+          throw error;
+     });
+     ```
 
-      </span>
+     </span>
 
-      یه reject رو انجام بدین فقط با یه catch خالی اونو مدیریت کنین
+     یه reject رو انجام بدین فقط با یه catch خالی اونو مدیریت کنین
 
-      <span dir="ltr" align="left">
+     <span dir="ltr" align="left">
 
-      ```javascript
-      Promise.reject("error value").catch(function () {});
-      ```
+     ```javascript
+     Promise.reject('error value').catch(function() {});
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
 
-409.  ### Deno چیه؟
+     **[فهرست](#فهرست)**
 
-      Deno یه ران تایم(run-time) ساده، مدرن و ایمن برای جاواسکریپت و تایپ اسکریپته که از موتور جاواسکریپت V8 و زبان برنامه نویسی Rust استفاده می‌کنه و توسط رایان دال، خالق نود جی اس استارت توسعه‌اش زده شده.
+409. ### Deno چیه؟
 
-      **[فهرست](#فهرست)**
+     Deno یه ران تایم(run-time) ساده، مدرن و ایمن برای جاواسکریپت و تایپ اسکریپته که از موتور جاواسکریپت V8 و زبان برنامه نویسی Rust استفاده می‌کنه و توسط رایان دال، خالق نود جی اس استارت توسعه‌اش زده شده.
 
-410.  ### توی جاواسکریپت چطوری یه object قابل پیمایش درست کنیم؟
+     **[فهرست](#فهرست)**
 
-      به طور پیش فرض، آبجکت ها`argument` ساده قابل تکرار نیستن. اما می‌تونین با تعریف ویژگی «Symbol.iterator» روی اون شی رو قابل تکرار کنین.
+410. ### توی جاواسکریپت چطوری یه object قابل پیمایش درست کنیم؟
 
-      بیاین این رو با یه مثال نشون بدیم،
+     به طور پیش فرض، آبجکت ها`argument` ساده قابل تکرار نیستن. اما می‌تونین با تعریف ویژگی «Symbol.iterator» روی اون شی رو قابل تکرار کنین.
 
-      <span dir="ltr" align="left">
+     بیاین این رو با یه مثال نشون بدیم،
 
-      ```javascript
+     <span dir="ltr" align="left">
+
+     ```javascript
+     const collection = {
+       one: 1,
+       two: 2,
+       three: 3,
+       [Symbol.iterator]() {
+         const values = Object.keys(this);
+         let i = 0;
+         return {
+           next: () => {
+             return {
+               value: this[values[i++]],
+               done: i > values.length
+             }
+           }
+         };
+       }
+     };
+
+     const iterator = collection[Symbol.iterator]();
+
+     console.log(iterator.next());    // → {value: 1, done: false}
+     console.log(iterator.next());    // → {value: 2, done: false}
+     console.log(iterator.next());    // → {value: 3, done: false}
+     console.log(iterator.next());    // → {value: undefined, done: true}
+     ```
+
+     </span>
+
+
+     فرآیند بالا رو می‌شه با استفاده از یه تابع مولد ساده کرد،
+
+     <span dir="ltr" align="left">
+
+     ```javascript
       const collection = {
         one: 1,
         two: 2,
         three: 3,
-        [Symbol.iterator]() {
-          const values = Object.keys(this);
-          let i = 0;
-          return {
-            next: () => {
-              return {
-                value: this[values[i++]],
-                done: i > values.length,
-              };
-            },
-          };
-        },
-      };
-
-      const iterator = collection[Symbol.iterator]();
-
-      console.log(iterator.next()); // → {value: 1, done: false}
-      console.log(iterator.next()); // → {value: 2, done: false}
-      console.log(iterator.next()); // → {value: 3, done: false}
-      console.log(iterator.next()); // → {value: undefined, done: true}
-      ```
-
-      </span>
-
-      فرآیند بالا رو می‌شه با استفاده از یه تابع مولد ساده کرد،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      const collection = {
-        one: 1,
-        two: 2,
-        three: 3,
-        [Symbol.iterator]: function* () {
+        [Symbol.iterator]: function * () {
           for (let key in this) {
             yield this[key];
           }
-        },
+        }
       };
       const iterator = collection[Symbol.iterator]();
-      console.log(iterator.next()); // {value: 1, done: false}
-      console.log(iterator.next()); // {value: 2, done: false}
-      console.log(iterator.next()); // {value: 3, done: false}
-      console.log(iterator.next()); // {value: undefined, done: true}
-      ```
+      console.log(iterator.next());    // {value: 1, done: false}
+      console.log(iterator.next());    // {value: 2, done: false}
+      console.log(iterator.next());    // {value: 3, done: false}
+      console.log(iterator.next());    // {value: undefined, done: true}
+     ```
 
-      </span>
+     </span>
 
-      **[فهرست](#فهرست)**
 
-411.  ### روش مناسب برای فراخوانی توابع بازگشتی چیه؟
+     **[فهرست](#فهرست)**
 
-      فراخونی دنباله یه فراخوانی فرعی یا تابعیه که به عنوان آخرین عمل یه تابع فراخوانی انجام می‌شه. در حالی که **فراخوانی دنباله مناسب (PTC)** تکنیکیه که تو اون برنامه یا کد فریم‌های پشته ای اضافی برای بازگشت ایجاد نمی‌کنه، زمانی که فراخوانی تابع یه فراخوانی دنباله اس.
+411. ### روش مناسب برای فراخوانی توابع بازگشتی چیه؟
 
-      برای مثال، بازگشت کلاسیک یا سر تابع فاکتوریل زیر به پشته برای هر مرحله بستگی داره. هر مرحله باید تا "n \* فاکتوریل(n - 1)" پردازش شه
+     فراخونی دنباله یه فراخوانی فرعی یا تابعیه که به عنوان آخرین عمل یه تابع فراخوانی انجام می‌شه. در حالی که **فراخوانی دنباله مناسب (PTC)** تکنیکیه که تو اون برنامه یا کد فریم‌های پشته ای اضافی برای بازگشت ایجاد نمی‌کنه، زمانی که فراخوانی تابع یه فراخوانی دنباله اس.
+
+     برای مثال، بازگشت کلاسیک یا سر تابع فاکتوریل زیر به پشته برای هر مرحله بستگی داره. هر مرحله باید تا "n * فاکتوریل(n - 1)" پردازش شه
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     function factorial(n) {
+       if (n === 0) {
+         return 1
+       }
+       return n * factorial(n - 1)
+     }
+     console.log(factorial(5)); //120
+     ```
+
+     </span>
+
+     اما اگه از callbackها Tail استفاده می‌کنین اونا تمام داده‌های لازم رو که به آن نیاز داره رو بدون تکیه بر پشته، در بازگشت به پایین منتقل می‌کنن.
+
+     <span dir="ltr" align="left">
+
+     ```javascript
+     function factorial(n, acc = 1) {
+       if (n === 0) {
+         return acc
+       }
+       return factorial(n - 1, n * acc)
+     }
+     console.log(factorial(5)); //120
+     ```
+
+     </span>
+
+     الگوی بالا همون خروجی مورد اول رو برمی‌گردونه. اما انباشت کننده کل رو به عنوان آرگومان بدون استفاده از حافظه پشته توی callBack ردیابی می‌کنه.
+
+     **[فهرست](#فهرست)**
+
+412. ### چطوری بررسی کنیم که یه آبجکت promise هست یا نه؟
+
+     اگه نمی‌دونین یه مقدار یه promise هس یا نه، مقدار رو به صورت ‍`Promise.resolve(value)` بپیچید که یه قول رو برمی‌گردونه.
 
       <span dir="ltr" align="left">
 
       ```javascript
-      function factorial(n) {
-        if (n === 0) {
-          return 1;
-        }
-        return n * factorial(n - 1);
-      }
-      console.log(factorial(5)); //120
+         function isPromise(object){
+            if(Promise && Promise.resolve){
+            return Promise.resolve(object) == object;
+            }else{
+            throw "Promise not supported in your environment"
+            }
+         }
+
+         var i = 1;
+         var promise = new Promise(function(resolve,reject){
+            resolve()
+         });
+
+         console.log(isPromise(i)); // false
+         console.log(isPromise(p)); // true
       ```
 
       </span>
 
-      اما اگه از callbackها Tail استفاده می‌کنین اونا تمام داده‌های لازم رو که به آن نیاز داره رو بدون تکیه بر پشته، در بازگشت به پایین منتقل می‌کنن.
+     راه دیگر اینه که نوع handler.then رو بررسی کنین
 
       <span dir="ltr" align="left">
-
-      ```javascript
-      function factorial(n, acc = 1) {
-        if (n === 0) {
-          return acc;
-        }
-        return factorial(n - 1, n * acc);
-      }
-      console.log(factorial(5)); //120
-      ```
-
-      </span>
-
-      الگوی بالا همون خروجی مورد اول رو برمی‌گردونه. اما انباشت کننده کل رو به عنوان آرگومان بدون استفاده از حافظه پشته توی callBack ردیابی می‌کنه.
-
-      **[فهرست](#فهرست)**
-
-412.  ### چطوری بررسی کنیم که یه آبجکت promise هست یا نه؟
-
-      اگه نمی‌دونین یه مقدار یه promise هس یا نه، مقدار رو به صورت ‍`Promise.resolve(value)` بپیچید که یه قول رو برمی‌گردونه.
-
-       <span dir="ltr" align="left">
-
-      ```javascript
-      function isPromise(object) {
-        if (Promise && Promise.resolve) {
-          return Promise.resolve(object) == object;
-        } else {
-          throw "Promise not supported in your environment";
-        }
-      }
-
-      var i = 1;
-      var promise = new Promise(function (resolve, reject) {
-        resolve();
-      });
-
-      console.log(isPromise(i)); // false
-      console.log(isPromise(p)); // true
-      ```
-
-       </span>
-
-      راه دیگر اینه که نوع handler.then رو بررسی کنین
-
-       <span dir="ltr" align="left">
 
       ```javascript
       function isPromise(value) {
-        return Boolean(value && typeof value.then === "function");
+         return Boolean(value && typeof value.then === 'function');
       }
       var i = 1;
-      var promise = new Promise(function (resolve, reject) {
-        resolve();
+      var promise = new Promise(function(resolve,reject){
+         resolve()
       });
 
-      console.log(isPromise(i)); // false
+      console.log(isPromise(i)) // false
       console.log(isPromise(promise)); // true
       ```
 
-       </span>
+      </span>
 
-      **[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
-413.  ### چطوری متوجه بشیم که یا تابع با تابع constructor صدا زده شده یا نه؟
+413. ### چطوری متوجه بشیم که یا تابع با تابع constructor صدا زده شده یا نه؟
 
-      می‌تونین از ویژگی شبه `new.target`ß برای تشخیص اینکه آیا یه تابع به عنوان سازنده (با استفاده از عملگر جدید) فراخوانی شده یا به عنوان یه فراخوانی تابع معمولی استفاده کنین.
+     می‌تونین از ویژگی شبه `new.target`ß برای تشخیص اینکه آیا یه تابع به عنوان سازنده (با استفاده از عملگر جدید) فراخوانی شده یا به عنوان یه فراخوانی تابع معمولی استفاده کنین.
 
-      1. اگه سازنده یا تابعی با استفاده از عملگر جدید فراخوانی شه، new.target یه مرجع به سازنده یا تابع برمی‌گردونه.
-      2. برای فراخوانی تابع، new.target تعریف نشده اس.
+     1. اگه سازنده یا تابعی با استفاده از عملگر جدید فراخوانی شه، new.target یه مرجع به سازنده یا تابع برمی‌گردونه.
+     2. برای فراخوانی تابع، new.target تعریف نشده اس.
 
-       <span dir="ltr" align="left">
+      <span dir="ltr" align="left">
 
       ```javascript
       function Myfunc() {
@@ -8766,202 +8636,205 @@ puppeteer:
       Myfunc.call({}); not called with new
       ```
 
+      </span>
+
+     **[فهرست](#فهرست)**
+
+414. ### تفاوت‌های بین آبجکت argument و پارامتر rest چیه؟
+
+
+     1. آبجکت `argument` آرایه ماننده اما آرایه نیست. در حالی که توی Rest پارامتر ها آرایه هستن.
+     2. آبجکت `argument` از روش‌هایی مانند sort، map، forEach یا pop پشتیبانی نمی‌کنه. در حالی که این روش‌ها رو می‌شه رو پارامترهای Rest استفاده کرد.
+     3. توی Rest پارامتر ها فقط اونایی هستن که نام جداگانه ای به اونا داده نشده در حالی که آبجکت `argument` شامل تمام آرگومان‌های ارسال شده به تابعه.
+
+     **[فهرست](#فهرست)**
+
+415. ### تفاوت‌های بین عملگر spread و پارامتر rest چیه؟
+
+     پارامتر Rest تمام عناصر باقی مانده رو تو یه آرایه جمع آوری می‌کنه. در حالی که عملگر Spread به تکرارپذیرها (آرایه‌ها / اشیاء / رشته‌ها) اجازه میده تا به آرگومان‌ها / عناصر منفرد گسترش  پیدا کنن. یعنی پارامتر Rest مخالف عملگر spread هس.
+
+     **[فهرست](#فهرست)**
+
+416. ### نوع‌های مختلف generatorها کدوما هستن؟
+
+
+     1. **تعریف بیانی تابع generator :**
+
+       <span dir="ltr" align="left">
+
+       ```javascript
+       function* myGenFunc() {
+            yield 1;
+            yield 2;
+            yield 3;
+       }
+       const genObj = myGenFunc();
+       ```
+
        </span>
 
-      **[فهرست](#فهرست)**
+     2. **تعریف عبارتی تابع generator:**
 
-414.  ### تفاوت‌های بین آبجکت argument و پارامتر rest چیه؟
+       <span dir="ltr" align="left">
 
-      1. آبجکت `argument` آرایه ماننده اما آرایه نیست. در حالی که توی Rest پارامتر ها آرایه هستن.
-      2. آبجکت `argument` از روش‌هایی مانند sort، map، forEach یا pop پشتیبانی نمی‌کنه. در حالی که این روش‌ها رو می‌شه رو پارامترهای Rest استفاده کرد.
-      3. توی Rest پارامتر ها فقط اونایی هستن که نام جداگانه ای به اونا داده نشده در حالی که آبجکت `argument` شامل تمام آرگومان‌های ارسال شده به تابعه.
+       ```javascript
+       const myGenFunc = function* () {
+            yield 1;
+            yield 2;
+            yield 3;
+       };
+       const genObj = myGenFunc();
+       ```
 
-      **[فهرست](#فهرست)**
+       </span>
 
-415.  ### تفاوت‌های بین عملگر spread و پارامتر rest چیه؟
+     3. **تعریف بیانی تابع generator در آبجکت به صورت متد:**
 
-      پارامتر Rest تمام عناصر باقی مانده رو تو یه آرایه جمع آوری می‌کنه. در حالی که عملگر Spread به تکرارپذیرها (آرایه‌ها / اشیاء / رشته‌ها) اجازه میده تا به آرگومان‌ها / عناصر منفرد گسترش پیدا کنن. یعنی پارامتر Rest مخالف عملگر spread هس.
+       <span dir="ltr" align="left">
 
-      **[فهرست](#فهرست)**
+       ```javascript
+       const myObj = {
+          * myGeneratorMethod() {
+             yield 1;
+             yield 2;
+             yield 3;
+          }
+       };
+       const genObj = myObj.myGeneratorMethod();
+       ```
 
-416.  ### نوع‌های مختلف generatorها کدوما هستن؟
+       </span>
 
-      1. **تعریف بیانی تابع generator :**
+     4. **تعریف تابع generator در کلاس ها:**
 
-        <span dir="ltr" align="left">
+       <span dir="ltr" align="left">
 
-      ```javascript
-      function* myGenFunc() {
-        yield 1;
-        yield 2;
-        yield 3;
-      }
-      const genObj = myGenFunc();
-      ```
+       ```javascript
+       class MyClass {
+          * myGeneratorMethod() {
+             yield 1;
+             yield 2;
+             yield 3;
+          }
+       }
+       const myObject = new MyClass();
+       const genObj = myObject.myGeneratorMethod();
+       ```
 
-        </span>
+       </span>
 
-      2. **تعریف عبارتی تابع generator:**
+     5. **تعریف تابع generator به عنوان یک ویژگی محاسبه شده:**
 
-        <span dir="ltr" align="left">
+       <span dir="ltr" align="left">
 
-      ```javascript
-      const myGenFunc = function* () {
-        yield 1;
-        yield 2;
-        yield 3;
-      };
-      const genObj = myGenFunc();
-      ```
+       ```javascript
+       const SomeObj = {
+          *[Symbol.iterator] () {
+            yield 1;
+            yield 2;
+            yield 3;
+          }
+       }
 
-        </span>
+       console.log(Array.from(SomeObj)); // [ 1, 2, 3 ]
+       ```
 
-      3. **تعریف بیانی تابع generator در آبجکت به صورت متد:**
+       </span>
 
-        <span dir="ltr" align="left">
+     **[فهرست](#فهرست)**
 
-      ```javascript
-      const myObj = {
-        *myGeneratorMethod() {
-          yield 1;
-          yield 2;
-          yield 3;
-        },
-      };
-      const genObj = myObj.myGeneratorMethod();
-      ```
+417. ### iterableهای built-in کدوما هستن؟
 
-        </span>
 
-      4. **تعریف تابع generator در کلاس ها:**
+     1. آرایه‌ها و TypedArrays
+     2. رشته‌ها: روی هر کاراکتر یا نقاط کد یونیکد تکرار کنین
+     3. Map: روی جفت‌های کلید-مقدار آن تکرار شه
+     4. مجموعه‌ها: روی عناصر خود تکرار می‌شه
+     5. آرگومان‌ها: یه متغیر خاص آرایه مانند در توابع
+     6. مجموعه DOM مانند NodeList
 
-        <span dir="ltr" align="left">
+     **[فهرست](#فهرست)**
 
-      ```javascript
-      class MyClass {
-        *myGeneratorMethod() {
-          yield 1;
-          yield 2;
-          yield 3;
-        }
-      }
-      const myObject = new MyClass();
-      const genObj = myObject.myGeneratorMethod();
-      ```
+418. ### تفاوت‌های بین حلقه for...of و for...in چیه؟
 
-        </span>
+     هم برای...in و هم برای...از دستورات روی ساختارهای داده js تکرار می‌شن. تنها تفاوت در مورد  چیزیه که اونا تکرار میکنن:
 
-      5. **تعریف تابع generator به عنوان یک ویژگی محاسبه شده:**
+     1. for..in روی تمام کلیدهای خصوصیت شمارش پذیر یه شی تکرار می‌شه
+     2. for..of iterates بیش از مقادیر یه شی قابل تکرار.
 
-        <span dir="ltr" align="left">
+     بیاین این تفاوت رو توی یه مثال ببینیم،
 
-      ```javascript
-      const SomeObj = {
-        *[Symbol.iterator]() {
-          yield 1;
-          yield 2;
-          yield 3;
-        },
-      };
+     <span dir="ltr" align="left">
 
-      console.log(Array.from(SomeObj)); // [ 1, 2, 3 ]
-      ```
+     ```javascript
+     let arr = ['a', 'b', 'c'];
 
-        </span>
+     arr.newProp = 'newVlue';
 
-      **[فهرست](#فهرست)**
+     // key are the property keys
+     for (let key in arr) {
+       console.log(key);
+     }
 
-417.  ### iterableهای built-in کدوما هستن؟
+     // value are the property values
+     for (let value of arr) {
+       console.log(value);
+     }
+     ```
 
-      1. آرایه‌ها و TypedArrays
-      2. رشته‌ها: روی هر کاراکتر یا نقاط کد یونیکد تکرار کنین
-      3. Map: روی جفت‌های کلید-مقدار آن تکرار شه
-      4. مجموعه‌ها: روی عناصر خود تکرار می‌شه
-      5. آرگومان‌ها: یه متغیر خاص آرایه مانند در توابع
-      6. مجموعه DOM مانند NodeList
+     </span>
 
-      **[فهرست](#فهرست)**
+     از اونجا که حلقه for..in روی کلیدهای شی تکرار می‌شه حلقه اول 0، 1، 2 و newProp رو در حین تکرار روی شی آرایه ثبت می‌کنه. حلقه for..of روی مقادیر یه ساختار داده arr تکرار می‌شه و a، b، c رو تو کنسول ثبت می‌کنه.
 
-418.  ### تفاوت‌های بین حلقه for...of و for...in چیه؟
+     **[فهرست](#فهرست)**
 
-      هم برای...in و هم برای...از دستورات روی ساختارهای داده js تکرار می‌شن. تنها تفاوت در مورد چیزیه که اونا تکرار میکنن:
+419. ### چطوری propertyهای instance و غیر instanceای تعریف می‌کنی؟
 
-      1. for..in روی تمام کلیدهای خصوصیت شمارش پذیر یه شی تکرار می‌شه
-      2. for..of iterates بیش از مقادیر یه شی قابل تکرار.
+     خصوصیات Instance باید در داخل متدهای کلاس تعریف بشن. برای مثال، مشخصات نام و سن سازنده داخلی هم مثل مثال پایین تعریف میشن.
 
-      بیاین این تفاوت رو توی یه مثال ببینیم:
+     <span dir="ltr" align="left">
 
-      <span dir="ltr" align="left">
+     ```javascript
+     class Person {
+       constructor(name, age) {
+         this.name = name;
+         this.age = age;
+       }
+     }
+     ```
 
-      ```javascript
-      let arr = ["a", "b", "c"];
+     </span>
 
-      arr.newProp = "newVlue";
+     اما خصوصیات داده Static(class) و prototype باید خارج از اعلان ClassBody تعریف بشن. بیاین مقدار سن رو برای کلاس Person به صورت زیر اختصاص بدیم.
 
-      // key are the property keys
-      for (let key in arr) {
-        console.log(key);
-      }
+     <span dir="ltr" align="left">
 
-      // value are the property values
-      for (let value of arr) {
-        console.log(value);
-      }
-      ```
+     ```javascript
+     Person.staticAge = 30;
+     Person.prototype.prototypeAge = 40;
+     ```
 
-      </span>
+     </span>
 
-      از اونجا که حلقه for..in روی کلیدهای شی تکرار می‌شه حلقه اول 0، 1، 2 و newProp رو در حین تکرار روی شی آرایه ثبت می‌کنه. حلقه for..of روی مقادیر یه ساختار داده arr تکرار می‌شه و a، b، c رو تو کنسول ثبت می‌کنه.
+     **[فهرست](#فهرست)**
 
-      **[فهرست](#فهرست)**
+420. ### تفاوت‌های بین isNaN و Number.isNaN کدوما هستن؟
 
-419.  ### چطوری propertyهای instance و غیر instanceای تعریف می‌کنی؟
+     1. **isNaN**: تابع سراسری «isNaN» آرگومان رو به عدد تبدیل می‌کنه و اگه مقدار حاصل NaN باشه، true رو برمی‌گردونه.
 
-      خصوصیات Instance باید در داخل متدهای کلاس تعریف بشن. برای مثال، مشخصات نام و سن سازنده داخلی هم مثل مثال پایین تعریف میشن.
+     2. **Number.isNaN**: این روش آرگومان رو تبدیل نمی‌کنه. اما زمانی که نوع یه عدد و مقدار NaN باشه مقدار true رو برمی‌گردونه.
 
-      <span dir="ltr" align="left">
+     بیاین تفاوت رو با یه مثال ببینیم،
 
-      ```javascript
-      class Person {
-        constructor(name, age) {
-          this.name = name;
-          this.age = age;
-        }
-      }
-      ```
+     <span dir="ltr" align="left">
 
-      </span>
+     ```javascript
+     isNaN(‘hello’);   // true
+     Number.isNaN('hello'); // false
+     ```
 
-      اما خصوصیات داده Static(class) و prototype باید خارج از اعلان ClassBody تعریف بشن. بیاین مقدار سن رو برای کلاس Person به صورت زیر اختصاص بدیم.
+     </span>
 
-      <span dir="ltr" align="left">
-
-      ```javascript
-      Person.staticAge = 30;
-      Person.prototype.prototypeAge = 40;
-      ```
-
-      </span>
-
-      **[فهرست](#فهرست)**
-
-420.  ### تفاوت‌های بین isNaN و Number.isNaN کدوما هستن؟
-
-      1. **isNaN**: تابع سراسری «isNaN» آرگومان رو به عدد تبدیل می‌کنه و اگه مقدار حاصل NaN باشه، true رو برمی‌گردونه.
-
-      2. **Number.isNaN**: این روش آرگومان رو تبدیل نمی‌کنه. اما زمانی که نوع یه عدد و مقدار NaN باشه مقدار true رو برمی‌گردونه.
-
-      بیاین تفاوت رو با یه مثال ببینیم،
-
-      <span dir="ltr" align="left">
-
-      ```javascript
-      isNaN(‘hello’);   // true
-      Number.isNaN('hello'); // false
-      ```
-
-      </span>
-
-**[فهرست](#فهرست)**
+     **[فهرست](#فهرست)**
 
 </div>
