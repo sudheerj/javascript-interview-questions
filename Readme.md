@@ -6,7 +6,7 @@
 
 # مجموعه سوال و جواب‌های جاواسکریپت (javascript)
 
-این کتاب شامل سوال و جواب‌های جاواسکریپتی است که حدود `۵۰۰ سوال` و جواب حاضر شده و به شکل متن‌باز ارائه میشه.
+این کتاب شامل سوال و جواب‌های جاواسکریپتی است که حدود `۵۰۰ سوال` و درقالب ۲۲۰ صفحه سوال و جواب حاضر شده و به شکل متن‌باز ارائه میشه.
 
 > اگه خوشتون اومد به گیت‌هابمون :star: بدین. اگر هم قصد مشارکت داشتید خیلی خوشحال می‌شیم :)
 
@@ -22,8 +22,8 @@
 
 ## 🛍 خرید نسخه فیزیکی
 
-فعلا ویراستاری کامل نشده ولی از طریق لینک پایین می‌تونین پیش خرید کتاب رو انجام بدین، تمام درآمد حاصل از فروش هم به خیریه داده میشه‌:)
-https://zarinp.al/370791
+فعلا ویراستاری کامل نشده ولی از می‌تونین با ارسال یه ایمیل به من کتاب رو پیش خرید کنین
+sayjehyhi@gmail.com
 
 ## ‌ مشارکت در تالیف
 
@@ -37,8 +37,8 @@ https://zarinp.al/370791
 
 # Top Javascript interview questions
 
-This book contains 325 repeated react.js interview questions which are asked in big companies interview sessions.
-It is in `200 pages` in Persian and also it is free and open source!
+This book contains 420 repeated javascript interview questions which are asked in big companies interview sessions.
+It is in `220 pages` in Persian and also it is free and open source!
 
 > if you like our job, give us a :star: in our github repo, contributes are accpeted :)
 
@@ -54,7 +54,7 @@ Also you can download all these together from our repo release secion.([this lin
 
 ## 🛍 Buy print version
 
-You can pre-order our book from this link, all income from selling this book will be paid to charities:
-https://zarinp.al/370791
+You can pre-order our book by sending an email to my personal email address:
+sayjehyhi@gmail.com
 
 </div>
