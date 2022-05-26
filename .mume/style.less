@@ -127,14 +127,25 @@ html {
 
   h1,
   h2 {
-    padding-bottom: 0.3em;
+    padding-top: 2.5em;
+    padding-bottom: 0.2em;
     border-bottom: 1px solid #eaecef;
   }
 
+  ol ol {
+    padding-inline-start: 24px !important;
+  }
+
   .yekan,
-  td:first-child {
+  td:first-child,
+  td:last-child {
     font-family: BYekan;
   }
+
+  .fehrest td:last-child {
+    text-align: center;
+  }
+  
   p > strong > a {
     margin: 20px 0 40px 0;
     display: block;
@@ -169,13 +180,13 @@ html {
     direction: rtl;
     display: block;
     width: 100%;
-    min-height: 210mm;
-    max-height: 212mm;
+    min-height: 208mm;
+    max-height: 208mm;
 
     &.pishgoftar {
       margin-top: 190mm;
-      min-height: 420mm;
-      max-height: 420mm;
+      min-height: 415mm;
+      max-height: 415mm;
     }
     img {
       max-height: 300px;
@@ -193,6 +204,9 @@ html {
     h5,
     p {
       font-family: Vazir;
+    }
+    > li > p {
+      text-align: justify;
     }
   }
   .font-black {
