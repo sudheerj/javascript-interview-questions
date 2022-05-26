@@ -571,9 +571,9 @@ puppeteer:
 
      ```javascript
      class Person {
-     constructor(name) {
-          this.name = name;
-     }
+          constructor(name) {
+               this.name = name;
+          }
      }
 
      const object = new Person("Ali Karimi");
@@ -587,7 +587,7 @@ puppeteer:
 
      ```javascript
      const object = new (function () {
-     this.name = "Ali Karimi";
+          this.name = "Ali Karimi";
      })();
      ```
 
@@ -3688,7 +3688,7 @@ puppeteer:
 
      ```javascript
      const img = new Image();
-     
+
      img.onload = function() {
        console.log(this.width + 'x' + this.height);
      }
