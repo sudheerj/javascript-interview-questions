@@ -1,6 +1,6 @@
 ---
 title: "مجموعه سوال و جواب‌های جاواسکریپتی"
-author: Ali Karimij - translated by Mariotek team
+author: Sudheer johna - translated by Mariotek team
 date: August 30, 2020
 export_on_save:
 html: true
