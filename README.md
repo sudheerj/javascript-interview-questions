@@ -7437,7 +7437,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 419. ### How do you define instance and non-instance properties
 
-     The Instance properties must be defined inside of class methods. For example, name and age properties defined insider constructor as below,
+     The Instance properties must be defined inside of class methods. For example, name and age properties defined inside constructor as below,
 
      ```javascript
      class Person {
