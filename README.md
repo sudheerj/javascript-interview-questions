@@ -9785,6 +9785,33 @@ Hoisting will move variables and functions to be the top of scope. Even though g
 
 </details>
 
+#### 60. What is the output of below code?
+
+```javascript
+let quickPromise = Promise.resolve();
+
+quickPromise.then(() => console.log("promise finished"));
+
+console.log("program finished"); 
+```
+
+- 1: program finished
+- 2: Cannnot predict the order
+- 3: program finished, promise finished
+- 4: promise finished, program finished
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+
+Even though a promise is resolved immediately, it won't be executed immediately because its **.then/catch/finally** handlers or callbacks(aka task) are pushed into the queue. Whenever the JavaScript engine becomes free from the current program, it pulls a task from the queue and executes it. This is the reason why last statement is printed first before the log of promise handler.
+
+**Note:** We call the above queue as "MicroTask Queue"
+
+</p>
+
+</details>
 ---
 
 ## Disclaimer
