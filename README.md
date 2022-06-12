@@ -477,6 +477,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 433 | [What is function execution context?](#what-is-function-execution-context)                                                                                        |
 | 434 | [What is debouncing?](#what-is-debouncing)                                                                                                                        |
 | 435 | [What is throttling?](#what-is-throttling)                                                                                                                        |
+| 436 | [What is optional chaining?](#what-is-optional-chaining)                                                                                                          |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7831,6 +7832,30 @@ You can download the PDF and Epub version of this repository from the latest run
      window.addEventListener("scroll", () => {
        throttle(handleScrollAnimation, 100);
      });
+     ```
+ 
+     **[⬆ Back to Top](#table-of-contents)**
+
+436. ### What is optional chaining?
+
+     According to MDN official docs, the optional chaining operator (?.) permits reading the value of a property located deep within a chain of connected objects without having to expressly validate that each reference in the chain is valid.
+
+The ?. operator is like the . chaining operator, except that instead of causing an error if a reference is nullish (null or undefined), the expression short-circuits with a return value of undefined. When used with function calls, it returns undefined if the given function does not exist.
+
+     ```js
+      const adventurer = {
+        name: 'Alice',
+        cat: {
+          name: 'Dinah'
+        }
+      };
+
+      const dogName = adventurer.dog?.name;
+      console.log(dogName);
+      // expected output: undefined
+
+      console.log(adventurer.someNonExistentMethod?.());
+      // expected output: undefined
      ```
 
 ### Coding Exercise
