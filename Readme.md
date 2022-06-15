@@ -23,7 +23,7 @@
 ## 🛍 خرید نسخه فیزیکی
 
 فعلا ویراستاری کامل نشده ولی از می‌تونین با ارسال یه ایمیل به من کتاب رو پیش خرید کنین
-sayjehyhi@gmail.com
+sayjeyhi@gmail.com
 
 ## ‌ مشارکت در تالیف
 
@@ -55,6 +55,6 @@ Also you can download all these together from our repo release secion.([this lin
 ## 🛍 Buy print version
 
 You can pre-order our book by sending an email to my personal email address:
-sayjehyhi@gmail.com
+sayjeyhi@gmail.com
 
 </div>
