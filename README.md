@@ -9821,7 +9821,7 @@ console.log("program finished");
 ```
 
 - 1: program finished
-- 2: Cannnot predict the order
+- 2: Cannot predict the order
 - 3: program finished, promise finished
 - 4: promise finished, program finished
 
@@ -9833,6 +9833,36 @@ console.log("program finished");
 Even though a promise is resolved immediately, it won't be executed immediately because its **.then/catch/finally** handlers or callbacks(aka task) are pushed into the queue. Whenever the JavaScript engine becomes free from the current program, it pulls a task from the queue and executes it. This is the reason why last statement is printed first before the log of promise handler.
 
 **Note:** We call the above queue as "MicroTask Queue"
+
+</p>
+
+</details>
+
+#### 61. What is the output of below code?
+
+```javascript
+console.log('First line')
+['a', 'b', 'c'].forEach((element) => console.log(element))
+console.log('Third line')
+```
+
+- 1: `First line`, then print `a, b, c` in a new line, and finally print `Third line` as next line
+- 2: `First line`, then print `a, b, c` in a first line, and  print `Third line` as next line
+- 3:  Missing semi-colon error
+- 4:  Cannot read properties of undefined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+
+When JavaScript encounters a line break without a semicolon, the JavaScript parser will automatically add a semicolon based on a set of rules called `Automatic Semicolon Insertion` which determines whether line break as end of statement or not to insert semicolon. But it does not assume a semicolon before square brackets [...]. So the first two lines considered as a single statement as below.
+
+```javascript
+console.log('First line')['a', 'b', 'c'].forEach((element) => console.log(element))
+```
+
+Hence, there will be **cannot read properties of undefined** error while applying the array square bracket on log function.
 
 </p>
 
