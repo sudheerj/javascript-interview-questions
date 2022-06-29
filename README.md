@@ -4415,7 +4415,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
      ```javascript
      // Initialize an array a
-     for(int i=0; i < a.length; a[i++] = 0) ;
+     for(var i=0; i < a.length; a[i++] = 0) ;
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
