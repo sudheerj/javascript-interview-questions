@@ -8972,7 +8972,7 @@ Using constructors, `new.target` refers to the constructor (points to the class 
 
 ```javascript
 const [x, ...y, z] = [1, 2, 3, 4];
-console.log(x, y,z);
+console.log(x, y, z);
 ```
   
 - 1: 1, [2, 3], 4
