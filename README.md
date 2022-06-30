@@ -9886,38 +9886,6 @@ Hence, there will be **cannot read properties of undefined** error while applyin
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 61. What is the output of below code?
-
-```javascript
-console.log('First line')
-['a', 'b', 'c'].forEach((element) => console.log(element))
-console.log('Third line')
-```
-
-- 1: `First line`, then print `a, b, c` in a new line, and finally print `Third line` as next line
-- 2: `First line`, then print `a, b, c` in a first line, and  print `Third line` as next line
-- 3:  Missing semi-colon error
-- 4:  Cannot read properties of undefined
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-##### Answer: 4
-
-When JavaScript encounters a line break without a semicolon, the JavaScript parser will automatically add a semicolon based on a set of rules called `Automatic Semicolon Insertion` which determines whether line break as end of statement or not to insert semicolon. But it does not assume a semicolon before square brackets [...]. So the first two lines considered as a single statement as below.
-
-```javascript
-console.log('First line')['a', 'b', 'c'].forEach((element) => console.log(element))
-```
-
-Hence, there will be **cannot read properties of undefined** error while applying the array square bracket on log function.
-
-</p>
-
-</details>
-
----
-
 #### 62. Write a function that returns a random HEX color
 
 <details><summary><b>Solution 1 (Iterative generation)</b></summary>
