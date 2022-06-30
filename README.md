@@ -9869,6 +9869,52 @@ Hence, there will be **cannot read properties of undefined** error while applyin
 </details>
 ---
 
+#### 62. Write a function that returns a random HEX color
+
+<details><summary><b>Solution 1</b></summary>
+<p>
+
+```javascript
+const HEX_ALPHABET = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
+const HEX_PREFIX = "#";
+const HEX_LENGTH = 6;
+
+function generateRandomHex() {
+	let randomHex = "";
+
+	for(let i = 0; i < HEX_LENGTH; i++) {
+		const randomIndex = Math.floor(Math.random() * HEX_ALPHABET.length);
+		randomHex += HEX_ALPHABET[randomIndex];
+	}
+
+	return HEX_PREFIX + randomHex;
+}
+
+```
+
+</p>
+
+</details>
+
+<details><summary><b>Solution 2</b></summary>
+<p>
+
+```javascript 
+const HEX_PREFIX = "#";
+const HEX_RADIX = 16;
+const HEX_LENGTH = 6;
+
+function generateRandomHex() {
+	return HEX_PREFIX + Math.floor(Math.random() * 0xffffff).toString(HEX_RADIX).padStart(HEX_LENGTH, "0");
+} 
+```
+
+</p>
+
+</details>
+
+---
+
 ## Disclaimer
 
 The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
