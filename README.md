@@ -8975,9 +8975,9 @@ const [x, ...y, z] = [1, 2, 3, 4];
 console.log(x, y,z);
 ```
   
-- 1: 1, [2, 3, 4]
-- 2: 1, [2, 3]
-- 3: 1, [2]
+- 1: 1, [2, 3], 4
+- 2: 1, [2, 3, 4], undefined
+- 3: 1, [2], 3
 - 4: SyntaxError
 
 <details><summary><b>Answer</b></summary>
