@@ -8971,13 +8971,13 @@ Using constructors, `new.target` refers to the constructor (points to the class 
 #### 35. What is the output of below code
 
 ```javascript
-const [x, ...y] = [1, 2, 3, 4];
-console.log(x, y);
+const [x, ...y, z] = [1, 2, 3, 4];
+console.log(x, y, z);
 ```
-
-- 1: 1, [2, 3, 4]
-- 2: 1, [2, 3]
-- 3: 1, [2]
+  
+- 1: 1, [2, 3], 4
+- 2: 1, [2, 3, 4], undefined
+- 3: 1, [2], 3
 - 4: SyntaxError
 
 <details><summary><b>Answer</b></summary>
