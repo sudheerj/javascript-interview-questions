@@ -9729,6 +9729,8 @@ Whereas the second console.log logs 10 by capturing the count variable from oute
 
 </details>
 
+---
+
 **[⬆ Back to Top](#table-of-contents)**
 
 #### 57. What is the output of below code ?
@@ -9758,6 +9760,8 @@ Whereas the second console.log logs 10 by capturing the count variable from oute
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 58. What is the output of below code ?
 
 ```javascript
@@ -9784,6 +9788,8 @@ Arrays have their own implementation of `toString` method that returns a comma-s
 
 ---
 
+**[⬆ Back to Top](#table-of-contents)**
+
 #### 59. What is the output of below code?
 
 ```javascript
@@ -9809,6 +9815,10 @@ Hoisting will move variables and functions to be the top of scope. Even though g
 </p>
 
 </details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 60. What is the output of below code?
 
@@ -9837,6 +9847,10 @@ Even though a promise is resolved immediately, it won't be executed immediately 
 </p>
 
 </details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 #### 61. What is the output of below code?
 
@@ -9867,7 +9881,58 @@ Hence, there will be **cannot read properties of undefined** error while applyin
 </p>
 
 </details>
+
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 62. Write a function that returns a random HEX color
+
+<details><summary><b>Solution 1 (Iterative generation)</b></summary>
+<p>
+
+```javascript
+const HEX_ALPHABET = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
+const HEX_PREFIX = "#";
+const HEX_LENGTH = 6;
+
+function generateRandomHex() {
+	let randomHex = "";
+
+	for(let i = 0; i < HEX_LENGTH; i++) {
+		const randomIndex = Math.floor(Math.random() * HEX_ALPHABET.length);
+		randomHex += HEX_ALPHABET[randomIndex];
+	}
+
+	return HEX_PREFIX + randomHex;
+}
+
+```
+
+</p>
+
+</details>
+
+<details><summary><b>Solution 2 (One-liner)</b></summary>
+<p>
+
+```javascript 
+const HEX_PREFIX = "#";
+const HEX_RADIX = 16;
+const HEX_LENGTH = 6;
+
+function generateRandomHex() {
+	return HEX_PREFIX + Math.floor(Math.random() * 0xffffff).toString(HEX_RADIX).padStart(HEX_LENGTH, "0");
+} 
+```
+
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ## Disclaimer
 
