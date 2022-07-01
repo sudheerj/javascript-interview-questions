@@ -539,7 +539,7 @@ You can download the PDF and Epub version of this repository from the latest run
       This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.
 
       ```javascript
-      function func {};
+      function func() {};
 
       new func(x, y, z);
       ```
