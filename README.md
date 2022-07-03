@@ -132,7 +132,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 88  | [How do you submit a form using JavaScript](#how-do-you-submit-a-form-using-javascript)                                                                           |
 | 89  | [How do you find operating system details](#how-do-you-find-operating-system-details)                                                                             |
 | 90  | [What is the difference between document load and DOMContentLoaded events](#what-is-the-difference-between-document-load-and-domcontentloaded-events)             |
-| 91  | [What is the difference between native, host and user objects](#what-is-the-difference-between-native,-host-and-user-objects)                                     |
+| 91  | [What is the difference between native, host and user objects](#what-is-the-difference-between-native-host-and-user-objects)                                     |
 | 92  | [What are the tools or techniques used for debugging JavaScript code](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)                       |
 | 93  | [What are the pros and cons of promises over callbacks](#what-are-the-pros-and-cons-of-promises-over-callbacks)                                                   |
 | 94  | [What is the difference between an attribute and a property](#what-is-the-difference-between-an-attribute-and-a-property)                                         |
@@ -177,7 +177,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 133 | [How do you check if a string starts with another string](#how-do-you-check-if-a-string-starts-with-another-string)                                               |
 | 134 | [How do you trim a string in javascript](#how-do-you-trim-a-string-in-javascript)                                                                                 |
 | 135 | [How do you add a key value pair in javascript](#how-do-you-add-a-key-value-pair-in-javascript)                                                                   |
-| 136 | [Is the '!--' notation represents a special operator](#is-the-'!--'-notation-represents-a-special-operator)                                                       |
+| 136 | [Is the '!--' notation represents a special operator](#is-the----notation-represents-a-special-operator)                                                           |
 | 137 | [How do you assign default values to variables](#how-do-you-assign-default-values-to-variables)                                                                   |
 | 138 | [How do you define multiline strings](#how-do-you-define-multiline-strings)                                                                                       |
 | 139 | [What is an app shell model](#what-is-an-app-shell-model)                                                                                                         |
@@ -203,7 +203,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 159 | [How do you search a string for a pattern](#how-do-you-search-a-string-for-a-pattern)                                                                             |
 | 160 | [What is the purpose of exec method](#what-is-the-purpose-of-exec-method)                                                                                         |
 | 161 | [How do you change style of a HTML element](#how-do-you-change-style-of-a-html-element)                                                                           |
-| 162 | [What would be the result of 1+2+'3'](#what-would-be-the-result-of-1+2+'3')                                                                                       |
+| 162 | [What would be the result of 1+2+'3'](#what-would-be-the-result-of-123)                                                                                       |
 | 163 | [What is a debugger statement](#what-is-a-debugger-statement)                                                                                                     |
 | 164 | [What is the purpose of breakpoints in debugging](#what-is-the-purpose-of-breakpoints-indebugging)                                                                |
 | 165 | [Can I use reserved words as identifiers](#can-i-use-reserved-words-as-identifiers)                                                                               |
