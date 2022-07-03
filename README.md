@@ -132,7 +132,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 88  | [How do you submit a form using JavaScript](#how-do-you-submit-a-form-using-javascript)                                                                           |
 | 89  | [How do you find operating system details](#how-do-you-find-operating-system-details)                                                                             |
 | 90  | [What is the difference between document load and DOMContentLoaded events](#what-is-the-difference-between-document-load-and-domcontentloaded-events)             |
-| 91  | [What is the difference between native, host and user objects](#what-is-the-difference-between-native,-host-and-user-objects)                                     |
+| 91  | [What is the difference between native, host and user objects](#what-is-the-difference-between-native-host-and-user-objects)                                     |
 | 92  | [What are the tools or techniques used for debugging JavaScript code](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)                       |
 | 93  | [What are the pros and cons of promises over callbacks](#what-are-the-pros-and-cons-of-promises-over-callbacks)                                                   |
 | 94  | [What is the difference between an attribute and a property](#what-is-the-difference-between-an-attribute-and-a-property)                                         |
