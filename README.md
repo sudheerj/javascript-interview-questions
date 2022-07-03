@@ -177,7 +177,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 133 | [How do you check if a string starts with another string](#how-do-you-check-if-a-string-starts-with-another-string)                                               |
 | 134 | [How do you trim a string in javascript](#how-do-you-trim-a-string-in-javascript)                                                                                 |
 | 135 | [How do you add a key value pair in javascript](#how-do-you-add-a-key-value-pair-in-javascript)                                                                   |
-| 136 | [Is the '!--' notation represents a special operator](#is-the-'!--'-notation-represents-a-special-operator)                                                       |
+| 136 | [Is the '!--' notation represents a special operator](#is-the----notation-represents-a-special-operator)                                                           |
 | 137 | [How do you assign default values to variables](#how-do-you-assign-default-values-to-variables)                                                                   |
 | 138 | [How do you define multiline strings](#how-do-you-define-multiline-strings)                                                                                       |
 | 139 | [What is an app shell model](#what-is-an-app-shell-model)                                                                                                         |
