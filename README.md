@@ -203,7 +203,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 159 | [How do you search a string for a pattern](#how-do-you-search-a-string-for-a-pattern)                                                                             |
 | 160 | [What is the purpose of exec method](#what-is-the-purpose-of-exec-method)                                                                                         |
 | 161 | [How do you change style of a HTML element](#how-do-you-change-style-of-a-html-element)                                                                           |
-| 162 | [What would be the result of 1+2+'3'](#what-would-be-the-result-of-1+2+'3')                                                                                       |
+| 162 | [What would be the result of 1+2+'3'](#what-would-be-the-result-of-123)                                                                                       |
 | 163 | [What is a debugger statement](#what-is-a-debugger-statement)                                                                                                     |
 | 164 | [What is the purpose of breakpoints in debugging](#what-is-the-purpose-of-breakpoints-indebugging)                                                                |
 | 165 | [Can I use reserved words as identifiers](#can-i-use-reserved-words-as-identifiers)                                                                               |
