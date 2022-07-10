@@ -3296,6 +3296,22 @@ You can download the PDF and Epub version of this repository from the latest run
      console.log(obj.prop); //100
      ```
 
+     Remember freezing is only applied to the top-level properties in objects but not for nested objects. 
+     For example, let's try to freeze user object which has employment details as nested object and observe that details have been changed.
+
+     ```javascript
+     const user = {
+       name: 'John',
+       employment: {
+         department: 'IT'
+       }
+     };
+
+     Object.freeze(user);
+     user.employment.department = 'HR';
+     ```
+
+
      **Note:** It causes a TypeError if the argument passed is not an object.
 
      **[⬆ Back to Top](#table-of-contents)**
