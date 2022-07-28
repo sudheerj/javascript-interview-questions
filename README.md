@@ -3927,7 +3927,7 @@ You can download the PDF and Epub version of this repository from the latest run
      var msg = "Good morning";
      function greeting() {
        msg = "Good Evening";
-       console.log(msg);
+       console.log(msg); // Good Evening
      }
      greeting();
      ```
