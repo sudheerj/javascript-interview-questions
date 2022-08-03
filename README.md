@@ -6610,6 +6610,19 @@ You can download the PDF and Epub version of this repository from the latest run
      const multiDimensionalArr = [11, [22, 33], [44, [55, 66, [77, [88]], 99]]];
      const flatArr = flattenMultiArray(multiDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
      ```
+     
+     Also you can use the `flat` method of Array.
+     
+     ```javascript
+     const arr = [1, [2,3], 4, 5, [6,7]];
+     const fllattenArr = arr.flat(); // [1, 2, 3, 4, 5, 6, 7]
+     
+     // And for multiDemensional arrays
+     const multiDimensionalArr = [11, [22, 33], [44, [55, 66, [77, [88]], 99]]];
+     const oneStepFlat = multiDimensionalArr.flat(1); // [11, 22, 33, 44, [55, 66, [77, [88]], 99]]
+     const towStep = multiDimensionalArr.flat(2); // [11, 22, 33, 44, 55, 66, [77, [88]], 99]
+     const fullyFlatArray = multiDimensionalArr.flat(Infinity); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
