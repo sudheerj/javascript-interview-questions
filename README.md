@@ -7994,7 +7994,7 @@ main();
 The statements order is based on the event loop mechanism. The order of statements follows the below order,
 
 1. At first, the main function is pushed to the stack.
-2. Then the browser pushes the fist statement of the main function( i.e, A's console.log) to the stack, executing and popping out immediately.
+2. Then the browser pushes the first statement of the main function( i.e, A's console.log) to the stack, executing and popping out immediately.
 3. But `setTimeout` statement moved to Browser API to apply the delay for callback.
 4. In the meantime, C's console.log added to stack, executed and popped out.
 5. The callback of `setTimeout` moved from Browser API to message queue.
