@@ -6856,6 +6856,51 @@ You can download the PDF and Epub version of this repository from the latest run
      **[⬆ Back to Top](#table-of-contents)**
 
 390. ### What is the purpose of queueMicrotask
+            1. Microtask queue’s  main purpose is to store the task that need to be executed after the main thread is executed completely and before the task that are stored in callback queue (task queue) 
+      2. Microtask queue tasks has higher priority than callback queue tasks
+      3. Microtask queue is used to store Promise.resolve, Promise.reject, MutationObservers, interactionObservers
+      4. Callback queue is use to store the callback function from setTimeout , setInterval function
+
+      ##### Example
+
+      ```javascript
+      setTimeout(()=>console.log(1));  // it will execute fourth
+
+      setTimeout(() => console.log(2));  // it will execute fifth 
+
+      let p = new Promise((resolve , reject) =>{
+        resolve(); 
+      });
+
+      console.log(3)   // it will execute first
+
+      p.then(()=>{
+          console.log(4); // it will execute second 
+      })
+
+      p.then(()=>{
+          console.log(5);  // it will execute third
+      })
+
+      setTimeout(()=>{
+          console.log(6); // it will execute seventh 
+      })
+      ```
+
+      ##### Code Execution
+        1. When first and second of code execute since they are setTimeout function that’s  why callback  function will be stored in callback queue. and we will have two callback function in our callback queue
+        2. In third line we have defined a promise that simply calling a resolve function
+        3. In fourth line we are printing on console 
+        4. In fifth and sixth line we are calling resolve function of the promise. because of that microtask of promise will be added in microtask queue. We will have two micro task in our queue 
+        5. Seventh line we again have setTimeout so we will have three callback function in out callback queue.
+
+      #### output
+        1. While executing the code first main thread will execute the whole script. it will add the microtask and callback in their respective queues
+        2. That why we will have 3 in the first line. then all the task from microtask queue will be executed since microtask queue has higher priority and it will print 4 5 
+        3. Then it will execute the function of callback queue and print 1 2 6
+        4. That why the output will be 3 4 5 1 2 6
+
+
 
      **[⬆ Back to Top](#table-of-contents)**
 
