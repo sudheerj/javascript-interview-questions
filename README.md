@@ -6856,9 +6856,11 @@ You can download the PDF and Epub version of this repository from the latest run
      **[⬆ Back to Top](#table-of-contents)**
 
 390. ### What is the purpose of queueMicrotask
-      1. The main purpose of the Microtask queue is to store the task that is to be executed after the main thread is executed completely, it executes before the tasks that are stored in callback queue/task queue.
-      2. Its has higher priority than tasks that are in callback queue.
-      3. Its stores Promise.resolve, Promise.reject, MutationObservers, interactionObservers whereas Callback queue stores the callback function of setTimeout , setInterval function.
+      1. The main purpose of the Microtask queue is to store the tasks that are to be executed after the main thread is completely executed, however it executes before the tasks that are stored in the callback queue/task queue.
+      2. Priority order: main thread > microtask queue > callback queue 
+      3. It has a higher priority than the tasks in the callback queue.
+      4. It stores Promise.resolve, Promise.reject, MutationObservers, interactionObservers whereas Callback queue stores the callback functions of setTimeout and setInterval.
+
 
       ##### Example
 
@@ -6887,15 +6889,17 @@ You can download the PDF and Epub version of this repository from the latest run
       ```
 
       ##### Code Execution
-        1. When 1st and 2nd statement executes, Since they are setTimeout functions their callback functions will be stored in callback queue we will have two callback function in our callback queue.
-        2. In 3rd statement we have defined a promise and are calling resolve function.
-        3. In 4th statement we are printing ouput "3" on the console.
-        4. When 5th and 6th statements executes, the microtask of promise will be added in microtask queue and We will have two microtask in our queue.
-        5. In the 7th statement we have setTimeout so we will have three callback function in our callback queue.
-        6. Since our main thread is free,it will exectute the microtask queue function in FIFO(First In First Out) order, hence 4 , 5 will be printed on the console.
-        7. Finally as execution of microtask queue is concluded, The main thread will excute callback function of callback queue and we will get ouput as 1, 2 ,6 on the console.
-         
-
+        1. When the 1st and 2nd statements execute, since they are setTimeout functions, their callback functions will be stored in the callback queue. We will have two callback functions in our callback queue.<br/>
+        ![Screenshot](images/microtask-1.jpg)
+        2. In the 3rd statement, we have defined a promise and are calling the resolve function.
+        3. In the 4th statement, we are printing output "3" on the console.
+        4. When 5th and 6th statements execute, the microtask of promise will be added in the microtask queue and we will have two microtasks in our queue.<br/>
+        ![Screenshot](images/microtask-2.jpg)
+        5. In the 7th statement, we have setTimeout so we will have three callback functions in our callback queue.<br/>
+        ![Screenshot](images/microtask-3.jpg)
+        6. Since our main thread is free now, it will execute the microtask queue functions in FIFO(First In First Out) order; hence 4 , 5 will be printed on the console.
+        7. Finally as execution of the microtask queue has concluded, the main thread will execute the callback function of the callback queue and we will get output as 1, 2, 6 on the console.
+      
       #### Output
       ```
         3 4 5 1 2 6
