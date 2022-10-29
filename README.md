@@ -4408,7 +4408,7 @@ You can download the PDF and Epub version of this repository from the latest run
        var min = Infinity;
        while (length--) {
          if (arr[length] < min) {
-           min = arr[len];
+           min = arr[length];
          }
        }
        return min;
@@ -4417,7 +4417,7 @@ You can download the PDF and Epub version of this repository from the latest run
      function findMax(arr) {
        var length = arr.length;
        var max = -Infinity;
-       while (len--) {
+       while (length--) {
          if (arr[length] > max) {
            max = arr[length];
          }
