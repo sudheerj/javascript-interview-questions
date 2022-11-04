@@ -8922,7 +8922,19 @@ if (!typeof myString === "number") {
 
 ##### Answer: 4
 
-The return value of `typeof myNumber (OR) typeof myString` is always the truthy value (either "number" or "string"). Since ! operator converts the value to a boolean value, the value of both `!typeof myNumber or !typeof myString` is always false. Hence the if condition fails and control goes to else block.
+The return value of `typeof myNumber` or `typeof myString` is always a truthy value (either "number" or "string"). The ! operator operates on either `typeof myNumber` or `typeof myString`, converting them to boolean values. Since the value of both `!typeof myNumber` and `!typeof myString` is false, the if condition fails, and control goes to else block.
+
+To make the ! operator operate on the equality expression, one needs to add parentheses:
+
+```
+if (!(typeof myNumber === "string"))
+```
+
+Or simply use the inequality operator:
+
+```
+if (typeof myNumber !== "string")
+```
 
 </p>
 
