@@ -3353,7 +3353,7 @@ You can download the PDF and Epub version of this repository from the latest run
      ```javascript
      function toTitleCase(str) {
        return str.replace(/\w\S*/g, function (txt) {
-         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+         return txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase();
        });
      }
      toTitleCase("good morning john"); // Good Morning John
