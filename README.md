@@ -3519,7 +3519,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 192. ### How do you copy properties from one object to other
 
-     You can use the Object.assign() method which is used to copy the values and properties from one or more source objects to a target object. It returns the target object which has properties and values copied from the target object. The syntax would be as below,
+     You can use the Object.assign() method which is used to copy the values and properties from one or more source objects to a target object. It returns the target object which has properties and values copied from the source objects. The syntax would be as below,
 
      ```javascript
      Object.assign(target, ...sources);
