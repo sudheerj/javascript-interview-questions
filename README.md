@@ -478,6 +478,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 434 | [What is debouncing?](#what-is-debouncing)                                                                                                                        |
 | 435 | [What is throttling?](#what-is-throttling)                                                                                                                        |
 | 436 | [What is optional chaining?](#what-is-optional-chaining)                                                                                                          |
+| 437 | [What is an environment record?](#what-is-an-environment-record)                                                                                                          |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7892,6 +7893,17 @@ You can download the PDF and Epub version of this repository from the latest run
       console.log(adventurer.someNonExistentMethod?.());
       // expected output: undefined
      ```
+
+437. ### What is an environment record?
+
+     According to ECMAScript specification 262 (9.1):
+
+     >[Environment Record](https://262.ecma-international.org/12.0/#sec-environment-records) is a specification type used to define the association of Identifiers to specific variables and functions, based upon the lexical nesting structure of ECMAScript code.
+     
+     Usually an Environment Record is associated with some specific syntactic structure of ECMAScript code such as a FunctionDeclaration, a BlockStatement, or a Catch clause of a TryStatement.
+     
+     Each time such code is evaluated, a new Environment Record is created to record the identifier bindings that are created by that code.
+     
 
 ### Coding Exercise
 
