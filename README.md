@@ -479,6 +479,8 @@ You can download the PDF and Epub version of this repository from the latest run
 | 435 | [What is throttling?](#what-is-throttling)                                                                                                                        |
 | 436 | [What is optional chaining?](#what-is-optional-chaining)                                                                                                          |
 | 437 | [What is an environment record?](#what-is-an-environment-record)                                                                                                          |
+| 438 | [What are hidden classes?](#what-are-hidden-classes)                                                                                                          |
+| 439 | [What is inline caching?](#what-is-inline-caching)                                                                                                          |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -10059,6 +10061,30 @@ console.log(numbers);
 
 **Note:** Sort() method changes the original array.
 </p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 65. What is the output order of below code?
+
+```javascript
+setTimeout(() => {console.log('1')}, 0);
+Promise.resolve('hello').then(() => console.log('2'));
+console.log('3');
+```
+
+- 1:  1, 2, 3
+- 2:  1, 3, 2
+- 3:  3, 1, 2
+- 4:  3, 2, 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
 
 </details>
 
