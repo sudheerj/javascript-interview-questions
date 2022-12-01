@@ -10092,6 +10092,31 @@ console.log('3');
 
 **[⬆ Back to Top](#table-of-contents)**
 
+#### 66. What is the output of below code?
+
+```javascript
+console.log(name);
+console.log(message());
+var name = 'John';
+(function message() {
+   console.log('Hello John: Welcome');
+});
+```
+
+- 1:  John, Hello John: Welcome
+- 2:  undefined, Hello John, Welcome
+- 3:  Reference error: name is not defined, Reference error: message is not defined
+- 4:  undefined, Reference error: message is not defined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+IIFE(Immediately Invoked Function Expression) is just like any other function expression which won't be hoisted. Hence, there will be a reference error for message call.
+</details>
+
+---
+
 ## Disclaimer
 
 The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
