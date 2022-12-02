@@ -478,6 +478,9 @@ You can download the PDF and Epub version of this repository from the latest run
 | 434 | [What is debouncing?](#what-is-debouncing)                                                                                                                        |
 | 435 | [What is throttling?](#what-is-throttling)                                                                                                                        |
 | 436 | [What is optional chaining?](#what-is-optional-chaining)                                                                                                          |
+| 437 | [What is an environment record?](#what-is-an-environment-record)                                                                                                          |
+| 438 | [What are hidden classes?](#what-are-hidden-classes)                                                                                                          |
+| 439 | [What is inline caching?](#what-is-inline-caching)                                                                                                          |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7893,6 +7896,17 @@ You can download the PDF and Epub version of this repository from the latest run
       // expected output: undefined
      ```
 
+437. ### What is an environment record?
+
+     According to ECMAScript specification 262 (9.1):
+
+     >[Environment Record](https://262.ecma-international.org/12.0/#sec-environment-records) is a specification type used to define the association of Identifiers to specific variables and functions, based upon the lexical nesting structure of ECMAScript code.
+     
+     Usually an Environment Record is associated with some specific syntactic structure of ECMAScript code such as a FunctionDeclaration, a BlockStatement, or a Catch clause of a TryStatement.
+     
+     Each time such code is evaluated, a new Environment Record is created to record the identifier bindings that are created by that code.
+     
+
 ### Coding Exercise
 
 #### 1. What is the output of below code
@@ -10053,6 +10067,55 @@ console.log(numbers);
 ---
 
 **[⬆ Back to Top](#table-of-contents)**
+
+#### 65. What is the output order of below code?
+
+```javascript
+setTimeout(() => {console.log('1')}, 0);
+Promise.resolve('hello').then(() => console.log('2'));
+console.log('3');
+```
+
+- 1:  1, 2, 3
+- 2:  1, 3, 2
+- 3:  3, 1, 2
+- 4:  3, 2, 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 66. What is the output of below code?
+
+```javascript
+console.log(name);
+console.log(message());
+var name = 'John';
+(function message() {
+   console.log('Hello John: Welcome');
+});
+```
+
+- 1:  John, Hello John: Welcome
+- 2:  undefined, Hello John, Welcome
+- 3:  Reference error: name is not defined, Reference error: message is not defined
+- 4:  undefined, Reference error: message is not defined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+IIFE(Immediately Invoked Function Expression) is just like any other function expression which won't be hoisted. Hence, there will be a reference error for message call.
+</details>
+
+---
 
 ## Disclaimer
 
