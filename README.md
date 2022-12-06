@@ -10113,9 +10113,51 @@ var name = 'John';
 
 ##### Answer: 4
 IIFE(Immediately Invoked Function Expression) is just like any other function expression which won't be hoisted. Hence, there will be a reference error for message call.
+The behavior would be the same with below function expression of message1,
+```javascript
+console.log(name);
+console.log(message());
+var name = 'John';
+var message = function () {
+   console.log('Hello John: Welcome');
+});
+```
+</p>
 </details>
 
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 67. What is the output of below code?
+
+```javascript
+message()
+
+function message() {
+  console.log("Hello");
+}
+function message() {
+  console.log("Bye");
+}
+```
+
+- 1:  Reference error: message is not defined
+- 2:  Hello
+- 3:  Bye
+- 4:  Compile time error
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+As part of hoisting, initially JavaScript Engine or compiler will store first function in heap memory but later rewrite or replaces with redefined function content.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ## Disclaimer
 
