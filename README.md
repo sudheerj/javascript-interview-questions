@@ -7664,8 +7664,13 @@ You can download the PDF and Epub version of this repository from the latest run
         console.log(justiceLeague); // ['Superman', empty, ,'Batman']
         ```
      4. **Increase length property:** Increasing length property of an array
-        `js const justiceLeague = ['Superman', 'Aquaman', 'Batman']; justiceLeague.length = 5; console.log(justiceLeague); // ['Superman', 'Aquaman', 'Batman', empty, empty] `
-        **[⬆ Back to Top](#table-of-contents)**
+        ```js
+        const justiceLeague = ['Superman', 'Aquaman', 'Batman'];
+        justiceLeague.length = 5;
+        console.log(justiceLeague); // ['Superman', 'Aquaman', 'Batman', empty, empty]
+        ```
+	
+     **[⬆ Back to Top](#table-of-contents)**
 
 429. ### What is the difference between setTimeout, setImmediate and process.nextTick?
 
