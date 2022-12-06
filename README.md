@@ -7608,8 +7608,12 @@ You can download the PDF and Epub version of this repository from the latest run
      console.log("Street: Commonwealth");
      console.log("City: Los Angeles");
      console.log("State: California");
-
+     
+     // Close nested group
      console.groupEnd();
+    
+     // Close outer group
+     console.groupEnd()
      ```
 
      You can also use `console.groupCollapsed()` instead of `console.group()` if you want the groups to be collapsed by default.
