@@ -16,10 +16,22 @@ You can download the PDF and Epub version of this repository from the latest run
   </a>
   <p align="center">
     <ol>
-    <li>Take this <a href=https://links.zerotomastery.io/jsp_sudheer>JavaScript Projects</a> course to go from a JavaScript beginner to confidently building your own projects</li>
+    <li>Take this <a href=https://links.zerotomastery.io/jsp_sudheer>JavaScript Projects</a> course to go from a JS beginner to confidently building your own projects</li>
     <li>Take this <a href=https://links.zerotomastery.io/mci_sudheer2>coding interview bootcamp</a> if you’re serious about getting hired and don’t have a CS degree</li>
     <li>Take this <a href=https://links.zerotomastery.io/ajs_sudheer>Advanced JavaScript Course</a> to learn advanced JS concepts and become a top JS developer</li>
     </ol>
+  </p>
+</p>
+
+---
+
+<p align="center">
+  <a href=https://bit.ly/3Pf7EF9>
+    <img src="images/collab/codestudio-logo.svg" alt="Codestudio Logo">
+  </a>
+  <p align="center">
+    Explore the best free resource to learn JS <a href=https://bit.ly/3Pf7EF9 target="_blank">here</a>.
+    Build your own projects & earn a free certification in just 25 days.
   </p>
 </p>
 
@@ -30,7 +42,7 @@ You can download the PDF and Epub version of this repository from the latest run
         <a href="https://www.youtube.com/watch?v=Zb4dPi7CANU">
             JavaScript Interview Questions | Top JavaScript Interview Questions and Answers.
             <div>
-                <img src="https://img.youtube.com/vi/Zb4dPi7CANU/0.jpg" width="220" height="150" alt="JavaScript">
+                <img src="https://img.youtube.com/vi/Zb4dPi7CANU/0.jpg" width="150" height="100" alt="JavaScript">
             </div>
         </a>
     </p>
