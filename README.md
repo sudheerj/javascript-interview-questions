@@ -7354,7 +7354,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
      new Myfunc(); // called with new
      Myfunc(); // not called with new
-     Myfunc.call({}); not called with new
+     Myfunc.call({}); // not called with new
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -7473,12 +7473,12 @@ You can download the PDF and Epub version of this repository from the latest run
 
      // key are the property keys
      for (let key in arr) {
-       console.log(key);
+       console.log(key); // 0, 1, 2 & newValue
      }
 
      // value are the property values
      for (let value of arr) {
-       console.log(value);
+       console.log(value); // a, b, c
      }
      ```
 
