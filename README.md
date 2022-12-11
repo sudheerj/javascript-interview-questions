@@ -30,7 +30,7 @@ You can download the PDF and Epub version of this repository from the latest run
     <img src="images/collab/codestudio-logo.svg" alt="Codestudio Logo">
   </a>
   <p align="center">
-    Explore the best free resource to learn JavaScript <a href=https://bit.ly/3Pf7EF9 target="_blank">here</a>.
+    Explore the best free resource to learn JavaScript <a href=https://bit.ly/3Pf7EF9 target="_blank">here
     Build your own projects & earn a free certification in just 25 days.
   </p>
 </p>
@@ -5904,10 +5904,10 @@ You can download the PDF and Epub version of this repository from the latest run
 
 333. ### How do you get the status of a checkbox
 
-     You can apply the `checked` property on the selected checkbox in the DOM. If the value is `True` means the checkbox is checked otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below,
+     You can apply the `checked` property on the selected checkbox in the DOM. If the value is `true` means the checkbox is checked otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below,
 
      ```html
-     <input type="checkbox" name="checkboxname" value="Agree" /> Agree the
+     <input type="checkbox" id="checkboxname" value="Agree" /> Agree the
      conditions<br />
      ```
 
@@ -7354,7 +7354,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
      new Myfunc(); // called with new
      Myfunc(); // not called with new
-     Myfunc.call({}); not called with new
+     Myfunc.call({}); // not called with new
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -7473,12 +7473,12 @@ You can download the PDF and Epub version of this repository from the latest run
 
      // key are the property keys
      for (let key in arr) {
-       console.log(key);
+       console.log(key); // 0, 1, 2 & newValue
      }
 
      // value are the property values
      for (let value of arr) {
-       console.log(value);
+       console.log(value); // a, b, c
      }
      ```
 
