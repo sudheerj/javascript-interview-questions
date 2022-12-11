@@ -10211,6 +10211,42 @@ Due to hositing feature, the variables declared with `var` will have `undefined`
 
 **[⬆ Back to Top](#table-of-contents)**
 
+#### 69. What is the output of below code in an order?
+
+```javascript
+function second() {
+	var message;
+  console.log(message);
+}
+
+function first() {
+	var message="first";
+  second();
+  console.log(message);
+}
+
+var message = "default";
+first();
+console.log(message);
+```
+
+- 1:  undefined, first, default
+- 2:  default, default, default
+- 3:  first, first, default
+- 4:  undefined, undefined, undefined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+Each context(global or functional) has it's own variable environment and the callstack of variables in a LIFO order. So you can see the message variable value from second, first functions in an order followed by global context message variable value at the end.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Disclaimer
 
 The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
