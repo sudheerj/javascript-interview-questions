@@ -10180,6 +10180,37 @@ As part of hoisting, initially JavaScript Engine or compiler will store first fu
 
 **[⬆ Back to Top](#table-of-contents)**
 
+#### 68. What is the output of below code?
+
+```javascript
+var currentCity = "NewYork";
+
+var changeCurrentCity = function() {
+  console.log('Current City:', currentCity);
+  var currentCity = "Singapore";
+  console.log('Current City:', currentCity);
+}
+
+changeCurrentCity();
+```
+
+- 1:  NewYork, Singapore
+- 2:  NewYork, NewYork
+- 3:  undefined, Singapore
+- 4:  Singapore, Singapore
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+Due to hositing feature, the variables declared with `var` will have `undefined` value in the creation phase so the outer variable `currentCity` will get same `undefined` value. But after few lines of code JavaScript engine found a new function call(`changeCurrentCity()`) to update the current city with `var` re-declaration. Since each function call will create a new execution context, the same variable will have `undefined` value before the declaration and new value(`Singapore`) after the declarion. Hence, the value `undefined` print first followed by new value `Singapore` in the execution phase.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Disclaimer
 
 The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
