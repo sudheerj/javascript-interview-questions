@@ -10229,6 +10229,32 @@ Each context(global or functional) has it's own variable environment and the cal
 
 **[⬆ Back to Top](#table-of-contents)**
 
+#### 70. What is the output of below code?
+
+```javascript
+var expressionOne = function functionOne() {
+  console.log("functionOne");
+}
+functionOne();
+```
+
+- 1:  functionOne is not defined
+- 2:  functionOne
+- 3:  console.log("functionOne")
+- 4:  undefined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+The function call `functionOne` is not going to be part of scope chain and it has it's own execution context with the enclosed variable environment. i.e, It won't be accessed from global context. Hence, there will be an error while invoking the function as `functionOne is not defined`.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Disclaimer
 
 The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
