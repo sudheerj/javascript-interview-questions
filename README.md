@@ -3954,7 +3954,7 @@
        language : "en",
        get lang() {
          return this.language;
-       }
+       },
        set lang(lang) {
        this.language = lang;
        }
