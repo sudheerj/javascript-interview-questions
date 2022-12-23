@@ -484,9 +484,10 @@
 | 434 | [What is debouncing?](#what-is-debouncing)                                                                                                                        |
 | 435 | [What is throttling?](#what-is-throttling)                                                                                                                        |
 | 436 | [What is optional chaining?](#what-is-optional-chaining)                                                                                                          |
-| 437 | [What is an environment record?](#what-is-an-environment-record)                                                                                                          |
-| 438 | [What are hidden classes?](#what-are-hidden-classes)                                                                                                          |
-| 439 | [What is inline caching?](#what-is-inline-caching)                                                                                                          |
+| 437 | [What is an environment record?](#what-is-an-environment-record)                                                                                                  |
+| 438 | [How to verify if a variable is an array?](#how-to-verify-if-a-variable-is-an-array)                                                                              |
+| 439 | [What are hidden classes?](#what-are-hidden-classes)                                                                                                              |
+| 440 | [What is inline caching?](#what-is-inline-caching)                                                                                                                |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -7911,6 +7912,8 @@
       // expected output: undefined
      ```
 
+     **[⬆ Back to Top](#table-of-contents)**
+
 437. ### What is an environment record?
 
      According to ECMAScript specification 262 (9.1):
@@ -7920,7 +7923,48 @@
      Usually an Environment Record is associated with some specific syntactic structure of ECMAScript code such as a FunctionDeclaration, a BlockStatement, or a Catch clause of a TryStatement.
      
      Each time such code is evaluated, a new Environment Record is created to record the identifier bindings that are created by that code.
+
+     **[⬆ Back to Top](#table-of-contents)**
      
+438. ### How to verify if a variable is an array?
+
+     It is possible to check if a variable is an array instance using 3 different ways,
+
+      1. Array.isArray() method:
+
+         The `Array.isArray(value)` utility function is used to determine whether value is an array or not. This function returns a true boolean value if the variable is an array and a false value if it is not.
+
+          ```javascript
+          const numbers = [1, 2, 3];
+          const user = { name: 'John' };
+          Array.isArray(numbers);  // true
+          Array.isArray(user); //false
+          ```
+
+      2. instanceof operator:
+          
+          The instanceof operator is used to check the type of an array at run time. It returns true if the type of a variable is an Array other false for other type.
+
+          ```javascript
+          const numbers = [1, 2, 3];
+          const user = { name: 'John' };
+          console.log(numbers instanceof Array);  // true
+          console.log(user instanceof Array);  // false
+          ```
+
+      3. Checking constructor type:
+
+          The constructor property of the variable is used to determine whether the variable Array type or not.
+
+          ```javascript
+          const numbers = [1, 2, 3];
+          const user = { name: 'John' };
+          console.log(numbers.constructor === Array);  // true
+          console.log(user.constructor === Array);  // false
+          ``` 
+
+
+     **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
 
