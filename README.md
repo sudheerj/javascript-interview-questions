@@ -7969,6 +7969,20 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
+440. ### What are the differences between primitives and non-primitives?
+
+     JavaScript language has both primitives and non-primitives but there are few differences between them as below,
+
+     | Primitives | Non-primitives |
+     |---- | ---------
+     | These types are predefined | Created by developer |
+     | These are immutable | Mutable |
+     | Compare by value | Compare by reference |
+     | Stored in Stack | Stored in heap |
+     | Contain certain value | Can contain NULL too |
+
+     **[⬆ Back to Top](#table-of-contents)**
+
 ### Coding Exercise
 
 #### 1. What is the output of below code
@@ -10417,6 +10431,39 @@ console.log(name); // John Smith
 
 ##### Answer: 3
 In JavaScript, primitives are immutable i.e. there is no way to change a primitive value once it gets created. So when you try to update the string's first character, there is no change in the string value and prints the same initial value `Hello World!`. Whereas in the later example, the concatenated value is re-assigned to the same variable which will result into creation of new memory block with the reference pointing to `John Smith` value and the old memory block value(`John`) will be garbage collected.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 73. What is the output of below code?
+
+```javascript
+let user1 = { 
+      name : 'Jacob',
+      age : 28
+    };
+    
+let user2 = {    
+      name : 'Jacob',
+      age : 28
+    };
+    
+console.log(user1 === user2);
+```
+
+- 1:  True
+- 2:  False
+- 3:  Compile time error
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+In JavaScript, the variables such as objects, arrays and functions comes under pass by reference. When you try to compare two objects with same content, it is going to compare memory address or reference of those variables. These variables always create separate memory blocks hence the comparision is always going to return false value.
 </p>
 </details>
 
