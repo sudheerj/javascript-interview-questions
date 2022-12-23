@@ -10463,7 +10463,7 @@ console.log(user1 === user2);
 <p>
 
 ##### Answer: 2
-In JavaScript, the variables such as objects, arrays and functions comes under pass by reference. When you try to compare two objects with same content, it is going to compare memory address or reference of those variables. These variables always create separate memory blocks hence the comparision is always going to return false value.
+In JavaScript, the variables such as objects, arrays and functions comes under pass by reference. When you try to compare two objects with same content, it is going to compare memory address or reference of those variables. These variables always create separate memory blocks hence the comparison is always going to return false value.
 </p>
 </details>
 
