@@ -10486,11 +10486,42 @@ console.log(user1 === user2);
 - 3:  Compile time error
 
 
+
 <details><summary><b>Answer</b></summary>
 <p>
 
 ##### Answer: 2
 In JavaScript, the variables such as objects, arrays and functions comes under pass by reference. When you try to compare two objects with same content, it is going to compare memory address or reference of those variables. These variables always create separate memory blocks hence the comparison is always going to return false value.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 74. What is the output of below code?
+
+```javascript
+function greeting() {
+  setTimeout(function() {
+    console.log(message);
+  }, 5000);
+  const message = "Hello, Good morning";
+}
+greeting();
+```
+
+- 1:  Undefined
+- 2:  Reference error: 
+- 3:  Hello, Good morning
+- 4:  null
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+The variable `message` is still treated as closure(since it has been used in inner function) eventhough it has been declared after setTimeout function. The function with in setTimeout function will be sent to WebAPI and the variable declaration executed with in 5 seconds with the assigned value. Hence, the text declared for the variable will be displayed.
 </p>
 </details>
 
