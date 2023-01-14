@@ -490,6 +490,7 @@
 | 440 | [What are the differences between primitives and non-primitives?](#what-are-the-differences-between-primitives-and-non-primitives)                                |
 | 441 | [What are hidden classes?](#what-are-hidden-classes)                                                                                                              |
 | 442 | [What is inline caching?](#what-is-inline-caching)                                                                                                                |
+| 443 | [How do you create your own bind method using either call or apply method?](#how-do-you-create-your-own-bind-method-using-either-call-or-apply-method) |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -8007,6 +8008,26 @@
      | Compare by value | Compare by reference |
      | Stored in Stack | Stored in heap |
      | Contain certain value | Can contain NULL too |
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+443. ### How do you create your own bind method using either call or apply method?
+
+     The custom bind function needs to be created on Function prototype inorder to use it as other builtin functions. This custom function should return a function similar to original bind method and the implementation of inner function needs to use apply method call. 
+     
+     The function which is going to bind using custom `myOwnBind` method act as the attached function(`boundTargetFunction`) and argument as the object for `apply` method call.
+
+     ```js
+      Function.prototype.myOwnBind = function(whoIsCallingMe) {
+        if (typeof this !== "function") {
+          throw new Error(this + "cannot be bound as it's not callable");
+        }
+        const boundTargetFunction = this;
+        return function() {
+          boundTargetFunction.apply(whoIsCallingMe, arguments);
+        }
+      }
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
