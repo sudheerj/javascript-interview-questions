@@ -10560,6 +10560,30 @@ The variable `message` is still treated as closure(since it has been used in inn
 
 **[⬆ Back to Top](#table-of-contents)**
 
+#### 75. What is the output of below code?
+
+```javascript
+const a = new Number(10);
+const b = 10;
+console.log(a === b);
+```
+
+- 1:  False
+- 2:  True 
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+Eventhough both variables `a` and `b` refer a number value, the first declaration is based on constructor function and the type of the variable is going to be `object` type. Whereas the second declaration is primitive assignment with a number and the type is `number` type. Hence, the equality operator `===` will output `false` value.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Disclaimer
 
 The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
