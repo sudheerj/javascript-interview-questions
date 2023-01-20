@@ -490,7 +490,8 @@
 | 440 | [What are the differences between primitives and non-primitives?](#what-are-the-differences-between-primitives-and-non-primitives)                                |
 | 441 | [What are hidden classes?](#what-are-hidden-classes)                                                                                                              |
 | 442 | [What is inline caching?](#what-is-inline-caching)                                                                                                                |
-| 443 | [How do you create your own bind method using either call or apply method?](#how-do-you-create-your-own-bind-method-using-either-call-or-apply-method) |
+| 443 | [How do you create your own bind method using either call or apply method?](#how-do-you-create-your-own-bind-method-using-either-call-or-apply-method)            |
+| 444 | [What are the differences between pure and impure functions?](#what-are-the-differences-between-pure-and-impure-functions?)                                      |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -8038,6 +8039,18 @@
         }
       }
      ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+444. ### What are the differences between pure and impure functions?
+
+  Some of the major differences between pure and impure function are as below,
+
+  | Pure function | Impure function                                         |
+  | -------- | ------------------------------------------------------- |
+  | It has no side effects  | It causes side effects                       |
+  | It is always return the same result         | It returns different result on each call |
+  | Easy to read and debug | Difficult to read and debug because they are affected by extenal code       
 
      **[⬆ Back to Top](#table-of-contents)**
 
