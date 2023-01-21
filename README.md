@@ -491,7 +491,8 @@
 | 441 | [What are hidden classes?](#what-are-hidden-classes)                                                                                                              |
 | 442 | [What is inline caching?](#what-is-inline-caching)                                                                                                                |
 | 443 | [How do you create your own bind method using either call or apply method?](#how-do-you-create-your-own-bind-method-using-either-call-or-apply-method)            |
-| 444 | [What are the differences between pure and impure functions?](#what-are-the-differences-between-pure-and-impure-functions?)                                      |
+| 444 | [What are the differences between pure and impure functions?](#what-are-the-differences-between-pure-and-impure-functions?)  
+| 445 | [What is  referential transparency?](#what-is-referential-transparency)                                    |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -8051,6 +8052,21 @@
   | It has no side effects  | It causes side effects                       |
   | It is always return the same result         | It returns different result on each call |
   | Easy to read and debug | Difficult to read and debug because they are affected by extenal code       
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+445. ### What is referential transparency?
+
+  An expression in javascript can be replaced by its value without affecting the behaviour of the program is called referential transparency. Pure functions are referentially transparent.
+
+  ```javascript
+  const add = (x,y) => x + y;
+  const multiplyBy2 = (x) => x * 2;
+
+  //Now add (2, 3) can be replaced by 5.
+
+  multiplyBy2(add(2, 3)); 
+  ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
