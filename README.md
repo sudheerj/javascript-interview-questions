@@ -493,6 +493,8 @@
 | 443 | [How do you create your own bind method using either call or apply method?](#how-do-you-create-your-own-bind-method-using-either-call-or-apply-method)            |
 | 444 | [What are the differences between pure and impure functions?](#what-are-the-differences-between-pure-and-impure-functions?)  
 | 445 | [What is  referential transparency?](#what-is-referential-transparency)                                    |
+| 446 | [What are the possible side-effects in javascript?](#what-are-the-possible-side-effects-in-javascript)    |
+| 447 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions)
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -8083,6 +8085,12 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
+447. ### What are compose and pipe functions?
+
+    The "compose" and "pipe" are two techniques commonly used in functional programming to simplify complex operations and make code more readable. They are not native in JavaScript and higher order functions. the `compose()` applies right to left any number of functions to the output of the previous function.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
 ### Coding Exercise
 
 #### 1. What is the output of below code
@@ -10261,7 +10269,7 @@ console.log('3');
 <p>
 
 ##### Answer: 4
-
+When the JavaScript engine parses the above code, the first two statements are asynchronous which will be executed later and third statement is synchronous statement which will be moved to callstack, executed and prints the number 3 in the console. Next, Promise is native in ES6 and it will be moved to Job queue which has high priority than callback queue in the execution order. At last, since setTimeout is part of WebAPI the callback function moved to callback queue and executed. Hence, you will see number 2 printed first followed by 1.
 </details>
 
 ---
