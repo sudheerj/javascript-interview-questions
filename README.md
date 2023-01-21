@@ -8070,6 +8070,19 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
+446. ### What are the possible side-effects in javascript?
+  A side effect is the modification of state through the invocation of a function or expression. These side effects makes our function impure by default. Below are some side effects which makes function impure,
+
+  1. Making an HTTP request. Asynchronous functions such as fetch and promise are impure.
+  2. DOM manipulations
+  3. Mutating the input data
+  4. Printing to a screen or console: For example, console.log() and alert() 
+  5. Fetching the current time
+  6. Math.random() calls: Modifies the internal state of Math object
+
+
+     **[⬆ Back to Top](#table-of-contents)**
+
 ### Coding Exercise
 
 #### 1. What is the output of below code
@@ -10606,6 +10619,31 @@ console.log(a === b);
 
 ##### Answer: 1
 Eventhough both variables `a` and `b` refer a number value, the first declaration is based on constructor function and the type of the variable is going to be `object` type. Whereas the second declaration is primitive assignment with a number and the type is `number` type. Hence, the equality operator `===` will output `false` value.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 76. What is the type of below function?
+
+```javascript
+function add(a, b) {
+  console.log("The input arguments are: ", a, b);
+  return a + b;
+}
+```
+
+- 1:  Pure function
+- 2:  Impure function 
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+Eventhough the above function returns the same result for the same arguments(input) that are passed in the function, the `console.log()` statement causes a function to have side effects because it affects the state of an external code. i.e, the `console` object's state and depends on it to perform the job. Hence, the above function considered as impure function.
 </p>
 </details>
 
