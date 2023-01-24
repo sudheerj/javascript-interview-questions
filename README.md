@@ -494,7 +494,8 @@
 | 444 | [What are the differences between pure and impure functions?](#what-are-the-differences-between-pure-and-impure-functions?)  
 | 445 | [What is  referential transparency?](#what-is-referential-transparency)                                    |
 | 446 | [What are the possible side-effects in javascript?](#what-are-the-possible-side-effects-in-javascript)    |
-| 447 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions)
+| 447 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions)                               |
+| 448 | [What is module pattern?](#what-is-module-pattern)                                                         |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -8088,6 +8089,55 @@
 447. ### What are compose and pipe functions?
 
     The "compose" and "pipe" are two techniques commonly used in functional programming to simplify complex operations and make code more readable. They are not native in JavaScript and higher order functions. the `compose()` applies right to left any number of functions to the output of the previous function.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+448. ### What is module pattern?
+     Module pattern is a designed pattern used to wrap a set of variables and functions together in a single scope returned as an object. JavaScript doesn't have access specifiers similar to other languages(Java, Pythong etc) to provide private scope. It uses IFFI (Immediately invoked function expression) to allow for private scopes. i.e, a closure that protect variables and methods.
+
+     The module pattern look like below,
+
+     ```javascript
+      (function() {
+      // Private variables or functions goes here.
+
+
+      return {
+          // Return public variables or functions here.
+      }
+
+
+      })();
+     ```
+
+     Let's see an example of module pattern for an employee with private and public access,
+
+     ```javascript
+     const createEmployee = (function () {
+        // Private
+        const name = "John";
+        const department = "Sales";
+        const getEmployeeName = () => name;
+        const getDepartmentName = () => department;
+
+
+        // Public
+        return {
+          name,
+          department,
+          getName: () => getEmployeeName(),
+          getDepartment: () => getDepartmentName(),
+        };
+      })();
+
+
+      console.log(createEmployee.name);
+      console.log(createEmployee.department);
+      console.log(createEmployee.getName());
+      console.log(createEmployee.getDepartment());
+     ```
+
+     **Note:** It mimic the concepts of classes with private variables and methods.
 
      **[⬆ Back to Top](#table-of-contents)**
 
