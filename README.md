@@ -496,7 +496,7 @@
 | 446 | [What are the possible side-effects in javascript?](#what-are-the-possible-side-effects-in-javascript)    |
 | 447 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions)                               |
 | 448 | [What is module pattern?](#what-is-module-pattern)                                                         |
-| 449 | [What is Functon Composition](#what-is-function-composition)
+| 449 | [What is Functon Composition](#what-is-function-composition) |
 
 1. ### What are the possible ways to create objects in JavaScript
 
