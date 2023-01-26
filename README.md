@@ -496,6 +496,7 @@
 | 446 | [What are the possible side-effects in javascript?](#what-are-the-possible-side-effects-in-javascript)    |
 | 447 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions)                               |
 | 448 | [What is module pattern?](#what-is-module-pattern)                                                         |
+| 449 | [What is Functon Composition](#what-is-function-composition)
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -8138,6 +8139,24 @@
      ```
 
      **Note:** It mimic the concepts of classes with private variables and methods.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+449. ### What is Function Composition?
+     It is an approach where the result of one function is passed on to the next function, which is passed to another until the final function is executed for the final result.
+     
+     ```javascript
+      //example
+      const double = x => x * 2
+      const square = x => x * x
+
+      var output1 = double(2);
+      var output2 = square(output1);
+      console.log(output2);
+
+      var output_final = square(double(2));
+      console.log(output_final);
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
