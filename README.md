@@ -5,18 +5,6 @@
 ---
 
 <p align="center">
-  <a href=https://bit.ly/3Pf7EF9>
-    <img src="images/collab/codestudio-logo.svg" alt="Codestudio Logo">
-  </a>
-  <p align="center">
-    Explore the best free <a href=https://bit.ly/3Pf7EF9 target="_blank">resource</a> to learn JavaScript.
-    Build your own projects & earn a free certification in just 25 days.
-  </p>
-</p>
-
----
-
-<p align="center">
   <a href=https://zerotomastery.io/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions>
     <img src=https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:70/https://www.filepicker.io/api/file/AKYtjj5SSGyJuyZrkAB2 alt="ZTM Logo" width="100" height="50">
   </a>
@@ -26,6 +14,18 @@
     <li>Take this <a href=https://links.zerotomastery.io/mci_sudheer2>coding interview bootcamp</a> if you’re serious about getting hired and don’t have a CS degree</li>
     <li>Take this <a href=https://links.zerotomastery.io/ajs_sudheer>Advanced JavaScript Course</a> to learn advanced JS concepts and become a top JS developer</li>
     </ol>
+  </p>
+</p>
+
+---
+
+<p align="center">
+  <a href=https://bit.ly/3Pf7EF9>
+    <img src="images/collab/codestudio-logo.svg" alt="Codestudio Logo">
+  </a>
+  <p align="center">
+    Explore the best free <a href=https://bit.ly/3Pf7EF9 target="_blank">resource</a> to learn JavaScript.
+    Build your own projects & earn a free certification in just 25 days.
   </p>
 </p>
 
@@ -8049,7 +8049,7 @@
 
 444. ### What are the differences between pure and impure functions?
 
-  Some of the major differences between pure and impure function are as below,
+      Some of the major differences between pure and impure function are as below,
 
   | Pure function | Impure function                                         |
   | -------- | ------------------------------------------------------- |
@@ -8057,7 +8057,7 @@
   | It is always return the same result         | It returns different result on each call |
   | Easy to read and debug | Difficult to read and debug because they are affected by extenal code       
 
-     **[⬆ Back to Top](#table-of-contents)**
+  **[⬆ Back to Top](#table-of-contents)**
 
 445. ### What is referential transparency?
 
@@ -8072,7 +8072,7 @@
   multiplyBy2(add(2, 3)); 
   ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+  **[⬆ Back to Top](#table-of-contents)**
 
 446. ### What are the possible side-effects in javascript?
   A side effect is the modification of state through the invocation of a function or expression. These side effects makes our function impure by default. Below are some side effects which makes function impure,
@@ -8085,11 +8085,11 @@
   6. Math.random() calls: Modifies the internal state of Math object
 
 
-     **[⬆ Back to Top](#table-of-contents)**
+  **[⬆ Back to Top](#table-of-contents)**
 
 447. ### What are compose and pipe functions?
-
-    The "compose" and "pipe" are two techniques commonly used in functional programming to simplify complex operations and make code more readable. They are not native in JavaScript and higher order functions. the `compose()` applies right to left any number of functions to the output of the previous function.
+    
+     The "compose" and "pipe" are two techniques commonly used in functional programming to simplify complex operations and make code more readable. They are not native in JavaScript and higher order functions. the `compose()` applies right to left any number of functions to the output of the previous function.
 
      **[⬆ Back to Top](#table-of-contents)**
 
