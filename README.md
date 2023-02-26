@@ -497,6 +497,7 @@
 | 447 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions)                               |
 | 448 | [What is module pattern?](#what-is-module-pattern)                                                         |
 | 449 | [What is Functon Composition?](#what-is-function-composition) |
+| 450 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022) |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -8157,6 +8158,28 @@
       var output_final = square(double(2));
       console.log(output_final);
      ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+450. ### How to use await outside of async function prior to ES2022?
+     Prior to ES2022, if you attempted to use an await outside of an async function resulted in a SyntaxError. 
+
+     ```javascript
+     await Promise.resolve(console.log('Hello await')); // SyntaxError: await is only valid in async function
+     ```
+     
+     But you can fix this issue with an alternative IIFE (Immediately Invoked Function Expression) to get access to the feature.
+
+     ```javascript
+      (async function() {
+        await Promise.resolve(console.log('Hello await')); // Hello await
+      }());
+     ```
+
+    In ES2022, you can write top-level await without writing any hacks.
+    ```javascript
+    await Promise.resolve(console.log('Hello await')); //Hellow await
+    ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
