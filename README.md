@@ -8171,13 +8171,13 @@
         await Promise.resolve(console.log('Hello await')); // Hello await
       }());
      ```
-
-    In ES2022, you can write top-level await without writing any hacks.
+ In ES2022, you can write top-level await without writing any hacks.
+   
     ```javascript
     await Promise.resolve(console.log('Hello await')); //Hellow await
     ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+  **[⬆ Back to Top](#table-of-contents)**   
 
 ### Coding Exercise
 
