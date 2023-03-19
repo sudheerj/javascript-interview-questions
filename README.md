@@ -1581,7 +1581,7 @@
 
 61. ### What are the main rules of promise
 
-    A promise must follow a specific set of rules,
+    A promise must follow a specific set of rules:
 
     1. A promise is an object that supplies a standard-compliant `.then()` method
     2. A pending promise may transition into either fulfilled or rejected state
@@ -1711,7 +1711,7 @@
 
 69. ### What is the purpose of double exclamation
 
-    The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, true.
+    The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, it will be true.
     For example, you can test IE version using this expression as below,
 
     ```javascript
@@ -1750,6 +1750,7 @@
     ```javascript
     typeof "John Abraham"; // Returns "string"
     typeof (1 + 2); // Returns "number"
+    typeof [1, 2, 3] // Returns "object" because all arrays are also objects
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
