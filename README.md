@@ -10610,12 +10610,12 @@ user.eat()();
 
 ```javascript
 let message = 'Hello World!';
-message[0] = 'J'
-console.log(message) // Hello World!
+message[0] = 'J';
+console.log(message)
 
 let name = 'John';
 name = name + ' Smith';
-console.log(name); // John Smith
+console.log(name);
 ```
 
 - 1:  Jello World!, John Smith
