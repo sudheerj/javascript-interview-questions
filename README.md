@@ -19,18 +19,6 @@
 
 ---
 
-<p align="center">
-  <a href=https://bit.ly/3Pf7EF9>
-    <img src="images/collab/codestudio-logo.svg" alt="Codestudio Logo">
-  </a>
-  <p align="center">
-    Explore the best free <a href=https://bit.ly/3Pf7EF9 target="_blank">resource</a> to learn JavaScript.
-    Build your own projects & earn a free certification in just 25 days.
-  </p>
-</p>
-
----
-
 ### Table of Contents
 
 | No. | Questions                                                                                                                                                         |
