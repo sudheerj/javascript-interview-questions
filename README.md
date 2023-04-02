@@ -10885,7 +10885,7 @@ A function in JavaScript is a block of code designed to perform a specific task.
 
 ```javascript
 //argument example
-const message = "     Hi, this is a test ! :D  ";
+let message = "     Hi, this is a test ! :D  ";
 ```
 
 1.  **Base function:**
