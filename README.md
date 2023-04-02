@@ -19,18 +19,6 @@
 
 ---
 
-<p align="center">
-  <a href=https://bit.ly/3Pf7EF9>
-    <img src="images/collab/codestudio-logo.svg" alt="Codestudio Logo">
-  </a>
-  <p align="center">
-    Explore the best free <a href=https://bit.ly/3Pf7EF9 target="_blank">resource</a> to learn JavaScript.
-    Build your own projects & earn a free certification in just 25 days.
-  </p>
-</p>
-
----
-
 ### Table of Contents
 
 | No. | Questions                                                                                                                                                     |
@@ -10823,7 +10811,10 @@ Promise.all([promiseOne, promiseTwo]).then((data) => console.log(data));
 <details><summary><b>Answer</b></summary>
 <p>
 
+
 ##### Answer: 2
+
+##### Answer: 3
 
 The above promises settled at the same time but one of them resolved and other one rejected. When you use `.all` method on these promises, the result will be short circuted by throwing an error due to rejection in second promise. But If you use `.allSettled` method then result of both the promises will be returned irrespective of resolved or rejected promise status without throwing any error.
 
