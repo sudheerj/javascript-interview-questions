@@ -8081,7 +8081,7 @@
      **[⬆ Back to Top](#table-of-contents)**
 
 448. ### What is module pattern?
-     Module pattern is a designed pattern used to wrap a set of variables and functions together in a single scope returned as an object. JavaScript doesn't have access specifiers similar to other languages(Java, Pythong etc) to provide private scope. It uses IFFI (Immediately invoked function expression) to allow for private scopes. i.e, a closure that protect variables and methods.
+     Module pattern is a designed pattern used to wrap a set of variables and functions together in a single scope returned as an object. JavaScript doesn't have access specifiers similar to other languages(Java, Pythong etc) to provide private scope. It uses IIFE (Immediately invoked function expression) to allow for private scopes. i.e, a closure that protect variables and methods.
 
      The module pattern look like below,
 
