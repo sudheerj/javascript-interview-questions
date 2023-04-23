@@ -8170,7 +8170,7 @@
 
   **[⬆ Back to Top](#table-of-contents)**   
 
-451. ### What is meant by revoking a proxy ?
+451. ### What is meant by revoking a proxy?
 
       ECMA Script 6 let's you create proxies that can be revoked or switched off once the revoke is called on them.
 
