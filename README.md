@@ -473,6 +473,7 @@
 | 448 | [What is module pattern?](#what-is-module-pattern)                                                         |
 | 449 | [What is Functon Composition?](#what-is-function-composition) |
 | 450 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022) |
+| 451 | [What is meant by revoking a proxy ?](#what-is-meant-by-revoking-a-proxy) |
 
 1. ### What are the possible ways to create objects in JavaScript
 
