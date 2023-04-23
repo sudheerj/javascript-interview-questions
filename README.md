@@ -8169,6 +8169,29 @@
 
   **[⬆ Back to Top](#table-of-contents)**   
 
+451. ### What is meant by revoking a proxy ?
+
+      ECMA Script 6 let's you create proxies that can be revoked or switched off once the revoke is called on them.
+
+      Lets understand this using an example below -
+
+
+```javascript
+const target = {}
+const handler = {}
+
+const {proxy, revoke} = Proxy.revocable(target, handler); //Destructuring proxy object
+
+proxy.foo = 123;
+console.log(proxy.foo); // 123
+
+revoke();
+
+console.log(proxy.foo); // TypeError: Revoked
+```
+**[⬆ Back to Top](#table-of-contents)**
+
+
 ### Coding Exercise
 
 #### 1. What is the output of below code
