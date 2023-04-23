@@ -8175,22 +8175,20 @@
 
       Lets understand this using an example below -
 
+   ```javascript
+      const target = {}
+      const handler = {}
 
-```javascript
-const target = {}
-const handler = {}
+      const {proxy, revoke} = Proxy.revocable(target, handler); //Destructuring proxy object
 
-const {proxy, revoke} = Proxy.revocable(target, handler); //Destructuring proxy object
+      proxy.foo = 123;
+      console.log(proxy.foo); // 123
 
-proxy.foo = 123;
-console.log(proxy.foo); // 123
+      revoke();
 
-revoke();
-
-console.log(proxy.foo); // TypeError: Revoked
-```
+      console.log(proxy.foo); // TypeError: Revoked
+   ```
 **[⬆ Back to Top](#table-of-contents)**
-
 
 ### Coding Exercise
 
