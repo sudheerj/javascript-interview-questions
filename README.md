@@ -473,7 +473,7 @@
 | 448 | [What is module pattern?](#what-is-module-pattern)                                                         |
 | 449 | [What is Functon Composition?](#what-is-function-composition) |
 | 450 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022) |
-| 451 | [What is meant by revoking a proxy ?](#what-is-meant-by-revoking-a-proxy) |
+| 451 | [What is a revocable proxy](#what-is-a-revocable-proxy) |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -8170,9 +8170,19 @@
 
   **[⬆ Back to Top](#table-of-contents)**   
 
-451. ### What is meant by revoking a proxy?
+451. ### What is a revocable proxy?
 
       ECMA Script 6 let's you create proxies that can be revoked or switched off once the revoke is called on them.
+
+      For understanding what is revocable proxy lets first understand what proxy is -
+      
+      ### Proxy - 
+      The Proxy object enables you to create a proxy for another object, which can intercept and redefine fundamental operations for that object.
+      For more clarification visit -  [What is a proxy object](#what-is-a-proxy-object)
+
+
+      Now lets move back to revocable proxy or Proxy.revocable().  
+      They are similar to proxy object except that in addition to creating a proxy object, it also creates a revoke function that can be called to disable the proxy.  
 
       Lets understand this using an example below -
 
