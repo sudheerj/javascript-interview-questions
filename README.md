@@ -3358,8 +3358,8 @@
 
      ```javascript
      function toTitleCase(str) {
-       return str.replace(/\w\S*/g, function (txt) {
-         return txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase();
+       return str.replace(/(\b)+(\S)/gm, function (txt) {
+         return txt.toUpperCase();
        });
      }
      toTitleCase("good morning john"); // Good Morning John
