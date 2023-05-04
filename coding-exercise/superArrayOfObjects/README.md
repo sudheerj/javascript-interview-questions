@@ -3,7 +3,7 @@
 #### Example
 ```js
 [
-    { language: 'JavaScript' },{ language: 'JavaScript' },{ language: 'TypeScript' },
+    { language: 'JavaScript' }, { language: 'JavaScript' }, { language: 'TypeScript' }, { language: 'C++' }
 ] 
 ```
 
