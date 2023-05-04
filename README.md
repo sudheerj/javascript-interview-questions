@@ -5890,13 +5890,13 @@
 
 332. ### Is JavaScript faster than server side script
 
-     Yes, JavaScript is faster than server side script. Because JavaScript is a client-side script it does not require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
+     Yes, JavaScript is faster than server side scripts. Because JavaScript is a client-side script it does not require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
 
      **[⬆ Back to Top](#table-of-contents)**
 
 333. ### How do you get the status of a checkbox
 
-     You can apply the `checked` property on the selected checkbox in the DOM. If the value is `true` means the checkbox is checked otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below,
+     You can apply the `checked` property on the selected checkbox in the DOM. If the value is `true` it means the checkbox is checked, otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below:
 
      ```html
      <input type="checkbox" id="checkboxname" value="Agree" /> Agree the
@@ -5911,7 +5911,7 @@
 
 334. ### What is the purpose of double tilde operator
 
-     The double tilde operator(~~) is known as double NOT bitwise operator. This operator is going to be a quicker substitute for Math.floor().
+     The double tilde operator(~~) is known as double NOT bitwise operator. This operator is a slightly quicker substitute for Math.floor().
 
      **[⬆ Back to Top](#table-of-contents)**
 
