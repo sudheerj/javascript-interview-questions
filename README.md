@@ -10812,6 +10812,61 @@ You can use `.catch()` function in promises to avoid these issues with asynchron
 
 **[⬆ Back to Top](#table-of-contents)**
 
+#### 79. What is the output of below code?
+
+```javascript
+let a = 10;
+if(true){
+  let a = 20;
+  console.log(a, "inside");
+}
+console.log(a, "outside");
+```
+
+- 1:  20, "inside" and 20, "outside"
+- 2:  20, "inside" and 10, "outside"
+- 3:  10, "inside" and 10, "outside"
+- 4:  10, "inside" and 20, "outside"
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+The variable "a" declared inside "if" has block scope and does not affect the value of the outer "a" variable.
+</p>
+</details> 
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 80. What is the output of below code?
+
+```javascript
+let arr = [1,2,3,4,5,-6,7];
+arr.length = 0;
+console.log(arr);
+```
+
+- 1:  0
+- 2:  Undefined
+- 3:  null
+- 4:  [ ]
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+The length of the array 'arr' has been set to 0, so the array becomes empty.
+</p>
+</details> 
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Disclaimer
 
 The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
