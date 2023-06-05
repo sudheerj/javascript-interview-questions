@@ -5472,7 +5472,7 @@
 
 308. ### What are default parameters
 
-     In E5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
+     In ES5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
 
      ```javascript
      //ES5
@@ -5501,7 +5501,7 @@
 309. ### What are template literals
 
      Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
-     In E6, this feature enables using dynamic expressions as below,
+     In ES6, this feature enables using dynamic expressions as below,
 
      ```javascript
      var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
