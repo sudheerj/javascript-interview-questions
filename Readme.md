@@ -22,8 +22,8 @@
 
 ## 🛍 خرید نسخه فیزیکی
 
-فعلا ویراستاری کامل نشده ولی از می‌تونین با ارسال یه ایمیل به من کتاب رو پیش خرید کنین
-sayjeyhi@gmail.com
+متاسفانه فعلا کتاب ها نسخه فیزیکی‌شون تموم شده، شاید بعدا آماده کنیم، ولی فعلا برنامه‌ای براش نداریم.
+
 
 ## ‌ مشارکت در تالیف
 
@@ -37,10 +37,10 @@ sayjeyhi@gmail.com
 
 # Top Javascript interview questions
 
-This book contains 420 repeated javascript interview questions which are asked in big companies interview sessions.
-It is in `220 pages` in Persian and also it is free and open source!
+This book contains 420 repeated javascript interview questions in extensive companies' interview sessions.
+It is `220 pages` in Persian, and is also free and open source!
 
-> if you like our job, give us a :star: in our github repo, contributes are accpeted :)
+> If you like our job, give us a :star: in our GitHub repo; contributions are accepted :)
 
 ## How should I start?
 
@@ -49,12 +49,12 @@ You can choose one of our book formats and keep reading:
 | [**PDF version**](https://github.com/Mariotek/javascript-persian-interview-questions/raw/master/book.pdf)      | [**online HTML version**](https://react.sayjeyhi.com) | [**MarkDown version**](https://github.com/Mariotek/javascript-persian-interview-questions/blob/master/book.md#%D9%85%D8%AC%D9%85%D9%88%D8%B9%D9%87-%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%DB%8C-%D8%B1%DB%8C%D8%A7%DA%A9%D8%AA) | [**ePub version**](https://github.com/Mariotek/javascript-persian-interview-questions/raw/master/book.epub) | [**mobi version**](https://github.com/Mariotek/javascript-persian-interview-questions/raw/master/book.mobi) |
 |-------------------|---------------|---------------|--------------------|-------------|
 
-Also you can download all these together from our repo release secion.([this link](https://github.com/Mariotek/javascript-persian-interview-questions/releases)).
+Also, you can download all these together from our repo release section.([this link](https://github.com/Mariotek/javascript-persian-interview-questions/releases)).
 
 
-## 🛍 Buy print version
+## 🛍 Buy the print version
 
-You can pre-order our book by sending an email to my personal email address:
-sayjeyhi@gmail.com
+We ran out of printed versions, we might prepare it again but there is no plan for this yet.
+
 
 </div>
