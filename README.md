@@ -484,7 +484,14 @@
 
       ```javascript
       var object = new Object();
-      ```
+     ```
+     
+     The Object() is a built-in constructor function so "new" keyword is not required. the above can be written as:
+     ```javascript
+      var object = Object();
+     ```
+      
+      
 
    2. **Object's create method:**
 
