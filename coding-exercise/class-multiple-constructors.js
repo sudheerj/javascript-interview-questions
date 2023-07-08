@@ -19,4 +19,4 @@ class Rectangle {
 
 const square = new Rectangle(20, 30);
 
-console.log(square.area); // 600
+console.log(square.area); // Uncaught SyntaxError: A class may only have one constructor
