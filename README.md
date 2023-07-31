@@ -8063,7 +8063,7 @@
 
 445. ### What is referential transparency?
 
-  An expression in javascript can be replaced by its value without affecting the behaviour of the program is called referential transparency. Pure functions are referentially transparent.
+  An expression in javascript that can be replaced by its value without affecting the behaviour of the program is called referential transparency. Pure functions are referentially transparent.
 
   ```javascript
   const add = (x,y) => x + y;
@@ -8091,14 +8091,14 @@
 
 447. ### What are compose and pipe functions?
     
-     The "compose" and "pipe" are two techniques commonly used in functional programming to simplify complex operations and make code more readable. They are not native in JavaScript and higher order functions. the `compose()` applies right to left any number of functions to the output of the previous function.
+     The "compose" and "pipe" are two techniques commonly used in functional programming to simplify complex operations and make code more readable. They are not native to JavaScript and higher-order functions. the `compose()` applies right to left any number of functions to the output of the previous function.
 
      **[⬆ Back to Top](#table-of-contents)**
 
 448. ### What is module pattern?
-     Module pattern is a designed pattern used to wrap a set of variables and functions together in a single scope returned as an object. JavaScript doesn't have access specifiers similar to other languages(Java, Pythong etc) to provide private scope. It uses IIFE (Immediately invoked function expression) to allow for private scopes. i.e, a closure that protect variables and methods.
+     Module pattern is a designed pattern used to wrap a set of variables and functions together in a single scope returned as an object. JavaScript doesn't have access specifiers similar to other languages(Java, Python, etc) to provide private scope. It uses IIFE (Immediately invoked function expression) to allow for private scopes. i.e., a closure that protect variables and methods.
 
-     The module pattern look like below,
+     The module pattern looks like below,
 
      ```javascript
       (function() {
@@ -8113,7 +8113,7 @@
       })();
      ```
 
-     Let's see an example of module pattern for an employee with private and public access,
+     Let's see an example of a module pattern for an employee with private and public access,
 
      ```javascript
      const createEmployee = (function () {
