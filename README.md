@@ -5612,7 +5612,7 @@
      var calculationString = `The sum of numbers is \n${1 + 2 + 3 + 4}!`;
      console.log(calculationString);
      // The sum of numbers is
-     // 10
+     // 10!
      ```
 
      Also, the raw property is available on the first argument to the tag function
