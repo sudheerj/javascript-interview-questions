@@ -24,13 +24,13 @@
 | No. | Questions                                                                                                                                                         |
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | [What are the possible ways to create objects in JavaScript](#what-are-the-possible-ways-to-create-objects-in-javascript)                                         |
-| 2   | [What is prototype chain](#what-is-a-prototype-chain)                                                                                                             |
+| 2   | [What is a prototype chain](#what-is-a-prototype-chain)                                                                                                             |
 | 3   | [What is the difference between Call, Apply and Bind](#what-is-the-difference-between-call-apply-and-bind)                                                        |
 | 4   | [What is JSON and its common operations](#what-is-json-and-its-common-operations)                                                                                 |
 | 5   | [What is the purpose of the array slice method](#what-is-the-purpose-of-the-array-slice-method)                                                                   |
 | 6   | [What is the purpose of the array splice method](#what-is-the-purpose-of-the-array-splice-method)                                                                 |
 | 7   | [What is the difference between slice and splice](#what-is-the-difference-between-slice-and-splice)                                                               |
-| 8   | [How do you compare Object and Map](#how-do-you-compare-object-and-map)                                                                                           |
+| 8   | [How do you compare an Object with a Map](#how-do-you-compare-object-and-map)                                                                                           |
 | 9   | [What is the difference between == and === operators](#what-is-the-difference-between--and--operators)                                                            |
 | 10  | [What are lambda or arrow functions](#what-are-lambda-or-arrow-functions)                                                                                         |
 | 11  | [What is a first class function](#what-is-a-first-class-function)                                                                                                 |
@@ -151,7 +151,7 @@
 | 126 | [How do you loop through or enumerate javascript object](#how-do-you-loop-through-or-enumerate-javascript-object)                                                 |
 | 127 | [How do you test for an empty object](#how-do-you-test-for-an-empty-object)                                                                                       |
 | 128 | [What is an arguments object](#what-is-an-arguments-object)                                                                                                       |
-| 129 | [How do you make first letter of the string in an uppercase](#how-do-you-make-first-letter-of-the-string-in-an-uppercase)                                         |
+| 129 | [How do you convert the first letter of a string to uppercase](#how-do-you-make-first-letter-of-the-string-in-an-uppercase)                                         |
 | 130 | [What are the pros and cons of for loop](#what-are-the-pros-and-cons-of-for-loop)                                                                                 |
 | 131 | [How do you display the current date in javascript](#how-do-you-display-the-current-date-in-javascript)                                                           |
 | 132 | [How do you compare two date objects](#how-do-you-compare-two-date-objects)                                                                                       |
@@ -226,10 +226,10 @@
 | 201 | [How can you get the list of keys of any object](#how-can-you-get-the-list-of-keys-of-any-object)                                                                 |
 | 202 | [How do you create an object with prototype](#how-do-you-create-an-object-with-prototype)                                                                         |
 | 203 | [What is a WeakSet](#what-is-a-weakset)                                                                                                                           |
-| 204 | [What are the differences between WeakSet and Set](#what-are-the-differences-between-weakset-and-set)                                                             |
+| 204 | [What are the differences between a WeakSet and a Set](#what-are-the-differences-between-weakset-and-set)                                                             |
 | 205 | [List down the collection of methods available on WeakSet](#list-down-the-collection-of-methods-available-on-weakset)                                             |
 | 206 | [What is a WeakMap](#what-is-a-weakmap)                                                                                                                           |
-| 207 | [What are the differences between WeakMap and Map](#what-are-the-differences-between-weakmap-and-map)                                                             |
+| 207 | [What are the differences between a WeakMap and a Map](#what-are-the-differences-between-weakmap-and-map)                                                             |
 | 208 | [List down the collection of methods available on WeakMap](#list-down-the-collection-of-methods-available-on-weakmap)                                             |
 | 209 | [What is the purpose of uneval](#what-is-the-purpose-of-uneval)                                                                                                   |
 | 210 | [How do you encode an URL](#how-do-you-encode-an-url)                                                                                                             |
@@ -257,7 +257,7 @@
 | 232 | [What is an Intl object](#what-is-an-intl-object)                                                                                                                 |
 | 233 | [How do you perform language specific date and time formatting](#how-do-you-perform-language-specific-date-and-time-formatting)                                   |
 | 234 | [What is an Iterator](#what-is-an-iterator)                                                                                                                       |
-| 235 | [How does synchronous iteration works](#how-does-synchronous-iteration-works)                                                                                     |
+| 235 | [How does the synchronous iteration work](#how-does-synchronous-iteration-works)                                                                                     |
 | 236 | [What is an event loop](#what-is-an-event-loop)                                                                                                                   |
 | 237 | [What is call stack](#what-is-call-stack)                                                                                                                         |
 | 238 | [What is an event queue](#what-is-an-event-queue)                                                                                                                 |
@@ -387,7 +387,7 @@
 | 362 | [What is destructuring aliases](#what-is-destructuring-aliases)                                                                                                   |
 | 363 | [How do you map the array values without using map method](#how-do-you-map-the-array-values-without-using-map-method)                                             |
 | 364 | [How do you empty an array](#how-do-you-empty-an-array)                                                                                                           |
-| 365 | [How do you rounding numbers to certain decimals](#how-do-you-rounding-numbers-to-certain-decimals)                                                               |
+| 365 | [How do you round numbers to certain decimals](#how-do-you-rounding-numbers-to-certain-decimals)                                                               |
 | 366 | [What is the easiest way to convert an array to an object](#what-is-the-easiest-way-to-convert-an-array-to-an-object)                                             |
 | 367 | [How do you create an array with some data](#how-do-you-create-an-array-with-some-data)                                                                           |
 | 368 | [What are the placeholders from console object](#what-are-the-placeholders-from-console-object)                                                                   |
@@ -471,7 +471,7 @@
 | 446 | [What are the possible side-effects in javascript?](#what-are-the-possible-side-effects-in-javascript)    |
 | 447 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions)                               |
 | 448 | [What is module pattern?](#what-is-module-pattern)                                                         |
-| 449 | [What is Functon Composition?](#what-is-function-composition) |
+| 449 | [What is Function Composition?](#what-is-function-composition) |
 | 450 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022) |
 
 1. ### What are the possible ways to create objects in JavaScript
