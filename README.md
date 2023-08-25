@@ -5603,7 +5603,7 @@
      var calculationString = String.raw`The sum of numbers is \n${
        1 + 2 + 3 + 4
      }!`;
-     console.log(calculationString); // The sum of numbers is 10
+     console.log(calculationString); // The sum of numbers is \n10!
      ```
 
      If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines
@@ -5612,7 +5612,7 @@
      var calculationString = `The sum of numbers is \n${1 + 2 + 3 + 4}!`;
      console.log(calculationString);
      // The sum of numbers is
-     // 10
+     // 10!
      ```
 
      Also, the raw property is available on the first argument to the tag function
