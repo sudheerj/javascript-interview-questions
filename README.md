@@ -3408,17 +3408,18 @@
      For example, let's take a sum example to calculate on dynamic number of parameters,
 
      ```javascript
-     function total(…args){
-     let sum = 0;
-     for(let i of args){
-     sum+=i;
+     function sum(...args){
+      let total = 0;
+      for(const i of args){
+        total += i;
+      }
+      return total;
      }
-     return sum;
-     }
-     console.log(fun(1,2)); //3
-     console.log(fun(1,2,3)); //6
-     console.log(fun(1,2,3,4)); //13
-     console.log(fun(1,2,3,4,5)); //15
+
+     console.log(sum(1,2)); //3
+     console.log(sum(1,2,3)); //6
+     console.log(sum(1,2,3,4)); //13
+     console.log(sum(1,2,3,4,5)); //15
      ```
 
      **Note:** Rest parameter is added in ES2015 or ES6
