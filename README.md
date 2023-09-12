@@ -8092,14 +8092,14 @@ multiplyBy2(add(2, 3));
 
 446. ### What are the possible side-effects in javascript?
 
-     A side effect is the modification of state through the invocation of a function or expression. These side effects makes our function impure by default. Below are some side effects which makes function impure,
+     A side effect is the modification of the state through the invocation of a function or expression. These side effects make our function impure by default. Below are some side effects which make function impure,
 
-1. Making an HTTP request. Asynchronous functions such as fetch and promise are impure.
-1. DOM manipulations
-1. Mutating the input data
-1. Printing to a screen or console: For example, console.log() and alert()
-1. Fetching the current time
-1. Math.random() calls: Modifies the internal state of Math object
+- Making an HTTP request. Asynchronous functions such as fetch and promise are impure.
+- DOM manipulations
+- Mutating the input data
+- Printing to a screen or console: For example, console.log() and alert()
+- Fetching the current time
+- Math.random() calls: Modifies the internal state of Math object
 
 **[⬆ Back to Top](#table-of-contents)**
 
