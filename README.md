@@ -3842,6 +3842,13 @@
      uneval(function user() {}); // returns "(function user(){})"
      ```
 
+     The `uneval()` function has been deprecated. It is recommended to use `toString()` for functions and `JSON.toStringify()` for other cases.
+     
+     ```javascript
+     function user() {}
+     console.log(user.toString()); // returns "(function user(){})"
+     ```  
+
      **[⬆ Back to Top](#table-of-contents)**
 
 210. ### How do you encode an URL
