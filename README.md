@@ -786,7 +786,7 @@
 
 12. ### What is a first order function
 
-    First-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value.
+    A first-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value.
 
     ```javascript
     const firstOrder = () => console.log("I am a first order function!");
@@ -796,7 +796,7 @@
 
 13. ### What is a higher order function
 
-    Higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
+    A higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
 
     ```javascript
     const firstOrderFunc = () =>
@@ -809,7 +809,7 @@
 
 14. ### What is a unary function
 
-    Unary function (i.e. monadic) is a function that accepts exactly one argument. It stands for a single argument accepted by a function.
+    A unary function (i.e. monadic) is a function that accepts exactly one argument. It stands for a single argument accepted by a function.
 
     Let us take an example of unary function,
 
