@@ -92,7 +92,7 @@
 | 67  | [Why do you need strict mode](#why-do-you-need-strict-mode)                                                                                                   |
 | 68  | [How do you declare strict mode](#how-do-you-declare-strict-mode)                                                                                             |
 | 69  | [What is the purpose of double exclamation](#what-is-the-purpose-of-double-exclamation)                                                                       |
-| 70  | [What is the purpose of the delete operator](#what-is-the-purpose-of-the-delete-operator)                                                                     |
+| 70  | [What is the purpose of the delete keyword](#what-is-the-purpose-of-the-delete-keyword)                                                                     |
 | 71  | [What is typeof operator](#what-is-typeof-operator)                                                                                                           |
 | 72  | [What is undefined property](#what-is-undefined-property)                                                                                                     |
 | 73  | [What is null value](#what-is-null-value)                                                                                                                     |
