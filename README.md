@@ -1724,7 +1724,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-70. ### What is the purpose of the delete operator
+70. ### What is the purpose of the delete keyword
 
     The delete keyword is used to delete the property as well as its value.
 
