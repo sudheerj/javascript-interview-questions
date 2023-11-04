@@ -789,7 +789,7 @@
 
 12. ### What is a first order function
 
-    First-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value.
+    A first-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value.
 
     ```javascript
     const firstOrder = () => console.log("I am a first order function!");
@@ -799,7 +799,7 @@
 
 13. ### What is a higher order function
 
-    Higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
+    A higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
 
     ```javascript
     const firstOrderFunc = () =>
@@ -812,7 +812,7 @@
 
 14. ### What is a unary function
 
-    Unary function (i.e. monadic) is a function that accepts exactly one argument. It stands for a single argument accepted by a function.
+    A unary function (i.e. monadic) is a function that accepts exactly one argument. It stands for a single argument accepted by a function.
 
     Let us take an example of unary function,
 
@@ -824,7 +824,7 @@
 
 15. ### What is the currying function
 
-    Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument. Currying is named after a mathematician **Haskell Curry**. By applying currying, a n-ary function turns it into a unary function.
+    Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument. Currying is named after a mathematician **Haskell Curry**. By applying currying, an n-ary function turns into a unary function.
 
     Let's take an example of n-ary function and how it turns into a currying function,
 
@@ -863,9 +863,9 @@
     console.log(numberArray); // returns [6]
     ```
 
-    As per the above code snippets, the **Push** function is impure itself by altering the array and returning a push number index independent of the parameter value. . Whereas **Concat** on the other hand takes the array and concatenates it with the other array producing a whole new array without side effects. Also, the return value is a concatenation of the previous array.
+    As per the above code snippets, the **Push** function is impure itself by altering the array and returning a push number index independent of the parameter value, whereas **Concat** on the other hand takes the array and concatenates it with the other array producing a whole new array without side effects. Also, the return value is a concatenation of the previous array.
 
-    Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and make it harder to break your application by not having any side effects. These principles are coming together with **Immutability** concept of ES6 by giving preference to **const** over **let** usage.
+    Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and make it harder to break your application by not having any side effects. These principles are coming together with the **Immutability** concept of ES6: giving preference to **const** over **let** usage.
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -892,7 +892,7 @@
 
     | var                                                   | let                         |
     | ----------------------------------------------------- | --------------------------- |
-    | It is been available from the beginning of JavaScript | Introduced as part of ES6   |
+    | It has been available from the beginning of JavaScript | Introduced as part of ES6   |
     | It has function scope                                 | It has block scope          |
     | Variables will be hoisted                             | Hoisted but not initialized |
 
@@ -920,7 +920,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-20. ### How do you redeclare variables in switch block without an error
+20. ### How do you redeclare variables in a switch block without an error
 
     If you try to redeclare variables in a `switch block` then it will cause errors because there is only one block. For example, the below code block throws a syntax error as below,
 
@@ -972,7 +972,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-22. ### What is IIFE(Immediately Invoked Function Expression)
+22. ### What is an IIFE (Immediately Invoked Function Expression)
 
     IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
 
@@ -982,7 +982,7 @@
     })();
     ```
 
-    The primary reason to use an IIFE is to obtain data privacy because any variables declared within the IIFE cannot be accessed by the outside world. i.e, If you try to access variables with IIFE then it throws an error as below,
+    The primary reason to use an IIFE is to obtain data privacy because any variables declared within the IIFE cannot be accessed by the outside world. i.e, If you try to access variables from the IIFE then it throws an error as below,
 
     ```javascript
     (function () {
@@ -1011,7 +1011,7 @@
 
 24. ### What is memoization
 
-    Memoization is a programming technique which attempts to increase a function’s performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
+    Memoization is a functional programming technique which attempts to increase a function’s performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
     Let's take an example of adding function with memoization,
 
     ```javascript
