@@ -476,31 +476,9 @@
 
 1. ### What are the possible ways to create objects in JavaScript
 
-   There are many ways to create objects in javascript as below
+   There are many ways to create objects in javascript as mentioned below,
 
-   1. **Object constructor:**
-
-      The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
-
-      ```javascript
-      var object = new Object();
-      ```
-
-      The `Object()` is a built-in constructor function so "new" keyword is not required. the above can be written as:
-
-      ```javascript
-      var object = Object();
-      ```
-
-   2. **Object's create method:**
-
-      The create method of Object creates a new object by passing the prototype object as a parameter
-
-      ```javascript
-      var object = Object.create(null);
-      ```
-
-   3. **Object literal syntax:**
+   1. **Object literal syntax:**
 
       The object literal syntax (or object initializer), is a comma-separated set of name-value pairs wrapped in curly braces.
 
@@ -513,11 +491,36 @@
       Object literal property values can be of any data type, including array, function, and nested object.
       ```
 
-      **Note:** This is an easiest way to create an object
+      **Note:** This is an easiest way to create an object.
+
+   2. **Object constructor:**
+
+      The simplest way to create an empty object is using the `Object` constructor. Currently this approach is not recommended.
+
+      ```javascript
+      var object = new Object();
+      ```
+
+      The `Object()` is a built-in constructor function so "new" keyword is not required. The above code snippet can be re-written as:
+
+      ```javascript
+      var object = Object();
+      ```
+
+   3. **Object's create method:**
+
+      The create method of Object is used to create a new object by passing the specificied prototype object and properties as arguments. i.e., This pattern is helpful to create new objects based on existing objects.
+      The second argument is optional and it is used to create properties on a newly created object.
+
+      The following code creates a new empty object whose prototype is null.
+
+      ```javascript
+      var object = Object.create(null);
+      ```
 
    4. **Function constructor:**
 
-      Create any function and apply the new operator to create object instances,
+      In this approach, create any function and apply the new operator to create object instances.
 
       ```javascript
       function Person(name) {
