@@ -1729,13 +1729,13 @@
 
 70. ### What is the purpose of the delete operator
 
-    The delete keyword is used to delete the property as well as its value.
+    The delete operator is used to delete the property as well as its value.
 
     ```javascript
-    var user = { name: "John", age: 20 };
+    var user = { firstName: "John", lastName:"Doe", age: 20 };
     delete user.age;
 
-    console.log(user); // {name: "John"}
+    console.log(user); // {firstName: "John", lastName:"Doe"}
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
