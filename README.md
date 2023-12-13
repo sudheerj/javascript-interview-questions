@@ -488,7 +488,7 @@
            age: 34
       };
 
-      // Object literal property values can be of any data type, including array, function, and nested object.
+      Object literal property values can be of any data type, including array, function, and nested object.
       ```
 
       **Note:** This is one of the easiest ways to create an object.
