@@ -1431,16 +1431,18 @@
     The usage of a promise would be as below,
 
     ```javascript
-    const promise = new Promise(
-      (resolve) => {
-        setTimeout(() => {
-          resolve("I'm a Promise!");
-        }, 5000);
-      },
-      (reject) => {}
-    );
-
-    promise.then((value) => console.log(value));
+    const promise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (Math.random() > 0.5) { // 50% chance of true
+          resolve("I'm a successful Promise!");
+        } else {
+          reject("I'm a failed Promise");
+        }
+      }, 1000);
+    });
+      
+    promise.then((value) => console.log(value))
+      .catch((error) => console.error(error));
     ```
 
     The action flow of a promise will be as below,
