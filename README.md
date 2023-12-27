@@ -473,7 +473,7 @@
 | 448 | [What is module pattern?](#what-is-module-pattern)                                                                                                            |
 | 449 | [What is Function Composition?](#what-is-function-composition)                                                                                                |
 | 450 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022)                                    |
-| 451 | [What is the purpose of the _**this**_ keyword in JavaScript?](#What-is-the-purpose-of-the-this-keyword-in-javascript?)                                       |
+| 451 | [What is the purpose of the this keyword in JavaScript?](#what_is_the_purpose_of_the_this_keyword_in_javascript?)                                             |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -8227,58 +8227,47 @@ multiplyBy2(add(2, 3));
 
 **[⬆ Back to Top](#table-of-contents)**
 
-
-451. ### What is the purpose of the _**this**_ keyword in JavaScript?
+451. ### What is the purpose of the this keyword in JavaScript?
 * The `this` keyword in JavaScript is a special variable that is used within a function to refer to the object on which the function is invoked. The value of this depends on how the function is called. It allows functions to access and interact with the object they are bound to.
 * The this keyword in JavaScript is a reference to the object that owns or invokes the current function. Its value is determined by the calling context.
-**Example 1**
+**Example 1: this in a Global Context**
 ```javascript
-// Example 1: this in a Global Context
-console.log(this);  // In a global context, this refers to the global object (e.g., window in a browser).
+console.log(this);
 ```
+* In a global context, this refers to the global object (e.g., window in a browser).
 
-**Example 2**
+**Example 2: this in a Function**
 ```javascript
-// Example 2: this in a Function
 function displayThis() {
-  console.log(this); // In a regular function, this refers to the global object.
+  console.log(this);
 }
 
 displayThis();
-
 ```
+*  In a regular function, this refers to the global object.
 
-**Example 3**
+**Example 3: this in a Method**
 ```javascript
-// Example 3: this in a Method
 const person = {
   name: 'John',
   greet: function() {
-    console.log('Hello, ' + this.name); // In a method, this refers to the object that owns the method (person in this case).
+    console.log('Hello, ' + this.name);
   }
 };
 
 person.greet();
-
 ```
+* In a method, this refers to the object that owns the method (person in the case).
 
-**Example 4**
+**Example 4: this in an Event Handler**
 ```javascript
-// Example 4: this in an Event Handler
 document.getElementById('myButton').addEventListener('click', function() {
-  console.log(this); // In an event handler, this refers to the element that triggered the event (the button in this case).
+  console.log(this);
 });
 ```
-_In the examples above:_
-* In a global context or regular function, `this` refers to the global object (e.g., window in a browser). In a method, such as a function within an object, `this` refers to the object that owns the method.
-* In an event handler, `this` refers to the element that triggered the event.
-
-Understanding the context in which this is used is crucial for writing effective and flexible JavaScript code. Keep in mind that the value of this can be explicitly set using functions like call(), apply(), or bind().
-
-I hope this provides a clear understanding of the this keyword in JavaScript!
+*  In an event handler, this refers to the element that triggered the event (the button in this case).
 
 **[⬆ Back to Top](#table-of-contents)**
-
 
 ### Coding Exercise
 
