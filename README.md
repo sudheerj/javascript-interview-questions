@@ -793,7 +793,16 @@
     A first-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value.
 
     ```javascript
-    const firstOrder = () => console.log("I am a first order function!");
+    // Example of a first-order function
+
+function add(a, b) {
+  return a + b;
+}
+
+// Usage of the first-order function
+const result = add(3, 4);
+console.log(result); // Outputs: 7
+
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
