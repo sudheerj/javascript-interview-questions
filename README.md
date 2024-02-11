@@ -32,7 +32,7 @@
 | 7   | [What is the difference between slice and splice](#what-is-the-difference-between-slice-and-splice)                                                           |
 | 8   | [How do you compare an Object with a Map](#how-do-you-compare-object-and-map)                                                                                 |
 | 9   | [What is the difference between == and === operators](#what-is-the-difference-between--and--operators)                                                        |
-| 10  | [What are lambda or arrow functions](#what-are-lambda-or-arrow-functions)                                                                                     |
+| 10  | [What are lambda expression or arrow functions](#what-are-lambda-or-arrow-functions)                                                                                     |
 | 11  | [What is a first class function](#what-is-a-first-class-function)                                                                                             |
 | 12  | [What is a first order function](#what-is-a-first-order-function)                                                                                             |
 | 13  | [What is a higher order function](#what-is-a-higher-order-function)                                                                                           |
@@ -488,9 +488,9 @@
            name: "Sudheer",
            age: 34
       };
+      ```
 
       Object literal property values can be of any data type, including array, function, and nested object.
-      ```
 
       **Note:** This is one of the easiest ways to create an object.
 
@@ -510,13 +510,33 @@
 
    3. **Object's create method:**
 
-      The create method of Object is used to create a new object by passing the specificied prototype object and properties as arguments, i.e., this pattern is helpful to create new objects based on existing objects.
+      The `create` method of Object is used to create a new object by passing the specificied prototype object and properties as arguments, i.e., this pattern is helpful to create new objects based on existing objects.
       The second argument is optional and it is used to create properties on a newly created object.
 
       The following code creates a new empty object whose prototype is null.
 
       ```javascript
       var object = Object.create(null);
+      ```
+      The following example creates an object along with additional new properties.
+
+      ```javascript
+      let vehicle = {
+        wheels: '4',
+        fuelType: 'Gasoline',
+        color: 'Green'
+      }
+      let carProps = {
+        type: {
+          value: 'Volkswagen'
+        },
+        model: {
+          value: 'Golf'
+        }
+      }
+
+      var car = Object.create(vehicle, carProps);
+      console.log(car);
       ```
 
    4. **Function constructor:**
@@ -561,8 +581,19 @@
       // If the result is a non-null object then use it otherwise just use the new instance.
       console.log(result && typeof result === 'object' ? result : newInstance);
       ```
+   6. **Object's assign method:**
 
-   6. **ES6 Class syntax:**
+      The `Object.assign` method is used to copy all the properties from one or more source objects and stores them into a target object.
+
+      The following code creates a new staff object by copying properties of his working company and the car he owns.
+
+      ```javascript
+      const orgObj = { company: 'XYZ Corp'};
+      const carObj = { name: 'Toyota'};
+      const staff = Object.assign({}, orgObject, carObject);
+      ```
+
+   7. **ES6 Class syntax:**
 
       ES6 introduces class feature to create objects.
 
@@ -576,7 +607,7 @@
       var object = new Person("Sudheer");
       ```
 
-   7. **Singleton pattern:**
+   8. **Singleton pattern:**
 
       A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance. This way one can ensure that they don't accidentally create multiple instances.
 
@@ -749,8 +780,8 @@
       2. Positive and negative zeros are equal to one another.
    3. Two Boolean operands are strictly equal if both are true or both are false.
    4. Two objects are strictly equal if they refer to the same Object.
-   5. Null and Undefined types are not equal with ===, but equal with ==, i.e,
-      null===undefined --> false, but null==undefined --> true
+   5. Null and Undefined types are not equal with ===, but equal with == .
+      i.e, `null===undefined --> false`, but `null==undefined --> true`
 
    Some of the example which covers the above cases:
 
@@ -763,15 +794,23 @@
    null === undefined // false
    '0' == false // true
    '0' === false // false
+   NaN == NaN or NaN === NaN // false
    []==[] or []===[] //false, refer different objects in memory
    {}=={} or {}==={} //false, refer different objects in memory
    ```
 
    **[⬆ Back to Top](#table-of-contents)**
 
-10. ### What are lambda or arrow functions
+10. ### What are lambda expressions or arrow functions
 
-    An arrow function is a shorter syntax for a function expression and does not have its own **this, arguments, super, or new.target**. These functions are best suited for non-method functions, and they cannot be used as constructors.
+    An arrow function is a shorter/concise syntax for a function expression and does not have its own **this, arguments, super, or new.target**. These functions are best suited for non-method functions, and they cannot be used as constructors.
+
+    Some of the examples of arrow functions are listed as below,
+    ```javascript
+    const arrowFunc1 = (a, b) => a + b; // Multiple parameters
+    const arrowFunc2 = a => a * 10; // Single parameter
+    const arrowFunc3 = () => {} // no parameters
+    ```
 
     **[⬆ Back to Top](#table-of-contents)**
 
