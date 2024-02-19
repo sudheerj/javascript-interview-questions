@@ -998,7 +998,7 @@
 
 21. ### What is the Temporal Dead Zone
 
-    The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a `let` or `const` variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable’s binding and its declaration, is called the temporal dead zone.
+    The Temporal Dead Zone(TDZ) is a specific period or area of a block where a variable is inaccessible until it has been intialized with a value. This behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a `let` or `const` variable before its declaration (within its scope) causes a ReferenceError. 
 
     Let's see this behavior with an example,
 
@@ -1145,7 +1145,7 @@
 
 27. ### What are closures
 
-    A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables. The closure has three scope chains
+    A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables, functions and other data even after the outer function has finished its execution. The closure has three scope chains.
 
     1. Own scope where variables defined between its curly brackets
     2. Outer function’s variables
@@ -8307,6 +8307,9 @@ document.getElementById('myButton').addEventListener('click', function() {
 ```
 *  In an event handler, this refers to the element that triggered the event (the button in this case).
 
+**[⬆ Back to Top](#table-of-contents)**
+
+452. ### What are the uses of closures?
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
