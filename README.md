@@ -590,8 +590,8 @@
       The following code creates a new staff object by copying properties of his working company and the car he owns.
 
       ```javascript
-      const orgObj = { company: 'XYZ Corp'};
-      const carObj = { name: 'Toyota'};
+      const orgObject = { company: 'XYZ Corp'};
+      const carObject = { name: 'Toyota'};
       const staff = Object.assign({}, orgObject, carObject);
       ```
 
