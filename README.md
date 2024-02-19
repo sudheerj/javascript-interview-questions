@@ -19,6 +19,8 @@
 
 ---
 
+**Note:** Please check [DataStructures and Algorithms](https://github.com/sudheerj/datastructures-algorithms) for DSA related questions or problems.
+
 ### Table of Contents
 
 | No. | Questions                                                                                                                                                     |
