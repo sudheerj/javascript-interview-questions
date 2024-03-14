@@ -475,7 +475,7 @@
 | 448 | [What is module pattern?](#what-is-module-pattern)                                                                                                            |
 | 449 | [What is Function Composition?](#what-is-function-composition)                                                                                                |
 | 450 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022)                                    |
-| 451 | [What is the purpose of the this keyword in JavaScript?](#what_is_the_purpose_of_the_this_keyword_in_javascript?)                                             |
+| 451 | [What is the purpose of the this keyword in JavaScript?](#what-is-the-purpose-of-the-this-keyword-in-javascript)                                             |
 
 1. ### What are the possible ways to create objects in JavaScript
 
