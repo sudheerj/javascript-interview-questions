@@ -476,7 +476,7 @@
 | 449 | [What is Function Composition?](#what-is-function-composition)                                                                                                |
 | 450 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022)                                    |
 | 451 | [What is the purpose of the this keyword in JavaScript?](#what_is_the_purpose_of_the_this_keyword_in_javascript?)                                             |
-| 452 | [What are the uses of closures?](#what_are_the_uses_of_closures?) 
+| 452 | [What are the uses of closures?](#what_are_the_uses_of_closures?)
 1. ### What are the possible ways to create objects in JavaScript
 
    There are many ways to create objects in javascript as mentioned below:
@@ -842,6 +842,7 @@
 13. ### What is a higher order function
 
     A higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
+    The syntactic structure of higher order function will be as follows,
 
     ```javascript
     const firstOrderFunc = () =>
@@ -849,6 +850,9 @@
     const higherOrder = (ReturnFirstOrderFunc) => ReturnFirstOrderFunc();
     higherOrder(firstOrderFunc);
     ```
+    You can also call the function which you are passing to higher order function as callback function.
+
+    The higher order function is helpful to write the modular and reusable code. For example, the below example illustrate the 
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -1147,10 +1151,10 @@
 
 27. ### What are closures
 
-    A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables, functions and other data even after the outer function has finished its execution. The closure has three scope chains.
+    A closure is the combination of a function bundled(enclosed) together with its lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables, functions and other data even after the outer function has finished its execution. The closure has three scope chains.
 
     1. Own scope where variables defined between its curly brackets
-    2. Outer function’s variables
+    2. Outer function's variables
     3. Global variables
 
     Let's take an example of closure concept,
@@ -1969,6 +1973,7 @@
 85. ### What is an event flow
 
     Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
+
     There are two ways of event flow
 
     1. Top to Bottom(Event Capturing)
@@ -1978,13 +1983,64 @@
 
 86. ### What is event bubbling
 
-    Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
+    Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element(i.e, global window object).
+
+    By default, event handlers triggered in event bubbling phase as shown below,
+
+    ```javascript
+        <div>
+      <button class="child">Hello</button>
+    </div>
+
+    <script>
+      const parent = document.querySelector("div");
+      const child = document.querySelector(".child");
+
+      parent.addEventListener("click",
+        function () {
+          console.log("Parent");
+        }
+      );
+
+      child.addEventListener("click", function () {
+        console.log("Child");
+      });
+    </script>
+    // Child
+    // Parent
+    ```
 
     **[⬆ Back to Top](#table-of-contents)**
 
 87. ### What is event capturing
 
-    Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
+    Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost target DOM element.
+
+    You need to pass `true` value for `addEventListener` method to trigger event handlers in event capturing phase.
+
+    ```javascript
+    <div>
+      <button class="child">Hello</button>
+    </div>
+
+    <script>
+      const parent = document.querySelector("div");
+      const child = document.querySelector(".child");
+
+      parent.addEventListener("click",
+        function () {
+          console.log("Parent");
+        },
+        true
+      );
+
+      child.addEventListener("click", function () {
+        console.log("Child");
+      });
+    </script>
+    // Parent
+    // Child
+    ```
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -2715,16 +2771,15 @@
 
 138. ### How do you define multiline strings
 
-     You can define multiline string literals using the '\\' character followed by line terminator.
+     You can define multiline string literals using the '\n' character followed by line terminator('\').
 
      ```javascript
      var str =
-       "This is a \
-     very lengthy \
-     sentence!";
+       "This is a \n\ very lengthy \n\ sentence!";
+     console.log(str);
      ```
 
-     But if you have a space after the '\\' character, the code will look exactly the same, but it will raise a SyntaxError.
+     But if you have a space after the '\n' character, there will be indentation inconsistencies.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -3610,30 +3665,54 @@
 
 194. ### What is a proxy object
 
-     The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc. The syntax would be as follows,
+     The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc. 
+     
+     A proxy is created with two parameters: a target object which you want to proxy and a handler object which contains methods to intercept fundamental operations. The syntax would be as follows,
 
      ```javascript
      var p = new Proxy(target, handler);
      ```
 
-     Let's take an example of proxy object,
+     Let's take a look at below examples of proxy object and how the get method which customize the lookup behavior,
 
      ```javascript
-     var handler = {
-       get: function (obj, prop) {
-         return prop in obj ? obj[prop] : 100;
-       },
-     };
+      //Example1:
 
-     var p = new Proxy({}, handler);
-     p.a = 10;
-     p.b = null;
+        const person = {
+          name: 'Sudheer Jonna',
+          age: 35
+        };
 
-     console.log(p.a, p.b); // 10, null
-     console.log("c" in p, p.c); // false, 100
+      const handler = {
+        get(target, prop) {
+          if (prop === 'name') {
+            return 'Mr. ' + target[prop];
+          }
+          return target[prop];
+        }
+      };
+
+      const proxy = new Proxy(person, handler);
+
+      //Example2: 
+
+      var handler1 = {
+        get: function (obj, prop) {
+          return prop in obj ? obj[prop] : 100;
+        },
+      };
+
+      var p = new Proxy({}, handler1);
+      p.a = 10;
+      p.b = null;
+
+      console.log(p.a, p.b); // 10, null
+      console.log("c" in p, p.c); // false, 100
      ```
 
-     In the above code, it uses `get` handler which define the behavior of the proxy when an operation is performed on it
+     In the above code, it uses `get` handler which define the behavior of the proxy when an operation is performed on it.
+
+     **Note:** This is a new feature in ES6.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -6934,7 +7013,7 @@
 
 388. ### What is microtask
 
-     Microtask is the javascript code which needs to be executed immediately after the currently executing task/microtask is completed. They are kind of blocking in nature. i.e, The main thread will be blocked until the microtask queue is empty.
+     Microtask is used for the javascript code which needs to be executed immediately after the currently executing task/microtask is completed. They are kind of blocking in nature. i.e, The main thread will be blocked until the microtask queue is empty.
      The main sources of microtasks are Promise.resolve, Promise.reject, MutationObservers, IntersectionObservers etc
 
      **Note:** All of these microtasks are processed in the same turn of the event loop.
@@ -8326,6 +8405,98 @@ Here are some common use cases of closures:
 *  iterators and Generators: Closures can be used to create iterators and generators, which are essential for working with collections of data in modern JavaScript.
 **[⬆ Back to Top](#table-of-contents)**
 
+453. ### What are the phases of execution context?
+
+**[⬆ Back to Top](#table-of-contents)**
+
+454. ### What are the possible reasons for memory leaks?
+     Memory leaks can lead to poor performance, slow loading times and even crashes in web applications. Some of the common causes of memory leaks are listed below,
+
+     1. The execessive usage of global variables or omitting the `var` keyword in local scope.
+     2. Forgetting to clear the timers set up by `setTimeout` or `setInterval`.
+     3. Closures retain references to variables from their parent scope, which leads to variables might not garbage collected even they are no longer used.
+
+455. ### What are the optimization techniques of V8 engine?
+     V8 engine uses the below optimization techniques.
+
+     1. **Inline expansion:** It is a compiler optimization by replacing the function calls with the corresponding function blocks.
+     2. **Copy elision:** This is a compiler optimization method to prevent expensive extra objects from being duplicated or copied.
+     3. **Inline caching:** It is a runtime optimization technique where it caches the execution of older tasks those can be lookup while executing the same task in the future. 
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+456. ### What are the examples of built-in higher order functions?
+     There are several built-in higher order functions exists on arrays, strings, DOM and promise methods in javascript. These higher order functions provides significant level of abstraction. The list of functions on these categories are listed below,
+     1. **arrays:** map, filter, reduce, sort, forEach, some etc.
+     2. **DOM**: The DOM method `element.addEventListener(type, handler)` also accepts the function handler as a second argument.
+     3. **Strings:** .some() method
+
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+457. ### What are the benefits higher order functions?
+     The main benefits of higher order functions are:
+     1. Abstration
+     2. Reusability
+     3. Immutability
+     4. Modularity
+
+**[⬆ Back to Top](#table-of-contents)**
+
+458. ### How do you create polyfills for map, filter and reduce functions?
+**[⬆ Back to Top](#table-of-contents)**
+
+458. ### What is the difference between map and forEach functions?
+     Both map and forEach functions are used to iterate over an arrays but there are some differences in their functionality.
+
+     1. **Returning values:** The `map` method returns a new array with transformed elements whereas `forEach` method returns `undefined` eventhough both of them are doing the same job.
+
+      ```javascript
+        const arr = [1, 2, 3, 4, 5];
+        arr.map(x => x * x); // [1, 4, 9, 16, 25]
+        arr.forEach(x => x * x); // undefined
+      ```
+
+     2. **Chaining methods:** The `map` method is chainable. i.e, It can be attached with `reduce`, `filter`, `sort` and other methods as well. Whereas `forEach` cannot be attached with any other methods because it returns `undefined` value.
+
+      ```javascript
+        const arr = [1, 2, 3, 4, 5];
+        arr.map(x => x * x).reduce((total, cur) => total + cur); // 55
+        arr.forEach(x => x * x).reduce((total, cur) => total + cur);; //Uncaught TypeError: Cannot read properties of undefine(reading 'reduce')
+      ```
+     3. **Mutation:** The `map` method doesn't mutate the original array by returning new array. Whereas `forEach` method also doesn't mutate the original array but it's callback is allowed to mutate the original array.
+
+     **Note:** Both these methods existed since ES5 onwards.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+459. ### Give an example of statements affected by automatic semicolon insertion?
+     The javascript parser will automatically add a semicolon while parsing the source code. For example, the below common statements affected by Automatic Semicolon Insertion(ASI).
+
+      1. An empty statement
+      2. var statement
+      3. An expression statement
+      4. do-while statement
+      5. continue statement
+      6. break statement
+      7. return statement
+      8. throw statement
+
+**[⬆ Back to Top](#table-of-contents)**
+
+460. ### What are the event phases on browser?
+     There are 3 phases in the lifecycle of an event propagation in JavaScript,
+
+     1. **Capturing phase:** This phase goes down gradually from the top of the DOM tree to the target element when a nested element clicked. Before the click event reaching the final destination element, the click event of each parent's element must be triggered.
+
+     2. **Target phase:** This is the phase where the event originally occurred reached the target element .
+
+     3. **Bubbling phase:** This is reverse of the capturing phase. In this pase, the event bubbles up from the target element through it's parent element, an ancestor and goes all the way to the global window object.
+     
+     The pictorial representation of these 3 event phases in DOM looks like below,
+     
+     ![Screenshot](images/event-flow.png)
+
 ### Coding Exercise
 
 #### 1. What is the output of below code
@@ -8433,7 +8604,7 @@ The statements order is based on the event loop mechanism. The order of statemen
 5. The callback of `setTimeout` moved from Browser API to message queue.
 6. The `main` function popped out from stack because there are no statements to execute
 7. The callback moved from message queue to the stack since the stack is empty.
-8. The console.log for B is added to the stack and display on the console.
+8. The `console.log` for B is added to the stack and display on the console.
 
 </p>
 </details>
@@ -11079,7 +11250,7 @@ The length of the array 'arr' has been set to 0, so the array becomes empty.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 81. How do you verify two strings are anagrams?
+#### 81. How do you verify two strings are anagrams or not?
 An anagram is a word or phrase formed by rearranging all the letters of a different word or phrase exactly once. For example, the anagrams of "eat" word are "tea" and "ate".
 
 You can split each word into characters, followed by sort action and later join them back. After that you can compare those two words to verify whether those two words are anagrams or not.
@@ -11139,6 +11310,45 @@ function printHello() {
 </p>
 </details>
 ---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 83. What is the time taken to execute below timeout callback?
+
+```javascript
+  console.log("Start code");
+
+  setTimeout(function() {
+      console.log("Callback code");
+  }, 5000);
+
+  console.log("After callback");
+
+
+  let startTime = new Date().getTime();
+  let endTime = startTime;
+
+  while(endTime <= startTime + 10000) {
+      endTime = new Date().getTime();
+  }
+
+  console.log("End code");
+```
+
+- 1: > 10 sec
+- 2: Immediately
+- 3: < 10 sec
+- 4: <= 5sec
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+Even though there is a timer of 5 seconds supplied to `setTimeout` callback, it won't get executed until the main thread is free and finished executing the remaining part of the code. In this example, the remaining code(while loop) takes 10seconds to finish it's execution. In the mean time, the callback will be stored in callback queue upon completion of its 5 seconds timer. After 10 seconds, the callback will be moved to callstack because the callstack is empty by poping out global execution context. 
+
+</p>
+</details>
 
 **[⬆ Back to Top](#table-of-contents)**
 
