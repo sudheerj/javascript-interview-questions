@@ -8406,18 +8406,23 @@ document.getElementById('myButton').addEventListener('click', function() {
 
 **[⬆ Back to Top](#table-of-contents)**
 
-452. ### What are the advantages of closures?
-     Closure makes your code more powerful, flexible and efficient. Some of the advantages are listed below.
-     1. Data Encapsulation
-     2. Creating function factories
-     3. Currying functions
-     4. Memoization
-     5. State retention
-     6. Run functions only once
-     7. setTimeout and iterators
+452. ### What are the uses of closures?
+Closures are a powerful feature in programming languages like JavaScript. They allow functions to retain access to variables from their containing (enclosing) scope even after the outer function has finished executing. This means that a function defined within another function can access variables from the outer function, even if the outer function has already returned.
+Here are some common use cases of closures:
+
+*  Data Privacy: Closures can be used to create private variables and methods. By defining variables within a function's scope and returning inner functions that have access to those variables, you can create     a form of encapsulation, limiting access to certain data or functionality.
+
+*  Function Factories: Closures are often used to create functions with pre-set parameters. This is useful when you need to create multiple functions with similar behavior but different configurations.
+
+*  Callback Functions: Closures are frequently used in asynchronous programming, such as handling event listeners or AJAX requests. The inner function captures variables from the outer scope and can access        them when the callback is invoked.
+
+*  Memoization: Closures can be used for memoization, a technique to optimize performance by caching the results of expensive function calls. The inner function can remember the results of previous calls and      return the cached result if the same input is provided again.
+
+*  iterators and Generators: Closures can be used to create iterators and generators, which are essential for working with collections of data in modern JavaScript.
 **[⬆ Back to Top](#table-of-contents)**
 
 453. ### What are the phases of execution context?
+
 **[⬆ Back to Top](#table-of-contents)**
 
 454. ### What are the possible reasons for memory leaks?
