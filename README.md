@@ -476,6 +476,17 @@
 | 449 | [What is Function Composition?](#what-is-function-composition)                                                                                                |
 | 450 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022)                                    |
 | 451 | [What is the purpose of the this keyword in JavaScript?](#what_is_the_purpose_of_the_this_keyword_in_javascript?)                                             |
+| 452 | [What are the advantages of closures?](#what-are-the-advantages-of-closures) |
+| 453 | [What are the phases of execution context?](#what-are-the-phases-of-execution-context) |
+| 454 | [What are the possible reasons for memory leaks?](#what-are-the-possible-reasons-for-memory-leaks) |
+| 455 | [What are the optimization techniques of V8 engine?](#what-are-the-optimization-techniques-of-v8-engine) |
+| 456 | [What are the examples of built-in higher order functions??](#what-are-the-examples-of-built-in-higher-order-functions) |
+| 457 | [What are the benefits higher order functions??](#what-are-the-benefits-higher-order-functions) |
+| 458 | [How do you create polyfills for map, filter and reduce functions?](#how-do-you-create-polyfills-for-map-filter-and-reduce-functions) |
+| 459 | [What is the difference between map and forEach functions?](#what-is-the-difference-between-map-and-foreach-functions) |
+| 460 | [Give an example of statements affected by automatic semicolon insertion?](#give-an-example-of-statements-affected-by-automatic-semicolon-insertion) |
+|461| [What are the event phases on browser?](#what-are-the-event-phases-on-browser) |
+|462| [What are the real world usecases of proxy?](#what-are-the-real-world-usecases-of-proxy) |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -3710,7 +3721,12 @@
       console.log("c" in p, p.c); // false, 100
      ```
 
-     In the above code, it uses `get` handler which define the behavior of the proxy when an operation is performed on it.
+     In the above code, it uses `get` handler which define the behavior of the proxy when an operation is performed on it. These proxies are mainly used for some of the below cross-cutting concerns.
+
+     1. Logging
+     2. Authentication or Authorization
+     3. Data binding and observables
+     4. Function parameter validation
 
      **Note:** This is a new feature in ES6.
 
@@ -8441,7 +8457,7 @@ document.getElementById('myButton').addEventListener('click', function() {
 458. ### How do you create polyfills for map, filter and reduce functions?
 **[⬆ Back to Top](#table-of-contents)**
 
-458. ### What is the difference between map and forEach functions?
+459. ### What is the difference between map and forEach functions?
      Both map and forEach functions are used to iterate over an arrays but there are some differences in their functionality.
 
      1. **Returning values:** The `map` method returns a new array with transformed elements whereas `forEach` method returns `undefined` eventhough both of them are doing the same job.
@@ -8465,7 +8481,7 @@ document.getElementById('myButton').addEventListener('click', function() {
 
 **[⬆ Back to Top](#table-of-contents)**
 
-459. ### Give an example of statements affected by automatic semicolon insertion?
+460. ### Give an example of statements affected by automatic semicolon insertion?
      The javascript parser will automatically add a semicolon while parsing the source code. For example, the below common statements affected by Automatic Semicolon Insertion(ASI).
 
       1. An empty statement
@@ -8479,7 +8495,7 @@ document.getElementById('myButton').addEventListener('click', function() {
 
 **[⬆ Back to Top](#table-of-contents)**
 
-460. ### What are the event phases on browser?
+461. ### What are the event phases on browser?
      There are 3 phases in the lifecycle of an event propagation in JavaScript,
 
      1. **Capturing phase:** This phase goes down gradually from the top of the DOM tree to the target element when a nested element clicked. Before the click event reaching the final destination element, the click event of each parent's element must be triggered.
@@ -8491,6 +8507,18 @@ document.getElementById('myButton').addEventListener('click', function() {
      The pictorial representation of these 3 event phases in DOM looks like below,
      
      ![Screenshot](images/event-flow.png)
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+462. ### What are the real world usecases of proxy?
+     Proxies are not used in regular day to day JavaScript work but they enabled many exciting programming patterns. Some of the real world usecases are listed below,
+
+     1. Vue3 used proxy concept to implement reactive state 
+     2. SolidJS implemented reactive stores 
+     3. Immerjs built upon proxy to track updates to immutable updates
+     4. ZenStack improved Prisma ORM for access control layer
+
+  **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
 
