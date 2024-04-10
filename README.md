@@ -482,7 +482,7 @@
 | 455 | [What are the optimization techniques of V8 engine?](#what-are-the-optimization-techniques-of-v8-engine) |
 | 456 | [What are the examples of built-in higher order functions??](#what-are-the-examples-of-built-in-higher-order-functions) |
 | 457 | [What are the benefits higher order functions??](#what-are-the-benefits-higher-order-functions) |
-| 458 | [How do you create polyfills for map, filter and reduce functions?](#how-do-you-create-polyfills-for-map-filter-and-reduce-functions) |
+| 458 | [How do you create polyfills for map, filter and reduce methods?](#how-do-you-create-polyfills-for-map-filter-and-reduce-functions) |
 | 459 | [What is the difference between map and forEach functions?](#what-is-the-difference-between-map-and-foreach-functions) |
 | 460 | [Give an example of statements affected by automatic semicolon insertion?](#give-an-example-of-statements-affected-by-automatic-semicolon-insertion) |
 |461| [What are the event phases on browser?](#what-are-the-event-phases-on-browser) |
@@ -2834,6 +2834,10 @@
 142. ### What is a polyfill
 
      A polyfill is a piece of JS code used to provide modern functionality on older browsers that do not natively support it. For example, Silverlight plugin polyfill can be used to mimic the functionality of an HTML Canvas element on Microsoft Internet Explorer 7.
+
+     There are two main polyfill libraries available,
+     1. **Core.js**: It is a modular javascript library used for cutting-edge ECMAScript features.
+     2. **Polyfill.io:** It provides polyfills that are required for browser needs.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -8459,7 +8463,105 @@ Here are some common use cases of closures:
 
 **[⬆ Back to Top](#table-of-contents)**
 
-458. ### How do you create polyfills for map, filter and reduce functions?
+458. ### How do you create polyfills for map, filter and reduce methods?
+
+   The polyfills for array methods such as map, filter and reduce methods can be created using array prototype. 
+
+ 1. **map:**
+     
+    The built-in `Array.map` method syntax will be helpful to write polyfill. The map method takes the callback function as an argument and that callback function can have below three arguments passed into it.
+
+      i. Current value
+      ii. Index of current value(optional)
+      iii. array(optional)
+
+    The syntax would like below,
+
+    ```js
+    let newArray = arr.map(callback(currentValue[, index, arr) {
+       // return new array after executing the code
+    })
+    ```
+
+    Let's build our map polyfill based on the above syntax, 
+
+    ```js
+      Array.prototype.myMap = function(cb) {
+        let newArr = [];
+        for(let i=0; i< this.length; i++) {
+          newArr.push(cb(this[i], i, this));
+        }
+        return newArr;
+      };
+
+      const nums = [1, 2, 3, 4, 5];
+      const multiplyByTwo = nums.myMap(x => x * 2);
+      console.log(multiplyByTwo); // [2, 4, 6, 8, 10]
+    ```
+    In the above code, custom method name 'myMap' has been used to avoid conflicts with built-in method.
+
+  2. **filter:** 
+      Similar to map method, `Array.filter` method takes callback function as an argument and the callback function can have three agurguments passed into it.
+
+          i. Current value
+          ii. Index of current value(optional)
+          iii. array(optional)
+
+      The syntax looks like below,
+
+      ```js
+      let newArray = arr.filter(callback(currentValue[, index, arr) {
+        // return new array whose elements satisfy the callback conditions
+      })
+      ```
+      Let's build our filter polyfill based on the above syntax, 
+
+      ```js
+      Array.prototype.myFilter = function(cb) {
+        let newArr = [];
+        for(let i=0; i< this.length; i++) {
+           if(cb(this[i], i, this)) {
+             newArr.push(this[i]);
+           }
+        }
+        return newArr;
+      }
+
+      const nums = [1, 2, 3, 4, 5, 6];
+      const evenNums = nums.myFilter(x => x % 2);
+      console.log(evenNums); // [2, 4, 6]
+    ```
+ 3. **reduce:**
+
+      The built-in `Array.reduce` method syntax will be helpful to write our own polyfill. The reduce method takes the callback function as first argument and the initial value as second argument.
+
+      The callback function can have four arguments passed into it.
+      i. Accumulator
+      ii. Current value
+      iii. Index of current value(optional)
+      iv. array(optional)
+
+    The syntax would like below,
+
+    ```js
+    arr.reduce(callback((acc, curr, i, arr) => {}), initValue);
+    ```
+    Let's build our reduce polyfill based on the above syntax, 
+
+    ```js
+    Array.prototype.myReduce = function(cb, initialValue) {
+        let accumulator = initialValue;
+        for(let i=0; i< this.length; i++) {
+            accumulator = accumulator ? cb(accumulator, this[i], i, this) : this[i];
+        }
+        return accumulator;
+    }
+      const nums = [1, 2, 3, 4, 5, 6];
+      const sum = nums.myReduce((acc, curr, i, arr) => {
+        return acc += curr
+      }, 0);
+      console.log(sum); // 21
+    ```
 **[⬆ Back to Top](#table-of-contents)**
 
 459. ### What is the difference between map and forEach functions?
