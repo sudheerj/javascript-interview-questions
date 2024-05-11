@@ -3820,8 +3820,7 @@
      };
 
      for (let value of Object.values(object)) {
-       console.log(`${value}`); // 'Good morning'
-       100;
+       console.log(`${value}`); // 'Good morning \n100'
      }
      ```
 
