@@ -1436,7 +1436,10 @@
     1. Create a Web Worker Object: You can create a web worker object by checking for browser support. Let's name this file as web_worker_example.js
 
     ```javascript
-    if (typeof w == "undefined") {
+
+    let w;
+    
+    if (typeof Worker !== "undefined") {
       w = new Worker("counter.js");
     }
     ```
