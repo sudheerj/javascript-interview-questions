@@ -863,7 +863,7 @@
     ```
     You can also call the function which you are passing to higher order function as callback function.
 
-    The higher order function is helpful to write the modular and reusable code. For example, the below example illustrate the 
+    The higher order function is helpful to write the modular and reusable code. 
 
     **[⬆ Back to Top](#table-of-contents)**
 
