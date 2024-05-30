@@ -2651,7 +2651,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-130. ### What are the pros and cons of for loop
+130. ### What are the pros and cons of for loops
 
      The for-loop is a commonly used iteration syntax in javascript. It has both pros and cons
 
@@ -2664,7 +2664,7 @@
 
      1. Too verbose
      2. Imperative
-     3. You might face one-by-off errors
+     3. You might face off-by-one errors.
 
      **[⬆ Back to Top](#table-of-contents)**
 
