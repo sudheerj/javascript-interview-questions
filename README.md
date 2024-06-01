@@ -174,7 +174,7 @@
 | 147 | [What are the recommendations to create new object](#what-are-the-recommendations-to-create-new-object)                                                       |
 | 148 | [How do you define JSON arrays](#how-do-you-define-json-arrays)                                                                                               |
 | 149 | [How do you generate random integers](#how-do-you-generate-random-integers)                                                                                   |
-| 150 | [Can you write a random integers function to print integers with in a range](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range)     |
+| 150 | [Can you write a random integers function to print integers within a range](#can-you-write-a-random-integers-function-to-print-integers-within-a-range)     |
 | 151 | [What is tree shaking](#what-is-tree-shaking)                                                                                                                 |
 | 152 | [What is the need of tree shaking](#what-is-the-need-of-tree-shaking)                                                                                         |
 | 153 | [Is it recommended to use eval](#is-it-recommended-to-use-eval)                                                                                               |
@@ -2965,7 +2965,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-150. ### Can you write a random integers function to print integers with in a range
+150. ### Can you write a random integers function to print integers within a range
 
      Yes, you can create a proper random function to return a random number between min and max (both included)
 
