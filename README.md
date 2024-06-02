@@ -154,7 +154,7 @@
 | 127 | [How do you test for an empty object](#how-do-you-test-for-an-empty-object)                                                                                   |
 | 128 | [What is an arguments object](#what-is-an-arguments-object)                                                                                                   |
 | 129 | [How do you convert the first letter of a string to uppercase](#how-do-you-make-first-letter-of-the-string-in-an-uppercase)                                   |
-| 130 | [What are the pros and cons of for loop](#what-are-the-pros-and-cons-of-for-loop)                                                                             |
+| 130 | [What are the pros and cons of for loops](#what-are-the-pros-and-cons-of-for-loops)                                                                             |
 | 131 | [How do you display the current date in javascript](#how-do-you-display-the-current-date-in-javascript)                                                       |
 | 132 | [How do you compare two date objects](#how-do-you-compare-two-date-objects)                                                                                   |
 | 133 | [How do you check if a string starts with another string](#how-do-you-check-if-a-string-starts-with-another-string)                                           |
