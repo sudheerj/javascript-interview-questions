@@ -1,0 +1,12 @@
+{
+  "name": "javascript-interview-questions",
+  "version": "1.0.0",
+  "description": "List of 1000 JavaScript Interview Questions",
+  "author": "Sudheer Jonna",
+  "scripts": {
+    "gen": "node scripts/toc.mjs"
+  },
+  "dependencies": {
+    "github-slugger": "^2.0.0"
+  }
+}
