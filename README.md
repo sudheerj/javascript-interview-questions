@@ -485,7 +485,7 @@
 | 457 | [What is the difference between map and forEach functions?](#what-is-the-difference-between-map-and-foreach-functions) |
 | 458 | [Give an example of statements affected by automatic semicolon insertion?](#give-an-example-of-statements-affected-by-automatic-semicolon-insertion) |
 | 459 | [What are the event phases on browser?](#what-are-the-event-phases-on-browser) |
-| 460 | [What are the real world usecases of proxy?](#what-are-the-real-world-usecases-of-proxy) |
+| 460 | [What are the real world use cases of proxy?](#what-are-the-real-world-use-cases-of-proxy) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -8602,7 +8602,7 @@ Here are some common use cases of closures:
 
 **[⬆ Back to Top](#table-of-contents)**
 
-459. ### What are the event phases on browser?
+459. ### What are the event phases of a browser?
      There are 3 phases in the lifecycle of an event propagation in JavaScript,
 
      1. **Capturing phase:** This phase goes down gradually from the top of the DOM tree to the target element when a nested element clicked. Before the click event reaching the final destination element, the click event of each parent's element must be triggered.
@@ -8617,8 +8617,8 @@ Here are some common use cases of closures:
 
   **[⬆ Back to Top](#table-of-contents)**
 
-460. ### What are the real world usecases of proxy?
-     Proxies are not used in regular day to day JavaScript work but they enabled many exciting programming patterns. Some of the real world usecases are listed below,
+460. ### What are the real world use cases of proxy?
+     Proxies are not used in regular day to day JavaScript work but they enabled many exciting programming patterns. Some of the real world use cases are listed below,
 
      1. Vue3 used proxy concept to implement reactive state 
      2. SolidJS implemented reactive stores 
