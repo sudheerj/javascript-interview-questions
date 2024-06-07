@@ -1,0 +1,36 @@
+name: Generate table of contents
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+env:
+  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+
+jobs:
+  gen-toc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Install dependencies
+        run: npm install
+      - name: Generate table of contents
+        run: npm run gen
+      - name: 'Commit changes if required'
+        run: |
+          if ! git diff --quiet README.md; then
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git config user.name "GitHub Actions"
+            git add README.md
+            git commit -m "[auto] regenerate table of contents"
+            git push
+            echo "[info] Table of contents updated and committed."
+          else
+            echo "[info] No changes to table of contents."
+          fi
+        working-directory: ${{ github.workspace }}
