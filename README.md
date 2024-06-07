@@ -4507,7 +4507,7 @@
 
 242. ### How do you sort elements in an array
 
-     The sort() method is used to sort the elements of an array in place and returns the sorted array. The example usage would be as below,
+     The sort() method is used to sort the elements of an array in place and returns the sorted array. The default sort order is ascending, based on the string Unicode order. The example usage would be as below,
 
      ```javascript
      var months = ["Aug", "Sep", "Jan", "June"];
