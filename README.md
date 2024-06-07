@@ -484,7 +484,7 @@
 | 456 | [How do you create polyfills for map, filter and reduce methods?](#how-do-you-create-polyfills-for-map-filter-and-reduce-methods) |
 | 457 | [What is the difference between map and forEach functions?](#what-is-the-difference-between-map-and-foreach-functions) |
 | 458 | [Give an example of statements affected by automatic semicolon insertion?](#give-an-example-of-statements-affected-by-automatic-semicolon-insertion) |
-| 459 | [What are the event phases on browser?](#what-are-the-event-phases-on-browser) |
+| 459 | [What are the event phases of a browser?](#what-are-the-event-phases-of-a-browser) |
 | 460 | [What are the real world use cases of proxy?](#what-are-the-real-world-use-cases-of-proxy) |
 <!-- TOC_END -->
 
