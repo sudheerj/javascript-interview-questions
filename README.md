@@ -5123,7 +5123,7 @@
 
 280. ### How do you list all properties of an object
 
-     You can use the `Object.getOwnPropertyNames()` method which returns an array of all properties found directly in a given object. Let's the usage of it in an example,
+     You can use the `Object.getOwnPropertyNames()` method which returns an array of all properties found directly in a given object. Let's see the usage of this in an example below:
 
      ```javascript
      const newObject = {
