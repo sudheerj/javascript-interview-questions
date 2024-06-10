@@ -8431,6 +8431,7 @@ The execution context in JavaScript is a data structure that stores the informat
 The execution context has two phases:
 * Creation phase: In this phase, the JavaScript engine creates the execution context and sets up the script's environment. This includes creating the variable object and the scope chain.
 * Execution phase: In this phase, the JavaScript engine executes the code in the execution context. This includes evaluating expressions, assigning values to variables, and calling functions.
+
 The execution context is created when a function is called. The function's code is then executed in the execution context. When the function returns, the execution context is destroyed.
 
 **[⬆ Back to Top](#table-of-contents)**
