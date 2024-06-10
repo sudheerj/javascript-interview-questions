@@ -328,7 +328,7 @@
 | 300 | [How to set the cursor to wait](#how-to-set-the-cursor-to-wait) |
 | 301 | [How do you create an infinite loop](#how-do-you-create-an-infinite-loop) |
 | 302 | [Why do you need to avoid with statement](#why-do-you-need-to-avoid-with-statement) |
-| 303 | [What is the output of below for loops](#what-is-the-output-of-below-for-loops) |
+| 303 | [What is the output of the following for loops](#what-is-the-output-of-the-following-for-loops) |
 | 304 | [List down some of the features of ES6](#list-down-some-of-the-features-of-es6) |
 | 305 | [What is ES6](#what-is-es6) |
 | 306 | [Can I redeclare let and const variables](#can-i-redeclare-let-and-const-variables) |
@@ -5531,7 +5531,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-303. ### What is the output of below for loops
+303. ### What is the output of the following for loops
 
      ```javascript
      for (var i = 0; i < 4; i++) {
