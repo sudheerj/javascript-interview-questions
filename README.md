@@ -8426,6 +8426,13 @@ Here are some common use cases of closures:
 **[⬆ Back to Top](#table-of-contents)**
 
 451. ### What are the phases of execution context?
+The execution context in JavaScript is a data structure that stores the information necessary for executing a piece of code. It includes the code itself, the values of the variables used in the code, and the scope chain. The scope chain is a list of objects that are used to resolve variable names.
+
+The execution context has two phases:
+* Creation phase: In this phase, the JavaScript engine creates the execution context and sets up the script's environment. This includes creating the variable object and the scope chain.
+* Execution phase: In this phase, the JavaScript engine executes the code in the execution context. This includes evaluating expressions, assigning values to variables, and calling functions.
+
+The execution context is created when a function is called. The function's code is then executed in the execution context. When the function returns, the execution context is destroyed.
 
 **[⬆ Back to Top](#table-of-contents)**
 
