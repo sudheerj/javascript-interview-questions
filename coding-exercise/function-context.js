@@ -15,4 +15,4 @@ function User(name, age) {
 
 var user = new User('John', 25);
 var profile = user.getProfile();
-profile(); //I'm undefined, undefined yrs old
+profile(); //I'm , undefined yrs old
