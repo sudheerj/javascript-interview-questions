@@ -332,7 +332,7 @@
 | 304 | [List down some of the features of ES6](#list-down-some-of-the-features-of-es6) |
 | 305 | [What is ES6](#what-is-es6) |
 | 306 | [Can I redeclare let and const variables](#can-i-redeclare-let-and-const-variables) |
-| 307 | [Is const variable makes the value immutable](#is-const-variable-makes-the-value-immutable) |
+| 307 | [Does the const variable make the value immutable](#Does-the-const-variable-make-the-value-immutable) |
 | 308 | [What are default parameters](#what-are-default-parameters) |
 | 309 | [What are template literals](#what-are-template-literals) |
 | 310 | [How do you write multi-line strings in template literals](#how-do-you-write-multi-line-strings-in-template-literals) |
@@ -5615,9 +5615,9 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-307. ### Is const variable makes the value immutable
+307. ### Does the `const` variable make the value immutable
 
-     No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
+     No, the `const` variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
 
      ```javascript
      const userList = [];
