@@ -390,7 +390,7 @@
 | 362 | [What is destructuring aliases](#what-is-destructuring-aliases) |
 | 363 | [How do you map the array values without using map method](#how-do-you-map-the-array-values-without-using-map-method) |
 | 364 | [How do you empty an array](#how-do-you-empty-an-array) |
-| 365 | [How do you rounding numbers to certain decimals](#how-do-you-rounding-numbers-to-certain-decimals) |
+| 365 | [How do you round numbers to certain decimals](#how-do-you-round-numbers-to-certain-decimals) |
 | 366 | [What is the easiest way to convert an array to an object](#what-is-the-easiest-way-to-convert-an-array-to-an-object) |
 | 367 | [How do you create an array with some data](#how-do-you-create-an-array-with-some-data) |
 | 368 | [What are the placeholders from console object](#what-are-the-placeholders-from-console-object) |
@@ -6606,7 +6606,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-365. ### How do you rounding numbers to certain decimals
+365. ### How do you round numbers to certain decimals
 
      You can round numbers to a certain number of decimals using `toFixed` method from native javascript.
 
