@@ -6916,7 +6916,7 @@
      1. Create an `AbortController` instance
      2. Get the signal property of an instance and pass the signal as a fetch option for signal
      3. Call the AbortController's abort property to cancel all fetches that use that signal
-        For example, let's pass the same signal to multiple fetch calls will cancel all requests with that signal,
+        For example, passing the same signal to multiple fetch calls will cancel all requests with that signal,
 
      ```javascript
      const controller = new AbortController();
