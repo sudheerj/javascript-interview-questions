@@ -6950,10 +6950,10 @@
 
 384. ### What is web speech API
 
-     Web speech API is used to enable modern browsers recognize and synthesize speech(i.e, voice data into web apps). This API has been introduced by W3C Community in the year 2012. It has two main parts,
+     Web speech API is used to enable modern browsers recognize and synthesize speech(i.e, voice data into web apps). This API was introduced by W3C Community in the year 2012. It has two main parts:
 
      1. **SpeechRecognition (Asynchronous Speech Recognition or Speech-to-Text):** It provides the ability to recognize voice context from an audio input and respond accordingly. This is accessed by the `SpeechRecognition` interface.
-        The below example shows on how to use this API to get text from speech,
+        The example below shows how to use this API to get text from speech,
 
      ```javascript
      window.SpeechRecognition =
