@@ -8647,6 +8647,41 @@ The execution context is created when a function is called. The function's code 
 
   **[⬆ Back to Top](#table-of-contents)**
 
+461. ### What are hidden classes?
+
+     Since JavaScript is a dynamic programming language, you can add or remove properties and methods from objects on the fly at runtime. This nature of JavaScript increases the dynamic dictionary lookups(because objects implemented as HashTables in memory) for retrieving a property on an object. 
+
+     Let's consider the following example to see how the additional properties `age` and `gender` added at runtime.
+
+     ```javascript
+      function Person(name) {
+        this.name = name;
+      }
+
+      var person1 = new Person('John');
+      var person2 = new Person('Randy');
+
+      person1.age = 40;
+      person1.gender = "Male";
+
+      person2.gender = "Female";
+      person2.age = 50;
+     ```
+    
+     As a result, this behavior leads to lower JavaScript performance compared to the contiguous buffer method used in non-dynamic languages. The V8 engine provided a solution named **hidden classes** to optimize the access time when retrieving a property on an object. This optimization is achieved by sharing hidden classes among objects created in a similar fashion. These hidden classes are attached to each and every object to track its shape.
+    
+     When V8 engine sees the constructor function(e.g, Person) is declared, it creates a hidden class (let's say Class01) without any offsets. Once the first property assignment statement (`this.name = name`) is executed, V8 engine will create a new hidden class (let's say Class02), inheriting all properties from the previous hidden class (Class01), and assign the property to offset 0. This process enables compiler to skip dictionary lookup when you try to retrieve the same property(i.e, name). Instead, V8 will directly point to Class02. The same procedure happens when you add new properties to the object. 
+     
+     For example, adding `age` and `gender` properties to `Person` constructor leads to transition of hidden classes(Class02 -> Class03 -> Class04). If you create a second object(Person2) based on the same Person object, both Class01 and Class02 hidden classes are going to be shared. However, the hidden classes Class03 and Class04 cannot be shared because second object has been modified with a different order of properties assignment. 
+     
+     Since both the objects(person1 and person2) do not share the hidden classes, now V8 engine cannot use **Inline Caching** technique for the faster access of properties. 
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+462. ### What is inline caching?
+
+  **[⬆ Back to Top](#table-of-contents)**
+
 <!-- QUESTIONS_END -->
 
 ### Coding Exercise
