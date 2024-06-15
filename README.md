@@ -498,6 +498,8 @@
 | 458 | [Give an example of statements affected by automatic semicolon insertion?](#give-an-example-of-statements-affected-by-automatic-semicolon-insertion) |
 | 459 | [What are the event phases of a browser?](#what-are-the-event-phases-of-a-browser) |
 | 460 | [What are the real world use cases of proxy?](#what-are-the-real-world-use-cases-of-proxy) |
+| 461 | [What are hidden classes?](#what-are-hidden-classes) |
+| 462 | [What is inline caching?](#what-is-inline-caching) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
