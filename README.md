@@ -8680,6 +8680,28 @@ The execution context is created when a function is called. The function's code 
 
 462. ### What is inline caching?
 
+  Inline caching is an optimization technique based on the observation that repeated calls to same function tends to occur on same type of objects. The V8 compiler stores a cache of the type of objects that were passed as a parameter in recent method calls. Upon next time when same function is called, compiler can directly search for the type in cache.
+
+  Let's consider an example where the compiler stores the shape type in cache for repeated calls in the loop.
+
+  ```js
+    let shape = {width : 30,  height: 20}; // Compiler store the type in cache as { width: <int>, height: <int>} after repeated calls
+    
+    function area(obj) {
+      //Calculate area
+    }
+    for(let i=0; i<100; i++) {
+      area(shape);
+    }
+  ```
+  After few successful calls of the same area method to its same hidden class, V8 engine omits the hidden class lookup and simply adds the offset of the property to the object pointer itself. As a result, it increases the execution speed.
+
+  There are mainly 3 types of inline caching possible:
+
+  1. Monomorphic: This is a optimized caching technique in which there can be always same type of objects passed.
+  2. Polymorphic: This ia slightly optimized  caching technique in which limited number of different types of objects can be passed.
+  3. Megamorphic: It is an unoptimized caching in which any number of different objects can be passed.
+
   **[⬆ Back to Top](#table-of-contents)**
 
 <!-- QUESTIONS_END -->
