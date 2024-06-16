@@ -461,7 +461,7 @@
 | 421 | [How to invoke an IIFE without any extra brackets?](#how-to-invoke-an-iife-without-any-extra-brackets) |
 | 422 | [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases) |
 | 423 | [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors) |
-| 424 | [How do style the console output using CSS?](#how-do-style-the-console-output-using-css) |
+| 424 | [How do you style the console output using CSS?](#how-do-you-style-the-console-output-using-css) |
 | 425 | [What is nullish coalescing operator (??)?](#what-is-nullish-coalescing-operator-) |
 | 426 | [How do you group and nest console output?](#how-do-you-group-and-nest-console-output) |
 | 427 | [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays) |
@@ -7789,7 +7789,7 @@
 
 424. ### How do style the console output using CSS?
 
-     You can add CSS styling to the console output using the CSS format content specifier %c. The console string message can be appended after the specifier and CSS style in another argument. Let's print the red the color text using console.log and CSS specifier as below,
+     You can add CSS styling to the console output using the CSS format content specifier %c. The console string message can be appended after the specifier and CSS style in another argument. Let's print the red color text using console.log and CSS specifier as below,
 
      ```js
      console.log("%cThis is a red text", "color:red");
@@ -7999,7 +7999,7 @@
         }
         customElements.define("custom-element", CustomElement);
         ```
-     2. **Use custome element just like other HTML element:** Declare your custom element as a HTML tag.
+     2. **Use custom element just like other HTML element:** Declare your custom element as a HTML tag.
 
      ```javascript
         <body>
