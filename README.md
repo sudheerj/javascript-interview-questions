@@ -461,7 +461,7 @@
 | 421 | [How to invoke an IIFE without any extra brackets?](#how-to-invoke-an-iife-without-any-extra-brackets) |
 | 422 | [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases) |
 | 423 | [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors) |
-| 424 | [How do you style the console output using CSS?](#how-do-you-style-the-console-output-using-css) |
+| 424 | [How do style the console output using CSS?](#how-do-style-the-console-output-using-css) |
 | 425 | [What is nullish coalescing operator (??)?](#what-is-nullish-coalescing-operator-) |
 | 426 | [How do you group and nest console output?](#how-do-you-group-and-nest-console-output) |
 | 427 | [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays) |
