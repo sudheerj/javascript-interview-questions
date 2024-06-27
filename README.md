@@ -1,6 +1,6 @@
 # JavaScript Interview Questions & Answers
 
-> Click :star:if you like the project and follow [@SudheerJonna](https://twitter.com/SudheerJonna) for more updates. Coding questions available [here](#coding-exercise). PDF and Epub versions available at [actions tab](https://github.com/sudheerj/JavaScript-Interview-Questions/actions).
+> Click :star:if you like the project and follow [@SudheerJonna](https://twitter.com/SudheerJonna) for more updates. Coding questions available [here](#coding-exercise). Check [DataStructures and Algorithms](https://github.com/sudheerj/datastructures-algorithms) for DSA related questions and [ECMAScript](https://github.com/sudheerj/ECMAScript-features) for all ES features.).
 
 ---
 
@@ -30,8 +30,6 @@
 </p>
 
 ---
-
-**Note:** Please check [DataStructures and Algorithms](https://github.com/sudheerj/datastructures-algorithms) for DSA related questions or problems.
 
 ### Table of Contents
 
@@ -7420,7 +7418,12 @@
 
 409. ### What is deno
 
-     Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 JavaScript engine and the Rust programming language.
+     Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 JavaScript engine and the Rust programming language. It solves the inherent problems of Node.Js and has been officially released in May 2018. Unlike Node.JS, by default Deno  executes the code in a sandbox, which means that runtime has no access to below areas:
+
+      1. The file system
+      2. The network
+      3. Execution of other scripts
+      4. The environment variables
 
      **[⬆ Back to Top](#table-of-contents)**
 
