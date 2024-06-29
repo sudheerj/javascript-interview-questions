@@ -8709,6 +8709,31 @@ The execution context is created when a function is called. The function's code 
 
   **[⬆ Back to Top](#table-of-contents)**
 
+  463. ### What are the different ways to execute external scripts?
+
+       There are three different ways to execute external scripts,
+
+       1. async: The script is downloaded in parallel to parsing the page, and executed as soon as it is available even before parsing completes. The parsing of the page is going to be interuppted once the script is downloaded completely and then the script is executed. Thereafter, the parsing of the remaining page will continue.
+
+          The syntax for async usage is as shown below,
+
+          ```html
+          <script src="demo.js" async></script>
+          ```
+
+       2. defer: The script is downloaded in parallel to parsing the page, and executed after the page has finished parsing.
+      
+          The syntax for defer usage is as shown below,
+
+          ```html
+          <script src="demo.js" defer></script>
+          ```
+       3. Neither async or defer: The script is downloaded and executed immediately by blocking parsing of the page until the script execution is completed.
+
+       **Note:** You should only use either async or defer attribute if the `src` attribute is present.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
 <!-- QUESTIONS_END -->
 
 ### Coding Exercise
