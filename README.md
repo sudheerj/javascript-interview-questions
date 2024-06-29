@@ -498,6 +498,7 @@
 | 460 | [What are the real world use cases of proxy?](#what-are-the-real-world-use-cases-of-proxy) |
 | 461 | [What are hidden classes?](#what-are-hidden-classes) |
 | 462 | [What is inline caching?](#what-is-inline-caching) |
+| 463 | [What are the different ways to execute external scripts?](#what-are-the-different-ways-to-execute-external-scripts) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -8709,7 +8710,7 @@ The execution context is created when a function is called. The function's code 
 
   **[⬆ Back to Top](#table-of-contents)**
 
-  463. ### What are the different ways to execute external scripts?
+463. ### What are the different ways to execute external scripts?
 
        There are three different ways to execute external scripts,
 
