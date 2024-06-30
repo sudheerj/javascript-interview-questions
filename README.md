@@ -6,7 +6,7 @@
 
 <div>
 <p align="center">
-  <a href=https://www.greatfrontend.com/questions/js?utm_source=github&utm_medium=referral&utm_campaign=sudheerj-react>
+  <a href="https://www.greatfrontend.com/questions/js?utm_source=github&utm_medium=referral&utm_campaign=sudheerj-react&gnrs=sudheerj">
     <img src="./images/collab/greatfrontend-js-banner4x.png" alt="GreatFrontEnd JavaScript Interview Questions" width="100%">
   </a>
 </p>
