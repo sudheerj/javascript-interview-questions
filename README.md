@@ -499,6 +499,7 @@
 | 461 | [What are hidden classes?](#what-are-hidden-classes) |
 | 462 | [What is inline caching?](#what-is-inline-caching) |
 | 463 | [What are the different ways to execute external scripts?](#what-are-the-different-ways-to-execute-external-scripts) |
+| 464 | [How to detect system dark mode in javascript?](#how-to-detect-system-dark-mode-in-javascript) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -8735,7 +8736,7 @@ The execution context is created when a function is called. The function's code 
 
     **[⬆ Back to Top](#table-of-contents)**
 
-  464. ### How to detect system dark mode in javascript?
+464. ### How to detect system dark mode in javascript?
 
       The combination of `Window.matchMedia()` utility method along with media query is used to check if the user has selected a dark color scheme in their operating system settings or not. The CSS media query `prefers-color-scheme` needs to be passed to identify system color theme.
 
