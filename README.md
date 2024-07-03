@@ -500,6 +500,7 @@
 | 462 | [What is inline caching?](#what-is-inline-caching) |
 | 463 | [What are the different ways to execute external scripts?](#what-are-the-different-ways-to-execute-external-scripts) |
 | 464 | [How to detect system dark mode in javascript?](#how-to-detect-system-dark-mode-in-javascript) |
+| 465 | [What is Lexical Scope?](#what-is-lexical-scope) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -8735,6 +8736,23 @@ The execution context is created when a function is called. The function's code 
        **Note:** You should only use either async or defer attribute if the `src` attribute is present.
 
     **[⬆ Back to Top](#table-of-contents)**
+
+465. ### What is Lexical Scope?
+        
+        Lexical scope is the ability for a function scope to access variables from the parent scope.
+
+      <script>
+              function x(){
+                var a=10;
+                function y(){
+                    console.log(a); // will print a , because of lexical scope, it will first look 'a' in 
+                //its local memory space and then in its parent functions memory space
+                }
+                y();
+            }
+            x();
+      </script>
+    
 
 464. ### How to detect system dark mode in javascript?
 
