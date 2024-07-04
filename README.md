@@ -8752,7 +8752,10 @@ The execution context is created when a function is called. The function's code 
             }
             x();
       </script>
-    
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+<!-- QUESTIONS_END -->
 
 464. ### How to detect system dark mode in javascript?
 
