@@ -4183,11 +4183,13 @@
      Object.defineProperty(obj, "increment", {
        get: function () {
          this.counter++;
+         return this.counter;
        },
      });
      Object.defineProperty(obj, "decrement", {
        get: function () {
          this.counter--;
+         return this.counter;
        },
      });
 
