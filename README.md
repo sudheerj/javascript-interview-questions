@@ -967,7 +967,7 @@
     | ----------------------------------------------------- | --------------------------- |
     | It has been available from the beginning of JavaScript | Introduced as part of ES6   |
     | It has function scope                                 | It has block scope          |
-    | Variable declaration will be hoisted                             | Hoisted but not initialized |
+    | Variable declaration will be hoisted, initialized as undefined  | Hoisted but not initialized |
     | It is possible to re-declare the variable in the same scope | It is not possible to re-declare the variable |
 
     Let's take an example to see the difference,
