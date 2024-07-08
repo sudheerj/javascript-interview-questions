@@ -8485,7 +8485,7 @@ The execution context is created when a function is called. The function's code 
      There are several built-in higher order functions exists on arrays, strings, DOM and promise methods in javascript. These higher order functions provides significant level of abstraction. The list of functions on these categories are listed below,
      1. **arrays:** map, filter, reduce, sort, forEach, some etc.
      2. **DOM**: The DOM method `element.addEventListener(type, handler)` also accepts the function handler as a second argument.
-     3. **Strings:** .some() method
+     3. **Strings:** replace() method.
 
 
      **[⬆ Back to Top](#table-of-contents)**
