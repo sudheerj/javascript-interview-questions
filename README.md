@@ -7701,7 +7701,7 @@
 
      // key are the property keys
      for (let key in arr) {
-       console.log(key); // 0, 1, 2 & newValue
+       console.log(key); // 0, 1, 2 & newProp
      }
 
      // value are the property values
