@@ -5926,16 +5926,20 @@
 
 320. ### What are typed arrays
 
-     Typed arrays are array-like objects from ECMAScript 6 API for handling binary data. JavaScript provides 8 Typed array types,
+     Typed arrays are array-like objects from ECMAScript 6 API for handling binary data. JavaScript provides 12 Typed array types,
 
      1. Int8Array: An array of 8-bit signed integers
-     2. Int16Array: An array of 16-bit signed integers
-     3. Int32Array: An array of 32-bit signed integers
-     4. Uint8Array: An array of 8-bit unsigned integers
+     2. Uint8Array: An array of 8-bit unsigned integers
+     3. Uint8ClampedArray: An array of 8-bit unsigned integers clamped to 0-255
+     4. Int16Array: An array of 16-bit signed integers
      5. Uint16Array: An array of 16-bit unsigned integers
-     6. Uint32Array: An array of 32-bit unsigned integers
-     7. Float32Array: An array of 32-bit floating point numbers
-     8. Float64Array: An array of 64-bit floating point numbers
+     6. Int32Array: An array of 32-bit signed integers
+     7. Uint32Array: An array of 32-bit unsigned integers
+     8. BigInt64Array: An array of 64-bit signed BigInts
+     9. BigUint64Array: An array of 64-bit unsigned BigInts
+     10. Float16Array: An array of 16-bit floating point numbers
+     11. Float32Array: An array of 32-bit floating point numbers
+     12. Float64Array: An array of 64-bit floating point numbers
 
      For example, you can create an array of 8-bit signed integers as below
 
