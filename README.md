@@ -6199,12 +6199,13 @@
      2. When you use delete operator on a variable name
      3. Using eval or arguments as variable or function argument name
      4. When you use newly reserved keywords
-     5. When you declare a function in a block
+     5. When you declare a function in a block and access it from outside of the block
 
      ```javascript
      if (someCondition) {
        function f() {}
      }
+     f(); // ReferenceError: f is not defined
      ```
 
      Hence, the errors from above cases are helpful to avoid errors in development/production environments.
