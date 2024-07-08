@@ -6214,7 +6214,7 @@
 
 341. ### Do all objects have prototypes
 
-     No. All objects have prototypes except for the base object which is created by the user, or an object that is created using the new keyword.
+     No. All objects have prototypes except the base object or an object created with Object.create(null) method. The base object is Object.prototype, and its prototype is null.
 
      **[⬆ Back to Top](#table-of-contents)**
 
