@@ -11640,6 +11640,45 @@ Even though there is a timer of 5 seconds supplied to `setTimeout` callback, it 
 
 **[⬆ Back to Top](#table-of-contents)**
 
+#### 84. What is the output of below code?
+
+```javascript
+let arr = ['wöchentlich','Woche', 'wäre', 'Wann'];
+console.log(arr.sort());
+```
+
+- 1: ['wöchentlich','Woche', 'wäre', 'Wann']
+- 2: ['Wann', 'wäre', 'Woche', 'wöchentlich']
+- 3: ['Wann', 'Woche', 'wäre', 'wöchentlich']
+- 4: ['wäre', 'Wann', 'wöchentlich','Woche']
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+
+Javascript has a native method sort that allows sorting an array of elements in-place. It will treat each element as a string and sort it alphabetically. But if you try to sort an array of strings which has non-ASCII characters, you will receive a strange result. This is because characters with an accent have higher character codes. 
+
+In this case, the sort order of an array is ['Wann', 'Woche', 'wäre', 'wöchentlich'].
+
+If you want to sort an array of string values which has non-ASCII characters in an ascending order,  there are two possible options like **localeCompare** and **Intl.Collator** provided by ECMAScript Internationalization API.
+
+**localeCompare:**
+```javascript
+let arr = ['wöchentlich','Woche', 'wäre', 'Wann'];
+console.log(arr.sort((a, b) => a.localeCompare(b))); //['Wann', 'wäre', 'Woche', 'wöchentlich']
+```
+**Intl.Collator:**
+```javascript
+let arr = ['wöchentlich','Woche', 'wäre', 'Wann'];
+console.log(arr.sort(Intl.Collator().compare)); //['Wann', 'wäre', 'Woche', 'wöchentlich']
+```
+
+</p>
+</details>
+
+**[⬆ Back to Top](#table-of-contents)**
+ 
 ## Disclaimer
 
 The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
