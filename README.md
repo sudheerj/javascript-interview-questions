@@ -4338,9 +4338,10 @@
 
 228. ### What are the different error names from error object
 
-     There are 6 different types of error names returned from error object,
+     There are 7 different types of error names returned from error object,
      | Error Name | Description |
      |---- | ---------
+     | AggregateError | An error indicating that multiple errors occurred |
      | EvalError | An error has occurred in the eval() function |
      | RangeError | An error has occurred with a number "out of range" |
      | ReferenceError | An error due to an illegal reference|
