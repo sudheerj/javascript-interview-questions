@@ -7763,9 +7763,9 @@
      Since both IIFE and void operator discard the result of an expression, you can avoid the extra brackets using `void operator` for IIFE as below,
 
      ```js
-     void (function (dt) {
+     void function (dt) {
        console.log(dt.toLocaleTimeString());
-     })(new Date());
+     }(new Date());
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
