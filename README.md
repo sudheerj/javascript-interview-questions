@@ -3077,12 +3077,12 @@
         1. [abc]: Used to find any of the characters between the brackets(a,b,c)
         2. [0-9]: Used to find any of the digits between the brackets
         3. (a|b): Used to find any of the alternatives separated with |
-     2. **Metacharacters:** These are characters with a special meaning
+     2. **Metacharacters:** These are characters with a special meaning.
         For example, below are some use cases,
         1. \\d: Used to find a digit
         2. \\s: Used to find a whitespace character
         3. \\b: Used to find a match at the beginning or ending of a word
-     3. **Quantifiers:** These are useful to define quantities
+     3. **Quantifiers:** These are useful to define quantities.
         For example, below are some use cases,
         1. n+: Used to find matches for any string that contains at least one n
         2. n\*: Used to find matches for any string that contains zero or more occurrences of n
@@ -3554,7 +3554,7 @@
 
      console.log(sum(1, 2)); //3
      console.log(sum(1, 2, 3)); //6
-     console.log(sum(1, 2, 3, 4)); //13
+     console.log(sum(1, 2, 3, 4)); //10
      console.log(sum(1, 2, 3, 4, 5)); //15
      ```
 
@@ -4338,9 +4338,10 @@
 
 228. ### What are the different error names from error object
 
-     There are 6 different types of error names returned from error object,
+     There are 7 different types of error names returned from error object,
      | Error Name | Description |
      |---- | ---------
+     | AggregateError | An error indicating that multiple errors occurred |
      | EvalError | An error has occurred in the eval() function |
      | RangeError | An error has occurred with a number "out of range" |
      | ReferenceError | An error due to an illegal reference|
@@ -5345,7 +5346,7 @@
      namespaceTwo.func1(); // This is a second definition
      ```
 
-     1. **Using IIFE (Immediately invoked function expression):** The outer pair of parentheses of IIFE creates a local scope for all the code inside of it and makes the anonymous function a function expression. Due to that, you can create the same function in two different function expressions to act as a namespace.
+     2. **Using IIFE (Immediately invoked function expression):** The outer pair of parentheses of IIFE creates a local scope for all the code inside of it and makes the anonymous function a function expression. Due to that, you can create the same function in two different function expressions to act as a namespace.
 
      ```javascript
      (function () {
@@ -5363,7 +5364,7 @@
      })();
      ```
 
-     1. **Using a block and a let/const declaration:** In ECMAScript 6, you can simply use a block and a let declaration to restrict the scope of a variable to a block.
+     3. **Using a block and a let/const declaration:** In ECMAScript 6, you can simply use a block and a let declaration to restrict the scope of a variable to a block.
 
      ```javascript
      {
@@ -5564,7 +5565,7 @@
 
      The output of the above for loops is 4 4 4 4 and 0 1 2 3
 
-     **Explanation:** Due to the event queue/loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with the `var` keyword it became a global variable and the value was equal to 4 using iteration when the time `setTimeout` function is invoked. Hence, the output of the first loop is `4 4 4 4`.
+     **Explanation:** Due to the event queue/loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with the `var` keyword it became a global variable and the value was equal to 4 using iteration when the time `setTimeout` function is invoked. Hence, the output of the second loop is `4 4 4 4`.
 
      Whereas in the second loop, the variable i is declared as the `let` keyword it becomes a block scoped variable and it holds a new value(0, 1 ,2 3) for each iteration. Hence, the output of the first loop is `0 1 2 3`.
 
@@ -5925,16 +5926,20 @@
 
 320. ### What are typed arrays
 
-     Typed arrays are array-like objects from ECMAScript 6 API for handling binary data. JavaScript provides 8 Typed array types,
+     Typed arrays are array-like objects from ECMAScript 6 API for handling binary data. JavaScript provides 12 Typed array types,
 
      1. Int8Array: An array of 8-bit signed integers
-     2. Int16Array: An array of 16-bit signed integers
-     3. Int32Array: An array of 32-bit signed integers
-     4. Uint8Array: An array of 8-bit unsigned integers
+     2. Uint8Array: An array of 8-bit unsigned integers
+     3. Uint8ClampedArray: An array of 8-bit unsigned integers clamped to 0-255
+     4. Int16Array: An array of 16-bit signed integers
      5. Uint16Array: An array of 16-bit unsigned integers
-     6. Uint32Array: An array of 32-bit unsigned integers
-     7. Float32Array: An array of 32-bit floating point numbers
-     8. Float64Array: An array of 64-bit floating point numbers
+     6. Int32Array: An array of 32-bit signed integers
+     7. Uint32Array: An array of 32-bit unsigned integers
+     8. BigInt64Array: An array of 64-bit signed BigInts
+     9. BigUint64Array: An array of 64-bit unsigned BigInts
+     10. Float16Array: An array of 16-bit floating point numbers
+     11. Float32Array: An array of 32-bit floating point numbers
+     12. Float64Array: An array of 64-bit floating point numbers
 
      For example, you can create an array of 8-bit signed integers as below
 
@@ -6006,7 +6011,8 @@
      [..."John Resig"];
      ```
 
-     The output of the array is ['J', 'o', 'h', 'n', '', 'R', 'e', 's', 'i', 'g']
+     The output of the array is ['J', 'o', 'h', 'n', ' ', 'R', 'e', 's', 'i', 'g']
+
      **Explanation:** The string is an iterable type and the spread operator within an array maps every character of an iterable to one element. Hence, each character of a string becomes an element within an Array.
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -6193,12 +6199,13 @@
      2. When you use delete operator on a variable name
      3. Using eval or arguments as variable or function argument name
      4. When you use newly reserved keywords
-     5. When you declare a function in a block
+     5. When you declare a function in a block and access it from outside of the block
 
      ```javascript
      if (someCondition) {
        function f() {}
      }
+     f(); // ReferenceError: f is not defined
      ```
 
      Hence, the errors from above cases are helpful to avoid errors in development/production environments.
@@ -6207,7 +6214,7 @@
 
 341. ### Do all objects have prototypes
 
-     No. All objects have prototypes except for the base object which is created by the user, or an object that is created using the new keyword.
+     No. All objects have prototypes except the base object or an object created with Object.create(null) method. The base object is Object.prototype, and its prototype is null.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -7694,7 +7701,7 @@
 
      // key are the property keys
      for (let key in arr) {
-       console.log(key); // 0, 1, 2 & newValue
+       console.log(key); // 0, 1, 2 & newProp
      }
 
      // value are the property values
@@ -7756,9 +7763,9 @@
      Since both IIFE and void operator discard the result of an expression, you can avoid the extra brackets using `void operator` for IIFE as below,
 
      ```js
-     void (function (dt) {
+     void function (dt) {
        console.log(dt.toLocaleTimeString());
-     })(new Date());
+     }(new Date());
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -8478,7 +8485,7 @@ The execution context is created when a function is called. The function's code 
      There are several built-in higher order functions exists on arrays, strings, DOM and promise methods in javascript. These higher order functions provides significant level of abstraction. The list of functions on these categories are listed below,
      1. **arrays:** map, filter, reduce, sort, forEach, some etc.
      2. **DOM**: The DOM method `element.addEventListener(type, handler)` also accepts the function handler as a second argument.
-     3. **Strings:** .some() method
+     3. **Strings:** replace() method.
 
 
      **[⬆ Back to Top](#table-of-contents)**
