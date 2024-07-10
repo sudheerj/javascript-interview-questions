@@ -190,7 +190,7 @@
 | 152 | [What is the need of tree shaking](#what-is-the-need-of-tree-shaking) |
 | 153 | [Is it recommended to use eval](#is-it-recommended-to-use-eval) |
 | 154 | [What is a Regular Expression](#what-is-a-regular-expression) |
-| 155 | [What are the string methods available in Regular expression](#what-are-the-string-methods-available-in-regular-expression) |
+| 155 | [What are the string methods that accept Regular expression](#what-are-the-string-methods-that-accept-regular-expression) |
 | 156 | [What are modifiers in regular expression](#what-are-modifiers-in-regular-expression) |
 | 157 | [What are regular expression patterns](#what-are-regular-expression-patterns) |
 | 158 | [What is a RegExp object](#what-is-a-regexp-object) |
