@@ -3029,9 +3029,10 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-155. ### What are the string methods available in Regular expression
+155. ### What are the string methods that accept Regular expression
 
-     Regular Expressions has two string methods: search() and replace().
+     There are six string methods: search(), replace(), replaceAll(), match(), matchAll(), and split().
+
      The search() method uses an expression to search for a match, and returns the position of the match.
 
      ```javascript
@@ -3039,11 +3040,27 @@
      var n = msg.search(/John/i); // 6
      ```
 
-     The replace() method is used to return a modified string where the pattern is replaced.
+     The replace() and replaceAll() methods are used to return a modified string where the pattern is replaced.
+
+     ```javascript
+     var msg = "ball bat";
+     var n1 = msg.replace(/b/i, "c"); // call bat
+     var n2 = msg.replaceAll(/b/i, "c"); // call cat
+     ```
+
+     The match() and matchAll() methods are used to return the matches when matching a string against a regular expression.
 
      ```javascript
      var msg = "Hello John";
-     var n = msg.replace(/John/i, "Buttler"); // Hello Buttler
+     var n1 = msg.match(/[A-Z]/g); // ["H", "J"]
+     var n2 = msg.matchAll(/[A-Z]/g); // this returns an iterator
+     ```
+
+     The split() method is used to split a string into an array of substrings, and returns the new array.
+
+     ```javascript
+     var msg = "Hello John";
+     var n = msg.split(/\s/); // ["Hello", "John"]
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
