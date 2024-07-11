@@ -6891,7 +6891,7 @@
      });
      ```
 
-    In the preceeding code, When the box element clicked, its background color appears in blue color and changed to while color upon clicking the browser back button using `popstate` event handler. The `state` property of `popstate` contains the copy of history entry's state object.
+     In the preceeding code, When the box element clicked, its background color appears in blue color and changed to while color upon clicking the browser back button using `popstate` event handler. The `state` property of `popstate` contains the copy of history entry's state object.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -7088,9 +7088,9 @@
      2. The Node.js Event Loop
 
 
-    - Browser Event Loop: The Browser Event Loop is used in client-side JavaScript applications and is responsible for handling events that occur within the browser environment, such as user interactions (clicks, keypresses, etc.), HTTP requests, and other asynchronous actions.
+     - Browser Event Loop: The Browser Event Loop is used in client-side JavaScript applications and is responsible for handling events that occur within the browser environment, such as user interactions (clicks, keypresses, etc.), HTTP requests, and other asynchronous actions.
 
-    - The Node.js Event Loop is used in server-side JavaScript applications and is responsible for handling events that occur within the Node.js runtime environment, such as file I/O, network I/O, and other asynchronous actions.
+     - The Node.js Event Loop is used in server-side JavaScript applications and is responsible for handling events that occur within the Node.js runtime environment, such as file I/O, network I/O, and other asynchronous actions.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -8760,7 +8760,7 @@ The execution context is created when a function is called. The function's code 
 
        **Note:** You should only use either async or defer attribute if the `src` attribute is present.
 
-    **[⬆ Back to Top](#table-of-contents)**
+       **[⬆ Back to Top](#table-of-contents)**
 
 464. ### What is Lexical Scope?
         
