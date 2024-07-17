@@ -8594,7 +8594,9 @@ The execution context is created when a function is called. The function's code 
       ```javascript
         const arr = [1, 2, 3, 4, 5];
         arr.map(x => x * x); // [1, 4, 9, 16, 25]
-        arr.forEach(x => x * x); // undefined
+        arr.forEach(x => x * x); // 
+        
+        The `forEach()` method in JavaScript always returns undefined. This is because forEach() is used to iterate over arrays and perform side effects on each element, rather than returning a `new array or transforming the original array`
       ```
 
      2. **Chaining methods:** The `map` method is chainable. i.e, It can be attached with `reduce`, `filter`, `sort` and other methods as well. Whereas `forEach` cannot be attached with any other methods because it returns `undefined` value.
