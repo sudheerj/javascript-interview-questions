@@ -500,7 +500,6 @@
 | 462 | [What is inline caching?](#what-is-inline-caching) |
 | 463 | [What are the different ways to execute external scripts?](#what-are-the-different-ways-to-execute-external-scripts) |
 | 464 | [What is Lexical Scope?](#what-is-lexical-scope) |
-| 465 | [How to detect system dark mode in javascript?](#how-to-detect-system-dark-mode-in-javascript)
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
