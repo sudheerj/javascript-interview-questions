@@ -500,6 +500,10 @@
 | 462 | [What is inline caching?](#what-is-inline-caching) |
 | 463 | [What are the different ways to execute external scripts?](#what-are-the-different-ways-to-execute-external-scripts) |
 | 464 | [What is Lexical Scope?](#what-is-lexical-scope) |
+| 465 | [How to detect system dark mode in javascript?](#how-to-detect-system-dark-mode-in-javascript) |
+| 466 | [What is the purpose of requestAnimationFrame method?](#what-is-the-purpose-of-requestanimationframe-method) |
+| 467 | [What is the difference between substring and substr methods?](#what-is-the-difference-between-substring-and-substr-methods) |
+| 468 | [How to find the number of parameters expected by a function?](#how-to-find-the-number-of-parameters-expected-by-a-function) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
