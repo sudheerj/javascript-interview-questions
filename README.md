@@ -8076,14 +8076,14 @@
 
 434. ### What is debouncing?
 
-     Debouncing is a programming pattern that allows delaying execution of some piece of code until a specified time to avoid unnecessary _CPU cycles, API calls and improve performance_. The debounce function make sure that your code is only triggered once per user input. The common usecases are Search box suggestions, text-field auto-saves, and eliminating double-button clicks.
+     Debouncing is a programming pattern that allows delaying execution of some piece of code until a specified time to avoid unnecessary _CPU cycles and API calls_. This in turn enhance the web page performance. The debounce function make sure that your code is only triggered once per user input. The common usecases are Search box suggestions, text-field auto-saves, and eliminating double-button clicks.
 
      Let's say you want to show suggestions for a search query, but only after a visitor has finished typing it. So here you write a debounce function where the user keeps writing the characters with in 500ms then previous timer cleared out using `clearTimeout` and reschedule API call/DB query for a new time—300 ms in the future.
 
      ```js
      function debounce(func, timeout = 500) {
        let timer;
-       return (...args) => {
+       return function (...args)  {
          clearTimeout(timer);
          timer = setTimeout(() => {
            func.apply(this, args);
@@ -8096,7 +8096,7 @@
      const processChange = debounce(() => fetchResults());
      ```
 
-     The _debounce()_ function can be used on input, button and window events
+   The _debounce()_ function can be used on input, button and window events.
 
      **Input:**
 
@@ -8120,7 +8120,7 @@
 
 435. ### What is throttling?
 
-     Throttling is a technique used to limit the execution of an event handler function, even when this event triggers continuously due to user actions. The common use cases are browser resizing, window scrolling etc.
+     Throttling is a technique used to limit the execution of an event handler function in a given period of time, even when this event triggers continuously due to user actions. The common use cases are browser resizing, window scrolling, mouse movements etc.
 
      The below example creates a throttle function to reduce the number of events for each pixel change and trigger scroll event for each 100ms except for the first event.
 
@@ -8784,8 +8784,6 @@ The execution context is created when a function is called. The function's code 
 
      **[⬆ Back to Top](#table-of-contents)**
 
-<!-- QUESTIONS_END -->
-
 465. ### How to detect system dark mode in javascript?
 
       The combination of `Window.matchMedia()` utility method along with media query is used to check if the user has selected a dark color scheme in their operating system settings or not. The CSS media query `prefers-color-scheme` needs to be passed to identify system color theme.
@@ -8810,6 +8808,64 @@ The execution context is created when a function is called. The function's code 
       **Note:** The matchMedia method returns **MediaQueryList** object stores information from a media query.
 
       **[⬆ Back to Top](#table-of-contents)**
+
+466. ### What is the purpose of requestAnimationFrame method?
+
+**[⬆ Back to Top](#table-of-contents)**
+     
+467. ### What is the difference between substring and substr methods?
+
+**[⬆ Back to Top](#table-of-contents)**
+
+468. ### How to find the number of parameters expected by a function?
+  The function's object has a **length** property which tells you how many formal parameters expected by a function. This is a static value defined by the function, not the number of arguments the function is called with(__arguments.length__). The basic usage of length propery is,
+
+  ```javascript
+  function multiply(x, y) {
+    return x * y;
+  }
+
+  function sum(a, b, c) {
+    return a + b +c;
+  }
+
+  console.log(multiply.length); //2
+  console.log(sum.length); //3
+  ```
+  
+  But there are few important rules which needs to be noted while using length property.
+
+  1. **Default values:** Only the parameters which exists before a default value are considered.
+      ```javascript
+      function sum(a, b=2, c=3) {
+          return a + b + c;
+      }
+      console.log(sum.length); // 1
+      ```
+  2. **Rest params:** The rest parameters are excluded with in length property.
+      ```javascript
+      function sum(a, b, ...moreArgs) {
+          let total = a + b;
+          for (const arg of moreArgs) {
+            total += arg;
+          }
+          return total;
+      }
+      console.log(sum.length); // 2
+      ```
+  3. **Destructuring patterns:** Each destructuring pattern counted as a single parameter.
+      ```javascript
+      function func([a, b], {x, y}){
+        console.log(a+b, x, y);
+      }
+
+      console.log(func.length); // 2
+      ```
+
+  **Note:** The Function constructor is itself a function object and it has a length property of 1.
+
+**[⬆ Back to Top](#table-of-contents)**
+
 
 <!-- QUESTIONS_END -->
 
