@@ -542,7 +542,7 @@
 
    3. **Object's create method:**
 
-      The `create` method of Object is used to create a new object by passing the specificied prototype object and properties as arguments, i.e., this pattern is helpful to create new objects based on existing objects.
+      The `create` method of Object is used to create a new object by passing the specified prototype object and properties as arguments, i.e., this pattern is helpful to create new objects based on existing objects.
       The second argument is optional and it is used to create properties on a newly created object.
 
       The following code creates a new empty object whose prototype is null.
@@ -1035,7 +1035,7 @@
 
 21. ### What is the Temporal Dead Zone
 
-    The Temporal Dead Zone(TDZ) is a specific period or area of a block where a variable is inaccessible until it has been intialized with a value. This behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a `let` or `const` variable before its declaration (within its scope) causes a ReferenceError. 
+    The Temporal Dead Zone(TDZ) is a specific period or area of a block where a variable is inaccessible until it has been initialized with a value. This behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a `let` or `const` variable before its declaration (within its scope) causes a ReferenceError. 
 
     Let's see this behavior with an example,
 
@@ -6839,7 +6839,7 @@
      const arr = [1, [2, 3], 4, 5, [6, 7]];
      const fllattenArr = arr.flat(); // [1, 2, 3, 4, 5, 6, 7]
 
-     // And for multiDemensional arrays
+     // And for multiDimensional arrays
      const multiDimensionalArr = [11, [22, 33], [44, [55, 66, [77, [88]], 99]]];
      const oneStepFlat = multiDimensionalArr.flat(1); // [11, 22, 33, 44, [55, 66, [77, [88]], 99]]
      const towStep = multiDimensionalArr.flat(2); // [11, 22, 33, 44, 55, 66, [77, [88]], 99]
@@ -7795,7 +7795,7 @@
 
 422. ### Is that possible to use expressions in switch cases?
 
-     You might have seen expressions used in switch condition but it is also possible to use for switch cases by assigning true value for the switch condition. Let's see the weather condition based on temparature as an example,
+     You might have seen expressions used in switch condition but it is also possible to use for switch cases by assigning true value for the switch condition. Let's see the weather condition based on temperature as an example,
 
      ```js
      const weather = (function getWeather(temp) {
@@ -8294,7 +8294,7 @@
 | ----------------------------------- | --------------------------------------------------------------------- |
 | It has no side effects              | It causes side effects                                                |
 | It is always return the same result | It returns different result on each call                              |
-| Easy to read and debug              | Difficult to read and debug because they are affected by extenal code |
+| Easy to read and debug              | Difficult to read and debug because they are affected by external code |
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -8515,7 +8515,7 @@ The execution context is created when a function is called. The function's code 
 
 455. ### What are the benefits higher order functions?
      The main benefits of higher order functions are:
-     1. Abstration
+     1. Abstraction
      2. Reusability
      3. Immutability
      4. Modularity
@@ -10622,7 +10622,7 @@ console.log("🙂" === "🙂");
 
 ##### Answer: 2
 
-Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode comparision of same emojies is equivalent to string comparison. Hence, the output is always true.
+Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode comparison of same emojies is equivalent to string comparison. Hence, the output is always true.
 
 </p>
 
@@ -10837,7 +10837,7 @@ var getMessage = () => {
 
 ##### Answer: 2
 
-Hoisting will move variables and functions to be the top of scope. Even though getMessage is an arrow function the above function will considered as a varible due to it's variable declaration or assignment. So the variables will have undefined value in memory phase and throws an error '`getMessage` is not a function' at the code execution phase.
+Hoisting will move variables and functions to be the top of scope. Even though getMessage is an arrow function the above function will considered as a variable due to it's variable declaration or assignment. So the variables will have undefined value in memory phase and throws an error '`getMessage` is not a function' at the code execution phase.
 
 </p>
 
@@ -11183,7 +11183,7 @@ changeCurrentCity();
 
 ##### Answer: 3
 
-Due to hositing feature, the variables declared with `var` will have `undefined` value in the creation phase so the outer variable `currentCity` will get same `undefined` value. But after few lines of code JavaScript engine found a new function call(`changeCurrentCity()`) to update the current city with `var` re-declaration. Since each function call will create a new execution context, the same variable will have `undefined` value before the declaration and new value(`Singapore`) after the declarion. Hence, the value `undefined` print first followed by new value `Singapore` in the execution phase.
+Due to hositing feature, the variables declared with `var` will have `undefined` value in the creation phase so the outer variable `currentCity` will get same `undefined` value. But after few lines of code JavaScript engine found a new function call(`changeCurrentCity()`) to update the current city with `var` re-declaration. Since each function call will create a new execution context, the same variable will have `undefined` value before the declaration and new value(`Singapore`) after the declaration. Hence, the value `undefined` print first followed by new value `Singapore` in the execution phase.
 
 </p>
 </details>
@@ -11502,8 +11502,8 @@ const promiseTwo = new Promise((resolve, reject) => setTimeout(reject, 4000));
 Promise.all([promiseOne, promiseTwo]).then((data) => console.log(data));
 ```
 
-- 1: [{status: "fullfilled", value: undefined}, {status: "rejected", reason: undefined}]
-- 2: [{status: "fullfilled", value: undefined}, Uncaught(in promise)]
+- 1: [{status: "fulfilled", value: undefined}, {status: "rejected", reason: undefined}]
+- 2: [{status: "fulfilled", value: undefined}, Uncaught(in promise)]
 - 3: Uncaught (in promise)
 - 4: [Uncaught(in promise), Uncaught(in promise)]
 
@@ -11789,7 +11789,7 @@ func();
 
 ##### Answer: 1
 
-If a function is called with `undefined`, the `undefined` value is treated as a parameter. But if the function is not passed with any parameters, the `arguments` object doesn't include any argument eventhough the function has default function parameter. Hence, the function invocation with `undefined` has one argument and function call without any arguments has 0 agruments.
+If a function is called with `undefined`, the `undefined` value is treated as a parameter. But if the function is not passed with any parameters, the `arguments` object doesn't include any argument eventhough the function has default function parameter. Hence, the function invocation with `undefined` has one argument and function call without any arguments has 0 arguments.
 
 </p>
 </details>
