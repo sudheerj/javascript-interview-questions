@@ -16,6 +16,18 @@
 
 ---
 
+<div>
+<p align="center">
+  <a href="https://www.frontendlead.com/coding-questions?utm_source=github&utm_medium=referral&ut%0Dm_campaign=sudheerj-js">
+    <img src="./images/collab/frontendlead-banner.png" alt="FrontEndLead JavaScript Interview Questions" width="100%">
+  </a>
+</p>
+</div>
+
+> 🚀 Ace Javascript interview questions with solutions from FAANG+ companies! [Try FrontendLead →](https://www.frontendlead.com/coding-questions?utm_source=github&utm_medium=referral&ut%0Dm_campaign=sudheerj-js) 🚀
+
+---
+
 <p align="center">
   <a href=https://zerotomastery.io/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions>
     <img src=https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:70/https://www.filepicker.io/api/file/AKYtjj5SSGyJuyZrkAB2 alt="ZTM Logo" width="100" height="50">
@@ -2021,7 +2033,7 @@
     By default, event handlers triggered in event bubbling phase as shown below,
 
     ```javascript
-        <div>
+    <div>
       <button class="child">Hello</button>
     </div>
 
@@ -2108,7 +2120,9 @@
 91. ### What is the difference between native, host and user objects
 
     `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
-    `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
+    `Host objects` are objects provided by the browser or runtime environment (Node). 
+    
+    For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
     `User objects` are objects defined in the javascript code. For example, User objects created for profile information.
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -2615,13 +2629,13 @@
      Object.entries(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
      ```
 
-     1. **Using Object keys(ECMA 5+):** You can use object keys length along with constructor type.
+     2. **Using Object keys(ECMA 5+):** You can use object keys length along with constructor type.
 
      ```javascript
      Object.keys(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
      ```
 
-     1. **Using for-in with hasOwnProperty(Pre-ECMA 5):** You can use a for-in loop along with hasOwnProperty.
+     3. **Using for-in with hasOwnProperty(Pre-ECMA 5):** You can use a for-in loop along with hasOwnProperty.
 
      ```javascript
      function isEmpty(obj) {
@@ -2771,7 +2785,7 @@
      object.key3 = "value3";
      ```
 
-     1. **Using square bracket notation:** This solution is useful when the name of the property is dynamically determined.
+     2. **Using square bracket notation:** This solution is useful when the name of the property is dynamically determined.
 
      ```javascript
      obj["key3"] = "value3";
@@ -3157,7 +3171,7 @@
      document.getElementById("title").style.fontSize = "30px";
      ```
 
-     1. **Using ClassName property:** It is easy to modify element class using className property
+     2. **Using ClassName property:** It is easy to modify element class using className property
 
      ```javascript
      document.getElementById("title").className = "custom-title";
@@ -3341,7 +3355,7 @@
 
 174. ### Can you apply chaining on conditional operator
 
-     Yes, you can apply chaining on conditional operators similar to if … else if … else if … else chain. The syntax is going to be as below,
+     Yes, you can apply chaining on conditional operators similar to **if … else if … else if … else** chain. The syntax is going to be as below,
 
      ```javascript
      function traceValue(someParam) {
@@ -3381,13 +3395,13 @@
      window.onload = function ...
      ```
 
-     1. **document.onload:**
+     2. **document.onload:**
 
      ```javascript
      document.onload = function ...
      ```
 
-     1. **body onload:**
+     3. **body onload:**
 
      ```javascript
      <body onload="script();">
@@ -4299,13 +4313,13 @@
      objectName.property;
      ```
 
-     1. **Square brackets notation:** It uses square brackets for property access
+     2. **Square brackets notation:** It uses square brackets for property access
 
      ```javascript
      objectName["property"];
      ```
 
-     1. **Expression notation:** It uses expression in the square brackets
+     3. **Expression notation:** It uses expression in the square brackets
 
      ```javascript
      objectName[expression];
@@ -4427,7 +4441,9 @@
      Synchronous iteration was introduced in ES6 and it works with below set of components,
 
      **Iterable:** It is an object which can be iterated over via a method whose key is Symbol.iterator.
+
      **Iterator:** It is an object returned by invoking `[Symbol.iterator]()` on an iterable. This iterator object wraps each iterated element in an object and returns it via `next()` method one by one.
+
      **IteratorResult:** It is an object returned by `next()` method. The object contains two properties; the `value` property contains an iterated element and the `done` property determines whether the element is the last element or not.
 
      Let's demonstrate synchronous iteration with an array as below,
@@ -6058,7 +6074,9 @@
 
 327. ### How do you avoid receiving postMessages from attackers
 
-     Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker’s origin, which gives an impression that the receiver received the message from the actual sender’s window. You can avoid this issue by validating the origin of the message on the receiver's end using the “message.origin” attribute. For examples, let's check the sender's origin [http://www.some-sender.com](http://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
+     Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker’s origin, which gives an impression that the receiver received the message from the actual sender’s window. You can avoid this issue by validating the origin of the message on the receiver's end using the “message.origin” attribute. 
+     
+     For example, let's check the sender's origin [http://www.some-sender.com](http://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
 
      ```javascript
      //Listener on http://www.some-receiver.com/
@@ -7084,6 +7102,7 @@
      The main sources of microtasks are Promise.resolve, Promise.reject, MutationObservers, IntersectionObservers etc
 
      **Note:** All of these microtasks are processed in the same turn of the event loop.
+
      **[⬆ Back to Top](#table-of-contents)**
 
 389. ### What are different event loops
@@ -7094,9 +7113,9 @@
      2. The Node.js Event Loop
 
 
-    - Browser Event Loop: The Browser Event Loop is used in client-side JavaScript applications and is responsible for handling events that occur within the browser environment, such as user interactions (clicks, keypresses, etc.), HTTP requests, and other asynchronous actions.
+  - Browser Event Loop: The Browser Event Loop is used in client-side JavaScript applications and is responsible for handling events that occur within the browser environment, such as user interactions (clicks, keypresses, etc.), HTTP requests, and other asynchronous actions.
 
-    - The Node.js Event Loop is used in server-side JavaScript applications and is responsible for handling events that occur within the Node.js runtime environment, such as file I/O, network I/O, and other asynchronous actions.
+  - The Node.js Event Loop is used in server-side JavaScript applications and is responsible for handling events that occur within the Node.js runtime environment, such as file I/O, network I/O, and other asynchronous actions.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -8102,25 +8121,25 @@
 
    The _debounce()_ function can be used on input, button and window events.
 
-     **Input:**
+  **Input:**
 
-     ```html
-     <input type="text" onkeyup="processChange()" />
-     ```
+  ```html
+  <input type="text" onkeyup="processChange()" />
+  ```
 
-     **Button:**
+  **Button:**
 
-     ```html
-     <button onclick="processChange()">Click me</button>
-     ```
+  ```html
+  <button onclick="processChange()">Click me</button>
+  ```
 
-     **Windows event:**
+  **Windows event:**
 
-     ```html
-     window.addEventListener("scroll", processChange);
-     ```
+  ```html
+  window.addEventListener("scroll", processChange);
+  ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+  **[⬆ Back to Top](#table-of-contents)**
 
 435. ### What is throttling?
 
@@ -8423,42 +8442,43 @@ multiplyBy2(add(2, 3));
 449. ### What is the purpose of the this keyword in JavaScript?
 * The `this` keyword in JavaScript is a special variable that is used within a function to refer to the object on which the function is invoked. The value of this depends on how the function is called. It allows functions to access and interact with the object they are bound to.
 * The this keyword in JavaScript is a reference to the object that owns or invokes the current function. Its value is determined by the calling context.
-**Example 1: this in a Global Context**
-```javascript
-console.log(this);
-```
-* In a global context, this refers to the global object (e.g., window in a browser).
 
-**Example 2: this in a Function**
-```javascript
-function displayThis() {
+  **Example 1: this in a Global Context**
+  ```javascript
   console.log(this);
-}
+  ```
+  * In a global context, this refers to the global object (e.g., window in a browser).
 
-displayThis();
-```
-*  In a regular function, this refers to the global object.
-
-**Example 3: this in a Method**
-```javascript
-const person = {
-  name: 'John',
-  greet: function() {
-    console.log('Hello, ' + this.name);
+  **Example 2: this in a Function**
+  ```javascript
+  function displayThis() {
+    console.log(this);
   }
-};
 
-person.greet();
-```
-* In a method, this refers to the object that owns the method (person in the case).
+  displayThis();
+  ```
+  *  In a regular function, this refers to the global object.
 
-**Example 4: this in an Event Handler**
-```javascript
-document.getElementById('myButton').addEventListener('click', function() {
-  console.log(this);
-});
-```
-*  In an event handler, this refers to the element that triggered the event (the button in this case).
+  **Example 3: this in a Method**
+  ```javascript
+  const person = {
+    name: 'John',
+    greet: function() {
+      console.log('Hello, ' + this.name);
+    }
+  };
+
+  person.greet();
+  ```
+  * In a method, this refers to the object that owns the method (person in the case).
+
+  **Example 4: this in an Event Handler**
+  ```javascript
+  document.getElementById('myButton').addEventListener('click', function() {
+    console.log(this);
+  });
+  ```
+  *  In an event handler, this refers to the element that triggered the event (the button in this case).
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -8475,6 +8495,7 @@ Here are some common use cases of closures:
 *  Memoization: Closures can be used for memoization, a technique to optimize performance by caching the results of expensive function calls. The inner function can remember the results of previous calls and      return the cached result if the same input is provided again.
 
 *  iterators and Generators: Closures can be used to create iterators and generators, which are essential for working with collections of data in modern JavaScript.
+
 **[⬆ Back to Top](#table-of-contents)**
 
 451. ### What are the phases of execution context?
@@ -8589,7 +8610,7 @@ The execution context is created when a function is called. The function's code 
       const nums = [1, 2, 3, 4, 5, 6];
       const evenNums = nums.myFilter(x => x % 2);
       console.log(evenNums); // [2, 4, 6]
-    ```
+      ```
  3. **reduce:**
 
       The built-in `Array.reduce` method syntax will be helpful to write our own polyfill. The reduce method takes the callback function as first argument and the initial value as second argument.
@@ -8768,12 +8789,12 @@ The execution context is created when a function is called. The function's code 
 
        **Note:** You should only use either async or defer attribute if the `src` attribute is present.
 
-    **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
 464. ### What is Lexical Scope?
         
         Lexical scope is the ability for a function scope to access variables from the parent scope.
-
+      ```js
       <script>
               function x(){
                 var a=10;
@@ -8785,6 +8806,7 @@ The execution context is created when a function is called. The function's code 
             }
             x();
       </script>
+      ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -11769,6 +11791,35 @@ console.log(arr.sort(Intl.Collator().compare)); //['Wann', 'wäre', 'Woche', 'w�
 
 
 #### 85. What is the output of below code?
+
+```javascript
+function func(a, b=2) {
+  console.log(arguments.length);
+}
+
+func(undefined);
+func();
+```
+
+- 1: 1, 0
+- 2: 0, 0
+- 3: 0, 1
+- 4: 1, 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+
+If a function is called with `undefined`, the `undefined` value is treated as a parameter. But if the function is not passed with any parameters, the `arguments` object doesn't include any argument eventhough the function has default function parameter. Hence, the function invocation with `undefined` has one argument and function call without any arguments has 0 arguments.
+
+</p>
+</details>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
+#### 86. What is the output of below code?
 
 ```javascript
 function func(a, b=2) {
