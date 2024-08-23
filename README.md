@@ -18,7 +18,7 @@
 
 <div>
 <p align="center">
-  <a href="https://www.frontendlead.com/coding-questions?utm_source=github&utm_medium=referral&ut%0Dm_campaign=sudheerj-js">
+  <a href="https://www.frontendlead.com/coding-questions?utm_source=github&utm_medium=referral&ut%0Dm_campaign=sudheerj-js" rel="dofollow">
     <img src="./images/collab/frontendlead-banner.png" alt="FrontEndLead JavaScript Interview Questions" width="100%">
   </a>
 </p>
@@ -2428,18 +2428,18 @@
 
      ```javascript
      <script>
-     var msg;
-     function greeting() {
-        alert('Good morning');
-     }
-     function start() {
-       msg =setTimeout(greeting, 3000);
+          var msg;
+          function greeting() {
+             alert('Good morning');
+          }
+          function start() {
+            msg =setTimeout(greeting, 3000);
 
-     }
+          }
 
-     function stop() {
-         clearTimeout(msg);
-     }
+          function stop() {
+              clearTimeout(msg);
+          }
      </script>
      ```
 
@@ -2453,18 +2453,18 @@
 
      ```javascript
      <script>
-     var msg;
-     function greeting() {
-        alert('Good morning');
-     }
-     function start() {
-       msg = setInterval(greeting, 3000);
+          var msg;
+          function greeting() {
+             alert('Good morning');
+          }
+          function start() {
+            msg = setInterval(greeting, 3000);
 
-     }
+          }
 
-     function stop() {
-         clearInterval(msg);
-     }
+          function stop() {
+              clearInterval(msg);
+          }
      </script>
      ```
 
@@ -2494,7 +2494,7 @@
      mainString.includes(subString);
      ```
 
-     1. **Using indexOf:** In an ES5 or older environment, you can use `String.prototype.indexOf` which returns the index of a substring. If the index value is not equal to -1 then it means the substring exists in the main string.
+     2. **Using indexOf:** In an ES5 or older environment, you can use `String.prototype.indexOf` which returns the index of a substring. If the index value is not equal to -1 then it means the substring exists in the main string.
 
      ```javascript
      var mainString = "hello",
@@ -2502,7 +2502,7 @@
      mainString.indexOf(subString) !== -1;
      ```
 
-     1. **Using RegEx:** The advanced solution is using Regular expression's test method(`RegExp.test`), which allows for testing for against regular expressions
+     3. **Using RegEx:** The advanced solution is using Regular expression's test method(`RegExp.test`), which allows for testing for against regular expressions
 
      ```javascript
      var mainString = "hello",
@@ -2570,32 +2570,32 @@
 
      1. **Using in operator:** You can use the in operator whether a key exists in an object or not
 
-     ```javascript
-     "key" in obj;
-     ```
+        ```javascript
+        "key" in obj;
+        ```
 
-     and If you want to check if a key doesn't exist, remember to use parenthesis,
+        and If you want to check if a key doesn't exist, remember to use parenthesis,
 
-     ```javascript
-     !("key" in obj);
-     ```
+        ```javascript
+        !("key" in obj);
+        ```
 
-     1. **Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
+     2. **Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
 
-     ```javascript
-     obj.hasOwnProperty("key"); // true
-     ```
+        ```javascript
+        obj.hasOwnProperty("key"); // true
+        ```
 
-     1. **Using undefined comparison:** If you access a non-existing property from an object, the result is undefined. Let’s compare the properties against undefined to determine the existence of the property.
+     3. **Using undefined comparison:** If you access a non-existing property from an object, the result is undefined. Let’s compare the properties against undefined to determine the existence of the property.
 
-     ```javascript
-     const user = {
-       name: "John",
-     };
+        ```javascript
+        const user = {
+          name: "John",
+        };
 
-     console.log(user.name !== undefined); // true
-     console.log(user.nickName !== undefined); // false
-     ```
+        console.log(user.name !== undefined); // true
+        console.log(user.nickName !== undefined); // false
+        ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -2698,9 +2698,9 @@
 
      #### Cons
 
-     1. Too verbose
-     2. Imperative
-     3. You might face off-by-one errors.
+     3. Too verbose
+     4. Imperative
+     5. You might face off-by-one errors.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -2770,7 +2770,9 @@
 
 135. ### How do you add a key value pair in javascript
 
-     There are two possible solutions to add new properties to an object. Let's take a simple object to explain these solutions.
+     There are two possible solutions to add new properties to an object. 
+     
+     Let's take a simple object to explain these solutions.
 
      ```javascript
      var object = {
@@ -4490,10 +4492,10 @@
 
      The above code processed in a call stack as below,
 
-     1. Add the `hungry()` function to the call stack list and execute the code.
-     2. Add the `eatFruits()` function to the call stack list and execute the code.
-     3. Delete the `eatFruits()` function from our call stack list.
-     4. Delete the `hungry()` function from the call stack list since there are no items anymore.
+     3. Add the `hungry()` function to the call stack list and execute the code.
+     4. Add the `eatFruits()` function to the call stack list and execute the code.
+     5. Delete the `eatFruits()` function from our call stack list.
+     6. Delete the `hungry()` function from the call stack list since there are no items anymore.
 
      ![Screenshot](images/call-stack.png)
 
@@ -4576,7 +4578,9 @@
 
 243. ### What is the purpose of compareFunction while sorting arrays
 
-     The compareFunction is used to define the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value. Let's take an example to see the usage of compareFunction,
+     The compareFunction is used to define the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value. 
+     
+     Let's take an example to see the usage of compareFunction,
 
      ```javascript
      let numbers = [1, 2, 5, 3, 4];
@@ -5370,58 +5374,58 @@
 
      1. **Using Object Literal Notation:** Let's wrap variables and functions inside an Object literal which acts as a namespace. After that you can access them using object notation
 
-     ```javascript
-     var namespaceOne = {
-        function func1() {
-            console.log("This is a first definition");
+        ```javascript
+        var namespaceOne = {
+            function func1() {
+                console.log("This is a first definition");
+            }
         }
-     }
-     var namespaceTwo = {
-          function func1() {
-              console.log("This is a second definition");
+        var namespaceTwo = {
+              function func1() {
+                  console.log("This is a second definition");
+              }
           }
-      }
-     namespaceOne.func1(); // This is a first definition
-     namespaceTwo.func1(); // This is a second definition
-     ```
+        namespaceOne.func1(); // This is a first definition
+        namespaceTwo.func1(); // This is a second definition
+        ```
 
      2. **Using IIFE (Immediately invoked function expression):** The outer pair of parentheses of IIFE creates a local scope for all the code inside of it and makes the anonymous function a function expression. Due to that, you can create the same function in two different function expressions to act as a namespace.
 
-     ```javascript
-     (function () {
-       function fun1() {
-         console.log("This is a first definition");
-       }
-       fun1();
-     })();
+        ```javascript
+        (function () {
+          function fun1() {
+            console.log("This is a first definition");
+          }
+          fun1();
+        })();
 
-     (function () {
-       function fun1() {
-         console.log("This is a second definition");
-       }
-       fun1();
-     })();
-     ```
+        (function () {
+          function fun1() {
+            console.log("This is a second definition");
+          }
+          fun1();
+        })();
+        ```
 
      3. **Using a block and a let/const declaration:** In ECMAScript 6, you can simply use a block and a let declaration to restrict the scope of a variable to a block.
 
-     ```javascript
-     {
-       let myFunction = function fun1() {
-         console.log("This is a first definition");
-       };
-       myFunction();
-     }
-     //myFunction(): ReferenceError: myFunction is not defined.
+        ```javascript
+        {
+          let myFunction = function fun1() {
+            console.log("This is a first definition");
+          };
+          myFunction();
+        }
+        //myFunction(): ReferenceError: myFunction is not defined.
 
-     {
-       let myFunction = function fun1() {
-         console.log("This is a second definition");
-       };
-       myFunction();
-     }
-     //myFunction(): ReferenceError: myFunction is not defined.
-     ```
+        {
+          let myFunction = function fun1() {
+            console.log("This is a second definition");
+          };
+          myFunction();
+        }
+        //myFunction(): ReferenceError: myFunction is not defined.
+        ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5946,20 +5950,20 @@
 
      1. Import a module on-demand or conditionally. For example, if you want to load a polyfill on legacy browser
 
-     ```javascript
-     if (isLegacyBrowser()) {
-         import(···)
-         .then(···);
-     }
-     ```
+        ```javascript
+        if (isLegacyBrowser()) {
+            import(···)
+            .then(···);
+        }
+        ```
 
-     1. Compute the module specifier at runtime. For example, you can use it for internationalization.
+     2. Compute the module specifier at runtime. For example, you can use it for internationalization.
 
-     ```javascript
-     import(`messages_${getLocale()}.js`).then(···);
-     ```
+        ```javascript
+        import(`messages_${getLocale()}.js`).then(···);
+        ```
 
-     1. Import a module from within a regular script instead a module.
+     3. Import a module from within a regular script instead a module.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -6017,7 +6021,7 @@
      console.log(l10nSV.compare("ä", "z") === +1); // true
      ```
 
-     1. **Sorting:**
+     2. **Sorting:**
 
      ```javascript
      var list = ["ä", "a", "z"]; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
@@ -6236,11 +6240,11 @@
      var n = 022;
      ```
 
-     1. Using `with` statement
-     2. When you use delete operator on a variable name
-     3. Using eval or arguments as variable or function argument name
-     4. When you use newly reserved keywords
-     5. When you declare a function in a block and access it from outside of the block
+     2. Using `with` statement
+     3. When you use delete operator on a variable name
+     4. Using eval or arguments as variable or function argument name
+     5. When you use newly reserved keywords
+     6. When you declare a function in a block and access it from outside of the block
 
      ```javascript
      if (someCondition) {
@@ -7021,7 +7025,7 @@
 
      In this API, browser is going to ask you for permission to use your microphone
 
-     1. **SpeechSynthesis (Text-to-Speech):** It provides the ability to recognize voice context from an audio input and respond. This is accessed by the `SpeechSynthesis` interface.
+     2. **SpeechSynthesis (Text-to-Speech):** It provides the ability to recognize voice context from an audio input and respond. This is accessed by the `SpeechSynthesis` interface.
         For example, the below code is used to get voice/speech from text,
 
      ```javascript
@@ -8840,10 +8844,12 @@ The execution context is created when a function is called. The function's code 
 **[⬆ Back to Top](#table-of-contents)**
      
 467. ### What is the difference between substring and substr methods?
+     Both substring() and substr() are string methods, which are used to find substring of a given string. But there are some notable differences with their usage,
+     
 
 **[⬆ Back to Top](#table-of-contents)**
 
-468. ### How to find the number of parameters expected by a function?
+1.   ### How to find the number of parameters expected by a function?
   The function's object has a **length** property which tells you how many formal parameters expected by a function. This is a static value defined by the function, not the number of arguments the function is called with(__arguments.length__). The basic usage of length propery is,
 
   ```javascript
