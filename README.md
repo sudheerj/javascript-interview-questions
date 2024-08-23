@@ -8849,7 +8849,7 @@ The execution context is created when a function is called. The function's code 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-1.   ### How to find the number of parameters expected by a function?
+468. ### How to find the number of parameters expected by a function?
   The function's object has a **length** property which tells you how many formal parameters expected by a function. This is a static value defined by the function, not the number of arguments the function is called with(__arguments.length__). The basic usage of length propery is,
 
   ```javascript
