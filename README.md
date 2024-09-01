@@ -8849,7 +8849,7 @@ The execution context is created when a function is called. The function's code 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-468.   ### How to find the number of parameters expected by a function?
+468. ### How to find the number of parameters expected by a function?
   The function's object has a **length** property which tells you how many formal parameters expected by a function. This is a static value defined by the function, not the number of arguments the function is called with(__arguments.length__). The basic usage of length propery is,
 
   ```javascript
@@ -8905,18 +8905,18 @@ The execution context is created when a function is called. The function's code 
      2. In Node environment, you have to use `global`.
      3. In Web workers, the global object is available through `self`.
 
-    The `globalThis` property provides a standard way of accessing the global object without writing various code snippet to support multiple environments. For example, the global object retuned from multiple environments as shown below,
-    
-    ```javascript
-    //1. browser environment
-    console.log(globalThis);    // => Window {...}
+The `globalThis` property provides a standard way of accessing the global object without writing various code snippet to support multiple environments. For example, the global object retuned from multiple environments as shown below,
 
-    //2. node.js environment
-    console.log(globalThis);    // => Object [global] {...}
+  ```javascript
+   //1. browser environment
+   console.log(globalThis);    // => Window {...}
 
-    //3. web worker environment
-    console.log(globalThis);    // => DedicatedWorkerGlobalScope {...}
-    ```
+   //2. node.js environment
+   console.log(globalThis);    // => Object [global] {...}
+
+   //3. web worker environment
+   console.log(globalThis);    // => DedicatedWorkerGlobalScope {...}
+  ```
 **[⬆ Back to Top](#table-of-contents)**
 
 <!-- QUESTIONS_END -->
