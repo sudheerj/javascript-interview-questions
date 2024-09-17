@@ -8845,8 +8845,19 @@ The execution context is created when a function is called. The function's code 
 **[⬆ Back to Top](#table-of-contents)**
      
 467. ### What is the difference between substring and substr methods?
-     Both substring() and substr() are string methods, which are used to find substring of a given string. But there are some notable differences with their usage,
-     
+There are subtle differences between the substring() and substr() methods, so you should be careful not to get them confused.
+
+- The two parameters of substr() are start and length, while for substring(), they are start and end.
+- substr()'s start index will wrap to the end of the string if it is negative, while substring() will clamp it to 0.
+- Negative lengths in substr() are treated as zero, while substring() will swap the two indexes if end is less than start.
+
+Furthermore, substr() is considered a legacy feature in ECMAScript, so it is best to avoid using it if possible.
+
+```javascript
+const text = "Mozilla";
+console.log(text.substring(2, 5)); // "zil"
+console.log(text.substr(2, 3)); // "zil"
+```
 
 **[⬆ Back to Top](#table-of-contents)**
 
