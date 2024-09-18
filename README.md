@@ -8920,6 +8920,24 @@ The `globalThis` property provides a standard way of accessing the global object
   ```
 **[⬆ Back to Top](#table-of-contents)**
 
+469. ### What are the array mutation methods?
+  JavaScript array methods can be categorized into two groups: 
+  1. Mutating methods: These are the methods that directly modify the original array.
+  2. Non-mutating methods: These methods return a new array without altering the original one.
+
+   There are 9 methods in total that mutate the arrays,
+   1. **push:** Adds one or more elements to the end of the array and returns the new length.
+   2. **pop:**  Removes the last element from the array and returns that element.
+   3. **unshift:**  Adds one or more elements to the beginning of the array and returns the new length..
+   4. **shift:** Removes the first element from the array and returns that element.
+   5. **splice:** Adds or removes elements from the array at a specific index position.
+   6. **sort:** Sorts the elements of the array in-place based on a given sorting criteria.
+   7. **reverse:** Reverses the order of elements in the given array.
+   8. **fill:**  Fills all elements of the array with a specific value.
+   9. **copyWithIn:** Copies a sequence of elements within the array to a specified target index in the same array.
+
+**[⬆ Back to Top](#table-of-contents)**
+
 <!-- QUESTIONS_END -->
 
 ### Coding Exercise
