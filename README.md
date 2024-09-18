@@ -517,6 +517,7 @@
 | 467 | [What is the difference between substring and substr methods?](#what-is-the-difference-between-substring-and-substr-methods) |
 | 468 | [How to find the number of parameters expected by a function?](#how-to-find-the-number-of-parameters-expected-by-a-function) |
 | 469 | [What is globalThis, and what is the importance of it?](#what-is-globalthis-and-what-is-the-importance-of-it) |
+| 470 | [What are the array mutation methods?](#what-are-the-array-mutation-methods) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -8920,7 +8921,7 @@ The `globalThis` property provides a standard way of accessing the global object
   ```
 **[⬆ Back to Top](#table-of-contents)**
 
-469. ### What are the array mutation methods?
+470. ### What are the array mutation methods?
   JavaScript array methods can be categorized into two groups: 
   1. Mutating methods: These are the methods that directly modify the original array.
   2. Non-mutating methods: These methods return a new array without altering the original one.
