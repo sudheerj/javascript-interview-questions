@@ -1107,7 +1107,7 @@
     Let's take an example of adding function with memoization,
 
     ```javascript
-    const memoizAddition = () => {
+    const memoizeAddition = () => {
       let cache = {};
       return (value) => {
         if (value in cache) {
@@ -1121,8 +1121,8 @@
         }
       };
     };
-    // returned function from memoizAddition
-    const addition = memoizAddition();
+    // returned function from memoizeAddition
+    const addition = memoizeAddition();
     console.log(addition(20)); //output: 40 calculated
     console.log(addition(20)); //output: 40 cached
     ```
