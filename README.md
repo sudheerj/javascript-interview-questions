@@ -518,6 +518,8 @@
 | 468 | [How to find the number of parameters expected by a function?](#how-to-find-the-number-of-parameters-expected-by-a-function) |
 | 469 | [What is globalThis, and what is the importance of it?](#what-is-globalthis-and-what-is-the-importance-of-it) |
 | 470 | [What are the array mutation methods?](#what-are-the-array-mutation-methods) |
+| 471 | [Java Interiew Preparation Questions](#https://web.talenttitan.com/candidates/interview-preparation/java) |
+
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
