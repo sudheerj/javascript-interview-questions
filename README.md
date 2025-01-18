@@ -518,6 +518,8 @@
 | 468 | [How to find the number of parameters expected by a function?](#how-to-find-the-number-of-parameters-expected-by-a-function) |
 | 469 | [What is globalThis, and what is the importance of it?](#what-is-globalthis-and-what-is-the-importance-of-it) |
 | 470 | [What are the array mutation methods?](#what-are-the-array-mutation-methods) |
+| 471 | [What is module scope in JavaScript?](#what-is-module-scope-in-JavaScript) |
+
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -8950,7 +8952,46 @@ The `globalThis` property provides a standard way of accessing the global object
 
 **[⬆ Back to Top](#table-of-contents)**
 
+471. ### What is module scope in JavaScript?
+  Module scope is a feature introduced with ES6 (ES2015) modules that creates a scope specific to a module file, isolating variables and functions declared within it from the global scope and other modules. Variables and functions declared in a module are private by default and can only be accessed by other modules if they are explicitly exported.
+
+   Key characteristics of module scope:
+
+   1. Variables declared in a module are scoped to that module only.
+   2. Each module has its own top-level scope
+   3. Variables and functions need to be explicitly exported to be used in other modules
+   4. The global scope cannot access module variables unless they are explicitly exported and imported
+   5. Modules are always executed in strict mode
+   
+  ```javascript
+   // moduleA.js
+   const privateVariable = "I am private";
+   export const publicVariable = "I am public";
+
+   export function publicFunction() {
+    console.log(privateVariable); // Works - can access private variables
+    return "Public function";
+   }
+
+   // moduleB.js
+   import { publicVariable, publicFunction } from './moduleA.js';
+
+   console.log(publicVariable); // "I am public"
+   console.log(privateVariable); // ReferenceError: privateVariable is not defined
+    
+  ```
+  Common use cases and benefits:
+
+  - Encapsulation of module-specific code
+  - Prevention of global scope pollution
+  - Better code organization and maintenance
+  - Explicit dependency management
+  - Protection of private implementation details
+
+**[⬆ Back to Top](#table-of-contents)**
+
 <!-- QUESTIONS_END -->
+
 
 ### Coding Exercise
 
