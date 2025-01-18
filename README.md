@@ -519,7 +519,6 @@
 | 469 | [What is globalThis, and what is the importance of it?](#what-is-globalthis-and-what-is-the-importance-of-it) |
 | 470 | [What are the array mutation methods?](#what-are-the-array-mutation-methods) |
 | 471 | [What is module scope in JavaScript?](#what-is-module-scope-in-JavaScript) |
-
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -8991,7 +8990,6 @@ The `globalThis` property provides a standard way of accessing the global object
 **[⬆ Back to Top](#table-of-contents)**
 
 <!-- QUESTIONS_END -->
-
 
 ### Coding Exercise
 
