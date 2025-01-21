@@ -8842,6 +8842,23 @@ The execution context is created when a function is called. The function's code 
       **[⬆ Back to Top](#table-of-contents)**
 
 466. ### What is the purpose of requestAnimationFrame method?
+The requestAnimationFrame() method in JavaScript is used to schedule a function to be called before the next repaint of the browser window, allowing you to create smooth, efficient animations. It's primarily used for animations and visual updates, making it an essential tool for improving performance when you're animating elements on the web.
+```javascript
+const element = document.getElementById("myElement");
+function animate() {
+    let currentPosition = parseInt(window.getComputedStyle(element).left, 10);
+
+    // Move the element 2px per frame
+    currentPosition += 2;
+    element.style.left = currentPosition + 'px';  
+    // If the element hasn't moved off-screen, request the next frame
+    if (currentPosition < window.innerWidth) {
+        requestAnimationFrame(animate);
+    }
+}
+// Start the animation
+requestAnimationFrame(animate);
+```
 
 **[⬆ Back to Top](#table-of-contents)**
      
