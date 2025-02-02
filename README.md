@@ -518,6 +518,7 @@
 | 468 | [How to find the number of parameters expected by a function?](#how-to-find-the-number-of-parameters-expected-by-a-function) |
 | 469 | [What is globalThis, and what is the importance of it?](#what-is-globalthis-and-what-is-the-importance-of-it) |
 | 470 | [What are the array mutation methods?](#what-are-the-array-mutation-methods) |
+| 471 | [What is module scope in JavaScript?](#what-is-module-scope-in-JavaScript) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -8964,6 +8965,54 @@ The `globalThis` property provides a standard way of accessing the global object
    7. **reverse:** Reverses the order of elements in the given array.
    8. **fill:**  Fills all elements of the array with a specific value.
    9. **copyWithIn:** Copies a sequence of elements within the array to a specified target index in the same array.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+471. ### What is module scope in JavaScript?
+  Module scope is a feature introduced with ES6 (ES2015) modules that creates a scope specific to a module file, isolating variables and functions declared within it from the global scope and other modules. Variables and functions declared in a module are private by default and can only be accessed by other modules if they are explicitly exported.
+
+   Key characteristics of module scope:
+
+   1. Variables declared in a module are scoped to that module only.
+   2. Each module has its own top-level scope
+   3. Variables and functions need to be explicitly exported to be used in other modules
+   4. The global scope cannot access module variables unless they are explicitly exported and imported
+   5. Modules are always executed in strict mode
+   
+  ```javascript
+  // moduleA.js
+
+  // This variable is PRIVATE to moduleA. It's like a tool inside a closed box.
+  const privateVariable = "I am private";
+
+  // This variable is PUBLIC because it's exported. Others can use it when they import moduleA.
+  export const publicVariable = "I am public";
+
+  // PUBLIC function because it's exported. But it can still access privateVariable inside moduleA.
+  export function publicFunction() {
+      console.log(privateVariable); // ✅ This works because we're inside the same module.
+      return "Hello from publicFunction!";
+  }
+
+  // moduleB.js
+
+  // Importing PUBLIC items from moduleA.
+  import { publicVariable, publicFunction } from './moduleA.js';
+
+  console.log(publicVariable);       // ✅ "I am public" - Works because it's exported.
+  console.log(publicFunction());     // ✅ "Hello from publicFunction!" - Works as well.
+
+  // ❌ This will cause an ERROR because privateVariable was NOT exported from moduleA.
+  // console.log(privateVariable);   // ❌ ReferenceError: privateVariable is not defined
+
+  ```
+  Common use cases and benefits:
+
+  - Encapsulation of module-specific code
+  - Prevention of global scope pollution
+  - Better code organization and maintenance
+  - Explicit dependency management
+  - Protection of private implementation details
 
 **[⬆ Back to Top](#table-of-contents)**
 
