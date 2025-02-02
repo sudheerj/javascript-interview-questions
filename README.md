@@ -8961,24 +8961,34 @@ The `globalThis` property provides a standard way of accessing the global object
    3. Variables and functions need to be explicitly exported to be used in other modules
    4. The global scope cannot access module variables unless they are explicitly exported and imported
    5. Modules are always executed in strict mode
-   
-  ```javascript
-   // moduleA.js
-   const privateVariable = "I am private";
-   export const publicVariable = "I am public";
-
-   export function publicFunction() {
-    console.log(privateVariable); // Works - can access private variables
-    return "Public function";
-   }
-
-   // moduleB.js
-   import { publicVariable, publicFunction } from './moduleA.js';
-
-   console.log(publicVariable); // "I am public"
-   console.log(privateVariable); // ReferenceError: privateVariable is not defined
     
-  ```
+    ```javascript
+    // moduleA.js
+
+    // This variable is PRIVATE to moduleA. It's like a tool inside a closed box.
+    const privateVariable = "I am private";
+
+    // This variable is PUBLIC because it's exported. Others can use it when they import moduleA.
+    export const publicVariable = "I am public";
+
+    // PUBLIC function because it's exported. But it can still access privateVariable inside moduleA.
+    export function publicFunction() {
+        console.log(privateVariable); // ✅ This works because we're inside the same module.
+        return "Hello from publicFunction!";
+    }
+
+    // moduleB.js
+
+    // Importing PUBLIC items from moduleA.
+    import { publicVariable, publicFunction } from './moduleA.js';
+
+    console.log(publicVariable);       // ✅ "I am public" - Works because it's exported.
+    console.log(publicFunction());     // ✅ "Hello from publicFunction!" - Works as well.
+
+    // ❌ This will cause an ERROR because privateVariable was NOT exported from moduleA.
+    // console.log(privateVariable);   // ❌ ReferenceError: privateVariable is not defined
+
+    ```
   Common use cases and benefits:
 
   - Encapsulation of module-specific code
