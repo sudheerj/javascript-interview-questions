@@ -1512,7 +1512,7 @@
 
 51. ### What is a promise
 
-    A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
+    A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved (i.e. rejected, that means for example, due to a network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
 
     The syntax of Promise creation looks like below,
 
@@ -1581,7 +1581,7 @@
 
 55. ### Why do we need callbacks
 
-    The callbacks are needed because javascript is an event driven language. That means instead of waiting for a response javascript will keep executing while listening for other events.
+    The callbacks are needed because javascript is an event driven language. That means instead of waiting for a response, javascript will keep executing while listening for other events.
     Let's take an example with the first function invoking an API call(simulated by setTimeout) and the next function which logs the message.
 
     ```javascript
@@ -1597,7 +1597,7 @@
     firstFunction();
     secondFunction();
 
-    Output;
+    // Output:
     // Second function called
     // First function called
     ```
@@ -1626,7 +1626,7 @@
 
 57. ### What are server-sent events
 
-    Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP connection without resorting to polling. These are a one way communications channel - events flow from server to client only. This has been used in Facebook/Twitter updates, stock price updates, news feeds etc.
+    Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP connection without resorting to polling. These are a one way communications channel - events flow from server to client only. This has been used in Facebook/Twitter/X updates, stock price updates, news feeds etc.
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -1683,7 +1683,7 @@
 
 62. ### What is callback in callback
 
-    You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks.
+    You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks. Beware, too many levels of nesting lead to [Callback hell](https://github.com/ckpinguin/javascript-interview-questions/tree/master?tab=readme-ov-file#what-is-a-callback-hell)
 
     ```javascript
     loadScript("/script1.js", function (script) {
