@@ -2167,13 +2167,13 @@
 
 95. ### What is the difference between an attribute and a property
 
-    Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes type and value,
+    Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes: `type` and `value`,
 
     ```javascript
     <input type="text" value="Name:">
     ```
 
-    You can retrieve the attribute value as below,
+    You can retrieve the attribute value as below, for example after typing "Good morning" into the input field:
 
     ```javascript
     const input = document.querySelector("input");
@@ -2190,13 +2190,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-96. ### What is same-origin policy
+97. ### What is same-origin policy
 
     The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
 
     **[⬆ Back to Top](#table-of-contents)**
 
-97. ### What is the purpose of void 0
+98. ### What is the purpose of void 0
 
     Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML documents that use href="JavaScript:Void(0);" within an `<a>` element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
     For example, the below link notify the message without reloading the page
@@ -2209,19 +2209,19 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-98. ### Is JavaScript a compiled or interpreted language
+99. ### Is JavaScript a compiled or interpreted language
 
     JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-99. ### Is JavaScript a case-sensitive language
+100. ### Is JavaScript a case-sensitive language
 
     Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-100. ### Is there any relation between Java and JavaScript
+101. ### Is there any relation between Java and JavaScript
 
     No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
 
