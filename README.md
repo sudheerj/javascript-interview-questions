@@ -2850,7 +2850,7 @@
 
 141. ### Can we define properties for functions
 
-     Yes, We can define properties for functions because functions are also objects.
+     Yes, we can define properties for functions because functions are also objects.
 
      ```javascript
      fn = function (x) {
