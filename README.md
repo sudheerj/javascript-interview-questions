@@ -2797,7 +2797,7 @@
      object.key3 = "value3";
      ```
 
-     2. **Using square bracket notation:** This solution is useful when the name of the property is dynamically determined.
+     2. **Using square bracket notation:** This solution is useful when the name of the property is dynamically determined or the key's name is non-JS like "user-name"
 
      ```javascript
      obj["key3"] = "value3";
