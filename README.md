@@ -3803,7 +3803,7 @@
 
 196. ### What is the purpose of seal method
 
-     The **Object.seal()** method is used to seal an object, by preventing new properties from being added to it and marking all existing properties as non-configurable. But values of present properties can still be changed as long as they are writable. Let's see the below example to understand more about seal() method
+     The **Object.seal()** method is used to seal an object, by preventing new properties from being added to it and marking all existing properties as non-configurable. But values of present properties can still be changed as long as they are writable. The next level of immutability would be the [`Object.freeze()`](#what-is-a-freeze-method) method. Let's see the below example to understand more about seal() method
 
      ```javascript
      const object = {
@@ -3823,7 +3823,7 @@
      Below are the main applications of Object.seal() method,
 
      1. It is used for sealing objects and arrays.
-     2. It is used to make an object immutable.
+     2. It is used to make properties of an object non-configurable.
 
      **[⬆ Back to Top](#table-of-contents)**
 
