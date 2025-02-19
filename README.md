@@ -1985,7 +1985,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-82. ### What are global variables
+81. ### What are global variables
 
     Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
 
@@ -1995,13 +1995,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-83. ### What are the problems with global variables
+82. ### What are the problems with global variables
 
     The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-84. ### What is NaN property
+83. ### What is NaN property
 
     The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases
 
@@ -2012,7 +2012,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-85. ### What is the purpose of isFinite function
+84. ### What is the purpose of isFinite function
 
     The isFinite() function is used to determine whether a number is a finite, legal number. It returns false if the value is +infinity, -infinity, or NaN (Not-a-Number), otherwise it returns true.
 
@@ -2026,7 +2026,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-86. ### What is an event flow
+85. ### What is an event flow
 
     Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
 
@@ -2037,7 +2037,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-87. ### What is event bubbling
+86. ### What is event bubbling
 
     Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element(i.e, global window object).
 
@@ -2068,7 +2068,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-88. ### What is event capturing
+87. ### What is event capturing
 
     Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost target DOM element.
 
@@ -2100,7 +2100,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-89. ### How do you submit a form using JavaScript
+88. ### How do you submit a form using JavaScript
 
     You can submit a form using `document.forms[0].submit()`. All the form input's information is submitted using onsubmit event handler
 
@@ -2112,7 +2112,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-90. ### How do you find operating system details
+89. ### How do you find operating system details
 
     The window.navigator object contains information about the visitor's browser OS details. Some of the OS properties are available under platform property,
 
@@ -2122,13 +2122,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-91. ### What is the difference between document load and DOMContentLoaded events
+90. ### What is the difference between document load and DOMContentLoaded events
 
     The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).
 
     **[⬆ Back to Top](#table-of-contents)**
 
-92. ### What is the difference between native, host and user objects
+91. ### What is the difference between native, host and user objects
 
     `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
     `Host objects` are objects provided by the browser or runtime environment (Node). 
@@ -2138,7 +2138,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-93. ### What are the tools or techniques used for debugging JavaScript code
+92. ### What are the tools or techniques used for debugging JavaScript code
 
     You can use below tools or techniques for debugging javascript
 
@@ -2148,7 +2148,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-94. ### What are the pros and cons of promises over callbacks
+93. ### What are the pros and cons of promises over callbacks
 
     Below are the list of pros and cons of promises over callbacks,
 
@@ -2166,7 +2166,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-95. ### What is the difference between an attribute and a property
+94. ### What is the difference between an attribute and a property
 
     Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes: `type` and `value`,
 
@@ -2191,13 +2191,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-97. ### What is same-origin policy
+95. ### What is same-origin policy
 
     The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
 
     **[⬆ Back to Top](#table-of-contents)**
 
-98. ### What is the purpose of void 0
+96. ### What is the purpose of void 0
 
     Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML documents that use href="JavaScript:Void(0);" within an `<a>` element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
     For example, the below link notify the message without reloading the page
@@ -2210,25 +2210,25 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-99. ### Is JavaScript a compiled or interpreted language
+97. ### Is JavaScript a compiled or interpreted language
 
     JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-100. ### Is JavaScript a case-sensitive language
+98. ### Is JavaScript a case-sensitive language
 
     Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-101. ### Is there any relation between Java and JavaScript
+99. ### Is there any relation between Java and JavaScript
 
     No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
 
     **[⬆ Back to Top](#table-of-contents)**
 
-101. ### What are events
+100. ### What are events
 
      Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events. Some of the examples of HTML events are,
 
@@ -2256,13 +2256,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-102. ### Who created javascript
+101. ### Who created javascript
 
      JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. Initially it was developed under the name `Mocha`, but later the language was officially called `LiveScript` when it first shipped in beta releases of Netscape.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-103. ### What is the use of preventDefault method
+102. ### What is the use of preventDefault method
 
      The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behaviour that belongs to the event will not occur. For example, prevent form submission when clicking on submit button and prevent opening the page URL when clicking on hyperlink are some common use cases.
 
@@ -2278,7 +2278,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-104. ### What is the use of stopPropagation method
+103. ### What is the use of stopPropagation method
 
      The stopPropagation method is used to stop the event from bubbling up the event chain. For example, the below nested divs with stopPropagation method prevents default event propagation when clicking on nested div(Div1)
 
@@ -2302,7 +2302,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-105. ### What are the steps involved in return false usage
+104. ### What are the steps involved in return false usage
 
      The return false statement in event handlers performs the below steps,
 
@@ -2312,7 +2312,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-106. ### What is BOM
+105. ### What is BOM
 
      The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It consists of the objects navigator, history, screen, location and document which are children of the window. The Browser Object Model is not standardized and can change based on different browsers.
 
@@ -2320,7 +2320,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-107. ### What is the use of setTimeout
+106. ### What is the use of setTimeout
 
      The setTimeout() method is used to call a function or evaluate an expression after a specified number of milliseconds. For example, let's log a message after 2 seconds using setTimeout method,
 
@@ -2332,7 +2332,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-108. ### What is the use of setInterval
+107. ### What is the use of setInterval
 
      The setInterval() method is used to call a function or evaluate an expression at specified intervals (in milliseconds). For example, let's log a message after 2 seconds using setInterval method,
 
@@ -2344,13 +2344,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-109. ### Why is JavaScript treated as Single threaded
+108. ### Why is JavaScript treated as Single threaded
 
      JavaScript is a single-threaded language. Because the language specification does not allow the programmer to write code so that the interpreter can run parts of it in parallel in multiple threads or processes. Whereas languages like java, go, C++ can make multi-threaded and multi-process programs.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-110. ### What is an event delegation
+109. ### What is an event delegation
 
      Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.
 
@@ -2372,19 +2372,19 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-111. ### What is ECMAScript
+110. ### What is ECMAScript
 
      ECMAScript is the scripting language that forms the basis of JavaScript. ECMAScript standardized by the ECMA International standards organization in the ECMA-262 and ECMA-402 specifications. The first edition of ECMAScript was released in 1997.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-112. ### What is JSON
+111. ### What is JSON
 
      JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-113. ### What are the syntax rules of JSON
+112. ### What are the syntax rules of JSON
 
      Below are the list of syntax rules of JSON
 
@@ -2395,7 +2395,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-114. ### What is the purpose JSON stringify
+113. ### What is the purpose JSON stringify
 
      When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
 
@@ -2407,7 +2407,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-115. ### How do you parse JSON string
+114. ### How do you parse JSON string
 
      When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
 
@@ -2419,19 +2419,19 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-116. ### Why do you need JSON
+115. ### Why do you need JSON
 
      When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-117. ### What are PWAs
+116. ### What are PWAs
 
      Progressive web applications (PWAs) are a type of mobile app delivered through the web, built using common web technologies including HTML, CSS and JavaScript. These PWAs are deployed to servers, accessible through URLs, and indexed by search engines.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-118. ### What is the purpose of clearTimeout method
+117. ### What is the purpose of clearTimeout method
 
      The clearTimeout() function is used in javascript to clear the timeout which has been set by setTimeout()function before that. i.e, The return value of setTimeout() function is stored in a variable and it’s passed into the clearTimeout() function to clear the timer.
 
@@ -2456,7 +2456,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-119. ### What is the purpose of clearInterval method
+118. ### What is the purpose of clearInterval method
 
      The clearInterval() function is used in javascript to clear the interval which has been set by setInterval() function. i.e, The return value returned by setInterval() function is stored in a variable and it’s passed into the clearInterval() function to clear the interval.
 
@@ -2481,7 +2481,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-120. ### How do you redirect new page in javascript
+119. ### How do you redirect new page in javascript
 
      In vanilla javascript, you can redirect to a new page using the `location` property of window object. The syntax would be as follows,
 
@@ -2493,7 +2493,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-121. ### How do you check whether a string contains a substring
+120. ### How do you check whether a string contains a substring
 
      There are 3 possible ways to check whether a string contains a substring or not,
 
@@ -2523,7 +2523,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-122. ### How do you validate an email in javascript
+121. ### How do you validate an email in javascript
 
      You can validate an email in javascript using regular expressions. It is recommended to do validations on the server side instead of the client side. Because the javascript can be disabled on the client side.
 
@@ -2539,7 +2539,7 @@
 
      The above regular expression accepts unicode characters.
 
-123. ### How do you get the current url with javascript
+122. ### How do you get the current url with javascript
 
      You can use `window.location.href` expression to get the current url path and you can use the same expression for updating the URL too. You can also use `document.URL` for read-only purposes but this solution has issues in FF.
 
@@ -2549,7 +2549,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-124. ### What are the various url properties of location object
+123. ### What are the various url properties of location object
 
      The below `Location` object properties can be used to access URL components of the page,
 
@@ -2564,7 +2564,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-125. ### How do get query string values in javascript
+124. ### How do get query string values in javascript
 
      You can use URLSearchParams to get query string values in javascript. Let's see an example to get the client code value from URL query string,
 
@@ -2575,7 +2575,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-126. ### How do you check if a key exists in an object
+125. ### How do you check if a key exists in an object
 
      You can check whether a key exists in an object or not using three approaches,
 
@@ -2610,7 +2610,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-127. ### How do you loop through or enumerate javascript object
+126. ### How do you loop through or enumerate javascript object
 
      You can use the `for-in` loop to loop through javascript object. You can also make sure that the key you get is an actual property of an object, and doesn't come from the prototype using `hasOwnProperty` method.
 
@@ -2630,7 +2630,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-128. ### How do you test for an empty object
+127. ### How do you test for an empty object
 
      There are different solutions based on ECMAScript versions
 
@@ -2662,7 +2662,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-129. ### What is an arguments object
+128. ### What is an arguments object
 
      The arguments object is an Array-like object accessible inside functions that contains the values of the arguments passed to that function. For example, let's see how to use arguments object inside sum function,
 
@@ -2686,7 +2686,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-130. ### How do you make first letter of the string in an uppercase
+129. ### How do you make first letter of the string in an uppercase
 
      You can create a function which uses a chain of string methods such as charAt, toUpperCase and slice methods to generate a string with the first letter in uppercase.
 
@@ -2698,7 +2698,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-131. ### What are the pros and cons of for loops
+130. ### What are the pros and cons of for loops
 
      The for-loop is a commonly used iteration syntax in javascript. It has both pros and cons
 
@@ -2715,7 +2715,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-132. ### How do you display the current date in javascript
+131. ### How do you display the current date in javascript
 
      You can use `new Date()` to generate a new Date object containing the current date and time. For example, let's display the current date in mm/dd/yyyy
 
@@ -2731,7 +2731,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-133. ### How do you compare two date objects
+132. ### How do you compare two date objects
 
      You need to use date.getTime() method in order to compare unix timestamp values
 
@@ -2744,7 +2744,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-134. ### How do you check if a string starts with another string
+133. ### How do you check if a string starts with another string
 
      You can use ECMAScript 6's `String.prototype.startsWith()` method to check if a string starts with another string or not. But it is not yet supported in all browsers. Let's see an example to see this usage,
 
@@ -2755,7 +2755,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-135. ### How do you trim a string in javascript
+134. ### How do you trim a string in javascript
 
      JavaScript provided a trim method on string types to trim any whitespaces present at the beginning or ending of the string.
 
@@ -2779,7 +2779,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-136. ### How do you add a key value pair in javascript
+135. ### How do you add a key value pair in javascript
 
      There are two possible solutions to add new properties to an object. 
      
@@ -2806,7 +2806,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-137. ### Is the !-- notation represents a special operator
+136. ### Is the !-- notation represents a special operator
 
      No,that's not a special operator. But it is a combination of 2 standard operators one after the other,
 
@@ -2817,7 +2817,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-138. ### How do you assign default values to variables
+137. ### How do you assign default values to variables
 
      You can use the logical or operator `||` in an assignment expression to provide a default value. The syntax looks like as below,
 
@@ -2829,7 +2829,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-139. ### How do you define multiline strings
+138. ### How do you define multiline strings
 
      You can define multiline string literals using the '\n' character followed by line terminator('\').
 
@@ -2843,13 +2843,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-140. ### What is an app shell model
+139. ### What is an app shell model
 
      An application shell (or app shell) architecture is one way to build a Progressive Web App that reliably and instantly loads on your users' screens, similar to what you see in native applications. It is useful for getting some initial HTML to the screen fast without a network.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-141. ### Can we define properties for functions
+140. ### Can we define properties for functions
 
      Yes, we can define properties for functions because functions are also objects.
 
@@ -2867,7 +2867,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-142. ### What is the way to find the number of parameters expected by a function
+141. ### What is the way to find the number of parameters expected by a function
 
      You can use `function.length` syntax to find the number of parameters expected by a function. Let's take an example of `sum` function to calculate the sum of numbers,
 
@@ -2880,7 +2880,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-143. ### What is a polyfill
+142. ### What is a polyfill
 
      A polyfill is a piece of JS code used to provide modern functionality on older browsers that do not natively support it. For example, Silverlight plugin polyfill can be used to mimic the functionality of an HTML Canvas element on Microsoft Internet Explorer 7.
 
@@ -2890,7 +2890,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-144. ### What are break and continue statements
+143. ### What are break and continue statements
 
      The break statement is used to "jump out" of a loop. i.e, It breaks the loop and continues executing the code after the loop.
 
@@ -2916,7 +2916,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-145. ### What are js labels
+144. ### What are js labels
 
      The label statement allows us to name loops and blocks in JavaScript. We can then use these labels to refer back to the code later. For example, the below code with labels avoids printing the numbers when they are same,
 
@@ -2940,7 +2940,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-146. ### What are the benefits of keeping declarations at the top
+145. ### What are the benefits of keeping declarations at the top
 
      It is recommended to keep all declarations at the top of each script or function. The benefits of doing this are,
 
@@ -2951,7 +2951,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-147. ### What are the benefits of initializing variables
+146. ### What are the benefits of initializing variables
 
      It is recommended to initialize variables because of the below benefits,
 
@@ -2961,7 +2961,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-148. ### What are the recommendations to create new object
+147. ### What are the recommendations to create new object
 
      It is recommended to avoid creating new objects using `new Object()`. Instead you can initialize values based on it's type to create the objects.
 
@@ -2987,7 +2987,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-149. ### How do you define JSON arrays
+148. ### How do you define JSON arrays
 
      JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
 
@@ -3001,7 +3001,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-150. ### How do you generate random integers
+149. ### How do you generate random integers
 
      You can use Math.random() with Math.floor() to return random integers. For example, if you want generate random integers between 1 to 10, the multiplication factor should be 10,
 
@@ -3014,7 +3014,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-151. ### Can you write a random integers function to print integers within a range
+150. ### Can you write a random integers function to print integers within a range
 
      Yes, you can create a proper random function to return a random number between min and max (both included)
 
@@ -3028,25 +3028,25 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-152. ### What is tree shaking
+151. ### What is tree shaking
 
      Tree shaking is a form of dead code elimination. It means that unused modules will not be included in the bundle during the build process and for that it relies on the static structure of ES2015 module syntax,( i.e. import and export). Initially this has been popularized by the ES2015 module bundler `rollup`.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-153. ### What is the need of tree shaking
+152. ### What is the need of tree shaking
 
      Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a “Hello World” Application using SPA frameworks then it will take around a few MBs, but by tree shaking it can bring down the size to just a few hundred KBs. Tree shaking is implemented in Rollup and Webpack bundlers.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-154. ### Is it recommended to use eval
+153. ### Is it recommended to use eval
 
      No, it allows arbitrary code to be run which causes a security problem. As we know that the eval() function is used to run text as code. In most of the cases, it should not be necessary to use it.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-155. ### What is a Regular Expression
+154. ### What is a Regular Expression
 
      A regular expression is a sequence of characters that forms a search pattern. You can use this search pattern for searching data in a text. These can be used to perform all types of text search and text replace operations. Let's see the syntax format now,
 
@@ -3062,7 +3062,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-156. ### What are the string methods that accept Regular expression
+155. ### What are the string methods that accept Regular expression
 
      There are six string methods: search(), replace(), replaceAll(), match(), matchAll(), and split().
 
@@ -3098,7 +3098,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-157. ### What are modifiers in regular expression
+156. ### What are modifiers in regular expression
 
      Modifiers can be used to perform case-insensitive and global searches. Let's list down some of the modifiers,
 
@@ -3118,7 +3118,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-158. ### What are regular expression patterns
+157. ### What are regular expression patterns
 
      Regular Expressions provide a group of patterns in order to match characters. Basically they are categorized into 3 types,
 
@@ -3140,7 +3140,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-159. ### What is a RegExp object
+158. ### What is a RegExp object
 
      RegExp object is a regular expression object with predefined properties and methods. Let's see the simple usage of RegExp object,
 
@@ -3152,7 +3152,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-160. ### How do you search a string for a pattern
+159. ### How do you search a string for a pattern
 
      You can use the test() method of regular expression in order to search a string for a pattern, and return true or false depending on the result.
 
@@ -3163,7 +3163,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-161. ### What is the purpose of exec method
+160. ### What is the purpose of exec method
 
      The purpose of exec method is similar to test method but it executes a search for a match in a specified string and returns a result array, or null instead of returning true/false.
 
@@ -3174,7 +3174,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-162. ### How do you change the style of a HTML element
+161. ### How do you change the style of a HTML element
 
      You can change inline style or classname of a HTML element using javascript
 
@@ -3192,13 +3192,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-163. ### What would be the result of 1+2+'3'
+162. ### What would be the result of 1+2+'3'
 
      The output is going to be `33`. Since `1` and `2` are numeric values, the result of the first two digits is going to be a numeric value `3`. The next digit is a string type value because of that the addition of numeric value `3` and string type value `3` is just going to be a concatenation value `33`. Other operationrs like `3 * '3'` do yield correct results because the string is coerced into a number.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-164. ### What is a debugger statement
+163. ### What is a debugger statement
 
      The debugger statement invokes any available debugging functionality, such as setting a breakpoint. If no debugging functionality is available, this statement has no effect.
      For example, in the below function a debugger statement has been inserted. So
@@ -3214,13 +3214,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-165. ### What is the purpose of breakpoints in debugging
+164. ### What is the purpose of breakpoints in debugging
 
      You can set breakpoints in the javascript code once the debugger statement is executed and the debugger window pops up. At each breakpoint, javascript will stop executing, and let you examine the JavaScript values. After examining values, you can resume the execution of code using the play button.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-166. ### Can I use reserved words as identifiers
+165. ### Can I use reserved words as identifiers
 
      No, you cannot use the reserved words as variables, labels, object or function names. Let's see one simple example,
 
@@ -3230,7 +3230,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-167. ### How do you detect a mobile browser
+166. ### How do you detect a mobile browser
 
      You can use regex which returns a true or false value depending on whether or not the user is browsing with a mobile.
 
@@ -3254,7 +3254,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-168. ### How do you detect a mobile browser without regexp
+167. ### How do you detect a mobile browser without regexp
 
      You can detect mobile browsers by simply running through a list of devices and checking if the useragent matches anything. This is an alternative solution for RegExp usage,
 
@@ -3278,7 +3278,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-169. ### How do you get the image width and height using JS
+168. ### How do you get the image width and height using JS
 
      You can programmatically get the image and check the dimensions(width and height) using Javascript.
 
@@ -3292,7 +3292,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-170. ### How do you make synchronous HTTP request
+169. ### How do you make synchronous HTTP request
 
      Browsers provide an XMLHttpRequest object which can be used to make synchronous HTTP requests from JavaScript
 
@@ -3307,7 +3307,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-171. ### How do you make asynchronous HTTP request
+170. ### How do you make asynchronous HTTP request
 
      Browsers provide an XMLHttpRequest object which can be used to make asynchronous HTTP requests from JavaScript by passing the 3rd parameter as true.
 
@@ -3325,7 +3325,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-172. ### How do you convert date to another timezone in javascript
+171. ### How do you convert date to another timezone in javascript
 
      You can use the toLocaleString() method to convert dates in one timezone to another. For example, let's convert current date to British English timezone as below,
 
@@ -3335,7 +3335,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-173. ### What are the properties used to get size of window
+172. ### What are the properties used to get size of window
 
      You can use innerWidth, innerHeight, clientWidth, clientHeight properties of windows, document element and document body objects to find the size of a window. Let's use them combination of these properties to calculate the size of a window or document,
 
@@ -3353,7 +3353,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-174. ### What is a conditional operator in javascript
+173. ### What is a conditional operator in javascript
 
      The conditional (ternary) operator is the only JavaScript operator that takes three operands which acts as a shortcut for if statements.
 
@@ -3366,7 +3366,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-175. ### Can you apply chaining on conditional operator
+174. ### Can you apply chaining on conditional operator
 
      Yes, you can apply chaining on conditional operators similar to **if … else if … else if … else** chain. The syntax is going to be as below,
 
@@ -3398,7 +3398,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-176. ### What are the ways to execute javascript after page load
+175. ### What are the ways to execute javascript after page load
 
      You can execute javascript after page load in many different ways,
 
@@ -3422,7 +3422,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-177. ### What is the difference between proto and prototype
+176. ### What is the difference between proto and prototype
 
      The `__proto__` object is the actual object that is used in the lookup chain to resolve methods, etc. Whereas `prototype` is the object that is used to build `__proto__` when you create an object with new.
 
@@ -3442,7 +3442,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-178. ### Can you give an example of when you really need a semicolon
+177. ### Can you give an example of when you really need a semicolon
 
      It is recommended to use semicolons after every statement in JavaScript. For example, in the below case it throws an error ".. is not a function" at runtime due to missing semicolon.
 
@@ -3474,7 +3474,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-179. ### What is a freeze method
+178. ### What is a freeze method
 
      The **freeze()** method is used to freeze an object. Freezing an object does not allow adding new properties to an object, prevents removing, and prevents changing the enumerability, configurability, or writability of existing properties. i.e. It returns the passed object and does not create a frozen copy.
 
@@ -3508,7 +3508,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-180. ### What is the purpose of freeze method
+179. ### What is the purpose of freeze method
 
      Below are the main benefits of using freeze method,
 
@@ -3517,13 +3517,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-181. ### Why do I need to use freeze method
+180. ### Why do I need to use freeze method
 
      In the Object-oriented paradigm, an existing API contains certain elements that are not intended to be extended, modified, or re-used outside of their current context. Hence it works as the `final` keyword which is used in various languages.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-182. ### How do you detect a browser language preference
+181. ### How do you detect a browser language preference
 
      You can use navigator object to detect a browser language preference as below,
 
@@ -3538,7 +3538,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-183. ### How to convert string to title case with javascript
+182. ### How to convert string to title case with javascript
 
      Title case means that the first letter of each word is capitalized. You can convert a string to title case using the below function,
 
@@ -3553,7 +3553,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-184. ### How do you detect javascript disabled in the page
+183. ### How do you detect javascript disabled in the page
 
      You can use the `<noscript>` tag to detect javascript disabled or not. The code block inside `<noscript>` gets executed when JavaScript is disabled, and is typically used to display alternative content when the page generated in JavaScript.
 
@@ -3568,7 +3568,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-185. ### What are various operators supported by javascript
+184. ### What are various operators supported by javascript
 
      An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
 
@@ -3581,7 +3581,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-186. ### What is a rest parameter
+185. ### What is a rest parameter
 
      Rest parameter is an improved way to handle function parameters which allows us to represent an indefinite number of arguments as an array. The syntax would be as below,
 
@@ -3612,7 +3612,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-187. ### What happens if you do not use rest parameter as a last argument
+186. ### What happens if you do not use rest parameter as a last argument
 
      The rest parameter should be the last argument, as its job is to collect all the remaining arguments into an array. For example, if you define a function like below it doesn’t make any sense and will throw an error.
 
@@ -3625,7 +3625,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-188. ### What are the bitwise operators available in javascript
+187. ### What are the bitwise operators available in javascript
 
      Below are the list of bitwise logical operators used in JavaScript
 
@@ -3639,7 +3639,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-189. ### What is a spread operator
+188. ### What is a spread operator
 
      Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. Let's take an example to see this behavior,
 
@@ -3655,7 +3655,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-190. ### How do you determine whether object is frozen or not
+189. ### How do you determine whether object is frozen or not
 
      Object.isFrozen() method is used to determine if an object is frozen or not.An object is frozen if all of the below conditions hold true,
 
@@ -3674,7 +3674,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-191. ### How do you determine two values same or not using object
+190. ### How do you determine two values same or not using object
 
      The Object.is() method determines whether two values are the same value. For example, the usage with different types of values would be,
 
@@ -3699,7 +3699,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-192. ### What is the purpose of using object is method
+191. ### What is the purpose of using object is method
 
      Some of the applications of Object's `is` method are follows,
 
@@ -3710,7 +3710,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-193. ### How do you copy properties from one object to other
+192. ### How do you copy properties from one object to other
 
      You can use the Object.assign() method which is used to copy the values and properties from one or more source objects to a target object. It returns the target object which has properties and values copied from the source objects. The syntax would be as below,
 
@@ -3735,7 +3735,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-194. ### What are the applications of assign method
+193. ### What are the applications of assign method
 
      Below are the some of main applications of Object.assign() method,
 
@@ -3744,7 +3744,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-195. ### What is a proxy object
+194. ### What is a proxy object
 
      The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc. 
      
@@ -3802,7 +3802,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-196. ### What is the purpose of seal method
+195. ### What is the purpose of seal method
 
      The **Object.seal()** method is used to seal an object, by preventing new properties from being added to it and marking all existing properties as non-configurable. But values of present properties can still be changed as long as they are writable. The next level of immutability would be the [`Object.freeze()`](#what-is-a-freeze-method) method. Let's see the below example to understand more about seal() method
 
@@ -3819,7 +3819,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-197. ### What are the applications of seal method
+196. ### What are the applications of seal method
 
      Below are the main applications of Object.seal() method,
 
@@ -3828,13 +3828,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-198. ### What are the differences between freeze and seal methods
+197. ### What are the differences between freeze and seal methods
 
      If an object is frozen using the Object.freeze() method then its properties become immutable and no changes can be made in them whereas if an object is sealed using the Object.seal() method then the changes can be made in the existing properties of the object.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-199. ### How do you determine if an object is sealed or not
+198. ### How do you determine if an object is sealed or not
 
      The Object.isSealed() method is used to determine if an object is sealed or not. An object is sealed if all of the below conditions hold true
 
@@ -3855,7 +3855,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-200. ### How do you get enumerable key and value pairs
+199. ### How do you get enumerable key and value pairs
 
      The Object.entries() method is used to return an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop. Let's see the functionality of object.entries() method in an example,
 
@@ -3875,7 +3875,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-201. ### What is the main difference between Object.values and Object.entries method
+200. ### What is the main difference between Object.values and Object.entries method
 
      The Object.values() method's behavior is similar to Object.entries() method but it returns an array of values instead [key,value] pairs.
 
@@ -3892,7 +3892,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-202. ### How can you get the list of keys of any object
+201. ### How can you get the list of keys of any object
 
      You can use the `Object.keys()` method which is used to return an array of a given object's own property names, in the same order as we get with a normal loop. For example, you can get the keys of a user object,
 
@@ -3908,7 +3908,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-203. ### How do you create an object with prototype
+202. ### How do you create an object with prototype
 
      The Object.create() method is used to create a new object with the specified prototype object and properties. i.e, It uses an existing object as the prototype of the newly created object. It returns a new object with the specified prototype object and properties.
 
@@ -3929,7 +3929,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-204. ### What is a WeakSet
+203. ### What is a WeakSet
 
      WeakSet is used to store a collection of weakly(weak references) held objects. The syntax would be as follows,
 
@@ -3950,7 +3950,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-205. ### What are the differences between WeakSet and Set
+204. ### What are the differences between WeakSet and Set
 
      The main difference is that references to objects in Set are strong while references to objects in WeakSet are weak. i.e, An object in WeakSet can be garbage collected if there is no other reference to it.
      Other differences are,
@@ -3962,7 +3962,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-206. ### List down the collection of methods available on WeakSet
+205. ### List down the collection of methods available on WeakSet
 
      Below are the list of methods available on WeakSet,
 
@@ -3985,7 +3985,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-207. ### What is a WeakMap
+206. ### What is a WeakMap
 
      The WeakMap object is a collection of key/value pairs in which the keys are weakly referenced. In this case, keys must be objects and the values can be arbitrary values. The syntax looks like the following:
 
@@ -4006,7 +4006,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-208. ### What are the differences between WeakMap and Map
+207. ### What are the differences between WeakMap and Map
 
      The main difference is that references to key objects in Map are strong while references to key objects in WeakMap are weak. i.e, A key object in WeakMap can be garbage collected if there is no other reference to it.
      Other differences are,
@@ -4018,7 +4018,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-209. ### List down the collection of methods available on WeakMap
+208. ### List down the collection of methods available on WeakMap
 
      Below are the list of methods available on WeakMap,
 
@@ -4042,7 +4042,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-210. ### What is the purpose of uneval
+209. ### What is the purpose of uneval
 
      The uneval() is an inbuilt function which is used to create a string representation of the source code of an Object. It is a top-level function and is not associated with any object. Let's see the below example to know more about it's functionality,
 
@@ -4061,7 +4061,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-211. ### How do you encode an URL
+210. ### How do you encode an URL
 
      The encodeURI() function is used to encode complete URI which has special characters except (, / ? : @ & = + $ #) characters.
 
@@ -4073,7 +4073,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-212. ### How do you decode an URL
+211. ### How do you decode an URL
 
      The decodeURI() function is used to decode a Uniform Resource Identifier (URI) previously created by encodeURI().
 
@@ -4091,7 +4091,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-213. ### How do you print the contents of web page
+212. ### How do you print the contents of web page
 
      The window object provided a print() method which is used to print the contents of the current window. It opens a Print dialog box which lets you choose between various printing options. Let's see the usage of print method in an example,
 
@@ -4103,7 +4103,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-214. ### What is the difference between uneval and eval
+213. ### What is the difference between uneval and eval
 
      The `uneval` function returns the source of a given object; whereas the `eval` function does the opposite, by evaluating that source code in a different memory area. Let's see an example to clarify the difference,
 
@@ -4117,7 +4117,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-215. ### What is an anonymous function
+214. ### What is an anonymous function
 
      An anonymous function is a function without a name! Anonymous functions are commonly assigned to a variable name or used as a callback function. The syntax would be as below,
 
@@ -4147,7 +4147,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-216. ### What is the precedence order between local and global variables
+215. ### What is the precedence order between local and global variables
 
      A local variable takes precedence over a global variable with the same name. Let's see this behavior in an example.
 
@@ -4162,7 +4162,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-217. ### What are javascript accessors
+216. ### What are javascript accessors
 
      ECMAScript 5 introduced javascript object accessors or computed properties through getters and setters. Getters uses the `get` keyword whereas Setters uses the `set` keyword.
 
@@ -4185,7 +4185,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-218. ### How do you define property on Object constructor
+217. ### How do you define property on Object constructor
 
      The Object.defineProperty() static method is used to define a new property directly on an object, or modify an existing property on an object, and returns the object. Let's see an example to know how to define property,
 
@@ -4204,13 +4204,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-219. ### What is the difference between get and defineProperty
+218. ### What is the difference between get and defineProperty
 
      Both have similar results unless you use classes. If you use `get` the property will be defined on the prototype of the object whereas using `Object.defineProperty()` the property will be defined on the instance it is applied to.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-220. ### What are the advantages of Getters and Setters
+219. ### What are the advantages of Getters and Setters
 
      Below are the list of benefits of Getters and Setters,
 
@@ -4222,7 +4222,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-221. ### Can I add getters and setters using defineProperty method
+220. ### Can I add getters and setters using defineProperty method
 
      Yes, You can use the `Object.defineProperty()` method to add Getters and Setters. For example, the below counter object uses increment, decrement, add and subtract properties,
 
@@ -4263,7 +4263,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-222. ### What is the purpose of switch-case
+221. ### What is the purpose of switch-case
 
      The switch case statement in JavaScript is used for decision making purposes. In a few cases, using the switch case statement is going to be more convenient than if-else statements. The syntax would be as below,
 
@@ -4290,7 +4290,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-223. ### What are the conventions to be followed for the usage of switch case
+222. ### What are the conventions to be followed for the usage of switch case
 
      Below are the list of conventions should be taken care,
 
@@ -4302,7 +4302,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-224. ### What are primitive data types
+223. ### What are primitive data types
 
      A primitive data type is data that has a primitive value (which has no properties or methods). There are 7 types of primitive data types.
 
@@ -4316,7 +4316,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-225. ### What are the different ways to access object properties
+224. ### What are the different ways to access object properties
 
      There are 3 possible ways for accessing the property of an object.
 
@@ -4340,7 +4340,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-226. ### What are the function parameter rules
+225. ### What are the function parameter rules
 
      JavaScript functions follow below rules for parameters,
 
@@ -4358,7 +4358,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-227. ### What is an error object
+226. ### What is an error object
 
      An error object is a built in error object that provides error information when an error occurs. It has two properties: name and message. For example, the below function logs error details,
 
@@ -4372,7 +4372,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-228. ### When you get a syntax error
+227. ### When you get a syntax error
 
      A SyntaxError is thrown if you try to evaluate code with a syntax error. For example, the below missing quote for the function parameter throws a syntax error
 
@@ -4386,7 +4386,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-229. ### What are the different error names from error object
+228. ### What are the different error names from error object
 
      There are 7 different types of error names returned from error object,
      | Error Name | Description |
@@ -4401,7 +4401,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-230. ### What are the various statements in error handling
+229. ### What are the various statements in error handling
 
      Below are the list of statements used in an error handling,
 
@@ -4412,26 +4412,26 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-231. ### What are the two types of loops in javascript
+230. ### What are the two types of loops in javascript
 
      1. **Entry Controlled loops:** In this kind of loop type, the test condition is tested before entering the loop body. For example, For Loop and While Loop comes under this category.
      2. **Exit Controlled Loops:** In this kind of loop type, the test condition is tested or evaluated at the end of the loop body. i.e, the loop body will execute at least once irrespective of test condition true or false. For example, do-while loop comes under this category.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-232. ### What is nodejs
+231. ### What is nodejs
 
      Node.js is a server-side platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. It is an event-based, non-blocking, asynchronous I/O runtime that uses Google's V8 JavaScript engine and libuv library.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-233. ### What is an Intl object
+232. ### What is an Intl object
 
      The Intl object is the namespace for the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, and date and time formatting. It provides access to several constructors and language sensitive functions.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-234. ### How do you perform language specific date and time formatting
+233. ### How do you perform language specific date and time formatting
 
      You can use the `Intl.DateTimeFormat` object which is a constructor for objects that enable language-sensitive date and time formatting. Let's see this behavior with an example,
 
@@ -4443,13 +4443,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-235. ### What is an Iterator
+234. ### What is an Iterator
 
      An iterator is an object which defines a sequence and a return value upon its termination. It implements the Iterator protocol with a `next()` method which returns an object with two properties: `value` (the next value in the sequence) and `done` (which is true if the last value in the sequence has been consumed).
 
      **[⬆ Back to Top](#table-of-contents)**
 
-236. ### How does synchronous iteration works
+235. ### How does synchronous iteration works
 
      Synchronous iteration was introduced in ES6 and it works with below set of components,
 
@@ -4472,7 +4472,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-237. ### What is an event loop
+236. ### What is an event loop
 
      The event loop is a process that continuously monitors both the call stack and the event queue and checks whether or not the call stack is empty. If the call stack is empty and there are pending events in the event queue, the event loop dequeues the event from the event queue and pushes it to the call stack. The call stack executes the event, and any additional events generated during the execution are added to the end of the event queue.
 
@@ -4480,7 +4480,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-238. ### What is call stack
+237. ### What is call stack
 
      Call Stack is a data structure for javascript interpreters to keep track of function calls(creates execution context) in the program. It has two major actions,
 
@@ -4512,7 +4512,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-239. ### What is an event queue
+238. ### What is an event queue
 
      The event queue follows the queue data structure. It stores async callbacks to be added to the call stack. It is also known as the Callback Queue or Macrotask Queue.
 
@@ -4522,7 +4522,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-240. ### What is a decorator
+239. ### What is a decorator
 
      A decorator is an expression that evaluates to a function and that takes the target, name, and decorator descriptor as arguments. Also, it optionally returns a decorator descriptor to install on the target object. Let's define admin decorator for user class at design time,
 
@@ -4546,7 +4546,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-241. ### What are the properties of Intl object
+240. ### What are the properties of Intl object
 
      Below are the list of properties available on Intl object,
 
@@ -4559,7 +4559,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-242. ### What is an Unary operator
+241. ### What is an Unary operator
 
      The unary(+) operator is used to convert a variable to a number.If the variable cannot be converted, it will still become a number but with the value NaN. Let's see this behavior in an action.
 
@@ -4575,7 +4575,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-243. ### How do you sort elements in an array
+242. ### How do you sort elements in an array
 
      The sort() method is used to sort the elements of an array in place and returns the sorted array. The default sort order is ascending, based on the string Unicode order. The example usage would be as below,
 
@@ -4587,7 +4587,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-244. ### What is the purpose of compareFunction while sorting arrays
+243. ### What is the purpose of compareFunction while sorting arrays
 
      The compareFunction is used to define the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value. 
      
@@ -4601,7 +4601,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-245. ### How do you reversing an array
+244. ### How do you reversing an array
 
      You can use the reverse() method to reverse the elements in an array. This method is useful to sort an array in descending order. Let's see the usage of reverse() method in an example,
 
@@ -4614,7 +4614,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-246. ### How do you find min and max value in an array
+245. ### How do you find min and max value in an array
 
      You can use `Math.min` and `Math.max` methods on array variables to find the minimum and maximum elements within an array. Let's create two functions to find the min and max value with in an array,
 
@@ -4633,7 +4633,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-247. ### How do you find min and max values without Math functions
+246. ### How do you find min and max values without Math functions
 
      You can write functions which loop through an array comparing each value with the lowest value or highest value to find the min and max values. Let's create those functions to find min and max values,
 
@@ -4667,7 +4667,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-248. ### What is an empty statement and purpose of it
+247. ### What is an empty statement and purpose of it
 
      The empty statement is a semicolon (;) indicating that no statement will be executed, even if JavaScript syntax requires one. Since there is no action with an empty statement you might think that it's usage is quite less, but the empty statement is occasionally useful when you want to create a loop that has an empty body. For example, you can initialize an array with zero values as below,
 
