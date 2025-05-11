@@ -46,486 +46,484 @@
 ### Table of Contents
 
 <!-- TOC_START -->
-
-| No. | Questions                                                                                                                                                     |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [What are the possible ways to create objects in JavaScript](#what-are-the-possible-ways-to-create-objects-in-javascript)                                     |
-| 2   | [What is a prototype chain](#what-is-a-prototype-chain)                                                                                                       |
-| 3   | [What is the difference between Call, Apply and Bind](#what-is-the-difference-between-call-apply-and-bind)                                                    |
-| 4   | [What is JSON and its common operations](#what-is-json-and-its-common-operations)                                                                             |
-| 5   | [What is the purpose of the array slice method](#what-is-the-purpose-of-the-array-slice-method)                                                               |
-| 6   | [What is the purpose of the array splice method](#what-is-the-purpose-of-the-array-splice-method)                                                             |
-| 7   | [What is the difference between slice and splice](#what-is-the-difference-between-slice-and-splice)                                                           |
-| 8   | [How do you compare Object and Map](#how-do-you-compare-object-and-map)                                                                                       |
-| 9   | [What is the difference between == and === operators](#what-is-the-difference-between--and--operators)                                                        |
-| 10  | [What are lambda expressions or arrow functions](#what-are-lambda-expressions-or-arrow-functions)                                                             |
-| 11  | [What is a first class function](#what-is-a-first-class-function)                                                                                             |
-| 12  | [What is a first order function](#what-is-a-first-order-function)                                                                                             |
-| 13  | [What is a higher order function](#what-is-a-higher-order-function)                                                                                           |
-| 14  | [What is a unary function](#what-is-a-unary-function)                                                                                                         |
-| 15  | [What is the currying function](#what-is-the-currying-function)                                                                                               |
-| 16  | [What is a pure function](#what-is-a-pure-function)                                                                                                           |
-| 17  | [What is the purpose of the let keyword](#what-is-the-purpose-of-the-let-keyword)                                                                             |
-| 18  | [What is the difference between let and var](#what-is-the-difference-between-let-and-var)                                                                     |
-| 19  | [What is the reason to choose the name let as a keyword](#what-is-the-reason-to-choose-the-name-let-as-a-keyword)                                             |
-| 20  | [How do you redeclare variables in a switch block without an error](#how-do-you-redeclare-variables-in-a-switch-block-without-an-error)                       |
-| 21  | [What is the Temporal Dead Zone](#what-is-the-temporal-dead-zone)                                                                                             |
-| 22  | [What is an IIFE (Immediately Invoked Function Expression)](#what-is-an-iife-immediately-invoked-function-expression)                                         |
-| 23  | [How do you decode or encode a URL in JavaScript?](#how-do-you-decode-or-encode-a-url-in-javascript)                                                          |
-| 24  | [What is memoization](#what-is-memoization)                                                                                                                   |
-| 25  | [What is Hoisting](#what-is-hoisting)                                                                                                                         |
-| 26  | [What are classes in ES6](#what-are-classes-in-es6)                                                                                                           |
-| 27  | [What are closures](#what-are-closures)                                                                                                                       |
-| 28  | [What are modules](#what-are-modules)                                                                                                                         |
-| 29  | [Why do you need modules](#why-do-you-need-modules)                                                                                                           |
-| 30  | [What is scope in javascript](#what-is-scope-in-javascript)                                                                                                   |
-| 31  | [What is a service worker](#what-is-a-service-worker)                                                                                                         |
-| 32  | [How do you manipulate DOM using a service worker](#how-do-you-manipulate-dom-using-a-service-worker)                                                         |
-| 33  | [How do you reuse information across service worker restarts](#how-do-you-reuse-information-across-service-worker-restarts)                                   |
-| 34  | [What is IndexedDB](#what-is-indexeddb)                                                                                                                       |
-| 35  | [What is web storage](#what-is-web-storage)                                                                                                                   |
-| 36  | [What is a post message](#what-is-a-post-message)                                                                                                             |
-| 37  | [What is a Cookie](#what-is-a-cookie)                                                                                                                         |
-| 38  | [Why do you need a Cookie](#why-do-you-need-a-cookie)                                                                                                         |
-| 39  | [What are the options in a cookie](#what-are-the-options-in-a-cookie)                                                                                         |
-| 40  | [How do you delete a cookie](#how-do-you-delete-a-cookie)                                                                                                     |
-| 41  | [What are the differences between cookie, local storage and session storage](#what-are-the-differences-between-cookie-local-storage-and-session-storage)      |
-| 42  | [What is the main difference between localStorage and sessionStorage](#what-is-the-main-difference-between-localstorage-and-sessionstorage)                   |
-| 43  | [How do you access web storage](#how-do-you-access-web-storage)                                                                                               |
-| 44  | [What are the methods available on session storage](#what-are-the-methods-available-on-session-storage)                                                       |
-| 45  | [What is a storage event and its event handler](#what-is-a-storage-event-and-its-event-handler)                                                               |
-| 46  | [Why do you need web storage](#why-do-you-need-web-storage)                                                                                                   |
-| 47  | [How do you check web storage browser support](#how-do-you-check-web-storage-browser-support)                                                                 |
-| 48  | [How do you check web workers browser support](#how-do-you-check-web-workers-browser-support)                                                                 |
-| 49  | [Give an example of a web worker](#give-an-example-of-a-web-worker)                                                                                           |
-| 50  | [What are the restrictions of web workers on DOM](#what-are-the-restrictions-of-web-workers-on-dom)                                                           |
-| 51  | [What is a promise](#what-is-a-promise)                                                                                                                       |
-| 52  | [Why do you need a promise](#why-do-you-need-a-promise)                                                                                                       |
-| 53  | [What are the three states of promise](#what-are-the-three-states-of-promise)                                                                                 |
-| 54  | [What is a callback function](#what-is-a-callback-function)                                                                                                   |
-| 55  | [Why do we need callbacks](#why-do-we-need-callbacks)                                                                                                         |
-| 56  | [What is a callback hell](#what-is-a-callback-hell)                                                                                                           |
-| 57  | [What are server-sent events](#what-are-server-sent-events)                                                                                                   |
-| 58  | [How do you receive server-sent event notifications](#how-do-you-receive-server-sent-event-notifications)                                                     |
-| 59  | [How do you check browser support for server-sent events](#how-do-you-check-browser-support-for-server-sent-events)                                           |
-| 60  | [What are the events available for server sent events](#what-are-the-events-available-for-server-sent-events)                                                 |
-| 61  | [What are the main rules of promise](#what-are-the-main-rules-of-promise)                                                                                     |
-| 62  | [What is callback in callback](#what-is-callback-in-callback)                                                                                                 |
-| 63  | [What is promise chaining](#what-is-promise-chaining)                                                                                                         |
-| 64  | [What is promise.all](#what-is-promiseall)                                                                                                                    |
-| 65  | [What is the purpose of the race method in promise](#what-is-the-purpose-of-the-race-method-in-promise)                                                       |
-| 66  | [What is a strict mode in javascript](#what-is-a-strict-mode-in-javascript)                                                                                   |
-| 67  | [Why do you need strict mode](#why-do-you-need-strict-mode)                                                                                                   |
-| 68  | [How do you declare strict mode](#how-do-you-declare-strict-mode)                                                                                             |
-| 69  | [What is the purpose of double exclamation](#what-is-the-purpose-of-double-exclamation)                                                                       |
-| 70  | [What is the purpose of the delete operator](#what-is-the-purpose-of-the-delete-operator)                                                                     |
-| 71  | [What is typeof operator](#what-is-typeof-operator)                                                                                                           |
-| 72  | [What is undefined property](#what-is-undefined-property)                                                                                                     |
-| 73  | [What is null value](#what-is-null-value)                                                                                                                     |
-| 74  | [What is the difference between null and undefined](#what-is-the-difference-between-null-and-undefined)                                                       |
-| 75  | [What is eval](#what-is-eval)                                                                                                                                 |
-| 76  | [What is the difference between window and document](#what-is-the-difference-between-window-and-document)                                                     |
-| 77  | [How do you access history in javascript](#how-do-you-access-history-in-javascript)                                                                           |
-| 78  | [How do you detect caps lock key turned on or not](#how-do-you-detect-caps-lock-key-turned-on-or-not)                                                         |
-| 79  | [What is isNaN](#what-is-isnan)                                                                                                                               |
-| 80  | [What are the differences between undeclared and undefined variables](#what-are-the-differences-between-undeclared-and-undefined-variables)                   |
-| 81  | [What are global variables](#what-are-global-variables)                                                                                                       |
-| 82  | [What are the problems with global variables](#what-are-the-problems-with-global-variables)                                                                   |
-| 83  | [What is NaN property](#what-is-nan-property)                                                                                                                 |
-| 84  | [What is the purpose of isFinite function](#what-is-the-purpose-of-isfinite-function)                                                                         |
-| 85  | [What is an event flow](#what-is-an-event-flow)                                                                                                               |
-| 86  | [What is event bubbling](#what-is-event-bubbling)                                                                                                             |
-| 87  | [What is event capturing](#what-is-event-capturing)                                                                                                           |
-| 88  | [How do you submit a form using JavaScript](#how-do-you-submit-a-form-using-javascript)                                                                       |
-| 89  | [How do you find operating system details](#how-do-you-find-operating-system-details)                                                                         |
-| 90  | [What is the difference between document load and DOMContentLoaded events](#what-is-the-difference-between-document-load-and-domcontentloaded-events)         |
-| 91  | [What is the difference between native, host and user objects](#what-is-the-difference-between-native-host-and-user-objects)                                  |
-| 92  | [What are the tools or techniques used for debugging JavaScript code](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)                   |
-| 93  | [What are the pros and cons of promises over callbacks](#what-are-the-pros-and-cons-of-promises-over-callbacks)                                               |
-| 94  | [What is the difference between an attribute and a property](#what-is-the-difference-between-an-attribute-and-a-property)                                     |
-| 95  | [What is same-origin policy](#what-is-same-origin-policy)                                                                                                     |
-| 96  | [What is the purpose of void 0](#what-is-the-purpose-of-void-0)                                                                                               |
-| 97  | [Is JavaScript a compiled or interpreted language](#is-javascript-a-compiled-or-interpreted-language)                                                         |
-| 98  | [Is JavaScript a case-sensitive language](#is-javascript-a-case-sensitive-language)                                                                           |
-| 99  | [Is there any relation between Java and JavaScript](#is-there-any-relation-between-java-and-javascript)                                                       |
-| 100 | [What are events](#what-are-events)                                                                                                                           |
-| 101 | [Who created javascript](#who-created-javascript)                                                                                                             |
-| 102 | [What is the use of preventDefault method](#what-is-the-use-of-preventdefault-method)                                                                         |
-| 103 | [What is the use of stopPropagation method](#what-is-the-use-of-stoppropagation-method)                                                                       |
-| 104 | [What are the steps involved in return false usage](#what-are-the-steps-involved-in-return-false-usage)                                                       |
-| 105 | [What is BOM](#what-is-bom)                                                                                                                                   |
-| 106 | [What is the use of setTimeout](#what-is-the-use-of-settimeout)                                                                                               |
-| 107 | [What is the use of setInterval](#what-is-the-use-of-setinterval)                                                                                             |
-| 108 | [Why is JavaScript treated as Single threaded](#why-is-javascript-treated-as-single-threaded)                                                                 |
-| 109 | [What is an event delegation](#what-is-an-event-delegation)                                                                                                   |
-| 110 | [What is ECMAScript](#what-is-ecmascript)                                                                                                                     |
-| 111 | [What is JSON](#what-is-json)                                                                                                                                 |
-| 112 | [What are the syntax rules of JSON](#what-are-the-syntax-rules-of-json)                                                                                       |
-| 113 | [What is the purpose JSON stringify](#what-is-the-purpose-json-stringify)                                                                                     |
-| 114 | [How do you parse JSON string](#how-do-you-parse-json-string)                                                                                                 |
-| 115 | [Why do you need JSON](#why-do-you-need-json)                                                                                                                 |
-| 116 | [What are PWAs](#what-are-pwas)                                                                                                                               |
-| 117 | [What is the purpose of clearTimeout method](#what-is-the-purpose-of-cleartimeout-method)                                                                     |
-| 118 | [What is the purpose of clearInterval method](#what-is-the-purpose-of-clearinterval-method)                                                                   |
-| 119 | [How do you redirect new page in javascript](#how-do-you-redirect-new-page-in-javascript)                                                                     |
-| 120 | [How do you check whether a string contains a substring](#how-do-you-check-whether-a-string-contains-a-substring)                                             |
-| 121 | [How do you validate an email in javascript](#how-do-you-validate-an-email-in-javascript)                                                                     |
-| 122 | [How do you get the current url with javascript](#how-do-you-get-the-current-url-with-javascript)                                                             |
-| 123 | [What are the various url properties of location object](#what-are-the-various-url-properties-of-location-object)                                             |
-| 124 | [How do get query string values in javascript](#how-do-get-query-string-values-in-javascript)                                                                 |
-| 125 | [How do you check if a key exists in an object](#how-do-you-check-if-a-key-exists-in-an-object)                                                               |
-| 126 | [How do you loop through or enumerate javascript object](#how-do-you-loop-through-or-enumerate-javascript-object)                                             |
-| 127 | [How do you test for an empty object](#how-do-you-test-for-an-empty-object)                                                                                   |
-| 128 | [What is an arguments object](#what-is-an-arguments-object)                                                                                                   |
-| 129 | [How do you make first letter of the string in an uppercase](#how-do-you-make-first-letter-of-the-string-in-an-uppercase)                                     |
-| 130 | [What are the pros and cons of for loops](#what-are-the-pros-and-cons-of-for-loops)                                                                           |
-| 131 | [How do you display the current date in javascript](#how-do-you-display-the-current-date-in-javascript)                                                       |
-| 132 | [How do you compare two date objects](#how-do-you-compare-two-date-objects)                                                                                   |
-| 133 | [How do you check if a string starts with another string](#how-do-you-check-if-a-string-starts-with-another-string)                                           |
-| 134 | [How do you trim a string in javascript](#how-do-you-trim-a-string-in-javascript)                                                                             |
-| 135 | [How do you add a key value pair in javascript](#how-do-you-add-a-key-value-pair-in-javascript)                                                               |
-| 136 | [Is the !-- notation represents a special operator](#is-the----notation-represents-a-special-operator)                                                        |
-| 137 | [How do you assign default values to variables](#how-do-you-assign-default-values-to-variables)                                                               |
-| 138 | [How do you define multiline strings](#how-do-you-define-multiline-strings)                                                                                   |
-| 139 | [What is an app shell model](#what-is-an-app-shell-model)                                                                                                     |
-| 140 | [Can we define properties for functions](#can-we-define-properties-for-functions)                                                                             |
-| 141 | [What is the way to find the number of parameters expected by a function](#what-is-the-way-to-find-the-number-of-parameters-expected-by-a-function)           |
-| 142 | [What is a polyfill](#what-is-a-polyfill)                                                                                                                     |
-| 143 | [What are break and continue statements](#what-are-break-and-continue-statements)                                                                             |
-| 144 | [What are js labels](#what-are-js-labels)                                                                                                                     |
-| 145 | [What are the benefits of keeping declarations at the top](#what-are-the-benefits-of-keeping-declarations-at-the-top)                                         |
-| 146 | [What are the benefits of initializing variables](#what-are-the-benefits-of-initializing-variables)                                                           |
-| 147 | [What are the recommendations to create new object](#what-are-the-recommendations-to-create-new-object)                                                       |
-| 148 | [How do you define JSON arrays](#how-do-you-define-json-arrays)                                                                                               |
-| 149 | [How do you generate random integers](#how-do-you-generate-random-integers)                                                                                   |
-| 150 | [Can you write a random integers function to print integers within a range](#can-you-write-a-random-integers-function-to-print-integers-within-a-range)       |
-| 151 | [What is tree shaking](#what-is-tree-shaking)                                                                                                                 |
-| 152 | [What is the need of tree shaking](#what-is-the-need-of-tree-shaking)                                                                                         |
-| 153 | [Is it recommended to use eval](#is-it-recommended-to-use-eval)                                                                                               |
-| 154 | [What is a Regular Expression](#what-is-a-regular-expression)                                                                                                 |
-| 155 | [What are the string methods that accept Regular expression](#what-are-the-string-methods-that-accept-regular-expression)                                     |
-| 156 | [What are modifiers in regular expression](#what-are-modifiers-in-regular-expression)                                                                         |
-| 157 | [What are regular expression patterns](#what-are-regular-expression-patterns)                                                                                 |
-| 158 | [What is a RegExp object](#what-is-a-regexp-object)                                                                                                           |
-| 159 | [How do you search a string for a pattern](#how-do-you-search-a-string-for-a-pattern)                                                                         |
-| 160 | [What is the purpose of exec method](#what-is-the-purpose-of-exec-method)                                                                                     |
-| 161 | [How do you change the style of a HTML element](#how-do-you-change-the-style-of-a-html-element)                                                               |
-| 162 | [What would be the result of 1+2+'3'](#what-would-be-the-result-of-123)                                                                                       |
-| 163 | [What is a debugger statement](#what-is-a-debugger-statement)                                                                                                 |
-| 164 | [What is the purpose of breakpoints in debugging](#what-is-the-purpose-of-breakpoints-in-debugging)                                                           |
-| 165 | [Can I use reserved words as identifiers](#can-i-use-reserved-words-as-identifiers)                                                                           |
-| 166 | [How do you detect a mobile browser](#how-do-you-detect-a-mobile-browser)                                                                                     |
-| 167 | [How do you detect a mobile browser without regexp](#how-do-you-detect-a-mobile-browser-without-regexp)                                                       |
-| 168 | [How do you get the image width and height using JS](#how-do-you-get-the-image-width-and-height-using-js)                                                     |
-| 169 | [How do you make synchronous HTTP request](#how-do-you-make-synchronous-http-request)                                                                         |
-| 170 | [How do you make asynchronous HTTP request](#how-do-you-make-asynchronous-http-request)                                                                       |
-| 171 | [How do you convert date to another timezone in javascript](#how-do-you-convert-date-to-another-timezone-in-javascript)                                       |
-| 172 | [What are the properties used to get size of window](#what-are-the-properties-used-to-get-size-of-window)                                                     |
-| 173 | [What is a conditional operator in javascript](#what-is-a-conditional-operator-in-javascript)                                                                 |
-| 174 | [Can you apply chaining on conditional operator](#can-you-apply-chaining-on-conditional-operator)                                                             |
-| 175 | [What are the ways to execute javascript after a page load](#what-are-the-ways-to-execute-javascript-after-a-page-load)                                       |
-| 176 | [What is the difference between proto and prototype](#what-is-the-difference-between-proto-and-prototype)                                                     |
-| 177 | [Can you give an example of when you really need a semicolon](#can-you-give-an-example-of-when-you-really-need-a-semicolon)                                   |
-| 178 | [What is the freeze method](#what-is-the-freeze-method)                                                                                                       |
-| 179 | [What is the purpose of the freeze method](#what-is-the-purpose-of-the-freeze-method)                                                                         |
-| 180 | [Why do I need to use the freeze method](#why-do-i-need-to-use-the-freeze-method)                                                                             |
-| 181 | [How do you detect a browser language preference](#how-do-you-detect-a-browser-language-preference)                                                           |
-| 182 | [How to convert a string to title case with javascript](#how-to-convert-a-string-to-title-case-with-javascript)                                               |
-| 183 | [How do you detect if javascript is disabled on the page](#how-do-you-detect-if-javascript-is-disabled-on-the-page)                                           |
-| 184 | [What are various operators supported by javascript](#what-are-various-operators-supported-by-javascript)                                                     |
-| 185 | [What is a rest parameter](#what-is-a-rest-parameter)                                                                                                         |
-| 186 | [What happens if you do not use rest parameter as a last argument](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)                         |
-| 187 | [What are the bitwise operators available in javascript](#what-are-the-bitwise-operators-available-in-javascript)                                             |
-| 188 | [What is a spread operator](#what-is-a-spread-operator)                                                                                                       |
-| 189 | [How do you determine whether object is frozen or not](#how-do-you-determine-whether-object-is-frozen-or-not)                                                 |
-| 190 | [How do you determine two values same or not using object](#how-do-you-determine-two-values-same-or-not-using-object)                                         |
-| 191 | [What is the purpose of using object is method](#what-is-the-purpose-of-using-object-is-method)                                                               |
-| 192 | [How do you copy properties from one object to other](#how-do-you-copy-properties-from-one-object-to-other)                                                   |
-| 193 | [What are the applications of the assign method](#what-are-the-applications-of-the-assign-method)                                                             |
-| 194 | [What is a proxy object](#what-is-a-proxy-object)                                                                                                             |
-| 195 | [What is the purpose of the seal method](#what-is-the-purpose-of-the-seal-method)                                                                             |
-| 196 | [What are the applications of the seal method](#what-are-the-applications-of-the-seal-method)                                                                 |
-| 197 | [What are the differences between the freeze and seal methods](#what-are-the-differences-between-the-freeze-and-seal-methods)                                 |
-| 198 | [How do you determine if an object is sealed or not](#how-do-you-determine-if-an-object-is-sealed-or-not)                                                     |
-| 199 | [How do you get enumerable key and value pairs](#how-do-you-get-enumerable-key-and-value-pairs)                                                               |
-| 200 | [What is the main difference between Object.values and Object.entries method](#what-is-the-main-difference-between-objectvalues-and-objectentries-method)     |
-| 201 | [How can you get the list of keys of any object](#how-can-you-get-the-list-of-keys-of-any-object)                                                             |
-| 202 | [How do you create an object with a prototype](#how-do-you-create-an-object-with-a-prototype)                                                                 |
-| 203 | [What is a WeakSet](#what-is-a-weakset)                                                                                                                       |
-| 204 | [What are the differences between WeakSet and Set](#what-are-the-differences-between-weakset-and-set)                                                         |
-| 205 | [List down the collection of methods available on WeakSet](#list-down-the-collection-of-methods-available-on-weakset)                                         |
-| 206 | [What is a WeakMap](#what-is-a-weakmap)                                                                                                                       |
-| 207 | [What are the differences between WeakMap and Map](#what-are-the-differences-between-weakmap-and-map)                                                         |
-| 208 | [List down the collection of methods available on WeakMap](#list-down-the-collection-of-methods-available-on-weakmap)                                         |
-| 209 | [What is the purpose of uneval](#what-is-the-purpose-of-uneval)                                                                                               |
-| 210 | [How do you encode an URL](#how-do-you-encode-an-url)                                                                                                         |
-| 211 | [How do you decode an URL](#how-do-you-decode-an-url)                                                                                                         |
-| 212 | [How do you print the contents of web page](#how-do-you-print-the-contents-of-web-page)                                                                       |
-| 213 | [What is the difference between uneval and eval](#what-is-the-difference-between-uneval-and-eval)                                                             |
-| 214 | [What is an anonymous function](#what-is-an-anonymous-function)                                                                                               |
-| 215 | [What is the precedence order between local and global variables](#what-is-the-precedence-order-between-local-and-global-variables)                           |
-| 216 | [What are javascript accessors](#what-are-javascript-accessors)                                                                                               |
-| 217 | [How do you define property on Object constructor](#how-do-you-define-property-on-object-constructor)                                                         |
-| 218 | [What is the difference between get and defineProperty](#what-is-the-difference-between-get-and-defineproperty)                                               |
-| 219 | [What are the advantages of Getters and Setters](#what-are-the-advantages-of-getters-and-setters)                                                             |
-| 220 | [Can I add getters and setters using defineProperty method](#can-i-add-getters-and-setters-using-defineproperty-method)                                       |
-| 221 | [What is the purpose of switch-case](#what-is-the-purpose-of-switch-case)                                                                                     |
-| 222 | [What are the conventions to be followed for the usage of switch case](#what-are-the-conventions-to-be-followed-for-the-usage-of-switch-case)                 |
-| 223 | [What are primitive data types](#what-are-primitive-data-types)                                                                                               |
-| 224 | [What are the different ways to access object properties](#what-are-the-different-ways-to-access-object-properties)                                           |
-| 225 | [What are the function parameter rules](#what-are-the-function-parameter-rules)                                                                               |
-| 226 | [What is an error object](#what-is-an-error-object)                                                                                                           |
-| 227 | [When do you get a syntax error](#when-do-you-get-a-syntax-error)                                                                                             |
-| 228 | [What are the different error names from error object](#what-are-the-different-error-names-from-error-object)                                                 |
-| 229 | [What are the various statements in error handling](#what-are-the-various-statements-in-error-handling)                                                       |
-| 230 | [What are the two types of loops in javascript](#what-are-the-two-types-of-loops-in-javascript)                                                               |
-| 231 | [What is nodejs](#what-is-nodejs)                                                                                                                             |
-| 232 | [What is the Intl object](#what-is-the-intl-object)                                                                                                           |
-| 233 | [How do you perform language specific date and time formatting](#how-do-you-perform-language-specific-date-and-time-formatting)                               |
-| 234 | [What is an Iterator](#what-is-an-iterator)                                                                                                                   |
-| 235 | [How does synchronous iteration works](#how-does-synchronous-iteration-works)                                                                                 |
-| 236 | [What is the event loop](#what-is-the-event-loop)                                                                                                             |
-| 237 | [What is the call stack](#what-is-the-call-stack)                                                                                                             |
-| 238 | [What is the event queue](#what-is-the-event-queue)                                                                                                           |
-| 239 | [What is a decorator](#what-is-a-decorator)                                                                                                                   |
-| 240 | [What are the properties of the Intl object](#what-are-the-properties-of-the-intl-object)                                                                     |
-| 241 | [What is an Unary operator](#what-is-an-unary-operator)                                                                                                       |
-| 242 | [How do you sort elements in an array](#how-do-you-sort-elements-in-an-array)                                                                                 |
-| 243 | [What is the purpose of compareFunction while sorting arrays](#what-is-the-purpose-of-comparefunction-while-sorting-arrays)                                   |
-| 244 | [How do you reverse an array](#how-do-you-reverse-an-array)                                                                                                   |
-| 245 | [How do you find the min and max values in an array](#how-do-you-find-the-min-and-max-values-in-an-array)                                                     |
-| 246 | [How do you find the min and max values without Math functions](#how-do-you-find-the-min-and-max-values-without-math-functions)                               |
-| 247 | [What is an empty statement and purpose of it](#what-is-an-empty-statement-and-purpose-of-it)                                                                 |
-| 248 | [How do you get the metadata of a module](#how-do-you-get-the-metadata-of-a-module)                                                                           |
-| 249 | [What is the comma operator](#what-is-the-comma-operator)                                                                                                     |
-| 250 | [What is the advantage of the comma operator](#what-is-the-advantage-of-the-comma-operator)                                                                   |
-| 251 | [What is typescript](#what-is-typescript)                                                                                                                     |
-| 252 | [What are the differences between javascript and typescript](#what-are-the-differences-between-javascript-and-typescript)                                     |
-| 253 | [What are the advantages of typescript over javascript](#what-are-the-advantages-of-typescript-over-javascript)                                               |
-| 254 | [What is an object initializer](#what-is-an-object-initializer)                                                                                               |
-| 255 | [What is a constructor method](#what-is-a-constructor-method)                                                                                                 |
-| 256 | [What happens if you write constructor more than once in a class](#what-happens-if-you-write-constructor-more-than-once-in-a-class)                           |
-| 257 | [How do you call the constructor of a parent class](#how-do-you-call-the-constructor-of-a-parent-class)                                                       |
-| 258 | [How do you get the prototype of an object](#how-do-you-get-the-prototype-of-an-object)                                                                       |
-| 259 | [What happens If I pass string type for getPrototype method](#what-happens-if-i-pass-string-type-for-getprototype-method)                                     |
-| 260 | [How do you set the prototype of one object to another](#how-do-you-set-the-prototype-of-one-object-to-another)                                               |
-| 261 | [How do you check whether an object can be extended or not](#how-do-you-check-whether-an-object-can-be-extended-or-not)                                       |
-| 262 | [How do you prevent an object from being extend](#how-do-you-prevent-an-object-from-being-extend)                                                             |
-| 263 | [What are the different ways to make an object non-extensible](#what-are-the-different-ways-to-make-an-object-non-extensible)                                 |
-| 264 | [How do you define multiple properties on an object](#how-do-you-define-multiple-properties-on-an-object)                                                     |
-| 265 | [What is the MEAN stack](#what-is-the-mean-stack)                                                                                                             |
-| 266 | [What Is Obfuscation in javascript](#what-is-obfuscation-in-javascript)                                                                                       |
-| 267 | [Why do you need Obfuscation](#why-do-you-need-obfuscation)                                                                                                   |
-| 268 | [What is Minification](#what-is-minification)                                                                                                                 |
-| 269 | [What are the advantages of minification](#what-are-the-advantages-of-minification)                                                                           |
-| 270 | [What are the differences between Obfuscation and Encryption](#what-are-the-differences-between-obfuscation-and-encryption)                                   |
-| 271 | [What are the common tools used for minification](#what-are-the-common-tools-used-for-minification)                                                           |
-| 272 | [How do you perform form validation using javascript](#how-do-you-perform-form-validation-using-javascript)                                                   |
-| 273 | [How do you perform form validation without javascript](#how-do-you-perform-form-validation-without-javascript)                                               |
-| 274 | [What are the DOM methods available for constraint validation](#what-are-the-dom-methods-available-for-constraint-validation)                                 |
-| 275 | [What are the available constraint validation DOM properties](#what-are-the-available-constraint-validation-dom-properties)                                   |
-| 276 | [What are the validity properties](#what-are-the-validity-properties)                                                                                         |
-| 277 | [Give an example usage of the rangeOverflow property](#give-an-example-usage-of-the-rangeoverflow-property)                                                   |
-| 278 | [Are enums available in javascript](#are-enums-available-in-javascript)                                                                                       |
-| 279 | [What is an enum](#what-is-an-enum)                                                                                                                           |
-| 280 | [How do you list all properties of an object](#how-do-you-list-all-properties-of-an-object)                                                                   |
-| 281 | [How do you get property descriptors of an object](#how-do-you-get-property-descriptors-of-an-object)                                                         |
-| 282 | [What are the attributes provided by a property descriptor](#what-are-the-attributes-provided-by-a-property-descriptor)                                       |
-| 283 | [How do you extend classes](#how-do-you-extend-classes)                                                                                                       |
-| 284 | [How do I modify the url without reloading the page](#how-do-i-modify-the-url-without-reloading-the-page)                                                     |
-| 285 | [How do you check whether or not an array includes a particular value](#how-do-you-check-whether-or-not-an-array-includes-a-particular-value)                 |
-| 286 | [How do you compare scalar arrays](#how-do-you-compare-scalar-arrays)                                                                                         |
-| 287 | [How to get the value from get parameters](#how-to-get-the-value-from-get-parameters)                                                                         |
-| 288 | [How do you print numbers with commas as thousand separators](#how-do-you-print-numbers-with-commas-as-thousand-separators)                                   |
-| 289 | [What is the difference between java and javascript](#what-is-the-difference-between-java-and-javascript)                                                     |
-| 290 | [Does JavaScript support namespaces](#does-javascript-support-namespaces)                                                                                     |
-| 291 | [How do you declare a namespace](#how-do-you-declare-a-namespace)                                                                                             |
-| 292 | [How do you invoke javascript code in an iframe from the parent page](#how-do-you-invoke-javascript-code-in-an-iframe-from-the-parent-page)                   |
-| 293 | [How do you get the timezone offset of a date object](#how-do-you-get-the-timezone-offset-of-a-date-object)                                                   |
-| 294 | [How do you load CSS and JS files dynamically](#how-do-you-load-css-and-js-files-dynamically)                                                                 |
-| 295 | [What are the different methods to find HTML elements in DOM](#what-are-the-different-methods-to-find-html-elements-in-dom)                                   |
-| 296 | [What is jQuery](#what-is-jquery)                                                                                                                             |
-| 297 | [What is V8 JavaScript engine](#what-is-v8-javascript-engine)                                                                                                 |
-| 298 | [Why do we call javascript as dynamic language](#why-do-we-call-javascript-as-dynamic-language)                                                               |
-| 299 | [What is a void operator](#what-is-a-void-operator)                                                                                                           |
-| 300 | [How to set the cursor to wait](#how-to-set-the-cursor-to-wait)                                                                                               |
-| 301 | [How do you create an infinite loop](#how-do-you-create-an-infinite-loop)                                                                                     |
-| 302 | [Why do you need to avoid with statement](#why-do-you-need-to-avoid-with-statement)                                                                           |
-| 303 | [What is the output of the following for loops](#what-is-the-output-of-the-following-for-loops)                                                               |
-| 304 | [List down some of the features of ES6](#list-down-some-of-the-features-of-es6)                                                                               |
-| 305 | [What is ES6](#what-is-es6)                                                                                                                                   |
-| 306 | [Can I redeclare let and const variables](#can-i-redeclare-let-and-const-variables)                                                                           |
-| 307 | [Does the `const` variable make the value immutable](#does-the-const-variable-make-the-value-immutable)                                                       |
-| 308 | [What are default parameters](#what-are-default-parameters)                                                                                                   |
-| 309 | [What are template literals](#what-are-template-literals)                                                                                                     |
-| 310 | [How do you write multi-line strings in template literals](#how-do-you-write-multi-line-strings-in-template-literals)                                         |
-| 311 | [What are nesting templates](#what-are-nesting-templates)                                                                                                     |
-| 312 | [What are tagged templates](#what-are-tagged-templates)                                                                                                       |
-| 313 | [What are raw strings](#what-are-raw-strings)                                                                                                                 |
-| 314 | [What is destructuring assignment](#what-is-destructuring-assignment)                                                                                         |
-| 315 | [What are default values in destructuring assignment](#what-are-default-values-in-destructuring-assignment)                                                   |
-| 316 | [How do you swap variables in destructuring assignment](#how-do-you-swap-variables-in-destructuring-assignment)                                               |
-| 317 | [What are enhanced object literals](#what-are-enhanced-object-literals)                                                                                       |
-| 318 | [What are dynamic imports](#what-are-dynamic-imports)                                                                                                         |
-| 319 | [What are the use cases for dynamic imports](#what-are-the-use-cases-for-dynamic-imports)                                                                     |
-| 320 | [What are typed arrays](#what-are-typed-arrays)                                                                                                               |
-| 321 | [What are the advantages of module loaders](#what-are-the-advantages-of-module-loaders)                                                                       |
-| 322 | [What is collation](#what-is-collation)                                                                                                                       |
-| 323 | [What is for...of statement](#what-is-forof-statement)                                                                                                        |
-| 324 | [What is the output of below spread operator array](#what-is-the-output-of-below-spread-operator-array)                                                       |
-| 325 | [Is PostMessage secure](#is-postmessage-secure)                                                                                                               |
-| 326 | [What are the problems with postmessage target origin as wildcard](#what-are-the-problems-with-postmessage-target-origin-as-wildcard)                         |
-| 327 | [How do you avoid receiving postMessages from attackers](#how-do-you-avoid-receiving-postmessages-from-attackers)                                             |
-| 328 | [Can I avoid using postMessages completely](#can-i-avoid-using-postmessages-completely)                                                                       |
-| 329 | [Is postMessages synchronous](#is-postmessages-synchronous)                                                                                                   |
-| 330 | [What paradigm is Javascript](#what-paradigm-is-javascript)                                                                                                   |
-| 331 | [What is the difference between internal and external javascript](#what-is-the-difference-between-internal-and-external-javascript)                           |
-| 332 | [Is JavaScript faster than server side script](#is-javascript-faster-than-server-side-script)                                                                 |
-| 333 | [How do you get the status of a checkbox](#how-do-you-get-the-status-of-a-checkbox)                                                                           |
-| 334 | [What is the purpose of double tilde operator](#what-is-the-purpose-of-double-tilde-operator)                                                                 |
-| 335 | [How do you convert character to ASCII code](#how-do-you-convert-character-to-ascii-code)                                                                     |
-| 336 | [What is ArrayBuffer](#what-is-arraybuffer)                                                                                                                   |
-| 337 | [What is the output of below string expression](#what-is-the-output-of-below-string-expression)                                                               |
-| 338 | [What is the purpose of Error object](#what-is-the-purpose-of-error-object)                                                                                   |
-| 339 | [What is the purpose of EvalError object](#what-is-the-purpose-of-evalerror-object)                                                                           |
-| 340 | [What are the list of cases error thrown from non-strict mode to strict mode](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)   |
-| 341 | [Do all objects have prototypes](#do-all-objects-have-prototypes)                                                                                             |
-| 342 | [What is the difference between a parameter and an argument](#what-is-the-difference-between-a-parameter-and-an-argument)                                     |
-| 343 | [What is the purpose of some method in arrays](#what-is-the-purpose-of-some-method-in-arrays)                                                                 |
-| 344 | [How do you combine two or more arrays](#how-do-you-combine-two-or-more-arrays)                                                                               |
-| 345 | [What is the difference between Shallow and Deep copy](#what-is-the-difference-between-shallow-and-deep-copy)                                                 |
-| 346 | [How do you create specific number of copies of a string](#how-do-you-create-specific-number-of-copies-of-a-string)                                           |
-| 347 | [How do you return all matching strings against a regular expression](#how-do-you-return-all-matching-strings-against-a-regular-expression)                   |
-| 348 | [How do you trim a string at the beginning or ending](#how-do-you-trim-a-string-at-the-beginning-or-ending)                                                   |
-| 349 | [What is the output of below console statement with unary operator](#what-is-the-output-of-below-console-statement-with-unary-operator)                       |
-| 350 | [Does javascript uses mixins](#does-javascript-uses-mixins)                                                                                                   |
-| 351 | [What is a thunk function](#what-is-a-thunk-function)                                                                                                         |
-| 352 | [What are asynchronous thunks](#what-are-asynchronous-thunks)                                                                                                 |
-| 353 | [What is the output of below function calls](#what-is-the-output-of-below-function-calls)                                                                     |
-| 354 | [How to remove all line breaks from a string](#how-to-remove-all-line-breaks-from-a-string)                                                                   |
-| 355 | [What is the difference between reflow and repaint](#what-is-the-difference-between-reflow-and-repaint)                                                       |
-| 356 | [What happens with negating an array](#what-happens-with-negating-an-array)                                                                                   |
-| 357 | [What happens if we add two arrays](#what-happens-if-we-add-two-arrays)                                                                                       |
-| 358 | [What is the output of prepend additive operator on falsy values](#what-is-the-output-of-prepend-additive-operator-on-falsy-values)                           |
-| 359 | [How do you create self string using special characters](#how-do-you-create-self-string-using-special-characters)                                             |
-| 360 | [How do you remove falsy values from an array](#how-do-you-remove-falsy-values-from-an-array)                                                                 |
-| 361 | [How do you get unique values of an array](#how-do-you-get-unique-values-of-an-array)                                                                         |
-| 362 | [What is destructuring aliases](#what-is-destructuring-aliases)                                                                                               |
-| 363 | [How do you map the array values without using map method](#how-do-you-map-the-array-values-without-using-map-method)                                         |
-| 364 | [How do you empty an array](#how-do-you-empty-an-array)                                                                                                       |
-| 365 | [How do you round numbers to certain decimals](#how-do-you-round-numbers-to-certain-decimals)                                                                 |
-| 366 | [What is the easiest way to convert an array to an object](#what-is-the-easiest-way-to-convert-an-array-to-an-object)                                         |
-| 367 | [How do you create an array with some data](#how-do-you-create-an-array-with-some-data)                                                                       |
-| 368 | [What are the placeholders from console object](#what-are-the-placeholders-from-console-object)                                                               |
-| 369 | [Is it possible to add CSS to console messages](#is-it-possible-to-add-css-to-console-messages)                                                               |
-| 370 | [What is the purpose of dir method of console object](#what-is-the-purpose-of-dir-method-of-console-object)                                                   |
-| 371 | [Is it possible to debug HTML elements in console](#is-it-possible-to-debug-html-elements-in-console)                                                         |
-| 372 | [How do you display data in a tabular format using console object](#how-do-you-display-data-in-a-tabular-format-using-console-object)                         |
-| 373 | [How do you verify that an argument is a Number or not](#how-do-you-verify-that-an-argument-is-a-number-or-not)                                               |
-| 374 | [How do you create copy to clipboard button](#how-do-you-create-copy-to-clipboard-button)                                                                     |
-| 375 | [What is the shortcut to get timestamp](#what-is-the-shortcut-to-get-timestamp)                                                                               |
-| 376 | [How do you flattening multi dimensional arrays](#how-do-you-flattening-multi-dimensional-arrays)                                                             |
-| 377 | [What is the easiest multi condition checking](#what-is-the-easiest-multi-condition-checking)                                                                 |
-| 378 | [How do you capture browser back button](#how-do-you-capture-browser-back-button)                                                                             |
-| 379 | [How do you disable right click in the web page](#how-do-you-disable-right-click-in-the-web-page)                                                             |
-| 380 | [What are wrapper objects](#what-are-wrapper-objects)                                                                                                         |
-| 381 | [What is AJAX](#what-is-ajax)                                                                                                                                 |
-| 382 | [What are the different ways to deal with Asynchronous Code](#what-are-the-different-ways-to-deal-with-asynchronous-code)                                     |
-| 383 | [How to cancel a fetch request](#how-to-cancel-a-fetch-request)                                                                                               |
-| 384 | [What is web speech API](#what-is-web-speech-api)                                                                                                             |
-| 385 | [What is minimum timeout throttling](#what-is-minimum-timeout-throttling)                                                                                     |
-| 386 | [How do you implement zero timeout in modern browsers](#how-do-you-implement-zero-timeout-in-modern-browsers)                                                 |
-| 387 | [What are tasks in event loop](#what-are-tasks-in-event-loop)                                                                                                 |
-| 388 | [What is microtask](#what-is-microtask)                                                                                                                       |
-| 389 | [What are different event loops](#what-are-different-event-loops)                                                                                             |
-| 390 | [What is the purpose of queueMicrotask](#what-is-the-purpose-of-queuemicrotask)                                                                               |
-| 391 | [How do you use javascript libraries in typescript file](#how-do-you-use-javascript-libraries-in-typescript-file)                                             |
-| 392 | [What are the differences between promises and observables](#what-are-the-differences-between-promises-and-observables)                                       |
-| 393 | [What is heap](#what-is-heap)                                                                                                                                 |
-| 394 | [What is an event table](#what-is-an-event-table)                                                                                                             |
-| 395 | [What is a microTask queue](#what-is-a-microtask-queue)                                                                                                       |
-| 396 | [What is the difference between shim and polyfill](#what-is-the-difference-between-shim-and-polyfill)                                                         |
-| 397 | [How do you detect primitive or non primitive value type](#how-do-you-detect-primitive-or-non-primitive-value-type)                                           |
-| 398 | [What is babel](#what-is-babel)                                                                                                                               |
-| 399 | [Is Node.js completely single threaded](#is-nodejs-completely-single-threaded)                                                                                |
-| 400 | [What are the common use cases of observables](#what-are-the-common-use-cases-of-observables)                                                                 |
-| 401 | [What is RxJS](#what-is-rxjs)                                                                                                                                 |
+| No. | Questions |
+| --- | --------- |
+| 1 | [What are the possible ways to create objects in JavaScript](#what-are-the-possible-ways-to-create-objects-in-javascript) |
+| 2 | [What is a prototype chain](#what-is-a-prototype-chain) |
+| 3 | [What is the difference between Call, Apply and Bind](#what-is-the-difference-between-call-apply-and-bind) |
+| 4 | [What is JSON and its common operations](#what-is-json-and-its-common-operations) |
+| 5 | [What is the purpose of the array slice method](#what-is-the-purpose-of-the-array-slice-method) |
+| 6 | [What is the purpose of the array splice method](#what-is-the-purpose-of-the-array-splice-method) |
+| 7 | [What is the difference between slice and splice](#what-is-the-difference-between-slice-and-splice) |
+| 8 | [How do you compare Object and Map](#how-do-you-compare-object-and-map) |
+| 9 | [What is the difference between == and === operators](#what-is-the-difference-between--and--operators) |
+| 10 | [What are lambda expressions or arrow functions](#what-are-lambda-expressions-or-arrow-functions) |
+| 11 | [What is a first class function](#what-is-a-first-class-function) |
+| 12 | [What is a first order function](#what-is-a-first-order-function) |
+| 13 | [What is a higher order function](#what-is-a-higher-order-function) |
+| 14 | [What is a unary function](#what-is-a-unary-function) |
+| 15 | [What is the currying function](#what-is-the-currying-function) |
+| 16 | [What is a pure function](#what-is-a-pure-function) |
+| 17 | [What is the purpose of the let keyword](#what-is-the-purpose-of-the-let-keyword) |
+| 18 | [What is the difference between let and var](#what-is-the-difference-between-let-and-var) |
+| 19 | [What is the reason to choose the name let as a keyword](#what-is-the-reason-to-choose-the-name-let-as-a-keyword) |
+| 20 | [How do you redeclare variables in a switch block without an error](#how-do-you-redeclare-variables-in-a-switch-block-without-an-error) |
+| 21 | [What is the Temporal Dead Zone](#what-is-the-temporal-dead-zone) |
+| 22 | [What is an IIFE (Immediately Invoked Function Expression)](#what-is-an-iife-immediately-invoked-function-expression) |
+| 23 | [How do you decode or encode a URL in JavaScript?](#how-do-you-decode-or-encode-a-url-in-javascript) |
+| 24 | [What is memoization](#what-is-memoization) |
+| 25 | [What is Hoisting](#what-is-hoisting) |
+| 26 | [What are classes in ES6](#what-are-classes-in-es6) |
+| 27 | [What are closures](#what-are-closures) |
+| 28 | [What are modules](#what-are-modules) |
+| 29 | [Why do you need modules](#why-do-you-need-modules) |
+| 30 | [What is scope in javascript](#what-is-scope-in-javascript) |
+| 31 | [What is a service worker](#what-is-a-service-worker) |
+| 32 | [How do you manipulate DOM using a service worker](#how-do-you-manipulate-dom-using-a-service-worker) |
+| 33 | [How do you reuse information across service worker restarts](#how-do-you-reuse-information-across-service-worker-restarts) |
+| 34 | [What is IndexedDB](#what-is-indexeddb) |
+| 35 | [What is web storage](#what-is-web-storage) |
+| 36 | [What is a post message](#what-is-a-post-message) |
+| 37 | [What is a Cookie](#what-is-a-cookie) |
+| 38 | [Why do you need a Cookie](#why-do-you-need-a-cookie) |
+| 39 | [What are the options in a cookie](#what-are-the-options-in-a-cookie) |
+| 40 | [How do you delete a cookie](#how-do-you-delete-a-cookie) |
+| 41 | [What are the differences between cookie, local storage and session storage](#what-are-the-differences-between-cookie-local-storage-and-session-storage) |
+| 42 | [What is the main difference between localStorage and sessionStorage](#what-is-the-main-difference-between-localstorage-and-sessionstorage) |
+| 43 | [How do you access web storage](#how-do-you-access-web-storage) |
+| 44 | [What are the methods available on session storage](#what-are-the-methods-available-on-session-storage) |
+| 45 | [What is a storage event and its event handler](#what-is-a-storage-event-and-its-event-handler) |
+| 46 | [Why do you need web storage](#why-do-you-need-web-storage) |
+| 47 | [How do you check web storage browser support](#how-do-you-check-web-storage-browser-support) |
+| 48 | [How do you check web workers browser support](#how-do-you-check-web-workers-browser-support) |
+| 49 | [Give an example of a web worker](#give-an-example-of-a-web-worker) |
+| 50 | [What are the restrictions of web workers on DOM](#what-are-the-restrictions-of-web-workers-on-dom) |
+| 51 | [What is a promise](#what-is-a-promise) |
+| 52 | [Why do you need a promise](#why-do-you-need-a-promise) |
+| 53 | [What are the three states of promise](#what-are-the-three-states-of-promise) |
+| 54 | [What is a callback function](#what-is-a-callback-function) |
+| 55 | [Why do we need callbacks](#why-do-we-need-callbacks) |
+| 56 | [What is a callback hell](#what-is-a-callback-hell) |
+| 57 | [What are server-sent events](#what-are-server-sent-events) |
+| 58 | [How do you receive server-sent event notifications](#how-do-you-receive-server-sent-event-notifications) |
+| 59 | [How do you check browser support for server-sent events](#how-do-you-check-browser-support-for-server-sent-events) |
+| 60 | [What are the events available for server sent events](#what-are-the-events-available-for-server-sent-events) |
+| 61 | [What are the main rules of promise](#what-are-the-main-rules-of-promise) |
+| 62 | [What is callback in callback](#what-is-callback-in-callback) |
+| 63 | [What is promise chaining](#what-is-promise-chaining) |
+| 64 | [What is promise.all](#what-is-promiseall) |
+| 65 | [What is the purpose of the race method in promise](#what-is-the-purpose-of-the-race-method-in-promise) |
+| 66 | [What is a strict mode in javascript](#what-is-a-strict-mode-in-javascript) |
+| 67 | [Why do you need strict mode](#why-do-you-need-strict-mode) |
+| 68 | [How do you declare strict mode](#how-do-you-declare-strict-mode) |
+| 69 | [What is the purpose of double exclamation](#what-is-the-purpose-of-double-exclamation) |
+| 70 | [What is the purpose of the delete operator](#what-is-the-purpose-of-the-delete-operator) |
+| 71 | [What is typeof operator](#what-is-typeof-operator) |
+| 72 | [What is undefined property](#what-is-undefined-property) |
+| 73 | [What is null value](#what-is-null-value) |
+| 74 | [What is the difference between null and undefined](#what-is-the-difference-between-null-and-undefined) |
+| 75 | [What is eval](#what-is-eval) |
+| 76 | [What is the difference between window and document](#what-is-the-difference-between-window-and-document) |
+| 77 | [How do you access history in javascript](#how-do-you-access-history-in-javascript) |
+| 78 | [How do you detect caps lock key turned on or not](#how-do-you-detect-caps-lock-key-turned-on-or-not) |
+| 79 | [What is isNaN](#what-is-isnan) |
+| 80 | [What are the differences between undeclared and undefined variables](#what-are-the-differences-between-undeclared-and-undefined-variables) |
+| 81 | [What are global variables](#what-are-global-variables) |
+| 82 | [What are the problems with global variables](#what-are-the-problems-with-global-variables) |
+| 83 | [What is NaN property](#what-is-nan-property) |
+| 84 | [What is the purpose of isFinite function](#what-is-the-purpose-of-isfinite-function) |
+| 85 | [What is an event flow](#what-is-an-event-flow) |
+| 86 | [What is event bubbling](#what-is-event-bubbling) |
+| 87 | [What is event capturing](#what-is-event-capturing) |
+| 88 | [How do you submit a form using JavaScript](#how-do-you-submit-a-form-using-javascript) |
+| 89 | [How do you find operating system details](#how-do-you-find-operating-system-details) |
+| 90 | [What is the difference between document load and DOMContentLoaded events](#what-is-the-difference-between-document-load-and-domcontentloaded-events) |
+| 91 | [What is the difference between native, host and user objects](#what-is-the-difference-between-native-host-and-user-objects) |
+| 92 | [What are the tools or techniques used for debugging JavaScript code](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code) |
+| 93 | [What are the pros and cons of promises over callbacks](#what-are-the-pros-and-cons-of-promises-over-callbacks) |
+| 94 | [What is the difference between an attribute and a property](#what-is-the-difference-between-an-attribute-and-a-property) |
+| 95 | [What is same-origin policy](#what-is-same-origin-policy) |
+| 96 | [What is the purpose of void 0](#what-is-the-purpose-of-void-0) |
+| 97 | [Is JavaScript a compiled or interpreted language](#is-javascript-a-compiled-or-interpreted-language) |
+| 98 | [Is JavaScript a case-sensitive language](#is-javascript-a-case-sensitive-language) |
+| 99 | [Is there any relation between Java and JavaScript](#is-there-any-relation-between-java-and-javascript) |
+| 100 | [What are events](#what-are-events) |
+| 101 | [Who created javascript](#who-created-javascript) |
+| 102 | [What is the use of preventDefault method](#what-is-the-use-of-preventdefault-method) |
+| 103 | [What is the use of stopPropagation method](#what-is-the-use-of-stoppropagation-method) |
+| 104 | [What are the steps involved in return false usage](#what-are-the-steps-involved-in-return-false-usage) |
+| 105 | [What is BOM](#what-is-bom) |
+| 106 | [What is the use of setTimeout](#what-is-the-use-of-settimeout) |
+| 107 | [What is the use of setInterval](#what-is-the-use-of-setinterval) |
+| 108 | [Why is JavaScript treated as Single threaded](#why-is-javascript-treated-as-single-threaded) |
+| 109 | [What is an event delegation](#what-is-an-event-delegation) |
+| 110 | [What is ECMAScript](#what-is-ecmascript) |
+| 111 | [What is JSON](#what-is-json) |
+| 112 | [What are the syntax rules of JSON](#what-are-the-syntax-rules-of-json) |
+| 113 | [What is the purpose JSON stringify](#what-is-the-purpose-json-stringify) |
+| 114 | [How do you parse JSON string](#how-do-you-parse-json-string) |
+| 115 | [Why do you need JSON](#why-do-you-need-json) |
+| 116 | [What are PWAs](#what-are-pwas) |
+| 117 | [What is the purpose of clearTimeout method](#what-is-the-purpose-of-cleartimeout-method) |
+| 118 | [What is the purpose of clearInterval method](#what-is-the-purpose-of-clearinterval-method) |
+| 119 | [How do you redirect new page in javascript](#how-do-you-redirect-new-page-in-javascript) |
+| 120 | [How do you check whether a string contains a substring](#how-do-you-check-whether-a-string-contains-a-substring) |
+| 121 | [How do you validate an email in javascript](#how-do-you-validate-an-email-in-javascript) |
+| 122 | [How do you get the current url with javascript](#how-do-you-get-the-current-url-with-javascript) |
+| 123 | [What are the various url properties of location object](#what-are-the-various-url-properties-of-location-object) |
+| 124 | [How do get query string values in javascript](#how-do-get-query-string-values-in-javascript) |
+| 125 | [How do you check if a key exists in an object](#how-do-you-check-if-a-key-exists-in-an-object) |
+| 126 | [How do you loop through or enumerate javascript object](#how-do-you-loop-through-or-enumerate-javascript-object) |
+| 127 | [How do you test for an empty object](#how-do-you-test-for-an-empty-object) |
+| 128 | [What is an arguments object](#what-is-an-arguments-object) |
+| 129 | [How do you make first letter of the string in an uppercase](#how-do-you-make-first-letter-of-the-string-in-an-uppercase) |
+| 130 | [What are the pros and cons of for loops](#what-are-the-pros-and-cons-of-for-loops) |
+| 131 | [How do you display the current date in javascript](#how-do-you-display-the-current-date-in-javascript) |
+| 132 | [How do you compare two date objects](#how-do-you-compare-two-date-objects) |
+| 133 | [How do you check if a string starts with another string](#how-do-you-check-if-a-string-starts-with-another-string) |
+| 134 | [How do you trim a string in javascript](#how-do-you-trim-a-string-in-javascript) |
+| 135 | [How do you add a key value pair in javascript](#how-do-you-add-a-key-value-pair-in-javascript) |
+| 136 | [Is the !-- notation represents a special operator](#is-the----notation-represents-a-special-operator) |
+| 137 | [How do you assign default values to variables](#how-do-you-assign-default-values-to-variables) |
+| 138 | [How do you define multiline strings](#how-do-you-define-multiline-strings) |
+| 139 | [What is an app shell model](#what-is-an-app-shell-model) |
+| 140 | [Can we define properties for functions](#can-we-define-properties-for-functions) |
+| 141 | [What is the way to find the number of parameters expected by a function](#what-is-the-way-to-find-the-number-of-parameters-expected-by-a-function) |
+| 142 | [What is a polyfill](#what-is-a-polyfill) |
+| 143 | [What are break and continue statements](#what-are-break-and-continue-statements) |
+| 144 | [What are js labels](#what-are-js-labels) |
+| 145 | [What are the benefits of keeping declarations at the top](#what-are-the-benefits-of-keeping-declarations-at-the-top) |
+| 146 | [What are the benefits of initializing variables](#what-are-the-benefits-of-initializing-variables) |
+| 147 | [What are the recommendations to create new object](#what-are-the-recommendations-to-create-new-object) |
+| 148 | [How do you define JSON arrays](#how-do-you-define-json-arrays) |
+| 149 | [How do you generate random integers](#how-do-you-generate-random-integers) |
+| 150 | [Can you write a random integers function to print integers within a range](#can-you-write-a-random-integers-function-to-print-integers-within-a-range) |
+| 151 | [What is tree shaking](#what-is-tree-shaking) |
+| 152 | [What is the need of tree shaking](#what-is-the-need-of-tree-shaking) |
+| 153 | [Is it recommended to use eval](#is-it-recommended-to-use-eval) |
+| 154 | [What is a Regular Expression](#what-is-a-regular-expression) |
+| 155 | [What are the string methods that accept Regular expression](#what-are-the-string-methods-that-accept-regular-expression) |
+| 156 | [What are modifiers in regular expression](#what-are-modifiers-in-regular-expression) |
+| 157 | [What are regular expression patterns](#what-are-regular-expression-patterns) |
+| 158 | [What is a RegExp object](#what-is-a-regexp-object) |
+| 159 | [How do you search a string for a pattern](#how-do-you-search-a-string-for-a-pattern) |
+| 160 | [What is the purpose of exec method](#what-is-the-purpose-of-exec-method) |
+| 161 | [How do you change the style of a HTML element](#how-do-you-change-the-style-of-a-html-element) |
+| 162 | [What would be the result of 1+2+'3'](#what-would-be-the-result-of-123) |
+| 163 | [What is a debugger statement](#what-is-a-debugger-statement) |
+| 164 | [What is the purpose of breakpoints in debugging](#what-is-the-purpose-of-breakpoints-in-debugging) |
+| 165 | [Can I use reserved words as identifiers](#can-i-use-reserved-words-as-identifiers) |
+| 166 | [How do you detect a mobile browser](#how-do-you-detect-a-mobile-browser) |
+| 167 | [How do you detect a mobile browser without regexp](#how-do-you-detect-a-mobile-browser-without-regexp) |
+| 168 | [How do you get the image width and height using JS](#how-do-you-get-the-image-width-and-height-using-js) |
+| 169 | [How do you make synchronous HTTP request](#how-do-you-make-synchronous-http-request) |
+| 170 | [How do you make asynchronous HTTP request](#how-do-you-make-asynchronous-http-request) |
+| 171 | [How do you convert date to another timezone in javascript](#how-do-you-convert-date-to-another-timezone-in-javascript) |
+| 172 | [What are the properties used to get size of window](#what-are-the-properties-used-to-get-size-of-window) |
+| 173 | [What is a conditional operator in javascript](#what-is-a-conditional-operator-in-javascript) |
+| 174 | [Can you apply chaining on conditional operator](#can-you-apply-chaining-on-conditional-operator) |
+| 175 | [What are the ways to execute javascript after a page load](#what-are-the-ways-to-execute-javascript-after-a-page-load) |
+| 176 | [What is the difference between proto and prototype](#what-is-the-difference-between-proto-and-prototype) |
+| 177 | [Can you give an example of when you really need a semicolon](#can-you-give-an-example-of-when-you-really-need-a-semicolon) |
+| 178 | [What is the freeze method](#what-is-the-freeze-method) |
+| 179 | [What is the purpose of the freeze method](#what-is-the-purpose-of-the-freeze-method) |
+| 180 | [Why do I need to use the freeze method](#why-do-i-need-to-use-the-freeze-method) |
+| 181 | [How do you detect a browser language preference](#how-do-you-detect-a-browser-language-preference) |
+| 182 | [How to convert a string to title case with javascript](#how-to-convert-a-string-to-title-case-with-javascript) |
+| 183 | [How do you detect if javascript is disabled on the page](#how-do-you-detect-if-javascript-is-disabled-on-the-page) |
+| 184 | [What are various operators supported by javascript](#what-are-various-operators-supported-by-javascript) |
+| 185 | [What is a rest parameter](#what-is-a-rest-parameter) |
+| 186 | [What happens if you do not use rest parameter as a last argument](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument) |
+| 187 | [What are the bitwise operators available in javascript](#what-are-the-bitwise-operators-available-in-javascript) |
+| 188 | [What is a spread operator](#what-is-a-spread-operator) |
+| 189 | [How do you determine whether object is frozen or not](#how-do-you-determine-whether-object-is-frozen-or-not) |
+| 190 | [How do you determine two values same or not using object](#how-do-you-determine-two-values-same-or-not-using-object) |
+| 191 | [What is the purpose of using object is method](#what-is-the-purpose-of-using-object-is-method) |
+| 192 | [How do you copy properties from one object to other](#how-do-you-copy-properties-from-one-object-to-other) |
+| 193 | [What are the applications of the assign method](#what-are-the-applications-of-the-assign-method) |
+| 194 | [What is a proxy object](#what-is-a-proxy-object) |
+| 195 | [What is the purpose of the seal method](#what-is-the-purpose-of-the-seal-method) |
+| 196 | [What are the applications of the seal method](#what-are-the-applications-of-the-seal-method) |
+| 197 | [What are the differences between the freeze and seal methods](#what-are-the-differences-between-the-freeze-and-seal-methods) |
+| 198 | [How do you determine if an object is sealed or not](#how-do-you-determine-if-an-object-is-sealed-or-not) |
+| 199 | [How do you get enumerable key and value pairs](#how-do-you-get-enumerable-key-and-value-pairs) |
+| 200 | [What is the main difference between Object.values and Object.entries method](#what-is-the-main-difference-between-objectvalues-and-objectentries-method) |
+| 201 | [How can you get the list of keys of any object](#how-can-you-get-the-list-of-keys-of-any-object) |
+| 202 | [How do you create an object with a prototype](#how-do-you-create-an-object-with-a-prototype) |
+| 203 | [What is a WeakSet](#what-is-a-weakset) |
+| 204 | [What are the differences between WeakSet and Set](#what-are-the-differences-between-weakset-and-set) |
+| 205 | [List down the collection of methods available on WeakSet](#list-down-the-collection-of-methods-available-on-weakset) |
+| 206 | [What is a WeakMap](#what-is-a-weakmap) |
+| 207 | [What are the differences between WeakMap and Map](#what-are-the-differences-between-weakmap-and-map) |
+| 208 | [List down the collection of methods available on WeakMap](#list-down-the-collection-of-methods-available-on-weakmap) |
+| 209 | [What is the purpose of uneval](#what-is-the-purpose-of-uneval) |
+| 210 | [How do you encode an URL](#how-do-you-encode-an-url) |
+| 211 | [How do you decode an URL](#how-do-you-decode-an-url) |
+| 212 | [How do you print the contents of web page](#how-do-you-print-the-contents-of-web-page) |
+| 213 | [What is the difference between uneval and eval](#what-is-the-difference-between-uneval-and-eval) |
+| 214 | [What is an anonymous function](#what-is-an-anonymous-function) |
+| 215 | [What is the precedence order between local and global variables](#what-is-the-precedence-order-between-local-and-global-variables) |
+| 216 | [What are javascript accessors](#what-are-javascript-accessors) |
+| 217 | [How do you define property on Object constructor](#how-do-you-define-property-on-object-constructor) |
+| 218 | [What is the difference between get and defineProperty](#what-is-the-difference-between-get-and-defineproperty) |
+| 219 | [What are the advantages of Getters and Setters](#what-are-the-advantages-of-getters-and-setters) |
+| 220 | [Can I add getters and setters using defineProperty method](#can-i-add-getters-and-setters-using-defineproperty-method) |
+| 221 | [What is the purpose of switch-case](#what-is-the-purpose-of-switch-case) |
+| 222 | [What are the conventions to be followed for the usage of switch case](#what-are-the-conventions-to-be-followed-for-the-usage-of-switch-case) |
+| 223 | [What are primitive data types](#what-are-primitive-data-types) |
+| 224 | [What are the different ways to access object properties](#what-are-the-different-ways-to-access-object-properties) |
+| 225 | [What are the function parameter rules](#what-are-the-function-parameter-rules) |
+| 226 | [What is an error object](#what-is-an-error-object) |
+| 227 | [When do you get a syntax error](#when-do-you-get-a-syntax-error) |
+| 228 | [What are the different error names from error object](#what-are-the-different-error-names-from-error-object) |
+| 229 | [What are the various statements in error handling](#what-are-the-various-statements-in-error-handling) |
+| 230 | [What are the two types of loops in javascript](#what-are-the-two-types-of-loops-in-javascript) |
+| 231 | [What is nodejs](#what-is-nodejs) |
+| 232 | [What is the Intl object](#what-is-the-intl-object) |
+| 233 | [How do you perform language specific date and time formatting](#how-do-you-perform-language-specific-date-and-time-formatting) |
+| 234 | [What is an Iterator](#what-is-an-iterator) |
+| 235 | [How does synchronous iteration works](#how-does-synchronous-iteration-works) |
+| 236 | [What is the event loop](#what-is-the-event-loop) |
+| 237 | [What is the call stack](#what-is-the-call-stack) |
+| 238 | [What is the event queue](#what-is-the-event-queue) |
+| 239 | [What is a decorator](#what-is-a-decorator) |
+| 240 | [What are the properties of the Intl object](#what-are-the-properties-of-the-intl-object) |
+| 241 | [What is an Unary operator](#what-is-an-unary-operator) |
+| 242 | [How do you sort elements in an array](#how-do-you-sort-elements-in-an-array) |
+| 243 | [What is the purpose of compareFunction while sorting arrays](#what-is-the-purpose-of-comparefunction-while-sorting-arrays) |
+| 244 | [How do you reverse an array](#how-do-you-reverse-an-array) |
+| 245 | [How do you find the min and max values in an array](#how-do-you-find-the-min-and-max-values-in-an-array) |
+| 246 | [How do you find the min and max values without Math functions](#how-do-you-find-the-min-and-max-values-without-math-functions) |
+| 247 | [What is an empty statement and purpose of it](#what-is-an-empty-statement-and-purpose-of-it) |
+| 248 | [How do you get the metadata of a module](#how-do-you-get-the-metadata-of-a-module) |
+| 249 | [What is the comma operator](#what-is-the-comma-operator) |
+| 250 | [What is the advantage of the comma operator](#what-is-the-advantage-of-the-comma-operator) |
+| 251 | [What is typescript](#what-is-typescript) |
+| 252 | [What are the differences between javascript and typescript](#what-are-the-differences-between-javascript-and-typescript) |
+| 253 | [What are the advantages of typescript over javascript](#what-are-the-advantages-of-typescript-over-javascript) |
+| 254 | [What is an object initializer](#what-is-an-object-initializer) |
+| 255 | [What is a constructor method](#what-is-a-constructor-method) |
+| 256 | [What happens if you write constructor more than once in a class](#what-happens-if-you-write-constructor-more-than-once-in-a-class) |
+| 257 | [How do you call the constructor of a parent class](#how-do-you-call-the-constructor-of-a-parent-class) |
+| 258 | [How do you get the prototype of an object](#how-do-you-get-the-prototype-of-an-object) |
+| 259 | [What happens If I pass string type for getPrototype method](#what-happens-if-i-pass-string-type-for-getprototype-method) |
+| 260 | [How do you set the prototype of one object to another](#how-do-you-set-the-prototype-of-one-object-to-another) |
+| 261 | [How do you check whether an object can be extended or not](#how-do-you-check-whether-an-object-can-be-extended-or-not) |
+| 262 | [How do you prevent an object from being extend](#how-do-you-prevent-an-object-from-being-extend) |
+| 263 | [What are the different ways to make an object non-extensible](#what-are-the-different-ways-to-make-an-object-non-extensible) |
+| 264 | [How do you define multiple properties on an object](#how-do-you-define-multiple-properties-on-an-object) |
+| 265 | [What is the MEAN stack](#what-is-the-mean-stack) |
+| 266 | [What is obfuscation in javascript](#what-is-obfuscation-in-javascript) |
+| 267 | [Why do you need Obfuscation](#why-do-you-need-obfuscation) |
+| 268 | [What is Minification](#what-is-minification) |
+| 269 | [What are the advantages of minification](#what-are-the-advantages-of-minification) |
+| 270 | [What are the differences between obfuscation and Encryption](#what-are-the-differences-between-obfuscation-and-encryption) |
+| 271 | [What are the common tools used for minification](#what-are-the-common-tools-used-for-minification) |
+| 272 | [How do you perform form validation using javascript](#how-do-you-perform-form-validation-using-javascript) |
+| 273 | [How do you perform form validation without javascript](#how-do-you-perform-form-validation-without-javascript) |
+| 274 | [What are the DOM methods available for constraint validation](#what-are-the-dom-methods-available-for-constraint-validation) |
+| 275 | [What are the available constraint validation DOM properties](#what-are-the-available-constraint-validation-dom-properties) |
+| 276 | [What are the validity properties](#what-are-the-validity-properties) |
+| 277 | [Give an example usage of the rangeOverflow property](#give-an-example-usage-of-the-rangeoverflow-property) |
+| 278 | [Are enums available in javascript](#are-enums-available-in-javascript) |
+| 279 | [What is an enum](#what-is-an-enum) |
+| 280 | [How do you list all properties of an object](#how-do-you-list-all-properties-of-an-object) |
+| 281 | [How do you get property descriptors of an object](#how-do-you-get-property-descriptors-of-an-object) |
+| 282 | [What are the attributes provided by a property descriptor](#what-are-the-attributes-provided-by-a-property-descriptor) |
+| 283 | [How do you extend classes](#how-do-you-extend-classes) |
+| 284 | [How do I modify the url without reloading the page](#how-do-i-modify-the-url-without-reloading-the-page) |
+| 285 | [How do you check whether or not an array includes a particular value](#how-do-you-check-whether-or-not-an-array-includes-a-particular-value) |
+| 286 | [How do you compare scalar arrays](#how-do-you-compare-scalar-arrays) |
+| 287 | [How to get the value from get parameters](#how-to-get-the-value-from-get-parameters) |
+| 288 | [How do you print numbers with commas as thousand separators](#how-do-you-print-numbers-with-commas-as-thousand-separators) |
+| 289 | [What is the difference between java and javascript](#what-is-the-difference-between-java-and-javascript) |
+| 290 | [Does JavaScript support namespaces](#does-javascript-support-namespaces) |
+| 291 | [How do you declare a namespace](#how-do-you-declare-a-namespace) |
+| 292 | [How do you invoke javascript code in an iframe from the parent page](#how-do-you-invoke-javascript-code-in-an-iframe-from-the-parent-page) |
+| 293 | [How do you get the timezone offset of a date object](#how-do-you-get-the-timezone-offset-of-a-date-object) |
+| 294 | [How do you load CSS and JS files dynamically](#how-do-you-load-css-and-js-files-dynamically) |
+| 295 | [What are the different methods to find HTML elements in DOM](#what-are-the-different-methods-to-find-html-elements-in-dom) |
+| 296 | [What is jQuery](#what-is-jquery) |
+| 297 | [What is V8 JavaScript engine](#what-is-v8-javascript-engine) |
+| 298 | [Why do we call javascript as dynamic language](#why-do-we-call-javascript-as-dynamic-language) |
+| 299 | [What is a void operator](#what-is-a-void-operator) |
+| 300 | [How to set the cursor to wait](#how-to-set-the-cursor-to-wait) |
+| 301 | [How do you create an infinite loop](#how-do-you-create-an-infinite-loop) |
+| 302 | [Why do you need to avoid with statement](#why-do-you-need-to-avoid-with-statement) |
+| 303 | [What is the output of the following for loops](#what-is-the-output-of-the-following-for-loops) |
+| 304 | [List down some of the features of ES6](#list-down-some-of-the-features-of-es6) |
+| 305 | [What is ES6](#what-is-es6) |
+| 306 | [Can I redeclare let and const variables](#can-i-redeclare-let-and-const-variables) |
+| 307 | [Does the `const` variable make the value immutable](#does-the-const-variable-make-the-value-immutable) |
+| 308 | [What are default parameters](#what-are-default-parameters) |
+| 309 | [What are template literals](#what-are-template-literals) |
+| 310 | [How do you write multi-line strings in template literals](#how-do-you-write-multi-line-strings-in-template-literals) |
+| 311 | [What are nesting templates](#what-are-nesting-templates) |
+| 312 | [What are tagged templates](#what-are-tagged-templates) |
+| 313 | [What are raw strings](#what-are-raw-strings) |
+| 314 | [What is destructuring assignment](#what-is-destructuring-assignment) |
+| 315 | [What are default values in destructuring assignment](#what-are-default-values-in-destructuring-assignment) |
+| 316 | [How do you swap variables in destructuring assignment](#how-do-you-swap-variables-in-destructuring-assignment) |
+| 317 | [What are enhanced object literals](#what-are-enhanced-object-literals) |
+| 318 | [What are dynamic imports](#what-are-dynamic-imports) |
+| 319 | [What are the use cases for dynamic imports](#what-are-the-use-cases-for-dynamic-imports) |
+| 320 | [What are typed arrays](#what-are-typed-arrays) |
+| 321 | [What are the advantages of module loaders](#what-are-the-advantages-of-module-loaders) |
+| 322 | [What is collation](#what-is-collation) |
+| 323 | [What is for...of statement](#what-is-forof-statement) |
+| 324 | [What is the output of below spread operator array](#what-is-the-output-of-below-spread-operator-array) |
+| 325 | [Is PostMessage secure](#is-postmessage-secure) |
+| 326 | [What are the problems with postmessage target origin as wildcard](#what-are-the-problems-with-postmessage-target-origin-as-wildcard) |
+| 327 | [How do you avoid receiving postMessages from attackers](#how-do-you-avoid-receiving-postmessages-from-attackers) |
+| 328 | [Can I avoid using postMessages completely](#can-i-avoid-using-postmessages-completely) |
+| 329 | [Is postMessages synchronous](#is-postmessages-synchronous) |
+| 330 | [What paradigm is Javascript](#what-paradigm-is-javascript) |
+| 331 | [What is the difference between internal and external javascript](#what-is-the-difference-between-internal-and-external-javascript) |
+| 332 | [Is JavaScript faster than server side script](#is-javascript-faster-than-server-side-script) |
+| 333 | [How do you get the status of a checkbox](#how-do-you-get-the-status-of-a-checkbox) |
+| 334 | [What is the purpose of double tilde operator](#what-is-the-purpose-of-double-tilde-operator) |
+| 335 | [How do you convert character to ASCII code](#how-do-you-convert-character-to-ascii-code) |
+| 336 | [What is ArrayBuffer](#what-is-arraybuffer) |
+| 337 | [What is the output of below string expression](#what-is-the-output-of-below-string-expression) |
+| 338 | [What is the purpose of Error object](#what-is-the-purpose-of-error-object) |
+| 339 | [What is the purpose of EvalError object](#what-is-the-purpose-of-evalerror-object) |
+| 340 | [What are the list of cases error thrown from non-strict mode to strict mode](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode) |
+| 341 | [Do all objects have prototypes](#do-all-objects-have-prototypes) |
+| 342 | [What is the difference between a parameter and an argument](#what-is-the-difference-between-a-parameter-and-an-argument) |
+| 343 | [What is the purpose of some method in arrays](#what-is-the-purpose-of-some-method-in-arrays) |
+| 344 | [How do you combine two or more arrays](#how-do-you-combine-two-or-more-arrays) |
+| 345 | [What is the difference between Shallow and Deep copy](#what-is-the-difference-between-shallow-and-deep-copy) |
+| 346 | [How do you create specific number of copies of a string](#how-do-you-create-specific-number-of-copies-of-a-string) |
+| 347 | [How do you return all matching strings against a regular expression](#how-do-you-return-all-matching-strings-against-a-regular-expression) |
+| 348 | [How do you trim a string at the beginning or ending](#how-do-you-trim-a-string-at-the-beginning-or-ending) |
+| 349 | [What is the output of below console statement with unary operator](#what-is-the-output-of-below-console-statement-with-unary-operator) |
+| 350 | [Does javascript uses mixins](#does-javascript-uses-mixins) |
+| 351 | [What is a thunk function](#what-is-a-thunk-function) |
+| 352 | [What are asynchronous thunks](#what-are-asynchronous-thunks) |
+| 353 | [What is the output of below function calls](#what-is-the-output-of-below-function-calls) |
+| 354 | [How to remove all line breaks from a string](#how-to-remove-all-line-breaks-from-a-string) |
+| 355 | [What is the difference between reflow and repaint](#what-is-the-difference-between-reflow-and-repaint) |
+| 356 | [What happens with negating an array](#what-happens-with-negating-an-array) |
+| 357 | [What happens if we add two arrays](#what-happens-if-we-add-two-arrays) |
+| 358 | [What is the output of prepend additive operator on falsy values](#what-is-the-output-of-prepend-additive-operator-on-falsy-values) |
+| 359 | [How do you create self string using special characters](#how-do-you-create-self-string-using-special-characters) |
+| 360 | [How do you remove falsy values from an array](#how-do-you-remove-falsy-values-from-an-array) |
+| 361 | [How do you get unique values of an array](#how-do-you-get-unique-values-of-an-array) |
+| 362 | [What is destructuring aliases](#what-is-destructuring-aliases) |
+| 363 | [How do you map the array values without using map method](#how-do-you-map-the-array-values-without-using-map-method) |
+| 364 | [How do you empty an array](#how-do-you-empty-an-array) |
+| 365 | [How do you round numbers to certain decimals](#how-do-you-round-numbers-to-certain-decimals) |
+| 366 | [What is the easiest way to convert an array to an object](#what-is-the-easiest-way-to-convert-an-array-to-an-object) |
+| 367 | [How do you create an array with some data](#how-do-you-create-an-array-with-some-data) |
+| 368 | [What are the placeholders from console object](#what-are-the-placeholders-from-console-object) |
+| 369 | [Is it possible to add CSS to console messages](#is-it-possible-to-add-css-to-console-messages) |
+| 370 | [What is the purpose of dir method of console object](#what-is-the-purpose-of-dir-method-of-console-object) |
+| 371 | [Is it possible to debug HTML elements in console](#is-it-possible-to-debug-html-elements-in-console) |
+| 372 | [How do you display data in a tabular format using console object](#how-do-you-display-data-in-a-tabular-format-using-console-object) |
+| 373 | [How do you verify that an argument is a Number or not](#how-do-you-verify-that-an-argument-is-a-number-or-not) |
+| 374 | [How do you create copy to clipboard button](#how-do-you-create-copy-to-clipboard-button) |
+| 375 | [What is the shortcut to get timestamp](#what-is-the-shortcut-to-get-timestamp) |
+| 376 | [How do you flattening multi dimensional arrays](#how-do-you-flattening-multi-dimensional-arrays) |
+| 377 | [What is the easiest multi condition checking](#what-is-the-easiest-multi-condition-checking) |
+| 378 | [How do you capture browser back button](#how-do-you-capture-browser-back-button) |
+| 379 | [How do you disable right click in the web page](#how-do-you-disable-right-click-in-the-web-page) |
+| 380 | [What are wrapper objects](#what-are-wrapper-objects) |
+| 381 | [What is AJAX](#what-is-ajax) |
+| 382 | [What are the different ways to deal with Asynchronous Code](#what-are-the-different-ways-to-deal-with-asynchronous-code) |
+| 383 | [How to cancel a fetch request](#how-to-cancel-a-fetch-request) |
+| 384 | [What is web speech API](#what-is-web-speech-api) |
+| 385 | [What is minimum timeout throttling](#what-is-minimum-timeout-throttling) |
+| 386 | [How do you implement zero timeout in modern browsers](#how-do-you-implement-zero-timeout-in-modern-browsers) |
+| 387 | [What are tasks in event loop](#what-are-tasks-in-event-loop) |
+| 388 | [What is microtask](#what-is-microtask) |
+| 389 | [What are different event loops](#what-are-different-event-loops) |
+| 390 | [What is the purpose of queueMicrotask](#what-is-the-purpose-of-queuemicrotask) |
+| 391 | [How do you use javascript libraries in typescript file](#how-do-you-use-javascript-libraries-in-typescript-file) |
+| 392 | [What are the differences between promises and observables](#what-are-the-differences-between-promises-and-observables) |
+| 393 | [What is heap](#what-is-heap) |
+| 394 | [What is an event table](#what-is-an-event-table) |
+| 395 | [What is a microTask queue](#what-is-a-microtask-queue) |
+| 396 | [What is the difference between shim and polyfill](#what-is-the-difference-between-shim-and-polyfill) |
+| 397 | [How do you detect primitive or non primitive value type](#how-do-you-detect-primitive-or-non-primitive-value-type) |
+| 398 | [What is babel](#what-is-babel) |
+| 399 | [Is Node.js completely single threaded](#is-nodejs-completely-single-threaded) |
+| 400 | [What are the common use cases of observables](#what-are-the-common-use-cases-of-observables) |
+| 401 | [What is RxJS](#what-is-rxjs) |
 | 402 | [What is the difference between Function constructor and function declaration](#what-is-the-difference-between-function-constructor-and-function-declaration) |
-| 403 | [What is a Short circuit condition](#what-is-a-short-circuit-condition)                                                                                       |
-| 404 | [What is the easiest way to resize an array](#what-is-the-easiest-way-to-resize-an-array)                                                                     |
-| 405 | [What is an observable](#what-is-an-observable)                                                                                                               |
-| 406 | [What is the difference between function and class declarations](#what-is-the-difference-between-function-and-class-declarations)                             |
-| 407 | [What is an async function](#what-is-an-async-function)                                                                                                       |
-| 408 | [How do you prevent promises swallowing errors](#how-do-you-prevent-promises-swallowing-errors)                                                               |
-| 409 | [What is deno](#what-is-deno)                                                                                                                                 |
-| 410 | [How do you make an object iterable in javascript](#how-do-you-make-an-object-iterable-in-javascript)                                                         |
-| 411 | [What is a Proper Tail Call](#what-is-a-proper-tail-call)                                                                                                     |
-| 412 | [How do you check an object is a promise or not](#how-do-you-check-an-object-is-a-promise-or-not)                                                             |
-| 413 | [How to detect if a function is called as constructor](#how-to-detect-if-a-function-is-called-as-constructor)                                                 |
-| 414 | [What are the differences between arguments object and rest parameter](#what-are-the-differences-between-arguments-object-and-rest-parameter)                 |
-| 415 | [What are the differences between spread operator and rest parameter](#what-are-the-differences-between-spread-operator-and-rest-parameter)                   |
-| 416 | [What are the different kinds of generators](#what-are-the-different-kinds-of-generators)                                                                     |
-| 417 | [What are the built-in iterables](#what-are-the-built-in-iterables)                                                                                           |
-| 418 | [What are the differences between for...of and for...in statements](#what-are-the-differences-between-forof-and-forin-statements)                             |
-| 419 | [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties)                                             |
-| 420 | [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-numberisnan)                                               |
-| 421 | [How to invoke an IIFE without any extra brackets?](#how-to-invoke-an-iife-without-any-extra-brackets)                                                        |
-| 422 | [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases)                                                  |
-| 423 | [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors)                                                        |
-| 424 | [How do style the console output using CSS?](#how-do-style-the-console-output-using-css)                                                                      |
-| 425 | [What is nullish coalescing operator (??)?](#what-is-nullish-coalescing-operator-)                                                                            |
-| 426 | [How do you group and nest console output?](#how-do-you-group-and-nest-console-output)                                                                        |
-| 427 | [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays)                                            |
-| 428 | [What are the different ways to create sparse arrays?](#what-are-the-different-ways-to-create-sparse-arrays)                                                  |
-| 429 | [What is the difference between setTimeout, setImmediate and process.nextTick?](#what-is-the-difference-between-settimeout-setimmediate-and-processnexttick)  |
-| 430 | [How do you reverse an array without modifying original array?](#how-do-you-reverse-an-array-without-modifying-original-array)                                |
-| 431 | [How do you create custom HTML element?](#how-do-you-create-custom-html-element)                                                                              |
-| 432 | [What is global execution context?](#what-is-global-execution-context)                                                                                        |
-| 433 | [What is function execution context?](#what-is-function-execution-context)                                                                                    |
-| 434 | [What is debouncing?](#what-is-debouncing)                                                                                                                    |
-| 435 | [What is throttling?](#what-is-throttling)                                                                                                                    |
-| 436 | [What is optional chaining?](#what-is-optional-chaining)                                                                                                      |
-| 437 | [What is an environment record?](#what-is-an-environment-record)                                                                                              |
-| 438 | [How to verify if a variable is an array?](#how-to-verify-if-a-variable-is-an-array)                                                                          |
-| 439 | [What is pass by value and pass by reference?](#what-is-pass-by-value-and-pass-by-reference)                                                                  |
-| 440 | [What are the differences between primitives and non-primitives?](#what-are-the-differences-between-primitives-and-non-primitives)                            |
-| 441 | [How do you create your own bind method using either call or apply method?](#how-do-you-create-your-own-bind-method-using-either-call-or-apply-method)        |
-| 442 | [What are the differences between pure and impure functions?](#what-are-the-differences-between-pure-and-impure-functions)                                    |
-| 443 | [What is referential transparency?](#what-is-referential-transparency)                                                                                        |
-| 444 | [What are the possible side-effects in javascript?](#what-are-the-possible-side-effects-in-javascript)                                                        |
-| 445 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions)                                                                                  |
-| 446 | [What is module pattern?](#what-is-module-pattern)                                                                                                            |
-| 447 | [What is Function Composition?](#what-is-function-composition)                                                                                                |
-| 448 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022)                                    |
-| 449 | [What is the purpose of the this keyword in JavaScript?](#what-is-the-purpose-of-the-this-keyword-in-javascript)                                              |
-| 450 | [What are the uses of closures?](#what-are-the-uses-of-closures)                                                                                              |
-| 451 | [What are the phases of execution context?](#what-are-the-phases-of-execution-context)                                                                        |
-| 452 | [What are the possible reasons for memory leaks?](#what-are-the-possible-reasons-for-memory-leaks)                                                            |
-| 453 | [What are the optimization techniques of V8 engine?](#what-are-the-optimization-techniques-of-v8-engine)                                                      |
-| 454 | [What are the examples of built-in higher order functions?](#what-are-the-examples-of-built-in-higher-order-functions)                                        |
-| 455 | [What are the benefits higher order functions?](#what-are-the-benefits-higher-order-functions)                                                                |
-| 456 | [How do you create polyfills for map, filter and reduce methods?](#how-do-you-create-polyfills-for-map-filter-and-reduce-methods)                             |
-| 457 | [What is the difference between map and forEach functions?](#what-is-the-difference-between-map-and-foreach-functions)                                        |
-| 458 | [Give an example of statements affected by automatic semicolon insertion?](#give-an-example-of-statements-affected-by-automatic-semicolon-insertion)          |
-| 459 | [What are the event phases of a browser?](#what-are-the-event-phases-of-a-browser)                                                                            |
-| 460 | [What are the real world use cases of proxy?](#what-are-the-real-world-use-cases-of-proxy)                                                                    |
-| 461 | [What are hidden classes?](#what-are-hidden-classes)                                                                                                          |
-| 462 | [What is inline caching?](#what-is-inline-caching)                                                                                                            |
-| 463 | [What are the different ways to execute external scripts?](#what-are-the-different-ways-to-execute-external-scripts)                                          |
-| 464 | [What is Lexical Scope?](#what-is-lexical-scope)                                                                                                              |
-| 465 | [How to detect system dark mode in javascript?](#how-to-detect-system-dark-mode-in-javascript)                                                                |
-| 466 | [What is the purpose of requestAnimationFrame method?](#what-is-the-purpose-of-requestanimationframe-method)                                                  |
-| 467 | [What is the difference between substring and substr methods?](#what-is-the-difference-between-substring-and-substr-methods)                                  |
-| 468 | [How to find the number of parameters expected by a function?](#how-to-find-the-number-of-parameters-expected-by-a-function)                                  |
-| 469 | [What is globalThis, and what is the importance of it?](#what-is-globalthis-and-what-is-the-importance-of-it)                                                 |
-| 470 | [What are the array mutation methods?](#what-are-the-array-mutation-methods)                                                                                  |
-| 471 | [What is module scope in JavaScript?](#what-is-module-scope-in-javascript)                                                                                    |
-
+| 403 | [What is a Short circuit condition](#what-is-a-short-circuit-condition) |
+| 404 | [What is the easiest way to resize an array](#what-is-the-easiest-way-to-resize-an-array) |
+| 405 | [What is an observable](#what-is-an-observable) |
+| 406 | [What is the difference between function and class declarations](#what-is-the-difference-between-function-and-class-declarations) |
+| 407 | [What is an async function](#what-is-an-async-function) |
+| 408 | [How do you prevent promises swallowing errors](#how-do-you-prevent-promises-swallowing-errors) |
+| 409 | [What is deno](#what-is-deno) |
+| 410 | [How do you make an object iterable in javascript](#how-do-you-make-an-object-iterable-in-javascript) |
+| 411 | [What is a Proper Tail Call](#what-is-a-proper-tail-call) |
+| 412 | [How do you check an object is a promise or not](#how-do-you-check-an-object-is-a-promise-or-not) |
+| 413 | [How to detect if a function is called as constructor](#how-to-detect-if-a-function-is-called-as-constructor) |
+| 414 | [What are the differences between arguments object and rest parameter](#what-are-the-differences-between-arguments-object-and-rest-parameter) |
+| 415 | [What are the differences between spread operator and rest parameter](#what-are-the-differences-between-spread-operator-and-rest-parameter) |
+| 416 | [What are the different kinds of generators](#what-are-the-different-kinds-of-generators) |
+| 417 | [What are the built-in iterables](#what-are-the-built-in-iterables) |
+| 418 | [What are the differences between for...of and for...in statements](#what-are-the-differences-between-forof-and-forin-statements) |
+| 419 | [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties) |
+| 420 | [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-numberisnan) |
+| 421 | [How to invoke an IIFE without any extra brackets?](#how-to-invoke-an-iife-without-any-extra-brackets) |
+| 422 | [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases) |
+| 423 | [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors) |
+| 424 | [How do style the console output using CSS?](#how-do-style-the-console-output-using-css) |
+| 425 | [What is nullish coalescing operator (??)?](#what-is-nullish-coalescing-operator-) |
+| 426 | [How do you group and nest console output?](#how-do-you-group-and-nest-console-output) |
+| 427 | [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays) |
+| 428 | [What are the different ways to create sparse arrays?](#what-are-the-different-ways-to-create-sparse-arrays) |
+| 429 | [What is the difference between setTimeout, setImmediate and process.nextTick?](#what-is-the-difference-between-settimeout-setimmediate-and-processnexttick) |
+| 430 | [How do you reverse an array without modifying original array?](#how-do-you-reverse-an-array-without-modifying-original-array) |
+| 431 | [How do you create custom HTML element?](#how-do-you-create-custom-html-element) |
+| 432 | [What is global execution context?](#what-is-global-execution-context) |
+| 433 | [What is function execution context?](#what-is-function-execution-context) |
+| 434 | [What is debouncing?](#what-is-debouncing) |
+| 435 | [What is throttling?](#what-is-throttling) |
+| 436 | [What is optional chaining?](#what-is-optional-chaining) |
+| 437 | [What is an environment record?](#what-is-an-environment-record) |
+| 438 | [How to verify if a variable is an array?](#how-to-verify-if-a-variable-is-an-array) |
+| 439 | [What is pass by value and pass by reference?](#what-is-pass-by-value-and-pass-by-reference) |
+| 440 | [What are the differences between primitives and non-primitives?](#what-are-the-differences-between-primitives-and-non-primitives) |
+| 441 | [How do you create your own bind method using either call or apply method?](#how-do-you-create-your-own-bind-method-using-either-call-or-apply-method) |
+| 442 | [What are the differences between pure and impure functions?](#what-are-the-differences-between-pure-and-impure-functions) |
+| 443 | [What is referential transparency?](#what-is-referential-transparency) |
+| 444 | [What are the possible side-effects in javascript?](#what-are-the-possible-side-effects-in-javascript) |
+| 445 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions) |
+| 446 | [What is module pattern?](#what-is-module-pattern) |
+| 447 | [What is Function Composition?](#what-is-function-composition) |
+| 448 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022) |
+| 449 | [What is the purpose of the this keyword in JavaScript?](#what-is-the-purpose-of-the-this-keyword-in-javascript) |
+| 450 | [What are the uses of closures?](#what-are-the-uses-of-closures) |
+| 451 | [What are the phases of execution context?](#what-are-the-phases-of-execution-context) |
+| 452 | [What are the possible reasons for memory leaks?](#what-are-the-possible-reasons-for-memory-leaks) |
+| 453 | [What are the optimization techniques of V8 engine?](#what-are-the-optimization-techniques-of-v8-engine) |
+| 454 | [What are the examples of built-in higher order functions?](#what-are-the-examples-of-built-in-higher-order-functions) |
+| 455 | [What are the benefits higher order functions?](#what-are-the-benefits-higher-order-functions) |
+| 456 | [How do you create polyfills for map, filter and reduce methods?](#how-do-you-create-polyfills-for-map-filter-and-reduce-methods) |
+| 457 | [What is the difference between map and forEach functions?](#what-is-the-difference-between-map-and-foreach-functions) |
+| 458 | [Give an example of statements affected by automatic semicolon insertion?](#give-an-example-of-statements-affected-by-automatic-semicolon-insertion) |
+| 459 | [What are the event phases of a browser?](#what-are-the-event-phases-of-a-browser) |
+| 460 | [What are the real world use cases of proxy?](#what-are-the-real-world-use-cases-of-proxy) |
+| 461 | [What are hidden classes?](#what-are-hidden-classes) |
+| 462 | [What is inline caching?](#what-is-inline-caching) |
+| 463 | [What are the different ways to execute external scripts?](#what-are-the-different-ways-to-execute-external-scripts) |
+| 464 | [What is Lexical Scope?](#what-is-lexical-scope) |
+| 465 | [How to detect system dark mode in javascript?](#how-to-detect-system-dark-mode-in-javascript) |
+| 466 | [What is the purpose of requestAnimationFrame method?](#what-is-the-purpose-of-requestanimationframe-method) |
+| 467 | [What is the difference between substring and substr methods?](#what-is-the-difference-between-substring-and-substr-methods) |
+| 468 | [How to find the number of parameters expected by a function?](#how-to-find-the-number-of-parameters-expected-by-a-function) |
+| 469 | [What is globalThis, and what is the importance of it?](#what-is-globalthis-and-what-is-the-importance-of-it) |
+| 470 | [What are the array mutation methods?](#what-are-the-array-mutation-methods) |
+| 471 | [What is module scope in JavaScript?](#what-is-module-scope-in-javascript) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
 
-1.  ### What are the possible ways to create objects in JavaScript
+1. ### What are the possible ways to create objects in JavaScript
 
     There are many ways to create objects in javascript as mentioned below:
 
@@ -671,7 +669,7 @@
 
        **[⬆ Back to Top](#table-of-contents)**
 
-2.  ### What is a prototype chain
+2. ### What is a prototype chain
 
     **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language. i.e, When you create an object using a constructor function or a class, the created object inherits properties from a prototype object.
 
@@ -681,7 +679,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-3.  ### What is the difference between Call, Apply and Bind
+3. ### What is the difference between Call, Apply and Bind
 
     The difference between Call, Apply and Bind can be explained with below examples,
 
@@ -759,7 +757,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-4.  ### What is JSON and its common operations
+4. ### What is JSON and its common operations
 
     **JSON** is a text-based data format following JavaScript object syntax, which was popularized by `Douglas Crockford`. It is useful when you want to transmit data across a network. It is basically just a text file with an extension of .json, and a MIME type of application/json
 
@@ -777,7 +775,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-5.  ### What is the purpose of the array slice method
+5. ### What is the purpose of the array slice method
 
     The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end of the array. This method can also accept negative index which counts back from the end of the array.
 
@@ -795,7 +793,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-6.  ### What is the purpose of the array splice method
+6. ### What is the purpose of the array splice method
 
     The **splice()** method adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position/index for insertion or deletion whereas the optional second argument indicates the number of elements to be deleted. Each additional argument is added to the array.
 
@@ -815,7 +813,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-7.  ### What is the difference between slice and splice
+7. ### What is the difference between slice and splice
 
     Some of the major differences in a tabular form:
 
@@ -827,7 +825,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-8.  ### How do you compare Object and Map
+8. ### How do you compare Object and Map
 
     **Objects** are similar to **Maps** in that both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. Due to this reason, Objects have been used as Maps historically. But there are important differences that make using a Map preferable in certain cases:
 
@@ -840,7 +838,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-9.  ### What is the difference between == and === operators
+9. ### What is the difference between == and === operators
 
     JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
 
@@ -2257,7 +2255,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-100.  ### What are events
+100. ### What are events
 
       Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events. Some of the examples of HTML events are,
 
@@ -2285,13 +2283,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-101.  ### Who created javascript
+101. ### Who created javascript
 
       JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. Initially it was developed under the name `Mocha`, but later the language was officially called `LiveScript` when it first shipped in beta releases of Netscape.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-102.  ### What is the use of preventDefault method
+102. ### What is the use of preventDefault method
 
       The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behaviour that belongs to the event will not occur. For example, prevent form submission when clicking on submit button and prevent opening the page URL when clicking on hyperlink are some common use cases.
 
@@ -2307,7 +2305,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-103.  ### What is the use of stopPropagation method
+103. ### What is the use of stopPropagation method
 
       The stopPropagation method is used to stop the event from bubbling up the event chain. For example, the below nested divs with stopPropagation method prevents default event propagation when clicking on nested div(Div1)
 
@@ -2331,7 +2329,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-104.  ### What are the steps involved in return false usage
+104. ### What are the steps involved in return false usage
 
       The return false statement in event handlers performs the below steps,
 
@@ -2341,7 +2339,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-105.  ### What is BOM
+105. ### What is BOM
 
       The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It consists of the objects navigator, history, screen, location and document which are children of the window. The Browser Object Model is not standardized and can change based on different browsers.
 
@@ -2349,7 +2347,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-106.  ### What is the use of setTimeout
+106. ### What is the use of setTimeout
 
       The setTimeout() method is used to call a function or evaluate an expression after a specified number of milliseconds. For example, let's log a message after 2 seconds using setTimeout method,
 
@@ -2361,7 +2359,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-107.  ### What is the use of setInterval
+107. ### What is the use of setInterval
 
       The setInterval() method is used to call a function or evaluate an expression at specified intervals (in milliseconds). For example, let's log a message after 2 seconds using setInterval method,
 
@@ -2373,13 +2371,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-108.  ### Why is JavaScript treated as Single threaded
+108. ### Why is JavaScript treated as Single threaded
 
       JavaScript is a single-threaded language. Because the language specification does not allow the programmer to write code so that the interpreter can run parts of it in parallel in multiple threads or processes. Whereas languages like java, go, C++ can make multi-threaded and multi-process programs.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-109.  ### What is an event delegation
+109. ### What is an event delegation
 
       Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.
 
@@ -2401,19 +2399,19 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-110.  ### What is ECMAScript
+110. ### What is ECMAScript
 
       ECMAScript is the scripting language that forms the basis of JavaScript. ECMAScript standardized by the ECMA International standards organization in the ECMA-262 and ECMA-402 specifications. The first edition of ECMAScript was released in 1997.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-111.  ### What is JSON
+111. ### What is JSON
 
       JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-112.  ### What are the syntax rules of JSON
+112. ### What are the syntax rules of JSON
 
       Below are the list of syntax rules of JSON
 
@@ -2424,7 +2422,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-113.  ### What is the purpose JSON stringify
+113. ### What is the purpose JSON stringify
 
       When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
 
@@ -2436,7 +2434,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-114.  ### How do you parse JSON string
+114. ### How do you parse JSON string
 
       When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
 
@@ -2448,19 +2446,19 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-115.  ### Why do you need JSON
+115. ### Why do you need JSON
 
       When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-116.  ### What are PWAs
+116. ### What are PWAs
 
       Progressive web applications (PWAs) are a type of mobile app delivered through the web, built using common web technologies including HTML, CSS and JavaScript. These PWAs are deployed to servers, accessible through URLs, and indexed by search engines.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-117.  ### What is the purpose of clearTimeout method
+117. ### What is the purpose of clearTimeout method
 
       The clearTimeout() function is used in javascript to clear the timeout which has been set by setTimeout()function before that. i.e, The return value of setTimeout() function is stored in a variable and it’s passed into the clearTimeout() function to clear the timer.
 
@@ -2485,7 +2483,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-118.  ### What is the purpose of clearInterval method
+118. ### What is the purpose of clearInterval method
 
       The clearInterval() function is used in javascript to clear the interval which has been set by setInterval() function. i.e, The return value returned by setInterval() function is stored in a variable and it’s passed into the clearInterval() function to clear the interval.
 
@@ -2510,7 +2508,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-119.  ### How do you redirect new page in javascript
+119. ### How do you redirect new page in javascript
 
       In vanilla javascript, you can redirect to a new page using the `location` property of window object. The syntax would be as follows,
 
@@ -2522,7 +2520,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-120.  ### How do you check whether a string contains a substring
+120. ### How do you check whether a string contains a substring
 
       There are 3 possible ways to check whether a string contains a substring or not,
 
@@ -2552,7 +2550,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-121.  ### How do you validate an email in javascript
+121. ### How do you validate an email in javascript
 
       You can validate an email in javascript using regular expressions. It is recommended to do validations on the server side instead of the client side. Because the javascript can be disabled on the client side.
 
@@ -2568,7 +2566,7 @@
 
       The above regular expression accepts unicode characters.
 
-122.  ### How do you get the current url with javascript
+122. ### How do you get the current url with javascript
 
       You can use `window.location.href` expression to get the current url path and you can use the same expression for updating the URL too. You can also use `document.URL` for read-only purposes but this solution has issues in FF.
 
@@ -2578,7 +2576,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-123.  ### What are the various url properties of location object
+123. ### What are the various url properties of location object
 
       The below `Location` object properties can be used to access URL components of the page,
 
@@ -2593,7 +2591,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-124.  ### How do get query string values in javascript
+124. ### How do get query string values in javascript
 
       You can use URLSearchParams to get query string values in javascript. Let's see an example to get the client code value from URL query string,
 
@@ -2604,7 +2602,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-125.  ### How do you check if a key exists in an object
+125. ### How do you check if a key exists in an object
 
       You can check whether a key exists in an object or not using three approaches,
 
@@ -2639,7 +2637,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-126.  ### How do you loop through or enumerate javascript object
+126. ### How do you loop through or enumerate javascript object
 
       You can use the `for-in` loop to loop through javascript object. You can also make sure that the key you get is an actual property of an object, and doesn't come from the prototype using `hasOwnProperty` method.
 
@@ -2659,7 +2657,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-127.  ### How do you test for an empty object
+127. ### How do you test for an empty object
 
       There are different solutions based on ECMAScript versions
 
@@ -2691,7 +2689,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-128.  ### What is an arguments object
+128. ### What is an arguments object
 
       The arguments object is an Array-like object accessible inside functions that contains the values of the arguments passed to that function. For example, let's see how to use arguments object inside sum function,
 
@@ -2715,7 +2713,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-129.  ### How do you make first letter of the string in an uppercase
+129. ### How do you make first letter of the string in an uppercase
 
       You can create a function which uses a chain of string methods such as charAt, toUpperCase and slice methods to generate a string with the first letter in uppercase.
 
@@ -2727,7 +2725,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-130.  ### What are the pros and cons of for loops
+130. ### What are the pros and cons of for loops
 
       The for-loop is a commonly used iteration syntax in javascript. It has both pros and cons
 
@@ -2744,7 +2742,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-131.  ### How do you display the current date in javascript
+131. ### How do you display the current date in javascript
 
       You can use `new Date()` to generate a new Date object containing the current date and time. For example, let's display the current date in mm/dd/yyyy
 
@@ -2760,7 +2758,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-132.  ### How do you compare two date objects
+132. ### How do you compare two date objects
 
       You need to use date.getTime() method in order to compare unix timestamp values
 
@@ -2773,7 +2771,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-133.  ### How do you check if a string starts with another string
+133. ### How do you check if a string starts with another string
 
       You can use ECMAScript 6's `String.prototype.startsWith()` method to check if a string starts with another string or not. But it is not yet supported in all browsers. Let's see an example to see this usage,
 
@@ -2784,7 +2782,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-134.  ### How do you trim a string in javascript
+134. ### How do you trim a string in javascript
 
       JavaScript provided a trim method on string types to trim any whitespaces present at the beginning or ending of the string.
 
@@ -2808,7 +2806,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-135.  ### How do you add a key value pair in javascript
+135. ### How do you add a key value pair in javascript
 
       There are two possible solutions to add new properties to an object.
 
@@ -2835,7 +2833,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-136.  ### Is the !-- notation represents a special operator
+136. ### Is the !-- notation represents a special operator
 
       No,that's not a special operator. But it is a combination of 2 standard operators one after the other,
 
@@ -2846,7 +2844,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-137.  ### How do you assign default values to variables
+137. ### How do you assign default values to variables
 
       You can use the logical or operator `||` in an assignment expression to provide a default value. The syntax looks like as below,
 
@@ -2858,7 +2856,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-138.  ### How do you define multiline strings
+138. ### How do you define multiline strings
 
       You can define multiline string literals using the '\n' character followed by line terminator('\').
 
@@ -2871,13 +2869,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-139.  ### What is an app shell model
+139. ### What is an app shell model
 
       An application shell (or app shell) architecture is one way to build a Progressive Web App that reliably and instantly loads on your users' screens, similar to what you see in native applications. It is useful for getting some initial HTML to the screen fast without a network.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-140.  ### Can we define properties for functions
+140. ### Can we define properties for functions
 
       Yes, we can define properties for functions because functions are also objects.
 
@@ -2895,7 +2893,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-141.  ### What is the way to find the number of parameters expected by a function
+141. ### What is the way to find the number of parameters expected by a function
 
       You can use `function.length` syntax to find the number of parameters expected by a function. Let's take an example of `sum` function to calculate the sum of numbers,
 
@@ -2908,7 +2906,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-142.  ### What is a polyfill
+142. ### What is a polyfill
 
       A polyfill is a piece of JS code used to provide modern functionality on older browsers that do not natively support it. For example, Silverlight plugin polyfill can be used to mimic the functionality of an HTML Canvas element on Microsoft Internet Explorer 7.
 
@@ -2919,7 +2917,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-143.  ### What are break and continue statements
+143. ### What are break and continue statements
 
       The break statement is used to "jump out" of a loop. i.e, It breaks the loop and continues executing the code after the loop.
 
@@ -2945,7 +2943,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-144.  ### What are js labels
+144. ### What are js labels
 
       The label statement allows us to name loops and blocks in JavaScript. We can then use these labels to refer back to the code later. For example, the below code with labels avoids printing the numbers when they are same,
 
@@ -2969,7 +2967,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-145.  ### What are the benefits of keeping declarations at the top
+145. ### What are the benefits of keeping declarations at the top
 
       It is recommended to keep all declarations at the top of each script or function. The benefits of doing this are,
 
@@ -2980,7 +2978,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-146.  ### What are the benefits of initializing variables
+146. ### What are the benefits of initializing variables
 
       It is recommended to initialize variables because of the below benefits,
 
@@ -2990,7 +2988,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-147.  ### What are the recommendations to create new object
+147. ### What are the recommendations to create new object
 
       It is recommended to avoid creating new objects using `new Object()`. Instead you can initialize values based on it's type to create the objects.
 
@@ -3016,7 +3014,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-148.  ### How do you define JSON arrays
+148. ### How do you define JSON arrays
 
       JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
 
@@ -3030,7 +3028,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-149.  ### How do you generate random integers
+149. ### How do you generate random integers
 
       You can use `Math.random()` with `Math.floor()` to return random integers. For example, if you want generate random integers between 1 to 10, the multiplication factor should be 10,
 
@@ -3043,7 +3041,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-150.  ### Can you write a random integers function to print integers within a range
+150. ### Can you write a random integers function to print integers within a range
 
       Yes, you can create a proper random function to return a random number between min and max (both included)
 
@@ -3057,25 +3055,25 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-151.  ### What is tree shaking
+151. ### What is tree shaking
 
       Tree shaking is a form of dead code elimination. It means that unused modules will not be included in the bundle during the build process and for that it relies on the static structure of ES2015 module syntax,( i.e. import and export). Initially this has been popularized by the ES2015 module bundler `rollup`, these days practically all bundlers use this technique.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-152.  ### What is the need of tree shaking
+152. ### What is the need of tree shaking
 
       Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a “Hello World” Application using SPA frameworks then it will take around a few MBs, but by tree shaking it can bring down the size to just a few hundred KBs. Tree shaking is implemented in Rollup and Webpack bundlers.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-153.  ### Is it recommended to use eval
+153. ### Is it recommended to use eval
 
       No, it allows arbitrary code to be run which causes a security problem. As we know that the eval() function is used to run text as code. In most of the cases, it should not be necessary to use it.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-154.  ### What is a Regular Expression
+154. ### What is a Regular Expression
 
       A regular expression is a sequence of characters that forms a search pattern. You can use this search pattern for searching data in a text. These can be used to perform all types of text search and text replace operations. Let's see the syntax format now,
 
@@ -3091,7 +3089,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-155.  ### What are the string methods that accept Regular expression
+155. ### What are the string methods that accept Regular expression
 
       There are six string methods: `search()`, `replace()`, `replaceAll()`, `match()`, `matchAll()`, and `split()`.
 
@@ -3127,7 +3125,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-156.  ### What are modifiers in regular expression
+156. ### What are modifiers in regular expression
 
       Modifiers can be used to perform case-insensitive and global searches. Let's list some of the modifiers,
 
@@ -3147,7 +3145,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-157.  ### What are regular expression patterns
+157. ### What are regular expression patterns
 
       Regular Expressions provide a group of patterns in order to match characters. Basically they are categorized into 3 types,
 
@@ -3169,7 +3167,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-158.  ### What is a RegExp object
+158. ### What is a RegExp object
 
       RegExp object is a regular expression object with predefined properties and methods. Let's see the simple usage of RegExp object,
 
@@ -3181,7 +3179,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-159.  ### How do you search a string for a pattern
+159. ### How do you search a string for a pattern
 
       You can use the `test()` method of regular expression in order to search a string for a pattern, and return true or false depending on the result.
 
@@ -3192,7 +3190,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-160.  ### What is the purpose of exec method
+160. ### What is the purpose of exec method
 
       The purpose of exec method is similar to test method but it executes a search for a match in a specified string and returns a result array, or null instead of returning true/false.
 
@@ -3203,7 +3201,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-161.  ### How do you change the style of a HTML element
+161. ### How do you change the style of a HTML element
 
       You can change inline style or classname of a HTML element using javascript DOM-manipulation
 
@@ -3221,13 +3219,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-162.  ### What would be the result of 1+2+'3'
+162. ### What would be the result of 1+2+'3'
 
       The output is going to be `33`. Since `1` and `2` are numeric values, the result of the first two digits is going to be a numeric value `3`. The next digit is a string type value because of that the addition of numeric value `3` and string type value `3` is just going to be a concatenation value `33`. Other operationrs like `3 * '3'` do yield correct results because the string is coerced into a number.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-163.  ### What is a debugger statement
+163. ### What is a debugger statement
 
       The debugger statement invokes any available debugging functionality, such as setting a breakpoint. If no debugging functionality is available, this statement has no effect.
       For example, in the below function a debugger statement has been inserted. So
@@ -3243,13 +3241,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-164.  ### What is the purpose of breakpoints in debugging
+164. ### What is the purpose of breakpoints in debugging
 
       You can set breakpoints in the javascript code once the debugger statement is executed and the debugger window pops up. At each breakpoint, javascript will stop executing, and let you examine the JavaScript values. After examining values, you can resume the execution of code using the play button.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-165.  ### Can I use reserved words as identifiers
+165. ### Can I use reserved words as identifiers
 
       No, you cannot use the reserved words as variables, labels, object or function names. Let's see one simple example,
 
@@ -3259,7 +3257,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-166.  ### How do you detect a mobile browser
+166. ### How do you detect a mobile browser
 
       You can use regex which returns a true or false value depending on whether or not the user is browsing with a mobile.
 
@@ -3283,7 +3281,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-167.  ### How do you detect a mobile browser without regexp
+167. ### How do you detect a mobile browser without regexp
 
       You can detect mobile browsers by simply running through a list of devices and checking if the useragent matches anything. This is an alternative solution for RegExp usage,
 
@@ -3307,7 +3305,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-168.  ### How do you get the image width and height using JS
+168. ### How do you get the image width and height using JS
 
       You can programmatically get the image and check the dimensions(width and height) using Javascript.
 
@@ -3321,7 +3319,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-169.  ### How do you make synchronous HTTP request
+169. ### How do you make synchronous HTTP request
 
       Browsers provide an XMLHttpRequest object which can be used to make synchronous HTTP requests from JavaScript.
 
@@ -3336,7 +3334,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-170.  ### How do you make asynchronous HTTP request
+170. ### How do you make asynchronous HTTP request
 
       Browsers provide an XMLHttpRequest object which can be used to make asynchronous HTTP requests from JavaScript by passing the 3rd parameter as true.
 
@@ -3356,7 +3354,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-171.  ### How do you convert date to another timezone in javascript
+171. ### How do you convert date to another timezone in javascript
 
       You can use the toLocaleString() method to convert dates in one timezone to another. For example, let's convert current date to British English timezone as below,
 
@@ -3366,7 +3364,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-172.  ### What are the properties used to get size of window
+172. ### What are the properties used to get size of window
 
       You can use innerWidth, innerHeight, clientWidth, clientHeight properties of windows, document element and document body objects to find the size of a window. Let's use them combination of these properties to calculate the size of a window or document,
 
@@ -3384,7 +3382,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-173.  ### What is a conditional operator in javascript
+173. ### What is a conditional operator in javascript
 
       The conditional (ternary) operator is the only JavaScript operator that takes three operands which acts as a shortcut for `if` statements.
 
@@ -3397,7 +3395,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-174.  ### Can you apply chaining on conditional operator
+174. ### Can you apply chaining on conditional operator
 
       Yes, you can apply chaining on conditional operators similar to **`if … else if … else if … else`** chain. The syntax is going to be as below,
 
@@ -3429,7 +3427,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-175.  ### What are the ways to execute javascript after a page load
+175. ### What are the ways to execute javascript after a page load
 
       You can execute javascript after page load in many different ways,
 
@@ -3453,7 +3451,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-176.  ### What is the difference between proto and prototype
+176. ### What is the difference between proto and prototype
 
       The `__proto__` object is the actual object that is used in the lookup chain to resolve methods, etc. Whereas `prototype` is the object that is used to build `__proto__` when you create an object with the `new` operator (a special variant of a function call).
 
@@ -3473,7 +3471,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-177.  ### Can you give an example of when you really need a semicolon
+177. ### Can you give an example of when you really need a semicolon
 
       It is recommended to use semicolons after every statement in JavaScript. For example, in the below case (that is an IIFE = Immediately Invoked Function Expression) it throws an error ".. is not a function" at runtime due to missing semicolon.
 
@@ -3505,7 +3503,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-178.  ### What is the freeze method
+178. ### What is the freeze method
 
       The **`freeze()`** method is used to freeze an object. Freezing an object does not allow adding new properties to an object, prevents removing, and prevents changing the enumerability, configurability, or writability of existing properties. i.e. It returns the passed object and does not create a frozen copy.
 
@@ -3539,7 +3537,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-179.  ### What is the purpose of the freeze method
+179. ### What is the purpose of the freeze method
 
       Below are the main benefits of using freeze method,
 
@@ -3548,13 +3546,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-180.  ### Why do I need to use the freeze method
+180. ### Why do I need to use the freeze method
 
       In the Object-oriented paradigm, an existing API contains certain elements that are not intended to be extended, modified, or re-used outside of their current context. Hence it works as the `final` keyword which is used in various languages.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-181.  ### How do you detect a browser language preference
+181. ### How do you detect a browser language preference
 
       You can use the navigator object to detect a browser language preference as below,
 
@@ -3569,7 +3567,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-182.  ### How to convert a string to title case with javascript
+182. ### How to convert a string to title case with javascript
 
       Title case means that the first letter of each word is capitalized. You can convert a string to title case using the below function,
 
@@ -3584,7 +3582,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-183.  ### How do you detect if javascript is disabled on the page
+183. ### How do you detect if javascript is disabled on the page
 
       You can use the `<noscript>` tag to detect javascript disabled or not. The code block inside `<noscript>` gets executed when JavaScript is disabled, and is typically used to display alternative content when the page generated in JavaScript.
 
@@ -3599,7 +3597,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-184.  ### What are various operators supported by javascript
+184. ### What are various operators supported by javascript
 
       An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
 
@@ -3612,7 +3610,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-185.  ### What is a rest parameter
+185. ### What is a rest parameter
 
       Rest parameter is an improved way to handle function parameters which allows us to represent an indefinite number of arguments as an array. The syntax would be as below,
 
@@ -3643,7 +3641,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-186.  ### What happens if you do not use rest parameter as a last argument
+186. ### What happens if you do not use rest parameter as a last argument
 
       The rest parameter should be the last argument, as its job is to collect all the remaining arguments into an array. For example, if you define a function like below it doesn’t make any sense and will throw an error.
 
@@ -3656,7 +3654,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-187.  ### What are the bitwise operators available in javascript
+187. ### What are the bitwise operators available in javascript
 
       Below are the list of bitwise logical operators used in JavaScript
 
@@ -3670,7 +3668,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-188.  ### What is a spread operator
+188. ### What is a spread operator
 
       Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. Let's take an example to see this behavior,
 
@@ -3686,7 +3684,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-189.  ### How do you determine whether object is frozen or not
+189. ### How do you determine whether object is frozen or not
 
       `Object.isFrozen()` method is used to determine if an object is frozen or not.An object is frozen if all of the below conditions hold true,
 
@@ -3705,7 +3703,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-190.  ### How do you determine two values same or not using object
+190. ### How do you determine two values same or not using object
 
       The `Object.is()` method determines whether two values are the same value. For example, the usage with different types of values would be,
 
@@ -3730,7 +3728,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-191.  ### What is the purpose of using object is method
+191. ### What is the purpose of using object is method
 
       Some of the applications of Object's `is` method are follows,
 
@@ -3741,7 +3739,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-192.  ### How do you copy properties from one object to other
+192. ### How do you copy properties from one object to other
 
       You can use the `Object.assign()` method which is used to copy the values and properties from one or more source objects to a target object. It returns the target object which has properties and values copied from the source objects. The syntax would be as below,
 
@@ -3766,7 +3764,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-193.  ### What are the applications of the assign method
+193. ### What are the applications of the assign method
 
       Below are the some of main applications of `Object.assign()` method,
 
@@ -3775,7 +3773,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-194.  ### What is a proxy object
+194. ### What is a proxy object
 
       The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc.
 
@@ -3833,7 +3831,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-195.  ### What is the purpose of the seal method
+195. ### What is the purpose of the seal method
 
       The `Object.seal()` method is used to seal an object, by preventing new properties from being added to it and marking all existing properties as non-configurable. But **values of present properties can still be changed as long as they are writable**. The next level of immutability would be the [`Object.freeze()`](#what-is-a-freeze-method) method. Let's see the below example to understand more about `seal()` method
 
@@ -3850,7 +3848,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-196.  ### What are the applications of the seal method
+196. ### What are the applications of the seal method
 
       Below are the main applications of `Object.seal()` method,
 
@@ -3859,13 +3857,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-197.  ### What are the differences between the freeze and seal methods
+197. ### What are the differences between the freeze and seal methods
 
       If an object is frozen using the `Object.freeze()` method then its properties become immutable and no changes can be made in them whereas if an object is sealed using the `Object.seal()` method then the changes can be made in the existing properties of the object.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-198.  ### How do you determine if an object is sealed or not
+198. ### How do you determine if an object is sealed or not
 
       The `Object.isSealed()` method is used to determine if an object is sealed or not. An object is sealed if all of the below conditions hold true
 
@@ -3886,7 +3884,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-199.  ### How do you get enumerable key and value pairs
+199. ### How do you get enumerable key and value pairs
 
       The `Object.entries()` method is used to return an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a `for...in` loop. Let's see the functionality of `object.entries()` method in an example,
 
@@ -3906,7 +3904,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-200.  ### What is the main difference between Object.values and Object.entries method
+200. ### What is the main difference between Object.values and Object.entries method
 
       The `Object.values()` method's behavior is similar to `Object.entries()` method but it returns an array of values instead [key,value] pairs.
 
@@ -3923,7 +3921,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-201.  ### How can you get the list of keys of any object
+201. ### How can you get the list of keys of any object
 
       You can use the `Object.keys()` method which is used to return an array of a given object's own property names, in the same order as we get with a normal loop. For example, you can get the keys of a user object,
 
@@ -3939,7 +3937,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-202.  ### How do you create an object with a prototype
+202. ### How do you create an object with a prototype
 
       The `Object.create()` method is used to create a new object with the specified prototype object and properties. i.e, It uses an existing object as the prototype of the newly created object. It returns a new object with the specified prototype object and properties.
 
@@ -3960,7 +3958,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-203.  ### What is a WeakSet
+203. ### What is a WeakSet
 
       A `WeakSet` is used to store a collection of weakly(weak references) held objects. The syntax would be as follows,
 
@@ -3981,7 +3979,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-204.  ### What are the differences between WeakSet and Set
+204. ### What are the differences between WeakSet and Set
 
       The main difference is that references to objects in `Set` are strong while references to objects in `WeakSet` are weak. i.e, An object in `WeakSet` can be garbage collected if there is no other reference to it.
       Other differences are:
@@ -3993,7 +3991,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-205.  ### List down the collection of methods available on WeakSet
+205. ### List down the collection of methods available on WeakSet
 
       Below are the list of methods available on `WeakSet`,
 
@@ -4016,7 +4014,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-206.  ### What is a WeakMap
+206. ### What is a WeakMap
 
       A `WeakMap` object is a collection of key/value pairs in which the keys are weakly referenced. In this case, keys must be objects and the values can be arbitrary values. The syntax looks like the following:
 
@@ -4037,7 +4035,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-207.  ### What are the differences between WeakMap and Map
+207. ### What are the differences between WeakMap and Map
 
       The main difference is that references to key objects in `Map` are strong while references to key objects in `WeakMap` are weak. i.e, A key object in `WeakMap` can be garbage collected if there is no other reference to it.
       Other differences are,
@@ -4049,7 +4047,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-208.  ### List down the collection of methods available on WeakMap
+208. ### List down the collection of methods available on WeakMap
 
       Below are the list of methods available on `WeakMap`,
 
@@ -4073,7 +4071,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-209.  ### What is the purpose of uneval
+209. ### What is the purpose of uneval
 
       The `uneval()` is an builtin function which is used to create a string representation of the source code of an Object. It is a top-level function and is not associated with any object. Let's see the below example to know more about it's functionality,
 
@@ -4092,7 +4090,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-210.  ### How do you encode an URL
+210. ### How do you encode an URL
 
       The `encodeURI()` function is used to encode complete URI which has special characters except (, / ? : @ & = + $ #) characters.
 
@@ -4104,7 +4102,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-211.  ### How do you decode an URL
+211. ### How do you decode an URL
 
       The `decodeURI()` function is used to decode a Uniform Resource Identifier (URI) previously created by `encodeURI()`.
 
@@ -4122,7 +4120,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-212.  ### How do you print the contents of web page
+212. ### How do you print the contents of web page
 
       The `window` object provides a `print()` method which is used to print the contents of the current window. It opens a Print dialog box which lets you choose between various printing options. Let's see the usage of print method in an example,
 
@@ -4134,7 +4132,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-213.  ### What is the difference between uneval and eval
+213. ### What is the difference between uneval and eval
 
       The `uneval` function returns the source of a given object; whereas the `eval` function does the opposite, by evaluating that source code in a different memory area. Let's see an example to clarify the difference,
 
@@ -4148,7 +4146,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-214.  ### What is an anonymous function
+214. ### What is an anonymous function
 
       An anonymous function is a function without a name! Anonymous functions are commonly assigned to a variable name or used as a callback function. The syntax would be as below,
 
@@ -4178,7 +4176,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-215.  ### What is the precedence order between local and global variables
+215. ### What is the precedence order between local and global variables
 
       A local variable takes precedence over a global variable with the same name. Let's see this behavior in an example.
 
@@ -4193,7 +4191,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-216.  ### What are javascript accessors
+216. ### What are javascript accessors
 
       ECMAScript 5 introduced javascript object accessors or computed properties through getters and setters. Getters uses the `get` keyword whereas Setters uses the `set` keyword.
 
@@ -4216,7 +4214,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-217.  ### How do you define property on Object constructor
+217. ### How do you define property on Object constructor
 
       The `Object.defineProperty()` static method is used to define a new property directly on an object, or modify an existing property on an object, and returns the object. Let's see an example to know how to define property,
 
@@ -4235,13 +4233,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-218.  ### What is the difference between get and defineProperty
+218. ### What is the difference between get and defineProperty
 
       Both have similar results unless you use classes. If you use `get` the property will be defined on the prototype of the object whereas using `Object.defineProperty()` the property will be defined on the instance it is applied to.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-219.  ### What are the advantages of Getters and Setters
+219. ### What are the advantages of Getters and Setters
 
       Below are the list of benefits of Getters and Setters,
 
@@ -4253,7 +4251,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-220.  ### Can I add getters and setters using defineProperty method
+220. ### Can I add getters and setters using defineProperty method
 
       Yes, You can use the `Object.defineProperty()` method to add Getters and Setters. For example, the below counter object uses increment, decrement, add and subtract properties,
 
@@ -4294,7 +4292,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-221.  ### What is the purpose of switch-case
+221. ### What is the purpose of switch-case
 
       The `switch case` statement in JavaScript is used for decision making purposes. In a few cases, using the `switch case` statement is going to be more convenient than `if-else` statements. The syntax would be as below,
 
@@ -4321,7 +4319,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-222.  ### What are the conventions to be followed for the usage of switch case
+222. ### What are the conventions to be followed for the usage of switch case
 
       Below are the list of conventions should be taken care,
 
@@ -4333,7 +4331,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-223.  ### What are primitive data types
+223. ### What are primitive data types
 
       A primitive data type is data that has a primitive value (which has no properties or methods). There are 7 types of primitive data types.
 
@@ -4347,7 +4345,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-224.  ### What are the different ways to access object properties
+224. ### What are the different ways to access object properties
 
       There are 3 possible ways for accessing the property of an object.
 
@@ -4371,7 +4369,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-225.  ### What are the function parameter rules
+225. ### What are the function parameter rules
 
       JavaScript functions follow below rules for parameters,
 
@@ -4389,7 +4387,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-226.  ### What is an error object
+226. ### What is an error object
 
       An error object is a built in error object that provides error information when an error occurs. It has two properties: name and message. For example, the below function logs error details,
 
@@ -4403,7 +4401,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-227.  ### When do you get a syntax error
+227. ### When do you get a syntax error
 
       A SyntaxError is thrown if you try to evaluate code with a syntax error. For example, the below missing quote for the function parameter throws a syntax error
 
@@ -4417,7 +4415,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-228.  ### What are the different error names from error object
+228. ### What are the different error names from error object
 
       There are 7 different types of error names returned from error object,
       | Error Name | Description |
@@ -4432,7 +4430,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-229.  ### What are the various statements in error handling
+229. ### What are the various statements in error handling
 
       Below are the list of statements used in an error handling,
 
@@ -4443,26 +4441,26 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-230.  ### What are the two types of loops in javascript
+230. ### What are the two types of loops in javascript
 
       1. **Entry Controlled loops:** In this kind of loop type, the test condition is tested before entering the loop body. For example, For Loop and While Loop comes under this category.
       2. **Exit Controlled Loops:** In this kind of loop type, the test condition is tested or evaluated at the end of the loop body. i.e, the loop body will execute at least once irrespective of test condition true or false. For example, do-while loop comes under this category.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-231.  ### What is nodejs
+231. ### What is nodejs
 
       Node.js is a server-side platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. It is an event-based, non-blocking, asynchronous I/O runtime that uses Google's V8 JavaScript engine and libuv library.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-232.  ### What is the Intl object
+232. ### What is the Intl object
 
       The `Intl` object is the namespace for the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, and date and time formatting. It provides access to several constructors and language sensitive functions.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-233.  ### How do you perform language specific date and time formatting
+233. ### How do you perform language specific date and time formatting
 
       You can use the `Intl.DateTimeFormat` object which is a constructor for objects that enable language-sensitive date and time formatting. Let's see this behavior with an example,
 
@@ -4474,13 +4472,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-234.  ### What is an Iterator
+234. ### What is an Iterator
 
       An iterator is an object which defines a sequence and a return value upon its termination. It implements the Iterator protocol with a `next()` method which returns an object with two properties: `value` (the next value in the sequence) and `done` (which is true if the last value in the sequence has been consumed).
 
       **[⬆ Back to Top](#table-of-contents)**
 
-235.  ### How does synchronous iteration works
+235. ### How does synchronous iteration works
 
       Synchronous iteration was introduced in ES6 and it works with below set of components,
 
@@ -4503,7 +4501,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-236.  ### What is the event loop
+236. ### What is the event loop
 
       The event loop is a process that continuously monitors both the call stack and the event queue and checks whether or not the call stack is empty. If the call stack is empty and there are pending events in the event queue, the event loop dequeues the event from the event queue and pushes it to the call stack. The call stack executes the event, and any additional events generated during the execution are added to the end of the event queue.
 
@@ -4511,7 +4509,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-237.  ### What is the call stack
+237. ### What is the call stack
 
       Call Stack is a data structure for javascript interpreters to keep track of function calls(creates execution context) in the program. It has two major actions,
 
@@ -4543,7 +4541,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-238.  ### What is the event queue
+238. ### What is the event queue
 
       The event queue follows the queue data structure. It stores async callbacks to be added to the call stack. It is also known as the Callback Queue or Macrotask Queue.
 
@@ -4553,7 +4551,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-239.  ### What is a decorator
+239. ### What is a decorator
 
       A decorator is an expression that evaluates to a function and that takes the target, name, and decorator descriptor as arguments. Also, it optionally returns a decorator descriptor to install on the target object. Let's define admin decorator for user class at design time,
 
@@ -4577,7 +4575,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-240.  ### What are the properties of the Intl object
+240. ### What are the properties of the Intl object
 
       Below are the list of properties available on the `Intl` object,
 
@@ -4590,7 +4588,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-241.  ### What is an Unary operator
+241. ### What is an Unary operator
 
       The unary(+) operator is used to convert a variable to a number.If the variable cannot be converted, it will still become a number but with the value NaN. Let's see this behavior in an action.
 
@@ -4606,7 +4604,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-242.  ### How do you sort elements in an array
+242. ### How do you sort elements in an array
 
       The `sort()` method is used to sort the elements of an array in place and returns the sorted array. The default sort order is ascending, based on the string Unicode order. The example usage would be as below,
 
@@ -4620,7 +4618,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-243.  ### What is the purpose of compareFunction while sorting arrays
+243. ### What is the purpose of compareFunction while sorting arrays
 
       The compareFunction is used to define the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.
 
@@ -4634,7 +4632,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-244.  ### How do you reverse an array
+244. ### How do you reverse an array
 
       You can use the `reverse()` method to reverse the elements in an array. This method is useful to sort an array in descending order. Let's see the usage of `reverse()` method in an example,
 
@@ -4647,7 +4645,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-245.  ### How do you find the min and max values in an array
+245. ### How do you find the min and max values in an array
 
       You can use `Math.min` and `Math.max` methods on array variables to find the minimum and maximum elements within an array. Let's create two functions to find the min and max value with in an array,
 
@@ -4666,7 +4664,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-246.  ### How do you find the min and max values without Math functions
+246. ### How do you find the min and max values without Math functions
 
       You can write functions which loop through an array comparing each value with the lowest value or highest value to find the min and max values. Let's create those functions to find min and max values,
 
@@ -4700,7 +4698,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-247.  ### What is an empty statement and purpose of it
+247. ### What is an empty statement and purpose of it
 
       The empty statement is a semicolon (;) indicating that no statement will be executed, even if JavaScript syntax requires one. Since there is no action with an empty statement you might think that it's usage is quite less, but the empty statement is occasionally useful when you want to create a loop that has an empty body. For example, you can initialize an array with zero values as below,
 
@@ -4711,7 +4709,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-248.  ### How do you get the metadata of a module
+248. ### How do you get the metadata of a module
 
       You can use the `import.meta` object which is a meta-property exposing context-specific meta data to a JavaScript module. It contains information about the current module, such as the module's URL. In browsers, you might get different meta data than NodeJS.
 
@@ -4722,7 +4720,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-249.  ### What is the comma operator
+249. ### What is the comma operator
 
       The comma operator is used to evaluate each of its operands from left to right and returns the value of the last operand. This is totally different from comma usage within arrays, objects, and function arguments and parameters. For example, the usage for numeric expressions would be as below,
 
@@ -4735,7 +4733,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-250.  ### What is the advantage of the comma operator
+250. ### What is the advantage of the comma operator
 
       It is normally used to include multiple expressions in a location that requires a single expression. One of the common usages of this comma operator is to supply multiple parameters in a `for` loop. For example, the below for loop uses multiple expressions in a single location using comma operator,
 
@@ -4754,7 +4752,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-251.  ### What is typescript
+251. ### What is typescript
 
       TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes
       and many other features, and compiles to plain JavaScript. Angular is built entirely in TypeScript and it is used as the primary language there. You can install it globally as
@@ -4779,7 +4777,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-252.  ### What are the differences between javascript and typescript
+252. ### What are the differences between javascript and typescript
 
       Below are the list of differences between javascript and typescript,
 
@@ -4793,7 +4791,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-253.  ### What are the advantages of typescript over javascript
+253. ### What are the advantages of typescript over javascript
 
       Below are some of the advantages of typescript over javascript,
 
@@ -4803,7 +4801,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-254.  ### What is an object initializer
+254. ### What is an object initializer
 
       An object initializer is an expression that describes the initialization of an Object. The syntax for this expression is represented as a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({}). This is also known as literal notation. It is one of the ways to create an object.
 
@@ -4815,7 +4813,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-255.  ### What is a constructor method
+255. ### What is a constructor method
 
       The constructor method is a special method for creating and initializing an object created within a class. If you do not specify a constructor method, a default constructor is used. The example usage of constructor would be as below,
 
@@ -4833,7 +4831,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-256.  ### What happens if you write constructor more than once in a class
+256. ### What happens if you write constructor more than once in a class
 
       The "constructor" in a class is a special method and it should be defined only once in a class. i.e, If you write a constructor method more than once in a class it will throw a `SyntaxError` error.
 
@@ -4856,7 +4854,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-257.  ### How do you call the constructor of a parent class
+257. ### How do you call the constructor of a parent class
 
       You can use the `super` keyword to call the constructor of a parent class. Remember that `super()` must be called before using `this` reference. Otherwise it will cause a reference error. Let's the usage of it,
 
@@ -4879,7 +4877,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-258.  ### How do you get the prototype of an object
+258. ### How do you get the prototype of an object
 
       You can use the `Object.getPrototypeOf(obj)` method to return the prototype of the specified object. i.e. The value of the internal `prototype` property. If there are no inherited properties then `null` value is returned.
 
@@ -4892,7 +4890,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-259.  ### What happens If I pass string type for getPrototype method
+259. ### What happens If I pass string type for getPrototype method
 
       In ES5, it will throw a TypeError exception if the obj parameter isn't an object. Whereas in ES2015, the parameter will be coerced to an `Object`.
 
@@ -4905,7 +4903,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-260.  ### How do you set the prototype of one object to another
+260. ### How do you set the prototype of one object to another
 
       You can use the `Object.setPrototypeOf()` method that sets the prototype (i.e., the internal `Prototype` property) of a specified object to another object or null. For example, if you want to set prototype of a square object to rectangle object would be as follows,
 
@@ -4916,7 +4914,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-261.  ### How do you check whether an object can be extended or not
+261. ### How do you check whether an object can be extended or not
 
       The `Object.isExtensible()` method is used to determine if an object is extendable or not. i.e, Whether it can have new properties added to it or not.
 
@@ -4929,7 +4927,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-262.  ### How do you prevent an object from being extend
+262. ### How do you prevent an object from being extend
 
       The `Object.preventExtensions()` method is used to prevent new properties from ever being added to an object. In other words, it prevents future extensions to the object. Let's see the usage of this property,
 
@@ -4949,7 +4947,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-263.  ### What are the different ways to make an object non-extensible
+263. ### What are the different ways to make an object non-extensible
 
       You can mark an object non-extensible in 3 ways,
 
@@ -4972,7 +4970,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-264.  ### How do you define multiple properties on an object
+264. ### How do you define multiple properties on an object
 
       The `Object.defineProperties()` method is used to define new or modify existing properties directly on an object and returning the object. Let's define multiple properties on an empty object,
 
@@ -4990,13 +4988,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-265.  ### What is the MEAN stack
+265. ### What is the MEAN stack
 
       The MEAN (MongoDB, Express, AngularJS, and Node.js) stack is the most popular open-source JavaScript software tech stack available for building dynamic web apps where you can write both the server-side and client-side halves of the web project entirely in JavaScript.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-266.  ### What is obfuscation in javascript
+266. ### What is obfuscation in javascript
 
       Obfuscation is the deliberate act of creating obfuscated javascript code(i.e, source or machine code) that is difficult for humans to understand. It is something similar to encryption, but a machine can understand the code and execute it.
       Let's see the below function before Obfuscation,
@@ -5048,7 +5046,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-267.  ### Why do you need Obfuscation
+267. ### Why do you need Obfuscation
 
       Below are the few reasons for Obfuscation,
 
@@ -5059,13 +5057,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-268.  ### What is Minification
+268. ### What is Minification
 
       Minification is the process of removing all unnecessary characters(empty spaces are removed) and variables will be renamed without changing it's functionality. It is also a type of obfuscation .
 
       **[⬆ Back to Top](#table-of-contents)**
 
-269.  ### What are the advantages of minification
+269. ### What are the advantages of minification
 
       Normally it is recommended to use minification for heavy traffic and intensive requirements of resources. It reduces file sizes with below benefits,
 
@@ -5074,7 +5072,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-270.  ### What are the differences between obfuscation and Encryption
+270. ### What are the differences between obfuscation and Encryption
 
       Below are the main differences between obfuscation and encryption,
 
@@ -5086,7 +5084,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-271.  ### What are the common tools used for minification
+271. ### What are the common tools used for minification
 
       There are many online/offline tools to minify the javascript files,
 
@@ -5098,7 +5096,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-272.  ### How do you perform form validation using javascript
+272. ### How do you perform form validation using javascript
 
       JavaScript can be used to perform HTML form validation. For example, if the form field is empty, the function needs to notify, and return false, to prevent the form being submitted.
       Lets' perform user login in an html form,
@@ -5125,7 +5123,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-273.  ### How do you perform form validation without javascript
+273. ### How do you perform form validation without javascript
 
       You can perform HTML form validation automatically without using javascript. The validation enabled by applying the `required` attribute to prevent form submission when the input is empty.
 
@@ -5140,7 +5138,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-274.  ### What are the DOM methods available for constraint validation
+274. ### What are the DOM methods available for constraint validation
 
       The below DOM methods are available for constraint validation on an invalid input,
 
@@ -5163,7 +5161,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-275.  ### What are the available constraint validation DOM properties
+275. ### What are the available constraint validation DOM properties
 
       Below are the list of some of the constraint validation DOM properties available,
 
@@ -5173,7 +5171,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-276.  ### What are the validity properties
+276. ### What are the validity properties
 
       The validity property of an input element provides a set of properties related to the validity of data.
 
@@ -5189,7 +5187,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-277.  ### Give an example usage of the rangeOverflow property
+277. ### Give an example usage of the rangeOverflow property
 
       If an element's value is greater than its max attribute then the `rangeOverflow` property is true. For example, the below form submission throws an error if the value is more than 100,
 
@@ -5208,7 +5206,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-278.  ### Are enums available in javascript
+278. ### Are enums available in javascript
 
       No, javascript does not natively support enums. But there are different kinds of solutions to simulate them even though they may not provide exact equivalents. For example, you can use freeze or seal on object,
 
@@ -5218,7 +5216,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-279.  ### What is an enum
+279. ### What is an enum
 
       An enum is a type restricting variables to one value from a predefined set of constants. JavaScript has no enums but typescript provides built-in enum support.
 
@@ -5230,7 +5228,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-280.  ### How do you list all properties of an object
+280. ### How do you list all properties of an object
 
       You can use the `Object.getOwnPropertyNames()` method which returns an array of all properties found directly in a given object. Let's see the usage of this in an example below:
 
@@ -5247,7 +5245,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-281.  ### How do you get property descriptors of an object
+281. ### How do you get property descriptors of an object
 
       You can use the `Object.getOwnPropertyDescriptors()` method which returns all own property descriptors of a given object. The example usage of this method is below,
 
@@ -5266,7 +5264,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-282.  ### What are the attributes provided by a property descriptor
+282. ### What are the attributes provided by a property descriptor
 
       A property descriptor is a record which has the following attributes
 
@@ -5279,7 +5277,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-283.  ### How do you extend classes
+283. ### How do you extend classes
 
       The `extends` keyword is used in class declarations/expressions to create a class which is a child of another class. It can be used to subclass custom classes as well as built-in objects. The syntax would be as below,
 
@@ -5308,7 +5306,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-284.  ### How do I modify the url without reloading the page
+284. ### How do I modify the url without reloading the page
 
       The `window.location.href` property will be helpful to modify the url but it reloads the page. HTML5 introduced the `history.pushState()` and `history.replaceState()` methods, which allow you to add and modify history entries, respectively. For example, you can use pushState as below,
 
@@ -5320,7 +5318,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-285.  ### How do you check whether or not an array includes a particular value
+285. ### How do you check whether or not an array includes a particular value
 
       The `Array#includes()` method is used to determine whether an array includes a particular value among its entries by returning either true or false. Let's see an example to find an element(numeric and string) within an array.
 
@@ -5334,7 +5332,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-286.  ### How do you compare scalar arrays
+286. ### How do you compare scalar arrays
 
       You can use length and every method of arrays to compare two scalars (compared directly using `===`) arrays. The combination of these expressions can give the expected result,
 
@@ -5362,7 +5360,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-287.  ### How to get the value from get parameters
+287. ### How to get the value from get parameters
 
       The `new URL()` object accepts the url string and `searchParams` property of this object can be used to access the get parameters.
 
@@ -5375,7 +5373,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-288.  ### How do you print numbers with commas as thousand separators
+288. ### How do you print numbers with commas as thousand separators
 
       You can use the `Number.prototype.toLocaleString()` method which returns a string with a language-sensitive representation such as thousand separator, currency etc. of this number.
 
@@ -5389,7 +5387,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-289.  ### What is the difference between java and javascript
+289. ### What is the difference between java and javascript
 
       Both are totally unrelated programming languages and no relation between them. Java is statically typed, compiled, runs on its own VM. Whereas Javascript is dynamically typed, interpreted, and runs in a browser and nodejs environments. Let's see the major differences in a tabular format,
       | Feature | Java | JavaScript |
@@ -5401,7 +5399,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-290.  ### Does JavaScript support namespaces
+290. ### Does JavaScript support namespaces
 
       JavaScript doesn’t support namespaces by default. So if you create any element (function, method, object, variable) then it becomes global and pollutes the global namespace. Let's take an example of defining two functions without any namespace,
 
@@ -5419,7 +5417,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-291.  ### How do you declare a namespace
+291. ### How do you declare a namespace
 
       Even though JavaScript lacks namespaces, we can use Objects, an IIFE (Immediately Invoked Function Expression) or `let`/`const` to create namespaces.
 
@@ -5480,7 +5478,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-292.  ### How do you invoke javascript code in an iframe from the parent page
+292. ### How do you invoke javascript code in an iframe from the parent page
 
       Initially iFrame needs to be accessed using either `document.getElementBy` or `window.frames`. After that `contentWindow` property of iFrame gives the access for targetFunction
 
@@ -5491,7 +5489,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-293.  ### How do you get the timezone offset of a date object
+293. ### How do you get the timezone offset of a date object
 
       You can use the `getTimezoneOffset` method of the date object. This method returns the time zone difference, in minutes, from current locale (host system settings) to UTC
 
@@ -5502,7 +5500,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-294.  ### How do you load CSS and JS files dynamically
+294. ### How do you load CSS and JS files dynamically
 
       You can create both link and script elements in the DOM and append them as child to head tag. Let's create a function to add script and style resources as below,
 
@@ -5527,7 +5525,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-295.  ### What are the different methods to find HTML elements in DOM
+295. ### What are the different methods to find HTML elements in DOM
 
       If you want to access any element in an HTML page, you need to start with accessing the document object. Later you can use any of the below methods to find the HTML element,
 
@@ -5539,7 +5537,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-296.  ### What is jQuery
+296. ### What is jQuery
 
       jQuery is a popular cross-browser JavaScript library that provides Document Object Model (DOM) traversal, event handling, animations and AJAX interactions by minimizing the discrepancies across browsers. It is widely famous with its philosophy of “Write less, do more”. For example, you can display welcome message on the page load using jQuery as below,
 
@@ -5554,14 +5552,14 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-297.  ### What is V8 JavaScript engine
+297. ### What is V8 JavaScript engine
 
       V8 is an open source high-performance JavaScript engine used by the Google Chrome browser, written in C++. It is also being used in the node.js project. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors.
       **Note:** It can run standalone, or can be embedded into any C++ application.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-298.  ### Why do we call javascript as dynamic language
+298. ### Why do we call javascript as dynamic language
 
       JavaScript is a loosely typed or a dynamic language because variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned/reassigned with values of all types.
 
@@ -5573,7 +5571,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-299.  ### What is a void operator
+299. ### What is a void operator
 
       The `void` operator evaluates the given expression and then returns `undefined` (i.e, without returning value). The syntax would be as below,
 
@@ -5594,7 +5592,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-300.  ### How to set the cursor to wait
+300. ### How to set the cursor to wait
 
       The cursor can be set to wait in JavaScript by using the property `cursor`. Let's perform this behavior on page load using the below function.
 
@@ -5612,7 +5610,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-301.  ### How do you create an infinite loop
+301. ### How do you create an infinite loop
 
       You can create infinite loops using for and while loops without using any expressions. The for loop construct or syntax is better approach in terms of ESLint and code optimizer tools,
 
@@ -5623,7 +5621,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-302.  ### Why do you need to avoid with statement
+302. ### Why do you need to avoid with statement
 
       JavaScript's with statement was intended to provide a shorthand for writing recurring accesses to objects. So it can help reduce file size by reducing the need to repeat a lengthy object reference without performance penalty. Let's take an example where it is used to avoid redundancy when accessing an object several times.
 
@@ -5645,7 +5643,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-303.  ### What is the output of the following for loops
+303. ### What is the output of the following for loops
 
       ```javascript
       for (var i = 0; i < 4; i++) {
@@ -5667,7 +5665,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-304.  ### List down some of the features of ES6
+304. ### List down some of the features of ES6
 
       Below are the list of some new features of ES6,
 
@@ -5686,13 +5684,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-305.  ### What is ES6
+305. ### What is ES6
 
       ES6 is the sixth edition of the javascript language and it was released in June 2015. It was initially known as ECMAScript 6 (ES6) and later renamed to ECMAScript 2015. Almost all the modern browsers support ES6 but for the old browsers there are many transpilers, like Babel.js etc.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-306.  ### Can I redeclare let and const variables
+306. ### Can I redeclare let and const variables
 
       No, you cannot redeclare let and const variables. If you do, it throws below error
 
@@ -5729,7 +5727,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-307.  ### Does the `const` variable make the value immutable
+307. ### Does the `const` variable make the value immutable
 
       No, the `const` variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
 
@@ -5741,7 +5739,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-308.  ### What are default parameters
+308. ### What are default parameters
 
       In ES5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
 
@@ -5769,7 +5767,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-309.  ### What are template literals
+309. ### What are template literals
 
       Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
       In ES6, this feature enables using dynamic expressions as below,
@@ -5788,7 +5786,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-310.  ### How do you write multi-line strings in template literals
+310. ### How do you write multi-line strings in template literals
 
       In ES5, you would have to use newline escape characters('\\n') and concatenation symbols(+) in order to get multi-line strings.
 
@@ -5805,7 +5803,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-311.  ### What are nesting templates
+311. ### What are nesting templates
 
       The nesting template is a feature supported within template literals syntax to allow inner backticks inside a placeholder ${ } within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type,
 
@@ -5832,7 +5830,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-312.  ### What are tagged templates
+312. ### What are tagged templates
 
       Tagged templates are the advanced form of templates in which tags allow you to parse template literals with a function. The tag function accepts the first parameter as an array of strings and remaining parameters as expressions. This function can also return manipulated strings based on parameters. Let's see the usage of this tagged template behavior of an IT professional skill set in an organization,
 
@@ -5871,7 +5869,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-313.  ### What are raw strings
+313. ### What are raw strings
 
       ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
 
@@ -5901,7 +5899,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-314.  ### What is destructuring assignment
+314. ### What is destructuring assignment
 
       The destructuring assignment is a JavaScript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables.
       Let's get the month values from an array using destructuring assignment
@@ -5925,7 +5923,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-315.  ### What are default values in destructuring assignment
+315. ### What are default values in destructuring assignment
 
       A variable can be assigned a default value when the value unpacked from the array or object is undefined during destructuring assignment. It helps to avoid setting default values separately for each assignment. Let's take an example for both arrays and object use cases,
 
@@ -5952,7 +5950,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-316.  ### How do you swap variables in destructuring assignment
+316. ### How do you swap variables in destructuring assignment
 
       If you don't use destructuring assignment, swapping two values requires a temporary variable. Whereas using a destructuring feature, two variable values can be swapped in one destructuring expression. Let's swap two number variables in array destructuring assignment,
 
@@ -5967,7 +5965,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-317.  ### What are enhanced object literals
+317. ### What are enhanced object literals
 
       Object literals make it easy to quickly create objects with properties inside the curly braces. For example, it provides shorter syntax for common object property definition as below.
 
@@ -5986,7 +5984,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-318.  ### What are dynamic imports
+318. ### What are dynamic imports
 
       The dynamic imports using `import()` function syntax allows us to load modules on demand by using promises or the async/await syntax. Currently this feature is in [stage4 proposal](https://github.com/tc39/proposal-dynamic-import). The main advantage of dynamic imports is reduction of our bundle's sizes, the size/payload response of our requests and overall improvements in the user experience.
       The syntax of dynamic imports would be as below,
@@ -5997,7 +5995,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-319.  ### What are the use cases for dynamic imports
+319. ### What are the use cases for dynamic imports
 
       Below are some of the use cases of using dynamic imports over static imports,
 
@@ -6020,7 +6018,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-320.  ### What are typed arrays
+320. ### What are typed arrays
 
       Typed arrays are array-like objects from ECMAScript 6 API for handling binary data. JavaScript provides 12 Typed array types,
 
@@ -6048,7 +6046,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-321.  ### What are the advantages of module loaders
+321. ### What are the advantages of module loaders
 
       The module loaders provides the below features,
 
@@ -6060,7 +6058,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-322.  ### What is collation
+322. ### What is collation
 
       Collation is used for sorting a set of strings and searching within a set of strings. It is parameterized by locale and aware of Unicode. Let's take comparison and sorting features,
 
@@ -6086,7 +6084,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-323.  ### What is for...of statement
+323. ### What is for...of statement
 
       The for...of statement creates a loop iterating over iterable objects or elements such as built-in String, Array, Array-like objects (like arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. The basic usage of for...of statement on arrays would be as below,
 
@@ -6101,7 +6099,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-324.  ### What is the output of below spread operator array
+324. ### What is the output of below spread operator array
 
       ```javascript
       [..."John Resig"];
@@ -6113,13 +6111,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-325.  ### Is PostMessage secure
+325. ### Is PostMessage secure
 
       Yes, postMessages can be considered very secure as long as the programmer/developer is careful about checking the origin and source of an arriving message. But if you try to send/receive a message without verifying its source will create cross-site scripting attacks.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-326.  ### What are the problems with postmessage target origin as wildcard
+326. ### What are the problems with postmessage target origin as wildcard
 
       The second argument of postMessage method specifies which origin is allowed to receive the message. If you use the wildcard “\*” as an argument then any origin is allowed to receive the message. In this case, there is no way for the sender window to know if the target window is at the target origin when sending the message. If the target window has been navigated to another origin, the other origin would receive the data. Hence, this may lead to XSS vulnerabilities.
 
@@ -6129,7 +6127,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-327.  ### How do you avoid receiving postMessages from attackers
+327. ### How do you avoid receiving postMessages from attackers
 
       Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker’s origin, which gives an impression that the receiver received the message from the actual sender’s window. You can avoid this issue by validating the origin of the message on the receiver's end using the “message.origin” attribute.
 
@@ -6146,38 +6144,38 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-328.  ### Can I avoid using postMessages completely
+328. ### Can I avoid using postMessages completely
 
       You cannot avoid using postMessages completely(or 100%). Even though your application doesn’t use postMessage considering the risks, a lot of third party scripts use postMessage to communicate with the third party service. So your application might be using postMessage without your knowledge.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-329.  ### Is postMessages synchronous
+329. ### Is postMessages synchronous
 
       The postMessages are synchronous in IE8 browser but they are asynchronous in IE9 and all other modern browsers (i.e, IE9+, Firefox, Chrome, Safari).Due to this asynchronous behaviour, we use a callback mechanism when the postMessage is returned.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-330.  ### What paradigm is Javascript
+330. ### What paradigm is Javascript
 
       JavaScript is a multi-paradigm language, supporting imperative/procedural programming, Object-Oriented Programming and functional programming. JavaScript supports Object-Oriented Programming with prototypical inheritance.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-331.  ### What is the difference between internal and external javascript
+331. ### What is the difference between internal and external javascript
 
       **Internal JavaScript:** It is the source code within the script tag.
       **External JavaScript:** The source code is stored in an external file(stored with .js extension) and referred with in the tag.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-332.  ### Is JavaScript faster than server side script
+332. ### Is JavaScript faster than server side script
 
       Yes, JavaScript is faster than server side scripts. Because JavaScript is a client-side script it does not require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-333.  ### How do you get the status of a checkbox
+333. ### How do you get the status of a checkbox
 
       You can apply the `checked` property on the selected checkbox in the DOM. If the value is `true` it means the checkbox is checked, otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below:
 
@@ -6193,13 +6191,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-334.  ### What is the purpose of double tilde operator
+334. ### What is the purpose of double tilde operator
 
       The double tilde operator(~~) is known as double NOT bitwise operator. This operator is a slightly quicker substitute for Math.floor().
 
       **[⬆ Back to Top](#table-of-contents)**
 
-335.  ### How do you convert character to ASCII code
+335. ### How do you convert character to ASCII code
 
       You can use the `String.prototype.charCodeAt()` method to convert string characters to ASCII numbers. For example, let's find ASCII code for the first letter of 'ABC' string,
 
@@ -6215,7 +6213,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-336.  ### What is ArrayBuffer
+336. ### What is ArrayBuffer
 
       An ArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer. You can create it as below,
 
@@ -6233,7 +6231,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-337.  ### What is the output of below string expression
+337. ### What is the output of below string expression
 
       ```javascript
       console.log("Welcome to JS world"[0]);
@@ -6244,7 +6242,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-338.  ### What is the purpose of Error object
+338. ### What is the purpose of Error object
 
       The Error constructor creates an error object and the instances of error objects are thrown when runtime errors occur. The Error object can also be used as a base object for user-defined exceptions. The syntax of error object would be as below,
 
@@ -6265,7 +6263,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-339.  ### What is the purpose of EvalError object
+339. ### What is the purpose of EvalError object
 
       The EvalError object indicates an error regarding the global `eval()` function. Even though this exception is not thrown by JavaScript anymore, the EvalError object remains for compatibility. The syntax of this expression would be as below,
 
@@ -6284,7 +6282,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-340.  ### What are the list of cases error thrown from non-strict mode to strict mode
+340. ### What are the list of cases error thrown from non-strict mode to strict mode
 
       When you apply 'use strict'; syntax, some of the below cases will throw a SyntaxError before executing the script
 
@@ -6311,13 +6309,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-341.  ### Do all objects have prototypes
+341. ### Do all objects have prototypes
 
       No. All objects have prototypes except the base object or an object created with Object.create(null) method. The base object is Object.prototype, and its prototype is null.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-342.  ### What is the difference between a parameter and an argument
+342. ### What is the difference between a parameter and an argument
 
       Parameter is the variable name of a function definition whereas an argument represents the value given to a function when it is invoked. Let's explain this with a simple function
 
@@ -6332,7 +6330,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-343.  ### What is the purpose of some method in arrays
+343. ### What is the purpose of some method in arrays
 
       The some() method is used to test whether at least one element in the array passes the test implemented by the provided function. The method returns a boolean value. Let's take an example to test for any odd elements,
 
@@ -6346,7 +6344,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-344.  ### How do you combine two or more arrays
+344. ### How do you combine two or more arrays
 
       The concat() method is used to join two or more arrays by returning a new array containing all the elements. The syntax would be as below,
 
@@ -6365,7 +6363,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-345.  ### What is the difference between Shallow and Deep copy
+345. ### What is the difference between Shallow and Deep copy
 
       There are two ways to copy an object,
 
@@ -6423,7 +6421,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-346.  ### How do you create specific number of copies of a string
+346. ### How do you create specific number of copies of a string
 
       The `repeat()` method is used to construct and return a new string which contains the specified number of copies of the string on which it was called, concatenated together. Remember that this method has been added to the ECMAScript 2015 specification.
       Let's take an example of Hello string to repeat it 4 times,
@@ -6432,7 +6430,7 @@
       "Hello".repeat(4); // 'HelloHelloHelloHello'
       ```
 
-347.  ### How do you return all matching strings against a regular expression
+347. ### How do you return all matching strings against a regular expression
 
       The `matchAll()` method can be used to return an iterator of all results matching a string against a regular expression. For example, the below example returns an array of matching string results against a regular expression,
 
@@ -6449,7 +6447,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-348.  ### How do you trim a string at the beginning or ending
+348. ### How do you trim a string at the beginning or ending
 
       The `trim` method of string prototype is used to trim on both sides of a string. But if you want to trim especially at the beginning or ending of the string then you can use `trimStart/trimLeft` and `trimEnd/trimRight` methods. Let's see an example of these methods on a greeting message,
 
@@ -6466,7 +6464,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-349.  ### What is the output of below console statement with unary operator
+349. ### What is the output of below console statement with unary operator
 
       Let's take console statement with unary operator as given below,
 
@@ -6478,7 +6476,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-350.  ### Does javascript uses mixins
+350. ### Does javascript uses mixins
 
       Mixin is a generic object-oriented programming term - is a class containing methods that can be used by other classes without a need to inherit from it. In JavaScript we can only inherit from a single object. ie. There can be only one `[[prototype]]` for an object.
 
@@ -6513,7 +6511,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-351.  ### What is a thunk function
+351. ### What is a thunk function
 
       A thunk is just a function which delays the evaluation of the value. It doesn’t take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
 
@@ -6527,7 +6525,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-352.  ### What are asynchronous thunks
+352. ### What are asynchronous thunks
 
       The asynchronous thunks are useful to make network requests. Let's see an example of network requests,
 
@@ -6551,7 +6549,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-353.  ### What is the output of below function calls
+353. ### What is the output of below function calls
 
       **Code snippet:**
 
@@ -6576,7 +6574,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-354.  ### How to remove all line breaks from a string
+354. ### How to remove all line breaks from a string
 
       The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
 
@@ -6590,13 +6588,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-355.  ### What is the difference between reflow and repaint
+355. ### What is the difference between reflow and repaint
 
       A _repaint_ occurs when changes are made which affect the visibility of an element, but not its layout. Examples of this include outline, visibility, or background color. A _reflow_ involves changes that affect the layout of a portion of the page (or the whole page). Resizing the browser window, changing the font, content changing (such as user typing text), using JavaScript methods involving computed styles, adding or removing elements from the DOM, and changing an element's classes are a few of the things that can trigger reflow. Reflow of an element causes the subsequent reflow of all child and ancestor elements as well as any elements following it in the DOM.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-356.  ### What happens with negating an array
+356. ### What happens with negating an array
 
       Negating an array with `!` character will coerce the array into a boolean. Since Arrays are considered to be truthy So negating it will return `false`.
 
@@ -6606,7 +6604,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-357.  ### What happens if we add two arrays
+357. ### What happens if we add two arrays
 
       If you add two arrays together, it will convert them both to strings and concatenate them. For example, the result of adding arrays would be as below,
 
@@ -6618,7 +6616,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-358.  ### What is the output of prepend additive operator on falsy values
+358. ### What is the output of prepend additive operator on falsy values
 
       If you prepend the additive(+) operator on falsy values(null, undefined, NaN, false, ""), the falsy value converts to a number value zero. Let's display them on browser console as below,
 
@@ -6632,7 +6630,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-359.  ### How do you create self string using special characters
+359. ### How do you create self string using special characters
 
       The self string can be formed with the combination of `[]()!+` characters. You need to remember the below conventions to achieve this pattern.
 
@@ -6664,7 +6662,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-360.  ### How do you remove falsy values from an array
+360. ### How do you remove falsy values from an array
 
       You can apply the filter method on the array by passing Boolean as a parameter. This way it removes all falsy values(0, undefined, null, false and "") from the array.
 
@@ -6675,7 +6673,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-361.  ### How do you get unique values of an array
+361. ### How do you get unique values of an array
 
       You can get unique values of an array with the combination of `Set` and rest expression/spread(...) syntax.
 
@@ -6685,7 +6683,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-362.  ### What is destructuring aliases
+362. ### What is destructuring aliases
 
       Sometimes you would like to have a destructured variable with a different name than the property name. In that case, you'll use a `: newName` to specify a name for the variable. This process is called destructuring aliases.
 
@@ -6697,7 +6695,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-363.  ### How do you map the array values without using map method
+363. ### How do you map the array values without using map method
 
       You can map the array values without using the `map` method by just using the `from` method of Array. Let's map city names from Countries array,
 
@@ -6717,7 +6715,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-364.  ### How do you empty an array
+364. ### How do you empty an array
 
       You can empty an array quickly by setting the array length to zero.
 
@@ -6728,7 +6726,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-365.  ### How do you round numbers to certain decimals
+365. ### How do you round numbers to certain decimals
 
       You can round numbers to a certain number of decimals using `toFixed` method from native javascript.
 
@@ -6739,7 +6737,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-366.  ### What is the easiest way to convert an array to an object
+366. ### What is the easiest way to convert an array to an object
 
       You can convert an array to an object with the same data using spread(...) operator.
 
@@ -6751,7 +6749,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-367.  ### How do you create an array with some data
+367. ### How do you create an array with some data
 
       You can create an array with some data or an array with the same values using `fill` method.
 
@@ -6762,7 +6760,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-368.  ### What are the placeholders from console object
+368. ### What are the placeholders from console object
 
       Below are the list of placeholders available from console object,
 
@@ -6782,7 +6780,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-369.  ### Is it possible to add CSS to console messages
+369. ### Is it possible to add CSS to console messages
 
       Yes, you can apply CSS styles to console messages similar to html text on the web page.
 
@@ -6800,7 +6798,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-370.  ### What is the purpose of dir method of console object
+370. ### What is the purpose of dir method of console object
 
       The `console.dir()` is used to display an interactive list of the properties of the specified JavaScript object as JSON.
 
@@ -6814,7 +6812,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-371.  ### Is it possible to debug HTML elements in console
+371. ### Is it possible to debug HTML elements in console
 
       Yes, it is possible to get and debug HTML elements in the console just like inspecting elements.
 
@@ -6829,7 +6827,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-372.  ### How do you display data in a tabular format using console object
+372. ### How do you display data in a tabular format using console object
 
       The `console.table()` is used to display data in the console in a tabular format to visualize complex arrays or objects.
 
@@ -6849,7 +6847,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-373.  ### How do you verify that an argument is a Number or not
+373. ### How do you verify that an argument is a Number or not
 
       The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
 
@@ -6861,7 +6859,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-374.  ### How do you create copy to clipboard button
+374. ### How do you create copy to clipboard button
 
       You need to select the content(using .select() method) of the input element and execute the copy command with execCommand (i.e, execCommand('copy')). You can also execute other system commands like cut and paste.
 
@@ -6876,7 +6874,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-375.  ### What is the shortcut to get timestamp
+375. ### What is the shortcut to get timestamp
 
       You can use `new Date().getTime()` to get the current timestamp. There is an alternative shortcut to get the value.
 
@@ -6887,7 +6885,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-376.  ### How do you flattening multi dimensional arrays
+376. ### How do you flattening multi dimensional arrays
 
       Flattening bi-dimensional arrays is trivial with Spread operator.
 
@@ -6932,7 +6930,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-377.  ### What is the easiest multi condition checking
+377. ### What is the easiest multi condition checking
 
       You can use `indexOf` to compare input with multiple values instead of checking each value as one condition.
 
@@ -6954,7 +6952,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-378.  ### How do you capture browser back button
+378. ### How do you capture browser back button
 
       The `beforeunload` event is triggered when the window, the document and its resources are about to be unloaded. This event is helpful to warn users about losing the current data and detect back button event.
 
@@ -8727,7 +8725,7 @@ The polyfills for array methods such as map, filter and reduce methods can be cr
 
     **[⬆ Back to Top](#table-of-contents)**
 
-4.  ### What is the difference between map and forEach functions?
+457. ### What is the difference between map and forEach functions?
 
     Both map and forEach functions are used to iterate over an arrays but there are some differences in their functionality.
 
