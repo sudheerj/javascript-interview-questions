@@ -519,6 +519,8 @@
 | 469 | [What is globalThis, and what is the importance of it?](#what-is-globalthis-and-what-is-the-importance-of-it) |
 | 470 | [What are the array mutation methods?](#what-are-the-array-mutation-methods) |
 | 471 | [What is module scope in JavaScript?](#what-is-module-scope-in-javascript) |
+| 472 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing) |
+
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -9102,6 +9104,48 @@ Common use cases and benefits:
 - Explicit dependency management
 - Protection of private implementation details
 
+**[⬆ Back to Top](#table-of-contents)**
+
+472. ### What are shadowing and illegal shadowing?
+     
+     Both **shadowing** and **illegal shadowing** refer to how variable names can "hide" or override others within nested scopes.
+
+     **Shadowing** occurs when a variable declared within a certain scope (like a function or block) has the same name as a variable declared in an outer scope. The inner variable shadows the outer one — meaning, the inner variable takes precedence in its own scope.
+
+     Let's take an example where the inner `a` inside `func()` shadows the outer variable `a`.
+
+      ```javascript
+      let a = 10;
+
+      function func() {
+        let a = 20; // Shadows the outer 'a'
+        console.log(a); // 20
+      }
+
+      func();
+      console.log(a); // 10
+      ```
+
+     **Illegal shadowing** in JavaScript refers to a syntax error that happens when you try to declare a block-scoped variable (`let` or `const`) with the same name as a variable declared using `var` in the same or an overlapping scope. 
+
+     For example, if you declare both block-scoped variable and function scoped variable using the same name inside a function causes an illegal shadowing.
+
+      ```javascript
+      function test() {
+        var a = 10;
+        let a = 20; // SyntaxError: Identifier 'a' has already been declared
+      }
+      ```
+    
+      As an another example, if you declare a variable with `let` or `const` in an outer scope, and then try to redeclare it with `var` inside a nested block, JavaScript throws an error — even though `var` is supposed to be function-scoped. Since the var appears in a block, it ends up trying to overwrite the `let` in the outer scope, which causes a conflict.
+
+      ```javascript
+      let a = 10;
+      {
+        var a = 20; // SyntaxError: Identifier 'a' has already been declared
+        console.log(a);
+      }
+      ```
 **[⬆ Back to Top](#table-of-contents)**
 
 <!-- QUESTIONS_END -->
