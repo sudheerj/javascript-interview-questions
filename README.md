@@ -520,6 +520,7 @@
 | 470 | [What are the array mutation methods?](#what-are-the-array-mutation-methods) |
 | 471 | [What is module scope in JavaScript?](#what-is-module-scope-in-javascript) |
 | 472 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing) |
+| 473 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
