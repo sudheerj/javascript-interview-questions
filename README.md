@@ -9148,6 +9148,31 @@ Common use cases and benefits:
       ```
 **[⬆ Back to Top](#table-of-contents)**
 
+473. ### Why is it important to remove event listeners after use?
+     
+  In JavaScript, you need to be mindful of removing event listeners to avoid memory leaks — especially in long-lived apps like single-page applications (SPAs) or when working with frameworks/libraries. Eventhough JavaScript has automatic garbage collection, memory leaks can still happen if:
+
+  1. A DOM element is removed, but a listener still references it.
+  2. A callback (event listener) holds a reference to a large object or closure that can't be cleaned up.
+  3. Global objects like window, document etc retain listeners indefinitely unless manually removed.
+
+  So if you add any event listeners to DOM element, it is a good practice to remove it after its usage as shown below,
+
+  ```javascript
+     const button = document.getElementById("btn");
+
+      function handleClick() {
+        console.log("Clicked!");
+      }
+
+      button.addEventListener("click", handleClick);
+
+      // Always remove when done
+      button.removeEventListener("click", handleClick);
+  ```
+
+  **[⬆ Back to Top](#table-of-contents)**
+
 <!-- QUESTIONS_END -->
 
 ### Coding Exercise
