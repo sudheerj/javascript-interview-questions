@@ -542,7 +542,7 @@
 
        Object literal property values can be of any data type, including array, function, and nested object.
 
-       **Note:** This is one of the easiest ways to create an object.
+       **Note:** This is one of the easiest ways to create an object and it's most commonly used for creating simple, ad-hoc objects.
 
     2. **Object constructor:**
 
@@ -552,16 +552,16 @@
        var object = new Object();
        ```
 
-       The `Object()` is a built-in constructor function so "new" keyword is not required. The above code snippet can be re-written as:
+       The `Object()` is a built-in constructor function so "new" keyword is not required for creating plain objects. The above code snippet can be re-written as:
 
        ```javascript
        var object = Object();
        ```
-
+       However, `Object()` can be used to either create a plain object or convert a given value into its corresponding object wrapper, whereas `new Object()` is specifically used to explicitly create a new object instance.
+       
     3. **Object's create method:**
 
-       The `create` method of Object is used to create a new object by passing the specified prototype object and properties as arguments, i.e., this pattern is helpful to create new objects based on existing objects.
-       The second argument is optional and it is used to create properties on a newly created object.
+       The `create` method of Object is used to create a new object by passing the specified prototype object and properties as arguments, i.e., this pattern is helpful to create new objects based on existing objects. In other words, this is useful for setting up **prototypal inheritance**. The second argument is optional and it is used to create properties on a newly created object.
 
        The following code creates a new empty object whose prototype is null.
 
@@ -592,7 +592,7 @@
 
     4. **Function constructor:**
 
-       In this approach, create any function and apply the new operator to create object instances.
+       In this approach, create any function and apply the new operator to create object instances. This was the main way to do constructor-based OOP before ES6 classes.
 
        ```javascript
        function Person(name) {
@@ -604,7 +604,7 @@
 
     5. **Function constructor with prototype:**
 
-       This is similar to function constructor but it uses prototype for their properties and methods,
+       This is similar to function constructor but it uses prototype for their properties and methods. Using prototype means you're sharing methods/properties across instances, which saves memory and improve performance.
 
        ```javascript
        function Person() {}
@@ -612,22 +612,31 @@
        var object = new Person();
        ```
 
-       This is equivalent to creating an instance with Object.create method with a function prototype and then calling that function with an instance and parameters as arguments.
+       This is equivalent to creating an instance with `Object.create` method with a function prototype and then calling that function with an instance and parameters as arguments.
 
        ```javascript
-       function func() {}
+       function func(x, y, z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+       }
 
-       new func(x, y, z);
+       var instance = new func(1, 2, 3);
        ```
 
        **(OR)**
 
        ```javascript
+       function func(x, y, z) {
+          this.x = x;
+          this.y = y;
+          this.z = z;
+       }
        // Create a new instance using function prototype.
        var newInstance = Object.create(func.prototype)
 
        // Call the function
-       var result = func.call(newInstance, x, y, z),
+       var result = func.call(newInstance, 1, 2, 3),
 
        // If the result is a non-null object then use it otherwise just use the new instance.
        console.log(result && typeof result === 'object' ? result : newInstance);
@@ -635,7 +644,7 @@
 
     6. **Object's assign method:**
 
-       The `Object.assign` method is used to copy all the properties from one or more source objects and stores them into a target object.
+       The `Object.assign` method is used to copy all the properties from one or more source objects and stores them into a target object. This is mainly used for cloning and merging
 
        The following code creates a new staff object by copying properties of his working company and the car he owns.
 
@@ -647,7 +656,7 @@
 
     7. **ES6 Class syntax:**
 
-       ES6 introduces class feature to create objects.
+       ES6 introduces class feature to create objects. This is syntactic sugar over the prototype-based system.
 
        ```javascript
        class Person {
@@ -668,6 +677,8 @@
          this.name = "Sudheer";
        })();
        ```
+
+      In modern apps, Singletons are often implemented using **modules** or **closures**.
 
        **[⬆ Back to Top](#table-of-contents)**
 
