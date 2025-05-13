@@ -1709,7 +1709,7 @@
 
 62. ### What is callback in callback
 
-    You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks. Beware, too many levels of nesting lead to [Callback hell](https://github.com/ckpinguin/javascript-interview-questions/tree/master?tab=readme-ov-file#what-is-a-callback-hell)
+    You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks. Beware, too many levels of nesting lead to [Callback hell](https://github.com/sudheerj/javascript-interview-questions?tab=readme-ov-file#what-is-a-callback-hell)
 
     ```javascript
     loadScript("/script1.js", function (script) {
