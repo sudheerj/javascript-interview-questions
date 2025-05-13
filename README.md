@@ -680,7 +680,7 @@
 
       In modern apps, Singletons are often implemented using **modules** or **closures**.
 
-       **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
 2. ### What is a prototype chain
 
@@ -7175,10 +7175,50 @@
      **[⬆ Back to Top](#table-of-contents)**
 
 388. ### What is microtask
+     
+     A microtask is a type of JavaScript callback that is scheduled to run immediately after the currently executing script and before the next event loop tick. Microtasks are executed after the current task completes and before any new tasks (macrotasks) are run. This ensures a fast and predictable update cycle.
 
-     Microtask is used for the javascript code which needs to be executed immediately after the currently executing task/microtask is completed. They are kind of blocking in nature. i.e, The main thread will be blocked until the microtask queue is empty.
-     The main sources of microtasks are Promise.resolve, Promise.reject, MutationObservers, IntersectionObservers etc
+     Common sources of microtasks stored in the microtask queue include:
 
+     1. **Promises:**
+        When a Promise is resolved or rejected, its `.then()`, `.catch()`, and `.finally()` callbacks are placed in the microtask queue.
+
+        ```javascript
+        Promise.resolve().then(() => {
+         console.log('Microtask from a Promise');
+        });
+        ```
+
+      2. **queueMicrotask():**
+     
+         A method that explicitly schedules a function to be run in the microtask queue.
+
+         ```javascript
+          queueMicrotask(() => {
+             console.log('Microtask from  queueMicrotask');
+           });
+         ```
+
+      3. **MutationObserver callbacks:**
+
+         Observers changes in the DOM and triggers a callback as a microtask.
+
+         ```javascript
+            const observer = new MutationObserver(() => {
+              console.log('Microtask from MutationObserver');
+            })
+            observer.observe(document.body, {childList: true});
+         ```
+
+      4. **await:**  
+         Await internally uses Promises, so the code after `await` is scheduled as a microtask.
+
+         ```javascript
+          async function asyncFunction() {
+            await null;
+            console.log('Microtask from Await'); // Schedule this code as microtask
+          }
+         ```
      **Note:** All of these microtasks are processed in the same turn of the event loop.
 
      **[⬆ Back to Top](#table-of-contents)**
