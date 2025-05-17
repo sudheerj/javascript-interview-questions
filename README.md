@@ -684,7 +684,7 @@
 
 2. ### What is a prototype chain
 
-    **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language. i.e, When you create an object using a constructor function or a class, the created object inherits properties from a prototype object.
+    The **Prototype chain** is a fundamental inheritance mechanism that enables objects to access properties and methods from other objects. When a property or method is accessed on an object, JavaScript first checks if it exists directly on that object. If not, it traverses up the prototype chain—following the object's internal **[[Prototype]]** reference—until it either finds the requested member or reaches the end of the chain (typically null)
 
     The prototype on object instance is available through **Object.getPrototypeOf(object)** or **\_\_proto\_\_** property whereas prototype on constructor function is available through **Object.prototype**.
 
@@ -922,19 +922,29 @@
 
 13. ### What is a higher order function
 
-    A higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
-    The syntactic structure of higher order function will be as follows,
+    A higher-order function is a function that either accepts another function as an argument, returns a function as its result, or both. This concept is a core part of JavaScript's functional programming capabilities and is widely used for creating modular, reusable, and expressive code.
 
-    ```javascript
-    const firstOrderFunc = () =>
-      console.log("Hello, I am a First order function");
-    const higherOrder = (ReturnFirstOrderFunc) => ReturnFirstOrderFunc();
-    higherOrder(firstOrderFunc);
-    ```
+    The syntactic structure of higher order function will be explained with an example as follows,
 
-    You can also call the function which you are passing to higher order function as callback function.
+      ```javascript
+      // First-order function (does not accept or return another function)
+      const firstOrderFunc = () => 
+        console.log("Hello, I am a first-order function");
 
-    The higher order function is helpful to write the modular and reusable code.
+      // Higher-order function (accepts a function as an argument)
+      const higherOrder = (callback) => callback();
+
+      // Passing the first-order function to the higher-order function
+      higherOrder(firstOrderFunc);
+      ```
+
+    In this example:
+
+    1. `firstOrderFunc` is a regular (first-order) function.
+
+    2. `higherOrder` is a higher-order function because it takes another function as an argument.
+
+    3. `firstOrderFunc` is also called a **callback function** because it is passed to and executed by another function.
 
     **[⬆ Back to Top](#table-of-contents)**
 
