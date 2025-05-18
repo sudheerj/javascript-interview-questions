@@ -6539,40 +6539,57 @@
 
 335. ### Does javascript uses mixins
 
-      Mixin is a generic object-oriented programming term - is a class containing methods that can be used by other classes without a need to inherit from it. In JavaScript we can only inherit from a single object. ie. There can be only one `[[prototype]]` for an object.
+      JavaScript does not have built-in support for mixins as a formal language feature. However, developers commonly implement mixins using various patterns to enable code reuse and composition.
 
-      But sometimes we require to extend more than one, to overcome this we can use Mixin which helps to copy methods to the prototype of another class.
+      A mixin is a way to add reusable functionality from one or more objects into a class or another object, without using classical inheritance. It promotes object composition by combining behaviors or properties from different sources into a single destination.
 
-      Say for instance, we've two classes `User` and `CleanRoom`. Suppose we need to add `CleanRoom` functionality to `User`, so that user can clean the room at demand. Here's where concept called mixins comes into picture.
-
+      ### Mixin Example using Object composition
       ```javascript
-      // mixin
-      let cleanRoomMixin = {
-        cleanRoom() {
-          alert(`Hello ${this.name}, your room is clean now`);
-        },
-        sayBye() {
-          alert(`Bye ${this.name}`);
-        },
+      // Define a mixin
+      const canEat = {
+        eat() {
+          console.log("Eating...");
+        }
       };
 
-      // usage:
-      class User {
+      const canWalk = {
+        walk() {
+          console.log("Walking...");
+        }
+      };
+
+      const canRead = {
+        read() {
+          console.log("Reading...");
+        }
+      };
+
+      // Create a class
+      class Person {
         constructor(name) {
           this.name = name;
         }
       }
 
-      // copy the methods
-      Object.assign(User.prototype, cleanRoomMixin);
+      // Apply mixins
+      Object.assign(Person.prototype, canEat, canWalk, canRead);
 
-      // now User can clean the room
-      new User("Dude").cleanRoom(); // Hello Dude, your room is clean now!
+      // Use it
+      const person = new Person("Sudheer");
+      person.eat();  // Output: Eating...
+      person.walk(); // Output: Walking...
+      person.read(); // Output: Reading...
       ```
+      ### Benefits
+      - Avoids deep inheritance hierarchies
+      - Encourages composition over inheritance
+      - Promotes reusable and modular code
+  
+      Modern JavaScript favors mixin alternatives like composition, delegation, higher-order functions, and class mixins to promote reusable and modular code. Libraries like Lodash offer utilities for object composition, while frameworks like Vue.js provide built-in mixin features to promote reusable and modular code.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-336. ### What is a thunk function
+1.   ### What is a thunk function
 
       A thunk is just a function which delays the evaluation of the value. It doesn’t take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
 
@@ -6586,7 +6603,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-337. ### What are asynchronous thunks
+2.   ### What are asynchronous thunks
 
       The asynchronous thunks are useful to make network requests. Let's see an example of network requests,
 
@@ -6610,7 +6627,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-338. ### What is the output of below function calls
+3.   ### What is the output of below function calls
 
       **Code snippet:**
 
@@ -6635,7 +6652,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-339. ### How to remove all line breaks from a string
+4.   ### How to remove all line breaks from a string
 
       The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
 
@@ -6649,13 +6666,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-340. ### What is the difference between reflow and repaint
+5.   ### What is the difference between reflow and repaint
 
       A _repaint_ occurs when changes are made which affect the visibility of an element, but not its layout. Examples of this include outline, visibility, or background color. A _reflow_ involves changes that affect the layout of a portion of the page (or the whole page). Resizing the browser window, changing the font, content changing (such as user typing text), using JavaScript methods involving computed styles, adding or removing elements from the DOM, and changing an element's classes are a few of the things that can trigger reflow. Reflow of an element causes the subsequent reflow of all child and ancestor elements as well as any elements following it in the DOM.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-341. ### What happens with negating an array
+6.   ### What happens with negating an array
 
       Negating an array with `!` character will coerce the array into a boolean. Since Arrays are considered to be truthy So negating it will return `false`.
 
@@ -6665,7 +6682,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-342. ### What happens if we add two arrays
+7.   ### What happens if we add two arrays
 
       If you add two arrays together, it will convert them both to strings and concatenate them. For example, the result of adding arrays would be as below,
 
@@ -6677,7 +6694,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-343. ### What is the output of prepend additive operator on falsy values
+8.   ### What is the output of prepend additive operator on falsy values
 
       If you prepend the additive(+) operator on falsy values(null, undefined, NaN, false, ""), the falsy value converts to a number value zero. Let's display them on browser console as below,
 
@@ -6691,7 +6708,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-344. ### How do you create self string using special characters
+9.   ### How do you create self string using special characters
 
       The self string can be formed with the combination of `[]()!+` characters. You need to remember the below conventions to achieve this pattern.
 
@@ -6723,7 +6740,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-345. ### How do you remove falsy values from an array
+10.  ### How do you remove falsy values from an array
 
       You can apply the filter method on the array by passing Boolean as a parameter. This way it removes all falsy values(0, undefined, null, false and "") from the array.
 
@@ -6734,7 +6751,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-346. ### How do you get unique values of an array
+11.  ### How do you get unique values of an array
 
       You can get unique values of an array with the combination of `Set` and rest expression/spread(...) syntax.
 
@@ -6744,7 +6761,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-347. ### What is destructuring aliases
+12.  ### What is destructuring aliases
 
       Sometimes you would like to have a destructured variable with a different name than the property name. In that case, you'll use a `: newName` to specify a name for the variable. This process is called destructuring aliases.
 
@@ -6756,7 +6773,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-348. ### How do you map the array values without using map method
+13.  ### How do you map the array values without using map method
 
       You can map the array values without using the `map` method by just using the `from` method of Array. Let's map city names from Countries array,
 
@@ -6798,7 +6815,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-366. ### What is the easiest way to convert an array to an object
+351. ### What is the easiest way to convert an array to an object
 
       You can convert an array to an object with the same data using spread(...) operator.
 
@@ -6810,7 +6827,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-367. ### How do you create an array with some data
+352. ### How do you create an array with some data
 
       You can create an array with some data or an array with the same values using `fill` method.
 
@@ -6821,7 +6838,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-368. ### What are the placeholders from console object
+353. ### What are the placeholders from console object
 
       Below are the list of placeholders available from console object,
 
@@ -6841,7 +6858,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-369. ### Is it possible to add CSS to console messages
+354. ### Is it possible to add CSS to console messages
 
       Yes, you can apply CSS styles to console messages similar to html text on the web page.
 
@@ -6859,7 +6876,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-370. ### What is the purpose of dir method of console object
+355. ### What is the purpose of dir method of console object
 
       The `console.dir()` is used to display an interactive list of the properties of the specified JavaScript object as JSON.
 
@@ -6873,7 +6890,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-371. ### Is it possible to debug HTML elements in console
+356. ### Is it possible to debug HTML elements in console
 
       Yes, it is possible to get and debug HTML elements in the console just like inspecting elements.
 
@@ -6888,7 +6905,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-372. ### How do you display data in a tabular format using console object
+357. ### How do you display data in a tabular format using console object
 
       The `console.table()` is used to display data in the console in a tabular format to visualize complex arrays or objects.
 
@@ -6908,7 +6925,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-373. ### How do you verify that an argument is a Number or not
+358. ### How do you verify that an argument is a Number or not
 
       The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
 
@@ -6920,7 +6937,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-374. ### How do you create copy to clipboard button
+359. ### How do you create copy to clipboard button
 
       You need to select the content(using .select() method) of the input element and execute the copy command with execCommand (i.e, execCommand('copy')). You can also execute other system commands like cut and paste.
 
@@ -6935,7 +6952,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-375. ### What is the shortcut to get timestamp
+360. ### What is the shortcut to get timestamp
 
       You can use `new Date().getTime()` to get the current timestamp. There is an alternative shortcut to get the value.
 
@@ -6946,7 +6963,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-376. ### How do you flattening multi dimensional arrays
+361. ### How do you flattening multi dimensional arrays
 
       Flattening bi-dimensional arrays is trivial with Spread operator.
 
@@ -6991,7 +7008,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-377. ### What is the easiest multi condition checking
+362. ### What is the easiest multi condition checking
 
       You can use `indexOf` to compare input with multiple values instead of checking each value as one condition.
 
@@ -7013,7 +7030,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-378. ### How do you capture browser back button
+363. ### How do you capture browser back button
 
       The `beforeunload` event is triggered when the window, the document and its resources are about to be unloaded. This event is helpful to warn users about losing the current data and detect back button event.
 
