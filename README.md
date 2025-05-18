@@ -595,13 +595,31 @@
 
        In this approach, create any function and apply the new operator to create object instances. This was the main way to do constructor-based OOP before ES6 classes.
 
-       ```javascript
-       function Person(name) {
-         this.name = name;
-         this.age = 21;
-       }
-       var object = new Person("Sudheer");
-       ```
+        ```javascript
+        const Singleton = (function () {
+        let instance;
+
+        function createInstance() {
+          return { name: "Sudheer" };
+        }
+
+        return {
+          getInstance: function () {
+            if (!instance) {
+              instance = createInstance();
+            }
+            return instance;
+          }
+        };
+        })();
+
+        // Usage
+        const obj1 = Singleton.getInstance();
+        const obj2 = Singleton.getInstance();
+
+        console.log(obj1 === obj2); // true
+        ```
+       In modern JavaScript applications, singletons are commonly implemented using ES6 modules for their built-in caching behavior, or closures for encapsulated state management.
 
     5. **Function constructor with prototype:**
 
