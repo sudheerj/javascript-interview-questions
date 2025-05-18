@@ -399,129 +399,131 @@
 | 349 | [How do you trim a string at the beginning or ending](#how-do-you-trim-a-string-at-the-beginning-or-ending) |
 | 350 | [What is the output of below console statement with unary operator](#what-is-the-output-of-below-console-statement-with-unary-operator) |
 | 351 | [Does javascript uses mixins](#does-javascript-uses-mixins) |
-| 352 | [What is a thunk function](#what-is-a-thunk-function) |
-| 353 | [What are asynchronous thunks](#what-are-asynchronous-thunks) |
-| 354 | [What is the output of below function calls](#what-is-the-output-of-below-function-calls) |
-| 355 | [How to remove all line breaks from a string](#how-to-remove-all-line-breaks-from-a-string) |
-| 356 | [What is the difference between reflow and repaint](#what-is-the-difference-between-reflow-and-repaint) |
-| 357 | [What happens with negating an array](#what-happens-with-negating-an-array) |
-| 358 | [What happens if we add two arrays](#what-happens-if-we-add-two-arrays) |
-| 359 | [What is the output of prepend additive operator on falsy values](#what-is-the-output-of-prepend-additive-operator-on-falsy-values) |
-| 360 | [How do you create self string using special characters](#how-do-you-create-self-string-using-special-characters) |
-| 361 | [How do you remove falsy values from an array](#how-do-you-remove-falsy-values-from-an-array) |
-| 362 | [How do you get unique values of an array](#how-do-you-get-unique-values-of-an-array) |
-| 363 | [What is destructuring aliases](#what-is-destructuring-aliases) |
-| 364 | [How do you map the array values without using map method](#how-do-you-map-the-array-values-without-using-map-method) |
-| 365 | [How do you empty an array](#how-do-you-empty-an-array) |
-| 366 | [How do you round numbers to certain decimals](#how-do-you-round-numbers-to-certain-decimals) |
-| 367 | [What is the easiest way to convert an array to an object](#what-is-the-easiest-way-to-convert-an-array-to-an-object) |
-| 368 | [How do you create an array with some data](#how-do-you-create-an-array-with-some-data) |
-| 369 | [What are the placeholders from console object](#what-are-the-placeholders-from-console-object) |
-| 370 | [Is it possible to add CSS to console messages](#is-it-possible-to-add-css-to-console-messages) |
-| 371 | [What is the purpose of dir method of console object](#what-is-the-purpose-of-dir-method-of-console-object) |
-| 372 | [Is it possible to debug HTML elements in console](#is-it-possible-to-debug-html-elements-in-console) |
-| 373 | [How do you display data in a tabular format using console object](#how-do-you-display-data-in-a-tabular-format-using-console-object) |
-| 374 | [How do you verify that an argument is a Number or not](#how-do-you-verify-that-an-argument-is-a-number-or-not) |
-| 375 | [How do you create copy to clipboard button](#how-do-you-create-copy-to-clipboard-button) |
-| 376 | [What is the shortcut to get timestamp](#what-is-the-shortcut-to-get-timestamp) |
-| 377 | [How do you flattening multi dimensional arrays](#how-do-you-flattening-multi-dimensional-arrays) |
-| 378 | [What is the easiest multi condition checking](#what-is-the-easiest-multi-condition-checking) |
-| 379 | [How do you capture browser back button](#how-do-you-capture-browser-back-button) |
-| 380 | [How do you disable right click in the web page](#how-do-you-disable-right-click-in-the-web-page) |
-| 381 | [What are wrapper objects](#what-are-wrapper-objects) |
-| 382 | [What is AJAX](#what-is-ajax) |
-| 383 | [What are the different ways to deal with Asynchronous Code](#what-are-the-different-ways-to-deal-with-asynchronous-code) |
-| 384 | [How to cancel a fetch request](#how-to-cancel-a-fetch-request) |
-| 385 | [What is web speech API](#what-is-web-speech-api) |
-| 386 | [What is minimum timeout throttling](#what-is-minimum-timeout-throttling) |
-| 387 | [How do you implement zero timeout in modern browsers](#how-do-you-implement-zero-timeout-in-modern-browsers) |
-| 388 | [What are tasks in event loop](#what-are-tasks-in-event-loop) |
-| 389 | [What is microtask](#what-is-microtask) |
-| 390 | [What are different event loops](#what-are-different-event-loops) |
-| 391 | [What is the purpose of queueMicrotask](#what-is-the-purpose-of-queuemicrotask) |
-| 392 | [How do you use javascript libraries in typescript file](#how-do-you-use-javascript-libraries-in-typescript-file) |
-| 393 | [What are the differences between promises and observables](#what-are-the-differences-between-promises-and-observables) |
-| 394 | [What is heap](#what-is-heap) |
-| 395 | [What is an event table](#what-is-an-event-table) |
-| 396 | [What is a microTask queue](#what-is-a-microtask-queue) |
-| 397 | [What is the difference between shim and polyfill](#what-is-the-difference-between-shim-and-polyfill) |
-| 398 | [How do you detect primitive or non primitive value type](#how-do-you-detect-primitive-or-non-primitive-value-type) |
-| 399 | [What is babel](#what-is-babel) |
-| 400 | [Is Node.js completely single threaded](#is-nodejs-completely-single-threaded) |
-| 401 | [What are the common use cases of observables](#what-are-the-common-use-cases-of-observables) |
-| 402 | [What is RxJS](#what-is-rxjs) |
-| 403 | [What is the difference between Function constructor and function declaration](#what-is-the-difference-between-function-constructor-and-function-declaration) |
-| 404 | [What is a Short circuit condition](#what-is-a-short-circuit-condition) |
-| 405 | [What is the easiest way to resize an array](#what-is-the-easiest-way-to-resize-an-array) |
-| 406 | [What is an observable](#what-is-an-observable) |
-| 407 | [What is the difference between function and class declarations](#what-is-the-difference-between-function-and-class-declarations) |
-| 408 | [What is an async function](#what-is-an-async-function) |
-| 409 | [How do you prevent promises swallowing errors](#how-do-you-prevent-promises-swallowing-errors) |
-| 410 | [What is deno](#what-is-deno) |
-| 411 | [How do you make an object iterable in javascript](#how-do-you-make-an-object-iterable-in-javascript) |
-| 412 | [What is a Proper Tail Call](#what-is-a-proper-tail-call) |
-| 413 | [How do you check an object is a promise or not](#how-do-you-check-an-object-is-a-promise-or-not) |
-| 414 | [How to detect if a function is called as constructor](#how-to-detect-if-a-function-is-called-as-constructor) |
-| 415 | [What are the differences between arguments object and rest parameter](#what-are-the-differences-between-arguments-object-and-rest-parameter) |
-| 416 | [What are the differences between spread operator and rest parameter](#what-are-the-differences-between-spread-operator-and-rest-parameter) |
-| 417 | [What are the different kinds of generators](#what-are-the-different-kinds-of-generators) |
-| 418 | [What are the built-in iterables](#what-are-the-built-in-iterables) |
-| 419 | [What are the differences between for...of and for...in statements](#what-are-the-differences-between-forof-and-forin-statements) |
-| 420 | [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties) |
-| 421 | [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-numberisnan) |
-| 422 | [How to invoke an IIFE without any extra brackets?](#how-to-invoke-an-iife-without-any-extra-brackets) |
-| 423 | [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases) |
-| 424 | [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors) |
-| 425 | [How do style the console output using CSS?](#how-do-style-the-console-output-using-css) |
-| 426 | [What is nullish coalescing operator (??)?](#what-is-nullish-coalescing-operator-) |
-| 427 | [How do you group and nest console output?](#how-do-you-group-and-nest-console-output) |
-| 428 | [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays) |
-| 429 | [What are the different ways to create sparse arrays?](#what-are-the-different-ways-to-create-sparse-arrays) |
-| 430 | [What is the difference between setTimeout, setImmediate and process.nextTick?](#what-is-the-difference-between-settimeout-setimmediate-and-processnexttick) |
-| 431 | [How do you reverse an array without modifying original array?](#how-do-you-reverse-an-array-without-modifying-original-array) |
-| 432 | [How do you create custom HTML element?](#how-do-you-create-custom-html-element) |
-| 433 | [What is global execution context?](#what-is-global-execution-context) |
-| 434 | [What is function execution context?](#what-is-function-execution-context) |
-| 435 | [What is debouncing?](#what-is-debouncing) |
-| 436 | [What is throttling?](#what-is-throttling) |
-| 437 | [What is optional chaining?](#what-is-optional-chaining) |
-| 438 | [What is an environment record?](#what-is-an-environment-record) |
-| 439 | [How to verify if a variable is an array?](#how-to-verify-if-a-variable-is-an-array) |
-| 440 | [What is pass by value and pass by reference?](#what-is-pass-by-value-and-pass-by-reference) |
-| 441 | [What are the differences between primitives and non-primitives?](#what-are-the-differences-between-primitives-and-non-primitives) |
-| 442 | [How do you create your own bind method using either call or apply method?](#how-do-you-create-your-own-bind-method-using-either-call-or-apply-method) |
-| 443 | [What are the differences between pure and impure functions?](#what-are-the-differences-between-pure-and-impure-functions) |
-| 444 | [What is referential transparency?](#what-is-referential-transparency) |
-| 445 | [What are the possible side-effects in javascript?](#what-are-the-possible-side-effects-in-javascript) |
-| 446 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions) |
-| 447 | [What is module pattern?](#what-is-module-pattern) |
-| 448 | [What is Function Composition?](#what-is-function-composition) |
-| 449 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022) |
-| 450 | [What is the purpose of the this keyword in JavaScript?](#what-is-the-purpose-of-the-this-keyword-in-javascript) |
-| 451 | [What are the uses of closures?](#what-are-the-uses-of-closures) |
-| 452 | [What are the phases of execution context?](#what-are-the-phases-of-execution-context) |
-| 453 | [What are the possible reasons for memory leaks?](#what-are-the-possible-reasons-for-memory-leaks) |
-| 454 | [What are the optimization techniques of V8 engine?](#what-are-the-optimization-techniques-of-v8-engine) |
-| 455 | [What are the examples of built-in higher order functions?](#what-are-the-examples-of-built-in-higher-order-functions) |
-| 456 | [What are the benefits higher order functions?](#what-are-the-benefits-higher-order-functions) |
-| 457 | [How do you create polyfills for map, filter and reduce methods?](#how-do-you-create-polyfills-for-map-filter-and-reduce-methods) |
-| 458 | [What is the difference between map and forEach functions?](#what-is-the-difference-between-map-and-foreach-functions) |
-| 459 | [Give an example of statements affected by automatic semicolon insertion?](#give-an-example-of-statements-affected-by-automatic-semicolon-insertion) |
-| 460 | [What are the event phases of a browser?](#what-are-the-event-phases-of-a-browser) |
-| 461 | [What are the real world use cases of proxy?](#what-are-the-real-world-use-cases-of-proxy) |
-| 462 | [What are hidden classes?](#what-are-hidden-classes) |
-| 463 | [What is inline caching?](#what-is-inline-caching) |
-| 464 | [What are the different ways to execute external scripts?](#what-are-the-different-ways-to-execute-external-scripts) |
-| 465 | [What is Lexical Scope?](#what-is-lexical-scope) |
-| 466 | [How to detect system dark mode in javascript?](#how-to-detect-system-dark-mode-in-javascript) |
-| 467 | [What is the purpose of requestAnimationFrame method?](#what-is-the-purpose-of-requestanimationframe-method) |
-| 468 | [What is the difference between substring and substr methods?](#what-is-the-difference-between-substring-and-substr-methods) |
-| 469 | [How to find the number of parameters expected by a function?](#how-to-find-the-number-of-parameters-expected-by-a-function) |
-| 470 | [What is globalThis, and what is the importance of it?](#what-is-globalthis-and-what-is-the-importance-of-it) |
-| 471 | [What are the array mutation methods?](#what-are-the-array-mutation-methods) |
-| 472 | [What is module scope in JavaScript?](#what-is-module-scope-in-javascript) |
-| 473 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing) |
-| 474 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use) |
+| 352 | [Mixin Example using Object composition](#mixin-example-using-object-composition) |
+| 353 | [Benefits](#benefits-1) |
+| 354 | [What is a thunk function](#what-is-a-thunk-function) |
+| 355 | [What are asynchronous thunks](#what-are-asynchronous-thunks) |
+| 356 | [What is the output of below function calls](#what-is-the-output-of-below-function-calls) |
+| 357 | [How to remove all line breaks from a string](#how-to-remove-all-line-breaks-from-a-string) |
+| 358 | [What is the difference between reflow and repaint](#what-is-the-difference-between-reflow-and-repaint) |
+| 359 | [What happens with negating an array](#what-happens-with-negating-an-array) |
+| 360 | [What happens if we add two arrays](#what-happens-if-we-add-two-arrays) |
+| 361 | [What is the output of prepend additive operator on falsy values](#what-is-the-output-of-prepend-additive-operator-on-falsy-values) |
+| 362 | [How do you create self string using special characters](#how-do-you-create-self-string-using-special-characters) |
+| 363 | [How do you remove falsy values from an array](#how-do-you-remove-falsy-values-from-an-array) |
+| 364 | [How do you get unique values of an array](#how-do-you-get-unique-values-of-an-array) |
+| 365 | [What is destructuring aliases](#what-is-destructuring-aliases) |
+| 366 | [How do you map the array values without using map method](#how-do-you-map-the-array-values-without-using-map-method) |
+| 367 | [How do you empty an array](#how-do-you-empty-an-array) |
+| 368 | [How do you round numbers to certain decimals](#how-do-you-round-numbers-to-certain-decimals) |
+| 369 | [What is the easiest way to convert an array to an object](#what-is-the-easiest-way-to-convert-an-array-to-an-object) |
+| 370 | [How do you create an array with some data](#how-do-you-create-an-array-with-some-data) |
+| 371 | [What are the placeholders from console object](#what-are-the-placeholders-from-console-object) |
+| 372 | [Is it possible to add CSS to console messages](#is-it-possible-to-add-css-to-console-messages) |
+| 373 | [What is the purpose of dir method of console object](#what-is-the-purpose-of-dir-method-of-console-object) |
+| 374 | [Is it possible to debug HTML elements in console](#is-it-possible-to-debug-html-elements-in-console) |
+| 375 | [How do you display data in a tabular format using console object](#how-do-you-display-data-in-a-tabular-format-using-console-object) |
+| 376 | [How do you verify that an argument is a Number or not](#how-do-you-verify-that-an-argument-is-a-number-or-not) |
+| 377 | [How do you create copy to clipboard button](#how-do-you-create-copy-to-clipboard-button) |
+| 378 | [What is the shortcut to get timestamp](#what-is-the-shortcut-to-get-timestamp) |
+| 379 | [How do you flattening multi dimensional arrays](#how-do-you-flattening-multi-dimensional-arrays) |
+| 380 | [What is the easiest multi condition checking](#what-is-the-easiest-multi-condition-checking) |
+| 381 | [How do you capture browser back button](#how-do-you-capture-browser-back-button) |
+| 382 | [How do you disable right click in the web page](#how-do-you-disable-right-click-in-the-web-page) |
+| 383 | [What are wrapper objects](#what-are-wrapper-objects) |
+| 384 | [What is AJAX](#what-is-ajax) |
+| 385 | [What are the different ways to deal with Asynchronous Code](#what-are-the-different-ways-to-deal-with-asynchronous-code) |
+| 386 | [How to cancel a fetch request](#how-to-cancel-a-fetch-request) |
+| 387 | [What is web speech API](#what-is-web-speech-api) |
+| 388 | [What is minimum timeout throttling](#what-is-minimum-timeout-throttling) |
+| 389 | [How do you implement zero timeout in modern browsers](#how-do-you-implement-zero-timeout-in-modern-browsers) |
+| 390 | [What are tasks in event loop](#what-are-tasks-in-event-loop) |
+| 391 | [What is microtask](#what-is-microtask) |
+| 392 | [What are different event loops](#what-are-different-event-loops) |
+| 393 | [What is the purpose of queueMicrotask](#what-is-the-purpose-of-queuemicrotask) |
+| 394 | [How do you use javascript libraries in typescript file](#how-do-you-use-javascript-libraries-in-typescript-file) |
+| 395 | [What are the differences between promises and observables](#what-are-the-differences-between-promises-and-observables) |
+| 396 | [What is heap](#what-is-heap) |
+| 397 | [What is an event table](#what-is-an-event-table) |
+| 398 | [What is a microTask queue](#what-is-a-microtask-queue) |
+| 399 | [What is the difference between shim and polyfill](#what-is-the-difference-between-shim-and-polyfill) |
+| 400 | [How do you detect primitive or non primitive value type](#how-do-you-detect-primitive-or-non-primitive-value-type) |
+| 401 | [What is babel](#what-is-babel) |
+| 402 | [Is Node.js completely single threaded](#is-nodejs-completely-single-threaded) |
+| 403 | [What are the common use cases of observables](#what-are-the-common-use-cases-of-observables) |
+| 404 | [What is RxJS](#what-is-rxjs) |
+| 405 | [What is the difference between Function constructor and function declaration](#what-is-the-difference-between-function-constructor-and-function-declaration) |
+| 406 | [What is a Short circuit condition](#what-is-a-short-circuit-condition) |
+| 407 | [What is the easiest way to resize an array](#what-is-the-easiest-way-to-resize-an-array) |
+| 408 | [What is an observable](#what-is-an-observable) |
+| 409 | [What is the difference between function and class declarations](#what-is-the-difference-between-function-and-class-declarations) |
+| 410 | [What is an async function](#what-is-an-async-function) |
+| 411 | [How do you prevent promises swallowing errors](#how-do-you-prevent-promises-swallowing-errors) |
+| 412 | [What is deno](#what-is-deno) |
+| 413 | [How do you make an object iterable in javascript](#how-do-you-make-an-object-iterable-in-javascript) |
+| 414 | [What is a Proper Tail Call](#what-is-a-proper-tail-call) |
+| 415 | [How do you check an object is a promise or not](#how-do-you-check-an-object-is-a-promise-or-not) |
+| 416 | [How to detect if a function is called as constructor](#how-to-detect-if-a-function-is-called-as-constructor) |
+| 417 | [What are the differences between arguments object and rest parameter](#what-are-the-differences-between-arguments-object-and-rest-parameter) |
+| 418 | [What are the differences between spread operator and rest parameter](#what-are-the-differences-between-spread-operator-and-rest-parameter) |
+| 419 | [What are the different kinds of generators](#what-are-the-different-kinds-of-generators) |
+| 420 | [What are the built-in iterables](#what-are-the-built-in-iterables) |
+| 421 | [What are the differences between for...of and for...in statements](#what-are-the-differences-between-forof-and-forin-statements) |
+| 422 | [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties) |
+| 423 | [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-numberisnan) |
+| 424 | [How to invoke an IIFE without any extra brackets?](#how-to-invoke-an-iife-without-any-extra-brackets) |
+| 425 | [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases) |
+| 426 | [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors) |
+| 427 | [How do style the console output using CSS?](#how-do-style-the-console-output-using-css) |
+| 428 | [What is nullish coalescing operator (??)?](#what-is-nullish-coalescing-operator-) |
+| 429 | [How do you group and nest console output?](#how-do-you-group-and-nest-console-output) |
+| 430 | [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays) |
+| 431 | [What are the different ways to create sparse arrays?](#what-are-the-different-ways-to-create-sparse-arrays) |
+| 432 | [What is the difference between setTimeout, setImmediate and process.nextTick?](#what-is-the-difference-between-settimeout-setimmediate-and-processnexttick) |
+| 433 | [How do you reverse an array without modifying original array?](#how-do-you-reverse-an-array-without-modifying-original-array) |
+| 434 | [How do you create custom HTML element?](#how-do-you-create-custom-html-element) |
+| 435 | [What is global execution context?](#what-is-global-execution-context) |
+| 436 | [What is function execution context?](#what-is-function-execution-context) |
+| 437 | [What is debouncing?](#what-is-debouncing) |
+| 438 | [What is throttling?](#what-is-throttling) |
+| 439 | [What is optional chaining?](#what-is-optional-chaining) |
+| 440 | [What is an environment record?](#what-is-an-environment-record) |
+| 441 | [How to verify if a variable is an array?](#how-to-verify-if-a-variable-is-an-array) |
+| 442 | [What is pass by value and pass by reference?](#what-is-pass-by-value-and-pass-by-reference) |
+| 443 | [What are the differences between primitives and non-primitives?](#what-are-the-differences-between-primitives-and-non-primitives) |
+| 444 | [How do you create your own bind method using either call or apply method?](#how-do-you-create-your-own-bind-method-using-either-call-or-apply-method) |
+| 445 | [What are the differences between pure and impure functions?](#what-are-the-differences-between-pure-and-impure-functions) |
+| 446 | [What is referential transparency?](#what-is-referential-transparency) |
+| 447 | [What are the possible side-effects in javascript?](#what-are-the-possible-side-effects-in-javascript) |
+| 448 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions) |
+| 449 | [What is module pattern?](#what-is-module-pattern) |
+| 450 | [What is Function Composition?](#what-is-function-composition) |
+| 451 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022) |
+| 452 | [What is the purpose of the this keyword in JavaScript?](#what-is-the-purpose-of-the-this-keyword-in-javascript) |
+| 453 | [What are the uses of closures?](#what-are-the-uses-of-closures) |
+| 454 | [What are the phases of execution context?](#what-are-the-phases-of-execution-context) |
+| 455 | [What are the possible reasons for memory leaks?](#what-are-the-possible-reasons-for-memory-leaks) |
+| 456 | [What are the optimization techniques of V8 engine?](#what-are-the-optimization-techniques-of-v8-engine) |
+| 457 | [What are the examples of built-in higher order functions?](#what-are-the-examples-of-built-in-higher-order-functions) |
+| 458 | [What are the benefits higher order functions?](#what-are-the-benefits-higher-order-functions) |
+| 459 | [How do you create polyfills for map, filter and reduce methods?](#how-do-you-create-polyfills-for-map-filter-and-reduce-methods) |
+| 460 | [What is the difference between map and forEach functions?](#what-is-the-difference-between-map-and-foreach-functions) |
+| 461 | [Give an example of statements affected by automatic semicolon insertion?](#give-an-example-of-statements-affected-by-automatic-semicolon-insertion) |
+| 462 | [What are the event phases of a browser?](#what-are-the-event-phases-of-a-browser) |
+| 463 | [What are the real world use cases of proxy?](#what-are-the-real-world-use-cases-of-proxy) |
+| 464 | [What are hidden classes?](#what-are-hidden-classes) |
+| 465 | [What is inline caching?](#what-is-inline-caching) |
+| 466 | [What are the different ways to execute external scripts?](#what-are-the-different-ways-to-execute-external-scripts) |
+| 467 | [What is Lexical Scope?](#what-is-lexical-scope) |
+| 468 | [How to detect system dark mode in javascript?](#how-to-detect-system-dark-mode-in-javascript) |
+| 469 | [What is the purpose of requestAnimationFrame method?](#what-is-the-purpose-of-requestanimationframe-method) |
+| 470 | [What is the difference between substring and substr methods?](#what-is-the-difference-between-substring-and-substr-methods) |
+| 471 | [How to find the number of parameters expected by a function?](#how-to-find-the-number-of-parameters-expected-by-a-function) |
+| 472 | [What is globalThis, and what is the importance of it?](#what-is-globalthis-and-what-is-the-importance-of-it) |
+| 473 | [What are the array mutation methods?](#what-are-the-array-mutation-methods) |
+| 474 | [What is module scope in JavaScript?](#what-is-module-scope-in-javascript) |
+| 475 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing) |
+| 476 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -595,32 +597,13 @@
 
        In this approach, create any function and apply the new operator to create object instances. This was the main way to do constructor-based OOP before ES6 classes.
 
-        ```javascript
-        const Singleton = (function () {
-        let instance;
-
-        function createInstance() {
-          return { name: "Sudheer" };
-        }
-
-        return {
-          getInstance: function () {
-            if (!instance) {
-              instance = createInstance();
-            }
-            return instance;
-          }
-        };
-        })();
-
-        // Usage
-        const obj1 = Singleton.getInstance();
-        const obj2 = Singleton.getInstance();
-
-        console.log(obj1 === obj2); // true
-        ```
-       In modern JavaScript applications, singletons are commonly implemented using ES6 modules for their built-in caching behavior, or closures for encapsulated state management.
-
+       ```javascript
+       function Person(name) {
+         this.name = name;
+         this.age = 21;
+       }
+       var object = new Person("Sudheer");
+       ```
     5. **Function constructor with prototype:**
 
        This is similar to function constructor but it uses prototype for their properties and methods. Using prototype means you're sharing methods/properties across instances, which saves memory and improve performance.
@@ -691,13 +674,32 @@
 
        A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance. This way one can ensure that they don't accidentally create multiple instances.
 
-       ```javascript
-       var object = new (function () {
-         this.name = "Sudheer";
-       })();
-       ```
+        ##### Singleton with Closure (Classic JS Pattern)
+        ```javascript
+        const Singleton = (function () {
+        let instance;
 
-      In modern apps, Singletons are often implemented using **modules** or **closures**.
+        function createInstance() {
+          return { name: "Sudheer" };
+        }
+
+        return {
+          getInstance: function () {
+            if (!instance) {
+              instance = createInstance();
+            }
+            return instance;
+          }
+        };
+        })();
+
+        // Usage
+        const obj1 = Singleton.getInstance();
+        const obj2 = Singleton.getInstance();
+
+        console.log(obj1 === obj2); // true
+        ```
+         In modern JavaScript applications, singletons are commonly implemented using ES6 modules for their built-in caching behavior, or closures for encapsulated state management.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -6562,7 +6564,7 @@
 
       A mixin is a way to add reusable functionality from one or more objects into a class or another object, without using classical inheritance. It promotes object composition by combining behaviors or properties from different sources into a single destination.
 
-      ### Mixin Example using Object composition
+352. ### Mixin Example using Object composition
       ```javascript
       // Define a mixin
       const canEat = {
@@ -6599,7 +6601,7 @@
       person.walk(); // Output: Walking...
       person.read(); // Output: Reading...
       ```
-      ### Benefits
+353. ### Benefits
       - Avoids deep inheritance hierarchies
       - Encourages composition over inheritance
       - Promotes reusable and modular code
@@ -6608,7 +6610,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-352. ### What is a thunk function
+354. ### What is a thunk function
 
       A thunk is just a function which delays the evaluation of the value. It doesn’t take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
 
@@ -6622,7 +6624,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-353. ### What are asynchronous thunks
+355. ### What are asynchronous thunks
 
       The asynchronous thunks are useful to make network requests. Let's see an example of network requests,
 
@@ -6646,7 +6648,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-354. ### What is the output of below function calls
+356. ### What is the output of below function calls
 
       **Code snippet:**
 
@@ -6671,7 +6673,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-355. ### How to remove all line breaks from a string
+357. ### How to remove all line breaks from a string
 
       The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
 
@@ -6685,13 +6687,13 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-356. ### What is the difference between reflow and repaint
+358. ### What is the difference between reflow and repaint
 
       A _repaint_ occurs when changes are made which affect the visibility of an element, but not its layout. Examples of this include outline, visibility, or background color. A _reflow_ involves changes that affect the layout of a portion of the page (or the whole page). Resizing the browser window, changing the font, content changing (such as user typing text), using JavaScript methods involving computed styles, adding or removing elements from the DOM, and changing an element's classes are a few of the things that can trigger reflow. Reflow of an element causes the subsequent reflow of all child and ancestor elements as well as any elements following it in the DOM.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-357. ### What happens with negating an array
+359. ### What happens with negating an array
 
       Negating an array with `!` character will coerce the array into a boolean. Since Arrays are considered to be truthy So negating it will return `false`.
 
@@ -6701,7 +6703,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-358. ### What happens if we add two arrays
+360. ### What happens if we add two arrays
 
       If you add two arrays together, it will convert them both to strings and concatenate them. For example, the result of adding arrays would be as below,
 
@@ -6713,7 +6715,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-359. ### What is the output of prepend additive operator on falsy values
+361. ### What is the output of prepend additive operator on falsy values
 
       If you prepend the additive(+) operator on falsy values(null, undefined, NaN, false, ""), the falsy value converts to a number value zero. Let's display them on browser console as below,
 
@@ -6727,7 +6729,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-360. ### How do you create self string using special characters
+362. ### How do you create self string using special characters
 
       The self string can be formed with the combination of `[]()!+` characters. You need to remember the below conventions to achieve this pattern.
 
@@ -6759,7 +6761,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-361. ### How do you remove falsy values from an array
+363. ### How do you remove falsy values from an array
 
       You can apply the filter method on the array by passing Boolean as a parameter. This way it removes all falsy values(0, undefined, null, false and "") from the array.
 
@@ -6770,7 +6772,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-362. ### How do you get unique values of an array
+364. ### How do you get unique values of an array
 
       You can get unique values of an array with the combination of `Set` and rest expression/spread(...) syntax.
 
@@ -6780,7 +6782,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-363. ### What is destructuring aliases
+365. ### What is destructuring aliases
 
       Sometimes you would like to have a destructured variable with a different name than the property name. In that case, you'll use a `: newName` to specify a name for the variable. This process is called destructuring aliases.
 
@@ -6792,7 +6794,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-364. ### How do you map the array values without using map method
+366. ### How do you map the array values without using map method
 
       You can map the array values without using the `map` method by just using the `from` method of Array. Let's map city names from Countries array,
 
@@ -6812,7 +6814,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-365. ### How do you empty an array
+367. ### How do you empty an array
 
       You can empty an array quickly by setting the array length to zero.
 
@@ -6823,7 +6825,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-366. ### How do you round numbers to certain decimals
+368. ### How do you round numbers to certain decimals
 
       You can round numbers to a certain number of decimals using `toFixed` method from native javascript.
 
@@ -6834,7 +6836,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-367. ### What is the easiest way to convert an array to an object
+369. ### What is the easiest way to convert an array to an object
 
       You can convert an array to an object with the same data using spread(...) operator.
 
@@ -6846,7 +6848,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-368. ### How do you create an array with some data
+370. ### How do you create an array with some data
 
       You can create an array with some data or an array with the same values using `fill` method.
 
@@ -6857,7 +6859,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-369. ### What are the placeholders from console object
+371. ### What are the placeholders from console object
 
       Below are the list of placeholders available from console object,
 
@@ -6877,7 +6879,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-370. ### Is it possible to add CSS to console messages
+372. ### Is it possible to add CSS to console messages
 
       Yes, you can apply CSS styles to console messages similar to html text on the web page.
 
@@ -6895,7 +6897,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-371. ### What is the purpose of dir method of console object
+373. ### What is the purpose of dir method of console object
 
       The `console.dir()` is used to display an interactive list of the properties of the specified JavaScript object as JSON.
 
@@ -6909,7 +6911,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-372. ### Is it possible to debug HTML elements in console
+374. ### Is it possible to debug HTML elements in console
 
       Yes, it is possible to get and debug HTML elements in the console just like inspecting elements.
 
@@ -6924,7 +6926,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-373. ### How do you display data in a tabular format using console object
+375. ### How do you display data in a tabular format using console object
 
       The `console.table()` is used to display data in the console in a tabular format to visualize complex arrays or objects.
 
@@ -6944,7 +6946,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-374. ### How do you verify that an argument is a Number or not
+376. ### How do you verify that an argument is a Number or not
 
       The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
 
@@ -6956,7 +6958,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-375. ### How do you create copy to clipboard button
+377. ### How do you create copy to clipboard button
 
       You need to select the content(using .select() method) of the input element and execute the copy command with execCommand (i.e, execCommand('copy')). You can also execute other system commands like cut and paste.
 
@@ -6971,7 +6973,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-376. ### What is the shortcut to get timestamp
+378. ### What is the shortcut to get timestamp
 
       You can use `new Date().getTime()` to get the current timestamp. There is an alternative shortcut to get the value.
 
@@ -6982,7 +6984,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-377. ### How do you flattening multi dimensional arrays
+379. ### How do you flattening multi dimensional arrays
 
       Flattening bi-dimensional arrays is trivial with Spread operator.
 
@@ -7027,7 +7029,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-378. ### What is the easiest multi condition checking
+380. ### What is the easiest multi condition checking
 
       You can use `indexOf` to compare input with multiple values instead of checking each value as one condition.
 
@@ -7049,7 +7051,7 @@
 
       **[⬆ Back to Top](#table-of-contents)**
 
-379. ### How do you capture browser back button
+381. ### How do you capture browser back button
 
       The `beforeunload` event is triggered when the window, the document and its resources are about to be unloaded. This event is helpful to warn users about losing the current data and detect back button event.
 
@@ -7081,7 +7083,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-380. ### How do you disable right click in the web page
+382. ### How do you disable right click in the web page
 
      The right click on the page can be disabled by returning false from the `oncontextmenu` attribute on the body element.
 
@@ -7091,7 +7093,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-381. ### What are wrapper objects
+383. ### What are wrapper objects
 
      Primitive Values like string,number and boolean don't have properties and methods but they are temporarily converted or coerced to an object(Wrapper object) when you try to perform actions on them. For example, if you apply toUpperCase() method on a primitive string value, it does not throw an error but returns uppercase of the string.
 
@@ -7105,13 +7107,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-382. ### What is AJAX
+384. ### What is AJAX
 
      AJAX stands for Asynchronous JavaScript and XML and it is a group of related technologies(HTML, CSS, JavaScript, XMLHttpRequest API etc) used to display data asynchronously. i.e. We can send data to the server and get data from the server without reloading the web page.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-383. ### What are the different ways to deal with Asynchronous Code
+385. ### What are the different ways to deal with Asynchronous Code
 
      Below are the list of different ways to deal with Asynchronous code.
 
@@ -7122,7 +7124,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-384. ### How to cancel a fetch request
+386. ### How to cancel a fetch request
 
      Until a few days back, One shortcoming of native promises is no direct way to cancel a fetch request. But the new `AbortController` from js specification allows you to use a signal to abort one or multiple fetch calls.
      The basic flow of cancelling a fetch request would be as below,
@@ -7162,7 +7164,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-385. ### What is web speech API
+387. ### What is web speech API
 
      Web speech API is used to enable modern browsers recognize and synthesize speech(i.e, voice data into web apps). This API was introduced by W3C Community in the year 2012. It has two main parts:
 
@@ -7199,7 +7201,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-386. ### What is minimum timeout throttling
+388. ### What is minimum timeout throttling
 
      Both browser and NodeJS javascript environments throttles with a minimum delay that is greater than 0ms. That means even though setting a delay of 0ms will not happen instantaneously.
      **Browsers:** They have a minimum delay of 4ms. This throttle occurs when successive calls are triggered due to callback nesting(certain depth) or after a certain number of successive intervals.
@@ -7241,13 +7243,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-387. ### How do you implement zero timeout in modern browsers
+389. ### How do you implement zero timeout in modern browsers
 
      You can't use setTimeout(fn, 0) to execute the code immediately due to minimum delay of greater than 0ms. But you can use window.postMessage() to achieve this behavior.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-388. ### What are tasks in event loop
+390. ### What are tasks in event loop
 
      A task is any javascript code/program which is scheduled to be run by the standard mechanisms such as initially starting to run a program, run an event callback, or an interval or timeout being fired. All these tasks are scheduled on a task queue.
      Below are the list of use cases to add tasks to the task queue,
@@ -7258,7 +7260,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-389. ### What is microtask
+391. ### What is microtask
      
      A microtask is a type of JavaScript callback that is scheduled to run immediately after the currently executing script and before the next event loop tick. Microtasks are executed after the current task completes and before any new tasks (macrotasks) are run. This ensures a fast and predictable update cycle.
 
@@ -7307,7 +7309,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-390. ### What are different event loops
+392. ### What are different event loops
 
      In JavaScript, there are multiple event loops that can be used depending on the context of your application. The most common event loops are:
 
@@ -7320,7 +7322,7 @@
 
   **[⬆ Back to Top](#table-of-contents)**
 
-391. ### What is the purpose of queueMicrotask
+393. ### What is the purpose of queueMicrotask
 
      The `queueMicrotask` function is used to schedule a microtask, which is a function that will be executed asynchronously in the microtask queue. The purpose of `queueMicrotask` is to ensure that a function is executed after the current task has finished, but before the browser performs any rendering or handles user events.
 
@@ -7340,7 +7342,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-392. ### How do you use javascript libraries in typescript file
+394. ### How do you use javascript libraries in typescript file
 
      It is known that not all JavaScript libraries or frameworks have TypeScript declaration files. But if you still want to use libraries or frameworks in your TypeScript files without getting compilation errors, the only solution is `declare` keyword along with a variable declaration. For example, let's imagine you have a library called `customLibrary` that doesn’t have a TypeScript declaration and have a namespace called `customLibrary` in the global namespace. You can use this library in typescript code as below,
 
@@ -7356,7 +7358,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-393. ### What are the differences between promises and observables
+395. ### What are the differences between promises and observables
 
      Some of the major difference in a tabular form
 
@@ -7370,7 +7372,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-394. ### What is heap
+396. ### What is heap
 
      Heap(Or memory heap) is the memory location where objects are stored when we define variables. i.e, This is the place where all the memory allocations and de-allocation take place. Both heap and call-stack are two containers of JS runtime.
      Whenever runtime comes across variables and function declarations in the code it stores them in the Heap.
@@ -7379,7 +7381,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-395. ### What is an event table
+397. ### What is an event table
 
      Event Table is a data structure that stores and keeps track of all the events which will be executed asynchronously like after some time interval or after the resolution of some API requests. i.e Whenever you call a setTimeout function or invoke async operation, it is added to the Event Table.
      It doesn't not execute functions on it’s own. The main purpose of the event table is to keep track of events and send them to the Event Queue as shown in the below diagram.
@@ -7388,14 +7390,14 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-396. ### What is a microTask queue
+398. ### What is a microTask queue
 
      Microtask Queue is the new queue where all the tasks initiated by promise objects get processed before the callback queue.
      The microtasks queue are processed before the next rendering and painting jobs. But if these microtasks are running for a long time then it leads to visual degradation.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-397. ### What is the difference between shim and polyfill
+399. ### What is the difference between shim and polyfill
 
      A shim is a library that brings a new API to an older environment, using only the means of that environment. It isn't necessarily restricted to a web application. For example, es5-shim.js is used to emulate ES5 features on older browsers (mainly pre IE9).
      Whereas polyfill is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively.
@@ -7403,7 +7405,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-398. ### How do you detect primitive or non primitive value type
+400. ### How do you detect primitive or non primitive value type
 
      In JavaScript, primitive types include boolean, string, number, BigInt, null, Symbol and undefined. Whereas non-primitive types include the Objects. But you can easily identify them with the below function,
 
@@ -7422,7 +7424,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-399. ### What is babel
+401. ### What is babel
 
      Babel is a JavaScript transpiler to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Some of the main features are listed below,
 
@@ -7432,25 +7434,25 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-400. ### Is Node.js completely single threaded
+402. ### Is Node.js completely single threaded
 
      Node is a single thread, but some of the functions included in the Node.js standard library(e.g, fs module functions) are not single threaded. i.e, Their logic runs outside of the Node.js single thread to improve the speed and performance of a program.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-401. ### What are the common use cases of observables
+403. ### What are the common use cases of observables
 
      Some of the most common use cases of observables are web sockets with push notifications, user input changes, repeating intervals, etc
 
      **[⬆ Back to Top](#table-of-contents)**
 
-402. ### What is RxJS
+404. ### What is RxJS
 
      RxJS (Reactive Extensions for JavaScript) is a library for implementing reactive programming using observables that makes it easier to compose asynchronous or callback-based code. It also provides utility functions for creating and working with observables.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-403. ### What is the difference between Function constructor and function declaration
+405. ### What is the difference between Function constructor and function declaration
 
      The functions which are created with `Function constructor` do not create closures to their creation contexts but they are always created in the global scope. i.e, the function can access its own local variables and global scope variables only. Whereas function declarations can access outer function variables(closures) too.
 
@@ -7482,7 +7484,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-404. ### What is a Short circuit condition
+406. ### What is a Short circuit condition
 
      Short circuit conditions are meant for condensed way of writing simple if statements. Let's demonstrate the scenario using an example. If you would like to login to a portal with an authentication condition, the expression would be as below,
 
@@ -7500,7 +7502,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-405. ### What is the easiest way to resize an array
+407. ### What is the easiest way to resize an array
 
      The length property of an array is useful to resize or empty an array quickly. Let's apply length property on number array to resize the number of elements from 5 to 2,
 
@@ -7524,7 +7526,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-406. ### What is an observable
+408. ### What is an observable
 
      An Observable is basically a function that can return a stream of values either synchronously or asynchronously to an observer over time. The consumer can get the value by calling `subscribe()` method.
      Let's look at a simple example of an Observable
@@ -7547,7 +7549,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-407. ### What is the difference between function and class declarations
+409. ### What is the difference between function and class declarations
 
      The main difference between function declarations and class declarations is `hoisting`. The function declarations are hoisted but not class declarations.
 
@@ -7569,7 +7571,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-408. ### What is an async function
+410. ### What is an async function
 
      An async function is a function declared with the `async` keyword which enables asynchronous, promise-based behavior to be written in a cleaner style by avoiding promise chains. These functions can contain zero or more `await` expressions.
 
@@ -7587,7 +7589,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-409. ### How do you prevent promises swallowing errors
+411. ### How do you prevent promises swallowing errors
 
      While using asynchronous code, JavaScript’s ES6 promises can make your life a lot easier without having callback pyramids and error handling on every second line. But Promises have some pitfalls and the biggest one is swallowing errors by default.
 
@@ -7670,7 +7672,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-410. ### What is deno
+412. ### What is deno
 
      Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 JavaScript engine and the Rust programming language. It solves the inherent problems of Node.Js and has been officially released in May 2018. Unlike Node.JS, by default Deno executes the code in a sandbox, which means that runtime has no access to below areas:
 
@@ -7681,7 +7683,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-411. ### How do you make an object iterable in javascript
+413. ### How do you make an object iterable in javascript
 
      By default, plain objects are not iterable. But you can make the object iterable by defining a `Symbol.iterator` property on it.
 
@@ -7736,7 +7738,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-412. ### What is a Proper Tail Call
+414. ### What is a Proper Tail Call
 
      First, we should know about tail call before talking about "Proper Tail Call". A tail call is a subroutine or function call performed as the final action of a calling function. Whereas **Proper tail call(PTC)** is a technique where the program or code will not create additional stack frames for a recursion when the function call is a tail call.
 
@@ -7768,7 +7770,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-413. ### How do you check an object is a promise or not
+415. ### How do you check an object is a promise or not
 
      If you don't know if a value is a promise or not, wrapping the value as `Promise.resolve(value)` which returns a promise
 
@@ -7807,7 +7809,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-414. ### How to detect if a function is called as constructor
+416. ### How to detect if a function is called as constructor
 
      You can use `new.target` pseudo-property to detect whether a function was called as a constructor(using the new operator) or as a regular function call.
 
@@ -7830,7 +7832,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-415. ### What are the differences between arguments object and rest parameter
+417. ### What are the differences between arguments object and rest parameter
 
      There are three main differences between arguments object and rest parameters
 
@@ -7840,13 +7842,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-416. ### What are the differences between spread operator and rest parameter
+418. ### What are the differences between spread operator and rest parameter
 
      Rest parameter collects all remaining elements into an array. Whereas Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. i.e, Rest parameter is opposite to the spread operator.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-417. ### What are the different kinds of generators
+419. ### What are the different kinds of generators
 
      There are five kinds of generators,
 
@@ -7915,7 +7917,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-418. ### What are the built-in iterables
+420. ### What are the built-in iterables
 
      Below are the list of built-in iterables in javascript,
 
@@ -7928,7 +7930,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-419. ### What are the differences between for...of and for...in statements
+421. ### What are the differences between for...of and for...in statements
 
      Both for...in and for...of statements iterate over js data structures. The only difference is over what they iterate:
 
@@ -7957,7 +7959,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-420. ### How do you define instance and non-instance properties
+422. ### How do you define instance and non-instance properties
 
      The Instance properties must be defined inside of class methods. For example, name and age properties defined inside constructor as below,
 
@@ -7979,7 +7981,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-421. ### What is the difference between isNaN and Number.isNaN?
+423. ### What is the difference between isNaN and Number.isNaN?
 
      1. **isNaN**: The global function `isNaN` converts the argument to a Number and returns true if the resulting value is NaN.
      2. **Number.isNaN**: This method does not convert the argument. But it returns true when the type is a Number and value is NaN.
@@ -7993,7 +7995,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-422. ### How to invoke an IIFE without any extra brackets?
+424. ### How to invoke an IIFE without any extra brackets?
 
      Immediately Invoked Function Expressions(IIFE) requires a pair of parenthesis to wrap the function which contains set of statements.
 
@@ -8013,7 +8015,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-423. ### Is that possible to use expressions in switch cases?
+425. ### Is that possible to use expressions in switch cases?
 
      You might have seen expressions used in switch condition but it is also possible to use for switch cases by assigning true value for the switch condition. Let's see the weather condition based on temperature as an example,
 
@@ -8034,7 +8036,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-424. ### What is the easiest way to ignore promise errors?
+426. ### What is the easiest way to ignore promise errors?
 
      The easiest and safest way to ignore promise errors is void that error. This approach is ESLint friendly too.
 
@@ -8044,7 +8046,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-425. ### How do style the console output using CSS?
+427. ### How do style the console output using CSS?
 
      You can add CSS styling to the console output using the CSS format content specifier %c. The console string message can be appended after the specifier and CSS style in another argument. Let's print the red color text using console.log and CSS specifier as below,
 
@@ -8063,7 +8065,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-426. ### What is nullish coalescing operator (??)?
+428. ### What is nullish coalescing operator (??)?
 
      It is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand. This can be contrasted with the logical OR (||) operator, which returns the right-hand side operand if the left operand is any falsy value, not only null or undefined.
 
@@ -8075,7 +8077,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-427. ### How do you group and nest console output?
+429. ### How do you group and nest console output?
 
      The `console.group()` can be used to group related log messages to be able to easily read the logs and use console.groupEnd()to close the group. Along with this, you can also nest groups which allows to output message in hierarchical manner.
 
@@ -8103,7 +8105,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-428. ### What is the difference between dense and sparse arrays?
+430. ### What is the difference between dense and sparse arrays?
 
      An array contains items at each index starting from first(0) to last(array.length - 1) is called as Dense array. Whereas if at least one item is missing at any index, the array is called as sparse.
 
@@ -8126,7 +8128,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-429. ### What are the different ways to create sparse arrays?
+431. ### What are the different ways to create sparse arrays?
 
      There are 4 different ways to create sparse arrays in JavaScript
 
@@ -8155,7 +8157,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-430. ### What is the difference between setTimeout, setImmediate and process.nextTick?
+432. ### What is the difference between setTimeout, setImmediate and process.nextTick?
 
      1. **Set Timeout:** setTimeout() is to schedule execution of a one-time callback after delay milliseconds.
      2. **Set Immediate:** The setImmediate function is used to execute a function right after the current event loop finishes.
@@ -8163,7 +8165,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-431. ### How do you reverse an array without modifying original array?
+433. ### How do you reverse an array without modifying original array?
 
      The `reverse()` method reverses the order of the elements in an array but it mutates the original array. Let's take a simple example to demonistrate this case,
 
@@ -8241,7 +8243,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-432. ### How do you create custom HTML element?
+434. ### How do you create custom HTML element?
 
      The creation of custom HTML elements involves two main steps,
 
@@ -8266,7 +8268,7 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-433. ### What is global execution context?
+435. ### What is global execution context?
 
      The global execution context is the default or first execution context that is created by the JavaScript engine before any code is executed(i.e, when the file first loads in the browser). All the global code that is not inside a function or object will be executed inside this global execution context. Since JS engine is single threaded there will be only one global environment and there will be only one global execution context.
 
@@ -8292,13 +8294,13 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-434. ### What is function execution context?
+436. ### What is function execution context?
 
      Whenever a function is invoked, the JavaScript engine creates a different type of Execution Context known as a Function Execution Context (FEC) within the Global Execution Context (GEC) to evaluate and execute the code within that function.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-435. ### What is debouncing?
+437. ### What is debouncing?
 
      Debouncing is a programming pattern that allows delaying execution of some piece of code until a specified time to avoid unnecessary _CPU cycles and API calls_. This in turn enhance the web page performance. The debounce function make sure that your code is only triggered once per user input. The common usecases are Search box suggestions, text-field auto-saves, and eliminating double-button clicks.
 
@@ -8342,7 +8344,7 @@ window.addEventListener("scroll", processChange);
 
 **[⬆ Back to Top](#table-of-contents)**
 
-436. ### What is throttling?
+438. ### What is throttling?
 
      Throttling is a technique used to limit the execution of an event handler function in a given period of time, even when this event triggers continuously due to user actions. The common use cases are browser resizing, window scrolling, mouse movements etc.
 
@@ -8366,7 +8368,7 @@ window.addEventListener("scroll", processChange);
 
      **[⬆ Back to Top](#table-of-contents)**
 
-437. ### What is optional chaining?
+439. ### What is optional chaining?
 
      According to MDN official docs, the optional chaining operator (?.) permits reading the value of a property located deep within a chain of connected objects without having to expressly validate that each reference in the chain is valid.
 
@@ -8390,7 +8392,7 @@ window.addEventListener("scroll", processChange);
 
      **[⬆ Back to Top](#table-of-contents)**
 
-438. ### What is an environment record?
+440. ### What is an environment record?
 
      According to ECMAScript specification 262 (9.1):
 
@@ -8402,7 +8404,7 @@ window.addEventListener("scroll", processChange);
 
      **[⬆ Back to Top](#table-of-contents)**
 
-439. ### How to verify if a variable is an array?
+441. ### How to verify if a variable is an array?
 
      It is possible to check if a variable is an array instance using 3 different ways,
 
@@ -8441,7 +8443,7 @@ window.addEventListener("scroll", processChange);
 
      **[⬆ Back to Top](#table-of-contents)**
 
-440. ### What is pass by value and pass by reference?
+442. ### What is pass by value and pass by reference?
 
      Pass-by-value creates a new space in memory and makes a copy of a value. Primitives such as string, number, boolean etc will actually create a new copy. Hence, updating one value doesn't impact the other value. i.e, The values are independent of each other.
 
@@ -8472,7 +8474,7 @@ window.addEventListener("scroll", processChange);
 
      **[⬆ Back to Top](#table-of-contents)**
 
-441. ### What are the differences between primitives and non-primitives?
+443. ### What are the differences between primitives and non-primitives?
 
      JavaScript language has both primitives and non-primitives but there are few differences between them as below,
 
@@ -8486,7 +8488,7 @@ window.addEventListener("scroll", processChange);
 
      **[⬆ Back to Top](#table-of-contents)**
 
-442. ### How do you create your own bind method using either call or apply method?
+444. ### How do you create your own bind method using either call or apply method?
 
      The custom bind function needs to be created on Function prototype inorder to use it as other builtin functions. This custom function should return a function similar to original bind method and the implementation of inner function needs to use apply method call.
 
@@ -8506,7 +8508,7 @@ window.addEventListener("scroll", processChange);
 
      **[⬆ Back to Top](#table-of-contents)**
 
-443. ### What are the differences between pure and impure functions?
+445. ### What are the differences between pure and impure functions?
 
      Some of the major differences between pure and impure function are as below,
 
@@ -8518,7 +8520,7 @@ window.addEventListener("scroll", processChange);
 
 **[⬆ Back to Top](#table-of-contents)**
 
-444. ### What is referential transparency?
+446. ### What is referential transparency?
 
 An expression in javascript that can be replaced by its value without affecting the behaviour of the program is called referential transparency. Pure functions are referentially transparent.
 
@@ -8533,7 +8535,7 @@ multiplyBy2(add(2, 3));
 
 **[⬆ Back to Top](#table-of-contents)**
 
-445. ### What are the possible side-effects in javascript?
+447. ### What are the possible side-effects in javascript?
 
      A side effect is the modification of the state through the invocation of a function or expression. These side effects make our function impure by default. Below are some side effects which make function impure,
 
@@ -8546,13 +8548,13 @@ multiplyBy2(add(2, 3));
 
 **[⬆ Back to Top](#table-of-contents)**
 
-446. ### What are compose and pipe functions?
+448. ### What are compose and pipe functions?
 
      The "compose" and "pipe" are two techniques commonly used in functional programming to simplify complex operations and make code more readable. They are not native to JavaScript and higher-order functions. the `compose()` applies right to left any number of functions to the output of the previous function.
 
      **[⬆ Back to Top](#table-of-contents)**
 
-447. ### What is module pattern?
+449. ### What is module pattern?
 
      Module pattern is a designed pattern used to wrap a set of variables and functions together in a single scope returned as an object. JavaScript doesn't have access specifiers similar to other languages(Java, Python, etc) to provide private scope. It uses IIFE (Immediately invoked function expression) to allow for private scopes. i.e., a closure that protect variables and methods.
 
@@ -8597,7 +8599,7 @@ multiplyBy2(add(2, 3));
 
      **[⬆ Back to Top](#table-of-contents)**
 
-448. ### What is Function Composition?
+450. ### What is Function Composition?
 
      It is an approach where the result of one function is passed on to the next function, which is passed to another until the final function is executed for the final result.
 
@@ -8616,7 +8618,7 @@ multiplyBy2(add(2, 3));
 
      **[⬆ Back to Top](#table-of-contents)**
 
-449. ### How to use await outside of async function prior to ES2022?
+451. ### How to use await outside of async function prior to ES2022?
 
      Prior to ES2022, if you attempted to use an await outside of an async function resulted in a SyntaxError.
 
@@ -8640,7 +8642,7 @@ multiplyBy2(add(2, 3));
 
 **[⬆ Back to Top](#table-of-contents)**
 
-450. ### What is the purpose of the this keyword in JavaScript?
+452. ### What is the purpose of the this keyword in JavaScript?
 
 - The `this` keyword in JavaScript is a special variable that is used within a function to refer to the object on which the function is invoked. The value of this depends on how the function is called. It allows functions to access and interact with the object they are bound to.
 - The this keyword in JavaScript is a reference to the object that owns or invokes the current function. Its value is determined by the calling context.
@@ -8692,7 +8694,7 @@ multiplyBy2(add(2, 3));
 
 **[⬆ Back to Top](#table-of-contents)**
 
-451. ### What are the uses of closures?
+453. ### What are the uses of closures?
      Closures are a powerful feature in programming languages like JavaScript. They allow functions to retain access to variables from their containing (enclosing) scope even after the outer function has finished executing. This means that a function defined within another function can access variables from the outer function, even if the outer function has already returned.
      Here are some common use cases of closures:
 
@@ -8708,7 +8710,7 @@ multiplyBy2(add(2, 3));
 
 **[⬆ Back to Top](#table-of-contents)**
 
-452. ### What are the phases of execution context?
+454. ### What are the phases of execution context?
      The execution context in JavaScript is a data structure that stores the information necessary for executing a piece of code. It includes the code itself, the values of the variables used in the code, and the scope chain. The scope chain is a list of objects that are used to resolve variable names.
 
 The execution context has two phases:
@@ -8720,7 +8722,7 @@ The execution context is created when a function is called. The function's code 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-453. ### What are the possible reasons for memory leaks?
+455. ### What are the possible reasons for memory leaks?
 
      Memory leaks can lead to poor performance, slow loading times and even crashes in web applications. Some of the common causes of memory leaks are listed below,
 
@@ -8728,7 +8730,7 @@ The execution context is created when a function is called. The function's code 
      2. Forgetting to clear the timers set up by `setTimeout` or `setInterval`.
      3. Closures retain references to variables from their parent scope, which leads to variables might not garbage collected even they are no longer used.
 
-454. ### What are the optimization techniques of V8 engine?
+456. ### What are the optimization techniques of V8 engine?
 
      V8 engine uses the below optimization techniques.
 
@@ -8738,7 +8740,7 @@ The execution context is created when a function is called. The function's code 
 
      **[⬆ Back to Top](#table-of-contents)**
 
-455. ### What are the examples of built-in higher order functions?
+457. ### What are the examples of built-in higher order functions?
 
      There are several built-in higher order functions exists on arrays, strings, DOM and promise methods in javascript. These higher order functions provides significant level of abstraction. The list of functions on these categories are listed below,
 
@@ -8748,7 +8750,7 @@ The execution context is created when a function is called. The function's code 
 
      **[⬆ Back to Top](#table-of-contents)**
 
-456. ### What are the benefits higher order functions?
+458. ### What are the benefits higher order functions?
      The main benefits of higher order functions are:
      1. Abstraction
      2. Reusability
@@ -8757,7 +8759,7 @@ The execution context is created when a function is called. The function's code 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-457. ### How do you create polyfills for map, filter and reduce methods?
+459. ### How do you create polyfills for map, filter and reduce methods?
 
 The polyfills for array methods such as map, filter and reduce methods can be created using array prototype.
 
@@ -8862,7 +8864,7 @@ The polyfills for array methods such as map, filter and reduce methods can be cr
 
     **[⬆ Back to Top](#table-of-contents)**
 
-458. ### What is the difference between map and forEach functions?
+460. ### What is the difference between map and forEach functions?
 
     Both map and forEach functions are used to iterate over an arrays but there are some differences in their functionality.
 
@@ -8890,7 +8892,7 @@ The polyfills for array methods such as map, filter and reduce methods can be cr
 
 **[⬆ Back to Top](#table-of-contents)**
 
-459. ### Give an example of statements affected by automatic semicolon insertion?
+461. ### Give an example of statements affected by automatic semicolon insertion?
 
      The javascript parser will automatically add a semicolon while parsing the source code. For example, the below common statements affected by Automatic Semicolon Insertion(ASI).
 
@@ -8905,7 +8907,7 @@ The polyfills for array methods such as map, filter and reduce methods can be cr
 
 **[⬆ Back to Top](#table-of-contents)**
 
-460. ### What are the event phases of a browser?
+462. ### What are the event phases of a browser?
 
      There are 3 phases in the lifecycle of an event propagation in JavaScript,
 
@@ -8921,7 +8923,7 @@ The polyfills for array methods such as map, filter and reduce methods can be cr
 
 **[⬆ Back to Top](#table-of-contents)**
 
-461. ### What are the real world use cases of proxy?
+463. ### What are the real world use cases of proxy?
 
      Proxies are not used in regular day to day JavaScript work but they enabled many exciting programming patterns. Some of the real world use cases are listed below,
 
@@ -8932,7 +8934,7 @@ The polyfills for array methods such as map, filter and reduce methods can be cr
 
 **[⬆ Back to Top](#table-of-contents)**
 
-462. ### What are hidden classes?
+464. ### What are hidden classes?
 
      Since JavaScript is a dynamic programming language, you can add or remove properties and methods from objects on the fly at runtime. This nature of JavaScript increases the dynamic dictionary lookups(because objects implemented as HashTables in memory) for retrieving a property on an object.
 
@@ -8963,7 +8965,7 @@ The polyfills for array methods such as map, filter and reduce methods can be cr
 
 **[⬆ Back to Top](#table-of-contents)**
 
-463. ### What is inline caching?
+465. ### What is inline caching?
 
 Inline caching is an optimization technique based on the observation that repeated calls to same function tends to occur on same type of objects. The V8 compiler stores a cache of the type of objects that were passed as a parameter in recent method calls. Upon next time when same function is called, compiler can directly search for the type in cache.
 
@@ -8990,7 +8992,7 @@ There are mainly 3 types of inline caching possible:
 
 **[⬆ Back to Top](#table-of-contents)**
 
-464. ### What are the different ways to execute external scripts?
+466. ### What are the different ways to execute external scripts?
 
      There are three different ways to execute external scripts,
 
@@ -9016,7 +9018,7 @@ There are mainly 3 types of inline caching possible:
 
      **[⬆ Back to Top](#table-of-contents)**
 
-465. ### What is Lexical Scope?
+467. ### What is Lexical Scope?
 
      Lexical scope is the ability for a function scope to access variables from the parent scope.
 
@@ -9036,7 +9038,7 @@ There are mainly 3 types of inline caching possible:
 
      **[⬆ Back to Top](#table-of-contents)**
 
-466. ### How to detect system dark mode in javascript?
+468. ### How to detect system dark mode in javascript?
 
      The combination of `Window.matchMedia()` utility method along with media query is used to check if the user has selected a dark color scheme in their operating system settings or not. The CSS media query `prefers-color-scheme` needs to be passed to identify system color theme.
 
@@ -9062,7 +9064,7 @@ There are mainly 3 types of inline caching possible:
 
      **[⬆ Back to Top](#table-of-contents)**
 
-467. ### What is the purpose of requestAnimationFrame method?
+469. ### What is the purpose of requestAnimationFrame method?
      The requestAnimationFrame() method in JavaScript is used to schedule a function to be called before the next repaint of the browser window, allowing you to create smooth, efficient animations. It's primarily used for animations and visual updates, making it an essential tool for improving performance when you're animating elements on the web.
 
 ```javascript
@@ -9084,7 +9086,7 @@ requestAnimationFrame(animate);
 
 **[⬆ Back to Top](#table-of-contents)**
 
-468. ### What is the difference between substring and substr methods?
+470. ### What is the difference between substring and substr methods?
      There are subtle differences between the substring() and substr() methods, so you should be careful not to get them confused.
 
 - The two parameters of substr() are start and length, while for substring(), they are start and end.
@@ -9101,7 +9103,7 @@ console.log(text.substr(2, 3)); // "zil"
 
 **[⬆ Back to Top](#table-of-contents)**
 
-469. ### How to find the number of parameters expected by a function?
+471. ### How to find the number of parameters expected by a function?
      The function's object has a **length** property which tells you how many formal parameters expected by a function. This is a static value defined by the function, not the number of arguments the function is called with(**arguments.length**). The basic usage of length propery is,
 
 ```javascript
@@ -9151,7 +9153,7 @@ But there are few important rules which needs to be noted while using length pro
 
 **[⬆ Back to Top](#table-of-contents)**
 
-470. ### What is globalThis, and what is the importance of it?
+472. ### What is globalThis, and what is the importance of it?
 
      Nowadays JavaScript language is used in a wide variety of environments and each environment has its own object model. Due to this fact, there are different ways(syntax) to access the global object.
 
@@ -9174,7 +9176,7 @@ console.log(globalThis); // => DedicatedWorkerGlobalScope {...}
 
 **[⬆ Back to Top](#table-of-contents)**
 
-471. ### What are the array mutation methods?
+473. ### What are the array mutation methods?
      JavaScript array methods can be categorized into two groups:
 1. Mutating methods: These are the methods that directly modify the original array.
 1. Non-mutating methods: These methods return a new array without altering the original one.
@@ -9193,7 +9195,7 @@ There are 9 methods in total that mutate the arrays,
 
 **[⬆ Back to Top](#table-of-contents)**
 
-472. ### What is module scope in JavaScript?
+474. ### What is module scope in JavaScript?
      Module scope is a feature introduced with ES6 (ES2015) modules that creates a scope specific to a module file, isolating variables and functions declared within it from the global scope and other modules. Variables and functions declared in a module are private by default and can only be accessed by other modules if they are explicitly exported.
 
 Key characteristics of module scope:
@@ -9241,7 +9243,7 @@ Common use cases and benefits:
 
 **[⬆ Back to Top](#table-of-contents)**
 
-473. ### What are shadowing and illegal shadowing?
+475. ### What are shadowing and illegal shadowing?
      
      Both **shadowing** and **illegal shadowing** refer to how variable names can "hide" or override others within nested scopes.
 
@@ -9283,7 +9285,7 @@ Common use cases and benefits:
       ```
 **[⬆ Back to Top](#table-of-contents)**
 
-474. ### Why is it important to remove event listeners after use?
+476. ### Why is it important to remove event listeners after use?
      
   In JavaScript, you need to be mindful of removing event listeners to avoid memory leaks — especially in long-lived apps like single-page applications (SPAs) or when working with frameworks/libraries. Eventhough JavaScript has automatic garbage collection, memory leaks can still happen if:
 
