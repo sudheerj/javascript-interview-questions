@@ -705,10 +705,29 @@
 
 2. ### What is a prototype chain
 
-    The **Prototype chain** is a fundamental inheritance mechanism that enables objects to access properties and methods from other objects. When a property or method is accessed on an object, JavaScript first checks if it exists directly on that object. If not, it traverses up the prototype chain—following the object's internal **[[Prototype]]** reference—until it either finds the requested member or reaches the end of the chain (typically null)
+    The prototype chain is a core concept in JavaScript’s inheritance model. It allows objects to inherit properties and methods from other objects. When you try to access a property or method on an object, JavaScript first looks for it on that object itself. If it’s not found, the engine looks up the object's internal `[[Prototype]]` reference (accessible via `Object.getPrototypeOf(obj)` or the deprecated `__proto__` property) and continues searching up the chain until it finds the property or reaches the end (usually `null`).
 
-    The prototype on object instance is available through **Object.getPrototypeOf(object)** or **\_\_proto\_\_** property whereas prototype on constructor function is available through **Object.prototype**.
+    For objects created via constructor functions, the prototype chain starts with the instance, then refers to the constructor’s `.prototype` object, and continues from there. For example:
 
+    ```javascript
+    function Person() {}
+    const person1 = new Person();
+
+    console.log(Object.getPrototypeOf(person1) === Person.prototype); // true
+    ```
+
+    This mechanism allows for property and method sharing among objects, enabling code reuse and a form of inheritance.
+
+    **Summary:**
+
+    *   The prototype chain enables inheritance in JavaScript.
+    *   If a property isn’t found on an object, JavaScript looks up its prototype chain.
+    *   The prototype of an object instance can be accessed with `Object.getPrototypeOf(obj)` or `__proto__`.
+    *   The prototype of a constructor function is available via `Constructor.prototype`.
+    *   The chain ends when the prototype is `null`.
+
+    The prototype chain among objects appears as below, 
+    
     ![Screenshot](images/prototype_chain.png)
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -1617,31 +1636,39 @@
     **[⬆ Back to Top](#table-of-contents)**
 
 52. ### What is a promise
+    A **Promise** is a JavaScript object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. It acts as a placeholder for a value that may not be available yet but will be resolved in the future.
 
-    A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved (i.e. rejected, that means for example, due to a network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
+    A Promise can be in one of **three states**:
+    - `pending`: Initial state, neither fulfilled nor rejected.
+    - `fulfilled`: The operation completed successfully.
+    - `rejected`: The operation failed (e.g., due to a network error).
 
-    The syntax of Promise creation looks like below,
+
+    #### Promise Syntax
 
     ```javascript
     const promise = new Promise(function (resolve, reject) {
-      // promise description
+      // Perform async operation
     });
     ```
-
-    The usage of a promise would be as below,
-
+    #### Example: Creating and Using a Promise
     ```javascript
-    const promise = new Promise(
-      (resolve) => {
-        setTimeout(() => {
-          resolve("I'm a Promise!");
-        }, 5000);
-      },
-      (reject) => {}
-    );
+    const promise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve("I'm a Promise!");
+      }, 5000);
+    });
 
-    promise.then((value) => console.log(value));
+    promise
+      .then((value) => console.log(value)); // Logs after 5 seconds: "I'm a Promise!"
+      .catch((error) => console.error(error))  // Handles any rejection
+      .finally(() => console.log("Done"));     // Runs regardless of success or failure
     ```
+    In the above example:
+
+    *   A `Promise` is created to handle an asynchronous operation with `resolve` and `reject` callbacks.
+    *   The `setTimeout` resolves the promise with a value after 5 seconds.
+    *   `.then()`, `.catch()`, and `.finally()` are used to handle success, errors, and cleanup respectively.
 
     The action flow of a promise will be as below,
 
@@ -1650,12 +1677,18 @@
     **[⬆ Back to Top](#table-of-contents)**
 
 53. ### Why do you need a promise
+    Promises are **used to handle asynchronous operations**, especially in languages like JavaScript, which often work with non-blocking operations such as network requests, file I/O, and timers. When an operation is asynchronous, it doesn't immediately return a result; instead, it works in the background and provides the result later. Handling this in a clean, organized way can be difficult without a structured approach.
 
-    Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
+    Promises are used to:
+
+    1.  **Handle asynchronous operations**.
+    2.  **Provide a cleaner alternative to callbacks**.
+    3.  **Avoid callback hell**.
+    4.  **Make code more readable and maintainable**.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-54. ### What are the three states of promise
+54. ### Explain the three states of promise
 
     Promises have three states:
 
