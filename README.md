@@ -101,7 +101,7 @@
 | 51 | [What are the restrictions of web workers on DOM](#what-are-the-restrictions-of-web-workers-on-dom) |
 | 52 | [What is a promise](#what-is-a-promise) |
 | 53 | [Why do you need a promise](#why-do-you-need-a-promise) |
-| 54 | [What are the three states of promise](#what-are-the-three-states-of-promise) |
+| 54 | [Explain the three states of promise](#explain-the-three-states-of-promise) |
 | 55 | [What is a callback function](#what-is-a-callback-function) |
 | 56 | [Why do we need callbacks](#why-do-we-need-callbacks) |
 | 57 | [What is a callback hell](#what-is-a-callback-hell) |
