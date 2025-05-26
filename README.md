@@ -846,127 +846,196 @@
 
 4. ### What is JSON and its common operations
 
-    **JSON** is a text-based data format following JavaScript object syntax, which was popularized by `Douglas Crockford`. It is useful when you want to transmit data across a network. It is basically just a text file with an extension of .json, and a MIME type of application/json
+    **JSON (JavaScript Object Notation)** is a lightweight, text-based data format that uses JavaScript object syntax for structuring data. It was popularized by Douglas Crockford and is widely used for transmitting data between a server and a client in web applications. JSON files typically have a `.json` extension and use the MIME type `application/json`. 
 
-    **Parsing:** Converting a string to a native object
+    #### Common Operations with JSON
 
-    ```javascript
-    JSON.parse(text);
-    ```
+    1. **Parsing**: Transforming a JSON-formatted string into a native JavaScript object.
+      ```js
+      const obj = JSON.parse(jsonString);
+      ```
+      - Example:  
+        ```js
+        const jsonString = '{"name":"John","age":30}';
+        const obj = JSON.parse(jsonString);  // { name: "John", age: 30 }
+        ```
 
-    **Stringification:** Converting a native object to a string so that it can be transmitted across the network
-
-    ```javascript
-    JSON.stringify(object);
-    ```
+    2. **Stringification**: Converting a JavaScript object into a JSON-formatted string, commonly used for data transmission or storage.
+      ```js
+      const jsonString = JSON.stringify(object);
+      ```
+      - Example:  
+        ```js
+        const obj = { name: "Jane", age: 25 };
+        const jsonString = JSON.stringify(obj);  // '{"name":"Jane","age":25}'
+        ```
 
     **[⬆ Back to Top](#table-of-contents)**
 
 5. ### What is the purpose of the array slice method
 
-    The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end of the array. This method can also accept negative index which counts back from the end of the array.
+    The `slice()` method in JavaScript is used to extract a section of an array, returning a new array containing the selected elements. It does not modify the original array. The method takes two arguments:
 
-    Some of the examples of this method are,
+    - **start**: The index at which extraction begins (inclusive).
+    - **end** (optional): The index before which to end extraction (exclusive). If omitted, extraction continues to the end of the array.
 
-    ```javascript
+    You can also use negative indices, which count from the end of the array.
+
+    #### Examples:
+
+    ```js
     let arrayIntegers = [1, 2, 3, 4, 5];
-    let arrayIntegers1 = arrayIntegers.slice(0, 2); // returns [1,2]
-    let arrayIntegers2 = arrayIntegers.slice(2, 3); // returns [3]
-    let arrayIntegers3 = arrayIntegers.slice(4); //returns [5]
-    let arrayIntegers4 = arrayIntegers.slice(-3, -1); //returns [3, 4]
+
+    let arrayIntegers1 = arrayIntegers.slice(0, 2);    // [1, 2]
+    let arrayIntegers2 = arrayIntegers.slice(2, 3);    // [3]
+    let arrayIntegers3 = arrayIntegers.slice(4);       // [5]
+    let arrayIntegers4 = arrayIntegers.slice(-3, -1);  // [3, 4]
     ```
 
-    **Note:** Slice method doesn't mutate the original array but it returns the subset as a new array.
+    **Note:**  
+    The `slice()` method does **not** mutate (change) the original array; instead, it returns a new array containing the extracted elements.
 
     **[⬆ Back to Top](#table-of-contents)**
 
 6. ### What is the purpose of the array splice method
 
-    The **splice()** method adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position/index for insertion or deletion whereas the optional second argument indicates the number of elements to be deleted. Each additional argument is added to the array.
+    The `splice()` method in JavaScript is used to add, remove, or replace elements within an array. Unlike `slice()`, which creates a shallow copy and does not alter the original array, `splice()` **modifies the original array in place** and returns an array containing the removed elements.
 
-    Some of the examples of this method are:
+    #### Syntax
+
+    ```javascript
+    array.splice(start, deleteCount, item1, item2, ...)
+    ```
+    - **start:** The index at which to start changing the array.
+    - **deleteCount:** (Optional) The number of elements to remove from the array. If omitted, all elements from the start index to the end of the array will be removed.
+    - **item1, item2, ...:** (Optional) Elements to add to the array, starting at the start position.
+
+    #### Examples
 
     ```javascript
     let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
     let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
     let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
 
-    let arrayIntegers1 = arrayIntegersOriginal1.splice(0, 2); // returns [1, 2]; original array: [3, 4, 5]
-    let arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
-    let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); //returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
+    // Remove the first two elements
+    let arrayIntegers1 = arrayIntegersOriginal1.splice(0, 2); 
+    // arrayIntegers1: [1, 2]
+    // arrayIntegersOriginal1 (after): [3, 4, 5]
+
+    // Remove all elements from index 3 onwards
+    let arrayIntegers2 = arrayIntegersOriginal2.splice(3);     
+    // arrayIntegers2: [4, 5]
+    // arrayIntegersOriginal2 (after): [1, 2, 3]
+
+    // Remove 1 element at index 3, then insert "a", "b", "c" at that position
+    let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); 
+    // arrayIntegers3: [4]
+    // arrayIntegersOriginal3 (after): [1, 2, 3, "a", "b", "c", 5]
     ```
 
-    **Note:** Splice method modifies the original array and returns the deleted array.
+    **Note:**  
+    - The `splice()` method **modifies the original array**.
+    - It returns an array containing the elements that were removed (if any).
+    - You can use it both to remove and insert elements in a single operation.
 
     **[⬆ Back to Top](#table-of-contents)**
 
 7. ### What is the difference between slice and splice
+   
+    Here are the key differences between `slice()` and `splice()` methods in JavaScript arrays:
 
-    Some of the major differences in a tabular form:
+    | `slice()`                                         | `splice()`                                          |
+    | ------------------------------------------------- | --------------------------------------------------- |
+    | Does **not** modify the original array (immutable) | Modifies the original array (mutable)               |
+    | Returns a **shallow copy** (subset) of selected elements | Returns an array of the **removed** elements           |
+    | Used to **extract** elements from an array         | Used to **add**, **remove**, or **replace** elements in an array |
+    | Syntax: `array.slice(start, end)`                  | Syntax: `array.splice(start, deleteCount, ...items)`             |
 
-    | Slice                                        | Splice                                       |
-    | -------------------------------------------- | -------------------------------------------- |
-    | Doesn't modify the original array(immutable) | Modifies the original array(mutable)         |
-    | Returns the subset of original array         | Returns the deleted elements as array        |
-    | Used to pick the elements from array         | Used to insert/delete elements to/from array |
+    **Summary:**  
+    - Use `slice()` when you want to copy or extract elements without altering the original array.
+    - Use `splice()` when you need to add, remove, or replace elements and want to change the original array.
 
     **[⬆ Back to Top](#table-of-contents)**
 
 8. ### How do you compare Object and Map
 
-    **Objects** are similar to **Maps** in that both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. Due to this reason, Objects have been used as Maps historically. But there are important differences that make using a Map preferable in certain cases:
+    **Objects** and **Maps** both allow you to associate keys with values, retrieve those values, delete keys, and check if a key exists. Historically, Objects have been used as Maps, but there are several key differences that make `Map` a better choice in certain scenarios:
 
-    1. The keys of an Object can be Strings and Symbols, whereas they can be any value for a Map, including functions, objects, and any primitive type.
-    2. The keys in a Map are ordered while keys added to Object are not. Thus, when iterating over it, a Map object returns keys in the order of insertion.
-    3. You can get the size of a Map easily with the size property, while the number of properties in an Object must be determined manually.
-    4. A Map is an iterable and can thus be directly iterated, whereas iterating over an Object requires obtaining its keys in some fashion and iterating over them.
-    5. An Object has a prototype, so there are default keys in an object that could collide with your keys if you're not careful. As of ES5 this can be bypassed by creating an object(which can be called a map) using `Object.create(null)`, but this practice is seldom done.
-    6. A Map may perform better in scenarios involving frequent addition and removal of key pairs.
+    | Feature                  | Object                                              | Map                                                      |
+    |--------------------------|-----------------------------------------------------|----------------------------------------------------------|
+    | **Key Types**            | Only strings and symbols are valid keys             | Any value can be used as a key (objects, functions, primitives) |
+    | **Key Order**            | Keys are unordered (in practice, insertion order is mostly preserved for string keys, but not guaranteed) | Keys are ordered by insertion; iteration follows insertion order |
+    | **Size Property**        | No built-in way to get the number of keys; must use `Object.keys(obj).length` | Use the `.size` property for the number of entries        |
+    | **Iterability**          | Not directly iterable; must use `Object.keys`, `Object.values`, or `Object.entries` | Directly iterable with `for...of`, `.keys()`, `.values()`, `.entries()` |
+    | **Prototype**            | Has a prototype chain; may have default properties that can collide with custom keys (can be avoided with `Object.create(null)`) | Does not have a prototype, so there are no default keys   |
+    | **Performance**          | May be less efficient for frequent additions/removals | Optimized for frequent additions and deletions            |
+    | **Serialization**        | Can be easily serialized to JSON                    | Cannot be directly serialized to JSON                     |
 
     **[⬆ Back to Top](#table-of-contents)**
 
-9. ### What is the difference between == and === operators
+9.  ### What is the difference between == and === operators
+    JavaScript provides two types of equality operators:
 
-    JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
+    - **Loose equality (`==`, `!=`)**: Performs type conversion if the types differ, comparing values after converting them to a common type.
+    - **Strict equality (`===`, `!==`)**: Compares both value and type, without any type conversion.
 
-    1. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions.
-    2. Two numbers are strictly equal when they are numerically equal, i.e., having the same number value.
-       There are two special cases in this,
-       1. NaN is not equal to anything, including NaN.
-       2. Positive and negative zeros are equal to one another.
-    3. Two Boolean operands are strictly equal if both are true or both are false.
-    4. Two objects are strictly equal if they refer to the same Object.
-    5. Null and Undefined types are not equal with ===, but equal with == .
-       i.e, `null===undefined --> false`, but `null==undefined --> true`
+    #### Strict Equality (`===`)
+    - Two strings are strictly equal if they have exactly the same sequence of characters and length.
+    - Two numbers are strictly equal if they have the same numeric value.
+      - **Special cases:**
+        - `NaN === NaN` is `false`
+        - `+0 === -0` is `true`
+    - Two booleans are strictly equal if both are `true` or both are `false`.
+    - Two objects are strictly equal if they refer to the **same object** in memory.
+    - `null` and `undefined` are **not** strictly equal.
 
-    Some of the example which covers the above cases:
+    #### Loose Equality (`==`)
+    - Converts operands to the same type before making the comparison.
+    - `null == undefined` is `true`.
+    - `"1" == 1` is `true` because the string is converted to a number.
+    - `0 == false` is `true` because `false` is converted to `0`.
+
+    #### Examples:
 
     ```javascript
-    0 == false   // true
-    0 === false  // false
-    1 == "1"     // true
-    1 === "1"    // false
-    null == undefined // true
-    null === undefined // false
-    '0' == false // true
-    '0' === false // false
-    NaN == NaN or NaN === NaN // false
-    []==[] or []===[] //false, refer different objects in memory
-    {}=={} or {}==={} //false, refer different objects in memory
+    0 == false            // true      (loose equality, type coercion)
+    0 === false           // false     (strict equality, different types)
+    1 == "1"              // true      (string converted to number)
+    1 === "1"             // false     (different types)
+    null == undefined     // true      (special case)
+    null === undefined    // false     (different types)
+    '0' == false          // true      ('0' is converted to 0)
+    '0' === false         // false     (different types)
+    NaN == NaN            // false     (NaN is never equal to itself)
+    NaN === NaN           // false
+    [] == []              // false     (different array objects)
+    [] === []             // false
+    {} == {}              // false     (different object references)
+    {} === {}             // false
     ```
-
     **[⬆ Back to Top](#table-of-contents)**
 
 10. ### What are lambda expressions or arrow functions
 
-    An arrow function is a shorter/concise syntax for a function expression and does not have its own **this, arguments, super, or new.target**. These functions are best suited for non-method functions, and they cannot be used as constructors.
+    **Arrow functions** (also known as "lambda expressions") provide a concise syntax for writing function expressions in JavaScript. Introduced in ES6, arrow functions are often shorter and more readable, especially for simple operations or callbacks.
 
-    Some of the examples of arrow functions are listed as below,
+    #### Key Features:
+    - Arrow functions do **not** have their own `this`, `arguments`, `super`, or `new.target` bindings. They inherit these from their surrounding (lexical) context.
+    - They are best suited for non-method functions, such as callbacks or simple computations.
+    - Arrow functions **cannot** be used as constructors and do not have a `prototype` property.
+    - They also cannot be used with `new`, `yield`, or as generator functions.
+
+    #### Syntax Examples:
 
     ```javascript
-    const arrowFunc1 = (a, b) => a + b; // Multiple parameters
-    const arrowFunc2 = (a) => a * 10; // Single parameter
-    const arrowFunc3 = () => {}; // no parameters
+    const arrowFunc1 = (a, b) => a + b;    // Multiple parameters, returns a + b
+    const arrowFunc2 = a => a * 10;        // Single parameter (parentheses optional), returns a * 10
+    const arrowFunc3 = () => {};           // No parameters, returns undefined
+    const arrowFunc4 = (a, b) => {
+      // Multiple statements require curly braces and explicit return
+      const sum = a + b;
+      return sum * 2;
+    };
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -1045,7 +1114,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-15. ### What is the currying function
+7.  ### What is the currying function
     
     **Currying** is the process of transforming a function with **multiple arguments** into a sequence of **nested functions**, each accepting **only one argument** at a time.
 
@@ -1111,7 +1180,9 @@
     - `impureAddNumber` changes the external variable numberArray and returns the new length of the array, making it impure.
     - `pureAddNumber` creates a new array with the added number and does not modify the original array, making it pure.
 
-17. ### Benefits
+17. ### What are the benefits of pure functions
+    Some of the major benefits of pure functions are listed below,
+
     - **Easier testing:** Since output depends only on input, pure functions are simple to test.
     - **Predictability:** No hidden side effects make behavior easier to reason about.
     - **Immutability:** Pure functions align with ES6 best practices, such as preferring const over let, supporting safer and more maintainable code.
@@ -1121,18 +1192,27 @@
 
 18. ### What is the purpose of the let keyword
 
-    The `let` statement declares a **block scope local variable**. Hence the variables defined with let keyword are limited in scope to the block, statement, or expression on which it is used. Whereas variables declared with the `var` keyword used to define a variable globally, or locally to an entire function regardless of block scope.
+    The `let` keyword in JavaScript is used to declare a **block-scoped local variable**. This means that variables declared with `let` are only accessible within the block, statement, or expression where they are defined. This is a significant improvement over the older `var` keyword, which is function-scoped (or globally-scoped if declared outside a function), and does not respect block-level scoping.
 
-    Let's take an example to demonstrate the usage,
+    #### Key Features of `let`:
+    - **Block Scope:** The variable exists only within the nearest enclosing block (e.g., inside an `{}` pair).
+    - **No Hoisting Issues:** While `let` declarations are hoisted, they are not initialized until the code defining them is executed. Accessing them before declaration results in a ReferenceError (temporal dead zone).
+    - **No Redeclaration:** The same variable cannot be declared twice in the same scope with `let`.
+
+    #### Example:
 
     ```javascript
     let counter = 30;
     if (counter === 30) {
       let counter = 31;
-      console.log(counter); // 31
+      console.log(counter); // Output: 31 (block-scoped variable inside if-block)
     }
-    console.log(counter); // 30 (because the variable in if block won't exist here)
+    console.log(counter); // Output: 30 (outer variable, unaffected by inner block)
     ```
+
+    In this example, the `counter` inside the `if` block is a separate variable from the one outside. The `let` keyword ensures that both have their own distinct scope.
+
+    In summary, you need to use `let` when you want variables to be limited to the block in which they are defined, preventing accidental overwrites and bugs related to variable scope.
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -1245,7 +1325,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-24. ### How do you decode or encode a URL in JavaScript?
+25. ### How do you decode or encode a URL in JavaScript?
 
     `encodeURI()` function is used to encode an URL. This function requires a URL string as a parameter and return that encoded string.
     `decodeURI()` function is used to decode an URL. This function requires an encoded URL string as parameter and return that decoded string.
@@ -1260,7 +1340,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-25. ### What is memoization
+26. ### What is memoization
 
     Memoization is a functional programming technique which attempts to increase a function’s performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
     Let's take an example of adding function with memoization,
@@ -1288,7 +1368,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-26. ### What is Hoisting
+27. ### What is Hoisting
 
     Hoisting is a JavaScript mechanism where variables, function declarations and classes are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
     Let's take a simple example of variable hoisting,
@@ -1320,7 +1400,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-27. ### What are classes in ES6
+28. ### What are classes in ES6
 
     In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
     For example, the prototype based inheritance written in function expression as below,
@@ -1353,7 +1433,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-28. ### What are closures
+29. ### What are closures
 
     A closure is the combination of a function bundled(enclosed) together with its lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables, functions and other data even after the outer function has finished its execution. The closure has three scope chains.
 
@@ -1379,13 +1459,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-29. ### What are modules
+30. ### What are modules
 
     Modules refer to small units of independent, reusable code and also act as the foundation of many JavaScript design patterns. Most of the JavaScript modules export an object literal, a function, or a constructor
 
     **[⬆ Back to Top](#table-of-contents)**
 
-30. ### Why do you need modules
+31. ### Why do you need modules
 
     Below are the list of benefits using modules in javascript ecosystem
 
@@ -1395,37 +1475,37 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-31. ### What is scope in javascript
+32. ### What is scope in javascript
 
     Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-32. ### What is a service worker
+33. ### What is a service worker
 
     A Service worker is basically a script (JavaScript file) that runs in the background, separate from a web page and provides features that don't need a web page or user interaction. Some of the major features of service workers are Rich offline experiences(offline first web application development), periodic background syncs, push notifications, intercept and handle network requests and programmatically managing a cache of responses.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-33. ### How do you manipulate DOM using a service worker
+34. ### How do you manipulate DOM using a service worker
 
     Service worker can't access the DOM directly. But it can communicate with the pages it controls by responding to messages sent via the `postMessage` interface, and those pages can manipulate the DOM.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-34. ### How do you reuse information across service worker restarts
+35. ### How do you reuse information across service worker restarts
 
     The problem with service worker is that it gets terminated when not in use, and restarted when it's next needed, so you cannot rely on global state within a service worker's `onfetch` and `onmessage` handlers. In this case, service workers will have access to IndexedDB API in order to persist and reuse across restarts.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-35. ### What is IndexedDB
+36. ### What is IndexedDB
 
     IndexedDB is a low-level API for client-side storage of larger amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-36. ### What is web storage
+37. ### What is web storage
 
     Web storage is an API that provides a mechanism by which browsers can store key/value pairs locally within the user's browser, in a much more intuitive fashion than using cookies. The web storage provides two mechanisms for storing data on the client.
 
@@ -1434,13 +1514,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-37. ### What is a post message
+38. ### What is a post message
 
     Post message is a method that enables cross-origin communication between Window objects.(i.e, between a page and a pop-up that it spawned, or between a page and an iframe embedded within it). Generally, scripts on different pages are allowed to access each other if and only if the pages follow same-origin policy(i.e, pages share the same protocol, port number, and host).
 
     **[⬆ Back to Top](#table-of-contents)**
 
-38. ### What is a Cookie
+39. ### What is a Cookie
 
     A cookie is a piece of data that is stored on your computer to be accessed by your browser. Cookies are saved as key/value pairs.
     For example, you can create a cookie named username as below,
@@ -1453,7 +1533,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-39. ### Why do you need a Cookie
+40. ### Why do you need a Cookie
 
     Cookies are used to remember information about the user profile(such as username). It basically involves two steps,
 
@@ -1462,7 +1542,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-40. ### What are the options in a cookie
+41. ### What are the options in a cookie
 
     There are few below options available for a cookie,
 
@@ -1480,7 +1560,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-41. ### How do you delete a cookie
+42. ### How do you delete a cookie
 
     You can delete a cookie by setting the expiry date as a passed date. You don't need to specify a cookie value in this case.
     For example, you can delete a username cookie in the current page as below.
@@ -1494,7 +1574,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-42. ### What are the differences between cookie, local storage and session storage
+43. ### What are the differences between cookie, local storage and session storage
 
     Below are some of the differences between cookie, local storage and session storage,
 
@@ -1509,13 +1589,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-43. ### What is the main difference between localStorage and sessionStorage
+44. ### What is the main difference between localStorage and sessionStorage
 
     LocalStorage is the same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-44. ### How do you access web storage
+45. ### How do you access web storage
 
     The Window object implements the `WindowLocalStorage` and `WindowSessionStorage` objects which has `localStorage`(window.localStorage) and `sessionStorage`(window.sessionStorage) properties respectively. These properties create an instance of the Storage object, through which data items can be set, retrieved and removed for a specific domain and storage type (session or local).
     For example, you can read and write on local storage objects as below
@@ -1527,7 +1607,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-45. ### What are the methods available on session storage
+46. ### What are the methods available on session storage
 
     The session storage provided methods for reading, writing and clearing the session data
 
@@ -1547,7 +1627,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-46. ### What is a storage event and its event handler
+47. ### What is a storage event and its event handler
 
     The StorageEvent is an event that fires when a storage area has been changed in the context of another document. Whereas onstorage property is an EventHandler for processing storage events.
     The syntax would be as below
@@ -1574,13 +1654,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-47. ### Why do you need web storage
+48. ### Why do you need web storage
 
     Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance. Also, the information is never transferred to the server. Hence this is a more recommended approach than Cookies.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-48. ### How do you check web storage browser support
+49. ### How do you check web storage browser support
 
     You need to check browser support for localStorage and sessionStorage before using web storage,
 
@@ -1594,7 +1674,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-49. ### How do you check web workers browser support
+50. ### How do you check web workers browser support
 
     You need to check browser support for web workers before using it
 
@@ -1608,7 +1688,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-50. ### Give an example of a web worker
+51. ### Give an example of a web worker
 
     You need to follow below steps to start using web workers for counting example
 
@@ -1659,7 +1739,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-51. ### What are the restrictions of web workers on DOM
+52. ### What are the restrictions of web workers on DOM
 
     WebWorkers don't have access to below javascript objects since they are defined in an external files
 
