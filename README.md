@@ -732,25 +732,30 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-3. ### What is the difference between Call, Apply and Bind
+3. ### What is the Difference Between `call`, `apply`, and `bind`
 
-    The difference between Call, Apply and Bind can be explained with below examples,
+  In JavaScript, `call`, `apply`, and `bind` are methods that allow you to control the context (`this` value) in which a function is executed. While their purposes are similar, they differ in how they handle arguments and when the function is invoked.
 
-    **Call:** The call() method invokes a function with a given `this` value and arguments provided one by one
+  ---
 
-    ```javascript
+  #### `call`
+
+  - **Description:**  
+    The `call()` method invokes a function immediately, allowing you to specify the value of `this` and pass arguments individually (comma-separated).
+
+  - **Syntax:**  
+    ```js
+    func.call(thisArg, arg1, arg2, ...)
+    ```
+
+  - **Example:**
+    ```js
     var employee1 = { firstName: "John", lastName: "Rodson" };
     var employee2 = { firstName: "Jimmy", lastName: "Baily" };
 
     function invite(greeting1, greeting2) {
       console.log(
-        greeting1 +
-          " " +
-          this.firstName +
-          " " +
-          this.lastName +
-          ", " +
-          greeting2
+        greeting1 + " " + this.firstName + " " + this.lastName + ", " + greeting2
       );
     }
 
@@ -758,21 +763,26 @@
     invite.call(employee2, "Hello", "How are you?"); // Hello Jimmy Baily, How are you?
     ```
 
-    **Apply:** Invokes the function with a given `this` value and allows you to pass in arguments as an array
+  ---
 
-    ```javascript
+  #### `apply`
+
+  - **Description:**  
+    The `apply()` method is similar to `call()`, but it takes the function arguments as an array (or array-like object) instead of individual arguments.
+
+  - **Syntax:**  
+    ```js
+    func.apply(thisArg, [argsArray])
+    ```
+
+  - **Example:**
+    ```js
     var employee1 = { firstName: "John", lastName: "Rodson" };
     var employee2 = { firstName: "Jimmy", lastName: "Baily" };
 
     function invite(greeting1, greeting2) {
       console.log(
-        greeting1 +
-          " " +
-          this.firstName +
-          " " +
-          this.lastName +
-          ", " +
-          greeting2
+        greeting1 + " " + this.firstName + " " + this.lastName + ", " + greeting2
       );
     }
 
@@ -780,35 +790,59 @@
     invite.apply(employee2, ["Hello", "How are you?"]); // Hello Jimmy Baily, How are you?
     ```
 
-    **Bind:** returns a new function, allowing you to pass any number of arguments
+  ---
 
-    ```javascript
+  #### `bind`
+
+  - **Description:**  
+    The `bind()` method creates a new function with a specific `this` value and, optionally, preset initial arguments. Unlike `call` and `apply`, `bind` does **not** immediately invoke the function; instead, it returns a new function that you can call later.
+
+  - **Syntax:**  
+    ```js
+    var boundFunc = func.bind(thisArg[, arg1[, arg2[, ...]]])
+    ```
+
+  - **Example:**
+    ```js
     var employee1 = { firstName: "John", lastName: "Rodson" };
     var employee2 = { firstName: "Jimmy", lastName: "Baily" };
 
     function invite(greeting1, greeting2) {
       console.log(
-        greeting1 +
-          " " +
-          this.firstName +
-          " " +
-          this.lastName +
-          ", " +
-          greeting2
+        greeting1 + " " + this.firstName + " " + this.lastName + ", " + greeting2
       );
     }
 
     var inviteEmployee1 = invite.bind(employee1);
     var inviteEmployee2 = invite.bind(employee2);
+
     inviteEmployee1("Hello", "How are you?"); // Hello John Rodson, How are you?
     inviteEmployee2("Hello", "How are you?"); // Hello Jimmy Baily, How are you?
     ```
 
-    Call and Apply are pretty much interchangeable. Both execute the current function immediately. You need to decide whether it’s easier to send in an array or a comma separated list of arguments. You can remember by treating Call is for **comma** (separated list) and Apply is for **Array**.
+  ---
 
-    Bind creates a new function that will have `this` set to the first parameter passed to bind().
+  #### Summary
 
-    **[⬆ Back to Top](#table-of-contents)**
+  | Method | Invokes Function Immediately? | How Arguments Are Passed         | Returns      |
+  |--------|-------------------------------|----------------------------------|--------------|
+  | `call` | Yes                           | Comma-separated list             | Function's result |
+  | `apply`| Yes                           | Array or array-like object       | Function's result |
+  | `bind` | No                            | (Optional) preset, then rest     | New function      |
+
+  ---
+
+  ## Key Points
+
+  - **`call`** and **`apply`** are almost interchangeable; both invoke the function immediately, but differ in how arguments are passed.
+      - _Tip:_ "Call is for Comma-separated, Apply is for Array."
+  - **`bind`** does not execute the function immediately. Instead, it creates a new function with the specified `this` value and optional arguments, which can be called later.
+
+  - Use `call` or `apply` when you want to immediately invoke a function with a specific `this` context. Use `bind` when you want to create a new function with a specific `this` context to be invoked later.
+  
+  ---
+
+  **[⬆ Back to Top](#table-of-contents)**
 
 4. ### What is JSON and its common operations
 
