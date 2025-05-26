@@ -64,7 +64,7 @@
 | 14 | [What is a unary function](#what-is-a-unary-function) |
 | 15 | [What is the currying function](#what-is-the-currying-function) |
 | 16 | [What is a pure function](#what-is-a-pure-function) |
-| 17 | [Benefits](#benefits) |
+| 17 | [What are the benefits of pure functions](#what-are-the-benefits-of-pure-functions) |
 | 18 | [What is the purpose of the let keyword](#what-is-the-purpose-of-the-let-keyword) |
 | 19 | [What is the difference between let and var](#what-is-the-difference-between-let-and-var) |
 | 20 | [What is the reason to choose the name let as a keyword](#what-is-the-reason-to-choose-the-name-let-as-a-keyword) |
@@ -400,7 +400,7 @@
 | 350 | [What is the output of below console statement with unary operator](#what-is-the-output-of-below-console-statement-with-unary-operator) |
 | 351 | [Does javascript uses mixins](#does-javascript-uses-mixins) |
 | 352 | [Mixin Example using Object composition](#mixin-example-using-object-composition) |
-| 353 | [Benefits](#benefits-1) |
+| 353 | [Benefits](#benefits) |
 | 354 | [What is a thunk function](#what-is-a-thunk-function) |
 | 355 | [What are asynchronous thunks](#what-are-asynchronous-thunks) |
 | 356 | [What is the output of below function calls](#what-is-the-output-of-below-function-calls) |
@@ -973,7 +973,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-9.  ### What is the difference between == and === operators
+9. ### What is the difference between == and === operators
     JavaScript provides two types of equality operators:
 
     - **Loose equality (`==`, `!=`)**: Performs type conversion if the types differ, comparing values after converting them to a common type.
@@ -1114,7 +1114,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-7.  ### What is the currying function
+15. ### What is the currying function
     
     **Currying** is the process of transforming a function with **multiple arguments** into a sequence of **nested functions**, each accepting **only one argument** at a time.
 
@@ -1325,7 +1325,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-25. ### How do you decode or encode a URL in JavaScript?
+24. ### How do you decode or encode a URL in JavaScript?
 
     `encodeURI()` function is used to encode an URL. This function requires a URL string as a parameter and return that encoded string.
     `decodeURI()` function is used to decode an URL. This function requires an encoded URL string as parameter and return that decoded string.
@@ -1340,7 +1340,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-26. ### What is memoization
+25. ### What is memoization
 
     Memoization is a functional programming technique which attempts to increase a function’s performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
     Let's take an example of adding function with memoization,
@@ -1368,7 +1368,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-27. ### What is Hoisting
+26. ### What is Hoisting
 
     Hoisting is a JavaScript mechanism where variables, function declarations and classes are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
     Let's take a simple example of variable hoisting,
@@ -1400,7 +1400,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-28. ### What are classes in ES6
+27. ### What are classes in ES6
 
     In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
     For example, the prototype based inheritance written in function expression as below,
@@ -1433,7 +1433,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-29. ### What are closures
+28. ### What are closures
 
     A closure is the combination of a function bundled(enclosed) together with its lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables, functions and other data even after the outer function has finished its execution. The closure has three scope chains.
 
@@ -1459,13 +1459,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-30. ### What are modules
+29. ### What are modules
 
     Modules refer to small units of independent, reusable code and also act as the foundation of many JavaScript design patterns. Most of the JavaScript modules export an object literal, a function, or a constructor
 
     **[⬆ Back to Top](#table-of-contents)**
 
-31. ### Why do you need modules
+30. ### Why do you need modules
 
     Below are the list of benefits using modules in javascript ecosystem
 
@@ -1475,37 +1475,37 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-32. ### What is scope in javascript
+31. ### What is scope in javascript
 
     Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-33. ### What is a service worker
+32. ### What is a service worker
 
     A Service worker is basically a script (JavaScript file) that runs in the background, separate from a web page and provides features that don't need a web page or user interaction. Some of the major features of service workers are Rich offline experiences(offline first web application development), periodic background syncs, push notifications, intercept and handle network requests and programmatically managing a cache of responses.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-34. ### How do you manipulate DOM using a service worker
+33. ### How do you manipulate DOM using a service worker
 
     Service worker can't access the DOM directly. But it can communicate with the pages it controls by responding to messages sent via the `postMessage` interface, and those pages can manipulate the DOM.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-35. ### How do you reuse information across service worker restarts
+34. ### How do you reuse information across service worker restarts
 
     The problem with service worker is that it gets terminated when not in use, and restarted when it's next needed, so you cannot rely on global state within a service worker's `onfetch` and `onmessage` handlers. In this case, service workers will have access to IndexedDB API in order to persist and reuse across restarts.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-36. ### What is IndexedDB
+35. ### What is IndexedDB
 
     IndexedDB is a low-level API for client-side storage of larger amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-37. ### What is web storage
+36. ### What is web storage
 
     Web storage is an API that provides a mechanism by which browsers can store key/value pairs locally within the user's browser, in a much more intuitive fashion than using cookies. The web storage provides two mechanisms for storing data on the client.
 
@@ -1514,13 +1514,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-38. ### What is a post message
+37. ### What is a post message
 
     Post message is a method that enables cross-origin communication between Window objects.(i.e, between a page and a pop-up that it spawned, or between a page and an iframe embedded within it). Generally, scripts on different pages are allowed to access each other if and only if the pages follow same-origin policy(i.e, pages share the same protocol, port number, and host).
 
     **[⬆ Back to Top](#table-of-contents)**
 
-39. ### What is a Cookie
+38. ### What is a Cookie
 
     A cookie is a piece of data that is stored on your computer to be accessed by your browser. Cookies are saved as key/value pairs.
     For example, you can create a cookie named username as below,
@@ -1533,7 +1533,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-40. ### Why do you need a Cookie
+39. ### Why do you need a Cookie
 
     Cookies are used to remember information about the user profile(such as username). It basically involves two steps,
 
@@ -1542,7 +1542,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-41. ### What are the options in a cookie
+40. ### What are the options in a cookie
 
     There are few below options available for a cookie,
 
@@ -1560,7 +1560,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-42. ### How do you delete a cookie
+41. ### How do you delete a cookie
 
     You can delete a cookie by setting the expiry date as a passed date. You don't need to specify a cookie value in this case.
     For example, you can delete a username cookie in the current page as below.
@@ -1574,7 +1574,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-43. ### What are the differences between cookie, local storage and session storage
+42. ### What are the differences between cookie, local storage and session storage
 
     Below are some of the differences between cookie, local storage and session storage,
 
@@ -1589,13 +1589,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-44. ### What is the main difference between localStorage and sessionStorage
+43. ### What is the main difference between localStorage and sessionStorage
 
     LocalStorage is the same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-45. ### How do you access web storage
+44. ### How do you access web storage
 
     The Window object implements the `WindowLocalStorage` and `WindowSessionStorage` objects which has `localStorage`(window.localStorage) and `sessionStorage`(window.sessionStorage) properties respectively. These properties create an instance of the Storage object, through which data items can be set, retrieved and removed for a specific domain and storage type (session or local).
     For example, you can read and write on local storage objects as below
@@ -1607,7 +1607,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-46. ### What are the methods available on session storage
+45. ### What are the methods available on session storage
 
     The session storage provided methods for reading, writing and clearing the session data
 
@@ -1627,7 +1627,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-47. ### What is a storage event and its event handler
+46. ### What is a storage event and its event handler
 
     The StorageEvent is an event that fires when a storage area has been changed in the context of another document. Whereas onstorage property is an EventHandler for processing storage events.
     The syntax would be as below
@@ -1654,13 +1654,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-48. ### Why do you need web storage
+47. ### Why do you need web storage
 
     Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance. Also, the information is never transferred to the server. Hence this is a more recommended approach than Cookies.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-49. ### How do you check web storage browser support
+48. ### How do you check web storage browser support
 
     You need to check browser support for localStorage and sessionStorage before using web storage,
 
@@ -1674,7 +1674,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-50. ### How do you check web workers browser support
+49. ### How do you check web workers browser support
 
     You need to check browser support for web workers before using it
 
@@ -1688,7 +1688,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-51. ### Give an example of a web worker
+50. ### Give an example of a web worker
 
     You need to follow below steps to start using web workers for counting example
 
@@ -1739,7 +1739,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-52. ### What are the restrictions of web workers on DOM
+51. ### What are the restrictions of web workers on DOM
 
     WebWorkers don't have access to below javascript objects since they are defined in an external files
 
