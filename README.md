@@ -8449,70 +8449,100 @@
 
 437. ### What is debouncing?
 
-     Debouncing is a programming pattern that allows delaying execution of some piece of code until a specified time to avoid unnecessary _CPU cycles and API calls_. This in turn enhance the web page performance. The debounce function make sure that your code is only triggered once per user input. The common usecases are Search box suggestions, text-field auto-saves, and eliminating double-button clicks.
+    Debouncing is a programming technique used to limit how often a function is executed. Specifically, it ensures that a function is only triggered after a certain amount of time has passed since it was last invoked. This prevents unnecessary or excessive function calls, which can help optimize performance and reduce unnecessary CPU usage or API requests.
 
-     Let's say you want to show suggestions for a search query, but only after a visitor has finished typing it. So here you write a debounce function where the user keeps writing the characters with in 500ms then previous timer cleared out using `clearTimeout` and reschedule API call/DB query for a new time—300 ms in the future.
+    For example, when a user types in a search box, you typically want to wait until they’ve finished typing before fetching suggestions. Without debouncing, an API call would be triggered on every keystroke, potentially causing performance issues. With debouncing, the function call is postponed until the user stops typing for a specified period (e.g., 300ms). If the user types again before this time elapses, the timer resets.
 
-     ```js
-     function debounce(func, timeout = 500) {
-       let timer;
-       return function (...args) {
-         clearTimeout(timer);
-         timer = setTimeout(() => {
-           func.apply(this, args);
-         }, timeout);
-       };
-     }
-     function fetchResults() {
-       console.log("Fetching input suggestions");
-     }
-     const processChange = debounce(() => fetchResults());
-     ```
+    **Typical use cases for debouncing include:**
 
-The _debounce()_ function can be used on input, button and window events.
+    *   Search box suggestions (wait until typing pauses before fetching results)
+    *   Auto-saving text fields (save only after the user stops typing)
+    *   Preventing double-clicks on buttons
+    *   Handling window resize or scroll events efficiently
 
-**Input:**
+    **Example Debounce Function:**
 
-```html
-<input type="text" onkeyup="processChange()" />
-```
+    JavaScript
 
-**Button:**
+    ```css
+    function debounce(func, timeout = 500) {
+      let timer;
+      return function (...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          func.apply(this, args);
+        }, timeout);
+      };
+    }
+    ```
 
-```html
-<button onclick="processChange()">Click me</button>
-```
+    **Usage Example:**
 
-**Windows event:**
+    JavaScript
 
-```html
-window.addEventListener("scroll", processChange);
-```
+    ```css
+    function fetchResults() {
+      console.log("Fetching input suggestions");
+    }
+    const processChange = debounce(fetchResults, 300);
 
-**[⬆ Back to Top](#table-of-contents)**
+    // Attach to input element
+    <input type="text" onkeyup="processChange()" />
+
+    // Attach to button
+    <button onclick="processChange()">Click me</button>
+
+    // Attach to window event
+    window.addEventListener("scroll", processChange);
+    ```
+
+    **How it works:**  
+    When `processChange` is invoked (e.g., by typing or clicking), any pending execution is canceled, and the function is scheduled to run after the specified delay. If another event occurs before the delay is up, the timer resets, and the function will only run after events have stopped for the delay duration.
+
+    Debouncing is an essential tool for improving user experience and application performance, especially when dealing with events that can fire rapidly and repeatedly.
+
+ **[⬆ Back to Top](#table-of-contents)**
 
 438. ### What is throttling?
+      Throttling is a programming technique used to control the rate at which a function is executed. When an event is triggered continuously—such as during window resizing, scrolling, or mouse movement—throttling ensures that the associated event handler is not called more often than a specified interval. This helps improve performance by reducing the number of expensive function calls and preventing performance bottlenecks.
 
-     Throttling is a technique used to limit the execution of an event handler function in a given period of time, even when this event triggers continuously due to user actions. The common use cases are browser resizing, window scrolling, mouse movements etc.
+      **Common use cases:**
 
-     The below example creates a throttle function to reduce the number of events for each pixel change and trigger scroll event for each 100ms except for the first event.
+      *   Window resize events
+      *   Scroll events
+      *   Mouse movement or drag events
+      *   API rate limiting
 
-     ```js
-     const throttle = (func, limit) => {
-       let inThrottle;
-       return (...args) => {
-         if (!inThrottle) {
-           func.apply(this, args);
-           inThrottle = true;
-           setTimeout(() => (inThrottle = false), limit);
-         }
-       };
-     };
-     window.addEventListener("scroll", () => {
-       throttle(handleScrollAnimation, 100);
-     });
-     ```
+      **How does throttling work?**  
+      Throttling will execute the function at most once every specified time interval, ignoring additional calls until the interval has passed.
 
+      **Example: Throttle Implementation and Usage**
+
+      JavaScript
+
+      ```css
+      // Simple throttle function: allows 'func' to run at most once every 'limit' ms
+      function throttle(func, limit) {
+        let inThrottle = false;
+        return function(...args) {
+          if (!inThrottle) {
+            func.apply(this, args);
+            inThrottle = true;
+            setTimeout(() => (inThrottle = false), limit);
+          }
+        };
+      }
+
+      // Usage: throttling a scroll event handler
+      function handleScrollAnimation() {
+        console.log('Scroll event triggered');
+      }
+
+      window.addEventListener(
+        "scroll",
+        throttle(handleScrollAnimation, 100) // Will run at most once every 100ms
+      );
+      ```
      **[⬆ Back to Top](#table-of-contents)**
 
 439. ### What is optional chaining?
