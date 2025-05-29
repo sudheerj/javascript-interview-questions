@@ -8820,9 +8820,8 @@ multiplyBy2(add(2, 3));
 **[⬆ Back to Top](#table-of-contents)**
 
 452. ### What is the purpose of the this keyword in JavaScript?
+The `this` keyword in JavaScript refers to **the object that is executing the current function**. Its value is determined by **how a function is called**, not where it is defined.  `this` is essential for writing object-oriented and event-driven code, as it allows methods to interact with the data of the object they belong to.
 
-- The `this` keyword in JavaScript is a special variable that is used within a function to refer to the object on which the function is invoked. The value of this depends on how the function is called. It allows functions to access and interact with the object they are bound to.
-- The this keyword in JavaScript is a reference to the object that owns or invokes the current function. Its value is determined by the calling context.
 
   **Example 1: this in a Global Context**
 
@@ -8842,7 +8841,7 @@ multiplyBy2(add(2, 3));
   displayThis();
   ```
 
-  - In a regular function, this refers to the global object.
+  - In a regular function, this refers to the global object(window in browser and global in nodejs) for non-strict mode.  In strict mode, it's value is undefined.
 
   **Example 3: this in a Method**
 
@@ -8862,12 +8861,37 @@ multiplyBy2(add(2, 3));
   **Example 4: this in an Event Handler**
 
   ```javascript
-  document.getElementById("myButton").addEventListener("click", function () {
-    console.log(this);
-  });
+   document.getElementById("myButton").addEventListener("click", function () {
+            console.log(this);
+   });
   ```
 
   - In an event handler, this refers to the element that triggered the event (the button in this case).
+
+  **Example 5: `this` with Arrow Functions**
+
+  ```javascript
+        const obj = {
+          age: 42,
+          regular: function() { console.log(this.age); },
+          arrow: () => { console.log(this.age); }
+        };
+        obj.regular(); // 42 (this refers to obj)
+        obj.arrow();   // undefined (this refers to the outer scope, not obj)
+  ```
+  - Arrow functions do not have their own `this` binding; they inherit it from their surrounding (lexical) context.
+
+  **Example 6: this in Constructor Functions / Classes**
+    
+  ```javascript
+    function Person(name) {
+      this.name = name;
+    }
+    
+    const p1 = new Person('Sudheer');
+    console.log(p1.name); // Sudheer
+  ```
+   - When used with new, this refers to the newly created object.
 
 **[⬆ Back to Top](#table-of-contents)**
 
