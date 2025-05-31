@@ -1247,43 +1247,46 @@
 
 20. ### What is the reason to choose the name let as a keyword
 
-    `let` is a mathematical statement that was adopted by early programming languages like **Scheme** and **Basic**. It has been borrowed from dozens of other languages that use `let` already as a traditional keyword as close to `var` as possible.
+    The keyword `let` was chosen because it originates from mathematical notation, where "let" is used to introduce new variables (for example, "let x = 5"). This term was adopted by several early programming languages such as Scheme and BASIC, establishing a tradition in computer science. JavaScript follows this convention by using `let` to declare variables with block scope, providing a modern alternative to `var`. The choice helps make the language more familiar to programmers coming from other languages and aligns with the mathematical practice of variable assignment.
 
     **[⬆ Back to Top](#table-of-contents)**
 
 21. ### How do you redeclare variables in a switch block without an error
 
-    If you try to redeclare variables in a `switch block` then it will cause errors because there is only one block. For example, the below code block throws a syntax error as below,
-
+    When you try to redeclare variables using `let` or `const` in multiple `case` clauses of a `switch` statement, you will get a SyntaxError. This happens because, in JavaScript, all `case` clauses within a `switch` statement share the same block scope. For example:
+    
     ```javascript
     let counter = 1;
     switch (x) {
       case 0:
         let name;
         break;
-
       case 1:
-        let name; // SyntaxError for redeclaration.
+        let name; // SyntaxError: Identifier 'name' has already been declared
         break;
     }
     ```
-
-    To avoid this error, you can create a nested block inside a case clause and create a new block scoped lexical environment.
-
+    
+    To avoid this error, you can create a new block scope within each `case` clause by wrapping the code in curly braces `{}`. This way, each `let` or `const` declaration is scoped only to that block, and redeclaration errors are avoided:
+    
     ```javascript
     let counter = 1;
     switch (x) {
       case 0: {
         let name;
+        // code for case 0
         break;
       }
       case 1: {
-        let name; // No SyntaxError for redeclaration.
+        let name; // No SyntaxError
+        // code for case 1
         break;
       }
     }
     ```
-
+    
+    That means, to safely redeclare variables in different cases of a switch statement, wrap each case’s code in its own block using curly braces. This ensures each variable declaration is scoped to its specific case block.
+    
     **[⬆ Back to Top](#table-of-contents)**
 
 22. ### What is the Temporal Dead Zone
