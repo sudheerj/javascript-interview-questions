@@ -1291,16 +1291,19 @@
 
 22. ### What is the Temporal Dead Zone
 
-    The Temporal Dead Zone(TDZ) is a specific period or area of a block where a variable is inaccessible until it has been initialized with a value. This behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a `let` or `const` variable before its declaration (within its scope) causes a ReferenceError.
-
-    Let's see this behavior with an example,
-
+    The **Temporal Dead Zone (TDZ)** refers to the period between the start of a block and the point where a variable declared with `let` or `const` is initialized. During this time, the variable exists in scope but **cannot be accessed**, and attempting to do so results in a `ReferenceError`.
+    
+    This behavior is part of **JavaScript's ES6 (ECMAScript 2015)** specification and applies **only to variables declared with `let` and `const`**, not `var`. Variables declared with `var` are **hoisted** and initialized with `undefined`, so accessing them before the declaration does not throw an error, though it can lead to unexpected results.
+    
+    ### Example
+    
     ```javascript
-    function somemethod() {
-      console.log(counter1); // undefined
-      console.log(counter2); // ReferenceError
-      var counter1 = 1;
-      let counter2 = 2;
+    function someMethod() {
+        console.log(counter1); // Output: undefined (due to var hoisting)
+        console.log(counter2); // Throws ReferenceError (TDZ for let)
+    
+        var counter1 = 1;
+        let counter2 = 2;
     }
     ```
 
@@ -9291,19 +9294,38 @@ requestAnimationFrame(animate);
 **[⬆ Back to Top](#table-of-contents)**
 
 470. ### What is the difference between substring and substr methods?
-     There are subtle differences between the substring() and substr() methods, so you should be careful not to get them confused.
 
-- The two parameters of substr() are start and length, while for substring(), they are start and end.
-- substr()'s start index will wrap to the end of the string if it is negative, while substring() will clamp it to 0.
-- Negative lengths in substr() are treated as zero, while substring() will swap the two indexes if end is less than start.
+     Both `substring` and `substr` are used to extract parts of a string, but there are subtle differences between the substring() and substr() methods in terms of **syntax** and **behavior**.
 
-Furthermore, substr() is considered a legacy feature in ECMAScript, so it is best to avoid using it if possible.
+     1. `substring(start, end)`
+         - **Parameters:**
+             - `start`: The index to start extracting (inclusive).
+             - `end`: The index to stop extracting (exclusive).
+         - **Behavior:**
+             - If `start > end`, it **swaps the arguments**.
+             - Negative values are treated as `0`.
 
-```javascript
-const text = "Mozilla";
-console.log(text.substring(2, 5)); // "zil"
-console.log(text.substr(2, 3)); // "zil"
-```
+         ```javascript
+          let str = "Hello World";
+          console.log(str.substring(0, 5));   // "Hello"
+          console.log(str.substring(5, 0));   // "Hello" (swapped)
+          console.log(str.substring(-3, 4));  // "Hell" (negative = 0)
+         ```
+     2. `substr(start, length)` _(Deprecated)_
+
+         - **Parameters:**
+           - `start`: The index to start extracting.
+           - `length`: The number of characters to extract.
+         - **Behavior:**
+           - If `start` is negative, it counts from the **end** of the string.
+           - If `length` is omitted, it extracts to the end of the string.
+
+         ```javascript
+         let str = "Hello World"; console.log(str.substr(0, 5)); // "Hello" 
+         console.log(str.substr(-5, 3)); // "Wor" (starts from 'W')`
+         ```
+         **Note:** substr() is considered a legacy feature in ECMAScript, so it is best to avoid using it if possible.
+
 
 **[⬆ Back to Top](#table-of-contents)**
 
