@@ -135,8 +135,8 @@
 | 85 | [What is NaN property](#what-is-nan-property) |
 | 86 | [What is the purpose of isFinite function](#what-is-the-purpose-of-isfinite-function) |
 | 87 | [What is an event flow](#what-is-an-event-flow) |
-| 88 | [What is event bubbling](#what-is-event-bubbling) |
-| 89 | [What is event capturing](#what-is-event-capturing) |
+| 88 | [What is event capturing](#what-is-event-capturing) |
+| 89 | [What is event bubbling](#what-is-event-bubbling) |
 | 90 | [How do you submit a form using JavaScript](#how-do-you-submit-a-form-using-javascript) |
 | 91 | [How do you find operating system details](#how-do-you-find-operating-system-details) |
 | 92 | [What is the difference between document load and DOMContentLoaded events](#what-is-the-difference-between-document-load-and-domcontentloaded-events) |
@@ -2291,20 +2291,54 @@
 
 87. ### What is an event flow
 
-    Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
+    Event flow refers to the order in which events are handled in the browser when a user interacts with elements on a webpage like clicking, typing, hovering, etc.
 
-    There are two ways of event flow
+    When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
 
-    1. Top to Bottom(Event Capturing)
-    2. Bottom to Top (Event Bubbling)
+    Hence, there are three phases in JavaScript’s event flow:
+
+    1. Event Capturing(Top to Bottom): The event starts from the window/document and moves down the DOM tree toward the target element.
+    2. Target phase: The event reaches the target element — the element that was actually interacted with.
+    3. Event Bubbling(Bottom to Top): The event then bubbles back up from the target element to the root.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-88. ### What is event bubbling
+88. ### What is event capturing
 
-    Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element(i.e, global window object).
+    Event capturing is a phase of event propagation in which an event is first intercepted by the outermost ancestor element, then travels downward through the DOM hierarchy until it reaches the target (innermost) element.
 
-    By default, event handlers triggered in event bubbling phase as shown below,
+    To handle events during the capturing phase, you need to pass `true` as the third argument to the `addEventListener` method.
+
+     ```javascript
+      <div>
+        <button class="child">Hello</button>
+      </div>
+
+      <script>
+        const parent = document.querySelector("div");
+        const child = document.querySelector(".child");
+
+        // Capturing phase: parent listener (runs first)
+        parent.addEventListener("click", function () {
+          console.log("Parent (capturing)");
+        }, true); // `true` enables capturing
+
+        // Bubbling phase: child listener (runs after)
+        child.addEventListener("click", function () {
+          console.log("Child (bubbling)");
+        });
+      </script>
+      // Parent (capturing)
+      // Child (bubbling)
+     ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+89. ### What is event bubbling
+
+    Event bubbling is a type of event propagation in which an event first triggers on the innermost target element (the one the user interacted with), and then bubbles up through its ancestors in the DOM hierarchy — eventually reaching the outermost elements, like the document or window.
+
+    By default, event listeners in JavaScript are triggered during the bubbling phase, unless specified otherwise.
 
     ```javascript
     <div>
@@ -2315,53 +2349,23 @@
       const parent = document.querySelector("div");
       const child = document.querySelector(".child");
 
-      parent.addEventListener("click",
-        function () {
-          console.log("Parent");
-        }
-      );
+      // Bubbling phase (default)
+      parent.addEventListener("click", function () {
+        console.log("Parent");
+      });
 
       child.addEventListener("click", function () {
         console.log("Child");
       });
     </script>
-    // Child
-    // Parent
+    //Child
+    //Parent
     ```
 
+    Here, at first, the event triggers on the child button. Thereafter it bubbles up and triggers the parent div's event handler.
+    
     **[⬆ Back to Top](#table-of-contents)**
 
-89. ### What is event capturing
-
-    Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost target DOM element.
-
-    You need to pass `true` value for `addEventListener` method to trigger event handlers in event capturing phase.
-
-    ```javascript
-    <div>
-      <button class="child">Hello</button>
-    </div>
-
-    <script>
-      const parent = document.querySelector("div");
-      const child = document.querySelector(".child");
-
-      parent.addEventListener("click",
-        function () {
-          console.log("Parent");
-        },
-        true
-      );
-
-      child.addEventListener("click", function () {
-        console.log("Child");
-      });
-    </script>
-    // Parent
-    // Child
-    ```
-
-    **[⬆ Back to Top](#table-of-contents)**
 
 90. ### How do you submit a form using JavaScript
 
