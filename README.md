@@ -1296,7 +1296,7 @@
     
     This behavior is part of **JavaScript's ES6 (ECMAScript 2015)** specification and applies **only to variables declared with `let` and `const`**, not `var`. Variables declared with `var` are **hoisted** and initialized with `undefined`, so accessing them before the declaration does not throw an error, though it can lead to unexpected results.
     
-23. ### Example
+    #### Example
     
     ```javascript
     function someMethod() {
@@ -2025,6 +2025,8 @@
     **[⬆ Back to Top](#table-of-contents)**
 
 68. ### What is a strict mode in javascript
+
+    JavaScript’s "use strict" directive is used to opt into a stricter parsing and error-handling mode for your scripts or functions. It helps catch common bugs, makes your code more secure, and prepares it for future versions of JavaScript.
 
     Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression `"use strict";` instructs the browser to use the javascript code in the Strict mode. This also enables block-scoped variables.
 
@@ -6551,7 +6553,11 @@
 
 343. ### Do all objects have prototypes
 
-      No. All objects have prototypes except the base object or an object created with Object.create(null) method. The base object is Object.prototype, and its prototype is null.
+      No. All objects have prototypes except two exceptions:
+      *  **Object.prototype** itself — This is the base object in the prototype chain, and **its prototype is** `null`.
+      *   **Objects created with** `**Object.create(null)**` — These are deliberately created with **no prototype**, so they don’t inherit from `Object.prototype`.
+
+      All other standard objects do have a prototype.  
 
       **[⬆ Back to Top](#table-of-contents)**
 
