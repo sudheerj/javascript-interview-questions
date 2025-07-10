@@ -10265,7 +10265,7 @@ console.log(numbers.includes(NaN)); // true
 #### 23. What is the output of below code
 
 ```javascript
-let [a, ...b] = [1, 2, 3, 4, 5];
+let [a, ...b, c] = [1, 2, 3, 4, 5];
 console.log(a, b);
 ```
 
@@ -10280,7 +10280,7 @@ console.log(a, b);
 ##### Answer: 3
 
 When using rest parameters, trailing commas are not allowed and will throw a SyntaxError.
-If you remove the trailing comma then it displays 1st answer
+If you remove the trailing comma and last element then it displays 1st answer
 
 ```javascript
 let [a, ...b] = [1, 2, 3, 4, 5];
