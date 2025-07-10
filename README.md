@@ -2235,19 +2235,16 @@
     | These variables do not exist in a program and are not declared                              | These variables declared in the program but have not assigned any value                |
     | If you try to read the value of an undeclared variable, then a runtime error is encountered | If you try to read the value of an undefined variable, an undefined value is returned. |
 
-        ```javascript
-
+    ```javascript
     var a;
     a; // yields undefined
 
-    b; // Throws runtime error like „Uncaught ReferenceError: b is not defined“
-
+    b; // Throws runtime error like "Uncaught ReferenceError: b is not defined"
     ```
-    This can be confusing, because it says „not defined“ instead of „not declared“ (Chrome)
+    This can be confusing, because it says `not defined` instead of `not declared` (Chrome)
 
     **[⬆ Back to Top](#table-of-contents)**
 
-    ```
 
 82. ### What are global variables
 
@@ -10266,7 +10263,7 @@ console.log(numbers.includes(NaN)); // true
 
 ```javascript
 let [a, ...b, c] = [1, 2, 3, 4, 5];
-console.log(a, b);
+console.log(a, b, c);
 ```
 
 - 1: 1, [2, 3, 4, 5]
