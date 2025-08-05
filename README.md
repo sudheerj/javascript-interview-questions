@@ -2489,9 +2489,9 @@
 
 100. ### Is there any relation between Java and JavaScript
 
-    No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
+      No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
 
-    **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
 101. ### What are events
 
