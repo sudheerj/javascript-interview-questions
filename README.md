@@ -1780,7 +1780,7 @@
     });
 
     promise
-      .then((value) => console.log(value)); // Logs after 5 seconds: "I'm a Promise!"
+      .then((value) => console.log(value)) // Logs after 5 seconds: "I'm a Promise!"
       .catch((error) => console.error(error))  // Handles any rejection
       .finally(() => console.log("Done"));     // Runs regardless of success or failure
     ```
