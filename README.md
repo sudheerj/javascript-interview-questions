@@ -16,18 +16,6 @@
 
 ---
 
-<div>
-<p align="center">
-  <a href="https://www.frontendlead.com/coding-questions?utm_source=github&utm_medium=referral&ut%0Dm_campaign=sudheerj-js" rel="dofollow">
-    <img src="./images/collab/frontendlead-banner.png" alt="FrontEndLead JavaScript Interview Questions" width="100%">
-  </a>
-</p>
-</div>
-
-> 🚀 Ace Javascript interview questions with solutions from FAANG+ companies! [Try FrontendLead →](https://www.frontendlead.com/coding-questions?utm_source=github&utm_medium=referral&ut%0Dm_campaign=sudheerj-js) 🚀
-
----
-
 <p align="center">
   <a href=https://zerotomastery.io/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions>
     <img src=https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:70/https://www.filepicker.io/api/file/AKYtjj5SSGyJuyZrkAB2 alt="ZTM Logo" width="100" height="50">
