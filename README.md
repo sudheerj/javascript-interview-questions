@@ -623,10 +623,10 @@
           this.z = z;
        }
        // Create a new instance using function prototype.
-       var newInstance = Object.create(func.prototype)
+       var newInstance = Object.create(func.prototype);
 
        // Call the function
-       var result = func.call(newInstance, 1, 2, 3),
+       var result = func.call(newInstance, 1, 2, 3);
 
        // If the result is a non-null object then use it otherwise just use the new instance.
        console.log(result && typeof result === 'object' ? result : newInstance);
