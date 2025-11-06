@@ -512,6 +512,8 @@
 | 474 | [What is module scope in JavaScript?](#what-is-module-scope-in-javascript) |
 | 475 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing) |
 | 476 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use) |
+| 477 | [What is the difference between `==` and `===` in JavaScript?](#what-is-the-difference-between--and--in-javascript) |
+
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -9531,6 +9533,36 @@ Common use cases and benefits:
   ```
 
   **[⬆ Back to Top](#table-of-contents)**
+
+477. ### What is the difference between `==` and `===` in JavaScript
+
+    The `==` operator checks for equality **after converting** both operands to a common type (loose equality), while the `===` operator checks for equality **without type conversion** (strict equality).
+
+    #### Key Differences Between `==` and `===`:
+
+    1. **Type Conversion**:  
+       - `==` performs type coercion before comparison.  
+       - `===` compares both **value** and **type** directly.  
+       ```javascript
+       console.log(5 == '5');   // true → type converted before comparison
+       console.log(5 === '5');  // false → no type conversion
+       ```
+
+    2. **Performance**:  
+       - `===` is generally faster since it avoids implicit type conversion.
+
+    3. **Recommended Usage**:  
+       - Always use `===` to avoid unexpected results caused by type coercion.
+
+    #### Example:
+    ```javascript
+    console.log(0 == false);   // true
+    console.log(0 === false);  // false
+    console.log(null == undefined);  // true
+    console.log(null === undefined); // false
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
 
 <!-- QUESTIONS_END -->
 
