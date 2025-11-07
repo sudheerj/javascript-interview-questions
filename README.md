@@ -512,6 +512,7 @@
 | 474 | [What is module scope in JavaScript?](#what-is-module-scope-in-javascript) |
 | 475 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing) |
 | 476 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use) |
+| 477 | [What is the difference between setTimeout and requestAnimationFrame in JavaScript, and when should you use each?](#what-is-the-difference-between-settimeout-and-requestanimationframe-in-javascript-and-when-should-you-use-each) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -9531,6 +9532,44 @@ Common use cases and benefits:
   ```
 
   **[⬆ Back to Top](#table-of-contents)**
+
+477. ### What is the difference between setTimeout and requestAnimationFrame in JavaScript, and when should you use each?
+
+In JavaScript:
+
+- `setTimeout` schedules a function to execute after a specified delay (in milliseconds), regardless of the browser’s rendering cycle.
+- `requestAnimationFrame` schedules a function to run **before the next repaint**, making it ideal for smooth animations and UI updates.
+
+**When to use each:**
+
+1. **setTimeout**:  
+   - Use for delayed tasks or operations that do not need to sync with the screen refresh.  
+   - Example: Polling a server every few seconds.
+
+2. **requestAnimationFrame**:  
+   - Use for animations or visual updates to ensure smooth, performant rendering.  
+   - Example: Animating a moving object on the screen.
+
+**Example:**
+
+```javascript
+// setTimeout example
+setTimeout(() => {
+  console.log("Runs after 1 second");
+}, 1000);
+
+// requestAnimationFrame example
+function animate() {
+  // Update animation state here
+  console.log("Frame rendered");
+  requestAnimationFrame(animate);
+}
+requestAnimationFrame(animate);
+
+  ```
+
+  **[⬆ Back to Top](#table-of-contents)**
+
 
 <!-- QUESTIONS_END -->
 
