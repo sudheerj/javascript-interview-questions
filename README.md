@@ -12485,6 +12485,35 @@ If a function is called with `undefined`, the `undefined` value is treated as a 
 </p>
 </details>
 
+#### 87. What is the output of below code?
+
+```javascript
+const t = [1, 2, 3];
+let v = t.reduce((a, b) => a + (b % 2), 0);
+
+(function(a) {
+  for (let i = 0; i < a.length; i++) {
+    v ^= (a[i] << i);
+  }
+})(t);
+
+console.log(v);
+```
+
+- 1: 5
+- 2: 7
+- 3: 11
+- 4: 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+
+The whole thing basically starts by counting how many odd numbers are in the array, which gives the value 2 to begin with. Then each element gets shifted left by its index, turning the numbers into slightly bigger weird versions of themselves, and each of those gets XOR-combined with the running value. By the time those three XOR hits finish, the value morphs into 11, which is exactly what the console prints.
+</p>
+</details>
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ## Disclaimer
