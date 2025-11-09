@@ -12488,16 +12488,22 @@ If a function is called with `undefined`, the `undefined` value is treated as a 
 #### 87. What is the output of below code?
 
 ```javascript
-const t = [1, 2, 3];
-let v = t.reduce((a, b) => a + (b % 2), 0);
+const numbers = [1, 2, 3];
 
-(function(a) {
-  for (let i = 0; i < a.length; i++) {
-    v ^= (a[i] << i);
+// Count how many numbers are odd
+let xorAccumulator = numbers.reduce((sum, value) => {
+  return sum + (value % 2);
+}, 0);
+
+// IIFE applying XOR of each element shifted by its index
+(function(arr) {
+  for (let index = 0; index < arr.length; index++) {
+    xorAccumulator ^= (arr[index] << index);
   }
-})(t);
+})(numbers);
 
-console.log(v);
+console.log(xorAccumulator);
+
 ```
 
 - 1: 5
@@ -12510,7 +12516,7 @@ console.log(v);
 
 ##### Answer: 3
 
-The whole thing basically starts by counting how many odd numbers are in the array, which gives the value 2 to begin with. Then each element gets shifted left by its index, turning the numbers into slightly bigger weird versions of themselves, and each of those gets XOR-combined with the running value. By the time those three XOR hits finish, the value morphs into 11, which is exactly what the console prints.
+This question is really showcasing how JavaScript mixes array reduction with low-level bitwise tricks. The code first uses .reduce() to turn the array into a single value by counting how many elements are odd, then an IIFE immediately kicks in and loops through the array again, shifting each number left by its index and XOR-ing it into the accumulator. The whole vibe is about understanding how reduction works for summarizing arrays and how bit shifting plus XOR can transform values in a way that feels mathematical rather than typical JS.
 </p>
 </details>
 
