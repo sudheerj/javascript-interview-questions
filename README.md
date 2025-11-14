@@ -31,7 +31,10 @@
 
 ---
 
-### Table of Contents
+## Table of Contents
+- [Basic Questions](#basic-questions)
+- [Advanced Questions](#advanced-questions)
+- [Code Examples](#code-examples)
 
 <!-- TOC_START -->
 | No. | Questions |
