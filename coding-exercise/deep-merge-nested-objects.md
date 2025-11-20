@@ -6,38 +6,36 @@ Write a function **`deepMerge(objA, objB)`** that merges two JavaScript objects 
 
 The function must follow these rules:
 
-1. If a property exists in only one object, take that value.
-2. If the property exists in both objects:
+1. If a property exists only in one object, return that value.
+2. If both objects contain the same key:
    - If both values are **plain objects**, recursively merge them.
    - If both values are **arrays**, concatenate them.
-   - Otherwise, the value from **objB** overwrites the one from **objA**.
-3. Handle **circular references** safely.  
-   If you encounter the same reference path again, avoid infinite recursion.
-4. Ensure the merge is **immutable** — return a **new** object.
-5. Ensure the solution runs in **O(n)** time where *n* is the total number of properties.
+   - Otherwise, the value from **objB** overwrites the value from **objA**.
+3. Handle **circular references** safely using a `WeakMap` to track already merged objects.
+4. The merge must be **immutable** — return a **new** object.
 
 ---
 
-### Example:
+### Example
 
 ```js
-const a = { 
-    x: { y: 1 },
-    arr: [1, 2],
+const firstObject = {
+  x: { y: 1 },
+  arr: [1, 2],
 };
-a.self = a; // Circular reference
+firstObject.self = firstObject; // Circular reference
 
-const b = { 
-    x: { z: 2 },
-    arr: [3],
-    extra: true 
+const secondObject = {
+  x: { z: 2 },
+  arr: [3],
+  extra: true,
 };
-b.loop = b; // Circular reference
+secondObject.loop = secondObject; // Circular reference
 
-const result = deepMerge(a, b);
+const result = deepMerge(firstObject, secondObject);
 
 /*
-Expected structure:
+Expected output:
 
 {
   x: { y: 1, z: 2 },
@@ -47,3 +45,4 @@ Expected structure:
   loop: <circular ref>
 }
 */
+
