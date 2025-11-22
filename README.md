@@ -505,6 +505,8 @@
 | 474 | [What is module scope in JavaScript?](#what-is-module-scope-in-javascript) |
 | 475 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing) |
 | 476 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use) |
+| 477 | [What is structuredClone and how is it used for deep copying objects?](#what-is-structuredclone-and-how-is-it-used-for-deep-copying-objects) |
+
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -9524,9 +9526,34 @@ Common use cases and benefits:
   ```
 
   **[⬆ Back to Top](#table-of-contents)**
+477. ### What is structuredClone and how is it used for deep copying objects?
+
+      In JavaScript, `structuredClone()` is a built-in method used to create a **deep copy** of a value. It safely clones nested objects, arrays, Maps, Sets, Dates, TypedArrays, and even circular references — without sharing references to the original value. This prevents accidental mutations and makes it useful for state management and data processing.
+
+       For example, the below snippet demonstrates deep cloning of a nested object,
+
+        ```javascript
+           const originalObject = {
+             name: "Deep Copy Test",
+             nested: {
+            value: 10,
+            list: [1, 2, 3]
+  },
+};
+
+    const deepCopy = structuredClone(originalObject);
+
+    // Modify cloned value
+    deepCopy.nested.value = 99;
+    deepCopy.nested.list.push(4);
+    console.log(originalObject.nested.value); // 10
+    console.log(deepCopy.nested.value);       // 99
+    console.log(originalObject.nested.list);  // [1, 2, 3]
+    console.log(deepCopy.nested.list);        // [1, 2, 3, 4]
+   
+   **[⬆ Back to Top](#table-of-contents)**
 
 <!-- QUESTIONS_END -->
-
 ### Coding Exercise
 
 #### 1. What is the output of below code
