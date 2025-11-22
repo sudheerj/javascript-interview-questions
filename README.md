@@ -12520,6 +12520,37 @@ This question is really showcasing how JavaScript mixes array reduction with low
 </p>
 </details>
 
+### 88.What is the output of the following snippet?
+***javascript
+console.log("A");
+
+setTimeout(() => {
+  console.log("B");
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log("C");
+});
+
+console.log("D");
+
+***
+
+- 1. A D B C
+- 2. A D C B
+- 3. A C D B
+- 4. A B C D
+
+<details><summary><b>Answer</b></summary>
+<p>
+### Answer : 2
+
+The output is A D C B because JavaScript executes all synchronous code first, so “A” and “D” are printed immediately. After that, the event loop handles asynchronous tasks, where Promise.then() is placed in the microtask queue and setTimeout(...,0) goes to the macrotask queue. Since microtasks always execute before macrotasks—regardless of the timeout value—the promise callback prints “C” next, and finally the timeout callback prints “B”, resulting in the final order: A D C B.
+
+</p>
+</details>
+
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ## Disclaimer
