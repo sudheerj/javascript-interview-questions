@@ -505,6 +505,16 @@
 | 474 | [What is module scope in JavaScript?](#what-is-module-scope-in-javascript) |
 | 475 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing) |
 | 476 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use) |
+| 477 | [What is optional chaining (?.) in JavaScript?](#what-is-optional-chaining-in-javascript) |
+| 478 | [What is nullish coalescing (??) and how is it different from || ?](#what-is-nullish-coalescing) |
+| 479 | [What is Promise.any and when should it be used?](#what-is-promise-any) |
+| 480 | [What is BigInt and how is it different from Number?](#what-is-bigint) |
+| 481 | [What are private class fields in JavaScript (#field)?](#what-are-private-class-fields) |
+| 482 | [What is the Array.prototype.at method and why is it useful?](#what-is-array-prototype-at) |
+| 483 | [What is top-level await in JavaScript modules?](#what-is-top-level-await) |
+| 484 | [What are WeakRef and FinalizationRegistry used for?](#what-are-weakref-and-finalizationregistry) |
+| 485 | [What are logical assignment operators (&&=, ||=, ??=)?](#what-are-logical-assignment-operators) |
+| 486 | [What is the Temporal API and why is it proposed as a replacement for Date?](#what-is-the-temporal-api) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
