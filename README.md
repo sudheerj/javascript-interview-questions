@@ -506,7 +506,7 @@
 | 475 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing) |
 | 476 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use) |
 | 477 | [What is structuredClone and how is it used for deep copying objects?](#what-is-structuredclone-and-how-is-it-used-for-deep-copying-objects) |
-| 478 | [How do JavaScript Maps differ from plain objects and when should you use them?](#how-do-javascript-maps-differ-from-plain-objects-and-when-should-you-use-them) |
+| 478 | [How do JavaScript Maps different  from plain objects and when should you use them?](#how-do-javascript-maps-differents-from-plain-objects-and-when-should-you-use-them) |
 
 
 <!-- TOC_END -->
