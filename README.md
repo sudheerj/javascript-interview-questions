@@ -506,7 +506,10 @@
 | 475 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing) |
 | 476 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use) |
 | 477 | [What is structuredClone and how is it used for deep copying objects?](#what-is-structuredclone-and-how-is-it-used-for-deep-copying-objects) |
+
 | 477 | [What is the difference btw == & === in java script?](#what-is-structuredclone-operators) |
+
+| 478 | [What is the difference between const and Object.freeze](#what-is-the-difference-between-const-and-objectfreeze) |
 
 <!-- TOC_END -->
 
@@ -9554,36 +9557,36 @@ Common use cases and benefits:
    
    **[⬆ Back to Top](#table-of-contents)**
 
-   479. ### What is the purpose of the at() method
+479. ### What is the purpose of the at() method
 
-       The `at()` method takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array or string.
+The `at()` method takes an integer value and returns the item at that index, allowing for positive and negative integers.
+Negative integers count back from the last item.
 
-       Prior to this method, accessing the last element of an array required using array[array.length - 1]. The at() method makes this much cleaner and supports both **Arrays** and **Strings**.
+Prior to this method, accessing the last element of an array required using array[array.length - 1].
+The at() method makes this much cleaner and supports both **Arrays** and **Strings**.
 
-         *Key Features:*
-         1. *Positive Index:* Works the same as square bracket notation [].
-         2. *Negative Index:* Counts from the end of the array (e.g., -1 is the last element).
+**Key Features:**
+1. *Positive Index:* Works the same as square bracket notation [].
+2. *Negative Index:* Counts from the end of the array (e.g., -1 is the last element).
 
-         **Example:**
+**Example:**
 
-         ```javascript
-         const colors = ["Red", "Green", "Blue"];
-         // Old way to get the last element
-         console.log(colors[colors.length - 1]); // "Blue"
+```javascript
+const colors = ["Red", "Green", "Blue"];
 
-         // Using at()
-         console.log(colors.at(-1)); // "Blue"
-         console.log(colors.at(-2)); // "Green"
+// Old way to get the last element
+console.log(colors[colors.length - 1]); // "Blue"
 
-         // It also works on Strings
-         const sentence = "Hello";
-         console.log(sentence.at(-1)); // "o"
+// Using at()
+console.log(colors.at(-1)); // "Blue"
+console.log(colors.at(-2)); // "Green"
 
-         // Comparing with bracket notation for negative index
-          console.log(colors[-1]); // undefined (Bracket notation looks for a property named "-1")
-         
+// It also works on Strings
+const sentence = "Hello";
+console.log(sentence.at(-1)); // "o"
 
-     **[⬆ Back to Top](#table-of-contents)**
+// Comparing with bracket notation for negative index
+console.log(colors[-1]); // undefined (Bracket notation looks for property "-1")
 
 <!-- QUESTIONS_END -->
 ### Coding Exercise
