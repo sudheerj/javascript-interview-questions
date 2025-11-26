@@ -9554,6 +9554,37 @@ Common use cases and benefits:
    
    **[⬆ Back to Top](#table-of-contents)**
 
+   479. ### What is the purpose of the at() method
+
+       The `at()` method takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array or string.
+
+       Prior to this method, accessing the last element of an array required using array[array.length - 1]. The at() method makes this much cleaner and supports both **Arrays** and **Strings**.
+
+         *Key Features:*
+         1. *Positive Index:* Works the same as square bracket notation [].
+         2. *Negative Index:* Counts from the end of the array (e.g., -1 is the last element).
+
+         **Example:**
+
+         ```javascript
+         const colors = ["Red", "Green", "Blue"];
+         // Old way to get the last element
+         console.log(colors[colors.length - 1]); // "Blue"
+
+         // Using at()
+         console.log(colors.at(-1)); // "Blue"
+         console.log(colors.at(-2)); // "Green"
+
+         // It also works on Strings
+         const sentence = "Hello";
+         console.log(sentence.at(-1)); // "o"
+
+         // Comparing with bracket notation for negative index
+          console.log(colors[-1]); // undefined (Bracket notation looks for a property named "-1")
+         
+
+     **[⬆ Back to Top](#table-of-contents)**
+
 <!-- QUESTIONS_END -->
 ### Coding Exercise
 
