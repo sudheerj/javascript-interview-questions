@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href=https://zerotomastery.io/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions>
-    <img src=https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:70/https://www.filepicker.io/api/file/AKYtjj5SSGyJuyZrkAB2 alt="ZTM Logo" width="100" height="50">
+    <img src=https://images.ctfassets.net/aq13lwl6616q/16U1iCKYMvT2KK1TA5gDfi/2885ffc1c274f493942fb29d338d63d3/ztm-logo-academy.svg alt="ZTM Logo" width="100" height="50">
   </a>
   <p align="center">
     <ol>
@@ -514,6 +514,79 @@
 | 475 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing)                                                                        |
 | 476 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use)                                          |
 
+| 406 | [What is a Short circuit condition](#what-is-a-short-circuit-condition) |
+| 407 | [What is the easiest way to resize an array](#what-is-the-easiest-way-to-resize-an-array) |
+| 408 | [What is an observable](#what-is-an-observable) |
+| 409 | [What is the difference between function and class declarations](#what-is-the-difference-between-function-and-class-declarations) |
+| 410 | [What is an async function](#what-is-an-async-function) |
+| 411 | [How do you prevent promises swallowing errors](#how-do-you-prevent-promises-swallowing-errors) |
+| 412 | [What is deno](#what-is-deno) |
+| 413 | [How do you make an object iterable in javascript](#how-do-you-make-an-object-iterable-in-javascript) |
+| 414 | [What is a Proper Tail Call](#what-is-a-proper-tail-call) |
+| 415 | [How do you check an object is a promise or not](#how-do-you-check-an-object-is-a-promise-or-not) |
+| 416 | [How to detect if a function is called as constructor](#how-to-detect-if-a-function-is-called-as-constructor) |
+| 417 | [What are the differences between arguments object and rest parameter](#what-are-the-differences-between-arguments-object-and-rest-parameter) |
+| 418 | [What are the differences between spread operator and rest parameter](#what-are-the-differences-between-spread-operator-and-rest-parameter) |
+| 419 | [What are the different kinds of generators](#what-are-the-different-kinds-of-generators) |
+| 420 | [What are the built-in iterables](#what-are-the-built-in-iterables) |
+| 421 | [What are the differences between for...of and for...in statements](#what-are-the-differences-between-forof-and-forin-statements) |
+| 422 | [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties) |
+| 423 | [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-numberisnan) |
+| 424 | [How to invoke an IIFE without any extra brackets?](#how-to-invoke-an-iife-without-any-extra-brackets) |
+| 425 | [Is that possible to use expressions in switch cases?](#is-that-possible-to-use-expressions-in-switch-cases) |
+| 426 | [What is the easiest way to ignore promise errors?](#what-is-the-easiest-way-to-ignore-promise-errors) |
+| 427 | [How do style the console output using CSS?](#how-do-style-the-console-output-using-css) |
+| 428 | [What is nullish coalescing operator (??)?](#what-is-nullish-coalescing-operator-) |
+| 429 | [How do you group and nest console output?](#how-do-you-group-and-nest-console-output) |
+| 430 | [What is the difference between dense and sparse arrays?](#what-is-the-difference-between-dense-and-sparse-arrays) |
+| 431 | [What are the different ways to create sparse arrays?](#what-are-the-different-ways-to-create-sparse-arrays) |
+| 432 | [What is the difference between setTimeout, setImmediate and process.nextTick?](#what-is-the-difference-between-settimeout-setimmediate-and-processnexttick) |
+| 433 | [How do you reverse an array without modifying original array?](#how-do-you-reverse-an-array-without-modifying-original-array) |
+| 434 | [How do you create custom HTML element?](#how-do-you-create-custom-html-element) |
+| 435 | [What is global execution context?](#what-is-global-execution-context) |
+| 436 | [What is function execution context?](#what-is-function-execution-context) |
+| 437 | [What is debouncing?](#what-is-debouncing) |
+| 438 | [What is throttling?](#what-is-throttling) |
+| 439 | [What is optional chaining?](#what-is-optional-chaining) |
+| 440 | [What is an environment record?](#what-is-an-environment-record) |
+| 441 | [How to verify if a variable is an array?](#how-to-verify-if-a-variable-is-an-array) |
+| 442 | [What is pass by value and pass by reference?](#what-is-pass-by-value-and-pass-by-reference) |
+| 443 | [What are the differences between primitives and non-primitives?](#what-are-the-differences-between-primitives-and-non-primitives) |
+| 444 | [How do you create your own bind method using either call or apply method?](#how-do-you-create-your-own-bind-method-using-either-call-or-apply-method) |
+| 445 | [What are the differences between pure and impure functions?](#what-are-the-differences-between-pure-and-impure-functions) |
+| 446 | [What is referential transparency?](#what-is-referential-transparency) |
+| 447 | [What are the possible side-effects in javascript?](#what-are-the-possible-side-effects-in-javascript) |
+| 448 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions) |
+| 449 | [What is module pattern?](#what-is-module-pattern) |
+| 450 | [What is Function Composition?](#what-is-function-composition) |
+| 451 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022) |
+| 452 | [What is the purpose of the this keyword in JavaScript?](#what-is-the-purpose-of-the-this-keyword-in-javascript) |
+| 453 | [What are the uses of closures?](#what-are-the-uses-of-closures) |
+| 454 | [What are the phases of execution context?](#what-are-the-phases-of-execution-context) |
+| 455 | [What are the possible reasons for memory leaks?](#what-are-the-possible-reasons-for-memory-leaks) |
+| 456 | [What are the optimization techniques of V8 engine?](#what-are-the-optimization-techniques-of-v8-engine) |
+| 457 | [What are the examples of built-in higher order functions?](#what-are-the-examples-of-built-in-higher-order-functions) |
+| 458 | [What are the benefits higher order functions?](#what-are-the-benefits-higher-order-functions) |
+| 459 | [How do you create polyfills for map, filter and reduce methods?](#how-do-you-create-polyfills-for-map-filter-and-reduce-methods) |
+| 460 | [What is the difference between map and forEach functions?](#what-is-the-difference-between-map-and-foreach-functions) |
+| 461 | [Give an example of statements affected by automatic semicolon insertion?](#give-an-example-of-statements-affected-by-automatic-semicolon-insertion) |
+| 462 | [What are the event phases of a browser?](#what-are-the-event-phases-of-a-browser) |
+| 463 | [What are the real world use cases of proxy?](#what-are-the-real-world-use-cases-of-proxy) |
+| 464 | [What are hidden classes?](#what-are-hidden-classes) |
+| 465 | [What is inline caching?](#what-is-inline-caching) |
+| 466 | [What are the different ways to execute external scripts?](#what-are-the-different-ways-to-execute-external-scripts) |
+| 467 | [What is Lexical Scope?](#what-is-lexical-scope) |
+| 468 | [How to detect system dark mode in javascript?](#how-to-detect-system-dark-mode-in-javascript) |
+| 469 | [What is the purpose of requestAnimationFrame method?](#what-is-the-purpose-of-requestanimationframe-method) |
+| 470 | [What is the difference between substring and substr methods?](#what-is-the-difference-between-substring-and-substr-methods) |
+| 471 | [How to find the number of parameters expected by a function?](#how-to-find-the-number-of-parameters-expected-by-a-function) |
+| 472 | [What is globalThis, and what is the importance of it?](#what-is-globalthis-and-what-is-the-importance-of-it) |
+| 473 | [What are the array mutation methods?](#what-are-the-array-mutation-methods) |
+| 474 | [What is module scope in JavaScript?](#what-is-module-scope-in-javascript) |
+| 475 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing) |
+| 476 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use) |
+| 477 | [What is structuredClone and how is it used for deep copying objects?](#what-is-structuredclone-and-how-is-it-used-for-deep-copying-objects) |
+| 478 | [What is the difference between const and Object.freeze](#what-is-the-difference-between-const-and-objectfreeze) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -631,6 +704,17 @@
 
       // Call the function
       var result = func.call(newInstance, 1, 2, 3),
+       ```javascript
+       function func(x, y, z) {
+          this.x = x;
+          this.y = y;
+          this.z = z;
+       }
+       // Create a new instance using function prototype.
+       var newInstance = Object.create(func.prototype);
+
+       // Call the function
+       var result = func.call(newInstance, 1, 2, 3);
 
       // If the result is a non-null object then use it otherwise just use the new instance.
       console.log(result && typeof result === 'object' ? result : newInstance);
@@ -1416,33 +1500,34 @@ In JavaScript, `call`, `apply`, and `bind` are methods that allow you to control
 
 26. ### What is Hoisting
 
-    Hoisting is a JavaScript mechanism where variables, function declarations and classes are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
-    Let's take a simple example of variable hoisting,
+ 
+Hoisting is JavaScript's default behavior where **variable and function declarations** are moved to the top of their scope before code execution. This means you can access certain variables and functions even before they are defined in the code.
 
-    ```javascript
-    console.log(message); //output : undefined
-    var message = "The variable Has been hoisted";
-    ```
 
-    The above code looks like as below to the interpreter,
+Example of variable hoisting:
 
-    ```javascript
-    var message;
-    console.log(message);
-    message = "The variable Has been hoisted";
-    ```
+```js
+console.log(message); // Output: undefined
+var message = "The variable has been hoisted";
+```
 
-    In the same fashion, function declarations are hoisted too
+```js
+var message;
+console.log(message); // undefined
+message = "The variable has been hoisted";
+```
 
-    ```javascript
-    message("Good morning"); //Good morning
+Example of function hoisting:
 
-    function message(name) {
-      console.log(name);
-    }
-    ```
+```js
+message("Good morning"); // Output: Good morning
 
-    This hoisting makes functions to be safely used in code before they are declared.
+function message(name) {
+  console.log(name);
+}
+```
+
+Because of hoisting, functions can be used before they are declared.
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -1823,7 +1908,7 @@ In JavaScript, `call`, `apply`, and `bind` are methods that allow you to control
     });
 
     promise
-      .then((value) => console.log(value)); // Logs after 5 seconds: "I'm a Promise!"
+      .then((value) => console.log(value)) // Logs after 5 seconds: "I'm a Promise!"
       .catch((error) => console.error(error))  // Handles any rejection
       .finally(() => console.log("Done"));     // Runs regardless of success or failure
     ```
@@ -9593,9 +9678,66 @@ button.removeEventListener("click", handleClick);
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
+  **[⬆ Back to Top](#table-of-contents)**
+477. ### What is structuredClone and how is it used for deep copying objects?
+
+      In JavaScript, `structuredClone()` is a built-in method used to create a **deep copy** of a value. It safely clones nested objects, arrays, Maps, Sets, Dates, TypedArrays, and even circular references — without sharing references to the original value. This prevents accidental mutations and makes it useful for state management and data processing.
+
+       For example, the below snippet demonstrates deep cloning of a nested object,
+
+        ```javascript
+           const originalObject = {
+             name: "Deep Copy Test",
+             nested: {
+            value: 10,
+            list: [1, 2, 3]
+  },
+};
+
+    const deepCopy = structuredClone(originalObject);
+
+    // Modify cloned value
+    deepCopy.nested.value = 99;
+    deepCopy.nested.list.push(4);
+    console.log(originalObject.nested.value); // 10
+    console.log(deepCopy.nested.value);       // 99
+    console.log(originalObject.nested.list);  // [1, 2, 3]
+    console.log(deepCopy.nested.list);        // [1, 2, 3, 4]
+   
+   **[⬆ Back to Top](#table-of-contents)**
+
+478. ### What is the difference between const and Object.freeze
+
+     The main difference is that `const` applies to **variables** (bindings), while `Object.freeze()` applies to **values** (objects).
+
+     1. **`const`**: Prevents the reassignment of a variable identifier. It ensures that the variable name always points to the same memory reference. However, if the variable holds an object or array, the *contents* of that object can still be modified.
+     2. **`Object.freeze()`**: Prevents the modification of an object's properties. It makes the object immutable (you cannot add, remove, or change properties), but it does not affect the variable assignment itself (unless the variable is also declared with `const`).
+
+     **Example:**
+
+     ```javascript
+       // Case 1: Using const (Reassignment prevented, Mutation allowed)
+       const person = { name: "John" };
+       person.name = "Doe"; // ✅ Allowed: The object is mutable
+       console.log(person.name); // "Doe"
+
+       // person = { name: "Jane" }; // ❌ Error: Assignment to constant variable
+
+       // Case 2: Using Object.freeze (Reassignment allowed, Mutation prevented)
+       let profile = { name: "John" };
+       Object.freeze(profile);
+
+       profile.name = "Doe"; // ❌ Ignored (or throws TypeError in strict mode)
+       console.log(profile.name); // "John"
+
+       profile = { name: "Jane" }; // ✅ Allowed: 'profile' is declared with 'let'
+       console.log(profile.name); // "Jane"
+       
+
+      **[⬆ Back to Top](#table-of-contents)**
+
 
 <!-- QUESTIONS_END -->
-
 ### Coding Exercise
 
 #### 1. What is the output of below code
@@ -12544,6 +12686,41 @@ func();
 
 If a function is called with `undefined`, the `undefined` value is treated as a parameter. But if the function is not passed with any parameters, the `arguments` object doesn't include any argument eventhough the function has default function parameter. Hence, the function invocation with `undefined` has one argument and function call without any arguments has 0 arguments.
 
+</p>
+</details>
+
+#### 87. What is the output of below code?
+
+```javascript
+const numbers = [1, 2, 3];
+
+// Count how many numbers are odd
+let xorAccumulator = numbers.reduce((sum, value) => {
+  return sum + (value % 2);
+}, 0);
+
+// IIFE applying XOR of each element shifted by its index
+(function(arr) {
+  for (let index = 0; index < arr.length; index++) {
+    xorAccumulator ^= (arr[index] << index);
+  }
+})(numbers);
+
+console.log(xorAccumulator);
+
+```
+
+- 1: 5
+- 2: 7
+- 3: 11
+- 4: 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+
+This question is really showcasing how JavaScript mixes array reduction with low-level bitwise tricks. The code first uses .reduce() to turn the array into a single value by counting how many elements are odd, then an IIFE immediately kicks in and loops through the array again, shifting each number left by its index and XOR-ing it into the accumulator. The whole vibe is about understanding how reduction works for summarizing arrays and how bit shifting plus XOR can transform values in a way that feels mathematical rather than typical JS.
 </p>
 </details>
 
