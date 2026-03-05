@@ -521,7 +521,7 @@
 
     1. **Object literal syntax:**
 
-       The object literal syntax (or object initializer), is a comma-separated set of name-value pairs wrapped in curly braces.
+       The object literal syntax (or object initializer), is a comma-separated set of key-value pairs wrapped in curly braces.
 
        ```javascript
        var object = {
