@@ -9530,6 +9530,7 @@ Common use cases and benefits:
   ```
 
   **[⬆ Back to Top](#table-of-contents)**
+  
 477. ### What is structuredClone and how is it used for deep copying objects?
 
       In JavaScript, `structuredClone()` is a built-in method used to create a **deep copy** of a value. It safely clones nested objects, arrays, Maps, Sets, Dates, TypedArrays, and even circular references — without sharing references to the original value. This prevents accidental mutations and makes it useful for state management and data processing.
