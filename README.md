@@ -16,18 +16,6 @@
 
 ---
 
-<div>
-<p align="center">
-  <a href=https://zerotomastery.io/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions>
-  <img src="./images/collab/ztm.gif" alt="ZTM Logo" width="100%" />
-  </a>
-  </p>
-</div>
-
-  > I recommend this [JavaScript Projects courses](https://zerotomastery.io/courses/javascript-projects/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions) and this [Advanced JavaScript Course](https://zerotomastery.io/courses/advanced-javascript-concepts/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions) to become top 10% at JS and [this coding interview bootcamp](https://zerotomastery.io/courses/learn-data-structures-and-algorithms/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions) to ace your coding interview and actually get hired.
-
----
-
 ### Table of Contents
 
 <!-- TOC_START -->
