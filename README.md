@@ -1,18 +1,5 @@
 # JavaScript Interview Questions & Answers
 
-> Click :star:if you like the project and follow [@SudheerJonna](https://twitter.com/SudheerJonna) for more updates. Coding questions available [here](#coding-exercise). Check [DataStructures and Algorithms](https://github.com/sudheerj/datastructures-algorithms) for DSA related questions and [ECMAScript](https://github.com/sudheerj/ECMAScript-features) for all ES features.).
-
----
-
-<div>
-<p align="center">
-  <a href="https://www.greatfrontend.com/questions/formats/javascript-functions?utm_source=github&utm_medium=referral&utm_campaign=sudheerj-js&fpr=sudheerj&gnrs=sudheerj">
-    <img src="./images/collab/greatfrontend-js.gif" alt="GreatFrontEnd JavaScript Interview Questions" width="100%">
-  </a>
-</p>
-</div>
-
-> Practice 280+ JavaScript coding interview questions in-browser. Built by ex-FAANG interviewers. No AI-generated fluff. No fake reviews. [Try GreatFrontEnd →](https://www.greatfrontend.com/questions/formats/javascript-functions?utm_source=github&utm_medium=referral&utm_campaign=sudheerj-js&fpr=sudheerj&gnrs=sudheerj) 💡
 
 ---
 
