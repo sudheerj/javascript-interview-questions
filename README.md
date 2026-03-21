@@ -499,7 +499,6 @@
 | 476 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use) |
 | 477 | [What is structuredClone and how is it used for deep copying objects?](#what-is-structuredclone-and-how-is-it-used-for-deep-copying-objects) |
 | 478 | [What is the difference between const and Object.freeze](#what-is-the-difference-between-const-and-objectfreeze) |
-| 479 | [What is the difference between for loop and forEach](#what-is-the-difference-between-for-loop-and-foreach) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
