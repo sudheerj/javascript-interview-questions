@@ -12501,35 +12501,7 @@ If a function is called with `undefined`, the `undefined` value is treated as a 
 </p>
 </details>
 
-**[⬆ Back to Top](#table-of-contents)**
-
 #### 86. What is the output of below code?
-
-```javascript
-function func(a, b = 2) {
-  console.log(arguments.length);
-}
-
-func(undefined);
-func();
-```
-
-- 1: 1, 0
-- 2: 0, 0
-- 3: 0, 1
-- 4: 1, 1
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-##### Answer: 1
-
-If a function is called with `undefined`, the `undefined` value is treated as a parameter. But if the function is not passed with any parameters, the `arguments` object doesn't include any argument eventhough the function has default function parameter. Hence, the function invocation with `undefined` has one argument and function call without any arguments has 0 arguments.
-
-</p>
-</details>
-
-#### 87. What is the output of below code?
 
 ```javascript
 const numbers = [1, 2, 3];
