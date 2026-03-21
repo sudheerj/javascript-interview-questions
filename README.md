@@ -1,6 +1,6 @@
 # JavaScript Interview Questions & Answers
 
-> Click :star:if you like the project and follow [@SudheerJonna](https://twitter.com/SudheerJonna) for more updates. Coding questions available [here](#coding-exercise). Check [DataStructures and Algorithms](https://github.com/sudheerj/datastructures-algorithms) for DSA related questions and [ECMAScript](https://github.com/sudheerj/ECMAScript-features) for all ES features.).
+> Click :star:if you like the project and follow [@SudheerJonna](https://twitter.com/SudheerJonna) for more updates. Coding questions available [here](#coding-exercise). Check [DataStructures and Algorithms](https://github.com/sudheerj/datastructures-algorithms) for DSA related questions and [ECMAScript](https://github.com/sudheerj/ECMAScript-features) for all ES features.)
 
 ---
 
@@ -145,7 +145,7 @@
 | 122 | [How do you validate an email in javascript](#how-do-you-validate-an-email-in-javascript) |
 | 123 | [How do you get the current url with javascript](#how-do-you-get-the-current-url-with-javascript) |
 | 124 | [What are the various url properties of location object](#what-are-the-various-url-properties-of-location-object) |
-| 125 | [How do get query string values in javascript](#how-do-get-query-string-values-in-javascript) |
+| 125 | [How do you get query string values in javascript](#how-do-you-get-query-string-values-in-javascript) |
 | 126 | [How do you check if a key exists in an object](#how-do-you-check-if-a-key-exists-in-an-object) |
 | 127 | [How do you loop through or enumerate javascript object](#how-do-you-loop-through-or-enumerate-javascript-object) |
 | 128 | [How do you test for an empty object](#how-do-you-test-for-an-empty-object) |
@@ -1384,7 +1384,7 @@ Because of hoisting, functions can be used before they are declared.
 
 27. ### What are classes in ES6
 
-    In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
+    In ES6, JavaScript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
     For example, the prototype based inheritance written in function expression as below,
 
     ```javascript
@@ -2805,7 +2805,7 @@ Because of hoisting, functions can be used before they are declared.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-125. ### How do get query string values in javascript
+125. ### How do you get query string values in javascript
 
       You can use URLSearchParams to get query string values in javascript. Let's see an example to get the client code value from URL query string,
 
@@ -3435,7 +3435,7 @@ Because of hoisting, functions can be used before they are declared.
 
 163. ### What would be the result of 1+2+'3'
 
-      The output is going to be `33`. Since `1` and `2` are numeric values, the result of the first two digits is going to be a numeric value `3`. The next digit is a string type value because of that the addition of numeric value `3` and string type value `3` is just going to be a concatenation value `33`. Other operationrs like `3 * '3'` do yield correct results because the string is coerced into a number.
+      The output is going to be `33`. Since `1` and `2` are numeric values, the result of the first two digits is going to be a numeric value `3`. The next digit is a string type value because of that the addition of numeric value `3` and string type value `3` is just going to be a concatenation value `33`. Other operations like `3 * '3'` do yield correct results because the string is coerced into a number.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -3521,7 +3521,7 @@ Because of hoisting, functions can be used before they are declared.
 
 169. ### How do you get the image width and height using JS
 
-      You can programmatically get the image and check the dimensions(width and height) using Javascript.
+      You can programmatically get the image and check the dimensions(width and height) using JavaScript.
 
       ```javascript
       var img = new Image();
@@ -3580,7 +3580,7 @@ Because of hoisting, functions can be used before they are declared.
 
 173. ### What are the properties used to get size of window
 
-      You can use innerWidth, innerHeight, clientWidth, clientHeight properties of windows, document element and document body objects to find the size of a window. Let's use them combination of these properties to calculate the size of a window or document,
+      You can use innerWidth, innerHeight, clientWidth, clientHeight properties of windows, document element and document body objects to find the size of a window. Let's use a combination of these properties to calculate the size of a window or document,
 
       ```javascript
       var width =
@@ -5313,7 +5313,7 @@ Because of hoisting, functions can be used before they are declared.
 273. ### How do you perform form validation using javascript
 
       JavaScript can be used to perform HTML form validation. For example, if the form field is empty, the function needs to notify, and return false, to prevent the form being submitted.
-      Lets' perform user login in an html form,
+      Let's perform user login in an html form,
 
       ```html
       <form name="myForm" onsubmit="return validateForm()" method="post">
@@ -5603,7 +5603,7 @@ Because of hoisting, functions can be used before they are declared.
 
 290. ### What is the difference between java and javascript
 
-      Both are totally unrelated programming languages and no relation between them. Java is statically typed, compiled, runs on its own VM. Whereas Javascript is dynamically typed, interpreted, and runs in a browser and nodejs environments. Let's see the major differences in a tabular format,
+      Both are totally unrelated programming languages and no relation between them. Java is statically typed, compiled, runs on its own VM. Whereas JavaScript is dynamically typed, interpreted, and runs in a browser and nodejs environments. Let's see the major differences in a tabular format,
       | Feature | Java | JavaScript |
       |---- | ---- | -----
       | Typed | It's a strongly typed language | It's a dynamic typed language |
@@ -6924,7 +6924,7 @@ Because of hoisting, functions can be used before they are declared.
 
       ```javascript
       const obj = { x: 1 };
-      // Grabs obj.x as as { otherName }
+      // Grabs obj.x as { otherName }
       const { x: otherName } = obj;
       ```
 
@@ -9058,7 +9058,7 @@ The polyfills for array methods such as map, filter and reduce methods can be cr
 
     Both map and forEach functions are used to iterate over an arrays but there are some differences in their functionality.
 
-    1. **Returning values:** The `map` method returns a new array with transformed elements whereas `forEach` method returns `undefined` eventhough both of them are doing the same job.
+    1. **Returning values:** The `map` method returns a new array with transformed elements whereas `forEach` method returns `undefined` even though both of them are doing the same job.
 
     ```javascript
       const arr = [1, 2, 3, 4, 5];
@@ -12450,7 +12450,7 @@ console.log(arr.sort());
 
 ##### Answer: 3
 
-Javascript has a native method sort that allows sorting an array of elements in-place. It will treat each element as a string and sort it alphabetically. But if you try to sort an array of strings which has non-ASCII characters, you will receive a strange result. This is because characters with an accent have higher character codes.
+JavaScript has a native method sort that allows sorting an array of elements in-place. It will treat each element as a string and sort it alphabetically. But if you try to sort an array of strings which has non-ASCII characters, you will receive a strange result. This is because characters with an accent have higher character codes.
 
 In this case, the sort order of an array is ['Wann', 'Woche', 'wäre', 'wöchentlich'].
 
