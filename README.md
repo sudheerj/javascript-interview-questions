@@ -498,7 +498,11 @@
 | 475 | [What are shadowing and illegal shadowing?](#what-are-shadowing-and-illegal-shadowing) |
 | 476 | [Why is it important to remove event listeners after use?](#why-is-it-important-to-remove-event-listeners-after-use) |
 | 477 | [What is structuredClone and how is it used for deep copying objects?](#what-is-structuredclone-and-how-is-it-used-for-deep-copying-objects) |
+
+| 477 | [What is the difference btw == & === in java script?](#what-is-structuredclone-operators) |
+
 | 478 | [What is the difference between const and Object.freeze](#what-is-the-difference-between-const-and-objectfreeze) |
+
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -9546,36 +9550,36 @@ Common use cases and benefits:
    
    **[⬆ Back to Top](#table-of-contents)**
 
-478. ### What is the difference between const and Object.freeze
+479. ### What is the purpose of the at() method
 
-     The main difference is that `const` applies to **variables** (bindings), while `Object.freeze()` applies to **values** (objects).
+The `at()` method takes an integer value and returns the item at that index, allowing for positive and negative integers.
+Negative integers count back from the last item.
 
-     1. **`const`**: Prevents the reassignment of a variable identifier. It ensures that the variable name always points to the same memory reference. However, if the variable holds an object or array, the *contents* of that object can still be modified.
-     2. **`Object.freeze()`**: Prevents the modification of an object's properties. It makes the object immutable (you cannot add, remove, or change properties), but it does not affect the variable assignment itself (unless the variable is also declared with `const`).
+Prior to this method, accessing the last element of an array required using array[array.length - 1].
+The at() method makes this much cleaner and supports both **Arrays** and **Strings**.
 
-     **Example:**
+**Key Features:**
+1. *Positive Index:* Works the same as square bracket notation [].
+2. *Negative Index:* Counts from the end of the array (e.g., -1 is the last element).
 
-     ```javascript
-       // Case 1: Using const (Reassignment prevented, Mutation allowed)
-       const person = { name: "John" };
-       person.name = "Doe"; // ✅ Allowed: The object is mutable
-       console.log(person.name); // "Doe"
+**Example:**
 
-       // person = { name: "Jane" }; // ❌ Error: Assignment to constant variable
+```javascript
+const colors = ["Red", "Green", "Blue"];
 
-       // Case 2: Using Object.freeze (Reassignment allowed, Mutation prevented)
-       let profile = { name: "John" };
-       Object.freeze(profile);
+// Old way to get the last element
+console.log(colors[colors.length - 1]); // "Blue"
 
-       profile.name = "Doe"; // ❌ Ignored (or throws TypeError in strict mode)
-       console.log(profile.name); // "John"
+// Using at()
+console.log(colors.at(-1)); // "Blue"
+console.log(colors.at(-2)); // "Green"
 
-       profile = { name: "Jane" }; // ✅ Allowed: 'profile' is declared with 'let'
-       console.log(profile.name); // "Jane"
-       
+// It also works on Strings
+const sentence = "Hello";
+console.log(sentence.at(-1)); // "o"
 
-      **[⬆ Back to Top](#table-of-contents)**
-
+// Comparing with bracket notation for negative index
+console.log(colors[-1]); // undefined (Bracket notation looks for property "-1")
 
 <!-- QUESTIONS_END -->
 ### Coding Exercise
