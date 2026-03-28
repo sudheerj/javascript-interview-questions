@@ -1382,6 +1382,9 @@ Because of hoisting, functions can be used before they are declared.
 
     **[⬆ Back to Top](#table-of-contents)**
 
+![JavaScript Hoisting](images/hoisting.png)
+
+
 27. ### What are classes in ES6
 
     In ES6, JavaScript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
