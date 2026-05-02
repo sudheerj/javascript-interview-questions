@@ -9586,6 +9586,59 @@ Common use cases and benefits:
       **[⬆ Back to Top](#table-of-contents)**
 
 
+479. ### What is the difference between for loop and forEach
+
+     Both are used to iterate over arrays, but they differ in performance, flexibility, and purpose.
+
+     The `for` loop is a core JavaScript statement that gives you full control over iteration:
+      ```javascript
+      const arr = [1, 2, 3];
+      for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+      }
+      ```
+
+     The `forEach` is an array method introduced in ES5 that accepts a callback and calls it for each element:
+
+      ```javascript
+      const arr = [1, 2, 3];
+      arr.forEach((num) => console.log(num));
+      ```
+
+     **Why is `for` loop faster?**
+
+     `forEach` has two sources of overhead on every iteration: first, it
+     invokes your callback using `.call()` (a function call has a cost).
+     Second, it checks for empty slots in the array (`i in this`) on every
+     single iteration even when the array has no empty slots at all. The
+     `for` loop does neither of these things, and JavaScript engines like
+     V8 are highly optimized for its simple counter pattern.
+
+     **Why was `forEach` created?**
+
+     For readability. The classic `for (let i = 0; i < arr.length; i++)`
+     is noisy you have to declare a counter, write a condition, and
+     increment manually, just to access each element. `forEach` hides all
+     of that mechanics and lets you focus on the element itself. Arrow
+     functions later made it even cleaner. However, they also made its
+     optional `thisArg` parameter (used to set `this` inside the callback)
+     mostly obsolete, since arrow functions inherit `this` automatically.
+
+     **When to use which:**
+      ```javascript
+      // Use forEach — simple iterations where readability matters
+      arr.forEach((num) => console.log(num));
+
+      // Use for loop — when you need break, continue, or max performance
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === target) break; // impossible with forEach
+      }
+      ```
+
+     **Note:** The `for` loop is strictly more powerful anything `forEach` does, `for` loop can do too, but not the other way around.
+
+**[⬆ Back to Top](#table-of-contents)**
+
 <!-- QUESTIONS_END -->
 ### Coding Exercise
 
