@@ -1136,7 +1136,7 @@
       → You can split logic into smaller single-responsibility functions.
 
     **[⬆ Back to Top](#table-of-contents)**
-
+ 
 16. ### What is a pure function
 
     A **pure function** is a function whose output depends only on its input arguments and produces no side effects. This means that given the same inputs, a pure function will always return the same output, and it does not modify any external state or data.
