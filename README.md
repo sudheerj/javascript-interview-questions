@@ -3807,7 +3807,7 @@ Because of hoisting, functions can be used before they are declared.
 
 184. ### How do you detect if javascript is disabled on the page
 
-      You can use the `<noscript>` tag to detect javascript disabled or not. The code block inside `<noscript>` gets executed when JavaScript is disabled, and is typically used to display alternative content when the page generated in JavaScript.
+      You can use the `<noscript>` tag to detect whether JavaScript is disabled or not. The code block inside `<noscript>` gets executed when JavaScript is disabled, and is typically used to display alternative content when the page is generated in JavaScript.
 
       ```javascript
       <script type="javascript">
