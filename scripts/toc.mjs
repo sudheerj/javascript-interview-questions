@@ -17,16 +17,25 @@ const QUESTION_TITLE_HEADING_LEVEL = "###";
 
 const rawFile = fs.readFileSync(filePath).toString();
 
-const fileAsLines = rawFile.split("\n");
+const fileAsLines = rawFile.split(/\r?\n/);;
 
 const tocStartIndex = fileAsLines.findIndex(
   (line) => line === TOC_START_MARKER
 );
+
+console.log(tocStartIndex);
+
 const tocEndIndex = fileAsLines.findIndex((line) => line === TOC_END_MARKER);
+
+
+console.log(tocEndIndex);
 
 const questionsStartIndex = fileAsLines.findIndex(
   (line) => line === QUESTIONS_START_MARKER
 );
+
+console.log(questionsStartIndex);
+
 const questionsEndIndex = fileAsLines.findIndex(
   (line) => line === QUESTIONS_END_MARKER
 );
